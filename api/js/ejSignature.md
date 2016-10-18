@@ -163,8 +163,8 @@ Allows the type of the image format to be saved when the signature image is save
 <td>To save the signature image with bmp format only.<br/><br/></td>
 </tr>
 <tr>
-<td>bmp<br/><br/></td>
-<td>To save the signature image with bmp format only.<br/><br/></td>
+<td>tiff<br/><br/></td>
+<td>To save the signature image with tiff format only.<br/><br/></td>
 </tr>
 </table>
 
