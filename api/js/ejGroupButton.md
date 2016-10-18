@@ -738,7 +738,7 @@ Sets the rounder corner to the GroupButton, if sets as true.
 <ts ref="ej.ButtonSize" />
 
 
-Specifies the size of the button. See available [size](http://help.syncfusion.com/js/api/ejbutton#members:size)
+Specifies the size of the button. See available [size](http://help.syncfusion.com/api/js/ejbutton#members:size)
 
 
 #### Default Value

@@ -120,7 +120,7 @@ Example
 
 
 
-Specifies the height of bars in the Barcode. By modifying the barHeight, the entire barcode height can be customized. Please refer to [xDimension](/js/api/ejBarcode#xdimensionspan-classtype-signature-type-numbernumberspan) for two dimensional barcode height customization.
+Specifies the height of bars in the Barcode. By modifying the barHeight, the entire barcode height can be customized. Please refer to [xDimension](/api/js/ejBarcode#xdimensionspan-classtype-signature-type-numbernumberspan) for two dimensional barcode height customization.
 
 N>    This property is applicable only for one dimensional barcode.
 
