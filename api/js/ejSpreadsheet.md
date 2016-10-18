@@ -121,7 +121,7 @@ Gets or sets a value that indicates whether to enable or disable auto rendering 
 * false
 
 
-N> [`allowCellType`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowcelltype "allowCellType") must be `true` while using this property.
+N> [`allowCellType`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowcelltype "allowCellType") must be `true` while using this property.
 
 #### Example
 
@@ -283,7 +283,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates whether to enable or disable Conditional Format feature in the Spreadsheet. By enabling this, you can apply formatting to the selected range of cells based on the provided conditions (Greater than, Less than, Equal, Between, Contains, etc.).
 
-N> [`allowConditionalFormats`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowconditionalformats "allowConditionalFormats") must be `true` while using conditional formatting.
+N> [`allowConditionalFormats`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowconditionalformats "allowConditionalFormats") must be `true` while using conditional formatting.
 
 #### Default Value
 * true
@@ -412,7 +412,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates whether to enable or disable table feature in the Spreadsheet. By enabling this, you can render table in selected range.
 
-N> [`allowCellFormatting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowcellformatting "allowCellFormatting") and [`allowFiltering`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowfiltering "allowFiltering") must be `true` while using format as table.
+N> [`allowCellFormatting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowcellformatting "allowCellFormatting") and [`allowFiltering`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowfiltering "allowFiltering") must be `true` while using format as table.
 
 #### Default Value
 * true
@@ -437,7 +437,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Get or sets a value that indicates whether to enable or disable format painter feature in the Spreadsheet. By enabling this feature, you can copy the format from the selected range and apply it to another range.
 
-N> [`allowCellFormatting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowcellformatting "allowCellFormatting") must be `true` while enable this feature.
+N> [`allowCellFormatting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowcellformatting "allowCellFormatting") must be `true` while enable this feature.
 
 #### Default Value
 * true
@@ -524,7 +524,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates whether to enable or disable import feature in the Spreadsheet. By enabling this feature, you can open existing Spreadsheet documents. 
 
-N> Need to specify [`importMapper`](https://help.syncfusion.com/js/api/ejspreadsheet#members:importsettings-importmapper "importMapper") while enabling this feature.Import feature supports XLS, XLSX file formats.
+N> Need to specify [`importMapper`](https://help.syncfusion.com/api/js/ejspreadsheet#members:importsettings-importmapper "importMapper") while enabling this feature.Import feature supports XLS, XLSX file formats.
 
 #### Default Value
 * true
@@ -779,7 +779,7 @@ Gets or sets an object that indicates to customize the auto fill behavior in the
 
 This property is used to set fillType unit in Spreadsheet. It has five types which are CopyCells, FillSeries, FillFormattingOnly, FillWithoutFormatting and FlashFill.
 
-N> [`allowAutoFill`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowautofill "allowAutoFill") must be `true` while using this property.
+N> [`allowAutoFill`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowautofill "allowAutoFill") must be `true` while using this property.
 
 <table class="params">
 <thead>
@@ -837,7 +837,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to enable or disable auto fill options in the Spreadsheet.
 
-N> [`allowAutoFill`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowautofill "allowAutoFill") must be `true` while enabling this property.
+N> [`allowAutoFill`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowautofill "allowAutoFill") must be `true` while enabling this property.
 
 #### Default Value
 * true
@@ -867,7 +867,7 @@ Gets or sets an object that indicates to customize the chart behavior in the Spr
 
 Gets or sets a value that defines the chart height in Spreadsheet.
 
-N> [`allowCharts`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowcharts "allowCharts") must be `true` while using this property.
+N> [`allowCharts`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowcharts "allowCharts") must be `true` while using this property.
 
 #### Default Value
 * 220
@@ -892,7 +892,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that defines the chart width in the Spreadsheet.
 
-N> [`allowCharts`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowcharts "allowCharts") must be `true` while using this property.
+N> [`allowCharts`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowcharts "allowCharts") must be `true` while using this property.
 
 #### Default Value
 * 440
@@ -1067,7 +1067,7 @@ Gets or sets an object that indicates to customize the exporting behavior in Spr
 
 Gets or sets a value that indicates whether to enable or disable save feature in Spreadsheet. By enabling this feature, you can save existing Spreadsheet.
 
-N> User must specify [`excelUrl`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-excelurl "excelUrl") or [`pdfUrl`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-pdfurl "pdfUrl") or [`csvUrl`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-csvurl "csvUrl") while enabling this feature
+N> User must specify [`excelUrl`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-excelurl "excelUrl") or [`pdfUrl`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-pdfurl "pdfUrl") or [`csvUrl`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-csvurl "csvUrl") while enabling this feature
 
 #### Default Value
 * true
@@ -1094,7 +1094,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to define csvUrl for export to CSV format.
 
-N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while using this property.
+N> User must specify [`allowExporting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while using this property.
 
 #### Default Value
 * null
@@ -1119,7 +1119,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to define excelUrl for export to excel format.
 
-N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while using this property.
+N> User must specify [`allowExporting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while using this property.
 
 #### Default Value
 * null
@@ -1144,7 +1144,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to define password while export to excel format.
 
-N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while using this property.
+N> User must specify [`allowExporting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while using this property.
 
 #### Default Value
 * null
@@ -1170,7 +1170,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to define pdfUrl for export to PDF format.
 
-N> User must specify [`allowExporting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while using this property.
+N> User must specify [`allowExporting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:exportsettings-allowexporting "allowExporting") `true` while using this property.
 
 #### Default Value
 * null
@@ -1200,7 +1200,7 @@ Gets or sets an object that indicates to customize the format behavior in the Sp
 
 Gets or sets a value that indicates whether to enable or disable cell border feature in the Spreadsheet.
 
-N> [`allowCellFormatting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowcellformatting "allowCellFormatting") must be `true` while using this property.
+N> [`allowCellFormatting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowcellformatting "allowCellFormatting") must be `true` while using this property.
 
 #### Default Value
 * true
@@ -1224,7 +1224,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates whether to enable or disable decimal places in the Spreadsheet.
 
-N> [`allowCellFormatting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowcellformatting "allowCellFormatting") must be `true` while using this property.
+N> [`allowCellFormatting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowcellformatting "allowCellFormatting") must be `true` while using this property.
 
 #### Default Value
 * true
@@ -1249,7 +1249,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates whether to enable or disable font family feature in Spreadsheet.
 
-N> [`allowCellFormatting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowcellformatting "allowCellFormatting") must be `true` while using this property. 
+N> [`allowCellFormatting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowcellformatting "allowCellFormatting") must be `true` while using this property. 
 
 #### Default Value
 * true
@@ -1279,7 +1279,7 @@ Gets or sets an object that indicates to customize the import behavior in the Sp
 
 Sets import mapper to perform import feature in Spreadsheet.
 
-N> [`allowImport`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowimport "allowImport") must be `true` while using this property.
+N> [`allowImport`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowimport "allowImport") must be `true` while using this property.
 
 #### Default Value
 * ""
@@ -1328,7 +1328,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Sets import URL to access the online files in the Spreadsheet.
 
-N> [`allowImport`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowimport "allowImport") must be `true` while using this property.
+N> [`allowImport`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowimport "allowImport") must be `true` while using this property.
 
 #### Default Value
 * ""
@@ -1353,7 +1353,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to define password while importing in the Spreadsheet.
 
-N> [`allowImport`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowimport "allowImport") must be `true` while using this property.
+N> [`allowImport`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowimport "allowImport") must be `true` while using this property.
 
 #### Default Value
 * ""
@@ -1429,7 +1429,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to define height to picture in the Spreadsheet.
 
-N> [`allowPictures`](https://help.syncfusion.com/js/api/ejspreadsheet#members:picturesettings-allowpictures "allowPictures") must be `true` while using this property.
+N> [`allowPictures`](https://help.syncfusion.com/api/js/ejspreadsheet#members:picturesettings-allowpictures "allowPictures") must be `true` while using this property.
 
 #### Default Value
 * 220
@@ -1454,7 +1454,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to define width to picture in the Spreadsheet.
 
-N> [`allowPictures`](https://help.syncfusion.com/js/api/ejspreadsheet#members:picturesettings-allowpictures "allowPictures") must be `true` while using this property.
+N> [`allowPictures`](https://help.syncfusion.com/api/js/ejspreadsheet#members:picturesettings-allowpictures "allowPictures") must be `true` while using this property.
 
 #### Default Value
 * 440
@@ -1484,7 +1484,7 @@ Gets or sets an object that indicates to customize the print option in Spreadshe
 
 Gets or sets a value that indicates whether to enable or disable page setup support for printing in Spreadsheet. 
 
-N> [`allowPrinting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:printsettings-allowprinting "allowPrinting") must be `true` while enabling this property.
+N> [`allowPrinting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:printsettings-allowprinting "allowPrinting") must be `true` while enabling this property.
 
 #### Default Value
 * true
@@ -1509,7 +1509,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates whether to enable or disable page size support for printing in Spreadsheet.
 
-N> [`allowPrinting`](https://help.syncfusion.com/js/api/ejspreadsheet#members:printsettings-allowprinting "allowPrinting") must be `true` while enabling this property.
+N> [`allowPrinting`](https://help.syncfusion.com/api/js/ejspreadsheet#members:printsettings-allowprinting "allowPrinting") must be `true` while enabling this property.
 
 #### Default Value
 * false
@@ -1561,7 +1561,7 @@ Gets or sets an object that indicates to customize the ribbon settings in Spread
 
 Gets or sets an object that indicates application tab settings in Spreadsheet.
 
-N>[`showRibbon`](https://help.syncfusion.com/js/api/ejspreadsheet#members:showribbon "showRibbon") must be `true` while using this property.
+N>[`showRibbon`](https://help.syncfusion.com/api/js/ejspreadsheet#members:showribbon "showRibbon") must be `true` while using this property.
 
 ### ribbonSettings.applicationTab.type `Enum`
 {:#members:ribbonsettings-applicationtab-type}
@@ -1764,7 +1764,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates whether to enable or disable virtual scrolling feature in the Spreadsheet.
 
-N> [`allowScrolling`](https://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-allowscrolling "allowScrolling") must be `true` while enabling this property.
+N> [`allowScrolling`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-allowscrolling "allowScrolling") must be `true` while enabling this property.
 
 #### Default Value
 * true
@@ -1839,7 +1839,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to set scroll mode in Spreadsheet. It has two scroll modes, Normal and Infinite.
 
-N> [`allowScrolling`](https://help.syncfusion.com/js/api/ejspreadsheet#members:scrollsettings-allowscrolling "allowScrolling") must be `true` while enabling this property.
+N> [`allowScrolling`](https://help.syncfusion.com/api/js/ejspreadsheet#members:scrollsettings-allowscrolling "allowScrolling") must be `true` while enabling this property.
 
 <table class="params">
 <thead>
@@ -1916,7 +1916,7 @@ Gets or sets an object that indicates to customize the selection options in the 
 
 Gets or sets a value that indicates to define active cell in spreadsheet.
 
-N> [`allowSelection`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowselection "allowSelection") must be `true` while using this property.
+N> [`allowSelection`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowselection "allowSelection") must be `true` while using this property.
 
 #### Default Value
 * ""
@@ -1941,7 +1941,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to define animation time while selection in the Spreadsheet.
 
-N> [`allowSelection`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowselection "allowSelection") must be `true` while using this property.
+N> [`allowSelection`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowselection "allowSelection") must be `true` while using this property.
 
 #### Default Value
 * 0.001
@@ -1967,7 +1967,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to enable or disable animation while selection.
 
-N> [`allowSelection`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowselection "allowSelection") must be `true` while using this property
+N> [`allowSelection`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowselection "allowSelection") must be `true` while using this property
 
 #### Default Value
 * false
@@ -1994,7 +1994,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to set selection type in Spreadsheet. It has three types which are Column, Row and Default.
 
-N> [`allowSelection`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowselection "allowSelection") must be `true` while using this property
+N> [`allowSelection`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowselection "allowSelection") must be `true` while using this property
 
 <table class="params">
 <thead>
@@ -2046,7 +2046,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates to set selection unit in Spreadsheet. It has three types which are Single, Range and MultiRange.
 
-N> [`allowSelection`](https://help.syncfusion.com/js/api/ejspreadsheet#members:allowselection "allowSelection") must be `true` while using this property
+N> [`allowSelection`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allowselection "allowSelection") must be `true` while using this property
 	
 <table class="params">
 <thead>
@@ -2706,7 +2706,7 @@ $('#Spreadsheet').ejSpreadsheet({
 ### sheets.query `Object`
 {:#members:sheets-query}
 
-Specifies the query for the [`dataSource`](http://help.syncfusion.com/js/api/ejspreadsheet#members:sheets-datasource "dataSource") in Spreadsheet.
+Specifies the query for the [`dataSource`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-datasource "dataSource") in Spreadsheet.
 
 #### Default Value:
 

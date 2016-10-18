@@ -54,7 +54,7 @@ The AutoComplete control is a textbox control that provides a list of suggestion
 
 Customize "Add New" text (label) to be added in the autocomplete popup list for the entered text when there are no suggestions for it. 
 
-N> This property is applicable only when the “[MultiSelectMode](http://help.syncfusion.com/js/api/ejautocomplete#members:multiselectmode)” property is set as “VisualMode” and “[AllowAddNew](http://help.syncfusion.com/js/api/ejautocomplete#members:allowaddnew)” property is set as “true”.
+N> This property is applicable only when the “[MultiSelectMode](http://help.syncfusion.com/api/js/ejautocomplete#members:multiselectmode)” property is set as “VisualMode” and “[AllowAddNew](http://help.syncfusion.com/api/js/ejautocomplete#members:allowaddnew)” property is set as “true”.
 
 #### Default Value:
 
@@ -78,7 +78,7 @@ N> This property is applicable only when the “[MultiSelectMode](http://help.sy
 
 Allows new values to be added to the autocomplete input other than the values in the suggestion list. Normally, when there are no suggestions it will display “No suggestions” label in the popup.
 
-N>  This property will work only when the “[MultiSelectMode](http://help.syncfusion.com/js/api/ejautocomplete#members:multiselectmode)” property is set as “VisualMode”
+N>  This property will work only when the “[MultiSelectMode](http://help.syncfusion.com/api/js/ejautocomplete#members:multiselectmode)” property is set as “VisualMode”
 
 #### Default Value: 
 * false
@@ -99,7 +99,7 @@ N>  This property will work only when the “[MultiSelectMode](http://help.syncf
 
 Enables or disables the sorting of suggestion list item. The default sort order is ascending order. You customize sort order. 
 
-{%seealso%} [SortOrder](http://help.syncfusion.com/js/api/global.html#SortOrder) {%endseealso%}
+{%seealso%} [SortOrder](http://help.syncfusion.com/api/js/global.html#SortOrder) {%endseealso%}
 
 #### Default Value: 
 
@@ -256,7 +256,7 @@ The time delay (in milliseconds) after which the suggestion popup will be shown.
 
 The special character which acts as a separator for the given words for multi-mode search i.e. the text after the delimiter are considered as a separate word or query for search operation. 
 
-N> 1. This property is applicable only when the “[MultiSelectMode](http://help.syncfusion.com/js/api/ejautocomplete#members:multiselectmode)” property set as “Delimiter”.
+N> 1. This property is applicable only when the “[MultiSelectMode](http://help.syncfusion.com/api/js/ejautocomplete#members:multiselectmode)” property set as “Delimiter”.
 N> 2. The delimiter string should have a single character and must be a symbol. 
 N> 3. Mostly the delimiter symbol is used as (comma ,) or (semi-colon ;) or any other special character.
 
@@ -280,7 +280,7 @@ N> 3. Mostly the delimiter symbol is used as (comma ,) or (semi-colon ;) or any 
 
 The text to be displayed in the popup when there are no suggestions available for the entered text.
 
-N> This property is applicable only when the [showEmptyResultText](http://help.syncfusion.com/js/api/ejautocomplete#members:showemptyresulttext) property set as “true”
+N> This property is applicable only when the [showEmptyResultText](http://help.syncfusion.com/api/js/ejautocomplete#members:showemptyresulttext) property set as “true”
 
 #### Default Value: 
 
@@ -301,7 +301,7 @@ N> This property is applicable only when the [showEmptyResultText](http://help.s
 
 Fills the autocomplete textbox with the first matched item from the suggestion list automatically based on the entered text when enabled. 
 
-N> This property works only when “[filterType](http://help.syncfusion.com/js/api/ejautocomplete#members:filtertype)” property is set as “startswith” 
+N> This property works only when “[filterType](http://help.syncfusion.com/api/js/ejautocomplete#members:filtertype)” property is set as “startswith” 
 
 #### Default Value: 
 
@@ -1031,7 +1031,7 @@ Enables or disables selecting multiple values from the suggestion list. Multiple
 </table>
 
 
-{%seealso%} [MultiSelectMode](http://help.syncfusion.com/js/api/global.html#MultiSelectMode) {%endseealso%}
+{%seealso%} [MultiSelectMode](http://help.syncfusion.com/api/js/global.html#MultiSelectMode) {%endseealso%}
 
 #### Default Value:  
 
@@ -1269,7 +1269,7 @@ Sort order specifies whether the suggestion list values has to be displayed in a
 </tr>
 </table>
 
-{%seealso%} [SortOrder](http://help.syncfusion.com/js/api/global.html#SortOrder) {%endseealso%}
+{%seealso%} [SortOrder](http://help.syncfusion.com/api/js/global.html#SortOrder) {%endseealso%}
 
 #### Default Value:  
 
