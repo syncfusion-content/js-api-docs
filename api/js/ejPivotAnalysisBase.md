@@ -71,3 +71,4 @@ This function returns the list of members available in the given field.
 
     var fieldMembers = ej.PivotAnalysis.getMembers(fieldObj);
 {% endhighlight %}
+

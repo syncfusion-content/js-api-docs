@@ -3071,3 +3071,4 @@ Triggers before editing the cells.
         cellEdit: function (args) {}
     });
 {% endhighlight %}
+

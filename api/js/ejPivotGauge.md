@@ -1262,3 +1262,4 @@ Triggers when PivotGauge successfully reaches client-side after any AJAX request
         renderSuccess: function (args) {}
     });
 {% endhighlight %}
+

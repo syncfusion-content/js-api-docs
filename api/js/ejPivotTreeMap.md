@@ -957,3 +957,4 @@ Triggers when PivotTreeMap successfully reaches client-side after any AJAX reque
         renderSuccess: function (args) {}
     });
 {% endhighlight %}
+

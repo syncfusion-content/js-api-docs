@@ -103,3 +103,4 @@ This function returns the list of checked and unchecked nodes from member editor
 
     var nodesState = ej.Pivot.getNodesState(treeViewObject);
 {% endhighlight %}
+
