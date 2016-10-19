@@ -185,3 +185,4 @@ This function initializes the page counts and page numbers for the PivotPager.
     var pagerObj = $("#PivotPager1").data("ejPivotPager");
     pagerObj.initPagerProperties(150, { CategorialPageSize: 10, SeriesPageSize: 10, CategorialCurrentPage: 1, SeriesCurrentPage: 1});
 {% endhighlight %}
+
