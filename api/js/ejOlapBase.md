@@ -37,3 +37,4 @@ This function gets the datasource, action and grid layout for rendering the Pivo
     var args = controlInfo;//contains the information about the action performed
     ej.olap.getJSONData(args, dataSource, controlObj);
 {% endhighlight %}
+

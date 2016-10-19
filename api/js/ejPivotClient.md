@@ -2659,3 +2659,4 @@ Triggers when PivotClient successfully completes rendering.
     });      
 
 {% endhighlight %}
+

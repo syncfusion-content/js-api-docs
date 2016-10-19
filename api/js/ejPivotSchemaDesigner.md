@@ -544,3 +544,4 @@ Triggers when we start dragging any field from PivotSchemaDesigner.
     });      
 
 {% endhighlight %}
+
