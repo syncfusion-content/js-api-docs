@@ -5934,7 +5934,7 @@ commonSeriesOptions : {
 });
  {% endhighlight %}
  
-See [Mode](http://help.syncfusion.com/js/api/global#members:mode). 
+See [Mode](http://help.syncfusion.com/api/js/global#members:mode). 
 
  
 ### commonSeriesOptions.emptyPointSettings.style `object`
@@ -7605,7 +7605,7 @@ Multiple</td>
 
 * "single"
 
-See. [Type](http://helpjs.syncfusion.com/js/api/global.html#LabelPosition)
+See. [Type](http://helpjs.syncfusion.com/api/js/global.html#LabelPosition)
  
 
 #### Example
@@ -22748,7 +22748,7 @@ series : [{
 });
  {% endhighlight %}
  
-See [Mode](http://help.syncfusion.com/js/api/global#members:mode). 
+See [Mode](http://help.syncfusion.com/api/js/global#members:mode). 
 
  
 ### series.emptyPointSettings.style `object`
@@ -27008,7 +27008,7 @@ Specifies the type of selection.
 
 * "single"
 
-See. [Type](http://helpjs.syncfusion.com/js/api/global.html#LabelPosition)
+See. [Type](http://helpjs.syncfusion.com/api/js/global.html#LabelPosition)
  
 
 #### Example

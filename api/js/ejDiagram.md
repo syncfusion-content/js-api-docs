@@ -4457,7 +4457,7 @@ $("#diagramcontent").ejDiagram({ layout: { fixedNode: "nodename"}});
 ### layout.getLayoutInfo `Object`
 {:#members:layout-getlayoutinfo}
 
-Customizes the orientation of trees/sub trees. For orientations, see [Chart Orientations](/js/api/global#chartorientations). For chart types, see [Chart Types](/js/api/global#charttypes)
+Customizes the orientation of trees/sub trees. For orientations, see [Chart Orientations](/api/js/global#chartorientations). For chart types, see [Chart Types](/api/js/global#charttypes)
 
 #### Default Value:
 
@@ -13438,17 +13438,17 @@ Export the diagram as downloadable files or as data
 <tr>
 <td class="name">format</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">format of the exported file/data. See [File Formats](/js/api/global#fileformats).</td>
+<td class="description last">format of the exported file/data. See [File Formats](/api/js/global#fileformats).</td>
 </tr>
 <tr>
 <td class="name">mode</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">to set whether to export diagram as a file or as raw data. See [Export Modes](/js/api/global#exportmodes).</td>
+<td class="description last">to set whether to export diagram as a file or as raw data. See [Export Modes](/api/js/global#exportmodes).</td>
 </tr>
 <tr>
 <td class="name">region</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">to set the region of the diagram to be exported. See [Region](/js/api/global#region).</td>
+<td class="description last">to set the region of the diagram to be exported. See [Region](/api/js/global#region).</td>
 </tr>
 <tr>
 <td class="name">bounds</td>
@@ -13549,12 +13549,12 @@ Fit the diagram content into diagram viewport
 		<tr>
 			<td class="name">[mode]</td>
 			<td class="type">string</td>
-			<td class="description last">to set the mode of fit to command. See [Fit Mode](/js/api/global#fitmode)</td>
+			<td class="description last">to set the mode of fit to command. See [Fit Mode](/api/js/global#fitmode)</td>
 		</tr>
 		<tr>
 			<td class="name">[region]</td>
 			<td class="type">string</td>
-			<td class="description last">to set whether the region to be fit will be based on diagram elements or page settings [Region](/js/api/global#region)</td>
+			<td class="description last">to set whether the region to be fit will be based on diagram elements or page settings [Region](/api/js/global#region)</td>
 		</tr>
 		<tr>
 			<td class="name">[margin]</td>
