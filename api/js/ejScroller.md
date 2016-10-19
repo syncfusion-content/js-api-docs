@@ -74,6 +74,10 @@ $('#scrollcontent').ejScroller();
 
 * module:ej.draggable.js
 
+* module:ej.touch.js
+
+* module:ej.scroller.js
+
 
 ## Members
 
@@ -1236,7 +1240,7 @@ $("#scrollcontent").ejScroller("refresh");
 
 
 
-### scrollX(pixel, enableAnimation , animationSpeed)
+### scrollX(pixel, disableAnimation, animationSpeed)
 {:#methods:scrollx}
 
 
@@ -1254,13 +1258,13 @@ Horizontal scroller moves to given pixel from its origin position. We can also s
 <tr>
 <td class="name"> 
 pixel </td>
-<td class="type"><span class="param-type">number</span></td>
+<td class="type"><span class="param-type">number|string</span></td>
 <td class="description">Horizontal scroller moves to the specified pixel.</td>
 </tr>
 <tr>
 <td class="name"> 
-enableAnimation </td>
-<td class="type"><span class="param-type">number</span></td>
+disableAnimation </td>
+<td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Specifies to enable/disable the animation.</td>
 </tr>
 <tr>
@@ -1336,7 +1340,7 @@ $("#scrollcontent").ejScroller("scrollX", 25,false,1000);       // call scrollX 
 
 
 
-### scrollY(pixel, enableAnimation , animationSpeed)
+### scrollY(pixel, disableAnimation, animationSpeed)
 {:#methods:scrolly}
 
 Vertical scroller moves to given pixel from its origin position. We can also specify the animation speed,in which the scroller has to move while re-positioning it.
@@ -1353,13 +1357,13 @@ Vertical scroller moves to given pixel from its origin position. We can also spe
 <tr>
 <td class="name"> 
 pixel </td>
-<td class="type"><span class="param-type">number</span></td>
+<td class="type"><span class="param-type">number|string</span></td>
 <td class="description">Vertical scroller moves to the specified pixel.</td>
 </tr>
 <tr>
 <td class="name"> 
-enableAnimation </td>
-<td class="type"><span class="param-type">number</span></td>
+disableAnimation </td>
+<td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Specifies to enable/disable the animation.</td>
 </tr>
 <tr>

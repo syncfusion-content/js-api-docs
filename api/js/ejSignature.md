@@ -151,20 +151,20 @@ Allows the type of the image format to be saved when the signature image is save
 <th>Description<br/><br/></th>
 </tr>
 <tr>
-<td>png<br/><br/></td>
-<td>To save the signature image with png format only.<br/><br/></td>
+<td>PNG<br/><br/></td>
+<td>To save the signature image with PNG format only.<br/><br/></td>
 </tr>
 <tr>
-<td>jpg<br/><br/></td>
-<td>To save the signature image with jpg format only.<br/><br/></td>
+<td>JPG<br/><br/></td>
+<td>To save the signature image with JPG format only.<br/><br/></td>
 </tr>
 <tr>
-<td>bmp<br/><br/></td>
-<td>To save the signature image with bmp format only.<br/><br/></td>
+<td>BMP<br/><br/></td>
+<td>To save the signature image with BMP format only.<br/><br/></td>
 </tr>
 <tr>
-<td>tiff<br/><br/></td>
-<td>To save the signature image with tiff format only.<br/><br/></td>
+<td>TIFF<br/><br/></td>
+<td>To save the signature image with TIFF format only.<br/><br/></td>
 </tr>
 </table>
 
@@ -462,9 +462,9 @@ Triggers when the stroke is changed.
 
 {% endhighlight %}
 
-### mousedown
+### mouseDown
 {:#events:mousedown}
-Triggerd when the pointer is clicked or touched in the signature canvas.
+Triggered when the pointer is clicked or touched in the signature canvas.
 <table>
 <tr>
 <th>Name<br/><br/></th>
@@ -504,9 +504,9 @@ Triggerd when the pointer is clicked or touched in the signature canvas.
 
 {% endhighlight %}
 
-### mousemove
+### mouseMove
 {:#events:mousemove}
-Triggerd when the pointer is moved in the signature canvas.
+Triggered when the pointer is moved in the signature canvas.
 <table>
 <tr>
 <th>Name<br/><br/></th>
@@ -548,9 +548,9 @@ Triggerd when the pointer is moved in the signature canvas.
 {% endhighlight %}
 
 
-### mouseup
+### mouseUp
 {:#events:mouseup}
-Triggerd when the pointer is released after click or touch in the signature canvas.
+Triggered when the pointer is released after click or touch in the signature canvas.
 <table>
 <tr>
 <th>Name<br/><br/></th>
