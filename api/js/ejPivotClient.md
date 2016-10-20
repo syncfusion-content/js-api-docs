@@ -906,7 +906,7 @@ Allows the user to bind the item by using its unique name as field name for Rela
     $("#PivotClient1").ejPivotClient({ dataSource: { values: [{ fieldName : "MyFieldName" }] } });
 {% endhighlight %}
 
-### dataSource.values.fielCaption `string`
+### dataSource.values.fieldCaption `string`
 {:#members:datasource-values-fieldcaption}
 
 Allows the user to set the display caption for an item for Relational datasource.
@@ -2275,7 +2275,7 @@ Triggers before saving the current collection of reports.
 <tr>
 <td class="name">saveReportSetting</td>
 <td class="type">object</td>
-<td class="description last">returns the object which holds the necessary parameteres required for saving the report collection.</td>
+<td class="description last">returns the object which holds the necessary parameters required for saving the report collection.</td>
 </tr>
 </tbody>
 </table>
@@ -2314,7 +2314,7 @@ Triggers before loading a saved collection of reports.
 <tr>
 <td class="name">loadReportSetting</td>
 <td class="type">object</td>
-<td class="description last">returns the object which holds the necessary parameteres required for loading a report collection from database.</td>
+<td class="description last">returns the object which holds the necessary parameters required for loading a report collection from database.</td>
 </tr>
 </tbody>
 </table>
@@ -2354,7 +2354,7 @@ Triggers before fetching the report collection from storage.
 <tr>
 <td class="name">fetchReportSetting</td>
 <td class="type">object</td>
-<td class="description last">returns the object which holds the necessary parameteres required for fetching the report names stored in database.</td>
+<td class="description last">returns the object which holds the necessary parameters required for fetching the report names stored in database.</td>
 </tr>
 </tbody>
 </table>
