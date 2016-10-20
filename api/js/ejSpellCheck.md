@@ -636,7 +636,7 @@ To get the error word highlighted string by passing the given input sentence.
 ### ignoreAll(word, targetSentence)
 {:#methods:ignoreall}
 
-To ignore all the error word occurences from the given input sentence.
+To ignore all the error word occurrences from the given input sentence.
 
 <table class="params">
     <thead>
@@ -795,13 +795,13 @@ To change the error word once from the given input sentence.
 
 {% endhighlight %}
 
-> The 'index' is the error word occurence in the given input string. For example, if you pass the index value as 1 means and the error word as textarea it will
-ignore the second occurence (which is present after the word dialog) in the given string.  
+> The 'index' is the error word occurrence in the given input string. For example, if you pass the index value as 1 means and the error word as textarea it will
+ignore the second occurrence (which is present after the word dialog) in the given string.  
 
 ### changeAll(word, targetSentence, changeWord)
 {:#methods:changeall}
 
-To change all the error word occurences from the given input sentence.
+To change all the error word occurrences from the given input sentence.
 
 <table class="params">
     <thead>
@@ -866,7 +866,7 @@ To add the words into the custom dictionary.
     </thead>
     <tbody>
         <tr>
-            <td class="name">Customword</td>
+            <td class="name">customWord</td>
             <td class="type">string</td>
             <td class="description">Word to add into the dictionary file</td>
         </tr>
@@ -898,7 +898,7 @@ To add the words into the custom dictionary.
 ### actionSuccess
 {:#events:actionsuccess}
 
-Triggers on the success of ajax call request.
+Triggers on the success of AJAX call request.
 
 <table class="params">
     <thead>
@@ -963,7 +963,7 @@ Triggers on the success of ajax call request.
 ### actionBegin
 {:#events:actionbegin}
 
-Triggers on the ajax call request begining.
+Triggers on the AJAX call request beginning.
 
 <table class="params">
     <thead>
@@ -1029,7 +1029,7 @@ Triggers on the ajax call request begining.
 ### actionFailure
 {:#events:actionfailure}
 
-Triggers when the ajax call request failure.
+Triggers when the AJAX call request failure.
 
 <table class="params">
     <thead>
@@ -1043,7 +1043,7 @@ Triggers when the ajax call request failure.
         <tr>
             <td class="name">errorMessage</td>
             <td class="type">string</td>
-            <td class="description">Returns ajax request failure error message.</td>
+            <td class="description">Returns AJAX request failure error message.</td>
         </tr>
         <tr>
             <td class="name">requestType</td>
@@ -1594,7 +1594,7 @@ Triggers when the spell check control performing the spell check operations such
     <tr>
         <td class="name">argument</td>
         <td class="type">object</td>
-        <td class="description">Event parameters when ignore all the occurences of an error word:
+        <td class="description">Event parameters when ignore all the occurrences of an error word:
         <table class="params">
             <thead>
                 <tr>
@@ -1641,7 +1641,7 @@ Triggers when the spell check control performing the spell check operations such
     <tr>
         <td class="name">argument</td>
         <td class="type">object</td>
-        <td class="description">Event parameters when changing the error word occurence once:
+        <td class="description">Event parameters when changing the error word occurrence once:
         <table class="params">
             <thead>
                 <tr>
@@ -1657,7 +1657,7 @@ Triggers when the spell check control performing the spell check operations such
                     <td class="description">Returns the cancel option value.</td>
                 </tr>
                 <tr>
-                    <td class="name">changableWord</td>
+                    <td class="name">changeableWord</td>
                     <td class="type">string</td>
                     <td class="description">Returns the error word to change.</td>
                 </tr>
@@ -1698,7 +1698,7 @@ Triggers when the spell check control performing the spell check operations such
     <tr>
         <td class="name">argument</td>
         <td class="type">object</td>
-        <td class="description">Event parameters when changing all the occurences of an error word:
+        <td class="description">Event parameters when changing all the occurrences of an error word:
         <table class="params">
             <thead>
                 <tr>
@@ -1714,7 +1714,7 @@ Triggers when the spell check control performing the spell check operations such
                     <td class="description">Returns the cancel option value.</td>
                 </tr>
                 <tr>
-                    <td class="name">changableWord</td>
+                    <td class="name">changeableWord</td>
                     <td class="type">string</td>
                     <td class="description">Returns the error word to change.</td>
                 </tr>
