@@ -1550,7 +1550,7 @@ DropDownList textbox displayed with the rounded corner style.
 ### sortOrder  `enum`
 {:#members:sortorder}
 
-<ts name="ej.SortOrder"/>
+<ts ref="ej.SortOrder"/>
 
 When the enableSorting property value is set to true, this property helps to sort the items either in ascending or descending order
 
@@ -1563,15 +1563,11 @@ When the enableSorting property value is set to true, this property helps to sor
 </thead>
 <tbody>
 <tr>
-<td class="name">
-ascending</td>
-
+<td class="name">Ascending</td>
 <td class="description last"> Sort the data in ascending order</td>
 </tr>
 <tr>
-<td class="name">
-descending</td>
-
+<td class="name">Descending</td>
 <td class="description last">Sort the data in descending order</td>
 </tr>
 </tbody>
@@ -1579,7 +1575,7 @@ descending</td>
 
 #### Default Value
 
-* ej.sortOrder.Ascending
+* ej.SortOrder.Ascending
 
 #### Example
 
