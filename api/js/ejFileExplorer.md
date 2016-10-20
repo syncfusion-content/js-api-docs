@@ -5320,7 +5320,7 @@ type</td>
 
 
 
-Fires when the items from grid view or tile view or largeicons view of FileExplorer control is unselected.
+Fires when the items from grid view or tile view or large icons view of FileExplorer control is unselected.
 
 <table class="params">
 <thead>
