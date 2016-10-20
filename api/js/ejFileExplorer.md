@@ -5320,7 +5320,7 @@ type</td>
 
 
 
-Fires when the items from grid view or tile view of FileExplorer control is unselected.
+Fires when the items from grid view or tile view or largeicons view of FileExplorer control is unselected.
 
 <table class="params">
 <thead>
@@ -5344,11 +5344,6 @@ Fires when the items from grid view or tile view of FileExplorer control is unse
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="name">cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be canceled, else false.</td>
-</tr>
 <tr>
 <td class="name">model</td>
 <td class="type"><ts ref="ej.FileExplorer.Model"/>
