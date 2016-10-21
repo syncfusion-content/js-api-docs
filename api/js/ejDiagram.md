@@ -2593,8 +2593,10 @@ $("#diagramcontent").ejDiagram({connectors : connector});
 
 {% endhighlight %}
 
-### connectors.shape.relationship`String`
+### connectors.shape.relationship `enum`
 {:#members:connectors-shape-relationship}
+
+<ts name = "ej.datavisualization.Diagram.ClassifierShapes"/>
 
 Defines the role of the connector in a UML Class Diagram. Applicable, if the type of the connector is "classifier".
 
@@ -2606,6 +2608,18 @@ Defines the role of the connector in a UML Class Diagram. Applicable, if the typ
        </tr>
    </thead>
     <tbody>
+        <tr>
+            <td class="name">class</td>
+            <td class="description last">Used to define a Class</td>
+       </tr>
+        <tr>
+            <td class="name">Interface</td>
+            <td class="description last">Used to define an Interface</td>
+       </tr>
+        <tr>
+            <td class="name">Enumeration</td>
+            <td class="description last">Used to define an Enumeration</td>
+       </tr>
         <tr>
             <td class="name">Association</td>
             <td class="description last">Used to notate association in UML Class Diagram</td>
@@ -2646,6 +2660,15 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
 {% endhighlight %}
+
+### connectors.shape.multiplicity `Object`
+{:#members:connectors-shape-multiplicity}
+
+Defines the multiplicity option of the connector
+
+#### Default Value:
+
+* null
 
 ### connectors.shape.multiplicity.type `enum`
 {:#members:connectors-shape-multiplicity-type}
@@ -5162,32 +5185,9 @@ $("#diagramcontent").ejDiagram({ nodes:[group] });
 ### nodes.classifier `enum`
 {:#members:nodes-classifier}
 
-<ts name = "ej.datavisualization.Diagram.ClassifierShapes"/>
+<ts ref = "ej.datavisualization.Diagram.ClassifierShapes"/>
 
 Sets the type of UML classifier. Applicable, if the node is a UML Class Diagram shape.
-
-<table class="props">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-       </tr>
-   </thead>
-    <tbody>
-        <tr>
-            <td class="name">class</td>
-            <td class="description last">Used to define a Class</td>
-       </tr>
-        <tr>
-            <td class="name">Interface</td>
-            <td class="description last">Used to define an Interface</td>
-       </tr>
-        <tr>
-            <td class="name">Enumeration</td>
-            <td class="description last">Used to define an Enumeration</td>
-       </tr>
-   </tbody>
-</table>
 
 #### Default Value:
 
