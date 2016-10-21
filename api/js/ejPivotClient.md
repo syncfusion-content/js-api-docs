@@ -906,7 +906,7 @@ Allows the user to bind the item by using its unique name as field name for Rela
     $("#PivotClient1").ejPivotClient({ dataSource: { values: [{ fieldName : "MyFieldName" }] } });
 {% endhighlight %}
 
-### dataSource.values.fielCaption `string`
+### dataSource.values.fieldCaption `string`
 {:#members:datasource-values-fieldcaption}
 
 Allows the user to set the display caption for an item for Relational datasource.
@@ -1197,7 +1197,7 @@ Contains the respective cube name from OLAP database as string type.
 ### dataSource.data `object`
 {:#members:datasource-data}
 
-Provides the raw data source for the PivotClient for Relational mode.
+Provides the raw data source for the PivotClient.
 
 #### Default Value: null
 
