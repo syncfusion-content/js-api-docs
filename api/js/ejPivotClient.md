@@ -1197,7 +1197,7 @@ Contains the respective cube name from OLAP database as string type.
 ### dataSource.data `object`
 {:#members:datasource-data}
 
-Provides the raw data source for the PivotClient for Relational mode.
+Provides the raw data source for the PivotClient.
 
 #### Default Value: null
 
