@@ -77,6 +77,20 @@ Initializes the data source for the PivotTreeMap widget, when it functions compl
     $("#PivotTreeMap1").ejPivotTreeMap( { dataSource: { data: value } });
 {% endhighlight %}
 
+### dataSource.data `object`
+{:#members:datasource-data}
+
+Provides the raw data source for the PivotTreeMap.
+
+#### Default Value: null
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { data: value } });
+{% endhighlight %}
+
 ### dataSource.cube `string`
 {:#members:datasource-cube}
 
