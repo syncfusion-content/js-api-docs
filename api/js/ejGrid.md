@@ -1088,6 +1088,36 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
+### columns.enableGroupByFormat `Boolean`
+{:#members:columns-enablegroupbyformat}
+
+Gets or sets a value that indicates to groups the column based on its column format.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+    <div id="Grid"></div>
+    <script type="text/javascript">
+        $(function () {	
+            $("#Grid").ejGrid({
+                dataSource: window.gridData,
+				allowGrouping: true,
+				allowPaging: true,
+                columns: [
+                            { field: "OrderID" },
+                             { field: "CustomerID" },
+                             { field: "Freight", format: "{0:C}", enableGroupByFormat: true },
+                             { field: "OrderDate", format: "{0:MM/dd/yyyy}", enableGroupByFormat: true },
+                ]
+            });
+        });
+    </script>
+{% endhighlight %}
+
 ### columns.field `String`
 {:#members:columns-field}
 
