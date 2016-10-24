@@ -949,7 +949,7 @@ Specifies the colorMappings of the shape layer in map
 ### layers.bubbleSettings.colorMappings.rangeColorMapping `array`
 {:#members:layers-bubbleSettings-colormappings-rangecolormapping}
 
-Specifies the range colorMappings in the bubble layer of map.
+Specifies the range colorMappings in the bubble layer.
 
 #### Default Value
 
@@ -957,7 +957,7 @@ Specifies the range colorMappings in the bubble layer of map.
 ### layers.bubbleSettings.colorMappings.rangeColorMapping.from `number`
 {:#members:layers-bubbleSettings-colormappings-rangecolormapping-from}
 
-Specifies the start range colorMappings in the bubble layer of map.
+Start range colorMappings in the bubble layer.
 
 #### Default Value
 
@@ -974,7 +974,7 @@ Specifies the start range colorMappings in the bubble layer of map.
 ### layers.bubbleSettings.colorMappings.rangeColorMapping.to `number`
 {:#members:layers-bubbleSettings-colormappings-rangecolormapping-to}
 
-Specifies the to range colorMappings in the shape layer of map.
+End range colorMappings in the bubble layer.
 
 #### Default Value
 
@@ -991,12 +991,12 @@ Specifies the to range colorMappings in the shape layer of map.
 ### layers.bubbleSettings.colorMappings.rangeColorMapping.gradientColors `array`
 {:#members:layers-bubbleSettings-colormappings-rangecolormapping-gradientcolors}
 
-Specifies the gradientColors in the shape layer of map.
+GradientColors in the bubble layer of map.
 
 ### layers.bubbleSettings.colorMappings.rangeColorMapping.color `string`
 {:#members:layers-bubbleSettings-colormappings-rangecolormapping-gradientcolors}
 
-Specifies the color in the bubble layer of map.
+Color of the bubble layer.
 
 
 #### Default Value
