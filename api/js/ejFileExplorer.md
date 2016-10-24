@@ -400,7 +400,7 @@ The items property is used to configure and group the required ContextMenu items
 * {% highlight javascript %} 
         {
         navbar: ["NewFolder", "Upload", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "Getinfo"],
-        cwd: ["Refresh", "Paste","|", "Sortby", "|", "NewFolder", "Upload", "|", "Getinfo"],
+        cwd: ["Refresh", "Paste","|", "SortBy", "|", "NewFolder", "Upload", "|", "Getinfo"],
         files: ["Open", "Download", "|", "Upload", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "OpenFolderLocation", "Getinfo"]
         }
 {% endhighlight %}
@@ -421,7 +421,7 @@ The items property is used to configure and group the required ContextMenu items
                         // removed the "NewFolder" item from NavigationPane ContextMenu
                         navbar: ["Upload", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "Getinfo"],
                         // added the custom menu item (View) to Current working directory ContextMenu
-                        cwd: ["Refresh", "Paste","|", "Sortby", "|", "NewFolder", "Upload", "|", "Getinfo", "View"],
+                        cwd: ["Refresh", "Paste","|", "SortBy", "|", "NewFolder", "Upload", "|", "Getinfo", "View"],
                         // removed "Upload" item from Selected files/ folder's ContextMenu
                         files: ["Open", "Download", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "OpenFolderLocation", "Getinfo"]
                 },
@@ -461,7 +461,7 @@ The customMenuFields property is used to define custom functionality for custom 
                         // removed the "NewFolder" item from NavigationPane ContextMenu
                         navbar: ["Upload", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "Getinfo"],
                         // added the custom ContextMenu item (View) to Current working directory ContextMenu
-                        cwd: ["Refresh", "Paste","|", "Sortby", "|", "NewFolder", "Upload", "|", "Getinfo", "View"],
+                        cwd: ["Refresh", "Paste","|", "SortBy", "|", "NewFolder", "Upload", "|", "Getinfo", "View"],
                         // removed "Upload" item from Selected files/ folder's ContextMenu
                         files: ["Open", "Download", "|", "Delete", "Rename", "|", "Cut", "Copy", "Paste", "|", "OpenFolderLocation", "Getinfo"]
                 },
@@ -2018,7 +2018,7 @@ The tools property is used to configure and group required toolbar items in File
 
 
 
-* { creation: ["NewFolder"], navigation: ["Back", "Forward", "Upward"], addressBar: ["Addressbar"], editing: ["Refresh", "Upload", "Delete", "Rename", "Download"], copyPaste: ["Cut", "Copy", "Paste"], getProperties: ["Details"], searchBar: ["Searchbar"], layout: ["Layout"], sortby: ["Sortby"]}
+* { creation: ["NewFolder"], navigation: ["Back", "Forward", "Upward"], addressBar: ["Addressbar"], editing: ["Refresh", "Upload", "Delete", "Rename", "Download"], copyPaste: ["Cut", "Copy", "Paste"], getProperties: ["Details"], searchBar: ["Searchbar"], layout: ["Layout"], sortBy: ["SortBy"]}
 
 
 
@@ -2083,7 +2083,7 @@ The toolsList property is used to arrange the toolbar items in the FileExplorer 
 
 
 
-* ["layout", "creation", "navigation", "addressBar", "editing", "copyPaste", "sortby", "getProperties", "searchBar"]
+* ["layout", "creation", "navigation", "addressBar", "editing", "copyPaste", "sortBy", "getProperties", "searchBar"]
 
 
 
