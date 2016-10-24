@@ -946,6 +946,71 @@ Specifies the colorMappings of the shape layer in map
 
 {% endhighlight %}
 
+### layers.bubbleSettings.colorMappings.rangeColorMapping `array`
+{:#members:layers-bubbleSettings-colormappings-rangecolormapping}
+
+Specifies the range colorMappings in the bubble layer.
+
+#### Default Value
+
+* null
+### layers.bubbleSettings.colorMappings.rangeColorMapping.from `number`
+{:#members:layers-bubbleSettings-colormappings-rangecolormapping-from}
+
+Start range colorMappings in the bubble layer.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set start range colorMapping API value during initialization 
+  $("#container").ejMap({layers:{ bubbleSettings: {colorMappings:{rangeColorMapping:[{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]}]}}}});
+{% endhighlight %}
+
+### layers.bubbleSettings.colorMappings.rangeColorMapping.to `number`
+{:#members:layers-bubbleSettings-colormappings-rangecolormapping-to}
+
+End range colorMappings in the bubble layer.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set to range colorMapping API value during initialization 
+  $("#container").ejMap({layers:{ bubbleSettings: {colorMappings:{rangeColorMapping:[{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]}]}}}});
+{% endhighlight %}
+
+### layers.bubbleSettings.colorMappings.rangeColorMapping.gradientColors `array`
+{:#members:layers-bubbleSettings-colormappings-rangecolormapping-gradientcolors}
+
+GradientColors in the bubble layer of map.
+
+### layers.bubbleSettings.colorMappings.rangeColorMapping.color `string`
+{:#members:layers-bubbleSettings-colormappings-rangecolormapping-gradientcolors}
+
+Color of the bubble layer.
+
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set gradientColors API value during initialization 
+  $("#container").ejMap({layers:{ bubbleSettings: {colorMappings:{rangeColorMapping:[{from: 0,to: 100000,color:"#9CBF4E"}]}}}});
+{% endhighlight %}
+
 
 ### layers.bubbleSettings.colorValuePath `string`
 {:#members:layers-bubblesettings-colorvaluepath}
