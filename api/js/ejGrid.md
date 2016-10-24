@@ -1102,16 +1102,16 @@ Gets or sets a value that indicates to groups the column based on its column for
 {% highlight html %}
     <div id="Grid"></div>
     <script type="text/javascript">
-        $(function () {	
+        $(function () {
             $("#Grid").ejGrid({
                 dataSource: window.gridData,
-				allowGrouping: true,
-				allowPaging: true,
+                allowGrouping: true,
+                allowPaging: true,
                 columns: [
                             { field: "OrderID" },
-                             { field: "CustomerID" },
-                             { field: "Freight", format: "{0:C}", enableGroupByFormat: true },
-                             { field: "OrderDate", format: "{0:MM/dd/yyyy}", enableGroupByFormat: true },
+                            { field: "CustomerID" },
+                            { field: "Freight", format: "{0:C}", enableGroupByFormat: true },
+                            { field: "OrderDate", format: "{0:MM/dd/yyyy}", enableGroupByFormat: true },
                 ]
             });
         });
