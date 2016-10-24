@@ -1089,6 +1089,39 @@ Triggers before any AJAX request is passed from PivotGauge to service methods.
     });
 {% endhighlight %}
 
+### beforePivotEnginePopulate
+{:#events:beforepivotenginepopulate}
+
+Triggers before populating the pivot engine on operating in client mode.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">gaugeObject</td>
+<td class="type">object</td>
+<td class="description last">returns the current instance of PivotGauge control.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGauge1").ejPivotGauge({
+        beforePivotEnginePopulate: function (args) {}
+    });
+{% endhighlight %}
 
 ### load
 {:#events:load}
