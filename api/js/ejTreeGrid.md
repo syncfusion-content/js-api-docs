@@ -499,6 +499,23 @@ Header text of the column.
 
 {% endhighlight %}
 
+### columns.showCheckbox `boolean`
+{:#members:columns-showcheckbox}
+
+Enables or disables the checkbox visibility in a column to make it as a checkbox column
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+         
+        $("#treegrid").ejTreeGrid({columns: [{ field: "name",showCheckbox: true}]});
+
+{% endhighlight %}
+
 
 ### columns.visible `boolean`
 {:#members:columns-visible}
@@ -1659,8 +1676,14 @@ Specifies the index of the selected row.
 
 {% endhighlight %}
 
-### selectionMode `enum`
-{:#members:selectionmode}
+
+### selectionSettings `object`
+{:#members:selectionsettings}
+
+Specifies the settings for row and cell selection.
+
+### selectionSettings.selectionMode `enum`
+{:#members:selectionsettings-selectionmode}
 
 <ts name = "ej.TreeGrid.SelectionMode"/>
 
@@ -1685,10 +1708,10 @@ Specifies the type of selection whether to select row or cell.
 </tbody>
 </table>
 
-#### Default Value
+#### Default Value:
+{:.param}
 
 * ej.TreeGrid.SelectionMode.Row
-
 
 #### Example
 
@@ -1697,18 +1720,20 @@ Specifies the type of selection whether to select row or cell.
           
 <div id="treegrid"></div> 
 <script>   
-        $("#treegrid").ejTreeGrid({ selectionMode:ej.TreeGrid.SelectionMode.Row });                      * 
+         $("#treegrid").ejTreeGrid({ 
+         selectionSettings:{selectionMode : ej.TreeGrid.SelectionMode.Row  }
+         });   
 </script>           
 
 {% endhighlight %}
 
 
-### selectionType `enum`
-{:#members:selectiontype}
+### selectionSettings.selectionType `enum`
+{:#members:selectionsettings-selectiontype}
 
 <ts name = "ej.TreeGrid.SelectionType"/>
 
-Specifies the type of selection whether to select single row or multiple rows.
+Specifies the type of selection whether single, multiple or checkbox.
 
 <table class="params">
 <thead>
@@ -1726,20 +1751,69 @@ Specifies the type of selection whether to select single row or multiple rows.
 <td class="name">Multiple</td>
 <td class="description">you can select a multiple row.</td>
 </tr>
+<tr>
+<td class="name">Checkbox</td>
+<td class="description">you can select rows using checkbox.</td>
+</tr>
 </tbody>
 </table>
 
-#### Default Value
+#### Default Value:
 
 * ej.TreeGrid.SelectionType.Single
 
+#### Example
+
+{% highlight html %}
+          
+        $("#treegrid").ejTreeGrid({ 
+        selectionSettings:{selectionType : ej.TreeGrid.SelectionType.Multiple }
+        });                   
+
+{% endhighlight %}
+
+
+### selectionSettings.enableHierarchySelection `boolean`
+{:#members:selectionsettings-enablehierarchyselection}
+
+Enables or disables the selection by hierarchy in check box selection
+
+#### Default Value:
+{:.param}
+
+* true
 
 #### Example
 
 
 {% highlight html %}
           
-        $("#treegrid").ejTreeGrid({ selectionType:ej.TreeGrid.SelectionType.Multiple });                   
+<div id="treegrid"></div> 
+<script>   
+        $("#treegrid").ejTreeGrid({ 
+         selectionSettings:{enableHierarchySelection : false }
+         });                      
+</script>           
+
+{% endhighlight %}
+
+
+### selectionSettings.enableSelectAll `boolean`
+{:#members:selectionsettings-enableselectall}
+
+Toggles the visibility of the checkbox in column header, using which all the check boxes can be selected or unselected.
+
+#### Default Value:
+
+* true
+
+#### Example
+
+{% highlight html %}
+          
+        $("#treegrid").ejTreeGrid({ 
+        selectionSettings:{enableSelectAll : false }
+        });                   
 
 {% endhighlight %}
 

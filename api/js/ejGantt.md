@@ -1182,6 +1182,9 @@ Specifies the data source field name to be displayed as right task label
 
 {% endhighlight %}
 
+
+
+
 ### leftTaskLabelTemplate `string`
 {:#members:lefttasklabeltemplate}
 
@@ -1610,6 +1613,162 @@ Specifies the template for parent taskbar
 
 {% endhighlight %}
 
+
+### taskType `enum`
+{:#members:tasktype}
+
+<ts name = "ej.Gantt.TaskType"/>
+
+Specifies the nature of a task for caluculating the work,  and it can fixed duration, fixed work and fixed resource unit
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">FixedUnit</td>
+<td class="description">Resource unit reamins constant while editing the work and duration values.</td>
+</tr>
+<tr>
+<td class="name">FixedWork</td>
+<td class="description">Work value of a task remains constant while editing duration and resoruce unit values.</td>
+</tr>
+<tr>
+<td class="name">FixedDuration</td>
+<td class="description">Duration value remains constant while editing work and resoruce unit values.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value:
+{:.param}
+
+*  ej.Gantt.TaskType.FixedUnit
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  
+                        taskType : ej.Gantt.TaskType.FixedWork });
+</script>
+
+{% endhighlight %}
+
+
+
+### workUnit `enum`
+{:#members:workunit}
+
+<ts name = "ej.Gantt.WorkUnit"/>
+
+Specifies the unit for the work involved in a task and it can be day, hour or minute
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Day</td>
+<td class="description">Dislays the work involved in a task in days.</td>
+</tr>
+<tr>
+<td class="name">Hour</td>
+<td class="description">Dislays the work involved in a task in hours.</td>
+</tr>
+<tr>
+<td class="name">Minute</td>
+<td class="description">Dislays the work involved in a task in minutes</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value:
+{:.param}
+
+*  ej.Gantt.WorkUnit.Hour
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  
+                        workUnit : ej.Gantt.WorkUnit.Day });
+</script>
+
+{% endhighlight %}
+
+
+### taskSchedulingMode `enum`
+{:#members:taskschedulingmode}
+
+<ts name = "ej.Gantt.TaskSchedulingMode"/>
+
+Specifies the task scheduling mode for a project and this will be set to all the tasks available in the project
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Auto</td>
+<td class="description">All the tasks in the project will be displayed in auto scheduled mode,
+ where the tasks are scheduled automatically over non-working days and holidays.</td>
+</tr>
+<tr>
+<td class="name">Manual</td>
+<td class="description">All the tasks in the project will be displayed in manually scheduled mode.</td>
+</tr>
+<tr>
+<td class="name">Custom</td>
+<td class="description">Project consists of tasks with both auto and manually scheduled modes, based on the datasource values</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value:
+{:.param}
+
+*  ej.Gantt.TaskSchedulingMode.Auto
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  
+                        taskSchedulingMode : ej.Gantt.TaskSchedulingMode.Auto });
+</script>
+
+{% endhighlight %}
+
+
 ### selectionType `enum`
 {:#members:selectiontype}
 
@@ -1675,6 +1834,110 @@ Specifies the background of parent progressbar in Gantt
 <script>                  
         $("#gantt").ejGantt({  
                         parentProgressbarBackground : "#F2F2F2"});
+</script>
+
+{% endhighlight %}
+
+
+### resourceUnitMapping `string`
+{:#members:resourceunitmapping}
+
+Specifies the mapping property path for resource's percent effort involved in a task in datasource
+
+#### Default Value:
+{:.param}
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  
+                        resourceunitmapping : "Unit"});
+</script>
+
+{% endhighlight %}
+
+
+### notesMapping `string`
+{:#members:notesmapping }
+
+Specifies the mapping property path for the task description in datasource
+
+#### Default Value:
+{:.param}
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  
+                        notesMapping : "notes"});
+</script>
+
+{% endhighlight %}
+
+
+### taskSchedulingModeMapping `string`
+{:#members:taskschedulingmodemapping }
+
+Specifies the mapping property path for the task scheuling mode for a task in datasource
+
+#### Default Value:
+{:.param}
+
+* "auto"
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  
+                        taskSchedulingModeMapping : "taskMode"});
+</script>
+
+{% endhighlight %}
+
+
+### durationUnitMapping `string`
+{:#members:durationunitmapping }
+
+Specifies the mapping property path for task duration unit in datasoruce
+
+#### Default Value:
+{:.param}
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  
+                        durationUnitMapping : "durationUnit"});
 </script>
 
 {% endhighlight %}
@@ -1949,6 +2212,35 @@ Enables or Disables rendering baselines in Gantt , when enabled baseline is rend
         $("#gantt").ejGantt(
  {
     renderBaseline: false
+ });            
+</script>
+
+{% endhighlight %}
+
+
+
+### validateManaulTasksOnLinking `boolean`
+{:#members:validatemanaultasksonlinking}
+
+Enables or disables the schedule date validation while connecting a manually scheduled task with predecessor
+
+#### Default Value:
+{:.param}
+
+* "false"
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
+        $("#gantt").ejGantt(
+ {
+    validateManaulTasksOnLinking: true
  });            
 </script>
 
