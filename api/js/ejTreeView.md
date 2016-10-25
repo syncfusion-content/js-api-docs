@@ -2345,10 +2345,15 @@ $("#treeView").ejTreeView("checkNode", $("#book"));
 
 
 
-### collapseAll([levelUntil])
+### collapseAll([levelUntil],[excludeHiddenNodes])
 {:#methods:collapseall}
 
-This method is used to collapse all nodes in TreeView control. If you want to collapse all nodes up to the specific level in TreeView control then we need to pass level as argument to this method.
+This method is used to collapse all nodes in TreeView control. If you want to collapse all nodes up to the specific level in TreeView control then we need to pass `levelUntil` as argument to this method.
+
+If you want to collapse all nodes except the hidden nodes then we need to pass `excludeHiddenNodes` as true to this method.
+
+If you want to collapse all nodes up to the specific level except the hidden nodes then we need to pass `levelUntil` and `excludeHiddenNodes` as arguments to this method.
+
 
 <table class="params">
 <thead>
@@ -2363,6 +2368,11 @@ This method is used to collapse all nodes in TreeView control. If you want to co
 <td class="name">levelUntil</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">TreeView nodes will collapse until the given level</td>
+</tr>
+<tr>
+<td class="name">excludeHiddenNodes</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Weather exclude the hidden nodes of TreeView while collapse all nodes</td>
 </tr>
 </tbody>
 </table>
@@ -2385,6 +2395,8 @@ $("#treeView").ejTreeView({
 var treeObj = $("#treeView").data("ejTreeView");
 treeObj.collapseAll(); // All the TreeView nodes will be collapsed.
 treeObj.collapseAll(2); // All the TreeView nodes up to level 2 will be collapsed.
+treeObj.collapseAll(null, true); // All the Treeview nodes except hidden nodes will be collapsed.
+treeObj.collapseAll(2, true); // All the Treeview nodes except hidden nodes will be collapsed up to the level 2.
 </script>{% endhighlight %}
 
 
@@ -2661,10 +2673,15 @@ $("#treeView").ejTreeView("ensureVisible", $("#book"));
 
 
 
-### expandAll([levelUntil])
+### expandAll([levelUntil],[excludeHiddenNodes])
 {:#methods:expandall}
 
-This method is used to expand all nodes in TreeView control. If you want to expand all nodes up to the specific level in TreeView control then we need to pass level as argument to this method.
+This method is used to expand all nodes in TreeView control. If you want to expand all nodes up to the specific level in TreeView control then we need to pass `levelUntil` as argument to this method.
+
+If you want to expand all nodes except the hidden nodes then we need to pass `excludeHiddenNodes` as true to this method.
+
+If you want to expand all nodes up to the specific level except the hidden nodes then we need to pass `levelUntil` and `excludeHiddenNodes` as arguments to this method.
+
 
 
 <table class="params">
@@ -2680,6 +2697,11 @@ This method is used to expand all nodes in TreeView control. If you want to expa
 <td class="name">levelUntil</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">TreeView nodes will expand until the given level</td>
+</tr>
+<tr>
+<td class="name">excludeHiddenNodes</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Weather exclude the hidden nodes of TreeView while expand all nodes</td>
 </tr>
 </tbody>
 </table>
@@ -2701,6 +2723,8 @@ $("#treeView").ejTreeView({
 var treeObj = $("#treeView").data("ejTreeView");
 treeObj.expandAll(); // All the TreeView nodes will be expanded.
 treeObj.expandAll(2); // All the TreeView nodes up to the level 2 will be expanded.
+treeObj.expandAll(null, true); // All the Treeview nodes except hidden nodes will be expanded.
+treeObj.expandAll(2, true); // All the Treeview nodes except hidden nodes will be expanded up to the level 2.
 </script>{% endhighlight %}
 
 
@@ -6971,13 +6995,13 @@ Fires when node clicked successfully.
 <td class="name"> 
  id </td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the id of current element</td>
+<td class="description">returns the id of currently clicked TreeView node</td>
 </tr>
 <tr>
 <td class="name"> 
  parentId </td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the parentId of current element<</td>
+<td class="description">returns the parentId of currently clicked TreeView node<</td>
 </tr>
 </tbody>
 </table>
