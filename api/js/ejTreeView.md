@@ -6971,13 +6971,13 @@ Fires when node clicked successfully.
 <td class="name"> 
  id </td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the id of current element</td>
+<td class="description">returns the id of currently clicked TreeView node</td>
 </tr>
 <tr>
 <td class="name"> 
  parentId </td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the parentId of current element<</td>
+<td class="description">returns the parentId of currently clicked TreeView node<</td>
 </tr>
 </tbody>
 </table>
