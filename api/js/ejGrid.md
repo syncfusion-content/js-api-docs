@@ -2727,7 +2727,7 @@ Gets or sets a value that customize the group caption format.
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     allowGrouping:true,
-    groupSettings:{captionFormat: "{{:field}} - {{:key}} : {{:count}} {{if count == 1 }} item {{else}} items {{/if}}"}                          
+    groupSettings:{captionFormat: "{{"{{"}}:field{{}}}} - {{"{{"}}:key{{}}}} : {{"{{"}}:count{{}}}} {{"{{"}}if count == 1 {{}}}} item {{"{{"}}else{{}}}} items {{"{{"}}/if{{}}}}"}                          
 });
 </script> 
 {% endhighlight %}
