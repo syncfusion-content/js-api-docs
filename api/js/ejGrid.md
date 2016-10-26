@@ -6501,7 +6501,7 @@ Get the content table element of grid
 #### Returns:
 {:#methods:returns:}
 
-Element
+Array\<HTMLTableElement\>
 
 ####Example
 {:.example}
