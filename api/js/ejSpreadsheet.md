@@ -55,7 +55,6 @@ $('#Spreadsheet').ejSpreadsheet();
 
 * jQuery.js
 * jsrender.js
-* jQuery.easing.min.js
 * jQuery.validate.js
 * ej.globalize.js
 * ej.core.js
