@@ -1512,7 +1512,7 @@ unmaskedValue</td>
 
 
 
-### mouseout
+### mouseOut
 {:#events:mouseout}
 
 
@@ -1587,17 +1587,17 @@ unmaskedValue</td>
     <input id="mask" type="text" />
 
     <script>
-        //mouseout event for toggle button
+        //mouseOut event for mask edit textbox control
         $("#mask").ejMaskEdit({
             maskFormat: "99-99-9999",
-            mouseout: function (args) { }
+            mouseOut: function (args) { }
         });
     </script>                 
 
 {% endhighlight %}
 
 
-### mouseover
+### mouseOver
 {:#events:mouseover}
 
 
@@ -1672,10 +1672,10 @@ unmaskedValue</td>
     <input id="mask" type="text" />
 
     <script>
-        //mouseover event for toggle button
+        //mouseOver event for mask edit textbox control
         $("#mask").ejMaskEdit({
             maskFormat: "99-99-9999",
-            mouseover: function (args) { }
+            mouseOver: function (args) { }
         });
     </script>                 
 
