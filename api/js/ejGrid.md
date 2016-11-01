@@ -1257,7 +1257,7 @@ This defines the text alignment of a particular column header cell value. See he
 
 #### Default Value:
 {:.param}
-* ej.TextAlign.Left
+* null
 
 <table>
 Add a comment to this line
