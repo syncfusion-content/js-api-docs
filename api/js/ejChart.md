@@ -751,4327 +751,6 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2nqhtn0y)
 
 
-
-###axes
-{:#members:axes}
-
-To override x axis for particular series, create an axis object by providing unique name by using name property and add it to axes array. Then, assign the name to the series&rsquo;s xAxisName property to link both axis and series.
-
-
-### axes.alternateGridBand `object`
-{:#members:primaryxaxis-alternategridband}
-
-
-
-
-Options for customizing axis alternate grid band.
-
-
-
-
-
-
-### axes.alternateGridBand.even `object`
-{:#members:axes-alternategridband-even}
-
-
-
-
-Options for customizing even grid band.
-
-
-
-
-
-
-### axes.alternateGridBand.even.fill `string`
-{:#members:axes-alternategridband-even-fill}
-
-
-
-
-Fill color for the even grid bands.
-
-
-#### Default Value
-
-
-
-* transparent
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ alternateGridBand: { even :{ fill : "green" } } }]
-                        
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.alternateGridBand.even.opacity `number`
-{:#members:axes-alternategridband-even-opacity}
-
-
-
-
-Opacity of the even grid band.
-
-
-#### Default Value
-
-
-
-* 1
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [ { alternateGridBand: { even :{ opacity : 0.5 } } } ]
-                       
-});
-
-{% endhighlight %}
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/l3nds5td)
-
-
-### axes.alternateGridBand.odd `object`
-{:#members:axes-alternategridband-odd}
-
-
-
-
-Options for customizing odd grid band.
-
-
-
-
-
-
-### axes.alternateGridBand.odd.fill `string`
-{:#members:axes-alternategridband-odd-fill}
-
-
-
-
-Fill color of the odd grid bands
-
-
-#### Default Value
-
-
-
-* transparent
-
-
-
-
-#### Example
-
-
-{% highlight js %}
- 
-$("#container").ejChart({
-
-    axes: [ { alternateGridBand: { odd :{ fill : "red" } } } ]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.alternateGridBand.odd.opacity `number`
-{:#members:axes-alternategridband-odd-opacity}
-
-
-
-
-Opacity of odd grid band
-
-
-#### Default Value
-
-
-
-* 1
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [ { alternateGridBand: { odd :{ opacity : 0.5 } } } ]
-                          
-});
-
-{% endhighlight %}
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0dhpptec)
-
-
-### axes.crossesAt `number`
-{:#members:axes-crossesat}
-
-
-
-
-Specifies where axis should intersect the vertical axis or vice versa. Value should be provided in axis co-ordinates. If provided value is greater than the maximum value of crossing axis, then axis will be placed at the opposite side.
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-	$("#container").ejChart({
-
-		axes:
-		[{
-			//Crosses axis at 0
-			crossesAt: 0,
-
-			//...
-        }],	
-	});
-
-{% endhighlight %}
-
-
-
-{:#members:axes-crossesinaxis}
-
-
-
-
-Name of the axis used for crossing. Vertical axis name should be provided for horizontal axis and vice versa. If the provided name does not belongs to a valid axis, then primary X axis or primary Y axis will be used for crossing
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-	$("#container").ejChart({
-
-		axes:
-		[ {
-			//Crosses axis at -0.2
-			crossesAt: -0.2,
-
-			//Crosses in an axis
-			crossesInAxis: 'secondaryYAxis',
-
-			//...
-        }],
-	});
-
-{% endhighlight %}
-
-
-
-
-### axes.isIndexed `boolean`
-{:#members:axes-isindexed}
-
-
-
-
-Category axis can also plot points based on index value of data points. Index based plotting can be enabled by setting ‘isIndexed’ property to true.
-
-
-#### Default Value
-
-
-
-* false
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [ { isIndexed: true }]
-                          
-});
-
-{% endhighlight %}
-
-
-### axes.axisLine `object`
-{:#members:axes-axisline}
-
-
-
-
-Options for customizing the axis line.  
-
-
-
-
-
-
-
-### axes.axisLine.dashArray `string`
-{:#members:axes-axisline-dasharray}
-
-
-
-
-Pattern of dashes and gaps to be applied to the axis line.
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes:[ { axisLine : { dashArray : "2,3" } } ]
-                          
-});
-
-{% endhighlight %}
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3pqlrwwx)
-
-
-### axes.axisLine.offset `number`
-{:#members:axes-axisline-offset}
-
-
-
-
-Padding for axis line. Normally, it is used along with plotOffset to pad the plot area.
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [ { axisLine : { offset : 5 } } ]
-                          
-});
-
-{% endhighlight %}
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/sokh4rez)
-
-
-### axes.axisLine.visible `boolean`
-{:#members:axes-axisline-visible}
-
-
-
-
-Show/hides the axis line.
-
-
-#### Default Value
-
-
-
-* true
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [ { axisLine : { visible : false } } ]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.axisLine.width `number`
-{:#members:axes-axisline-width}
-
-
-
-
-Width of axis line.
-
-
-#### Default Value
-
-
-
-* 1
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [ { axisLine : { width : 2 } } ]
-                          
-});
-
-{% endhighlight %}
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/nqumidfr)
-
-
-### axes.columnIndex `number`
-{:#members:axes-columnindex}
-
-
-
-
-Specifies the index of the column where the axis is associated, when the chart area is divided into multiple plot areas by using columnDefinitions.
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-     axes: [ { columnIndex: 2 } ]
-                           
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.columnSpan `number`
-{:#members:axes-columnspan}
-
-
-
-
-Specifies the number of columns or plot areas an axis has to span horizontally.
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [ { columnSpan: 2 } ]
-                          
-});
-
-{% endhighlight %}
-
-### axes.crosshairLabel `object`
-{:#members:axes-crosshairlabel}
-
-
-
-
-Options to customize the crosshair label.
-
-
-
-
-
-
-### axes.crosshairLabel.visible `boolean`
-{:#members:axes-crosshairlabel-visible}
-
-
-
-
-Show/hides the crosshair label associated with this axis.
-
-
-#### Default Value
-
-
-
-* false
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [ { crosshairLabel : { visible : true} } ]
-                          
-});
-
-{% endhighlight %}
-
-### axes.desiredIntervals `number`
-{:#members:axes-desiredintervals}
-
-
-
-
-With this setting, you can request axis to calculate intervals approximately equal to your desired interval.
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-     axes: [{ desiredIntervals: 5 }]
-                           
-});
-
-{% endhighlight %}
-
-
-### axes.labelPlacement `enum`
-{:#members:axes-labelplacement}
-
-<ts name = "ej.datavisualization.Chart.LabelPlacement"/>
-
-Specifies the placement of labels. 
-
-
-<table class="props">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th> 
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-OnTicks</td>
-<td class="type">string</td> 
-<td class="description">Labels will be placed on tick</td>
-</tr>
-<tr>
-<td class="name">
-BetweenTicks</td>
-<td class="type">string</td>
-<td class="description">Labels will be placed between ticks</td>
-</tr> 
-</tbody>
-</table>
-
-
-
-#### Default Value
-
-
-
-* ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See <a href="global.html#members:labelplacement">LabelPlacement</a>
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes:[ { labelPlacement : "onTicks" } ]
-                          
-});
-
-{% endhighlight %}
-
-
-
-### axes.edgeLabelPlacement `enum`
-{:#members:axes-edgelabelplacement}
-
-<ts name = "ej.datavisualization.Chart.EdgeLabelPlacement"/>
-
-Specifies the position of labels at the edge of the axis. 
-
-
-<table class="props">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th> 
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-None</td>
-<td class="type">string</td> 
-<td class="description">no action will be perform</td>
-</tr>
-<tr>
-<td class="name">
-Shift</td>
-<td class="type">string</td>
-<td class="description">Perform shift action to the edge labels</td>
-</tr> 
-<tr>
-<td class="name">
-Hide</td>
-<td class="type">string</td>
-<td class="description">The edge label will be hidden</td>
-</tr> 
-</tbody>
-</table>
-
-
-
-
-
-#### Default Value
-
-
-
-* ej.datavisualization.Chart.EdgeLabelPlacement.None. See <a href="global.html#members:edgelabelplacement">EdgeLabelPlacement</a>
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [ { edgeLabelPlacement : "shift" } ]
-                          
-});
-
-{% endhighlight %}
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zff5idq4)
-
-
-### axes.enableTrim `boolean`
-{:#members:axes-enabletrim}
-
-
-
-
-Specifies whether to trim the axis label when the width of the label exceeds the maximumLabelWidth.
-
-
-#### Default Value
-
-
-
-* false
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes:[ { enableTrim : true } ]
-                          
-});
-
-{% endhighlight %}
-
-
-
-### axes.font `object`
-{:#members:axes-font}
-
-
-
-
-Options for customizing the font of the axis Labels.
-
-
-
-
-
-
-### axes.font.fontFamily `string`
-{:#members:axes-font-fontfamily}
-
-
-
-
-Font family of labels.
-
-
-#### Default Value
-
-
-
-* "Segoe UI"
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-     axes: [ { font : { fontFamily : "Algerian"} } ]
-                           
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.font.fontStyle `enum`
-{:#members:axes-font-fontstyle}
-
-<ts ref="ej.datavisualization.Chart.FontStyle"/>
-
-
-
-Font style of labels.
-
-
-#### Default Value
-
-
-
-
-* ej.datavisualization.Chart.FontStyle.Normal. See <a href="global.html#members:fontstyle">FontStyle</a>
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes:[ { font : { fontStyle : "Italic"} } ]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.font.fontWeight `enum`
-{:#members:axes-font-fontweight}
-
-<ts ref="ej.datavisualization.Chart.FontWeight"/>
-
-
-Font weight of the label.
-
-
-#### Default Value
-
-
-
-* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-     axes: { font : { fontWeight : "lighter"} }
-                           
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.font.opacity `number`
-{:#members:axes-font-opacity}
-
-
-
-
-Opacity of the axis labels.
-
-
-#### Default Value
-
-
-
-* 1
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: { font : { opacity : 0.5} }
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.font.size `string`
-{:#members:axes-font-size}
-
-
-
-
-Font size of the axis labels.
-
-
-#### Default Value
-
-
-
-* "13px"
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-     axes:[ { font : { size : "12px"} } ]
-                           
-});
-
-{% endhighlight %}
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5x5zgpnf)
-
-
-### axes.intervalType `enum`
-{:#members:axes-intervaltype}
-
-<ts name = "ej.datavisualization.Chart.IntervalType"/>
-
-Specifies the type of interval in date time axis.
-
-
-<table class="props">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th> 
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-Days</td>
-<td class="type">string</td> 
-<td class="description">Specify the interval type as days</td>
-</tr>
-<tr>
-<td class="name">
-Hours</td>
-<td class="type">string</td>
-<td class="description">Specify the interval type as hours</td>
-</tr> 
-<tr>
-<td class="name">
-Seconds</td>
-<td class="type">string</td>
-<td class="description">Specify the interval type as seconds</td>
-</tr> 
-<tr>
-<td class="name">
-Milliseconds</td>
-<td class="type">string</td>
-<td class="description">Specify the interval type as milliseconds</td>
-</tr> 
-<tr>
-<td class="name">
-Minutes</td>
-<td class="type">string</td>
-<td class="description">Specify the interval type as minutes</td>
-</tr> 
-<tr>
-<td class="name">
-Months</td>
-<td class="type">string</td>
-<td class="description">Specify the interval type as months</td>
-</tr> 
-<tr>
-<td class="name">
-Years</td>
-<td class="type">string</td>
-<td class="description">Specify the interval type as years</td>
-</tr> 
-</tbody>
-</table>
-
-
-
-
-
-#### Default Value
-
-
-
-
-* null. See <a href="global.html#members:intervaltype">IntervalType</a>
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-     axes: [{ intervalType: "days" }]
-                           
-});
-
-{% endhighlight %}
-
-
-### axes.isInversed `boolean`
-{:#members:axes-isinversed}
-
-
-
-
-Specifies whether to inverse the axis.
-
-
-#### Default Value
-
-
-
-* false
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-     axes: { isInversed : true}
-                           
-});
-
-{% endhighlight %}
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/izzaexfa)
-
-
-### axes.labelFormat `string`
-{:#members:axes-labelformat}
-
-
-
-
-Custom formatting for axis label and supports all standard formatting type of numerical and date time values.
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes:[ { labelFormat: "{value}%" } ]
-                          
-});
-
-{% endhighlight %}
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wurgvm33)
-
-
-### axes.labelIntersectAction `enum`
-{:#members:axes-labelintersectaction}
-
-<ts name = "ej.datavisualization.Chart.LabelIntersectAction"/>
-
-Specifies the action to take when the axis labels are overlapping with each other. 
-
-
-<table class="props">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th> 
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-None</td>
-<td class="type">string</td> 
-<td class="description">no action will be perform in axis labels</td>
-</tr>
-<tr>
-<td class="name">
-Rotate90</td>
-<td class="type">string</td>
-<td class="description">Displays axis labels with 90 degree</td>
-</tr> 
-<tr>
-<td class="name">
-Rotate45</td>
-<td class="type">string</td>
-<td class="description">Displays axis labels with 45 degree</td>
-</tr> 
-<tr>
-<td class="name">
-Wrap</td>
-<td class="type">string</td>
-<td class="description">Axis labels will be Wrap</td>
-</tr> 
-<tr>
-<td class="name">
-WrapByword</td>
-<td class="type">string</td>
-<td class="description">Axis labels will be Wrap by word</td>
-</tr> 
-<tr>
-<td class="name">
-Trim</td>
-<td class="type">string</td>
-<td class="description">Axis labels will be trimmed</td>
-</tr> 
-<tr>
-<td class="name">
-Hide</td>
-<td class="type">string</td>
-<td class="description">Axis labels will be hide when overlap to others</td>
-</tr> 
-<tr>
-<td class="name">
-MultipleRows</td>
-<td class="type">string</td>
-<td class="description">Axis labels will display the next line when overlap to others</td>
-</tr> 
-</tbody>
-</table>
-
-
-
-
-
-#### Default Value
-
-
-
-* ej.datavisualization.Chart.LabelIntersectAction.None. See <a href="global.html#members:labelintersectaction">LabelIntersectAction</a>
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes:[{ labelIntersectAction : "multipleRows" }]
-                          
-});
-
-{% endhighlight %}
-
-
-### axes.labelPosition `enum`
-{:#members:axes-labelposition}
-
-<ts name = "ej.datavisualization.Chart.LabelPosition"/>
-
-Specifies the position of the axis labels.
-
-
-<table class="props">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th> 
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-Inside</td>
-<td class="type">string</td> 
-<td class="description">The axis labels area visible inside the axis line</td>
-</tr>
-<tr>
-<td class="name">
-OutSide</td>
-<td class="type">string</td>
-<td class="description">The axis labels area visible outside the axis line</td>
-</tr> 
-</tbody>
-</table>
-
-
-
-
-
-
-#### Default Value
-
-
-
-* "outside". See <a href="global.html#members:labelposition">LabelPosition</a>
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes:[{ labelPosition : "inside" }]
-                       
-});
-
-{% endhighlight %}
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/4qljgc5m)
-
-
-
-### axes.alignment `enum`
-{:#members:axes-alignment}
-
-<ts name = "ej.datavisualization.Chart.LabelAlignment"/>
-
-Specifies the position of the axis labels.
-
-
-<table class="props">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th> 
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-Near</td>
-<td class="type">string</td> 
-<td class="description">The axis labels placed as near</td>
-</tr>
-<tr>
-<td class="name">
-Far</td>
-<td class="type">string</td>
-<td class="description">The axis labels placed as far</td>
-</tr> 
-<tr>
-<td class="name">
-Center</td>
-<td class="type">string</td>
-<td class="description">The axis labels placed as center</td>
-</tr> 
-</tbody>
-</table>
-
-
-#### Default Value
-
-
-
-* "center". See <a href="global.html#members:alignment">Alignment</a>
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes:[{ alignment : "far" }]
-                       
-});
-
-{% endhighlight %}
-
-
-
-### axes.labelRotation `number`
-{:#members:axes-labelrotation}
-
-
-
-
-Angle in degrees to rotate the axis labels.
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ labelRotation: 90 }]
-                          
-});
-
-{% endhighlight %}
-
-
-
-### axes.logBase `number`
-{:#members:axes-logbase}
-
-
-
-
-Logarithmic base value. This is applicable only for logarithmic axis.
-
-
-#### Default Value
-
-
-
-* 10
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ logBase: 5 }]
-                          
-});
-
-  {% endhighlight %}
-
-
-
-
-### axes.majorGridLines `object`
-{:#members:axes-majorgridlines}
-
-
-
-
-Options for customizing major gird lines.
-
-
-
-
-
-
-### axes.majorGridLines.dashArray `string`
-{:#members:axes-majorgridlines-dasharray}
-
-
-
-
-Pattern of dashes and gaps used to stroke the major grid lines.
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ majorGridLines: { dashArray : "2,3"} }]
-                          
-});
-
-{% endhighlight %}
-
-
-
-### axes.majorGridLines.color `string`
-{:#members:axes-majorgridlines-color}
-
-
-
-
-Color of the major grid line.
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes:[{ majorGridLines: { color : "red"} }]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.majorGridLines.opacity `number`
-{:#members:axes-majorgridlines-opacity}
-
-
-
-
-Opacity of major grid lines.
-
-
-#### Default Value
-
-
-
-* 1
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ majorGridLines: { opacity: 0.5 } }]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.majorGridLines.visible `boolean`
-{:#members:axes-majorgridlines-visible}
-
-
-
-
-Show/hides the major grid lines.
-
-
-#### Default Value
-
-
-
-* true
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: { majorGridLines: { visible: false } }
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.majorGridLines.width `number`
-{:#members:axes-majorgridlines-width}
-
-
-
-
-Width of the major grid lines.
-
-
-#### Default Value
-
-
-
-* 1
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ majorGridLines: { width : 0.5} }]
-                          
-});
-
-{% endhighlight %}
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/53i5levx)
-
-
-### axes.majorTickLines `object`
-{:#members:axes-majorticklines}
-
-
-
-
-Options for customizing the major tick lines.
-
-
-
-
-
-
-### axes.majorTickLines.size `number`
-{:#members:axes-majorticklines-size}
-
-
-
-
-Length of the major tick lines.
-
-
-#### Default Value
-
-
-
-* 5
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ majorTickLines: { size: 2 } }]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.majorTickLines.visible `boolean`
-{:#members:axes-majorticklines-visible}
-
-
-
-
-Show/hides the major tick lines.
-
-
-#### Default Value
-
-
-
-* true
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ majorTickLines: { visible: false } }]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.majorTickLines.width `number`
-{:#members:axes-majorticklines-width}
-
-
-
-
-Width of the major tick lines.
-
-
-#### Default Value
-
-
-
-* 1
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ majorTickLines: { width: 2 } }]
-                          
-});
-
-{% endhighlight %}
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/w1ii251s)
-
-
-### axes.maximumLabels `number`
-{:#members:axes-maximumlabels}
-
-
-
-
-Maximum number of labels to be displayed in every 100 pixels.
-
-
-#### Default Value
-
-
-
-* 3
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes:[{ maximumLabels : 5 }]
-                          
-});
-
-{% endhighlight %}
-
-
-
-### axes.maximumLabelWidth `number`
-{:#members:axes-maximumlabelwidth}
-
-
-
-
-Maximum width of the axis label. When the label exceeds the width, the label gets trimmed when the enableTrim is set to true.
-
-
-#### Default Value
-
-
-
-* 34
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-     axes: [{ maximumLabelWidth :34.5 }]
-                           
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.minorGridLines `object`
-{:#members:axes-minorgridlines}
-
-
-
-
-Options for customizing the minor grid lines.
-
-
-
-
-
-
-### axes.minorGridLines.dashArray `string`
-{:#members:axes-minorgridlines-dasharray}
-
-
-
-
-Patterns of dashes and gaps used to stroke the minor grid lines.
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ minorGridLines: { dashArray: "2,3" } }]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.minorGridLines.visible `boolean`
-{:#members:axes-minorgridlines-visible}
-
-
-
-
-Show/hides the minor grid lines.
-
-
-#### Default Value
-
-
-
-* true
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ minorGridLines: { visible: true } }]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.minorGridLines.width `number`
-{:#members:axes-minorgridlines-width}
-
-
-
-
-Width of the minorGridLines.
-
-
-#### Default Value
-
-
-
-* 1
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ minorGridLines: { width: 2 } }]
-                          
-});
-
-{% endhighlight %}
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/uuofmzcq)
-
-
-### axes.minorTickLines `object`
-{:#members:axes-minorticklines}
-
-
-
-
-Options for customizing the minor tick lines.
-
-
-
-
-
-
-### axes.minorTickLines.size `number`
-{:#members:axes-minorticklines-size}
-
-
-
-
-Length of the minor tick lines.
-
-
-#### Default Value
-
-
-
-* 5
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ minorTickLines: { size: 2 } }]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.minorTickLines.visible `boolean`
-{:#members:axes-minorticklines-visible}
-
-
-
-
-Show/hides the minor tick lines.
-
-
-#### Default Value
-
-
-
-* true
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ minorTickLines: { visible: true } }]
-                          
-});
-Width of the minor tick line.
-{% endhighlight %}
-
-
-
-
-### axes.minorTickLines.width `number`
-{:#members:axes-minorticklines-width}
-
-
-
-
-Width of the minor tick line.
-
-
-#### Default Value
-
-
-
-* 1
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
- 
-    axes: [{ minorTickLines: { width: 2 } }]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.minorTicksPerInterval `number`
-{:#members:axes-minorticksperinterval}
-
-
-
-
-Specifies the number of minor ticks per interval.
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
- 
-    axes: [{ minorTicksPerInterval: 5 }]
-                          
-});
-
-{% endhighlight %}
-
-
-### axes.name `string`
-{:#members:axes-name}
-
-
-
-
-Unique name of the axis. To associate an axis with the series, you have to set this name to the xAxisName/yAxisName property of the series.
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ name: "xAxis" }]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.opposedPosition `boolean`
-{:#members:axes-opposedposition}
-
-
-
-
-Specifies whether to render the axis at the opposite side of its default position.
-
-
-#### Default Value
-
-
-
-* false
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ opposedPosition : true }]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.plotOffset `number`
-{:#members:axes-plotoffset}
-
-
-
-
-Specifies the padding for the plot area.
-
-
-#### Default Value
-
-
-
-* 10
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ plotOffset: 0 }]
-                          
-});
-
-{% endhighlight %}
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mqb1dwpy)
-
-
-### axes.range `object`
-{:#members:axes-range}
-
-
-
-
-Options to customize the range of the axis.
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t2ogn4fa)
-
-
-### axes.range.min `number`
-{:#members:axes-range-min}
-
-
-
-
-Minimum value of the axis range.
-
-
-#### Default Value
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ range : { min: 10 } }]
-                          
-});
-
-{% endhighlight %}
-
-
-### axes.range.max `number`
-{:#members:axes-range-max}
-
-
-
-
-Maximum value of the axis range.
-
-
-#### Default Value
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ range : { max: 100 } }]
-                          
-});
-
-{% endhighlight %}
-
-
-### axes.range.interval `number`
-{:#members:axes-range-interval}
-
-
-
-
-Interval of the axis range.
-
-
-#### Default Value
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ range : { interval: 10 } }]
-                          
-});
-
-{% endhighlight %}
-
-
-### axes.rangePadding `enum`
-{:#members:axes-rangepadding}
-
-<ts name = "ej.datavisualization.Chart.RangePadding"/>
-
-Specifies the padding for the axis range.
-
-
-<table class="props">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th> 
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-Additional</td>
-<td class="type">string</td> 
-<td class="description">Interval of the axis is added as padding to the minimum and maximum values of the range</td>
-</tr>
-<tr>
-<td class="name">
-Normal</td>
-<td class="type">string</td>
-<td class="description">Padding is applied to the axis based on the range calculation</td>
-</tr> 
-<tr>
-<td class="name">
-None</td>
-<td class="type">string</td>
-<td class="description"> Padding cannot be applied to the axis</td>
-</tr> 
-<tr>
-<td class="name">
-Round</td>
-<td class="type">string</td>
-<td class="description">Axis range is rounded to the nearest possible value divided by the interval</td>
-</tr> 
-</tbody>
-</table>
-
-
-
-#### Default Value
-
-
-* "None". See <a href="global.html#members:rangePadding">RangePadding</a>
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ rangePadding : "normal" }]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.roundingPlaces `number`
-{:#members:axes-roundingplaces}
-
-
-
-
-Rounds the number to the given number of decimals.
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ roundingPlaces: 3 }]
-                          
-});
-
-{% endhighlight %}
-
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ccisbode)
-
-
-### axes.multiLevelLabels `array`
-{:#members:axes-multilevellabels}
-
-
-Options for customizing the multi level labels.
-
-
-#### Default Value
-
-
-
-* [ ]
-
-
-
-
-
-
-
-### axes.multiLevelLabels.visible `boolean`
-{:#members:axes-multilevellabels-visible}
-
-
-
-
-Visibility of the multi level labels.
-
-
-#### Default Value
-
-
-
-* false
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
- 
-    axes: [{ multiLevelLabels:[{ visible: true }]}]
-                          
-});
-
-{% endhighlight %}
-
-
-### axes.multiLevelLabels.text `string`
-{:#members:axes-multilevellabels-text}
-
-
-
-
-Text of the multi level labels.
-
-
-#### Default Value
-
-
-
-* ""
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
- 
-    axes: [{ multiLevelLabels:[{ text: "2016" }]}]
-                          
-});
-
-{% endhighlight %}
-
-
-### axes.multiLevelLabels.start `number`
-{:#members:axes-multilevellabels-start}
-
-
-
-
-Starting value of the multi level labels.
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
- 
-    axes: [{ multiLevelLabels:[{ start: 1 }]}]
-                          
-});
-
-{% endhighlight %}
-
-### axes.multiLevelLabels.end `number`
-{:#members:axes-multilevellabels-end}
-
-
-
-
-Ending value of the multi level labels.
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
- 
-    axes: [{ multiLevelLabels:[{ end: 4 }]}]
-                          
-});
-
-{% endhighlight %}
-
-
-### axes.multiLevelLabels.level `number`
-{:#members:axes-multilevellabels-level}
-
-
-
-
-Specifies the level of multi level labels.
-
-
-#### Default Value
-
-
-
-* 0
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
- 
-    axes: [{ multiLevelLabels:[{ level: 2 }]}]
-                          
-});
-
-{% endhighlight %}
-
-
-### axes.multiLevelLabels.maximumTextWidth `number`
-{:#members:axes-multilevellabels-maximumtextwidth}
-
-
-
-
-Specifies the maximum width of the text in multi level labels.
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
- 
-    axes: [{ multiLevelLabels:[{ maximumTextWidth: 30 }]}]
-                          
-});
-
-{% endhighlight %}
-
-
-
-### axes.multiLevelLabels.textAlignment `enum`
-{:#members:axes-multilevellabels-textalignment}
-
-<ts ref = "ej.datavisualization.Chart.TextAlignment"/>
-
-
-Specifies the alignment of the text in multi level labels.
-
-
-#### Default Value
-
-
-
-* "center". See <a href="global.html#members:textalignment">TextAlignment</a>
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
- 
-    axes: [{ multiLevelLabels:[{ textAlignment: "near" }]}]
-                          
-});
-
-{% endhighlight %}
-
-
-### axes.multiLevelLabels.textOverflow `enum`
-{:#members:axes-multilevellabels-textoverflow}
-
-<ts ref = "ej.datavisualization.Chart.TextOverflow"/>
-
-
-Specifies the handling of text over flow in multi level labels.
-
-
-#### Default Value
-
-
-
-* "center". See <a href="global.html#members:textoverflow">TextOverflow</a>
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
- 
-    axes: [{ multiLevelLabels:[{ textOverflow: "trim" }]}]
-                          
-});
-
-{% endhighlight %}
-
-
-
-### axes.multiLevelLabels.font `object`
-{:#members:axes-multilevellabels-font}
-
-
-
-
-Options for customizing the font of the text.
-
-
-
-
-
-
-### axes.multiLevelLabels.font.color `string`
-{:#members:axes-multilevellabels-font-color}
-
-
-
-
-Font color of the multi level labels text.
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-     axes: [{ multiLevelLabels:[{ font : { color: "green"} }]}]
-                           
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.multiLevelLabels.font.fontFamily `string`
-{:#members:axes-multilevellabels-font-fontfamily}
-
-
-
-
-Font family of the multi level labels text.
-
-
-#### Default Value
-
-
-
-* "Segoe UI"
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ multiLevelLabels:[{ font : { fontFamily : "Algerian"} }]}]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.multiLevelLabels.font.fontStyle `enum`
-{:#members:axes-multilevellabels-font-fontstyle}
-
-<ts ref="ej.datavisualization.Chart.FontStyle"/>
-
-
-Font style of the multi level labels text.
-
-
-#### Default Value
-
-
-
-* "Normal"
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({ 
-
-    axes: [{ multiLevelLabels:[{ font : { fontStyle: "Bold"} }]}]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.multiLevelLabels.font.fontWeight `string`
-{:#members:axes-multilevellabels-font-fontweight}
-
-
-
-
-Font weight of the multi level label text.
-
-
-#### Default Value
-
-
-
-* "regular"
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-      axes: [{ multiLevelLabels:[{ font : { fontWeight: "lighter"} }]}]
-                            
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.multiLevelLabels.font.opacity `number`
-{:#members:axes-multilevellabels-font-opacity}
-
-
-
-
-Opacity of the multi level label text.
-
-
-#### Default Value
-
-
-
-* 1
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-axes: [{ multiLevelLabels:[{ font : { opacity: 0.5} }]}]
-                      
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.multiLevelLabels.font.size `string`
-{:#members:axes-multilevellabels-font-size}
-
-
-
-
-Font size of the multi level label text.
-
-
-#### Default Value
-
-
-
-* "12px"
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-        axes: [{ multiLevelLabels:[{ font : { size: "15px"} }]}]
-                              
-});
-
-{% endhighlight %}
-
-
-### axes.multiLevelLabels.border `object`
-{:#members:axes-multilevellabels-border}
-
-
-
-
-Options for customizing the border of the series.
-
-
-
-
-
-
-### axes.multiLevelLabels.border.color `string`
-{:#members:axes-multilevellabels-border-color}
-
-
-
-
-Border color of the multi level labels.
-
-
-#### Default Value
-
-
-
-*  null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
- 
- 
-$("#container").ejChart({
-        axes: [{ multiLevelLabels:[{border :{ color : "green" } }]}]                 
-});
-{% endhighlight %}
-
-
-
-
-### axes.multiLevelLabels.border.width `number`
-{:#members:axes-multilevellabels-border-width}
-
-
-
-
-Border width of the multi level labels.
-
-
-#### Default Value
-
-
-
-* 1
-
-
-
-
-#### Example
-
-
-{% highlight js %}
- 
-
-$("#container").ejChart({
-        axes: [{ multiLevelLabels:[{border :{ width : 2 } }]}]                  
-});
-{% endhighlight %}
-
-
-### axes.multiLevelLabels.border.type `enum`
-{:#members:axes-multilevellabels-border-type}
-
-
-<ts name = "ej.datavisualization.Chart.MultiLevelLabelsBorderType"/>
-
-
-Border type of the multi level labels.
-
-
-<table class="props">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-Rectangle</td>
-<td class="type">string</td>
-<td class="description">To render rectangle border.</td>
-</tr>
-<tr>
-<td class="name">
-None</td>
-<td class="type">string</td>
-<td class="description">No border will be rendered.</td>
-</tr>
-<tr>
-<td class="name">
-WithoutTopAndBottom</td>
-<td class="type">string</td>
-<td class="description">Border will be rendered only on left and right side of the labels.</td>
-</tr>
-<tr>
-<td class="name">
-Brace</td>
-<td class="type">string</td>
-<td class="description">To render brace border style.</td>
-</tr>
-<tr>
-<td class="name">
-CurlyBrace</td>
-<td class="type">string</td>
-<td class="description">To render curely brace border style.</td>
-</tr>
-</tbody>
-</table>
-
-#### Default Value
-
-
-
-* "rectangle". See <a href="global.html#members:multilevellabelsbordertype">Type</a>
-
-
-
-
-#### Example
-
-
-{% highlight js %}
- 
-
-$("#container").ejChart({
-        axes: [{ multiLevelLabels:[{border :{ type : "brace" } }]}]                  
-});
-{% endhighlight %}
-
-
-
-### axes.stripLine `array`
-{:#members:axes-stripline}
-
-
-Options for customizing the strip lines.
-
-
-#### Default Value
-
-
-
-* [ ]
-
-
-
-
-
-
-
-### axes.stripLine.borderColor `string`
-{:#members:axes-stripline-bordercolor}
-
-
-
-
-Border color of the strip line.
-
-
-#### Default Value
-
-
-
-* "gray"
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
- 
-    axes: [{ stripLine:[{ borderColor: "green" }]}]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.stripLine.color `string`
-{:#members:axes-stripline-color}
-
-
-
-
-Background color of the strip line.
-
-
-#### Default Value
-
-
-
-* "gray"
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ stripLine:[{ color: "green" }]}]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.stripLine.end `number`
-{:#members:axes-stripline-end}
-
-
-
-
-End value of the strip line.
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-     axes: [{ stripLine:[{ end: 5 }]}]
-                           
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.stripLine.font `object`
-{:#members:axes-stripline-font}
-
-
-
-
-Options for customizing the font of the text.
-
-
-
-
-
-
-### axes.stripLine.font.color `string`
-{:#members:axes-stripline-font-color}
-
-
-
-
-Font color of the strip line text.
-
-
-#### Default Value
-
-
-
-* "black"
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-     axes: [{ stripLine:[{ font : { color: "green"} }]}]
-                           
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.stripLine.font.fontFamily `string`
-{:#members:axes-stripline-font-fontfamily}
-
-
-
-
-Font family of the strip line text.
-
-
-#### Default Value
-
-
-
-* "Segoe UI"
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ stripLine:[{ font : { fontFamily : "Algerian"} }]}]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.stripLine.font.fontStyle `enum`
-{:#members:axes-stripline-font-fontstyle}
-
-<ts ref="ej.datavisualization.Chart.FontStyle"/>
-
-
-Font style of the strip line text.
-
-
-#### Default Value
-
-
-
-* "Normal"
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({ 
-
-    axes: [{ stripLine:[{ font : { fontStyle: "Bold"} }]}]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.stripLine.font.fontWeight `string`
-{:#members:axes-stripline-font-fontweight}
-
-
-
-
-Font weight of the strip line text.
-
-
-#### Default Value
-
-
-
-* "regular"
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-      axes: [{ stripLine:[{ font : { fontWeight: "lighter"} }]}]
-                            
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.stripLine.font.opacity `number`
-{:#members:axes-stripline-font-opacity}
-
-
-
-
-Opacity of the strip line text.
-
-
-#### Default Value
-
-
-
-* 1
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-axes: [{ stripLine:[{ font : { opacity: 0.5} }]}]
-                      
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.stripLine.font.size `string`
-{:#members:axes-stripline-font-size}
-
-
-
-
-Font size of the strip line text.
-
-
-#### Default Value
-
-
-
-* "12px"
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-        axes: [{ stripLine:[{ font : { size: "15px"} }]}]
-                              
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.stripLine.start `number`
-{:#members:axes-stripline-start}
-
-
-
-
-Start value of the strip line.
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-     axes: [{ stripLine:[{ start: 2 }]}]
-                           
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.stripLine.startFromAxis `boolean`
-{:#members:axes-stripline-startfromaxis}
-
-
-
-
-Indicates whether to render the strip line from the minimum/start value of the axis. This property does not work when start property is set.
-
-
-#### Default Value
-
-
-
-* false
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ stripLine:[{ startFromAxis : true }]}]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.stripLine.text `string`
-{:#members:axes-stripline-text}
-
-
-
-
-Specifies text to be displayed inside the strip line.
-
-
-#### Default Value
-
-
-
-* "stripLine"
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
- 
-    axes: [{ stripLine:[{ text : "Empty Point" }]}]
-                           
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.stripLine.textAlignment `enum`
-{:#members:axes-stripline-textalignment}
-
-<ts name = "ej.datavisualization.Chart.TextAlignment"/>
-
-Specifies the alignment of the text inside the strip line.
-
-
-<table class="props">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th> 
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-MiddleTop</td>
-<td class="type">string</td> 
-<td class="description">The text has been aligned top of the stripline</td>
-</tr>
-<tr>
-<td class="name">
-MiddleCenter</td>
-<td class="type">string</td>
-<td class="description">The text has been aligned in center of the stripline</td>
-</tr> 
-<tr>
-<td class="name">
-MiddleBottom</td>
-<td class="type">string</td>
-<td class="description">The text has been aligned bottom of the stripline</td>
-</tr> 
-</tbody>
-</table>
-
-
-
-
-
-#### Default Value
-
-
-
-* "middlecenter". See <a href="global.html#members:textalignment">TextAlignment</a>
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-     axes: [{ stripLine:[{ textAlignment : "middletop" }]}]
-                           
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.stripLine.visible `boolean`
-{:#members:axes-stripline-visible}
-
-
-
-
-Show/hides the strip line.
-
-
-#### Default Value
-
-
-
-* false
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ stripLine:[{ visible : true }]}]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.stripLine.width `number`
-{:#members:axes-stripline-width}
-
-
-
-
-Width of the strip line.
-
-
-#### Default Value
-
-
-
-* 0
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-      axes: [{ stripLine:[{ width : 0 }]}]
-                            
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.stripLine.zIndex `enum`
-{:#members:axes-stripline-zindex}
-
-<ts name = "ej.datavisualization.Chart.ZIndex"/>
-
-Specifies the order where the strip line and the series have to be rendered. When Z-order is “behind”, strip line is rendered under the series and when it is “over”, it is rendered above the series.
-
-
-<table class="props">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th> 
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-Inside</td>
-<td class="type">string</td> 
-<td class="description">Displays the stripline inside the series</td>
-</tr>
-<tr>
-<td class="name">
-Over</td>
-<td class="type">string</td>
-<td class="description">Displays the stripline over the series</td>
-</tr> 
-
-</tbody>
-</table>
-
-
-#### Default Value
-
-
-
-* "over". See <a href="global.html#members:zindex">ZIndex</a>
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: { stripLine:[{ zIndex: "behind" }]}
-                          
-});
-
-{% endhighlight %}
-
-Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vuduvnu1)
-
-
-### axes.tickLinesPosition `enum`
-{:#members:axes-ticklinesposition}
-
-<ts name = "ej.datavisualization.Chart.TickLinesPosition"/>
-
-Specifies the position of the axis tick lines.
-
-
-<table class="props">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th> 
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-Inside</td>
-<td class="type">string</td> 
-<td class="description">The tick lines are placed inside of the axis line</td>
-</tr>
-<tr>
-<td class="name">
-Outside</td>
-<td class="type">string</td>
-<td class="description">The tick lines are placed outside of the axis line</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-
-
-#### Default Value
-
-
-
-
-* "outside". See <a href="global.html#members:ticklinesposition">TickLinesPosition</a>
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ tickLinesPosition : "inside" }]
-                           
-});
-
-{% endhighlight %}
-
-
-### axes.labelBorder `object`
-{:#members:axes-labelborder}
-
-
-
-
-Options for customizing the border of the labels.
-
-
-
-
-
-
-### axes.labelBorder.color `string`
-{:#members:axes-labelborder-color}
-
-
-
-
-Specifies the color of the label border.
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ labelBorder:{color: "green"} }]
-                      
-});
-
-{% endhighlight %}
-
-
-
-### axes.labelBorder.width `number`
-{:#members:axes-labelborder-width}
-
-
-
-
-Specifies the width of the label border.
-
-
-#### Default Value
-
-
-
-* 1
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ labelBorder:{width: 2} }]
-                      
-});
-
-{% endhighlight %}
-
-
-
-### axes.title `object`
-{:#members:axes-title}
-
-
-
-
-Options for customizing the axis title.
-
-
-
-
-
-
-### axes.title.enableTrim `boolean`
-{:#members:axes-title-enabletrim}
-
-
-
-
-Specifies whether to trim the axis title when it exceeds the chart area or the maximum width of the title.
-
-
-#### Default Value
-
-
-
-* false
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes:[{ title:{enableTrim:true} }]
-                      
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.title.font `object`
-{:#members:axes-title-font}
-
-
-
-
-Options for customizing the title font.
-
-
-
-
-
-
-### axes.title.font.fontFamily `string`
-{:#members:axes-title-font-fontfamily}
-
-
-
-
-Font family of the title text.
-
-
-#### Default Value
-
-
-
-* "Segoe UI"
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes:[ { title: { font : { fontFamily : "Algerain"} } } ]
-                      
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.title.font.fontStyle `enum`
-{:#members:axes-title-font-fontstyle}
-
-<ts ref="ej.datavisualization.Chart.FontStyle"/>
-
-
-Font style of the title text.
-
-
-#### Default Value
-
-
-
-* ej.datavisualization.Chart.FontStyle.Normal
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-
-$("#container").ejChart({
-
-     axes: [{ title: { font : { fontStyle : "Italic"} } }]
-                      
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.title.font.fontWeight `enum`
-{:#members:axes-title-font-fontweight}
-
-<ts ref="ej.datavisualization.Chart.FontWeight"/>
-
-
-Font weight of the title text.
-
-
-#### Default Value
-
-
-
-* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-     axes: [{ title: { font : { fontWeight : "lighter"} } }]
-                      
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.title.font.opacity `number`
-{:#members:axes-title-font-opacity}
-
-
-
-
-Opacity of the axis title text.
-
-
-#### Default Value
-
-
-
-* 1
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-     axes: [{ title: { font : { opacity : 0.8} } }]
-                           
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.title.font.size `string`
-{:#members:axes-title-font-size}
-
-
-
-
-Font size of the axis title.
-
-
-#### Default Value
-
-
-
-* "16px"
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ title: { font : { size : "14px"} } }]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.title.maximumTitleWidth `number`
-{:#members:axes-title-maximumtitlewidth}
-
-
-
-
-Maximum width of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true. 
-
-
-#### Default Value
-
-
-
-* 34
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-      axes: [{ title:{maximumTitleWidth: null} }]
-                            
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.title.text `string`
-{:#members:axes-title-text}
-
-
-
-
-Title for the axis.
-
-
-#### Default Value
-
-
-
-* ""
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-axes: [{ title: { text: "Year" } }]
-                      
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.title.visible `boolean`
-{:#members:axes-title-visible}
-
-
-
-
-Controls the visibility of axis title.
-
-
-#### Default Value
-
-
-
-* true
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes:[{ title: { visible: false } }]
-                          
-});
-
-{% endhighlight %}
-
-
-### axes.title.offset `number`
-{:#members:axes-title-offset}
-
-
-
-
-offset value for axis title.
-
-
-#### Default Value
-
-
-
-* 0
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ title: { offset: 0 } }]
-                          
-});
-
-{% endhighlight %}
-
-### axes.title.position `enum`
-{:#members:axes-title-position}
-
-<ts ref = "ej.datavisualization.Chart.LabelPosition"/>
-
-Specifies the position of the axis title.
-
-
-#### Default Value
-
-
-
-* "outside". See <a href="global.html#members:labelposition">Position</a>
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ title: { position : "inside" }}]
-                           
-});
-
-{% endhighlight %}
-
-### axes.title.alignment `enum`
-{:#members:axes-title-alignment}
-
-<ts ref = "ej.datavisualization.Chart.TextAlignment"/>
-
-Specifies the position of the axis title.
-
-
-#### Default Value
-
-
-
-* "center". See <a href="global.html#members:textalignment">Alignment</a>
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ title: { alignment : "near" }}]
-                           
-});
-
-{% endhighlight %}
-
-
-
-### axes.valueType `enum`
-{:#members:axes-valuetype}
-
-<ts name = "ej.datavisualization.Chart.ValueType"/>
-
-Specifies the type of data the axis is handling.
-
-
-<table class="props">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th> 
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-Double</td>
-<td class="type">string</td> 
-<td class="description">Specify the numeric axis</td>
-</tr>
-<tr>
-<td class="name">
-Category</td>
-<td class="type">string</td>
-<td class="description">Specify the category axis</td>
-</tr> 
-<tr>
-<td class="name">
-DateTime</td>
-<td class="type">string</td>
-<td class="description">Specify the datetime axis</td>
-</tr> 
-<tr>
-<td class="name">
-Logarithmic</td>
-<td class="type">string</td>
-<td class="description">Specify the logarithmic axis</td>
-</tr> 
-</tbody>
-</table>
-
-
-
-
-
-#### Default Value
-
-
-
-
-* null. See <a href="global.html#members:valuetype">ValueType</a>
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-     axes: [{ valueType: "double" }]
-                           
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.visible `boolean`
-{:#members:axes-visible}
-
-
-
-
-Show/hides the axis.
-
-
-#### Default Value
-
-
-
-* true
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ visible: false }]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.zoomFactor `number`
-{:#members:axes-zoomfactor}
-
-
-
-
-The axis is scaled by this factor. When zoomFactor is 0.5, the chart is scaled by 200% along this axis. Value ranges from 0 to 1.
-
-
-#### Default Value
-
-
-
-* 1
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ zoomFactor : 0.5 }]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-### axes.zoomPosition `number`
-{:#members:axes-zoomposition}
-
-
-
-
-Position of the zoomed axis. Value ranges from 0 to 1.
-
-
-
-#### Default Value
-
-
-
-* 0
-
-
-
-
-#### Example
-
-
-{% highlight js %}
-
-$("#container").ejChart({
-
-    axes: [{ zoomPosition :0.5 }]
-                          
-});
-
-{% endhighlight %}
-
-
-
-
-
 ### backGroundImageUrl `string`
 {:#members:backgroundimageurl}
 
@@ -20270,6 +15949,3870 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
+
+
+### axes `array`
+{:#members:axes}
+
+To override x axis for particular series, create an axis object by providing unique name by using name property and add it to axes array. Then, assign the name to the series&rsquo;s xAxisName property to link both axis and series.
+
+
+### axes.alternateGridBand `object`
+{:#members:axes-alternategridband}
+
+
+
+
+Options for customizing axis alternate grid band.
+
+
+
+
+
+
+### axes.alternateGridBand.even `object`
+{:#members:axes-alternategridband-even}
+
+
+
+
+Options for customizing even grid band.
+
+
+
+
+
+
+### axes.alternateGridBand.even.fill `string`
+{:#members:axes-alternategridband-even-fill}
+
+
+
+
+Fill color for the even grid bands.
+
+
+#### Default Value
+
+
+
+* transparent
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ alternateGridBand: { even :{ fill : "green" } } }]
+                        
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.alternateGridBand.even.opacity `number`
+{:#members:axes-alternategridband-even-opacity}
+
+
+
+
+Opacity of the even grid band.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [ { alternateGridBand: { even :{ opacity : 0.5 } } } ]
+                       
+});
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/l3nds5td)
+
+
+### axes.alternateGridBand.odd `object`
+{:#members:axes-alternategridband-odd}
+
+
+
+
+Options for customizing odd grid band.
+
+
+
+
+
+
+### axes.alternateGridBand.odd.fill `string`
+{:#members:axes-alternategridband-odd-fill}
+
+
+
+
+Fill color of the odd grid bands
+
+
+#### Default Value
+
+
+
+* transparent
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+    axes: [ { alternateGridBand: { odd :{ fill : "red" } } } ]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.alternateGridBand.odd.opacity `number`
+{:#members:axes-alternategridband-odd-opacity}
+
+
+
+
+Opacity of odd grid band
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [ { alternateGridBand: { odd :{ opacity : 0.5 } } } ]
+                          
+});
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0dhpptec)
+
+
+### axes.crossesAt `number`
+{:#members:axes-crossesat}
+
+
+
+
+Specifies where axis should intersect the vertical axis or vice versa. Value should be provided in axis co-ordinates. If provided value is greater than the maximum value of crossing axis, then axis will be placed at the opposite side.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+	$("#container").ejChart({
+
+		axes:
+		[{
+			//Crosses axis at 0
+			crossesAt: 0,
+
+			//...
+        }],	
+	});
+
+{% endhighlight %}
+
+
+
+{:#members:axes-crossesinaxis}
+
+
+
+
+Name of the axis used for crossing. Vertical axis name should be provided for horizontal axis and vice versa. If the provided name does not belongs to a valid axis, then primary X axis or primary Y axis will be used for crossing
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+	$("#container").ejChart({
+
+		axes:
+		[ {
+			//Crosses axis at -0.2
+			crossesAt: -0.2,
+
+			//Crosses in an axis
+			crossesInAxis: 'secondaryYAxis',
+
+			//...
+        }],
+	});
+
+{% endhighlight %}
+
+
+
+
+### axes.isIndexed `boolean`
+{:#members:axes-isindexed}
+
+
+
+
+Category axis can also plot points based on index value of data points. Index based plotting can be enabled by setting ‘isIndexed’ property to true.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [ { isIndexed: true }]
+                          
+});
+
+{% endhighlight %}
+
+
+### axes.axisLine `object`
+{:#members:axes-axisline}
+
+
+
+
+Options for customizing the axis line.  
+
+
+
+
+
+
+
+### axes.axisLine.dashArray `string`
+{:#members:axes-axisline-dasharray}
+
+
+
+
+Pattern of dashes and gaps to be applied to the axis line.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes:[ { axisLine : { dashArray : "2,3" } } ]
+                          
+});
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3pqlrwwx)
+
+
+### axes.axisLine.offset `number`
+{:#members:axes-axisline-offset}
+
+
+
+
+Padding for axis line. Normally, it is used along with plotOffset to pad the plot area.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [ { axisLine : { offset : 5 } } ]
+                          
+});
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/sokh4rez)
+
+
+### axes.axisLine.visible `boolean`
+{:#members:axes-axisline-visible}
+
+
+
+
+Show/hides the axis line.
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [ { axisLine : { visible : false } } ]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.axisLine.width `number`
+{:#members:axes-axisline-width}
+
+
+
+
+Width of axis line.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [ { axisLine : { width : 2 } } ]
+                          
+});
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/nqumidfr)
+
+
+### axes.columnIndex `number`
+{:#members:axes-columnindex}
+
+
+
+
+Specifies the index of the column where the axis is associated, when the chart area is divided into multiple plot areas by using columnDefinitions.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+     axes: [ { columnIndex: 2 } ]
+                           
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.columnSpan `number`
+{:#members:axes-columnspan}
+
+
+
+
+Specifies the number of columns or plot areas an axis has to span horizontally.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [ { columnSpan: 2 } ]
+                          
+});
+
+{% endhighlight %}
+
+### axes.crosshairLabel `object`
+{:#members:axes-crosshairlabel}
+
+
+
+
+Options to customize the crosshair label.
+
+
+
+
+
+
+### axes.crosshairLabel.visible `boolean`
+{:#members:axes-crosshairlabel-visible}
+
+
+
+
+Show/hides the crosshair label associated with this axis.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [ { crosshairLabel : { visible : true} } ]
+                          
+});
+
+{% endhighlight %}
+
+### axes.desiredIntervals `number`
+{:#members:axes-desiredintervals}
+
+
+
+
+With this setting, you can request axis to calculate intervals approximately equal to your desired interval.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+     axes: [{ desiredIntervals: 5 }]
+                           
+});
+
+{% endhighlight %}
+
+
+### axes.labelPlacement `enum`
+{:#members:axes-labelplacement}
+
+<ts ref = "ej.datavisualization.Chart.LabelPlacement"/>
+
+Specifies the placement of labels. 
+
+
+#### Default Value
+
+
+
+* ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See <a href="global.html#members:labelplacement">LabelPlacement</a>
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes:[ { labelPlacement : "onTicks" } ]
+                          
+});
+
+{% endhighlight %}
+
+
+
+### axes.edgeLabelPlacement `enum`
+{:#members:axes-edgelabelplacement}
+
+<ts ref = "ej.datavisualization.Chart.EdgeLabelPlacement"/>
+
+Specifies the position of labels at the edge of the axis. 
+
+#### Default Value
+
+
+
+* ej.datavisualization.Chart.EdgeLabelPlacement.None. See <a href="global.html#members:edgelabelplacement">EdgeLabelPlacement</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [ { edgeLabelPlacement : "shift" } ]
+                          
+});
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zff5idq4)
+
+
+### axes.enableTrim `boolean`
+{:#members:axes-enabletrim}
+
+
+
+
+Specifies whether to trim the axis label when the width of the label exceeds the maximumLabelWidth.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes:[ { enableTrim : true } ]
+                          
+});
+
+{% endhighlight %}
+
+
+
+### axes.font `object`
+{:#members:axes-font}
+
+
+
+
+Options for customizing the font of the axis Labels.
+
+
+
+
+
+
+### axes.font.fontFamily `string`
+{:#members:axes-font-fontfamily}
+
+
+
+
+Font family of labels.
+
+
+#### Default Value
+
+
+
+* "Segoe UI"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+     axes: [ { font : { fontFamily : "Algerian"} } ]
+                           
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.font.fontStyle `enum`
+{:#members:axes-font-fontstyle}
+
+<ts ref="ej.datavisualization.Chart.FontStyle"/>
+
+
+
+Font style of labels.
+
+
+#### Default Value
+
+
+
+
+* ej.datavisualization.Chart.FontStyle.Normal. See <a href="global.html#members:fontstyle">FontStyle</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes:[ { font : { fontStyle : "Italic"} } ]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.font.fontWeight `enum`
+{:#members:axes-font-fontweight}
+
+<ts ref="ej.datavisualization.Chart.FontWeight"/>
+
+
+Font weight of the label.
+
+
+#### Default Value
+
+
+
+* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+     axes: [{ font : { fontWeight : "lighter"} }]
+                           
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.font.opacity `number`
+{:#members:axes-font-opacity}
+
+
+
+
+Opacity of the axis labels.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ font : { opacity : 0.5} }]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.font.size `string`
+{:#members:axes-font-size}
+
+
+
+
+Font size of the axis labels.
+
+
+#### Default Value
+
+
+
+* "13px"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+     axes:[ { font : { size : "12px"} } ]
+                           
+});
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5x5zgpnf)
+
+
+### axes.intervalType `enum`
+{:#members:axes-intervaltype}
+
+<ts ref = "ej.datavisualization.Chart.IntervalType"/>
+
+Specifies the type of interval in date time axis.
+
+
+#### Default Value
+
+
+* null. See <a href="global.html#members:intervaltype">IntervalType</a>
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+     axes: [{ intervalType: "days" }]
+                           
+});
+
+{% endhighlight %}
+
+
+### axes.isInversed `boolean`
+{:#members:axes-isinversed}
+
+
+
+
+Specifies whether to inverse the axis.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+     axes: { isInversed : true}
+                           
+});
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/izzaexfa)
+
+
+### axes.labelFormat `string`
+{:#members:axes-labelformat}
+
+
+
+
+Custom formatting for axis label and supports all standard formatting type of numerical and date time values.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes:[ { labelFormat: "{value}%" } ]
+                          
+});
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wurgvm33)
+
+
+### axes.labelIntersectAction `enum`
+{:#members:axes-labelintersectaction}
+
+<ts ref = "ej.datavisualization.Chart.LabelIntersectAction"/>
+
+Specifies the action to take when the axis labels are overlapping with each other. 
+
+
+#### Default Value
+
+
+
+* ej.datavisualization.Chart.LabelIntersectAction.None. See <a href="global.html#members:labelintersectaction">LabelIntersectAction</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes:[{ labelIntersectAction : "multipleRows" }]
+                          
+});
+
+{% endhighlight %}
+
+
+### axes.labelPosition `enum`
+{:#members:axes-labelposition}
+
+<ts ref = "ej.datavisualization.Chart.LabelPosition"/>
+
+Specifies the position of the axis labels.
+
+
+#### Default Value
+
+
+
+* "outside". See <a href="global.html#members:labelposition">LabelPosition</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes:[{ labelPosition : "inside" }]
+                       
+});
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/4qljgc5m)
+
+
+
+### axes.alignment `enum`
+{:#members:axes-alignment}
+
+<ts ref = "ej.datavisualization.Chart.LabelAlignment"/>
+
+Specifies the position of the axis labels.
+
+
+
+#### Default Value
+
+
+
+* "center". See <a href="global.html#members:alignment">Alignment</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes:[{ alignment : "far" }]
+                       
+});
+
+{% endhighlight %}
+
+
+
+### axes.labelRotation `number`
+{:#members:axes-labelrotation}
+
+
+
+
+Angle in degrees to rotate the axis labels.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ labelRotation: 90 }]
+                          
+});
+
+{% endhighlight %}
+
+
+
+### axes.logBase `number`
+{:#members:axes-logbase}
+
+
+
+
+Logarithmic base value. This is applicable only for logarithmic axis.
+
+
+#### Default Value
+
+
+
+* 10
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ logBase: 5 }]
+                          
+});
+
+  {% endhighlight %}
+
+
+
+
+### axes.majorGridLines `object`
+{:#members:axes-majorgridlines}
+
+
+
+
+Options for customizing major gird lines.
+
+
+
+
+
+
+### axes.majorGridLines.dashArray `string`
+{:#members:axes-majorgridlines-dasharray}
+
+
+
+
+Pattern of dashes and gaps used to stroke the major grid lines.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ majorGridLines: { dashArray : "2,3"} }]
+                          
+});
+
+{% endhighlight %}
+
+
+
+### axes.majorGridLines.color `string`
+{:#members:axes-majorgridlines-color}
+
+
+
+
+Color of the major grid line.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes:[{ majorGridLines: { color : "red"} }]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.majorGridLines.opacity `number`
+{:#members:axes-majorgridlines-opacity}
+
+
+
+
+Opacity of major grid lines.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ majorGridLines: { opacity: 0.5 } }]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.majorGridLines.visible `boolean`
+{:#members:axes-majorgridlines-visible}
+
+
+
+
+Show/hides the major grid lines.
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes:[{ majorGridLines: { visible: false } }]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.majorGridLines.width `number`
+{:#members:axes-majorgridlines-width}
+
+
+
+
+Width of the major grid lines.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ majorGridLines: { width : 0.5} }]
+                          
+});
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/53i5levx)
+
+
+### axes.majorTickLines `object`
+{:#members:axes-majorticklines}
+
+
+
+
+Options for customizing the major tick lines.
+
+
+
+
+
+
+### axes.majorTickLines.size `number`
+{:#members:axes-majorticklines-size}
+
+
+
+
+Length of the major tick lines.
+
+
+#### Default Value
+
+
+
+* 5
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ majorTickLines: { size: 2 } }]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.majorTickLines.visible `boolean`
+{:#members:axes-majorticklines-visible}
+
+
+
+
+Show/hides the major tick lines.
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ majorTickLines: { visible: false } }]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.majorTickLines.width `number`
+{:#members:axes-majorticklines-width}
+
+
+
+
+Width of the major tick lines.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ majorTickLines: { width: 2 } }]
+                          
+});
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/w1ii251s)
+
+
+### axes.maximumLabels `number`
+{:#members:axes-maximumlabels}
+
+
+
+
+Maximum number of labels to be displayed in every 100 pixels.
+
+
+#### Default Value
+
+
+
+* 3
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes:[{ maximumLabels : 5 }]
+                          
+});
+
+{% endhighlight %}
+
+
+
+### axes.maximumLabelWidth `number`
+{:#members:axes-maximumlabelwidth}
+
+
+
+
+Maximum width of the axis label. When the label exceeds the width, the label gets trimmed when the enableTrim is set to true.
+
+
+#### Default Value
+
+
+
+* 34
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+     axes: [{ maximumLabelWidth :34.5 }]
+                           
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.minorGridLines `object`
+{:#members:axes-minorgridlines}
+
+
+
+
+Options for customizing the minor grid lines.
+
+
+
+
+
+
+### axes.minorGridLines.dashArray `string`
+{:#members:axes-minorgridlines-dasharray}
+
+
+
+
+Patterns of dashes and gaps used to stroke the minor grid lines.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ minorGridLines: { dashArray: "2,3" } }]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.minorGridLines.visible `boolean`
+{:#members:axes-minorgridlines-visible}
+
+
+
+
+Show/hides the minor grid lines.
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ minorGridLines: { visible: true } }]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.minorGridLines.width `number`
+{:#members:axes-minorgridlines-width}
+
+
+
+
+Width of the minorGridLines.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ minorGridLines: { width: 2 } }]
+                          
+});
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/uuofmzcq)
+
+
+### axes.minorTickLines `object`
+{:#members:axes-minorticklines}
+
+
+
+
+Options for customizing the minor tick lines.
+
+
+
+
+
+
+### axes.minorTickLines.size `number`
+{:#members:axes-minorticklines-size}
+
+
+
+
+Length of the minor tick lines.
+
+
+#### Default Value
+
+
+
+* 5
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ minorTickLines: { size: 2 } }]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.minorTickLines.visible `boolean`
+{:#members:axes-minorticklines-visible}
+
+
+
+
+Show/hides the minor tick lines.
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ minorTickLines: { visible: true } }]
+                          
+});
+Width of the minor tick line.
+{% endhighlight %}
+
+
+
+
+### axes.minorTickLines.width `number`
+{:#members:axes-minorticklines-width}
+
+
+
+
+Width of the minor tick line.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    axes: [{ minorTickLines: { width: 2 } }]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.minorTicksPerInterval `number`
+{:#members:axes-minorticksperinterval}
+
+
+
+
+Specifies the number of minor ticks per interval.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    axes: [{ minorTicksPerInterval: 5 }]
+                          
+});
+
+{% endhighlight %}
+
+
+### axes.name `string`
+{:#members:axes-name}
+
+
+
+
+Unique name of the axis. To associate an axis with the series, you have to set this name to the xAxisName/yAxisName property of the series.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ name: "xAxis" }]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.opposedPosition `boolean`
+{:#members:axes-opposedposition}
+
+
+
+
+Specifies whether to render the axis at the opposite side of its default position.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ opposedPosition : true }]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.plotOffset `number`
+{:#members:axes-plotoffset}
+
+
+
+
+Specifies the padding for the plot area.
+
+
+#### Default Value
+
+
+
+* 10
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ plotOffset: 0 }]
+                          
+});
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mqb1dwpy)
+
+
+### axes.range `object`
+{:#members:axes-range}
+
+
+
+
+Options to customize the range of the axis.
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t2ogn4fa)
+
+
+### axes.range.min `number`
+{:#members:axes-range-min}
+
+
+
+
+Minimum value of the axis range.
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ range : { min: 10 } }]
+                          
+});
+
+{% endhighlight %}
+
+
+### axes.range.max `number`
+{:#members:axes-range-max}
+
+
+
+
+Maximum value of the axis range.
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ range : { max: 100 } }]
+                          
+});
+
+{% endhighlight %}
+
+
+### axes.range.interval `number`
+{:#members:axes-range-interval}
+
+
+
+
+Interval of the axis range.
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ range : { interval: 10 } }]
+                          
+});
+
+{% endhighlight %}
+
+
+### axes.rangePadding `enum`
+{:#members:axes-rangepadding}
+
+<ts ref = "ej.datavisualization.Chart.RangePadding"/>
+
+Specifies the padding for the axis range.
+#### Default Value
+
+
+* "None". See <a href="global.html#members:rangePadding">RangePadding</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ rangePadding : "normal" }]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.roundingPlaces `number`
+{:#members:axes-roundingplaces}
+
+
+
+
+Rounds the number to the given number of decimals.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ roundingPlaces: 3 }]
+                          
+});
+
+{% endhighlight %}
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ccisbode)
+
+
+### axes.multiLevelLabels `array`
+{:#members:axes-multilevellabels}
+
+
+Options for customizing the multi level labels.
+
+
+#### Default Value
+
+
+
+* [ ]
+
+
+
+
+
+
+
+### axes.multiLevelLabels.visible `boolean`
+{:#members:axes-multilevellabels-visible}
+
+
+
+
+Visibility of the multi level labels.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    axes: [{ multiLevelLabels:[{ visible: true }]}]
+                          
+});
+
+{% endhighlight %}
+
+
+### axes.multiLevelLabels.text `string`
+{:#members:axes-multilevellabels-text}
+
+
+
+
+Text of the multi level labels.
+
+
+#### Default Value
+
+
+
+* ""
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    axes: [{ multiLevelLabels:[{ text: "2016" }]}]
+                          
+});
+
+{% endhighlight %}
+
+
+### axes.multiLevelLabels.start `number`
+{:#members:axes-multilevellabels-start}
+
+
+
+
+Starting value of the multi level labels.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    axes: [{ multiLevelLabels:[{ start: 1 }]}]
+                          
+});
+
+{% endhighlight %}
+
+### axes.multiLevelLabels.end `number`
+{:#members:axes-multilevellabels-end}
+
+
+
+
+Ending value of the multi level labels.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    axes: [{ multiLevelLabels:[{ end: 4 }]}]
+                          
+});
+
+{% endhighlight %}
+
+
+### axes.multiLevelLabels.level `number`
+{:#members:axes-multilevellabels-level}
+
+
+
+
+Specifies the level of multi level labels.
+
+
+#### Default Value
+
+
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    axes: [{ multiLevelLabels:[{ level: 2 }]}]
+                          
+});
+
+{% endhighlight %}
+
+
+### axes.multiLevelLabels.maximumTextWidth `number`
+{:#members:axes-multilevellabels-maximumtextwidth}
+
+
+
+
+Specifies the maximum width of the text in multi level labels.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    axes: [{ multiLevelLabels:[{ maximumTextWidth: 30 }]}]
+                          
+});
+
+{% endhighlight %}
+
+
+
+### axes.multiLevelLabels.textAlignment `enum`
+{:#members:axes-multilevellabels-textalignment}
+
+<ts ref = "ej.datavisualization.Chart.TextAlignment"/>
+
+
+Specifies the alignment of the text in multi level labels.
+
+
+#### Default Value
+
+
+
+* "center". See <a href="global.html#members:textalignment">TextAlignment</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    axes: [{ multiLevelLabels:[{ textAlignment: "near" }]}]
+                          
+});
+
+{% endhighlight %}
+
+
+### axes.multiLevelLabels.textOverflow `enum`
+{:#members:axes-multilevellabels-textoverflow}
+
+<ts ref = "ej.datavisualization.Chart.TextOverflow"/>
+
+
+Specifies the handling of text over flow in multi level labels.
+
+
+#### Default Value
+
+
+
+* "center". See <a href="global.html#members:textoverflow">TextOverflow</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    axes: [{ multiLevelLabels:[{ textOverflow: "trim" }]}]
+                          
+});
+
+{% endhighlight %}
+
+
+
+### axes.multiLevelLabels.font `object`
+{:#members:axes-multilevellabels-font}
+
+
+
+
+Options for customizing the font of the text.
+
+
+
+
+
+
+### axes.multiLevelLabels.font.color `string`
+{:#members:axes-multilevellabels-font-color}
+
+
+
+
+Font color of the multi level labels text.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+     axes: [{ multiLevelLabels:[{ font : { color: "green"} }]}]
+                           
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.multiLevelLabels.font.fontFamily `string`
+{:#members:axes-multilevellabels-font-fontfamily}
+
+
+
+
+Font family of the multi level labels text.
+
+
+#### Default Value
+
+
+
+* "Segoe UI"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ multiLevelLabels:[{ font : { fontFamily : "Algerian"} }]}]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.multiLevelLabels.font.fontStyle `enum`
+{:#members:axes-multilevellabels-font-fontstyle}
+
+<ts ref="ej.datavisualization.Chart.FontStyle"/>
+
+
+Font style of the multi level labels text.
+
+
+#### Default Value
+
+
+
+* "Normal"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({ 
+
+    axes: [{ multiLevelLabels:[{ font : { fontStyle: "Bold"} }]}]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.multiLevelLabels.font.fontWeight `string`
+{:#members:axes-multilevellabels-font-fontweight}
+
+
+
+
+Font weight of the multi level label text.
+
+
+#### Default Value
+
+
+
+* "regular"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+      axes: [{ multiLevelLabels:[{ font : { fontWeight: "lighter"} }]}]
+                            
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.multiLevelLabels.font.opacity `number`
+{:#members:axes-multilevellabels-font-opacity}
+
+
+
+
+Opacity of the multi level label text.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+axes: [{ multiLevelLabels:[{ font : { opacity: 0.5} }]}]
+                      
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.multiLevelLabels.font.size `string`
+{:#members:axes-multilevellabels-font-size}
+
+
+
+
+Font size of the multi level label text.
+
+
+#### Default Value
+
+
+
+* "12px"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+        axes: [{ multiLevelLabels:[{ font : { size: "15px"} }]}]
+                              
+});
+
+{% endhighlight %}
+
+
+### axes.multiLevelLabels.border `object`
+{:#members:axes-multilevellabels-border}
+
+
+
+
+Options for customizing the border of the series.
+
+
+
+
+
+
+### axes.multiLevelLabels.border.color `string`
+{:#members:axes-multilevellabels-border-color}
+
+
+
+
+Border color of the multi level labels.
+
+
+#### Default Value
+
+
+
+*  null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+        axes: [{ multiLevelLabels:[{border :{ color : "green" } }]}]                 
+});
+{% endhighlight %}
+
+
+
+
+### axes.multiLevelLabels.border.width `number`
+{:#members:axes-multilevellabels-border-width}
+
+
+
+
+Border width of the multi level labels.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+        axes: [{ multiLevelLabels:[{border :{ width : 2 } }]}]                  
+});
+{% endhighlight %}
+
+
+### axes.multiLevelLabels.border.type `enum`
+{:#members:axes-multilevellabels-border-type}
+
+
+<ts ref = "ej.datavisualization.Chart.MultiLevelLabelsBorderType"/>
+
+
+Border type of the multi level labels.
+
+#### Default Value
+
+
+
+* "rectangle". See <a href="global.html#members:multilevellabelsbordertype">Type</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+        axes: [{ multiLevelLabels:[{border :{ type : "brace" } }]}]                  
+});
+{% endhighlight %}
+
+
+
+### axes.stripLine `array`
+{:#members:axes-stripline}
+
+
+Options for customizing the strip lines.
+
+
+#### Default Value
+
+
+
+* [ ]
+
+
+
+
+
+
+
+### axes.stripLine.borderColor `string`
+{:#members:axes-stripline-bordercolor}
+
+
+
+
+Border color of the strip line.
+
+
+#### Default Value
+
+
+
+* "gray"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    axes: [{ stripLine:[{ borderColor: "green" }]}]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.stripLine.color `string`
+{:#members:axes-stripline-color}
+
+
+
+
+Background color of the strip line.
+
+
+#### Default Value
+
+
+
+* "gray"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ stripLine:[{ color: "green" }]}]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.stripLine.end `number`
+{:#members:axes-stripline-end}
+
+
+
+
+End value of the strip line.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+     axes: [{ stripLine:[{ end: 5 }]}]
+                           
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.stripLine.font `object`
+{:#members:axes-stripline-font}
+
+
+
+
+Options for customizing the font of the text.
+
+
+
+
+
+
+### axes.stripLine.font.color `string`
+{:#members:axes-stripline-font-color}
+
+
+
+
+Font color of the strip line text.
+
+
+#### Default Value
+
+
+
+* "black"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+     axes: [{ stripLine:[{ font : { color: "green"} }]}]
+                           
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.stripLine.font.fontFamily `string`
+{:#members:axes-stripline-font-fontfamily}
+
+
+
+
+Font family of the strip line text.
+
+
+#### Default Value
+
+
+
+* "Segoe UI"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ stripLine:[{ font : { fontFamily : "Algerian"} }]}]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.stripLine.font.fontStyle `enum`
+{:#members:axes-stripline-font-fontstyle}
+
+<ts ref="ej.datavisualization.Chart.FontStyle"/>
+
+
+Font style of the strip line text.
+
+
+#### Default Value
+
+
+
+* "Normal"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({ 
+
+    axes: [{ stripLine:[{ font : { fontStyle: "Bold"} }]}]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.stripLine.font.fontWeight `string`
+{:#members:axes-stripline-font-fontweight}
+
+
+
+
+Font weight of the strip line text.
+
+
+#### Default Value
+
+
+
+* "regular"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+      axes: [{ stripLine:[{ font : { fontWeight: "lighter"} }]}]
+                            
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.stripLine.font.opacity `number`
+{:#members:axes-stripline-font-opacity}
+
+
+
+
+Opacity of the strip line text.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+axes: [{ stripLine:[{ font : { opacity: 0.5} }]}]
+                      
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.stripLine.font.size `string`
+{:#members:axes-stripline-font-size}
+
+
+
+
+Font size of the strip line text.
+
+
+#### Default Value
+
+
+
+* "12px"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+        axes: [{ stripLine:[{ font : { size: "15px"} }]}]
+                              
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.stripLine.start `number`
+{:#members:axes-stripline-start}
+
+
+
+
+Start value of the strip line.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+     axes: [{ stripLine:[{ start: 2 }]}]
+                           
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.stripLine.startFromAxis `boolean`
+{:#members:axes-stripline-startfromaxis}
+
+
+
+
+Indicates whether to render the strip line from the minimum/start value of the axis. This property does not work when start property is set.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ stripLine:[{ startFromAxis : true }]}]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.stripLine.text `string`
+{:#members:axes-stripline-text}
+
+
+
+
+Specifies text to be displayed inside the strip line.
+
+
+#### Default Value
+
+
+
+* "stripLine"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+ 
+    axes: [{ stripLine:[{ text : "Empty Point" }]}]
+                           
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.stripLine.textAlignment `enum`
+{:#members:axes-stripline-textalignment}
+
+<ts ref = "ej.datavisualization.Chart.TextAlignment"/>
+
+Specifies the alignment of the text inside the strip line.
+
+
+
+
+#### Default Value
+
+
+
+* "middlecenter". See <a href="global.html#members:textalignment">TextAlignment</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+     axes: [{ stripLine:[{ textAlignment : "middletop" }]}]
+                           
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.stripLine.visible `boolean`
+{:#members:axes-stripline-visible}
+
+
+
+
+Show/hides the strip line.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ stripLine:[{ visible : true }]}]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.stripLine.width `number`
+{:#members:axes-stripline-width}
+
+
+
+
+Width of the strip line.
+
+
+#### Default Value
+
+
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+      axes: [{ stripLine:[{ width : 0 }]}]
+                            
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.stripLine.zIndex `enum`
+{:#members:axes-stripline-zindex}
+
+<ts ref = "ej.datavisualization.Chart.ZIndex"/>
+
+Specifies the order where the strip line and the series have to be rendered. When Z-order is “behind”, strip line is rendered under the series and when it is “over”, it is rendered above the series.
+
+
+#### Default Value
+
+
+
+* "over". See <a href="global.html#members:zindex">ZIndex</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ stripLine:[{ zIndex: "behind" }]}]
+                          
+});
+
+{% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vuduvnu1)
+
+
+### axes.tickLinesPosition `enum`
+{:#members:axes-ticklinesposition}
+
+<ts ref = "ej.datavisualization.Chart.TickLinesPosition"/>
+
+Specifies the position of the axis tick lines.
+
+
+
+#### Default Value
+
+
+
+
+* "outside". See <a href="global.html#members:ticklinesposition">TickLinesPosition</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ tickLinesPosition : "inside" }]
+                           
+});
+
+{% endhighlight %}
+
+
+### axes.labelBorder `object`
+{:#members:axes-labelborder}
+
+
+
+
+Options for customizing the border of the labels.
+
+
+
+
+
+
+### axes.labelBorder.color `string`
+{:#members:axes-labelborder-color}
+
+
+
+
+Specifies the color of the label border.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ labelBorder:{color: "green"} }]
+                      
+});
+
+{% endhighlight %}
+
+
+
+### axes.labelBorder.width `number`
+{:#members:axes-labelborder-width}
+
+
+
+
+Specifies the width of the label border.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ labelBorder:{width: 2} }]
+                      
+});
+
+{% endhighlight %}
+
+
+
+### axes.title `object`
+{:#members:axes-title}
+
+
+
+
+Options for customizing the axis title.
+
+
+
+
+
+
+### axes.title.enableTrim `boolean`
+{:#members:axes-title-enabletrim}
+
+
+
+
+Specifies whether to trim the axis title when it exceeds the chart area or the maximum width of the title.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes:[{ title:{enableTrim:true} }]
+                      
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.title.font `object`
+{:#members:axes-title-font}
+
+
+
+
+Options for customizing the title font.
+
+
+
+
+
+
+### axes.title.font.fontFamily `string`
+{:#members:axes-title-font-fontfamily}
+
+
+
+
+Font family of the title text.
+
+
+#### Default Value
+
+
+
+* "Segoe UI"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes:[ { title: { font : { fontFamily : "Algerain"} } } ]
+                      
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.title.font.fontStyle `enum`
+{:#members:axes-title-font-fontstyle}
+
+<ts ref="ej.datavisualization.Chart.FontStyle"/>
+
+
+Font style of the title text.
+
+
+#### Default Value
+
+
+
+* ej.datavisualization.Chart.FontStyle.Normal
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+
+$("#container").ejChart({
+
+     axes: [{ title: { font : { fontStyle : "Italic"} } }]
+                      
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.title.font.fontWeight `enum`
+{:#members:axes-title-font-fontweight}
+
+<ts ref="ej.datavisualization.Chart.FontWeight"/>
+
+
+Font weight of the title text.
+
+
+#### Default Value
+
+
+
+* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+     axes: [{ title: { font : { fontWeight : "lighter"} } }]
+                      
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.title.font.opacity `number`
+{:#members:axes-title-font-opacity}
+
+
+
+
+Opacity of the axis title text.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+     axes: [{ title: { font : { opacity : 0.8} } }]
+                           
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.title.font.size `string`
+{:#members:axes-title-font-size}
+
+
+
+
+Font size of the axis title.
+
+
+#### Default Value
+
+
+
+* "16px"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ title: { font : { size : "14px"} } }]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.title.maximumTitleWidth `number`
+{:#members:axes-title-maximumtitlewidth}
+
+
+
+
+Maximum width of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true. 
+
+
+#### Default Value
+
+
+
+* 34
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+      axes: [{ title:{maximumTitleWidth: null} }]
+                            
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.title.text `string`
+{:#members:axes-title-text}
+
+
+
+
+Title for the axis.
+
+
+#### Default Value
+
+
+
+* ""
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+axes: [{ title: { text: "Year" } }]
+                      
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.title.visible `boolean`
+{:#members:axes-title-visible}
+
+
+
+
+Controls the visibility of axis title.
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes:[{ title: { visible: false } }]
+                          
+});
+
+{% endhighlight %}
+
+
+### axes.title.offset `number`
+{:#members:axes-title-offset}
+
+
+
+
+offset value for axis title.
+
+
+#### Default Value
+
+
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ title: { offset: 0 } }]
+                          
+});
+
+{% endhighlight %}
+
+### axes.title.position `enum`
+{:#members:axes-title-position}
+
+<ts ref = "ej.datavisualization.Chart.LabelPosition"/>
+
+Specifies the position of the axis title.
+
+
+#### Default Value
+
+
+
+* "outside". See <a href="global.html#members:labelposition">Position</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ title: { position : "inside" }}]
+                           
+});
+
+{% endhighlight %}
+
+### axes.title.alignment `enum`
+{:#members:axes-title-alignment}
+
+<ts ref = "ej.datavisualization.Chart.TextAlignment"/>
+
+Specifies the position of the axis title.
+
+
+#### Default Value
+
+
+
+* "center". See <a href="global.html#members:textalignment">Alignment</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ title: { alignment : "near" }}]
+                           
+});
+
+{% endhighlight %}
+
+
+
+### axes.valueType `enum`
+{:#members:axes-valuetype}
+
+<ts ref = "ej.datavisualization.Chart.ValueType"/>
+
+Specifies the type of data the axis is handling.
+
+
+
+
+#### Default Value
+
+
+
+
+* null. See <a href="global.html#members:valuetype">ValueType</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+     axes: [{ valueType: "double" }]
+                           
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.visible `boolean`
+{:#members:axes-visible}
+
+
+
+
+Show/hides the axis.
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ visible: false }]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.zoomFactor `number`
+{:#members:axes-zoomfactor}
+
+
+
+
+The axis is scaled by this factor. When zoomFactor is 0.5, the chart is scaled by 200% along this axis. Value ranges from 0 to 1.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ zoomFactor : 0.5 }]
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+### axes.zoomPosition `number`
+{:#members:axes-zoomposition}
+
+
+
+
+Position of the zoomed axis. Value ranges from 0 to 1.
+
+
+
+#### Default Value
+
+
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ zoomPosition :0.5 }]
+                          
+});
+
+{% endhighlight %}
 
 
 
