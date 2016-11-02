@@ -98,6 +98,20 @@ Specifies the CSS class to PivotGrid to achieve custom theme.
     $("#PivotGrid1").ejPivotGrid({ cssClass: "gradient-lime" });
 {% endhighlight %}
 
+### pivotTableFieldListID `string`
+{:#members:pivottablefieldlistid}
+
+Connects the PivotSchemaDesigner with the specified ID to the PivotGrid Control.
+
+#### Default Value: “”
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ pivotTableFieldListID: "PivotTableFieldListID" });
+{% endhighlight %}
+
 ### dataSource `object`
 {:#members:datasource}
 
