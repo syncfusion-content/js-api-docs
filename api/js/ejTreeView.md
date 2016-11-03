@@ -1472,7 +1472,29 @@ Specifies the text of TreeView node items list.
 
 
 
+### fullRowSelect `boolean`
+{:#members:fullrowselect}
 
+Gets or sets a value that indicates whether to enable full row selection support for TreeView.
+
+#### Default Value
+
+* false
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="treeView"></div>
+<script>
+// Initialize the TreeView with the fullRowSelect value specified.
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" },
+    fullRowSelect: true
+});
+</script>
+{% endhighlight %}
 
 
 
