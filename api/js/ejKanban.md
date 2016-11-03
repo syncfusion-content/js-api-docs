@@ -50,7 +50,6 @@ The Kanban can be easily configured to the DOM element, such as div. You can cre
 {:.require}
 
 * module:jQuery
-* module:jquery.easing.1.3.min.js
 * module:jsrender.min.js
 * module:ej.globalize.min.js
 * module:ej.core.min.js
