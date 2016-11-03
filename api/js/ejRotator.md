@@ -1823,14 +1823,11 @@ Example
 
 
 {% highlight html %}
-           <div class="cols-sample-area">
-                <div class="frame">
-                    <ul id="sliderContent">                        
-                    </ul>
-                </div>
-            </div>
 
-<script>
+        <ul id="sliderContent">                        
+        </ul>
+
+        <script>
            var themeslist = [
                 { text: "Colorful-Night", url: "../content/images/rotator/snowfall.jpg", cls: "text" },
                 { text: "Technology", url: "../content/images/rotator/tablet.jpg" },
@@ -1848,10 +1845,55 @@ Example
 		slideHeight: "auto",
 		template: '<div class="image"><img src = ${url} title = ${text} class="image"/> </div>' 				
             });        
-</script>
+        </script>
+
 {% endhighlight %}
 
 
+### templateId `array`
+{:#members:templateid}
+
+The templateId enables to bind multiple customized template items in Rotator.
+
+
+
+#### Default Value: 
+* null
+
+
+
+Example
+{:.example}
+
+
+
+{% highlight html %}
+
+        <ul id="sliderContent">                        
+        </ul>
+        <script id="template1" type="text/x-jsrender">
+                <div id="t1" >
+                <img class="image" src="../content/images/rotator/sea.jpg" title="Snowfall" />
+                </div>
+        </script>
+        <script id="template2" type="text/x-jsrender">
+                <div id="t2">
+                        <video width="472" height="350" controls style="margin-left: -2px;">
+                        <source src="video.mp4" type="video/mp4">
+                        </video>
+                </div>
+        </script>
+        <script>
+
+            $("#sliderContent").ejRotator({
+                slideWidth: "300%",
+                frameSpace: "0px",
+		slideHeight: "100px",
+		templateId: ["template1","template2"] 				
+            });        
+        </script>
+
+{% endhighlight %}
 
 
 ### thumbnailSourceID `object`

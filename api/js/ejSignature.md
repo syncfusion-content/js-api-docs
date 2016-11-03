@@ -48,7 +48,7 @@ Using ejSignature we can customize the background, stroke width and stroke color
 ## Members
 
 ### backgroundColor `string`
-{:#members:backgroundColor}
+{:#members:backgroundcolor}
 
 This property is used to set the background color for the signature.  
 
@@ -67,7 +67,7 @@ This property is used to set the background color for the signature.
 {% endhighlight %}
 
 ### backgroundImage `string`
-{:#members:backgroundImage}
+{:#members:backgroundimage}
 
 This property is used to set the background image for the signature.  
 
@@ -120,7 +120,7 @@ Sets the height of the Signature control.
 {% endhighlight %}
  
 ### isResponsive `Boolean`
-{:#members:isResponsive}
+{:#members:isresponsive}
 
  Enables/disables responsive support for the signature control (i.e) maintain the signature drawing during the window resizing time.
 
@@ -139,7 +139,7 @@ Sets the height of the Signature control.
 {% endhighlight %}
  
 ### saveImageFormat `Enum`
-{:#members:saveImageFormat}
+{:#members:saveimageformat}
 
 <ts name = "ej.Signature.SaveImageFormat"/>
 
@@ -180,7 +180,7 @@ Allows the type of the image format to be saved when the signature image is save
 
 
 ### saveWithBackground `Boolean`
-{:#members:saveWithBackground}
+{:#members:savewithbackground}
 
 Allows the signature image to be saved along with its background.
 
@@ -200,7 +200,7 @@ Allows the signature image to be saved along with its background.
 {% endhighlight %}
  
 ### showRoundedCorner `Boolean`
-{:#members:showRoundedCorner}
+{:#members:showroundedcorner}
 
 Enables or disables rounded corner.
 
@@ -219,7 +219,7 @@ Enables or disables rounded corner.
 {% endhighlight %}
  
 ### strokeColor `string`
-{:#members:strokeColor} 
+{:#members:strokecolor} 
 
 Sets the stroke color for the stroke of the signature.
 
@@ -239,7 +239,7 @@ Sets the stroke color for the stroke of the signature.
  
 
 ### strokeWidth `Number`
-{:#members:strokeMaxWidth} 
+{:#members:strokewidth} 
 
 Sets the stroke width for the stroke of the signature.
 
