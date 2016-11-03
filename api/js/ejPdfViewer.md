@@ -336,8 +336,9 @@ The below code snippet shows the hyperlink opened in a new tab.
 
 
 #### enableHyperlink `boolean`
+{:#members:enablehyperlink}
 
-Enable or Disable the hyperlinks in PDF Document.
+Enables or disables the hyperlinks in PDF Document.
 
 **Default Value**: true
 
@@ -432,6 +433,7 @@ pdfviewerObj.print();
 {% endhighlight %}
 
 ### abortPrint()
+{:#methods:abortprint}
 
 Abort the printing function and restores the PDF Viewer.
 
@@ -444,6 +446,7 @@ pdfviewerObj.abortPrint();
 
 
 ### showPrintTools(show) `boolean`
+{:#methods:showprinttools}
 
 Shows/hides the print icon in the tool bar.
 
@@ -456,6 +459,7 @@ pdfviewerObj.showPrintTools(false);
 
 
 ### download()
+{:#methods:download}
 
 Downloads the PDF document being loaded in the ejPdfViewer control.
 
@@ -468,6 +472,7 @@ pdfviewerObj.download();
 
 
 ### showDownloadTool(show) `boolean`
+{:#methods:showdownloadtool}
 
 Shows/hides the download tool in the tool bar.
 
@@ -1274,6 +1279,126 @@ Returns the name of the event
         });
         function afterPrint() {
             alert("Printing completed successfully");
+        }
+</script>
+{% endhighlight %}
+
+
+### pageClick
+
+{:#events:pageclick}
+
+Triggers when the mouse click is performed over the page of the PDF document.
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Event parameters from PDF Viewer
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel
+</td>
+<td class="type">
+boolean
+</td>
+<td class="description">
+True, if the event should be canceled; otherwise, false.
+</td>
+</tr>
+<tr>
+<td class="name">
+model
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Returns the PDF viewer model
+</td>
+</tr>
+<tr>
+<td class="name">
+type
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the name of the event
+</td>
+</tr>
+<tr>
+<td class="name">
+offsetX
+</td>
+<td class="type">
+number
+</td>
+<td class="description">
+Returns the current X position
+</td>
+</tr>
+<tr>
+<td class="name">
+offsetY
+</td>
+<td class="type">
+number
+</td>
+<td class="description">
+Returns the current Y position
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight html %}
+<script type="text/javascript">
+        $(function () {
+            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', destroy: "destroy" });
+        });
+        function destroy(args) {
+            alert("The control is destroyed successfully");
         }
 </script>
 {% endhighlight %}
