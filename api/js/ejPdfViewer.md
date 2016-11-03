@@ -1288,7 +1288,7 @@ Returns the name of the event
 
 {:#events:pageclick}
 
-Triggers when the mouse clicked in PDF document page.
+Triggers when the mouse click is performed over the page of the PDF document.
 <table>
 <thead>
 <tr>
