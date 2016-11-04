@@ -69,7 +69,7 @@ Options for adding and customizing annotations in Chart.
 
 
 
-
+N> Annotations are not supported in 3D chart types.
 
 
 ### annotations.angle `number`
