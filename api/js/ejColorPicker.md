@@ -225,7 +225,7 @@ Dropdown</td>
         
         <script>
         //To set buttonText API during initialization
-        $('#colorPick').ejColorPicker({ value: "#278787",  buttonMode: ej.ButtonModel.DropDown});
+        $('#colorPick').ejColorPicker({ value: "#278787",  buttonMode: ej.ButtonMode.Dropdown});
         </script>
 
 {% endhighlight %}
