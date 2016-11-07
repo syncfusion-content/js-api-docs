@@ -1293,7 +1293,7 @@ Specifies the settings for column resize
 </thead>
 <tbody>
 <tr>
-<td class="name">FixedColumn</td>
+<td class="name">FixedColumns</td>
 <td class="description">At load time column are rendered with given width value, while resizing the column only current column width is changed</td>
 </tr>
 <tr>
