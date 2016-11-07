@@ -1293,7 +1293,7 @@ Specifies the settings for column resize
 </thead>
 <tbody>
 <tr>
-<td class="name">Control</td>
+<td class="name">FixedColumn</td>
 <td class="description">At load time column are rendered with given width value, while resizing the column only current column width is changed</td>
 </tr>
 <tr>
@@ -1318,7 +1318,7 @@ Specifies the mode for column resizing
 
 {% highlight html %}
  
-        $("#treegrid").ejTreeGrid({  columnResizeSettings: { columnResizeMode : "normal"} });
+        $("#treegrid").ejTreeGrid({  columnResizeSettings: { columnResizeMode : "control"} });
 
 {% endhighlight %}
 
