@@ -3788,6 +3788,7 @@ Triggered  when you start to drag a column
 </tr>
 </tbody>
 </table>
+
 #### Example
 
 {% highlight html %}
@@ -3873,6 +3874,7 @@ Triggered while dragging a column
 </tr>
 </tbody>
 </table>
+
 #### Example
 
 {% highlight html %}
@@ -3953,6 +3955,7 @@ Triggered when a column is dropped
 </tr>
 </tbody>
 </table>
+
 #### Example
 
 {% highlight html %}
