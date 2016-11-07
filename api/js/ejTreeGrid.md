@@ -1311,7 +1311,7 @@ Specifies the mode for column resizing
 
 #### Default Value
 
-* "control"
+* "normal"
 
 #### Example
 
@@ -3003,7 +3003,7 @@ To reorder the column with field name and target index values
 <script>
 // Create Tree Grid object
 var treegridObj = $("#treegrid").data("ejTreeGrid");
-treegridObj.reorderColumn("Start Date", 4); // To sort the data
+treegridObj.reorderColumn("startDate", 4); // To sort the data
 </script>
 {% endhighlight %}
 
