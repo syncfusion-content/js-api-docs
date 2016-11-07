@@ -185,6 +185,31 @@ Specifies enabling or disabling multiple sorting for Gantt columns
 
 {% endhighlight %}
 
+### allowMultipleExporting `boolean`
+{:#members:allowmultipleexporting}
+
+Enables or disables the option for multiple exporting 
+
+
+#### Default Value:
+{:.param}
+
+* false
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({ allowMultipleExporting : true});                       
+</script>
+
+{% endhighlight %}
+
 
 ### allowSelection `boolean`
 {:#members:allowselection}
@@ -3611,6 +3636,10 @@ Specifies the list of toolbar items to be rendered in Gantt toolbar
 <td class="name">NextTimeSpan</td>
 <td class="description">Enables the next time span icon in toolbar</td>
 </tr>
+<tr>
+<td class="name">ExcelExport</td>
+<td class="description">Enables the excel export toolbar icon</td>
+</tr>
 </tbody>
 </table>
 
@@ -6491,6 +6520,83 @@ $("#gantt").ejGantt({
 </script>
 {% endhighlight %}
 
+
+### taskbarClick
+{:#events:taskbarclick}
+
+Triggered when taskbar item is clicked in Gantt.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Arguments when taskbarClick event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns currently clicked row data</td>
+</tr>
+<tr>
+<td class="name">index</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the current item index.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Gantt model.</td>
+</tr>
+<tr>
+<td class="name">taskbarElement</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the clicked row element</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the target element.</td>
+</tr>
+<tr>        
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
+$("#gantt").ejGantt({
+   taskbarClick: function (args) {}
+});
+</script>
+{% endhighlight %}
 
 ### toolbarClick
 {:#events:toolbarclick}
