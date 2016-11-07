@@ -141,6 +141,20 @@ Gets the total number of pages in the document.
 </script>
 {% endhighlight %}
 
+### getSelectedText()
+{:#methods:getselectedtext}
+
+Gets the text of current selection in the document.
+
+#### Example
+
+{% highlight html %}
+<script>
+	var documentEditorObj = $("#container").data("ejDocumentEditor");
+	alert("Selected Text: "+ documentEditorObj.getSelectedText());
+</script>
+{% endhighlight %}
+
 ### getZoomFactor()
 {:#methods:getzoomfactor}
 
