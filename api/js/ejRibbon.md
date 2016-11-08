@@ -9390,7 +9390,7 @@ Update option in existing Backstage.
     
 {% endhighlight %}
 
-### removeTabGroupContent(tabIndex, groupIndex, \[subGroupIndex\])
+### removeTabGroupContent(tabIndex, groupText, \[subGroupIndex\])
 {:#methods:removetabgroupcontent}
 
 To customize whole content from Tab Group.
@@ -9410,9 +9410,9 @@ To customize whole content from Tab Group.
 <td class="description last">ribbon tab index.</td>
 </tr>
 <tr>
-<td class="name">groupIndex</td>
+<td class="name">groupText</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">ribbon group index.</td>
+<td class="description last">ribbon group text.</td>
 </tr>
 <tr>
 <td class="name">subGroupIndex</td>
