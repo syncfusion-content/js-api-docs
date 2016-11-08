@@ -582,6 +582,53 @@ It allows to define the characteristics of the ColorPicker control. It will help
 {% endhighlight %}
 
 
+### locale `string`
+{:#members:locale}
+
+Defines the localized text values in button and tooltip.
+
+#### Default Value
+
+* "en-US"
+
+#### Example
+
+{% highlight html %}
+ 
+<input type="text" id="colorpick" />
+<script>
+// Set the locale value during initialization.                  
+        $("#colorpick").ejColorPicker({ value: "#278787",  locale : "zh-CN" });
+
+        ej.ColorPicker.Locale["zh-CN"] = {
+            buttonText: {
+                apply: "应用",
+                cancel: "取消",
+                swatches: "色板"
+            },
+            tooltipText: {
+                switcher: "切换器",
+                addbutton: "添加颜色",
+                basic: "基本",
+                monochrome: "单色铬",
+                flatcolors: "平的颜色",
+                seawolf: "海狼",
+                webcolors: "网颜色",
+                sandy: "沙",
+                pinkshades: "桃红色树荫",
+                misty: "蒙蒙",
+                citrus: "柑橘",
+                vintage: "葡萄酒",
+                moonlight: "月光",
+                candycrush: "糖果粉碎",
+                currentcolor: "当前颜色",
+                selectedcolor: "所选颜色"
+            }
+        };
+</script> 
+
+
+{% endhighlight %}
 
 
 ### modelType `enum|string`
