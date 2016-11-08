@@ -145,7 +145,7 @@ ImageTextImage</td>
         
         <script>
         // Set the button contentType on initialization.                        
-                $("#button1").ejButton({  contentType : ej.ContentType.ImageOnly,prefixIcon: "e-uiLight e-icon e-handup" });                    
+                $("#button1").ejButton({  contentType : ej.ContentType.ImageOnly,prefixIcon: "e-icon e-handup" });                    
         </script>
 
 {% endhighlight %}
@@ -400,7 +400,7 @@ ImageBottom</td>
         {
         contentType: ej.ContentType.TextAndImage,
         imagePosition: ej.ImagePosition.ImageRight,
-                prefixIcon: "e-uiLight e-icon e-handup" //Specifies the primary icon for Button
+                prefixIcon: "e-icon e-handup" //Specifies the primary icon for Button
         });     
         </script>                 
 
@@ -443,7 +443,7 @@ N>  This is applicable for the content type's imageonly, textandimage, imagetext
                 $("#button1").ejButton(
         {
             contentType: "imageonly",
-            prefixIcon: "e-uiLight e-icon e-handup"
+            prefixIcon: "e-icon e-handup"
         });            
         </script>
 
@@ -634,8 +634,10 @@ N>   This is applicable for the content type's imagetextimage and imageboth.
         // Set the secondary icon during initialization.                        
                 $("#button1").ejButton(
         {
-            contentType: "imageonly",
-            prefixIcon: "e-uiLight e-icon e-handup",
+            contentType: "imageboth",
+            suffixIcon: "e-icon e-file-html",
+            prefixIcon: "e-icon e-search",
+            text: "FileSearch"
         });            
         </script>
 
