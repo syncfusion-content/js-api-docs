@@ -886,14 +886,14 @@ $("#tile").ejTile("option", "imageUrl", "themes/sample/tile/people.png"); </scri
 
 
 ### liveTile `object`
-{:#members:liveTile}
+{:#members:livetile}
 
 
 
 Section for liveTile specific functionalities.
 
 ### liveTile.enabled `boolean`
-{:#members:liveTile-enabled}
+{:#members:livetile-enabled}
 
 
 Specifies whether to enable liveTile or not.
@@ -932,7 +932,7 @@ $("#tile").ejTile("option", "liveTile.enabled", true); </script>
 
 
 ### liveTile.imageClass `array`
-{:#members:liveTile-imageclass}
+{:#members:livetile-imageclass}
 
 
 
@@ -985,7 +985,7 @@ $("#tile").ejTile("option", "liveTile.imageClass", ['img1','img2','img3']);</scr
 
 
 ### liveTile.imageTemplateId `array`
-{:#members:liveTile-imagetemplateid}
+{:#members:livetile-imagetemplateid}
 
 
 Specifies liveTile images in templates.
@@ -1026,7 +1026,7 @@ $("#tile").ejTile("option", "liveTile.imageTemplateId", ['img1','img2','img3']);
 
 
 ### liveTile.imageUrl `array`
-{:#members:liveTile-imageurl}
+{:#members:livetile-imageurl}
 
 
 Specifies liveTile images in CSS classes.
@@ -1062,7 +1062,7 @@ $("#tile").ejTile("option", "liveTile.imageUrl", ['themes/sample/tile/people.png
 
 
 ### liveTile.type `enum`
-{:#members:liveTile-type}
+{:#members:livetile-type}
 
 
 <ts name = "ej.Tile.liveTileType"/>
@@ -1126,7 +1126,7 @@ $("#tile").ejTile("option", "liveTile.type", "carousel");</script>            {%
 
 
 ### liveTile.updateInterval `number`
-{:#members:liveTile-updateinterval}
+{:#members:livetile-updateinterval}
 
 
 
@@ -1165,7 +1165,7 @@ $("#tile").ejTile("option", "liveTile.updateInterval", 1000);</script>          
 
 
 ### liveTile.text `array`
-{:#members:liveTile-text}
+{:#members:livetile-text}
 
 
 Sets the text to each living tile

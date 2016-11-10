@@ -960,7 +960,53 @@ $("#navpane").ejNavigationDrawer ("option", "width", "overlay");
 
 
 
+### isPaneOpen `boolean`
+{:#members:ispaneopen}
 
+
+Navigation pane opened initially when isPaneOpen property is true.
+
+#### Default Value
+
+* false
+
+#### Example
+
+
+{% highlight html %}
+// Set Navigation Drawer isPaneOpen on initialization. 
+//To set isPaneOpen API value 
+<div id="home" class="navsubpage">
+<div align="center" class="content">
+<h2 class="title">
+Home</h2>
+<p>
+Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range of enterprise-class software components and tools for the Microsoft .NET platform.
+</p>
+</div>
+</div>
+<div >
+<div class="list"> Home </div>
+<div class="list"> Communities </div>
+</div>
+<script>
+$(function () {
+$("#navpane").ejNavigationDrawer({isPaneOpen:true});        
+});
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+//Get or set the Navigation Drawer isPaneOpen, after initialization:
+$(function () {
+// Gets the isPaneOpen API value.            
+$("#navpane").ejNavigationDrawer("option", "isPaneOpen");    
+// Sets the isPaneOpen API   
+$("#navpane").ejNavigationDrawer ("option", "isPaneOpen",false);  
+});
+</script>  {% endhighlight %}
 
 ## Methods
 
