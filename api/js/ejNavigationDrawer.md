@@ -973,7 +973,7 @@ $("#navpane").ejNavigationDrawer ("option", "width", "overlay");
 
 
 
-Navigation pane opened initially when set isPaneOpen property is true.
+Navigation pane opened initially when isPaneOpen property is true.
 
 
 
