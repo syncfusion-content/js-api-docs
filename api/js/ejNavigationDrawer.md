@@ -960,44 +960,17 @@ $("#navpane").ejNavigationDrawer ("option", "width", "overlay");
 
 
 
-
-
-
 ### isPaneOpen `boolean`
 {:#members:ispaneopen}
 
 
-
-
-
-
-
-
 Navigation pane opened initially when isPaneOpen property is true.
-
-
-
-
 
 #### Default Value
 
-
-
-
-
-
-
 * false
 
-
-
-
-
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -1012,14 +985,6 @@ Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range
 </p>
 </div>
 </div>
-<style>
-.list {
-  border-bottom: 1px solid;
-  line-height: 50px;
-  text-align: center;
-  width:200px;
-  }
-</style>
 <div >
 <div class="list"> Home </div>
 <div class="list"> Communities </div>
@@ -1042,9 +1007,6 @@ $("#navpane").ejNavigationDrawer("option", "isPaneOpen");
 $("#navpane").ejNavigationDrawer ("option", "isPaneOpen",false);  
 });
 </script>  {% endhighlight %}
-
-
-
 
 ## Methods
 
