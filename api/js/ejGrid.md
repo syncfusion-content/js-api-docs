@@ -14532,7 +14532,7 @@ $("#Grid").ejGrid({
 });
 </script>{% endhighlight %}
 
-### toolBarClick
+### toolbarClick
 {:#events:toolbarclick}
 
 Triggered when toolbar item is clicked in grid.
@@ -14549,7 +14549,7 @@ Triggered when toolbar item is clicked in grid.
 <tr>
 <td class="name">argument</td>
 <td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
-<td class="description last">Arguments when toolBarClick event is triggered.
+<td class="description last">Arguments when toolbarClick event is triggered.
 <table class="params">
 <thead>
 <tr>
