@@ -1282,7 +1282,7 @@ Specifies the settings for column resize
 ### columnResizeSettings.columnResizeMode `enum`
 {:#members:columnresizesettings-columnresizemode}
 
-<ts name = "ej.TreeGrid.ColumnResizeMode"/>
+Specifies the mode for column resizing 
 
 <table class="params">
 <thead>
@@ -1306,8 +1306,6 @@ Specifies the settings for column resize
 </tr>
 </tbody>
 </table>
-
-Specifies the mode for column resizing 
 
 #### Default Value
 
@@ -1350,7 +1348,7 @@ Specifies the mode on which column filtering should start
 ### filterSettings.filterType `enum`
 {:#members:filtersettings-filtertype}
 
-<ts name = "ej.TreeGrid.FilterType"/>
+Specifies the type of column filtering.
 
 <table class="params">
 <thead>
@@ -1370,8 +1368,6 @@ Specifies the mode on which column filtering should start
 </tr>
 </tbody>
 </table>
-
-Specifies the type of column filtering.
 
 #### Default Value
 
