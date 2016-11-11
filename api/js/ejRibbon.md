@@ -625,6 +625,265 @@ Specifies the custom tooltip for collapse pin.Refer to ejRibbon#tabs->groups->co
 
 {% endhighlight %}
 
+### enableOnDemand `boolean`
+{:#members:enableondemand}
+
+Set `enableOnDemand` as true to load ribbon tab and backstage contents while corresponding item clicked.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+   
+       <div id="defaultRibbon"></div>
+                <div id="infoCon" style="display:none">
+                    <div style="display:table-cell;padding-top:10px">
+                        <table>
+                            <tr>
+                                <td style="vertical-align: top;padding-left:10px">
+                                    <span class="e-bsptitle" style="font-size:18px">Protect Workbook</span>
+                                    <span style="display:block">Control what types of changes people can make to this workbook.</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $(function () {
+                        $("#defaultRibbon").ejRibbon({
+                            width: "100%",
+                            expandPinSettings: {
+                                toolTip: "Collapse the Ribbon"
+                            },
+                            collapsePinSettings: {
+                                toolTip: "Pin the Ribbon"
+                            },
+                            enableOnDemand: true,
+                            applicationTab: {
+                                type: ej.Ribbon.ApplicationTabType.Backstage,
+                                backstageSettings: {
+                                    text: "FILE", height: 350, width: 1000, headerWidth: 120, pages: [
+                                    { id: "info", text: "Info", contentID: "infoCon", itemType: ej.Ribbon.ItemType.Tab },
+                                    { id: "close", text: "Close", itemType: ej.Ribbon.ItemType.Button }
+                                    ]
+                                }
+                            },
+                            tabs: [{
+                                id: "home", text: "HOME", groups: [{
+                                    text: "Clipboard", alignType: ej.Ribbon.AlignType.Columns, enableGroupExpander: true, groupExpanderSettings: {
+                                        toolTip: "Clipboard"
+                                    }, content: [{
+                                        groups: [{
+                                            id: "paste",
+                                            text: "paste",
+                                            buttonSettings: {
+                                                contentType: ej.ContentType.ImageOnly,
+                                                prefixIcon: "e-icon e-ribbon e-ribbonpaste"
+                                            }
+                                        }
+                                        ],
+                                        defaults: {
+                                            type: ej.Ribbon.Type.Button,
+                                            isBig: true,
+                                            width: 50,
+                                            height: 70
+                                        }
+                                    },
+                                    {
+                                        groups: [{
+                                            id: "cut",
+                                            text: "Cut",
+                                            buttonSettings: {
+                                                contentType: ej.ContentType.TextAndImage,
+                                                prefixIcon: "e-icon e-ribbon e-ribboncut"
+                                            }
+                                        },
+                                        {
+                                            id: "copy",
+                                            text: "Copy",
+                                            buttonSettings: {
+                                                contentType: ej.ContentType.TextAndImage,
+                                                prefixIcon: "e-icon e-ribbon e-ribboncopy"
+                                            }
+                                        },
+                                        {
+                                            id: "clear",
+                                            text: "Clear",
+                                            toolTip: "Clear All",
+                                            buttonSettings: {
+                                                contentType: ej.ContentType.TextAndImage,
+                                                prefixIcon: "e-icon e-ribbon clearAll"
+                                            }
+                                        }],
+                                        defaults: {
+                                            type: ej.Ribbon.Type.Button,
+                                            width: 60,
+                                            isBig: false
+                                        }
+                                    }]
+                                },
+                                ]
+                            },
+                            {
+                                id: "layout", text: "LAYOUT", groups: [
+                                {
+                                    text: "Print Layout", alignType: ej.Ribbon.AlignType.Rows, content: [{
+                                        groups: [{
+                                            id: "printlayout",
+                                            text: "Print Layout",
+                                            buttonSettings: {
+                                                contentType: ej.ContentType.TextAndImage,
+                                                imagePosition: ej.ImagePosition.ImageTop,
+                                                prefixIcon: "e-icon e-ribbon e-printlayout"
+                                            }
+                                        }
+                                        ],
+                                        defaults: {
+                                            type: ej.Ribbon.Type.Button,
+                                            width: 80,
+                                            height: 70
+                                        }
+                                    }]
+                                }]
+                            }]
+                        });
+                    });
+                </script>
+            
+{% endhighlight %}
+
+### collapsible `boolean`   
+{:#members:collapsible}
+
+Set `collapsible` property as true to render ribbon in initially collapsed state.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+   
+        <div id="defaultRibbon"></div>
+            <div id="infoCon" style="display:none">
+                <div style="display:table-cell;padding-top:10px">
+                    <table>
+                        <tr>                           
+                            <td style="vertical-align: top;padding-left:10px">
+                                <span class="e-bsptitle" style="font-size:18px">Protect Workbook</span>
+                                <span style="display:block">Control what types of changes people can make to this workbook.</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+            $("#defaultRibbon").ejRibbon({
+                width: "100%",
+                expandPinSettings: {
+                    toolTip: "Collapse the Ribbon"
+                },
+                collapsePinSettings: {
+                    toolTip: "Pin the Ribbon"
+                },
+                enableOnDemand: true,
+                collapsible:true,
+                applicationTab: {
+                    type: ej.Ribbon.ApplicationTabType.Backstage,
+                    backstageSettings: {
+                        text: "FILE", height: 350, width: 1000, headerWidth: 120, pages: [
+                        { id: "info", text: "Info", contentID: "infoCon", itemType: ej.Ribbon.ItemType.Tab },
+                        { id: "close", text: "Close", itemType: ej.Ribbon.ItemType.Button }
+                        ]
+                    }
+                },
+                tabs: [{
+                    id: "home", text: "HOME", groups: [{
+                        text: "Clipboard", alignType: ej.Ribbon.AlignType.Columns, enableGroupExpander: true, groupExpanderSettings: {
+                            toolTip: "Clipboard"
+                        }, content: [{
+                            groups: [{
+                                id: "paste",
+                                text: "paste",
+                                buttonSettings: {
+                                    contentType: ej.ContentType.ImageOnly,
+                                    prefixIcon: "e-icon e-ribbon e-ribbonpaste"
+                                }
+                            }
+                            ],
+                            defaults: {
+                                type: ej.Ribbon.Type.Button,
+                                isBig: true,
+                                width: 50,
+                                height: 70
+                            }
+                        },
+                        {
+                            groups: [{
+                                id: "cut",
+                                text: "Cut",
+                                buttonSettings: {
+                                    contentType: ej.ContentType.TextAndImage,
+                                    prefixIcon: "e-icon e-ribbon e-ribboncut"
+                                }
+                            },
+                            {
+                                id: "copy",
+                                text: "Copy",
+                                buttonSettings: {
+                                    contentType: ej.ContentType.TextAndImage,
+                                    prefixIcon: "e-icon e-ribbon e-ribboncopy"
+                                }
+                            },
+                            {
+                                id: "clear",
+                                text: "Clear",
+                                buttonSettings: {
+                                    contentType: ej.ContentType.TextAndImage,
+                                    prefixIcon: "e-icon e-ribbon clearAll"
+                                }
+                            }],
+                            defaults: {
+                                type: ej.Ribbon.Type.Button,
+                                width: 60,
+                                isBig: false
+                            }
+                        }]
+                    },
+                    ]
+                },
+				{
+				    id: "layout", text: "LAYOUT", groups: [
+					{
+					    text: "Print Layout", alignType: ej.Ribbon.AlignType.Rows, content: [{
+					        groups: [{
+					            id: "printlayout",
+					            text: "Print Layout",
+					            buttonSettings: {
+					                contentType: ej.ContentType.TextAndImage,
+					                imagePosition: ej.ImagePosition.ImageTop,
+					                prefixIcon: "e-icon e-ribbon e-printlayout"
+					            }
+					        }
+					        ],
+					        defaults: {
+					            type: ej.Ribbon.Type.Button,
+					            width: 80,
+					            height: 70
+					        }
+					    }]
+					}]
+				}]
+            });
+        });        
+            
+{% endhighlight %}
+
 ### enableRTL `object`
 {:#members:enablertl}
 
