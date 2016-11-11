@@ -1318,7 +1318,7 @@ Specifies the mode for column resizing
 
 {% highlight html %}
  
-        $("#treegrid").ejTreeGrid({  columnResizeSettings: { columnResizeMode : "control"} });
+        $("#treegrid").ejTreeGrid({  columnResizeSettings: { columnResizeMode : ej.TreeGrid.ColumnResizeMode.FixedColumns} });
 
 {% endhighlight %}
 
