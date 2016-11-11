@@ -275,12 +275,12 @@ $("#diagramcontent").ejDiagram({ bridgeDirection:ej.datavisualization.Diagram.Br
 
 {% endhighlight %}
 
-### commandManager `Object`
+### commandManager `object`
 {:#members:commandmanager}
 
 Defines a set of custom commands and binds them with a set of desired key gestures.
 
-### commandManager.commands `Object`
+### commandManager.commands `object`
 {:#members:commandmanager-commands}
 
 An object that maps a set of command names with the corresponding command objects 
@@ -386,7 +386,7 @@ $("#diagramcontent").ejDiagram( {
 
 {% endhighlight %}
 
-### commandManager.commands.gesture `Object`
+### commandManager.commands.gesture `object`
 {:#members:commandmanager-commands-gesture}
 
 Defines a combination of keys and key modifiers, on recognition of which the command will be executed
@@ -677,7 +677,7 @@ $("#diagramcontent").ejDiagram( {
 
 {% endhighlight %}
 
-### commandManager.commands.parameter `Object`
+### commandManager.commands.parameter `object`
 {:#members:commandmanager-commands-parameter}
 
 Defines any additional parameters that are required at runtime
@@ -716,7 +716,7 @@ $("#diagramcontent").ejDiagram( {
 
 {% endhighlight %}
 
-### connectors `Array`
+### connectors `array`
 {:#members:connectors}
 
 A collection of JSON objects where each object represents a connector
@@ -737,7 +737,7 @@ $("#diagramcontent").ejDiagram({ connectors:[connector] });
 
 {% endhighlight %}
 
-### connectors.addInfo `Object`
+### connectors.addInfo `object`
 {:#members:connectors-addinfo}
 
 To maintain additional information about connectors
@@ -759,7 +759,7 @@ $("#diagramcontent").ejDiagram({ connectors:[connector] });
 
 {% endhighlight %}
 
-### connectors.bridgeSpace `Number`
+### connectors.bridgeSpace `number`
 {:#members:connectors-bridgespace}
 
 Defines the width of the line bridges
@@ -878,7 +878,7 @@ $("#diagramcontent").ejDiagram({ connectors:[connector] });
 
 {% endhighlight %}
 
-### connectors.cornerRadius `Number`
+### connectors.cornerRadius `number`
 {:#members:connectors-cornerradius}
 
 Defines the radius of the rounded corner
@@ -983,7 +983,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 {% endhighlight %}
 
-### connectors.labels `Array`
+### connectors.labels `array`
 {:#members:connectors-labels}
 
 A collection of JSON objects where each object represents a label.
@@ -1105,7 +1105,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
-### connectors.labels.borderWidth `Number`
+### connectors.labels.borderWidth `number`
 {:#members:connectors-labels-borderwidth}
 
 Sets the border width of the label
@@ -1226,7 +1226,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
-### connectors.labels.fontSize `Number`
+### connectors.labels.fontSize `number`
 {:#members:connectors-labels-fontsize}
 
 Defines the font size of the text
@@ -1349,7 +1349,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
-### connectors.labels.offset `Object`
+### connectors.labels.offset `object`
 {:#members:connectors-labels-offset}
 
 Sets the fraction/ratio(relative to connector) that defines the position of the label
@@ -1374,7 +1374,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
-### connectors.labels.margin `Object`
+### connectors.labels.margin `object`
 {:#members:connectors-labels-margin}
 
 Sets the fraction/ratio(relative to connector) that defines the position of the label
@@ -1499,7 +1499,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
-### connectors.labels.opacity `Number`
+### connectors.labels.opacity `number`
 {:#members:connectors-labels-opacity}
 
 Defines the transparency of labels
@@ -1593,7 +1593,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
-### connectors.labels.rotateAngle `Number`
+### connectors.labels.rotateAngle `number`
 {:#members:connectors-labels-rotateangle}
 
 Defines the angle to which the label needs to be rotated
@@ -1771,7 +1771,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
-### connectors.labels.width `Number`
+### connectors.labels.width `number`
 {:#members:connectors-labels-width}
 
 Sets the width of the label(the maximum value of label width and the connector width will be considered as label width)
@@ -1865,7 +1865,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.lineHitPadding `Number`
+### connectors.lineHitPadding `number`
 {:#members:connectors-linehitpadding}
 
 Defines the padding value to ease the interaction with connectors
@@ -1887,7 +1887,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.lineWidth `Number`
+### connectors.lineWidth `number`
 {:#members:connectors-linewidth}
 
 Sets the width of the line
@@ -1909,7 +1909,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.marginBottom `Number`
+### connectors.marginBottom `number`
 {:#members:connectors-marginbottom}
 
 Defines the minimum space to be left between the bottom of parent bounds and the connector. Applicable, if the parent is a container.
@@ -1936,7 +1936,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 {% endhighlight %}
 
-### connectors.marginLeft `Number`
+### connectors.marginLeft `number`
 {:#members:connectors-marginleft}
 
 Defines the minimum space to be left between the left of parent bounds and the connector. Applicable, if the parent is a container.
@@ -1961,7 +1961,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 {% endhighlight %}
 
-### connectors.marginRight `Number`
+### connectors.marginRight `number`
 {:#members:connectors-marginright}
 
 Defines the minimum space to be left between the right of parent bounds and the connector. Applicable, if the parent is a container.
@@ -1986,7 +1986,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 {% endhighlight %}
 
-### connectors.marginTop `Number`
+### connectors.marginTop `number`
 {:#members:connectors-margintop}
 
 Defines the minimum space to be left between the top of parent bounds and the connector. Applicable, if the parent is a container.
@@ -2032,7 +2032,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.opacity `Number`
+### connectors.opacity `number`
 {:#members:connectors-opacity}
 
 Defines the transparency of the connector
@@ -2054,7 +2054,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.paletteItem `Object`
+### connectors.paletteItem `object`
 {:#members:connectors-paletteitem}
 
 Defines the size and preview size of the node to add that to symbol palette. To explore palette item, refer [Palette Item](#nodes-paletteitem)
@@ -2112,7 +2112,7 @@ $("#diagramcontent").ejDiagram({ nodes:[group], connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.segments `Array`
+### connectors.segments `array`
 {:#members:connectors-segments}
 
 An array of JSON objects where each object represents a segment
@@ -2157,7 +2157,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.segments.length `Number`
+### connectors.segments.length `number`
 {:#members:connectors-segments-length}
 
 Describes the length of orthogonal segment
@@ -2299,7 +2299,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.segments.vector1 `Object`
+### connectors.segments.vector1 `object`
 {:#members:connectors-segments-vector1}
 
 Describes the length and angle between the first control point and the start point of bezier segment
@@ -2323,7 +2323,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.segments.vector2 `Object`
+### connectors.segments.vector2 `object`
 {:#members:connectors-segments-vector2}
 
 Describes the length and angle between the second control point and end point of bezier segment
@@ -2347,7 +2347,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.shape `Object`
+### connectors.shape `object`
 {:#members:connectors-shape}
 
 Defines the role/meaning of the connector
@@ -2661,7 +2661,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.shape.multiplicity `Object`
+### connectors.shape.multiplicity `object`
 {:#members:connectors-shape-multiplicity}
 
 Defines the multiplicity option of the connector
@@ -2788,7 +2788,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.shape.multiplicity.source.lowerBounds `Number`
+### connectors.shape.multiplicity.source.lowerBounds `number`
 {:#members:connectors-shape-multiplicity-source-lowerbounds}
 
 Defines the source label to connector. Applicable, if the connector is of type "UML"
@@ -2816,7 +2816,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.shape.multiplicity.source.upperBounds `Number`
+### connectors.shape.multiplicity.source.upperBounds `number`
 {:#members:connectors-shape-multiplicity-source-upperbounds}
 
 Defines the source label to connector. Applicable, if the connector is of type "UML"
@@ -2870,7 +2870,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.sourceDecorator `Object`
+### connectors.sourceDecorator `object`
 {:#members:connectors-sourcedecorator}
 
 Defines the source decorator of the connector
@@ -2914,7 +2914,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.sourceDecorator.borderWidth `Number`
+### connectors.sourceDecorator.borderWidth `number`
 {:#members:connectors-sourcedecorator-borderwidth}
 
 Sets the border width of the decorator
@@ -2958,7 +2958,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.sourceDecorator.height `Number`
+### connectors.sourceDecorator.height `number`
 {:#members:connectors-sourcedecorator-height}
 
 Sets the height of the source decorator
@@ -3061,7 +3061,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.sourceDecorator.width `Number`
+### connectors.sourceDecorator.width `number`
 {:#members:connectors-sourcedecorator-width}
 
 Defines the width of the source decorator
@@ -3108,7 +3108,7 @@ $("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]}
 
 {% endhighlight %}
 
-### connectors.sourcePadding `Number`
+### connectors.sourcePadding `number`
 {:#members:connectors-sourcepadding}
 
 Defines the space to be left between the source node and the source point of a connector
@@ -3156,7 +3156,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.sourcePoint.x `Number`
+### connectors.sourcePoint.x `number`
 {:#members:connectors-sourcepoint-x}
 
 Defines the x-coordinate of a position
@@ -3176,7 +3176,7 @@ var point = {x: 10};
 
 {% endhighlight %}
 
-### connectors.sourcePoint.y `Number`
+### connectors.sourcePoint.y `number`
 {:#members:connectors-sourcepoint-y}
 
 Defines the y-coordinate of a position
@@ -3223,7 +3223,7 @@ $("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]}
 
 {% endhighlight %}
 
-### connectors.targetDecorator `Object`
+### connectors.targetDecorator `object`
 {:#members:connectors-targetdecorator}
 
 Defines the target decorator of the connector
@@ -3289,7 +3289,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.targetDecorator.height `Number`
+### connectors.targetDecorator.height `number`
 {:#members:connectors-targetdecorator-height}
 
 Defines the height of the target decorator
@@ -3392,7 +3392,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.targetDecorator.width `Number`
+### connectors.targetDecorator.width `number`
 {:#members:connectors-targetdecorator-width}
 
 Defines the width of the target decorator
@@ -3437,7 +3437,7 @@ $("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]}
 
 {% endhighlight %}
 
-### connectors.targetPadding `Number`
+### connectors.targetPadding `number`
 {:#members:connectors-targetpadding}
 
 Defines the space to be left between the target node and the target point of the connector
@@ -3514,7 +3514,7 @@ $("#diagramcontent").ejDiagram({nodes:[ node1, node2 ],connectors : [connector]}
 
 {% endhighlight %}
 
-### connectors.tooltip `Object`
+### connectors.tooltip `object`
 {:#members:connectors-tooltip}
 
 Defines the tooltip that should be shown when the mouse hovers over connector. For tooltip properties, refer [Tooltip](#members:tooltip)
@@ -3632,7 +3632,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.zOrder `Number`
+### connectors.zOrder `number`
 {:#members:connectors-zorder}
 
 Sets the z-index of the connector
@@ -3654,7 +3654,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectorTemplate `Object`
+### connectorTemplate `object`
 {:#members:connectortemplate}
 
 Binds the custom JSON data with connector properties
@@ -3770,7 +3770,7 @@ $("#diagramcontent").ejDiagram({
 
 An object to customize the context menu of diagram
 
-### contextMenu.items `Array`
+### contextMenu.items `array`
 {:#members:contextmenu-items}
 
 Defines the collection of context menu items
@@ -3819,7 +3819,7 @@ $("#diagramcontent").ejDiagram({contextMenu: contextMenu});
 
 Configures the data source that is to be bound with diagram
 
-### dataSourceSettings.dataSource `Object`
+### dataSourceSettings.dataSource `object`
 {:#members:datasourcesettings-datasource}
 
 Defines the data source either as a collection of objects or as an instance of ej.DataManager
@@ -3977,7 +3977,7 @@ Describes the name of the table on which the specified query has to be executed
 
 {% endhighlight %}
 
-### defaultSettings `Object`
+### defaultSettings `object`
 {:#members:defaultsettings}
 
 Initializes the default values for nodes and connectors
@@ -3999,7 +3999,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### defaultSettings.connector `Object`
+### defaultSettings.connector `object`
 {:#members:defaultsettings-connector}
 
 Initializes the default connector properties
@@ -4022,7 +4022,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### defaultSettings.group `Object`
+### defaultSettings.group `object`
 {:#members:defaultsettings-group}
 
 Initializes the default properties of groups
@@ -4046,7 +4046,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### defaultSettings.node `Object`
+### defaultSettings.node `object`
 {:#members:defaultsettings-node}
 
 Initializes the default properties for nodes
@@ -4069,7 +4069,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### drawType `Object`
+### drawType `object`
 {:#members:drawtype}
 
 Sets the type of JSON object to be drawn through drawing tool
@@ -4149,7 +4149,7 @@ $("#diagramcontent").ejDiagram({ height:"500" });
 
 {% endhighlight %}
 
-### historyManager `Object`
+### historyManager `object`
 {:#members:historymanager}
 
 Customizes the undo redo functionality
@@ -4319,7 +4319,7 @@ diagram.model.historyManager.redoStack();
 
 {% endhighlight %}
 
-### historyManager.stackLimit `Number`
+### historyManager.stackLimit `number`
 {:#members:historymanager-stacklimit}
 
 The `stackLimit` property used to restrict the undo and redo actions to a certain limit. 
@@ -4437,7 +4437,7 @@ diagram.model.historyManager.undoStack();
 
 Automatically arranges the nodes and connectors in a predefined manner.
 
-### layout.bounds `Object`
+### layout.bounds `object`
 {:#members:layout-bounds}
 
 Specifies the custom bounds to arrange/align the layout
@@ -4477,7 +4477,7 @@ $("#diagramcontent").ejDiagram({ layout: { fixedNode: "nodename"}});
 
 {% endhighlight %}
 
-### layout.getLayoutInfo `Object`
+### layout.getLayoutInfo `object`
 {:#members:layout-getlayoutinfo}
 
 Customizes the orientation of trees/sub trees. For orientations, see [Chart Orientations](/api/js/global#chartorientations). For chart types, see [Chart Types](/api/js/global#charttypes)
@@ -4498,7 +4498,7 @@ $("#diagramcontent").ejDiagram({layout: { getLayoutInfo:getLayoutInfo } });
 
 {% endhighlight %}
 
-### layout.horizontalSpacing `Number`
+### layout.horizontalSpacing `number`
 {:#members:layout-horizontalspacing}
 
 Sets the space to be horizontally left between nodes
@@ -4520,7 +4520,7 @@ $("#diagramcontent").ejDiagram({layout: { horizontalSpacing: 50 }});
 {% endhighlight %}
 
 
-### layout.margin `Object`
+### layout.margin `object`
 {:#members:layout-margin}
 
 Defines the space to be left between layout bounds and layout.
@@ -4728,7 +4728,7 @@ $("#diagramcontent").ejDiagram({ layout: { type: ej.datavisualization.Diagram.La
 
 {% endhighlight %}
 
-### layout.verticalSpacing `Number`
+### layout.verticalSpacing `number`
 {:#members:layout-verticalspacing}
 
 Sets the space to be vertically left between nodes
@@ -4768,7 +4768,7 @@ $("#diagramcontent").ejDiagram({ locale: "en-US" });
 
 {% endhighlight %}
 
-### nodes `Array`
+### nodes `array`
 {:#members:nodes}
 
 Array of JSON objects where each object represents a node
@@ -4837,7 +4837,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.addInfo `Object`
+### nodes.addInfo `object`
 {:#members:nodes-addinfo}
 
 To maintain additional information about nodes
@@ -4863,7 +4863,7 @@ $("#diagramcontent").ejDiagram({nodes:[node1, node2]});
 
 {% endhighlight %}
 
-### nodes.annotation `Object`
+### nodes.annotation `object`
 {:#members:nodes-annotation}
 
 Defines the additional information of a process. It is not directly related to the message flows or sequence flows of the process.
@@ -4888,7 +4888,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
             
-### nodes.annotation.angle `Number`
+### nodes.annotation.angle `number`
 {:#members:nodes-annotation-angle}
 
 Sets the angle between the BPMN shape and the annotation 
@@ -4968,7 +4968,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.annotation.height `Number`
+### nodes.annotation.height `number`
 {:#members:nodes-annotation-height}
 
 Sets the height of the text annotation
@@ -4991,7 +4991,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.annotation.length `Number`
+### nodes.annotation.length `number`
 {:#members:nodes-annotation-length}
 
 Sets the distance between the BPMN shape and the annotation 
@@ -5041,7 +5041,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.annotation.width `Number`
+### nodes.annotation.width `number`
 {:#members:nodes-annotation-width}
 
 Sets the  width of the text annotation
@@ -5111,7 +5111,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.borderWidth `Number`
+### nodes.borderWidth `number`
 {:#members:nodes-borderwidth}
 
 Sets the border width of the node
@@ -5157,7 +5157,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 {% endhighlight %}
 
-### nodes.children `Array`
+### nodes.children `array`
 {:#members:nodes-children}
 
 Array of JSON objects where each object represents a child node/connector
@@ -5206,7 +5206,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.class `Object`
+### nodes.class `object`
 {:#members:nodes-class}
 
 Defines the name, attributes and methods of a Class. Applicable, if the node is a Class.
@@ -5252,7 +5252,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.class.attributes `Array`
+### nodes.class.attributes `array`
 {:#members:nodes-class-attributes}
 
 Defines the collection of attributes
@@ -5348,7 +5348,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.class.methods `Array`
+### nodes.class.methods `array`
 {:#members:nodes-class-methods}
 
 Defines the collection of methods of a Class.
@@ -5396,7 +5396,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-## nodes.class.methods.arguments `Array`
+## nodes.class.methods.arguments `array`
 {:#members:nodes-class-methods-arguments}
 
 Defines the arguments of the method.
@@ -5556,7 +5556,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.collapseIcon.borderWidth `Number`
+### nodes.collapseIcon.borderWidth `number`
 {:#members:nodes-collapseicon-borderwidth}
 
 Sets the border width for collapse icon of node
@@ -5601,7 +5601,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.collapseIcon.height `Number`
+### nodes.collapseIcon.height `number`
 {:#members:nodes-collapseicon-height}
 
 Defines the height for collapse icon of node
@@ -5672,7 +5672,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.collapseIcon.margin `Object`
+### nodes.collapseIcon.margin `object`
 {:#members:nodes-collapseicon-margin}
 
 To set the margin for the collapse icon of node
@@ -5836,7 +5836,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.connectorPadding `Number`
+### nodes.connectorPadding `number`
 {:#members:nodes-connectorpadding}
 
 Defines the distance to be left between a node and its connections(In coming and out going connections).
@@ -5984,7 +5984,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.container `Object`
+### nodes.container `object`
 {:#members:nodes-container}
 
 Defines how the child objects need to be arranged(Either in any predefined manner or automatically). Applicable, if the node is a group.
@@ -6079,7 +6079,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 {% endhighlight %}
 
-### nodes.cornerRadius `Number`
+### nodes.cornerRadius `number`
 {:#members:nodes-cornerradius}
 
 Defines the corner radius of rectangular shapes.
@@ -6132,7 +6132,7 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 
 {% endhighlight %}
 
-### nodes.data `Object`
+### nodes.data `object`
 {:#members:nodes-data}
  
 Defines the BPMN data object
@@ -6207,7 +6207,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 {% endhighlight %}
 
 
-### nodes.enumeration `Object`
+### nodes.enumeration `object`
 {:#members:nodes-enumeration}
 
 Defines an Enumeration in a UML Class Diagram
@@ -6255,7 +6255,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.enumeration.members `Array`
+### nodes.enumeration.members `array`
 {:#members:nodes-enumeration-members}
 
 Defines the collection of enumeration members
@@ -6436,7 +6436,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.expandIcon.borderWidth `Number`
+### nodes.expandIcon.borderWidth `number`
 {:#members:nodes-expandicon-borderwidth}
 
 Sets the border width for expand icon of node
@@ -6481,7 +6481,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.expandIcon.height `Number`
+### nodes.expandIcon.height `number`
 {:#members:nodes-expandicon-height}
 
 Defines the height for expand icon of node
@@ -6552,7 +6552,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.expandIcon.margin `Object`
+### nodes.expandIcon.margin `object`
 {:#members:nodes-expandicon-margin}
 
 To set the margin for the expand icon of node
@@ -6809,12 +6809,12 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 
 Paints the node with a smooth transition from one color to another color
 
-### nodes.gradient.LinearGradient `Object`
+### nodes.gradient.LinearGradient `object`
 {:#members:nodes-gradient-lineargradient}
 
 Paints the node with linear color transitions
 
-### nodes.gradient.LinearGradient.stops `Array`
+### nodes.gradient.LinearGradient.stops `array`
 {:#members:nodes-gradient-lineargradient-stops}
 
 Defines the different colors and the region of color transitions
@@ -6839,7 +6839,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.gradient.LinearGradient.x1 `Number`
+### nodes.gradient.LinearGradient.x1 `number`
 {:#members:nodes-gradient-lineargradient-x1}
 
 Defines the left most position(relative to node) of the rectangular region that needs to be painted
@@ -6865,7 +6865,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.gradient.LinearGradient.x2 `Number`
+### nodes.gradient.LinearGradient.x2 `number`
 {:#members:nodes-gradient-lineargradient-x2}
 
 Defines the right most position(relative to node) of the rectangular region that needs to be painted
@@ -6891,7 +6891,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.gradient.LinearGradient.y1 `Number`
+### nodes.gradient.LinearGradient.y1 `number`
 {:#members:nodes-gradient-lineargradient-y1}
 
 Defines the top most position(relative to node) of the rectangular region that needs to be painted
@@ -6917,7 +6917,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.gradient.LinearGradient.y2 `Number`
+### nodes.gradient.LinearGradient.y2 `number`
 {:#members:nodes-gradient-lineargradient-y2}
 
 Defines the bottom most position(relative to node) of the rectangular region that needs to be painted
@@ -6943,12 +6943,12 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.gradient.RadialGradient `Object`
+### nodes.gradient.RadialGradient `object`
 {:#members:nodes-gradient-radialgradient}
 
 Paints the node with radial color transitions. A focal point defines the beginning of the gradient, and a circle defines the end point of the gradient.
 
-### nodes.gradient.RadialGradient.cx `Number`
+### nodes.gradient.RadialGradient.cx `number`
 {:#members:nodes-gradient-radialgradient-cx}
 
 Defines the position of the outermost circle
@@ -6973,7 +6973,7 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 
 {% endhighlight %}
 
-### nodes.gradient.RadialGradient.cy `Number`
+### nodes.gradient.RadialGradient.cy `number`
 {:#members:nodes-gradient-radialgradient-cy}
 
 Defines the outer most circle of the radial gradient
@@ -6998,7 +6998,7 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 
 {% endhighlight %}
 
-### nodes.gradient.RadialGradient.fx `Number`
+### nodes.gradient.RadialGradient.fx `number`
 {:#members:nodes-gradient-radialgradient-fx}
 
 Defines the innermost circle of the radial gradient
@@ -7024,7 +7024,7 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 
 {% endhighlight %}
 
-### nodes.gradient.RadialGradient.fy `Number`
+### nodes.gradient.RadialGradient.fy `number`
 {:#members:nodes-gradient-radialgradient-fy}
 
 Defines the innermost circle of the radial gradient
@@ -7049,7 +7049,7 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 
 {% endhighlight %}
 
-### nodes.gradient.RadialGradient.stops `Array`
+### nodes.gradient.RadialGradient.stops `array`
 {:#members:nodes-gradient-radialgradient-stops}
 
 Defines the different colors and the region of color transitions.
@@ -7077,7 +7077,7 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 
 {% endhighlight %}
 
-### nodes.gradient.Stop `Object`
+### nodes.gradient.Stop `object`
 {:#members:nodes-gradient-stop}
 
 Defines the color and a position where the previous color transition ends and a new color transition starts
@@ -7110,7 +7110,7 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 
 {% endhighlight %}
 
-### nodes.gradient.Stop.offset `Number`
+### nodes.gradient.Stop.offset `number`
 {:#members:nodes-gradient-stop-offset}
 
 Sets the position where the previous color transition ends and a new color transition starts
@@ -7138,7 +7138,7 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 
 {% endhighlight %}
 
-### nodes.gradient.Stop.opacity `Number`
+### nodes.gradient.Stop.opacity `number`
 {:#members:nodes-gradient-stop-opacity}
 
 Describes the transparency level of the region
@@ -7165,7 +7165,7 @@ var node = { name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
 
 {% endhighlight %}
 
-### nodes.group `Object`
+### nodes.group `object`
 {:#members:nodes-group}
 
 Sets the type of the BPMN Shapes as group. Applicable, if the node is a BPMN.
@@ -7187,7 +7187,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.header `Object`
+### nodes.header `object`
 {:#members:nodes-header}
 
 Defines the header of a swimlane/lane
@@ -7208,7 +7208,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.height `Number`
+### nodes.height `number`
 {:#members:nodes-height}
 
 Defines the height of the node
@@ -7281,7 +7281,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 {% endhighlight %}
 
-### nodes.inEdges `Array`
+### nodes.inEdges `array`
 {:#members:nodes-inedges}
 
 A read only collection of the incoming connectors/edges of the node
@@ -7305,7 +7305,7 @@ for(var i = 0; i < node.inEdges.length; i++){
 
 {% endhighlight %}
 
-### nodes.interface `Object`
+### nodes.interface `object`
 {:#members:nodes-interface}
 
 Defines an interface in a UML Class Diagram
@@ -7350,7 +7350,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.interface.attributes `Array`
+### nodes.interface.attributes `array`
 {:#members:nodes-interface.attributes}
 
 Defines a collection of attributes of the interface
@@ -7445,7 +7445,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.interface.methods `Array`
+### nodes.interface.methods `array`
 {:#members:nodes-interface.methods}
 
 Defines the collection of public methods of an interface
@@ -7493,7 +7493,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-## nodes.interface.methods.arguments `Array`
+## nodes.interface.methods.arguments `array`
 {:#members:nodes-interface.methods.arguments}
 
 Defines the collection of arguments of a method
@@ -7665,7 +7665,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.labels `Array`
+### nodes.labels `array`
 {:#members:nodes-labels}
 
 A collection of objects where each object represents a label
@@ -7738,7 +7738,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.labels.borderWidth `Number`
+### nodes.labels.borderWidth `number`
 {:#members:nodes-labels-borderwidth}
 
 Sets the border width of the label
@@ -7834,7 +7834,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.labels.fontSize `Number`
+### nodes.labels.fontSize `number`
 {:#members:nodes-labels-fontsize}
 
 Defines the font size of the text
@@ -7933,7 +7933,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.labels.margin `Object`
+### nodes.labels.margin `object`
 {:#members:nodes-labels-margin}
 
 To set the margin of the label
@@ -8049,7 +8049,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.labels.opacity `Number`
+### nodes.labels.opacity `number`
 {:#members:nodes-labels-opacity}
 
 Defines the transparency of the labels
@@ -8097,7 +8097,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.labels.rotateAngle `Number`
+### nodes.labels.rotateAngle `number`
 {:#members:nodes-labels-rotateangle}
 
 Defines the angle to which the label needs to be rotated
@@ -8323,7 +8323,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.labels.width `Number`
+### nodes.labels.width `number`
 {:#members:nodes-labels-width}
 
 Sets the width of the label(the maximum value of label width and the node width will be considered as label width)
@@ -8396,7 +8396,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.lanes `Array`
+### nodes.lanes `array`
 {:#members:nodes-lanes}
 
 An array of objects where each object represents a lane. Applicable, if the node is a swimlane.
@@ -8489,7 +8489,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.lanes.addInfo `Object`
+### nodes.lanes.addInfo `object`
 {:#members:nodes-lanes-addinfo}
 
 Allows to maintain additional information about lane
@@ -8512,7 +8512,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.lanes.children `Array`
+### nodes.lanes.children `array`
 {:#members:nodes-lanes-children}
 
 An array of objects where each object represents a child node of the lane
@@ -8559,7 +8559,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.lanes.header `Object`
+### nodes.lanes.header `object`
 {:#members:nodes-lanes-header}
 
 Defines the header of the lane
@@ -8649,7 +8649,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.marginBottom `Number`
+### nodes.marginBottom `number`
 {:#members:nodes-marginbottom}
 
 Defines the minimum space to be left between the bottom of parent bounds and the node. Applicable, if the parent is a container.
@@ -8673,7 +8673,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.marginLeft `Number`
+### nodes.marginLeft `number`
 {:#members:nodes-marginleft}
 
 Defines the minimum space to be left between the left of parent bounds and the node. Applicable, if the parent is a container.
@@ -8697,7 +8697,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.marginRight `Number`
+### nodes.marginRight `number`
 {:#members:nodes-marginright}
 
 Defines the minimum space to be left between the right of the parent bounds and the node. Applicable, if the parent is a container.
@@ -8721,7 +8721,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.marginTop `Number`
+### nodes.marginTop `number`
 {:#members:nodes-margintop}
 
 Defines the minimum space to be left between the top of parent bounds and the node. Applicable, if the parent is a container.
@@ -8745,7 +8745,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.maxHeight `Number`
+### nodes.maxHeight `number`
 {:#members:nodes-maxheight}
 
 Defines the maximum height limit of the node
@@ -8767,7 +8767,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.maxWidth `Number`
+### nodes.maxWidth `number`
 {:#members:nodes-maxwidth}
 
 Defines the maximum width limit of the node
@@ -8789,7 +8789,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.minHeight `Number`
+### nodes.minHeight `number`
 {:#members:nodes-minheight}
 
 Defines the minimum height limit of the node
@@ -8811,7 +8811,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.minWidth `Number`
+### nodes.minWidth `number`
 {:#members:nodes-minwidth}
 
 Defines the minimum width limit of the node
@@ -8855,7 +8855,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.offsetX `Number`
+### nodes.offsetX `number`
 {:#members:nodes-offsetx}
 
 Defines the position of the node on X-Axis
@@ -8877,7 +8877,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.offsetY `Number`
+### nodes.offsetY `number`
 {:#members:nodes-offsety}
 
 Defines the position of the node on Y-Axis
@@ -8899,7 +8899,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.opacity `Number`
+### nodes.opacity `number`
 {:#members:nodes-opacity}
 
 Defines the opaque of the node
@@ -8942,7 +8942,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.outEdges `Array`
+### nodes.outEdges `array`
 {:#members:nodes-outedges}
 
 A read only collection of outgoing connectors/edges of the node
@@ -8966,7 +8966,7 @@ for(var i = 0; i<node.outEdges.length; i++){
 
 {% endhighlight %}
 
-### nodes.paddingBottom `Number`
+### nodes.paddingBottom `number`
 {:#members:nodes-paddingbottom}
 
 Defines the minimum padding value to be left between the bottom most position of a group and its children. Applicable, if the group is a container.
@@ -8994,7 +8994,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 {% endhighlight %}
 
-### nodes.paddingLeft `Number`
+### nodes.paddingLeft `number`
 {:#members:nodes-paddingleft}
 
 Defines the minimum padding value to be left between the left most position of a group and its children. Applicable, if the group is a container.
@@ -9022,7 +9022,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 {% endhighlight %}
 
-### nodes.paddingRight `Number`
+### nodes.paddingRight `number`
 {:#members:nodes-paddingright}
 
 Defines the minimum padding value to be left between the right most position of a group and its children. Applicable, if the group is a container.
@@ -9050,7 +9050,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 {% endhighlight %}
 
-### nodes.paddingTop `Number`
+### nodes.paddingTop `number`
 {:#members:nodes-paddingtop}
 
 Defines the minimum padding value to be left between the top most position of a group and its children. Applicable, if the group is a container.
@@ -9078,7 +9078,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 {% endhighlight %}
 
-### nodes.paletteItem `Object`
+### nodes.paletteItem `object`
 {:#members:nodes-paletteitem}
 
 Defines the size and preview size of the node to add that to symbol palette
@@ -9149,7 +9149,7 @@ $("#symbolpalette").ejSymbolPalette({
 
 {% endhighlight %}
 
-### nodes.paletteItem.height `Number`
+### nodes.paletteItem.height `number`
 {:#members:nodes-paletteitem-height}
 
 Defines the height of the symbol
@@ -9184,7 +9184,7 @@ $("#symbolpalette").ejSymbolPalette({
 
 {% endhighlight %}
 
-### nodes.paletteItem.margin `Object`
+### nodes.paletteItem.margin `object`
 {:#members:nodes-paletteitem-margin}
 
 Defines the margin of the symbol item
@@ -9217,7 +9217,7 @@ $("#symbolpalette").ejSymbolPalette({
 
 {% endhighlight %}
 
-### nodes.paletteItem.previewHeight `Number`
+### nodes.paletteItem.previewHeight `number`
 {:#members:nodes-paletteitem-previewheight}
 
 Defines the preview height of the symbol
@@ -9251,7 +9251,7 @@ Defines the preview height of the symbol
 
 {% endhighlight %}
 
-### nodes.paletteItem.previewWidth `Number`
+### nodes.paletteItem.previewWidth `number`
 {:#members:nodes-paletteitem-previewwidth}
 
 Defines the preview width of the symbol
@@ -9285,7 +9285,7 @@ $("#symbolpalette").ejSymbolPalette({
 
 {% endhighlight %}
 
-### nodes.paletteItem.width `Number`
+### nodes.paletteItem.width `number`
 {:#members:nodes-paletteitem-width}
 
 Defines the width of the symbol 
@@ -9369,7 +9369,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.phases `Array`
+### nodes.phases `array`
 {:#members:nodes-phases}
 
 An array of objects, where each object represents a smaller region(phase) of a swimlane.
@@ -9393,7 +9393,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.phases.label `Object`
+### nodes.phases.label `object`
 {:#members:nodes-phases-label}
 
 Defines the header of the smaller regions
@@ -9466,7 +9466,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.phases.lineWidth `Number`
+### nodes.phases.lineWidth `number`
 {:#members:nodes-phases-linewidth}
 
 Sets the lineWidth of the phase
@@ -9513,7 +9513,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.phases.offset `Number`
+### nodes.phases.offset `number`
 {:#members:nodes-phases-offset}
 
 Sets the length of the smaller region(phase) of a swimlane
@@ -9584,7 +9584,7 @@ diagram.addPhase(diagram.selectionList[0].name,
 
 {% endhighlight %}
 
-### nodes.phaseSize `Number`
+### nodes.phaseSize `number`
 {:#members:nodes-phasesize}
 
 Sets the height of the phase headers
@@ -9630,7 +9630,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.points `Array`
+### nodes.points `array`
 {:#members:nodes-points}
 
 Defines a collection of points to draw a polygon. Applicable, if the shape is a polygon.
@@ -9653,7 +9653,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.ports `Array`
+### nodes.ports `array`
 {:#members:nodes-ports}
 
 An array of objects where each object represents a port
@@ -9700,7 +9700,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.ports.borderWidth `Number`
+### nodes.ports.borderWidth `number`
 {:#members:nodes-ports-borderwidth}
 
 Sets the stroke width of the port
@@ -9723,7 +9723,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.ports.connectorPadding `Number`
+### nodes.ports.connectorPadding `number`
 {:#members:nodes-ports-connectorpadding}
 
 Defines the space to be left between the port bounds and its incoming and outgoing connections.
@@ -9944,7 +9944,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.ports.size `Number`
+### nodes.ports.size `number`
 {:#members:nodes-ports-size}
 
 Defines the size of the port
@@ -10024,7 +10024,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.rotateAngle `Number`
+### nodes.rotateAngle `number`
 {:#members:nodes-rotateangle}
 
 Sets the angle to which the node should be rotated
@@ -10095,7 +10095,7 @@ $("#diagramcontent").ejDiagram({ node:{scale:ej.datavisualization.Diagram.ScaleC
 
 {% endhighlight %}
 
-### nodes.shadow `Object`
+### nodes.shadow `object`
 {:#members:nodes-shadow}
 
 Defines the opacity and the position of shadow
@@ -10120,7 +10120,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.shadow.angle `Number`
+### nodes.shadow.angle `number`
 {:#members:nodes-shadow-angle}
 
 Defines the angle of the shadow relative to node
@@ -10145,7 +10145,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.shadow.distance `Number`
+### nodes.shadow.distance `number`
 {:#members:nodes-shadow-distance}
 
 Sets the distance to move the shadow relative to node
@@ -10170,7 +10170,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.shadow.opacity `Number`
+### nodes.shadow.opacity `number`
 {:#members:nodes-shadow-opacity}
 
 Defines the opaque of the shadow
@@ -10311,7 +10311,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.subProcess `Object`
+### nodes.subProcess `object`
 {:#members:nodes-subprocess}
 
 Defines the sub process of a BPMN Activity. Applicable, if the type of the BPMN activity is sub process.
@@ -10565,7 +10565,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.subProcess.Processes `Array`
+### nodes.subProcess.Processes `array`
 {:#members:nodes-subprocess-processes}
 
 Defines the children for BPMN's SubProcess
@@ -10669,7 +10669,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.task `Object`
+### nodes.task `object`
 {:#members:nodes-task}
 
 Defines the task of the BPMN activity. Applicable, if the type of activity is set as task.
@@ -10908,7 +10908,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.textBlock `Object`
+### nodes.textBlock `object`
 {:#members:nodes-textblock}
 
 Defines the textBlock of a text node
@@ -10932,7 +10932,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.tooltip `Object`
+### nodes.tooltip `object`
 {:#members:nodes-tooltip}
 
 Defines the tooltip that should be shown when the mouse hovers over node. For tooltip properties, refer [Tooltip](#members:tooltip)
@@ -11195,7 +11195,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.width `Number`
+### nodes.width `number`
 {:#members:nodes-width}
 
 Defines the width of the node
@@ -11217,7 +11217,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.zOrder `Number`
+### nodes.zOrder `number`
 {:#members:nodes-zorder}
 
 Defines the z-index of the node
@@ -11239,7 +11239,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodeTemplate `Object`
+### nodeTemplate `object`
 {:#members:nodetemplate}
 
 Binds the custom JSON data with node properties
@@ -11273,12 +11273,12 @@ Binds the custom JSON data with node properties
 
 {% endhighlight %}
 
-### pageSettings `Object`
+### pageSettings `object`
 {:#members:pagesettings}
 
 Defines the size and appearance of diagram page
 
-### pageSettings.autoScrollBorder `Object`
+### pageSettings.autoScrollBorder `object`
 {:#members:pagesettings-autoscrollborder}
 
 Defines the maximum distance to be left between the object and the scroll bar to trigger auto scrolling
@@ -11366,7 +11366,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### pageSettings.pageBorderWidth `Number`
+### pageSettings.pageBorderWidth `number`
 {:#members:pagesettings-pageborderwidth}
 
 Sets the border width of diagram pages
@@ -11388,7 +11388,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### pageSettings.pageHeight `Number`
+### pageSettings.pageHeight `number`
 {:#members:pagesettings-pageheight}
 
 Defines the height of a page
@@ -11410,7 +11410,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### pageSettings.pageMargin `Number`
+### pageSettings.pageMargin `number`
 {:#members:pagesettings-pagemargin}
 
 Defines the page margin
@@ -11476,7 +11476,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### pageSettings.pageWidth `Number`
+### pageSettings.pageWidth `number`
 {:#members:pagesettings-pagewidth}
 
 Defines the height of a diagram page
@@ -11498,7 +11498,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### pageSettings.scrollableArea `Object`
+### pageSettings.scrollableArea `object`
 {:#members:pagesettings-scrollablearea}
 
 Defines the scrollable area of diagram. Applicable, if the scroll limit is "limited".
@@ -11635,12 +11635,12 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### scrollSettings `Object`
+### scrollSettings `object`
 {:#members:scrollsettings}
 
 Defines the zoom value, zoom factor, scroll status and view port size of the diagram
 
-### scrollSettings.currentZoom `Number`
+### scrollSettings.currentZoom `number`
 {:#members:scrollsettings-currentzoom}
 
 Allows to read the zoom value of diagram
@@ -11661,7 +11661,7 @@ console.log(diagram.model.scrollSettings.currentZoom);
 
 {% endhighlight %}
 
-### scrollSettings.horizontalOffset `Number`
+### scrollSettings.horizontalOffset `number`
 {:#members:scrollsettings-horizontaloffset}
 
 Sets the horizontal scroll offset
@@ -11683,7 +11683,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### scrollSettings.padding `Object`
+### scrollSettings.padding `object`
 {:#members:scrollsettings-padding}
 
 Allows to extend the scrollable region that is based on the scroll limit
@@ -11706,7 +11706,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### scrollSettings.verticalOffset `Number`
+### scrollSettings.verticalOffset `number`
 {:#members:scrollsettings-verticaloffset}
 
 Sets the vertical scroll offset
@@ -11728,7 +11728,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### scrollSettings.viewPortHeight `Number`
+### scrollSettings.viewPortHeight `number`
 {:#members:scrollsettings-viewportheight}
 
 Allows to read the view port height of the diagram
@@ -11751,7 +11751,7 @@ console.log(diagram.model.scrollSettings.viewPortHeight);
 
 {% endhighlight %}
 
-### scrollSettings.viewPortWidth `Number`
+### scrollSettings.viewPortWidth `number`
 {:#members:scrollsettings-viewportwidth}
 
 Allows to read the view port width of the diagram
@@ -11774,12 +11774,12 @@ console.log(diagram.model.scrollSettings.viewPortWidth);
 
 {% endhighlight %}
 
-### selectedItems `Object`
+### selectedItems `object`
 {:#members:selecteditems}
 
 Defines the size and position of selected items and defines the appearance of selector
 
-### selectedItems.children `Array`
+### selectedItems.children `array`
 {:#members:selecteditems-children}
 
 A read only collection of the selected items
@@ -11859,7 +11859,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### selectedItems.getConstraints `Object`
+### selectedItems.getConstraints `object`
 {:#members:selecteditems-getconstraints}
 
 Defines a method that dynamically enables/ disables the interaction with multiple selection.
@@ -11885,7 +11885,7 @@ selectedItems: {
 
 {% endhighlight %}
 
-### selectedItems.height `Number`
+### selectedItems.height `number`
 {:#members:selecteditems-height}
 
 Sets the height of the selected items
@@ -11908,7 +11908,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### selectedItems.offsetX `Number`
+### selectedItems.offsetX `number`
 {:#members:selecteditems-offsetx}
 
 Sets the x position of the selector 
@@ -11930,7 +11930,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### selectedItems.offsetY `Number`
+### selectedItems.offsetY `number`
 {:#members:selecteditems-offsety}
 
 Sets the y position of the selector
@@ -11952,7 +11952,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### selectedItems.rotateAngle `Number`
+### selectedItems.rotateAngle `number`
 {:#members:selecteditems-rotateangle}
 
 Sets the angle to rotate the selected items
@@ -11974,7 +11974,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### selectedItems.tooltip `Object`
+### selectedItems.tooltip `object`
 {:#members:selecteditems-tooltip}
 
 Sets the angle to rotate the selected items. For tooltip properties, refer [Tooltip](#members:tooltip)
@@ -11996,7 +11996,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### selectedItems.userHandles `Array`
+### selectedItems.userHandles `array`
 {:#members:selecteditems-userhandles}
 
 A collection of frequently used commands that will be added around the selector
@@ -12212,7 +12212,7 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 
 {% endhighlight %}
 
-### selectedItems.userHandles.size `Number`
+### selectedItems.userHandles.size `number`
 {:#members:selecteditems-userhandles-size}
 
 Defines the size of the user handle
@@ -12238,7 +12238,7 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 {% endhighlight %}
 
 
-### selectedItems.userHandles.tool `Object`
+### selectedItems.userHandles.tool `object`
 {:#members:selecteditems-userhandles-tool}
 
 Defines the interactive behaviors of the user handle
@@ -12304,7 +12304,7 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 
 {% endhighlight %}
 
-### selectedItems.width `Number`
+### selectedItems.width `number`
 {:#members:selecteditems-width}
 
 Sets the width of the selected items
@@ -12348,7 +12348,7 @@ $("#diagramcontent").ejDiagram({showTooltip: true});
 
 {% endhighlight %}
 
-### snapSettings `Object`
+### snapSettings `object`
 {:#members:snapsettings}
 
 Defines the gridlines and defines how and when the objects have to be snapped
@@ -12370,7 +12370,7 @@ $("#diagramcontent").ejDiagram({ snapSettings:{ enableSnapToObject: false } });
 
 {% endhighlight %}
 
-### snapSettings.horizontalGridLines `Object`
+### snapSettings.horizontalGridLines `object`
 {:#members:snapsettings-horizontalgridlines}
 
 Defines the appearance of horizontal gridlines
@@ -12417,7 +12417,7 @@ $("#diagramcontent").ejDiagram({snapSettings: { horizontalGridLines: gridline} }
 
 {% endhighlight %}
 
-### snapSettings.horizontalGridLines.linesInterval `Array`
+### snapSettings.horizontalGridLines.linesInterval `array`
 {:#members:snapsettings-horizontalgridlines-linesinterval}
 
 A pattern of lines and gaps that defines a set of horizontal gridlines
@@ -12439,7 +12439,7 @@ $("#diagramcontent").ejDiagram({snapSettings: { horizontalGridLines: gridline} }
 
 {% endhighlight %}
 
-### snapSettings.horizontalGridLines.snapInterval `Array`
+### snapSettings.horizontalGridLines.snapInterval `array`
 {:#members:snapsettings-horizontalgridlines-snapinterval}
 
 Specifies a set of intervals to snap the objects
@@ -12461,7 +12461,7 @@ $("#diagramcontent").ejDiagram({snapSettings: { horizontalGridLines: gridline} }
 
 {% endhighlight %}
 
-### snapSettings.snapAngle `Number`
+### snapSettings.snapAngle `number`
 {:#members:snapsettings-snapangle}
 
 Defines the angle by which the object needs to be snapped
@@ -12537,7 +12537,7 @@ $("#diagramcontent").ejDiagram({snapConstraints:snapConstraints});
 
 {% endhighlight %}
 
-### snapSettings.snapObjectDistance `Number`
+### snapSettings.snapObjectDistance `number`
 {:#members:snapsettings-snapobjectdistance}
 
 Defines the minimum distance between the selected object and the nearest object
@@ -12556,7 +12556,7 @@ $("#diagramcontent").ejDiagram({snapSettings: snap});
 
 {% endhighlight %}
 
-### snapSettings.verticalGridLines `Object`
+### snapSettings.verticalGridLines `object`
 {:#members:snapsettings-verticalgridlines}
 
 Defines the appearance of horizontal gridlines
@@ -12603,7 +12603,7 @@ $("#diagramcontent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
 
 {% endhighlight %}
 
-### snapSettings.verticalGridLines.linesInterval `Array`
+### snapSettings.verticalGridLines.linesInterval `array`
 {:#members:snapsettings-verticalgridlines-linesinterval}
 
 A pattern of lines and gaps that defines a set of horizontal gridlines
@@ -12624,7 +12624,7 @@ $("#diagramcontent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
 
 {% endhighlight %}
 
-### snapSettings.verticalGridLines.snapInterval `Array`
+### snapSettings.verticalGridLines.snapInterval `array`
 {:#members:snapsettings-verticalgridlines-snapinterval}
 
 Specifies a set of intervals to snap the objects
@@ -12704,7 +12704,7 @@ $("#diagramcontent").ejDiagram({tool: ej.datavisualization.Diagram.Tool.ZoomPan}
 
 {% endhighlight %}
 
-### tooltip `Object`
+### tooltip `object`
 {:#members:tooltip}
 
 An object that defines the description, appearance and alignments of tooltips
@@ -12744,7 +12744,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### tooltip.alignment `Object`
+### tooltip.alignment `object`
 {:#members:tooltip-alignment}
 
 Aligns the tooltip around nodes/connectors
@@ -12851,7 +12851,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### tooltip.margin `Object`
+### tooltip.margin `object`
 {:#members:tooltip-margin}
 
 Sets the margin of the tooltip
@@ -12970,7 +12970,7 @@ $("#diagramcontent").ejDiagram({ width:"1000" });
 
 {% endhighlight %}
 
-### zoomFactor `Number`
+### zoomFactor `number`
 {:#members:zoomfactor}
 
 Sets the factor by which we can zoom in or zoom out
