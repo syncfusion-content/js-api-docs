@@ -1279,7 +1279,7 @@ Specifies whether to render only the visual elements that are visible in the UI.
 
 Specifies the settings for column resize
 
-### columnResizeSettings.columnResizeMode `enum`
+### columnResizeSettings.columnResizeMode `string`
 {:#members:columnresizesettings-columnresizemode}
 
 Specifies the mode for column resizing 
@@ -1316,7 +1316,7 @@ Specifies the mode for column resizing
 
 {% highlight html %}
  
-        $("#treegrid").ejTreeGrid({  columnResizeSettings: { columnResizeMode : ej.TreeGrid.ColumnResizeMode.FixedColumns} });
+        $("#treegrid").ejTreeGrid({  columnResizeSettings: { columnResizeMode : "fixedColumn"} });
 
 {% endhighlight %}
 
@@ -1345,7 +1345,7 @@ Specifies the mode on which column filtering should start
 
 {% endhighlight %}
 
-### filterSettings.filterType `enum`
+### filterSettings.filterType `string`
 {:#members:filtersettings-filtertype}
 
 Specifies the type of column filtering.
