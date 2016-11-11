@@ -299,6 +299,154 @@ To enable or disable DragAndDrop across swim lane.
 
 {% endhighlight %}
 
+### swimlaneSettings.unassignedGroup `boolean`
+{:#members:swimlanesettings-unassignedgroup}
+
+Customize the settings for unassigned category of swim lane.
+
+#### Default Value:
+
+* Object
+
+#### Example
+
+{% highlight html %}
+  
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban({
+            dataSource: data,
+            allowDragAndDrop: true,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+				swimlaneKey: "Assignee",
+                content: "Summary",
+            },
+			swimlaneSettings:{
+                unassignedGroup:{
+					enable:true
+				}		
+		    },
+        });
+    });
+    </script>
+
+{% endhighlight %}
+
+### swimlaneSettings.unassignedGroup.enable `boolean`
+{:#members:swimlanesettings-unassignedgroup-enable}
+
+To enable or disable unassigned category change with swim lane key values.
+
+#### Default Value:
+
+* true
+
+#### Example
+
+{% highlight html %}
+  
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban({
+            dataSource: data,
+            allowDragAndDrop: true,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+				swimlaneKey: "Assignee",
+                content: "Summary",
+            },
+			swimlaneSettings:{
+                unassignedGroup:{
+					enable:true
+				}		
+		    },
+        });
+    });
+    </script>
+
+{% endhighlight %}
+
+### swimlaneSettings.unassignedGroup.keys `boolean`
+{:#members:swimlanesettings-unassignedgroup-keys}
+
+To set the user defined values which are need to categorized as unassigned category swim lane groups.
+
+#### Default Value:
+
+* ["null","undefined",""]
+
+#### Example
+
+{% highlight html %}
+  
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanbandata = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanbandata);
+        $("#Kanban").ejKanban({
+            dataSource: data,
+            allowDragAndDrop: true,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+				swimlaneKey: "Assignee",
+                content: "Summary",
+            },
+			swimlaneSettings:{
+                unassignedGroup:{
+					enable:true,
+					keys:["",null],
+				}		
+		    },
+        });
+    });
+    </script>
+
+{% endhighlight %}
+
 ### allowToggleColumn `boolean`
 {:#members:allowtogglecolumn}
 
