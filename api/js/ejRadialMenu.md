@@ -13,7 +13,7 @@ metacontent:
 
 
 
-$(element).ejRadialMenu<span class="signature">()</span>
+$(element).ejRadialMenu()
 
 
 
@@ -937,7 +937,7 @@ $("#defaultradialmenu").ejRadialMenu ("option", "position");
 
 
 
-### hide<span class="signature">()</span>
+### hide()
 {:#methods:hide}
 
 
@@ -984,7 +984,7 @@ $("#defaultradialmenu").ejRadialMenu ("hide");
 
 
 
-### menuHide<span class="signature">()</span>[Deprecated]
+### menuHide()[Deprecated]
 {:#methods:menuhidedeprecated}
 
 
@@ -1031,7 +1031,7 @@ $("#defaultradialmenu").ejRadialMenu ("menuHide");
 
 
 
-### hideMenu<span class="signature">()</span>
+### hideMenu()
 {:#methods:hidemenu}
 
 
@@ -1078,7 +1078,7 @@ $("#defaultradialmenu").ejRadialMenu ("hideMenu");
 
 
 
-### show<span class="signature">()</span>
+### show()
 {:#methods:show}
 
 
@@ -1124,7 +1124,7 @@ $("#defaultradialmenu").ejRadialMenu ("show");
 
 
 
-### showMenu<span class="signature">()</span>
+### showMenu()
 {:#methods:showmenu}
 
 
@@ -1171,10 +1171,21 @@ $("#defaultradialmenu").ejRadialMenu ("showMenu");
 
 
 
-### enableItemByIndex<span class="signature">()</span>
+### enableItemByIndex(itemIndex)
 {:#methods:enableitembyindex}
 
-
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+itemIndex</td><td>
+number</td><td>
+Index of the Radialmenu to be enabled.</td></tr>
+</table>
 
 
 To enable menu item using index
@@ -1220,9 +1231,21 @@ obj.enableItemByIndex(0);
 
 
 
-### enableItemsByIndices<span class="signature">()</span>
+### enableItemsByIndices(itemIndices)
 {:#methods:enableItemsByIndices}
 
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+itemIndices</td><td>
+Array</td><td>
+Index of the Radialmenu to be enabled.</td></tr>
+</table>
 
 
 
@@ -1269,9 +1292,21 @@ obj.enableItemsByIndices([0,2]);
 
 
 
-### disableItemByIndex<span class="signature">()</span>
+### disableItemByIndex(itemIndex)
 {:#methods:disableitembyindex}
 
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+itemIndex</td><td>
+number</td><td>
+Index of the Radialmenu to be disabled.</td></tr>
+</table>
 
 
 
@@ -1318,10 +1353,21 @@ obj.disableItemByIndex(0);
 
 
 
-### disableItemsByIndices<span class="signature">()</span>
+### disableItemsByIndices(itemIndices)
 {:#methods:disableitemsbyindices}
 
-
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+itemIndices</td><td>
+Array</td><td>
+items of the Radialmenu to disable.</td></tr>
+</table>
 
 
 To disable menu items using indices
@@ -1367,10 +1413,21 @@ obj.disableItemsByIndices([1,3]);
 
 
 
-### enableItem<span class="signature">()</span>
+### enableItem(item)
 {:#methods:enableitem}
 
-
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+item</td><td>
+String</td><td>
+item of the Radialmenu item to enable.</td></tr>
+</table>
 
 
 To enable menu item using item text
@@ -1416,10 +1473,21 @@ obj.enableItem("social");
 
 
 
-### disableItem<span class="signature">()</span>
+### disableItem(item)
 {:#methods:disableitem}
 
-
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+item</td><td>
+String</td><td>
+item of the Radialmenu item to disable.</td></tr>
+</table>
 
 
 To disable menu item using item text
@@ -1465,10 +1533,21 @@ obj.disableItem("social");
 
 
 
-### enableItems<span class="signature">()</span>
+### enableItems(items)
 {:#methods:enableitems}
 
-
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+items</td><td>
+Array</td><td>
+items of the Radialmenu item to enable.</td></tr>
+</table>
 
 
 To enable menu items using item texts
@@ -1514,10 +1593,21 @@ obj.enableItems(["social","direction"]);
 
 
 
-### disableItems<span class="signature">()</span>
+### disableItems(items)
 {:#methods:disableitems}
 
-
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+items</td><td>
+Array</td><td>
+items of the Radialmenu item to disable.</td></tr>
+</table>
 
 
 To disable menu items using item texts
@@ -1563,10 +1653,26 @@ obj.disableItems(["social","direction"]);
 
 
 
-### updateBadgeValue<span class="signature">()</span>
+### updateBadgeValue(index, value)
 {:#methods:updatebadgevalue}
 
-
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+index</td><td>
+number</td><td>
+The index value to add the given items at the specified index. If index is not specified, the given value will not be updated.</td></tr>
+<tr>
+<td>
+value</td><td>
+number</td><td>
+The Value to be updated in the badge. It will be updated based on the given index</td></tr>
+</table>
 
 
 To update menu item badge value
@@ -1612,10 +1718,21 @@ obj.updateBadgeValue(0,4);
 
 
 
-### showBadge<span class="signature">()</span>
+### showBadge(index)
 {:#methods:showbadge}
 
-
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+index</td><td>
+number</td><td>
+Index of the Radialmenu item to be shown badge.</td></tr>
+</table>
 
 
 To show menu item badge 
@@ -1661,10 +1778,21 @@ obj.showBadge(0);
 
 
 
-### hideBadge<span class="signature">()</span>
+### hideBadge(index)
 {:#methods:hidebadge}
 
-
+<table>
+<tr>
+<td>
+<b>Parameters</b></td><td>
+<b>Type</b></td><td>
+<b>Description</b></td></tr>
+<tr>
+<td>
+index</td><td>
+number</td><td>
+Index of the Radialmenu item to hide the badge.</td></tr>
+</table>
 
 
 To hide menu item badge 
