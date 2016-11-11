@@ -40,7 +40,7 @@ $("#overview").ejOverview();
 
 ## Members
  
-### sourceID `String`
+### sourceID `string`
 {:#members:sourceID}
 
 The sourceId property of overview should be set with the corresponding Diagram ID for you need the overall view.
@@ -60,7 +60,7 @@ $("#overview").ejOverview({ sourceID: "diagram" });
 
 {% endhighlight %}
 
-### height `Number`
+### height `number`
 {:#members:height}
 
 Defines the height of the overview
@@ -80,7 +80,7 @@ $("#overview").ejOverview( { height:300 } );
 
 {% endhighlight %}
 
-### width `Number`
+### width `number`
 {:#members:width}
 
 Defines the width of the overview
