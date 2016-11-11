@@ -625,6 +625,365 @@ Specifies the custom tooltip for collapse pin.Refer to ejRibbon#tabs->groups->co
 
 {% endhighlight %}
 
+### enableOnDemand `boolean`
+{:#members:enableondemand}
+
+Ribbon Tab contents and backstage can be rendered as On Demand.if we set enableOnDemand as ‘true’ Ribbon tab Contents are load at on demand only.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+   
+        <div id="defaultRibbon"></div>
+            <div id="infoCon" style="display:none">
+                <div style="display:table-cell;padding-top:10px">
+                    <table>
+                        <tr>
+                            <td>
+                                <button id="spltbutton1" class="e-bsinfobtnstyle e-bssplbtn1">Protect Workbook</button>
+                                <ul id="Ul51">
+                                    <li><span>Mark as Final</span></li>
+                                    <li><span>Encrypt Password</span></li>
+                                </ul>
+                            </td>
+                            <td style="vertical-align: top;padding-left:10px">
+                                <span class="e-bsptitle" style="font-size:18px">Protect Workbook</span>
+                                <span style="display:block">Control what types of changes people can make to this workbook.</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+            $("#defaultRibbon").ejRibbon({
+                width: "100%",
+                expandPinSettings: {
+                    toolTip: "Collapse the Ribbon"
+                },
+                collapsePinSettings: {
+                    toolTip: "Pin the Ribbon"
+                },
+                enableOnDemand: true,
+                applicationTab: {
+                    type: ej.Ribbon.ApplicationTabType.Backstage,
+                    backstageSettings: {
+                        text: "FILE", height: 350, width: 1000, headerWidth: 120, pages: [
+                        { id: "info", text: "Info", contentID: "infoCon", itemType: ej.Ribbon.ItemType.Tab },
+                        { id: "close", text: "Close", itemType: ej.Ribbon.ItemType.Button }
+                        ]
+                    }
+                },
+                tabs: [{
+                    id: "home", text: "HOME", groups: [{
+                        text: "Clipboard", alignType: ej.Ribbon.AlignType.Columns, enableGroupExpander: true, groupExpanderSettings: {
+                            toolTip: "Clipboard"
+                        }, content: [{
+                            groups: [{
+                                id: "paste",
+                                text: "paste",
+                                toolTip: "Paste",
+                                buttonSettings: {
+                                    contentType: ej.ContentType.ImageOnly,
+                                    prefixIcon: "e-icon e-ribbon e-ribbonpaste"
+                                }
+                            }
+                            ],
+                            defaults: {
+                                type: ej.Ribbon.Type.Button,
+                                isBig: true,
+                                width: 50,
+                                height: 70
+                            }
+                        },
+                        {
+                            groups: [{
+                                id: "cut",
+                                text: "Cut",
+                                toolTip: "Cut",
+                                buttonSettings: {
+                                    contentType: ej.ContentType.TextAndImage,
+                                    prefixIcon: "e-icon e-ribbon e-ribboncut"
+                                }
+                            },
+                            {
+                                id: "copy",
+                                text: "Copy",
+                                toolTip: "Copy",
+                                buttonSettings: {
+                                    contentType: ej.ContentType.TextAndImage,
+                                    prefixIcon: "e-icon e-ribbon e-ribboncopy"
+                                }
+                            },
+                            {
+                                id: "clear",
+                                text: "Clear",
+                                toolTip: "Clear All",
+                                buttonSettings: {
+                                    contentType: ej.ContentType.TextAndImage,
+                                    prefixIcon: "e-icon e-ribbon clearAll"
+                                }
+                            }],
+                            defaults: {
+                                type: ej.Ribbon.Type.Button,
+                                width: 60,
+                                isBig: false
+                            }
+                        }]
+                    },
+                    ]
+                },
+				{
+				    id: "layout", text: "LAYOUT", groups: [
+					{
+					    text: "Print Layout", alignType: ej.Ribbon.AlignType.Rows, content: [{
+					        groups: [{
+					            id: "printlayout",
+					            text: "Print Layout",
+					            toolTip: "Print Layout",
+					            buttonSettings: {
+					                contentType: ej.ContentType.TextAndImage,
+					                imagePosition: ej.ImagePosition.ImageTop,
+					                prefixIcon: "e-icon e-ribbon e-printlayout"
+					            }
+					        }
+					        ],
+					        defaults: {
+					            type: ej.Ribbon.Type.Button,
+					            width: 80,
+					            height: 70
+					        }
+					    }]
+					}]
+				}],
+                create: "createControl"
+            });
+        });
+        function createControl(args) {
+            $("#spltbutton1").ejSplitButton({
+                size: "large",
+                showRoundedCorner: false,
+                targetID: "Ul51",
+                buttonMode: "dropdown",
+                contentType: "textandimage",
+                imagePosition: "imagetop",
+                prefixIcon: "e-protect e-newpageicon",
+                arrowPosition: "bottom",
+                height: 90,
+                width: 100
+            });
+        }
+    </script>
+     <style>
+        .e-protect {
+            background-image: url("../content/ejthemes/common-images/ribbon/Protect.png");
+        }
+        .e-newpageicon {
+            background-repeat: no-repeat;
+            height: 42px;
+            width: 42px;
+        }
+        .e-ribbon .e-ribbonbackstagepage .e-bsinfobtnstyle {
+            font-family: segoe ui;
+            border: 1px solid #c9c9c9;
+            background: #fdfdfd;
+            color: #212121;
+        }
+            .e-ribbon .e-ribbonbackstagepage .e-bsinfobtnstyle:hover {
+                color: black;
+            }
+        .e-bssplbtn1 .e-split-btn-div {
+            text-indent: 40px;
+            top: 64px;
+        }
+    </style>
+            
+{% endhighlight %}
+
+### collapsible `boolean`
+{:#members:collapsible}
+
+Collapsible property for collapsing the tab content at initially, so that ribbon will rendered at tab alone then after Tab click every content will visible at pinned state.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+   
+        <div id="defaultRibbon"></div>
+            <div id="infoCon" style="display:none">
+                <div style="display:table-cell;padding-top:10px">
+                    <table>
+                        <tr>
+                            <td>
+                                <button id="spltbutton1" class="e-bsinfobtnstyle e-bssplbtn1">Protect Workbook</button>
+                                <ul id="Ul51">
+                                    <li><span>Mark as Final</span></li>
+                                    <li><span>Encrypt Password</span></li>
+                                </ul>
+                            </td>
+                            <td style="vertical-align: top;padding-left:10px">
+                                <span class="e-bsptitle" style="font-size:18px">Protect Workbook</span>
+                                <span style="display:block">Control what types of changes people can make to this workbook.</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <script type="text/javascript">
+            $(function () {
+            $("#defaultRibbon").ejRibbon({
+                width: "100%",
+                expandPinSettings: {
+                    toolTip: "Collapse the Ribbon"
+                },
+                collapsePinSettings: {
+                    toolTip: "Pin the Ribbon"
+                },
+                enableOnDemand: true,
+                collapsible:true,
+                applicationTab: {
+                    type: ej.Ribbon.ApplicationTabType.Backstage,
+                    backstageSettings: {
+                        text: "FILE", height: 350, width: 1000, headerWidth: 120, pages: [
+                        { id: "info", text: "Info", contentID: "infoCon", itemType: ej.Ribbon.ItemType.Tab },
+                        { id: "close", text: "Close", itemType: ej.Ribbon.ItemType.Button }
+                        ]
+                    }
+                },
+                tabs: [{
+                    id: "home", text: "HOME", groups: [{
+                        text: "Clipboard", alignType: ej.Ribbon.AlignType.Columns, enableGroupExpander: true, groupExpanderSettings: {
+                            toolTip: "Clipboard"
+                        }, content: [{
+                            groups: [{
+                                id: "paste",
+                                text: "paste",
+                                toolTip: "Paste",
+                                buttonSettings: {
+                                    contentType: ej.ContentType.ImageOnly,
+                                    prefixIcon: "e-icon e-ribbon e-ribbonpaste"
+                                }
+                            }
+                            ],
+                            defaults: {
+                                type: ej.Ribbon.Type.Button,
+                                isBig: true,
+                                width: 50,
+                                height: 70
+                            }
+                        },
+                        {
+                            groups: [{
+                                id: "cut",
+                                text: "Cut",
+                                toolTip: "Cut",
+                                buttonSettings: {
+                                    contentType: ej.ContentType.TextAndImage,
+                                    prefixIcon: "e-icon e-ribbon e-ribboncut"
+                                }
+                            },
+                            {
+                                id: "copy",
+                                text: "Copy",
+                                toolTip: "Copy",
+                                buttonSettings: {
+                                    contentType: ej.ContentType.TextAndImage,
+                                    prefixIcon: "e-icon e-ribbon e-ribboncopy"
+                                }
+                            },
+                            {
+                                id: "clear",
+                                text: "Clear",
+                                toolTip: "Clear All",
+                                buttonSettings: {
+                                    contentType: ej.ContentType.TextAndImage,
+                                    prefixIcon: "e-icon e-ribbon clearAll"
+                                }
+                            }],
+                            defaults: {
+                                type: ej.Ribbon.Type.Button,
+                                width: 60,
+                                isBig: false
+                            }
+                        }]
+                    },
+                    ]
+                },
+				{
+				    id: "layout", text: "LAYOUT", groups: [
+					{
+					    text: "Print Layout", alignType: ej.Ribbon.AlignType.Rows, content: [{
+					        groups: [{
+					            id: "printlayout",
+					            text: "Print Layout",
+					            toolTip: "Print Layout",
+					            buttonSettings: {
+					                contentType: ej.ContentType.TextAndImage,
+					                imagePosition: ej.ImagePosition.ImageTop,
+					                prefixIcon: "e-icon e-ribbon e-printlayout"
+					            }
+					        }
+					        ],
+					        defaults: {
+					            type: ej.Ribbon.Type.Button,
+					            width: 80,
+					            height: 70
+					        }
+					    }]
+					}]
+				}],
+                create: "createControl"
+            });
+        });
+        function createControl(args) {
+            $("#spltbutton1").ejSplitButton({
+                size: "large",
+                showRoundedCorner: false,
+                targetID: "Ul51",
+                buttonMode: "dropdown",
+                contentType: "textandimage",
+                imagePosition: "imagetop",
+                prefixIcon: "e-protect e-newpageicon",
+                arrowPosition: "bottom",
+                height: 90,
+                width: 100
+            });
+        }
+    </script>
+     <style>
+        .e-protect {
+            background-image: url("../content/ejthemes/common-images/ribbon/Protect.png");
+        }
+        .e-newpageicon {
+            background-repeat: no-repeat;
+            height: 42px;
+            width: 42px;
+        }
+        .e-ribbon .e-ribbonbackstagepage .e-bsinfobtnstyle {
+            font-family: segoe ui;
+            border: 1px solid #c9c9c9;
+            background: #fdfdfd;
+            color: #212121;
+        }
+            .e-ribbon .e-ribbonbackstagepage .e-bsinfobtnstyle:hover {
+                color: black;
+            }
+        .e-bssplbtn1 .e-split-btn-div {
+            text-indent: 40px;
+            top: 64px;
+        }
+    </style>
+            
+{% endhighlight %}
+
 ### enableRTL `object`
 {:#members:enablertl}
 
