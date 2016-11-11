@@ -1279,7 +1279,7 @@ Specifies whether to render only the visual elements that are visible in the UI.
 
 Specifies the settings for column resize
 
-### columnResizeSettings.columnResizeMode `enum`
+### columnResizeSettings.columnResizeMode `array`
 {:#members:columnresizesettings-columnresizemode}
 
 Specifies the mode for column resizing 
@@ -1345,7 +1345,7 @@ Specifies the mode on which column filtering should start
 
 {% endhighlight %}
 
-### filterSettings.filterType `enum`
+### filterSettings.filterType `array`
 {:#members:filtersettings-filtertype}
 
 Specifies the type of column filtering.
