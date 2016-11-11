@@ -46,7 +46,7 @@ $("#diagram").ejDiagram();
 
 ## Members
 
-### backgroundColor `String`
+### backgroundColor `string`
 {:#members:backgroundcolor}
 
 Defines the background color of diagram elements
@@ -66,7 +66,7 @@ $("#diagramcontent").ejDiagram({ backgroundColor: "red"});
 
 {% endhighlight %}
 
-### backgroundImage `String`
+### backgroundImage `string`
 {:#members:backgroundimage}
 
 Defines the path of the background image of diagram elements
@@ -206,7 +206,7 @@ $("#diagramcontent").ejDiagram({ backgroundImage:{scale:ej.datavisualization.Dia
 
 {% endhighlight %}
 
-### backgroundImage.source `String`
+### backgroundImage.source `string`
 {:# members:backgroundimage-source}
 
 Sets the source path of the background image
@@ -901,7 +901,7 @@ $("#diagramcontent").ejDiagram({ connectors:[connector] });
 
 {% endhighlight %}
 
-### connectors.cssClass `String`
+### connectors.cssClass `string`
 {:#members:connectors-cssclass}
 
 Configures the styles of shapes
@@ -1081,7 +1081,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
-### connectors.labels.borderColor `String`
+### connectors.labels.borderColor `string`
 {:#members:connectors-labels-bordercolor}
 
 Sets the border color of the label
@@ -1154,7 +1154,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 {% endhighlight %}
 
 
-### connectors.labels.fillColor `String`
+### connectors.labels.fillColor `string`
 {:#members:connectors-labels-fillcolor}
 
 Sets the fill color of the text area
@@ -1178,7 +1178,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
-### connectors.labels.fontColor `String`
+### connectors.labels.fontColor `string`
 {:#members:connectors-labels-fontcolor}
 
 Sets the font color of the text
@@ -1202,7 +1202,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
-### connectors.labels.fontFamily `String`
+### connectors.labels.fontFamily `string`
 {:#members:connectors-labels-fontfamily}
 
 Sets the font family of the text
@@ -1325,7 +1325,7 @@ console.log(connector.labels[0].mode);
 
 {% endhighlight %}
 
-### connectors.labels.name `String`
+### connectors.labels.name `string`
 {:#members:connectors-labels-name}
 
 Sets the unique identifier of the label
@@ -1617,7 +1617,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
-### connectors.labels.segmentOffset `String`
+### connectors.labels.segmentOffset `string`
 {:#members:connectors-labels-segmentoffset}
 
 Sets the position of the label with respect to the total segment length
@@ -1642,7 +1642,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 {% endhighlight %}
 
 
-### connectors.labels.text `String`
+### connectors.labels.text `string`
 {:#members:connectors-labels-text}
 
 Defines the label text
@@ -1821,7 +1821,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
-### connectors.lineColor `String`
+### connectors.lineColor `string`
 {:#members:connectors-linecolor}
 
 Sets the stroke color of the connector
@@ -1843,7 +1843,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.lineDashArray `String`
+### connectors.lineDashArray `string`
 {:#members:connectors-linedasharray}
 
 Sets the pattern of dashes and gaps used to stroke the path of the connector
@@ -2011,7 +2011,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 {% endhighlight %}
 
-### connectors.name `String`
+### connectors.name `string`
 {:#members:connectors-name}
 
 Sets a unique name for the connector
@@ -2090,7 +2090,7 @@ $("#symbolpalette").ejSymbolPalette({
 
 {% endhighlight %}
 
-### connectors.parent `String`
+### connectors.parent `string`
 {:#members:connectors-parent}
 
 Sets the parent name of the connector.
@@ -2135,7 +2135,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.segments.direction `String`
+### connectors.segments.direction `string`
 {:#members:connectors-segments-direction}
 
 Sets the direction of orthogonal segment
@@ -2892,7 +2892,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.sourceDecorator.borderColor `String`
+### connectors.sourceDecorator.borderColor `string`
 {:#members:connectors-sourcedecorator-bordercolor}
 
 Sets the border color of the source decorator
@@ -2936,7 +2936,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.sourceDecorator.fillColor `String`
+### connectors.sourceDecorator.fillColor `string`
 {:#members:connectors-sourcedecorator-fillcolor}
 
 Sets the fill color of the source decorator
@@ -2980,7 +2980,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.sourceDecorator.pathData `String`
+### connectors.sourceDecorator.pathData `string`
 {:#members:connectors-sourcedecorator-pathdata}
 
 Defines the custom shape of the source decorator
@@ -3083,7 +3083,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.sourceNode `String`
+### connectors.sourceNode `string`
 {:#members:connectors-sourcenode}
 
 Sets the source node of the connector
@@ -3196,7 +3196,7 @@ var point = {y: 10};
 
 {% endhighlight %}
 
-### connectors.sourcePort `String`
+### connectors.sourcePort `string`
 {:#members:connectors-sourceport}
 
 Sets the source port of the connector
@@ -3245,7 +3245,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.targetDecorator.borderColor `String`
+### connectors.targetDecorator.borderColor `string`
 {:#members:connectors-targetdecorator-bordercolor}
 
 Sets the border color of the decorator
@@ -3267,7 +3267,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.targetDecorator.fillColor `String`
+### connectors.targetDecorator.fillColor `string`
 {:#members:connectors-targetdecorator-fillcolor}
 
 Sets the color with which the decorator will be filled
@@ -3311,7 +3311,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.targetDecorator.pathData `String`
+### connectors.targetDecorator.pathData `string`
 {:#members:connectors-targetdecorator-pathdata}
 
 Defines the custom shape of the target decorator
@@ -3414,7 +3414,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.targetNode `String`
+### connectors.targetNode `string`
 {:#members:connectors-targetnode}
 
 Sets the target node of the connector
@@ -3487,7 +3487,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.targetPort `String`
+### connectors.targetPort `string`
 {:#members:connectors-targetport}
 
 Sets the targetPort of the connector
@@ -3847,7 +3847,7 @@ var data = [
 
 {% endhighlight %}
 
-### dataSourceSettings.id `String`
+### dataSourceSettings.id `string`
 {:#members:datasourcesettings-id}
 
 Sets the unique id of the data source items
@@ -3873,7 +3873,7 @@ Sets the unique id of the data source items
 
 {% endhighlight %}
 
-### dataSourceSettings.parent `String`
+### dataSourceSettings.parent `string`
 {:#members:datasourcesettings-parent}
 
 Defines the parent id of the data source item
@@ -3899,7 +3899,7 @@ Defines the parent id of the data source item
 
 {% endhighlight %}
 
-### dataSourceSettings.query `String`
+### dataSourceSettings.query `string`
 {:#members:datasourcesettings-query}
 
 Describes query to retrieve a set of data from the specified datasource
@@ -3924,7 +3924,7 @@ Describes query to retrieve a set of data from the specified datasource
 
 {% endhighlight %}
 
-### dataSourceSettings.root `String`
+### dataSourceSettings.root `string`
 {:#members:datasourcesettings-root}
 
 Sets the unique id of the root data source item
@@ -3950,7 +3950,7 @@ Sets the unique id of the root data source item
 
 {% endhighlight %}
 
-### dataSourceSettings.tableName `String`
+### dataSourceSettings.tableName `string`
 {:#members:datasourcesettings-tablename}
 
 Describes the name of the table on which the specified query has to be executed
@@ -4129,7 +4129,7 @@ $("#diagramcontent").ejDiagram({ enableContextMenu: false });
 
 {% endhighlight %}
 
-### height `String`
+### height `string`
 {:#members:height}
 
 Specifies the height of the diagram
@@ -4459,7 +4459,7 @@ $("#diagramcontent").ejDiagram({layout: { bounds:{ x: 0, y: 0, width: 1000, heig
 {% endhighlight %}
 
 
-### layout.fixedNode `String`
+### layout.fixedNode `string`
 {:#members:layout-fixednode}
 
 Defines the fixed node with reference to which, the layout will be arranged and fixed node will not be repositioned
@@ -4748,7 +4748,7 @@ $("#diagramcontent").ejDiagram({layout: { verticalSpacing: 50 }});
 </script>
 {% endhighlight %}
 
-### locale `String`
+### locale `string`
 {:#members:locale}
 
 Defines the current culture of diagram
@@ -5016,7 +5016,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.annotation.text `String`
+### nodes.annotation.text `string`
 {:#members:nodes-annotation-text}
 
 Defines the additional information about the flow object in a BPMN Process
@@ -5066,7 +5066,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.borderColor `String`
+### nodes.borderColor `string`
 {:#members:nodes-bordercolor}
 
 Sets the border color of node
@@ -5088,7 +5088,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.borderDashArray `String`
+### nodes.borderDashArray `string`
 {:#members:nodes-borderdasharray}
 
 Sets the pattern of dashes and gaps to stroke the border
@@ -5229,7 +5229,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.class.name `String`
+### nodes.class.name `string`
 {:#members:nodes-class-name}
 
 Sets the name of class.
@@ -5276,7 +5276,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.class.attributes.name `String`
+### nodes.class.attributes.name `string`
 {:#members:nodes-class-attributes-name}
 
 Sets the name of the attribute
@@ -5300,7 +5300,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.class.attributes.type `String`
+### nodes.class.attributes.type `string`
 {:#members:nodes-class-attributes-type}
 
 Sets the data type of attribute
@@ -5324,7 +5324,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.class.attributes.scope `String`
+### nodes.class.attributes.scope `string`
 {:#members:nodes-class-attributes-scope}
 
 Defines the visibility of the attribute
@@ -5372,7 +5372,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-## nodes.class.methods.name `String`
+## nodes.class.methods.name `string`
 {:#members:nodes-class-methods-name}
 
 Sets the name of the method.
@@ -5420,7 +5420,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-## nodes.class.methods.arguments.name `String`
+## nodes.class.methods.arguments.name `string`
 {:#members:nodes-class-methods-arguments-name}
 
 Sets the name of the argument
@@ -5444,7 +5444,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-## nodes.class.methods.arguments.type `String`
+## nodes.class.methods.arguments.type `string`
 {:#members:nodes-class-methods-arguments-type}
 
 Sets the type of the argument
@@ -5468,7 +5468,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-## nodes.class.methods.type `String`
+## nodes.class.methods.type `string`
 {:#members:nodes-class-methods-type}
 
 Sets the return type of the method
@@ -5492,7 +5492,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.class.methods.scope `String`
+### nodes.class.methods.scope `string`
 {:#members:nodes-class-methods-scope}
 
 Sets the visibility of the method.
@@ -5534,7 +5534,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.collapseIcon.borderColor `String`
+### nodes.collapseIcon.borderColor `string`
 {:#members:nodes-collapseicon-bordercolor}
 
 Sets the border color for collapse icon of node
@@ -5579,7 +5579,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.collapseIcon.fillColor `String`
+### nodes.collapseIcon.fillColor `string`
 {:#members:nodes-collapseicon-fillcolor}
 
 Sets the fill color for collapse icon of node
@@ -6007,7 +6007,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 {% endhighlight %}
 
-### nodes.container.orientation `String`
+### nodes.container.orientation `string`
 {:#members:nodes-container-orientation}
 
 Defines the orientation of the container. Applicable, if the group is a container.
@@ -6102,7 +6102,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.cssClass `String`
+### nodes.cssClass `string`
 {:#members:nodes-cssclass}
 
 Configures the styles of shapes
@@ -6231,7 +6231,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.enumeration.name `String`
+### nodes.enumeration.name `string`
 {:#members:nodes-enumeration-name}
 
 Sets the name of the Enumeration
@@ -6279,7 +6279,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.enumeration.members.name `String`
+### nodes.enumeration.members.name `string`
 {:#members:nodes-enumeration-members-name}
 
 Sets the name of the enumeration member
@@ -6414,7 +6414,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.expandIcon.borderColor `String`
+### nodes.expandIcon.borderColor `string`
 {:#members:nodes-expandicon-bordercolor}
 
 Sets the border color for expand icon of node
@@ -6459,7 +6459,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.expandIcon.fillColor `String`
+### nodes.expandIcon.fillColor `string`
 {:#members:nodes-expandicon-fillcolor}
 
 Sets the fill color for expand icon of node
@@ -6715,7 +6715,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.fillColor `String`
+### nodes.fillColor `string`
 {:#members:nodes-fillcolor}
 
 Defines the fill color of the node
@@ -7082,7 +7082,7 @@ $("#diagramcontent").ejDiagram({ nodes:[node] });
 
 Defines the color and a position where the previous color transition ends and a new color transition starts
 
-### nodes.gradient.Stop.color `String`
+### nodes.gradient.Stop.color `string`
 {:#members:nodes-gradient-stop-color}
 
 Sets the color to be filled over the specified region
@@ -7327,7 +7327,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.interface.name `String`
+### nodes.interface.name `string`
 {:#members:nodes-interface.name}
 
 Sets the name of the interface
@@ -7374,7 +7374,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.interface.attributes.name `String`
+### nodes.interface.attributes.name `string`
 {:#members:nodes-interface.attributes.name}
 
 Sets the name of the attribute
@@ -7398,7 +7398,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.interface.attributes.type `String`
+### nodes.interface.attributes.type `string`
 {:#members:nodes-interface.attributes.type}
 
 Sets the type of the attribute
@@ -7422,7 +7422,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.interface.attributes.scope `String`
+### nodes.interface.attributes.scope `string`
 {:#members:nodes-interface.attributes.scope}
 
 Sets the visibility of the attribute
@@ -7469,7 +7469,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-## nodes.interfaces.methods.name `String`
+## nodes.interfaces.methods.name `string`
 {:#members:nodes-interface.methods.name}
 
 Sets the name of the method.
@@ -7518,7 +7518,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-## nodes.interface.methods.arguments.name `String`
+## nodes.interface.methods.arguments.name `string`
 {:#members:nodes-interface.methods.arguments.name}
 
 Sets the name of the argument
@@ -7542,7 +7542,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-## nodes.interface.methods.arguments.type `String`
+## nodes.interface.methods.arguments.type `string`
 {:#members:nodes-interface.methods.arguments.type}
 
 Sets the type of the argument
@@ -7566,7 +7566,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-## nodes.interface.methods.type `String`
+## nodes.interface.methods.type `string`
 {:#members:interface-interface.methods.type}
 
 Sets the return type of the method
@@ -7590,7 +7590,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.interface.methods.scope `String`
+### nodes.interface.methods.scope `string`
 {:#members:nodes-interface.attributes.scope}
 
 Sets the visibility of the method
@@ -7714,7 +7714,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.labels.borderColor `String`
+### nodes.labels.borderColor `string`
 {:#members:nodes-labels-bordercolor}
 
 Sets the border color of the label
@@ -7762,7 +7762,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.labels.fillColor `String`
+### nodes.labels.fillColor `string`
 {:#members:nodes-labels-fillcolor}
 
 Sets the fill color of the text area
@@ -7786,7 +7786,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.labels.fontColor `String`
+### nodes.labels.fontColor `string`
 {:#members:nodes-labels-fontcolor}
 
 Sets the font color of the text
@@ -7810,7 +7810,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.labels.fontFamily `String`
+### nodes.labels.fontFamily `string`
 {:#members:nodes-labels-fontfamily}
 
 Sets the font family of the text
@@ -8000,7 +8000,7 @@ console.log(node.labels[0].mode);
 
 {% endhighlight %}
 
-### nodes.labels.name `String`
+### nodes.labels.name `string`
 {:#members:nodes-labels-name}
 
 Sets the unique identifier of the label
@@ -8121,7 +8121,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.labels.text `String`
+### nodes.labels.text `string`
 {:#members:nodes-labels-text}
 
 Defines the label text
@@ -8537,7 +8537,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.lanes.fillColor `String`
+### nodes.lanes.fillColor `string`
 {:#members:nodes-lanes-fillcolor}
 
 Defines the fill color of the lane
@@ -8605,7 +8605,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.lanes.name `String`
+### nodes.lanes.name `string`
 {:#members:nodes-lanes-name}
 
 Sets the unique identifier of the lane
@@ -8627,7 +8627,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.lanes.orientation `String`
+### nodes.lanes.orientation `string`
 {:#members:nodes-lanes-orientation}
 
 Sets the orientation of the lane. 
@@ -8833,7 +8833,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.name `String`
+### nodes.name `string`
 {:#members:nodes-name}
 
 Sets the unique identifier of the node
@@ -8921,7 +8921,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.orientation `String`
+### nodes.orientation `string`
 {:#members:nodes-orientation}
 
 Defines the orientation of nodes. Applicable, if the node is a swimlane.
@@ -9320,7 +9320,7 @@ $("#symbolpalette").ejSymbolPalette({
 
 {% endhighlight %}
 
-### nodes.parent `String`
+### nodes.parent `string`
 {:#members:nodes-parent}
 
 Sets the name of the parent group
@@ -9346,7 +9346,7 @@ $("#diagramcontent").ejDiagram({nodes:[node1, node2, group]});
 
 {% endhighlight %}
 
-### nodes.pathData `String`
+### nodes.pathData `string`
 {:#members:nodes-pathdata}
 
 Sets the path geometry that defines the shape of a path node
@@ -9418,7 +9418,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.phases.lineColor `String`
+### nodes.phases.lineColor `string`
 {:#members:nodes-phases-linecolor}
 
 Defines the line color of the splitter that splits adjacent phases.
@@ -9442,7 +9442,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.phases.lineDashArray `String`
+### nodes.phases.lineDashArray `string`
 {:#members:nodes-phases-linedasharray}
 
 Sets the dash array that used to stroke the phase splitter
@@ -9490,7 +9490,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.phases.name `String`
+### nodes.phases.name `string`
 {:#members:nodes-phases-name}
 
 Sets the unique identifier of the phase
@@ -9533,7 +9533,7 @@ $("#diagramcontent").ejDiagram({nodes:{type: "swimlane",name: "swimlane", phases
 
 {% endhighlight %}
 
-### nodes.phases.orientation `String`
+### nodes.phases.orientation `string`
 {:#members:nodes-phases-orientation}
 
 Sets the orientation of the phase
@@ -9559,7 +9559,7 @@ diagram.addPhase(diagram.selectionList[0].name,
 
 {% endhighlight %}
 
-### nodes.phases.type `String`
+### nodes.phases.type `string`
 {:#members:nodes-phases-type}
 
 Sets the type of the object as phase
@@ -9677,7 +9677,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.ports.borderColor `String`
+### nodes.ports.borderColor `string`
 {:#members:nodes-ports-bordercolor}
 
 Sets the border color of the port
@@ -9796,7 +9796,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.ports.fillColor `String`
+### nodes.ports.fillColor `string`
 {:#members:nodes-ports-fillcolor}
 
 Sets the fill color of the port
@@ -9819,7 +9819,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.ports.name `String`
+### nodes.ports.name `string`
 {:#members:nodes-ports-name}
 
 Sets the unique identifier of the port
@@ -9866,7 +9866,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.ports.pathData `String`
+### nodes.ports.pathData `string`
 {:#members:nodes-ports-pathdata}
 
 Defines the path data to draw the port. Applicable, if the port `shape` is path.
@@ -10288,7 +10288,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.source `String`
+### nodes.source `string`
 {:#members:nodes-source}
 
 Sets the source path of the image. Applicable, if the type of the node is image.
@@ -10871,7 +10871,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.templateId `String`
+### nodes.templateId `string`
 {:#members:nodes-templateid}
 
 Sets the id of svg/html templates. Applicable, if the node is HTML or native.
@@ -11322,7 +11322,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### pageSettings.pageBackgroundColor `String`
+### pageSettings.pageBackgroundColor `string`
 {:#members:pagesettings-pagebackgroundcolor}
 
 Defines the background color of diagram pages
@@ -11344,7 +11344,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### pageSettings.pageBorderColor `String`
+### pageSettings.pageBorderColor `string`
 {:#members:pagesettings-pagebordercolor}
 
 Defines the page border color
@@ -12019,7 +12019,7 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 
 {% endhighlight %}
 
-### selectedItems.userHandles.backgroundColor `String`
+### selectedItems.userHandles.backgroundColor `string`
 {:#members:selecteditems-userhandles-backgroundcolor}
 
 Defines the background color of the user handle
@@ -12043,7 +12043,7 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 
 {% endhighlight %}
 
-### selectedItems.userHandles.borderColor `String`
+### selectedItems.userHandles.borderColor `string`
 {:#members:selecteditems-userhandles-bordercolor}
 
 Sets the border color of the user handle
@@ -12091,7 +12091,7 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 
 {% endhighlight %}
 
-### selectedItems.userHandles.pathColor `String`
+### selectedItems.userHandles.pathColor `string`
 {:#members:selecteditems-userhandles-pathcolor}
 
 Sets the stroke color of the user handle
@@ -12117,7 +12117,7 @@ Sets the stroke color of the user handle
 
 {% endhighlight %}
 
-### selectedItems.userHandles.pathData `String`
+### selectedItems.userHandles.pathData `string`
 {:#members:selecteditems-userhandles-pathdata}
 
 Defines the custom shape of the user handle
@@ -12375,7 +12375,7 @@ $("#diagramcontent").ejDiagram({ snapSettings:{ enableSnapToObject: false } });
 
 Defines the appearance of horizontal gridlines
 
-### snapSettings.horizontalGridLines.lineColor `String`
+### snapSettings.horizontalGridLines.lineColor `string`
 {:#members:snapsettings-horizontalgridlines-linecolor}
 
 Defines the line color of horizontal grid lines
@@ -12396,7 +12396,7 @@ $("#diagramcontent").ejDiagram({ snapSettings: { horizontalGridLines: gridline} 
 
 {% endhighlight %}
 
-### snapSettings.horizontalGridLines.lineDashArray `String`
+### snapSettings.horizontalGridLines.lineDashArray `string`
 {:#members:snapsettings-horizontalgridlines-linedasharray}
 
 Specifies the pattern of dashes and gaps used to stroke horizontal grid lines
@@ -12561,7 +12561,7 @@ $("#diagramcontent").ejDiagram({snapSettings: snap});
 
 Defines the appearance of horizontal gridlines
 
-### snapSettings.verticalGridLines.lineColor `String`
+### snapSettings.verticalGridLines.lineColor `string`
 {:#members:snapsettings-verticalgridlines-linecolor}
 
 Defines the line color of horizontal grid lines
@@ -12582,7 +12582,7 @@ $("#diagramcontent").ejDiagram({snapSettings: { verticalGridLines: gridline} });
 
 {% endhighlight %}
 
-### snapSettings.verticalGridLines.lineDashArray `String`
+### snapSettings.verticalGridLines.lineDashArray `string`
 {:#members:snapsettings-verticalgridlines-linedasharray}
 
 Specifies the pattern of dashes and gaps used to stroke horizontal grid lines
@@ -12921,7 +12921,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### tooltip.templateId `String`
+### tooltip.templateId `string`
 {:#members:tooltip-templateid}
 
 Sets the svg/html template to be bound with tooltip
@@ -12950,7 +12950,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### width `String`
+### width `string`
 {:#members:width}
 
 Specifies the width of the diagram
