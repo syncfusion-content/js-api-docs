@@ -67,6 +67,26 @@ Enables or disables the ability to resize the column width interactively.
                                  
 {% endhighlight %}
 
+### allowColumnReordering `boolean`
+{:#members:allowcolumnreordering}
+
+Enables or disables the option for column reordering
+
+#### Default Value
+
+ * false
+
+
+#### Example
+
+
+{% highlight html %}   
+              
+        $("#treegrid").ejTreeGrid({ allowColumnReordering :  true });
+                                 
+{% endhighlight %}
+
+
 
 ### allowDragAndDrop `boolean`
 {:#members:allowdraganddrop}
@@ -1254,6 +1274,55 @@ Specifies whether to render only the visual elements that are visible in the UI.
 {% endhighlight %}
 
 
+### columnResizeSettings `object`
+{:#members:columnresizesettings}
+
+Specifies the settings for column resize
+
+### columnResizeSettings.columnResizeMode `enum`
+{:#members:columnresizesettings-columnresizemode}
+
+<ts name = "ej.TreeGrid.ColumnResizeMode"/>
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">FixedColumns</td>
+<td class="description">At load time column are rendered with given width value, while resizing the column only current column width is changed</td>
+</tr>
+<tr>
+<td class="name">Normal</td>
+<td class="description"> At load time columns are stretched with control width, while resizing the column, current column width updated based on next column</td>
+</tr>
+<tr>
+<td class="name">NextColumn</td>
+<td class="description">In this mode columns are stretched with control width in load time and on resizing action.</td>
+</tr>
+</tbody>
+</table>
+
+Specifies the mode for column resizing 
+
+#### Default Value
+
+* "normal"
+
+#### Example
+
+
+{% highlight html %}
+ 
+        $("#treegrid").ejTreeGrid({  columnResizeSettings: { columnResizeMode : ej.TreeGrid.ColumnResizeMode.FixedColumns} });
+
+{% endhighlight %}
+
+
 ### filterSettings `object`
 {:#members:filtersettings}
 
@@ -1277,6 +1346,47 @@ Specifies the mode on which column filtering should start
         $("#treegrid").ejTreeGrid({  filterSettings: { filterBarMode : "onEnter"} });
 
 {% endhighlight %}
+
+### filterSettings.filterType `enum`
+{:#members:filtersettings-filtertype}
+
+<ts name = "ej.TreeGrid.FilterType"/>
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">FilterBar</td>
+<td class="description">Enables the filterbar filtering</td>
+</tr>
+<tr>
+<td class="name">Menu</td>
+<td class="description">Enables the menu filtering</td>
+</tr>
+</tbody>
+</table>
+
+Specifies the type of column filtering.
+
+#### Default Value
+
+* "filterbar"
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+        $("#treegrid").ejTreeGrid({  filterSettings: { filterType : "menu"} });
+
+{% endhighlight %}
+
 
 ### filterSettings.filteredColumns `array`
 {:#members:filtersettings-filteredcolumns}
@@ -2854,6 +2964,49 @@ treegridObj.sortColumn("Start Date", ej.sortOrder.Descending); // To sort the da
 </script>
 {% endhighlight %}
 
+### reorderColumn(fieldName, targetIndex)
+{:#methods:reordercolumn}
+
+To reorder the column with field name and target index values
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fieldName</td>
+<td class="type">string</td>
+<td class="description">you can pass a name of column to reorder.</td>
+</tr>
+<tr>
+<td class="name">targetIndex</td>
+<td class="type">string</td>
+<td class="description">you can pass a target column index to be inserted.</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+ 
+<script>
+// Create Tree Grid object
+var treegridObj = $("#treegrid").data("ejTreeGrid");
+treegridObj.reorderColumn("startDate", 4); // To sort the data
+</script>
+{% endhighlight %}
+
 
 ## Events
 
@@ -3572,6 +3725,245 @@ Triggered while collapsing the TreeGrid record
 <script>
 $("#TreeGrid").ejTreeGrid({
    collapsing: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+
+### columnDragStart
+{:#events:columndragstart}
+
+Triggered  when you start to drag a column
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when columnDragStart event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the control model values.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the event Type.</td>
+</tr>
+<tr>
+<td class="name">draggedColumn</td>
+<td class="type">object</td>
+<td class="description">Returns the column data which is dragged</td>
+</tr>
+<tr>
+<td class="name">draggedColumnIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the column being dragged</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
+$("#TreeGrid").ejTreeGrid({
+   columnDragStart: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+### columnDrag
+{:#events:columndrag}
+
+Triggered while dragging a column 
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when columnDrag event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the control model values.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the event Type.</td>
+</tr>
+<tr>
+<td class="name">draggedColumn</td>
+<td class="type">object</td>
+<td class="description">Returns the column data which is dragged</td>
+</tr>
+<tr>
+<td class="name">draggedColumnIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the column being dragged</td>
+</tr>
+<tr>
+<td class="name">targetColumn</td>
+<td class="type">object</td>
+<td class="description">Returns the target column data</td>
+</tr>
+<tr>
+<td class="name">targetColumnIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the target column</td>
+</tr>
+<tr>
+<td class="name">canDrop</td>
+<td class="type">boolean</td>
+<td class="description">Returns that we can drop over the column or not.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
+$("#TreeGrid").ejTreeGrid({
+   columnDrag: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+### columnDrop
+{:#events:columndrop}
+
+Triggered when a column is dropped
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when columnDrop event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the control model values.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the event Type.</td>
+</tr>
+<tr>
+<td class="name">draggedColumn</td>
+<td class="type">object</td>
+<td class="description">Returns the column data which is dragged</td>
+</tr>
+<tr>
+<td class="name">draggedColumnIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the column being dragged</td>
+</tr>
+<tr>
+<td class="name">targetColumn</td>
+<td class="type">object</td>
+<td class="description">Returns the target column data</td>
+</tr>
+<tr>
+<td class="name">targetColumnIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the target column</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
+$("#TreeGrid").ejTreeGrid({
+   columnDrop: function (args) {}
 });
 </script>
 {% endhighlight %}
