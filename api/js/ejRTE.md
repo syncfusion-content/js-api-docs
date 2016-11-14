@@ -61,27 +61,19 @@ $("#rteSample").ejRTE();
 
 * module:jQuery
 
-* module:jquery.easing.1.3.js
-
-* module:jquery.js
-
-* module:jquery.globalize.js
-
-* module:jquery.globalize.culture.en-US.js
-
 * module:ej.core.js
 
 * module:ej.data.js
 
-* module:ej.rte.js
+* module:ej.scroller.js
+
+* module:ej.draggable.js
+
+* module:ej.globalize.js
 
 * module:ej.button.js
 
 * module:ej.togglebutton.js
-
-* module:ej.colorpicker.js
-
-* module:ej.slider.js
 
 * module:ej.splitbutton.js
 
@@ -101,31 +93,23 @@ $("#rteSample").ejRTE();
 
 * module:ej.tab.js
 
-* module:ej.scroller.js
-
-* module:ej.draggable.js
+* module:ej.slider.js
 
 * module:ej.treeview.js
-
-* module:ej.waitingpopup.js
 
 * module:ej.uploadbox.js
 
 * module:ej.splitter.js
 
+* module:ej.colorpicker.js
+
 * module:ej.fileexplorer.js
 
-* module:ej.grid.base.js
+* module:ej.grid.js
 
-* module:ej.grid.common.js
+* module:ej.tooltip.js
 
-* module:ej.grid.edit.js
-
-* module:ej.grid.filter.js
-
-* module:ej.grid.selection.js
-
-* module:ej.grid.sort.js
+* module:ej.rte.js
 
 
 ### Members
