@@ -224,7 +224,6 @@ $("#toolbar1").ejToolbar({ dataSource:  items});
 
 
 
-
 ### enabled `boolean`
 {:#members:enabled}
 
@@ -285,8 +284,6 @@ Specifies the Toolbar control state.
         //To set enabled API value 
         $("#toolbar1").ejToolbar({ enabled:  true });                   
 </script>{% endhighlight %}
-
-
 
 
 ### enableRTL `boolean`
