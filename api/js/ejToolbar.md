@@ -222,7 +222,58 @@ Specifies dataSource value for the Toolbar control during initialization.
 $("#toolbar1").ejToolbar({ dataSource:  items}); 
 </script>{% endhighlight %}
 
+### disabledItemIndices `array`
+{:#members:disabledItemIndices}
 
+Disables an Item or set of Items that are enabled in the Toolbar
+
+#### Default Value
+
+* []
+
+#### Example
+
+{% highlight html %}
+ 
+    <div id="toolbar1">
+    <ul>
+    <li id="Left" title="Left">
+        <div class="ToolbarItems LeftAlign_tool"></div>
+    </li>
+    <li id="Center" title="Center">
+        <div class="ToolbarItems CenterAlign_tool"></div>
+    </li>
+    <li id="Right" title="Right">
+        <div class="ToolbarItems RightAlign_tool"></div>
+    </li>
+    <li id="Justify" title="Justify">
+        <div class="ToolbarItems Justify_tool"></div>
+    </li>
+    </ul>
+    <ul>
+    <li id="Bold" title="Bold">
+        <div class="ToolbarItems Bold_tool"></div>
+    </li>
+    <li id="Italic" title="Italic">
+        <div class="ToolbarItems Italic_tool"></div>
+    </li>
+    <li id="StrikeThrough" title="Strike Through">
+        <div class="ToolbarItems StrikeThrough_tool"></div>
+    </li>
+    <li id="UndeLine" title="UnderLine">
+        <div class="ToolbarItems Underline_tool"></div>
+    </li>
+    </ul>
+    </div>
+    <script>
+    // Disable Toolbar Items on initialization. 
+            //To set disabledItemIndices API value 
+            $("#toolbar1").ejToolbar({ 
+                disabledItemIndices: [1, 2]  
+            });                   
+    </script>
+       
+{% endhighlight %}
 
 
 ### enabled `boolean`
@@ -287,6 +338,59 @@ Specifies the Toolbar control state.
 </script>{% endhighlight %}
 
 
+### enabledItemIndices `array`
+{:#members:enabledItemIndices}
+
+Enables an Item or set of Items that are disabled in the Toolbar
+
+#### Default Value
+
+* []
+
+#### Example
+
+{% highlight html %}
+ 
+    <div id="toolbar1">
+    <ul>
+    <li id="Left" title="Left">
+        <div class="ToolbarItems LeftAlign_tool"></div>
+    </li>
+    <li id="Center" title="Center">
+        <div class="ToolbarItems CenterAlign_tool"></div>
+    </li>
+    <li id="Right" title="Right">
+        <div class="ToolbarItems RightAlign_tool"></div>
+    </li>
+    <li id="Justify" title="Justify">
+        <div class="ToolbarItems Justify_tool"></div>
+    </li>
+    </ul>
+    <ul>
+    <li id="Bold" title="Bold">
+        <div class="ToolbarItems Bold_tool"></div>
+    </li>
+    <li id="Italic" title="Italic">
+        <div class="ToolbarItems Italic_tool"></div>
+    </li>
+    <li id="StrikeThrough" title="Strike Through">
+        <div class="ToolbarItems StrikeThrough_tool"></div>
+    </li>
+    <li id="UndeLine" title="UnderLine">
+        <div class="ToolbarItems Underline_tool"></div>
+    </li>
+    </ul>
+    </div>
+    <script>
+    // Enable Toolbar Items on initialization. 
+            //To set enabledItemIndices API value 
+            $("#toolbar1").ejToolbar({ 
+                disabledItemIndices: [0, 1, 2, 3],
+                enabledItemIndices: [1, 2]  
+            });                   
+    </script>
+       
+{% endhighlight %}
 
 
 ### enableRTL `boolean`
