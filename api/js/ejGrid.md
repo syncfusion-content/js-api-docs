@@ -7120,7 +7120,7 @@ Get the row height of grid.
 #### Returns:
 {:#methods:returns:}
 
-Number
+number
 
 ####Example
 {:.example}
