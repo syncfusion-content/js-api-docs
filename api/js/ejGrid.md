@@ -6434,7 +6434,7 @@ Get the column index of the given field in grid.
 #### Returns:
 {:#methods:returns:}
 
-Number
+number
 
 
 ####Example
@@ -6566,7 +6566,7 @@ Get the current page index in grid pager.
 #### Returns:
 {:#methods:returns:}
 
-Number
+number
 
 
 ####Example
@@ -6967,7 +6967,7 @@ Get the row index based on the given tr element in grid.
 #### Returns:
 {:#methods:returns:}
 
-Number
+number
 
 
 ####Example
