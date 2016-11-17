@@ -1174,6 +1174,9 @@ $("#defaultradialmenu").ejRadialMenu ("showMenu");
 ### enableItemByIndex(itemIndex)
 {:#methods:enableitembyindex}
 
+
+To enable menu item using index
+
 <table>
 <tr>
 <td>
@@ -1186,9 +1189,6 @@ itemIndex</td><td>
 number</td><td>
 Index of the Radialmenu to be enabled.</td></tr>
 </table>
-
-
-To enable menu item using index
 
 
 
@@ -1234,6 +1234,9 @@ obj.enableItemByIndex(0);
 ### enableItemsByIndices(itemIndices)
 {:#methods:enableItemsByIndices}
 
+
+To enable menu items using indices
+
 <table>
 <tr>
 <td>
@@ -1246,10 +1249,6 @@ itemIndices</td><td>
 Array</td><td>
 Index of the Radialmenu to be enabled.</td></tr>
 </table>
-
-
-
-To enable menu items using indices
 
 
 
@@ -1295,6 +1294,8 @@ obj.enableItemsByIndices([0,2]);
 ### disableItemByIndex(itemIndex)
 {:#methods:disableitembyindex}
 
+To disable menu item using index
+
 <table>
 <tr>
 <td>
@@ -1307,10 +1308,6 @@ itemIndex</td><td>
 number</td><td>
 Index of the Radialmenu to be disabled.</td></tr>
 </table>
-
-
-
-To disable menu item using index
 
 
 
@@ -1356,6 +1353,9 @@ obj.disableItemByIndex(0);
 ### disableItemsByIndices(itemIndices)
 {:#methods:disableitemsbyindices}
 
+To disable menu items using indices
+
+
 <table>
 <tr>
 <td>
@@ -1368,11 +1368,6 @@ itemIndices</td><td>
 Array</td><td>
 items of the Radialmenu to disable.</td></tr>
 </table>
-
-
-To disable menu items using indices
-
-
 
 Example
 {:.example}
@@ -1416,6 +1411,9 @@ obj.disableItemsByIndices([1,3]);
 ### enableItem(item)
 {:#methods:enableitem}
 
+
+To enable menu item using item text
+
 <table>
 <tr>
 <td>
@@ -1428,9 +1426,6 @@ item</td><td>
 String</td><td>
 item of the Radialmenu item to enable.</td></tr>
 </table>
-
-
-To enable menu item using item text
 
 
 
@@ -1476,6 +1471,8 @@ obj.enableItem("social");
 ### disableItem(item)
 {:#methods:disableitem}
 
+To disable menu item using item text
+
 <table>
 <tr>
 <td>
@@ -1489,8 +1486,6 @@ String</td><td>
 item of the Radialmenu item to disable.</td></tr>
 </table>
 
-
-To disable menu item using item text
 
 
 
@@ -1536,6 +1531,9 @@ obj.disableItem("social");
 ### enableItems(items)
 {:#methods:enableitems}
 
+
+To enable menu items using item texts
+
 <table>
 <tr>
 <td>
@@ -1549,8 +1547,6 @@ Array</td><td>
 items of the Radialmenu item to enable.</td></tr>
 </table>
 
-
-To enable menu items using item texts
 
 
 
@@ -1596,6 +1592,9 @@ obj.enableItems(["social","direction"]);
 ### disableItems(items)
 {:#methods:disableitems}
 
+
+To disable menu items using item texts
+
 <table>
 <tr>
 <td>
@@ -1608,9 +1607,6 @@ items</td><td>
 Array</td><td>
 items of the Radialmenu item to disable.</td></tr>
 </table>
-
-
-To disable menu items using item texts
 
 
 
@@ -1656,6 +1652,9 @@ obj.disableItems(["social","direction"]);
 ### updateBadgeValue(index, value)
 {:#methods:updatebadgevalue}
 
+
+To update menu item badge value
+
 <table>
 <tr>
 <td>
@@ -1673,10 +1672,6 @@ value</td><td>
 number</td><td>
 The Value to be updated in the badge. It will be updated based on the given index</td></tr>
 </table>
-
-
-To update menu item badge value
-
 
 
 Example
@@ -1721,6 +1716,9 @@ obj.updateBadgeValue(0,4);
 ### showBadge(index)
 {:#methods:showbadge}
 
+
+To show menu item badge 
+
 <table>
 <tr>
 <td>
@@ -1735,7 +1733,6 @@ Index of the Radialmenu item to be shown badge.</td></tr>
 </table>
 
 
-To show menu item badge 
 
 
 
@@ -1781,6 +1778,9 @@ obj.showBadge(0);
 ### hideBadge(index)
 {:#methods:hidebadge}
 
+
+To hide menu item badge 
+
 <table>
 <tr>
 <td>
@@ -1793,9 +1793,6 @@ index</td><td>
 number</td><td>
 Index of the Radialmenu item to hide the badge.</td></tr>
 </table>
-
-
-To hide menu item badge 
 
 
 
@@ -1839,7 +1836,6 @@ obj.hideBadge(0);
 
 
 ## Events
-
 
 
 
