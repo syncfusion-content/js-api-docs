@@ -242,7 +242,7 @@ Contains the respective cube name from OLAP database as string type.
 ### dataSource.data `object`
 {:#members:datasource-data}
 
-Provides the raw data source for the PivotChart in Relational mode.
+Provides the raw data source for the PivotChart.
 
 #### Default Value: null
 

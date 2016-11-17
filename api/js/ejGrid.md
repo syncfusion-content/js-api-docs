@@ -3539,6 +3539,27 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
+### selectedRowIndices `Array`
+{:#members:selectedrowindices}
+
+Gets or sets a value that indicates the selected rows in grid
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %} 
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+    dataSource:window.gridData,
+    selectedRowIndices:[1,4,5]
+});
+</script> 
+{% endhighlight %}
+
 ### selectionSettings `Object`
 {:#members:selectionsettings}
 
@@ -4813,6 +4834,8 @@ $("#Grid").ejGrid({
 
 ### toolbarSettings.toolbarItems `Array`
 {:#members:toolbarsettings-toolbaritems}
+
+<ts name="ej.Grid.ToolBarItems" />
 
 Gets or sets a value that indicates whether to add the default editing actions as a toolbar items
 

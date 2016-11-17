@@ -2678,7 +2678,7 @@ $("#uploadbox1").ejUploadbox({
 
 
 
-Fires when the file upload progress is successed.
+Fires when the file upload progress is succeeded.
 
 <table class="params">
 <thead>
