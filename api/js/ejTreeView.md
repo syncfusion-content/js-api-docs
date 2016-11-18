@@ -6554,6 +6554,16 @@ Fires when key pressed successfully.
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">it returns when the current node is in expanded state; otherwise, false.</td>
 </tr>
+<tr>
+<td class="name">id</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the id of current TreeView node</td>
+</tr>
+<tr>
+<td class="name">parentId</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the parentId of current TreeView node</td>
+</tr>
 </tbody>
 </table>
 
