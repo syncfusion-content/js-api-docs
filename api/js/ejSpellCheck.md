@@ -63,8 +63,8 @@ It includes the service method path to find the error words and its suggestions 
         $(function () {
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
             });
         });
@@ -91,7 +91,7 @@ The dictionaryUrl option accepts string, which is the method path to find the er
         $(function () {
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords"
                 }
             });
         });
@@ -118,8 +118,8 @@ The customDictionaryUrl option accepts string, which is the method path to add t
         $(function () {
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
             });
         });
@@ -147,8 +147,8 @@ To display the error word in a customized style.
             $("#SpellCheck").ejSpellCheck({
                 misspellWordCss: "highlight",
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
             });
         });
@@ -181,8 +181,8 @@ Sets the specific culture to the SpellCheck.
             $("#SpellCheck").ejSpellCheck({
                 locale: "fr-FR",
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
             });
         });
@@ -212,8 +212,8 @@ To set the maximum suggestion display count.
             $("#SpellCheck").ejSpellCheck({
                 maxSuggestionCount: 4,
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
             });
         });
@@ -241,8 +241,8 @@ To ignore the words from the error word consideration.
             $("#SpellCheck").ejSpellCheck({
                 ignoreWords: ["Syncfusion", "JavaScript"],
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
             });
         });
@@ -277,8 +277,8 @@ When set to true, enables the context menu options available for the SpellCheck.
                     enable: false
                 },
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
             });
         });
@@ -320,8 +320,8 @@ Contains all the default context menu options that are applicable for SpellCheck
                     ]
                 },
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 },
                 contextClick:"onCustomMenuClick"
             });
@@ -363,8 +363,8 @@ When set to true, ignoring the alphanumeric words from the error word considerat
         $(function () {
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 },
                 ignoreSettings:{
                     ignoreAlphaNumericWords:false
@@ -394,8 +394,8 @@ When set to true, ignoring the Email address from the error word consideration.
         $(function () {
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 },
                 ignoreSettings:{
                     ignoreEmailAddress:false
@@ -425,8 +425,8 @@ When set to true, ignoring the MixedCase words from the error word consideration
         $(function () {
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 },
                 ignoreSettings:{
                     ignoreMixedCaseWords:false
@@ -456,8 +456,8 @@ When set to true, ignoring the UpperCase words from the error word consideration
         $(function () {
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 },
                 ignoreSettings:{
                     ignoreUpperCase:false
@@ -487,8 +487,8 @@ When set to true, ignoring the Url from the error word consideration.
         $(function () {
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 },
                 ignoreSettings:{
                     ignoreUrl:false
@@ -518,8 +518,8 @@ When set to true, ignoring the file address path from the error word considerati
         $(function () {
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 },
                 ignoreSettings:{
                     ignoreFileNames:false
@@ -547,8 +547,8 @@ Open the dialog to correct the spelling of the target content.
 <script>
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
             });
             var schObj = $("#SpellCheck").data("ejSpellCheck");
@@ -571,8 +571,8 @@ Highlighting the error word in the target area itself and correct the spelling u
 <script>
             $("#SpellCheck").ejSpellCheck({
                  dictionarySettings: {
-                     dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                     customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                     dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                     customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                  }
             });
             var schObj = $("#SpellCheck").data("ejSpellCheck");
@@ -618,8 +618,8 @@ To get the error word highlighted string by passing the given input sentence.
             var targetSentence = "This exmple sentence cantains errow words".
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
             });
             var schObj = $("#SpellCheck").data("ejSpellCheck");
@@ -671,8 +671,8 @@ To ignore all the error word occurrences from the given input sentence.
 
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
             });
             var schObj = $("#SpellCheck").data("ejSpellCheck");
@@ -725,8 +725,8 @@ To ignore the error word once from the given input sentence.
 
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
             });
             var schObj = $("#SpellCheck").data("ejSpellCheck");
@@ -784,8 +784,8 @@ To change the error word once from the given input sentence.
 
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
             });
             var schObj = $("#SpellCheck").data("ejSpellCheck");
@@ -841,8 +841,8 @@ To change all the error word occurrences from the given input sentence.
 
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
             });
             var schObj = $("#SpellCheck").data("ejSpellCheck");
@@ -882,8 +882,8 @@ To add the words into the custom dictionary.
 <script>
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
             });
             var schObj = $("#SpellCheck").data("ejSpellCheck");
@@ -951,8 +951,8 @@ Triggers on the success of AJAX call request.
 <script>
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
                 actionSuccess: function (args) {}
             });
@@ -1017,8 +1017,8 @@ Triggers on the AJAX call request beginning.
 <script>
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
                 actionBegin: function (args) {}
             });
@@ -1077,8 +1077,8 @@ Triggers when the AJAX call request failure.
 <script>
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
                 actionFailure: function (args) {}
             });
@@ -1143,8 +1143,8 @@ Triggers when the dialog mode spell check starting.
 <script>
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
                 start: function (args) {}
             });
@@ -1204,8 +1204,8 @@ Triggers when the spell check operations completed through dialog mode.
 <script>
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
                 complete: function (args) {}
             });
@@ -1264,8 +1264,8 @@ Triggers before context menu opening.
 <script>
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
                 contextOpen: function (args) {}
             });
@@ -1335,8 +1335,8 @@ Triggers when the context menu item clicked.
 <script>
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
                 contextClick: function (args) {}
             });
@@ -1395,8 +1395,8 @@ Triggers before the spell check dialog opens.
 <script>
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
                 dialogBeforeOpen: function (args) {}
             });
@@ -1455,8 +1455,8 @@ Triggers after the spell check dialog opens.
 <script>
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
                 dialogOpen: function (args) {}
             });
@@ -1516,8 +1516,8 @@ Triggers when the spell check dialog closed.
 <script>
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
                 dialogClose: function (args) {}
             });
@@ -1801,8 +1801,8 @@ Triggers when the spell check control performing the spell check operations such
 <script>
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
-                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetWords",
-                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/GetCustomDictionary"
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
                 validating: function (args) {}
             });
