@@ -1644,7 +1644,7 @@ Specifies the template for parent taskbar
 
 <ts name = "ej.Gantt.TaskType"/>
 
-Specifies the nature of a task for caluculating the work,  and it can fixed duration, fixed work and fixed resource unit
+Specifies the nature of a task for calculating the work,  and it can fixed duration, fixed work and fixed resource unit
 
 <table class="params">
 <thead>
@@ -1656,15 +1656,15 @@ Specifies the nature of a task for caluculating the work,  and it can fixed dura
 <tbody>
 <tr>
 <td class="name">FixedUnit</td>
-<td class="description">Resource unit reamins constant while editing the work and duration values.</td>
+<td class="description">Resource unit remains constant while editing the work and duration values.</td>
 </tr>
 <tr>
 <td class="name">FixedWork</td>
-<td class="description">Work value of a task remains constant while editing duration and resoruce unit values.</td>
+<td class="description">Work value of a task remains constant while editing duration and resource unit values.</td>
 </tr>
 <tr>
 <td class="name">FixedDuration</td>
-<td class="description">Duration value remains constant while editing work and resoruce unit values.</td>
+<td class="description">Duration value remains constant while editing work and resource unit values.</td>
 </tr>
 </tbody>
 </table>
@@ -1708,15 +1708,15 @@ Specifies the unit for the work involved in a task and it can be day, hour or mi
 <tbody>
 <tr>
 <td class="name">Day</td>
-<td class="description">Dislays the work involved in a task in days.</td>
+<td class="description">Displays the work involved in a task in days.</td>
 </tr>
 <tr>
 <td class="name">Hour</td>
-<td class="description">Dislays the work involved in a task in hours.</td>
+<td class="description">Displays the work involved in a task in hours.</td>
 </tr>
 <tr>
 <td class="name">Minute</td>
-<td class="description">Dislays the work involved in a task in minutes</td>
+<td class="description">Displays the work involved in a task in minutes</td>
 </tr>
 </tbody>
 </table>
@@ -1919,7 +1919,7 @@ Specifies the mapping property path for the task description in datasource
 ### taskSchedulingModeMapping `string`
 {:#members:taskschedulingmodemapping }
 
-Specifies the mapping property path for the task scheuling mode for a task in datasource
+Specifies the mapping property path for the task scheduling mode for a task in datasource
 
 #### Default Value:
 {:.param}
@@ -1945,7 +1945,7 @@ Specifies the mapping property path for the task scheuling mode for a task in da
 ### durationUnitMapping `string`
 {:#members:durationunitmapping }
 
-Specifies the mapping property path for task duration unit in datasoruce
+Specifies the mapping property path for task duration unit in datasource
 
 #### Default Value:
 {:.param}
@@ -2244,7 +2244,7 @@ Enables or Disables rendering baselines in Gantt , when enabled baseline is rend
 
 
 
-### validateManaulTasksOnLinking `boolean`
+### validateManualTasksOnLinking `boolean`
 {:#members:validatemanaultasksonlinking}
 
 Enables or disables the schedule date validation while connecting a manually scheduled task with predecessor
@@ -2265,7 +2265,7 @@ Enables or disables the schedule date validation while connecting a manually sch
 <script>          
         $("#gantt").ejGantt(
  {
-    validateManaulTasksOnLinking: true
+    validateManualTasksOnLinking: true
  });            
 </script>
 
