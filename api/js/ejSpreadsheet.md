@@ -233,7 +233,26 @@ $('#Spreadsheet').ejSpreadsheet({
 }); 
 </script>
 
+{% endhighlight %}
 
+### allowClear `Boolean`
+{:#members:allowclear}
+
+Gets or sets a value that indicates whether to enable or disable clear feature in the Spreadsheet.
+ 
+#### Default Value
+* true
+
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+allowClear: false
+}); 
+</script>
+ 
 {% endhighlight %}
 
 ### allowClipboard `Boolean`
@@ -482,7 +501,7 @@ $('#Spreadsheet').ejSpreadsheet({
 Gets or sets a value that indicates whether to enable or disable freeze pane support in Spreadsheet. After enabling this feature, you can use freeze top row, freeze first column and freeze panes options.
 
 #### Default Value
-* true
+* false
 
 
 #### Example
@@ -621,6 +640,26 @@ Gets or sets a value that indicates whether to enable or disable merge feature i
 <script>
 $('#Spreadsheet').ejSpreadsheet({
     allowMerging: true
+});         
+</script>
+
+{% endhighlight %}
+
+### allowOverflow `Boolean`
+{:#members:allowoverflow}
+
+Gets or sets a value that indicates whether to enable or disable overflow feature in the Spreadsheet.
+
+#### Default Value
+* true
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+allowOverflow: false
 });         
 </script>
 
@@ -1369,6 +1408,26 @@ $('#Spreadsheet').ejSpreadsheet({
         password: "Spreadsheet" //It opens the excel file using this password.
     }
 });        
+</script>
+
+{% endhighlight %}
+
+### isReadOnly `Boolean`
+{:#members:isreadonly}
+
+Gets or sets a value that indicates whether to enable or disable readonly support in the Spreadsheet.
+
+#### Default Value
+* false
+
+#### Example
+{% highlight html %}
+<div id="Spreadsheet"></div>
+ 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+    isReadOnly: true
+});         
 </script>
 
 {% endhighlight %}
@@ -2860,7 +2919,7 @@ Gets or sets a value that indicates whether to enable or disable the datasource 
 
 #### Default Value:
 
-* false
+* true
 
 #### Example
 
@@ -3507,7 +3566,7 @@ Gets or sets a value that indicates whether to enable or disable the datasource 
 
 #### Default Value:
 
-* false
+* true
 
 #### Example
 
@@ -3737,8 +3796,8 @@ It is used to clear all the data and format in the specified range of cells in S
 <tbody>
 <tr>
 <td class="name">range</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional. </span> If range is specified, then it will clear all content in the specified range else it will use the current selected range. </td>
+<td class="type"><span class="param-type">string|array</span></td>
+<td class="description"><span class="optional">Optional.</span> If range is specified, then it will clear all content in the specified range else it will use the current selected range. </td>
 </tr>
 </tbody>
 </table>
@@ -3777,8 +3836,8 @@ This property is used to clear all the formats applied in the specified range in
 <tbody>
 <tr>
 <td class="name">range</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional. </span> If range is specified, then it will clear all format in the specified range else it will use the current selected range. </td>
+<td class="type"><span class="param-type">string|array</span></td>
+<td class="description"><span class="optional">Optional.</span> If range is specified, then it will clear all format in the specified range else it will use the current selected range. </td>
 </tr>
 </tbody>
 </table>
@@ -3816,8 +3875,8 @@ Used to clear the applied border in the specified range in Spreadsheet.
 <tbody>
 <tr>
 <td class="name">range</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional. </span> If range is specified, then it will clear border in the specified range else it will use the current selected range.</td>
+<td class="type"><span class="param-type">string|array</span></td>
+<td class="description"><span class="optional">Optional.</span> If range is specified, then it will clear border in the specified range else it will use the current selected range.</td>
 </tr>
 </tbody>
 </table>
@@ -3855,8 +3914,8 @@ This property is used to clear the contents in the specified range in Spreadshee
 <tbody>
 <tr>
 <td class="name">range</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional. </span> If the range is specified, then it will clear the content in the specified <br/>range else it will use the current selected range. </td>
+<td class="type"><span class="param-type">string|array</span></td>
+<td class="description"><span class="optional">Optional.</span> If the range is specified, then it will clear the content in the specified <br/>range else it will use the current selected range. </td>
 </tr>
 </tbody>
 </table>
@@ -3938,32 +3997,32 @@ It is used to remove data in the specified range of cells based on the defined p
 <tr>
 <td class="name">range</td>
 <td class="type"><span class="param-type">array|string</span></td>
-<td class="description"><span class="optional">Optional. </span> If range is specified, it will clear data for the specified range else it will use the current selected range. </td>
+<td class="description"><span class="optional">Optional.</span> If range is specified, it will clear data for the specified range else it will use the current selected range. </td>
 </tr>
 <tr>
 <td class="name">property</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional. </span> If property is specified, it will remove the specified property in the range else it will remove default properties </td>
+<td class="description"><span class="optional">Optional.</span> If property is specified, it will remove the specified property in the range else it will remove default properties </td>
 </tr>
 <tr>
 <td class="name">cells</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description"><span class="optional">Optional. </span></td>
+<td class="description"><span class="optional">Optional.</span></td>
 </tr>
 <tr>
 <td class="name">skipHiddenRow</td>
-<td class="type"><span class="param-type">boolean</span> </td>
-<td class="description"><span class="optional">Optional. </span> If pass true, if you want to skip the hidden rows </td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description"><span class="optional">Optional.</span> pass `true`, if you want to skip the hidden rows </td>
 </tr>
 <tr>
 <td class="name">status</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description"><span class="optional">Optional. </span>Pass the status to perform undo and redo operation.</td>
+<td class="description"><span class="optional">Optional.</span> Pass the status to perform undo and redo operation.</td>
 </tr>
 <tr>
 <td class="name">skipCell</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description"><span class="optional">Optional. </span>It specifies whether to skip element processing or not.</td>
+<td class="description"><span class="optional">Optional.</span> It specifies whether to skip element processing or not.</td>
 </tr>
 </tbody>
 </table>
@@ -4014,7 +4073,7 @@ This method is used to copy or move the sheets in Spreadsheet.
 <tr>
 <td class="name">isCopySheet</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass true,If you want to copy sheet or else it will move sheet.</td>
+<td class="description">Pass `true`,If you want to copy sheet or else it will move sheet.</td>
 </tr>
 </tbody>
 </table>
@@ -4390,7 +4449,7 @@ This method is used to get the active cell object in Spreadsheet. It will return
 <tr>
 <td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional. </span> If sheetIdx is specified, it will return the active cell object in specified sheet index else it will use the current sheet index</td>
+<td class="description"><span class="optional">Optional.</span> If sheetIdx is specified, it will return the active cell object in specified sheet index else it will use the current sheet index</td>
 </tr>
 </tbody>
 </table>
@@ -4434,7 +4493,7 @@ This method is used to get the active cell element based on the given sheet inde
 <tr>
 <td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional. </span> If sheetIndex is specified, it will return the active cell element in specified <br/>sheet index else it will use the current active sheet index.</td>
+<td class="description"><span class="optional">Optional.</span> If sheetIndex is specified, it will return the active cell element in specified <br/>sheet index else it will use the current active sheet index.</td>
 </tr>
 </tbody>
 </table>
@@ -4545,7 +4604,7 @@ This method is used to get the cell element based on specified row and column in
 <tr>
 <td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass the sheet index that you want to get cell.</td>
+<td class="description"><span class="optional">Optional.</span> Pass the sheet index that you want to get cell.</td>
 </tr>
 </tbody>
 </table>
@@ -4748,7 +4807,7 @@ $("#Spreadsheet").ejSpreadsheet("getHyperlink", xlObj.getCell(1, 1, 1));
 
 {% endhighlight %}
 
-### getRange(startRIndex, startCIndex, endRIndex, endCIndex, sheetIdx)
+### getRange(range, sheetIdx, \[skipHiddenRow\])
 {:#methods:getrange}
 
 This method is used to get all cell elements in the specified range.
@@ -4762,29 +4821,19 @@ This method is used to get all cell elements in the specified range.
 </thead>
 <tbody>
 <tr>
-<td class="name">startRIndex</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description">Pass the row index of the start cell.</td>
-</tr>
-<tr>
-<td class="name">startCIndex</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description">Pass the column index of the start cell.</td>
-</tr>
-<tr>
-<td class="name">endRIndex</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description">Pass the row index of the end cell.</td>
-</tr>
-<tr>
-<td class="name">endCIndex</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description">Pass the column index of the end cell.</td>
+<td class="name">range</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the range that you want to get the cells.</td>
 </tr>
 <tr>
 <td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the index of the sheet.</td>
+</tr>
+<tr>
+<td class="name">skipHiddenRow</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description"><span class="optional">Optional.</span> Pass `true`, if you want to skip the hidden rows.</td>
 </tr>
 </tbody>
 </table>
@@ -4799,15 +4848,15 @@ Element
 <script>
 // Initialize Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.getRange(1, 2, 4, 5, 1); // Get the range cells based on startcell and endcell index
+xlObj.getRange("A2:A5", 1, false); // Get the cells based on the given range
 </script>
 
 {% endhighlight %}
 
 {% highlight html %}
 <script>
-// Get the range cells based on startcell and endcell index
-$("#Spreadsheet").ejSpreadsheet("getRange", 1, 2, 4, 5, 1);        
+// Get the cells based on the given range
+$("#Spreadsheet").ejSpreadsheet("getRange", "A2:A5", 1, false);        
 </script>
 
 {% endhighlight %}
@@ -4828,7 +4877,7 @@ This method is used to get the data in specified range in Spreadsheet.
 <tr>
 <td class="name">options</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass the range, property, sheetIdx, valueOnly in options. </td>
+<td class="description"><span class="optional">Optional.</span> Pass the range, property, sheetIdx, valueOnly in options. </td>
 </tr>
 </tbody>
 </table>
@@ -5012,7 +5061,7 @@ This method is used to send a paging request to the specified sheet Index in the
 <tr>
 <td class="name">newSheet</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass 'true' to create a new sheet. If the specified sheet index is already exist,<br/> it navigate to that sheet else it create a new sheet.</td>
+<td class="description">Pass `true` to create a new sheet. If the specified sheet index is already exist,<br/> it navigate to that sheet else it create a new sheet.</td>
 </tr>
 </tbody>
 </table>
@@ -5486,6 +5535,41 @@ xlObj.import(importRequest);
 
 {% endhighlight %}
 
+### loadFromJSON(response)
+{:#methods:loadfromjson}
+
+This method is used to load JSON data in Spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">response</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass the response that you want to load.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), response;
+response = xlObj.saveAsJSON();
+xlObj.loadFromJSON(response); // To load JSON data in the Spreadsheet.
+</script>
+
+{% endhighlight %}
+
 ### lockCells(range, \[isLocked\])
 {:#methods:lockcells}
 
@@ -5508,7 +5592,7 @@ This method is used to lock/unlock the range of cells in active sheet. Lock cell
 <tr>
 <td class="name">isLocked</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional. </span> By default is true. If it is false locked cells are unlocked.</td>
+<td class="description"><span class="optional">Optional.</span> By default is `true`. If it is `false` locked cells are unlocked.</td>
 </tr>
 </tbody>
 </table>
@@ -5550,12 +5634,12 @@ This method is used to merge cells by across in the Spreadsheet.
 <tr>
 <td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional. </span> To pass the cell range or selected cells are process.</td>
+<td class="description"><span class="optional">Optional.</span> To pass the cell range or selected cells are process.</td>
 </tr>
 <tr>
 <td class="name">alertStatus</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional. </span> If pass true it does not show alert.</td>
+<td class="description"><span class="optional">Optional.</span> If pass `true` it does not show alert.</td>
 </tr>
 </tbody>
 </table>
@@ -5595,13 +5679,13 @@ This method is used to merge the selected cells in the Spreadsheet.
 <tbody>
 <tr>
 <td class="name">range</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional. </span> To pass the cell range or selected cells are process.</td>
+<td class="type"><span class="param-type">string|array</span></td>
+<td class="description"><span class="optional">Optional.</span> To pass the cell range or selected cells are process.</td>
 </tr>
 <tr>
 <td class="name">alertStatus</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional. </span> If pass true it does not show alert.</td>
+<td class="description"><span class="optional">Optional.</span> If pass `true` it does not show alert.</td>
 </tr>
 </tbody>
 </table>
@@ -5639,7 +5723,7 @@ This method is used to protect or unprotect active sheet.
 <tr>
 <td class="name">isProtected</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional. </span>  By default is true. If it is false active sheet is unprotected.</td>
+<td class="description"><span class="optional">Optional.</span> By default is `true`. If it is `false` active sheet is unprotected.</td>
 </tr>
 </table>
 
@@ -5782,22 +5866,22 @@ This method is used to remove the hyperlink from selected cells of current sheet
 <tr>
 <td class="name">isClearHLink</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional. </span> If it is true, It will clear link only not format.</td>
+<td class="description"><span class="optional">Optional.</span> If it is `true`, It will clear link only not format.</td>
 </tr>
 <tr>
 <td class="name">status</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass the status to perform undo and redo operations.</td>
+<td class="description"><span class="optional">Optional.</span> Pass the status to perform undo and redo operations.</td>
 </tr>
 <tr>
 <td class="name">cells</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass the cells that you want to remove hyperlink.</td>
+<td class="description"><span class="optional">Optional.</span> Pass the cells that you want to remove hyperlink.</td>
 </tr>
 <tr>
 <td class="name">skipHiddenRow</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass true, if you want to skip the hidden rows.</td>
+<td class="description"><span class="optional">Optional.</span> Pass `true`, if you want to skip the hidden rows.</td>
 </tr>
 </tbody>
 </table>
@@ -6042,7 +6126,7 @@ This method is used to set border for the specified range of cells in the Spread
 <tr>
 <td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional. </span> If range is specified, it will set border for the specified range else it will use the selected range.</td>
+<td class="description"><span class="optional">Optional.</span> If range is specified, it will set border for the specified range else it will use the selected range.</td>
 </tr>
 </tbody>
 </table>
@@ -6081,7 +6165,7 @@ This method is used to set the hyperlink in selected cells of the current sheet.
 <tbody>
 <tr>
 <td class="name">range</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="type"><span class="param-type">string|array</span></td>
 <td class="description">If range is specified, it will set the hyperlink in range of the cells.</td>
 </tr>
 <tr>
@@ -6361,7 +6445,7 @@ This method is used to show/hide gridlines in active sheet in the Spreadsheet.
 <tr>
 <td class="name">status</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass true to show the gridlines</td>
+<td class="description">Pass `true` to show the gridlines</td>
 </tr>
 </tbody>
 </table>
@@ -6402,7 +6486,7 @@ This method is used to show/hide the headers in active sheet in the Spreadsheet.
 <tr>
 <td class="name">startRow</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass true to show the sheet headers.</td>
+<td class="description">Pass `true` to show the sheet headers.</td>
 </tr>
 </tbody>
 </table>
@@ -6575,7 +6659,7 @@ This method is used to unmerge the selected range of cells in the Spreadsheet.
 <tr>
 <td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional. </span> If the range is specified, then it will un merge the specified range else it will use the current selected range.</td>
+<td class="description"><span class="optional">Optional.</span> If the range is specified, then it will un merge the specified range else it will use the current selected range.</td>
 </tr>
 </tbody>
 </table>
@@ -6616,7 +6700,7 @@ This method is used to unwrap the selected range of cells in the Spreadsheet.
 <tr>
 <td class="name">range</td>
 <td class="type"><span class="param-type">array|string</span></td>
-<td class="description"><span class="optional">Optional. </span> If the range is specified, then it will update unwrap in the specified <br/>range else it will use the current selected range.</td>
+<td class="description"><span class="optional">Optional.</span> If the range is specified, then it will update unwrap in the specified <br/>range else it will use the current selected range.</td>
 </tr>
 </tbody>
 </table>
@@ -6661,8 +6745,8 @@ This method is used to update the data for the specified range of cells in the S
 </tr>
 <tr>
 <td class="name">range</td>
-<td class="type"><span class="param-type">array</span></td>
-<td class="description"><span class="optional">Optional. </span> If range is specified, it will update data for the specified range <br/> else it will use the current selected range. </td>
+<td class="type"><span class="param-type">array|string</span></td>
+<td class="description"><span class="optional">Optional.</span> If range is specified, it will update data for the specified range <br/> else it will use the current selected range. </td>
 </tr>
 </tbody>
 </table>
@@ -6674,7 +6758,7 @@ This method is used to update the data for the specified range of cells in the S
 // Initialize Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To update data in the specified range of the cells in Spreadsheet.
-xlObj.updateData([{ value: 10, value2: 10, type: "general"}, { value: 25000, value2: 25000, type: "general"}], [1, 0, 3, 0]); 
+xlObj.updateData([{ value: 10, value2: 10, type: "general"}, { value: 25000, value2: 25000, type: "general"}], "A3"); 
 </script>
 
 {% endhighlight %}
@@ -6682,7 +6766,7 @@ xlObj.updateData([{ value: 10, value2: 10, type: "general"}, { value: 25000, val
 {% highlight html %}
 <script>
 // To update a data in the specified range of cells in Spreadsheet.
-$("#Spreadsheet").ejSpreadsheet("updateData", [{ value: 10, value2: 10, type: "general"}, { value: 25000, value2: 25000, type: "general"}], [1, 0, 2, 0]);        
+$("#Spreadsheet").ejSpreadsheet("updateData", [{ value: 10, value2: 10, type: "general"}, { value: 25000, value2: 25000, type: "general"}], "A3");        
 </script>
 
 {% endhighlight %}
@@ -6752,7 +6836,7 @@ $("#Spreadsheet").ejSpreadsheet("updateRange", 1, settings);
 
 {% endhighlight %}
 
-### updateUniqueData(data, \[range\])
+### updateUniqueData(data, \[range\], \[skipCell\])
 {:#methods:updateuniquedata}
 
 This method is used to update the unique data for the specified range of cells in Spreadsheet.
@@ -6773,7 +6857,12 @@ This method is used to update the unique data for the specified range of cells i
 <tr>
 <td class="name">range</td>
 <td class="type"><span class="param-type">array|string</span></td>
-<td class="description"><span class="optional">Optional. </span> If range is specified, it will update data for the specified range else it will use the current selected range.</td>
+<td class="description"><span class="optional">Optional.</span> If range is specified, it will update data for the specified range else it will use the current selected range.</td>
+</tr>
+<tr>
+<td class="name">skipCell</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description"><span class="optional">Optional.</span> It specifies whether to skip element processing or not.</td>
 </tr>
 </tbody>
 </table>
@@ -6814,7 +6903,7 @@ This method is used to wrap the selected range of cells in the Spreadsheet.
 <tr>
 <td class="name">range</td>
 <td class="type"><span class="param-type">array|string</span></td>
-<td class="description"><span class="optional">Optional. </span> If the range is specified, then it will update wrap in the specified <br/> range else it will use the current selected range.</td>
+<td class="description"><span class="optional">Optional.</span> If the range is specified, then it will update wrap in the specified <br/> range else it will use the current selected range.</td>
 </tr>
 </tbody>
 </table>
@@ -6880,7 +6969,7 @@ This method is used to set a cell type from the specified range of cells in the 
 // Initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To add cell types in Spreadsheet.
-xlObj.XLCellType.addCellTypes("A1 : B3", {"type" : ej.Spreadsheet.CustomCellType.Button, "text" : "Button1", "background-color" : "green" },  1);
+xlObj.XLCellType.addCellTypes("A1:B3", {"type" : ej.Spreadsheet.CustomCellType.Button, "text" : "Button1", "background-color" : "green" },  1);
 </script>
 
 {% endhighlight %}
@@ -6900,13 +6989,13 @@ This method is used to remove cell type from the specified range of cells in the
 <tbody>
 <tr>
 <td class="name">range</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="type"><span class="param-type">string|array</span></td>
 <td class="description">Pass the range where you want remove cell type.</td>
 </tr>
 <tr>
 <td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass sheet index.</td>
+<td class="description"><span class="optional">Optional.</span> Pass sheet index.</td>
 </tr>
 </tbody>
 </table>
@@ -6942,12 +7031,12 @@ This method is used to clear the applied conditional formatting rules in the Spr
 <tr>
 <td class="name">isSelected</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass true if you want to clear rules from selected cells else it will clear rules from entire sheet.</td>
+<td class="description">Pass `true` if you want to clear rules from selected cells else it will clear rules from entire sheet.</td>
 </tr>
 <tr>
 <td class="name">range</td>
 <td class="type"><span class="param-type">array|string</span></td>
-<td class="description"><span class="optional">Optional. </span>  If range is specified, it will clear rules for the specified range else it will use the current selected range.</td>
+<td class="description"><span class="optional">Optional.</span> If range is specified, it will clear rules for the specified range else it will use the current selected range.</td>
 </tr>
 </tbody>
 </table>
@@ -7058,13 +7147,13 @@ This method is used to create a chart for specified range in Spreadsheet.
 <tbody>
 <tr>
 <td class="name">range</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional. </span> If range is specified, it will create chart for the specified range else it will use the current selected range.</td>
+<td class="type"><span class="param-type">string|array</span></td>
+<td class="description"><span class="optional">Optional.</span> If range is specified, it will create chart for the specified range else it will use the current selected range.</td>
 </tr>
 <tr>
 <td class="name">options</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description"><span class="optional">Optional. </span> To pass the type of chart and chart name.</td>
+<td class="description"><span class="optional">Optional.</span> To pass the type of chart and chart name.</td>
 </tr>
 </tbody>
 </table>
@@ -7230,17 +7319,17 @@ This method is used to delete the comment in the specified range in Spreadsheet.
 <tr>
 <td class="name">range</td>
 <td class="type"><span class="param-type">array|string</span></td>
-<td class="description"><span class="optional">Optional. </span> If range is specified, it will delete comments for the specified range else it will use the current selected range. </td>
+<td class="description"><span class="optional">Optional.</span> If range is specified, it will delete comments for the specified range else it will use the current selected range. </td>
 </tr>
 <tr>
 <td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional. </span> If sheetIdx is specified, it will delete comment in specified sheet else it will use active sheet.</td>
+<td class="description"><span class="optional">Optional.</span> If sheetIdx is specified, it will delete comment in specified sheet else it will use active sheet.</td>
 </tr>
 <tr>
 <td class="name">skipHiddenRow</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass true, if you want to skip the hidden rows data.</td>
+<td class="description"><span class="optional">Optional.</span> Pass `true`, if you want to skip the hidden rows data.</td>
 </tr>
 </tbody>
 </table>
@@ -7273,7 +7362,7 @@ This method is used to edit the comment in the target Cell in Spreadsheet.
 <tr>
 <td class="name">targetCell</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass the row index and column index of the cell which contains comment. </td>
+<td class="description"><span class="optional">Optional.</span> Pass the row index and column index of the cell which contains comment. </td>
 </tr>
 </tbody>
 </table>
@@ -7376,7 +7465,7 @@ $("#Spreadsheet").ejSpreadsheet("getComment", xlObj.getCell(1, 5));
 
 {% endhighlight %}
 
-### XLComment.setComment(\[range\], \[data\], \[showEditPanel\])
+### XLComment.setComment(\[range\], \[data\], \[showEditPanel\], \[showUserName\])
 {:#methods:xlcomment-setcomment}
 
 This method is used to set new comment in Spreadsheet.
@@ -7392,17 +7481,22 @@ This method is used to set new comment in Spreadsheet.
 <tr>
 <td class="name">range</td>
 <td class="type"><span class="param-type">string|array</span> </td>
-<td class="description"><span class="optional">Optional. </span> If we pass the range comment will set in the range otherwise it will set with selected cells. </td>
+<td class="description"><span class="optional">Optional.</span> If we pass the range comment will set in the range otherwise it will set with selected cells. </td>
 </tr>
 <tr>
 <td class="name">data</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass the comment data.</td>
+<td class="description"><span class="optional">Optional.</span> Pass the comment data.</td>
 </tr>
 <tr>
 <td class="name">showEditPanel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass true to show comment in edit mode </td>
+<td class="description"><span class="optional">Optional.</span> Pass `true` to show comment in edit mode </td>
+</tr>
+<tr>
+<td class="name">showUserName</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description"><span class="optional">Optional.</span> Pass `true` to show the user name </td>
 </tr>
 </tbody>
 </table>
@@ -7414,7 +7508,7 @@ This method is used to set new comment in Spreadsheet.
 // Initialize Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 //To set comment in Spreadsheet.
-xlObj.XLComment.setComment(spreadsheetObj.getCell(1, 5), "Spreadsheet Comment!");
+xlObj.XLComment.setComment("A2", "Spreadsheet Comment!");
 </script>
 
 {% endhighlight %}
@@ -7452,7 +7546,7 @@ This method is used to show or hide the specific comment in the Spreadsheet.
 <tr>
 <td class="name">targetCell</td>
 <td class="type"><span class="param-type">Element</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass the cell DOM element to show or hide its comment. If pass empty argument active cell will processed.</td>
+<td class="description"><span class="optional">Optional.</span> Pass the cell DOM element to show or hide its comment. If pass empty argument active cell will processed.</td>
 </tr>
 </tbody>
 </table>
@@ -7464,7 +7558,200 @@ This method is used to show or hide the specific comment in the Spreadsheet.
 // Initialize Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 //To show/hide comment request in Spreadsheet.
-xlObj.XLComment.showHideComment(spreadsheetObj.getCell(1, 5));
+xlObj.XLComment.showHideComment(xlObj.getCell(1, 5));
+</script>
+
+{% endhighlight %}
+
+### XLCMenu
+{:#methods:xlcmenu}
+
+### XLCMenu.addItem(target, itemColl, operation)
+{:#methods:xlcmenu-additem}
+
+This method is used to dynamically add items in the context menu.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Specifies the context menu type in which the item to be inserted.</td>
+</tr>
+<tr>
+<td class="name">itemColl</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Pass the items to be inserted</td>
+</tr>
+<tr>
+<td class="name">operation</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Specifies the type of operation to be performed</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Create Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLCMenu.addItem(ej.Spreadsheet.ContextMenu.Cell, [{"text":"Added item 1!!!", "url":"#", "id": "Added item1", "spriteCssClass": "e-icon e-ss-cut" }], 'insertbefore'); // To add a item in the context menu.
+</script>
+
+{% endhighlight %}
+
+### XLCMenu.changeDataSource(target, data)
+{:#methods:xlcmenu-changedatasource}
+
+This method is used to change data source in the context menu.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Specifies the context menu type to bind the data source.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Pass the data source to be binded</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Create Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLCMenu.changeDataSource(ej.Spreadsheet.ContextMenu.Cell,[{ id: "Comment", text: 'cmnt', parentId: null, spriteCssClass: "e-icon e-ss-newcmnt" }]); // To change the data source in the context menu.
+</script>
+
+{% endhighlight %}
+
+### XLCMenu.disableItem(target, idxColl)
+{:#methods:xlcmenu-disableitem}
+
+This method is used to disable the items in the context menu.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Specifies the context menu type in which the item to be disabled.</td>
+</tr>
+<tr>
+<td class="name">idxColl</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Specifies the Menu Item id to be disabled</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Create Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLCMenu.disableItem(ej.Spreadsheet.ContextMenu.Cell, [1,2,3]); // To disable the item in the context menu.
+</script>
+
+{% endhighlight %}
+
+### XLCMenu.enableItem(target, idxColl)
+{:#methods:xlcmenu-enableitem}
+
+This method is used to enable the items in the context menu.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Specifies the context menu type in which the item to be enabled.</td>
+</tr>
+<tr>
+<td class="name">idxColl</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Specifies the Menu Item id to be enabled</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Create Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLCMenu.enableItem(ej.Spreadsheet.ContextMenu.Cell, [1,2,3]); // To enable the item in the context menu.
+</script>
+
+{% endhighlight %}
+
+### XLCMenu.removeItem(target, idxColl)
+{:#methods:xlcmenu-removeitem}
+
+This method is used to remove the items in the context menu.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Specifies the context menu type in which the item to be removed.</td>
+</tr>
+<tr>
+<td class="name">idxColl</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Specifies the Menu Item id to be removed</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Create Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLCMenu.removeItem(ej.Spreadsheet.ContextMenu.Cell, [1,2,3]); // To remove the item in the context menu.
 </script>
 
 {% endhighlight %}
@@ -7599,7 +7886,7 @@ This method is used to set position of the auto fill element in the Spreadsheet.
 <tr>
 <td class="name">isDragFill</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass the drag fill status as boolean value for show auto fill options in Spreadsheet.</td>
+<td class="description">Pass the isDragFill option as `boolean` value to show auto fill options in Spreadsheet.</td>
 </tr>
 </tbody>
 </table>
@@ -7634,7 +7921,7 @@ This method is used to calculate formulas in the specified sheet.
 <tr>
 <td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional. </span> If sheet index is specified, then it will calculate formulas in the specified sheet only else it will calculate formulas in all sheets.</td>
+<td class="description"><span class="optional">Optional.</span> If sheet index is specified, then it will calculate formulas in the specified sheet only else it will calculate formulas in all sheets.</td>
 </tr>
 </tbody>
 </table>
@@ -7676,7 +7963,7 @@ This method is used to edit a particular cell based on the row index and column 
 <tr>
 <td class="name">oldData</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass true, if you want to maintain previous cell value.</td>
+<td class="description">Pass `true`, if you want to maintain previous cell value.</td>
 </tr>
 </tbody>
 </table>
@@ -7727,12 +8014,12 @@ This method is used to get the property value of particular cell, based on the r
 <tr>
 <td class="name">prop</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><p><span class="optional">Optional. </span>Pass the property name that you want("value", "value2", "type",<br/> "cFormatRule", "range", "thousandSeparator", "rule", "format", "border",<br/> "picture", "chart", "calcValue", "align", "hyperlink", "formats", "borders",<br/> "tformats", "tborders", "isFilterHeader",  "filterState", "tableName",<br/> "comment", "formatStr", "decimalPlaces", "cellType").</p></td>
+<td class="description"><p><span class="optional">Optional.</span> Pass the property name that you want("value", "value2", "type",<br/> "cFormatRule", "range", "thousandSeparator", "rule", "format", "border",<br/> "picture", "chart", "calcValue", "align", "hyperlink", "formats", "borders",<br/> "tformats", "tborders", "isFilterHeader",  "filterState", "tableName",<br/> "comment", "formatStr", "decimalPlaces", "cellType").</p></td>
 </tr>
 <tr>
 <td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass the index of the sheet.</td>
+<td class="description"><span class="optional">Optional.</span> Pass the index of the sheet.</td>
 </tr>
 </tbody>
 </table>
@@ -7908,9 +8195,9 @@ xlObj.XLEdit.updateCellValue({rowIndex: 1, colIndex: 1}, "product", className,1)
 ### XLExport.export(type)
 {:#methods:xlexport-export}
 
-This method is used to save the sheet data as Excel or CSV document (.xls, .xlsx and .csv) in Spreadsheet.
+This method is used to save the sheet data as Excel ,CSV or PDF document (.xls, .xlsx .csv, .pdf) in Spreadsheet.
 
-N> Using export, user must be provided the excelUrl and csvUrl property under exportSettings
+N> To use export, user must provide the [`excelUrl`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-excelurl "excelUrl"), [`csvUrl`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-csvurl "csvUrl"), and [`pdfUrl`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings-pdfurl "pdfUrl") property in [`exportSettings`](https://help.syncfusion.com/js/api/ejspreadsheet#members:exportsettings "exportSettings").
 
 <table class="params">
 <thead>
@@ -7937,6 +8224,31 @@ N> Using export, user must be provided the excelUrl and csvUrl property under ex
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To save the worksheet on Excel format.
 xlObj.XLExport.export("Excel");
+</script>
+
+{% endhighlight %}
+
+### getExportProps()
+{:#methods:xlexport-getexportprops}
+
+This method is used to get the export properties in the Spreadsheet.
+
+####Returns:
+Object
+
+#### Example
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.getExportProps(); // Gets export properties in Spreadsheet.
+</script>
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// Gets export properties in Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("getExportProps");        
 </script>
 
 {% endhighlight %}
@@ -7976,7 +8288,7 @@ This method is used to apply filter for the selected range of cells in the Sprea
 <tbody>
 <tr>
 <td class="name">range</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="type"><span class="param-type">string|array</span></td>
 <td class="description">Pass the range of the selected cells.</td>
 </tr>
 </tbody>
@@ -8036,8 +8348,8 @@ This method is used to create a table for the selected range of cells in the Spr
 </tr>
 <tr>
 <td class="name">range</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional. </span>  If the range is specified, then it will create table in the specified range else it will use the current selected range. </td>
+<td class="type"><span class="param-type">string|array</span></td>
+<td class="description"><span class="optional">Optional.</span> If the range is specified, then it will create table in the specified range else it will use the current selected range. </td>
 </tr>
 </tbody>
 </table>
@@ -8048,7 +8360,7 @@ This method is used to create a table for the selected range of cells in the Spr
 <script>
 // Initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), tableObj;
-tableObj = { header: true, name: "Table 0", formatName: "TableStyleLight1"};
+tableObj = { header: true, name: "Table1", formatName: "TableStyleLight1"};
 // Sends a create table request to the Spreadsheet
 xlObj.XLFormat.createTable(tableObj, "A1:C6");
 </script>
@@ -8076,7 +8388,7 @@ This method is used to set format style and values in a cell or range of cells.
 <tr>
 <td class="name">range</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Pass the range indices to format cells.</td>
+<td class="description">Pass the range to format cells.</td>
 </tr>
 </tbody>
 </table>
@@ -8116,7 +8428,7 @@ This method is used to remove the style in the specified range.
 <tr>
 <td class="name">options</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description"><span class="optional">Optional. </span>Pass the options for which the style gets removed.</td>
+<td class="description"><span class="optional">Optional.</span> Pass the options for which the style gets removed.</td>
 </tr>
 </tbody>
 </table>
@@ -8188,8 +8500,8 @@ This method is used to update the decimal places for numeric value for the selec
 </tr>
 <tr>
 <td class="name">range</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description">Pass the range indices.</td>
+<td class="type"><span class="param-type">string|array</span></td>
+<td class="description">Pass the range.</td>
 </tr>
 </tbody>
 </table>
@@ -8227,7 +8539,7 @@ This method is used to update the format for the selected range of cells in the 
 <tr>
 <td class="name">range</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description"><span class="optional">Optional. </span> If the range is specified, then it will update format in the specified range else it will use the current selected range. </td>
+<td class="description"><span class="optional">Optional.</span> If the range is specified, then it will update format in the specified range else it will use the current selected range. </td>
 </tr>
 </tbody>
 </table>
@@ -8266,7 +8578,7 @@ This method is used to update the unique format for selected range of cells in t
 <tr>
 <td class="name">range</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description"><span class="optional">Optional. </span> If the range is specified, then it will update format in the specified range else it will use the current selected range.</td>
+<td class="description"><span class="optional">Optional.</span> If the range is specified, then it will update format in the specified range else it will use the current selected range.</td>
 </tr>
 </tbody>
 </table>
@@ -8369,7 +8681,7 @@ This method is used to freeze rows and columns before the specified cell in the 
 // Initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Freeze some rows and columns in the sheet.
-xlObj.XLFreeze.freezePane({ rowIndex: 2, colIndex: 3});
+xlObj.XLFreeze.freezePanes({ rowIndex: 2, colIndex: 3});
 </script>
 
 {% endhighlight %}
@@ -8571,12 +8883,12 @@ This method is used to refresh data in pivot table.
 <tr>
 <td class="name">name</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional. </span>Pass the name of the pivot table.</td>
+<td class="description"><span class="optional">Optional.</span> Pass the name of the pivot table.</td>
 </tr>
 <tr>
 <td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional. </span>Pass the index of the sheet.</td>
+<td class="description"><span class="optional">Optional.</span> Pass the index of the sheet.</td>
 </tr>
 </tbody>
 </table>
@@ -8629,6 +8941,72 @@ xlObj.XLPrint.printSheet();
 
 ### XLResize
 {:#methods:xlresize}
+
+### XLResize.fitHeight(\[rowIdxes\])
+{:#methods:xlresize-fitheight}
+
+This method is used to fit the height of rows in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">rowIdxes</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description"><span class="optional">Optional.</span> Pass row index that we want to fit its height.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To fit the height of the rows in Spreadsheet.
+xlObj.XLResize.fitHeight([2,3,4,5])
+</script>
+
+{% endhighlight %}
+
+### XLResize.fitWidth(\[colIdxes\])
+{:#methods:xlresize-fitwidth}
+
+This method is used to fit the width of columns in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">colIdxes</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description"><span class="optional">Optional.</span> Pass column index that we want to fit its width.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To fit the width of the columns in Spreadsheet.
+xlObj.XLResize.fitWidth([2,3,4,5])
+</script>
+
+{% endhighlight %}
 
 ### XLResize.getColWidth(colIdx)
 {:#methods:xlresize-getcolwidth}
@@ -8788,9 +9166,121 @@ xlObj.XLResize.setRowHeight(2, 100);
 
 {% endhighlight %}
 
-
 ### XLRibbon
 {:#methods:xlribbon}
+
+### XLRibbon.addBackStageItem(pageItem, index)
+{:#methods:xlribbon-addbackstageitem}
+
+This method is used to add a new item in the backstage.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">pageItem</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Specifies the item to be added in the backstage.</td>
+</tr>
+<tr>
+<td class="name">index</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">pass the index of the item to be added in the backstage.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var addBackStage = {   id: "File", text: "File", itemType: ej.Ribbon.ItemType.Tab};
+xlObj.XLRibbon.addBackStageItem(addBackStage, 1); // To add a item in the backstage.
+</script>
+
+{% endhighlight %}
+
+### XLRibbon.addContextualTabs(contextualTabSet, index)
+{:#methods:xlribbon-addcontextualtabs}
+
+This method is used to dynamically add the contextual tabs in the ribbon.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">contextualTabSet</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Specifies the contextual tab set object.</td>
+</tr>
+<tr>
+<td class="name">index</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">pass the index of the contextual tab.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var cTab = { backgroundColor: "#FCFBEB", borderColor: "#F2CC1C", tabs: [{id: "Design", text: "DESIGN",groups: [{ text: "Table Style",type: "custom", contentID: "design" }]}] };
+xlObj.XLRibbon.addContextualTabs(cTab, 2); // To add a contextual tab in the ribbon.
+</script>
+
+{% endhighlight %}
+
+### XLRibbon.addMenuItem(item, index)
+{:#methods:xlribbon-addmenuitem}
+
+This method is used to dynamically add the menu item in the file menu.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">item</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Specifies the item to be added</td>
+</tr>
+<tr>
+<td class="name">index</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">pass the index of the menu item.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLRibbon.addMenuItem([{ id: "SignIn1", text: "AddMenuItem", parentId: "FILE", spriteCssClass: "e-icon e-ssr-cut" }], 2);; // To add the menu item in the ribbon.
+</script>
+
+{% endhighlight %}
 
 ### XLRibbon.addNamedRange(name, refersTo, \[comment\], \[sheetIdx\])
 {:#methods:xlribbon-addnamedrange}
@@ -8818,12 +9308,12 @@ This method is used to add a new name in the Spreadsheet name manager.
 <tr>
 <td class="name">comment</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass comment, if you want.</td>
+<td class="description"><span class="optional">Optional.</span> Pass comment, if you want.</td>
 </tr>
 <tr>
 <td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description"><span class="optional">Optional. </span>  Pass the sheet index.</td>
+<td class="description"><span class="optional">Optional.</span> Pass the sheet index.</td>
 </tr>
 </tbody>
 </table>
@@ -8836,6 +9326,103 @@ This method is used to add a new name in the Spreadsheet name manager.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To define new name in the Spreadsheet.
 xlObj.XLRibbon.addNamedRange("PRICE_LIST", "=Sheet1!$A$2:$A$7", "Month_Wise");
+</script>
+
+{% endhighlight %}
+
+### XLRibbon.addTab(tabText, ribbonGroups, index)
+{:#methods:xlribbon-addtab}
+
+This method is used to dynamically add the tab in the ribbon.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">tabText</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Specifies the text to be displayed in the tab.</td>
+</tr>
+<tr>
+<td class="name">ribbonGroups</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">pass the groups to be displayed in the ribbon tab.</td>
+</tr>
+<tr>
+<td class="name">index</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">pass the index of the tab.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var tabGroup = [{ alignType: ej.Ribbon.AlignType.Rows, content: [{ groups: [{ id: "new", text: "New", toolTip: "New", 
+                     buttonSettings: {
+                                    contentType: ej.ContentType.ImageOnly,
+                                    imagePosition: ej.ImagePosition.ImageTop,
+                                    prefixIcon: "e-icon e-ssr-cut",
+                                    click: "executeAction"
+                                }}], defaults: { type: ej.Ribbon.Type.Button, width: 60, height: 70} }] }];
+xlObj.XLRibbon.addTab("Tab2", tabGroup, 2); // To add the tab in the ribbon.
+</script>
+
+{% endhighlight %}
+
+### XLRibbon.addTabGroup(tabIndex, tabGroup, groupIndex)
+{:#methods:xlribbon-addtabgroup}
+
+This method is used to dynamically add the tab group in the ribbon.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">tabIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Specifies the ribbon tab index.</td>
+</tr>
+<tr>
+<td class="name">tabGroup</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">pass the groups to be displayed in the ribbon tab.</td>
+</tr>
+<tr>
+<td class="name">groupIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">pass the index of the ribbon group.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var ribbonGrp = { alignType: ej.Ribbon.AlignType.Rows, content: [{ groups: [{  id: "new",  text: "CUT",buttonSettings: {
+                                    contentType: ej.ContentType.TextAndImage,
+                                    imagePosition: ej.ImagePosition.ImagetTop,
+                                    prefixIcon: "e-icon e-ssr-cut",
+                                    click: "executeAction"
+                                } }], defaults: { type: ej.Ribbon.Type.Button,  width: 60, height: 70 } }] };
+xlObj.XLRibbon.addTabGroup(1, ribbonGrp, 0); // To add the tab group in the ribbon.
 </script>
 
 {% endhighlight %}
@@ -8860,7 +9447,7 @@ This method is used to insert the few type (SUM, MAX, MIN, AVG, COUNT) of formul
 </tr>
 <tr>
 <td class="name">range</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="type"><span class="param-type">string|array</span></td>
 <td class="description">If range is specified, it will apply auto sum for the specified range else it will use the current selected range.</td>
 </tr>
 </tbody>
@@ -8873,6 +9460,86 @@ This method is used to insert the few type (SUM, MAX, MIN, AVG, COUNT) of formul
 // Initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 xlObj.XLRibbon.autoSum("SUM", "A2:A6"); // To insert the formula after selected range of cells in Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+### XLRibbon.hideMenu()
+{:#methods:xlribbon-hidemenu}
+
+This method is used to hide the file menu in the ribbon tab.
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLRibbon.hideMenu(); // To hide the file menu option in the Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+### XLRibbon.removeBackStageItem(index)
+{:#methods:xlribbon-removebackstageitem}
+
+This method is used to remove the item from the backstage in the spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">index</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Specifies the index of the item to be removed from backstage.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLRibbon.removeBackStageItem(2); // To remove the item in the backstage.
+</script>
+
+{% endhighlight %}
+
+### XLRibbon.removeMenuItem(index)
+{:#methods:xlribbon-removemenuitem}
+
+This method is used to remove the menu item form file menu in spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">index</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Specifies the index of the item to be removed from the file menu.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLRibbon.removeMenuItem(2); // To remove the item in the file menu.
 </script>
 
 {% endhighlight %}
@@ -8910,6 +9577,170 @@ xlObj.XLRibbon.removeNamedRange("PRICE_LIST");
 
 {% endhighlight %}
 
+### XLRibbon.removeTab(index, isRemoveMenu)
+{:#methods:xlribbon-removetab}
+
+This method is used to remove the tab form ribbon in the spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">index</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Specifies the index of the tab to be removed from the ribbon.</td>
+</tr>
+<tr>
+<td class="name">isRemoveMenu</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">pass the boolean value to remove the tab from ribbon</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLRibbon.removeTab(2, true) // To remove the tab from the ribbon.
+</script>
+
+{% endhighlight %}
+
+### XLRibbon.removeTabGroup(tabIndex, groupText)
+{:#methods:xlribbon-removetabgroup}
+
+This method is used to remove the tab group form ribbon in the spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">tabIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Specifies the index of the tab group to be removed from the ribbon.</td>
+</tr>
+<tr>
+<td class="name">groupText</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Specifies the text to be displayed in the tab group</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLRibbon.removeTabGroup(1,"Clipboard"); // To remove the tab group from the ribbon.
+</script>
+
+{% endhighlight %}
+
+### XLRibbon.showMenu()
+{:#methods:xlribbon-showmenu}
+
+This method is used to show the file menu in the ribbon tab.
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLRibbon.showMenu(); // To show the file menu option in the Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+### XLRibbon.updateBackSatgeItem(pageItem, index)
+{:#methods:xlribbon-updatebacksatgeitem}
+
+This method is used to update the item in the backstege.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">pageItem</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Specifies the item to be updated in the backstage</td>
+</tr>
+<tr>
+<td class="name">index</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">pass the index of the item</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLRibbon.updateBackSatgeItem({ id:"New Item", text:"New Item", itemtype:ej.Ribbon.ItemType.Tab}, 1); // To update the item in the backstage.
+</script>
+
+{% endhighlight %}
+
+### XLRibbon.updateMenuItem(item, index)
+{:#methods:xlribbon-updatemenuitem}
+
+This method is used to update the menu item in the file menu.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">item</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Specifies the menu item to be updated in the ribbon</td>
+</tr>
+<tr>
+<td class="name">index</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">pass the index of the item to be updated</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLRibbon.updateMenuItem([{ id: "SignIn1", text: "AddMenuItem", parentId: "FILE", spriteCssClass: "e-icon e-ssr-cut"}], 3);; // To update the menu item in the file menu
+</script>
+
+{% endhighlight %}
+
 ### XLRibbon.updateRibbonIcons()
 {:#methods:xlribbon-updateribbonicons}
 
@@ -8926,6 +9757,7 @@ xlObj.XLRibbon.updateRibbonIcons();
 </script>
 
 {% endhighlight %}
+
 
 ### XLSearch
 {:#methods:xlsearch}
@@ -8956,12 +9788,12 @@ This method is used to find and replace all data by workbook in the Spreadsheet.
 <tr>
 <td class="name">isCSen</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass true, if you want to match with case-sensitive.</td>
+<td class="description">Pass `true`, if you want to match with case-sensitive.</td>
 </tr>
 <tr>
 <td class="name">isEMatch</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass true, if you want to match with entire cell contents.</td>
+<td class="description">Pass `true`, if you want to match with entire cell contents.</td>
 </tr>
 </tbody>
 </table>
@@ -9003,12 +9835,12 @@ This method is used to find and replace all data by sheet in Spreadsheet.
 <tr>
 <td class="name">isCSen</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass true, if you want to match with case-sensitive.</td>
+<td class="description">Pass `true`, if you want to match with case-sensitive.</td>
 </tr>
 <tr>
 <td class="name">isEMatch</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass true, if you want to match with entire cell contents.</td>
+<td class="description">Pass `true`, if you want to match with entire cell contents.</td>
 </tr>
 </tbody>
 </table>
@@ -9078,8 +9910,8 @@ This method is used to refresh the selection in the Spreadsheet.
 <tbody>
 <tr>
 <td class="name">range</td>
-<td class="type"><span class="param-type">array</span></td>
-<td class="description"><span class="optional">Optional. </span> Pass range to refresh selection.</td>
+<td class="type"><span class="param-type">array|string</span></td>
+<td class="description"><span class="optional">Optional.</span> Pass range to refresh selection.</td>
 </tr>
 </tbody>
 </table>
@@ -9091,7 +9923,7 @@ This method is used to refresh the selection in the Spreadsheet.
 //initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To defined refresh selection in Spreadsheet.
-xlObj.XLSelection.refreshSelection([1,2,3,4]);
+xlObj.XLSelection.refreshSelection("A1:D3");
 </script>
 
 {% endhighlight %}
@@ -9276,9 +10108,71 @@ This method is used to select all cells in active sheet.
 <script>
 // Initialize Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-spreadsheetObj.XLSelection.selectSheet(); //To select all cells in Spreadsheet.
+xlObj.XLSelection.selectSheet(); //To select all cells in a sheet
 </script>
 
+{% endhighlight %}
+
+### XLShape
+{:#methods:xlshape}
+
+### XLShape.setPicture(range, url, width, height, top, left)
+{:#methods:xlshape-setpicture}
+
+This method is used to set a picture in the Spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">range</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the range of the cell.</td>
+</tr>
+<tr>
+<td class="name">url</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the path of the specified image.</td>
+</tr>
+<tr>
+<td class="name">width</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description"><span class="optional">Optional.</span> Pass the width of the image that you want to set.</td>
+</tr>
+<tr>
+<td class="name">height</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description"><span class="optional">Optional.</span> Pass the height of the image that you want to set.</td>
+</tr>
+<tr>
+<td class="name">top</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description"><span class="optional">Optional.</span> Pass the top of the image that you want to set.</td>
+</tr>
+<tr>
+<td class="name">left</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description"><span class="optional">Optional.</span> Pass the left of the image that you want to set.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+//To set the picture in the Spreadsheet.
+xlObj.XLShape.setPicture('D4', "../images/spreadsheet/ladybug.png", 538, 319);
+</script>
+ 
 {% endhighlight %}
 
 ### XLSort
@@ -9389,7 +10283,7 @@ This method is used to apply data validation rules in a selected range of cells 
 <tbody>
 <tr>
 <td class="name">range</td>
-<td class="type"><span class="param-type">string</span></td>
+<td class="type"><span class="param-type">string|array</span></td>
 <td class="description">If range is specified, it will apply rules for the specified range else it will use the current selected range. </td>
 </tr>
 <tr>
@@ -9405,12 +10299,12 @@ This method is used to apply data validation rules in a selected range of cells 
 <tr>
 <td class="name">required</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass 'true' if you ignore blank values.</td>
+<td class="description">Pass `true` if you ignore blank values.</td>
 </tr>
 <tr>
 <td class="name">showErrorAlert</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass 'true' if you want to show an error alert.</td>
+<td class="description">Pass `true` if you want to show an error alert.</td>
 </tr>
 </tbody>
 </table>
@@ -9443,8 +10337,8 @@ This method is used to clear the applied validation rules in a specified range o
 <tbody>
 <tr>
 <td class="name">range</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional. </span> If range is specified, it will clear rules for the specified range else it will use the current selected range. </td>
+<td class="type"><span class="param-type">string|array</span></td>
+<td class="description"><span class="optional">Optional.</span> If range is specified, it will clear rules for the specified range else it will use the current selected range. </td>
 </tr>
 </tbody>
 </table>
@@ -9476,8 +10370,8 @@ This method is used to highlight invalid data in a specified range of cells in t
 <tbody>
 <tr>
 <td class="name">range</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional. </span> If range is specified, it will clear rules for the specified range else it will use the current selected range.</td>
+<td class="type"><span class="param-type">string|array</span></td>
+<td class="description"><span class="optional">Optional.</span> If range is specified, it will clear rules for the specified range else it will use the current selected range.</td>
 </tr>
 </tbody>
 </table>
