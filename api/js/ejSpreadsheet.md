@@ -7666,7 +7666,7 @@ This method is used to disable the items in the context menu.
 <tr>
 <td class="name">idxColl</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description">Specifies the Menu Item id to be disabled</td>
+<td class="description">Specifies the Menu Item id collection to be disabled</td>
 </tr>
 </tbody>
 </table>
@@ -7703,7 +7703,7 @@ This method is used to enable the items in the context menu.
 <tr>
 <td class="name">idxColl</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description">Specifies the Menu Item id to be enabled</td>
+<td class="description">Specifies the Menu Item id collection to be enabled</td>
 </tr>
 </tbody>
 </table>
@@ -7740,7 +7740,7 @@ This method is used to remove the items in the context menu.
 <tr>
 <td class="name">idxColl</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description">Specifies the Menu Item id to be removed</td>
+<td class="description">Specifies the Menu Item id collection to be removed</td>
 </tr>
 </tbody>
 </table>
