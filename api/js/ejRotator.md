@@ -76,9 +76,6 @@ $("#sliderContent").ejRotator();
 * module:jQuery
 
 
-* module:jquery.easing.1.3.min.js
-
-
 * module:ej.core.js
 
 
