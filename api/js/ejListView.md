@@ -777,7 +777,23 @@ $("#lb").ejListView ({ height: 300 });
 $("#lb").ejListView ("option", "height", 300);
 </script>{% endhighlight %}
 
+### locale `String`
+{:#members:locale}
 
+Set the localization culture for ListView Widget.
+
+Default Value:
+{:.param}
+“en-US”
+
+Example
+{:.example}
+
+{% highlight javascript %}
+
+    $("#dialog").ejListView({locale: "es-ES"});
+
+{% endhighlight %}
 
 
 ### persistSelection `boolean`

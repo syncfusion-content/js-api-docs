@@ -37,8 +37,6 @@ The AutoComplete control is a textbox control that provides a list of suggestion
 
 * module:jQuery
 
-* module:jquery.easing.1.3.js
-
 * module:ej.core.js
 
 * module:ej.data.js
@@ -511,6 +509,24 @@ Number of items to be displayed in the suggestion list.
 	$("#autocomplete").ejAutocomplete({ 
 		itemsCount: 2 
 	});
+
+{% endhighlight %}
+
+### locale `String`
+{:#members:locale}
+
+Set the localization culture for Autocomplete Widget.
+
+Default Value:
+{:.param}
+“en-US”
+
+Example
+{:.example}
+
+{% highlight javascript %}
+
+    $("#dialog").ejAutocomplete({locale: "es-ES"});
 
 {% endhighlight %}
 
@@ -1498,6 +1514,10 @@ Returns objects (data object) of all the selected items in the autocomplete text
 
 N> This method does not accept any arguments.
 
+####Returns:
+
+object
+
 #### Example  
 
 {% highlight javascript %}
@@ -1513,6 +1533,10 @@ Returns the current selected value from the Autocomplete textbox.
 
 N> This method does not accept any arguments.
 
+####Returns:
+
+string
+
 #### Example  
 
 {% highlight javascript %}
@@ -1527,6 +1551,10 @@ N> This method does not accept any arguments.
 Returns the current active text value in the Autocomplete suggestion list.
 
 N> This method does not accept any arguments.
+
+####Returns:
+
+string
 
 #### Example  
 

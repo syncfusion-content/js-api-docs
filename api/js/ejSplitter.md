@@ -79,9 +79,6 @@ $('#innerSplitter').ejSplitter();
 * module:jQuery
 
 
-* module:jquery.easing.1.3.js
-
-
 * module:ej.core.js
 
 

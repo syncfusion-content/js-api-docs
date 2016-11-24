@@ -47,7 +47,6 @@ Requires
 {:.require}
 
 * module:jQuery
-* module:jquery.easing.1.3.js
 * module:ej.core.js
 * module:ej.dialog.js
 * module:ej.scroller.js
@@ -477,7 +476,7 @@ Example
 
 {% highlight javascript %}
 
-    $("#dialog").ejDialog({locale: "en-US"});
+    $("#dialog").ejDialog({locale: "es-ES"});
 
 {% endhighlight %}
 
@@ -853,6 +852,10 @@ Example
 
 Closes the dialog widget dynamically.
 
+####Returns:
+
+object
+
 Example
 {:.example}
 
@@ -866,6 +869,10 @@ Example
 {:#methods:collapse}
 
 Collapses the content area when it is expanded.
+
+####Returns:
+
+object
 
 Example
 {:.example}
@@ -897,6 +904,10 @@ Example
 
 Expands the content area when it is collapsed.
 
+####Returns:
+
+object
+
 Example 
 {:.example}   
 
@@ -911,6 +922,11 @@ Example
 {:#methods:isopen}
 
 Checks whether the Dialog widget is opened or not. This methods returns Boolean value.
+
+####Returns:
+
+boolean
+
 
 Example
 {:.example}
@@ -927,6 +943,10 @@ Example
 
 Maximizes the Dialog widget.
 
+####Returns:
+
+object
+
 Example
 {:.example}
 
@@ -941,6 +961,10 @@ Example
 {:#methods:minimize}
 
 Minimizes the Dialog widget.
+
+####Returns:
+
+object
 
 Example
 {:.example}
@@ -957,6 +981,10 @@ Example
 
 Opens the Dialog widget.
 
+####Returns:
+
+object
+
 Example
 {:.example}
 
@@ -970,6 +998,10 @@ Example
 {:#methods:pin}
 
 Pins the dialog in its current position.
+
+####Returns:
+
+object
 
 Example
 {:.example}
@@ -986,6 +1018,10 @@ Example
 
 Restores the dialog.
 
+####Returns:
+
+object
+
 Example
 {:.example}
 
@@ -998,6 +1034,10 @@ Example
 
 ### unpin<span class="signature">()</span>
 {:#methods:unpin}
+
+####Returns:
+
+object
 
 Unpins the Dialog widget.
 
@@ -1029,6 +1069,10 @@ string</td><td>
 The title for the dialog widget.</td></tr>
 </table>
 
+####Returns:
+
+object
+
 Example
 {:.example}
 
@@ -1057,6 +1101,10 @@ string</td><td>
 The content for the dialog widget. It accepts both string and HTML string.</td></tr>
 </table>
 
+####Returns:
+
+object
+
 Example
 {:.example}
 
@@ -1071,6 +1119,10 @@ Example
 {:#methods:focus}
 
 Sets the focus on the Dialog widget.
+
+####Returns:
+
+object
 
 Example
 {:.example}
