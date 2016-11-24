@@ -101,7 +101,66 @@ $("#navpane").ejNavigationDrawer();
 
 
 
+### ajaxSettings  `object`
+{:#members:ajaxsettings}
 
+Specifies the ajaxSettings option to load the content to the NavigationDrawer control.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+ 
+    <div id="container"> </div>
+    <div id="navpane">
+    <ul>
+        <li data-ej-text="Artwork"></li>
+        <li data-ej-text="Abstract"></li>
+        <li data-ej-text="2 Acrylic Mediums"></li>
+        <li data-ej-text="Creative Acrylic"></li>
+        <li data-ej-text="Modern Painting"></li>
+    </ul>
+    </div>
+    <script>
+    // Set the ajaxSettings options during initialization.                  
+            $("#navpane").ejNavigationDrawer({  ajaxSettings: { type: 'GET', cache: false, data: {}, dataType: "html", contentType: "html", async: true } });
+    </script>
+
+{% endhighlight %}
+
+
+### ajaxSettings.async `Boolean`
+{:#members:ajaxsettings-async}
+
+It specifies, whether to enable or disable asynchronous request.
+
+### ajaxSettings.cache `Boolean`
+{:#members:ajaxsettings-cache}
+
+It specifies the page will be cached in the web browser.
+
+### ajaxSettings.contentType `String`
+{:#members:ajaxsettings-contenttype}
+
+It specifies the type of data is send in the query string.
+
+### ajaxSettings.data `Object`
+{:#members:ajaxsettings-data}
+
+It specifies the data as an object, will be passed in the query string.
+
+### ajaxSettings.dataType `String`
+{:#members:ajaxsettings-datatype}
+
+It specifies the type of data that you're expecting back from the response.
+
+### ajaxSettings.type `String`
+{:#members:ajaxsettings-type}
+
+It specifies the HTTP request type.
 
 
 ### contentId `string`
@@ -789,11 +848,6 @@ $("#navpane").ejNavigationDrawer ("option", "targetId", "left");
 </script>  {% endhighlight %}
 
 
-
-
-
-
-
 ### type `string`
 {:#members:type}
 
@@ -1068,7 +1122,45 @@ $(function(){
 </script >{% endhighlight %}
 
 
+### loadContent(id,url)
+{:#methods:loadcontent}
 
+
+To load AJAX content into NavigationDrawer container.
+
+
+#### Example
+
+
+
+{% highlight html %}
+
+    <div class="e-header">
+      <div id="butdrawer" class="drawericon e-icon"></div>
+      <h2>Template Content</h2>
+    </div>
+    <div id="navpane">
+      <div id="basicAccordion" class="control_frame">
+        <h3><a href="#">Menu</a></h3>
+        <div>
+          <div class="selectedAcc" data-url="#Home">Home</div>
+          <div class="selectedAcc" data-url="#People">People</div>
+          <div class="selectedAcc" data-url="#Profile">Profile</div>
+        </div>
+      </div>
+    </div>
+    <script >
+    $(function(){
+      $("#basicAccordion").ejAccordion({width:"100%",height:"100%"});
+      $("#navpane").ejNavigationDrawer({ targetId: "butdrawer", contentId: "content_container", type: "overlay", direction: "left", position: "normal" });
+      $(".selectedAcc").click(function(e){
+          var navObj = $("#navpane").ejNavigationDrawer("instance");
+          navObj.loadContent($("#content_container") ,"/Content/NavigationDrawer/"+$(e.currentTarget).attr("data-url").replace("#","")+".html");
+        });
+    });
+    </script >
+    
+{% endhighlight %}
 
 
 
@@ -1189,7 +1281,314 @@ $(function(){
 
 
 
+### ajaxComplete
+{:#events:ajaxcomplete}
 
+
+
+
+Event triggers after the AJAX content loaded completely.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from NavigationDrawer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns true if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.NavigationDrawer.Model"/><span class="param-type">Object</span></td>
+<td class="description">returns the model value of the control.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+
+{% highlight html %}
+
+    <div id="home" class="navsubpage">
+    <div align="center" class="content">
+    <h2 class="title">
+    Home</h2>
+    <p>
+    Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range of enterprise-class software components and tools for the Microsoft .NET platform.
+    </p>
+    </div>
+    </div>
+    <style>
+    .list {
+      border-bottom: 1px solid;
+      line-height: 50px;
+      text-align: center;
+      width:200px;
+      }
+    </style>
+    <div id="navpane" >
+    <div class="list"> Home </div>
+    <div class="list"> Communities </div>
+    </div>
+    <script >
+    $(function(){
+            $("#navpane").ejNavigationDrawer({
+              ajaxComplete: function (args) { //handle the event }
+            }
+            });
+    });
+    </script >
+
+{% endhighlight %}
+
+
+### ajaxError
+{:#events:ajaxerror}
+
+
+
+
+Event triggers when the AJAX request failed.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from NavigationDrawer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns true if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.NavigationDrawer.Model"/><span class="param-type">Object</span></td>
+<td class="description">returns the model value of the control.</td>
+</tr>
+<tr>
+<td class="name">
+errorThrown</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">returns the error thrown in the AJAX post.</td>
+</tr>
+<tr>
+<td class="name">
+textStatus</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">returns the status.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+
+    <div id="home" class="navsubpage">
+    <div align="center" class="content">
+    <h2 class="title">
+    Home</h2>
+    <p>
+    Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range of enterprise-class software components and tools for the Microsoft .NET platform.
+    </p>
+    </div>
+    </div>
+    <style>
+    .list {
+      border-bottom: 1px solid;
+      line-height: 50px;
+      text-align: center;
+      width:200px;
+      }
+    </style>
+    <div id="navpane" >
+    <div class="list"> Home </div>
+    <div class="list"> Communities </div>
+    </div>
+    <script >
+    $(function(){
+            $("#navpane").ejNavigationDrawer({
+              ajaxError: function (args) { //handle the event }
+            }
+            });
+    });
+    </script >
+
+{% endhighlight %}
+
+
+### ajaxSuccess
+{:#events:ajaxsuccess}
+
+
+
+
+Event triggers after the AJAX content loaded successfully.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from ListView.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns true if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.NavigationDrawer.Model"/><span class="param-type">Object</span></td>
+<td class="description">returns the model value of the control.</td>
+</tr>
+<tr>
+<td class="name">
+content</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the AJAX current content.</td>
+</tr>
+<tr>
+<td class="name">
+URL</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the current URL of the AJAX post.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+
+    <div id="home" class="navsubpage">
+    <div align="center" class="content">
+    <h2 class="title">
+    Home</h2>
+    <p>
+    Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range of enterprise-class software components and tools for the Microsoft .NET platform.
+    </p>
+    </div>
+    </div>
+    <style>
+    .list {
+      border-bottom: 1px solid;
+      line-height: 50px;
+      text-align: center;
+      width:200px;
+      }
+    </style>
+    <div id="navpane" >
+    <div class="list"> Home </div>
+    <div class="list"> Communities </div>
+    </div>
+    <script >
+    $(function(){
+            $("#navpane").ejNavigationDrawer({
+              ajaxSuccess: function (args) { //handle the event }
+            }
+            });
+    });
+    </script >
+
+{% endhighlight %}
 
 
 ### beforeClose

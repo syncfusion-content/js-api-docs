@@ -47,7 +47,6 @@ Requires
 {:.require}
 
 * module:jQuery
-* module:jquery.easing.1.3.js
 * module:ej.core.js
 * module:ej.dialog.js
 * module:ej.scroller.js
@@ -477,7 +476,7 @@ Example
 
 {% highlight javascript %}
 
-    $("#dialog").ejDialog({locale: "en-US"});
+    $("#dialog").ejDialog({locale: "es-ES"});
 
 {% endhighlight %}
 

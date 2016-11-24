@@ -49,8 +49,6 @@ Requires
 
 * module:jQuery
 
-* module:jquery.easing.1.3.js
-
 * module:ej.core.js
 
 * module:ej.data.js
