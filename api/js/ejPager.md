@@ -50,7 +50,7 @@ $("#pager").ejPager(pagerModel);
 ## Members
 
 
-### customText `String`
+### customText `string`
 {:#members:customText}
 
 Gets or sets a value that indicates whether to display the custom text message in Pager.
@@ -71,7 +71,7 @@ $("#pager").ejPager({customText ="custom pager text"})
 {% endhighlight %}
 
 
-### currentPage `Number`
+### currentPage `number`
 {:#members:currentpage}
 
 Gets or sets a value that indicates whether to define which page to display currently in pager.
@@ -91,7 +91,7 @@ $("#pager").ejPager({currentPage: 1 })
 {% endhighlight %}
 
 
-### enableExternalMessage `Boolean`
+### enableExternalMessage `boolean`
 {:#members:enableExternalMessage}
 
 Gets or sets a value that indicates whether to display the external Message in Pager.
@@ -112,7 +112,7 @@ $("#pager").ejPager({enableExternalMessage: true })
 {% endhighlight %}
 
 
-### enableQueryString `Boolean`
+### enableQueryString `boolean`
 {:#members:enablequerystring}
 
 Gets or sets a value that indicates whether to pass the current page information as a query string along with the URL while navigating to other page.
@@ -134,7 +134,7 @@ $("#pager").ejPager({enableQueryString: true })
 
 
 
-### enableRTL `Boolean`
+### enableRTL `boolean`
 {:#members:enablertl}
 
 Align content in the pager control from right to left by setting the property as true.
@@ -154,7 +154,7 @@ $("#pager").ejPager({enableRTL:true})
 {% endhighlight %}
 
 
-### externalMessage `String`
+### externalMessage `string`
 {:#members:externalMessage}
 
 Gets or sets a value that indicates whether to display the external Message in Pager.
@@ -177,7 +177,7 @@ $("#pager").ejPager({enableExternalMessage: true, externalMessage:"external mess
 N> `enableExternalMessage` default value as false. so We must enable `enableExternalMessage` set as true when enable externalMessage.
 
 
-### locale `String`
+### locale `string`
 {:#members:locale}
 
 Gets or sets a value that indicates whether to customizing the user interface (UI) as locale-specific in order to display regional data i.e. in a language and culture specific to a particular country or region.
@@ -200,7 +200,7 @@ $("#pager").ejPager({locale: "es-ES"})
 {% endhighlight %}
 
 
-### pageCount `Number`
+### pageCount `number`
 {:#members:pagecount}
 
 Gets or sets a value that indicates whether to define the number of pages displayed in the pager for navigation.
@@ -220,7 +220,7 @@ $("#pager").ejPager({pageCount: 5 })
 {% endhighlight %}
 
 
-### pageSize `Number`
+### pageSize `number`
 
 {:#members:pagesize}
 
@@ -241,7 +241,7 @@ $("#pager").ejPager({pageSize: 2 })
 {% endhighlight %}
 
 
-### totalPages `Number`
+### totalPages `number`
 {:#members:totalpages}
 
 Get or sets a value of total number of pages in the pager. The totalPages value is calculated based on page size and total records.
@@ -260,7 +260,7 @@ $("#pager").ejPager({totalPages: 1 })
 </script>
 {% endhighlight %}
 
-### totalRecordsCount `Number`
+### totalRecordsCount `number`
 {:#members:totalrecordscount}
 
 Get the value of total number of records which is bound to a data item. 
@@ -279,7 +279,7 @@ $("#pager").ejPager({totalRecordsCount: 10 })
 </script>
 {% endhighlight %}
 
-### showPageInfo `Boolean`
+### showPageInfo `boolean`
 {:#members:showpageinfo}
 
 Shows or hides the current page information in pager footer.
@@ -333,61 +333,49 @@ Send a paging request to specified page through the pager control.
 
 {% highlight html %}
 
+
 <div class="frame">
     <ul id="sliderContent">
-        <li><img class="image" src="{{ site.releaseversion }}/themes/web/images/rotator/nature.jpg" title="Nature" /></li>
-        <li><img class="image" src="{{ site.releaseversion }}/themes/web/images/rotator/bird.jpg" title="Beautiful Bird" /></li>
-        <li><img class="image" src="{{ site.releaseversion }}/themes/web/images/rotator/sculpture.jpg" title="Amazing Sculptures" /></li>
+    <li><img class="image" src="http://jsplayground.syncfusion.com/{{ site.releaseversion }}/themes/web/content/images/rotator/nature.jpg" title="Nature" /></li>
+    <li><img class="image" src="http://jsplayground.syncfusion.com/{{ site.releaseversion }}/themes/web/content/images/rotator/bird.jpg" title="Beautiful Bird" /></li>
+    <li><img class="image" src="http://jsplayground.syncfusion.com/{{ site.releaseversion }}/themes/web/content/images/rotator/sculpture.jpg" title="Amazing Sculptures" /></li>
+    <li><img class="image" src="http://jsplayground.syncfusion.com/{{ site.releaseversion }}/themes/web/content/images/rotator/seaview.jpg"  title="Sea-View"/></li>
+    <li><img class="image" src="http://jsplayground.syncfusion.com/{{ site.releaseversion }}/themes/web/content/images/rotator/snowfall.jpg"  title="Snow Fall"/></li>
+    <li><img class="image" src="http://jsplayground.syncfusion.com/{{ site.releaseversion }}/themes/web/content/images/rotator/card.jpg"  title="Credit Card"/></li>
+    <li><img class="image" src="http://jsplayground.syncfusion.com/{{ site.releaseversion }}/themes/web/content/images/rotator/night.jpg"  title="Colorful Night"/></li>
     </ul>
 </div>
-
 <script type="text/javascript">
     $(function () {
-        // declaration
-
-        $("#sliderContent").ejRotator({
-            slideWidth: "600px",
-            frameSpace: "0px",
-            showPager: true,
-        });
-
-        var obj = $("#sliderContent").ejRotator("instance")
-        $('.e-pager-wrap').css('display', 'none')
-        $("<div id='pager' style='width:600px'></div>").appendTo($("body"));
-        $('#pager').ejPager({ totalPages: 3, pageCount: 2, click: "page" })
+    // declaration
+    $("#sliderContent").ejRotator({
+        slideWidth: "600px",
+        frameSpace: "0px",
+        showPager: true,
+    });
+    var obj = $("#sliderContent").ejRotator("instance")
+    $('.e-pager-wrap').css('display', 'none')
+    $("<div id='pager' style='width:600px'></div>").appendTo($("body"));
+    $('#pager').ejPager({
+        pageSize:1, totalPages: 7, totalRecordsCount:7, pageCount: 3, click: "page" })
+                        
     });
     function page(args) {
-        $("#pager").children().find('.e-currentitem').removeClass('e-currentitem');
-        $(args.event.target).addClass('e-currentitem');
+    if(!ej.isNullOrUndefined(args.event)){
+        this.goToPage(args.model.currentPage); // pager moved to the specified page
+        this.refreshPager(); // refresh the pager control
         var obj = $("#sliderContent").ejRotator("instance").gotoIndex(args.currentPage);
-        if (args.currentPage > 1) {
-            $('.e-first.e-icon').removeClass('e-firstpagedisabled e-disable')
-            $('.e-prev.e-icon').removeClass('e-prevpagedisabled e-disable')
-        }
-        else {
-            $('.e-first.e-icon').addClass('e-firstpagedisabled e-disable')
-            $('.e-prev.e-icon').addClass('e-prevpagedisabled e-disable')
-        }
-        if (args.currentPage >= 3) {
-            $('.e-lastpage.e-icon').addClass('e-lastpagedisabled e-disable')
-            $('.e-nextpage.e-icon').addClass('e-nextpagedisabled e-disable')
-        }
-        else {
-            $('.e-lastpage.e-icon').removeClass('e-lastpagedisabled e-disable')
-            $('.e-nextpage.e-icon').removeClass('e-nextpagedisabled e-disable')
-        }
+    }
     }
 </script>
-
 <style type="text/css" class="cssStyles">
-        .frame {
-            width: 600px;
-        }
-
-        #sliderContent > li .image {
-            width: 600px;
-            height: 350px;
-        }
+    .frame {
+    width: 600px;
+    }
+    #sliderContent > li .image {
+    width: 600px;
+    height: 350px;
+    }
 </style>
 
 {% endhighlight %}
