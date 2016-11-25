@@ -2146,8 +2146,6 @@ Returns the current datetime value in the DateTimePicker.
 
 string
 
-value
-
 
 #### Example
 
