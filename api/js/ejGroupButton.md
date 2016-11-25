@@ -1182,27 +1182,15 @@ number
 {% endhighlight %}
 
 
-### getSelectedItem(element)
+### getSelectedItem()
 {:#methods:getselecteditem}
 
 
 This method returns the list of active state button elements from the GroupButton control.
 
-<table>
-<tr>
-<td>
-<b>Parameters</b></td><td>
-<b>Type</b></td><td>
-<b>Description</b></td></tr>
-<tr>
-<td>
-element</td><td>
-jQuery</td><td>
-Specific button element</td></tr>
-</table>
 
 ####Returns:
-number
+object
 
 #### Example
 

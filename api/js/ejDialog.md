@@ -1035,11 +1035,13 @@ Example
 ### unpin<span class="signature">()</span>
 {:#methods:unpin}
 
+
+Unpins the Dialog widget.
+
 ####Returns:
 
 object
 
-Unpins the Dialog widget.
 
 Example
 {:.example}
