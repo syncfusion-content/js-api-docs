@@ -87,12 +87,6 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 ## Members
 
 
-
-
-
-
-
-
 ### buttonText `object`
 {:#members:buttontext}
 
@@ -208,11 +202,7 @@ Dropdown</td>
 
 #### Default Value
 
-
-
 * ej.ButtonMode.Split
-
-
 
 
 #### Example
@@ -234,42 +224,18 @@ Dropdown</td>
 
 
 
-
-
 ### columns `number|string`
 {:#members:columns}
-
-
-
-
-
-
-
 
 Specifies the number of columns to be displayed color palette model.
 
 
-
-
 #### Default Value
-
-
-
-
-
-
 
 * 10
 
 
-
-
-
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -285,40 +251,15 @@ Specifies the number of columns to be displayed color palette model.
 
 
 
-
-
-
-
 ### cssClass `string`
 {:#members:cssclass}
-
-
-
-
-
-
-
 
 This property allows you to customize its appearance using user-defined CSS and custom skin options such as colors and backgrounds.
 
 
-
-
 #### Default Value
 
-
-
-
-
-
-
 * ""
-
-
-
-
-
-
 
 
 #### Example
@@ -338,45 +279,19 @@ This property allows you to customize its appearance using user-defined CSS and 
 
 
 
-
-
-
-
 ### custom `array`
 {:#members:custom}
 
-
-
-
-
-
-
-
 This property allows to define the custom colors in the palette model.Custom palettes are created by passing a comma delimited string of HEX values or an array of colors.
-
-
 
 
 #### Default Value
 
 
-
-
-
-
-
 * empty
 
 
-
-
-
-
-
-
 #### Example
-
-
 
 {% highlight html %}
    
@@ -391,40 +306,15 @@ This property allows to define the custom colors in the palette model.Custom pal
 
 
 
-
-
-
-
 ### displayInline `boolean`
 {:#members:displayinline}
-
-
-
-
-
-
-
 
 This property allows to embed the popup in the order of DOM element flow . When we set the value as true, the color picker popup is always in visible state.
 
 
-
-
 #### Default Value
 
-
-
-
-
-
-
 * false
-
-
-
-
-
-
 
 
 #### Example
@@ -444,45 +334,18 @@ This property allows to embed the popup in the order of DOM element flow . When 
 
 
 
-
-
-
-
 ### enabled `boolean`
 {:#members:enabled}
-
-
-
-
-
-
-
 
 This property allows to change the control in enabled or disabled state.
 
 
-
-
 #### Default Value
-
-
-
-
-
-
 
 * true
 
 
-
-
-
-
-
-
 #### Example
-
-
 
 {% highlight html %}
    
@@ -496,46 +359,18 @@ This property allows to change the control in enabled or disabled state.
 {% endhighlight %}
 
 
-
-
-
-
-
 ### enableOpacity `boolean`
 {:#members:enableopacity}
-
-
-
-
-
-
-
 
 This property allows to enable or disable the opacity slider in the color picker control
 
 
-
-
 #### Default Value
-
-
-
-
-
-
 
 * true
 
 
-
-
-
-
-
-
 #### Example
-
-
 
 {% highlight html %}
    
@@ -558,17 +393,10 @@ It allows to define the characteristics of the ColorPicker control. It will help
 
 #### Default Value
 
-
-
-
 * {}
 
 
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -634,8 +462,6 @@ Defines the localized text values in button and tooltip.
 ### modelType `enum|string`
 {:#members:modeltype}
 
-
-
 <ts name="ej.ColorPicker.ModelType"/>
 
 
@@ -666,24 +492,9 @@ Picker</td>
 
 #### Default Value
 
-
-
-
-
-
-
 * ej.ColorPicker.ModelType.Default
 
-
-
-
-
-
-
-
 #### Example
-
-
 
 {% highlight html %}
    
@@ -697,46 +508,18 @@ Picker</td>
 {% endhighlight %}
 
 
-
-
-
-
-
 ### opacityValue `number|string`
 {:#members:opacityvalue}
-
-
-
-
-
-
-
 
 This property allows to change the opacity value .The selected color opacity will be adjusted by using this opacity value.
 
 
-
-
 #### Default Value
-
-
-
-
-
-
 
 * 100
 
 
-
-
-
-
-
-
 #### Example
-
-
 
 {% highlight html %}
    
@@ -750,19 +533,11 @@ This property allows to change the opacity value .The selected color opacity wil
 {% endhighlight %}
 
 
-
-
-
-
-
 ### palette `enum|string`
 {:#members:palette}
 
 
-
 <ts name="ej.ColorPicker.Palette"/>
-
-
 
 
 Specifies the palette type to be displayed at initial time in palette model.There two types of palette model available in ColorPicker control. See below available Palette
@@ -792,19 +567,7 @@ CustomPalette</td>
 
 #### Default Value
 
-
-
-
-
-
-
 * ej.ColorPicker.Palette.BasicPalette
-
-
-
-
-
-
 
 
 #### Example
@@ -824,17 +587,11 @@ CustomPalette</td>
 
 
 
-
-
-
-
 ### presetType `enum|string`
 {:#members:presettype}
 
 
 <ts name="ej.ColorPicker.Presets"/>
-
-
 
 
 This property allows to define the preset model to be rendered initially in palette type.It consists of 12 different types of presets. Each presets have 50 colors. See below available Presets
@@ -909,18 +666,7 @@ WebColors</td>
 #### Default Value
 
 
-
-
-
-
-
 * ej.ColorPicker.Presets.Basic
-
-
-
-
-
-
 
 
 #### Example
@@ -938,6 +684,7 @@ WebColors</td>
 
 {% endhighlight %}
 
+
 ### showApplyCancel `boolean`
 {:#members:showapplycancel}
 
@@ -945,28 +692,11 @@ WebColors</td>
 Allows to show/hides the apply and cancel buttons in ColorPicker control
 
 
-
-
 #### Default Value
-
-
-
-
-
-
 
 * true
 
-
-
-
-
-
-
-
 #### Example
-
-
 
 {% highlight html %}
    
@@ -986,24 +716,10 @@ Allows to show/hides the apply and cancel buttons in ColorPicker control
 
 Allows to show/hides the clear button in ColorPicker control
 
-
-
-
 #### Default Value
 
 
-
-
-
-
-
 * true
-
-
-
-
-
-
 
 
 #### Example
@@ -1023,37 +739,18 @@ Allows to show/hides the clear button in ColorPicker control
 
 
 
-
-
-
 ### showPreview `boolean`
 {:#members:showpreview}
-
 
 This property allows to provides live preview support for current cursor selection color and selected color.
 
 
-
-
 #### Default Value
-
-
-
-
-
-
 
 * true
 
 
-
-
-
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -1069,44 +766,18 @@ This property allows to provides live preview support for current cursor selecti
 
 
 
-
-
-
-
 ### showRecentColors `boolean`
 {:#members:showrecentcolors}
 
 
-
-
-
-
-
-
 This property allows to store the color values in custom list.The ColorPicker will keep up to 11 colors in a custom list.By clicking the add button, the selected color from picker or palette will get added in the recent color list.
 
-
-
-
 #### Default Value
-
-
-
-
-
-
 
 * false
 
 
-
-
-
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -1125,32 +796,15 @@ This property allows to store the color values in custom list.The ColorPicker wi
 ### showSwitcher `boolean`
 {:#members:showswitcher}
 
-
 Allows to show/hides the switcher button in ColorPicker control.It helps to switch palette or picker mode in colorpicker. 
-
-
 
 
 #### Default Value
 
-
-
-
-
-
-
 * true
 
 
-
-
-
-
-
-
 #### Example
-
-
 
 {% highlight html %}
    
@@ -1169,32 +823,13 @@ Allows to show/hides the switcher button in ColorPicker control.It helps to swit
 {:#members:showtooltip}
 
 
-
-
-
-
-
-
 This property allows to shows tooltip to notify the slider value in color picker control.
-
-
 
 
 #### Default Value
 
 
-
-
-
-
-
 * false
-
-
-
-
-
-
 
 
 #### Example
@@ -1213,46 +848,18 @@ This property allows to shows tooltip to notify the slider value in color picker
 {% endhighlight %}
 
 
-
-
-
-
-
 ### toolIcon `string`
 {:#members:toolicon}
-
-
-
-
-
-
-
 
 Specifies the toolIcon to be displayed in dropdown control color area.
 
 
-
-
 #### Default Value
-
-
-
-
-
-
 
 * null
 
 
-
-
-
-
-
-
 #### Example
-
-
 
 {% highlight html %}
    
@@ -1276,32 +883,14 @@ Specifies the toolIcon to be displayed in dropdown control color area.
 
 
 
-
-
-
-
 ### tooltipText `object`
 {:#members:tooltiptext}
-
-
-
-
-
-
 
 
 This property allows to define the customized text or content to displayed when mouse over the following elements. This property also allows to use the culture values.
 
 
-
-
 #### Default Value
-
-
-
-
-
-
 
 * { switcher: "Switcher", addbutton: "Add Color", basic: "Basic", monochrome: "Mono Chrome", flatcolors: "Flat Color", seawolf: "Sea Wolf", webcolors: "Web Colors", sandy: "Sandy", pinkshades: "Pink Shades", misty: "Misty", citrus: "Citrus", vintage: "Vintage", moonlight: "Moon Light", candycrush: "Candy Crush", currentcolor: "Current Color", selectedcolor: "Selected Color" }
 
@@ -1389,8 +978,6 @@ Sets the tooltip text for the selected color area.
 
 #### Example
 
-
-
 {% highlight html %}
    
         <input type="text" id="colorPick"/> 
@@ -1403,41 +990,14 @@ Sets the tooltip text for the selected color area.
 {% endhighlight %}
 
 
-
-
-
-
-
 ### value `string`
 {:#members:value}
 
-
-
-
-
-
-
-
 Specifies the color value for color picker control, the value is in hexadecimal form with prefix of "#".
-
-
-
 
 #### Default Value
 
-
-
-
-
-
-
 * null
-
-
-
-
-
-
 
 
 #### Example
@@ -1456,37 +1016,17 @@ Specifies the color value for color picker control, the value is in hexadecimal 
 {% endhighlight %}
 
 
-
-
-
 ## Methods
-
-
-
-
-
-
 
 
 ### disable()
 {:#methods:disable}
 
 
-
-
-
-
-
-
 Disables the color picker control
 
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
    
@@ -1517,29 +1057,13 @@ Disables the color picker control
  {% endhighlight %}
 
 
-
-
-
-
-
 ### enable()
 {:#methods:enable}
-
-
-
-
-
-
-
 
 Enable the color picker control
 
 
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -1572,25 +1096,14 @@ Enable the color picker control
 
 
 
-
-
-
-
 ### getColor()
 {:#methods:getcolor}
-
-
-
-
-
-
 
 
 Gets the selected color in RGB format
 
 ####Returns
 object
-
 
 
 #### Example
@@ -1628,32 +1141,16 @@ object
 {% endhighlight %}
 
 
-
-
-
-
-
 ### getValue()
 {:#methods:getvalue}
 
-
-
-
-
-
-
-
 Gets the selected color value as string
-
-
 
 ####Returns
 
 string
 
 #### Example
-
-
 
 {% highlight html %}
    
@@ -1684,12 +1181,7 @@ string
 {% endhighlight %}
 
 
-
-
-
-
-
-### hexCodeToRGB()
+### hexCodeToRGB(colorCode)
 {:#methods:hexcodetorgb}
 
 
@@ -1700,11 +1192,26 @@ To Convert color value from hexCode to RGB
 
 object
 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"> 
+colorCode </td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Specified HEX code converted to RGB</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Example
-
-
 
 {% highlight html %}
         
@@ -1737,30 +1244,12 @@ object
  {% endhighlight %}
 
 
-
-
-
-
-
 ### hide()
 {:#methods:hide}
 
-
-
-
-
-
-
-
 Hides the ColorPicker popup, if in opened state.
 
-
-
-
-
 #### Example
-
-
 
 {% highlight html %}
    
@@ -1791,34 +1280,34 @@ Hides the ColorPicker popup, if in opened state.
  {% endhighlight %}
 
 
-
-
-
-
-
-### HSVToRGB()
+### HSVToRGB(hsv)
 {:#methods:hsvtorgb}
 
-
-
-
-
-
-
-
 Convert color value from HSV to RGB
-
 
 ####Returns
 
 object
 
-
-
-
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"> 
+hsv </td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Specified HSV code converted to RGB</td>
+</tr>
+</tbody>
+</table>
 
 #### Example
-
 
 
 {% highlight html %}
@@ -1852,31 +1341,35 @@ object
 {% endhighlight %}
 
 
-
-
-
-
-
-### RGBToHEX()
+### RGBToHEX(rgb)
 {:#methods:rgbtohex}
 
-
-
-
-
-
-
-
 Convert color value from RGB to HEX
-
 
 ####Returns
 
 string
 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"> 
+rgb </td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Specified RGB code converted to HEX code</td>
+</tr>
+</tbody>
+</table>
+
 
 #### Example
-
 
 
 {% highlight html %}
@@ -1912,19 +1405,8 @@ string
 
 
 
-
-
-
-
-### RGBToHSV()
+### RGBToHSV(rgb)
 {:#methods:rgbtohsv}
-
-
-
-
-
-
-
 
 Convert color value from RGB to HSV
 
@@ -1932,6 +1414,25 @@ Convert color value from RGB to HSV
 ####Returns
 
 object
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name"> 
+rgb </td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Specified RGB code converted to HSV code</td>
+</tr>
+</tbody>
+</table>
+
 
 
 #### Example
@@ -1971,28 +1472,13 @@ object
 
 
 
-
-
-
 ### show()
 {:#methods:show}
-
-
-
-
-
-
-
 
 Open the ColorPicker popup.
 
 
-
-
-
 #### Example
-
-
 
 {% highlight html %}
    
@@ -2025,13 +1511,7 @@ Open the ColorPicker popup.
 
 
 
-
 ## Events
-
-
-
-
-
 
 
 
@@ -2039,23 +1519,8 @@ Open the ColorPicker popup.
 {:#events:change}
 
 
-
 Fires after Color value has been changed successfully.If the user want to perform any operation after the color value changed then the user can make use of this change event.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">Event parameters from color picker
 <table class="params">
 <thead>
 <tr>
@@ -2098,13 +1563,6 @@ value</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
 
 
 #### Example
@@ -2130,35 +1588,12 @@ value</td>
 
 
 
-
-
-
 ### close
 {:#events:close}
 
 
-
-
-
-
-
-
 Fires after closing the color picker popup.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from color picker
 <table class="params">
 <thead>
 <tr>
@@ -2189,11 +1624,6 @@ type</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
-
 
 
 #### Example
@@ -2219,35 +1649,12 @@ type</td>
 
 
 
-
-
-
 ### create
 {:#events:create}
 
 
-
-
-
-
-
-
 Fires after Color picker control is created. If the user want to perform any operation after the color picker control creation then the user can make use of this create event.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from color picker
 <table class="params">
 <thead>
 <tr>
@@ -2278,11 +1685,6 @@ type</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
-
 
 
 #### Example
@@ -2307,36 +1709,11 @@ type</td>
 
 
 
-
-
-
-
 ### destroy
 {:#events:destroy}
 
-
-
-
-
-
-
-
 Fires after Color picker control is destroyed. If the user want to perform any operation after the color picker control destroyed then the user can make use of this destroy event.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">Event parameters from color picker
 <table class="params">
 <thead>
 <tr>
@@ -2367,11 +1744,6 @@ type</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
-
 
 
 #### Example
@@ -2395,37 +1767,11 @@ type</td>
 {% endhighlight %}
 
 
-
-
-
-
-
 ### open
 {:#events:open}
 
-
-
-
-
-
-
-
 Fires after opening the color picker popup
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from color picker
 <table class="params">
 <thead>
 <tr>
@@ -2456,12 +1802,6 @@ type</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
 
 
 #### Example
@@ -2485,37 +1825,12 @@ type</td>
 {% endhighlight %}
 
 
-
-
-
-
-
 ### select
 {:#events:select}
 
 
-
-
-
-
-
-
 Fires after Color value has been selected successfully. If the user want to perform any operation after the color value selected then the user can make use of this select event.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">Event parameters from color picker
 <table class="params">
 <thead>
 <tr>
@@ -2549,10 +1864,6 @@ type</td>
 value</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">return the selected color value</td>
-</tr>
-</tbody>
-</table>
-</td>
 </tr>
 </tbody>
 </table>
