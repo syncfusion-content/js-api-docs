@@ -884,6 +884,23 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png"});
 $("#tile").ejTile("option", "imageUrl", "themes/sample/tile/people.png"); </script>           
 {% endhighlight %}
 
+### locale `String`
+{:#members:locale}
+
+Set the localization culture for Tile Widget.
+
+Default Value:
+{:.param}
+“en-US”
+
+Example
+{:.example}
+
+{% highlight javascript %}
+
+    $("#dialog").ejTile({locale: "es-ES"});
+
+{% endhighlight %}
 
 ### liveTile `object`
 {:#members:livetile}

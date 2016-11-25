@@ -8942,7 +8942,7 @@ xlObj.XLPrint.printSheet();
 ### XLResize
 {:#methods:xlresize}
 
-### XLResize.fitHeight(\[rowIdxes\])
+### XLResize.fitHeight(\[rowIndexes\])
 {:#methods:xlresize-fitheight}
 
 This method is used to fit the height of rows in the Spreadsheet.
@@ -8956,9 +8956,9 @@ This method is used to fit the height of rows in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">rowIdxes</td>
+<td class="name">rowIndexes</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description"><span class="optional">Optional.</span> Pass row index that we want to fit its height.</td>
+<td class="description"><span class="optional">Optional.</span> Pass row index collection that you want to fit its height.</td>
 </tr>
 </tbody>
 </table>
@@ -8975,7 +8975,7 @@ xlObj.XLResize.fitHeight([2,3,4,5])
 
 {% endhighlight %}
 
-### XLResize.fitWidth(\[colIdxes\])
+### XLResize.fitWidth(\[colIndexes\])
 {:#methods:xlresize-fitwidth}
 
 This method is used to fit the width of columns in the Spreadsheet.
@@ -8989,9 +8989,9 @@ This method is used to fit the width of columns in the Spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">colIdxes</td>
+<td class="name">colIndexes</td>
 <td class="type"><span class="param-type">array</span></td>
-<td class="description"><span class="optional">Optional.</span> Pass column index that we want to fit its width.</td>
+<td class="description"><span class="optional">Optional.</span> Pass column index collection that you want to fit its width.</td>
 </tr>
 </tbody>
 </table>
@@ -9663,43 +9663,6 @@ This method is used to show the file menu in the ribbon tab.
 //initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 xlObj.XLRibbon.showMenu(); // To show the file menu option in the Spreadsheet.
-</script>
-
-{% endhighlight %}
-
-### XLRibbon.updateBackSatgeItem(pageItem, index)
-{:#methods:xlribbon-updatebacksatgeitem}
-
-This method is used to update the item in the backstege.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">pageItem</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">Specifies the item to be updated in the backstage</td>
-</tr>
-<tr>
-<td class="name">index</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description">pass the index of the item</td>
-</tr>
-</tbody>
-</table>
-
-#### Example
-
-{% highlight html %}
-<script>
-//initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLRibbon.updateBackSatgeItem({ id:"New Item", text:"New Item", itemtype:ej.Ribbon.ItemType.Tab}, 1); // To update the item in the backstage.
 </script>
 
 {% endhighlight %}
