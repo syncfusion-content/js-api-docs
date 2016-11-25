@@ -2621,7 +2621,7 @@ This method retrieves the items using given value.
 </tbody>
 </table>
 
-####Returns: object 
+####Returns: Array<number>  
 
 This method will return the whole object corresponds to given value from datasource 
 
@@ -2761,7 +2761,7 @@ This method will return the whole data which binds with Dropdownlist control
 
 This method is used to get the selected items in the DropDownList.
 
-####Returns: Element 
+####Returns: Array<number> 
 
 This method will return the selected item elements 
 
