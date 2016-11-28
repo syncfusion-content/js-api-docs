@@ -2084,6 +2084,10 @@ This function re-renders the control with the report available at that instant.
 
 This function returns the height of all rows and width each and every column.
 
+#### Returns:
+
+object
+
 **Example:**
 
 {% highlight javascript %}
@@ -2153,6 +2157,10 @@ This function reconstructs the JSON data formed for rendering PivotGrid in excel
 
 Returns the OlapReport string maintained along with the axis elements information.
 
+#### Returns:
+
+string
+
 **Example:**
 
 {% highlight javascript %}
@@ -2178,6 +2186,10 @@ Sets the OlapReport string along with the axis information.
 {:#methods:getjsonrecords}
 
 Returns the JSON records formed to render the control.
+
+#### Returns:
+
+array
 
 **Example:**
 

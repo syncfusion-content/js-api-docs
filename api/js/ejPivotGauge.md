@@ -942,6 +942,10 @@ This function receives the JSON formatted datasource and renders the PivotGauge 
 
 Returns the OlapReport string maintained along with the axis elements information.
 
+#### Returns:
+
+string
+
 >**Note**: This method is applicable only on operating the control in server mode.
 
 **Example:**
@@ -971,6 +975,10 @@ Sets the OlapReport string along with the axis information and maintains it in a
 {:#methods:getjsonrecords}
 
 Returns the JSON records formed to render the control.
+
+#### Returns:
+
+array
 
 **Example:**
 

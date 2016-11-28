@@ -61,6 +61,10 @@ This function removes the specified item from the report.
 
 This function returns the field object with the given field name.
 
+#### Returns:
+
+object
+
 **Example:**
 
 {% highlight javascript %}
@@ -72,6 +76,10 @@ This function returns the field object with the given field name.
 {:#methods:getreportitembyfieldcaption}
 
 This function returns the field object with the given field caption.
+
+#### Returns:
+
+object
 
 **Example:**
 
@@ -96,6 +104,10 @@ This function removes the overlay added to the control.
 {:#methods:getnodesstate}
 
 This function returns the list of checked and unchecked nodes from member editor tree.
+
+#### Returns:
+
+object
 
 **Example:**
 
