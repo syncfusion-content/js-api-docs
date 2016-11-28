@@ -4913,6 +4913,10 @@ This method is used to delete the appointment based on the guid value or the app
     </tbody>
 </table>
 
+####Returns:
+
+object
+
 #### Example - Using GUID Value
 
 The following code snippet explain how to delete an appointment by using the GUID, while clicking an appointment.
@@ -5105,6 +5109,10 @@ Searches and filters the appointments from appointment list of Schedule control.
 </table>
 
 
+####Returns:
+
+object
+
 #### Example
 
 {% highlight html %}
@@ -5162,6 +5170,10 @@ var appointments=schObj.filterAppointments(filter); // filters the appointments 
 {:#methods:getappointments}
 
 Gets the complete appointment list of Schedule control.
+
+####Returns:
+
+object
 
 #### Example
 
@@ -5383,6 +5395,10 @@ $('#Schedule').ejSchedule({
 
 Generate the recurrence rule as a string, based on the repeat options selected.
 
+####Returns:
+
+string
+
 #### Example
 
 {% highlight html %}
@@ -5420,6 +5436,9 @@ Retrieves the time slot information (start/end time and resource details) of the
     </tbody>
 </table>
 
+####Returns:
+
+object
 
 #### Example
 
@@ -5480,6 +5499,10 @@ Searches the appointments from the appointment list of Schedule control based on
 </table>
 
 
+
+####Returns:
+
+object
 
 #### Example
 
