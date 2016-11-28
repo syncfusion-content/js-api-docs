@@ -3114,7 +3114,7 @@ rteeObj.getCommandStatus(("bold");  // Gets the bold status form selected text i
 ### getDocument()
 {:#methods:getDocument}
 
-Gets the HTML string from the RTE control.
+Gets the Document from the RTE control.
 
 #### Returns: Document
 
@@ -3182,7 +3182,7 @@ $("#rteSample").ejRTE("getHtml");// Gets the html string from the rte.
 
 Gets the selected HTML string from the RTE control.
 
-#### Returns: Document
+#### Returns: Element
 
 #### Example
 
