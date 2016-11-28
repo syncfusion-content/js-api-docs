@@ -5504,6 +5504,11 @@ Expand or collapse the card based on the state of target "div"
 
 Used for get the names of all the visible column name collections in Kanban.
 
+#### Returns:
+{:#methods:returns:}
+
+Array
+
 #### Example
 
 {% highlight html %}
@@ -5531,6 +5536,11 @@ Used for get the names of all the visible column name collections in Kanban.
 {:#methods:getscrollobject}
 
 Get the scroller object of Kanban.
+
+#### Returns:
+{:#methods:returns:}
+
+ej.Scroller
 
 #### Example
 
