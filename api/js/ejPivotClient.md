@@ -2111,6 +2111,10 @@ Re-renders the control with the report at that instant.
 
 Returns the OlapReport string maintained along with the axis elements information.
 
+#### Returns:
+
+string
+
 **Example:**
 
 {% highlight javascript %}
@@ -2136,6 +2140,10 @@ Sets the OlapReport string along with the axis information and maintains it in a
 {:#methods:getjsonrecords}
 
 Returns the JSON records formed to render the control.
+
+#### Returns:
+
+array
 
 **Example:**
 

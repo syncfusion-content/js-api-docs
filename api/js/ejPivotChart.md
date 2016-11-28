@@ -1141,6 +1141,10 @@ This function receives the update from service-end, which would be utilized for 
 
 Returns the OlapReport string maintained along with the axis elements information.
 
+#### Returns:
+
+string
+
 >**Note**: This method is applicable only on operating the control in server mode.
 
 **Example:**
@@ -1171,6 +1175,10 @@ Sets the OlapReport string along with the axis information and maintains it in a
 
 Returns the JSON records formed to render the control.
 
+#### Returns
+
+array
+
 **Example:**
 
 {% highlight javascript %}
@@ -1196,6 +1204,10 @@ Sets the JSON records to render the control.
 {:#methods:getpivotengine}
 
 Returns the PivotEngine formed to render the control.
+
+#### Returns:
+
+array
 
 **Example:**
 

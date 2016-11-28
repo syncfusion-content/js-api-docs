@@ -41,6 +41,10 @@ This function sets the caption for all fields in datasource is it is not set.
 
 This function returns the data required to render the field list formed from the raw data source.
 
+#### Returns: 
+
+array
+
 **Example:**
 
 {% highlight javascript %}
@@ -53,6 +57,10 @@ This function returns the data required to render the field list formed from the
 
 This function forms the pivot engine and JSON data required to render the Pivot Controls from the datasource.
 
+#### Returns:
+
+object
+
 **Example:**
 
 {% highlight javascript %}
@@ -64,6 +72,10 @@ This function forms the pivot engine and JSON data required to render the Pivot 
 {:#methods:getmembers}
 
 This function returns the list of members available in the given field.
+
+#### Returns:
+
+array
 
 **Example:**
 
