@@ -176,7 +176,7 @@ string
 ### getZoomFactor()
 {:#methods:getzoomfactor}
 
-Gets the current zoom factor value of the document container.
+Gets the current zoom factor value of the document editor.
 
 N> This method does not accept any arguments.
 
@@ -196,7 +196,7 @@ number
 ### setZoomFactor(factor)
 {:#methods:setzoomfactor}
 
-Scales the document container with the specified zoom factor. The range of zoom factor should be 0.10 to 5.00.
+Scales the document editor with the specified zoom factor. The range of zoom factor should be 0.10 to 5.00 (10 - 500 %).
 
 <table>
 <thead>
