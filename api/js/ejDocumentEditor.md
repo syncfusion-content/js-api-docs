@@ -92,10 +92,10 @@ Loads the document from specified path using web API provided by importUrl.
 <tbody>
 <tr>
 <td>
-Path
+path
 </td>
 <td>
-String
+string
 </td>
 <td>
 Specifies the file path.
@@ -118,6 +118,12 @@ Specifies the file path.
 
 Gets the page number of current selection in the document.
 
+N> This method does not accept any arguments.
+
+####Returns:
+
+number
+
 #### Example
 
 {% highlight html %}
@@ -131,6 +137,12 @@ Gets the page number of current selection in the document.
 {:#methods:getpagecount}
 
 Gets the total number of pages in the document.
+
+N> This method does not accept any arguments.
+
+####Returns:
+
+number
 
 #### Example
 
@@ -146,6 +158,12 @@ Gets the total number of pages in the document.
 
 Gets the text of current selection in the document.
 
+N> This method does not accept any arguments.
+
+####Returns:
+
+string
+
 #### Example
 
 {% highlight html %}
@@ -158,7 +176,13 @@ Gets the text of current selection in the document.
 ### getZoomFactor()
 {:#methods:getzoomfactor}
 
-Gets the current zoom factor value of the document container.
+Gets the current zoom factor value of the document editor.
+
+N> This method does not accept any arguments.
+
+####Returns:
+
+number
 
 #### Example
 
@@ -169,10 +193,39 @@ Gets the current zoom factor value of the document container.
 </script>
 {% endhighlight %}
 
-### setZoomFactor()
+### setZoomFactor(factor)
 {:#methods:setzoomfactor}
 
-Scales the document container with the specified zoom factor. The range of zoom factor should be 0.10 to 5.00.
+Scales the document editor with the specified zoom factor. The range of zoom factor should be 0.10 to 5.00 (10 - 500 %).
+
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+factor
+</td>
+<td>
+number
+</td>
+<td>
+Specifies the factor for zooming.
+</td>
+</tr>
+</tbody>
+</table>
 
 #### Example
 
@@ -188,6 +241,8 @@ Scales the document container with the specified zoom factor. The range of zoom 
 {:#methods:print}
 
 Prints the document content as page by page.
+
+N> This method does not accept any arguments.
 
 #### Example
 
@@ -220,10 +275,10 @@ Finds the first occurrence of specified text from current selection and  highlig
 <tbody>
 <tr>
 <td>
-Text
+text
 </td>
 <td>
-String 
+string 
 </td>
 <td>
 Specifies the text to search in a document.
