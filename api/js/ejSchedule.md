@@ -4913,10 +4913,6 @@ This method is used to delete the appointment based on the guid value or the app
     </tbody>
 </table>
 
-####Returns:
-
-object
-
 #### Example - Using GUID Value
 
 The following code snippet explain how to delete an appointment by using the GUID, while clicking an appointment.
@@ -5111,7 +5107,7 @@ Searches and filters the appointments from appointment list of Schedule control.
 
 ####Returns:
 
-object
+array
 
 #### Example
 
@@ -5173,7 +5169,7 @@ Gets the complete appointment list of Schedule control.
 
 ####Returns:
 
-object
+array
 
 #### Example
 
@@ -5502,7 +5498,7 @@ Searches the appointments from the appointment list of Schedule control based on
 
 ####Returns:
 
-object
+array
 
 #### Example
 
