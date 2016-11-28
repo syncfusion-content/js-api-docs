@@ -6391,12 +6391,11 @@ width : 600
 
 
 
-
-
 To destroy the bullet graph
 
 
 
+#### Returns: void
 
 
 #### Example
@@ -6442,6 +6441,7 @@ To redraw the bullet graph
 
 
 
+#### Returns: void
 
 
 #### Example
@@ -6511,6 +6511,8 @@ argument.Measure{% endhighlight %}</td>
 
 
 
+#### Returns: void
+
 
 #### Example
 
@@ -6578,6 +6580,7 @@ argument.Measure{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example

@@ -2776,6 +2776,10 @@ Specifies the weight value path of the treemap
 
 Method to reload treemap with updated values.
 
+
+#### Returns: void
+
+
 #### Example
 
 {% highlight js %}

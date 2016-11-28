@@ -5951,6 +5951,9 @@ $("#Spreadsheet").ejSpreadsheet("removeRange", "updateTable");
 
 This method is used to save JSON data in Spreadsheet.
 
+####Returns:
+Object
+
 #### Example
 
 {% highlight html %}
@@ -8072,6 +8075,9 @@ This method is used to get the property value in specified cell in Spreadsheet.
 </tbody>
 </table>
 
+####Returns:
+Object|String|Array
+
 #### Example
 
 {% highlight html %}
@@ -8241,7 +8247,7 @@ Object
 <script>
 // Initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.getExportProps(); // Gets export properties in Spreadsheet.
+xlObj.XLExport.getExportProps(); // Gets export properties in Spreadsheet.
 </script>
 {% endhighlight %}
 
@@ -8353,6 +8359,9 @@ This method is used to create a table for the selected range of cells in the Spr
 </tr>
 </tbody>
 </table>
+
+####Returns:
+String
 
 #### Example
 
@@ -8816,6 +8825,9 @@ This method is used to create pivot table.
 </tbody>
 </table>
 
+####Returns:
+String
+
 #### Example
 
 {% highlight html %}
@@ -9277,7 +9289,7 @@ This method is used to dynamically add the menu item in the file menu.
 <script>
 //initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLRibbon.addMenuItem([{ id: "SignIn1", text: "AddMenuItem", parentId: "FILE", spriteCssClass: "e-icon e-ssr-cut" }], 2);; // To add the menu item in the ribbon.
+xlObj.XLRibbon.addMenuItem([{ id: "SignIn1", text: "AddMenuItem", parentId: "FILE", spriteCssClass: "e-icon e-ssr-cut" }], 2); // To add the menu item in the ribbon.
 </script>
 
 {% endhighlight %}
@@ -9699,7 +9711,7 @@ This method is used to update the menu item in the file menu.
 <script>
 //initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLRibbon.updateMenuItem([{ id: "SignIn1", text: "AddMenuItem", parentId: "FILE", spriteCssClass: "e-icon e-ssr-cut"}], 3);; // To update the menu item in the file menu
+xlObj.XLRibbon.updateMenuItem([{ id: "SignIn1", text: "AddMenuItem", parentId: "FILE", spriteCssClass: "e-icon e-ssr-cut"}], 3); // To update the menu item in the file menu
 </script>
 
 {% endhighlight %}
@@ -10126,6 +10138,9 @@ This method is used to set a picture in the Spreadsheet.
 </tbody>
 </table>
 
+####Returns:
+String
+
 #### Example
 
 {% highlight html %}
@@ -10214,6 +10229,9 @@ This method is used to sort a particular range of cells based on its values in t
 </tr>
 </tbody>
 </table>
+
+####Returns:
+Boolean
 
 #### Example
 

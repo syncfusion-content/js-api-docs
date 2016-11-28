@@ -32517,11 +32517,12 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hqmmhpgk)
 {:#methods:animate}
 
 
-
-
 Animates the series and/or indicators in Chart. When parameter is not passed to this method, then all the series and indicators present in Chart are animated.
 
 Following are the parameters that you can pass to this method.
+
+
+#### Returns: void
 
 
 <table class="params">
@@ -32569,10 +32570,14 @@ chartObj.animate(chartObj.model.indicators[0]);
 
 
 
-
 Exports chart as an image or to an excel file. Chart can be exported as an image only when exportCanvasRendering option is set to true.
 
 Following are the parameters that you can pass to this method,
+
+
+
+#### Returns: object
+
 
 
 <table class="params">
@@ -32643,6 +32648,8 @@ chartObj.export("excel", 'http://js.syncfusion.com/ExportingServices/api/JSChart
 
 Redraws the entire chart. You can call this method whenever you update, add or remove points from the data source or whenever you want to refresh the UI.
 
+
+#### Returns: void
 
 
 #### Example
