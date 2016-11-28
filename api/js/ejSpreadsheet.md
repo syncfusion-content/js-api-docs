@@ -7135,6 +7135,92 @@ xlObj.XLCFormat.setCFRule({ "action": "lessthan", "input1": "30", "color": "yell
 ### XLChart
 {:#methods:xlchart}
 
+### XLChart.changeTheme(chartId, theme)
+{:#methods:xlchart-changetheme}
+
+This method is used to change the theme of the chart in the Spreadsheet.
+
+<table>
+<tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+chartId</td><td>
+string</td><td>
+Pass the chart id.</td></tr>
+<tr>
+<td>
+theme</td><td>
+enum</td><td>
+Pass the chart theme which want to update.</td></tr>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1"
+var theme = ej.datavisualization.Chart.Theme.Azuredark; 
+xlObj.XLChart.changeTheme(chartId, theme); // To update chart theme.
+</script>
+
+{% endhighlight %}
+
+N> You can use the supported [chart themes](https://help.syncfusion.com/api/js/ejchart#members:theme "").
+
+### XLChart.changeDataRange(chartId, xRange, yRange, lRange)
+{:#methods:xlchart-changedatarange}
+
+This method is used to change the data range of the chart in the Spreadsheet.
+
+<table>
+<tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+chartId</td><td>
+string</td><td>
+Pass the chart id.</td></tr>
+<tr>
+<td>
+xRange</td><td>
+string</td><td>
+X axis range of chart data.</td></tr>
+<tr>
+<td>
+yRange</td><td>
+string</td><td>
+Y axis range of chart data.</td></tr>
+<tr>
+<td>
+lRange</td><td>
+string</td><td>
+Legend range of chart data.</td></tr>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1";
+xlObj.XLChart.changeDataRange(chartId, "A2:A7", "A2:B5", "A1:B1"); // To change the data range of the chart.
+</script>
+
+{% endhighlight %}
+
+
 ### XLChart.createChart(\[range\], \[options\])
 {:#methods:xlchart-createchart}
 
@@ -7246,6 +7332,170 @@ This method is used to resize the chart of specified id in the Spreadsheet.
 // Create Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 xlObj.XLChart.resizeChart("Spreadsheet_Chart1", 200, 300); // It is used to resize the chart in Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+### XLChart.updateChartElement(chartId, value)
+{:#methods:xlchart-updatechartelement}
+
+This method is used to update the chart element, such as axes, titles, data labels, grid lines and legends in the Spreadsheet.
+
+<table>
+<tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+chartId</td><td>
+string</td><td>
+Pass the chart id.</td></tr>
+<tr>
+<td>
+value</td><td>
+enum</td><td>
+Pass chart element value which you want to update.</td></tr>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1", value = ej.Spreadsheet.ChartProperties.PrimaryHorizontal;
+xlObj.XLChart.updateChartElement(chartId, value); // To update chart property.
+</script>
+
+{% endhighlight %}
+
+Specifies the chart element value in the Spreadsheet,
+
+<table>
+<tr>
+<th>
+Name</th><th>
+Description</th></tr>
+<tr>
+<td>
+DataLabelCenter</td><td>
+Specifies to make the data label center of the chart.</td></tr>
+<tr>
+<td>
+DataLabelInsideBase</td><td>
+Specifies to make the data label inside base of the chart.</td></tr>
+<tr>
+<td>
+DataLabelInsideEnd</td><td>
+Specifies to make the data label inside end of the chart.</td></tr>
+<tr>
+<td>
+DataLabelNone</td><td>
+Specifies to make the data label none of the chart.</td></tr>
+<tr>
+<td>
+DataLabelOutsideEnd</td><td>
+Specifies to make the data label outside end of the chart.</td></tr>
+<tr>
+<td>
+LegendsBottom</td><td>
+Specifies to make the legends to bottom of the chart.</td></tr>
+<tr>
+<td>
+LegendsLeft</td><td>
+Specifies to make the legends to left of the chart.</td></tr>
+<tr>
+<td>
+LegendsNone</td><td>
+Specifies to make the legends to none of the chart.</td></tr>
+<tr>
+<td>
+LegendsRight</td><td>
+Specifies to make the legends to right of the chart.</td></tr>
+<tr>
+<td>
+LegendsTop</td><td>
+Specifies to make the legends to top of the chart.</td></tr>
+<tr>
+<td>
+PrimaryHorizontal</td><td>
+To set the primary horizontal of the chart.</td></tr>
+<tr>
+<td>
+PrimaryHorizontalAxisTitle</td><td>
+To set the primary horizontal axis title of the chart.</td></tr>
+<tr>
+<td>
+PrimaryMajorHorizontal</td><td>
+To set the primary major horizontal of the chart.</td></tr>
+<tr>
+<td>
+PrimaryMajorVertical</td><td>
+To set the primary major vertical of the chart.</td></tr>
+<tr>
+<td>
+PrimaryMinorHorizontal</td><td>
+To set the primary minor horizontal of the chart.</td></tr>
+<tr>
+<td>
+PrimaryMinorVertical</td><td>
+To set the primary minor vertical of the chart.</td></tr>
+<tr>
+<td>
+PrimaryVertical</td><td>
+To set the primary vertical of the chart.</td></tr>
+<tr>
+<td>
+PrimaryVerticalAxisTitle</td><td>
+To set the primary vertical axis title of the chart.</td></tr>
+<tr>
+<td>
+TitleCenter</td><td>
+Specifies to make the title to center of the chart.</td></tr>
+<tr>
+<td>
+TitleFar</td><td>
+Specifies to make the title to far of the chart.</td></tr>
+<tr>
+<td>
+TitleNear</td><td>
+Specifies to make the title to near of the chart.</td></tr>
+<tr>
+<td>
+TitleNone</td><td>
+Specifies to make the title to none of the chart.</td></tr>
+</table>
+
+### XLChart.switchRowColumn(chartId)
+{:#methods:xlchart-switchrowcolumn}
+
+This method is used switch row to columns and vice versa for chart in the Spreadsheet. So that the data is displayed in the chart the way you want.
+
+<table>
+<tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td>
+chartId</td><td>
+string</td><td>
+Pass the chart id.</td></tr>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1";
+xlObj.XLChart.switchRowColumn(chartId);
 </script>
 
 {% endhighlight %}
@@ -9834,6 +10084,24 @@ xlObj.XLSearch.replaceAllBySheet("Sheet", "Spreadsheet", true, false); // Sends 
 ### XLSelection
 {:#methods:xlselection}
 
+### XLSelection.clearAll()
+{:#methods:xlselection-clearall}
+
+This method is used to clear the selection of the active sheet in the Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLSelection.clearAll(); // To clear selection.
+</script>
+
+{% endhighlight %}
+
 ### XLSelection.getSelectedCells(sheetIdx)
 {:#methods:xlselection-getselectedcells}
 
@@ -11007,6 +11275,76 @@ $("#Spreadsheet").ejSpreadsheet({
 
 {% endhighlight %}
 
+### beforeEditComment
+{:#events:beforeeditcomment}
+
+Triggered while start to edit the comment.
+
+<table class="params">
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when beforeEditComment event is triggered.
+<table>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th></tr>
+<tr>
+<td class="name">sheetIdx</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the sheet index.</td>
+</tr>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the comment cell index.</td></tr>
+<tr>
+<td class="name">disable</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the disable option value.</td></tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">value</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the value of the comment</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</table>
+</td></tr>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// beforeEditComment event for Spreadsheet
+$('#Spreadsheet').ejSpreadsheet({   
+    beforeEditComment: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
 ### beforeOpen
 {:#events:beforeopen}
 
@@ -11832,6 +12170,64 @@ $("#Spreadsheet").ejSpreadsheet({
 
 {% endhighlight %}
 
+### dragShape
+{:#events:dragshape}
+
+Triggered when you start to drag the picture or chart.
+
+<table class="params">
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when dragShape event is triggered.
+<table>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">element</span></td>
+<td class="description">Returns the target element.</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</table>
+</td></tr>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// dragShape event for Spreadsheet
+$('#Spreadsheet').ejSpreadsheet({   
+    dragShape: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
 ### dragStart
 {:#events:dragstart}
 
@@ -12568,6 +12964,150 @@ Triggered when pager item is clicked in the Spreadsheet.
 // pagerClick event for Spreadsheet
 $('#Spreadsheet').ejSpreadsheet({ 
     pagerClick: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+### resizeStart
+{:#events:resizestart}
+
+Triggered when you start resizing the chart, picture, row and column.
+
+<table class="params">
+<tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Arguments when resizeStart event is triggered.
+<table><tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">colIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the column index which column you start to resize.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the row index which row you start to resize.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td>
+</tr>
+<tr>
+<td class="name">reqType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns type of the request.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+</table>
+</td></tr>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// resizeStart event for Spreadsheet
+$('#Spreadsheet').ejSpreadsheet({   
+    resizeStart: function (args){}
+});
+</script>
+
+{% endhighlight %}
+
+## resizeEnd
+{:#events:resizeend}
+
+Triggered after end of resizing the chart, picture, row and column.
+
+<table class="params">
+<tr>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
+<tr>
+<td class="name">argument</td>
+<td class="type"> <span class="param-type">object</span></td>
+<td class="description">Arguments when resizeEnd event is triggered.<table>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th></tr>
+<tr>
+<td class="name">colIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the column index which you resized.</td></tr>
+<tr>
+<td class="name">oldWidth</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns old width of the column or shape.</td></tr>
+<tr>
+<td class="name">newWidth</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns new width of the column or shape.</td></tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the row index which you resized.</td></tr>
+<tr>
+<td class="name">oldHeight</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns old height of the row or shape.</td></tr>
+<tr>
+<td class="name">newHeight</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns new height of the row or shape.</td></tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Spreadsheet model.</td></tr>
+<tr>
+<td class="name">reqType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns type of the request.</td></tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td></tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td></tr>
+</table>
+</td>
+</tr>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// resizeEnd event for Spreadsheet
+$('#Spreadsheet').ejSpreadsheet({   
+    resizeEnd: function (args){}
 });
 </script>
 
