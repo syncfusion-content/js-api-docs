@@ -13036,7 +13036,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-## resizeEnd
+### resizeEnd
 {:#events:resizeend}
 
 Triggered after end of resizing the chart, picture, row and column.
