@@ -68,10 +68,9 @@ $("#daterangepicker").ejDateRangePicker();
 
 * module:jQuery
 
+* module:ej.core.js
 
 * module:ej.globalize.js
-
-* module:ej.core.js
 
 * module:ej.scroller.js
 
@@ -194,7 +193,7 @@ Sets the specified text value to the available buttons (Reset, Cancel, Apply) in
 
 
 
-Sets the root CSS class for DateRangePicker theme, which is used customize.
+Sets the root CSS class for DateRangePicker theme, which is used to customize.
 
 
 
@@ -240,7 +239,7 @@ Sets the root CSS class for DateRangePicker theme, which is used customize.
 
 
 
-Formats the date value of  the DateRangePicker in to the specified date format. If this API is not specified, dateFormat will be set based on the current culture of DateRangePicker.
+Formats the date value of the DateRangePicker in to the specified date format. If this API is not specified, dateFormat will be set based on the current culture of DateRangePicker.
 
 
 
@@ -295,7 +294,7 @@ Formats the date value of  the DateRangePicker in to the specified date format. 
 
 
 
-Allows to embed the TimePicker also along with the calendars in the popup.
+Allows to embed the Timepicker aling with the calendars in the page, two timepicker will be render, for selecting start and end date.
 
 
 
@@ -506,7 +505,7 @@ Specifies the end date of the date ranges.
 
 
 
-Specifies the height of the DateRangePicker input .
+Specifies the height of the DateRangePicker input.
 
 
 
@@ -592,6 +591,7 @@ Change the DateRangePicker calendar and date format based on given culture.
 Used to add the preset ranges. Added ranges using this, will show in popup in right side for easy selection of different preset ranges.
 
 
+
 #### Default Value:
 
 * null
@@ -602,7 +602,7 @@ Set the name to preset range
 
 ### ranges.range `array`
 
-Get and Set the startDate , end Date of predefined set ranges. The first argument to this field will consider as startDate, and second one will consider as endDate.
+Get and Set the startDate, end Date of predefined set ranges. The first argument to this field will consider as startDate, and second one will consider as endDate.
 
  
 #### Example 
@@ -786,7 +786,7 @@ DateRangePicker input and popup is displayed with rounded corner when this prope
 
 
 
-Formats the date value of  the DateRangePicker in to the specified time format. If this API is not specified, timeFormat will be set based on the current culture of DateRangePicker.
+Formats the date value of the DateRangePicker in to the specified time format. If this API is not specified, timeFormat will be set based on the current culture of DateRangePicker.
 
 
 
@@ -1044,7 +1044,7 @@ Clears the all ranges selections in DateRangePicker popup
 <input type="text" id="daterangepicker" />
 <script>
 $("#daterangepicker").ejDateRangePicker();
-// Create DateRangePicker instance
+// create DateRangePicker instance
 var dateObj = $("#daterangepicker").data("ejDateRangePicker");
 dateObj.dateObj.clearRanges(); // clear  the DateRangePicker ranges selection
 </script>
@@ -1351,7 +1351,7 @@ dateObj.dateObj.setRange("new Range"); lear  the DateRangePicker ranges selectio
 $("#daterangepicker").ejDateRangePicker();
 // Create DateRangePicker instance
 var dateObj = $("#daterangepicker").data("ejDateRangePicker");
-dateObj.dateObj.setRange([new Date("11/12/2011"), new Date("11/12/2019")]); set the predefined set of range DateRangePicke
+dateObj.dateObj.setRange([new Date("11/12/2011"), new Date("11/12/2019")]); set the predefined set of range DateRangePicker
 </script>
 
 {% endhighlight %}
@@ -1383,7 +1383,7 @@ Fires before closing the DateRangePicker popup.
 <td class="name">
 model</td>
 <td class="type"><ts ref="ej.DateRangePicker.Model"/><span class="param-type">object</span></td>
-<td class="description">returns the DateRangePicker model.</td>
+<td class="description">returns the DateRangePicker model</td>
 </tr>
 <tr>
 <td class="name">
@@ -1399,7 +1399,7 @@ events</td>
 </tr>
 <tr>
 <td class="name">
-element</td>
+element </td>
 <td class="type"><span class="param-type">Element</span></td>
 <td class="description">returns the DateRangePicker popup.</td>
 </tr>
