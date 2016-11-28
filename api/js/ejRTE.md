@@ -2831,7 +2831,7 @@ Increases and decreases the contents zoom range in percentage
 
 Returns the range object.
 
-#### Returns: string
+#### Returns: Object
 
 #### Example
 
@@ -3091,7 +3091,7 @@ $("#rteSample").ejRTE("focus");// Focuses the RTE.
 
 Gets the command status of the selected text based on the given comment in the RTE control.
 
-#### Returns: string
+#### Returns: boolean
 
 #### Example
 
@@ -3116,7 +3116,7 @@ rteeObj.getCommandStatus(("bold");  // Gets the bold status form selected text i
 
 Gets the HTML string from the RTE control.
 
-#### Returns: string
+#### Returns: Document
 
 #### Example
 
@@ -3142,7 +3142,7 @@ Gets the HTML string from the RTE control.
 
 Gets the HTML string from the RTE control.
 
-#### Returns: string
+#### Returns: Element
 
 #### Example
 
@@ -3182,7 +3182,7 @@ $("#rteSample").ejRTE("getHtml");// Gets the html string from the rte.
 
 Gets the selected HTML string from the RTE control.
 
-#### Returns: string
+#### Returns: Document
 
 #### Example
 
@@ -3426,7 +3426,7 @@ Column will be added based on the given cell element
 </tbody>
 </table>
 
-#### Returns: string
+#### Returns: Element 
 
 #### Example
 
@@ -3503,7 +3503,7 @@ Row will be added based on the given cell element
 </tbody>
 </table>
 
-#### Returns: string
+#### Returns: Element 
 
 #### Example
 
