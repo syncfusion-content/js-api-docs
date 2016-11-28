@@ -120,7 +120,7 @@ Gets the page number of current selection in the document.
 
 N> This method does not accept any arguments.
 
-####Returns:
+#### Returns:
 
 number
 
@@ -140,7 +140,7 @@ Gets the total number of pages in the document.
 
 N> This method does not accept any arguments.
 
-####Returns:
+#### Returns:
 
 number
 
@@ -160,7 +160,7 @@ Gets the text of current selection in the document.
 
 N> This method does not accept any arguments.
 
-####Returns:
+#### Returns:
 
 string
 
@@ -180,7 +180,7 @@ Gets the current zoom factor value of the document editor.
 
 N> This method does not accept any arguments.
 
-####Returns:
+#### Returns:
 
 number
 
