@@ -13014,6 +13014,10 @@ Add nodes and connectors to diagram at runtime
 	</tbody>
 </table>
 
+#### Returns:
+
+* booloean 
+
 #### Example
 
 {% highlight html %}
@@ -13371,7 +13375,7 @@ Copy the selected object to internal clipboard and get the copied object
 
 #### Returns:
 
-* Object
+* object
 
 #### Example
 
@@ -13469,7 +13473,7 @@ Export the diagram as downloadable files or as data
 
 #### Returns:
 
-* String
+* string
 
 #### Example
 
@@ -13518,7 +13522,7 @@ Read a node/connector object by its name
 
 #### Returns:
 
-* Object
+* object
 
 #### Example
 
@@ -13965,7 +13969,7 @@ Returns the diagram as serialized JSON
 
 #### Returns:
 
-* Object
+* object
 
 #### Example
 
@@ -14282,7 +14286,7 @@ Update the given label at runtime
 
 #### Returns:
 
-* Object
+* object
 
 #### Example
 

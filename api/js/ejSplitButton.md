@@ -10,12 +10,7 @@ keywords: SplitButton, ejSplitButton, syncfusion, SplitButton api
 # ejSplitButton
 
 
-
 The Split button allows you to perform an action using clicking the button and choosing extra options from the dropdown button. The Split button also can display both text and images.
-
-
-
-
 
 
 
@@ -27,14 +22,6 @@ The Split button allows you to perform an action using clicking the button and c
 $(element).ejSplitButton()
 
 {% endhighlight %}
-
-
-
-
-
-
-
-
 
 
 
@@ -55,9 +42,6 @@ $(element).ejSplitButton()
 // simple control creation
  $("#sbutton").ejSplitButton({targetID:"target",width:100});
 </script>{% endhighlight %}
-
-
-
 
 
 
@@ -91,22 +75,11 @@ N> jQuery.easing external dependency has been removed from version 14.3.0.49 onw
 
 
 
-
-
-
-
-
 ### arrowPosition `string|enum`
 {:#members:arrowposition}
 
 
 <ts name = "ej.ArrowPosition"/>
-
-
-
-
-
-
 
 
 Specifies the arrowPosition of the Split or Dropdown Button.See arrowPosition
@@ -146,30 +119,12 @@ Bottom</td>
 
 
 
-
-
-
-
 #### Default Value
-
-
-
-
-
-
 
 * ej.ArrowPosition.Right
 
 
-
-
-
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -188,20 +143,11 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100, contentType: ej.Conte
 
 
 
-
-
-
 ### buttonMode `string|enum`
 {:#members:buttonmode}
 
 
 <ts name = "ej.ButtonMode"/>
-
-
-
-
-
-
 
 
 Specifies the buttonMode like Split or Dropdown Button.See ButtonMode
@@ -230,23 +176,9 @@ Dropdown</td>
 
 
 
-
-
 #### Default Value
 
-
-
-
-
-
-
 * ej.ButtonMode.Split
-
-
-
-
-
-
 
 
 #### Example
@@ -270,20 +202,11 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100, contentType: ej.Conte
 
 
 
-
-
-
 ### contentType `string|enum`
 {:#members:contenttype}
 
 
 <ts name = "ej.ContentType"/>
-
-
-
-
-
-
 
 
 Specifies the contentType of the Split Button.See ContentType
@@ -327,27 +250,12 @@ ImageTextImage</td>
 
 
 
-
-
 #### Default Value
-
-
-
-
-
-
 
 * ej.ContentType.TextOnly
 
 
-
-
-
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -365,43 +273,18 @@ $("#sbutton").ejSplitButton({ targetID: "target",width:100, contentType:  ej.Con
 
 
 
-
-
-
 ### cssClass `string`
 {:#members:cssclass}
 
 
-
-
-
-
-
-
 Set the root class for Split Button control theme
 
-
-
-
 #### Default Value
-
-
-
-
-
-
 
 * ""
 
 
-
-
-
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -419,44 +302,18 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100,cssClass: "gradient-li
 
 
 
-
-
-
-
 ### enabled `boolean`
 {:#members:enabled}
 
 
-
-
-
-
-
-
 Specifies the disabling of Split Button if enabled is set to false.
 
-
-
-
 #### Default Value
-
-
-
-
-
-
 
 * true
 
 
-
-
-
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -474,45 +331,18 @@ $("#sbutton").ejSplitButton({  targetID: "target",width:100,enabled:  true });
 
 
 
-
-
-
-
 ### enableRTL `boolean`
 {:#members:enablertl}
 
 
-
-
-
-
-
-
 Specifies the enableRTL property for Split Button while initialization.
 
-
-
-
 #### Default Value
-
-
-
-
-
-
 
 * false
 
 
-
-
-
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -530,43 +360,19 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100,enableRTL : true});
 
 
 
-
-
-
 ### height `string|number`
 {:#members:height}
-
-
-
-
-
-
-
 
 Specifies the height of the Split Button.
 
 
-
-
 #### Default Value
-
-
-
-
-
-
 
 * &ldquo;&rdquo;
 
 
 
-
-
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -585,42 +391,18 @@ $("#sbutton").ejSplitButton({  targetID: "target",width:100,height: 28 });
 
 
 
-
-
 ### htmlAttributes `object`
 {:#members:htmlattributes}
-
-
-
-
-
-
-
 
 Specifies the HTML Attributes of the Split Button.
 
 
-
-
 #### Default Value
-
-
-
-
-
-
 
 * {}
 
 
-
-
-
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -639,19 +421,11 @@ $("#sbutton").ejSplitButton({  htmlAttributes : {disabled:"disabled"} });
 
 
 
-
-
 ### imagePosition `string|enum`
 {:#members:imageposition}
 
 
 <ts name = "ej.ImagePosition"/>
-
-
-
-
-
-
 
 
 Specifies the imagePosition of the Split Button.See imagePositions
@@ -690,26 +464,12 @@ ImageBottom</td>
 
 
 
-
 #### Default Value
-
-
-
-
-
-
 
 * ej.ImagePosition.ImageRight
 
 
-
-
-
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -730,43 +490,19 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100, contentType: ej.Conte
 
 
 
-
-
 ### prefixIcon `string`
 {:#members:prefixicon}
-
-
-
-
-
-
 
 
 Specifies the image content for Split Button while initialization.
 
 
-
-
 #### Default Value
-
-
-
-
-
-
 
 * ""
 
 
-
-
-
-
-
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -786,41 +522,19 @@ $("#sbutton").ejSplitButton({targetID: "target",width:100,contentType: "imageonl
 
 
 
-
 ### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
-
-
-
-
-
-
 
 
 Specifies the showRoundedCorner property for Split Button while initialization.
 
 
-
-
 #### Default Value
-
-
-
-
-
-
 
 * false
 
 
-
-
-
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -840,19 +554,11 @@ $("#sbutton").ejSplitButton({ targetID:"target",width:100,showRoundedCorner: tru
 
 
 
-
-
 ### size `string|enum`
 {:#members:size}
 
 
 <ts name = "ej.ButtonSize"/>
-
-
-
-
-
-
 
 
 Specifies the size of the Button. See ButtonSize
@@ -896,26 +602,13 @@ Normal</td>
 
 
 
-
 #### Default Value
-
-
-
-
-
-
 
 * ej.ButtonSize.Normal
 
 
 
-
-
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -935,42 +628,20 @@ Normal</td>
 
 
 
-
-
 ### suffixIcon `string`
 {:#members:suffixicon}
-
-
-
-
-
-
 
 
 Specifies the image content for Split Button while initialization.
 
 
-
-
 #### Default Value
-
-
-
-
-
-
 
 * ""
 
 
 
-
-
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -991,41 +662,19 @@ $("#sbutton").ejSplitButton({targetID:"target",width:100,contentType:"imageboth"
 
 
 
-
 ### targetID `string`
 {:#members:targetid}
-
-
-
-
-
-
 
 
 Specifies the list content for Split Button while initialization
 
 
-
-
 #### Default Value
-
-
-
-
-
-
 
 * ""
 
 
-
-
-
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -1045,42 +694,19 @@ $("#sbutton").ejSplitButton({targetID:"target",width:100 });
 
 
 
-
-
 ### text `string`
 {:#members:text}
-
-
-
-
-
-
 
 
 Specifies the text content for Split Button while initialization.
 
 
-
-
 #### Default Value
-
-
-
-
-
-
 
 * ""
 
 
-
-
-
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -1101,37 +727,16 @@ $("#sbutton").ejSplitButton({  targetID: "target",width:100, text: "New" });
 
 
 
-
 ### width `string|number`
 {:#members:width}
-
-
-
-
-
-
 
 
 Specifies the width of the Split Button.
 
 
-
-
 #### Default Value
 
-
-
-
-
-
-
 * &ldquo;&rdquo;
-
-
-
-
-
-
 
 
 #### Example
@@ -1153,35 +758,16 @@ $("#sbutton").ejSplitButton({  targetID: "target",width:100 });
 
 
 
-
-
 ## Methods
-
-
-
-
-
-
 
 
 ### destroy()
 {:#methods:destroy}
 
-
-
-
-
-
-
-
-destroy the split button widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
-
-
-
+Destroy the split button widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
 
 
 #### Example
-
 
 
 {% highlight html %}
@@ -1216,28 +802,14 @@ $("#sbutton").ejSplitButton("destroy");
 
 
 
-
-
-
-
 ### disable()
 {:#methods:disable}
 
 
 
-
-
-
-
-
 To disable the split button
 
-
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -1272,28 +844,14 @@ $("#sbutton").ejSplitButton("disable");
 
 
 
-
-
-
-
 ### enable()
 {:#methods:enable}
-
-
-
-
-
-
 
 
 To Enable the split button
 
 
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -1328,28 +886,14 @@ $("#sbutton").ejSplitButton("enable");
 
 
 
-
-
-
-
 ### hide()
 {:#methods:hide}
-
-
-
-
-
-
 
 
 To hide the list content of the split button.
 
 
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -1384,28 +928,14 @@ $("#sbutton").ejSplitButton("hide");
 
 
 
-
-
-
-
 ### show()
 {:#methods:show}
-
-
-
-
-
-
 
 
 To show the list content of the split button.
 
 
-
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -1441,24 +971,11 @@ $("#sbutton").ejSplitButton("show");
 
 
 
-
 ## Events
-
-
-
-
-
-
 
 
 ### beforeOpen
 {:#events:beforeopen}
-
-
-
-
-
-
 
 
 Fires before menu of the split button control is opened.
@@ -1494,10 +1011,7 @@ type</td>
 </table>
 
 
-
-
 #### Example
-
 
 
 {% highlight html %}
@@ -1515,37 +1029,12 @@ type</td>
 </script>{% endhighlight %}
 
 
-
-
-
-
-
 ### click
 {:#events:click}
 
 
-
-
-
-
-
-
 Fires when Button control is clicked successfully
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from split button
 <table class="params">
 <thead>
 <tr>
@@ -1587,16 +1076,9 @@ status</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
 
 
 #### Example
-
 
 
 {% highlight html %}
@@ -1618,35 +1100,12 @@ $("#sbutton"). ejSplitButton ({
 
 
 
-
-
-
 ### close
 {:#events:close}
 
 
-
-
-
-
-
-
 Fires before the list content of Button control is closed
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from split button
 <table class="params">
 <thead>
 <tr>
@@ -1676,16 +1135,10 @@ type</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
-
 
 
 
 #### Example
-
 
 
 {% highlight html %}
@@ -1707,35 +1160,12 @@ $("#sbutton"). ejSplitButton ({
 
 
 
-
-
-
 ### create
 {:#events:create}
 
 
-
-
-
-
-
-
 Fires after Split Button control is created.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
@@ -1765,17 +1195,9 @@ type</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
 
 
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1796,35 +1218,12 @@ $("#sbutton"). ejSplitButton ({
 
 
 
-
-
-
 ### destroy
 {:#events:destroy}
 
 
-
-
-
-
-
-
 Fires when the Split Button is destroyed successfully
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from split button
 <table class="params">
 <thead>
 <tr>
@@ -1854,17 +1253,9 @@ type</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
 
 
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1885,35 +1276,11 @@ $("#sbutton"). ejSplitButton ({
 
 
 
-
-
-
 ### itemMouseOut
 {:#events:itemmouseout}
 
-
-
-
-
-
-
-
 Fires when a menu item is Hovered out successfully
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from split button
 <table class="params">
 <thead>
 <tr>
@@ -1979,17 +1346,9 @@ Text</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
 
 
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2009,36 +1368,11 @@ $("#sbutton"). ejSplitButton ({
 
 
 
-
-
-
-
 ### itemMouseOver
 {:#events:itemmouseover}
 
-
-
-
-
-
-
-
 Fires when a menu item is Hovered in successfully
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from split button
 <table class="params">
 <thead>
 <tr>
@@ -2104,17 +1438,10 @@ Text</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
-
 
 
 
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2136,34 +1463,11 @@ $("#sbutton"). ejSplitButton ({
 
 
 
-
-
 ### itemSelected
 {:#events:itemselected}
 
-
-
-
-
-
-
-
 Fires when a menu item is clicked successfully
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from split button
 <table class="params">
 <thead>
 <tr>
@@ -2217,17 +1521,10 @@ menuText</td>
 </tr>
 </tbody>
 </table>
-</td>
-</tr>
-</tbody>
-</table>
-
 
 
 
 #### Example
-
-
 
 {% highlight html %}
  
@@ -2249,34 +1546,12 @@ $("#sbutton"). ejSplitButton ({
 
 
 
-
-
 ### open
 {:#events:open}
 
 
-
-
-
-
-
-
 Fires before the list content of Button control is opened
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from split button
 <table class="params">
 <thead>
 <tr>
@@ -2303,10 +1578,6 @@ model</td>
 type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
-</tr>
-</tbody>
-</table>
-</td>
 </tr>
 </tbody>
 </table>

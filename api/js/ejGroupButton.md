@@ -1334,7 +1334,7 @@ Returns the disabled state of the specified element button element in GroupButto
 
 ####Returns
 
-Boolean
+boolean
 
 #### Example
 
@@ -1375,7 +1375,7 @@ Returns the state of the specified button element as Boolean.
 
 ####Returns 
 
-Boolean
+boolean
 
 #### Example
 
@@ -1573,99 +1573,79 @@ Specific button element</td></tr>
 Triggered before any button element in the GroupButton get selected.
 
 <table class="params">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="name"> 
-                    argument
-                </td>
-                <td class="type"><span class="param-type">Object</span></td>
-                <td class="description">
-                    Event parameters from button
-                    <table class="params">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Type</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="name">
-                                    disabled
-                                </td>
-                                <td class="type"><span class="param-type">boolean</span></td>
-                                <td class="description">Boolean value based on whether the button element is disabled or not.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    element
-                                </td>
-                                <td class="type"><span class="param-type">object</span></td>
-                                <td class="description">Returns the selection button element.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    event
-                                </td>
-                                <td class="type"><span class="param-type">object</span></td>
-                                <td class="description">Event object</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    id
-                                </td>
-                                <td class="type"><span class="param-type">string</span></td>
-                                <td class="description">Return the button element ID.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    index
-                                </td>
-                                <td class="type"><span class="param-type">number</span></td>
-                                <td class="description">Button item index.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    model
-                                </td>
-                                <td class="type"><ts ref="ej.GroupButton.Model"/><span class="param-type">object</span> </td>
-                                <td class="description">returns the button model</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    selected
-                                </td>
-                                <td class="type"><span class="param-type">boolean</span></td>
-                                <td class="description">Boolean value based on whether the button element is selected or not.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    type
-                                </td>
-                                <td class="type"><span class="param-type">string</span></td>
-                                <td class="description">returns the name of the event</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    status
-                                </td>
-                                <td class="type"><span class="param-type">boolean</span></td>
-                                <td class="description">return the button state</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-        </table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">
+                disabled
+            </td>
+            <td class="type"><span class="param-type">boolean</span></td>
+            <td class="description">Boolean value based on whether the button element is disabled or not.</td>
+        </tr>
+        <tr>
+            <td class="name">
+                element
+            </td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description">Returns the selection button element.</td>
+        </tr>
+        <tr>
+            <td class="name">
+                event
+            </td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description">Event object</td>
+        </tr>
+        <tr>
+            <td class="name">
+                id
+            </td>
+            <td class="type"><span class="param-type">string</span></td>
+            <td class="description">Return the button element ID.</td>
+        </tr>
+        <tr>
+            <td class="name">
+                index
+            </td>
+            <td class="type"><span class="param-type">number</span></td>
+            <td class="description">Button item index.</td>
+        </tr>
+        <tr>
+            <td class="name">
+                model
+            </td>
+            <td class="type"><ts ref="ej.GroupButton.Model"/><span class="param-type">object</span> </td>
+            <td class="description">returns the button model</td>
+        </tr>
+        <tr>
+            <td class="name">
+                selected
+            </td>
+            <td class="type"><span class="param-type">boolean</span></td>
+            <td class="description">Boolean value based on whether the button element is selected or not.</td>
+        </tr>
+        <tr>
+            <td class="name">
+                type
+            </td>
+            <td class="type"><span class="param-type">string</span></td>
+            <td class="description">returns the name of the event</td>
+        </tr>
+        <tr>
+            <td class="name">
+                status
+            </td>
+            <td class="type"><span class="param-type">boolean</span></td>
+            <td class="description">return the button state</td>
+        </tr>
+    </tbody>
+</table>
 
 
 #### Example
@@ -1701,24 +1681,8 @@ Triggered before any button element in the GroupButton get selected.
 {:#events:create}
 
 
-
-
 Fires after GroupButton control is created.If the user want to perform any operation after the button control creation then the user can make use of this create event.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from button
 <table class="params">
 <thead>
 <tr>
@@ -1746,10 +1710,6 @@ model</td>
 type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
-</tr>
-</tbody>
-</table>
-</td>
 </tr>
 </tbody>
 </table>
@@ -1802,20 +1762,6 @@ Fires when the GroupButton is destroyed successfully.If the user want to perform
 <tbody>
 <tr>
 <td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from GroupButton
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
 cancel</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">if the event should be canceled; otherwise, false.</td>
@@ -1832,10 +1778,6 @@ model</td>
 type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event</td>
-</tr>
-</tbody>
-</table>
-</td>
 </tr>
 </tbody>
 </table>
@@ -1878,99 +1820,79 @@ Triggered once the key is pressed, when the control is in focused state.
 
 
 <table class="params">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="name">
-                    argument
-                </td>
-                <td class="type"><span class="param-type">Object</span></td>
-                <td class="description">
-                    Event parameters from button
-                    <table class="params">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Type</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="name">
-                                    disabled
-                                </td>
-                                <td class="type"><span class="param-type">boolean</span></td>
-                                <td class="description">Boolean value based on whether the button element is disabled or not.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    element
-                                </td>
-                                <td class="type"><span class="param-type">object</span></td>
-                                <td class="description">Returns the selection button element.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    event
-                                </td>
-                                <td class="type"><span class="param-type">object</span></td>
-                                <td class="description">Event object</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    id
-                                </td>
-                                <td class="type"><span class="param-type">string</span></td>
-                                <td class="description">Return the button element ID.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    index
-                                </td>
-                                <td class="type"><span class="param-type">number</span></td>
-                                <td class="description">Button item index.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    model
-                                </td>
-                                <td class="type"><ts ref="ej.GroupButton.Model"/><span class="param-type">object</span></td>
-                                <td class="description">returns the button model</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    selected
-                                </td>
-                                <td class="type"><span class="param-type">boolean</span></td>
-                                <td class="description">Boolean value based on whether the button element is selected or not.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    type
-                                </td>
-                                <td class="type"><span class="param-type">string</span></td>
-                                <td class="description">returns the name of the event</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    status
-                                </td>
-                                <td class="type"><span class="param-type">boolean</span></td>
-                                <td class="description">return the button state</td>
-                            </tr>
-        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-        </table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">
+                disabled
+            </td>
+            <td class="type"><span class="param-type">boolean</span></td>
+            <td class="description">Boolean value based on whether the button element is disabled or not.</td>
+        </tr>
+        <tr>
+            <td class="name">
+                element
+            </td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description">Returns the selection button element.</td>
+        </tr>
+        <tr>
+            <td class="name">
+                event
+            </td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description">Event object</td>
+        </tr>
+        <tr>
+            <td class="name">
+                id
+            </td>
+            <td class="type"><span class="param-type">string</span></td>
+            <td class="description">Return the button element ID.</td>
+        </tr>
+        <tr>
+            <td class="name">
+                index
+            </td>
+            <td class="type"><span class="param-type">number</span></td>
+            <td class="description">Button item index.</td>
+        </tr>
+        <tr>
+            <td class="name">
+                model
+            </td>
+            <td class="type"><ts ref="ej.GroupButton.Model"/><span class="param-type">object</span></td>
+            <td class="description">returns the button model</td>
+        </tr>
+        <tr>
+            <td class="name">
+                selected
+            </td>
+            <td class="type"><span class="param-type">boolean</span></td>
+            <td class="description">Boolean value based on whether the button element is selected or not.</td>
+        </tr>
+        <tr>
+            <td class="name">
+                type
+            </td>
+            <td class="type"><span class="param-type">string</span></td>
+            <td class="description">returns the name of the event</td>
+        </tr>
+        <tr>
+            <td class="name">
+                status
+            </td>
+            <td class="type"><span class="param-type">boolean</span></td>
+            <td class="description">return the button state</td>
+        </tr>
+    </tbody>
+</table>
 
 
 
@@ -2011,99 +1933,79 @@ Triggered when the button element get selected.
 
 
 <table class="params">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Type</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="name">
-                    argument
-                </td>
-                <td class="type"><span class="param-type">Object</span></td>
-                <td class="description">
-                    Event parameters from button
-                    <table class="params">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Type</th>
-                                <th>Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="name">
-                                    disabled
-                                </td>
-                                <td class="type"><span class="param-type">boolean</span></td>
-                                <td class="description">Boolean value based on whether the selected button element is disabled or not.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    element
-                                </td>
-                                <td class="type"><span class="param-type">object</span></td>
-                                <td class="description">Returns the selection button element.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    event
-                                </td>
-                                <td class="type"><span class="param-type">object</span></td>
-                                <td class="description">Event object</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    id
-                                </td>
-                                <td class="type"><span class="param-type">string</span></td>
-                                <td class="description">Return the selected button element ID.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    index
-                                </td>
-                                <td class="type"><span class="param-type">number</span></td>
-                                <td class="description">Selected button item index.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    model
-                                </td>
-                                <td class="type"><ts ref="ej.GroupButton.Model"/><span class="param-type">object</span></td>
-                                <td class="description">returns the button model</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    selected
-                                </td>
-                                <td class="type"><span class="param-type">boolean</span></td>
-                                <td class="description">Boolean value based on whether the button element is selected or not.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    type
-                                </td>
-                                <td class="type"><span class="param-type">string</span></td>
-                                <td class="description">returns the name of the event</td>
-                            </tr>
-                            <tr>
-                                <td class="name">
-                                    status
-                                </td>
-                                <td class="type"><span class="param-type">boolean</span></td>
-                                <td class="description">return the button state</td>
-                            </tr>
-                         </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-        </table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">
+                disabled
+            </td>
+            <td class="type"><span class="param-type">boolean</span></td>
+            <td class="description">Boolean value based on whether the selected button element is disabled or not.</td>
+        </tr>
+        <tr>
+            <td class="name">
+                element
+            </td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description">Returns the selection button element.</td>
+        </tr>
+        <tr>
+            <td class="name">
+                event
+            </td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description">Event object</td>
+        </tr>
+        <tr>
+            <td class="name">
+                id
+            </td>
+            <td class="type"><span class="param-type">string</span></td>
+            <td class="description">Return the selected button element ID.</td>
+        </tr>
+        <tr>
+            <td class="name">
+                index
+            </td>
+            <td class="type"><span class="param-type">number</span></td>
+            <td class="description">Selected button item index.</td>
+        </tr>
+        <tr>
+            <td class="name">
+                model
+            </td>
+            <td class="type"><ts ref="ej.GroupButton.Model"/><span class="param-type">object</span></td>
+            <td class="description">returns the button model</td>
+        </tr>
+        <tr>
+            <td class="name">
+                selected
+            </td>
+            <td class="type"><span class="param-type">boolean</span></td>
+            <td class="description">Boolean value based on whether the button element is selected or not.</td>
+        </tr>
+        <tr>
+            <td class="name">
+                type
+            </td>
+            <td class="type"><span class="param-type">string</span></td>
+            <td class="description">returns the name of the event</td>
+        </tr>
+        <tr>
+            <td class="name">
+                status
+            </td>
+            <td class="type"><span class="param-type">boolean</span></td>
+            <td class="description">return the button state</td>
+        </tr>
+    </tbody>
+</table>
 
 
 
