@@ -608,6 +608,10 @@ To get the error word highlighted string by passing the given input sentence.
     </tbody>
 </table>
 
+#### Returns
+
+object
+
 #### Example
 
 {% highlight html %}
@@ -659,6 +663,10 @@ To ignore all the error word occurrences from the given input sentence.
         </tr>        
     </tbody>
 </table>
+
+#### Returns
+
+object
 
 #### Example
 
@@ -713,6 +721,10 @@ To ignore the error word once from the given input sentence.
         </tr>
     </tbody>
 </table>
+
+#### Returns
+
+object
 
 #### Example
 
@@ -773,6 +785,10 @@ To change the error word once from the given input sentence.
     </tbody>
 </table>
 
+#### Returns
+
+object
+
 #### Example
 
 {% highlight html %}
@@ -830,6 +846,10 @@ To change all the error word occurrences from the given input sentence.
     </tbody>
 </table>
 
+#### Returns
+
+object
+
 #### Example
 
 {% highlight html %}
@@ -872,6 +892,10 @@ To add the words into the custom dictionary.
         </tr>
     </tbody>
 </table>
+
+#### Returns
+
+object
 
 #### Example
 
