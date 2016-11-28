@@ -5884,7 +5884,7 @@ Expand or collapse the row based on the row state in grid
 #### Returns:
 {:#methods:returns:}
 
-Element
+Void
 
 
 ####Example
@@ -7946,7 +7946,7 @@ Save the particular edited cell in grid.
 #### Returns:
 {:#methods:returns:}
 
-Boolean
+Void
 
 ####Example
 {:.example}
@@ -8873,7 +8873,7 @@ Send an edit record request in grid
 #### Returns:
 {:#methods:returns:}
 
-Element
+Void
 
 ####Example
 {:.example}
