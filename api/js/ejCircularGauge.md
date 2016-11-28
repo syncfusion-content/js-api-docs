@@ -5619,6 +5619,8 @@ $("#CoreCircularGauge").ejCircularGauge({ width: 400 });
 destroy the circular gauge widget. all events bound using this._on will be unbind automatically and bring the control to pre-init state.
 
 
+#### Returns: void
+
 
 #### Example
 
@@ -5669,6 +5671,8 @@ argument.fileType{% endhighlight %}</td>
 </table>
 
 
+#### Returns: boolean
+
 #### Example
 
 
@@ -5716,6 +5720,8 @@ argument.pointerIndex{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+#### Returns: any
 
 
 #### Example
@@ -5765,6 +5771,8 @@ argument.customLabelIndex{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+#### Returns: any
 
 
 #### Example
@@ -5816,6 +5824,8 @@ argument.customLabelIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
+
 #### Example
 
 
@@ -5864,6 +5874,8 @@ argument.labelIndex{% endhighlight %}</td>
 </tbody>
 </table>
 
+
+#### Returns: any
 
 #### Example
 
@@ -5914,6 +5926,8 @@ argument.labelIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
+
 #### Example
 
 
@@ -5963,6 +5977,8 @@ argument.labelIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
+
 #### Example
 
 
@@ -6011,6 +6027,8 @@ argument.labelIndex{% endhighlight %}</td>
 </tbody>
 </table>
 
+#### Returns: any
+
 
 #### Example
 
@@ -6053,6 +6071,8 @@ argument.scaleIndex{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+#### Returns: any
 
 
 #### Example
@@ -6103,6 +6123,8 @@ argument.pointerIndex{% endhighlight %}</td>
 </tbody>
 </table>
 
+#### Returns: any
+
 
 #### Example
 
@@ -6152,6 +6174,8 @@ argument.pointerIndex{% endhighlight %}</td>
 </tbody>
 </table>
 
+#### Returns: any
+
 
 #### Example
 
@@ -6194,6 +6218,8 @@ argument.scaleIndex{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+#### Returns: any
 
 
 #### Example
@@ -6239,6 +6265,8 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
+
 #### Example
 
 
@@ -6280,6 +6308,8 @@ argument.scaleIndex{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+#### Returns: any
 
 
 #### Example
@@ -6331,6 +6361,8 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
+
 #### Example
 
 
@@ -6374,6 +6406,8 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
+
 #### Example
 
 
@@ -6416,6 +6450,8 @@ argument.scaleIndex{% endhighlight %}</td>
 </tbody>
 </table>
 
+
+#### Returns: any
 
 #### Example
 
@@ -6466,6 +6502,8 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
+
 #### Example
 
 
@@ -6514,6 +6552,7 @@ argument.pointerIndex{% endhighlight %}</td>
 </tbody>
 </table>
 
+#### Returns: any
 
 #### Example
 
@@ -6564,6 +6603,8 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
+
 #### Example
 
 
@@ -6611,6 +6652,10 @@ argument.pointerIndex{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+
+
+#### Returns: any
 
 
 #### Example
@@ -6662,6 +6707,9 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
+
+
 #### Example
 
 
@@ -6709,6 +6757,10 @@ argument.rangeIndex{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+
+
+#### Returns: any
 
 
 #### Example
@@ -6760,6 +6812,9 @@ argument.rangeIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
+
+
 #### Example
 
 
@@ -6807,6 +6862,9 @@ argument.rangeIndex{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+
+#### Returns: any
 
 
 #### Example
@@ -6858,6 +6916,9 @@ argument.rangeIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
+
+
 #### Example
 
 
@@ -6905,6 +6966,10 @@ argument.rangeIndex{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+
+
+#### Returns: any
 
 
 #### Example
@@ -6956,6 +7021,8 @@ argument.rangeIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
+
 #### Example
 
 
@@ -6997,6 +7064,9 @@ argument.scaleIndex{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+
+#### Returns: any
 
 
 #### Example
@@ -7042,6 +7112,9 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
+
+
 #### Example
 
 
@@ -7084,6 +7157,8 @@ argument.scaleIndex{% endhighlight %}</td>
 </tbody>
 </table>
 
+
+#### Returns: any
 
 #### Example
 
@@ -7128,6 +7203,9 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
+
+
 #### Example
 
 
@@ -7169,6 +7247,8 @@ argument.scaleIndex{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+#### Returns: any
 
 
 #### Example
@@ -7219,6 +7299,8 @@ argument.GaugeIndex{% endhighlight %}</td>
 </tbody>
 </table>
 
+#### Returns: any
+
 
 #### Example
 
@@ -7264,6 +7346,9 @@ argument.scaleIndex{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+
+#### Returns: any
 
 
 #### Example
@@ -7314,6 +7399,8 @@ argument.tickIndex{% endhighlight %}</td>
 </tbody>
 </table>
 
+#### Returns: any
+
 
 #### Example
 
@@ -7362,6 +7449,8 @@ argument.tickIndex{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+#### Returns: any
 
 
 #### Example
@@ -7412,6 +7501,8 @@ argument.labelIndex{% endhighlight %}</td>
 </tbody>
 </table>
 
+#### Returns: any
+
 
 #### Example
 
@@ -7460,6 +7551,8 @@ argument.tickIndex{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+#### Returns: any
 
 
 #### Example
@@ -7510,6 +7603,8 @@ argument.tickIndex{% endhighlight %}</td>
 </tbody>
 </table>
 
+#### Returns: any
+
 
 #### Example
 
@@ -7558,6 +7653,9 @@ argument.tickIndex{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+
+#### Returns: any
 
 
 #### Example
@@ -7614,6 +7712,7 @@ argument.value{% endhighlight %}</td>
 </tbody>
 </table>
 
+#### Returns: void
 
 #### Example
 
@@ -7656,6 +7755,8 @@ argument.value{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+#### Returns: void
 
 
 #### Example
@@ -7712,6 +7813,7 @@ argument.value{% endhighlight %}</td>
 </tbody>
 </table>
 
+#### Returns: void
 
 #### Example
 
@@ -7766,6 +7868,8 @@ argument.value{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+#### Returns: void
 
 
 #### Example
@@ -7823,6 +7927,9 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
+
+
 #### Example
 
 
@@ -7876,6 +7983,9 @@ argument.angle{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+
+#### Returns: void
 
 
 #### Example
@@ -7933,6 +8043,9 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
+
+
 #### Example
 
 
@@ -7986,6 +8099,9 @@ argument.value{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+
+#### Returns: void
 
 
 #### Example
@@ -8043,6 +8159,9 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
+
+
 #### Example
 
 
@@ -8091,6 +8210,8 @@ argument.value{% endhighlight %}</td>
 </tbody>
 </table>
 
+
+#### Returns: void
 
 #### Example
 
@@ -8147,6 +8268,8 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
+
 #### Example
 
 
@@ -8202,6 +8325,10 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
+
+#### Returns: void
+
+
 #### Example
 
 
@@ -8249,6 +8376,9 @@ argument.value{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+
+#### Returns: void
 
 
 #### Example
@@ -8299,6 +8429,8 @@ argument.value{% endhighlight %}</td>
 </tbody>
 </table>
 
+#### Returns: void
+
 
 #### Example
 
@@ -8347,6 +8479,9 @@ argument.value{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+
+#### Returns: void
 
 
 #### Example
@@ -8404,6 +8539,9 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
+
+
 #### Example
 
 
@@ -8453,6 +8591,9 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
+
+
 #### Example
 
 
@@ -8500,6 +8641,8 @@ argument.value{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+#### Returns: void
 
 
 #### Example
@@ -8556,6 +8699,8 @@ argument.value{% endhighlight %}</td>
 </tbody>
 </table>
 
+#### Returns: void
+
 
 #### Example
 
@@ -8611,6 +8756,8 @@ argument.value{% endhighlight %}</td>
 </tbody>
 </table>
 
+#### Returns: void
+
 
 #### Example
 
@@ -8665,6 +8812,8 @@ argument.value{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+#### Returns: void
 
 
 #### Example
@@ -8722,6 +8871,8 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
+
 #### Example
 
 
@@ -8775,6 +8926,8 @@ argument.value{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+#### Returns: void
 
 
 #### Example
@@ -8832,6 +8985,10 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
+
+
+
 #### Example
 
 
@@ -8886,6 +9043,8 @@ argument.value{% endhighlight %}</td>
 </tbody>
 </table>
 
+
+#### Returns: void
 
 #### Example
 
@@ -8942,6 +9101,9 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
+
+
 #### Example
 
 
@@ -8995,6 +9157,8 @@ argument.value{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+#### Returns: void
 
 
 #### Example
@@ -9051,6 +9215,8 @@ argument.value{% endhighlight %}</td>
 </tbody>
 </table>
 
+#### Returns: void
+
 
 #### Example
 
@@ -9106,6 +9272,8 @@ argument.value{% endhighlight %}</td>
 </tbody>
 </table>
 
+#### Returns: void
+
 
 #### Example
 
@@ -9154,6 +9322,8 @@ argument.value{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+#### Returns: void
 
 
 #### Example
@@ -9205,6 +9375,9 @@ argument.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
+
+
 #### Example
 
 
@@ -9252,6 +9425,8 @@ argument.value{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+#### Returns: void
 
 
 #### Example
@@ -9302,6 +9477,8 @@ argument.value{% endhighlight %}</td>
 </tbody>
 </table>
 
+#### Returns: void
+
 
 #### Example
 
@@ -9350,6 +9527,8 @@ argument.value{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+#### Returns: void
 
 
 #### Example
@@ -9406,6 +9585,8 @@ argument.value{% endhighlight %}</td>
 </tbody>
 </table>
 
+#### Returns: void
+
 
 #### Example
 
@@ -9457,6 +9638,8 @@ argument.value{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+#### Returns: void
 
 
 #### Example
@@ -9513,6 +9696,8 @@ argument.value{% endhighlight %}</td>
 </tbody>
 </table>
 
+#### Returns: void
+
 
 #### Example
 
@@ -9567,6 +9752,8 @@ argument.value{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+#### Returns: void
 
 
 #### Example
@@ -9623,6 +9810,8 @@ argument.value{% endhighlight %}</td>
 </tbody>
 </table>
 
+#### Returns: void
+
 
 #### Example
 
@@ -9677,6 +9866,8 @@ argument.value{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+#### Returns: void
 
 
 #### Example
@@ -9733,6 +9924,8 @@ argument.value{% endhighlight %}</td>
 </tbody>
 </table>
 
+#### Returns: void
+
 
 #### Example
 
@@ -9787,6 +9980,8 @@ argument.value{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+#### Returns: void
 
 
 #### Example

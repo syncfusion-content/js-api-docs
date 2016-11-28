@@ -1503,6 +1503,10 @@ $("#container").ejSparkline({
 
 Redraws the entire sparkline. You can call this method whenever you update, add or remove points from the data source or whenever you want to refresh the UI.
 
+
+#### Returns: void
+
+
 #### Example
 
 {% highlight js %}

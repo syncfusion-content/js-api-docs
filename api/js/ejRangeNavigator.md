@@ -6395,7 +6395,7 @@ This property determines the starting position of the zoomed axis. Value must be
 destroy the range navigator widget
 
 
-
+#### Returns: void
 
 
 #### Example

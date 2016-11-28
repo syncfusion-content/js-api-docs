@@ -3553,6 +3553,10 @@ Method for navigating to specific shape based on latitude, longitude and zoom le
     </tbody>
 </table>
 
+
+#### Returns: void
+
+
 #### Example
 
 {% highlight js %}
@@ -3585,6 +3589,9 @@ Method to perform map panning
     </tbody>
 </table>
 
+#### Returns: void
+
+
 #### Example
 
 {% highlight js %}
@@ -3600,6 +3607,9 @@ Method to perform map panning
 
 Method to reload the map.
 
+
+#### Returns: void
+
 #### Example
 
 {% highlight js %}
@@ -3614,6 +3624,10 @@ Method to reload the map.
 {:#methods:refreshlayers}
 
 Method to reload the shapeLayers with updated values
+
+
+#### Returns: void
+
 
 #### Example
 
@@ -3646,6 +3660,10 @@ Method to reload the navigation control with updated values.
         </tr>
     </tbody>
 </table>
+
+
+#### Returns: void
+
 
 #### Example
 
@@ -3681,6 +3699,9 @@ Method to perform map zooming.
         </tr>
     </tbody>
 </table>
+
+#### Returns: void
+
 
 #### Example
 

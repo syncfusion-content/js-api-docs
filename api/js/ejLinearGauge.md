@@ -7980,7 +7980,7 @@ Specifies the width of Linear gauge.
 destroy the linear gauge all events bound using this._on will be unbind automatically and bring the control to pre-init state.
 
 
-
+#### Returns: void
 
 
 #### Example
@@ -8039,7 +8039,7 @@ argument.fileType{% endhighlight %}</td>
 </table>
 
 
-
+#### Returns: void
 
 #### Example
 
@@ -8097,7 +8097,7 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
-
+#### Returns: any
 
 #### Example
 
@@ -8154,7 +8154,7 @@ argument.pointerIndex{% endhighlight %}</td>
 </tbody>
 </table>
 
-
+#### Returns: any
 
 
 #### Example
@@ -8213,6 +8213,7 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -8271,7 +8272,7 @@ argument.customLabelIndex{% endhighlight %}</td>
 </tbody>
 </table>
 
-
+#### Returns: any
 
 
 #### Example
@@ -8330,7 +8331,7 @@ argument.customLabelIndex{% endhighlight %}</td>
 </table>
 
 
-
+#### Returns: any
 
 #### Example
 
@@ -8388,7 +8389,7 @@ argument.labelIndex{% endhighlight %}</td>
 </table>
 
 
-
+#### Returns: any
 
 #### Example
 
@@ -8445,7 +8446,7 @@ argument.labelIndex{% endhighlight %}</td>
 </tbody>
 </table>
 
-
+#### Returns: any
 
 
 #### Example
@@ -8504,7 +8505,7 @@ argument.labelIndex{% endhighlight %}</td>
 </table>
 
 
-
+#### Returns: any
 
 #### Example
 
@@ -8561,7 +8562,7 @@ argument.labelIndex{% endhighlight %}</td>
 </tbody>
 </table>
 
-
+#### Returns: any
 
 
 #### Example
@@ -8619,7 +8620,7 @@ argument.labelIndex{% endhighlight %}</td>
 </tbody>
 </table>
 
-
+#### Returns: any
 
 
 #### Example
@@ -8672,7 +8673,7 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
-
+#### Returns: any
 
 #### Example
 
@@ -8730,7 +8731,7 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
-
+#### Returns: any
 
 #### Example
 
@@ -8781,7 +8782,7 @@ argument.scaleIndex{% endhighlight %}</td>
 </tbody>
 </table>
 
-
+#### Returns: any
 
 
 #### Example
@@ -8840,7 +8841,7 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
-
+#### Returns: any
 
 #### Example
 
@@ -8892,6 +8893,7 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -8950,6 +8952,7 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -9008,6 +9011,7 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -9066,6 +9070,7 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -9124,6 +9129,7 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -9182,6 +9188,7 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -9240,6 +9247,7 @@ argument.rangeIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -9298,6 +9306,7 @@ argument.rangeIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -9356,6 +9365,7 @@ argument.rangeIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -9414,6 +9424,7 @@ argument.rangeIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -9472,6 +9483,7 @@ argument.rangeIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -9530,6 +9542,7 @@ argument.rangeIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -9588,6 +9601,7 @@ argument.rangeIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -9640,6 +9654,7 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -9698,6 +9713,7 @@ argument.pointerIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -9750,6 +9766,7 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -9802,6 +9819,7 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -9854,6 +9872,7 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -9906,6 +9925,7 @@ argument.scaleIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -9964,6 +9984,7 @@ argument.TickIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -10022,6 +10043,7 @@ argument.TickIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -10080,6 +10102,7 @@ argument.TickIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -10138,6 +10161,7 @@ argument.TickIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -10196,6 +10220,7 @@ argument.TickIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -10254,6 +10279,7 @@ argument.TickIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -10312,6 +10338,7 @@ argument.TickIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: any
 
 
 #### Example
@@ -10362,6 +10389,7 @@ Specifies the scales.
 
 
 
+#### Returns: void
 
 
 
@@ -10425,6 +10453,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -10489,6 +10518,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -10553,6 +10583,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -10617,6 +10648,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -10681,6 +10713,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -10745,6 +10778,7 @@ arguemnt.angle{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -10809,6 +10843,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -10873,6 +10908,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -10937,6 +10973,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -11001,6 +11038,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -11059,6 +11097,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -11123,6 +11162,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -11181,6 +11221,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -11239,6 +11280,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -11297,6 +11339,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -11360,6 +11403,8 @@ arguemnt.value{% endhighlight %}</td>
 </tbody>
 </table>
 
+
+#### Returns: void
 
 
 
@@ -11425,6 +11470,7 @@ arguemnt.height{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -11489,6 +11535,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -11553,6 +11600,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -11617,6 +11665,7 @@ arguemnt.width{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -11681,6 +11730,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -11745,6 +11795,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -11809,6 +11860,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -11873,6 +11925,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -11937,6 +11990,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -12001,6 +12055,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -12065,6 +12120,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -12123,6 +12179,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -12181,6 +12238,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -12239,6 +12297,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -12297,6 +12356,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -12355,6 +12415,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -12413,6 +12474,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -12477,6 +12539,7 @@ arguemnt.angle{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -12541,6 +12604,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -12605,6 +12669,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -12669,6 +12734,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -12733,6 +12799,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -12797,6 +12864,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -12861,6 +12929,7 @@ arguemnt.value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example

@@ -2048,6 +2048,7 @@ To destroy the digital gauge
 
 
 
+#### Returns: void
 
 
 #### Example
@@ -2106,6 +2107,7 @@ fileType{% endhighlight %}</td>
 </table>
 
 
+#### Returns: boolean
 
 
 #### Example
@@ -2158,6 +2160,7 @@ itemIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: object
 
 
 #### Example
@@ -2210,6 +2213,7 @@ itemIndex{% endhighlight %}</td>
 </table>
 
 
+#### Returns: object
 
 
 #### Example
@@ -2244,7 +2248,7 @@ DigitalGaugeObj.getValue(0);
 Refresh the digital gauge widget
 
 
-
+#### Returns: void
 
 
 #### Example
@@ -2303,6 +2307,7 @@ value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
@@ -2361,6 +2366,7 @@ value{% endhighlight %}</td>
 </table>
 
 
+#### Returns: void
 
 
 #### Example
