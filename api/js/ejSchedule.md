@@ -4913,6 +4913,11 @@ This method is used to delete the appointment based on the guid value or the app
     </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
+
+Void
+
 #### Example - Using GUID Value
 
 The following code snippet explain how to delete an appointment by using the GUID, while clicking an appointment.
@@ -4993,6 +4998,11 @@ The following code snippet explain how to delete an appointment by passing appoi
 
 Destroys the Schedule widget. All the events bound using this._on are unbound automatically and the control is moved to pre-init state.
 
+#### Returns:
+{:#methods:returns:}
+
+Void
+
 #### Example
 
 {% highlight html %}
@@ -5041,6 +5051,10 @@ Exports the appointments from the Schedule control.
     </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 #### Example
 
@@ -5105,9 +5119,10 @@ Searches and filters the appointments from appointment list of Schedule control.
 </table>
 
 
-####Returns:
+#### Returns:
+{:#methods:returns:}
 
-array
+Array
 
 #### Example
 
@@ -5167,9 +5182,10 @@ var appointments=schObj.filterAppointments(filter); // filters the appointments 
 
 Gets the complete appointment list of Schedule control.
 
-####Returns:
+#### Returns:
+{:#methods:returns:}
 
-array
+Array
 
 #### Example
 
@@ -5240,6 +5256,11 @@ Prints the entire Scheduler or a single appointment based on the appointment dat
     </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
+
+Void
+
 #### Example
 
 {% highlight html %}
@@ -5299,6 +5320,11 @@ schObj.print(); // Prints entire Scheduler with all appointments
 
 Refreshes the Scroller of Scheduler while using it within some other controls or application.
 
+#### Returns:
+{:#methods:returns:}
+
+Void
+
 #### Example
 
 {% highlight html %}
@@ -5337,6 +5363,10 @@ It is used to save the appointment. The appointment object is based on the argum
     </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 #### Example
 
@@ -5391,9 +5421,10 @@ $('#Schedule').ejSchedule({
 
 Generate the recurrence rule as a string, based on the repeat options selected.
 
-####Returns:
+#### Returns:
+{:#methods:returns:}
 
-string
+String
 
 #### Example
 
@@ -5432,9 +5463,10 @@ Retrieves the time slot information (start/end time and resource details) of the
     </tbody>
 </table>
 
-####Returns:
+#### Returns:
+{:#methods:returns:}
 
-object
+Object
 
 #### Example
 
@@ -5494,11 +5526,10 @@ Searches the appointments from the appointment list of Schedule control based on
     </tbody>
 </table>
 
+#### Returns:
+{:#methods:returns:}
 
-
-####Returns:
-
-array
+Array
 
 #### Example
 
@@ -5553,6 +5584,11 @@ var appointments=schObj.searchAppointments("with"); // Searches the appointments
 
 Refreshes the entire Schedule control.
 
+#### Returns:
+{:#methods:returns:}
+
+Void
+
 #### Example
 
 {% highlight html %}
@@ -5572,6 +5608,11 @@ schObj.refresh(); // To refresh the Schedule control within the client side even
 
 Refreshes only the appointment elements within the Schedule control.
 
+#### Returns:
+{:#methods:returns:}
+
+Void
+
 #### Example
 
 {% highlight html %}
@@ -5590,6 +5631,11 @@ schObj.refreshAppointments(); // To refresh all the appointments within Schedule
 {:#methods:notifychanges}
 
 Passes the server-side action and data to the client-side for rendering the modified appointment list on the Schedule control.
+
+#### Returns:
+{:#methods:returns:}
+
+Void
 
 #### Example
 
