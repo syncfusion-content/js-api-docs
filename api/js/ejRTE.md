@@ -509,6 +509,167 @@ Enables the tab key action with the RichTextEditor content.
 </script>
 {% endhighlight %}
 
+### exportToPdfSettings `object`
+{:#members:exporttopdfsettings}
+
+This API allows to enable url and fileName for pdf export.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea ><script>
+// Initializes the RTE with the export to pdf url and filename value specified.
+$("#rteSample").ejRTE({  exportToPdfSettings: {
+  url: "http://js.syncfusion.com/demos/ejServices/api/RTE/PdfExport",
+ fileName: "Sample"
+}});
+</script>
+{% endhighlight %}
+
+### exportToPdfSettings.url `string`
+{:#members:exporttopdfsettings-url}
+
+This API is used to receive the server-side handler for export related operations.
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea ><script>
+    // Initializes the RTE with the specified exportToPdfSettings url value.
+    $("#rteSample").ejRTE({ exportToPdfSettings: {
+        url: "http://js.syncfusion.com/demos/ejServices/api/RTE/PdfExport"
+    }
+    });
+</script>
+{% endhighlight %}
+
+### exportToPdfSettings.fileName `string`
+{:#members:exporttopdfsettings-filename}
+
+Specifies the file name for the exported pdf file.
+
+#### Example
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea ><script>
+    // Initializes the RTE with the specified exportToPdfSettings fileName.
+    $("#rteSample").ejRTE({ exportToPdfSettings: {
+        fileName: "Sample"
+    }
+    });
+</script>
+{% endhighlight %}
+
+### exportToWordSettings `object`
+{:#members:exporttowordsettings}
+
+This API allows to enable url and fileName for word export.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea ><script>
+// Initializes the RTE with the export to word url and filename value specified.
+$("#rteSample").ejRTE({  exportToWordSettings: {
+  url: "http://js.syncfusion.com/demos/ejServices/api/RTE/WordExport",
+ fileName: "Sample"
+}});
+</script>
+{% endhighlight %}
+
+### exportToWordSettings.url `string`
+{:#members:exporttowordsettings-url}
+
+This API is used to receive the server-side handler for export related operations.
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea ><script>
+    // Initializes the RTE with the specified exportToWordSettings url value.
+    $("#rteSample").ejRTE({ exportToWordSettings: {
+        url: "http://js.syncfusion.com/demos/ejServices/api/RTE/WordExport"
+    }
+    });
+</script>
+{% endhighlight %}
+
+### exportToWordSettings.fileName `string`
+{:#members:exporttowordsettings-filename}
+
+Specifies the file name for the exported word file.
+
+#### Example
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea ><script>
+    // Initializes the RTE with the specified exportToWordSettings fileName.
+    $("#rteSample").ejRTE({ exportToWordSettings: {
+        fileName: "Sample"
+    }
+    });
+</script>
+{% endhighlight %}
+
+
 ### externalCSS `string`
 {:#members:externalcss}
 
@@ -961,6 +1122,62 @@ Specifies the directory to perform operations like create, delete and rename fol
     });
 </script>
 {% endhighlight %}
+
+### importSettings `object`
+{:#members:importsettings}
+
+This API allows to enable the url for connecting to RTE import.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea ><script>
+// Initializes the RTE with the Import url value specified.
+$("#rteSample").ejRTE({  
+  importSettings: { url: "http://js.syncfusion.com/demos/ejServices/api/RTE/Import" }
+});
+</script>
+{% endhighlight %}
+
+### importSettings.url `string`
+{:#members:importsettings-url}
+
+This API is used to receive the server-side handler for import operations.
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea ><script>
+    // Initializes the RTE with the specified import url value.
+    $("#rteSample").ejRTE({ 
+        importSettings: { url: "http://js.syncfusion.com/demos/ejServices/api/RTE/Import" }
+    
+    });
+</script>
+{% endhighlight %}
+
 
 ### isResponsive `boolean`
 {:#members:isresponsive}
@@ -2130,6 +2347,31 @@ Specifies the print tools and the display order of this tool in the RTE toolbar.
     // Initializes the RTE with the specified print tools value.
     $("#rteSample").ejRTE({ tools: {
             print: ["print"]
+            }    
+    });
+    </script>
+{% endhighlight %}
+
+### tools.importExport `array`
+{:#members:tools-importexport}
+
+Specifies the importExport tools and the display order of this tool in the RTE toolbar.
+
+#### Example
+
+{% highlight html %}
+ 
+<textarea id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea>
+   <script>
+    // Initializes the RTE with the specified importExport tools value.
+    $("#rteSample").ejRTE({ tools: {
+            importExport: ["import", "wordExport", "pdfExport"]
             }    
     });
     </script>
