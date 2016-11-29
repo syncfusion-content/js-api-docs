@@ -175,7 +175,7 @@ Sets the specific culture to the Recurrence Editor.
 
 {% endhighlight %}
 
-> To set any culture for Recurrence Editor, refer to the required minified globalize files of the specific culture. For example, to use fr-FR culture in Recurrence Editor, refer to the **globalize.culture.fr-FR.min.js** script file. Also define the locale words of that specific culture properly. For example, define the locale words for fr-FR culture in a variable ej.RecurrenceEditor.Locale[“fr-FR”] = { }; under script section.
+> To set any culture for Recurrence Editor, refer to the required minified globalize files of the specific culture. For example, to use fr-FR culture in Recurrence Editor, refer to the **globalize.culture.fr-FR.min.js** script file. Also define the locale words of that specific culture properly. For example, define the locale words for fr-FR culture in a variable ej.RecurrenceEditor.Locale["fr-FR"] = { }; under script section.
 
 ### dateFormat `string`
 {:#members:dateformat}
@@ -483,7 +483,7 @@ schObj.recurrenceRuleSplit(recurrenceRule,exDate);
 ### change
 {:#events:change}
 
-Triggers whenever any of the Recurrence Editor’s value is changed.  
+Triggers whenever any of the Recurrence Editor's value is changed.  
 
 <table class="params">
 <thead>
