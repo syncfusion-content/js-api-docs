@@ -584,7 +584,7 @@ Change the DateRangePicker calendar and date format based on given culture.
 
 
 
-### ranges
+### ranges `object`
 {:#members:ranges}
 
 
@@ -781,7 +781,7 @@ DateRangePicker input and popup is displayed with rounded corner when this prope
 
 
 
-### timeFormat 'string'
+### timeFormat `string`
 {:#members:timeformat}
 
 
@@ -1874,7 +1874,7 @@ type</td>
 <tr>
 <td class="name">
 endDate</td>
-<td class="type"><span class="param-type">objecr</span></td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current date value.</td>
 </tr>
 </tbody>
