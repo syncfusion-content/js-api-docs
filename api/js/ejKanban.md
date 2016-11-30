@@ -6161,7 +6161,7 @@ Send a filtering request to cards in the kanban.
 ### KanbanEdit.addCard(\[primaryKey\],\[card\])
 {:#methods:kanbanedit-addcard}
 
-Add a new card in Kanban control.If parameters are not given default dialog will be open.
+Add a new card in Kanban control when allowAdding is set as true. If parameters are not given default dialog will be open.
 
  <table class="params">
     <thead>
@@ -6210,7 +6210,7 @@ Add a new card in Kanban control.If parameters are not given default dialog will
 ### KanbanEdit.cancelEdit()
 {:#methods:kanbanedit-canceledit}
 
-Send a cancel request of add/edit card in Kanban.
+Send a cancel request of add/edit card in Kanban when allowEditing/allowAdding is set as true.
 
 #### Example
 
@@ -6238,7 +6238,7 @@ Send a cancel request of add/edit card in Kanban.
 ### KanbanEdit.deleteCard(Key)
 {:#methods:kanbanedit-deletecard}
 
-Delete a card in Kanban control.
+Delete a card in Kanban control when allowAdding/allowEditing is set as true.
 
 <table class="params">
     <thead>
@@ -6273,7 +6273,7 @@ Delete a card in Kanban control.
 ### KanbanEdit.endEdit()
 {:#methods:kanbanedit-endedit}
 
-Send a save request in Kanban when any card is in edit/new add card state.
+Send a save request in Kanban when any card is in edit/new add card state and allowEditing/allowAdding is set as true.
 
 #### Example
 
@@ -6300,7 +6300,7 @@ Send a save request in Kanban when any card is in edit/new add card state.
 ### KanbanEdit.startEdit($div or key)
 {:#methods:kanbanedit-startedit}
 
-Send an edit card request in Kanban.Parameter will be HTML element or primary key
+Send an edit card request in Kanban when allowEditing is set as true. Parameter will be HTML element or primary key
 
   <table class="params">
     <thead>
