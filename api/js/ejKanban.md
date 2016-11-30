@@ -6210,7 +6210,7 @@ Add a new card in Kanban control when allowAdding is set as true. If parameters 
 ### KanbanEdit.cancelEdit()
 {:#methods:kanbanedit-canceledit}
 
-Send a cancel request of add/edit card in Kanban when allowEditing is set as true.
+Send a cancel request of add/edit card in Kanban when allowEditing/allowAdding is set as true.
 
 #### Example
 
@@ -6273,7 +6273,7 @@ Delete a card in Kanban control when allowAdding/allowEditing is set as true.
 ### KanbanEdit.endEdit()
 {:#methods:kanbanedit-endedit}
 
-Send a save request in Kanban when any card is in edit/new add card state and allowEditing is set as true.
+Send a save request in Kanban when any card is in edit/new add card state and allowEditing/allowAdding is set as true.
 
 #### Example
 
@@ -6354,7 +6354,7 @@ Send an edit card request in Kanban when allowEditing is set as true. Parameter 
 ### KanbanEdit.setValidationToField(name, rules)
 {:#methods:kanbanedit-setvalidationtofield}
 
-Method used for set validation to a field during editing when allowEditing is set as true.
+Method used for set validation to a field during editing when allowEditing/allowAdding is set as true.
 
   <table class="params">
      <thead>
