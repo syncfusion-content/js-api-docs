@@ -1057,7 +1057,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
-### connectors.labels.bold `Boolean`
+### connectors.labels.bold `boolean`
 {:#members:connectors-labels-bold}
 
 Enables/disables the bold style
@@ -1129,7 +1129,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
-### connectors.labels.boundaryConstraints `Boolean`
+### connectors.labels.boundaryConstraints `boolean`
 {:#members:connectors-labels-boundaryconstraints}
 
 Defines whether the label should be aligned within the connector boundaries
@@ -1278,7 +1278,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
-### connectors.labels.italic `Boolean`
+### connectors.labels.italic `boolean`
 {:#members:connectors-labels-italic}
 
 Enables/disables the italic style
@@ -1524,7 +1524,7 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
-### connectors.labels.readOnly `Boolean`
+### connectors.labels.readOnly `boolean`
 {:#members:connectors-labels-readonly}
 
 Defines whether the label is editable or not
@@ -1747,7 +1747,7 @@ $("#diagramcontent").ejDiagram({ connectors:connectors });
 
 {% endhighlight %}
 
-### connectors.labels.visible `Boolean`
+### connectors.labels.visible `boolean`
 {:#members:connectors-labels-visible}
 
 Enables or disables the visibility of the label
@@ -3610,7 +3610,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 {% endhighlight %}
 
-### connectors.visible `Boolean`
+### connectors.visible `boolean`
 {:#members:connectors-visible}
 
 Enables or disables the visibility of connector
@@ -3793,7 +3793,7 @@ $("#diagramcontent").ejDiagram({contextMenu: contextMenu});
 
 {% endhighlight %}
 
-### contextMenu.showCustomMenuItemsOnly `Boolean`
+### contextMenu.showCustomMenuItemsOnly `boolean`
 {:#members:contextmenu-showcustommenuitemsonly}
 
 To set whether to display the default context menu items or not
@@ -4089,7 +4089,7 @@ $("#diagramcontent").ejDiagram({drawType:{type:"node"}});
 
 {% endhighlight %}
 
-### enableAutoScroll `Boolean`
+### enableAutoScroll `boolean`
 {:#members:enableautoscroll}
 
 Enables or disables auto scroll in diagram
@@ -4109,7 +4109,7 @@ $("#diagramcontent").ejDiagram({ enableAutoScroll: false });
 
 {% endhighlight %}
 
-### enableContextMenu `Boolean`
+### enableContextMenu `boolean`
 {:#members:enablecontextmenu}
 
 Enables or disables diagram context menu
@@ -5133,7 +5133,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.canUngroup `Boolean`
+### nodes.canUngroup `boolean`
 {:#members:nodes-canungroup}
 
 Defines whether the group can be ungrouped or not
@@ -6184,7 +6184,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.data.collection `Boolean`
+### nodes.data.collection `boolean`
 {:#members:nodes-data-collection}
 
 Defines whether the BPMN data object is a collection or not
@@ -6363,7 +6363,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.excludeFromLayout `Boolean`
+### nodes.excludeFromLayout `boolean`
 {:#members:nodes-excludefromlayout}
 
 Defines whether the node can be automatically arranged using layout or not
@@ -7614,7 +7614,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.isExpanded `Boolean`
+### nodes.isExpanded `boolean`
 {:#members:nodes-isexpanded}
 
 Defines whether the sub tree of the node is expanded or collapsed
@@ -7644,7 +7644,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### nodes.isSwimlane `Boolean`
+### nodes.isSwimlane `boolean`
 {:#members:nodes-isswimlane}
 
 Sets the node as a swimlane
@@ -7690,7 +7690,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.labels.bold `Boolean`
+### nodes.labels.bold `boolean`
 {:#members:nodes-labels-bold}
 
 Enables/disables the bold style
@@ -7909,7 +7909,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.labels.italic `Boolean`
+### nodes.labels.italic `boolean`
 {:#members:nodes-labels-italic}
 
 Enables/disables the italic style
@@ -8073,7 +8073,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.labels.readOnly `Boolean`
+### nodes.labels.readOnly `boolean`
 {:#members:nodes-labels-readonly}
 
 Defines whether the label is editable or not
@@ -8299,7 +8299,7 @@ $("#diagramcontent").ejDiagram({ nodes:nodes });
 
 {% endhighlight %}
 
-### nodes.labels.visible `Boolean`
+### nodes.labels.visible `boolean`
 {:#members:nodes-labels-visible}
 
 Enables or disables the visibility of the label
@@ -8583,7 +8583,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
-### nodes.lanes.isLane `Boolean`
+### nodes.lanes.isLane `boolean`
 {:#members:nodes-lanes-islane}
 
 Defines the object as a lane
@@ -9114,7 +9114,7 @@ $("#symbolpalette").ejSymbolPalette({
 
 {% endhighlight %}
 
-### nodes.paletteItem.enableScale `Boolean`
+### nodes.paletteItem.enableScale `boolean`
 {:#members:nodes-paletteitem-enablescale}
 
 Defines whether the symbol should be drawn at its actual size regardless of precedence factors or not
@@ -10335,7 +10335,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.subProcess.adhoc `Boolean`
+### nodes.subProcess.adhoc `boolean`
 {:#members:nodes-subprocess-adhoc}
 
 Defines whether the BPMN sub process is without any prescribed order or not
@@ -10408,7 +10408,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.subProcess.compensation `Boolean`
+### nodes.subProcess.compensation `boolean`
 {:#members:nodes-subprocess-compensation}
 
 Sets whether the BPMN subprocess is triggered as a compensation of a specific activity
@@ -10432,7 +10432,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.subProcess.collapsed `Boolean`
+### nodes.subProcess.collapsed `boolean`
 {:#members:nodes-subprocess-collapsed}
 
 Sets whether the BPMN subprocess is triggered as a collapsed of a specific activity
@@ -10693,7 +10693,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.task.call `Boolean`
+### nodes.task.call `boolean`
 {:#members:nodes-tasks-call}
 
 To set whether the task is a global task or not
@@ -10717,7 +10717,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.task.compensation `Boolean`
+### nodes.task.compensation `boolean`
 {:#members:nodes-tasks-compensation}
 
 Sets whether the task is triggered as a compensation of another specific activity
@@ -11173,7 +11173,7 @@ $("#diagramcontent").ejDiagram({nodes:[group]});
 
 {% endhighlight %}
 
-### nodes.visible `Boolean`
+### nodes.visible `boolean`
 {:#members:nodes-visible}
 
 Defines the visibility of the node
@@ -11300,7 +11300,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### pageSettings.multiplePage `Boolean`
+### pageSettings.multiplePage `boolean`
 {:#members:pagesettings-multiplepage}
 
 Sets whether multiple pages can be created to fit all nodes and connectors
@@ -11613,7 +11613,7 @@ $("#diagramcontent").ejDiagram({
 </script>
 {% endhighlight %}
 
-### pageSettings.showPageBreak `Boolean`
+### pageSettings.showPageBreak `boolean`
 {:#members:pagesettings-showpagebreak}
 
 Enables or disables the page breaks
@@ -12067,7 +12067,7 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 
 {% endhighlight %}
 
-### selectedItems.userHandles.enableMultiSelection `Boolean`
+### selectedItems.userHandles.enableMultiSelection `boolean`
 {:#members:selecteditems-userhandles-enablemultiselection}
 
 Defines whether the user handle should be added, when more than one element is selected
@@ -12279,7 +12279,7 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 
 {% endhighlight %}
 
-### selectedItems.userHandles.visible `Boolean`
+### selectedItems.userHandles.visible `boolean`
 {:#members:selecteditems-userhandles-visible}
 
 Defines the visibility of the user handle
@@ -12328,7 +12328,7 @@ $("#diagramcontent").ejDiagram({
 
 {% endhighlight %}
 
-### showTooltip `Boolean`
+### showTooltip `boolean`
 {:#members:showtooltip}
 
 Enables or disables tooltip of diagram
@@ -12353,7 +12353,7 @@ $("#diagramcontent").ejDiagram({showTooltip: true});
 
 Defines the gridlines and defines how and when the objects have to be snapped
 
-### snapSettings.enableSnapToObject `Boolean`
+### snapSettings.enableSnapToObject `boolean`
 {:#members:snapsettings-enablesnaptoobject}
 
 Enables or disables snapping nodes/connectors to objects
@@ -13016,7 +13016,7 @@ Add nodes and connectors to diagram at runtime
 
 #### Returns:
 
-* booloean 
+* boolean 
 
 #### Example
 
