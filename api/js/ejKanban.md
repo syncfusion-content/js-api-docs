@@ -6354,7 +6354,7 @@ Send an edit card request in Kanban when allowEditing is set as true. Parameter 
 ### KanbanEdit.setValidationToField(name, rules)
 {:#methods:kanbanedit-setvalidationtofield}
 
-Method used for set validation to a field during editing when allowEditing/allowAdding is set as true.
+Method used for set validation to a field during editing.
 
   <table class="params">
      <thead>
