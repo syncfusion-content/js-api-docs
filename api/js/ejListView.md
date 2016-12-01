@@ -147,7 +147,7 @@ Set the index values to be selected on intial loading. This works only when enab
 
 {% highlight html %}
  
-//Set the cssClass property in obtrusive way.
+//Set the checkedIndices property in obtrusive way.
 <div id="lb" >
          <ul>
                 <li data-ej-text="Artwork"></li>
@@ -163,8 +163,8 @@ Set the index values to be selected on intial loading. This works only when enab
         </ul>
 </div>
 <script>
-// Set cssClass on initialization. 
-//To set cssClass API value 
+// Set checkedIndices on initialization. 
+//To set checkedIndices API value 
 $("#lb").ejListView ({ enableCheckMark: true, checkedIndices:[2,3] });
 </script>
 
@@ -709,7 +709,7 @@ Contains the array of items to be added in ListView.
 
 {% highlight html %}
  
-//Set the dataSource property in obtrusive way.
+//Set the items property in obtrusive way.
 <div id="lb" >
 </div>           
 <script>
