@@ -77,6 +77,98 @@ $("#lb").ejListView();
 ## Members
 
 
+### ajaxSettings  `object`
+{:#members:ajaxsettings}
+
+Specifies the ajaxSettings option to load the items to the ListView control.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+    <script>
+    // Set the ajaxSettings options during initialization.                  
+            $("#lb").ejListView({  ajaxSettings: { type: 'GET', cache: false, data: {}, dataType: "html", contentType: "html", async: true } });
+    </script>
+
+{% endhighlight %}
+
+
+### ajaxSettings.async `Boolean`
+{:#members:ajaxsettings-async}
+
+It specifies, whether to enable or disable asynchronous request.
+
+### ajaxSettings.cache `Boolean`
+{:#members:ajaxsettings-cache}
+
+It specifies the page will be cached in the web browser.
+
+### ajaxSettings.contentType `String`
+{:#members:ajaxsettings-contenttype}
+
+It specifies the type of data is send in the query string.
+
+### ajaxSettings.data `Object`
+{:#members:ajaxsettings-data}
+
+It specifies the data as an object, will be passed in the query string.
+
+### ajaxSettings.dataType `String`
+{:#members:ajaxsettings-datatype}
+
+It specifies the type of data that you're expecting back from the response.
+
+### ajaxSettings.type `String`
+{:#members:ajaxsettings-type}
+
+It specifies the HTTP request type.
+
+### checkedIndices `array`
+{:#members:checkedindices}
+
+
+Set the index values to be selected on intial loading. This works only when enableCheckMark is set true.
+
+
+#### Default Value
+* []
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+//Set the checkedIndices property in obtrusive way.
+<div id="lb" >
+         <ul>
+                <li data-ej-text="Artwork"></li>
+                <li data-ej-text="Abstract"></li>
+                <li data-ej-text="2 Acrylic Mediums"></li>
+                <li data-ej-text="Creative Acrylic"></li>
+                <li data-ej-text="Modern Painting"></li>
+                <li data-ej-text="Canvas Art"></li>
+                <li data-ej-text="Black white"></li>
+                <li data-ej-text="Children"></li>
+                <li data-ej-text="Preschool Crafts"></li>
+                <li data-ej-text="School-age Crafts"></li>
+        </ul>
+</div>
+<script>
+// Set checkedIndices on initialization. 
+//To set checkedIndices API value 
+$("#lb").ejListView ({ enableCheckMark: true, checkedIndices:[2,3] });
+</script>
+
+{% endhighlight %}
 
 
 ### cssClass `string`
@@ -598,6 +690,42 @@ $("#lb").ejListView ("option", "fieldSettings", true);
 </script> {% endhighlight %}
 
 
+### items `array`
+{:#members:items}
+
+
+Contains the array of items to be added in ListView.
+
+
+#### Default Value
+* []
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+//Set the items property in obtrusive way.
+<div id="lb" >
+</div>           
+<script>
+$(function(){
+$("#lb").ejListView({items:window.dbitem});
+});
+window.dbitem =
+[   { "text": "Hot Singles"},
+    { "text": "Rising Artists"},
+    { "text": "Live Music" },
+    { "text": "Best of 2013 So Far"},
+    { "text": "100 Albums - $5 Each"},
+    { "text": "Hip-Hop and R&amp;B Sale"},
+    { "text": "CD Deals"}];
+</script>
+{% endhighlight %}
 
 
 ### headerBackButtonText `string`
@@ -1139,6 +1267,44 @@ $("#lb").ejListView ({ showHeader: true });
 $("#lb").ejListView ("option", "showHeader", true);  
 </script>          {% endhighlight %}
 
+
+### showHeaderBackButton `boolean`
+{:#members:showheaderbackbutton}
+
+Specifies whether to show the back button header.
+
+
+#### Default Value
+* false
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+        //Set the showHeaderBackButton property in obtrusive way.
+        <div id="lb">
+                <ul>
+                        <li data-ej-text="Artwork"></li>
+                        <li data-ej-text="Abstract"></li>
+                        <li data-ej-text="2 Acrylic Mediums"></li>
+                        <li data-ej-text="Creative Acrylic"></li>
+                        <li data-ej-text="Modern Painting"></li>
+                        <li data-ej-text="Canvas Art"></li>
+                        <li data-ej-text="Black white"></li>
+                        <li data-ej-text="Children"></li>
+                        <li data-ej-text="Preschool Crafts"></li>
+                        <li data-ej-text="School-age Crafts"></li>
+                </ul>
+        </div>
+        <script>
+        // Set showHeaderBackButton on initialization. 
+        //To set showHeaderBackButton API value 
+        $("#lb").ejListView ({ showHeader: true, showHeaderBackButton:true });
+        </script>
+
+{% endhighlight %}
 
 
 
