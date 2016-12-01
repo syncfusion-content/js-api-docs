@@ -74,6 +74,57 @@ Example
     
  {% endhighlight %}
 
+### ajaxSettings  `object`
+{:#members:ajaxsettings}
+
+Specifies the ajaxSettings option to load the content to the Dialog control.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+    <script>
+    // Set the ajaxSettings options during initialization.                  
+            $("#basicdialog").ejDialog({  ajaxSettings: { type: 'GET', cache: false, data: {}, dataType: "html", contentType: "html", async: true } });
+    </script>
+
+{% endhighlight %}
+
+
+### ajaxSettings.async `Boolean`
+{:#members:ajaxsettings-async}
+
+It specifies, whether to enable or disable asynchronous request.
+
+### ajaxSettings.cache `Boolean`
+{:#members:ajaxsettings-cache}
+
+It specifies the page will be cached in the web browser.
+
+### ajaxSettings.contentType `String`
+{:#members:ajaxsettings-contenttype}
+
+It specifies the type of data is send in the query string.
+
+### ajaxSettings.data `Object`
+{:#members:ajaxsettings-data}
+
+It specifies the data as an object, will be passed in the query string.
+
+### ajaxSettings.dataType `String`
+{:#members:ajaxsettings-datatype}
+
+It specifies the type of data that you're expecting back from the response.
+
+### ajaxSettings.type `String`
+{:#members:ajaxsettings-type}
+
+It specifies the HTTP request type.
+
 
 ### allowDraggable `Boolean`
 {:#members:allowdraggable}
@@ -441,6 +492,27 @@ Example
     $("#dialog").ejDialog({height: 400 }); 
 
 {% endhighlight %}
+
+### htmlAttributes `object`
+{:#members:htmlattributes}
+
+
+Specifies the HTML Attributes of the Dialog.
+
+
+#### Default Value
+* {}
+
+#### Example
+
+{% highlight html %}
+
+        <script type="text/javascript">         
+        // Set the htmlAttributes  during initialization.                     
+                $("#basicdialog").ejDialog({width:"300px", htmlAttributes: {class:"my-class", style:"border:1px solid red"} }); 
+        </script> 
+
+ {% endhighlight %}
 
 
 ### isResponsive `Boolean` 
@@ -1012,6 +1084,23 @@ Example
 
 {% endhighlight %}
 
+### refresh<span class="signature">()</span>
+{:#methods:refresh}
+
+Refreshes the dialog content dynamically.
+
+####Returns:
+
+void
+
+Example
+{:.example}
+
+{% highlight javascript %}
+
+    $("#dialog").ejDialog("refresh");
+
+{% endhighlight %}
 
 ### restore<span class="signature">()</span>
 {:#methods:restore}
