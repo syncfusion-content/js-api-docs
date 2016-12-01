@@ -165,7 +165,7 @@ Set the index values to be selected on intial loading. This works only when enab
 <script>
 // Set cssClass on initialization. 
 //To set cssClass API value 
-$("#lb").ejListView ({ enablecheckmark: true, checkedIndices:[2,3] });
+$("#lb").ejListView ({ enableCheckMark: true, checkedIndices:[2,3] });
 </script>
 
 {% endhighlight %}
