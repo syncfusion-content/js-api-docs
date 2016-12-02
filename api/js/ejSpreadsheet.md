@@ -7142,20 +7142,18 @@ This method is used to change the theme of the chart in the Spreadsheet.
 
 <table>
 <tr>
-<th>
-Name</th><th>
-Type</th><th>
-Description</th></tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th></tr>
 <tr>
-<td>
-chartId</td><td>
-string</td><td>
-Pass the chart id.</td></tr>
+<td class="name">chartId</td>
+<td class="type">string</td>
+<td class="description">Pass the chart id.</td></tr>
 <tr>
-<td>
-theme</td><td>
-enum</td><td>
-Pass the chart theme which want to update.</td></tr>
+<td class="name">theme</td>
+<td class="type">string</td>
+<td class="description">Pass the chart theme which want to update.</td>
+</tr>
 </table>
 
 #### Example
@@ -7166,7 +7164,7 @@ Pass the chart theme which want to update.</td></tr>
 <script>
 // Initialize Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1"
-var theme = ej.datavisualization.Chart.Theme.Azuredark; 
+var theme = ej.datavisualization.Chart.Theme.Azuredark;//'theme' should be of type 'enum'.
 xlObj.XLChart.changeTheme(chartId, theme); // To update chart theme.
 </script>
 
@@ -7343,21 +7341,20 @@ This method is used to update the chart element, such as axes, titles, data labe
 
 <table>
 <tr>
-<th>
-Name</th><th>
-Type</th><th>
-Description</th></tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th></tr>
 <tr>
-<td>
-chartId</td><td>
-string</td><td>
-Pass the chart id.</td></tr>
+<td class="name">chartId</td>
+<td class="type">string</td>
+<td class="description">Pass the chart id.</td></tr>
 <tr>
-<td>
-value</td><td>
-enum</td><td>
-Pass chart element value which you want to update.</td></tr>
+<td class="name">value</td>
+<td class="type">string</td>
+<td class="description">Pass chart element value which you want to update.</td>
+</tr>
 </table>
+
 
 #### Example
 
@@ -7366,7 +7363,7 @@ Pass chart element value which you want to update.</td></tr>
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1", value = ej.Spreadsheet.ChartProperties.PrimaryHorizontal;
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1", value = ej.Spreadsheet.ChartProperties.PrimaryHorizontal; //'value' should be of type 'enum'. 
 xlObj.XLChart.updateChartElement(chartId, value); // To update chart property.
 </script>
 
