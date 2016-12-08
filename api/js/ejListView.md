@@ -132,7 +132,7 @@ It specifies the HTTP request type.
 {:#members:checkedindices}
 
 
-Set the index values to be selected on intial loading. This works only when enableCheckMark is set true.
+Set the index values to be selected on initial loading. This works only when enableCheckMark is set true.
 
 
 #### Default Value
