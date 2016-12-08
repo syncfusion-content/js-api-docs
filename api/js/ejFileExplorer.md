@@ -561,6 +561,63 @@ Sets the root class for FileExplorer theme. This cssClass API allows to use cust
 
 
 
+### enablePersistence `boolean`
+{:#members:enablepersistence}
+
+
+
+
+
+
+
+
+Specify the enablePersistence to FileExplorer to save the current model value in browser cookies for state maintains.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer"></div> 
+        
+        <script>
+        // Initialize the FileExplorer with enablePersistence value specified.
+        $('#fileExplorer').ejFileExplorer({ 
+        enablePersistence: true,
+        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",           
+        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction"                   
+        });
+        </script>
+
+{% endhighlight %}
+
+
+
+
+
+
+
 ### enableResize `boolean`
 {:#members:enableresize}
 
