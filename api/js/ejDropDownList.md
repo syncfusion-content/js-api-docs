@@ -1809,7 +1809,7 @@ Sets the jQuery validation rules in the Dropdownlist.
     </script>
 {% endhighlight %}
 
-### value `string`
+### value `string|number`
 {:#members:value}
 
 Specifies the value (text content) for the DropDownList control.
