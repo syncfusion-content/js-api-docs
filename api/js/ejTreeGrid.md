@@ -2367,7 +2367,9 @@ Specifies the index of the column that needs to have the expander button. By def
 ### addRow(data, rowPosition)
 {:#methods:addrow}
 
-Adds a new row in TreeGrid, while allowAdding is set to true
+<ts name = "ej.TreeGrid.RowPosition"/>
+
+Add a new row in TreeGrid, while allowAdding is set to true
 
 <table class="params">
 <thead>
@@ -2403,7 +2405,7 @@ Adds a new row in TreeGrid, while allowAdding is set to true
 // Create TreeGrid object
 var treeGridObj = $("#treegrid").data("ejTreeGrid");
 var data = {taskId:"40",taskName:"New Task 40",startDate:"2/20/2014",startDate:"2/25/2014"};
-treeGridObj.addRecord(data, ej.TreeGrid.RowPosition.Child); // To add a task
+treeGridObj.addRow(data, ej.TreeGrid.RowPosition.Child); // To add a task
 </script>
 {% endhighlight %}
 
