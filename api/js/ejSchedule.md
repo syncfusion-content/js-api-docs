@@ -5515,7 +5515,7 @@ Searches the appointments from the appointment list of Schedule control based on
         </tr>
         <tr>
             <td class="name">operator</td>
-            <td class="type">enum|string</td>
+            <td class="type">enum|string<ts ref="ej.FilterOperators"/></td>
             <td class="description">Defines the filterOperator value for the search operation.</td>
         </tr>
         <tr>
