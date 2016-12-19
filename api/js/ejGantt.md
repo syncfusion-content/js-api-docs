@@ -3815,9 +3815,7 @@ Specifies the working time schedule of day
 ### addRecord(data, rowPosition)
 {:#methods:addrecord}
 
-<ts name = "ej.Gantt.AddRowPosition"/>
-
-To add item in Gantt
+To add a new item in Gantt
 
 <table class="params">
 <thead>
@@ -3835,7 +3833,7 @@ To add item in Gantt
 </tr>
 <tr>
 <td class="name">rowPosition</td>
-<td class="type">enum</td>
+<td class="type">string</td>
 <td class="description">Defines in which position the row wants to add</td>
 </tr>
 </tbody>
