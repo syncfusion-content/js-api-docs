@@ -7151,7 +7151,7 @@ This method is used to change the theme of the chart in the Spreadsheet.
 <td class="description">Pass the chart id.</td></tr>
 <tr>
 <td class="name">theme</td>
-<td class="type">string</td>
+<td class="type"><ts ref="ej.datavisualization.Chart.Theme"/>enum</td>
 <td class="description">Pass the chart theme which want to update.</td>
 </tr>
 </table>
@@ -7164,7 +7164,7 @@ This method is used to change the theme of the chart in the Spreadsheet.
 <script>
 // Initialize Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1"
-var theme = ej.datavisualization.Chart.Theme.Azuredark;//'theme' should be of type 'enum'.
+var theme = ej.datavisualization.Chart.Theme.Azuredark;
 xlObj.XLChart.changeTheme(chartId, theme); // To update chart theme.
 </script>
 
@@ -7340,19 +7340,24 @@ xlObj.XLChart.resizeChart("Spreadsheet_Chart1", 200, 300); // It is used to resi
 This method is used to update the chart element, such as axes, titles, data labels, grid lines and legends in the Spreadsheet.
 
 <table>
+<thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th>Description</th></tr>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td class="name">chartId</td>
 <td class="type">string</td>
 <td class="description">Pass the chart id.</td></tr>
 <tr>
 <td class="name">value</td>
-<td class="type">string</td>
+<td class="type"><ts name="ej.Spreadsheet.ChartProperties"/>enum</td>
 <td class="description">Pass chart element value which you want to update.</td>
 </tr>
+</tbody>
 </table>
 
 
@@ -7363,107 +7368,113 @@ This method is used to update the chart element, such as axes, titles, data labe
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1", value = ej.Spreadsheet.ChartProperties.PrimaryHorizontal; //'value' should be of type 'enum'. 
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1", value = ej.Spreadsheet.ChartProperties.PrimaryHorizontal; 
 xlObj.XLChart.updateChartElement(chartId, value); // To update chart property.
 </script>
 
 {% endhighlight %}
 
+#### ChartProperties
+
 Specifies the chart element value in the Spreadsheet,
 
-<table>
+<table class="props">
+<thead>
 <tr>
-<th>
-Name</th><th>
-Description</th></tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
 <tr>
-<td>
-DataLabelCenter</td><td>
-Specifies to make the data label center of the chart.</td></tr>
+<td>DataLabelCenter</td>
+<td>Specifies to make the data label center of the chart.</td>
+</tr>
 <tr>
-<td>
-DataLabelInsideBase</td><td>
-Specifies to make the data label inside base of the chart.</td></tr>
+<td>DataLabelInsideBase</td>
+<td>Specifies to make the data label inside base of the chart.</td>
+</tr>
 <tr>
-<td>
-DataLabelInsideEnd</td><td>
-Specifies to make the data label inside end of the chart.</td></tr>
+<td>DataLabelInsideEnd</td>
+<td>Specifies to make the data label inside end of the chart.</td>
+</tr>
 <tr>
-<td>
-DataLabelNone</td><td>
-Specifies to make the data label none of the chart.</td></tr>
+<td>DataLabelNone</td>
+<td>Specifies to make the data label none of the chart.</td>
+</tr>
 <tr>
-<td>
-DataLabelOutsideEnd</td><td>
-Specifies to make the data label outside end of the chart.</td></tr>
+<td>DataLabelOutsideEnd</td>
+<td>Specifies to make the data label outside end of the chart.</td>
+</tr>
 <tr>
-<td>
-LegendsBottom</td><td>
-Specifies to make the legends to bottom of the chart.</td></tr>
+<td>LegendsBottom</td>
+<td>Specifies to make the legends to bottom of the chart.</td>
+</tr>
 <tr>
-<td>
-LegendsLeft</td><td>
-Specifies to make the legends to left of the chart.</td></tr>
+<td>LegendsLeft</td>
+<td>Specifies to make the legends to left of the chart.</td>
+</tr>
 <tr>
-<td>
-LegendsNone</td><td>
-Specifies to make the legends to none of the chart.</td></tr>
+<td>LegendsNone</td>
+<td>Specifies to make the legends to none of the chart.</td>
+</tr>
 <tr>
-<td>
-LegendsRight</td><td>
-Specifies to make the legends to right of the chart.</td></tr>
+<td>LegendsRight</td>
+<td>Specifies to make the legends to right of the chart.</td>
+</tr>
 <tr>
-<td>
-LegendsTop</td><td>
-Specifies to make the legends to top of the chart.</td></tr>
+<td>LegendsTop</td>
+<td>Specifies to make the legends to top of the chart.</td>
+</tr>
 <tr>
-<td>
-PrimaryHorizontal</td><td>
-To set the primary horizontal of the chart.</td></tr>
+<td>PrimaryHorizontal</td>
+<td>To set the primary horizontal of the chart.</td>
+</tr>
 <tr>
-<td>
-PrimaryHorizontalAxisTitle</td><td>
-To set the primary horizontal axis title of the chart.</td></tr>
+<td>PrimaryHorizontalAxisTitle</td>
+<td>To set the primary horizontal axis title of the chart.</td>
+</tr>
 <tr>
-<td>
-PrimaryMajorHorizontal</td><td>
-To set the primary major horizontal of the chart.</td></tr>
+<td>PrimaryMajorHorizontal</td>
+<td>To set the primary major horizontal of the chart.</td>
+</tr>
 <tr>
-<td>
-PrimaryMajorVertical</td><td>
-To set the primary major vertical of the chart.</td></tr>
+<td>PrimaryMajorVertical</td>
+<td>To set the primary major vertical of the chart.</td>
+</tr>
 <tr>
-<td>
-PrimaryMinorHorizontal</td><td>
-To set the primary minor horizontal of the chart.</td></tr>
+<td>PrimaryMinorHorizontal</td>
+<td>To set the primary minor horizontal of the chart.</td>
+</tr>
 <tr>
-<td>
-PrimaryMinorVertical</td><td>
-To set the primary minor vertical of the chart.</td></tr>
+<td>PrimaryMinorVertical</td>
+<td>To set the primary minor vertical of the chart.</td>
+</tr>
 <tr>
-<td>
-PrimaryVertical</td><td>
-To set the primary vertical of the chart.</td></tr>
+<td>PrimaryVertical</td>
+<td>To set the primary vertical of the chart.</td>
+</tr>
 <tr>
-<td>
-PrimaryVerticalAxisTitle</td><td>
-To set the primary vertical axis title of the chart.</td></tr>
+<td>PrimaryVerticalAxisTitle</td>
+<td>To set the primary vertical axis title of the chart.</td>
+</tr>
 <tr>
-<td>
-TitleCenter</td><td>
-Specifies to make the title to center of the chart.</td></tr>
+<td>TitleCenter</td>
+<td>Specifies to make the title to center of the chart.</td>
+</tr>
 <tr>
-<td>
-TitleFar</td><td>
-Specifies to make the title to far of the chart.</td></tr>
+<td>TitleFar</td>
+<td>Specifies to make the title to far of the chart.</td>
+</tr>
 <tr>
-<td>
-TitleNear</td><td>
-Specifies to make the title to near of the chart.</td></tr>
+<td>TitleNear</td>
+<td>Specifies to make the title to near of the chart.</td>
+</tr>
 <tr>
-<td>
-TitleNone</td><td>
-Specifies to make the title to none of the chart.</td></tr>
+<td>TitleNone</td>
+<td>Specifies to make the title to none of the chart.</td>
+</tr>
+</tbody>
 </table>
 
 ### XLChart.switchRowColumn(chartId)
