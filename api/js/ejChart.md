@@ -32476,6 +32476,37 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hqmmhpgk)
 
 
 
+### zooming.enableScrollbar `boolean`
+{:#members:zooming-enableScrollbar}
+
+
+
+
+Toggles the visibility of the scrollbar, which will be displayed while zooming.
+
+
+#### Default Value
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   zooming :{ enableScrollbar : true }            
+
+});
+
+{% endhighlight %}
+
+
+
 ### zooming.toolbarItems `array`
 {:#members:zooming-toolbarItems}
 
