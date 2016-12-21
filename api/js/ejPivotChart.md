@@ -101,6 +101,34 @@ Specifies the CSS class to PivotChart to achieve custom theme.
     $("#PivotChart1").ejPivotChart({ cssClass : "olive" });
 {% endhighlight %}
 
+### zooming `object`
+{:#members:zooming}
+
+Options for enabling zooming feature of PivotChart.
+
+#### Default Value: {}
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ zooming: { enableScrollbar: true } });
+{% endhighlight %}
+
+### zooming.enableScrollbar `boolean`
+{:#members:zooming-enablescrollbar}
+
+Enables or disables horizontal scrollbar.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ zooming: { enableScrollbar: false } });
+{% endhighlight %}
+
 ### commonSeriesOptions `object`
 {:#members:commonseriesoptions}
 
@@ -1599,6 +1627,46 @@ Triggers when PivotChart successfully reaches client-side after any AJAX request
  
     $("#PivotChart1").ejPivotChart({
         renderSuccess: function (args) {}
+    });
+{% endhighlight %}
+
+
+### beforeExport
+{:#events:beforeexport}
+
+Triggers before performing exporting in pivot chart.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">url</td>
+<td class="type">string</td>
+<td class="description last">contains the url of the service responsible for exporting.</td>
+</tr>
+<tr>
+<td class="name">fileName</td>
+<td class="type">string</td>
+<td class="description last">contains the name of the exporting file.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({
+        beforeExport: function (args) {}
     });
 {% endhighlight %}
 
