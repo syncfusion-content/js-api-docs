@@ -39,7 +39,7 @@ Legend is a control used to summarize the range of colors in HeatMap. This gives
 ## Members
 
 
-### width `Object`
+### width `object`
 {:#members:width}
 
 Specifies the width of the heatmap legend.
@@ -64,7 +64,7 @@ Specifies the width of the heatmap legend.
 
 
 
-### height `Object`
+### height `object`
 {:#members:height}
 
 Specifies the height of the heatmap legend.
@@ -87,7 +87,7 @@ Specifies the height of the heatmap legend.
 {% endhighlight %}
  
 
-### isResponsive `Boolean`
+### isResponsive`boolean`
 {:#members:isResponsive}
 
 Specifies can enable responsive mode or not for heatmap legend.
@@ -111,7 +111,7 @@ Specifies can enable responsive mode or not for heatmap legend.
  
 
 
-### showLabel `Boolean`
+### showLabel`boolean`
 {:#members:showLabel}
 
 Specifies whether the cell label can be shown or not.
@@ -138,7 +138,7 @@ Specifies whether the cell label can be shown or not.
 
 
 
-### colorMappingCollection `Array`
+### colorMappingCollection `array`
 {:#members:colorMappingCollection}
 
 Specifies the color values of the column data.
@@ -163,7 +163,7 @@ Specifies the color values of the column data.
 
 {% endhighlight %}
 
-### colorMappingCollection.color `String`
+### colorMappingCollection.color `string`
 {:#members:colorMappingCollection-color}
 
 Specifies the color of the heatmap legend data.
@@ -188,7 +188,7 @@ Specifies the color of the heatmap legend data.
 
 {% endhighlight %}
 
-### colorMappingCollection.value `Number`
+### colorMappingCollection.value `number`
 {:#members:colorMappingCollection-value}
 
 Specifies the color values of the heatmap legend column data.
@@ -213,7 +213,7 @@ Specifies the color values of the heatmap legend column data.
 
 {% endhighlight %}
 
-### colorMappingCollection.label `Object`
+### colorMappingCollection.label `object`
 {:#members:colorMappingCollection-label}
 
 Specifies the label properties of the heatmap legend color.
@@ -238,7 +238,7 @@ Specifies the label properties of the heatmap legend color.
 
 {% endhighlight %}
 
-### colorMappingCollection.label.bold `Boolean`
+### colorMappingCollection.label.bold`boolean`
 {:#members:colorMappingCollection-label-bold}
 
 Enables/disables the bold style of the heatmap legend label.
@@ -261,7 +261,7 @@ Enables/disables the bold style of the heatmap legend label.
 
 {% endhighlight %}
 
-### colorMappingCollection.label.italic `Boolean`
+### colorMappingCollection.label.italic`boolean`
 {:#members:colorMappingCollection-label-italic}
 
 Enables/disables the italic style of the heatmap legend label.
@@ -284,7 +284,7 @@ Enables/disables the italic style of the heatmap legend label.
  
 {% endhighlight %}
 
-### colorMappingCollection.label.text `String`
+### colorMappingCollection.label.text `string`
 {:#members:colorMappingCollection-label-text}
 
 specifies the text value of the heatmap legend label.
@@ -360,7 +360,7 @@ Specifies the text style of the heatmap legend label.
 
 {% endhighlight %}
 
-### colorMappingCollection.label.fontSize `Number`
+### colorMappingCollection.label.fontSize `number`
 {:#members:colorMappingCollection-label-fontSize}
 
 Specifies the font size of the heatmap legend label.
@@ -383,7 +383,7 @@ Specifies the font size of the heatmap legend label.
 
 {% endhighlight %}
 
-### colorMappingCollection.label.fontFamily `String`
+### colorMappingCollection.label.fontFamily `string`
 {:#members:colorMappingCollection-label-fontFamily}
 
 Specifies the font family of the heatmap legend label.
@@ -406,7 +406,7 @@ Specifies the font family of the heatmap legend label.
 
 {% endhighlight %}
 
-### colorMappingCollection.label.fontColor `String`
+### colorMappingCollection.label.fontColor `string`
 {:#members:colorMappingCollection-label-fontColor}
 
 Specifies the font color of the heatmap legend label.
