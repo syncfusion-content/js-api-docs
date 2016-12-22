@@ -41,7 +41,7 @@ Essential HeatMap JS represents tabular data values as gradient colors instead o
 ## Members
 
 
-### width `Object`
+### width `object`
 {:#members:width}
 
 Specifies the width of the heat map.
@@ -66,7 +66,7 @@ Specifies the width of the heat map.
 
 
 
-### height `Object`
+### height `object`
 {:#members:height}
 
 Specifies the width of the heat map.
@@ -90,7 +90,7 @@ Specifies the width of the heat map.
 
 
 
-### id `Number`
+### id `number`
 {:#members:height}
 
 Specifies the name of the heat map.
@@ -114,7 +114,7 @@ Specifies the name of the heat map.
 
 
 
-### itemsSource `Object`
+### itemsSource `object`
 {:#members:itemsSource}
 
 Specifies the source data of the heat map.
@@ -149,7 +149,7 @@ Specifies the source data of the heat map.
 
  
 
-### heatMapCell `Object`
+### heatMapCell `object`
 {:#members:heatmapCell}
 
 Specifies the property of the heat map cell.
@@ -217,7 +217,7 @@ Specifies whether the cell content can be visible or not.
 {% endhighlight %}
 
 
-### heatMapCell.showColor `Boolean`
+### heatMapCell.showColor `boolean`
 {:#members:heatmapCell-showColor}
 
 Specifies whether the cell color can be visible or not.
@@ -242,7 +242,7 @@ Specifies whether the cell color can be visible or not.
 
 
 
-### isResponsive `Boolean`
+### isResponsive `boolean`
 {:#members:isResponsive}
 
 Specifies can enable responsive mode or not for heat map.
@@ -265,7 +265,7 @@ Specifies can enable responsive mode or not for heat map.
 {% endhighlight %}
 
 
-### enableVirtualization `Boolean`
+### enableVirtualization `boolean`
 {:#members:enableVirtualization}
 
 Specifies whether the virtualization can be enable or not.
@@ -289,7 +289,7 @@ Specifies whether the virtualization can be enable or not.
 
  
 
-### defaultColumnStyle `Object`
+### defaultColumnStyle `object`
 {:#members:defaultColumnStyle}
 
 Specifies the default column properties for all the column style not specified in column properties. 
@@ -314,7 +314,7 @@ Specifies the default column properties for all the column style not specified i
  
 {% endhighlight %}
 
-### defaultColumnStyle.textAlign `Object`
+### defaultColumnStyle.textAlign `object`
 {:#members:defaultColumnStyle-textAlign}
 
 Specifies the alignment mode of the heat map column.
@@ -368,7 +368,7 @@ Enables/disables the bold style
 {% endhighlight %}
 
 
-### defaultColumnStyle.headerTemplateID `String`
+### defaultColumnStyle.headerTemplateID`string`
 {:#members:defaultColumnStyle-headerTemplateID}
 
 Specifies the template id of the heat map column header.
@@ -397,7 +397,7 @@ Specifies the template id of the heat map column header.
 {% endhighlight %}
 
 
-### defaultColumnStyle.templateID `String`
+### defaultColumnStyle.templateID`string`
 {:#members:defaultColumnStyle-templateID}
 
 Specifies the template id of all individual cell data of the heat map. 
@@ -428,7 +428,7 @@ Specifies the template id of all individual cell data of the heat map.
 
 
 
-### legendCollection `Array`
+### legendCollection `array`
 {:#members:legendCollection}
 
 Specifies the no of legends can sync with heat map. 
@@ -453,7 +453,7 @@ Specifies the no of legends can sync with heat map.
 
 
 
-### itemsMapping `Object`
+### itemsMapping `object`
 {:#members:itemsMapping}
 
 Specifies the property and display value of the heat map column.
@@ -479,7 +479,7 @@ Specifies the property and display value of the heat map column.
 
 
 
-### itemsMapping.columnStyle `Object`
+### itemsMapping.columnStyle `object`
 {:#members:itemsMapping-columnStyle}
 
 Column settings for the individual heat map column.
@@ -505,7 +505,7 @@ Column settings for the individual heat map column.
 {% endhighlight %}
 
 
-### itemsMapping.columnStyle.width `Number`
+### itemsMapping.columnStyle.width `number`
 {:#members:itemsMapping-columnStyle-width}
 
 Specifies the width of the heat map column.
@@ -623,7 +623,7 @@ Specifies the template id of all individual cell data.
 
 
 
-### itemsMapping.column `Object`
+### itemsMapping.column `object`
 {:#members:itemsMapping-column}
 
 Specifies the property and display value of the column.  
@@ -700,7 +700,7 @@ Specifies the value of the column or row.
 
 
 
-### itemsMapping.row `Object`
+### itemsMapping.row `object`
 {:#members:itemsMapping-row}
 
 Specifies the property and display value of the heat map.
@@ -770,7 +770,7 @@ Specifies the value of the column or row.
 
 
 
-### itemsMapping.value `Object`
+### itemsMapping.value `object`
 {:#members:itemsMapping-value}
 
 Specifies the property and display value of the column value.
@@ -844,7 +844,7 @@ Specifies the value of the column or row.
 
 
 
-### itemsMapping.headerMapping `Object`
+### itemsMapping.headerMapping `object`
 {:#members:itemsMapping-headerMapping}
 
 Specifies the property and display value of the header.
@@ -940,7 +940,7 @@ Specifies the property and display value of the header.
 
 {% endhighlight %} 
 
-### itemsMapping.columnMapping `Array`
+### itemsMapping.columnMapping `array`
 {:#members:itemsMapping-columnMapping}
 
 Specifies the property and display value of the collection of column. 
@@ -968,7 +968,7 @@ Specifies the property and display value of the collection of column.
 {% endhighlight %}
  
 
-### colorMappingCollection `Array`
+### colorMappingCollection `array`
 {:#members:colorMappingCollection}
 
 Specifies the color values of the heat map column data.
@@ -993,7 +993,7 @@ Specifies the color values of the heat map column data.
 
 {% endhighlight %}
 
-### colorMappingCollection.color `String`
+### colorMappingCollection.color`string`
 {:#members:colorMappingCollection-color}
 
 Specifies the color of the heat map column data. 
@@ -1018,7 +1018,7 @@ Specifies the color of the heat map column data.
 
 {% endhighlight %}
 
-### colorMappingCollection.value `Number`
+### colorMappingCollection.value `number`
 {:#members:colorMappingCollection-value}
 
 Specifies the color values of the heat map column data. 
@@ -1043,7 +1043,7 @@ Specifies the color values of the heat map column data.
 
 {% endhighlight %}
 
-### colorMappingCollection.label `Object`
+### colorMappingCollection.label `object`
 {:#members:colorMappingCollection-label}
 
 Specifies the label properties of the heat map color.
@@ -1066,7 +1066,7 @@ Specifies the label properties of the heat map color.
     </script>
 {% endhighlight %}
 
-### colorMappingCollection.label.bold `Boolean`
+### colorMappingCollection.label.bold `boolean`
 {:#members:colorMappingCollection-label-bold}
 
 Enables/disables the bold style of the heat map label.
@@ -1090,7 +1090,7 @@ Enables/disables the bold style of the heat map label.
 
 {% endhighlight %}
 
-### colorMappingCollection.label.italic `Boolean`
+### colorMappingCollection.label.italic `boolean`
 {:#members:colorMappingCollection-label-italic}
 
 Enables/disables the italic style of the heat map label.
@@ -1113,7 +1113,7 @@ Enables/disables the italic style of the heat map label.
 
 {% endhighlight %}
 
-### colorMappingCollection.label.text `String`
+### colorMappingCollection.label.text`string`
 {:#members:colorMappingCollection-label-text}
 
 specifies the text value of the heat map label.
@@ -1191,7 +1191,7 @@ Specifies the text style of the heat map label.
 
 {% endhighlight %}
 
-### colorMappingCollection.label.fontSize `Number`
+### colorMappingCollection.label.fontSize `number`
 {:#members:colorMappingCollection-label-fontSize}
 
 Specifies the font size of the heat map label.
@@ -1215,7 +1215,7 @@ Specifies the font size of the heat map label.
 
 {% endhighlight %}
 
-### colorMappingCollection.label.fontFamily `String`
+### colorMappingCollection.label.fontFamily`string`
 {:#members:colorMappingCollection-label-fontFamily}
 
 Specifies the font family of the heat map label.
@@ -1239,7 +1239,7 @@ Specifies the font family of the heat map label.
 
 {% endhighlight %}
 
-### colorMappingCollection.label.fontColor `String`
+### colorMappingCollection.label.fontColor`string`
 {:#members:colorMappingCollection-label-fontColor}
 
 Specifies the font color of the heat map label.
