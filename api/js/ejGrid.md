@@ -1139,6 +1139,42 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
+### columns.filterBarTemplate `Object`
+{:#members:columns-filterbartemplate}
+
+Gets or sets a template that customize the filter control from default . See filterBarTemplate
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+  dataSource:window.gridData,
+  allowFiltering:true,
+  columns:[{field:"OrderID"},{
+    field: "CustomerID", width: 100, filterBarTemplate: {
+        create: function (args) {
+            return "<input>"
+        },
+        write: function (args) {
+            var data = ej.DataManager(window.gridData).executeLocal(new ej.Query().select("CustomerID"));
+            args.element.ejAutocomplete({ width: "100%", dataSource: data, enableDistinct: true, focusOut: ej.proxy(
+			args.column.filterBarTemplate.read, this, args) });
+        },
+        read: function (args) {
+            this.filterColumn(args.column.field, "equal", args.element.val(), "and", true)
+        },
+    },
+}, {field :"EmployeeID"}]
+});
+</script>
+{% endhighlight %}
+
 ### columns.foreignKeyField `String`
 {:#members:columns-foreignkeyfield}
 
