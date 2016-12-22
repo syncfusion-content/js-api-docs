@@ -77,7 +77,7 @@ $("#lb").ejListView();
 ## Members
 
 
-### ajaxSettings  `object`
+### ajaxSettings  `Object`
 {:#members:ajaxsettings}
 
 Specifies the ajaxSettings option to load the items to the ListView control.
@@ -98,17 +98,17 @@ Specifies the ajaxSettings option to load the items to the ListView control.
 {% endhighlight %}
 
 
-### ajaxSettings.async `Boolean`
+### ajaxSettings.async `boolean`
 {:#members:ajaxsettings-async}
 
 It specifies, whether to enable or disable asynchronous request.
 
-### ajaxSettings.cache `Boolean`
+### ajaxSettings.cache `boolean`
 {:#members:ajaxsettings-cache}
 
 It specifies the page will be cached in the web browser.
 
-### ajaxSettings.contentType `String`
+### ajaxSettings.contentType `string`
 {:#members:ajaxsettings-contenttype}
 
 It specifies the type of data is send in the query string.
@@ -118,17 +118,17 @@ It specifies the type of data is send in the query string.
 
 It specifies the data as an object, will be passed in the query string.
 
-### ajaxSettings.dataType `String`
+### ajaxSettings.dataType `string`
 {:#members:ajaxsettings-datatype}
 
 It specifies the type of data that you're expecting back from the response.
 
-### ajaxSettings.type `String`
+### ajaxSettings.type `string`
 {:#members:ajaxsettings-type}
 
 It specifies the HTTP request type.
 
-### checkedIndices `array`
+### checkedIndices `Array`
 {:#members:checkedindices}
 
 
@@ -137,8 +137,6 @@ Set the index values to be selected on intial loading. This works only when enab
 
 #### Default Value
 * []
-
-
 
 
 #### Example
@@ -231,7 +229,7 @@ $("#lb").ejListView ("option", "cssClass", "customclass");
 
 
 
-### dataSource `array`
+### dataSource `Array`
 {:#members:datasource}
 
 
@@ -637,7 +635,7 @@ $("#lb").ejListView ("option", "enablePersistence", true);
 
 
 
-### fieldSettings `object`
+### fieldSettings `Object`
 {:#members:fieldsettings}
 
 
@@ -690,7 +688,7 @@ $("#lb").ejListView ("option", "fieldSettings", true);
 </script> {% endhighlight %}
 
 
-### items `array`
+### items `Array`
 {:#members:items}
 
 
@@ -848,7 +846,7 @@ $("#lb").ejListView ("option", "headerTitle", "Title");
 
 
 
-### height `String` `Number`
+### height `string` `number`
 {:#members:height}
 
 
@@ -905,7 +903,7 @@ $("#lb").ejListView ({ height: 300 });
 $("#lb").ejListView ("option", "height", 300);
 </script>{% endhighlight %}
 
-### locale `String`
+### locale `string`
 {:#members:locale}
 
 Set the localization culture for ListView Widget.
@@ -1046,7 +1044,7 @@ $("#lb").ejListView ("option", "preventSelection", true);
 
 
 
-### query `object`
+### query `Object`
 {:#members:query}
 
 
@@ -1354,7 +1352,7 @@ Specifies ID of the element contains template contents.
 
 
 
-### width `String` `Number`
+### width `string` `number`
 {:#members:width}
 
 
@@ -1439,7 +1437,7 @@ To add item in the given index. If you have enabled grouping in ListView then yo
 <tr>
 <td class="name">
 item</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description">Specifies the item to be added in ListView</td>
 </tr>
 <tr>
@@ -3001,7 +2999,7 @@ textStatus</td>
 <tr>
 <td class="name">
 item</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description">returns the current list item.</td>
 </tr>
 <tr>
@@ -3108,7 +3106,7 @@ content</td>
 <tr>
 <td class="name">
 item</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description">returns the current list item.</td>
 </tr>
 <tr>

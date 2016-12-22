@@ -37,7 +37,7 @@ $(element).ejSplitter(options)
 <tr>
 <td class="name">
 options</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description">settings for Splitter.</td>
 </tr>
 </tbody>
@@ -442,7 +442,7 @@ Specify height for splitter control.
 
 
 
-### htmlAttributes `object`
+### htmlAttributes `Object`
 {:#members:htmlattributes}
 
 
@@ -643,7 +643,7 @@ $("#innerSplitter").ejSplitter({ orientation: ej.Orientation.Horizontal });
 
 
 
-### properties `array`
+### properties `Array`
 {:#members:properties}
 
 
@@ -794,7 +794,7 @@ content</td>
 <tr>
 <td class="name">
 property</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description">pane properties.</td>
 </tr>
 <tr>
@@ -1198,19 +1198,19 @@ cancel</td>
 <tr>
 <td class="name">
 collapsed</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description">returns collapsed pane details.</td>
 </tr>
 <tr>
 <td class="name">
 expanded</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description">returns expanded pane details.</td>
 </tr>
 <tr>
 <td class="name">
 model</td>
-<td class="type"><ts ref="ej.Splitter.Model"/><span class="param-type">object</span></td>
+<td class="type"><ts ref="ej.Splitter.Model"/><span class="param-type">Object</span></td>
 <td class="description">returns the splitter model.</td>
 </tr>
 <tr>
@@ -1306,7 +1306,7 @@ cancel</td>
 <tr>
 <td class="name">
 model</td>
-<td class="type"><ts ref="ej.Splitter.Model"/><span class="param-type">object</span></td>
+<td class="type"><ts ref="ej.Splitter.Model"/><span class="param-type">Object</span></td>
 <td class="description">returns the splitter model.</td>
 </tr>
 <tr>
@@ -1395,7 +1395,7 @@ cancel</td>
 <tr>
 <td class="name">
 model</td>
-<td class="type"><ts ref="ej.Splitter.Model"/><span class="param-type">object</span></td>
+<td class="type"><ts ref="ej.Splitter.Model"/><span class="param-type">Object</span></td>
 <td class="description">returns the splitter model.</td>
 </tr>
 <tr>
@@ -1484,19 +1484,19 @@ cancel</td>
 <tr>
 <td class="name">
 collapsed</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description">returns collapsed pane details.</td>
 </tr>
 <tr>
 <td class="name">
 expanded</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description">returns expanded pane details.</td>
 </tr>
 <tr>
 <td class="name">
 model</td>
-<td class="type"><ts ref="ej.Splitter.Model"/><span class="param-type">object</span></td>
+<td class="type"><ts ref="ej.Splitter.Model"/><span class="param-type">Object</span></td>
 <td class="description">returns the splitter model.</td>
 </tr>
 <tr>
@@ -1592,19 +1592,19 @@ cancel</td>
 <tr>
 <td class="name">
 prevPane</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description">returns previous pane details.</td>
 </tr>
 <tr>
 <td class="name">
 nextPane</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description">returns next pane details.</td>
 </tr>
 <tr>
 <td class="name">
 model</td>
-<td class="type"><ts ref="ej.Splitter.Model"/><span class="param-type">object</span></td>
+<td class="type"><ts ref="ej.Splitter.Model"/><span class="param-type">Object</span></td>
 <td class="description">returns the splitter model.</td>
 </tr>
 <tr>

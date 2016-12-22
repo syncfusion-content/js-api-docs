@@ -101,7 +101,7 @@ $("#navpane").ejNavigationDrawer();
 
 
 
-### ajaxSettings  `object`
+### ajaxSettings  `Object`
 {:#members:ajaxsettings}
 
 Specifies the ajaxSettings option to load the content to the NavigationDrawer control.
@@ -132,17 +132,17 @@ Specifies the ajaxSettings option to load the content to the NavigationDrawer co
 {% endhighlight %}
 
 
-### ajaxSettings.async `Boolean`
+### ajaxSettings.async `boolean`
 {:#members:ajaxsettings-async}
 
 It specifies, whether to enable or disable asynchronous request.
 
-### ajaxSettings.cache `Boolean`
+### ajaxSettings.cache `boolean`
 {:#members:ajaxsettings-cache}
 
 It specifies the page will be cached in the web browser.
 
-### ajaxSettings.contentType `String`
+### ajaxSettings.contentType `string`
 {:#members:ajaxsettings-contenttype}
 
 It specifies the type of data is send in the query string.
@@ -152,12 +152,12 @@ It specifies the type of data is send in the query string.
 
 It specifies the data as an object, will be passed in the query string.
 
-### ajaxSettings.dataType `String`
+### ajaxSettings.dataType `string`
 {:#members:ajaxsettings-datatype}
 
 It specifies the type of data that you're expecting back from the response.
 
-### ajaxSettings.type `String`
+### ajaxSettings.type `string`
 {:#members:ajaxsettings-type}
 
 It specifies the HTTP request type.
@@ -528,7 +528,7 @@ $("#navpane").ejNavigationDrawer ("option", "enableListView", "false");
 
 
 
-### items `array`
+### items `Array`
 {:#members:items}
 
 
@@ -613,7 +613,7 @@ $("#navpane").ejNavigationDrawer ("option", "items", [{text:"Item1"},{text:"Item
 
 
 
-### listViewSettings `object`
+### listViewSettings `Object`
 {:#members:listviewsettings}
 
 
@@ -1635,7 +1635,7 @@ cancel</td>
 <tr>
 <td class="name">
 model</td>
-<td class="type"><ts ref="ej.NavigationDrawer.Model"/><span class="param-type">object</span></td>
+<td class="type"><ts ref="ej.NavigationDrawer.Model"/><span class="param-type">Object</span></td>
 <td class="description">returns the Navigation Drawer model</td>
 </tr>
 <tr>
@@ -1740,7 +1740,7 @@ cancel</td>
 <tr>
 <td class="name">
 model</td>
-<td class="type"><ts ref="ej.NavigationDrawer.Model"/><span class="param-type">object</span></td>
+<td class="type"><ts ref="ej.NavigationDrawer.Model"/><span class="param-type">Object</span></td>
 <td class="description">returns the Navigation Drawer model</td>
 </tr>
 <tr>
@@ -1845,7 +1845,7 @@ cancel</td>
 <tr>
 <td class="name">
 model</td>
-<td class="type"><ts ref="ej.NavigationDrawer.Model"/><span class="param-type">object</span></td>
+<td class="type"><ts ref="ej.NavigationDrawer.Model"/><span class="param-type">Object</span></td>
 <td class="description">returns the Navigation Drawer model</td>
 </tr>
 <tr>
