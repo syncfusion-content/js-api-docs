@@ -60,7 +60,7 @@ $("#tile").ejTile({ imageUrl: "people.png" });
 ## Members
 
 
-### badge `object`
+### badge `Object`
 {:#members:badge}
 
 
@@ -312,7 +312,7 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", badge: { enabled:
 $("#tile").ejTile("option", "badge.position","bottomright"); </script>           {% endhighlight %}
 
 
-### caption `object`
+### caption `Object`
 {:#members:caption}
 
 
@@ -902,7 +902,7 @@ Example
 
 {% endhighlight %}
 
-### liveTile `object`
+### liveTile `Object`
 {:#members:livetile}
 
 

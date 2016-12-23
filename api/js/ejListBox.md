@@ -16,7 +16,7 @@ The ListBox control provides a list of options for users to select from. It is c
 
 **Syntax**:
 
-$(element).ejListBox<span class="signature">(options)</span>
+$(element).ejListBox(options)
 
 **Example**:
 {:.example}
@@ -191,7 +191,7 @@ $('#list').ejListBox({
 {% endhighlight %}
 
 
-### checkedIndices `array`
+### checkedIndices `Array`
 {:#members:checkedindices} 
 
 Set of list items to be checked by default using its index. It works only when the showCheckbox property is set to true. 
@@ -228,7 +228,7 @@ Example
  {% endhighlight %}
 
 
-### dataSource `object`
+### dataSource `Object`
 {:#members:datasource}
 
 Contains the list of data for generating the list items.
@@ -340,7 +340,7 @@ Example
 {% endhighlight %}
 
 
-### fields `object`
+### fields `Object`
 {:#members:fields}
 
 Mapping fields for the data items of the ListBox widget.
@@ -376,7 +376,7 @@ Defines the specific field name which contains Boolean values to specify whether
 
 The grouping in the ListBox widget can be defined using this field. 
 
-###fields.htmlAttributes `object`
+###fields.htmlAttributes `Object`
 {:#members:fields-htmlAttributes}
 
 Defines the HTML attributes such as id, class, styles for the specific ListBox item.
@@ -592,7 +592,7 @@ Example
 
 {% endhighlight %}
 
-### selectedIndices `array`
+### selectedIndices `Array`
 {:#members:selectedindices}
 
 The list items to be selected by default using its indices. To use this property allowMultiSelection should be enabled.
@@ -827,7 +827,7 @@ Adds a given list items in the ListBox widget at a specified index. It accepts t
 <tr>
 <td>
 listItem</td><td>
-object |string</td><td>
+Object |string</td><td>
 This can be a list item object (for JSON binding) or a string (for UL and LI rendering). Also we can the specify this as an array of list item object or an array of strings to add multiple items.</td></tr>
 <tr>
 <td>
@@ -953,7 +953,7 @@ Disables a list item by passing the item text as parameter.
 <tr>
 <td>
 text</td><td>
-String</td><td>
+string</td><td>
 Text of the listbox item to be disabled.</td></tr>
 </table>
 
@@ -1340,7 +1340,7 @@ Merges the given data with the existing data items in the listbox.
 <tr>
 <td>
 data</td><td>
-array</td><td>
+Array</td><td>
 Data to merge in listbox.</td></tr>
 </table>
 
@@ -1415,7 +1415,7 @@ Refreshes the ListBox widget.
 <tr>
 <td>
 refreshData</td><td>
-Boolean</td><td>
+boolean</td><td>
 Refreshes both the datasource and the dimensions of the ListBox widget when the parameter is passed as true, otherwise only the ListBox dimensions will be refreshed.</td></tr>
 </table>
 
@@ -1577,7 +1577,7 @@ Selects list item using its value property.
 <tr>
 <td>
 value</td><td>
-String</td><td>
+string</td><td>
 Value of the listbox item to be selected.</td></tr>
 </table>
 
@@ -1647,7 +1647,7 @@ Example
 {% endhighlight %}
 
 
-### uncheckAll<span class="signature">()</span>
+### uncheckAll()
 {:#methods:uncheckall}
 
 Unchecks all the checked list items in the ListBox widget. To use this method showCheckbox property to be set as true.
@@ -1997,7 +1997,7 @@ Shows a hidden list item using its value.
 <tr>
 <td>
 value</td><td>
-String</td><td>
+string</td><td>
 Value of the listbox item to be shown.</td></tr>
 </table>
 
@@ -2025,7 +2025,7 @@ Hide a list item using its value.
 <tr>
 <td>
 value</td><td>
-String</td><td>
+string</td><td>
 Value of the listbox item to be hidden.</td></tr>
 </table>
 
@@ -2283,7 +2283,7 @@ Instance of the listbox model object.</td></tr>
 <tr>
 <td>
 type</td><td>
-String</td><td>
+string</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
@@ -2298,7 +2298,7 @@ Object of ListBox widget which contains DataManager arguments</td></tr>
 <tr>
 <td>
 cancel</td><td>
-Boolean</td><td>
+boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
@@ -2348,7 +2348,7 @@ Instance of the listbox model object.</td></tr>
 <tr>
 <td>
 type</td><td>
-String</td><td>
+string</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
@@ -2363,37 +2363,37 @@ The Datasource of the listbox.</td></tr>
 <tr>
 <td>
 index</td><td>
-Number</td><td>
+number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
 cancel</td><td>
-Boolean</td><td>
+boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
 isChecked</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
 isSelected</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
 isEnabled</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on the list item is enabled or not.</td></tr>
 <tr>
 <td>
 text</td><td>
-String</td><td>
+string</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
 value</td><td>
-String</td><td>
+string</td><td>
 List item’s value.</td></tr>
 </table>
 
@@ -2434,7 +2434,7 @@ Instance of the listbox model object.</td></tr>
 <tr>
 <td>
 type</td><td>
-String</td><td>
+string</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
@@ -2449,37 +2449,37 @@ The Datasource of the listbox.</td></tr>
 <tr>
 <td>
 index</td><td>
-Number</td><td>
+number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
 cancel</td><td>
-Boolean</td><td>
+boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
 isChecked</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
 isSelected</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
 isEnabled</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on the list item is enabled or not.</td></tr>
 <tr>
 <td>
 text</td><td>
-String</td><td>
+string</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
 value</td><td>
-String</td><td>
+string</td><td>
 List item’s value.</td></tr>
 </table>
 
@@ -2527,7 +2527,7 @@ Name of the event.</td></tr>
 <tr>
 <td>
 cancel</td><td>
-Boolean</td><td>
+boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 </table>
 
@@ -2568,12 +2568,12 @@ Instance of the listbox model object.</td></tr>
 <tr>
 <td>
 type</td><td>
-String</td><td>
+string</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
 cancel</td><td>
-Boolean</td><td>
+boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 </table>
 
@@ -2613,12 +2613,12 @@ Instance of the listbox model object.</td></tr>
 <tr>
 <td>
 type</td><td>
-String</td><td>
+string</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
 cancel</td><td>
-Boolean</td><td>
+boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 </table>
 
@@ -2659,12 +2659,12 @@ Instance of the listbox model object.</td></tr>
 <tr>
 <td>
 type</td><td>
-String</td><td>
+string</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
 cancel</td><td>
-Boolean</td><td>
+boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 </table>
 
@@ -2705,12 +2705,12 @@ Instance of the listbox model object.</td></tr>
 <tr>
 <td>
 type</td><td>
-String</td><td>
+string</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
 cancel</td><td>
-Boolean</td><td>
+boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
@@ -2737,26 +2737,26 @@ List item’s index.</td></tr>
 <tr>
 <td>
 isChecked</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
 isSelected</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
 isEnabled</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on whether the list item is enabled or not.</td></tr>
 <tr>
 <td>
 text</td><td>
-String</td><td>
+string</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>value</td><td>
-String</td><td>
+string</td><td>
 List item’s value.</td></tr>
 </table>
 </td></tr>
@@ -2801,12 +2801,12 @@ Instance of the listbox model object.</td></tr>
 <tr>
 <td>
 type</td><td>
-String</td><td>
+string</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
 cancel</td><td>
-Boolean</td><td>
+boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
@@ -2827,31 +2827,31 @@ The Datasource of the listbox.</td></tr>
 <tr>
 <td>
 index</td><td>
-Number</td><td>
+number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
 isChecked</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
 isSelected</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
 isEnabled</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on whether the list item is enabled or not.</td></tr>
 <tr>
 <td>text</td><td>
-String</td><td>
+string</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
 value</td><td>
-String</td><td>
+string</td><td>
 List item’s value.</td></tr>
 </table></td></tr>
 
@@ -2894,12 +2894,12 @@ Instance of the listbox model object.</td></tr>
 <tr>
 <td>
 type</td><td>
-String</td><td>
+string</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
 cancel</td><td>
-Boolean</td><td>
+boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
@@ -2920,32 +2920,32 @@ The Datasource of the listbox.</td></tr>
 <tr>
 <td>
 index</td><td>
-Number</td><td>
+number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
 isChecked</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
 isSelected</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
 isEnabled</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on whether the list item is enabled or not.</td></tr>
 <tr>
 <td>
 text</td><td>
-String</td><td>
+string</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
 value</td><td>
-String</td><td>
+string</td><td>
 List item’s value.</td></tr>
  </table></td></tr>
 
@@ -2988,12 +2988,12 @@ Instance of the listbox model object.</td></tr>
 <tr>
 <td>
 type</td><td>
-String</td><td>
+string</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
 cancel</td><td>
-Boolean</td><td>
+boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
@@ -3014,32 +3014,32 @@ The Datasource of the listbox.</td></tr>
 <tr>
 <td>
 index</td><td>
-Number</td><td>
+number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
 isChecked</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
 isSelected</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
 isEnabled</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on whether the list item is enabled or not.</td></tr>
 <tr>
 <td>
 text</td><td>
-String</td><td>
+string</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
 value</td><td>
-String</td><td>
+string</td><td>
 List item’s value.</td></tr>
 </table>
 </td></tr>
@@ -3084,7 +3084,7 @@ Instance of the listbox model object.</td></tr>
 <tr>
 <td>
 type</td><td>
-String</td><td>
+string</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
@@ -3099,37 +3099,37 @@ The Datasource of the listbox.</td></tr>
 <tr>
 <td>
 index</td><td>
-Number</td><td>
+number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
 cancel</td><td>
-Boolean</td><td>
+boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
 isChecked</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
 isSelected</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
 isEnabled</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on the list item is enabled or not.</td></tr>
 <tr>
 <td>
 text</td><td>
-String</td><td>
+string</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
 value</td><td>
-String</td><td>
+string</td><td>
 List item’s value.</td></tr>
 </table>
 
@@ -3170,7 +3170,7 @@ Instance of the listbox model object.</td></tr>
 <tr>
 <td>
 type</td><td>
-String</td><td>
+string</td><td>
 Name of the event.</td></tr>
 <tr>
 <td>
@@ -3185,37 +3185,37 @@ The Datasource of the listbox.</td></tr>
 <tr>
 <td>
 index</td><td>
-Number</td><td>
+number</td><td>
 List item’s index.</td></tr>
 <tr>
 <td>
 cancel</td><td>
-Boolean</td><td>
+boolean</td><td>
 Set this option to true to cancel the event.</td></tr>
 <tr>
 <td>
 isChecked</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on whether the list item is checked or not.</td></tr>
 <tr>
 <td>
 isSelected</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on whether the list item is selected or not.</td></tr>
 <tr>
 <td>
 isEnabled</td><td>
-Boolean</td><td>
+boolean</td><td>
 Boolean value based on the list item is enabled or not.</td></tr>
 <tr>
 <td>
 text</td><td>
-String</td><td>
+string</td><td>
 List item’s text (label).</td></tr>
 <tr>
 <td>
 value</td><td>
-String</td><td>
+string</td><td>
 List item’s value.</td></tr>
 </table>
 
