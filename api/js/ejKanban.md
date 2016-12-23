@@ -160,7 +160,7 @@ To enable or disable the title of the card.
 
 {% endhighlight %}
 
-### swimlaneSettings `object`
+### swimlaneSettings `Object`
 {:#members:swimlanesettings}
 
 Customize the settings for swim lane.
@@ -299,7 +299,7 @@ To enable or disable DragAndDrop across swim lane.
 
 {% endhighlight %}
 
-### swimlaneSettings.unassignedGroup `boolean`
+### swimlaneSettings.unassignedGroup `Object`
 {:#members:swimlanesettings-unassignedgroup}
 
 Customize the settings for unassigned category of swim lane.
@@ -397,7 +397,7 @@ To enable or disable unassigned category change with swim lane key values.
 
 {% endhighlight %}
 
-### swimlaneSettings.unassignedGroup.keys `boolean`
+### swimlaneSettings.unassignedGroup.keys `Array`
 {:#members:swimlanesettings-unassignedgroup-keys}
 
 To set the user defined values which are need to categorized as unassigned category swim lane groups.
@@ -814,7 +814,7 @@ Gets or sets a value that indicates whether to enable printing option.
      
 {% endhighlight %}
 
-### contextMenuSettings `object`
+### contextMenuSettings `Object`
 {:#members:contextmenusettings}
 
 Gets or sets an object that indicates whether to customize the context menu behavior of the Kanban.
@@ -909,14 +909,14 @@ To enable context menu.All default context menu will show.
 
 {% endhighlight %}
 
-### contextMenuSettings.disableDefaultItems `array`
+### contextMenuSettings.disableDefaultItems `Array`
 {:#members:contextmenusettings-disabledefaultitems}
 
 Gets or sets a value that indicates the list of items needs to be disable from default context menu items.
 
 #### Default Value:
 
-* array
+* Array
 
 #### Example
 
@@ -957,14 +957,14 @@ Gets or sets a value that indicates the list of items needs to be disable from d
 
 {% endhighlight %}
 
-### contextMenuSettings.menuItems `array`
+### contextMenuSettings.menuItems `Array`
 {:#members:contextmenusettings-menuitems}
 
 Its used to add specific default context menu items.
 
 #### Default Value:
 
-* array
+* Array
 
 #### Example
 
@@ -1005,14 +1005,14 @@ Its used to add specific default context menu items.
    
 {% endhighlight %}
 
-### contextMenuSettings.customMenuItems `array`
+### contextMenuSettings.customMenuItems `Array`
 {:#members:contextmenusettings-custommenuitems}
 
 Gets or sets a value that indicates whether to add custom contextMenu items. 
 
 #### Default Value:
 
-* array
+* Array
 
 #### Example
 
@@ -1188,7 +1188,7 @@ Gets the display name to custom menu item.
     
 {% endhighlight %}
 
-### contextMenuSettings.customMenuItems.template `String`
+### contextMenuSettings.customMenuItems.template `string`
 {:#members:contextmenusettings-custommenuitems-template}
 
 Gets the template to render custom context menu item.
@@ -1243,14 +1243,14 @@ Gets the template to render custom context menu item.
 
 {% endhighlight %}
 
-### columns `array`
+### columns `Array`
 {:#members:columns}
 
 Gets or sets an object that indicates to render the Kanban with specified columns.
 
 #### Default Value:
 
-* array
+* Array
 
 #### Example
 
@@ -1575,14 +1575,14 @@ To set column collapse or expand state
 
  {% endhighlight %}
 
-### columns.constraints `object`
+### columns.constraints `Object`
 {:#members:columns-constraints}
 
 To customize the column level constraints with minimum ,maximum limit validation.
 
 #### Default Value
 
-* object
+* Object
 
 #### Example
 
@@ -1963,7 +1963,7 @@ Gets or sets an object that indicates whether to show add new button.
 
  {% endhighlight %}
  
-### cardSettings `object`
+### cardSettings `Object`
 {:#members:cardsettings}
 
 Gets or sets an object that indicates whether to Customize the card settings.
@@ -2102,7 +2102,7 @@ Gets or sets a value that indicates to add the template for card .
 
 {% endhighlight %}
        
-### cardSettings.colorMapping `object`
+### cardSettings.colorMapping `Object`
 {:#members:cardsettings-colormapping}
 
 To customize the card border color based on assigned task. Colors and corresponding values defined here will be mapped with colorField mapped data source column.
@@ -2337,7 +2337,7 @@ Gets or sets a value that indicates to render the Kanban with custom theme.
 
 {% endhighlight %}
  
-### dataSource `object`
+### dataSource `Object`
 {:#members:datasource}
 
 Gets or sets the data to render the Kanban with cards.
@@ -2378,7 +2378,7 @@ Gets or sets the data to render the Kanban with cards.
 
 {% endhighlight %}
 
-### enableTouch `Boolean`
+### enableTouch `boolean`
 {:#members:enabletouch}
 
 To perform kanban functionalities with touch interaction.
@@ -2507,7 +2507,7 @@ To show total count of cards in each column.
 
 {% endhighlight %}
 
-### editSettings `object`
+### editSettings `Object`
 {:#members:editsettings}
 
 Get or sets an object that indicates whether to customize the editing behavior of the Kanban.
@@ -2671,7 +2671,7 @@ Gets or sets a value that indicates whether to enable the adding action in cards
  
 {% endhighlight %}
 
-### editSettings.dialogTemplate `String`
+### editSettings.dialogTemplate `string`
 {:#members:editsettings-dialogtemplate}
 
 This specifies the id of the template which is require to be edited using the Dialog Box.
@@ -2823,7 +2823,7 @@ Get or sets an object that indicates whether to customize the editMode of the Ka
 
 {% endhighlight %}
 
-### editSettings.editItems `array`
+### editSettings.editItems `Array`
 {:#members: editsettings-edititems}
 
 Get or sets an object that indicates whether to customize the editing fields of Kanban card.
@@ -3032,7 +3032,7 @@ It is used to set the particular editType in the card for editing.
 
 {% endhighlight %}
 
-### editSettings.editItems.validationRules `object`
+### editSettings.editItems.validationRules `Object`
 {:#members:editsettings-edititems-validationrules}
 
 Gets or sets a value that indicates to define constraints for saving data to the database.
@@ -3089,7 +3089,7 @@ Gets or sets a value that indicates to define constraints for saving data to the
 
 {% endhighlight %}
 
-### editSettings.editItems.editParams `object`
+### editSettings.editItems.editParams `Object`
 {:#members:editsettings-edititems-editparams}
 
 It is used to set the particular editparams in the card for editing.
@@ -3202,7 +3202,7 @@ It is used to specify defaultValue for the fields while adding new card.
 
 {% endhighlight %}
 
-### editSettings.externalFormTemplate `String`
+### editSettings.externalFormTemplate `string`
 {:#members:editsettings-externalformtemplate}
 
 This specifies the id of the template which is require to be edited using the External edit form.
@@ -3348,7 +3348,7 @@ This specifies to set the position of an External edit form either in the right 
 
 {% endhighlight %}
             
-### fields `object`
+### fields `Object`
 {:#members:fields}
 
 To customize field mappings for card , editing title and control key parameters
@@ -3905,14 +3905,14 @@ Gets or sets a value that indicates whether to set the minimum width of the resp
 
 {% endhighlight %}
 
-### filterSettings `array`
+### filterSettings `Array`
 {:#members:filtersettings}
 
 To customize the filtering behavior based on queries given.
 
 #### Default Value:
 
-* array
+* Array
 
 #### Example
 
@@ -4000,7 +4000,7 @@ Gets or sets an object of display name to filter queries.
 
 {% endhighlight %}
 
-### filterSettings.query `object`
+### filterSettings.query `Object`
 {:#members:filtersettings-query}
 
 Gets or sets an object that Queries to perform filtering
@@ -4095,7 +4095,7 @@ Gets or sets an object of tooltip to filter buttons.
       
 {% endhighlight %}
 
-### query `object`
+### query `Object`
 {:#members:query}
 
 ej Query to query database of Kanban.
@@ -4138,7 +4138,7 @@ ej Query to query database of Kanban.
 
 {% endhighlight %}
 
-### keySettings `object`
+### keySettings `Object`
 {:#members:keysettings}
 
 To change the key in keyboard interaction to Kanban control.
@@ -4202,7 +4202,7 @@ To change the key in keyboard interaction to Kanban control.
 
 {% endhighlight %}
 
-### scrollSettings `object`
+### scrollSettings `Object`
 {:#members:scrollsettings}
 
 Gets or sets an object that indicates whether to customize the scrolling behavior of the Kanban.
@@ -4409,7 +4409,7 @@ To allow the Kanban to freeze particular swimlane at the time of scrolling , unt
         
 {% endhighlight %}
 
-### searchSettings `object`
+### searchSettings `Object`
 {:#members:searchsettings}
 
 To customize the searching behavior of the Kanban.
@@ -4459,7 +4459,7 @@ To customize the searching behavior of the Kanban.
       
 {% endhighlight %}
 
-### searchSettings.fields `array`
+### searchSettings.fields `Array`
 {:#members:searchsettings-fields}
 
 To customize the fields the searching operation can be perform.
@@ -4721,7 +4721,7 @@ To allow customize selection type. Accepting types are "single" and "multiple".
 
 {% endhighlight %}
 
-### stackedHeaderRows `array`
+### stackedHeaderRows `Array`
 {:#members:stackedheaderrows}
 
 Gets or sets an object that indicates to managing the collection of stacked header rows for the Kanban.
@@ -4772,7 +4772,7 @@ Gets or sets an object that indicates to managing the collection of stacked head
 
 {% endhighlight %}
 
-### stackedHeaderRows.stackedHeaderColumns `array`
+### stackedHeaderRows.stackedHeaderColumns `Array`
 {:#members:stackedheaderrows-stackedheadercolumns}
 
 Gets or sets a value that indicates whether to add stacked header columns into the stacked header rows.
@@ -4925,7 +4925,7 @@ Gets or sets a value that indicates the column for the particular stacked header
 
 {% endhighlight %}
 
-### tooltipSettings `object`
+### tooltipSettings `Object`
 {:#members:tooltipsettings}
 
 The tooltip allows to display card details in a tooltip while hovering on it.
@@ -5076,14 +5076,14 @@ To customize the tooltip display based on your requirements.
     
 {% endhighlight %}
   
-### workflows `array`
+### workflows `Array`
 {:#members:workflows}
 
 Gets or sets an object that indicates to render the Kanban with specified workflows.
 
 #### Default Value
 
-* array
+* Array
 
 #### Example
 
@@ -5229,7 +5229,7 @@ Gets or sets an object that indicates to render the Kanban with specified workfl
     </script>
 {% endhighlight %}
 
-### locale `String`
+### locale `string`
 {:#members:locale}
 
 Gets or sets a value that indicates whether to customizing the user interface (UI) as locale-specific in order to display regional data i.e. in a language and culture specific to a particular country or region.

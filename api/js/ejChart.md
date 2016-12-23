@@ -4049,6 +4049,33 @@ commonSeriesOptions :{marker :{dataLabel :{shape : "circle"}}}
 {% endhighlight %}
 
 
+### commonSeriesOptions.marker.dataLabel.template `string`
+{:#members:commonseriesoptions-marker-datalabel-template}
+
+
+
+
+Custom template to format the data label content. Use “point.x” and “point.y” as a placeholder text to display the corresponding data point’s x and y value.
+
+
+#### Default Value
+
+
+
+* ""
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonseriesoptions : { marker : { dataLabel : { template : "LabelTemplateID" }}}                 
+});
+
+{% endhighlight %}
 
 
 ### commonSeriesOptions.marker.dataLabel.textMappingName `string`
@@ -32473,6 +32500,37 @@ $("#container").ejChart({
 
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hqmmhpgk)
+
+
+
+### zooming.enableScrollbar `boolean`
+{:#members:zooming-enableScrollbar}
+
+
+
+
+Toggles the visibility of the scrollbar, which will be displayed while zooming.
+
+
+#### Default Value
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   zooming :{ enableScrollbar : true }            
+
+});
+
+{% endhighlight %}
 
 
 
