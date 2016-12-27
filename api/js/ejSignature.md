@@ -81,7 +81,7 @@ This property is used to set the background image for the signature.
 
 {% endhighlight %}
 
-### enabled `Boolean`
+### enabled `boolean`
 {:#members:enabled}
 
 Enables or disables the **Signature** textbox widget.
@@ -119,7 +119,7 @@ Sets the height of the Signature control.
 
 {% endhighlight %}
  
-### isResponsive `Boolean`
+### isResponsive `boolean`
 {:#members:isresponsive}
 
  Enables/disables responsive support for the signature control (i.e) maintain the signature drawing during the window resizing time.
@@ -138,7 +138,7 @@ Sets the height of the Signature control.
 
 {% endhighlight %}
  
-### saveImageFormat `Enum`
+### saveImageFormat `enum`
 {:#members:saveimageformat}
 
 <ts name = "ej.Signature.SaveImageFormat"/>
@@ -179,7 +179,7 @@ Allows the type of the image format to be saved when the signature image is save
 {% endhighlight %}
 
 
-### saveWithBackground `Boolean`
+### saveWithBackground `boolean`
 {:#members:savewithbackground}
 
 Allows the signature image to be saved along with its background.
@@ -199,7 +199,7 @@ Allows the signature image to be saved along with its background.
 
 {% endhighlight %}
  
-### showRoundedCorner `Boolean`
+### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
 
 Enables or disables rounded corner.
@@ -238,7 +238,7 @@ Sets the stroke color for the stroke of the signature.
 {% endhighlight %}
  
 
-### strokeWidth `Number`
+### strokeWidth `number`
 {:#members:strokewidth} 
 
 Sets the stroke width for the stroke of the signature.
@@ -430,7 +430,7 @@ Triggers when the stroke is changed.
 </tr>
 <tr>
 <td>cancel<br/><br/></td>
-<td>Boolean<br/><br/></td>
+<td>boolean<br/><br/></td>
 <td>Set this option to true to cancel the event.<br/><br/></td>
 </tr>
 <tr>
@@ -440,12 +440,12 @@ Triggers when the stroke is changed.
 </tr>
 <tr>
 <td>type<br/><br/></td>
-<td>String<br/><br/></td>
+<td>string<br/><br/></td>
 <td>Name of the event.<br/><br/></td>
 </tr>
 <tr>
 <td>lastImage<br/><br/></td>
-<td>String<br/><br/></td>
+<td>string<br/><br/></td>
 <td>Gives the last stored image<br/><br/></td>
 </tr>
 </table>
@@ -473,7 +473,7 @@ Triggered when the pointer is clicked or touched in the signature canvas.
 </tr>
 <tr>
 <td>cancel<br/><br/></td>
-<td>Boolean<br/><br/></td>
+<td>boolean<br/><br/></td>
 <td>Set this option to true to cancel the event.<br/><br/></td>
 </tr>
 <tr>
@@ -483,7 +483,7 @@ Triggered when the pointer is clicked or touched in the signature canvas.
 </tr>
 <tr>
 <td>type<br/><br/></td>
-<td>String<br/><br/></td>
+<td>string<br/><br/></td>
 <td>Name of the event.<br/><br/></td>
 </tr>
 <tr>
@@ -515,7 +515,7 @@ Triggered when the pointer is moved in the signature canvas.
 </tr>
 <tr>
 <td>cancel<br/><br/></td>
-<td>Boolean<br/><br/></td>
+<td>boolean<br/><br/></td>
 <td>Set this option to true to cancel the event.<br/><br/></td>
 </tr>
 <tr>
@@ -525,7 +525,7 @@ Triggered when the pointer is moved in the signature canvas.
 </tr>
 <tr>
 <td>type<br/><br/></td>
-<td>String<br/><br/></td>
+<td>string<br/><br/></td>
 <td>Name of the event.<br/><br/></td>
 </tr>
 <tr>
@@ -559,7 +559,7 @@ Triggered when the pointer is released after click or touch in the signature can
 </tr>
 <tr>
 <td>cancel<br/><br/></td>
-<td>Boolean<br/><br/></td>
+<td>boolean<br/><br/></td>
 <td>Set this option to true to cancel the event.<br/><br/></td>
 </tr>
 <tr>
@@ -569,7 +569,7 @@ Triggered when the pointer is released after click or touch in the signature can
 </tr>
 <tr>
 <td>type<br/><br/></td>
-<td>String<br/><br/></td>
+<td>string<br/><br/></td>
 <td>Name of the event.<br/><br/></td>
 </tr>
 <tr>

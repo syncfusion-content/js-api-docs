@@ -3509,7 +3509,35 @@ Specify opacity value for pointer of circular gauge
 </script>{% endhighlight %}
 
 
+### scales.pointers.radius `number`
+{:#members:scales.pointers.radius}
 
+
+
+
+Specify radius value for pointer of circular gauge
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
+        $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ radius: 10 }] }] });
+</script>{% endhighlight %}
 
 ### scales.pointers.placement `enum`
 {:#members:scales.pointers.placement}

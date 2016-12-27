@@ -415,7 +415,7 @@ $("#radialmenu").ejRadialMenu ("option", "imageClass", "e-radialimage");
 
 
 
-### items `array`
+### items `Array`
 {:#members:items}
 
 
@@ -547,7 +547,7 @@ function bold(e){
 </script>{% endhighlight %}
 
 
-### items.badge `object`
+### items.badge `Object`
 {:#members:items-badge}
 
 
@@ -633,7 +633,7 @@ $("#radialmenu").ejRadialMenu({ items:[{badge.enabled:true, badge.value:"3", typ
 </script>{% endhighlight %}
 
 
-### items.sliderSettings `object`
+### items.sliderSettings `Object`
 
 {:#members:items-sliderSettings}
 
@@ -657,7 +657,7 @@ $("#radialmenu").ejRadialMenu({ items:[{ badge.enabled:true, badge.value:3, type
 
 
 
-### items.sliderSettings.ticks `array`
+### items.sliderSettings.ticks `Array`
 {:#members:items-sliderSettings-ticks}
 
 
@@ -726,7 +726,7 @@ $("#radialmenu").ejRadialMenu({ items:[{ type:"slider", sliderSettings.ticks:[0,
 </script>{% endhighlight %}
 
 
-### items.items `array`
+### items.items `Array`
 {:#members:items-items}
 
 
@@ -866,7 +866,7 @@ $("#defaultradialmenu").ejRadialMenu ("option", "targetElementId", "target");
 
 
 
-### position `object`
+### position `Object`
 {:#members:position}
 
 
@@ -1893,7 +1893,7 @@ type{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 item{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the item of element</td>
 </tr>
 <tr>
@@ -2000,7 +2000,7 @@ type{% endhighlight %}</td>
 <tr>
 <td class="name">{% highlight html %}
 item{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the item of element</td>
 </tr>
 <tr>

@@ -40,7 +40,7 @@ $("#symbolpalette").ejSymbolPalette();
 
 ## Members
 
-### allowDrag `Boolean`
+### allowDrag `boolean`
 {:#members:allowdrag}
 
 Defines whether the symbols can be dragged from palette or not
@@ -60,7 +60,7 @@ $("#symbolpalette").ejSymbolPalette( { allowDrag: false } );
 
 {% endhighlight %}
 
-### cssClass `String`
+### cssClass `string`
 {:#members:cssclass}
 
 Customizes the style of the symbol palette
@@ -80,12 +80,12 @@ $("#symbolpalette").ejSymbolPalette({cssClass: "e-symbolpalette"});
 
 {% endhighlight %}
 
-### defaultSettings `Object`
+### defaultSettings `object`
 {:#members:defaultsettings}
 
 Defines the default properties of nodes and connectors
 
-### defaultSettings.node `Object`
+### defaultSettings.node `object`
 {:#members:defaultsettings-node}
 
 Defines the default properties of the nodes
@@ -107,7 +107,7 @@ $("#symbolpalette").ejSymbolPalette({
 
 {% endhighlight %}
 
-### defaultSettings.connector `Object`
+### defaultSettings.connector `object`
 {:#members:defaultsettings-connector}
 
 Defines the default properties of the connectors
@@ -129,7 +129,7 @@ $("#symbolpalette").ejSymbolPalette({
 
 {% endhighlight %}
 
-### diagramId `String`
+### diagramId `string`
 {:#members:diagramid}
 
 Sets the Id of the diagram, over which the symbols will be dropped
@@ -149,7 +149,7 @@ $("#symbolpalette").ejSymbolPalette({ diagramId: "diagram" });
 
 {% endhighlight %}
 
-### headerHeight `Number`
+### headerHeight `number`
 {:#members:headerheight}
 
 Sets the height of the palette headers
@@ -169,7 +169,7 @@ $("#symbolpalette").ejSymbolPalette( { headerHeight: 25 } );
 
 {% endhighlight %}
 
-### height `Number`
+### height `number`
 {:#members:height}
 
 Defines the height of the symbol palette
@@ -189,7 +189,7 @@ $("#symbolpalette").ejSymbolPalette( { height:300 } );
 
 {% endhighlight %}
 
-### paletteItemHeight `Number`
+### paletteItemHeight `number`
 {:#members:paletteitemheight}
 
 Defines the height of the palette items
@@ -209,7 +209,7 @@ $("#symbolpalette").ejSymbolPalette({ paletteItemHeight: 30 });
 
 {% endhighlight %}
 
-### paletteItemWidth `Number`
+### paletteItemWidth `number`
 {:#members:paletteitemwidth}
 
 Defines the width of the palette items
@@ -229,7 +229,7 @@ $("#symbolpalette").ejSymbolPalette({ paletteItemWidth: 30 });
 
 {% endhighlight %}
 
-### palettes `Array`
+### palettes `array`
 {:#members:palettes}
 
 An array of JSON objects, where each object represents a node/connector
@@ -328,7 +328,7 @@ $("#symbolpalette").ejSymbolPalette({
 
 {% endhighlight %}
 
-### palettes.items `Array`
+### palettes.items `array`
 {:#members:palettes-items}
 
 Defines the palette items
@@ -361,7 +361,7 @@ $("#symbolpalette").ejSymbolPalette({
 
 {% endhighlight %}
 
-### previewHeight `Number`
+### previewHeight `number`
 {:#members:previewheight}
 
 Defines the preview height of the symbols
@@ -381,7 +381,7 @@ $("#symbolpalette").ejSymbolPalette( { previewHeight: 50 });
 
 {% endhighlight %}
 
-### previewOffset `Object`
+### previewOffset `object`
 {:#members:previewoffset}
 
 Defines the offset value to be left between the mouse cursor and symbol previews
@@ -401,7 +401,7 @@ $("#symbolpalette").ejSymbolPalette({previewOffset: {x: 50, y: 50}});
 
 {% endhighlight %}
 
-### previewWidth `Number`
+### previewWidth `number`
 {:#members:previewwidth}
 
 Defines the width of the symbol previews
@@ -421,7 +421,7 @@ $("#symbolpalette").ejSymbolPalette( { previewWidth: 50 });
 
 {% endhighlight %}
 
-### showPaletteItemText `Boolean`
+### showPaletteItemText `boolean`
 {:#members:showpaletteitemtext}
 
 Enable or disable the palette item text
@@ -441,7 +441,7 @@ $("#symbolpalette").ejSymbolPalette({showPaletteItemText: true});
 
 {% endhighlight %}
 
-### width `Number`
+### width `number`
 {:#members:width}
 
 The width of the palette

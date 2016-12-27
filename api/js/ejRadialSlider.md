@@ -49,7 +49,7 @@ The RadialSlider provides an optimized interface for selecting a numeric value u
 
 ## Members
 
-### autoOpen `Boolean`
+### autoOpen `boolean`
 {:#members:autoopen}
 
 
@@ -82,7 +82,7 @@ To show the RadialSlider in initial render.
 
 
 
-### cssClass `String`
+### cssClass `string`
 {:#members:cssclass}
 
 
@@ -113,7 +113,7 @@ Sets the root class for RadialSlider theme. This cssClass API helps to use custo
 {% endhighlight %}
 
 
-### enableAnimation `Boolean`
+### enableAnimation `boolean`
 {:#members:enableanimation}
 
 
@@ -148,7 +148,7 @@ To enable Animation for Radial Slider.
 
 
 
-### enableRoundOff  `Boolean`
+### enableRoundOff  `boolean`
 {:#members:enableroundoff}
 
 
@@ -183,7 +183,7 @@ Enable/Disable the Roundoff property of RadialSlider
 
 
 
-### endAngle  `Number`
+### endAngle  `number`
 {:#members:endangle}
 
 
@@ -217,7 +217,7 @@ Specifies the endAngle value for radial slider circle.
 
 
 
-### inline  `Boolean`
+### inline  `boolean`
 {:#members:inline}
 
 
@@ -249,7 +249,7 @@ Specifies the inline for label show or not on given radius.
 
 
 
-### innerCircleImageClass `String`
+### innerCircleImageClass `string`
 {:#members:innercircleimageclass}
 
 
@@ -283,7 +283,7 @@ Specifies innerCircleImageClass, using this property we can give images for cent
 
 
 
-### innerCircleImageUrl `String`
+### innerCircleImageUrl `string`
 {:#members:innercircleimageurl}
 
 
@@ -314,7 +314,7 @@ Specifies the file name of center circle icon
 
 
 
-### labelSpace `Number`
+### labelSpace `number`
 {:#members:labelspace}
 
 
@@ -350,7 +350,7 @@ Specifies the Space between the radial slider element and the label.
 
 
 
-### radius `Number`
+### radius `number`
 {:#members:radius}
 
 
@@ -385,7 +385,7 @@ Specifies the radius of radial slider
 
 
 
-### showInnerCircle  `Boolean`
+### showInnerCircle  `boolean`
 {:#members:showinnercircle}
 
 
@@ -421,7 +421,7 @@ To show the RadialSlider inner circle.
 
 
 
-### startAngle  `Number`
+### startAngle  `number`
 {:#members:startangle}
 
 
@@ -456,7 +456,7 @@ Specifies the endAngle value for radial slider circle.
 
 
 
-### strokeWidth  `Number`
+### strokeWidth  `number`
 {:#members:strokewidth}
 
 
@@ -518,7 +518,7 @@ Specifies the ticks value of radial slider
 
 
 
-### value `Number`
+### value `number`
 {:#members:value}
 
 
@@ -644,7 +644,7 @@ Event triggers when the change occurs.
 
 <tr>
 <td> oldValue </td>
-<td> Number </td>
+<td> number </td>
 <td> returns the initial value of Radial slider </td>
 </tr>
 
@@ -656,7 +656,7 @@ Event triggers when the change occurs.
 
 <tr>
 <td> value </td>
-<td> Number </td>
+<td> number </td>
 <td> returns the current value of the Radial slider </td>
 </tr>
 
@@ -713,7 +713,7 @@ Event triggers when the radial slider is created.
 
 <tr>
 <td> model </td>
-<td> object </td>
+<td> Object </td>
 <td> returns the Radialslider model /td>
 </tr>
 
@@ -781,7 +781,7 @@ Event triggers when the mouse pointer is dragged over the radial slider.
 
 <tr>
 <td> selectedValue </td>
-<td> Number </td>
+<td> number </td>
 <td> returns the value selected </td>
 </tr>
 
@@ -794,7 +794,7 @@ Event triggers when the mouse pointer is dragged over the radial slider.
 
 <tr>
 <td> value </td>
-<td> Number </td>
+<td> number </td>
 <td> returns the current value selected in Radial slider </td>
 </tr>
 
@@ -857,7 +857,7 @@ cancel
 
 <tr>
 <td> selectedValue </td>
-<td> Number </td>
+<td> number </td>
 <td> returns the value selected in Radial slider </td>
 </tr>
 
@@ -869,7 +869,7 @@ cancel
 
 <tr>
 <td> value </td>
-<td> Number </td>
+<td> number </td>
 <td> returns the currently selected value </td>
 </tr>
 
@@ -940,7 +940,7 @@ Event triggers when the radial slider starts.
 
 <tr>
 <td> value </td>
-<td> Number </td>
+<td> number </td>
 <td> returns the current value selected in Radial slider </td>
 </tr>
 
@@ -1010,7 +1010,7 @@ Event triggers when the radial slider stops.
 
 <tr>
 <td> value </td>
-<td> Number </td>
+<td> number </td>
 <td> returns the current value selected in Radial slider </td>
 </tr>
 
