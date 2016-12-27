@@ -270,7 +270,7 @@ When set to true, adapts the Ribbon layout to fit the screen size of devices on 
 
 {% endhighlight %}
 
-### buttonDefaults `object`
+### buttonDefaults `Object`
 {:#members:buttondefaults}
 
 Specifies the height, width, enableRTL, showRoundedCorner,enabled,cssClass property to the controls in the ribbon commonly and 
@@ -278,7 +278,7 @@ it will work only when those properties are not defined in buttonSettings and co
 
 #### Default Value:
 
-* object
+* Object
 
 #### Example
 
@@ -416,7 +416,7 @@ Property to enable the ribbon quick access toolbar.
 
 {% endhighlight %}
 
-### collapsePinSettings `object`
+### collapsePinSettings `Object`
 {:#members:collapsepinsettings}
 
 Sets custom setting to the collapsible pin in the ribbon.
@@ -553,7 +553,7 @@ Sets tooltip for the collapse pin .
 
 {% endhighlight %}
 
-### collapsePinSettings.customToolTip  `object` 
+### collapsePinSettings.customToolTip  `Object` 
 {:#members:collapsepinsettings-customtooltip }
 
 Specifies the custom tooltip for collapse pin.Refer to ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
@@ -884,7 +884,7 @@ Set `collapsible` property as true to render ribbon in initially collapsed state
             
 {% endhighlight %}
 
-### enableRTL `object`
+### enableRTL `boolean`
 {:#members:enablertl}
 
 Align content in the ribbon control from right to left by setting the property as true.
@@ -945,7 +945,7 @@ Align content in the ribbon control from right to left by setting the property a
 
 {% endhighlight %}
 
-### expandPinSettings `object`
+### expandPinSettings `Object`
 {:#members:expandpinsettings}
 
 Sets custom setting to the expandable pin in the ribbon.
@@ -1080,7 +1080,7 @@ Sets tooltip for the expand pin.
 
 {% endhighlight %}
 
-### expandPinSettings.customToolTip `object` 
+### expandPinSettings.customToolTip `Object` 
 {:#members:expandpinsettings-customtooltip }
 
 Specifies the custom tooltip for expand pin.Refer to ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
@@ -1151,7 +1151,7 @@ Specifies the custom tooltip for expand pin.Refer to ejRibbon#tabs->groups->cont
 
 {% endhighlight %}
 
-### applicationTab `object`
+### applicationTab `Object`
 {:#members:applicationtab}
 
 Specifies the application tab to contain application menu or backstage page in the ribbon control.
@@ -1204,14 +1204,14 @@ Specifies the application tab to contain application menu or backstage page in t
   {% endhighlight %}
 
 
-### applicationTab.backstageSettings `object`
+### applicationTab.backstageSettings `Object`
 {:#members:applicationtab-backstagesettings}
 
 Specifies the ribbon backstage page items.
 
 #### Default Value:
 
-* object
+* Object
 
 #### Example
 
@@ -1533,14 +1533,14 @@ Specifies the width of ribbon backstage page.
 
 {% endhighlight %}
 
-### applicationTab.backstageSettings.pages `array`
+### applicationTab.backstageSettings.pages `Array`
 {:#members:applicationtab-backstagesettings-pages}
 
 Specifies the ribbon backstage page with its tab and button elements.
 
 #### Default Value:
 
-* array
+* Array
 
 #### Example
 
@@ -2185,14 +2185,14 @@ Specifies the ID of `ul` list to create application menu in the ribbon control.
 {% endhighlight %}
 
 
-### applicationTab.menuSettings `object`
+### applicationTab.menuSettings `Object`
 {:#members:applicationtab-menusettings}
 
 Specifies the menu members, events by using the menu settings for the menu in the application tab.
 
 #### Default Value:
 
-* object
+* Object
 <ts ref = “ej.Menu.Model” />
 
 #### Example
@@ -2292,14 +2292,14 @@ Specifies the application menu or backstage page. Specify the type of applicatio
 {% endhighlight %}
 
 
-### contextualTabs `array`
+### contextualTabs `Array`
 {:#members:contextualtabs}
 
 Specifies the contextual tabs and tab set to the ribbon control with the background color and border color. Refer to the tabs section for adding tabs into the contextual tab and contextual tab set.
 
 #### Default Value:
 
-* array
+* Array
 
 #### Example
 
@@ -2558,14 +2558,14 @@ Specifies the borderColor of the contextual tabs and tab set in the ribbon contr
 
  {% endhighlight %}
 
-### contextualTabs.tabs `array`
+### contextualTabs.tabs `Array`
 {:#members:contextualtabs-tabs}
 
 Specifies the tabs to present in the contextual tabs and tab set. Refer to the tabs section for adding tabs into the contextual tabs and tab set.
 
 #### Default Value:
 
-* array
+* Array
 
 #### Example
 
@@ -2647,7 +2647,7 @@ Specifies the tabs to present in the contextual tabs and tab set. Refer to the t
 {% endhighlight %}
 
 
-### disabledItemIndex `array`
+### disabledItemIndex `Array`
 {:#members:disableditemindex}
 
 Specifies the index or indexes to disable the given index tab or indexes tabs in the ribbon control.
@@ -2711,7 +2711,7 @@ Specifies the index or indexes to disable the given index tab or indexes tabs in
 {% endhighlight %}
 
 
-### enabledItemIndex `array`
+### enabledItemIndex `Array`
 {:#members:enableditemindex}
 
 Specifies the index or indexes to enable the given index tab or indexes tabs in the ribbon control.
@@ -2845,14 +2845,14 @@ Specifies the index of the ribbon tab to select the given index tab item in the 
 {% endhighlight %}
 
 
-### tabs `array`
+### tabs `Array`
 {:#members:tabs}
 
 Specifies the tabs and its groups. Also specifies the control details that has to be placed in the tab area in the ribbon control.
 
 #### Default Value:
 
-* array
+* Array
 
 #### Example
 
@@ -2908,14 +2908,14 @@ Specifies the tabs and its groups. Also specifies the control details that has t
 {% endhighlight %}
 
 
-### tabs.groups `array`
+### tabs.groups `Array`
 {:#members:tabs-groups}
 
 Specifies single group or multiple groups and its contents to each tab in the ribbon control.
 
 #### Default Value:
 
-* array
+* Array
 
 #### Example
 
@@ -3035,14 +3035,14 @@ Specifies the alignment of controls in the groups in 'row' type or 'column' type
 {% endhighlight %}
 
 
-### tabs.groups.content `array`
+### tabs.groups.content `Array`
 {:#members:tabs-groups-content}
 
 Specifies the Syncfusion button, split button, dropdown list, toggle button, gallery, custom controls to the groups in the ribbon control.
 
 #### Default Value:
 
-* array
+* Array
 
 #### Example
 
@@ -3087,14 +3087,14 @@ Specifies the Syncfusion button, split button, dropdown list, toggle button, gal
 {% endhighlight %}
 
 
-### tabs.groups.content.defaults `object`
+### tabs.groups.content.defaults `Object`
 {:#members:tabs-groups-content-defaults}
 
 Specifies the height, width, type, isBig property to the controls in the group commonly.
 
 #### Default Value:
 
-* object
+* Object
 
 #### Example
 
@@ -3393,14 +3393,14 @@ Specifies the controls size such as Syncfusion button,split button,dropdown list
 
 {% endhighlight %}
 
-### tabs.groups.content.groups `array`
+### tabs.groups.content.groups `Array`
 {:#members:tabs-groups-content-groups}
 
 Specifies the controls such as Syncfusion button, split button, dropdown list, toggle button, gallery, custom controls in the subgroup of the ribbon tab .
 
 #### Default Value:
 
-* array
+* Array
 
 #### Example
 
@@ -3558,14 +3558,14 @@ When isMobileOnly is true,its shows in mobile toolbar.`isResponsive` should be t
 
 {% endhighlight %}
 
-### tabs.groups.content.groups.buttonSettings `object`
+### tabs.groups.content.groups.buttonSettings `Object`
 {:#members:tabs-groups-content-groups-buttonsettings}
 
 Specifies the Syncfusion button members, events by using this buttonSettings.
 
 #### Default Value:
 
-* object
+* Object
 <ts ref = “ej.Button.Model” />
 
 #### Example
@@ -3869,14 +3869,14 @@ Specifies the CSS class property to apply styles to the button, split, dropdown 
 
  {% endhighlight %}
 
-### tabs.groups.content.groups.customGalleryItems `array`
+### tabs.groups.content.groups.customGalleryItems `Array`
 {:#members:tabs-groups-content-groups-customgalleryitems}
 
 Specifies the Syncfusion button and menu as gallery extra items.
 
 #### Default Value:
 
-* array
+* Array
 
 #### Example
 
@@ -3977,14 +3977,14 @@ Specifies the Syncfusion button and menu as gallery extra items.
 {% endhighlight %}
 
 
-### tabs.groups.content.groups.customGalleryItems.buttonSettings `object`
+### tabs.groups.content.groups.customGalleryItems.buttonSettings `Object`
 {:#members:tabs-groups-content-groups-customgalleryitems-buttonsettings}
 
 Specifies the Syncfusion button members, events by using buttonSettings.
 
 #### Default Value:
 
-* object
+* Object
 <ts ref = “ej.Button.Model” />
 
 #### Example
@@ -4223,14 +4223,14 @@ Specifies the type as ej.Ribbon.CustomItemType.Menu or ej.Ribbon.CustomItemType.
 
 {% endhighlight %}
 
-### tabs.groups.content.groups.customGalleryItems.customToolTip `object`
+### tabs.groups.content.groups.customGalleryItems.customToolTip `Object`
 {:#members:tabs-groups-content-groups-customgalleryitems-customtooltip}
 
 Specifies the custom tooltip for gallery extra item's button. Refer to ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
 
 #### Default Value:
 
-* object
+* Object
 
 #### Example
 
@@ -4446,14 +4446,14 @@ Specifies the UL list id to render menu as gallery extra item.
 
 {% endhighlight %}
 
-### tabs.groups.content.groups.customGalleryItems.menuSettings `object`
+### tabs.groups.content.groups.customGalleryItems.menuSettings `Object`
 {:#members:tabs-groups-content-groups-customgalleryitems-menusettings}
 
 Specifies the Syncfusion menu members, events by using menuSettings.
 
 #### Default Value:
 
-* object
+* Object
 <ts ref = “ej.Menu.Model” />
 
 #### Example
@@ -4775,7 +4775,7 @@ Specifies the tooltip for gallery extra item's button.
 {% endhighlight %}
 
 
-### tabs.groups.content.groups.customToolTip `object`
+### tabs.groups.content.groups.customToolTip `Object`
 {:#members:tabs-groups-content-groups-customtooltip}
 
 Provides custom tooltip for button, split button, dropdown list, toggle button, custom controls in the sub groups. Text and HTML support are also provided for title and content.
@@ -5047,14 +5047,14 @@ Sets title to the custom tooltip. Text and HTML support are provided for title a
 {% endhighlight %}
 
 
-### tabs.groups.content.groups.dropdownSettings `object`
+### tabs.groups.content.groups.dropdownSettings `Object`
 {:#members:tabs-groups-content-groups-dropdownsettings}
 
 Specifies the Syncfusion dropdown list members, events by using this dropdownSettings.
 
 #### Default Value:
 
-* object
+* Object
 <ts ref = “ej.DropDownList.Model” />
 
 #### Example
@@ -5287,14 +5287,14 @@ Sets the count of gallery contents in a row, when the gallery is in expanded sta
  {% endhighlight %}
 
 
-### tabs.groups.content.groups.galleryItems `array`
+### tabs.groups.content.groups.galleryItems `Array`
 {:#members:tabs-groups-content-groups-galleryitems}
 
 Defines each gallery content.
 
 #### Default Value:
 
-* array
+* Array
 
 #### Example
 
@@ -5395,14 +5395,14 @@ Defines each gallery content.
  {% endhighlight %}
 
 
-### tabs.groups.content.groups.galleryItems.buttonSettings `object`
+### tabs.groups.content.groups.galleryItems.buttonSettings `Object`
 {:#members:tabs-groups-content-groups-galleryitems-buttonsettings}
 
 Specifies the Syncfusion button members, events by using buttonSettings.
 
 #### Default Value:
 
-* object
+* Object
 <ts ref = “ej.Button.Model” />
 
 #### Example
@@ -5510,14 +5510,14 @@ Specifies the Syncfusion button members, events by using buttonSettings.
 {% endhighlight %}
 
 
-### tabs.groups.content.groups.galleryItems.customToolTip `object`
+### tabs.groups.content.groups.galleryItems.customToolTip `Object`
 {:#members:tabs-groups-content-groups-galleryitems-customtooltip}
 
 Specifies the custom tooltip for gallery content. Refer to ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.
 
 #### Default Value:
 
-* object
+* Object
 
 #### Example
 
@@ -6158,14 +6158,14 @@ Sets the width of each gallery content.
 
 {% endhighlight %}
 
-### tabs.groups.content.groups.splitButtonSettings `object`
+### tabs.groups.content.groups.splitButtonSettings `Object`
 {:#members:tabs-groups-content-groups-splitbuttonsettings}
 
 Specifies the Syncfusion split button members, events by using this splitButtonSettings.
 
 #### Default Value:
 
-* object
+* Object
 <ts ref = “ej.SplitButton.Model” />
 
 #### Example
@@ -6268,14 +6268,14 @@ Specifies the text for button, split button, toggle button controls in the sub g
 {% endhighlight %}
 
 
-### tabs.groups.content.groups.toggleButtonSettings `object`
+### tabs.groups.content.groups.toggleButtonSettings `Object`
 {:#members:tabs-groups-content-groups-togglebuttonsettings}
 
 Specifies the Syncfusion toggle button members, events by using toggleButtonSettings.
 
 #### Default Value:
 
-* object
+* Object
 <ts ref = “ej.ToggleButton.Model” />
 
 #### Example
@@ -6723,7 +6723,7 @@ Specifies the group expander for groups in the ribbon control. Set "true" to ena
 
 {% endhighlight %}
 
-### tabs.groups.groupExpanderSettings `object`
+### tabs.groups.groupExpanderSettings `Object`
 {:#members:tabs-groups-groupexpandersettings}
 
 Sets custom setting to the groups in the ribbon control.
@@ -6827,7 +6827,7 @@ Sets tooltip for the group expander of the group.
 
 {% endhighlight %}
 
-### tabs.groups.groupExpanderSettings.customToolTip `object` 
+### tabs.groups.groupExpanderSettings.customToolTip `Object` 
 {:#members:tabs-groups-groupexpandersettings-customtooltip }
 
 Specifies the custom tooltip for group expander.Refer to ejRibbon#tabs->groups->content->groups->customToolTip for its inner properties.

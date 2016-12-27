@@ -376,7 +376,7 @@ Specify the CSS class to Rotator to achieve custom theme.
 
 
 
-### dataSource `object`
+### dataSource `Object`
 {:#members:datasource}
 
 
@@ -1847,7 +1847,7 @@ Example
 {% endhighlight %}
 
 
-### templateId `array`
+### templateId `Array`
 {:#members:templateid}
 
 The templateId enables to bind multiple customized template items in Rotator.
@@ -1893,7 +1893,7 @@ Example
 {% endhighlight %}
 
 
-### thumbnailSourceID `object`
+### thumbnailSourceID `Object`
 {:#members:thumbnailsourceid}
 
 
@@ -2579,7 +2579,7 @@ cancel</td>
 <tr>
 <td class="name">
 model</td>
-<td class="type"><ts ref="ej.Rotator.Model"/><span class="param-type">object</span></td>
+<td class="type"><ts ref="ej.Rotator.Model"/><span class="param-type">Object</span></td>
 <td class="description">returns the rotator model</td>
 </tr>
 <tr>
@@ -2679,7 +2679,7 @@ cancel</td>
 <tr>
 <td class="name">
 model</td>
-<td class="type"><ts ref="ej.Rotator.Model"/><span class="param-type">object</span></td>
+<td class="type"><ts ref="ej.Rotator.Model"/><span class="param-type">Object</span></td>
 <td class="description">returns the rotator model</td>
 </tr>
 <tr>
@@ -2767,7 +2767,7 @@ cancel</td>
 <tr>
 <td class="name">
 model</td>
-<td class="type"><ts ref="ej.Rotator.Model"/><span class="param-type">object</span></td>
+<td class="type"><ts ref="ej.Rotator.Model"/><span class="param-type">Object</span></td>
 <td class="description">returns the rotator model</td>
 </tr>
 <tr>
@@ -2855,7 +2855,7 @@ cancel</td>
 <tr>
 <td class="name">
 model</td>
-<td class="type"><ts ref="ej.Rotator.Model"/><span class="param-type">object</span></td>
+<td class="type"><ts ref="ej.Rotator.Model"/><span class="param-type">Object</span></td>
 <td class="description">returns the rotator model</td>
 </tr>
 <tr>
@@ -2955,7 +2955,7 @@ cancel</td>
 <tr>
 <td class="name">
 model</td>
-<td class="type"><ts ref="ej.Rotator.Model"/><span class="param-type">object</span></td>
+<td class="type"><ts ref="ej.Rotator.Model"/><span class="param-type">Object</span></td>
 <td class="description">returns the rotator model</td>
 </tr>
 <tr>
@@ -3055,7 +3055,7 @@ cancel</td>
 <tr>
 <td class="name">
 model</td>
-<td class="type"><ts ref="ej.Rotator.Model"/><span class="param-type">object</span></td>
+<td class="type"><ts ref="ej.Rotator.Model"/><span class="param-type">Object</span></td>
 <td class="description">returns the rotator model</td>
 </tr>
 <tr>
@@ -3155,7 +3155,7 @@ cancel</td>
 <tr>
 <td class="name">
 model</td>
-<td class="type"><ts ref="ej.Rotator.Model"/><span class="param-type">object</span></td>
+<td class="type"><ts ref="ej.Rotator.Model"/><span class="param-type">Object</span></td>
 <td class="description">returns the rotator model</td>
 </tr>
 <tr>

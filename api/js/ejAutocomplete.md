@@ -47,7 +47,7 @@ The AutoComplete control is a textbox control that provides a list of suggestion
 
 ## Members
 
-### addNewText `Boolean`
+### addNewText `boolean`
 {:#members:addnewtext}
 
 Customize "Add New" text (label) to be added in the autocomplete popup list for the entered text when there are no suggestions for it. 
@@ -71,7 +71,7 @@ N> This property is applicable only when the “[MultiSelectMode](http://help.sy
 
 {% endhighlight %}
 
-### allowAddNew `Boolean`
+### allowAddNew `boolean`
 {:#members:allowaddnew}
 
 Allows new values to be added to the autocomplete input other than the values in the suggestion list. Normally, when there are no suggestions it will display “No suggestions” label in the popup.
@@ -92,7 +92,7 @@ N>  This property will work only when the “[MultiSelectMode](http://help.syncf
 
 {% endhighlight %}
 
-### allowSorting `Boolean`
+### allowSorting `boolean`
 {:#members:allowsorting}
 
 Enables or disables the sorting of suggestion list item. The default sort order is ascending order. You customize sort order. 
@@ -113,7 +113,7 @@ Enables or disables the sorting of suggestion list item. The default sort order 
 
 {% endhighlight %}
 
-### animateType `Enum`
+### animateType `enum`
 {:#members:animateType}
 
 <ts name = "ej.Autocomplete.Animation"/>
@@ -153,7 +153,7 @@ Enables or disables selecting the animation style for the popup list. Animation 
 
 {% endhighlight %}
 
-### autoFocus `Boolean`
+### autoFocus `boolean`
 {:#members:autofocus}
 
 To focus the items in the suggestion list when the popup is shown. By default first item will be focused. 
@@ -172,7 +172,7 @@ To focus the items in the suggestion list when the popup is shown. By default fi
 
 {% endhighlight %}
 
-### caseSensitiveSearch `Boolean`
+### caseSensitiveSearch `boolean`
 {:#members:casesensitivesearch}
 
 Enables or disables the case sensitive search.
@@ -191,7 +191,7 @@ Enables or disables the case sensitive search.
 
 {% endhighlight %}
 
-### cssClass `String`
+### cssClass `string`
 {:#members:cssclass}
 
 The root class for the **Autocomplete** textbox widget which helps in customizing its theme.
@@ -210,7 +210,7 @@ The root class for the **Autocomplete** textbox widget which helps in customizin
 
 {% endhighlight %}
 
-### dataSource `object|array`
+### dataSource `Object|Array`
 {:#members:datasource}
 
 The data source contains the list of data for the suggestions list. It can be a string array or JSON array. 
@@ -230,7 +230,7 @@ The data source contains the list of data for the suggestions list. It can be a 
 
 {% endhighlight %}
 
-### delaySuggestionTimeout `Number`
+### delaySuggestionTimeout `number`
 {:#members:delaysuggestiontimeout}
 
 The time delay (in milliseconds) after which the suggestion popup will be shown.
@@ -249,7 +249,7 @@ The time delay (in milliseconds) after which the suggestion popup will be shown.
 
 {% endhighlight %}
 
-### delimiterChar `String`
+### delimiterChar `string`
 {:#members:delimiterchar}
 
 The special character which acts as a separator for the given words for multi-mode search i.e. the text after the delimiter are considered as a separate word or query for search operation. 
@@ -273,7 +273,7 @@ N> 3. Mostly the delimiter symbol is used as (comma ,) or (semi-colon ;) or any 
 
 {% endhighlight %}
 
-### emptyResultText `String`
+### emptyResultText `string`
 {:#members:emptyresulttext}
 
 The text to be displayed in the popup when there are no suggestions available for the entered text.
@@ -294,7 +294,7 @@ N> This property is applicable only when the [showEmptyResultText](http://help.s
 
 {% endhighlight %}
 
-### enableAutoFill `Boolean`
+### enableAutoFill `boolean`
 {:#members:enableautofill}
 
 Fills the autocomplete textbox with the first matched item from the suggestion list automatically based on the entered text when enabled. 
@@ -315,7 +315,7 @@ N> This property works only when “[filterType](http://help.syncfusion.com/api/
 
 {% endhighlight %}
 
-### enabled `Boolean`
+### enabled `boolean`
 {:#members:enabled}
 
 Enables or disables the **Autocomplete** textbox widget.
@@ -334,7 +334,7 @@ Enables or disables the **Autocomplete** textbox widget.
 
 {% endhighlight %}
 
-### enableDistinct `Boolean`
+### enableDistinct `boolean`
 {:#members:enabledistinct}
 
 Enables or disables displaying the duplicate names present in the search result.
@@ -353,7 +353,7 @@ Enables or disables displaying the duplicate names present in the search result.
 
 {% endhighlight %}
 
-### enablePersistence `Boolean`
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 Allows the current model values to be saved in local storage or browser cookies for state maintenance when it is set to true. While refreshing the page, it retains the model value from browser cookies or local storage.
@@ -374,7 +374,7 @@ N> [Local storage](http://www.w3schools.com/html/html5_webstorage.asp#) is suppo
 
 {% endhighlight %}
 
-### enableRTL `Boolean`
+### enableRTL `boolean`
 {:#members:enablertl}
 
 Displays the Autocomplete widget’s content from right to left when enabled.
@@ -393,7 +393,7 @@ Displays the Autocomplete widget’s content from right to left when enabled.
 
 {% endhighlight %}
 
-### fields `object`
+### fields `Object`
 {:#members:fields}
 
 Mapping fields for the suggestion items of the **Autocomplete** textbox widget.
@@ -407,7 +407,7 @@ Mapping fields for the suggestion items of the **Autocomplete** textbox widget.
 
 Used to group the suggestion list items.
 
-### fields.htmlAttributes `object`
+### fields.htmlAttributes `Object`
 {:#members:fields-htmlAttributes}
 
 Defines the HTML attributes such as id, class, styles for the item.
@@ -436,7 +436,7 @@ Defines the specific field name in the data source to load the suggestion list w
 {% endhighlight %}
 
 
-### filterType `String`
+### filterType `string`
 {:#members:filtertype}
 
 Specifies the search filter type. There are several types of search filter available such as ‘startswith’, ‘contains’, ‘endswith’, ‘lessthan’, ‘lessthanorequal’, ‘greaterthan’, ‘greaterthanorequal’, ‘equal’, ‘notequal’. 
@@ -455,7 +455,7 @@ Specifies the search filter type. There are several types of search filter avail
 
 {% endhighlight %}
 
-### height `String`
+### height `string`
 {:#members:height}
 
 The height of the Autocomplete textbox.
@@ -474,7 +474,7 @@ The height of the Autocomplete textbox.
 
 {% endhighlight %}
 
-### highlightSearch `Boolean`
+### highlightSearch `boolean`
 {:#members:highlightsearch}
 
 The search text can be highlighted in the AutoComplete suggestion list when enabled.
@@ -493,7 +493,7 @@ The search text can be highlighted in the AutoComplete suggestion list when enab
 
 {% endhighlight %}
 
-### itemsCount `Number`
+### itemsCount `number`
 {:#members:itemscount}
 
 Number of items to be displayed in the suggestion list.
@@ -512,7 +512,7 @@ Number of items to be displayed in the suggestion list.
 
 {% endhighlight %}
 
-### locale `String`
+### locale `string`
 {:#members:locale}
 
 Set the localization culture for Autocomplete Widget.
@@ -530,7 +530,7 @@ Example
 
 {% endhighlight %}
 
-### minCharacter `Number`
+### minCharacter `number`
 {:#members:mincharacter}
 
 Minimum number of character to be entered in the Autocomplete textbox to show the suggestion list.
@@ -549,7 +549,7 @@ Minimum number of character to be entered in the Autocomplete textbox to show th
 
 {% endhighlight %}
 
-### multiColumnSettings `object`
+### multiColumnSettings `Object`
 {:#members:multicolumnsettings}
 
 An **Autocomplete** column collection can be defined and customized through the multiColumnSettings property.
@@ -668,7 +668,7 @@ N> stringFormat as “{0} ({1}) ({2})” means search based on 0, 1 and 2 column
 
 {% endhighlight %}
 
-### multiColumnSettings.columns `array`
+### multiColumnSettings.columns `Array`
 {:#members:multicolumnsettings-columns}
 
 Field and Header Text collections can be defined and customized through columns field.
@@ -750,7 +750,7 @@ Get or set a value that indicates to display the title of that particular column
 {% endhighlight %}
 
 
-### multiColumnSettings.columns.cssClass `String`
+### multiColumnSettings.columns.cssClass `string`
 {:#members:multicolumnsettings-columns-cssclass}
 
 Gets or sets a value that indicates to render the multicolumn with custom theme. 
@@ -808,15 +808,15 @@ Column type</th><th>
 Data type</th></tr>
 <tr>
 <td>
-Number</td><td>
+number</td><td>
 ej.Type.Number</td></tr>
 <tr>
 <td>
-String</td><td>
+string</td><td>
 ej.Type.String</td></tr>
 <tr>
 <td>
-Boolean</td><td>
+boolean</td><td>
 ej.Type.Boolean</td></tr>
 <tr>
 <td>
@@ -866,15 +866,15 @@ Column type</th><th>
 Filter type</th></tr>
 <tr>
 <td>
-Number</td><td>
+number</td><td>
 ej.filterType.GreaterThan<br/>ej.filterType.GreaterThanOrEqual<br/>ej.filterType.LessThan<br/>ej.filterType.LessThanOrEqual<br/>ej.filterType.Equal</td></tr>
 <tr>
 <td>
-String</td><td>
+string</td><td>
 ej.filterType.StartsWith<br/>ej.filterType.EndsWith<br/>ej.filterType.Contains<br/>ej.filterType.Equal<br/>ej.filterType.NotEqual</td></tr>
 <tr>
 <td>
-Boolean</td><td>
+boolean</td><td>
 ej.filterType.Equal<br/>ej.filterType.NotEqual</td></tr>
 <tr>
 <td>
@@ -1024,7 +1024,7 @@ Gets or sets a value that indicates to align the text within the column. See tex
 {% endhighlight %}
 
 
-### multiSelectMode `Enum`
+### multiSelectMode `enum`
 {:#members:multiselectmode}
 
 <ts name = "ej.Autocomplete.MultiSelectMode"/>
@@ -1063,7 +1063,7 @@ Enables or disables selecting multiple values from the suggestion list. Multiple
 
 {% endhighlight %}
 
-### popupHeight `String`
+### popupHeight `string`
 {:#members:popupheight}
 
 The height of the suggestion list.
@@ -1082,7 +1082,7 @@ The height of the suggestion list.
 
 {% endhighlight %}
 
-### popupWidth `String`
+### popupWidth `string`
 {:#members:popupwidth}
 
 The width of the suggestion list.
@@ -1130,7 +1130,7 @@ The query to retrieve the data from the data source.
 
 {% endhighlight %}
 
-### readOnly `Boolean`
+### readOnly `boolean`
 {:#members:readonly}
 
 Indicates that the autocomplete textbox values can only be readable.
@@ -1149,7 +1149,7 @@ Indicates that the autocomplete textbox values can only be readable.
 
 {% endhighlight %}
 
-### selectValueByKey `Number`
+### selectValueByKey `number`
 {:#members:selectvaluebykey}
 
 Sets the value for the Autocomplete textbox based on the given input key value.
@@ -1168,7 +1168,7 @@ Sets the value for the Autocomplete textbox based on the given input key value.
 
 {% endhighlight %}
 
-### showEmptyResultText `Boolean`
+### showEmptyResultText `boolean`
 {:#members:showemptyresulttext}
 
 Enables or disables showing the message when there are no suggestions for the entered text.
@@ -1187,7 +1187,7 @@ Enables or disables showing the message when there are no suggestions for the en
 
 {% endhighlight %}
 
-### showLoadingIcon `Boolean`
+### showLoadingIcon `boolean`
 {:#members:showloadingicon}
 
 Enables or disables the loading icon to intimate the searching operation. The loading icon is visible when there is a time delay to perform the search.
@@ -1206,7 +1206,7 @@ Enables or disables the loading icon to intimate the searching operation. The lo
 
 {% endhighlight %}
 
-### showPopupButton `Boolean`
+### showPopupButton `boolean`
 {:#members:showpopupbutton}
 
 Enables the showPopup button in autocomplete textbox. When the showPopup button is clicked, it displays all the available data from the data source.
@@ -1225,7 +1225,7 @@ Enables the showPopup button in autocomplete textbox. When the showPopup button 
 
 {% endhighlight %}
 
-### showRoundedCorner `Boolean`
+### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
 
 Enables or disables rounded corner.
@@ -1244,7 +1244,7 @@ Enables or disables rounded corner.
 
 {% endhighlight %}
 
-### showResetIcon `Boolean`
+### showResetIcon `boolean`
 {:#members:showreseticon}
 
 Enables or disables reset icon to clear the textbox values.
@@ -1263,7 +1263,7 @@ Enables or disables reset icon to clear the textbox values.
 
 {% endhighlight %}
 
-### sortOrder `Enum`
+### sortOrder `enum`
 {:#members:sortorder}
 
 <ts name = "ej.Autocomplete.SortOrder"/>
@@ -1301,7 +1301,7 @@ Sort order specifies whether the suggestion list values has to be displayed in a
 
 {% endhighlight %}
 
-### template `String`
+### template `string`
 {:#members:template}
 
 The template to display the suggestion list items with customized appearance.
@@ -1369,7 +1369,7 @@ The jQuery validation rules for form validation.
 
 {% endhighlight %}
 
-### value `String`
+### value `string`
 {:#members:value}
 
 The value to be displayed in the autocomplete textbox.
@@ -1388,7 +1388,7 @@ The value to be displayed in the autocomplete textbox.
 
 {% endhighlight %}
 
-### visible `Boolean`
+### visible `boolean`
 {:#members:visible}
 
 Enables or disables the visibility of the autocomplete textbox.
@@ -1407,7 +1407,7 @@ Enables or disables the visibility of the autocomplete textbox.
 
 {% endhighlight %}
 
-### watermarkText `String`
+### watermarkText `string`
 {:#members:watermarktext}
 
 The text to be displayed when the value of the autocomplete textbox is empty.
@@ -1426,7 +1426,7 @@ The text to be displayed when the value of the autocomplete textbox is empty.
 
 {% endhighlight %}
 
-### width `String`
+### width `string`
 {:#members:width}
 
 The width of the Autocomplete textbox.
@@ -1739,7 +1739,7 @@ Triggers when the text box value is changed.
 </tr>
 <tr>
 <td>cancel<br/><br/></td>
-<td>Boolean<br/><br/></td>
+<td>boolean<br/><br/></td>
 <td>Set this option to true to cancel the event.<br/><br/></td>
 </tr>
 <tr>
@@ -1749,12 +1749,12 @@ Triggers when the text box value is changed.
 </tr>
 <tr>
 <td>type<br/><br/></td>
-<td>String<br/><br/></td>
+<td>string<br/><br/></td>
 <td>Name of the event.<br/><br/></td>
 </tr>
 <tr>
 <td>value<br/><br/></td>
-<td>String<br/><br/></td>
+<td>string<br/><br/></td>
 <td>Value of the autocomplete textbox.<br/><br/></td>
 </tr>
 </table>
@@ -1794,7 +1794,7 @@ Triggers after the suggestion popup is closed.
 </tr>
 <tr>
 <td>type<br/><br/></td>
-<td>String<br/><br/></td>
+<td>string<br/><br/></td>
 <td>Name of the event.<br/><br/></td>
 </tr>
 </table>
@@ -1829,7 +1829,7 @@ Triggers when Autocomplete widget is created.
 </tr>
 <tr>
 <td>model<br/><br/></td>
-<td><ts ref="ej.Autocomplete.Model"/>object<br/><br/></td>
+<td><ts ref="ej.Autocomplete.Model"/>Object<br/><br/></td>
 <td>Instance of the autocomplete model object.<br/><br/></td>
 </tr>
 <tr>
@@ -1869,7 +1869,7 @@ Triggers after the Autocomplete widget is destroyed.
 </tr>
 <tr>
 <td>model<br/><br/></td>
-<td><ts ref="ej.Autocomplete.Model"/>object<br/><br/></td>
+<td><ts ref="ej.Autocomplete.Model"/>Object<br/><br/></td>
 <td>Instance of the autocomplete model object.<br/><br/></td>
 </tr>
 <tr>
@@ -1909,7 +1909,7 @@ Triggers after the autocomplete textbox is focused.
 </tr>
 <tr>
 <td>model<br/><br/></td>
-<td><ts ref="ej.Autocomplete.Model"/>object<br/><br/></td>
+<td><ts ref="ej.Autocomplete.Model"/>Object<br/><br/></td>
 <td>Instance of the autocomplete model object.<br/><br/></td>
 </tr>
 <tr>
@@ -1954,7 +1954,7 @@ Triggers after the Autocomplete textbox gets out of the focus.
 </tr>
 <tr>
 <td>model<br/><br/></td>
-<td><ts ref="ej.Autocomplete.Model"/>object<br/><br/></td>
+<td><ts ref="ej.Autocomplete.Model"/>Object<br/><br/></td>
 <td>Instance of the autocomplete model object.<br/><br/></td>
 </tr>
 <tr>
@@ -1999,7 +1999,7 @@ Triggers after the suggestion list is opened.
 </tr>
 <tr>
 <td>model<br/><br/></td>
-<td><ts ref="ej.Autocomplete.Model"/>object<br/><br/></td>
+<td><ts ref="ej.Autocomplete.Model"/>Object<br/><br/></td>
 <td>Instance of the autocomplete model object.<br/><br/></td>
 </tr>
 <tr>
@@ -2039,7 +2039,7 @@ Triggers when an item has been selected from the suggestion list.
 </tr>
 <tr>
 <td>model<br/><br/></td>
-<td><ts ref="ej.Autocomplete.Model"/>object<br/><br/></td>
+<td><ts ref="ej.Autocomplete.Model"/>Object<br/><br/></td>
 <td>Instance of the autocomplete model object.<br/><br/></td>
 </tr>
 <tr>
@@ -2064,7 +2064,7 @@ Triggers when an item has been selected from the suggestion list.
 ></tr>
 <tr>
 <td>Item<br/><br/></td>
-<td><ts ref="ej.Autocomplete.Model"/>object<br/><br/></td>
+<td><ts ref="ej.Autocomplete.Model"/>Object<br/><br/></td>
 <td>Data object of the selected item.<br/><br/></td>
 </tr>
 </table>

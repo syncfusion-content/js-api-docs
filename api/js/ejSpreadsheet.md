@@ -111,7 +111,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowAutoCellType `Boolean`
+### allowAutoCellType `boolean`
 {:#members:allowautocelltype}
 
 Gets or sets a value that indicates whether to enable or disable auto rendering of cell type in the Spreadsheet. 
@@ -135,7 +135,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowAutoFill `Boolean`
+### allowAutoFill `boolean`
 {:#members:allowautofill}
 
 Gets or sets a value that indicates whether to enable or disable auto fill feature in the Spreadsheet. 
@@ -155,7 +155,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowAutoSum `Boolean`
+### allowAutoSum `boolean`
 {:#members:allowautosum}
 
 Gets or sets a value that indicates whether to enable or disable auto sum feature in the Spreadsheet.
@@ -176,7 +176,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowCellFormatting `Boolean`
+### allowCellFormatting `boolean`
 {:#members:allowcellformatting}
 
 Gets or sets a value that indicates whether to enable or disable cell format feature in the Spreadsheet. By enabling this, you can customize styles and number formats.
@@ -196,7 +196,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowCellType `Boolean`
+### allowCellType `boolean`
 {:#members:allowcelltype}
 
 Gets or sets a value that indicates whether to enable or disable cell type feature in the Spreadsheet.
@@ -215,7 +215,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowCharts `Boolean`
+### allowCharts `boolean`
 {:#members:allowcharts}
 
 Gets or sets a value that indicates whether to enable or disable chart feature in the Spreadsheet. By enabling this feature, you can create and customize charts in Spreadsheet.
@@ -235,7 +235,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowClear `Boolean`
+### allowClear `boolean`
 {:#members:allowclear}
 
 Gets or sets a value that indicates whether to enable or disable clear feature in the Spreadsheet.
@@ -255,7 +255,7 @@ allowClear: false
  
 {% endhighlight %}
 
-### allowClipboard `Boolean`
+### allowClipboard `boolean`
 {:#members:allowclipboard}
 
 Gets or sets a value that indicates whether to enable or disable clipboard feature in the Spreadsheet. By enabling this feature, you can perform cut/copy and paste operations in Spreadsheet.
@@ -276,7 +276,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowComments `Boolean`
+### allowComments `boolean`
 {:#members:allowcomments}
 
 Gets or sets a value that indicates whether to enable or disable comment feature in the Spreadsheet. By enabling this, you can add/delete/modify comments in Spreadsheet.
@@ -296,7 +296,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowConditionalFormats `Boolean`
+### allowConditionalFormats `boolean`
 {:#members:allowconditionalformats}
 
 Gets or sets a value that indicates whether to enable or disable Conditional Format feature in the Spreadsheet. By enabling this, you can apply formatting to the selected range of cells based on the provided conditions (Greater than, Less than, Equal, Between, Contains, etc.).
@@ -320,7 +320,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowDataValidation `Boolean`
+### allowDataValidation `boolean`
 {:#members:allowdatavalidation}
 
 Gets or sets a value that indicates whether to enable or disable data validation feature in the Spreadsheet.
@@ -341,7 +341,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowDelete `Boolean`
+### allowDelete `boolean`
 {:#members:allowdelete}
 
 Gets or sets a value that indicates whether to enable or disable the delete action in the Spreadsheet. By enabling this feature, you can delete existing rows, columns, cells and sheet.
@@ -362,7 +362,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowDragAndDrop `Boolean`
+### allowDragAndDrop `boolean`
 {:#members:allowdraganddrop}
 
 Gets or sets a value that indicates whether to enable or disable drag and drop feature in the Spreadsheet.
@@ -383,7 +383,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowEditing `Boolean`
+### allowEditing `boolean`
 {:#members:allowediting}
 
 Gets or sets a value that indicates whether to enable or disable the edit action in the Spreadsheet.
@@ -404,7 +404,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowFiltering `Boolean`
+### allowFiltering `boolean`
 {:#members:allowfiltering}
 
 Gets or sets a value that indicates whether to enable or disable filtering feature in the Spreadsheet. Filtering can be used to limit the data displayed using required criteria.
@@ -425,7 +425,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowFormatAsTable `Boolean`
+### allowFormatAsTable `boolean`
 {:#members:allowformatastable}
 
 Gets or sets a value that indicates whether to enable or disable table feature in the Spreadsheet. By enabling this, you can render table in selected range.
@@ -450,7 +450,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowFormatPainter `Boolean`
+### allowFormatPainter `boolean`
 {:#members:allowformatpainter}
 
 Get or sets a value that indicates whether to enable or disable format painter feature in the Spreadsheet. By enabling this feature, you can copy the format from the selected range and apply it to another range.
@@ -474,7 +474,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowFormulaBar `Boolean`
+### allowFormulaBar `boolean`
 {:#members:allowformulabar}
 
 Gets or sets a value that indicates whether to enable or disable formula bar in the Spreadsheet.
@@ -495,7 +495,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowFreezing `Boolean`
+### allowFreezing `boolean`
 {:#members:allowfreezing}
 
 Gets or sets a value that indicates whether to enable or disable freeze pane support in Spreadsheet. After enabling this feature, you can use freeze top row, freeze first column and freeze panes options.
@@ -516,7 +516,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowHyperlink `Boolean`
+### allowHyperlink `boolean`
 {:#members:allowhyperlink}
 
 Gets or sets a value that indicates whether to enable or disable hyperlink feature in the Spreadsheet. By enabling this feature, you can add hyperlink which is used to easily navigate to the cell reference from one sheet to another or a web page.
@@ -537,7 +537,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowImport `Boolean`
+### allowImport `boolean`
 {:#members:allowimport}
 
 Gets or sets a value that indicates whether to enable or disable import feature in the Spreadsheet. By enabling this feature, you can open existing Spreadsheet documents. 
@@ -564,7 +564,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowInsert `Boolean`
+### allowInsert `boolean`
 {:#members:allowinsert}
 
 Gets or sets a value that indicates whether to enable or disable the insert action in the Spreadsheet. By enabling this feature, you can insert new rows, columns, cells and sheet.
@@ -585,7 +585,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowKeyboardNavigation `Boolean`
+### allowKeyboardNavigation `boolean`
 {:#members:allowkeyboardnavigation}
 
 Gets or sets a value that indicates whether to enable or disable keyboard navigation feature in the Spreadsheet.
@@ -606,7 +606,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowLockCell `Boolean`
+### allowLockCell `boolean`
 {:#members:allowlockcell}
 
 Gets or sets a value that indicates whether to enable or disable lock cell feature in the Spreadsheet. 
@@ -625,7 +625,7 @@ $('#Spreadsheet').ejSpreadsheet({
 </script>
 {% endhighlight %}
 
-### allowMerging `Boolean`
+### allowMerging `boolean`
 {:#members:allowmerging}
 
 Gets or sets a value that indicates whether to enable or disable merge feature in the Spreadsheet.
@@ -645,7 +645,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowOverflow `Boolean`
+### allowOverflow `boolean`
 {:#members:allowoverflow}
 
 Gets or sets a value that indicates whether to enable or disable overflow feature in the Spreadsheet.
@@ -665,7 +665,7 @@ allowOverflow: false
 
 {% endhighlight %}
 
-### allowResizing `Boolean`
+### allowResizing `boolean`
 {:#members:allowresizing}
 
 Gets or sets a value that indicates whether to enable or disable resizing feature in the Spreadsheet. By enabling this feature, you can change the column width and row height by dragging its header boundaries.
@@ -685,7 +685,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowSearching `Boolean`
+### allowSearching `boolean`
 {:#members:allowsearching}
 
 Gets or sets a value that indicates whether to enable or disable find and replace feature in the Spreadsheet. By enabling this, you can easily find and replace a specific value in the sheet or workbook. By using goto behavior, you can select and highlight all cells that contains specific data or data types.
@@ -705,7 +705,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowSelection `Boolean`
+### allowSelection `boolean`
 {:#members:allowselection}
 
 Gets or sets a value that indicates whether to enable or disable selection in the Spreadsheet. By enabling this feature, selected items will be highlighted.
@@ -725,7 +725,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowSorting `Boolean`
+### allowSorting `boolean`
 {:#members:allowsorting}
 
 Gets or sets a value that indicates whether to enable the sorting feature in the Spreadsheet. 
@@ -745,7 +745,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowUndoRedo `Boolean`
+### allowUndoRedo `boolean`
 {:#members:allowundoredo}
 
 Gets or sets a value that indicates whether to enable or disable undo and redo feature in the Spreadsheet.
@@ -765,7 +765,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### allowWrap `Boolean`
+### allowWrap `boolean`
 {:#members:allowwrap}
 
 Gets or sets a value that indicates whether to enable or disable wrap text feature in the Spreadsheet. By enabling this, cell content can wrap to the next line, if the cell content exceeds the boundary of the cell.
@@ -870,7 +870,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### autoFillSettings.showFillOptions `Boolean`
+### autoFillSettings.showFillOptions `boolean`
 {:#members:autofillsettings-showfilloptions}
 
 Gets or sets a value that indicates to enable or disable auto fill options in the Spreadsheet.
@@ -989,7 +989,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### cssClass `String`
+### cssClass `string`
 {:#members:cssclass}
 
 Gets or sets a value to add root CSS class for customizing Spreadsheet skins.
@@ -1035,7 +1035,7 @@ function customTotal(args){}//args-It uses the value given by the user while usi
 
 {% endhighlight %}
 
-### enableContextMenu `Boolean`
+### enableContextMenu `boolean`
 {:#members:enablecontextmenu}
 
 Gets or sets a value that indicates whether to enable or disable context menu in the Spreadsheet.
@@ -1055,7 +1055,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### enablePivotTable `Boolean`
+### enablePivotTable `boolean`
 {:#members:enablepivottable}
 
 Gets or sets a value that indicates whether to enable or disable pivot table in the Spreadsheet.
@@ -1075,7 +1075,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### enableTouch `Boolean`
+### enableTouch `boolean`
 {:#members:enabletouch}
 
 Gets or sets a value that indicates whether to enable or disable touch support in the Spreadsheet.
@@ -1100,7 +1100,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets an object that indicates to customize the exporting behavior in Spreadsheet.
 
-### exportSettings.allowExporting `Boolean`
+### exportSettings.allowExporting `boolean`
 {:#members:exportsettings-allowexporting}
 
 Gets or sets a value that indicates whether to enable or disable save feature in Spreadsheet. By enabling this feature, you can save existing Spreadsheet.
@@ -1127,7 +1127,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### exportSettings.csvUrl `String`
+### exportSettings.csvUrl `string`
 {:#members:exportsettings-csvurl}
 
 Gets or sets a value that indicates to define csvUrl for export to CSV format.
@@ -1152,7 +1152,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### exportSettings.excelUrl `String`
+### exportSettings.excelUrl `string`
 {:#members:exportsettings-excelurl}
 
 Gets or sets a value that indicates to define excelUrl for export to excel format.
@@ -1177,7 +1177,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### exportSettings.password `String`
+### exportSettings.password `string`
 {:#members:exportsettings-password}
 
 Gets or sets a value that indicates to define password while export to excel format.
@@ -1203,7 +1203,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### exportSettings.pdfUrl `String`
+### exportSettings.pdfUrl `string`
 {:#members:exportsettings-pdfurl}
 
 Gets or sets a value that indicates to define pdfUrl for export to PDF format.
@@ -1233,7 +1233,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets an object that indicates to customize the format behavior in the Spreadsheet.
 
-### formatSettings.allowCellBorder `Boolean`
+### formatSettings.allowCellBorder `boolean`
 {:#members:formatsettings-allowcellborder}
 
 Gets or sets a value that indicates whether to enable or disable cell border feature in the Spreadsheet.
@@ -1257,7 +1257,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### formatSettings.allowDecimalPlaces `Boolean`
+### formatSettings.allowDecimalPlaces `boolean`
 {:#members:formatsettings-allowdecimalplaces}
 
 Gets or sets a value that indicates whether to enable or disable decimal places in the Spreadsheet.
@@ -1282,7 +1282,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### formatSettings.allowFontFamily `Boolean`
+### formatSettings.allowFontFamily `boolean`
 {:#members:formatsettings-allowfontfamily}
 
 Gets or sets a value that indicates whether to enable or disable font family feature in Spreadsheet.
@@ -1312,7 +1312,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets an object that indicates to customize the import behavior in the Spreadsheet.
 
-### importSettings.importMapper `String`
+### importSettings.importMapper `string`
 {:#members:importsettings-importmapper}
 
 Sets import mapper to perform import feature in Spreadsheet.
@@ -1337,7 +1337,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### importSettings.importOnLoad `Boolean`
+### importSettings.importOnLoad `boolean`
 {:#members:importsettings-importonload}
 
 Gets or sets a value that indicates whether to enable or disable import while initial loading.
@@ -1361,7 +1361,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### importSettings.importUrl `String`
+### importSettings.importUrl `string`
 {:#members:importsettings-importurl}
 
 Sets import URL to access the online files in the Spreadsheet.
@@ -1386,7 +1386,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### importSettings.password `String`
+### importSettings.password `string`
 {:#members:importsettings-password}
 
 Gets or sets a value that indicates to define password while importing in the Spreadsheet.
@@ -1412,7 +1412,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### isReadOnly `Boolean`
+### isReadOnly `boolean`
 {:#members:isreadonly}
 
 Gets or sets a value that indicates whether to enable or disable readonly support in the Spreadsheet.
@@ -1432,7 +1432,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### locale `String`
+### locale `string`
 {:#members:locale}
 
 Gets or sets a value that indicates whether to customizing the user interface (UI) as locale-specific in order to display regional data (i.e.) in a language and culture specific to a particular country or region.
@@ -1460,7 +1460,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets an object that indicates to customize the picture behavior in the Spreadsheet.
 
-### pictureSettings.allowPictures `Boolean`
+### pictureSettings.allowPictures `boolean`
 {:#members:picturesettings-allowpictures}
 
 Gets or sets a value that indicates whether to enable or disable picture feature in Spreadsheet. By enabling this, you can add pictures in Spreadsheet.
@@ -1537,7 +1537,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets an object that indicates to customize the print option in Spreadsheet.
 
-### printSettings.allowPageSetup `Boolean`
+### printSettings.allowPageSetup `boolean`
 {:#members:printsettings-allowpagesetup}
 
 Gets or sets a value that indicates whether to enable or disable page setup support for printing in Spreadsheet. 
@@ -1562,7 +1562,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### printSettings.allowPageSize `Boolean`
+### printSettings.allowPageSize `boolean`
 {:#members:printsettings-allowpagesize}
 
 Gets or sets a value that indicates whether to enable or disable page size support for printing in Spreadsheet.
@@ -1587,7 +1587,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### printSettings.allowPrinting `Boolean`
+### printSettings.allowPrinting `boolean`
 {:#members:printsettings-allowprinting}
 
 Gets or sets a value that indicates whether to enable or disable print feature in the Spreadsheet.
@@ -1673,7 +1673,7 @@ Gets or sets an object that indicates menu settings for application tab in Sprea
 
 N> `ApplicationTabType` should be `Menu` while using this property.
 
-### ribbonSettings.applicationTab.menuSettings.isAppend `Boolean`
+### ribbonSettings.applicationTab.menuSettings.isAppend `boolean`
 {:#members:ribbonsettings-applicationtab-menusettings-isappend}
 
 Gets or sets a value that indicates whether to enable or disable isAppend property in ribbon settings.
@@ -1773,7 +1773,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets an object that indicates to customize the scroll options in the Spreadsheet.
 
-### scrollSettings.allowScrolling `Boolean`
+### scrollSettings.allowScrolling `boolean`
 {:#members:scrollsettings-allowscrolling}
 
 Gets or sets a value that indicates whether to enable or disable scrolling in Spreadsheet.
@@ -1794,7 +1794,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### scrollSettings.allowSheetOnDemand `Boolean`
+### scrollSettings.allowSheetOnDemand `boolean`
 {:#members:scrollsettings-allowsheetondemand}
 
 Gets or sets a value that indicates whether to enable or disable sheet on demand. By enabling this, it render only the active sheet element while paging remaining sheets are created one by one.
@@ -1817,7 +1817,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### scrollSettings.allowVirtualScrolling `Boolean`
+### scrollSettings.allowVirtualScrolling `boolean`
 {:#members:scrollsettings-allowvirtualscrolling}
 
 Gets or sets a value that indicates whether to enable or disable virtual scrolling feature in the Spreadsheet.
@@ -1842,7 +1842,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### scrollSettings.height  `Number|String`
+### scrollSettings.height  `Number|string`
 {:#members:scrollsettings-height}
 
 Gets or sets the value that indicates to define the height of spreadsheet.
@@ -1865,7 +1865,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### scrollSettings.isResponsive `Boolean`
+### scrollSettings.isResponsive `boolean`
 {:#members:scrollsettings-isresponsive}
 
 Gets or sets the value that indicates whether to enable or disable responsive mode in the Spreadsheet.
@@ -1940,7 +1940,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### scrollSettings.width `Number|String`
+### scrollSettings.width `Number|string`
 {:#members:scrollsettings-width}
 
 Gets or sets the value that indicates to define the height of the spreadsheet.
@@ -1969,7 +1969,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets an object that indicates to customize the selection options in the Spreadsheet.
 
-### selectionSettings.activeCell `String`
+### selectionSettings.activeCell `string`
 {:#members:selectionsettings-activecell}
 
 Gets or sets a value that indicates to define active cell in spreadsheet.
@@ -2020,7 +2020,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### selectionSettings.enableAnimation `Boolean`
+### selectionSettings.enableAnimation `boolean`
 {:#members:selectionsettings-enableanimation}
 
 Gets or sets a value that indicates to enable or disable animation while selection.
@@ -2268,7 +2268,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### sheets.border.color `String`
+### sheets.border.color `string`
 {:#members:sheets-border-color}
 
 Specifies border color for range of cells in Spreadsheet.
@@ -2291,7 +2291,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### sheets.border.range `String`
+### sheets.border.range `string`
 {:#members:sheets-border-range}
 
 To apply border for the specified range of cell. 
@@ -2512,7 +2512,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### sheets.cFormatRule.range `String`
+### sheets.cFormatRule.range `string`
 {:#members:sheets-cformatrule-range}
 
 Specifies the range for conditional formatting in Spreadsheet.
@@ -2617,7 +2617,7 @@ $('#Spreadsheet').ejSpreadsheet({
 </script>
 {% endhighlight %}
 
-### sheets.fieldAsColumnHeader `Boolean`
+### sheets.fieldAsColumnHeader `boolean`
 {:#members:sheets-fieldascolumnheader}
 
 Gets or sets a value that indicates whether to enable or disable field as column header in the Spreadsheet.
@@ -2735,7 +2735,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### sheets.primaryKey `String`
+### sheets.primaryKey `string`
 {:#members:sheets-primarykey}
 
 Specifies the primary key for the datasource in Spreadsheet.
@@ -2856,7 +2856,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### sheets.rangeSettings.primaryKey `String`
+### sheets.rangeSettings.primaryKey `string`
 {:#members:sheets-rangesettings-primarykey}
 
 Specifies the primary key for the datasource in Spreadsheet.
@@ -2912,7 +2912,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### sheets.rangeSettings.showHeader `Boolean`
+### sheets.rangeSettings.showHeader `boolean`
 {:#members:sheets-rangesettings-showheader}
 
 Gets or sets a value that indicates whether to enable or disable the datasource header in Spreadsheet.
@@ -2935,7 +2935,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### sheets.rangeSettings.startCell `String`
+### sheets.rangeSettings.startCell `string`
 {:#members:sheets-rangesettings-startcell}
 
 Specifies the start cell for the datasource range in Spreadsheet.
@@ -3103,7 +3103,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### sheets.rows.cells.comment.isVisible `Boolean`
+### sheets.rows.cells.comment.isVisible `boolean`
 {:#members:sheets-rows-cells-comment-isvisible}
 
 Get or sets the value that indicates whether to show or hide comments in Spreadsheet.
@@ -3132,7 +3132,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### sheets.rows.cells.comment.value `String`
+### sheets.rows.cells.comment.value `string`
 {:#members:sheets-rows-cells-comment-value}
 
 Specifies the value for the comment in Spreadsheet.
@@ -3189,7 +3189,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### sheets.rows.cells.format.type `String`
+### sheets.rows.cells.format.type `string`
 {:#members:sheets-rows-cells-format-type}
 
 Specifies the type of the format in Spreadsheet.
@@ -3245,7 +3245,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### sheets.rows.cells.hyperlink.webAddr `String`
+### sheets.rows.cells.hyperlink.webAddr `string`
 {:#members:sheets-rows-cells-hyperlink-webaddr}
 
 Specifies the web address for the hyperlink of a cell.
@@ -3273,7 +3273,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### sheets.rows.cells.hyperlink.cellAddr `String`
+### sheets.rows.cells.hyperlink.cellAddr `string`
 {:#members:sheets-rows-cells-hyperlink-celladdr}
 
 Specifies the cell address for the hyperlink of a cell.
@@ -3390,7 +3390,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### sheets.rows.cells.style.backgroundColor `String`
+### sheets.rows.cells.style.backgroundColor `string`
 {:#members:sheets-rows-cells-style-backgroundcolor}
 
 Specifies the background color of a cell in the Spreadsheet.
@@ -3418,7 +3418,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### sheets.rows.cells.style.color `String`
+### sheets.rows.cells.style.color `string`
 {:#members:sheets-rows-cells-style-color}
 
 Specifies the font color of a cell in the Spreadsheet.
@@ -3446,7 +3446,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### sheets.rows.cells.style.fontWeight `String`
+### sheets.rows.cells.style.fontWeight `string`
 {:#members:sheets-rows-cells-style-fontweight}
 
 Specifies the font weight of a cell in the Spreadsheet.
@@ -3474,7 +3474,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### sheets.rows.cells.value `String`
+### sheets.rows.cells.value `string`
 {:#members:sheets-rows-cells-value}
 
 Specifies the value for a cell in Spreadsheet.
@@ -3536,7 +3536,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### sheets.showGridlines `Boolean`
+### sheets.showGridlines `boolean`
 {:#members:sheets-showgridlines}
 
 Gets or sets a value that indicates whether to show or hide grid lines in the Spreadsheet.
@@ -3559,7 +3559,7 @@ $('#Spreadsheet').ejSpreadsheet({
 {% endhighlight %}
 
 
-### sheets.showHeader `Boolean`
+### sheets.showHeader `boolean`
 {:#members:sheets-showheader}
 
 Gets or sets a value that indicates whether to enable or disable the datasource header in Spreadsheet.
@@ -3582,7 +3582,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### sheets.showHeadings `Boolean`
+### sheets.showHeadings `boolean`
 {:#members:sheets-showheadings}
 
 Gets or sets a value that indicates whether to show or hide headings in the Spreadsheet.
@@ -3604,7 +3604,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### sheets.startCell `String`
+### sheets.startCell `string`
 {:#members:sheets-startcell}
 
 Specifies the start cell for the datasource range in Spreadsheet.
@@ -3627,7 +3627,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### showPager `Boolean`
+### showPager `boolean`
 {:#members:showpager}
 
 Gets or sets a value that indicates whether to show or hide pager in the Spreadsheet.
@@ -3647,7 +3647,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### showRibbon `Boolean`
+### showRibbon `boolean`
 {:#members:showribbon}
 
 Gets or sets a value that indicates whether to show or hide ribbon in the Spreadsheet.
@@ -3687,7 +3687,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### userName `String`
+### userName `string`
 {:#members:username}
 
 Define the username for the Spreadsheet which is displayed in comment.
@@ -7151,7 +7151,7 @@ This method is used to change the theme of the chart in the Spreadsheet.
 <td class="description">Pass the chart id.</td></tr>
 <tr>
 <td class="name">theme</td>
-<td class="type">string</td>
+<td class="type"><ts ref="ej.datavisualization.Chart.Theme"/>enum</td>
 <td class="description">Pass the chart theme which want to update.</td>
 </tr>
 </table>
@@ -7164,7 +7164,7 @@ This method is used to change the theme of the chart in the Spreadsheet.
 <script>
 // Initialize Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1"
-var theme = ej.datavisualization.Chart.Theme.Azuredark;//'theme' should be of type 'enum'.
+var theme = ej.datavisualization.Chart.Theme.Azuredark;
 xlObj.XLChart.changeTheme(chartId, theme); // To update chart theme.
 </script>
 
@@ -7213,7 +7213,7 @@ Legend range of chart data.</td></tr>
 <script>
 // Initialize Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1";
-xlObj.XLChart.changeDataRange(chartId, "A2:A7", "A2:B5", "A1:B1"); // To change the data range of the chart.
+xlObj.XLChart.changeDataRange(chartId, "A2:A7", "A2:B5", "A1:B1"); // To change the data range of the chart.
 </script>
 
 {% endhighlight %}
@@ -7340,19 +7340,24 @@ xlObj.XLChart.resizeChart("Spreadsheet_Chart1", 200, 300); // It is used to resi
 This method is used to update the chart element, such as axes, titles, data labels, grid lines and legends in the Spreadsheet.
 
 <table>
+<thead>
 <tr>
 <th>Name</th>
 <th>Type</th>
-<th>Description</th></tr>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td class="name">chartId</td>
 <td class="type">string</td>
 <td class="description">Pass the chart id.</td></tr>
 <tr>
 <td class="name">value</td>
-<td class="type">string</td>
+<td class="type"><ts name="ej.Spreadsheet.ChartProperties"/>enum</td>
 <td class="description">Pass chart element value which you want to update.</td>
 </tr>
+</tbody>
 </table>
 
 
@@ -7363,107 +7368,113 @@ This method is used to update the chart element, such as axes, titles, data labe
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1", value = ej.Spreadsheet.ChartProperties.PrimaryHorizontal; //'value' should be of type 'enum'. 
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1", value = ej.Spreadsheet.ChartProperties.PrimaryHorizontal; 
 xlObj.XLChart.updateChartElement(chartId, value); // To update chart property.
 </script>
 
 {% endhighlight %}
 
+#### ChartProperties
+
 Specifies the chart element value in the Spreadsheet,
 
-<table>
+<table class="props">
+<thead>
 <tr>
-<th>
-Name</th><th>
-Description</th></tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
 <tr>
-<td>
-DataLabelCenter</td><td>
-Specifies to make the data label center of the chart.</td></tr>
+<td>DataLabelCenter</td>
+<td>Specifies to make the data label center of the chart.</td>
+</tr>
 <tr>
-<td>
-DataLabelInsideBase</td><td>
-Specifies to make the data label inside base of the chart.</td></tr>
+<td>DataLabelInsideBase</td>
+<td>Specifies to make the data label inside base of the chart.</td>
+</tr>
 <tr>
-<td>
-DataLabelInsideEnd</td><td>
-Specifies to make the data label inside end of the chart.</td></tr>
+<td>DataLabelInsideEnd</td>
+<td>Specifies to make the data label inside end of the chart.</td>
+</tr>
 <tr>
-<td>
-DataLabelNone</td><td>
-Specifies to make the data label none of the chart.</td></tr>
+<td>DataLabelNone</td>
+<td>Specifies to make the data label none of the chart.</td>
+</tr>
 <tr>
-<td>
-DataLabelOutsideEnd</td><td>
-Specifies to make the data label outside end of the chart.</td></tr>
+<td>DataLabelOutsideEnd</td>
+<td>Specifies to make the data label outside end of the chart.</td>
+</tr>
 <tr>
-<td>
-LegendsBottom</td><td>
-Specifies to make the legends to bottom of the chart.</td></tr>
+<td>LegendsBottom</td>
+<td>Specifies to make the legends to bottom of the chart.</td>
+</tr>
 <tr>
-<td>
-LegendsLeft</td><td>
-Specifies to make the legends to left of the chart.</td></tr>
+<td>LegendsLeft</td>
+<td>Specifies to make the legends to left of the chart.</td>
+</tr>
 <tr>
-<td>
-LegendsNone</td><td>
-Specifies to make the legends to none of the chart.</td></tr>
+<td>LegendsNone</td>
+<td>Specifies to make the legends to none of the chart.</td>
+</tr>
 <tr>
-<td>
-LegendsRight</td><td>
-Specifies to make the legends to right of the chart.</td></tr>
+<td>LegendsRight</td>
+<td>Specifies to make the legends to right of the chart.</td>
+</tr>
 <tr>
-<td>
-LegendsTop</td><td>
-Specifies to make the legends to top of the chart.</td></tr>
+<td>LegendsTop</td>
+<td>Specifies to make the legends to top of the chart.</td>
+</tr>
 <tr>
-<td>
-PrimaryHorizontal</td><td>
-To set the primary horizontal of the chart.</td></tr>
+<td>PrimaryHorizontal</td>
+<td>To set the primary horizontal of the chart.</td>
+</tr>
 <tr>
-<td>
-PrimaryHorizontalAxisTitle</td><td>
-To set the primary horizontal axis title of the chart.</td></tr>
+<td>PrimaryHorizontalAxisTitle</td>
+<td>To set the primary horizontal axis title of the chart.</td>
+</tr>
 <tr>
-<td>
-PrimaryMajorHorizontal</td><td>
-To set the primary major horizontal of the chart.</td></tr>
+<td>PrimaryMajorHorizontal</td>
+<td>To set the primary major horizontal of the chart.</td>
+</tr>
 <tr>
-<td>
-PrimaryMajorVertical</td><td>
-To set the primary major vertical of the chart.</td></tr>
+<td>PrimaryMajorVertical</td>
+<td>To set the primary major vertical of the chart.</td>
+</tr>
 <tr>
-<td>
-PrimaryMinorHorizontal</td><td>
-To set the primary minor horizontal of the chart.</td></tr>
+<td>PrimaryMinorHorizontal</td>
+<td>To set the primary minor horizontal of the chart.</td>
+</tr>
 <tr>
-<td>
-PrimaryMinorVertical</td><td>
-To set the primary minor vertical of the chart.</td></tr>
+<td>PrimaryMinorVertical</td>
+<td>To set the primary minor vertical of the chart.</td>
+</tr>
 <tr>
-<td>
-PrimaryVertical</td><td>
-To set the primary vertical of the chart.</td></tr>
+<td>PrimaryVertical</td>
+<td>To set the primary vertical of the chart.</td>
+</tr>
 <tr>
-<td>
-PrimaryVerticalAxisTitle</td><td>
-To set the primary vertical axis title of the chart.</td></tr>
+<td>PrimaryVerticalAxisTitle</td>
+<td>To set the primary vertical axis title of the chart.</td>
+</tr>
 <tr>
-<td>
-TitleCenter</td><td>
-Specifies to make the title to center of the chart.</td></tr>
+<td>TitleCenter</td>
+<td>Specifies to make the title to center of the chart.</td>
+</tr>
 <tr>
-<td>
-TitleFar</td><td>
-Specifies to make the title to far of the chart.</td></tr>
+<td>TitleFar</td>
+<td>Specifies to make the title to far of the chart.</td>
+</tr>
 <tr>
-<td>
-TitleNear</td><td>
-Specifies to make the title to near of the chart.</td></tr>
+<td>TitleNear</td>
+<td>Specifies to make the title to near of the chart.</td>
+</tr>
 <tr>
-<td>
-TitleNone</td><td>
-Specifies to make the title to none of the chart.</td></tr>
+<td>TitleNone</td>
+<td>Specifies to make the title to none of the chart.</td>
+</tr>
+</tbody>
 </table>
 
 ### XLChart.switchRowColumn(chartId)
