@@ -4233,37 +4233,6 @@ quantitativeScaleSettings : { featureMeasures :[{ value :2}] }
 
 
 
-
-### fields  `object`
-{:#members:fields}
-
-
-Contains property to add dataSource and dataSource fields.
-
-
-
-
-#### Default Value
-
-* null
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<div id="bulletGraph1"></div> 
-<script>
-$("#bulletGraph1").ejBulletGraph({
-        fields: {
-                dataSource: localData, category: "category",
-                featureMeasures: "value",
-                comparativeMeasure: "comparativeMeasureValue"
-            }                 
-});
-</script>{% endhighlight %}
-
 ### quantitativeScaleSettings.fields  `object`
 {:#members:quantitativescalesettings-fields}
 
