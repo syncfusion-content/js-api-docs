@@ -1294,11 +1294,11 @@ Specifies the mode for column resizing
 <tbody>
 <tr>
 <td class="name">FixedColumns</td>
-<td class="description">At load timeÂ column are rendered with given width value, while resizing the column only current column width is changed</td>
+<td class="description">At load time column are rendered with given width value, while resizing the column only current column width is changed</td>
 </tr>
 <tr>
 <td class="name">Normal</td>
-<td class="description">Â At load time columns are stretched with control width,Â while resizing the column, current column width updated based on next column</td>
+<td class="description"> At load time columns are stretched with control width, while resizing the column, current column width updated based on next column</td>
 </tr>
 <tr>
 <td class="name">NextColumn</td>
@@ -2367,7 +2367,7 @@ Specifies the index of the column that needs to have the expander button. By def
 ### addRow(data, rowPosition)
 {:#methods:addrow}
 
-Adds a new row in TreeGrid, while allowAdding is set to true
+Add a new row in TreeGrid, while allowAdding is set to true
 
 <table class="params">
 <thead>
@@ -2385,7 +2385,7 @@ Adds a new row in TreeGrid, while allowAdding is set to true
 </tr>
 <tr>
 <td class="name">rowPosition</td>
-<td class="type">enum</td>
+<td class="type">string</td>
 <td class="description">Defines in which position the row wants to be added</td>
 </tr>
 </tbody>
@@ -2403,7 +2403,7 @@ Adds a new row in TreeGrid, while allowAdding is set to true
 // Create TreeGrid object
 var treeGridObj = $("#treegrid").data("ejTreeGrid");
 var data = {taskId:"40",taskName:"New Task 40",startDate:"2/20/2014",startDate:"2/25/2014"};
-treeGridObj.addRecord(data, ej.TreeGrid.RowPosition.Child); // To add a task
+treeGridObj.addRow(data, ej.TreeGrid.RowPosition.Child); // To add a task
 </script>
 {% endhighlight %}
 
