@@ -2328,8 +2328,8 @@ To check a node in TreeView.
 <tr>
 <td class="name"> 
 element </td>
-<td class="type"><span class="param-type">string|object</span></td>
-<td class="description">ID of TreeView node/object of TreeView node</td>
+<td class="type"><span class="param-type">string|object|array</span></td>
+<td class="description">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</td>
 </tr>
 </tbody>
 </table>
@@ -2457,8 +2457,8 @@ To collapse a particular node in TreeView.
 <tr>
 <td class="name"> 
 element </td>
-<td class="type"><span class="param-type">string|object</span></td>
-<td class="description">ID of TreeView node|object of TreeView node</td>
+<td class="type"><span class="param-type">string|object|array</span></td>
+<td class="description">ID of TreeView node|object of TreeView node/collection of ID/object of TreeView nodes</td>
 </tr>
 </tbody>
 </table>
@@ -2519,8 +2519,8 @@ To disable the node in the TreeView.
 <tr>
 <td class="name"> 
 element </td>
-<td class="type"><span class="param-type">string|object</span></td>
-<td class="description">ID of TreeView node/object of TreeView node</td>
+<td class="type"><span class="param-type">string|object|array</span></td>
+<td class="description">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</td>
 </tr>
 </tbody>
 </table>
@@ -2581,8 +2581,8 @@ To enable the node in the TreeView.
 <tr>
 <td class="name"> 
 element </td>
-<td class="type"><span class="param-type">string|object</span></td>
-<td class="description">ID of TreeView node/object of TreeView node</td>
+<td class="type"><span class="param-type">string|object|array</span></td>
+<td class="description">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</td>
 </tr>
 </tbody>
 </table>
@@ -2785,8 +2785,8 @@ To expandNode particular node in TreeView.
 <tr>
 <td class="name"> 
 element </td>
-<td class="type"><span class="param-type">string|object</span></td>
-<td class="description">ID of TreeView node/object of TreeView node</td>
+<td class="type"><span class="param-type">string|object|array</span></td>
+<td class="description">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</td>
 </tr>
 </tbody>
 </table>
@@ -3982,8 +3982,8 @@ To hide particular node in TreeView.
 <tr>
 <td class="name"> 
 element </td>
-<td class="type"><span class="param-type">string|object</span></td>
-<td class="description">ID of TreeView node/object of TreeView node</td>
+<td class="type"><span class="param-type">string|object|array</span></td>
+<td class="description">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</td>
 </tr>
 </tbody>
 </table>
@@ -4944,8 +4944,8 @@ To remove a node in TreeView.
 <tr>
 <td class="name"> 
 element </td>
-<td class="type"><span class="param-type">string|object</span></td>
-<td class="description">ID of TreeView node/object of TreeView node</td>
+<td class="type"><span class="param-type">string|object|array</span></td>
+<td class="description">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</td>
 </tr>
 </tbody>
 </table>
@@ -5136,8 +5136,8 @@ To show a node in TreeView.
 <tr>
 <td class="name"> 
 element </td>
-<td class="type"><span class="param-type">string|object</span></td>
-<td class="description">ID of TreeView node/object of TreeView node</td>
+<td class="type"><span class="param-type">string|object|array</span></td>
+<td class="description">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</td>
 </tr>
 </tbody>
 </table>
@@ -5244,8 +5244,8 @@ To uncheck a node in TreeView.
 <tr>
 <td class="name"> 
 element </td>
-<td class="type"><span class="param-type">string|object</span></td>
-<td class="description">ID of TreeView node/object of TreeView node</td>
+<td class="type"><span class="param-type">string|object|array</span></td>
+<td class="description">ID of TreeView node/object of TreeView node/collection of ID/object of TreeView nodes</td>
 </tr>
 </tbody>
 </table>
