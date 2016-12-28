@@ -12043,6 +12043,161 @@ $("#Grid").ejGrid({
 </script>{% endhighlight %}
 
 
+### cellDeselected
+{:#events:celldeselected}
+
+Triggered after the cell is deselected.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when cellDeselected event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the deselected cell index value.</td>
+</tr>
+<tr>
+<td class="name">currentCell</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the deselected cell element.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+####Example
+{:.example}
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   cellDeselected: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+
+### cellDeselecting
+{:#events:celldeselecting}
+
+Triggered before the cell is going to be deselected.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when cellDeselecting event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the deselected cell index value.</td>
+</tr>
+<tr>
+<td class="name">currentCell</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the deselected cell element.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">isCtrlKeyPressed</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns whether the ctrl key is pressed while deselecting cell</td>
+</tr>
+<tr>
+<td class="name">isShiftKeyPressed</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns whether the shift key is pressed while deselecting cell</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   cellDeselecting: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+
 ### columnDrag
 {:#events:columndrag}
 
@@ -12694,6 +12849,159 @@ $("#Grid").ejGrid({
 });
 </script>{% endhighlight %}
 
+
+### columnDeselected
+{:#events:columndeselected}
+
+Triggered after the column is deselected.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when columnDeselected event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">columnIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the Deselected cell index value.</td>
+</tr>
+<tr>
+<td class="name">headerCell</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the Deselected header cell element.</td>
+</tr>
+<tr>
+<td class="name">column</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns corresponding column object (JSON).</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   columnDeselected: function (args) {}
+});
+</script>{% endhighlight %}
+
+
+### columnDeselecting
+{:#events:columndeselecting}
+
+Triggered before the column is going to be deselected.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when columnDeselecting event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">columnIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the deselected column index value.</td>
+</tr>
+<tr>
+<td class="name">headerCell</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the deselected header cell element.</td>
+</tr>
+<tr>
+<td class="name">column</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns corresponding column object (JSON).</td>
+</tr>
+<tr>
+<td class="name">isCtrlKeyPressed</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns whether the ctrl key is pressed while deselecting cell</td>
+</tr>
+<tr>
+<td class="name">isShiftKeyPressed</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns whether the shift key is pressed while deselecting cell</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   columnDeselecting: function (args) {}
+});
+</script>{% endhighlight %}
+
+
 ### contextClick
 {:#events:contextclick}
 
@@ -12768,6 +13076,7 @@ $("#Grid").ejGrid({
    contextClick: function (args) {}
 });
 </script>{% endhighlight %}
+
 
 ### contextOpen
 {:#events:contextopen}
@@ -14485,6 +14794,149 @@ Triggered before the row is going to be selected.
 <script>
 $("#Grid").ejGrid({
    rowSelecting: function (args) {}
+});
+</script>{% endhighlight %}
+
+
+### rowDeselected
+{:#events:rowdeselected}
+
+Triggered after the row is deselected.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when rowDeselected event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the row index of the deselected row.</td>
+</tr>
+<tr>
+<td class="name">row</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the current deselected row.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   rowDeselected: function (args) {}
+});
+</script>{% endhighlight %}
+
+
+### rowDeselecting
+{:#events:rowdeselecting}
+
+Triggered before the row is going to be deselected.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when rowDeselecting event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the deselected row index value.</td>
+</tr>
+<tr>
+<td class="name">row</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the deselected row element.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   rowDeselecting: function (args) {}
 });
 </script>{% endhighlight %}
 
