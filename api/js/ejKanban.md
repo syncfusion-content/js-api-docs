@@ -1334,14 +1334,14 @@ Gets or sets an object that indicates to render the Kanban with specified column
 
 {% endhighlight %}
 
-### columns.totalCount `object`
+### columns.totalCount `string`
 {:#members:columns-totalcount}
 
 To customize the totalCount properties.
     
 #### Default Value:
 
-* object
+* string
 
 #### Example
 
@@ -1363,49 +1363,6 @@ To customize the totalCount properties.
                 dataSource: data,
                 columns: [
                     { headerText: "Backlog", key: "Open",totalCount:{text:"OpenCount"}},
-                    { headerText: "In Progress", key: "InProgress" },
-                    { headerText: "Testing", key: "Testing" }
-                ],
-                keyField: "Status",
-                fields: {
-                    primaryKey: "Id",                    
-                    content: "Summary"
-                }
-            });
-    });
-    </script>
-
-{% endhighlight %}
-
-### columns.totalCount.text `string`
-{:#members:columns-totalcount-text}
-
-To customize the totalCount text properties.
-    
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight html %}
- 
-    <div id="Kanban"></div>
-    <script type="text/javascript">
-    window.kanbandata = [
-         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
-         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
-         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
-         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" }
-    ];
-    $(function () {
-        var data = ej.DataManager(window.kanbandata);
-        $("#Kanban").ejKanban(
-            {
-                enableTotalCount: true,
-                dataSource: data,
-                columns: [
-                    { headerText: "Backlog", key: "Open",totalCount:{text:"Backlog Count"}},
                     { headerText: "In Progress", key: "InProgress" },
                     { headerText: "Testing", key: "Testing" }
                 ],
