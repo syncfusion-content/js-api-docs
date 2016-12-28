@@ -1341,7 +1341,7 @@ To customize the totalCount properties.
     
 #### Default Value:
 
-* string
+* false
 
 #### Example
 
