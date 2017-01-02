@@ -714,7 +714,7 @@ Event triggers when the radial slider is created.
 <tr>
 <td> model </td>
 <td> Object </td>
-<td> returns the Radialslider model /td>
+<td> returns the Radialslider model </td>
 </tr>
 
 <tr>
