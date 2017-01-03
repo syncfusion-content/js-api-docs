@@ -1294,11 +1294,11 @@ Specifies the mode for column resizing
 <tbody>
 <tr>
 <td class="name">FixedColumns</td>
-<td class="description">At load time column are rendered with given width value, while resizing the column only current column width is changed</td>
+<td class="description">At load time column are rendered with given width value, while resizing the column only current column width is changed</td>
 </tr>
 <tr>
 <td class="name">Normal</td>
-<td class="description"> At load time columns are stretched with control width, while resizing the column, current column width updated based on next column</td>
+<td class="description">At load time columns are stretched with control width,while resizing the column, current column width updated based on next column</td>
 </tr>
 <tr>
 <td class="name">NextColumn</td>
