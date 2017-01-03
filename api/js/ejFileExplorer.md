@@ -4121,21 +4121,6 @@ type</td>
 
 Fires when keydown in FileExplorer control.
 
-<<table class="params">
-<thead>
-<tr>
-Add a comment to this line
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from FileExplorer
 <table class="params">
 <thead>
 <tr>
@@ -4266,9 +4251,11 @@ cancel</td>
 <tr>
 <td class="name">
 isInteraction</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">boolean</span></td>
 <td class="description">return true when we change the layout via interaction, else false.</td>
 </tr>
+<tr>
 <td class="name">
 layoutType</td>
 <td class="type"><span class="param-type">string</span></td>
@@ -4277,8 +4264,7 @@ layoutType</td>
 <tr>
 <td class="name">
 model</td>
-<td class="type"><ts ref="ej.FileExplorer.Model"/>
-<span class="param-type">object</span></td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
@@ -5374,95 +5360,6 @@ type</td>
 
 ### unselect
 {:#events:unselect}
-
-### unselect
-{:#events:unselect}
-
-
-
-Fires when the items from grid view or tile view or large icons view of FileExplorer control is unselected.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from FileExplorer
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">model</td>
-<td class="type"><ts ref="ej.FileExplorer.Model"/>
-<span class="param-type">object</span></td>
-<td class="description">Returns the FileExplorer model.</td>
-</tr>
-<tr>
-<td class="name">name</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description">Returns the name of unselected item.</td>
-</tr>
-<tr>
-<td class="name">nodeType</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description">Returns the type of unselected item.</td>
-</tr>
-<tr>
-<td class="name">path</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description">Returns the path of unselected item.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description">Returns the name of the event.</td>
-</tr>
-<tr>
-<td class="name">unselectedItem</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">Returns the unselected item details.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-#### Example
-
-
-
-{% highlight html %}
- 
-<div id="fileExplorer"></div>
-
-<script>
-    // unselect event for FileExplorer
-    $('#fileExplorer').ejFileExplorer({
-        path: "http://mvc.syncfusion.com/ODataServices/FileBrowser/",
-        ajaxAction: "http://mvc.syncfusion.com/OdataServices/fileExplorer/fileoperation/doJSONAction",
-        unselect: function (args) { }
-    });
-</script>
-
-{% endhighlight %}
 
 
 
