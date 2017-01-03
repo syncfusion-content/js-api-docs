@@ -4121,21 +4121,6 @@ type</td>
 
 Fires when keydown in FileExplorer control.
 
-<<table class="params">
-<thead>
-<tr>
-Add a comment to this line
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from FileExplorer
 <table class="params">
 <thead>
 <tr>
@@ -4266,9 +4251,11 @@ cancel</td>
 <tr>
 <td class="name">
 isInteraction</td>
-<td class="type"><span class="param-type">boolean</span></td>
+<td class="type"><ts ref="ej.FileExplorer.Model"/>
+<span class="param-type">boolean</span></td>
 <td class="description">return true when we change the layout via interaction, else false.</td>
 </tr>
+<tr>
 <td class="name">
 layoutType</td>
 <td class="type"><span class="param-type">string</span></td>
@@ -4277,8 +4264,7 @@ layoutType</td>
 <tr>
 <td class="name">
 model</td>
-<td class="type"><ts ref="ej.FileExplorer.Model"/>
-<span class="param-type">object</span></td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the FileExplorer model.</td>
 </tr>
 <tr>
