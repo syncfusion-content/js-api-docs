@@ -1280,7 +1280,7 @@ Hides the ColorPicker popup, if in opened state.
  {% endhighlight %}
 
 
-### HSVToRGB(hsv)
+### HSVToRGB(HSV)
 {:#methods:hsvtorgb}
 
 Convert color value from HSV to RGB
@@ -1300,7 +1300,7 @@ object
 <tbody>
 <tr>
 <td class="name"> 
-hsv </td>
+HSV </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Specified HSV code converted to RGB</td>
 </tr>
@@ -1361,7 +1361,7 @@ string
 <tbody>
 <tr>
 <td class="name"> 
-rgb </td>
+RGB</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Specified RGB code converted to HEX code</td>
 </tr>
@@ -1426,7 +1426,7 @@ object
 <tbody>
 <tr>
 <td class="name"> 
-rgb </td>
+RGB </td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Specified RGB code converted to HSV code</td>
 </tr>
