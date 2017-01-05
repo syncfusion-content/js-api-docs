@@ -294,7 +294,7 @@ Formats the date value of the DateRangePicker in to the specified date format. I
 
 
 
-Allows to embed the Timepicker aling with the calendars in the page, two timepicker will be render, for selecting start and end date.
+Allows to embed the Timepicker align with the calendars in the page, two timepicker will be render, for selecting start and end date.
 
 
 
