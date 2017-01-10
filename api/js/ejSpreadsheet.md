@@ -3214,31 +3214,6 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### sheets.rows.cells.format.formatStr `String`
-{:#members:sheets-rows-cells-format-formatstr}
-
-Specifies the string format for the given input.
-
-#### Default Value:
-* ""
-
-#### Example
-
-{% highlight html %}
-
-<div id="Spreadsheet"></div> 
-<script>
-$('#Spreadsheet').ejSpreadsheet({
-    sheets: [{
-        rows: [
-            { cells: [{ value: "20000", format: { type: "percentage", formatStr: "{0:P3}" } }] }
-        ]
-    }]
-});
-</script>
-
-{% endhighlight %}
-
 ### sheets.rows.cells.format.thousandSeparator `Boolean`
 {:#members:sheets-rows-cells-format-thousandSeparator}
 
@@ -5878,12 +5853,12 @@ This method is used to select a cell or range in the Spreadsheet.
 <tbody>
 <tr>
 <td class="name">startCell</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass the start cell to perform selection.</td>
 </tr>
 <tr>
 <td class="name">endCell</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass the end cell to perform selection.</td>
 </tr>
 </tbody>
@@ -6868,7 +6843,7 @@ This method is used to show/hide pager in the Spreadsheet.
 <tbody>
 <tr>
 <td class="name">status</td>
-<td class="type"><span class="param-type">Boolean</span></td>
+<td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Pass `true` to show pager.</td>
 </tr>
 </tbody>
@@ -7246,8 +7221,7 @@ This method is used to update the details for custom undo and redo operations.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), details = { action: "padding", cell: xlObj.getActiveCell() };
-xlObj.getActiveCellElem().css("padding-left","20px");
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), details = { action: "custom", cell: xlObj.getActiveCell() };
 // To update undo and redo collections.
 xlObj.updateUndoRedoCollection(details); 
 </script>
@@ -7256,8 +7230,7 @@ xlObj.updateUndoRedoCollection(details);
 
 {% highlight html %}
 <script>
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), details = { action: "padding", cell: xlObj.getActiveCell() };
-xlObj.getActiveCellElem().css("padding-left","20px");
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), details = { action: "custom", cell: xlObj.getActiveCell() };
 // To update undo and redo collections.
 $("#Spreadsheet").ejSpreadsheet("updateUndoRedoCollection", details);        
 </script>
@@ -10243,7 +10216,7 @@ This method is used to change the dimensions for chart/picture.
 <tbody>
 <tr>
 <td class="name">options</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass the id, width, height and shapeType.</td>
 </tr>
 </tbody>
@@ -10278,7 +10251,7 @@ This method is used to disable ribbon items in the Spreadsheet.
 <tbody>
 <tr>
 <td class="name">idCollection</td>
-<td class="type"><span class="param-type">Array</span></td>
+<td class="type"><span class="param-type">array</span></td>
 <td class="description">Pass the id's of the ribbon items.</td>
 </tr>
 </tbody>
@@ -10312,7 +10285,7 @@ This method is used to enable ribbon items in the Spreadsheet.
 <tbody>
 <tr>
 <td class="name">idCollection</td>
-<td class="type"><span class="param-type">Array</span></td>
+<td class="type"><span class="param-type">array</span></td>
 <td class="description">Pass the id's of the ribbon items.</td>
 </tr>
 </tbody>
@@ -10607,17 +10580,17 @@ This method is used to find the next occurrence of given value in the sheet/work
 <tbody>
 <tr>
 <td class="name">value</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the value to search.</td>
 </tr>
 <tr>
 <td class="name">options</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass the options to perform search operation.</td>
 </tr>
 <tr>
 <td class="name">sIndex</td>
-<td class="type"><span class="param-type">Number</span></td>
+<td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the sheet index.</td>
 </tr>
 </tbody>
@@ -10652,17 +10625,17 @@ This method is used to find the previous occurrence of given value in the sheet/
 <tbody>
 <tr>
 <td class="name">value</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the value to search.</td>
 </tr>
 <tr>
 <td class="name">options</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass the options to perform search operation.</td>
 </tr>
 <tr>
 <td class="name">sIndex</td>
-<td class="type"><span class="param-type">Number</span></td>
+<td class="type"><span class="param-type">number</span></td>
 <td class="description">Pass the sheet index.</td>
 </tr>
 </tbody>
@@ -10697,7 +10670,7 @@ This method is used to perform goto operation in the Spreadsheet.
 <tbody>
 <tr>
 <td class="name">range</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the range to perform goto operation.</td>
 </tr>
 </tbody>
@@ -10731,12 +10704,12 @@ This method is used to perform goto special operation in the Spreadsheet.
 <tbody>
 <tr>
 <td class="name">type</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the type of the cell.</td>
 </tr>
 <tr>
 <td class="name">options</td>
-<td class="type"><span class="param-type">Object</span></td>
+<td class="type"><span class="param-type">object</span></td>
 <td class="description">Pass the options to perform goto special.</td>
 </tr>
 </tbody>
@@ -11143,13 +11116,13 @@ This method is used to change the picture.
 <tbody>
 <tr>
 <td class="name">pictureId</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the id of the picture.</td>
 </tr>
 <tr>
 <td class="name">url</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description">Pass the path of the picture.</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the relative path of the picture.</td>
 </tr>
 </tbody>
 </table>
@@ -11182,22 +11155,22 @@ This method is used to change the border of the picture.
 <tbody>
 <tr>
 <td class="name">pictureId</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the id of the picture.</td>
 </tr>
 <tr>
 <td class="name">width</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the width of the border.</td>
 </tr>
 <tr>
 <td class="name">style</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the style of the border.</td>
 </tr>
 <tr>
 <td class="name">color</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the color of the border.</td>
 </tr>
 </tbody>
@@ -11232,12 +11205,12 @@ This method is used to reset the picture.
 <tbody>
 <tr>
 <td class="name">pictureId</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the id of the picture.</td>
 </tr>
 <tr>
 <td class="name">action</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the type of action.</td>
 </tr>
 </tbody>
@@ -11516,7 +11489,7 @@ This method is used to clear invalid data highlights in the given range.
 <tbody>
 <tr>
 <td class="name">range</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the range to clear highlights.</td>
 </tr>
 </tbody>
