@@ -9,7 +9,7 @@ keywords: pdfviewer, ejPdfViewer, pdfviewer api, syncfusion, pdf viewer
 
 # ejPdfViewer
 
-PDF Viewer JS is visualization component to view PDF documents. It is powered by HTML5/JavaScript and provides various control customizations.
+PDF viewer JS is visualization component to view PDF documents. It is powered by HTML5/JavaScript and provides various control customizations.
 
 #### Syntax
 
@@ -42,7 +42,7 @@ $(element).ejPdfViewer({serviceUrl: ‘../api/PdfViewer’});
 
 ## Members
 
-### locale `String`
+### locale `string`
 
 {:#members:locale}
 
@@ -62,13 +62,13 @@ Specifies the locale information of the PDF viewer.
 {% endhighlight %}
 
 
-### toolbarSettings `Object`
+### toolbarSettings `object`
 
 {:#members:toolbarsettings}
 
 Specifies the toolbar settings.
 
-### toolbarSettings.showToolTip `Boolean`
+### toolbarSettings.showToolTip `boolean`
 
 {:#members:toolbarsettings-showtooltip}
 
@@ -167,13 +167,13 @@ Below code snippet shows only the magnification tools in the toolbar.
 {% endhighlight %}
 
 
-### serviceUrl `String`
+### serviceUrl `string`
 
 {:#members:serviceurl}
 
 Sets the PDF Web API service URL
 
-### pageCount `Number`
+### pageCount `number`
 
 {:#members:pagecount}
 
@@ -187,7 +187,7 @@ var totalPages = pdfviewerObj.pageCount;
 {% endhighlight %}
 
 
-### currentPageNumber `Number`
+### currentPageNumber `number`
 
 {:#members:currentpagenumber}
 
@@ -201,7 +201,7 @@ var currentPage = pdfviewerObj.currentPageNumber;
 {% endhighlight %}
 
 
-### zoomPercentage `Number`
+### zoomPercentage `number`
 
 {:#members:zoompercentage}
 
@@ -335,7 +335,7 @@ The below code snippet shows the hyperlink opened in a new tab.
 {% endhighlight %}
 
 
-#### enableHyperlink `boolean`
+### enableHyperlink `boolean`
 {:#members:enablehyperlink}
 
 Enables or disables the hyperlinks in PDF Document.
@@ -353,7 +353,7 @@ Enables or disables the hyperlinks in PDF Document.
 </script>	
 {% endhighlight %}
 
-### isResponsive `Boolean`
+### isResponsive `boolean`
 {:#members:isResponsive}
 
 Enables or disables the responsive support for PDF Viewer control during the window resizing time.
@@ -393,11 +393,29 @@ var fileName = pdfviewerObj.fileName;
 
 ## Methods
 
-### load(fileName) `String`
+### load(fileName)
 
 {:#methods:load}
 
 Loads the document with the filename and displays it in PDF viewer.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+fileName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">File name to be loaded</td>
+</tr>
+</tbody>
+</table>
 
 #### Example:
 
@@ -406,11 +424,29 @@ var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.load("Manual");
 {% endhighlight %}
 
-### showToolbar(show) `Boolean`
+### showToolbar(show)
 
 {:#methods:showtoolbar}
 
-Shows/hides the tool bar in the PDF viewer.
+Shows/hides the toolbar in the PDF viewer.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+show</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">shows/hides the toolbar</td>
+</tr>
+</tbody>
+</table>
 
 #### Example:
 
@@ -435,7 +471,7 @@ pdfviewerObj.print();
 ### abortPrint()
 {:#methods:abortprint}
 
-Abort the printing function and restores the PDF Viewer.
+Abort the printing function and restores the PDF viewer.
 
 #### Example:
 
@@ -445,10 +481,28 @@ pdfviewerObj.abortPrint();
 {% endhighlight %}
 
 
-### showPrintTools(show) `boolean`
+### showPrintTools(show)
 {:#methods:showprinttools}
 
-Shows/hides the print icon in the tool bar.
+Shows/hides the print icon in the toolbar.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+show</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">shows/hides print button in the toolbar</td>
+</tr>
+</tbody>
+</table>
 
 #### Example:
 
@@ -471,10 +525,28 @@ pdfviewerObj.download();
 {% endhighlight %}
 
 
-### showDownloadTool(show) `boolean`
+### showDownloadTool(show)
 {:#methods:showdownloadtool}
 
-Shows/hides the download tool in the tool bar.
+Shows/hides the download tool in the toolbar.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+show</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">shows/hides download button in the toolbar</td>
+</tr>
+</tbody>
+</table>
 
 #### Example:
 
@@ -483,11 +555,29 @@ var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.showDownloadTool(false);
 {% endhighlight %}
 
-### showPageNavigationTools(show) `Boolean`
+### showPageNavigationTools(show)
 
 {:#methods:showpagenavigationtools}
 
 Shows/hides the page navigation tools in the toolbar
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+show</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">shows/hides navigation tools in the toolbar</td>
+</tr>
+</tbody>
+</table>
 
 #### Example:
 
@@ -496,11 +586,29 @@ var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.showPageNavigationTools(false);
 {% endhighlight %}
 
-### goToPage(pageNumber) `Number`
+### goToPage(pageNumber)
 
 {:#methods:gotopage}
 
 Navigates to the specific page in the PDF document. If the page is not available for the given pageNumber, PDF viewer retains the existing page in view.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+pageNumber</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">navigates to the page number in the PDF document</td>
+</tr>
+</tbody>
+</table>
 
 #### Example:
 
@@ -565,11 +673,29 @@ var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.goToPreviousPage();
 {% endhighlight %}
 
-### showMagnificationTools(show) `Boolean`
+### showMagnificationTools(show)
 
 {:#methods:showmagnificationtools}
 
-Shows/hides the zoom tools in the tool bar.
+Shows/hides the zoom tools in the toolbar.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+show</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">shows/hides zoom tools in the toolbar</td>
+</tr>
+</tbody>
+</table>
 
 #### Example:
 
@@ -635,11 +761,29 @@ pdfviewerObj.zoomOut();
 {% endhighlight %}
 
 
-### zoomTo(zoomValue) `Number`
+### zoomTo(zoomValue)
 
 {:#methods:zoomto}
 
 Scales the page to the specified percentage ranging from 50 to 400. If the given zoomValue is less than 50 or greater than 400; the PDF viewer scales the page to 50 and 400 respectively.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+zoomValue</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">zoom value for scaling the pages in the PDF Viewer</td>
+</tr>
+</tbody>
+</table>
 
 #### Example:
 
