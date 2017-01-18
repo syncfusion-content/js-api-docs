@@ -557,6 +557,22 @@ Controls the visibility of the column.
 
 {% endhighlight %}
 
+### columns.width `Number`
+
+{:#members:columns-width}
+
+Gets or sets a value for treegrid column width
+
+#### Default Value:
+
+* -
+
+#### Example
+{% highlight html %}
+         
+        $("#treegrid").ejTreeGrid({columns: [{  width: 40 }]});
+{% endhighlight %}
+
 
 ### columns.headerTemplateID `String`
 
