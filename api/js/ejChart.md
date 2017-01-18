@@ -8627,7 +8627,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2nvdn2ml)
 
 
 
-Controls whether series need to be draw in the chart.
+Controls whether the series has to be rendered at initial loading of chart, this will be useful in scenarios where chart is placed at the bottom of the web page and we need to render the series only when the chart is visible while scrolling to the top.
 
 
 #### Default Value
