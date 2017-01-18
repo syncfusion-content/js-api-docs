@@ -8621,6 +8621,38 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2nvdn2ml)
 
 
 
+### initSeriesRender `boolean`
+{:#members:initseriesrender}
+
+
+
+
+Controls whether series need to be draw in the chart.
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+
+     initSeriesRender : false
+                  
+});
+
+{% endhighlight %}
+
 
 ### enableRotation `boolean`
 {:#members:enablerotation}
