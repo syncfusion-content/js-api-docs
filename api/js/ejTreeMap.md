@@ -642,7 +642,7 @@ Specifies the header for parent item during drilldown. This is applicable only f
  
    //Sets the header value 
    
-   $("#container").data("ejTreeMap").model.header = true; 
+   $("#container").data("ejTreeMap").model.header = "Country"; 
 
 {% endhighlight %}
 
