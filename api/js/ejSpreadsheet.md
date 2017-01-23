@@ -3215,7 +3215,7 @@ $('#Spreadsheet').ejSpreadsheet({
 {% endhighlight %}
 
 ### sheets.rows.cells.format.thousandSeparator `Boolean`
-{:#members:sheets-rows-cells-format-thousandSeparator}
+{:#members:sheets-rows-cells-format-thousandseparator}
 
 Specifies the thousand separator for the given input.
 
