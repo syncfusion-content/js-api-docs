@@ -575,6 +575,78 @@ specifies the drillDown selection color
 {% endhighlight %}
 
 
+### isHierarchicalDatasource `boolean`
+{:#members:ishierarchicaldatasource}
+
+Specifies whether datasource is hierarchical or not.
+
+#### Default Value
+
+* false
+
+#### Example
+{:.example}
+
+
+{% highlight js %}
+ 
+//To set isHierarchicalDatasource API value during initialization 
+  $("#container").ejTreeMap({isHierarchicalDatasource : true});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the isHierarchicalDatasource API, after initialization:
+   
+   //Gets the isHierarchicalDatasource value 
+   
+   var property =$("#container").data("ejTreeMap").model.isHierarchicalDatasource;
+ 
+   //Sets the isHierarchicalDatasource value 
+   
+   $("#container").data("ejTreeMap").model.isHierarchicalDatasource = true; 
+
+{% endhighlight %}
+
+
+### header `string`
+{:#members:header}
+
+Specifies the header for parent item during drilldown. This is applicable only for hierarchical data source.
+
+#### Default Value
+
+* null
+
+#### Example
+{:.example}
+
+
+{% highlight js %}
+ 
+//To set header API value during initialization 
+  $("#container").ejTreeMap({header:"Country"});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the header API, after initialization:
+   
+   //Gets the header value 
+   
+   var property =$("#container").data("ejTreeMap").model.header;
+ 
+   //Sets the header value 
+   
+   $("#container").data("ejTreeMap").model.header = "Country"; 
+
+{% endhighlight %}
+
+
 ### enableDrillDown `boolean`
 {:#members:enabledrilldown}
 
