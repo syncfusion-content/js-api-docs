@@ -7,7 +7,7 @@ platform: js-api
 keywords: ejSpreadsheet, API, Essential JS Spreadsheet
 ---
 
-#ejSpreadsheet
+# ejSpreadsheet
 
 The Spreadsheet can be easily configured to the DOM element, such as div. you can create a Spreadsheet with a highly customizable look and feel.
 
@@ -4087,7 +4087,7 @@ It is used to remove data in the specified range of cells based on the defined p
 <tr>
 <td class="name">skipHiddenRow</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional.</span> pass `true`, if you want to skip the hidden rows </td>
+<td class="description"><span class="optional">Optional.</span> pass {{'`true`' | markdownify}}, if you want to skip the hidden rows </td>
 </tr>
 <tr>
 <td class="name">status</td>
@@ -4173,7 +4173,7 @@ This method is used to copy or move the sheets in Spreadsheet.
 <tr>
 <td class="name">isCopySheet</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass `true`,If you want to copy sheet or else it will move sheet.</td>
+<td class="description">Pass {{'`true`' | markdownify}},If you want to copy sheet or else it will move sheet.</td>
 </tr>
 </tbody>
 </table>
@@ -4511,7 +4511,7 @@ $("#Spreadsheet").ejSpreadsheet("editRange", "updateTable", updateFn);
 
 This method is used to get the activation panel in the Spreadsheet.
 
-####Returns:
+#### Returns:
 Element
 
 #### Example
@@ -4554,7 +4554,7 @@ This method is used to get the active cell object in Spreadsheet. It will return
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 Object
 
 #### Example
@@ -4598,7 +4598,7 @@ This method is used to get the active cell element based on the given sheet inde
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 Element
 
 #### Example
@@ -4626,7 +4626,7 @@ $("#Spreadsheet").ejSpreadsheet("getActiveCellElem", 1);
 
 This method is used to get the current active sheet index in Spreadsheet.
 
-####Returns:
+#### Returns:
 Number
  
 #### Example
@@ -4654,7 +4654,7 @@ $("#Spreadsheet").ejSpreadsheet("getActiveSheetIndex");
 
 This method is used to get the auto fill element in Spreadsheet.
 
-####Returns:
+#### Returns:
 Element
 
 #### Example
@@ -4709,7 +4709,7 @@ This method is used to get the cell element based on specified row and column in
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 Element
 
 #### Example
@@ -4753,7 +4753,7 @@ This method is used to get the data settings in the Spreadsheet.
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 Number
 
 #### Example
@@ -4797,7 +4797,7 @@ This method is used to get the frozen columns index in the Spreadsheet.
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 Number
 
 #### Example
@@ -4841,7 +4841,7 @@ This method is used to get the frozen row index in Spreadsheet.
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 Number
 
 #### Example
@@ -4885,7 +4885,7 @@ This method is used to get the hyperlink data as object from the specified cell 
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 Object
 
 #### Example
@@ -4933,12 +4933,12 @@ This method is used to get all cell elements in the specified range.
 <tr>
 <td class="name">skipHiddenRow</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional.</span> Pass `true`, if you want to skip the hidden rows.</td>
+<td class="description"><span class="optional">Optional.</span> Pass {{'`true`' | markdownify}}, if you want to skip the hidden rows.</td>
 </tr>
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 Element
 
 #### Example
@@ -4982,7 +4982,7 @@ This method is used to get the data in specified range in Spreadsheet.
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 Array
 
 #### Example
@@ -5027,7 +5027,7 @@ This method is used to get the range indices array based on the specified alpha 
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 Array
  
 #### Example
@@ -5071,7 +5071,7 @@ This method is used to get the sheet details based on the given sheet index in S
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 Object
 
 #### Example
@@ -5116,7 +5116,7 @@ This method is used to get the sheet content div element of Spreadsheet.
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 Element
 
 #### Example
@@ -5144,7 +5144,7 @@ $("#Spreadsheet").ejSpreadsheet("getSheetElement", 1);
 
 This method is used to get all the sheets in workbook.
 
-####Returns:
+#### Returns:
 Array
 
 #### Example
@@ -5189,7 +5189,7 @@ This method is used to send a paging request to the specified sheet Index in the
 <tr>
 <td class="name">newSheet</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass `true` to create a new sheet. If the specified sheet index is already exist,<br/> it navigate to that sheet else it create a new sheet.</td>
+<td class="description">Pass {{'`true`' | markdownify}} to create a new sheet. If the specified sheet index is already exist,<br/> it navigate to that sheet else it create a new sheet.</td>
 </tr>
 </tbody>
 </table>
@@ -5720,7 +5720,7 @@ This method is used to lock/unlock the range of cells in active sheet. Lock cell
 <tr>
 <td class="name">isLocked</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description"><span class="optional">Optional.</span> By default is `true`. If it is `false` locked cells are unlocked.</td>
+<td class="description"><span class="optional">Optional.</span> By default is {{'`true`' | markdownify}}. If it is {{'`false`' | markdownify}} locked cells are unlocked.</td>
 </tr>
 </tbody>
 </table>
@@ -5767,7 +5767,7 @@ This method is used to merge cells by across in the Spreadsheet.
 <tr>
 <td class="name">alertStatus</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional.</span> If pass `true` it does not show alert.</td>
+<td class="description"><span class="optional">Optional.</span> If pass {{'`true`' | markdownify}} it does not show alert.</td>
 </tr>
 </tbody>
 </table>
@@ -5813,7 +5813,7 @@ This method is used to merge the selected cells in the Spreadsheet.
 <tr>
 <td class="name">alertStatus</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional.</span> If pass `true` it does not show alert.</td>
+<td class="description"><span class="optional">Optional.</span> If pass {{'`true`' | markdownify}} it does not show alert.</td>
 </tr>
 </tbody>
 </table>
@@ -6044,7 +6044,7 @@ This method is used to remove the hyperlink from selected cells of current sheet
 <tr>
 <td class="name">isClearHLink</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional.</span> If it is `true`, It will clear link only not format.</td>
+<td class="description"><span class="optional">Optional.</span> If it is {{'`true`' | markdownify}}, It will clear link only not format.</td>
 </tr>
 <tr>
 <td class="name">status</td>
@@ -6059,7 +6059,7 @@ This method is used to remove the hyperlink from selected cells of current sheet
 <tr>
 <td class="name">skipHiddenRow</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional.</span> Pass `true`, if you want to skip the hidden rows.</td>
+<td class="description"><span class="optional">Optional.</span> Pass {{'`true`' | markdownify}}, if you want to skip the hidden rows.</td>
 </tr>
 </tbody>
 </table>
@@ -6172,7 +6172,7 @@ $("#Spreadsheet").ejSpreadsheet("removeReadOnly", "B3");
 
 This method is used to save JSON data in Spreadsheet.
 
-####Returns:
+#### Returns:
 Object
 
 #### Example
@@ -6762,7 +6762,7 @@ This method is used to show/hide gridlines in active sheet in the Spreadsheet.
 <tr>
 <td class="name">status</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass `true` to show the gridlines</td>
+<td class="description">Pass {{'`true`' | markdownify}} to show the gridlines</td>
 </tr>
 </tbody>
 </table>
@@ -6803,7 +6803,7 @@ This method is used to show/hide the headers in active sheet in the Spreadsheet.
 <tr>
 <td class="name">startRow</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass `true` to show the sheet headers.</td>
+<td class="description">Pass {{'`true`' | markdownify}} to show the sheet headers.</td>
 </tr>
 </tbody>
 </table>
@@ -6844,7 +6844,7 @@ This method is used to show/hide pager in the Spreadsheet.
 <tr>
 <td class="name">status</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass `true` to show pager.</td>
+<td class="description">Pass {{'`true`' | markdownify}} to show pager.</td>
 </tr>
 </tbody>
 </table>
@@ -7432,7 +7432,7 @@ This method is used to clear the applied conditional formatting rules in the Spr
 <tr>
 <td class="name">isSelected</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass `true` if you want to clear rules from selected cells else it will clear rules from entire sheet.</td>
+<td class="description">Pass {{'`true`' | markdownify}} if you want to clear rules from selected cells else it will clear rules from entire sheet.</td>
 </tr>
 <tr>
 <td class="name">range</td>
@@ -7480,7 +7480,7 @@ This method is used to get the applied conditional formatting rules as array of 
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 Array
 
 #### Example
@@ -8022,7 +8022,7 @@ This method is used to delete the comment in the specified range in Spreadsheet.
 <tr>
 <td class="name">skipHiddenRow</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional.</span> Pass `true`, if you want to skip the hidden rows data.</td>
+<td class="description"><span class="optional">Optional.</span> Pass {{'`true`' | markdownify}}, if you want to skip the hidden rows data.</td>
 </tr>
 </tbody>
 </table>
@@ -8077,7 +8077,7 @@ xlObj.XLComment.editComment({rowIdx: 1, colIdx: 1});
 
 This method is used to find the next comment from the active cell in Spreadsheet.
 
-####Returns:
+#### Returns:
 Boolean
 
 #### Example
@@ -8098,7 +8098,7 @@ xlObj.XLComment.findNextComment();
 
 This method is used to find the previous comment from the active cell in Spreadsheet.
 
-####Returns:
+#### Returns:
 Boolean
 
 #### Example
@@ -8135,7 +8135,7 @@ This method is used to get comment data for the specified cell.
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 Object
 
 #### Example
@@ -8184,12 +8184,12 @@ This method is used to set new comment in Spreadsheet.
 <tr>
 <td class="name">showEditPanel</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional.</span> Pass `true` to show comment in edit mode </td>
+<td class="description"><span class="optional">Optional.</span> Pass {{'`true`' | markdownify}} to show comment in edit mode </td>
 </tr>
 <tr>
 <td class="name">showUserName</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional.</span> Pass `true` to show the user name </td>
+<td class="description"><span class="optional">Optional.</span> Pass {{'`true`' | markdownify}} to show the user name </td>
 </tr>
 </tbody>
 </table>
@@ -8579,7 +8579,7 @@ This method is used to set position of the auto fill element in the Spreadsheet.
 <tr>
 <td class="name">isDragFill</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass the isDragFill option as `boolean` value to show auto fill options in Spreadsheet.</td>
+<td class="description">Pass the isDragFill option as {{'`boolean`' | markdownify}} value to show auto fill options in Spreadsheet.</td>
 </tr>
 </tbody>
 </table>
@@ -8656,7 +8656,7 @@ This method is used to edit a particular cell based on the row index and column 
 <tr>
 <td class="name">oldData</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass `true`, if you want to maintain previous cell value.</td>
+<td class="description">Pass {{'`true`' | markdownify}}, if you want to maintain previous cell value.</td>
 </tr>
 </tbody>
 </table>
@@ -8717,7 +8717,7 @@ This method is used to get the property value of particular cell, based on the r
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 Object|String|Array
 
 #### Example
@@ -8765,7 +8765,7 @@ This method is used to get the property value in specified cell in Spreadsheet.
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 Object|String|Array
 
 #### Example
@@ -8929,7 +8929,7 @@ xlObj.XLExport.export("Excel");
 
 This method is used to get the export properties in the Spreadsheet.
 
-####Returns:
+#### Returns:
 Object
 
 #### Example
@@ -9084,7 +9084,7 @@ This method is used to create a table for the selected range of cells in the Spr
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 String
 
 #### Example
@@ -9549,7 +9549,7 @@ This method is used to create pivot table.
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 String
 
 #### Example
@@ -9765,7 +9765,7 @@ This method is used to get the column width of the specified column index in the
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 Number
 
 #### Example
@@ -9802,7 +9802,7 @@ This method is used to get the row height of the specified row index in the Spre
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 Number
 
 #### Example
@@ -10754,12 +10754,12 @@ This method is used to find and replace all data by workbook in the Spreadsheet.
 <tr>
 <td class="name">isCSen</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass `true`, if you want to match with case-sensitive.</td>
+<td class="description">Pass {{'`true`' | markdownify}}, if you want to match with case-sensitive.</td>
 </tr>
 <tr>
 <td class="name">isEMatch</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass `true`, if you want to match with entire cell contents.</td>
+<td class="description">Pass {{'`true`' | markdownify}}, if you want to match with entire cell contents.</td>
 </tr>
 </tbody>
 </table>
@@ -10801,12 +10801,12 @@ This method is used to find and replace all data by sheet in Spreadsheet.
 <tr>
 <td class="name">isCSen</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass `true`, if you want to match with case-sensitive.</td>
+<td class="description">Pass {{'`true`' | markdownify}}, if you want to match with case-sensitive.</td>
 </tr>
 <tr>
 <td class="name">isEMatch</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass `true`, if you want to match with entire cell contents.</td>
+<td class="description">Pass {{'`true`' | markdownify}}, if you want to match with entire cell contents.</td>
 </tr>
 </tbody>
 </table>
@@ -10864,7 +10864,7 @@ This method is used to get the selected cells element based on specified sheet i
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 Element
 
 #### Example
@@ -11275,7 +11275,7 @@ This method is used to set a picture in the Spreadsheet.
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 String
 
 #### Example
@@ -11310,7 +11310,7 @@ This method is used to sort a particular range of cells based on its cell or fon
 <tr>
 <td class="name">operation</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Pass 'PutCellColor' to sort by cell color or 'PutFontColor' for by font color.</td>
+<td class="description">Pass {{'`PutCellColor`' | markdownify}} to sort by cell color or {{'`PutFontColor`' | markdownify}} for sort by font color.</td>
 </tr>
 <tr>
 <td class="name">color</td>
@@ -11367,7 +11367,7 @@ This method is used to sort a particular range of cells based on its values in t
 </tbody>
 </table>
 
-####Returns:
+#### Returns:
 Boolean
 
 #### Example
@@ -11417,12 +11417,12 @@ This method is used to apply data validation rules in a selected range of cells 
 <tr>
 <td class="name">required</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass `true` if you ignore blank values.</td>
+<td class="description">Pass {{'`true`' | markdownify}} if you ignore blank values.</td>
 </tr>
 <tr>
 <td class="name">showErrorAlert</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass `true` if you want to show an error alert.</td>
+<td class="description">Pass {{'`true`' | markdownify}} if you want to show an error alert.</td>
 </tr>
 </tbody>
 </table>
