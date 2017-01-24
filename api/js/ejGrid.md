@@ -14838,7 +14838,7 @@ Triggered after the row is deselected.
 <tr>
 <td class="name">row</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the current deselected row.</td>
+<td class="description last">Returns the current deselected row element.</td>
 </tr>
 <tr>
 <td class="name">model</td>
