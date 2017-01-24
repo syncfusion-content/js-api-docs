@@ -2796,6 +2796,36 @@ commonSeriesOptions : {isTransposed : false }
 {% endhighlight %}
 
 
+### commonSeriesOptions.showMedian `boolean`
+{:#members:commonseriesoptions-showmedian}
+
+
+
+
+Render the x mark in the center of the boxplot series type.x represents the average value of the boxplot series.
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions : {showMedian : true }                   
+});
+{% endhighlight %}
+
+
 
 
 ### commonSeriesOptions.labelPosition `enum`
@@ -2860,6 +2890,70 @@ commonSeriesOptions :{ labelPosition : "outside"}
  
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/w5q1jt5k)
+
+
+
+### commonSeriesOptions.boxPlotMode `enum`
+{:#members:commonseriesoptions-boxplotmode}
+
+
+<ts name = "ej.datavisualization.Chart.boxPlotMode"/>
+
+
+Quartile calculation has been performed in three different formulas to render the boxplot series.
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Exclusive</td>
+<td class="type">string</td> 
+<td class="description">To render the series with exclusive calculations</td>
+</tr>
+<tr>
+<td class="name">
+Inclusive</td>
+<td class="type">string</td>
+<td class="description">To render the series with inclusive calculations</td>
+</tr> 
+<tr>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
+<td class="description">To render the series with normal calculations</td>
+</tr> 
+</tbody>
+</table>
+
+
+#### Default Value
+
+
+
+* "exclusive"
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+commonSeriesOptions :{ boxPlotMode : "inclusive"}                  
+});
+ {% endhighlight %}
+ 
+
 
 
 
@@ -4551,6 +4645,130 @@ $("#container").ejChart({
 commonSeriesOptions :{opacity : 0.5}                  
 });
  {% endhighlight %}
+
+
+
+### commonSeriesOptions.outlier `object`
+{:#members:commonseriesoptions-outlier}
+
+
+
+
+Options for customizing the outlier of the series.
+
+
+
+
+### commonSeriesOptions.outlier.shape `enum`
+{:#members:commonseriesoptions-marker-shape}
+
+
+<ts ref = "ej.datavisualization.Chart.Shape"/>
+
+
+Specifies the shape of the outlier. 
+
+
+#### Default Value
+
+
+
+* "circle". See <a href="global.html#members:shape">Shape</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{outlier :{ shape: "rectangle"}                  
+});
+{% endhighlight %}
+
+
+
+### commonSeriesOptions.outlier.size `object`
+{:#members:commonseriesoptions-outlier-size}
+
+
+
+
+Options for customizing the size of the outlier shape.
+
+
+
+
+
+
+### commonSeriesOptions.outlier.size.height `number`
+{:#members:commonseriesoptions-outlier-size-height}
+
+
+
+
+Height of the outlier shape. 
+
+
+#### Default Value
+
+
+
+* 6
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{outlier :{size :{height : 5}}}                  
+});
+{% endhighlight %}
+
+
+
+
+### commonSeriesOptions.outlier.size.width `number`
+{:#members:commonseriesoptions-outlier-size-width}
+
+
+
+
+Width of the outlier shape. 
+
+
+#### Default Value
+
+
+
+* 6
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{outlier :{ size :{ width : 2 } } }                  
+});
+{% endhighlight %}
+
+
+
+
+ 
 
 
 
@@ -25064,6 +25282,37 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/1ypcv5bf)
 
 
 
+### series.showMedian `boolean`
+{:#members:series-showmedian}
+
+
+
+
+Render the x mark in the center of the boxplot series type.x represents the average value of the boxplot series.
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series : [{showMedian : true }]                   
+});
+{% endhighlight %}
+
+
+
 
 ### series.labelPosition `enum`
 {:#members:series-labelposition}
@@ -25096,6 +25345,41 @@ series : [{labelPosition : "outside" }]
  
  
  Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/q013nk40)
+
+
+
+
+
+### series.boxPlotMode `enum`
+{:#members:series-boxplotmode}
+
+<ts ref = "ej.datavisualization.Chart.LabelPosition"/>
+
+
+Quartile calculation has been performed in three different formulas to render the boxplot series .
+
+
+
+#### Default Value
+
+
+
+* "exclusive"
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series : [{boxPlotMode : "inclusive" }]                   
+});
+ {% endhighlight %}
+ 
+
 
 
 
@@ -25157,6 +25441,7 @@ $("#container").ejChart({
 series :[{lineJoin : "round"}]                  
 });
 {% endhighlight %}
+
 
 
 
@@ -26512,6 +26797,129 @@ $("#container").ejChart({
 series :[{opacity : 0.5}]                  
 });
  {% endhighlight %}
+
+
+
+### series.outlier `object`
+{:#members:series-outlier}
+
+
+
+
+Options for customizing the outlier of individual series.
+
+
+### series.outlier.shape `enum`
+{:#members:series-marker-shape}
+
+<ts ref = "ej.datavisualization.Chart.Shape"/>
+
+
+Specifies the shape of the outlier.  
+
+
+#### Default Value
+
+
+
+* "circle". See <a href="global.html#members:shape">Shape</a>
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{outlier :{ shape: "rectangle"}]                  
+});
+{% endhighlight %}
+
+
+
+
+
+### series.outlier.size `object`
+{:#members:series-outlier-size}
+
+
+
+
+Options for customizing the size of the outlier shape.
+
+
+
+
+
+
+### series.outlier.size.height `number`
+{:#members:series-outlier-size-height}
+
+
+
+
+Height of the outlier shape. 
+
+
+#### Default Value
+
+
+
+* 6
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{outlier :{size :{height : 5}}}]                 
+});
+{% endhighlight %}
+
+
+
+
+
+
+
+
+### series.outlier.size.width `number`
+{:#members:series-outlier-size-width}
+
+
+
+
+Width of the outlier shape. 
+
+
+#### Default Value
+
+
+
+* 6
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{outlier :{ size :{ width : 2 } } }]                  
+});
+{% endhighlight %}
+
+
+
  
  
  
