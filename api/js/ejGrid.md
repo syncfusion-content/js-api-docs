@@ -12146,12 +12146,12 @@ Triggered before the cell is going to be deselected.
 <tr>
 <td class="name">cellIndex</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">Returns the deselected cell index value.</td>
+<td class="description last">Returns the deselecting cell index value.</td>
 </tr>
 <tr>
 <td class="name">currentCell</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the deselected cell element.</td>
+<td class="description last">Returns the deselecting cell element.</td>
 </tr>
 <tr>
 <td class="name">data</td>
@@ -12880,12 +12880,12 @@ Triggered after the column is deselected.
 <tr>
 <td class="name">columnIndex</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">Returns the Deselected cell index value.</td>
+<td class="description last">Returns the Deselected column index value.</td>
 </tr>
 <tr>
 <td class="name">headerCell</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the Deselected header cell element.</td>
+<td class="description last">Returns the Deselected column header element.</td>
 </tr>
 <tr>
 <td class="name">column</td>
@@ -12951,12 +12951,12 @@ Triggered before the column is going to be deselected.
 <tr>
 <td class="name">columnIndex</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">Returns the deselected column index value.</td>
+<td class="description last">Returns the deselecting column index value.</td>
 </tr>
 <tr>
 <td class="name">headerCell</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the deselected header cell element.</td>
+<td class="description last">Returns the deselecting column header element.</td>
 </tr>
 <tr>
 <td class="name">column</td>
@@ -12966,12 +12966,12 @@ Triggered before the column is going to be deselected.
 <tr>
 <td class="name">isCtrlKeyPressed</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns whether the ctrl key is pressed while deselecting cell</td>
+<td class="description last">Returns whether the ctrl key is pressed while deselecting column</td>
 </tr>
 <tr>
 <td class="name">isShiftKeyPressed</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns whether the shift key is pressed while deselecting cell</td>
+<td class="description last">Returns whether the shift key is pressed while deselecting column</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -14900,17 +14900,27 @@ Triggered before the row is going to be deselected.
 <tr>
 <td class="name">rowIndex</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">Returns the deselected row index value.</td>
+<td class="description last">Returns the deselecting row index value.</td>
 </tr>
 <tr>
 <td class="name">row</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the deselected row element.</td>
+<td class="description last">Returns the deselecting row element.</td>
 </tr>
 <tr>
 <td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">isCtrlKeyPressed</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns whether the ctrl key is pressed while deselecting row</td>
+</tr>
+<tr>
+<td class="name">isShiftKeyPressed</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns whether the shift key is pressed while deselecting row</td>
 </tr>
 <tr>
 <td class="name">model</td>
