@@ -7596,6 +7596,37 @@ $("#Grid").ejGrid("refreshBatchEditChanges");
 </script>{% endhighlight %}
 
 
+### refreshHeader()
+{:#methods:refreshHeader}
+
+It is used to refresh the grid header.
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+gridObj.refreshHeader(); 
+// It is used to refresh the grid header.
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// It is used to refresh the grid header.
+$("#Grid").ejGrid("refreshHeader");
+</script>{% endhighlight %}
+
 
 ### refreshContent(\[templateRefresh\])
 {:#methods:refreshcontent}
