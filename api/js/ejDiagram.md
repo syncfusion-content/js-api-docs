@@ -10198,7 +10198,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.shape `enum`
 {:#members:nodes-shape}
 
-<ts name = "ej.datavisualization.Diagram.BasicShapes | ej.datavisualization.Diagram.FlowShapes | ej.datavisualization.Diagram.BPMNShapes "/>
+<ts name = "ej.datavisualization.Diagram.BasicShapes | ej.datavisualization.Diagram.FlowShapes | ej.datavisualization.Diagram.BPMNShapes"/>
 
 Sets the shape of the node. It depends upon the type of node.
 
@@ -14684,25 +14684,53 @@ diagram.load(jsonData);
 
 {% endhighlight %}
 
-### zoomTo(zoom)
+### zoomTo(\[Zoom\])
 {:#methods:zoomto}
 
 Used to zoomIn/zoomOut diagram
 
 <table class="params">
 	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Type</th>
-			<th>Description</th>
-		</tr>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td class="name">zoom</td>
-			<td class="type">object</td>
-			<td class="description last">options to zoom the diagram(zoom factor, zoomIn/zoomOut)</td>
-		</tr>
+        <tr>
+            <td class="name">[Zoom]</td>
+            <td class="type">object</td>
+            <td class="description last">options to zoom the diagram(zoom factor, zoomIn/zoomOut)
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name">zoomFactor</td>
+                            <td class="type"><span class="param-type">string</span></td>
+                            <td class="description last">specifies the zoom factor value.</td>
+                        </tr>
+                        <tr>
+                            <td class="name">zoomCommand</td>
+                            <td class="type"><ts name="ej.datavisualization.Diagram.ZoomCommand"/>enum</td>
+                            <td class="description last">specifies the zoom-in or zoom-out commands.</td>
+                        </tr>
+                        <tr>
+                            <td class="name">focusPoint</td>
+                            <td class="type"><ts ref="ej.datavisualization.Diagram.ConnectorsSourcePoint"/>object</td>
+                            <td class="description last">Defines the focusPoint to zoom the Diagram.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
 	</tbody>
 </table>
 
@@ -14714,16 +14742,35 @@ Used to zoomIn/zoomOut diagram
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 var zoom = ej.datavisualization.Diagram.Zoom();
-// Sets the zoomFactor
 zoom.zoomFactor = .1;
-// Sets the zoomCommand as zoomIn to zoom-in the Diagram
 zoom.zoomCommand = ej.datavisualization.Diagram.ZoomCommand.ZoomIn;
-// for zoomOut
-//zoom.zoomCommand = ej.datavisualization.Diagram.ZoomCommand.ZoomOut
 diagram.zoomTo(zoom);
 </script>
 
 {% endhighlight %}
+
+#### ZoomCommand
+
+Specifies the zoom-in or zoom-out commands,
+
+<table class="props">
+    <thead>
+        <tr>
+        <th>Name</th>
+        <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ZoomIn</td>
+            <td>zoom in</td>
+        </tr>
+        <tr>
+            <td>ZoomOut</td>
+            <td>zoom out</td>
+        </tr>
+    </tbody>
+</table>
 
 ## Events
 
