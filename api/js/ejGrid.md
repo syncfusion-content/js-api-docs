@@ -7597,7 +7597,7 @@ $("#Grid").ejGrid("refreshBatchEditChanges");
 
 
 ### refreshHeader()
-{:#methods:refreshHeader}
+{:#methods:refreshheader}
 
 It is used to refresh the grid header.
 
