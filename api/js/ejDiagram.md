@@ -10202,6 +10202,8 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Sets the shape of the node. It depends upon the type of node.
 
+The following table illustrates the list of Basic shapes.
+
 <table class="props">
     <thead>
         <tr>
@@ -10269,6 +10271,8 @@ Sets the shape of the node. It depends upon the type of node.
    </tbody>
 </table>
 
+The following table illustrates the list of Flow shapes.
+ 
 <table class="props">
     <thead>
         <tr>
@@ -10371,6 +10375,8 @@ Sets the shape of the node. It depends upon the type of node.
        </tr>
    </tbody>
 </table>
+
+The following table illustrates the list of BPMN shapes.
 
 <table class="props">
     <thead>
@@ -14714,17 +14720,17 @@ Used to zoomIn/zoomOut diagram
                         <tr>
                             <td class="name">zoomFactor</td>
                             <td class="type"><span class="param-type">string</span></td>
-                            <td class="description last">specifies the zoom factor value.</td>
+                            <td class="description last">Used to increase the zoom-in or zoom-out based on the zoomfactor value.</td>
                         </tr>
                         <tr>
                             <td class="name">zoomCommand</td>
                             <td class="type"><ts name="ej.datavisualization.Diagram.ZoomCommand"/>enum</td>
-                            <td class="description last">specifies the zoom-in or zoom-out commands.</td>
+                            <td class="description last">Used to zoom-in or zoom-out the diagram.</td>
                         </tr>
                         <tr>
                             <td class="name">focusPoint</td>
                             <td class="type"><ts ref="ej.datavisualization.Diagram.ConnectorsSourcePoint"/>object</td>
-                            <td class="description last">Defines the focusPoint to zoom the Diagram.
+                            <td class="description last">Used to zoom-in or zoom-out the diagram based on the point.
                             </td>
                         </tr>
                     </tbody>
@@ -14751,7 +14757,7 @@ diagram.zoomTo(zoom);
 
 #### ZoomCommand
 
-Specifies the zoom-in or zoom-out commands,
+Used to zoom-in or zoom-out the diagram
 
 <table class="props">
     <thead>
@@ -14763,11 +14769,11 @@ Specifies the zoom-in or zoom-out commands,
     <tbody>
         <tr>
             <td>ZoomIn</td>
-            <td>zoom in</td>
+            <td>Used to zoom in the Diagram</td>
         </tr>
         <tr>
             <td>ZoomOut</td>
-            <td>zoom out</td>
+            <td>Used to zoom out the diagram</td>
         </tr>
     </tbody>
 </table>
