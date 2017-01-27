@@ -1429,7 +1429,7 @@ To enable/disable allowDrop for specific column wise.
 
 #### Default Value
 
-* false
+* true
 
 #### Example
 
@@ -1484,7 +1484,7 @@ To enable/disable allowDrag for specific column wise.
 
 #### Default Value
 
-* false
+* true
 
 #### Example
 
