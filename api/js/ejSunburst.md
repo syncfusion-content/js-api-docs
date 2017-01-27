@@ -2133,7 +2133,7 @@ Specifies the group member path
 
 #### Example
 
-% highlight js %}
+{% highlight js %}
 
   $("#container").ejSunburst({   
       levels: [{ groupMemberPath: "Continent" }]
