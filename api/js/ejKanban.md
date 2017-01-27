@@ -5125,6 +5125,7 @@ Gets or sets an object that indicates to render the Kanban with specified workfl
                 });
         });
     </script>
+    
 {% endhighlight %}
 
 ### workflows.key  `string/number`
@@ -5176,6 +5177,7 @@ Gets or sets an object that indicates to render the Kanban with specified workfl
                 });
         });
     </script>
+    
 {% endhighlight %}
 
 ### workflows.allowedTransitions `string`
@@ -5227,6 +5229,7 @@ Gets or sets an object that indicates to render the Kanban with specified workfl
                 });
         });
     </script>
+    
 {% endhighlight %}
 
 ### locale `string`
@@ -5703,8 +5706,6 @@ Print the Kanban Board
 Void
 
 ####Example
-{:.example}
-
 
 {% highlight html %}
  
@@ -8437,7 +8438,7 @@ Triggered when the Kanban is rendered completely
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -8617,7 +8618,7 @@ Triggered when Kanban going to destroy.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -8890,7 +8891,7 @@ Triggered initial load.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
