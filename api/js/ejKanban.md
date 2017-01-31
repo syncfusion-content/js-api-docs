@@ -1429,7 +1429,7 @@ To enable/disable allowDrop for specific column wise.
 
 #### Default Value
 
-* false
+* true
 
 #### Example
 
@@ -1484,7 +1484,7 @@ To enable/disable allowDrag for specific column wise.
 
 #### Default Value
 
-* false
+* true
 
 #### Example
 
@@ -5125,6 +5125,7 @@ Gets or sets an object that indicates to render the Kanban with specified workfl
                 });
         });
     </script>
+    
 {% endhighlight %}
 
 ### workflows.key  `string/number`
@@ -5176,6 +5177,7 @@ Gets or sets an object that indicates to render the Kanban with specified workfl
                 });
         });
     </script>
+    
 {% endhighlight %}
 
 ### workflows.allowedTransitions `string`
@@ -5227,6 +5229,7 @@ Gets or sets an object that indicates to render the Kanban with specified workfl
                 });
         });
     </script>
+    
 {% endhighlight %}
 
 ### locale `string`
@@ -5703,8 +5706,6 @@ Print the Kanban Board
 Void
 
 ####Example
-{:.example}
-
 
 {% highlight html %}
  
@@ -8437,7 +8438,7 @@ Triggered when the Kanban is rendered completely
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -8617,7 +8618,7 @@ Triggered when Kanban going to destroy.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -8890,7 +8891,7 @@ Triggered initial load.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -9004,67 +9005,68 @@ Triggered when toolbar item is clicked in Kanban.
 Triggered every time a single card rendered request is made to access particular card information.
 
 <table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from Kanban
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">card</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns Kanban card.</td>
-</tr>
-<tr>
-<td class="name">cell</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns Kanban card.</td>
-</tr>
-<tr>
-<td class="name">cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">data</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns current row record object (JSON).</td>
-</tr>
-<tr>
-<td class="name">column</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the column object.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns the Kanban model.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th class="last">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="name">argument</td>
+                <td class="type"><span class="param-type">Object</span></td>
+                <td class="description last">
+                    Event parameters from Kanban
+                    <table class="params">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th class="last">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="name">card</td>
+                                <td class="type"><span class="param-type">object</span></td>
+                                <td class="description last">Returns Kanban card.</td>
+                            </tr>
+                            <tr>
+                                <td class="name">cell</td>
+                                <td class="type"><span class="param-type">object</span></td>
+                                <td class="description last">Returns Kanban card.</td>
+                            </tr>
+                            <tr>
+                                <td class="name">cancel</td>
+                                <td class="type"><span class="param-type">boolean</span></td>
+                                <td class="description last">Returns the cancel option value.</td>
+                            </tr>
+                            <tr>
+                                <td class="name">data</td>
+                                <td class="type"><span class="param-type">object</span></td>
+                                <td class="description last">Returns current row record object (JSON).</td>
+                            </tr>
+                            <tr>
+                                <td class="name">column</td>
+                                <td class="type"><span class="param-type">object</span></td>
+                                <td class="description last">Returns the column object.</td>
+                            </tr>
+                            <tr>
+                                <td class="name">model</td>
+                                <td class="type"><span class="param-type">object</span></td>
+                                <td class="description last">Returns the Kanban model.</td>
+                            </tr>
+                            <tr>
+                                <td class="name">type</td>
+                                <td class="type"><span class="param-type">string</span></td>
+                                <td class="description last">Returns the name of the event.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
 </table>
 
 #### Example
@@ -9165,14 +9167,14 @@ Triggered before the context menu is opened.
 Triggered when context menu item is clicked in Kanban
 
 <table class="params">
-        <thead>
+            <thead>
                 <tr>
                     <th>Name</th>
                     <th>Type</th>
                     <th class="last">Description</th>
                 </tr>
             </thead>
-        <tbody>
+            <tbody>
                 <tr>
                     <td class="name">argument</td>
                     <td class="type"><span class="param-type">Object</span></td>
@@ -9222,7 +9224,7 @@ Triggered when context menu item is clicked in Kanban
                     </td>
                 </tr>
             </tbody>
- </table>
+</table>
 
 #### Example
 
