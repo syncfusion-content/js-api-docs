@@ -8215,6 +8215,50 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
+### nodes.labels.overflowType `enum`
+{:#members:nodes-labels-overflowtype}
+
+Sets the overflowType of the labels
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Ellipsis</td>
+            <td class="description last">Set overflow Type as ellipsis</td>
+       </tr>
+        <tr>
+            <td class="name">Clip</td>
+            <td class="description last">Set overflow Type  as Clip</td>
+       </tr>
+       </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.OverflowType.Ellipsis
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
+         labels:[{ text:"labeuhirnfnrnfinrnfurnl",fontColor:"red",textOverflow:true,
+         overflowType: ej.datavisualization.Diagram.OverflowType.Ellipsis}]
+      }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
 ### nodes.labels.readOnly `boolean`
 {:#members:nodes-labels-readonly}
 
@@ -8384,6 +8428,30 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
 	     //Decorate the text with an underline
          labels:[{ text:"Label", textDecoration: ej.datavisualization.Diagram.TextDecorations.Underline}]
+      }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+### nodes.labels.textOverflow `boolean`
+{:#members:nodes-labels-textoverflow}
+
+Defines the overflowed content is displayed or not.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
+         labels:[{ text:"labeuhirnfnrnfinrnfurnl",fontColor:"red",textOverflow:true,
+         overflowType: ej.datavisualization.Diagram.OverflowType.Ellipsis}]
       }];
 $("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
@@ -13434,6 +13502,97 @@ diagram.addLabel(node.name, {fontColor:"red", text:"newLabel"});
 
 {% endhighlight %}
 
+### addLane(lane,index)
+{:#methods:addlane}
+
+Add dynamic Lanes to swimlane at runtime
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">lane</td>
+			<td class="type">object</td>
+			<td class="description last">JSON for the new lane to be added</td>
+		</tr>
+        	<tr>
+			<td class="name">index</td>
+			<td class="type">number</td>
+			<td class="description last">Index value to add the lane in swimlane</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var diagram = $("#diagramcontent").ejDiagram("instance");
+//add a lane node to swimlane
+    var lane = { name: "lane" + ej.datavisualization.Diagram.Util.randomId(), fillColor: "#f5f5f5", offsetX: 500, offsetY: 200, 
+                width: 400, orientation: 'horizontal', height: 100, isLane: true,
+                header: { text: "function", fillColor: "#C7D4DF", width: 50, height: 50, fontSize: 11 } };
+    diagram.addLane(lane);
+// add lane with index to swimlane
+ var lane = { name: "lane" + ej.datavisualization.Diagram.Util.randomId(), fillColor: "#f5f5f5", offsetX: 500, offsetY: 200, 
+                width: 400, orientation: 'horizontal', height: 100, isLane: true,
+                header: { text: "function", fillColor: "#C7D4DF", width: 50, height: 50, fontSize: 11 } };
+    diagram.addLane(lane,1);
+</script>
+
+{% endhighlight %}
+
+### addPaletteItem(palettename,node)
+{:#methods:addpaletteitem}
+
+Add items to Palettes at runtime
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+    	<tr>
+			<td class="name">palettename</td>
+			<td class="type">string</td>
+			<td class="description last">name of the Palette</td>
+		</tr>
+		<tr>
+			<td class="name">node</td>
+			<td class="type">object</td>
+			<td class="description last">JSON for the new items to added in Palette</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var diagram = $("#diagramcontent").ejDiagram("instance");
+//add a node to palette
+    var palette = $("#symbolpalette").ejSymbolPalette("instance");
+    var node = [{ name: "rectangle1", width: 100, height: 100, fillColor:"red",offsetX: 20, offsetY: 20, type: "node", }];
+    palette.addPaletteItem("Basic Shapes", node);
+
+</script>
+
+{% endhighlight %}
+
 ### addPhase(name, options)
 {:#methods:addphase}
 
@@ -14267,6 +14426,49 @@ Remove a particular object from selection list
 var diagram=$("#diagramcontent").ejDiagram("instance");
 var node=diagram.selectionList[0];
 diagram.removeSelection(node);
+</script>
+
+{% endhighlight %}
+
+### removePaletteItem(palettename,node)
+{:#methods:removepaletteitem}
+
+Remove items to Palettes at runtime
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+    	<tr>
+			<td class="name">palettename</td>
+			<td class="type">string</td>
+			<td class="description last">name of the Palette</td>
+		</tr>
+		<tr>
+			<td class="name">node</td>
+			<td class="type">object</td>
+			<td class="description last">JSON for the new node to removed in Palette</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var diagram = $("#diagramcontent").ejDiagram("instance");
+//remove a node to palette
+    var palette = $("#symbolpalette").ejSymbolPalette("instance");
+    var node = [{ name: "rectangle1", width: 100, height: 100, fillColor:"red",offsetX: 20, offsetY: 20, type: "node", }];
+    palette.removePaletteItem("Basic Shapes", node);
+
 </script>
 
 {% endhighlight %}
