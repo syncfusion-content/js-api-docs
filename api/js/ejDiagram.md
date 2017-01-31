@@ -8218,6 +8218,8 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.labels.overflowType `enum`
 {:#members:nodes-labels-overflowtype}
 
+<ts name = "ej.datavisualization.Diagram.OverflowType"/>
+
 Sets the overflowType of the labels
 
 <table class="props">
