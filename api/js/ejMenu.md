@@ -1496,6 +1496,124 @@ Specifies the width of the main menu.
           
 {% endhighlight %}
 
+### overflowHeight `string|number`
+{:#members:overflowHeight}
+
+
+Specifies the popup menu height.
+
+#### Default Value
+
+* auto
+
+#### Example
+
+
+{% highlight html %}
+ 
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
+
+{% endhighlight %}
+
+{% highlight javascript %} 
+  
+        //To set overflowHeight API value during initialization  
+ 
+        $("#menu").ejMenu({ overflowHeight: "200px" });
+          
+{% endhighlight %}
+
+### overflowWidth `string|number`
+{:#members:overflowWidth}
+
+
+Specifies the popup menu width.
+
+#### Default Value
+
+* auto
+
+#### Example
+
+
+{% highlight html %}
+ 
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
+
+{% endhighlight %}
+
+{% highlight javascript %} 
+  
+        //To set overflowWidth API value during initialization  
+ 
+        $("#menu").ejMenu({ overflowWidth: "200px" });
+          
+{% endhighlight %}
+
 
 ## Methods
 
@@ -4250,5 +4368,235 @@ event</td>
 {% endhighlight %}
 
 
+### overflowOpen
+{:#events:overflowOpen}
+
+
+
+Fires when overflow popup menu opens.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from menu
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Menu.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the menu model</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">
+e</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the event object</td>
+</tr>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event should be cancelled ; otherwise ,false</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
+
+{% endhighlight %}
+
+{% highlight javascript %}  
+ 
+        //popup menu open event 
+        $("#menu").ejMenu({
+            overflowOpen: function (args) { }
+        });
+  
+{% endhighlight %}
+
+
+### overflowClose
+{:#events:overflowClose}
+
+
+
+Fires when overflow popup menu closes.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from menu
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Menu.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the menu model</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">
+e</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the event object</td>
+</tr>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event should be cancelled ; otherwise ,false</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
+
+{% endhighlight %}
+
+{% highlight javascript %}  
+ 
+        //popup menu close event 
+        $("#menu").ejMenu({
+            overflowClose: function (args) { }
+        });
+  
+{% endhighlight %}
 
 
