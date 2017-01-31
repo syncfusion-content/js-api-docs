@@ -112,7 +112,375 @@ Specifies the name of the heat map.
 
 {% endhighlight %}
 
+### showTooltip `boolean`
+{:#members:showtooltip}
 
+Enables or disables tooltip of heatmap
+
+#### Default Value:
+
+* true
+
+#### Example
+
+{% highlight html %}
+
+ <div id="heatmap"></div>
+    <script>
+        $("#heatmap").ejHeatMap({
+            showtooltip: true
+        });
+    </script>
+
+{% endhighlight %}
+
+
+### toolTipSettings `object`
+{:#members:tooltipsettings}
+
+Defines the tooltip that should be shown when the mouse hovers over rows/columns.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight js %}
+
+$("#heatmap").ejHeatMap({
+    //Defines mouse over tooltip
+    toolTipSettings: {
+        templateId:"mouseovertoolTipId",
+         }
+    });
+            
+{% endhighlight %}
+
+### toolTipSettings.templateId `string`
+{:#members:tooltipsettings-templateid}
+
+Defines the tooltip that should be shown when the mouse hovers over rows/columns.
+
+#### Default Value:
+
+* null
+
+#### Example
+{% highlight html %}
+ <script type="text/x-jsrender" id="mouseovertoolTipId">
+        <div class="tooltip-style">
+            Custom Tooltip
+            <div style="height:0px;width:100%;border:1px solid white;">
+            </div>
+            <table>
+                <tr>
+                    <td style="width:50px;">Year  </td>
+                    <td>{{:data.Year}}</td>
+                </tr>
+            </table>
+        </div>
+    </script>
+{% endhighlight %}
+
+{% highlight js %}
+
+$("#heatmap").ejHeatMap({
+    //Defines mouse over tooltip
+    toolTipSettings: {
+        templateId:"mouseovertoolTipId"
+         }
+    });
+            
+{% endhighlight %}
+
+### toolTipSettings.associate `enum`
+{:#members:tooltipsettings-associate}
+
+<ts name = "ej.datavisualization.HeatMap.Associate"/>
+
+Defines the tooltip of associate that should be shown when the mouse hovers over rows/columns.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Target</td>
+            <td class="description last">Used to set the associate of tooltip as target</td>
+       </tr>
+        <tr>
+            <td class="name">mouseFollow</td>
+            <td class="description last">Used to set the associate of tooltip as mousefollow</td>
+       </tr>
+        <tr>
+            <td class="name">MouseEnter</td>
+            <td class="description last">Used to set the associate of tooltip as Mouseenter</td>
+       </tr>
+    </tbody>
+</table>
+#### Default Value:
+
+* mouseFollow
+
+#### Example
+
+{% highlight js %}
+
+$("#heatmap").ejHeatMap({
+    //Defines mouse over tooltip
+    toolTipSettings: {
+        templateId:"mouseovertoolTipId",
+        associate:"mouseFollow"}
+    });
+            
+{% endhighlight %}
+
+### toolTipSettings.isBalloon `boolean`
+{:#members:tooltipsettings-isballoon}
+
+Enables/ disables the balloon for the tooltip to be shown
+
+#### Default Value:
+
+* true
+
+#### Example
+
+{% highlight js %}
+
+$("#heatmap").ejHeatMap({
+    //Defines mouse over tooltip
+    toolTipSettings: {
+        templateId:"mouseovertoolTipId",
+        isBalloon:true}
+    });
+            
+{% endhighlight %}
+
+### toolTipSettings.position `object`
+{:#members:tooltipsettings-position}
+
+Defines the tooltip of position that should be shown when the mouse hovers over rows/columns.
+
+### toolTipSettings.position.stem `enum`
+{:#members:tooltipsettings-position-stem}
+
+<ts name = "ej.datavisualization.HeatMap.position"/>
+
+Defines the horizontal position of tooltip.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Left</td>
+            <td class="description last">Used to display the tooltip horizontally on left side of rows/columns</td>
+       </tr>
+        <tr>
+            <td class="name">Center</td>
+            <td class="description last">Used to display the tooltip horizontally on center side of rows/columns</td>
+       </tr>
+        <tr>
+            <td class="name">Right</td>
+            <td class="description last">Used to display the tooltip horizontally on right side of rows/columnsr</td>
+       </tr>
+     </tbody>
+
+#### Default Value:
+
+* left
+
+#### Example
+
+{% highlight js %}
+
+$("#heatmap").ejHeatMap({
+    //Defines mouse over tooltip
+    toolTipSettings: {
+        templateId:"mouseovertoolTipId",
+        associate:"mouseFollow",
+        position: {
+            stem: { horizontal: "left" }
+            };
+         }
+    });
+            
+{% endhighlight %}
+
+### toolTipSettings.position.target `enum`
+{:#members:tooltipsettings-position-target}
+
+<ts name = "ej.datavisualization.HeatMap.position"/>
+
+Defines the vertical position of tooltip.
+
+ <table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Top</td>
+            <td class="description last">Used to display the tooltip vertically on top side of rows/columns</td>
+       </tr>
+        <tr>
+            <td class="name">Middle</td>
+            <td class="description last">Used to display the tooltip vertically on middle side of rows/columns</td>
+       </tr>
+        <tr>
+            <td class="name">Bottom</td>
+            <td class="description last">Used to display the tooltip vertically on bottom side of rows/columnsr</td>
+       </tr>
+     </tbody>
+
+#### Default Value:
+
+* Middle
+
+#### Example
+
+{% highlight js %}
+
+$("#heatmap").ejHeatMap({
+    //Defines mouse over tooltip
+    toolTipSettings: {
+        templateId:"mouseovertoolTipId",
+        associate:"mouseFollow",
+        position: {
+            target: { vertical: "top" }
+            };
+         }
+    });
+            
+{% endhighlight %}
+
+### toolTipSettings.trigger `enum`
+{:#members:tooltipsettings-trigger}
+
+Defines the tooltip to be triggerred.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">hover</td>
+            <td class="description last">Tooltip can be triggered on mouse hovers</td>
+       </tr>
+        <tr>
+            <td class="name">click</td>
+            <td class="description last">Tooltip can be triggered on mouse click</td>
+       </tr>
+        <tr>
+            <td class="name">focus</td>
+            <td class="description last">Tooltip can be triggered on mouse focus</td>
+       </tr>
+    </tbody>
+</table>
+
+#### Default Value:
+
+* hover
+
+#### Example
+
+{% highlight js %}
+
+$("#heatmap").ejHeatMap({
+    //Defines mouse over tooltip
+    toolTipSettings: {
+        trigger:"click",
+         }
+    });
+            
+{% endhighlight %}
+animation: {
+                    effect: "none",
+                    speed: 0
+                },
+
+### toolTipSettings.animation `object`
+{:#members:tooltipsettings-animation}
+
+Defines the animation for the tooltip that should be shown when the mouse hovers over rows/columns.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight js %}
+
+$("#heatmap").ejHeatMap({
+    //Defines mouse over tooltip
+    toolTipSettings: {
+        animation:"click",
+         }
+    });
+            
+{% endhighlight %}
+
+### toolTipSettings.animation.effect `string`
+{:#members:tooltipsettings-animation-effect}
+
+Defines the animation effect for the tooltip that should be shown when the mouse hovers over rows/columns.
+
+#### Default Value:
+
+* none
+
+#### Example
+
+{% highlight js %}
+
+$("#heatmap").ejHeatMap({
+    //Defines mouse over tooltip
+    toolTipSettings: {
+        animation:{effect:"none"}
+         }
+    });
+            
+{% endhighlight %}
+
+### toolTipSettings.animation.speed `string`
+{:#members:tooltipsettings-animation-speed}
+
+Defines the animation speed for the tooltip that should be shown when the mouse hovers over rows/columns.
+
+#### Default Value:
+
+* 0
+
+#### Example
+
+{% highlight js %}
+
+$("#heatmap").ejHeatMap({
+    //Defines mouse over tooltip
+    toolTipSettings: {
+        animation:{effect:"none", speed:0}
+         }
+    });
+            
+{% endhighlight %}
 
 ### itemsSource `object`
 {:#members:itemsSource}
@@ -144,10 +512,6 @@ Specifies the source data of the heat map.
     </script>
 
 {% endhighlight %}
-
-
-
- 
 
 ### heatMapCell `object`
 {:#members:heatmapCell}

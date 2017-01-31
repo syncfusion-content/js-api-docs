@@ -1278,6 +1278,31 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
+### connectors.labels.hyperlink `string`
+{:#members:connectors-labels-hyperlink}
+
+Sets the hyperlink for the labels in the connectors.
+
+#### Default Value:
+
+* none
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors =[
+    {name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+    labels: [{ "hyperText": "https://www.syncfusion.com" }]
+    }];
+$("#diagramcontent").ejDiagram({connectors:connectors);
+</script>
+
+{% endhighlight %}
+
+
 ### connectors.labels.italic `boolean`
 {:#members:connectors-labels-italic}
 
@@ -2379,6 +2404,11 @@ Sets the type of the connector
             <td class="name">Classifier</td>
             <td class="description last">Used to specify connector type as Classifier</td>
        </tr>
+       <tr>
+            <td class="name">UMLActivity</td>
+            <td class="description last">Used to specify connector type as umlactivity</td>
+       </tr>
+
           </tbody>
 </table>
 
@@ -2865,6 +2895,54 @@ var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:
                           source: { optional: true, lowerBounds: 1, upperBounds: 10 },
                           target: { optional: true, lowerBounds: 1, upperBounds: 10 }}
                  } }; 
+$("#diagramcontent").ejDiagram({connectors : [connector]});
+</script>
+
+{% endhighlight %}
+
+### connectors.shape.ActivityFlow `enum`
+{:#members:connectors-shape-activityflow}
+
+<ts name = "ej.datavisualization.Diagram.UMLActivityFlow"/>
+
+Defines the shape of umlactivity to connector. Applicable, if the connector is of type "umlactivity"
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Object</td>
+            <td class="description last">Defines activityflow as Object in UML Activity Diagram</td>
+       </tr>
+        <tr>
+            <td class="name">Control</td>
+            <td class="description last">Defines activityflow as Control in UML Activity Diagram</td>
+       </tr>
+        <tr>
+            <td class="name">Exception</td>
+            <td class="description last">Defines activityflow as Exception in UML Activity Diagram</td>
+       </tr>
+     </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.UMLActivityFlow.Control
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
+shape: { type: "umlactivity", activityFlow: ej.datavisualization.Diagram.UMLActivityFlow.Exception }
+}; 
 $("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
@@ -3793,6 +3871,29 @@ $("#diagramcontent").ejDiagram({contextMenu: contextMenu});
 
 {% endhighlight %}
 
+### contextMenu.items.imageUrl `string`
+{:#members:contextmenu-items-imageurl}
+
+Defines the imageurl for the collection of context menu items
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+//Collection of items
+var menuitems = [{ "name": "zoomin", "text": "ZoomIn","imageUrl": "Images/zoomin.png", "style": "" }];
+var contextMenu = { items: menuitems};
+$("#diagramcontent").ejDiagram({contextMenu: contextMenu});
+</script>
+
+{% endhighlight %}
+
 ### contextMenu.showCustomMenuItemsOnly `boolean`
 {:#members:contextmenu-showcustommenuitemsonly}
 
@@ -4428,6 +4529,47 @@ The `undoStack` property is used to get the number of undo actions to be stored 
 var diagram = $("#diagramcontent").ejDiagram("instance");
 diagram.model.historyManager.undoStack();
 
+</script>
+
+{% endhighlight %}
+
+### labelRenderingMode `enum`
+{:#members:labelrenderingmode}
+
+<ts name = "ej.datavisualization.Diagram.LabelRenderingMode"/>
+
+Defines the type of the rendering mode of label.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Html</td>
+            <td class="description last">Sets the labelrenderingmode as html</td>
+        </tr>
+        <tr>
+            <td class="name">Svg</td>
+            <td class="description last">Sets the labelrenderingmode as svg</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Default Value:
+
+* html
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#diagramcontent").ejDiagram({ labelRenderingMode: "svg" });
 </script>
 
 {% endhighlight %}
@@ -10198,7 +10340,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.shape `enum`
 {:#members:nodes-shape}
 
-<ts name = "ej.datavisualization.Diagram.BasicShapes | ej.datavisualization.Diagram.FlowShapes | ej.datavisualization.Diagram.BPMNShapes"/>
+<ts name = "ej.datavisualization.Diagram.BasicShapes | ej.datavisualization.Diagram.FlowShapes | ej.datavisualization.Diagram.BPMNShapes | ej.datavisualization.Diagram.UMLActivityShapes"/>
 
 Sets the shape of the node. It depends upon the type of node.
 
@@ -10416,6 +10558,72 @@ The following table illustrates the list of BPMN shapes.
        </tr>       
    </tbody>
 </table>
+
+The following table illustrates the list of UMLActivity shapes.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Action</td>
+            <td class="description last">Used to set UML ActivityShapes as Action</td>
+       </tr>
+        <tr>
+            <td class="name">Decision</td>
+            <td class="description last">Used to set UML ActivityShapes as Decision</td>
+       </tr>
+        <tr>
+            <td class="name">MergeNode</td>
+            <td class="description last">Used to set UML ActivityShapes as MergeNode</td>
+       </tr>
+        <tr>
+            <td class="name">InitialNode</td>
+            <td class="description last">Used to set UML ActivityShapes as InitialNode</td>
+       </tr>
+        <tr>
+            <td class="name">FinalNode</td>
+            <td class="description last">Used to set UML ActivityShapes as FinalNode</td>
+       </tr>
+        <tr>
+            <td class="name">ForkNode</td>
+            <td class="description last">Used to set UML ActivityShapes as ForkNode</td>
+       </tr>
+        <tr>
+            <td class="name">JoinNode</td>
+            <td class="description last">Used to set UML ActivityShapes as JoinNode</td>
+       </tr>
+        <tr>
+            <td class="name">TimeEvent</td>
+            <td class="description last">Used to set UML ActivityShapes as TimeEvent</td>
+       </tr>
+        <tr>
+            <td class="name">AcceptingEvent</td>
+            <td class="description last">Used to set UML ActivityShapes as AcceptingEvent</td>
+       </tr>
+        <tr>
+            <td class="name">SendSignal</td>
+            <td class="description last">Used to set UML ActivityShapes as SendSignal</td>
+       </tr>
+        <tr>
+            <td class="name">ReceiveSignal</td>
+            <td class="description last">Used to set UML ActivityShapes as ReceiveSignal</td>
+       </tr>
+        <tr>
+            <td class="name">StructuredNode</td>
+            <td class="description last">Used to set UML ActivityShapes as StructuredNode</td>
+       </tr>
+       <tr>
+            <td class="name">Note</td>
+            <td class="description last">Used to set UML ActivityShapes as Note</td>
+       </tr>
+   </tbody>
+</table>
+
 #### Default Value:
 
 * ej.datavisualization.Diagram.BasicShapes.Rectangle
@@ -13610,6 +13818,11 @@ Export the diagram as downloadable files or as data
 <td class="name">margin</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">to set margin to the exported data.</td>
+</tr>
+<tr>
+<td class="name">stretch</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">to set stretch to the exported data.</td>
 </tr>
 </tbody>
 </table>
