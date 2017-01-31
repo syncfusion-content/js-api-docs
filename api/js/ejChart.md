@@ -6486,6 +6486,60 @@ $("#container").ejChart({
     }                   
 });
  {% endhighlight %} 
+
+
+### commonSeriesOptions.dragSettings `object`
+{:#members:commonSeriesOptions.dragsettings}
+
+Options to customize the drag and drop in series.
+
+### commonSeriesOptions.dragSettings.enable `boolean`
+{:#members:commonSeriesOptions.dragsettings.enable}
+
+drag/drop the series
+
+#### Default Value
+
+* "false"
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+    commonSeriesOptions : {
+          dragSettings:{enable: true}
+    }                   
+});
+
+ {% endhighlight %} 
+
+### commonSeriesOptions.dragSettings.type `string`
+{:#members:commonSeriesOptions.dragsettings.type}
+
+
+Specifies the type of drag settings.
+
+
+#### Default Value
+
+
+* "xy"
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+    commonSeriesOptions : {
+          dragSettings:{type: "x"}
+    }                   
+});
+ {% endhighlight %} 
  
 
 
@@ -6494,7 +6548,6 @@ $("#container").ejChart({
 
 
 Options to customize the error bar in series.
-
 
 
 ### commonSeriesOptions.errorBar.visibility `boolean`
@@ -27383,6 +27436,61 @@ Opacity of the connector line.
 $("#container").ejChart({
     series : [{
              connectorLine: {opacity : 0.5 }
+    }]                   
+});
+ {% endhighlight %} 
+
+
+ 
+### series.dragSettings `object`
+{:#members:series.dragsettings}
+
+Options to customize the drag and drop in series.
+
+### series.dragSettings.enable `boolean`
+{:#members:series.dragsettings.enable}
+
+drag/drop the series
+
+#### Default Value
+
+* "false"
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+    series : [{
+          dragSettings:{enable: true}
+    }]                  
+});
+
+ {% endhighlight %} 
+
+### series.dragSettings.type `string`
+{:#members:series.dragsettings.type}
+
+
+Specifies the type of drag settings.
+
+
+#### Default Value
+
+
+* "xy"
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+    series : [{
+          dragSettings:{type: "x"}
     }]                   
 });
  {% endhighlight %} 
