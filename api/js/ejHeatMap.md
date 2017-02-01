@@ -295,7 +295,7 @@ Defines the horizontal position of tooltip.
             <td class="description last">Used to display the tooltip horizontally on right side of rows/columnsr</td>
        </tr>
      </tbody>
-
+</table>
 #### Default Value:
 
 * left
@@ -345,7 +345,7 @@ Defines the vertical position of tooltip.
             <td class="description last">Used to display the tooltip vertically on bottom side of rows/columnsr</td>
        </tr>
      </tbody>
-
+</table>
 #### Default Value:
 
 * Middle
@@ -369,6 +369,8 @@ $("#heatmap").ejHeatMap({
 
 ### toolTipSettings.trigger `enum`
 {:#members:tooltipsettings-trigger}
+
+<ts name = "ej.datavisualization.HeatMap.Trigger"/>
 
 Defines the tooltip to be triggerred.
 
@@ -411,32 +413,11 @@ $("#heatmap").ejHeatMap({
     });
             
 {% endhighlight %}
-animation: {
-                    effect: "none",
-                    speed: 0
-                },
 
 ### toolTipSettings.animation `object`
 {:#members:tooltipsettings-animation}
 
 Defines the animation for the tooltip that should be shown when the mouse hovers over rows/columns.
-
-#### Default Value:
-
-* null
-
-#### Example
-
-{% highlight js %}
-
-$("#heatmap").ejHeatMap({
-    //Defines mouse over tooltip
-    toolTipSettings: {
-        animation:"click",
-         }
-    });
-            
-{% endhighlight %}
 
 ### toolTipSettings.animation.effect `string`
 {:#members:tooltipsettings-animation-effect}

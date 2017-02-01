@@ -3878,7 +3878,7 @@ Defines the imageurl for the collection of context menu items
 
 #### Default Value:
 
-* []
+* null
 
 #### Example
 
@@ -3893,6 +3893,36 @@ $("#diagramcontent").ejDiagram({contextMenu: contextMenu});
 </script>
 
 {% endhighlight %}
+
+### contextMenu.items.cssClass `string`
+{:#members:contextmenu-items-cssclass}
+
+Defines the cssclass for the collection of context menu items
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<style>
+    .menuplace{
+            background-size:14px 14px;
+            }
+</style>
+
+<div id="diagramcontent"></div>
+<script>
+//Collection of items
+var menuitems = [{ "name": "zoomin", "text": "ZoomIn","imageUrl": "Images/zoomin.png", "cssClass":"menuplace", "style": "" }];
+var contextMenu = { items: menuitems};
+$("#diagramcontent").ejDiagram({contextMenu: contextMenu});
+</script>
+
+{% endhighlight %}
+
 
 ### contextMenu.showCustomMenuItemsOnly `boolean`
 {:#members:contextmenu-showcustommenuitemsonly}
@@ -10410,7 +10440,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.shape `enum`
 {:#members:nodes-shape}
 
-<ts name = "ej.datavisualization.Diagram.BasicShapes | ej.datavisualization.Diagram.FlowShapes | ej.datavisualization.Diagram.BPMNShapes | ej.datavisualization.Diagram.UMLActivityShapes | String"/>
+<ts name = "ej.datavisualization.Diagram.BasicShapes | ej.datavisualization.Diagram.FlowShapes | ej.datavisualization.Diagram.BPMNShapes | ej.datavisualization.Diagram.UMLActivityShapes"/>
 
 Sets the shape of the node. It depends upon the type of node.
 
@@ -11502,28 +11532,32 @@ Defines the type of the node.
    </thead>
     <tbody>
         <tr>
-            <td class="name">None</td>
-            <td class="description last">Used to set decorator shape as none</td>
+            <td class="name">Text</td>
+            <td class="description last">Used to specify node type as text</td>
        </tr>
         <tr>
-            <td class="name">Arrow</td>
-            <td class="description last">Used to set decorator shape as Arrow</td>
+            <td class="name">Image</td>
+            <td class="description last">Used to specify node type as image</td>
        </tr>
         <tr>
-            <td class="name">OpenArrow</td>
-            <td class="description last">Used to set decorator shape as Open Arrow</td>
+            <td class="name">HTML</td>
+            <td class="description last">Used to specify node type as html</td>
        </tr>
         <tr>
-            <td class="name">Circle</td>
-            <td class="description last">Used to set decorator shape as Circle</td>
+            <td class="name">Native</td>
+            <td class="description last">Used to specify node type as native</td>
        </tr>
         <tr>
-            <td class="name">Diamond</td>
-            <td class="description last">Used to set decorator shape as Diamond</td>
+            <td class="name">Basic Shapes</td>
+            <td class="description last">Used to specify node type as basic shapes</td>
        </tr>
-        <tr>
+       <tr>
             <td class="name">Path</td>
-            <td class="description last">Used to set decorator shape as path</td>
+            <td class="description last">Used to specify node type as text</td>
+       </tr>
+        <tr>
+            <td class="name">Flow Shapes</td>
+            <td class="description last">Used to specify node type as flow shapes</td>
        </tr>
    </tbody>
 </table>
