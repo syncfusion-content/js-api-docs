@@ -461,6 +461,94 @@ $("#symbolpalette").ejSymbolPalette({width:300});
 
 {% endhighlight %}
 
+## Methods
+
+### addPaletteItem(paletteName, node)
+{:#methods:addpaletteitem}
+
+Add items to Palettes at runtime
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+    	<tr>
+			<td class="name">paletteName</td>
+			<td class="type">string</td>
+			<td class="description last">name of the Palette</td>
+		</tr>
+		<tr>
+			<td class="name">node</td>
+			<td class="type">object</td>
+			<td class="description last">JSON for the new items to added in Palette</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var diagram = $("#diagramcontent").ejDiagram("instance");
+//add a node to palette
+    var palette = $("#symbolpalette").ejSymbolPalette("instance");
+    var node = [{ name: "rectangle1", width: 100, height: 100, fillColor:"red",offsetX: 20, offsetY: 20, type: "node", }];
+    palette.addPaletteItem("Basic Shapes", node);
+
+</script>
+
+{% endhighlight %}
+
+### removePaletteItem(paletteName, node)
+{:#methods:removepaletteitem}
+
+Remove items to Palettes at runtime
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+    	<tr>
+			<td class="name">paletteName</td>
+			<td class="type">string</td>
+			<td class="description last">name of the Palette</td>
+		</tr>
+		<tr>
+			<td class="name">node</td>
+			<td class="type">object</td>
+			<td class="description last">JSON for the new node to removed in Palette</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var diagram = $("#diagramcontent").ejDiagram("instance");
+//remove a node to palette
+    var palette = $("#symbolpalette").ejSymbolPalette("instance");
+    var node = [{ name: "rectangle1", width: 100, height: 100, fillColor:"red",offsetX: 20, offsetY: 20, type: "node", }];
+    palette.removePaletteItem("Basic Shapes", node);
+
+</script>
+
+{% endhighlight %}
+
 ## Events
 
 ### selectionChange
