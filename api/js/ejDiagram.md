@@ -2394,22 +2394,21 @@ Sets the type of the connector
             <th>Name</th>
             <th>Description</th>
        </tr>
-   </thead>
+    </thead>
     <tbody>
         <tr>
             <td class="name">BPMN</td>
             <td class="description last">Used to specify connector type as BPMN</td>
        </tr>
         <tr>
-            <td class="name">Classifier</td>
+            <td class="name">UMLClassifier</td>
             <td class="description last">Used to specify connector type as Classifier</td>
        </tr>
        <tr>
             <td class="name">UMLActivity</td>
             <td class="description last">Used to specify connector type as umlactivity</td>
        </tr>
-
-          </tbody>
+    </tbody>
 </table>
 
 #### Default Value:
@@ -11540,7 +11539,7 @@ Defines the type of the node.
             <td class="description last">Used to specify node type as image</td>
        </tr>
         <tr>
-            <td class="name">HTML</td>
+            <td class="name">Html</td>
             <td class="description last">Used to specify node type as html</td>
        </tr>
         <tr>
@@ -11548,15 +11547,23 @@ Defines the type of the node.
             <td class="description last">Used to specify node type as native</td>
        </tr>
         <tr>
-            <td class="name">Basic Shapes</td>
+            <td class="name">Basic</td>
             <td class="description last">Used to specify node type as basic shapes</td>
        </tr>
        <tr>
-            <td class="name">Path</td>
+            <td class="name">Flow</td>
             <td class="description last">Used to specify node type as text</td>
        </tr>
         <tr>
-            <td class="name">Flow Shapes</td>
+            <td class="name">BPMN</td>
+            <td class="description last">Used to specify node type as flow shapes</td>
+       </tr>
+       <tr>
+            <td class="name">UMLClassifier</td>
+            <td class="description last">Used to specify node type as flow shapes</td>
+       </tr>
+       <tr>
+            <td class="name">UMLActivity</td>
             <td class="description last">Used to specify node type as flow shapes</td>
        </tr>
    </tbody>
