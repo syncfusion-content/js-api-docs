@@ -1297,7 +1297,7 @@ var query = ej.Query()
 {:#members:responsiveType}
 
 
-<ts ref = "ej.responsiveType"/>
+<ts name = "ej.Toolbar.ResponsiveType"/>
     
     
 
