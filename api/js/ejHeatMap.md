@@ -248,7 +248,7 @@ $("#heatmap").ejHeatMap({
 ### tooltipSettings.position `object`
 {:#members:position}
 
-defines various attributes of the Tooltip position
+Defines various attributes of the Tooltip position
 
 ### tooltipSettings.position.target `object`
 {:#members:position-target}
@@ -435,15 +435,15 @@ Defines the animation effect for the tooltip that should be shown when the mouse
     <tbody>
         <tr>
             <td class="name">None</td>
-            <td class="description last">Tooltip can be triggered on mouse hovers</td>
+            <td class="description last">Sets tooltip animation as None</td>
        </tr>
         <tr>
             <td class="name">Fade</td>
-            <td class="description last">Tooltip can be triggered on mouse click</td>
+            <td class="description last">Sets tooltip animation as Fade</td>
        </tr>
         <tr>
             <td class="name">Slide</td>
-            <td class="description last">Tooltip can be triggered on mouse focus</td>
+            <td class="description last">Sets tooltip animation as Slide</td>
        </tr>
     </tbody>
 </table>
