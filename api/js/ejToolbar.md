@@ -592,7 +592,9 @@ $("#toolbar1").ejToolbar(
                         dataSource:  items,
           fields:  { id: "empid",spriteCssClass: "spriteCss"}
         });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -695,6 +697,19 @@ Defines the text content for the tag.
 
 
 Defines the tooltip text for the tag.
+
+
+
+
+
+
+### fields.template `string`
+{:#members:fields-template}
+
+
+
+
+Allows you to add  template as toolbar item
 
 
 
@@ -937,7 +952,177 @@ Enables/Disables the responsive support for Toolbar items during the window resi
 // to set isResponsive Toolbar on initialization. 
         //To set isResponsive API value 
         $("#toolbar1").ejToolbar({ isResponsive: true });                        
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
+
+
+
+
+### Items `object`
+{:#members:Items}
+
+
+
+
+Specifies the items of  Toolbar
+
+
+#### Default Value
+
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+    <div id="toolbar1"></div>
+    <script>
+   // To set Items API value during initialization. 
+        //To set the Items API value.
+       $(function () {
+            // declaration
+            
+
+             $("#toolbar1").ejToolbar({
+			         Items: [
+                            { id: "button1", text: "Button1" ,group:"group1", tooltipText:"button1" , height:"20px", spriteCssClass: "editTools cursor",htmlAttributes: {class:"e-item "} },
+							{ id: "button2",group:"group1",text:"Button2",spriteCssClass: "editTools select",tooltipText:"button2"},
+							{ id: "button3", group:"group1",template:"<input type='text' id='dropdown1' />"},
+							{ id: "button4", text: "Button4" ,group:"group2",spriteCssClass: "editTools rectselect",tooltipText:"button4"},
+                            { id: "button5", text: "Button5",group:"group2",spriteCssClass: "editTools roundselect",tooltipText:"button5",imageUrl:"content/images/toolbar/Check.png",imageAttributes:{width: 20, height: 20}}],
+
+               
+           });
+        });
+       </script>
+       
+{% endhighlight %}
+
+
+
+
+### Items.group `string`
+{:#members:Items-group}
+
+
+
+
+Defines the group name for the item.
+
+
+
+
+
+
+### Items.htmlAttributes `object`
+{:#members:Items-htmlattributes}
+
+
+
+
+Defines the HTML attributes such as id, class, styles for the item .
+
+
+
+
+
+
+### Items.id `string`
+{:#members:Items-id}
+
+
+
+
+Defines id for the tag.
+
+
+
+
+
+
+### Items.imageAttributes `string`
+{:#members:Items-imageattributes}
+
+
+
+
+Defines the image attributes such as height, width, styles and so on.
+
+
+
+
+
+
+### Items.imageUrl `string`
+{:#members:Items-imageurl}
+
+
+
+
+Defines the imageURL for the image location.
+
+
+
+
+
+
+### Items.spriteCssClass `string`
+{:#members:Items-spritecssclass}
+
+
+
+
+Defines the sprite CSS for the image tag.
+
+
+
+
+
+
+### Items.text `string`
+{:#members:Items-text}
+
+
+
+
+Defines the text content for the tag.
+
+
+
+
+
+
+### Items.tooltipText `string`
+{:#members:Items-tooltiptext}
+
+
+
+
+Defines the tooltip text for the tag.
+
+
+
+
+
+
+### Items.template `string`
+{:#members:Items-template}
+
+
+
+
+Allows to add template as toolbar item.
+
+
 
 
 
@@ -1101,7 +1286,98 @@ var query = ej.Query()
              dataSource: dataManger,
               query: query
         });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
+
+
+
+
+### responsiveType `enum|string`
+{:#members:responsiveType}
+
+
+
+
+Specifies the Toolbar responsive type.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Popup</td>
+<td class="description">To display the toolbar overflow items as popup</td>
+</tr>
+<tr>
+<td class="name">
+Inline</td>
+<td class="description">To display the toolbar overflow items as inline toolbar</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Default Value
+
+
+
+
+* Popup
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+    <div id="toolbar1">
+    <ul>
+       <li id="Left" title="Left">
+           <div class="ToolbarItems LeftAlign_tool"></div>
+      </li>
+       <li id="Center" title="Center">
+           <div class="ToolbarItems CenterAlign_tool"></div>
+       </li>
+       <li id="Right" title="Right">
+           <div class="ToolbarItems RightAlign_tool"></div>
+       </li>
+       <li id="Justify" title="Justify">
+           <div class="ToolbarItems Justify_tool"></div>
+       </li>
+    </ul>
+    <ul>
+       <li id="Bold" title="Bold">
+           <div class="ToolbarItems Bold_tool"></div>
+       </li>
+       <li id="Italic" title="Italic">
+           <div class="ToolbarItems Italic_tool"></div>
+       </li>
+       <li id="StrikeThrough" title="Strike Through">
+           <div class="ToolbarItems StrikeThrough_tool"></div>
+       </li>
+       <li id="UndeLine" title="UnderLine">
+           <div class="ToolbarItems Underline_tool"></div>
+       </li>
+    </ul>
+    </div>
+    <script>
+    // Specifies responsiveType of  Toolbar on initialization. 
+            //To set responsiveType API value 
+            $("#toolbar1").ejToolbar({ responsiveType:"inline" }); 
+    </script>
+    
+{% endhighlight %}
+    
 
 
 
@@ -2798,7 +3074,221 @@ status</td>
  $("#toolbar1").ejToolbar({
  itemLeave: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
+
+
+
+
+
+### overflowOpen
+{:#events:overflowOpen}
+
+
+
+
+Fires when the overflow popup of toolbar is opened.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Toolbar.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the Toolbar model</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">
+clientX</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the current  X position of the target .</td>
+</tr>
+<tr>
+<td class="name">
+clientY</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the current  Y position of the target .</td>
+</tr>
+<tr>
+<td class="name">
+currentTarget</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the target of the current object.</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+    <div id="toolbar1">
+    <ul>
+       <li id="Left" title="Left">
+           <div class="ToolbarItems LeftAlign_tool"></div>
+      </li>
+       <li id="Center" title="Center">
+           <div class="ToolbarItems CenterAlign_tool"></div>
+       </li>
+       <li id="Right" title="Right">
+           <div class="ToolbarItems RightAlign_tool"></div>
+       </li>
+       <li id="Justify" title="Justify">
+           <div class="ToolbarItems Justify_tool"></div>
+       </li>
+    </ul>
+    <ul>
+       <li id="Bold" title="Bold">
+           <div class="ToolbarItems Bold_tool"></div>
+       </li>
+       <li id="Italic" title="Italic">
+           <div class="ToolbarItems Italic_tool"></div>
+       </li>
+       <li id="StrikeThrough" title="Strike Through">
+           <div class="ToolbarItems StrikeThrough_tool"></div>
+       </li>
+       <li id="UndeLine" title="UnderLine">
+           <div class="ToolbarItems Underline_tool"></div>
+       </li>
+    </ul>
+    </div>
+    <script>
+    //overflowOpen event for Toolbar
+     $("#toolbar1").ejToolbar({
+     overflowOpen: function (args) {}
+    });
+    </script>
+    
+{% endhighlight %}
+
+
+
+### overflowClose
+{:#events:overflowClose}
+
+
+
+
+Fires when the overflow popup of toolbar is closed.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Toolbar.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the Toolbar model</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">
+clientX</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the current  X position of the target .</td>
+</tr>
+<tr>
+<td class="name">
+clientY</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the current  Y position of the target .</td>
+</tr>
+<tr>
+<td class="name">
+currentTarget</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the target of the current object.</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+    <div id="toolbar1">
+    <ul>
+       <li id="Left" title="Left">
+           <div class="ToolbarItems LeftAlign_tool"></div>
+      </li>
+       <li id="Center" title="Center">
+           <div class="ToolbarItems CenterAlign_tool"></div>
+       </li>
+       <li id="Right" title="Right">
+           <div class="ToolbarItems RightAlign_tool"></div>
+       </li>
+       <li id="Justify" title="Justify">
+           <div class="ToolbarItems Justify_tool"></div>
+       </li>
+    </ul>
+    <ul>
+       <li id="Bold" title="Bold">
+           <div class="ToolbarItems Bold_tool"></div>
+       </li>
+       <li id="Italic" title="Italic">
+           <div class="ToolbarItems Italic_tool"></div>
+       </li>
+       <li id="StrikeThrough" title="Strike Through">
+           <div class="ToolbarItems StrikeThrough_tool"></div>
+       </li>
+       <li id="UndeLine" title="UnderLine">
+           <div class="ToolbarItems Underline_tool"></div>
+       </li>
+    </ul>
+    </div>
+    <script>
+    //overflowClose event for Toolbar
+     $("#toolbar1").ejToolbar({
+     overflowClose: function (args) {}
+    });
+    </script>
+    
+{% endhighlight %}
 
 
 
