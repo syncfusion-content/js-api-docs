@@ -1167,6 +1167,87 @@ Allows to set the page number in series axis to be loaded by default.
     $("#PivotGrid1").ejPivotGrid({ dataSource: { pagerOptions: { seriesCurrentPage: 7 } } }); 
 {% endhighlight %}
 
+### valueSortSettings `object`
+{:#members:valueSortSettings}
+
+Holds the neccessary properties for value sorting.
+
+>**Note**: This is applicable for Relational datasource only.
+
+#### Default Value: {}
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ valueSortSettings: { } }); 
+{% endhighlight %}
+
+### valueSortSettings.headerText `string`
+{:#members:valueSortSettings-headerText}
+
+Contains the headers of the specific column to which value sorting is applied.
+
+>**Note**: This is applicable for Relational datasource only.
+
+#### Default Value: ""
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ valueSortSettings: { headerText: "Bike##FY 2005##Amount" } });
+{% endhighlight %}
+
+### valueSortSettings.headerDelimiters `string`
+{:#members:valueSortSettings-headerDelimiters}
+
+Allows the user to set the string for separating column headers provided in the above property **headerText**.
+
+>**Note**: This is applicable for Relational datasource only.
+
+#### Default Value: ""
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ valueSortSettings: { headerDelimiters: "##" } });
+{% endhighlight %}
+
+### valueSortSettings.sortOrder `enum`
+{:#members:valueSortSettings-sortOrder}
+
+<ts ref = "ej.PivotAnalysis.SortOrder"/>
+
+Allows the user to set the sorting order of the values of the field.
+
+>**Note**: This is applicable for Relational datasource only.
+
+#### Default Value: ej.PivotAnalysis.SortOrder.Ascending
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Ascending</td>
+            <td class="description">Sorts the members of the field in ascending order.</td>
+        </tr>
+        <tr>
+            <td class="name">Descending</td>
+            <td class="description">Sorts the members of the field in descending order.</td>
+        </tr>
+        <tr>
+            <td class="name">None</td>
+            <td class="description">Displays the members without sorting in any order.</td>
+        </tr>
+    </tbody>
+</table>
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ valueSortSettings: { sortOrder: ej.PivotAnalysis.SortOrder.Descending } });
+{% endhighlight %}
+
 ### frozenHeaderSettings `object`
 {:#members:frozenheadersettings}
 
@@ -1274,7 +1355,7 @@ Enables the cell selection for a specific range of value cells.
 ### enableDrillThrough `boolean`
 {:#members:enabledrillthrough}
 
-Enables the Drill-Through feature which retrieves the raw items that are used to create the specific cell in PivotGrid. This is only applicable in server mode component.
+Enables the Drill-Through feature which retrieves the raw items that are used to create the specific cell in PivotGrid.
 
 #### Default Value: false
 
