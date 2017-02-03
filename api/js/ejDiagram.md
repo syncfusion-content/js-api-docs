@@ -2402,11 +2402,11 @@ Sets the type of the connector
        </tr>
         <tr>
             <td class="name">UMLClassifier</td>
-            <td class="description last">Used to specify connector type as Classifier</td>
+            <td class="description last">Used to specify connector type as UMLClassifier</td>
        </tr>
        <tr>
             <td class="name">UMLActivity</td>
-            <td class="description last">Used to specify connector type as umlactivity</td>
+            <td class="description last">Used to specify connector type as UMLActivity</td>
        </tr>
     </tbody>
 </table>
@@ -2904,7 +2904,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 <ts name = "ej.datavisualization.Diagram.UMLActivityFlow"/>
 
-Defines the shape of umlactivity to connector. Applicable, if the connector is of type "umlactivity"
+Defines the shape of UMLActivity to connector. Applicable, if the connector is of type `UMLActivity`
 
 <table class="props">
     <thead>
@@ -2916,15 +2916,15 @@ Defines the shape of umlactivity to connector. Applicable, if the connector is o
     <tbody>
         <tr>
             <td class="name">Object</td>
-            <td class="description last">Defines activityflow as Object in UML Activity Diagram</td>
+            <td class="description last">Defines a activity flow as Object in UML Activity Diagram</td>
        </tr>
         <tr>
             <td class="name">Control</td>
-            <td class="description last">Defines activityflow as Control in UML Activity Diagram</td>
+            <td class="description last">Defines a activity flow as Control in UML Activity Diagram</td>
        </tr>
         <tr>
             <td class="name">Exception</td>
-            <td class="description last">Defines activityflow as Exception in UML Activity Diagram</td>
+            <td class="description last">Defines a activity flow as Exception in UML Activity Diagram</td>
        </tr>
      </tbody>
 </table>
@@ -3873,7 +3873,7 @@ $("#diagramcontent").ejDiagram({contextMenu: contextMenu});
 ### contextMenu.items.imageUrl `string`
 {:#members:contextmenu-items-imageurl}
 
-Defines the imageurl for the collection of context menu items
+Defines the image url for the collection of context menu items
 
 #### Default Value:
 
@@ -3896,7 +3896,7 @@ $("#diagramcontent").ejDiagram({contextMenu: contextMenu});
 ### contextMenu.items.cssClass `string`
 {:#members:contextmenu-items-cssclass}
 
-Defines the cssclass for the collection of context menu items
+Defines the CssClass for the collection of context menu items
 
 #### Default Value:
 
@@ -4579,18 +4579,18 @@ Defines the type of the rendering mode of label.
     <tbody>
         <tr>
             <td class="name">Html</td>
-            <td class="description last">Sets the labelrenderingmode as html</td>
+            <td class="description last">Sets the labelRenderingMode as Html</td>
         </tr>
         <tr>
             <td class="name">Svg</td>
-            <td class="description last">Sets the labelrenderingmode as svg</td>
+            <td class="description last">Sets the labelRenderingMode as Svg</td>
         </tr>
     </tbody>
 </table>
 
 #### Default Value:
 
-* html
+* Html
 
 #### Example
 
@@ -11532,39 +11532,39 @@ Defines the type of the node.
     <tbody>
         <tr>
             <td class="name">Text</td>
-            <td class="description last">Used to specify node type as text</td>
+            <td class="description last">Used to specify node type as Text</td>
        </tr>
         <tr>
             <td class="name">Image</td>
-            <td class="description last">Used to specify node type as image</td>
+            <td class="description last">Used to specify node type as Image</td>
        </tr>
         <tr>
             <td class="name">Html</td>
-            <td class="description last">Used to specify node type as html</td>
+            <td class="description last">Used to specify node type as Html</td>
        </tr>
         <tr>
             <td class="name">Native</td>
-            <td class="description last">Used to specify node type as native</td>
+            <td class="description last">Used to specify node type as Native</td>
        </tr>
         <tr>
             <td class="name">Basic</td>
-            <td class="description last">Used to specify node type as basic shapes</td>
+            <td class="description last">Used to specify node type as Basic</td>
        </tr>
        <tr>
             <td class="name">Flow</td>
-            <td class="description last">Used to specify node type as text</td>
+            <td class="description last">Used to specify node type as Flow</td>
        </tr>
         <tr>
             <td class="name">BPMN</td>
-            <td class="description last">Used to specify node type as flow shapes</td>
+            <td class="description last">Used to specify node type as BPMN</td>
        </tr>
        <tr>
             <td class="name">UMLClassifier</td>
-            <td class="description last">Used to specify node type as flow shapes</td>
+            <td class="description last">Used to specify node type as UMLClassifier</td>
        </tr>
        <tr>
             <td class="name">UMLActivity</td>
-            <td class="description last">Used to specify node type as flow shapes</td>
+            <td class="description last">Used to specify node type as UMLActivity</td>
        </tr>
    </tbody>
 </table>

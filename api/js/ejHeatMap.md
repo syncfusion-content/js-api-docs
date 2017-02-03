@@ -194,15 +194,15 @@ Defines the tooltip of associate that should be shown when the mouse hovers over
     <tbody>
         <tr>
             <td class="name">Target</td>
-            <td class="description last">Used to set the associate of tooltip as target</td>
+            <td class="description last">Used to set the associate of tooltip as Target</td>
        </tr>
         <tr>
             <td class="name">MouseFollow</td>
-            <td class="description last">Used to set the associate of tooltip as mousefollow</td>
+            <td class="description last">Used to set the associate of tooltip as MouseFollow</td>
        </tr>
         <tr>
             <td class="name">MouseEnter</td>
-            <td class="description last">Used to set the associate of tooltip as Mouseenter</td>
+            <td class="description last">Used to set the associate of tooltip as MouseEnter</td>
        </tr>
     </tbody>
 </table>
@@ -280,7 +280,7 @@ Sets the arrow position again popup based on horizontal(x) value
        </tr>
         <tr>
             <td class="name">Right</td>
-            <td class="description last">Used to display the tooltip horizontally on right side of rows/columnsr</td>
+            <td class="description last">Used to display the tooltip horizontally on right side of rows/columns</td>
        </tr>
      </tbody>
 </table>
@@ -314,7 +314,7 @@ Sets the arrow position again popup based on vertical(y) value
        </tr>
         <tr>
             <td class="name">Bottom</td>
-            <td class="description last">Used to display the tooltip horizontally on right side of rows/columnsr</td>
+            <td class="description last">Used to display the tooltip horizontally on right side of rows/columns</td>
        </tr>
      </tbody>
 </table>
