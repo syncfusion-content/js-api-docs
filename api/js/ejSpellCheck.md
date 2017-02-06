@@ -530,7 +530,66 @@ When set to true, ignoring the file address path from the error word considerati
 
 {% endhighlight %}
 
+### isResponsive `boolean`
+{:#members:isresponsive}
 
+When set to true, allows the spellcheck to render based upon screen size.
+
+#### Default Value
+
+* true
+
+#### Example – To render the spellcheck dialog with the default size. 
+
+{% highlight html %}
+
+<div id="SpellCheck"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#SpellCheck").ejSpellCheck({
+                dictionarySettings: {
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+                },
+                isResponsive:false
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### controlsToValidate `string`
+{:#members:controlstovalidate}
+
+It allows to spell check the multiple target elements texts and correct its error words.
+
+#### Default Value
+
+* null
+
+#### Example – To check the spelling of the three target elements (ex: div, textarea, span). 
+
+{% highlight html %}
+
+<div id="SpellCheck"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#SpellCheck").ejSpellCheck({
+                dictionarySettings: {
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+                },
+                controlsToValidate:"control1, control2, control3"
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+> You need to pass the target elements id value to this property with the comma separator. For example, in the above code example passed id values of div(control1), textarea(control2) and span(control3) element.
+ 
 ## Methods
 
 ### showInDialog()
@@ -1829,6 +1888,74 @@ Triggers when the spell check control performing the spell check operations such
                     customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
                 }
                 validating: function (args) {}
+            });
+</script>
+
+{% endhighlight %}
+
+### targetUpdating
+{:#events:targetupdating}
+
+Triggers before loading the target element text into the dialog sentence area.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>        
+        <tr>
+            <td class="name">previousElement</td>
+            <td class="type">Object</td>
+            <td class="description">Returns the previous target element value.</td>
+        </tr>
+        <tr>
+            <td class="name">currentElement</td>
+            <td class="type">Object</td>
+            <td class="description">Returns the current target element value.</td>
+        </tr>
+        <tr>
+            <td class="name">targetHtml</td>
+            <td class="type">string</td>
+            <td class="description">Returns the target html value.</td>
+        </tr>
+        <tr>
+            <td class="name">cancel</td>
+            <td class="type">boolean</td>
+            <td class="description">Returns the cancel option value.</td>
+        </tr>
+        <tr>
+            <td class="name">model</td>
+            <td class="type"><ts ref="ej.SpellCheck.Model"/><span class="param-type">object</span></td>
+            <td class="description">Returns the SpellCheck model.</td>
+        </tr>
+        <tr>
+            <td class="name">type</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the event.</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+#### Example
+
+{% highlight html %}
+
+<div id="SpellCheck"></div> 
+ 
+<script>
+            $("#SpellCheck").ejSpellCheck({
+                dictionarySettings: {
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+                }
+                targetUpdating: function (args) {}
             });
 </script>
 
