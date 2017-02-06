@@ -562,15 +562,28 @@ When set to true, allows the spellcheck to render based upon screen size.
 ### controlsToValidate `string`
 {:#members:controlstovalidate}
 
-It allows to spell check the multiple target elements texts and correct its error words.
+It allows to spell check the multiple target HTML element's texts and correct its error words.
 
 #### Default Value
 
 * null
 
-#### Example – To check the spelling of the three target elements (ex: div, textarea, span). 
+#### Example – To check the spelling of the three target HTML element's (ex: div, textarea, span). 
 
 {% highlight html %}
+
+<div id="control1">
+     London, one of the most popular touist destinations in the world for a reason. A cultural and hisorical hub, London has an excellent public transportation system that allows visitors to see all the fantatic sights without spending a ton of money on a rental car.
+     London contains four World Heritage Sites.
+</div><br />
+<textarea id="control2" style="width:940px">
+     Paris, the city of lihts and love - this short guide is full of ideas for how to make the most of the romnticism that oozes from every one of its beautiful corners.You couldn't possibly visit Paris without seeing the Eiffel Tower.
+     Even if you do not want to visit this world famous structure, you will see its top from all over Paris.
+</textarea><br />
+<span id="control3">
+     Rome, one of the world's most facinating cities. The old adage that Rome was not built in a day - and that you won't see it in one or even in three - is true. For the intrepid traveler who can keep pace, here is a list of must-sees.
+     But reember what the Romans say: Even a lifetime isn't enough to see Rome.
+</span><br /><br />
 
 <div id="SpellCheck"></div>
 
@@ -588,7 +601,7 @@ It allows to spell check the multiple target elements texts and correct its erro
 
 {% endhighlight %}
 
-> You need to pass the target elements id value to this property with the comma separator. For example, in the above code example passed id values of div(control1), textarea(control2) and span(control3) element.
+> You need to pass the target HTML element's id value to this property with the comma separator. For example, in the above code example passed id values of div(control1), textarea(control2) and span(control3) element.
  
 ## Methods
 
@@ -1896,7 +1909,7 @@ Triggers when the spell check control performing the spell check operations such
 ### targetUpdating
 {:#events:targetupdating}
 
-Triggers before loading the target element text into the dialog sentence area.
+Triggers before loading the target HTML element text into the dialog sentence area.
 
 <table class="params">
     <thead>
