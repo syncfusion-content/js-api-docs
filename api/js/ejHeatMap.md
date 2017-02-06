@@ -375,7 +375,7 @@ Sets the arrow position again popup based on vertical(y) value
 
 <ts name = "ej.datavisualization.HeatMap.Trigger"/>
 
-Defines the tooltip to be triggerred.
+Defines the tooltip to be triggered.
 
 <table class="props">
     <thead>
