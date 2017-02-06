@@ -3810,6 +3810,110 @@ Specifies the working time schedule of day
 {% endhighlight %}
 
 
+### workUnit `enum`
+{:#members:workUnit}
+
+<ts name = "ej.Gantt.WorkUnit"/>
+
+Specifies the unit of the work field for the project
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Day</td>
+<td class="description">Sets the work field unit for the project as day</td>
+</tr>
+<tr>
+<td class="name">Hour</td>
+<td class="description">Sets the work field unit for the project as hour</td>
+</tr>
+<tr>
+<td class="name">Minute</td>
+<td class="description">Sets the work field unit for the project as minute</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value:
+{:.param}
+
+* ej.Gantt.workUnit.Hour
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  
+                      workUnit: ej.Gantt.WorkUnit.Minute,
+            });
+</script>
+
+{% endhighlight %}
+
+
+### taskType `enum`
+{:#members:tasktype}
+
+<ts name = "ej.Gantt.TaskType"/>
+
+Specifies the type of the task for updating the resource units, work and duration fields.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">FixedUnit</td>
+<td class="description">Sets the resource units as constant while updating duration or work field.</td>
+</tr>
+<tr>
+<td class="name">FixedWork</td>
+<td class="description">Sets the Work field as constant while updating resource unit or duration fields.</td>
+</tr>
+<tr>
+<td class="name">FixedDuration</td>
+<td class="description">Sets the duration of the task as constant while updating resource unit or work field.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value:
+{:.param}
+
+* ej.Gantt.TaskType.FixedUnit
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  
+                     taskType: ej.Gantt.TaskType.FixedWork,
+            });
+</script>
+
+{% endhighlight %}
+
+
 ## Methods
 
 ### addRecord(data, rowPosition)
