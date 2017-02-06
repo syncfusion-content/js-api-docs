@@ -15092,7 +15092,7 @@ Used to zoomIn/zoomOut diagram
                         <tr>
                             <td class="name">zoomFactor</td>
                             <td class="type"><span class="param-type">number</span></td>
-                            <td class="description last">Used to increase the zoom-in or zoom-out based on the zoomfactor value.</td>
+                            <td class="description last">Used to increase the zoom-in or zoom-out based on the zoom factor value.</td>
                         </tr>
                         <tr>
                             <td class="name">zoomCommand</td>
