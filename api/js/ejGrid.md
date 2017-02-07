@@ -2476,6 +2476,72 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
+### exportToExcelAction `string`
+{:#members:exporttoexcelaction}
+
+Act as mapper for the excel exporting URL.
+
+#### Default Value:
+{:.param}
+* ExportToExcel
+
+#### Example
+{:.example}
+{% highlight html %} 
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+    dataSource: window.gridData,
+    exportToExcelAction: "http://js.syncfusion.com/ExportingServices/api/JSGridExport/ExcelExport",
+    toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.ExcelExport] }
+});
+</script> 
+{% endhighlight %}
+
+### exportToPdfAction `string`
+{:#members:exporttopdfaction}
+
+Act as mapper for the PDF exporting URL.
+
+#### Default Value:
+{:.param}
+* ExportToPdf
+
+#### Example
+{:.example}
+{% highlight html %} 
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+    dataSource: window.gridData,
+    exportToPdfAction:"http://js.syncfusion.com/ExportingServices/api/JSGridExport/PdfExport",
+	toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.PdfExport] }
+});
+</script> 
+{% endhighlight %}
+
+### exportToWordAction `string`
+{:#members:exporttowordaction}
+
+Act as mapper for the Word exporting URL.
+
+#### Default Value:
+{:.param}
+* ExportToWord
+
+#### Example
+{:.example}
+{% highlight html %} 
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+    dataSource: window.gridData, 
+    exportToWordAction:"http://js.syncfusion.com/ExportingServices/api/JSGridExport/WordExport",
+	toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.WordExport] }
+});
+</script> 
+{% endhighlight %}
+
 ### filterSettings `Object`
 {:#members:filtersettings}
 
