@@ -170,7 +170,7 @@ Below code snippet shows only the magnification tools in the toolbar.
 
 {:#members:serverActionSettings}
 
-Specifies the name of the action methods in the server.
+Specifies the name of the action method in the server.
 
 ### serverActionSettings.load `string`
 
@@ -403,7 +403,7 @@ The below code snippet shows the hyperlink opened in a new tab.
 ### enableHyperlink `boolean`
 {:#members:enablehyperlink}
 
-Enables or disables the hyperlinks in PDF Document.
+Enables or disables the hyperlinks in PDF document.
 
 **Default Value**: true
 
@@ -421,7 +421,7 @@ Enables or disables the hyperlinks in PDF Document.
 ### enableTextSelection `boolean`
 {:#members:enableTextSelection}
 
-Enables or disables the text selection in PDF Document.
+Enables or disables the text selection in PDF document.
 
 **Default Value**: true
 
@@ -439,7 +439,7 @@ Enables or disables the text selection in PDF Document.
 ### isResponsive `boolean`
 {:#members:isResponsive}
 
-Enables or disables the responsive support for PDF viewer control during the window resizing time.
+Enables or disables the responsiveness of the PDF viewer control during the window resized.
 
 **Default Value**: true
 
@@ -478,7 +478,7 @@ var isEdited = pdfviewerObj.isDocumentEdited;
 ### allowClientBuffering `boolean`
 {:#members:allowClientBuffering}
 
-Enables or disables the buffering of the PDF pages in the Client side.
+Enables or disables the buffering of the PDF pages in the client side.
 
 **Default Value**: false
 
