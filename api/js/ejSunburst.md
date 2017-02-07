@@ -948,7 +948,7 @@ $("#container").ejSunburstChart({
 ### dataLabelSettings.labelRotationMode `enum`
 {:#members:datalabelsettings-labelRotationMode}
 
-<ts name = "ej.datavisualization.Sunburst.dataLabelAlignment"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstLabelRotationMode"/>
 
 Alginment of sunburst datalabel
 
@@ -1207,7 +1207,7 @@ $("#container").ejSunburstChart({
 ### dataLabelSettings.labelOverflowMode `enum`
 {:#members:datalabelsettings-labelOverflowMode}
 
-<ts name = "ej.datavisualization.Sunburst.LabelOverflowMode"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstLabelOverflowMode"/>
 
 Datalabel overflow mode
 
@@ -1325,7 +1325,7 @@ $("#container").ejSunburstChart({
 ### title.textAlignment `enum`
 {:#members:title-textAlignment}
 
-<ts name = "ej.datavisualization.Sunburst.TextAlignment"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstAlignment"/>
 
 Title text alignment
 
@@ -1593,7 +1593,7 @@ $("#container").ejSunburstChart({
 ### title.subtitle.textAlignment `enum`
 {:#members:title-subtitle-textAlignment}
 
-<ts ref="ej.datavisualization.Sunburst.TextAlignment"/>
+<ts ref="ej.datavisualization.Sunburst.SunburstAlignment"/>
 
 Sub title text alignment
 
@@ -1802,7 +1802,7 @@ $("#container").ejSunburstChart({
 {:#members:highlightSettings-mode}
 
 
-<ts name = "ej.datavisualization.Sunburst.Mode"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstHighlightMode"/>
 
 
 Specifies whether the levels or point has to be highlighted.
@@ -1919,7 +1919,7 @@ $("#container").ejSunburstChart({
 {:#members:highlightSettings-type}
 
 
-<ts name = "ej.datavisualization.Sunburst.Type"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstHighlightType"/>
 
 
 Specifies whether the levels or data point has to be highlighted.
@@ -2005,7 +2005,7 @@ $("#container").ejSunburstChart({
 {:#members:selectionSettings-mode}
 
 
-<ts ref = "ej.datavisualization.Sunburst.Mode"/>
+<ts ref = "ej.datavisualization.Sunburst.SunburstSelctionMode"/>
 
 
 Specifies whether the levels or data point has to be selected.
@@ -2086,7 +2086,7 @@ $("#container").ejSunburstChart({
 {:#members:selectionSettings-type}
 
 
-<ts ref = "ej.datavisualization.Sunburst.Type"/>
+<ts ref = "ej.datavisualization.Sunburst.Sunburst.SelectionType"/>
 
 
 Specifies whether the levels or data point has to be selected.
@@ -2176,7 +2176,7 @@ $("#container").ejSunburstChart({
 ### legend.clickAction `enum`
 {:#members:legend-clickaction}
 
-<ts name = "ej.datavisualization.Sunburst.LegendAction"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstClickAction"/>
 
 
 Interactive action of legend items.
@@ -2235,7 +2235,7 @@ $("#container").ejSunburstChart({
 ### legend.alignment `enum`
 {:#members:legend-alignment}
 
-<ts name = "ej.datavisualization.Sunburst.Alignment"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstAlignment"/>
 
 
 Horizontal alignment of the legend.
@@ -2704,7 +2704,7 @@ $("#container").ejSunburstChart({
 ### legend.position `enum`
 {:#members:legend-position}
 
-<ts name = "ej.datavisualization.Sunburst.Position"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstLegendPosition"/>
 
 Places the legend at specified position. Legend can be placed at **left**, **right**, **top** or **bottom** of the chart area. 
 To manually specify the location of legend, set **custom** as value to this property.
@@ -2774,7 +2774,7 @@ $("#container").ejSunburstChart({
 ### legend.shape `enum`
 {:#members:legend-shape}
 
-<ts name = "ej.datavisualization.Sunburst.Shape"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstLegendShape"/>
 
 
 
@@ -3141,7 +3141,7 @@ $("#container").ejSunburstChart({
 ### legend.title.textAlignment `enum`
 {:#members:legend-title-textalignment}
 
-<ts name = "ej.datavisualization.Sunburst.Alignment"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstAlignment"/>
 
 Alignment of the legend title.
 
@@ -3205,7 +3205,7 @@ $("#container").ejSunburstChart({
 ### theme `enum`
 {:#members:theme}
 
-<ts name = "ej.datavisualization.Sunburst.Theme"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstTheme"/>
 
 Specifies the theme for Sunburst.
 
@@ -3473,7 +3473,7 @@ $("#container").ejSunburstChart({
 ### zoomSettings.toolbarHorizontalAlignment `enum`
 {:#members:zoomsettings-toolbarhorizontalalignment}
 
-<ts name = "ej.datavisualization.Sunburst.HorizontalAlignment"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstHorizontalAlignment"/>
 
 Toolbar horizontal alignment
 
@@ -3533,7 +3533,7 @@ $("#container").ejSunburstChart({
 ### zoomSettings.toolbarVerticalAlignment `enum`
 {:#members:zoomsettings-toolbarverticalalignment}
 
-<ts name = "ej.datavisualization.Sunburst.VerticalAlignment"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstVerticalAlignment"/>
 
 Toolbar vertical alignment
 
