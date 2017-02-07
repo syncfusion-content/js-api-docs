@@ -4712,7 +4712,7 @@ Specifies the shape of the outlier.
  
  
 $("#container").ejChart({
-commonSeriesOptions :{outlierSettings :{ shape: "rectangle"}                  
+commonSeriesOptions :{outlier :{ shape: "rectangle"}                  
 });
 {% endhighlight %}
 
@@ -5156,38 +5156,6 @@ commonSeriesOptions : {
 
 
 Options for customizing the tooltip of chart.
-
-
-### commonSeriesOptions.tooltip.font.color `string`
-{:#members:commonseriesoptions-tooltip-font-color}
-
-
-
-
-Font color of the tooltip.
-
-
-#### Default Value
-
-
-
-* null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
- 
- 
-$("#container").ejChart({
-commonSeriesOptions :{tooltip :{font:{ color : "green" }}}                  
-});
- {% endhighlight %}
-
-
 
 
 
