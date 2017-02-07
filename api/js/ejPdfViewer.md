@@ -176,7 +176,7 @@ Specifies the name of the action method in the server.
 
 {:#members:serverActionSettings-load}
 
-Specifies the name of the action method used for loading the PDF document in the server.
+Specifies the name of the action method used for loading the PDF document.
 
 **Default Value**: Load
 
@@ -184,7 +184,7 @@ Specifies the name of the action method used for loading the PDF document in the
 
 {:#members:serverActionSettings-fileUpload}
 
-Specifies the name of the action method used for uploading the PDF document to the PDF viewer control in the server.
+Specifies the name of the action method used for uploading the PDF document to the PDF viewer control.
 
 **Default Value**: FileUpload
 
@@ -192,7 +192,7 @@ Specifies the name of the action method used for uploading the PDF document to t
 
 {:#members:serverActionSettings-print}
 
-Specifies the name of the action method used for printing the PDF document in the PDF viewer control in the server.
+Specifies the name of the action method used for printing the PDF document in the PDF viewer control.
 
 **Default Value**: Print
 
@@ -200,7 +200,7 @@ Specifies the name of the action method used for printing the PDF document in th
 
 {:#members:serverActionSettings-download}
 
-Specifies the name of the action method used for downloading the PDF document from the PDF viewer control in the server.
+Specifies the name of the action method used for downloading the PDF document from the PDF viewer control.
 
 **Default Value**: Download
 
@@ -439,7 +439,7 @@ Enables or disables the text selection in PDF document.
 ### isResponsive `boolean`
 {:#members:isResponsive}
 
-Enables or disables the responsiveness of the PDF viewer control during the window resized.
+Enables or disables the responsiveness of the PDF viewer control during the window resize.
 
 **Default Value**: true
 
@@ -459,7 +459,7 @@ Enables or disables the responsiveness of the PDF viewer control during the wind
 ### isDocumentEdited `boolean`
 {:#members:isDocumentEdited}
 
-Checks whether the Document is edited. 
+Checks whether the PDF document is edited. 
 
 **Default Value**: false
 
