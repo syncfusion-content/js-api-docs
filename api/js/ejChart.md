@@ -1853,6 +1853,33 @@ commonSeriesOptions : {visibleOnLegend: "hidden" }
 {% endhighlight %}
 
 
+### commonSeriesOptions.stackingGroup `string`
+{:#members:commonseriesoptions-stackinggroup}
+
+
+Group of the stacking collection series.
+
+
+#### Default Value
+
+
+
+ * ""
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+commonSeriesOptions :{stackingGroup : " "}                  
+});
+ {% endhighlight %}
+
 
 ### commonSeriesOptions.dashArray `string`
 {:#members:commonseriesoptions-dasharray}
@@ -4648,8 +4675,8 @@ commonSeriesOptions :{opacity : 0.5}
 
 
 
-### commonSeriesOptions.outlier `object`
-{:#members:commonseriesoptions-outlier}
+### commonSeriesOptions.outlierSettings `object`
+{:#members:commonseriesoptions-outliersettings}
 
 
 
@@ -4659,8 +4686,8 @@ Options for customizing the outlier of the series.
 
 
 
-### commonSeriesOptions.outlier.shape `enum`
-{:#members:commonseriesoptions-marker-shape}
+### commonSeriesOptions.outlierSettings.shape `enum`
+{:#members:commonseriesoptions-outliersettings-shape}
 
 
 <ts ref = "ej.datavisualization.Chart.Shape"/>
@@ -4685,14 +4712,14 @@ Specifies the shape of the outlier.
  
  
 $("#container").ejChart({
-commonSeriesOptions :{outlier :{ shape: "rectangle"}                  
+commonSeriesOptions :{outlierSettings :{ shape: "rectangle"}                  
 });
 {% endhighlight %}
 
 
 
-### commonSeriesOptions.outlier.size `object`
-{:#members:commonseriesoptions-outlier-size}
+### commonSeriesOptions.outlierSettings.size `object`
+{:#members:commonseriesoptions-outliersettings-size}
 
 
 
@@ -4704,8 +4731,8 @@ Options for customizing the size of the outlier shape.
 
 
 
-### commonSeriesOptions.outlier.size.height `number`
-{:#members:commonseriesoptions-outlier-size-height}
+### commonSeriesOptions.outlierSettings.size.height `number`
+{:#members:commonseriesoptions-outliersettings-size-height}
 
 
 
@@ -4729,15 +4756,15 @@ Height of the outlier shape.
  
  
 $("#container").ejChart({
-commonSeriesOptions :{outlier :{size :{height : 5}}}                  
+commonSeriesOptions :{outlierSettings :{size :{height : 5}}}                  
 });
 {% endhighlight %}
 
 
 
 
-### commonSeriesOptions.outlier.size.width `number`
-{:#members:commonseriesoptions-outlier-size-width}
+### commonSeriesOptions.outlierSettings.size.width `number`
+{:#members:commonseriesoptions-outliersettings-size-width}
 
 
 
@@ -4761,7 +4788,7 @@ Width of the outlier shape.
  
  
 $("#container").ejChart({
-commonSeriesOptions :{outlier :{ size :{ width : 2 } } }                  
+commonSeriesOptions :{outlierSettings :{ size :{ width : 2 } } }                  
 });
 {% endhighlight %}
 
@@ -5129,6 +5156,36 @@ commonSeriesOptions : {
 
 
 Options for customizing the tooltip of chart.
+
+
+### commonSeriesOptions.tooltip.font.color `string`
+{:#members:commonseriesoptions-tooltip-font-color}
+
+
+
+
+Font color of the tooltip.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{tooltip :{font:{ color : "green" }}}                  
+});
+ {% endhighlight %}
 
 
 
@@ -12354,6 +12411,32 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
+### primaryXAxis.axisLine.color `string`
+{:#members:primaryxaxis-axisline-color}
+
+
+#### Default Value
+
+
+
+* ""
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { axisLine : { color : "red" } }
+                          
+});
+
+{% endhighlight %}
+
 
 
 ### primaryXAxis.axisLine.width `number`
@@ -16687,6 +16770,38 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
+### axes.axisLine.color `string`
+{:#members:axes-axisline-color}
+
+
+
+
+Color of axis line.
+
+
+#### Default Value
+
+
+
+* ""
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [ { axisLine : { color : "red" } } ]
+                          
+});
+
+{% endhighlight %}
+
+
 
 
 ### axes.axisLine.width `number`
@@ -20441,6 +20556,38 @@ Show/hides the axis line.
 $("#container").ejChart({
 
     primaryYAxis: { axisLine: { visible : false } }
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryYAxis.axisLine.color `string`
+{:#members:primaryyaxis-axisline-color}
+
+
+
+
+Color of axis line.
+
+
+#### Default Value
+
+
+
+* ""
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { axisLine: { color : "" } }
                           
 });
 
@@ -24500,6 +24647,36 @@ $('#container').ejChart({
 {% endhighlight %}
 
 
+### series.stackingGroup `string`
+{:#members:series-stackinggroup}
+
+
+
+
+To group the series of stacking collection.
+
+
+#### Default Value
+
+
+
+* ""
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+series :[{stackingGroup : " "}]                  
+});
+ {% endhighlight %}
+
+
 
 ### series.dashArray `string`
 {:#members:series-dasharray}
@@ -26853,8 +27030,8 @@ series :[{opacity : 0.5}]
 
 
 
-### series.outlier `object`
-{:#members:series-outlier}
+### series.outlierSettings `object`
+{:#members:series-outliersettings}
 
 
 
@@ -26862,8 +27039,8 @@ series :[{opacity : 0.5}]
 Options for customizing the outlier of individual series.
 
 
-### series.outlier.shape `enum`
-{:#members:series-marker-shape}
+### series.outlierSettings.shape `enum`
+{:#members:series-outliersettings-shape}
 
 <ts ref = "ej.datavisualization.Chart.Shape"/>
 
@@ -26885,7 +27062,7 @@ Specifies the shape of the outlier.
  
  
 $("#container").ejChart({
-series :[{outlier :{ shape: "rectangle"}]                  
+series :[{outlierSettings :{ shape: "rectangle"}]                  
 });
 {% endhighlight %}
 
@@ -26893,8 +27070,8 @@ series :[{outlier :{ shape: "rectangle"}]
 
 
 
-### series.outlier.size `object`
-{:#members:series-outlier-size}
+### series.outlierSettings.size `object`
+{:#members:series-outliersettings-size}
 
 
 
@@ -26906,8 +27083,8 @@ Options for customizing the size of the outlier shape.
 
 
 
-### series.outlier.size.height `number`
-{:#members:series-outlier-size-height}
+### series.outlierSettings.size.height `number`
+{:#members:series-outliersettings-size-height}
 
 
 
@@ -26931,7 +27108,7 @@ Height of the outlier shape.
  
  
 $("#container").ejChart({
-series :[{outlier :{size :{height : 5}}}]                 
+series :[{outlierSettings :{size :{height : 5}}}]                 
 });
 {% endhighlight %}
 
@@ -26942,8 +27119,8 @@ series :[{outlier :{size :{height : 5}}}]
 
 
 
-### series.outlier.size.width `number`
-{:#members:series-outlier-size-width}
+### series.outlierSettings.size.width `number`
+{:#members:series-outliersettings-size-width}
 
 
 
@@ -26967,7 +27144,7 @@ Width of the outlier shape.
  
  
 $("#container").ejChart({
-series :[{outlier :{ size :{ width : 2 } } }]                  
+series :[{outlierSettings :{ size :{ width : 2 } } }]                  
 });
 {% endhighlight %}
 
@@ -29907,6 +30084,37 @@ Options for customizing the tooltip of chart.
 
 
 Options for customizing the border of the tooltip.
+
+
+
+### series.tooltip.font.color `string`
+{:#members:series-tooltip-font-color}
+
+
+
+
+Font Color of the tooltip.
+
+
+#### Default Value
+
+
+
+ * null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series : [{tooltip : {font : { color :"green"} }]                   
+});
+ {% endhighlight %}
 
 
 
@@ -34356,6 +34564,71 @@ type{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+
+### rangeSelected
+{:#events:rangeselected}
+
+
+
+
+Fires after selected the data in chart.
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//rangeSelected event for chart
+
+$("#container").ejChart({
+
+    rangeSelected: function (args) {
+             //Do something
+    }
+    
+});
+
+{% endhighlight %}
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Instance of the chart model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Selected data collection of object</td>
+</tr>
+</tbody>
+</table>
+
 
 
 ### pointRegionClick
