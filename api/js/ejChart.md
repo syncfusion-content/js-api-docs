@@ -30055,40 +30055,6 @@ Options for customizing the border of the tooltip.
 
 
 
-### series.tooltip.font.color `string`
-{:#members:series-tooltip-font-color}
-
-
-
-
-Font Color of the tooltip.
-
-
-#### Default Value
-
-
-
- * null
-
-
-
-
-#### Example
-
-
-{% highlight js %}
- 
- 
-$("#container").ejChart({
-series : [{tooltip : {font : { color :"green"} }]                   
-});
- {% endhighlight %}
-
-
-
-
-
-
 ### series.tooltip.border.color `string`
 {:#members:series-tooltip-border-color}
 
