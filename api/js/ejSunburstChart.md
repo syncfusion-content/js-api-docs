@@ -2005,7 +2005,7 @@ $("#container").ejSunburstChart({
 {:#members:selectionSettings-mode}
 
 
-<ts ref = "ej.datavisualization.Sunburst.SunburstSelctionMode"/>
+<ts ref = "ej.datavisualization.Sunburst.SunburstHighlightMode"/>
 
 
 Specifies whether the levels or data point has to be selected.
@@ -2086,7 +2086,7 @@ $("#container").ejSunburstChart({
 {:#members:selectionSettings-type}
 
 
-<ts ref = "ej.datavisualization.Sunburst.Sunburst.SelectionType"/>
+<ts ref = "ej.datavisualization.Sunburst.SunburstHighlightType"/>
 
 
 Specifies whether the levels or data point has to be selected.
