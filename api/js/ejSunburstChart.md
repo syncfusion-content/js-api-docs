@@ -1,15 +1,15 @@
 ---
 layout: post
-title: API reference for ejSunburst
+title: API reference for ejSunburstChart
 description: What are the options, methods and events available in Essential JavaScript Sunburst.
 documentation: API
 platform: js-api
-keywords: ejSunburst, API, Essential JS Sunburst, Sunburst
+keywords: ejSunburstChart, API, Essential JS Sunburst, Sunburst, SunburstChart
 metaname: 
 metacontent: 
 ---
 
-# ejSunburst
+# ejSunburstChart
 <ts root="datavisualization" />
 
 Essential Sunburst can be easily configured to the DOM element, such as div. You can create a Sunburst with highly customizable look and feel.
@@ -18,7 +18,7 @@ Essential Sunburst can be easily configured to the DOM element, such as div. You
 
 {% highlight js %}
 
-$(element).ejSunburst();
+$(element).ejSunburstChart();
 
 {% endhighlight %}
 
@@ -30,7 +30,7 @@ $(element).ejSunburst();
  
 <script>
 // Create Sunburst
-$('#container').ejSunburst();      
+$('#container').ejSunburstChart();      
 </script>
 
 {% endhighlight %}
@@ -62,7 +62,7 @@ Background color of the plot area.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
     background : "gray" 
                           
@@ -86,7 +86,7 @@ Bind the data field from the data source.
 
 {% highlight js %}
 
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
     valueMemberPath : "Population" 
                           
@@ -114,7 +114,7 @@ Border color of the sunburst.
 
 {% highlight js %}
                              
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    border: { color: "green" }                      
 
@@ -136,7 +136,7 @@ Width of the Sunburst border.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    border: { width: 3 }                      
 
@@ -162,7 +162,7 @@ Segment Border color of the sunburst.
 
 {% highlight js %}
                              
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    segmentBorder: { color: "green" }                      
 
@@ -184,7 +184,7 @@ Width of the Sunburst segment border.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    segmentBorder: { width: 3 }                      
 
@@ -207,7 +207,7 @@ Specifies the dataSource to the sunburst.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
     
     dataSource: data
                        
@@ -230,7 +230,7 @@ Palette color for the data points.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
     palette : "ColorFieldName"                  
 });
 {% endhighlight %}
@@ -248,7 +248,7 @@ Parent node of the data points.
 
 {% highlight js %}
 
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
     
     parentNode: "ParentNode"
                        
@@ -270,7 +270,7 @@ Name of the property in the datasource that contains x values.
 
 {% highlight js %}
 
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
     
     xName: "XValue"
                        
@@ -293,7 +293,7 @@ Name of the property in the datasource that contains y values.
 
 {% highlight js %}
 
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
     
     yName: "YValue"
                        
@@ -316,7 +316,7 @@ Controls wheather sunburst has to be responsive or not.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    isResponsive : true             
 
@@ -345,7 +345,7 @@ Height of the Sunburst.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    size :{height : '80'}          
 
@@ -369,7 +369,7 @@ Width of the Sunburst.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    size :{width : '80'}          
 
@@ -393,7 +393,7 @@ Controls the visibility of sunburst.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    visible : true             
 
@@ -415,7 +415,7 @@ Options to customize the Sunburst tooltip.
 ### tooltip.visible `boolean`
 {:#members:tooltip-visible}
 
-Tooltip visibility of the Sunburst.
+tooltip visibility of the Sunburst.
 
 #### Default Value
 
@@ -425,7 +425,7 @@ Tooltip visibility of the Sunburst.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    tooltip :{visible : false}          
 
@@ -452,7 +452,7 @@ Border color of the tooltip.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
     tooltip:{
         border:{color : "green"}
     }                  
@@ -475,7 +475,7 @@ Border width of the tooltip.
 
 {% highlight js %}
 
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
     tooltip :{border :{width : 2}}                  
 });
 
@@ -496,7 +496,7 @@ Fill color for the sunburst tooltip.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
     tooltip:{fill : "green"}                  
 });
 
@@ -521,7 +521,7 @@ Font color of the text in the tooltip.
 
 {% highlight js %}
   
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 tooltip :{font :{color : "green"}}                 
 });
 {% endhighlight %}
@@ -539,7 +539,7 @@ Font Family for the tooltip.
 
 {% highlight js %} 
 
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 tooltip :{ font : { fontFamily : "Algerian"}}                 
 });
  {% endhighlight %}
@@ -586,7 +586,7 @@ Italic</td>
 {% highlight js %}
  
 
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 tooltip : {font :{fontStyle : "italic"}}                 
 });
 {% endhighlight %}
@@ -648,7 +648,7 @@ Lighter</td>
 {% highlight js %}
  
 
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 tooltip :{font :{fontWeight : "lighter"}}                 
 });
 {% endhighlight %}
@@ -680,7 +680,7 @@ Opacity for text in the tooltip.
 {% highlight js %}
  
 
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 tooltip :{font :{opacity : 0.5}}                 
 });
 {% endhighlight %}
@@ -711,7 +711,7 @@ Font size for text in the tooltip.
 {% highlight js %}
  
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 tooltip :{font :{size : "14px"}}                 
 });
 {% endhighlight %}
@@ -730,7 +730,7 @@ Custom template to the tooltip.
 
 {% highlight js %}
 
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
     tooltip :{template : "item"}                  
 });
 
@@ -757,7 +757,7 @@ Points x value of the sunburst.
 
 {% highlight js %}
                              
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    points: { x: "XValue" }                      
 
@@ -779,7 +779,7 @@ Points y value of the sunburst.
 
 {% highlight js %}
                              
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    points: { y: 100 }                      
 
@@ -800,7 +800,7 @@ Points text of the sunburst.
 
 {% highlight js %}
                              
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    points: { text: "Other" }                      
 
@@ -821,7 +821,7 @@ Points fill color of the sunburst.
 
 {% highlight js %}
                              
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    points: { fill: "red" }                      
 
@@ -843,7 +843,7 @@ Sunburst rendering will start from the specified value
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
     startAngle : 90             
 
@@ -864,7 +864,7 @@ Sunburst rendering will end at the specified value
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
     endAngle : 360             
 
@@ -872,8 +872,8 @@ $("#container").ejSunburst({
 
 {% endhighlight %}
 
-### sunburstCoefficient `number`
-{:#members:sunburstCoefficient}
+### radius `number`
+{:#members:radius}
 
 Sunburst outer radius value
 
@@ -885,16 +885,16 @@ Sunburst outer radius value
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
-    sunburstCoefficient : 0.8             
+    radius : 0.8             
 
 });
 
 {% endhighlight %}
 
-### sunburstHoleCoefficient `number`
-{:#members:sunburstHoleCoefficient}
+### innerRadius `number`
+{:#members:innerradius}
 
 Sunburst inner radius value
 
@@ -906,9 +906,9 @@ Sunburst inner radius value
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
-    sunburstHoleCoefficient : 0.2            
+    innerRadius : 0.2            
 
 });
 
@@ -916,15 +916,15 @@ $("#container").ejSunburst({
 
 
 
-### dataLabel `object`
-{:#members:dataLabel}
+### dataLabelSettings `object`
+{:#members:datalabelsettings}
 
 Options to customize the Sunburst dataLabel.
 
 
 
-### dataLabel.visible `boolean`
-{:#members:dataLabel-visible}
+### dataLabelSettings.visible `boolean`
+{:#members:datalabelsettings-visible}
 
 Datalabel visibility of the Sunburst.
 
@@ -936,19 +936,19 @@ Datalabel visibility of the Sunburst.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
-   dataLabel :{visible : true}          
+   dataLabelSettings :{visible : true}          
 
 });
 
 {% endhighlight %}
 
 
-### dataLabel.labelRotationMode `enum`
-{:#members:dataLabel-labelRotationMode}
+### dataLabelSettings.labelRotationMode `enum`
+{:#members:datalabelsettings-labelRotationMode}
 
-<ts name = "ej.datavisualization.Sunburst.dataLabelAlignment"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstLabelRotationMode"/>
 
 Alginment of sunburst datalabel
 
@@ -986,24 +986,24 @@ Normal</td>
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
-   dataLabel :{labelRotationMode : "normal"}                    
+   dataLabelSettings :{labelRotationMode : "normal"}                    
 
 });
 
 {% endhighlight %}
 
 
-### dataLabel.font `object`
-{:#members:datalabel-font}
+### dataLabelSettings.font `object`
+{:#members:datalabelsettings-font}
 
 
 Options for customizing the data label font.
 
 
-### dataLabel.font.fontFamily `string`
-{:#members:datalabel-font-fontfamily}
+### dataLabelSettings.font.fontFamily `string`
+{:#members:datalabelsettings-font-fontfamily}
 
 
 Font family of the data label. 
@@ -1020,16 +1020,16 @@ Font family of the data label.
 {% highlight js %}
  
  
-$("#container").ejSunburst({
-    dataLabel :{ font :{fontFamily : "algerian"}}                 
+$("#container").ejSunburstChart({
+    dataLabelSettings :{ font :{fontFamily : "algerian"}}                 
 });
 {% endhighlight %}
 
 
 
 
-### dataLabel.font.fontStyle `enum`
-{:#members:datalabel-font-fontstyle}
+### dataLabelSettings.font.fontStyle `enum`
+{:#members:datalabelsettings-font-fontstyle}
 
 <ts ref="ej.datavisualization.Sunburst.FontStyle"/>
 
@@ -1049,15 +1049,15 @@ Font style of the data label.
 {% highlight js %}
  
  
-$("#container").ejSunburst({
-    dataLabel :{font :{ fontStyle : "italic" }}                 
+$("#container").ejSunburstChart({
+    dataLabelSettings :{font :{ fontStyle : "italic" }}                 
 });
  {% endhighlight %}
 
 
 
-### dataLabel.font.fontWeight `enum`
-{:#members:datalabel-font-fontweight}
+### dataLabelSettings.font.fontWeight `enum`
+{:#members:datalabelsettings-font-fontweight}
 
 
 <ts ref="ej.datavisualization.Sunburst.FontWeight"/>
@@ -1078,15 +1078,15 @@ Font weight of the data label.
 {% highlight js %}
  
  
-$("#container").ejSunburst({
-    dataLabel :{font : { fontWeight : "lighter" }}                 
+$("#container").ejSunburstChart({
+    dataLabelSettings :{font : { fontWeight : "lighter" }}                 
 });
 {% endhighlight %}
 
 
 
-### dataLabel.font.opacity `number`
-{:#members:datalabel-font-opacity}
+### dataLabelSettings.font.opacity `number`
+{:#members:datalabelsettings-font-opacity}
 
 
 Opacity of the text. 
@@ -1104,13 +1104,13 @@ Opacity of the text.
 {% highlight js %}
  
  
-$("#container").ejSunburst({
-    dataLabel :{font :{ opacity : 0.5 }}               
+$("#container").ejSunburstChart({
+    dataLabelSettings :{font :{ opacity : 0.5 }}               
 });
 {% endhighlight %}
 
-### dataLabel.font.color `string`
-{:#members:datalabel-font-color}
+### dataLabelSettings.font.color `string`
+{:#members:datalabelsettings-font-color}
 
 Font color of the data label text. 
 
@@ -1123,14 +1123,14 @@ Font color of the data label text.
 {% highlight js %}
 
  
-$("#container").ejSunburst({
-    dataLabel :{font :{ color : "red" }}                 
+$("#container").ejSunburstChart({
+    dataLabelSettings :{font :{ color : "red" }}                 
 });
 {% endhighlight %}
 
 
-### dataLabel.font.size `string`
-{:#members:datalabel-font-size}
+### dataLabelSettings.font.size `string`
+{:#members:datalabelsettings-font-size}
 
 
 Font size of the data label. 
@@ -1148,15 +1148,15 @@ Font size of the data label.
 {% highlight js %}
  
 
-$("#container").ejSunburst({
-    dataLabel :{font : { size : "14px" }}               
+$("#container").ejSunburstChart({
+    dataLabelSettings :{font : { size : "14px" }}               
 });
 {% endhighlight %}
 
 
 
-### dataLabel.template `string`
-{:#members:datalabel-template}
+### dataLabelSettings.template `string`
+{:#members:datalabelsettings-template}
 
 Custome template for datalabel 
 
@@ -1173,14 +1173,14 @@ Custome template for datalabel
 {% highlight js %}
  
 
-$("#container").ejSunburst({
-    dataLabel :{ template: "item" }               
+$("#container").ejSunburstChart({
+    dataLabelSettings :{ template: "item" }               
 });
 {% endhighlight %}
 
 
-### dataLabel.fill `string`
-{:#members:datalabel-fill}
+### dataLabelSettings.fill `string`
+{:#members:datalabelsettings-fill}
 
 Fill color for the datalable
 
@@ -1197,17 +1197,17 @@ Fill color for the datalable
 {% highlight js %}
  
 
-$("#container").ejSunburst({
-    dataLabel :{ fill: "yellow" }               
+$("#container").ejSunburstChart({
+    dataLabelSettings :{ fill: "yellow" }               
 });
 {% endhighlight %}
 
 
 
-### dataLabel.labelOverflowMode `enum`
-{:#members:dataLabel-labelOverflowMode}
+### dataLabelSettings.labelOverflowMode `enum`
+{:#members:datalabelsettings-labelOverflowMode}
 
-<ts name = "ej.datavisualization.Sunburst.LabelOverflowMode"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstLabelOverflowMode"/>
 
 Datalabel overflow mode
 
@@ -1251,9 +1251,9 @@ None</td>
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
-   dataLabel :{labelOverflowMode : "hide"}                    
+   dataLabelSettings :{labelOverflowMode : "hide"}                    
 
 });
 
@@ -1284,7 +1284,7 @@ Title text for sunburst
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    title : { text: "Sunburst Chart" }                     
 
@@ -1312,7 +1312,7 @@ Title text visibility for sunburst
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    title : { visible: false }                     
 
@@ -1325,7 +1325,7 @@ $("#container").ejSunburst({
 ### title.textAlignment `enum`
 {:#members:title-textAlignment}
 
-<ts name = "ej.datavisualization.Sunburst.TextAlignment"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstAlignment"/>
 
 Title text alignment
 
@@ -1368,7 +1368,7 @@ Far</td>
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    title :{textAlignment : "near"}                    
 
@@ -1404,7 +1404,7 @@ Font family for Sunburst title.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    title : { font : { fontFamily : "Algerian" } }                     
 
@@ -1433,7 +1433,7 @@ Font style for Sunburst title.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    title : { font : { fontStyle : "italic" } }                     
 
@@ -1462,7 +1462,7 @@ Font weight for Sunburst title.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    title : { font : { fontWeight : "lighter" } }                     
 
@@ -1489,7 +1489,7 @@ Opacity of the Sunburst title.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    title : { font : { opacity : 0.8 } }                     
 
@@ -1518,7 +1518,7 @@ Font size for Sunburst title.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    title : { font : { size : "22px" } }                     
 
@@ -1552,7 +1552,7 @@ Subtitle text for sunburst
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    title : { subtitle :{text: "Sunburst Subtitle" }}                 
 
@@ -1567,7 +1567,7 @@ $("#container").ejSunburst({
 {:#members:title-subtitle-visible}
 
 
-SubTitle text visibility for sunburst
+Sub title text visibility for sunburst
 
 
 #### Default Value
@@ -1580,7 +1580,7 @@ SubTitle text visibility for sunburst
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    title : {subtitle:{visible: false }}                     
 
@@ -1593,9 +1593,9 @@ $("#container").ejSunburst({
 ### title.subtitle.textAlignment `enum`
 {:#members:title-subtitle-textAlignment}
 
-<ts ref="ej.datavisualization.Sunburst.TextAlignment"/>
+<ts ref="ej.datavisualization.Sunburst.SunburstAlignment"/>
 
-SubTitle text alignment
+Sub title text alignment
 
 #### Default Value
 
@@ -1606,7 +1606,7 @@ SubTitle text alignment
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    title :{subtitle : {textAlignment : "near"}}                    
 
@@ -1639,7 +1639,7 @@ Font family of sub title.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    title: {subtitle : {font :{ fontFamily : "Algerian" } } }                      
 
@@ -1669,7 +1669,7 @@ Font style for sub title.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    title: { subtitle : {font :{ fontStyle : "Normal" } } }                     
 
@@ -1699,7 +1699,7 @@ Font weight for sub title.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    title: { subtitle : {font :{ fontWeight : "regular" } } }                     
 
@@ -1728,7 +1728,7 @@ Opacity of the sub title.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    title: { subtitle : {font :{ opacity : 0.5 } } }                     
 
@@ -1757,7 +1757,7 @@ Font size for sub title.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    title: { subtitle : {font :{ size : "14px" } } }                     
 
@@ -1791,7 +1791,7 @@ Enables/disables the ability to highlight the levels or point interactively.
 {% highlight js %}
  
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
     highlightSettings:{enable:true}                 
 });
 {% endhighlight %}
@@ -1802,7 +1802,7 @@ $("#container").ejSunburst({
 {:#members:highlightSettings-mode}
 
 
-<ts name = "ej.datavisualization.Sunburst.Mode"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstHighlightMode"/>
 
 
 Specifies whether the levels or point has to be highlighted.
@@ -1857,7 +1857,7 @@ All</td>
 {% highlight js %}
  
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
     highlightSettings:{mode:"point"}                  
 });
 {% endhighlight %}
@@ -1883,7 +1883,7 @@ Color of the levels/point on highlight.
 {% highlight js %}
  
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
     highlightSettings:{color:"red"}               
 });
 {% endhighlight %}
@@ -1909,7 +1909,7 @@ Opacity of the levels/point on highlight.
 {% highlight js %}
  
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
     highlightSettings:{opacity:1}            
 });
 {% endhighlight %}
@@ -1919,7 +1919,7 @@ $("#container").ejSunburst({
 {:#members:highlightSettings-type}
 
 
-<ts name = "ej.datavisualization.Sunburst.Type"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstHighlightType"/>
 
 
 Specifies whether the levels or data point has to be highlighted.
@@ -1962,7 +1962,7 @@ Color</td>
 {% highlight js %}
  
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
     highlightSettings:{type:"color"}                  
 });
 {% endhighlight %}
@@ -1994,7 +1994,7 @@ Enables/disables the ability to select the levels or data point interactively.
 {% highlight js %}
  
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
     selectionSettings:{enable:true}                 
 });
 {% endhighlight %}
@@ -2005,7 +2005,7 @@ $("#container").ejSunburst({
 {:#members:selectionSettings-mode}
 
 
-<ts ref = "ej.datavisualization.Sunburst.Mode"/>
+<ts ref = "ej.datavisualization.Sunburst.SunburstSelctionMode"/>
 
 
 Specifies whether the levels or data point has to be selected.
@@ -2024,7 +2024,7 @@ Specifies whether the levels or data point has to be selected.
 {% highlight js %}
  
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
     selectionSettings:{mode:"point"}                  
 });
 {% endhighlight %}
@@ -2050,7 +2050,7 @@ Color of the levels/point on selection.
 {% highlight js %}
  
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
     selectionSettings:{color:"red"}               
 });
 {% endhighlight %}
@@ -2076,7 +2076,7 @@ Opacity of the levels/point on selection.
 {% highlight js %}
  
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
     selectionSettings:{opacity:1}            
 });
 {% endhighlight %}
@@ -2086,7 +2086,7 @@ $("#container").ejSunburst({
 {:#members:selectionSettings-type}
 
 
-<ts ref = "ej.datavisualization.Sunburst.Type"/>
+<ts ref = "ej.datavisualization.Sunburst.Sunburst.SelectionType"/>
 
 
 Specifies whether the levels or data point has to be selected.
@@ -2106,7 +2106,7 @@ Specifies whether the levels or data point has to be selected.
 {% highlight js %}
  
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
     selectionSettings:{type:"color"}                  
 });
 {% endhighlight %}
@@ -2133,9 +2133,9 @@ Specifies the group member path
 
 #### Example
 
-{% highlight js %}
+% highlight js %}
 
-  $("#container").ejSunburst({   
+  $("#container").ejSunburstChart({   
       levels: [{ groupMemberPath: "Continent" }]
   });
 
@@ -2165,7 +2165,7 @@ Visibility of the legend.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend : {visible:true}}                     
 
@@ -2173,10 +2173,10 @@ $("#container").ejSunburst({
 
 {% endhighlight %}
 
-### legend.mouseInteractiveAction `enum`
-{:#members:legend-mouseinteractiveaction}
+### legend.clickAction `enum`
+{:#members:legend-clickaction}
 
-<ts name = "ej.datavisualization.Sunburst.LegendAction"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstClickAction"/>
 
 
 Interactive action of legend items.
@@ -2222,9 +2222,9 @@ ToggleSegmentSelection</td>
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
-   legend :{mouseInteractiveAction : "toggleSegmentSelection"}                    
+   legend :{clickAction : "toggleSegmentSelection"}                    
 
 });
 
@@ -2235,7 +2235,7 @@ $("#container").ejSunburst({
 ### legend.alignment `enum`
 {:#members:legend-alignment}
 
-<ts name = "ej.datavisualization.Sunburst.Alignment"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstAlignment"/>
 
 
 Horizontal alignment of the legend.
@@ -2281,7 +2281,7 @@ Far</td>
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend :{alignment : "far"}                    
 
@@ -2318,7 +2318,7 @@ Border color of the legend.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend : {border :{ color :"green"}}                     
 
@@ -2345,7 +2345,7 @@ Border width of the legend.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend :{ border :{width :2}}                     
 
@@ -2371,7 +2371,7 @@ Number of columns to arrange the legend items.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend :{ columnCount : 2}                    
 
@@ -2399,7 +2399,7 @@ Number of rows to arrange the legend items.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend :{ rowCount : 2}                    
 
@@ -2440,7 +2440,7 @@ Font family for legend item text.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend :{ font :{fontFamily : "algerian"}}                    
 
@@ -2469,7 +2469,7 @@ Font style for legend item text.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend :{ font :{fontStyle : "italic"}}                    
 
@@ -2499,7 +2499,7 @@ Font weight for legend item text.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend :{ font :{fontWeight : "lighter"}}                    
 
@@ -2528,7 +2528,7 @@ Font size for legend item text.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend :{ font :{size : "14px"}}                    
 
@@ -2557,7 +2557,7 @@ Gap or padding between the legend items.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend :{itemPadding : 5}                     
 
@@ -2596,7 +2596,7 @@ Height of the shape in legend items.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend :{ itemStyle :{height : 20}}                    
 
@@ -2625,7 +2625,7 @@ Width of the shape in legend items.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend :{ itemStyle :{width : 15}}                    
 
@@ -2663,7 +2663,7 @@ X value or horizontal offset to position the legend in chart.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend :{location :{x :20}}                    
 
@@ -2692,7 +2692,7 @@ Y value or vertical offset to position the legend.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend :{location : {y : 100}}                  
 
@@ -2704,7 +2704,7 @@ $("#container").ejSunburst({
 ### legend.position `enum`
 {:#members:legend-position}
 
-<ts name = "ej.datavisualization.Sunburst.Position"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstLegendPosition"/>
 
 Places the legend at specified position. Legend can be placed at **left**, **right**, **top** or **bottom** of the chart area. 
 To manually specify the location of legend, set **custom** as value to this property.
@@ -2757,7 +2757,7 @@ Bottom</td>
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend :{ position : "top"}                    
 
@@ -2774,7 +2774,7 @@ $("#container").ejSunburst({
 ### legend.shape `enum`
 {:#members:legend-shape}
 
-<ts name = "ej.datavisualization.Sunburst.Shape"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstLegendShape"/>
 
 
 
@@ -2839,7 +2839,7 @@ Triangle</td>
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend :{ shape : "circle" }                      
 
@@ -2886,7 +2886,7 @@ Height of the legend. Height can be specified in either pixel or percentage.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend :{ size :{height : "20%"}}                    
 
@@ -2918,7 +2918,7 @@ Width of the legend. Width can be specified in either pixel or percentage.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend :{ size :{width : "20%"}}                    
 
@@ -2972,7 +2972,7 @@ Font family for the text in legend title.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend: { title: { font :{fontFamily: "Algerian" } } }                      
 
@@ -3004,7 +3004,7 @@ Font style for legend title.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend: { title: { font :{fontStyle: "normal" } } }                      
 
@@ -3036,7 +3036,7 @@ Font weight for legend title.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend: { title: { font :{fontWeight: "normal" } } }                      
 
@@ -3068,7 +3068,7 @@ Font size for legend title.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend: { title: { font :{size: "14px" } } }                      
 
@@ -3096,7 +3096,7 @@ Enables or disables the legend title.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend: { title: { visible: false } }                      
 
@@ -3124,7 +3124,7 @@ Text to be displayed in legend title.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend: { title: { text : "Countries" } }                      
 
@@ -3141,7 +3141,7 @@ $("#container").ejSunburst({
 ### legend.title.textAlignment `enum`
 {:#members:legend-title-textalignment}
 
-<ts name = "ej.datavisualization.Sunburst.Alignment"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstAlignment"/>
 
 Alignment of the legend title.
 
@@ -3190,7 +3190,7 @@ Far</td>
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    legend: { title: { textAlignment : "near" } }                      
 
@@ -3205,7 +3205,7 @@ $("#container").ejSunburst({
 ### theme `enum`
 {:#members:theme}
 
-<ts name = "ej.datavisualization.Sunburst.Theme"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstTheme"/>
 
 Specifies the theme for Sunburst.
 
@@ -3245,7 +3245,7 @@ FlatDark</td>
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    theme : "flatdark"            
 
@@ -3286,7 +3286,7 @@ Spacing for the left margin of chart area. Setting positive value decreases the 
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    margin : { left: 15 }             
 
@@ -3318,7 +3318,7 @@ Spacing for the right margin of chart area. Setting positive value decreases the
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    margin : { right: 10 }             
 
@@ -3346,7 +3346,7 @@ Spacing for the top margin of chart area. Setting positive value decreases the h
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    margin : { top: 10 }             
 
@@ -3372,7 +3372,7 @@ Spacing for the bottom margin of the chart area. Setting positive value decrease
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    margin : { bottom: 10 }             
 
@@ -3401,7 +3401,7 @@ Enable/disable the animation for all the levels.
 {% highlight js %}
  
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
     enableAnimation : true                  
 });
  {% endhighlight %}
@@ -3429,22 +3429,22 @@ Opacity of the levels.
 {% highlight js %}
  
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
     opacity : 0.5              
 });
  {% endhighlight %}
 
 
-### zooming `object`
-{:#members:zooming}
+### zoomSettings `object`
+{:#members:zoomsettings}
 
 
-Options for enabling zooming feature of chart.
+Options for enable zooming feature of chart.
 
 
 
-### zooming.enable `boolean`
-{:#members:zooming}
+### zoomSettings.enable `boolean`
+{:#members:zoomsettings}
 
 
 Enables or disables zooming.
@@ -3462,18 +3462,18 @@ Enables or disables zooming.
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
-   zooming :{enable :true}          
+   zoomSettings :{enable :true}          
 
 });
 
 {% endhighlight %}
 
-### zooming.toolbarHorizontalAlignment `enum`
-{:#members:zooming-toolbarhorizontalalignment}
+### zoomSettings.toolbarHorizontalAlignment `enum`
+{:#members:zoomsettings-toolbarhorizontalalignment}
 
-<ts name = "ej.datavisualization.Sunburst.HorizontalAlignment"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstHorizontalAlignment"/>
 
 Toolbar horizontal alignment
 
@@ -3522,18 +3522,18 @@ Right</td>
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
-   zooming: { toolbarHorizontalAlignment: "center" }                      
+   zoomSettings: { toolbarHorizontalAlignment: "center" }                      
 
 });
 
 {% endhighlight %}
 
-### zooming.toolbarVerticalAlignment `enum`
-{:#members:zooming-toolbarverticalalignment}
+### zoomSettings.toolbarVerticalAlignment `enum`
+{:#members:zoomsettings-toolbarverticalalignment}
 
-<ts name = "ej.datavisualization.Sunburst.VerticalAlignment"/>
+<ts name = "ej.datavisualization.Sunburst.SunburstVerticalAlignment"/>
 
 Toolbar vertical alignment
 
@@ -3582,9 +3582,9 @@ Middle</td>
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
-   zooming: { toolbarVerticalAlignment: "middle" }                      
+   zoomSettings: { toolbarVerticalAlignment: "middle" }                      
 
 });
 
@@ -3637,7 +3637,7 @@ FadeIn</td>
 
 {% highlight js %}
  
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
    animationType:"fadeIn"                     
 
@@ -3646,8 +3646,61 @@ $("#container").ejSunburst({
 {% endhighlight %}
 
 
+## Methods
 
 
+### redraw()
+{:#methods:redraw}
+
+Redraws the entire sunburst. You can call this method whenever you update, add or remove points from the data source or whenever you want to refresh the UI.
+
+
+#### Returns: void
+
+
+#### Example
+
+{% highlight js %}
+// Redraw Sunburst
+var sunburstObj = $("#container").data("ejSunburstChart");
+sunburstObj.redraw();
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+$("#container").ejSparkline("redraw");      
+{% endhighlight %}
+
+
+### _destroy ()
+{:#methods:_destroy}
+
+
+destroy the sunburst
+
+
+#### Returns: void
+
+
+#### Example
+
+
+{% highlight html %}
+// Destroy sunburst
+var sunburstObj = $("#container").data("ejSunburstChart");
+sunburstObj.destroy(); 
+{% endhighlight %}
+
+
+{% highlight html %}
+
+$("#container").ejSunburstChart("destroy");    
+{% endhighlight %}
+
+
+
+## Events
 
 ### load
 {:#events:load}
@@ -3662,7 +3715,7 @@ Fires before loading.
  
 //load event for sunburst
 
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
     load: function (args) {
              //Do something
@@ -3727,7 +3780,7 @@ Fires before rendering sunburst.
  
 //preRender event for sunburst
 
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
     preRender: function (args) {
               //Do something
@@ -3790,7 +3843,7 @@ Fires after rendering sunburst.
  
 //loaded event for sunburst
 
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
     loaded: function (args) {
               //Do something
@@ -3853,9 +3906,70 @@ Fires before rendering the datalabel
  
 //datalabelrendering event for sunburst
 
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
     dataLabelRendering: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Sunburst datalabel data</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Instance of the sunburst model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+</tbody>
+</table>
+
+
+### segmentRendering
+{:#events:segmentrendering}
+
+
+Fires before rendering each segment
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//segmentrendering event for sunburst
+
+$("#container").ejSunburstChart({
+
+    segmentRendering: function (args) {
               //Do something
     }
    
@@ -3916,7 +4030,7 @@ Fires before rendering sunburst title.
  
 //titlerendering event for sunburst
 
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
     titleRendering: function (args) {
               //Do something
@@ -3962,7 +4076,7 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-### toolTipInitialize
+### tooltipInitialize
 {:#events:tooltipinitialize}
 
 
@@ -3978,9 +4092,9 @@ Fires during initialization of tooltip.
  
 //tooltipinitialize event for sunburst
 
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
-    toolTipInitialize: function (args) {
+    tooltipInitialize: function (args) {
               //Do something
     }
    
@@ -4040,7 +4154,7 @@ Fires after clicking the point in sunburst
  
 //pointregionclick event for sunburst
 
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
     pointRegionClick: function (args) {
               //Do something
@@ -4101,7 +4215,7 @@ Fires while moving the mouse over sunburst points
  
 //pointregionmousemove event for sunburst
 
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
     pointRegionMouseMove: function (args) {
               //Do something
@@ -4163,7 +4277,7 @@ Fires when clicking the point to perform drilldown.
  
 //drilldownclick event for sunburst
 
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
     drillDownClick: function (args) {
               //Do something
@@ -4225,7 +4339,7 @@ Fires when resetting drilldown points.
  
 //drilldownback event for sunburst
 
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
     drillDownBack: function (args) {
               //Do something
@@ -4288,7 +4402,7 @@ Fires after resetting the sunburst points
  
 //drilldownreset event for sunburst
 
-$("#container").ejSunburst({
+$("#container").ejSunburstChart({
 
     drillDownReset: function (args) {
               //Do something
