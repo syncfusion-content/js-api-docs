@@ -1175,6 +1175,50 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
+### columns.filterType `enum`
+{:#members:columns-filtertype}
+
+<ts name="ej.Grid.FilterType"/>
+
+This specifies the grid to show the filterExcel or filterMenu to the grid columns. See <a href="global.html#filterType">filterType</a>
+
+#### Default Value:
+{:.param}
+* null
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Menu</td>
+<td class="description">Specifies the filter type as menu.</td>
+</tr>
+<tr>
+<td class="name">Excel</td>
+<td class="description">Specifies the filter type as excel.</td>
+</tr>
+</table>
+
+#### Example
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowFiltering: true,
+   filterSettings: { filterType: "menu"}, 
+   columns: [
+          { field: "OrderID", filterType: ej.Grid.FilterType.Excel },
+          { field: "CustomerID", filterType: ej.Grid.FilterType.Excel },
+          { field: "Freight", format: "{0:C}" },
+          { field: "OrderDate", format: "{0:MM/dd/yyyy}"}
+   ]                     
+});
+</script>
+{% endhighlight %}
+
 ### columns.foreignKeyField `String`
 {:#members:columns-foreignkeyfield}
 
@@ -1330,6 +1374,27 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
+### columns.headerTooltip `String`
+{:#members:columns-headertooltip}
+
+It accepts the string value and shows the tooltip for the Grid column header.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({             
+  dataSource:window.gridData,
+  columns:[{field:"OrderID",headerTooltip:"GridOrderID"},{field:"CustomerID"},{field:"ShipCity"}]
+});
+</script> 
+{% endhighlight %}
+
 ### columns.isFrozen `Boolean`
 {:#members:columns-isfrozen}
 
@@ -1403,7 +1468,7 @@ Gets or sets a value that indicates the order of Column that are to be hidden or
 
 #### Default Value:
 {:.param}
-* null
+* -1
 
 #### Example
 {:.example}
@@ -2476,6 +2541,29 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
+### enableToolbarItems `Boolean`
+{:#members:enabletoolbaritems}
+
+It sets a value that indicates whether to enable toolbar items, when allowEditing, allowAdding and allowDeleting property set as false in the grid.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %} 
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+    dataSource:window.gridData,
+    enableToolbarItems:true,
+    editSettings: { allowEditing: false, allowAdding: false, allowDeleting: false },
+    toolbarSettings: { showToolbar: true, toolbarItems: [ej.Grid.ToolBarItems.Add, ej.Grid.ToolBarItems.Edit, ej.Grid.ToolBarItems.Delete, ej.Grid.ToolBarItems.Update, ej.Grid.ToolBarItems.Cancel] },
+});
+</script> 
+{% endhighlight %}
+
 ### exportToExcelAction `string`
 {:#members:exporttoexcelaction}
 
@@ -2569,6 +2657,28 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
+### filterSettings.enableInterDeterminateState `Boolean`
+{:#members:filtersettings-enableinterdeterminatestate}
+
+Gets or sets a value that indicates to define the interDeterminateState of the excel filter in grid.
+
+#### Default Value:
+{:.param}
+* true
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+    dataSource:window.gridData,
+    allowFiltering: true, 
+    filterSettings: { filterType: "excel, "enableInterDeterminateState:false}                       
+});
+</script>
+{% endhighlight %}
+
 ### filterSettings.filterBarMode `enum`
 {:#members:filtersettings-filterbarmode}
 
@@ -2621,6 +2731,11 @@ Gets or sets a value that indicates whether to define the filtered columns detai
 {:#members:filtersettings-filteredcolumns-field}
 
 Gets or sets a value that indicates whether to define the field name of the column to be filter.
+
+### filterSettings.filteredColumns.matchCase `Boolean`
+{:#members:filtersettings-filteredcolumns-matchcase}
+
+Gets or sets a value that indicates whether to define the matchCase of given value to be filter.
 
 ### filterSettings.filteredColumns.operator `enum`
 {:#members:filtersettings-filteredcolumns-operator}
@@ -2694,7 +2809,7 @@ Gets or sets a value that indicates whether to define the value to be filtered i
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowFiltering: true, 
-   filterSettings: {  filterType: "menu", filteredColumns: [{ field: "ShipCity", operator: "startswith", value: "re", predicate: "and" }] }                     
+   filterSettings: {  filterType: "menu", filteredColumns: [{ field: "ShipCity", operator: "startswith", value: "re", predicate: "and", matchCase: true }] }                     
 });
 </script>
 {% endhighlight %}
@@ -2741,6 +2856,28 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
+### filterSettings.immediateModeDelay `Number`
+{:#members:filtersettings-immediatemodedelay}
+
+This specifies the grid to delay the filter action while typing in the filterBar.
+
+#### Default Value:
+{:.param}
+* 1500
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+    dataSource:window.gridData,
+    allowFiltering: true, 
+    filterSettings: { filterBarMode: ej.Grid.FilterBarMode.Immediate, immediateModeDelay:2000 }                       
+});
+</script>
+{% endhighlight %}
+
 ### filterSettings.maxFilterChoices `Number`
 {:#members:filtersettings-maxfilterchoices}
 
@@ -2763,8 +2900,8 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### filterSettings.showFilterBarMessage `Boolean`
-{:#members:filtersettings-showfilterbarmessage}
+### filterSettings.showFilterBarStatus `Boolean`
+{:#members:filtersettings-showfilterbarstatus}
 
 This specifies the grid to show the filter text within the grid pager itself.
 
@@ -3667,6 +3804,44 @@ $("#Grid").ejGrid({
 
 This property is used to configure the selection behavior of the grid.
 
+### selectionSettings.cellSelectionMode `String`
+{:#members:selectionsettings-cellselectionmode}
+
+Gets or sets a value that indicates the cell selection actions based on the cell selection mode.
+
+#### Default Value:
+{:.param}
+* flow
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">flow</td>
+<td class="description">It selects the cell in a continous from the start cell to end cell.</td>
+</tr>
+<tr>
+<td class="name">box</td>
+<td class="description">It selects the cell as a box from start cell column to the end cell column.</td>
+</tr> 
+</table>
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+    dataSource:  window.gridData,
+    allowSelection: true,
+    selectionType: ej.Grid.SelectionType.Multiple,     
+    selectionSettings: {selectionMode: ["cell"], cellSelectionMode: "box" }
+});
+</script>
+{% endhighlight %}
+
 ### selectionSettings.enableToggle `Boolean`
 {:#members:selectionsettings-enabletoggle}
 
@@ -3793,6 +3968,50 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
+### scrollSettings.autoHide `Boolean`
+{:#members:scrollsettings-autohide}
+ 
+It accepts the boolean value and enables or disables the scrollbar in the Grid.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowScrolling: true,
+   scrollSettings:{ autoHide: true }
+});
+</script> 
+{% endhighlight %}
+
+### scrollSettings.buttonSize `Number`
+{:#members:scrollsettings-buttonsize}
+ 
+Specifies the height and width of button in the scrollbar.
+
+#### Default Value:
+{:.param}
+* 18
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowScrolling: true,
+   scrollSettings:{ buttonSize:20 }
+});
+</script> 
+{% endhighlight %}
+
 ### scrollSettings.enableTouchScroll `Boolean`
 {:#members:scrollsettings-enabletouchscroll}
 
@@ -3877,6 +4096,28 @@ $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowScrolling: true,
    scrollSettings:{ height:100 }
+});
+</script> 
+{% endhighlight %}
+
+### scrollSettings.scrollerSize `Number`
+{:#members:scrollsettings-scrollersize}
+ 
+It accepts the integer value and sets the width and height of scrollbar.
+
+#### Default Value:
+{:.param}
+* 18
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowScrolling: true,
+   scrollSettings:{ scrollerSize: 20 }
 });
 </script> 
 {% endhighlight %}
@@ -4312,6 +4553,40 @@ $("#Grid").ejGrid({
    allowSorting:true,
    showStackedHeader:true,
    stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID", textalign: 
+         ej.TextAlign.Right},{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
+         ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
+           ]}
+          ],
+   columns: [
+      { field: "CustomerID", headerText: "Customer ID", width: 80 },
+      { field: "EmployeeID", headerText: "Employee ID", width: 75, textAlign: ej.TextAlign.Right },
+      { field: "Freight", width: 75, format: "{0:C}", textAlign: ej.TextAlign.Right },
+      { field: "OrderDate", headerText: "Order Date", width: 80, format: "{0:MM/dd/yyyy}", textAlign: ej.TextAlign.Right },
+      { field: "ShipCity", headerText: "Ship City", width: 110 }
+      ]
+});
+</script> 
+{% endhighlight %}
+
+### stackedHeaderRows.stackedHeaderColumns.tooltip `String`
+{:#members:stackedheaderrows-stackedheadercolumns-tooltip}
+
+It accepts the string value and displays the tooltip for stackedHeaderColumns
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}  
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowSorting:true,
+   showStackedHeader:true,
+   stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",tooltip:"stackedHeaderColumn",column:"CustomerID", textalign: 
          ej.TextAlign.Right},{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
          ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
            ]}
@@ -5813,6 +6088,55 @@ gridObj.deleteRecord("OrderID", { OrderID: 10249, EmployeeID: 3 });
 $("#Grid").ejGrid("deleteRecord", "OrderID", { OrderID: 10249, EmployeeID: 3 });        
 </script>{% endhighlight %}
 
+### deleteRow($tr)
+{:#methods:deleterow}
+
+Delete the row based on the given tr element in grid.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">$tr</td>
+<td class="type"><span class="param-type">jQuery</span></td>
+<td class="description last">Pass the tr element in grid content to get its row index</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Returns:
+{:#methods:returns:}
+
+Element
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Sends a delete record request to the grid
+gridObj.deleteRow($(".gridcontent tr").first()); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// Sends a delete record request to the grid
+$("#Grid").ejGrid("deleteRow", $(".gridcontent tr").first());        
+</script>{% endhighlight %}
+
 
 ### destroy()
 {:#methods:destroy}
@@ -5893,6 +6217,37 @@ gridObj.editCell(2, "OrderID");
 <script>
 // Edit particular cell based on row index and column field name
 $("#Grid").ejGrid("editCell", 2, "OrderID");
+</script>{% endhighlight %}
+
+### editFormValidate()
+{:#methods:editformvalidate}
+
+It returns a value that indicates whether the edit form validation is based on the validation rules.
+
+#### Returns:
+{:#methods:returns:}
+
+Boolean
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Sends a form validation request to the grid
+gridObj.editFormValidate(); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// Sends a form validation request to the grid
+$("#Grid").ejGrid("editFormValidate");        
 </script>{% endhighlight %}
 
 
@@ -6583,6 +6938,63 @@ gridObj.getColumnIndexByField("OrderID");
 $("#Grid").ejGrid("getColumnIndexByField", "OrderID");        
 </script>{% endhighlight %}
 
+### getColumnIndexByHeaderText(headerText, field)
+{:#methods:getcolumnindexbyheadertext}
+
+Get the column index of the given headerText of column in grid.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">headerText</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Pass the headerText of the column to get that column index</td>
+</tr>  
+<tr>
+<td class="name">field</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Pass the field of the column to get that column index</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Returns:
+{:#methods:returns:}
+
+number
+
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Gets the column index based on the given headerText
+gridObj.getColumnIndexByHeaderText("Order ID"); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
+// Gets the column index based on the given headerText
+$("#Grid").ejGrid("getColumnIndexByHeaderText","Order ID");        
+</script>{% endhighlight %}
+
 
 ### getContent()
 {:#methods:getcontent}
@@ -6743,6 +7155,37 @@ gridObj.getCurrentViewData();
 <script>
 // Gets current view data of grid control
 $("#Grid").ejGrid("getCurrentViewData");        
+</script>{% endhighlight %}
+
+### getDataByIndex(rowIndex)
+{:#methods:getdatabyindex}
+
+Get the data of given row index in grid.
+
+#### Returns:
+{:#methods:returns:}
+
+Object
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Gets data of corresponding row index in grid control
+gridObj.getDataByIndex(0); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// Gets data of corresponding row index in grid control
+$("#Grid").ejGrid("getDataByIndex",0);        
 </script>{% endhighlight %}
 
 ### getFieldNameByHeaderText(headerText)
@@ -7363,6 +7806,89 @@ gridObj.getSelectedRecords();
 $("#Grid").ejGrid("getSelectedRecords");        
 </script>{% endhighlight %}
 
+### getSelectedRows()
+{:#methods:getselectedrows}
+
+Get the selected row element details in grid.
+
+#### Returns:
+{:#methods:returns:}
+
+Array
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Gets the selected row element list
+gridObj.getSelectedRows();
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// Gets the selected row element list
+$("#Grid").ejGrid("getSelectedRows");        
+</script>{% endhighlight %}
+
+### getsortColumnByField(field)
+{:#methods:getsortcolumnbyfield}
+
+Sort the column of the given field in grid.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">field</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Pass the field of the column to sort the corresponding column in Grid.</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Returns:
+{:#methods:returns:}
+
+number
+
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Sort the column based on the given field.
+gridObj.getsortColumnByField("OrderID"); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
+// Sort the column based on the given field.
+$("#Grid").ejGrid("getsortColumnByField", "OrderID");        
+</script>{% endhighlight %}
+
 ### getSummaryValues(summaryCol, summaryData)
 {:#methods:getsummaryvalues}
 
@@ -7953,6 +8479,59 @@ gridObj.reorderColumns("OrderID", "CustomerID");
 <script>
 // Reorders the column based on the given index
 $("#Grid").ejGrid("reorderColumns", "OrderID", "CustomerID");
+</script>{% endhighlight %}
+
+### reorderRows(indexes, toindex)
+{:#methods:reorderrows}
+
+Re-order the row in grid
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">indexes</td>
+<td class="type"><span class="param-type">Array</span></td>
+<td class="description last">Pass the fromindex of the row needs to be changed</td>
+</tr>
+<tr>
+<td class="name">toindex</td>
+<td class="type"><span class="param-type">Number</span></td>
+<td class="description last">Pass the toindex of the row needs to be changed</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// Reorders the row based on the given index
+gridObj.reorderRows([0],3); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// Reorders the row based on the given index
+$("#Grid").ejGrid("reorderRows", [0], 3);
 </script>{% endhighlight %}
 
 
@@ -8773,6 +9352,39 @@ gridObj.setCellValue(1,"EmployeeID", "GREYER");
 $("#Grid").ejGrid("setCellValue", 1, "EmployeeID", "GREYER");
 </script>{% endhighlight %}
 
+### setDefaultData(defaultData)
+{:#methods:setdefaultdata}
+
+It sets the default data to the column in grid during adding record in batch edit mode.
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+####Example
+{:.example}
+
+
+{% highlight html %} 
+
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+var defaultData = {OrderID:"10000"};
+//Set the default date to the column in grid.
+gridObj.setDefaultData(defaultData);
+</script>{% endhighlight %}
+
+{% highlight html %}
+ 
+<script>
+var defaultData = {OrderID:"10000"};  
+//Set the default date to the column in grid.
+$("#Grid").ejGrid("setDefaultData",defaultData);
+</script>
+{% endhighlight %}
+
 ### setPhoneModeMaxWidth(value)
 {:#methods:setphonemodemaxwidth}
 
@@ -8820,6 +9432,37 @@ gridObj.setPhoneModeMaxWidth(500);
 <script>
 //Used to render grid rows as details view in mobile mode
 $("#Grid").ejGrid("setPhoneModeMaxWidth", 500);
+</script>{% endhighlight %}
+
+### setValidation()
+{:#methods:setvalidation}
+
+Set validation to columns in the grid during editing.
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+####Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// It is used to set validation to columns during editing
+gridObj.setValidation(); 
+</script>{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// It is used to set validation to columns during editing
+$("#Grid").ejGrid("setValidationToField");
 </script>{% endhighlight %}
 
 
@@ -11675,6 +12318,143 @@ $("#Grid").ejGrid({
    beforeBatchSave: function (args) {}
 });
 </script>{% endhighlight %}
+
+### beforePrint
+{:#events:beforePrint}
+
+Triggered before the print.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when beforePrint event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the Grid element.</td>
+</tr>
+<tr>
+<td class="name">selectedRows</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the selected records.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   beforePrint: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+### beforeRowDrop
+{:#events:beforeRowDrop}
+
+Triggered before row drop in the grid
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when beforeRowDrop event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the targeted row.</td>
+</tr>
+<tr>
+<td class="name">targetIndex</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the targeted row index.</td>
+</tr>
+<tr>
+<td class="name">draggedRecords</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the dragged record details</td>
+</tr>
+<tr>
+<td class="name">dropDetails</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the drop details</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   beforeRowDrop: function (args) {}
+});
+</script>
+{% endhighlight %}
 
 
 ### beginEdit
