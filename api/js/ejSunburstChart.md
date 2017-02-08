@@ -2133,7 +2133,7 @@ Specifies the group member path
 
 #### Example
 
-% highlight js %}
+{% highlight js %}
 
   $("#container").ejSunburstChart({   
       levels: [{ groupMemberPath: "Continent" }]
@@ -3686,16 +3686,19 @@ destroy the sunburst
 #### Example
 
 
-{% highlight html %}
+{% highlight js %}
+
 // Destroy sunburst
 var sunburstObj = $("#container").data("ejSunburstChart");
 sunburstObj.destroy(); 
+
 {% endhighlight %}
 
 
-{% highlight html %}
+{% highlight js %}
 
-$("#container").ejSunburstChart("destroy");    
+$("#container").ejSunburstChart("destroy"); 
+   
 {% endhighlight %}
 
 
