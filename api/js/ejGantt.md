@@ -2819,6 +2819,61 @@ Specified the format for year view in schedule header
 {% endhighlight %}
 
 
+### scheduleHeaderSettings.timscaleUnitSize `string`
+{:#members:scheduleheadersettings-timscaleunitsize}
+
+Specifies the size of the lowest time unit along the timescale, with minimum value as "50%" and maximum value as "500%". It is also possble to set the value in pixels.
+
+
+#### Default Value:
+{:.param}
+
+* "100%"
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  
+                        scheduleHeaderSettings:{timscaleUnitSize : "250%" }
+               });
+</script>               
+
+{% endhighlight %}
+
+
+### scheduleHeaderSettings.weekStartDay `number`
+{:#members:scheduleheadersettings-weekstartday}
+
+Specifies the start day of the week in week timescale mode
+
+
+#### Default Value:
+{:.param}
+
+* 0
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  
+                        scheduleHeaderSettings:{weekStartDay : 3 }
+               });
+</script>               
+
+{% endhighlight %}
+
 ### scheduleStartDate `string`
 {:#members:schedulestartdate}
 
