@@ -1492,6 +1492,23 @@ Sets the display mode (Only Chart/Only Grid/Both) in PivotClient.
     $("#PivotClient1").ejPivotClient({ displaySettings: { mode: ej.PivotClient.DisplayMode.ChartOnly } });
 {% endhighlight %}
 
+### enableSplitter `boolean`
+{:#members:enableSplitter}
+
+Enables the splitter option for resizing the elements inside the control. 
+
+>**Note**: This is not applicable for OLAP data bound from server-side.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ enableSplitter: true });
+{% endhighlight %}
+
+
 ### enableAdvancedFilter `boolean`
 {:#members:enableadvancedfilter}
 

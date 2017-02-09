@@ -88,9 +88,9 @@ Shows or hides the tooltip of the toolbar items.
 {% endhighlight %}
 
 
-### toolbarItems `enum`
+### toolbarSettings.toolbarItem `enum`
 
-{:#members:toolbaritems}
+{:#members:toolbarsettings-toolbaritem}
 
 <ts name="ej.PdfViewer.ToolbarItems"/>
 
@@ -166,12 +166,77 @@ Below code snippet shows only the magnification tools in the toolbar.
 </script>
 {% endhighlight %}
 
+### serverActionSettings `object`
+
+{:#members:serverActionSettings}
+
+Specifies the name of the action method in the server.
+
+### serverActionSettings.load `string`
+
+{:#members:serverActionSettings-load}
+
+Specifies the name of the action method used for loading the PDF document.
+
+**Default Value**: Load
+
+### serverActionSettings.fileUpload `string`
+
+{:#members:serverActionSettings-fileUpload}
+
+Specifies the name of the action method used for uploading the PDF document to the PDF viewer control.
+
+**Default Value**: FileUpload
+
+### serverActionSettings.print `string`
+
+{:#members:serverActionSettings-print}
+
+Specifies the name of the action method used for printing the PDF document in the PDF viewer control.
+
+**Default Value**: Print
+
+### serverActionSettings.download `string`
+
+{:#members:serverActionSettings-download}
+
+Specifies the name of the action method used for downloading the PDF document from the PDF viewer control.
+
+**Default Value**: Download
+
+#### Example:
+
+{% highlight html %}
+<div id="viewer"></div>
+<script type="text/javascript">
+        $(function () {
+            $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', serverActionSettings: { load: "Load", fileUpload: "FileUpload", print: "Print", download: "Download" } });
+        });
+</script>
+{% endhighlight %}
 
 ### serviceUrl `string`
 
 {:#members:serviceurl}
 
 Sets the PDF Web API service URL
+
+### documentPath `string`
+
+{:#members:documentPath}
+
+Sets the PDF document path for initial loading.
+
+#### Example:
+
+{% highlight html %}
+<div id="viewer"></div>
+<script type="text/javascript">
+        $(function () {
+            $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', documentPath: "HTTP Succinctly.pdf" });
+        });
+</script>
+{% endhighlight %}
 
 ### pageCount `number`
 
@@ -191,7 +256,7 @@ var totalPages = pdfviewerObj.pageCount;
 
 {:#members:currentpagenumber}
 
-Gets the number of the page being displayed in the PDF Viewer.
+Gets the number of the page being displayed in the PDF viewer.
 
 #### Example:
 
@@ -338,7 +403,7 @@ The below code snippet shows the hyperlink opened in a new tab.
 ### enableHyperlink `boolean`
 {:#members:enablehyperlink}
 
-Enables or disables the hyperlinks in PDF Document.
+Enables or disables the hyperlinks in PDF document.
 
 **Default Value**: true
 
@@ -353,10 +418,28 @@ Enables or disables the hyperlinks in PDF Document.
 </script>	
 {% endhighlight %}
 
+### enableTextSelection `boolean`
+{:#members:enableTextSelection}
+
+Enables or disables the text selection in PDF document.
+
+**Default Value**: true
+
+##### Example:
+
+{% highlight javascript %}
+<div id="viewer"></div>
+<script type="text/javascript">
+        $(function () {
+            $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', enableTextSelection: false });
+        });
+</script>	
+{% endhighlight %}
+
 ### isResponsive `boolean`
 {:#members:isResponsive}
 
-Enables or disables the responsive support for PDF Viewer control during the window resizing time.
+Enables or disables the responsiveness of the PDF viewer control during the window resize.
 
 **Default Value**: true
 
@@ -373,6 +456,42 @@ Enables or disables the responsive support for PDF Viewer control during the win
 
 {% endhighlight %}
 
+### isDocumentEdited `boolean`
+{:#members:isDocumentEdited}
+
+Checks whether the PDF document is edited. 
+
+**Default Value**: false
+
+#### Example
+
+{% highlight javascript %}
+
+<div id="viewer"></div>
+<script type="text/javascript">
+var pdfviewerObj = $("#viewer").data("ejPdfViewer");
+var isEdited = pdfviewerObj.isDocumentEdited;
+</script>	
+
+{% endhighlight %}
+
+### allowClientBuffering `boolean`
+{:#members:allowClientBuffering}
+
+Enables or disables the buffering of the PDF pages in the client side.
+
+**Default Value**: false
+
+##### Example:
+
+{% highlight javascript %}
+<div id="viewer"></div>
+<script type="text/javascript">
+        $(function () {
+            $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', allowClientBuffering: true });
+        });
+</script>	
+{% endhighlight %}
 
 ### fileName `string`
 
@@ -793,6 +912,21 @@ pdfviewerObj.zoomTo(130);
 {% endhighlight %}
 
 
+### unload()
+
+{:#methods:unload}
+
+Unloads the PDF document being displayed in the PDF viewer.
+ 
+#### Example:
+
+{% highlight javascript %}
+var pdfviewerObj = $("#viewer").data("ejPdfViewer");
+pdfviewerObj.unload();
+{% endhighlight %}
+
+
+
 ## Events
 
 ### documentLoad
@@ -841,7 +975,7 @@ Event parameters from PDF viewer
 <tbody>
 <tr>
 <td class="name">
-Cancel
+cancel
 </td>
 <td class="type">
 boolean
@@ -852,7 +986,7 @@ true, if the event should be canceled; otherwise, false.
 </tr>
 <tr>
 <td class="name">
-Model
+model
 </td>
 <td class="type">
 object
@@ -863,7 +997,7 @@ Returns the PDF viewer model
 </tr>
 <tr>
 <td class="name">
-Type
+type
 </td>
 <td class="type">
 string
@@ -1259,7 +1393,7 @@ argument
 object
 </td>
 <td class="description">
-Event parameters from PDF Viewer
+Event parameters from PDF viewer
 <table>
 <thead>
 <tr>
@@ -1358,7 +1492,7 @@ argument
 object
 </td>
 <td class="description">
-Event parameters from PDF Viewer
+Event parameters from PDF viewer
 <table>
 <thead>
 <tr>
@@ -1456,7 +1590,7 @@ argument
 object
 </td>
 <td class="description">
-Event parameters from PDF Viewer
+Event parameters from PDF viewer
 <table>
 <thead>
 <tr>
@@ -1547,6 +1681,221 @@ Returns the current Y position
 </script>
 {% endhighlight %}
 
+### bufferStart
+
+{:#events:bufferStart}
+
+Triggers when the client buffering process starts.
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Event parameters from PDF viewer
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel
+</td>
+<td class="type">
+boolean
+</td>
+<td class="description">
+True, if the event should be canceled; otherwise, false.
+</td>
+</tr>
+<tr>
+<td class="name">
+model
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Returns the PDF viewer model
+</td>
+</tr>
+<tr>
+<td class="name">
+type
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the name of the event
+</td>
+</tr>
+<tr>
+<td class="name">
+isBuffering
+</td>
+<td class="type">
+boolean
+</td>
+<td class="description">
+Specifies the state of the buffering
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight html %}
+<script type="text/javascript">
+        $(function () {
+            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', allowClientBuffering: true, bufferStart: "bufferStart" });
+        });
+        function bufferStart(args) {
+            alert("The buffering process is started");
+        }
+</script>
+{% endhighlight %}
+
+### bufferEnd
+
+{:#events:bufferEnd}
+
+Triggers when the client buffering process ends.
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Event parameters from PDF viewer
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel
+</td>
+<td class="type">
+boolean
+</td>
+<td class="description">
+True, if the event should be canceled; otherwise, false.
+</td>
+</tr>
+<tr>
+<td class="name">
+model
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Returns the PDF viewer model
+</td>
+</tr>
+<tr>
+<td class="name">
+type
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the name of the event
+</td>
+</tr>
+<tr>
+<td class="name">
+isBuffering
+</td>
+<td class="type">
+boolean
+</td>
+<td class="description">
+Specifies the state of the buffering
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight html %}
+<script type="text/javascript">
+        $(function () {
+            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', allowClientBuffering: true, bufferEnd: "bufferEnd" });
+        });
+        function bufferEnd(args) {
+            alert("The buffering process is ended");
+        }
+</script>
+{% endhighlight %}
 
 ### destroy
 
@@ -1576,7 +1925,7 @@ argument
 object
 </td>
 <td class="description">
-Event parameters from PDF Viewer
+Event parameters from PDF viewer
 <table>
 <thead>
 <tr>
