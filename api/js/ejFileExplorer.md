@@ -3183,6 +3183,12 @@ selectedItems</td>
 </tr>
 <tr>
 <td class="name">
+uploadItemDetails</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the upload item details.</td>
+</tr>
+<tr>
+<td class="name">
 type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the name of the event.</td>

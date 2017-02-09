@@ -1297,7 +1297,9 @@ var query = ej.Query()
 {:#members:responsiveType}
 
 
-
+<ts name = "ej.Toolbar.ResponsiveType"/>
+    
+    
 
 Specifies the Toolbar responsive type.
 

@@ -1278,6 +1278,31 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
+### connectors.labels.hyperlink `string`
+{:#members:connectors-labels-hyperlink}
+
+Sets the hyperlink for the labels in the connectors.
+
+#### Default Value:
+
+* none
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors =[
+    {name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+    labels: [{ "hyperText": "https://www.syncfusion.com" }]
+    }];
+$("#diagramcontent").ejDiagram({connectors:connectors);
+</script>
+
+{% endhighlight %}
+
+
 ### connectors.labels.italic `boolean`
 {:#members:connectors-labels-italic}
 
@@ -2369,17 +2394,21 @@ Sets the type of the connector
             <th>Name</th>
             <th>Description</th>
        </tr>
-   </thead>
+    </thead>
     <tbody>
         <tr>
             <td class="name">BPMN</td>
             <td class="description last">Used to specify connector type as BPMN</td>
        </tr>
         <tr>
-            <td class="name">Classifier</td>
-            <td class="description last">Used to specify connector type as Classifier</td>
+            <td class="name">UMLClassifier</td>
+            <td class="description last">Used to specify connector type as UMLClassifier</td>
        </tr>
-          </tbody>
+       <tr>
+            <td class="name">UMLActivity</td>
+            <td class="description last">Used to specify connector type as UMLActivity</td>
+       </tr>
+    </tbody>
 </table>
 
 #### Default Value:
@@ -2865,6 +2894,54 @@ var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:
                           source: { optional: true, lowerBounds: 1, upperBounds: 10 },
                           target: { optional: true, lowerBounds: 1, upperBounds: 10 }}
                  } }; 
+$("#diagramcontent").ejDiagram({connectors : [connector]});
+</script>
+
+{% endhighlight %}
+
+### connectors.shape.ActivityFlow `enum`
+{:#members:connectors-shape-activityflow}
+
+<ts name = "ej.datavisualization.Diagram.UMLActivityFlow"/>
+
+Defines the shape of UMLActivity to connector. Applicable, if the connector is of type `UMLActivity`
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Object</td>
+            <td class="description last">Defines a activity flow as Object in UML Activity Diagram</td>
+       </tr>
+        <tr>
+            <td class="name">Control</td>
+            <td class="description last">Defines a activity flow as Control in UML Activity Diagram</td>
+       </tr>
+        <tr>
+            <td class="name">Exception</td>
+            <td class="description last">Defines a activity flow as Exception in UML Activity Diagram</td>
+       </tr>
+     </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.UMLActivityFlow.Control
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
+shape: { type: "umlactivity", activityFlow: ej.datavisualization.Diagram.UMLActivityFlow.Exception }
+}; 
 $("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
@@ -3793,6 +3870,59 @@ $("#diagramcontent").ejDiagram({contextMenu: contextMenu});
 
 {% endhighlight %}
 
+### contextMenu.items.imageUrl `string`
+{:#members:contextmenu-items-imageurl}
+
+Defines the image url for the collection of context menu items
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+//Collection of items
+var menuitems = [{ "name": "zoomin", "text": "ZoomIn","imageUrl": "Images/zoomin.png", "style": "" }];
+var contextMenu = { items: menuitems};
+$("#diagramcontent").ejDiagram({contextMenu: contextMenu});
+</script>
+
+{% endhighlight %}
+
+### contextMenu.items.cssClass `string`
+{:#members:contextmenu-items-cssclass}
+
+Defines the CssClass for the collection of context menu items
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<style>
+    .menuplace{
+            background-size:14px 14px;
+            }
+</style>
+
+<div id="diagramcontent"></div>
+<script>
+//Collection of items
+var menuitems = [{ "name": "zoomin", "text": "ZoomIn","imageUrl": "Images/zoomin.png", "cssClass":"menuplace", "style": "" }];
+var contextMenu = { items: menuitems};
+$("#diagramcontent").ejDiagram({contextMenu: contextMenu});
+</script>
+
+{% endhighlight %}
+
+
 ### contextMenu.showCustomMenuItemsOnly `boolean`
 {:#members:contextmenu-showcustommenuitemsonly}
 
@@ -4428,6 +4558,47 @@ The `undoStack` property is used to get the number of undo actions to be stored 
 var diagram = $("#diagramcontent").ejDiagram("instance");
 diagram.model.historyManager.undoStack();
 
+</script>
+
+{% endhighlight %}
+
+### labelRenderingMode `enum`
+{:#members:labelrenderingmode}
+
+<ts name = "ej.datavisualization.Diagram.LabelRenderingMode"/>
+
+Defines the type of the rendering mode of label.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Html</td>
+            <td class="description last">Sets the labelRenderingMode as Html</td>
+        </tr>
+        <tr>
+            <td class="name">Svg</td>
+            <td class="description last">Sets the labelRenderingMode as Svg</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Default Value:
+
+* Html
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#diagramcontent").ejDiagram({ labelRenderingMode: "svg" });
 </script>
 
 {% endhighlight %}
@@ -8073,6 +8244,52 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
+### nodes.labels.overflowType `enum`
+{:#members:nodes-labels-overflowtype}
+
+<ts name = "ej.datavisualization.Diagram.OverflowType"/>
+
+Sets the overflowType of the labels
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Ellipsis</td>
+            <td class="description last">Set overflow Type as ellipsis</td>
+       </tr>
+        <tr>
+            <td class="name">Clip</td>
+            <td class="description last">Set overflow Type  as Clip</td>
+       </tr>
+       </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.OverflowType.Ellipsis
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
+         labels:[{ text:"labeuhirnfnrnfinrnfurnl",fontColor:"red",textOverflow:true,
+         overflowType: ej.datavisualization.Diagram.OverflowType.Ellipsis}]
+      }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
 ### nodes.labels.readOnly `boolean`
 {:#members:nodes-labels-readonly}
 
@@ -8242,6 +8459,30 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
 	     //Decorate the text with an underline
          labels:[{ text:"Label", textDecoration: ej.datavisualization.Diagram.TextDecorations.Underline}]
+      }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+### nodes.labels.textOverflow `boolean`
+{:#members:nodes-labels-textoverflow}
+
+Defines the overflowed content is displayed or not.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
+         labels:[{ text:"labeuhirnfnrnfinrnfurnl",fontColor:"red",textOverflow:true,
+         overflowType: ej.datavisualization.Diagram.OverflowType.Ellipsis}]
       }];
 $("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
@@ -10195,12 +10436,14 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
-### nodes.shape `enum`
+### nodes.shape `enum|string`
 {:#members:nodes-shape}
 
-<ts name = "ej.datavisualization.Diagram.BasicShapes"/>
+<ts name = "ej.datavisualization.Diagram.BasicShapes | ej.datavisualization.Diagram.FlowShapes | ej.datavisualization.Diagram.BPMNShapes | ej.datavisualization.Diagram.UMLActivityShapes"/>
 
 Sets the shape of the node. It depends upon the type of node.
+
+The following table illustrates the list of Basic shapes.
 
 <table class="props">
     <thead>
@@ -10265,6 +10508,217 @@ Sets the shape of the node. It depends upon the type of node.
         <tr>
             <td class="name">Cylinder</td>
             <td class="description last">Used to specify node Shape as Cylinder</td>
+       </tr>
+   </tbody>
+</table>
+
+The following table illustrates the list of Flow shapes.
+ 
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Process</td>
+            <td class="description last">Used to specify node Shape as Process</td>
+       </tr>
+        <tr>
+            <td class="name">Decision</td>
+            <td class="description last">Used to specify node Shape as Decision</td>
+       </tr>
+        <tr>
+            <td class="name">Document</td>
+            <td class="description last">Used to specify node Shape as Document</td>
+       </tr>
+        <tr>
+            <td class="name">PreDefinedProcess</td>
+            <td class="description last">Used to specify node Shape as PreDefinedProcess</td>
+       </tr>
+        <tr>
+            <td class="name">Terminator</td>
+            <td class="description last">Used to specify node Shape as Terminator</td>
+       </tr>
+        <tr>
+            <td class="name">PaperTap</td>
+            <td class="description last">Used to specify node Shape as PaperTap</td>
+       </tr>
+        <tr>
+            <td class="name">DirectData</td>
+            <td class="description last">Used to specify node Shape as DirectData</td>
+       </tr>
+        <tr>
+            <td class="name">SequentialData</td>
+            <td class="description last">Used to specify node Shape as SequentialData </td>
+       </tr>
+        <tr>
+            <td class="name">Sort</td>
+            <td class="description last">Used to specify node Shape as Sort</td>
+       </tr>
+        <tr>
+            <td class="name">MultiDocument</td>
+            <td class="description last">Used to specify node Shape as MultiDocument</td>
+       </tr>
+        <tr>
+            <td class="name">Collate</td>
+            <td class="description last">Used to specify node Shape as Collate</td>
+       </tr>
+        <tr>
+            <td class="name">SummingJunction</td>
+            <td class="description last">Used to specify node Shape as SummingJunction</td>
+       </tr>
+        <tr>
+            <td class="name">Or</td>
+            <td class="description last">Used to specify node Shape as Or</td>
+       </tr>
+        <tr>
+            <td class="name">InternalStorage</td>
+            <td class="description last">Used to specify node Shape as InternalStorage</td>
+       </tr>
+       <tr>
+            <td class="name">Extract</td>
+            <td class="description last">Used to specify node Shape as Extract</td>
+       </tr>
+       <tr>
+            <td class="name">ManualOperation</td>
+            <td class="description last">Used to specify node Shape as ManualOperation</td>
+       </tr>
+       <tr>
+            <td class="name">Merge</td>
+            <td class="description last">Used to specify node Shape as Merge</td>
+       </tr>
+         <tr>
+            <td class="name">OffPageReference</td>
+            <td class="description last">Used to specify node Shape as OffPageReference</td>
+       </tr> 
+        <tr>
+            <td class="name">SequentialAccessStorage</td>
+            <td class="description last">Used to specify node Shape as SequentialAccessStorage</td>
+       </tr>  
+       <tr>
+            <td class="name">Annotation1</td>
+            <td class="description last">Used to specify node Shape as Annotation1</td>
+       </tr>
+        <tr>
+            <td class="name">Annotation2</td>
+            <td class="description last">Used to specify node Shape as Annotation2</td>
+       </tr>
+        <tr>
+            <td class="name">Data</td>
+            <td class="description last">Used to specify node Shape as Data</td>
+       </tr>
+        <tr>
+            <td class="name">Card</td>
+            <td class="description last">Used to specify node Shape as Card </td>
+       </tr>
+   </tbody>
+</table>
+
+The following table illustrates the list of BPMN shapes.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Event</td>
+            <td class="description last">Used to specify node Shape as Event</td>
+       </tr>
+        <tr>
+            <td class="name">Gateway</td>
+            <td class="description last">Used to specify node Shape as Gateway</td>
+       </tr>
+        <tr>
+            <td class="name">Message</td>
+            <td class="description last">Used to specify node Shape as Message</td>
+       </tr>
+        <tr>
+            <td class="name">DataObject</td>
+            <td class="description last">Used to specify node Shape as DataObject</td>
+       </tr>
+        <tr>
+            <td class="name">DataSource</td>
+            <td class="description last">Used to specify node Shape as DataSource</td>
+       </tr>
+        <tr>
+            <td class="name">Activity</td>
+            <td class="description last">Used to specify node Shape as Activity</td>
+       </tr>
+        <tr>
+            <td class="name">Group</td>
+            <td class="description last">Used to specify node Shape as Group</td>
+       </tr>       
+   </tbody>
+</table>
+
+The following table illustrates the list of UMLActivity shapes.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">Action</td>
+            <td class="description last">Used to set UML ActivityShapes as Action</td>
+       </tr>
+        <tr>
+            <td class="name">Decision</td>
+            <td class="description last">Used to set UML ActivityShapes as Decision</td>
+       </tr>
+        <tr>
+            <td class="name">MergeNode</td>
+            <td class="description last">Used to set UML ActivityShapes as MergeNode</td>
+       </tr>
+        <tr>
+            <td class="name">InitialNode</td>
+            <td class="description last">Used to set UML ActivityShapes as InitialNode</td>
+       </tr>
+        <tr>
+            <td class="name">FinalNode</td>
+            <td class="description last">Used to set UML ActivityShapes as FinalNode</td>
+       </tr>
+        <tr>
+            <td class="name">ForkNode</td>
+            <td class="description last">Used to set UML ActivityShapes as ForkNode</td>
+       </tr>
+        <tr>
+            <td class="name">JoinNode</td>
+            <td class="description last">Used to set UML ActivityShapes as JoinNode</td>
+       </tr>
+        <tr>
+            <td class="name">TimeEvent</td>
+            <td class="description last">Used to set UML ActivityShapes as TimeEvent</td>
+       </tr>
+        <tr>
+            <td class="name">AcceptingEvent</td>
+            <td class="description last">Used to set UML ActivityShapes as AcceptingEvent</td>
+       </tr>
+        <tr>
+            <td class="name">SendSignal</td>
+            <td class="description last">Used to set UML ActivityShapes as SendSignal</td>
+       </tr>
+        <tr>
+            <td class="name">ReceiveSignal</td>
+            <td class="description last">Used to set UML ActivityShapes as ReceiveSignal</td>
+       </tr>
+        <tr>
+            <td class="name">StructuredNode</td>
+            <td class="description last">Used to set UML ActivityShapes as StructuredNode</td>
+       </tr>
+       <tr>
+            <td class="name">Note</td>
+            <td class="description last">Used to set UML ActivityShapes as Note</td>
        </tr>
    </tbody>
 </table>
@@ -11077,28 +11531,40 @@ Defines the type of the node.
    </thead>
     <tbody>
         <tr>
-            <td class="name">None</td>
-            <td class="description last">Used to set decorator shape as none</td>
+            <td class="name">Text</td>
+            <td class="description last">Used to specify node type as Text</td>
        </tr>
         <tr>
-            <td class="name">Arrow</td>
-            <td class="description last">Used to set decorator shape as Arrow</td>
+            <td class="name">Image</td>
+            <td class="description last">Used to specify node type as Image</td>
        </tr>
         <tr>
-            <td class="name">OpenArrow</td>
-            <td class="description last">Used to set decorator shape as Open Arrow</td>
+            <td class="name">Html</td>
+            <td class="description last">Used to specify node type as Html</td>
        </tr>
         <tr>
-            <td class="name">Circle</td>
-            <td class="description last">Used to set decorator shape as Circle</td>
+            <td class="name">Native</td>
+            <td class="description last">Used to specify node type as Native</td>
        </tr>
         <tr>
-            <td class="name">Diamond</td>
-            <td class="description last">Used to set decorator shape as Diamond</td>
+            <td class="name">Basic</td>
+            <td class="description last">Used to specify node type as Basic</td>
+       </tr>
+       <tr>
+            <td class="name">Flow</td>
+            <td class="description last">Used to specify node type as Flow</td>
        </tr>
         <tr>
-            <td class="name">Path</td>
-            <td class="description last">Used to set decorator shape as path</td>
+            <td class="name">BPMN</td>
+            <td class="description last">Used to specify node type as BPMN</td>
+       </tr>
+       <tr>
+            <td class="name">UMLClassifier</td>
+            <td class="description last">Used to specify node type as UMLClassifier</td>
+       </tr>
+       <tr>
+            <td class="name">UMLActivity</td>
+            <td class="description last">Used to specify node type as UMLActivity</td>
        </tr>
    </tbody>
 </table>
@@ -13079,6 +13545,54 @@ diagram.addLabel(node.name, {fontColor:"red", text:"newLabel"});
 
 {% endhighlight %}
 
+### addLane(lane,index)
+{:#methods:addlane}
+
+Add dynamic Lanes to swimlane at runtime
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">lane</td>
+			<td class="type">object</td>
+			<td class="description last">JSON for the new lane to be added</td>
+		</tr>
+        	<tr>
+			<td class="name">index</td>
+			<td class="type">number</td>
+			<td class="description last">Index value to add the lane in swimlane</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var diagram = $("#diagramcontent").ejDiagram("instance");
+//add a lane node to swimlane
+    var lane = { name: "lane" + ej.datavisualization.Diagram.Util.randomId(), fillColor: "#f5f5f5", offsetX: 500, offsetY: 200, 
+                width: 400, orientation: 'horizontal', height: 100, isLane: true,
+                header: { text: "function", fillColor: "#C7D4DF", width: 50, height: 50, fontSize: 11 } };
+    diagram.addLane(lane);
+// add lane with index to swimlane
+ var lane = { name: "lane" + ej.datavisualization.Diagram.Util.randomId(), fillColor: "#f5f5f5", offsetX: 500, offsetY: 200, 
+                width: 400, orientation: 'horizontal', height: 100, isLane: true,
+                header: { text: "function", fillColor: "#C7D4DF", width: 50, height: 50, fontSize: 11 } };
+    diagram.addLane(lane,1);
+</script>
+
+{% endhighlight %}
+
 ### addPhase(name, options)
 {:#methods:addphase}
 
@@ -13463,6 +13977,11 @@ Export the diagram as downloadable files or as data
 <td class="name">margin</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">to set margin to the exported data.</td>
+</tr>
+<tr>
+<td class="name">stretch</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">to set stretch to the exported data.</td>
 </tr>
 </tbody>
 </table>
@@ -14543,25 +15062,53 @@ diagram.load(jsonData);
 
 {% endhighlight %}
 
-### zoomTo(zoom)
+### zoomTo(\[Zoom\])
 {:#methods:zoomto}
 
 Used to zoomIn/zoomOut diagram
 
 <table class="params">
 	<thead>
-		<tr>
-			<th>Name</th>
-			<th>Type</th>
-			<th>Description</th>
-		</tr>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td class="name">zoom</td>
-			<td class="type">object</td>
-			<td class="description last">options to zoom the diagram(zoom factor, zoomIn/zoomOut)</td>
-		</tr>
+        <tr>
+            <td class="name">[Zoom]</td>
+            <td class="type">object</td>
+            <td class="description last">options to zoom the diagram(zoom factor, zoomIn/zoomOut)
+                <table class="params">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th class="last">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name">zoomFactor</td>
+                            <td class="type"><span class="param-type">number</span></td>
+                            <td class="description last">Used to increase the zoom-in or zoom-out based on the zoom factor value.</td>
+                        </tr>
+                        <tr>
+                            <td class="name">zoomCommand</td>
+                            <td class="type"><ts name="ej.datavisualization.Diagram.ZoomCommand"/>enum</td>
+                            <td class="description last">Used to zoom-in or zoom-out the diagram.</td>
+                        </tr>
+                        <tr>
+                            <td class="name">focusPoint</td>
+                            <td class="type"><ts ref="ej.datavisualization.Diagram.ConnectorsSourcePoint"/>object</td>
+                            <td class="description last">Used to zoom-in or zoom-out the diagram based on the point.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
 	</tbody>
 </table>
 
@@ -14579,6 +15126,29 @@ diagram.zoomTo(zoom);
 </script>
 
 {% endhighlight %}
+
+#### ZoomCommand
+
+Used to zoom-in or zoom-out the diagram
+
+<table class="props">
+    <thead>
+        <tr>
+        <th>Name</th>
+        <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ZoomIn</td>
+            <td>Used to zoom in the Diagram</td>
+        </tr>
+        <tr>
+            <td>ZoomOut</td>
+            <td>Used to zoom out the diagram</td>
+        </tr>
+    </tbody>
+</table>
 
 ## Events
 

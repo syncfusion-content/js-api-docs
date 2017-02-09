@@ -1853,6 +1853,33 @@ commonSeriesOptions : {visibleOnLegend: "hidden" }
 {% endhighlight %}
 
 
+### commonSeriesOptions.stackingGroup `string`
+{:#members:commonseriesoptions-stackinggroup}
+
+
+Group of the stacking collection series.
+
+
+#### Default Value
+
+
+
+ * ""
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+commonSeriesOptions :{stackingGroup : " "}                  
+});
+ {% endhighlight %}
+
 
 ### commonSeriesOptions.dashArray `string`
 {:#members:commonseriesoptions-dasharray}
@@ -2796,6 +2823,36 @@ commonSeriesOptions : {isTransposed : false }
 {% endhighlight %}
 
 
+### commonSeriesOptions.showMedian `boolean`
+{:#members:commonseriesoptions-showmedian}
+
+
+
+
+Render the x mark in the center of the boxplot series type.x represents the average value of the boxplot series.
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions : {showMedian : true }                   
+});
+{% endhighlight %}
+
+
 
 
 ### commonSeriesOptions.labelPosition `enum`
@@ -2860,6 +2917,70 @@ commonSeriesOptions :{ labelPosition : "outside"}
  
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/w5q1jt5k)
+
+
+
+### commonSeriesOptions.boxPlotMode `enum`
+{:#members:commonseriesoptions-boxplotmode}
+
+
+<ts name = "ej.datavisualization.Chart.boxPlotMode"/>
+
+
+Quartile calculation has been performed in three different formulas to render the boxplot series.
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Exclusive</td>
+<td class="type">string</td> 
+<td class="description">To render the series with exclusive calculations</td>
+</tr>
+<tr>
+<td class="name">
+Inclusive</td>
+<td class="type">string</td>
+<td class="description">To render the series with inclusive calculations</td>
+</tr> 
+<tr>
+<td class="name">
+Normal</td>
+<td class="type">string</td>
+<td class="description">To render the series with normal calculations</td>
+</tr> 
+</tbody>
+</table>
+
+
+#### Default Value
+
+
+
+* "exclusive"
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+commonSeriesOptions :{ boxPlotMode : "inclusive"}                  
+});
+ {% endhighlight %}
+ 
+
 
 
 
@@ -4554,6 +4675,130 @@ commonSeriesOptions :{opacity : 0.5}
 
 
 
+### commonSeriesOptions.outlierSettings `object`
+{:#members:commonseriesoptions-outliersettings}
+
+
+
+
+Options for customizing the outlier of the series.
+
+
+
+
+### commonSeriesOptions.outlierSettings.shape `enum`
+{:#members:commonseriesoptions-outliersettings-shape}
+
+
+<ts ref = "ej.datavisualization.Chart.Shape"/>
+
+
+Specifies the shape of the outlier. 
+
+
+#### Default Value
+
+
+
+* "circle". See <a href="global.html#members:shape">Shape</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{outlier :{ shape: "rectangle"}                  
+});
+{% endhighlight %}
+
+
+
+### commonSeriesOptions.outlierSettings.size `object`
+{:#members:commonseriesoptions-outliersettings-size}
+
+
+
+
+Options for customizing the size of the outlier shape.
+
+
+
+
+
+
+### commonSeriesOptions.outlierSettings.size.height `number`
+{:#members:commonseriesoptions-outliersettings-size-height}
+
+
+
+
+Height of the outlier shape. 
+
+
+#### Default Value
+
+
+
+* 6
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{outlierSettings :{size :{height : 5}}}                  
+});
+{% endhighlight %}
+
+
+
+
+### commonSeriesOptions.outlierSettings.size.width `number`
+{:#members:commonseriesoptions-outliersettings-size-width}
+
+
+
+
+Width of the outlier shape. 
+
+
+#### Default Value
+
+
+
+* 6
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{outlierSettings :{ size :{ width : 2 } } }                  
+});
+{% endhighlight %}
+
+
+
+
+ 
+
+
+
 
 ### commonSeriesOptions.palette `string`
 {:#members:commonseriesoptions-palette}
@@ -4911,8 +5156,6 @@ commonSeriesOptions : {
 
 
 Options for customizing the tooltip of chart.
-
-
 
 
 
@@ -6268,6 +6511,60 @@ $("#container").ejChart({
     }                   
 });
  {% endhighlight %} 
+
+
+### commonSeriesOptions.dragSettings `object`
+{:#members:commonSeriesOptions.dragsettings}
+
+Options to customize the drag and drop in series.
+
+### commonSeriesOptions.dragSettings.enable `boolean`
+{:#members:commonSeriesOptions.dragsettings.enable}
+
+drag/drop the series
+
+#### Default Value
+
+* "false"
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+    commonSeriesOptions : {
+          dragSettings:{enable: true}
+    }                   
+});
+
+ {% endhighlight %} 
+
+### commonSeriesOptions.dragSettings.type `string`
+{:#members:commonSeriesOptions.dragsettings.type}
+
+
+Specifies the type of drag settings.
+
+
+#### Default Value
+
+
+* "xy"
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+    commonSeriesOptions : {
+          dragSettings:{type: "x"}
+    }                   
+});
+ {% endhighlight %} 
  
 
 
@@ -6276,7 +6573,6 @@ $("#container").ejChart({
 
 
 Options to customize the error bar in series.
-
 
 
 ### commonSeriesOptions.errorBar.visibility `boolean`
@@ -12083,6 +12379,32 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
+### primaryXAxis.axisLine.color `string`
+{:#members:primaryxaxis-axisline-color}
+
+
+#### Default Value
+
+
+
+* ""
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { axisLine : { color : "red" } }
+                          
+});
+
+{% endhighlight %}
+
 
 
 ### primaryXAxis.axisLine.width `number`
@@ -16416,6 +16738,38 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
+### axes.axisLine.color `string`
+{:#members:axes-axisline-color}
+
+
+
+
+Color of axis line.
+
+
+#### Default Value
+
+
+
+* ""
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [ { axisLine : { color : "red" } } ]
+                          
+});
+
+{% endhighlight %}
+
+
 
 
 ### axes.axisLine.width `number`
@@ -20170,6 +20524,38 @@ Show/hides the axis line.
 $("#container").ejChart({
 
     primaryYAxis: { axisLine: { visible : false } }
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryYAxis.axisLine.color `string`
+{:#members:primaryyaxis-axisline-color}
+
+
+
+
+Color of axis line.
+
+
+#### Default Value
+
+
+
+* ""
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { axisLine: { color : "" } }
                           
 });
 
@@ -24229,6 +24615,36 @@ $('#container').ejChart({
 {% endhighlight %}
 
 
+### series.stackingGroup `string`
+{:#members:series-stackinggroup}
+
+
+
+
+To group the series of stacking collection.
+
+
+#### Default Value
+
+
+
+* ""
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+series :[{stackingGroup : " "}]                  
+});
+ {% endhighlight %}
+
+
 
 ### series.dashArray `string`
 {:#members:series-dasharray}
@@ -25064,6 +25480,37 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/1ypcv5bf)
 
 
 
+### series.showMedian `boolean`
+{:#members:series-showmedian}
+
+
+
+
+Render the x mark in the center of the boxplot series type.x represents the average value of the boxplot series.
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series : [{showMedian : true }]                   
+});
+{% endhighlight %}
+
+
+
 
 ### series.labelPosition `enum`
 {:#members:series-labelposition}
@@ -25096,6 +25543,41 @@ series : [{labelPosition : "outside" }]
  
  
  Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/q013nk40)
+
+
+
+
+
+### series.boxPlotMode `enum`
+{:#members:series-boxplotmode}
+
+<ts ref = "ej.datavisualization.Chart.LabelPosition"/>
+
+
+Quartile calculation has been performed in three different formulas to render the boxplot series .
+
+
+
+#### Default Value
+
+
+
+* "exclusive"
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series : [{boxPlotMode : "inclusive" }]                   
+});
+ {% endhighlight %}
+ 
+
 
 
 
@@ -25157,6 +25639,7 @@ $("#container").ejChart({
 series :[{lineJoin : "round"}]                  
 });
 {% endhighlight %}
+
 
 
 
@@ -26512,6 +26995,129 @@ $("#container").ejChart({
 series :[{opacity : 0.5}]                  
 });
  {% endhighlight %}
+
+
+
+### series.outlierSettings `object`
+{:#members:series-outliersettings}
+
+
+
+
+Options for customizing the outlier of individual series.
+
+
+### series.outlierSettings.shape `enum`
+{:#members:series-outliersettings-shape}
+
+<ts ref = "ej.datavisualization.Chart.Shape"/>
+
+
+Specifies the shape of the outlier.  
+
+
+#### Default Value
+
+
+
+* "circle". See <a href="global.html#members:shape">Shape</a>
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{outlierSettings :{ shape: "rectangle"}]                  
+});
+{% endhighlight %}
+
+
+
+
+
+### series.outlierSettings.size `object`
+{:#members:series-outliersettings-size}
+
+
+
+
+Options for customizing the size of the outlier shape.
+
+
+
+
+
+
+### series.outlierSettings.size.height `number`
+{:#members:series-outliersettings-size-height}
+
+
+
+
+Height of the outlier shape. 
+
+
+#### Default Value
+
+
+
+* 6
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{outlierSettings :{size :{height : 5}}}]                 
+});
+{% endhighlight %}
+
+
+
+
+
+
+
+
+### series.outlierSettings.size.width `number`
+{:#members:series-outliersettings-size-width}
+
+
+
+
+Width of the outlier shape. 
+
+
+#### Default Value
+
+
+
+* 6
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{outlierSettings :{ size :{ width : 2 } } }]                  
+});
+{% endhighlight %}
+
+
+
  
  
  
@@ -26975,6 +27581,61 @@ Opacity of the connector line.
 $("#container").ejChart({
     series : [{
              connectorLine: {opacity : 0.5 }
+    }]                   
+});
+ {% endhighlight %} 
+
+
+ 
+### series.dragSettings `object`
+{:#members:series.dragsettings}
+
+Options to customize the drag and drop in series.
+
+### series.dragSettings.enable `boolean`
+{:#members:series.dragsettings.enable}
+
+drag/drop the series
+
+#### Default Value
+
+* "false"
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+    series : [{
+          dragSettings:{enable: true}
+    }]                  
+});
+
+ {% endhighlight %} 
+
+### series.dragSettings.type `string`
+{:#members:series.dragsettings.type}
+
+
+Specifies the type of drag settings.
+
+
+#### Default Value
+
+
+* "xy"
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+    series : [{
+          dragSettings:{type: "x"}
     }]                   
 });
  {% endhighlight %} 
@@ -29391,9 +30052,6 @@ Options for customizing the tooltip of chart.
 
 
 Options for customizing the border of the tooltip.
-
-
-
 
 
 
@@ -33840,6 +34498,71 @@ type{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+
+### rangeSelected
+{:#events:rangeselected}
+
+
+
+
+Fires after selected the data in chart.
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//rangeSelected event for chart
+
+$("#container").ejChart({
+
+    rangeSelected: function (args) {
+             //Do something
+    }
+    
+});
+
+{% endhighlight %}
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Instance of the chart model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Selected data collection of object</td>
+</tr>
+</tbody>
+</table>
+
 
 
 ### pointRegionClick
