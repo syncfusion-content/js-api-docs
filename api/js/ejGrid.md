@@ -1180,7 +1180,7 @@ $("#Grid").ejGrid({
 
 <ts name="ej.Grid.FilterType"/>
 
-This specifies the grid to show the filterExcel or filterMenu to the grid columns. See <a href="global.html#filterType">filterType</a>
+This specifies the grid to show the excel or menu to the grid columns. See <a href="global.html#filterType">filterType</a>
 
 #### Default Value:
 {:.param}
@@ -2660,7 +2660,7 @@ $("#Grid").ejGrid({
 ### filterSettings.enableInterDeterminateState `Boolean`
 {:#members:filtersettings-enableinterdeterminatestate}
 
-Gets or sets a value that indicates to define the interDeterminateState of the excel filter in grid.
+Gets or sets a value that indicates to define the interDeterminateState of checkbox in excel filter dialog.
 
 #### Default Value:
 {:.param}
@@ -3820,11 +3820,11 @@ Gets or sets a value that indicates the cell selection actions based on the cell
 </tr>
 <tr>
 <td class="name">flow</td>
-<td class="description">It selects the cell in a continous from the start cell to end cell.</td>
+<td class="description">It selects cells continously from the start cell to end cell.</td>
 </tr>
 <tr>
 <td class="name">box</td>
-<td class="description">It selects the cell as a box from start cell column to the end cell column.</td>
+<td class="description">It selects range of cells as a block from start cell to the end cell.</td>
 </tr> 
 </table>
 
@@ -3971,7 +3971,7 @@ $("#Grid").ejGrid({
 ### scrollSettings.autoHide `Boolean`
 {:#members:scrollsettings-autohide}
  
-It accepts the boolean value and enables or disables the scrollbar in the Grid.
+It accepts the boolean value and shows or hides the scrollbar while focus or out of focus in the Grid.
 
 #### Default Value:
 {:.param}
@@ -4103,7 +4103,7 @@ $("#Grid").ejGrid({
 ### scrollSettings.scrollerSize `Number`
 {:#members:scrollsettings-scrollersize}
  
-It accepts the integer value and sets the width and height of scrollbar.
+It accepts the integer value and sets the width of scrollbar.
 
 #### Default Value:
 {:.param}
@@ -4571,7 +4571,7 @@ $("#Grid").ejGrid({
 ### stackedHeaderRows.stackedHeaderColumns.tooltip `String`
 {:#members:stackedheaderrows-stackedheadercolumns-tooltip}
 
-It accepts the string value and displays the tooltip for stackedHeaderColumns
+Sets the template for tooltip for the Grid stackedHeaderColumns.
 
 #### Default Value:
 {:.param}
@@ -4580,15 +4580,18 @@ It accepts the string value and displays the tooltip for stackedHeaderColumns
 #### Example
 {:.example}
 {% highlight html %}  
-<div id="Grid"></div> 
+<div id="Grid"></div>
+<script type="text/template" id="colTip">
+  {{:value }}
+</script>
 <script>
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowSorting:true,
    showStackedHeader:true,
-   stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",tooltip:"stackedHeaderColumn",column:"CustomerID", textalign: 
-         ej.TextAlign.Right},{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
-         ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
+   stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",tooltip:"#colTip",column:"CustomerID", textalign: 
+         ej.TextAlign.Right},{headerText:"Frieght",tooltip:"#colTip",column:"Freight,EmployeeID,OrderDate"}
+         ,{headerText:"Date &amp; Location Top Level",tooltip:"#colTip",column:"ShipCity"}
            ]}
           ],
    columns: [
@@ -6167,6 +6170,7 @@ gridObj.destroy(); // destroy the Grid
 $("#Grid").ejGrid("destroy");        
 </script>{% endhighlight %}
 
+
 ### editCell(index, fieldName)
 {:#methods:editcell}
 
@@ -6219,10 +6223,11 @@ gridObj.editCell(2, "OrderID");
 $("#Grid").ejGrid("editCell", 2, "OrderID");
 </script>{% endhighlight %}
 
+
 ### editFormValidate()
 {:#methods:editformvalidate}
 
-It returns a value that indicates whether the edit form validation is based on the validation rules.
+It returns a value and shows the validation message that indicates whether the edit form validation is based on the validation rules.
 
 #### Returns:
 {:#methods:returns:}
@@ -6938,7 +6943,7 @@ gridObj.getColumnIndexByField("OrderID");
 $("#Grid").ejGrid("getColumnIndexByField", "OrderID");        
 </script>{% endhighlight %}
 
-### getColumnIndexByHeaderText(headerText, field)
+### getColumnIndexByHeaderText(headerText, \[field\])
 {:#methods:getcolumnindexbyheadertext}
 
 Get the column index of the given headerText of column in grid.
@@ -6960,7 +6965,7 @@ Get the column index of the given headerText of column in grid.
 <tr>
 <td class="name">field</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Pass the field of the column to get that column index</td>
+<td class="description last"><span class="optional">optional</span>Pass the field of the column to get that column index</td>
 </tr>
 </tbody>
 </table>
@@ -7840,7 +7845,7 @@ $("#Grid").ejGrid("getSelectedRows");
 ### getsortColumnByField(field)
 {:#methods:getsortcolumnbyfield}
 
-Sort the column of the given field in grid.
+It accepts the string value and returns the sorted direction of the column in grid.
 
 <table class="params">
 <thead>
@@ -7854,7 +7859,7 @@ Sort the column of the given field in grid.
 <tr>
 <td class="name">field</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Pass the field of the column to sort the corresponding column in Grid.</td>
+<td class="description last">Pass the field of the column to get the sorted direction of the corresponding column in Grid.</td>
 </tr>
 </tbody>
 </table>
@@ -7876,7 +7881,7 @@ number
 <script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
-// Sort the column based on the given field.
+// Sorted direction of the column based on the given field.
 gridObj.getsortColumnByField("OrderID"); 
 </script>{% endhighlight %}
 
@@ -7885,7 +7890,7 @@ gridObj.getsortColumnByField("OrderID");
  
 <div id="Grid"></div> 
 <script>
-// Sort the column based on the given field.
+// Sorted direction of the column based on the given field.
 $("#Grid").ejGrid("getsortColumnByField", "OrderID");        
 </script>{% endhighlight %}
 
@@ -8498,12 +8503,12 @@ Re-order the row in grid
 <tr>
 <td class="name">indexes</td>
 <td class="type"><span class="param-type">Array</span></td>
-<td class="description last">Pass the fromindex of the row needs to be changed</td>
+<td class="description last">Pass the indexes of the rows needs to reorder.</td>
 </tr>
 <tr>
 <td class="name">toindex</td>
 <td class="type"><span class="param-type">Number</span></td>
-<td class="description last">Pass the toindex of the row needs to be changed</td>
+<td class="description last">Pass the index of a row where to be reorderd.</td>
 </tr>
 </tbody>
 </table>
@@ -8523,7 +8528,7 @@ Void
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // Reorders the row based on the given index
-gridObj.reorderRows([0],3); 
+gridObj.reorderRows([0,1],3); 
 </script>{% endhighlight %}
 
 
@@ -9437,7 +9442,7 @@ $("#Grid").ejGrid("setPhoneModeMaxWidth", 500);
 ### setValidation()
 {:#methods:setvalidation}
 
-Set validation to columns in the grid during editing.
+Set validation to columns in the grid.
 
 #### Returns:
 {:#methods:returns:}
@@ -9453,7 +9458,7 @@ Void
 <script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
-// It is used to set validation to columns during editing
+// It is used to set validation to columns.
 gridObj.setValidation(); 
 </script>{% endhighlight %}
 
@@ -9461,15 +9466,15 @@ gridObj.setValidation();
 {% highlight html %}
  
 <script>
-// It is used to set validation to columns during editing
-$("#Grid").ejGrid("setValidationToField");
+// It is used to set validation to columns.
+$("#Grid").ejGrid("setValidation");
 </script>{% endhighlight %}
 
 
 ### setValidationToField(fieldName, rules)
 {:#methods:setvalidationtofield}
 
-Set validation to a field during editing.
+Set validation to a particular field dynamically.
 
 <table class="params">
 <thead>
@@ -9507,7 +9512,7 @@ Void
 <script>
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
-// It is used to set validation to a field during editing
+// It is used to set validation to a field.
 gridObj.setValidationToField("OrderID", { required: true }); 
 </script>{% endhighlight %}
 
@@ -9515,7 +9520,7 @@ gridObj.setValidationToField("OrderID", { required: true });
 {% highlight html %}
  
 <script>
-// It is used to set validation to a field during editing
+// It is used to set validation to a field.
 $("#Grid").ejGrid("setValidationToField", "OrderID", { required: true });
 </script>{% endhighlight %}
 
