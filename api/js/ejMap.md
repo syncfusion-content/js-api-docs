@@ -1640,6 +1640,61 @@ set the smartLabelSize property
 {% endhighlight %}
 
 
+
+### layers.geometryType `enum`
+{:#members:layers-geometrytype}
+
+<ts name = "ej.datavisualization.Map.GeometryType"/>
+
+Specifies the map view type.
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name </th>			
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">geographic</td>			
+			<td class="description">specifies the geographic of map</td>
+		</tr>
+		<tr>
+			<td class="name">normal</td>			
+			<td class="description">specifies the normal view of map</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Default Value
+
+* 'geographic'
+
+#### Example
+
+{% highlight js %}
+  
+// Set the geometryType during initialization.                     
+   $("#container").ejMap({layers: [{ geometryType:'geographic' }]})
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the geometryType after initialization:
+   
+   //Gets the geometryType from map.
+   
+   var property =$("#container").data("ejMap").model.layers[layerIndex].geometryType;
+   
+   //Sets the geometryType to map.
+   
+   $("#container").data("ejMap").model.layers[layerIndex].geometryType  = 'normal';
+
+{% endhighlight %}
+
+
 ### layers.layerType `enum`
 {:#members:layers-layertype}
 
