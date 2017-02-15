@@ -498,10 +498,10 @@ $('#Spreadsheet').ejSpreadsheet({
 ### allowFreezing `boolean`
 {:#members:allowfreezing}
 
-Gets or sets a value that indicates whether to enable or disable freeze pane support in Spreadsheet. After enabling this feature, you can use freeze top row, freeze first column and freeze panes options.
+Gets or sets a value that indicates whether to enable or disable freeze pane support in Spreadsheet. By enabling this feature, you can use freeze top row, freeze first column and freeze panes options.
 
 #### Default Value
-* false
+* true
 
 
 #### Example
@@ -509,7 +509,7 @@ Gets or sets a value that indicates whether to enable or disable freeze pane sup
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({
-    allowFreezing : true
+    allowFreezing : false
 });
 </script>
 
@@ -2639,6 +2639,44 @@ $('#Spreadsheet').ejSpreadsheet({
         fieldAsColumnHeader: true,
         primaryKey: "OrderID"
     }]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.frozenRows `number`
+{:#members:sheets-freezerows}
+
+Gets or sets a value to freeze rows in the Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+            frozenRows: 3
+        }]
+});    
+</script>
+
+{% endhighlight %}
+
+### sheets.frozenColumns `number`
+{:#members:sheets-frozenColumns}
+
+Gets or sets a value to freeze columns in the Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets:[{
+            frozenColumns: 3
+        }]
 });    
 </script>
 
@@ -4832,14 +4870,14 @@ number
 <script>
 // Initialize Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.getFrozenColumns(1); // Gets the freezed column index in Spreadsheet
+xlObj.getFrozenColumns(1); // Gets the frozen column index in Spreadsheet
 </script>
 
 {% endhighlight %}
 
 {% highlight html %}
 <script>
-// Gets the freezed column index in Spreadsheet
+// Gets the frozen column index in Spreadsheet
 $("#Spreadsheet").ejSpreadsheet("getFrozenColumns", 1);        
 </script>
 
@@ -4876,14 +4914,14 @@ number
 <script>
 // Initialize Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.getFrozenRows(1); // Gets the freezed row index in Spreadsheet.
+xlObj.getFrozenRows(1); // Gets the frozen row index in Spreadsheet.
 </script>
 
 {% endhighlight %}
 
 {% highlight html %}
 <script>
-// Gets the freezed row index in Spreadsheet
+// Gets the frozen row index in Spreadsheet
 $("#Spreadsheet").ejSpreadsheet("getFrozenRows", 1);        
 </script>
 
@@ -6963,23 +7001,6 @@ xlObj.showWaitingPopUp();
 <script>
 // show waiting popup in the Spreadsheet
 $("#Spreadsheet").ejSpreadsheet("showWaitingPopUp");
-</script>
-
-{% endhighlight %}
-
-### unfreezePanes()
-{:#methods:unfreezepanes}
-
-This method is used to unfreeze the frozen rows and columns in the Spreadsheet.
-
-#### Example
-
-{% highlight html %}
-<script>
-//Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-// To unfreeze the freezed rows and columns in the sheet.
-xlObj.XLFreeze.unfreezePanes();
 </script>
 
 {% endhighlight %}
@@ -9383,7 +9404,7 @@ This method is used to freeze columns upto the specified column index in the Spr
 {% highlight html %}
 <div id="Spreadsheet"></div> 
 <script>
-//initialize the Spreadsheet object
+//Initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Freeze a column in the sheet.
 xlObj.XLFreeze.freezeColumns(2);
@@ -9409,7 +9430,7 @@ xlObj.XLFreeze.freezeLeftColumn();
 
 {% endhighlight %}
 
-### XLFreeze.freezePanes(cell)
+### XLFreeze.freezePanes(rowIdx, colIdx)
 {:#methods:xlfreeze-freezepanes}
 
 This method is used to freeze rows and columns before the specified cell in the Spreadsheet.
@@ -9424,9 +9445,14 @@ This method is used to freeze rows and columns before the specified cell in the 
 </thead>
 <tbody>
 <tr>
-<td class="name">cell</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Row index and column index of the cell which you want to freeze.</td>
+<td class="name">rowIdx</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Index of the row to be freeze.</td>
+</tr>
+<tr>
+<td class="name">colIdx</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Index of the column to be freeze.</td>
 </tr>
 </tbody>
 </table>
@@ -9439,7 +9465,7 @@ This method is used to freeze rows and columns before the specified cell in the 
 // Initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Freeze some rows and columns in the sheet.
-xlObj.XLFreeze.freezePanes({ rowIndex: 2, colIndex: 3});
+xlObj.XLFreeze.freezePanes(2, 3});
 </script>
 
 {% endhighlight %}
@@ -9487,13 +9513,31 @@ This method is used to freeze the top row in the Spreadsheet.
 {% highlight html %}
 <div id="Spreadsheet"></div> 
 <script>
-//initialize the Spreadsheet object
+//Initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Freeze the top row in the sheet.
 xlObj.XLFreeze.freezeTopRow();
 </script>
 
 {% endhighlight %}
+
+### unfreezePanes()
+{:#methods:xlfreeze-unfreezepanes}
+
+This method is used to unfreeze the frozen rows and columns in the Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<script>
+//Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To unfreeze the frozen rows and columns in the sheet.
+xlObj.XLFreeze.unfreezePanes();
+</script>
+
+{% endhighlight %}
+
 
 ### XLPivot
 {:#methods:xlpivot}
