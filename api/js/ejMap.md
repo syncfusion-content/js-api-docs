@@ -1658,11 +1658,11 @@ Specifies the map view type.
 	<tbody>
 		<tr>
 			<td class="name">geographic</td>			
-			<td class="description">specifies the geographic of map</td>
+			<td class="description">specifies the geographic view of map</td>
 		</tr>
 		<tr>
 			<td class="name">normal</td>			
-			<td class="description">specifies the normal view of map</td>
+			<td class="description">specifies the normal land view of map</td>
 		</tr>
 	</tbody>
 </table>
