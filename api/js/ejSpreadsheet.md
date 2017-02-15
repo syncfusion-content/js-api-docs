@@ -2645,7 +2645,7 @@ $('#Spreadsheet').ejSpreadsheet({
 {% endhighlight %}
 
 ### sheets.frozenRows `number`
-{:#members:sheets-freezerows}
+{:#members:sheets-frozenRows}
 
 Gets or sets a value to freeze rows in the Spreadsheet.
 
