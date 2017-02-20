@@ -1180,7 +1180,7 @@ $("#Grid").ejGrid({
 
 <ts name="ej.Grid.FilterType"/>
 
-Gets or sets a value that indicates to render the excel or menu filter dialog to the grid columns. See <a href="global.html#filterType">filterType</a>
+Gets or sets a value that indicates to render the excel or menu filter dialog to the grid columns. See <a href="global.html#enum:filterType">filterType</a>
 
 #### Default Value:
 {:.param}
@@ -6227,7 +6227,7 @@ $("#Grid").ejGrid("editCell", 2, "OrderID");
 ### editFormValidate()
 {:#methods:editformvalidate}
 
-It returns a value and shows the validation message that indicates whether the edit form validation is based on the validation rules.
+It returns a value and if the input field values of edit form is not based on the validation rules then it will show the validation message. Edit form validation is based only on the validation rules.
 
 #### Returns:
 {:#methods:returns:}
@@ -9442,7 +9442,7 @@ $("#Grid").ejGrid("setPhoneModeMaxWidth", 500);
 ### setValidation()
 {:#methods:setvalidation}
 
-Set validation to columns in the grid.
+Set validation to editfrom in the grid.
 
 #### Returns:
 {:#methods:returns:}
@@ -9474,7 +9474,7 @@ $("#Grid").ejGrid("setValidation");
 ### setValidationToField(fieldName, rules)
 {:#methods:setvalidationtofield}
 
-Set validation to a particular field dynamically.
+Set validation to a particular input field in a editfrom dynamically.
 
 <table class="params">
 <thead>
