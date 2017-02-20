@@ -1180,7 +1180,7 @@ $("#Grid").ejGrid({
 
 <ts name="ej.Grid.FilterType"/>
 
-This specifies the grid to show the excel or menu filetr dialog to the grid columns. See <a href="global.html#filterType">filterType</a>
+Gets or sets a value that indicates to render the excel or menu filter dialog to the grid columns. See <a href="global.html#filterType">filterType</a>
 
 #### Default Value:
 {:.param}
