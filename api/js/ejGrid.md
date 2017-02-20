@@ -1180,7 +1180,7 @@ $("#Grid").ejGrid({
 
 <ts name="ej.Grid.FilterType"/>
 
-This specifies the grid to show the excel or menu to the grid columns. See <a href="global.html#filterType">filterType</a>
+This specifies the grid to show the excel or menu filetr dialog to the grid columns. See <a href="global.html#filterType">filterType</a>
 
 #### Default Value:
 {:.param}
@@ -3971,7 +3971,7 @@ $("#Grid").ejGrid({
 ### scrollSettings.autoHide `Boolean`
 {:#members:scrollsettings-autohide}
  
-It accepts the boolean value and shows or hides the scrollbar while focus or out of focus in the Grid.
+It accepts the boolean value and shows or hides the scrollbar while focus in or focus out of the Grid.
 
 #### Default Value:
 {:.param}
@@ -6965,7 +6965,7 @@ Get the column index of the given headerText of column in grid.
 <tr>
 <td class="name">field</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last"><span class="optional">optional</span>Pass the field of the column to get that column index</td>
+<td class="description last"><span class="optional">optional</span>Optional Pass the field name of the column.</td>
 </tr>
 </tbody>
 </table>
@@ -7845,7 +7845,7 @@ $("#Grid").ejGrid("getSelectedRows");
 ### getsortColumnByField(field)
 {:#methods:getsortcolumnbyfield}
 
-It accepts the string value and returns the sorted direction of the column in grid.
+It accepts the string value and returns the field and sorted direction of the column in grid.
 
 <table class="params">
 <thead>
