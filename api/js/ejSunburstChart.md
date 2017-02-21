@@ -305,7 +305,7 @@ $("#container").ejSunburstChart({
 ### isResponsive `boolean`
 {:#members:isresponsive}
 
-Controls wheather sunburst has to be responsive or not.
+Controls whether sunburst has to be responsive or not.
 
 #### Default Value
 
@@ -950,7 +950,7 @@ $("#container").ejSunburstChart({
 
 <ts name = "ej.datavisualization.Sunburst.SunburstLabelRotationMode"/>
 
-Alginment of sunburst datalabel
+Alignment of sunburst datalabel
 
 
 <table class="props">
@@ -1158,7 +1158,7 @@ $("#container").ejSunburstChart({
 ### dataLabelSettings.template `string`
 {:#members:datalabelsettings-template}
 
-Custome template for datalabel 
+Custom template for datalabel 
 
 
 #### Default Value
@@ -1182,7 +1182,7 @@ $("#container").ejSunburstChart({
 ### dataLabelSettings.fill `string`
 {:#members:datalabelsettings-fill}
 
-Fill color for the datalable
+Fill color for the datalabel
 
 
 #### Default Value
@@ -1237,7 +1237,7 @@ Hide</td>
 <td class="name">
 None</td>
 <td class="type">string</td>
-<td class="description"> Datalable displayed in normal format</td>
+<td class="description"> Datalabel displayed in normal format</td>
 </tr>
 </tbody>
 </table>
@@ -3618,7 +3618,7 @@ Rotation</td>
 <td class="name">
 FadeIn</td>
 <td class="type">string</td>
-<td class="description">Animates points in fadein</td>
+<td class="description">Animates points in fade in</td>
 </tr> 
 </tbody>
 </table>
@@ -4203,7 +4203,7 @@ type{% endhighlight %}</td>
 </tbody>
 </table>
 
-### pointRegionMousemove
+### pointRegionMouseMove
 {:#events:pointregionmousemove}
 
 
