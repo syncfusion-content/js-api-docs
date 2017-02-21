@@ -1692,7 +1692,7 @@ By default, you can add any text or image to the DropDownList item. To customize
     
 {% endhighlight %}
 
-### text `string`
+### text `string|number`
 {:#members:text}
 
 Defines the text value that is displayed in the DropDownList textbox.
@@ -1728,6 +1728,38 @@ Defines the text value that is displayed in the DropDownList textbox.
         console.log("Selected Item's Text - " + DropDownListObj.option("text"));
  
     </script>
+{% endhighlight %}
+
+{% highlight html %}
+ 
+    <div class="ctrllabel">Select a bike </div>
+    <input type="text" id="bikeList" />
+
+    <script>
+        BikeList = [
+                 { value: 2, text: "CBR 150-R" },
+                 { value: "hello", text: "CBZ Xtreme" },
+                 { value: 4, text: "Discover" },
+                 { value: 5, text: "Dazzler" },
+                 { value: 6, text: "Flame" },
+                 { value: "hi", text: 124243 },
+                 { value: 8, text: "FZ-S" },
+                 { value: 9, text: "Pulsar" },
+                 { value: 10, text: "Shine" },
+                 { value: 11, text: "R15" },
+                 { value: 12, text: "Unicorn" }
+            ];
+        //Initializes the DropDownList value property with the value specified.
+        var DropDownListObj = $('#bikeList').ejDropDownList(
+                              {
+                                  targetID: "carsList",
+                                  text: 124243
+                              }).data("ejDropDownList");
+
+        console.log("Selected Item's Value - " + DropDownListObj.option("value")); 
+
+    </script>
+
 {% endhighlight %}
 
 ### validationMessage `object`
@@ -1846,6 +1878,38 @@ Specifies the value (text content) for the DropDownList control.
         console.log("Selected Item's Value - " + DropDownListObj.option("value")); 
 
     </script>
+{% endhighlight %}
+
+{% highlight html %}
+ 
+    <div class="ctrllabel">Select a bike </div>
+    <input type="text" id="bikeList" />
+
+    <script>
+        BikeList = [
+                 { value: 2, text: "CBR 150-R" },
+                 { value: "hello", text: "CBZ Xtreme" },
+                 { value: 4, text: "Discover" },
+                 { value: 5, text: "Dazzler" },
+                 { value: 6, text: "Flame" },
+                 { value: "hi", text: 124243 },
+                 { value: 8, text: "FZ-S" },
+                 { value: 9, text: "Pulsar" },
+                 { value: 10, text: "Shine" },
+                 { value: 11, text: "R15" },
+                 { value: 12, text: "Unicorn" }
+            ];
+        //Initializes the DropDownList value property with the value specified.
+        var DropDownListObj = $('#bikeList').ejDropDownList(
+                              {
+                                  targetID: "carsList",
+                                  value: 4
+                              }).data("ejDropDownList");
+
+        console.log("Selected Item's Value - " + DropDownListObj.option("value")); 
+
+    </script>
+
 {% endhighlight %}
 
 ### watermarkText `string`
@@ -2806,12 +2870,11 @@ This method will return the selected item elements
 ### getSelectedValue()
 {:#methods:getselectedvalue}
 
-
 This method is used to retrieve the items value that are selected in the DropDownList.
 
-####Returns: string
+#### Returns: string|number
 
-This method will return the selected Item value and separated by delimiterChar in multi selection mode. 
+This method will return the selected Item value and separated by delimiterChar in multi selection mode in string return type. For the single selection mode, the selected item will be returned in its data type.
 
 #### Example
 
@@ -2849,32 +2912,33 @@ This method will return the selected Item value and separated by delimiterChar i
 {% endhighlight %}
 
 {% highlight html %}
+
+    <div class="ctrllabel">Select a bike (single selection)</div>
+    <input type="text" id="bikeList" />
+<script>
  
-   <select name="selectIndex" id="drpdwn">
+    BikeList = [
+        { value: 2, text: "CBR 150-R" },
+        { value: "hello", text: "CBZ Xtreme" },
+        { value: 4, text: "Discover" },
+        { value: 5, text: "Dazzler" },
+        { value: 6, text: "Flame" },
+        { value: "hi", text: 124243 },
+        { value: 8, text: "FZ-S" },
+        { value: 9, text: "Pulsar" },
+        { value: 10, text: "Shine" },
+        { value: 11, text: "R15" },
+        { value: 12, text: "Unicorn" }
+    ];
+    DropDownListObj =  $('#bikeList').ejDropDownList({
+        dataSource: BikeList,
+        text : "Shine"
+    }).data("ejDropDownList");
+    
+    alert(DropDownListObj.getSelectedValue());
 
-        <option value="Art">Art</option>
-        <option value="Architecture">Architecture</option>
-        <option value="Biographies">Biographies</option>
-        <option value="Business">Business</option>
-        <option value="ComputerIT">Computer IT</option>
-        <option value="Comics">Comics</option>
-        <option value="Cookery">Cookery</option>
-        <option value="Environment">Environment</option>
-        <option value="Fiction">Fiction</option>
-        <option value="Health">Health</option>
-        <option value="Humanities">Humanities</option>
-        <option value="Language">Language</option>
-   
- </select>
+</script>
 
-    <script>
-        // Creates the DropDownList.
-
-        $('#drpdwn').ejDropDownList({ text: "Comics"});
-
-        alert($('#drpdwn').ejDropDownList("getSelectedValue"));
-
-    </script>
 {% endhighlight %}
 
 ### hidePopup()
