@@ -6227,7 +6227,7 @@ $("#Grid").ejGrid("editCell", 2, "OrderID");
 ### editFormValidate()
 {:#methods:editformvalidate}
 
-It returns a value and if the input field values of edit form is not based on the validation rules then it will show the validation message. Edit form validation is based only on the validation rules.
+It returns a value and if the input field values of edit form is not based on the validation rules then it will show the validation message.
 
 #### Returns:
 {:#methods:returns:}
@@ -9442,7 +9442,7 @@ $("#Grid").ejGrid("setPhoneModeMaxWidth", 500);
 ### setValidation()
 {:#methods:setvalidation}
 
-Set validation to editfrom in the grid.
+Set validation to editform in the grid.
 
 #### Returns:
 {:#methods:returns:}
