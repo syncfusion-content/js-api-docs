@@ -261,7 +261,7 @@ Specifies the id of the template that has to be applied for alternate rows.
 Specifies the mapping property path for sub tasks in datasource
 
 
-#### Default Value:
+#### Default Value
 {:.param}
 
 * ""
@@ -327,7 +327,7 @@ Enables or disables the ability to filter the rows based on this column.
 
 Enables or disables the ability to sort the rows based on this column/field.
 
-#### Default Value:
+#### Default Value
 
 * false
 
@@ -346,7 +346,7 @@ Enables or disables the ability to sort the rows based on this column/field.
 
 Enables/disables cell selection.
 
-#### Default Value:
+#### Default Value
 
 * false
 
@@ -406,7 +406,7 @@ Specifies the edit type of the column.
 </tbody>
 </table>
 
-#### Default Value:
+#### Default Value
 
 * ej.TreeGrid.EditingType.String
 
@@ -427,7 +427,7 @@ Specifies the edit type of the column.
 Specifies the name of the field from the dataSource to bind with this column.
 
 
-#### Default Value:
+#### Default Value
 
 * ""
 
@@ -563,7 +563,7 @@ Controls the visibility of the column.
 
 Gets or sets a value for treegrid column width
 
-#### Default Value:
+#### Default Value
 
 * -
 
@@ -781,7 +781,7 @@ Enables or disables the ability to edit a row or cell.
 
 To Specify the column fields to be displayed in the dialog while inserting a column using column menu.
 
-#### Default Value:
+#### Default Value
 {:.param}
 
 * []
@@ -871,7 +871,7 @@ Shows/hides the context menu.
 Specify the CSS class for TreeGrid to achieve custom theme.
 
 
-#### Default Value:
+#### Default Value
 {:.param}
 
 * ""
@@ -1540,7 +1540,7 @@ Specifies the options for customizing the pager.
 Using this property we can specify the number of pages should pager contains, according to this count TreeGrid height will be updated.
 
 
-#### Default Value:
+#### Default Value
 {:.param}
 
 * 8
@@ -1568,7 +1568,7 @@ Using this property we can specify the number of pages should pager contains, ac
 This specifies the number of rows to display in each page.
 
 
-#### Default Value:
+#### Default Value
 {:.param}
 
 * 12
@@ -1595,7 +1595,7 @@ This specifies the number of rows to display in each page.
 Get the value of records which is bound to TreeGrid. The totalRecordsCount value is calculated based on the datasource bound to TreeGrid.
 
 
-#### Default Value:
+#### Default Value
 {:.param}
 
 * null
@@ -1621,7 +1621,7 @@ Get the value of records which is bound to TreeGrid. The totalRecordsCount value
 
 Specifies the current page to display at load time.
 
-#### Default Value:
+#### Default Value
 {:.param}
 
 * 1
@@ -1850,7 +1850,7 @@ Specifies the type of selection whether to select row or cell.
 </tbody>
 </table>
 
-#### Default Value:
+#### Default Value
 {:.param}
 
 * ej.TreeGrid.SelectionMode.Row
@@ -1900,7 +1900,7 @@ Specifies the type of selection whether single, multiple or checkbox.
 </tbody>
 </table>
 
-#### Default Value:
+#### Default Value
 
 * ej.TreeGrid.SelectionType.Single
 
@@ -1920,7 +1920,7 @@ Specifies the type of selection whether single, multiple or checkbox.
 
 Enables or disables the selection by hierarchy in check box selection
 
-#### Default Value:
+#### Default Value
 {:.param}
 
 * true
@@ -1945,7 +1945,7 @@ Enables or disables the selection by hierarchy in check box selection
 
 Toggles the visibility of the checkbox in column header, using which all the check boxes can be selected or unselected.
 
-#### Default Value:
+#### Default Value
 
 * true
 
@@ -1964,7 +1964,7 @@ Toggles the visibility of the checkbox in column header, using which all the che
 
 Enables/disables the options for inserting , deleting and renaming  columns.
 
-#### Default Value:
+#### Default Value
 {:.param}
 
 * false
@@ -2263,7 +2263,7 @@ Options for sorting the rows.
 Option to add columns based on which the rows have to be sorted recursively.
 
 
-#### Default Value:
+#### Default Value
 {:.param}
 * []
 
@@ -2292,7 +2292,7 @@ Options for displaying and customizing the toolbar items.
 Shows/hides the toolbar.
 
 
-#### Default Value:
+#### Default Value
 {:.param}
 * false
 
@@ -2359,7 +2359,7 @@ Specifies the list of toolbar items to be rendered in TreeGrid toolbar
 </tbody>
 </table>
 
-#### Default Value:
+#### Default Value
 {:.param}
 * []
 
@@ -2379,7 +2379,7 @@ Specifies the list of toolbar items to be rendered in TreeGrid toolbar
 Specifies the index of the column that needs to have the expander button. By default, cells in the first column contain the expander button.
 
 
-#### Default Value:
+#### Default Value
 {:.param}
 * 0
 
