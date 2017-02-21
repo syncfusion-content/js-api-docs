@@ -1051,6 +1051,61 @@ Specifies the edit mode in Gantt, "normal" is for dialog editing ,"cellEditing" 
 
 {% endhighlight %}
 
+
+### editSettings.rowPosition `enum`
+{:#members:editsettings-rowposition}
+
+<ts name = "ej.Gantt.RowPosition"/>
+
+Specifies the position where the new row has to be added.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Top</td>
+<td class="description">you can add a new row at top.</td>
+</tr>
+<tr>
+<td class="name">Bottom</td>
+<td class="description">you can add a new row at bottom.</td>
+</tr>
+<tr>
+<td class="name">AboveSelectedRow</td>
+<td class="description">you can add a new row to above selected row.</td>
+</tr>
+<tr>
+<td class="name">BelowSelectedRow</td>
+<td class="description">you can add a new row to below selected row.</td>
+</tr>
+<tr>
+<td class="name">Child</td>
+<td class="description">you can add a new row as a child for selected row.</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Default Value
+
+* ej.Gantt.RowPosition.BelowSelectedRow
+
+
+#### Example
+
+
+{% highlight html %}
+   
+ $("#gantt").ejGantt({  editSettings:{rowPosition : ej.Gantt.RowPosition.AboveSelectedRow} });
+
+{% endhighlight %}
+
+
 ### enableAltRow `boolean`
 {:#members:enablealtrow}
 
