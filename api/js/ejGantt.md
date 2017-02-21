@@ -2820,7 +2820,7 @@ Specified the format for year view in schedule header
 
 
 ### scheduleHeaderSettings.timescaleUnitSize `string`
-{:#members:scheduleheadersettings-timscaleunitsize}
+{:#members:scheduleheadersettings-timescaleunitsize}
 
 Specifies the size of the lowest time unit along the timescale, with minimum value as "50%" and maximum value as "500%". It is also possble to set the value in pixels.
 
