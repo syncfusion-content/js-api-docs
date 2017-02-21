@@ -2819,7 +2819,7 @@ $("#Grid").ejGrid({
 
 <ts name="ej.Grid.FilterType"/>
 
-This specifies the grid to show the filterBar or filterMenu to the grid records. See <a href="global.html#filterType">filterType</a>
+This specifies the grid to show the filterBar or filterMenu to the grid records. See <a href="global.html#enum:filterType">filterType</a>
 
 #### Default Value:
 {:.param}
