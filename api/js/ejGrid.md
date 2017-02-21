@@ -1538,7 +1538,7 @@ $("#Grid").ejGrid({
 
 <ts ref=" ej.TextAlign"/>
 
-Gets or sets a value that indicates to align the text within the column. See textAlign
+Gets or sets a value that indicates to align the text within the column. See <a href="global.html#enum:textalign">textAlign</a> 
 
 #### Default Value:
 {:.param}
@@ -2055,7 +2055,7 @@ $("#Grid").ejGrid({
 
 <ts name="ej.Grid.EditMode"/>
 
-Gets or sets a value that indicates whether to define the mode of editing See editMode
+Gets or sets a value that indicates whether to define the mode of editing See <a href="global.html#enum:editmode">editMode</a> 
 
 #### Default Value:
 {:.param}
@@ -2161,7 +2161,7 @@ $("#Grid").ejGrid({
 
 <ts name="ej.Grid.FormPosition"/>
 
-This specifies to set the position of an External edit form either in the top-right or bottom-left of the grid
+This specifies to set the position of an External edit form either in the top-right or bottom-left of the grid. See <a href="global.html#enum:formposition">formPosition</a>
 
 #### Default Value:
 {:.param}
@@ -2242,7 +2242,7 @@ $("#Grid").ejGrid({
 
 <ts name="ej.Grid.RowPosition"/>
 
-This specifies to set the position of an adding new row either in the top or bottom of the grid
+This specifies to set the position of an adding new row either in the top or bottom of the grid. See <a href="global.html#enum:rowposition">rowPosition</a>
 
 #### Default Value:
 {:.param}
@@ -2684,7 +2684,7 @@ $("#Grid").ejGrid({
 
 <ts name="ej.Grid.FilterBarMode"/>
 
-This specifies the grid to starts the filter action while typing in the filterBar or after pressing the enter key. based on the filterBarMode. See filterBarMode
+This specifies the grid to starts the filter action while typing in the filterBar or after pressing the enter key. based on the filterBarMode. See <a href="global.html#enum:filterbarmode">filterBarMode</a>.
 
 #### Default Value:
 {:.param}
@@ -2742,7 +2742,7 @@ Gets or sets a value that indicates whether to define the matchCase of given val
 
 <ts ref="ej.FilterOperators"/>
 
-Gets or sets a value that indicates whether to define the filter condition to filtered column.
+Gets or sets a value that indicates whether to define the filter condition to filtered column. See <a href="global.html#enum:filteroperator">operator</a>
 
 #### Default Value:
 {:.param}
@@ -3420,7 +3420,7 @@ $("#print").text("TotalRecordsCount: " + value);
 
 <ts name="ej.Grid.PrintMode"/>
 
-Gets or sets a value that indicates whether to define the number of pages to print
+Gets or sets a value that indicates whether to define the number of pages to print. See <a href="global.html#enum:printmode">printMode</a>.
 
 #### Default Value:
 {:.param}
@@ -4127,7 +4127,7 @@ $("#Grid").ejGrid({
 
 <ts name="ej.Grid.VirtualScrollMode"/>
 
-This is used to define the mode of virtual scrolling in grid. See virtualScrollMode
+This is used to define the mode of virtual scrolling in grid. See <a href="global.html#enum:virtualscrollmode">virtualScrollMode</a>
 
 #### Default Value:
 {:.param}
@@ -4948,7 +4948,7 @@ $("#Grid").ejGrid({
 
 <ts name="ej.Grid.SummaryType"/>
 
-Gets or sets a value that indicates the type of calculations to be performed for the corresponding summary column
+Gets or sets a value that indicates the type of calculations to be performed for the corresponding summary column. See <a href="global.html#enum:summarytype">summaryType</a>.
 
 #### Default Value:
 {:.param}
@@ -5217,7 +5217,7 @@ $("#Grid").ejGrid({
 
 <ts name="ej.Grid.ToolBarItems" />
 
-Gets or sets a value that indicates whether to add the default editing actions as a toolbar items
+Gets or sets a value that indicates whether to add the default editing actions as a toolbar items. See <a href="global.html#enum:toolbaritems">toolbarItems</a>.
 
 #### Default Value:
 {:.param}
