@@ -303,6 +303,70 @@ Specifies the input mask.
 
 * null
 
+#### Available Mask Formats 
+
+<table class="params">
+<thead>
+<tr>
+<th>Formats</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+[0-9]</td>
+<td class="description">Allows the value between 0 to 9</td>
+</tr>
+<tr>
+<td class="name">
+a</td>
+<td class="description">Allows the values between a to z, A to Z, 0 to 9 and space</td>
+</tr>
+<tr>
+<td class="name">
+A</td>
+<td class="description">Allows the values between a to z, A to Z and 0 to 9</td>
+</tr>
+<tr>
+<td class="name">
+N</td>
+<td class="description">Allows the values between 0 to 9 only</td>
+</tr>
+<tr>
+<td class="name">
+#</td>
+<td class="description">Allows the values between 0 to 9 only</td>
+</tr>
+<tr>
+<td class="name">
+&</td>
+<td class="description">Allows the values between a to Z, A to Z, 0 to 9 and special characters</td>
+</tr>
+<tr>
+<td class="name">
+<</td>
+<td class="description">Converts all characters that follow to lowercase.</td>
+</tr>
+<tr>
+<td class="name">
+></td>
+<td class="description">Converts all characters that follow to Uppercase.</td>
+</tr>
+<tr>
+<td class="name">
+C</td>
+<td class="description">Allows only the character given in customCharacter API</td>
+</tr>
+<tr>
+<td class="name">
+?</td>
+<td class="description">Allows only the values between a to z and A to Z</td>
+</tr>
+</tbody>
+</table>
+
+
 
 
 #### Example
