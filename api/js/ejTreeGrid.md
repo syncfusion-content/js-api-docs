@@ -1450,7 +1450,7 @@ Specifies the localization information to customize the User Interface (UI) to s
 ### parseRowTemplate  `boolean`
 {:#members:parserowtemplate}
 
-Enables or disables internal parsing of a row. When disbaled this property, row will be displayed using the defined template without any internal event bindings.
+Enables or disables internal parsing of a row. When disabled this property, row will be displayed using the defined template without any internal event bindings.
 
 
 #### Default Value
