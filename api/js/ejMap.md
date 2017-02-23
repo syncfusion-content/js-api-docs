@@ -1641,7 +1641,6 @@ set the smartLabelSize property
 
 
 
-
 ### layers.geometryType `enum`
 {:#members:layers-geometrytype}
 
@@ -1694,8 +1693,6 @@ Specifies the map view type.
    $("#container").data("ejMap").model.layers[layerIndex].geometryType  = 'normal';
 
 {% endhighlight %}
-
-
 
 
 ### layers.layerType `enum`
