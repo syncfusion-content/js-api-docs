@@ -1697,6 +1697,8 @@ By default, you can add any text or image to the DropDownList item. To customize
 
 Defines the text value that is displayed in the DropDownList textbox.
 
+For the single selection mode, the selected item's text will be returned in its data type. In case of MultiSelectMode, returns the selected item's texts and separated by delimiterChar in string type.
+
 #### Default Value
 
 * null
@@ -1845,6 +1847,8 @@ Sets the jQuery validation rules in the Dropdownlist.
 {:#members:value}
 
 Specifies the value (text content) for the DropDownList control.
+
+For the single selection mode, the selected item's value will be returned in its data type. In case of MultiSelectMode, returns the selected item's values and separated by delimiterChar in string type.
 
 #### Default Value
 
