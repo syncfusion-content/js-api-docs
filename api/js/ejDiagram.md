@@ -3870,6 +3870,52 @@ $("#diagramcontent").ejDiagram({contextMenu: contextMenu});
 
 {% endhighlight %}
 
+### contextMenu.items.text `string`
+{:#members:contextmenu-items-text}
+
+Defines the text for the collection of context menu item
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+//Collection of items
+var menuitems = [{ "text": "ZoomIn" }];
+var contextMenu = { items: menuitems};
+$("#diagramcontent").ejDiagram({contextMenu: contextMenu});
+</script>
+
+{% endhighlight %}
+
+### contextMenu.items.name `string`
+{:#members:contextmenu-items-name}
+
+Defines the name for the collection of context menu items
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+//Collection of items
+var menuitems = [{ "name": "zoomin"}];
+var contextMenu = { items: menuitems};
+$("#diagramcontent").ejDiagram({contextMenu: contextMenu});
+</script>
+
+{% endhighlight %}
+
 ### contextMenu.items.imageUrl `string`
 {:#members:contextmenu-items-imageurl}
 
@@ -3921,6 +3967,37 @@ $("#diagramcontent").ejDiagram({contextMenu: contextMenu});
 </script>
 
 {% endhighlight %}
+
+### contextMenu.items.subItems `Array`
+{:#members:contextmenu-items-subitems}
+
+Defines the collection of sub items for the context menu items
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#diagramcontent").ejDiagram({
+    contextMenu: {
+            // Defines the custom context menu items
+            items: [{
+                name: "zoom",
+                // Text to be displayed
+                text: "Zoom",
+                // Defines the sub items
+                subItems: [{name: "zoomIn", text: "ZoomIn"}, {name: "zoomOut",text: "ZoomOut"}]
+            }]
+        }});
+</script>
+
+{% endhighlight %}
+
 
 
 ### contextMenu.showCustomMenuItemsOnly `boolean`
