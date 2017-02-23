@@ -1225,7 +1225,7 @@ In connection with an OLAP database, this property contains the database name as
 ### dataSource.enableAdvancedFilter `boolean`
 {:#members:datasource-enableadvancedfilter}
 
-Allows user to filter the members (by its name and values) through advanced filtering (excel-like) option for OLAP data source in client-mode.
+Allows user to filter the members (by its name and values) through advanced filtering (excel-like) option in client-mode.
 
 #### Default Value: false
 

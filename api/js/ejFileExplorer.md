@@ -5221,6 +5221,12 @@ path</td>
 <td class="description">returns the path of selected items.</td>
 </tr>
 <tr>
+<tr>
+<td class="name">
+names</td>
+<td class="type"><span class="param-type">string[]</span></td>
+<td class="description">returns the name of selected items.</td>
+</tr>
 <td class="name">
 selectedItems</td>
 <td class="type"><span class="param-type">object</span></td>
@@ -5405,6 +5411,11 @@ Fires when the items from grid view or tile view or large icons view of FileExpl
 <td class="description">Returns the name of unselected item.</td>
 </tr>
 <tr>
+<td class="name">names</td>
+<td class="type"><span class="param-type">string[]</span></td>
+<td class="description">Returns the name of unselected items.</td>
+</tr>
+<tr>
 <td class="name">nodeType</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the type of unselected item.</td>
@@ -5423,6 +5434,11 @@ Fires when the items from grid view or tile view or large icons view of FileExpl
 <td class="name">unselectedItem</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">Returns the unselected item details.</td>
+</tr>
+<tr>
+<td class="name">unselectedItems</td>
+<td class="type"><span class="param-type">object[]</span></td>
+<td class="description">Returns the unselected items details.</td>
 </tr>
 </tbody>
 </table>

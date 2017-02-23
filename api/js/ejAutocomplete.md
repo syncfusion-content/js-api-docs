@@ -47,7 +47,7 @@ The AutoComplete control is a textbox control that provides a list of suggestion
 
 ## Members
 
-### addNewText `boolean`
+### addNewText `string`
 {:#members:addnewtext}
 
 Customize "Add New" text (label) to be added in the autocomplete popup list for the entered text when there are no suggestions for it. 
@@ -455,7 +455,7 @@ Specifies the search filter type. There are several types of search filter avail
 
 {% endhighlight %}
 
-### height `string`
+### height `string|number`
 {:#members:height}
 
 The height of the Autocomplete textbox.
@@ -1426,7 +1426,7 @@ The text to be displayed when the value of the autocomplete textbox is empty.
 
 {% endhighlight %}
 
-### width `string`
+### width `string|number`
 {:#members:width}
 
 The width of the Autocomplete textbox.
