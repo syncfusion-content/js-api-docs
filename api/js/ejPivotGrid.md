@@ -1296,53 +1296,6 @@ Allows the user to freeze both the row headers and column headers on scrolling.
     $("#PivotGrid1").ejPivotGrid({ frozenHeaderSettings: { enableFrozenHeaders: true } });
 {% endhighlight %}
 
-
-### valueSortSettings `object`
-{:#members:valuesortsettings}
-
-> **Note**: This is applicable only for binding Relational data from client-side.
-
-Object that holds the settings for value sorting.
-
-### valueSortSettings.headerText `string`
-{:#members:valuesortsettings-headertext}
-
-Allows the user to select the column for sorting by applying the headers of that column with any delimiters.
-
-#### Default Value: ""
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ valueSortSettings: { headerText: "Bike##Quantity" } });
-
-{% endhighlight %}
-
-### valueSortSettings.headerDelimiters `string`
-{:#members:valuesortsettings-headerdelimiters}
-
-It seperates the headers of the selected column with the given delimiters.
-
-#### Default Value: "##"
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ valueSortSettings: { headerDelimiters: "##" } });
-
-{% endhighlight %}
-
-### valueSortSettings.sortOrder `enum`
-{:#members:valuesortsettings-sortorder}
-
-Allows the user to set the order of sorting which is either ascending or descending.
-
-#### Default Value: ej.PivotAnalysis.SortOrder.None
-
-{% highlight javascript %}
- 
-    $("#PivotGrid1").ejPivotGrid({ valueSortSettings: { sortOrder: ej.PivotAnalysis.SortOrder.Descending } });
-{% endhighlight %}
-
-
 ### customObject `object`
 {:#members:customobject}
 
