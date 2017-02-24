@@ -84,7 +84,7 @@ $('#percentage').ejPercentageTextbox({value:100});
 
 
 
-Specify the currency symbol of the Currency Textbox Component.
+Specifies the currency symbol of currency textbox, used when the user wants to overwrite the currency symbol commonly instead of the current culture symbol.
 
 
 #### Default Value
