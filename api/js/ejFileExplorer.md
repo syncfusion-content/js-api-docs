@@ -5437,7 +5437,7 @@ Fires when the items from grid view or tile view or large icons view of FileExpl
 </tr>
 <tr>
 <td class="name">unselectedItems</td>
-<td class="type"><span class="param-type">object[]</span></td>
+<td class="type"><span class="param-type">array</span></td>
 <td class="description">Returns the unselected items details.</td>
 </tr>
 </tbody>
