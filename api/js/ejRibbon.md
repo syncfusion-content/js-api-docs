@@ -55,7 +55,7 @@ The ribbon can be easily configured to the DOM element, such as div. You can cre
 ### allowResizing `boolean`
 {:#members:allowresizing}
 
-Enables the ribbon resize feature.allowResizing is a deprecated property of [`isResponsive`](http://help.syncfusion.com/api/js/ejribbon#members:isresponsive). 
+Enables the ribbon resize feature.allowResizing is a deprecated property of [`isResponsive`](https://help.syncfusion.com/api/js/ejribbon#members:isresponsive). 
 
 #### Default Value
 

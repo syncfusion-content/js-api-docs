@@ -1978,7 +1978,7 @@ Provides option to customize the tooltip format.
 
 
 
-Sets the jQuery validation support to DatePicker Date value. See [validation](http://help.syncfusion.com/js/datepicker/validation)
+Sets the jQuery validation support to DatePicker Date value. See [validation](https://help.syncfusion.com/js/datepicker/validation)
 
 
 
@@ -2035,7 +2035,7 @@ Sets the jQuery validation support to DatePicker Date value. See [validation](ht
 
 
 
-Sets the jQuery validation custom rules to the DatePicker. see [validation](http://help.syncfusion.com/js/datepicker/validation)
+Sets the jQuery validation custom rules to the DatePicker. see [validation](https://help.syncfusion.com/js/datepicker/validation)
 
 
 
