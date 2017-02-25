@@ -3486,7 +3486,7 @@ Sets the collection of timezone items to be bound to the Schedule. Only the item
 ### timeZoneCollection.dataSource `Object`
 {:#members:timezonecollection-datasource}
 
-Sets the collection of timezone items to the dataSource that accepts either JSON object collection or DataManager ([ej.DataManager](http://helpjs.syncfusion.com/js/datamanager/overview)) instance that contains Schedule timezones.
+Sets the collection of timezone items to the dataSource that accepts either JSON object collection or DataManager ([ej.DataManager](https://help.syncfusion.com/js/datamanager/overview)) instance that contains Schedule timezones.
 
 #### Default Value
 
