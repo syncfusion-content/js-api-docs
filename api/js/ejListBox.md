@@ -531,7 +531,7 @@ $("#customerlist").ejListBox({
 
 Loads data for the listbox by default (i.e. on initialization) when it is set to true. It creates empty ListBox if it is set to false.
 
-N> It is used along with cascading feature. See also [cascadeTo](http://help.syncfusion.com//api/js/ejlistbox#members:cascadeto).
+N> It is used along with cascading feature. See also [cascadeTo](https://help.syncfusion.com//api/js/ejlistbox#members:cascadeto).
 
 Default Value: 
 ####true

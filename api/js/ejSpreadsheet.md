@@ -2764,7 +2764,7 @@ $('#Spreadsheet').ejSpreadsheet({
 ### sheets.query `Object`
 {:#members:sheets-query}
 
-Specifies the query for the [`dataSource`](http://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-datasource "dataSource") in Spreadsheet.
+Specifies the query for the [`dataSource`](https://help.syncfusion.com/api/js/ejspreadsheet#members:sheets-datasource "dataSource") in Spreadsheet.
 
 #### Default Value:
 
