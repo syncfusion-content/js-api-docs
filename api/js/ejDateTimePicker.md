@@ -57,7 +57,9 @@ options</td>
 <script>
 // Create DateTimePicker
 $("#datetime").ejDateTimePicker();
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -93,12 +95,45 @@ $("#datetime").ejDateTimePicker();
 
 
 
+
 N> jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
 
 
 
 
+
 ## Members
+
+
+
+
+### allowEdit `boolean`
+{:#members:allowedit}
+
+
+Used to allow or restrict the editing in DateTimePicker input field directly. By setting false to this API, You can only pick the date and time values from DateTimePicker popup.
+
+
+#### Default Value
+
+
+* true
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="datetimepicker" />
+<script>
+//To set allowEdit API during initialization to deny edit  
+        $("#datetimepicker").ejDateTimePicker({   allowEdit : false });
+</script>
+
+{% endhighlight %}
+
 
 
 
@@ -138,7 +173,9 @@ Displays the custom text for the buttons inside the DateTimePicker popup. when t
 <script>
 //To set buttonText API during initialization  
         $("#datetime").ejDateTimePicker({  buttonText: { done: "&#20570;&#36807;" } });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -172,7 +209,9 @@ Sets the text for the Done button inside the datetime popup.
 <script>
 //To set buttonText API during initialization  
         $("#datetime").ejDateTimePicker({ buttonText: { done: "Done" }});
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -206,7 +245,9 @@ Sets the text for the Now button inside the datetime popup.
 <script>
 //To set buttonText API during initialization  
         $("#datetime").ejDateTimePicker({ buttonText: { timeNow: "Current Time" }});
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -240,7 +281,9 @@ Sets the header text for the Time dropdown.
 <script>
 //To set buttonText API during initialization  
         $("#datetime").ejDateTimePicker({ buttonText: { timeTitle: "Time" }});
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -274,7 +317,9 @@ Sets the text for the Today button inside the datetime popup.
 <script>
 //To set buttonText API during initialization  
         $("#datetime").ejDateTimePicker({ buttonText: { today: "Today" }});
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -323,7 +368,9 @@ Set the root class for DateTimePicker theme. This cssClass API helps to use cust
 <script>                  
 //To set cssClass API during initialization  
         $("#datetime").ejDateTimePicker({  cssClass: "gradient-lime" });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -373,7 +420,9 @@ Defines the datetime format displayed in the DateTimePicker. The value should be
 <script>
 //To set dateTimeFormat API during initialization  
         $("#datetime").ejDateTimePicker({  dateTimeFormat: "d/M/yyyy tt h:mm" });
-</script> {% endhighlight %}
+</script> 
+
+{% endhighlight %}
 
 
 
@@ -423,7 +472,9 @@ Specifies the header format of the datepicker inside the DateTimePicker popup. S
 <script>
 //To set dayHeaderFormat API during initialization  
         $("#datetime").ejDateTimePicker({  dayHeaderFormat: "short" });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -473,7 +524,9 @@ Specifies the navigation depth level in DatePicker calendar inside DateTimePicke
 <script>
 //To set depthLevel API during initialization  
         $("#datetime").ejDateTimePicker({  depthLevel: "decade" });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -524,6 +577,7 @@ Enable or disable the animation effect in DateTimePicker.
 // Set the enableAnimation value during initialization.                         
         $("#datetime").ejDateTimePicker({  enableAnimation : false });
 </script> 
+
 {% endhighlight %}
 
 
@@ -574,7 +628,9 @@ When this property is set to false, it disables the DateTimePicker control.
 <script>
 //To set enabled API during initialization  
         $("#datetime").ejDateTimePicker({  enabled: true });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -624,7 +680,9 @@ Enables or disables the state maintenance of DateTimePicker.
 <script>
 //To set enablePersistence API during initialization  
         $("#datetime").ejDateTimePicker({  enablePersistence: true });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -674,7 +732,9 @@ Sets the DateTimePicker direction as right to left alignment.
 <script>
 //To set enableRTL API during initialization  
         $("#datetime").ejDateTimePicker({  enableRTL: true });
-</script> {% endhighlight %}
+</script> 
+
+{% endhighlight %}
 
 
 
@@ -724,7 +784,9 @@ When enableStrictMode true it allows the value outside of the range also but it 
 <script>
 //To set enableStrictMode API during initialization  
         $("#datetime").ejDateTimePicker({  enableStrictMode: true });
-</script> {% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -774,7 +836,9 @@ Specifies the header format to be displayed in the DatePicker calendar inside th
 <script>
 //To set headerFormat API during initialization  
         $("#datetime").ejDateTimePicker({  headerFormat: "MM - yyyy" });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -824,7 +888,9 @@ Defines the height of the DateTimePicker textbox.
 <script>
 //To set height API during initialization  
         $("#datetime").ejDateTimePicker({  height: 40 });
-</script> {% endhighlight %}
+</script> 
+
+{% endhighlight %}
 
 
 
@@ -874,7 +940,9 @@ Specifies the HTML Attributes of the ejDateTimePicker
 <script>
 //To Set HtmlAttributes API during initialization  
         $("#datetime").ejDateTimePicker({ htmlAttributes : {required:"required"}});
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -924,7 +992,9 @@ Sets the time interval between the two adjacent time values in the time popup.
 <script>
 //To set interval API during initialization  
         $("#datetime").ejDateTimePicker({  interval: 60 });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -974,7 +1044,9 @@ Defines the localization culture for DateTimePicker.
 <script>
 //To set locale API during initialization  
         $("#datetime").ejDateTimePicker({  locale: "en-US" });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1024,7 +1096,9 @@ Sets the maximum value to the DateTimePicker. Beyond the maximum value an error 
 <script>
 //To set maxDateTime API during initialization  
         $("#datetime").ejDateTimePicker({  maxDateTime: new Date("12/10/2050 8:00:00 PM") });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1074,7 +1148,9 @@ Sets the minimum value to the DateTimePicker. Behind the minimum value an error 
 <script>
 //To set minDateTime API during initialization  
         $("#datetime").ejDateTimePicker({  minDateTime: new Date("5/5/2010 12:00:00 AM") });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1140,7 +1216,9 @@ Top</td>
 <script>
 //To set popupPosition API during initialization  
         $("#datetime").ejDateTimePicker({  popupPosition: "bottom" });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1189,7 +1267,9 @@ Indicates that the DateTimePicker value can only be read and can&rsquo;t change.
 <script>
 //To set readOnly API during initialization  
         $("#datetime").ejDateTimePicker({  readOnly: true });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1239,7 +1319,9 @@ It allows showing days in other months of DatePicker calendar inside the DateTim
 <script>
 //To set showOtherMonths API during initialization  
         $("#datetime").ejDateTimePicker({  showOtherMonths: false });
-</script> {% endhighlight %}
+</script> 
+
+{% endhighlight %}
 
 
 
@@ -1289,7 +1371,9 @@ Shows or hides the arrow button from the DateTimePicker textbox. When the button
 <script>
 //To set showPopupButton API during initialization  
         $("#datetime").ejDateTimePicker({  showPopupButton: false });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1339,7 +1423,9 @@ Changes the sharped edges into rounded corner for the DateTimePicker textbox and
 <script>
 //To set showRoundedCorner API during initialization  
         $("#datetime").ejDateTimePicker({  showRoundedCorner: true });
-</script> {% endhighlight %}
+</script> 
+
+{% endhighlight %}
 
 
 
@@ -1389,7 +1475,9 @@ Specifies the start day of the week in datepicker inside the DateTimePicker popu
 <script>
 //To set startDay API during initialization  
         $("#datetime").ejDateTimePicker({  startDay: 2 });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1434,7 +1522,9 @@ Specifies the start level view in datepicker inside the DateTimePicker popup. Se
 <script>
 //To set startLevel API during initialization  
         $("#datetime").ejDateTimePicker({  startLevel:ej.DatePicker.Level.Year });
-</script> {% endhighlight %}
+</script> 
+
+{% endhighlight %}
 
 
 
@@ -1484,7 +1574,9 @@ Specifies the number of months to navigate at one click of next and previous but
 <script>
 //To set stepMonths API during initialization  
         $("#datetime").ejDateTimePicker({  stepMonths: 2 });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1534,7 +1626,9 @@ Defines the time format displayed in the time dropdown inside the DateTimePicker
 <script>
 //To set timeDisplayFormat API during initialization  
         $("#datetime").ejDateTimePicker({  timeDisplayFormat: "HH:mm" });
-</script> {% endhighlight %}
+</script> 
+
+{% endhighlight %}
 
 
 
@@ -1570,6 +1664,7 @@ We can drill down up to time interval on selected date with meridian details.
 //To set timeDrillDown API during initialization  
         $("#datetime").ejDateTimePicker({  timeDrillDown: { enabled: true } });
 </script>
+
 {% endhighlight %}
 
 
@@ -1604,7 +1699,9 @@ This is the field to show/hide the timeDrillDown in DateTimePicker.
 <script>
 //To set timeDrillDown API during initialization  
         $("#datetime").ejDateTimePicker({ timeDrillDown: { enabled: true }});
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1638,7 +1735,9 @@ Sets the interval time of minutes on selected date.
 <script>
 //To set timeDrillDown API during initialization  
         $("#datetime").ejDateTimePicker({ timeDrillDown: { interval: 10 }});
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1672,7 +1771,9 @@ Allows the user to show or hide the meridian with time in DateTimePicker.
 <script>
 //To set timeDrillDown API during initialization  
         $("#datetime").ejDateTimePicker({ timeDrillDown: { showMeridian: true }});
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1706,7 +1807,9 @@ After choosing the time, the popup will close automatically if we set it as true
 <script>
 //To set buttonText API during initialization  
         $("#datetime").ejDateTimePicker({ timeDrillDown: { autoClose: true }});
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1757,7 +1860,9 @@ Defines the width of the time dropdown inside the DateTimePicker popup.
 <script>
 //To set timePopupWidth API during initialization  
         $("#datetime").ejDateTimePicker({  timePopupWidth: 150 });
-</script> {% endhighlight %}
+</script> 
+
+{% endhighlight %}
 
 
 
@@ -1814,7 +1919,9 @@ Set the jQuery validation error message in DateTimePicker.
            required: "Required DateTime value"
         }
 });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1868,7 +1975,9 @@ Set the jQuery validation rules in DateTimePicker.
           required:true
         }
 });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -1918,7 +2027,9 @@ Sets the DateTime value to the control.
 <script>
 //To set value API during initialization  
         $("#datetime").ejDateTimePicker({  value:"6/2/2014 6:00 AM" });
-</script> {% endhighlight %}
+</script> 
+
+{% endhighlight %}
 
 
 
@@ -1968,7 +2079,9 @@ Specifies the water mark text to be displayed in input text.
 <script>
 //To set watermarkText during initialization  
         $("#datetime").ejDateTimePicker({  watermarkText: "select value" });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -2018,7 +2131,9 @@ Defines the width of the DateTimePicker textbox.
 <script>
 //To set width API during initialization  
         $("#datetime").ejDateTimePicker({  width: 210 });
-</script> {% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -2071,7 +2186,9 @@ datetimeObj.disable(); // disables the DateTimePicker
 $("#datetime").ejDateTimePicker();
 // disables the DateTimePicker
 $("#datetime").ejDateTimePicker("disable");
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -2107,7 +2224,10 @@ $("#datetime").ejDateTimePicker();
 // Create DateTimePicker instance
 var datetimeObj = $("#datetime").data("ejDateTimePicker");
 datetimeObj.enable(); // enables the DateTimePicker
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
+
 
 
 {% highlight html %}
@@ -2117,7 +2237,9 @@ datetimeObj.enable(); // enables the DateTimePicker
 $("#datetime").ejDateTimePicker();
 // enables the DateTimePicker
 $("#datetime").ejDateTimePicker("enable");
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -2159,7 +2281,9 @@ $("#datetime").ejDateTimePicker();
 // Create DateTimePicker instance
 var datetimeObj = $("#datetime").data("ejDateTimePicker");
 datetimeObj.getValue(); // returns the datetime value
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -2169,7 +2293,9 @@ datetimeObj.getValue(); // returns the datetime value
 $("#datetime").ejDateTimePicker();
 // returns the datetime value
 $("#datetime").ejDateTimePicker("getValue");
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -2205,7 +2331,9 @@ $("#datetime").ejDateTimePicker();
 // Create DateTimePicker instance
 var datetimeObj = $("#datetime").data("ejDateTimePicker");
 datetimeObj.hide(); // hides the datetime popup
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -2215,7 +2343,9 @@ datetimeObj.hide(); // hides the datetime popup
 $("#datetime").ejDateTimePicker();
 // hides the datetime popup
 $("#datetime").ejDateTimePicker("hide");
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -2251,7 +2381,9 @@ $("#datetime").ejDateTimePicker();
 // Create DateTimePicker instance
 var datetimeObj = $("#datetime").data("ejDateTimePicker");
 datetimeObj.setCurrentDateTime(); // updates the current datetime value
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -2261,7 +2393,9 @@ datetimeObj.setCurrentDateTime(); // updates the current datetime value
 $("#datetime").ejDateTimePicker();
 // updates the current datetime value
 $("#datetime").ejDateTimePicker("setCurrentDateTime");
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -2297,7 +2431,9 @@ $("#datetime").ejDateTimePicker();
 // Create DateTimePicker instance
 var datetimeObj = $("#datetime").data("ejDateTimePicker");
 datetimeObj.show(); // opens the datetime popup
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -2307,7 +2443,9 @@ datetimeObj.show(); // opens the datetime popup
 $("#datetime").ejDateTimePicker();
 // opens the datetime popup
 $("#datetime").ejDateTimePicker("show");
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -2392,7 +2530,9 @@ element</td>
 $("#datetime").ejDateTimePicker({
    beforeClose: function (args) {}
 }); 
-</script>  {% endhighlight %}
+</script> 
+
+{% endhighlight %}
 
 
 
@@ -2467,7 +2607,9 @@ element</td>
 $("#datetime").ejDateTimePicker({
    beforeOpen: function (args) {}
 }); 
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -2558,7 +2700,9 @@ isInteraction</td>
 $("#datetime").ejDateTimePicker({
    change: function (args) {}
 }); 
-</script>                 {% endhighlight %}
+</script>               
+
+{% endhighlight %}
 
 
 
@@ -2635,7 +2779,9 @@ prevDateTime</td>
 $("#datetime").ejDateTimePicker({
    close: function (args) {}
 }); 
-</script>                 {% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -2700,7 +2846,9 @@ type</td>
 $("#datetime").ejDateTimePicker({
    create: function (args) {}
 }); 
-</script>                         {% endhighlight %}
+</script>            
+
+{% endhighlight %}
 
 
 
@@ -2765,7 +2913,9 @@ type</td>
 $("#datetime").ejDateTimePicker({
    destroy: function (args) {}
 }); 
-</script>                         {% endhighlight %}
+</script>          
+
+{% endhighlight %}
 
 
 
@@ -2836,7 +2986,9 @@ value</td>
 $("#datetime").ejDateTimePicker({
    focusIn: function (args) {}
 }); 
-</script>                 {% endhighlight %}
+</script>         
+
+{% endhighlight %}
 
 
 
@@ -2907,7 +3059,9 @@ value</td>
 $("#datetime").ejDateTimePicker({
    focusOut: function (args) {}
 }); 
-</script>                 {% endhighlight %}
+</script>      
+
+{% endhighlight %}
 
 
 
@@ -2984,7 +3138,9 @@ prevDateTime</td>
 $("#datetime").ejDateTimePicker({
    open: function (args) {}
 });      
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
