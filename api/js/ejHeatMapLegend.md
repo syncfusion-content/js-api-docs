@@ -105,7 +105,7 @@ Specifies can enable responsive mode or not for heatmap legend.
 {% endhighlight %}
 
 ### showLabel`boolean`
-{:#members:showabel}
+{:#members:showlabel}
 
 Specifies whether the cell label can be shown or not.
 
