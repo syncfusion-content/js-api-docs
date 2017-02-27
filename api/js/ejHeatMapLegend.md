@@ -19,8 +19,8 @@ Legend is a control used to summarize the range of colors in HeatMap. This gives
 #### Example
 
 {% highlight html %}
- 
-    <div id="heatmapLegend"></div>
+
+<div id="heatmapLegend"></div>
     <script>
         $("#heatmapLegend").ejHeatMapLegend();
     </script>
@@ -38,7 +38,6 @@ Legend is a control used to summarize the range of colors in HeatMap. This gives
 
 ## Members
 
-
 ### width `object`
 {:#members:width}
 
@@ -52,7 +51,7 @@ Specifies the width of the heatmap legend.
 
 {% highlight html %}
 
-    <div id="heatmapLegend"></div>
+<div id="heatmapLegend"></div>
     <script>
         $("#heatmapLegend").ejHeatMapLegend({
             width: "400px"
@@ -60,9 +59,6 @@ Specifies the width of the heatmap legend.
     </script>
 
 {% endhighlight %}
-
-
-
 
 ### height `object`
 {:#members:height}
@@ -77,7 +73,7 @@ Specifies the height of the heatmap legend.
 
 {% highlight html %}
 
-    <div id="heatmapLegend"></div>
+<div id="heatmapLegend"></div>
     <script>
         $("#heatmapLegend").ejHeatMapLegend({
             height: "400px"
@@ -86,9 +82,8 @@ Specifies the height of the heatmap legend.
 
 {% endhighlight %}
  
-
 ### isResponsive`boolean`
-{:#members:isResponsive}
+{:#members:isresponsive}
 
 Specifies can enable responsive mode or not for heatmap legend.
 
@@ -100,7 +95,7 @@ Specifies can enable responsive mode or not for heatmap legend.
 
 {% highlight html %}
 
-    <div id="heatmapLegend"></div>
+<div id="heatmapLegend"></div>
     <script>
         $("#heatmapLegend").ejHeatMapLegend({
             isResponsive: true
@@ -108,11 +103,9 @@ Specifies can enable responsive mode or not for heatmap legend.
     </script>
 
 {% endhighlight %}
- 
-
 
 ### showLabel`boolean`
-{:#members:showLabel}
+{:#members:showabel}
 
 Specifies whether the cell label can be shown or not.
 
@@ -124,8 +117,7 @@ Specifies whether the cell label can be shown or not.
 
 {% highlight html %}
 
-
-    <div id="heatmapLegend"></div>
+<div id="heatmapLegend"></div>
     <script>
         $("#heatmapLegend").ejHeatMapLegend({
             showLabel: false
@@ -133,13 +125,9 @@ Specifies whether the cell label can be shown or not.
     </script>
 
 {% endhighlight %}
- 
-  
-
-
 
 ### colorMappingCollection `array`
-{:#members:colorMappingCollection}
+{:#members:colormappingcollection}
 
 Specifies the color values of the column data.
 
@@ -150,8 +138,8 @@ Specifies the color values of the column data.
 #### Example
 
 {% highlight html %}
- 
-    <div id="heatmapLegend"></div>
+
+<div id="heatmapLegend"></div>
     <script>
         $("#heatmapLegend").ejHeatMapLegend({
             colorMappingCollection: [
@@ -164,7 +152,7 @@ Specifies the color values of the column data.
 {% endhighlight %}
 
 ### colorMappingCollection.color `string`
-{:#members:colorMappingCollection-color}
+{:#members:colormappingcollection-color}
 
 Specifies the color of the heatmap legend data.
 
@@ -176,7 +164,7 @@ Specifies the color of the heatmap legend data.
 
 {% highlight html %}
 
-     <div id="heatmapLegend"></div>
+<div id="heatmapLegend"></div>
     <script>
         $("#heatmapLegend").ejHeatMapLegend({
             colorMappingCollection: [
@@ -189,7 +177,7 @@ Specifies the color of the heatmap legend data.
 {% endhighlight %}
 
 ### colorMappingCollection.value `number`
-{:#members:colorMappingCollection-value}
+{:#members:colormappingcollection-value}
 
 Specifies the color values of the heatmap legend column data.
 
@@ -200,8 +188,8 @@ Specifies the color values of the heatmap legend column data.
 #### Example
 
 {% highlight html %}
- 
-    <div id="heatmapLegend"></div>
+
+<div id="heatmapLegend"></div>
     <script>
         $("#heatmapLegend").ejHeatMapLegend({
             colorMappingCollection: [
@@ -214,7 +202,7 @@ Specifies the color values of the heatmap legend column data.
 {% endhighlight %}
 
 ### colorMappingCollection.label `object`
-{:#members:colorMappingCollection-label}
+{:#members:colormappingcollection-label}
 
 Specifies the label properties of the heatmap legend color.
 
@@ -226,7 +214,7 @@ Specifies the label properties of the heatmap legend color.
 
 {% highlight html %}
 
-     <div id="heatmapLegend"></div>
+<div id="heatmapLegend"></div>
     <script>
         $("#heatmapLegend").ejHeatMapLegend({
             colorMappingCollection: [
@@ -239,7 +227,7 @@ Specifies the label properties of the heatmap legend color.
 {% endhighlight %}
 
 ### colorMappingCollection.label.bold`boolean`
-{:#members:colorMappingCollection-label-bold}
+{:#members:colormappingcollection-label-bold}
 
 Enables/disables the bold style of the heatmap legend label.
 
@@ -251,7 +239,7 @@ Enables/disables the bold style of the heatmap legend label.
 
 {% highlight html %}
 
-    <div id="heatmapLegend"></div>
+<div id="heatmapLegend"></div>
     <script>
         $("#heatmapLegend").ejHeatMapLegend({
             colorMappingCollection: [
@@ -262,7 +250,7 @@ Enables/disables the bold style of the heatmap legend label.
 {% endhighlight %}
 
 ### colorMappingCollection.label.italic`boolean`
-{:#members:colorMappingCollection-label-italic}
+{:#members:colormappingcollection-label-italic}
 
 Enables/disables the italic style of the heatmap legend label.
 
@@ -274,7 +262,7 @@ Enables/disables the italic style of the heatmap legend label.
 
 {% highlight html %}
 
-    <div id="heatmapLegend"></div>
+<div id="heatmapLegend"></div>
     <script>
         $("#heatmapLegend").ejHeatMapLegend({
             colorMappingCollection: [
@@ -285,7 +273,7 @@ Enables/disables the italic style of the heatmap legend label.
 {% endhighlight %}
 
 ### colorMappingCollection.label.text `string`
-{:#members:colorMappingCollection-label-text}
+{:#members:colormappingcollection-label-text}
 
 specifies the text value of the heatmap legend label.
 
@@ -296,8 +284,8 @@ specifies the text value of the heatmap legend label.
 #### Example
 
 {% highlight html %}
- 
-    <div id="heatmapLegend"></div>
+
+<div id="heatmapLegend"></div>
     <script>
         $("#heatmapLegend").ejHeatMapLegend({
             colorMappingCollection: [
@@ -308,7 +296,7 @@ specifies the text value of the heatmap legend label.
 {% endhighlight %}
 
 ### colorMappingCollection.label.textDecoration `enum`
-{:#members:colorMappingCollection-label-textDecoration}
+{:#members:colormappingcollection-label-textdecoration}
 
 <ts ref = "ej.datavisualization.HeatMap.TextDecoration"/>
 
@@ -349,8 +337,8 @@ Specifies the text style of the heatmap legend label.
 #### Example
 
 {% highlight html %}
- 
-    <div id="heatmapLegend"></div>
+
+<div id="heatmapLegend"></div>
     <script>
         $("#heatmapLegend").ejHeatMapLegend({
             colorMappingCollection: [
@@ -361,7 +349,7 @@ Specifies the text style of the heatmap legend label.
 {% endhighlight %}
 
 ### colorMappingCollection.label.fontSize `number`
-{:#members:colorMappingCollection-label-fontSize}
+{:#members:colormappingcollection-label-fontsize}
 
 Specifies the font size of the heatmap legend label.
 
@@ -372,8 +360,8 @@ Specifies the font size of the heatmap legend label.
 #### Example
 
 {% highlight html %}
- 
-    <div id="heatmapLegend"></div>
+
+<div id="heatmapLegend"></div>
     <script>
         $("#heatmapLegend").ejHeatMapLegend({
             colorMappingCollection: [
@@ -384,7 +372,7 @@ Specifies the font size of the heatmap legend label.
 {% endhighlight %}
 
 ### colorMappingCollection.label.fontFamily `string`
-{:#members:colorMappingCollection-label-fontFamily}
+{:#members:colormappingcollection-label-fontfamily}
 
 Specifies the font family of the heatmap legend label.
 
@@ -396,18 +384,18 @@ Specifies the font family of the heatmap legend label.
 
 {% highlight html %}
   
-  <div id="heatmapLegend"></div>
+<div id="heatmapLegend"></div>
     <script>
         $("#heatmapLegend").ejHeatMapLegend({
             colorMappingCollection: [
-            { value: 0, color: "#8ec8f8", label: { fontFamily: "Arial" } }]
+                { value: 0, color: "#8ec8f8", label: { fontFamily: "Arial" } }]
         });
     </script>
 
 {% endhighlight %}
 
 ### colorMappingCollection.label.fontColor `string`
-{:#members:colorMappingCollection-label-fontColor}
+{:#members:colormappingcollection-label-fontcolor}
 
 Specifies the font color of the heatmap legend label.
 
@@ -419,7 +407,7 @@ Specifies the font color of the heatmap legend label.
 
 {% highlight html %}
 
-    <div id="heatmapLegend"></div>
+<div id="heatmapLegend"></div>
     <script>
         $("#heatmapLegend").ejHeatMapLegend({
             colorMappingCollection: [
@@ -428,9 +416,6 @@ Specifies the font color of the heatmap legend label.
     </script>
 
 {% endhighlight %}
-
-
-
 
 ### orientation `enum`
 {:#members:orientation}
@@ -466,21 +451,18 @@ Specifies the orientation of the heatmap legend
 #### Example
 
 {% highlight html %}
- 
-    <div id="heatmapLegend"></div>
+
+<div id="heatmapLegend"></div>
     <script>
         $("#heatmapLegend").ejHeatMapLegend({
             orientation: ej.HeatMap.LegendOrientation.Vertical
         });
     </script>
 
-
 {% endhighlight %}
 
-
-
 ### legendMode `enum`
-{:#members:legendMode}
+{:#members:legendmode}
 
 <ts name = "ej.datavisualization.HeatMap.LegendMode"/>
 
@@ -513,8 +495,8 @@ Specifies the legend mode as gradient or list.
 #### Example
 
 {% highlight html %}
- 
-    <div id="heatmapLegend"></div>
+
+<div id="heatmapLegend"></div>
     <script>
         $("#heatmapLegend").ejHeatMapLegend({
             legendMode: ej.HeatMap.LegendMode.List
