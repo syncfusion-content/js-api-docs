@@ -2314,6 +2314,29 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
+### sheets.cellTypes `Array`
+{:#members:sheets-celltypes}
+
+Specifies the cell types for a cell or range in Spreadsheet.
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    sheets: [{
+    cellTypes: [{ range: 'F5', settings: { type: ej.Spreadsheet.CustomCellType.Button, 'background-color': 'yellow', color: 'black', text: 'BUTTON' } }]
+    }]
+});    
+</script>
+
+{% endhighlight %}
+
 ### sheets.cFormatRule `Array`
 {:#members:sheets-cformatrule}
 
@@ -3824,12 +3847,12 @@ This method is used to add custom formulas in Spreadsheet.
 <tbody>
 <tr>
 <td class="name">formulaName</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the name of the formula.</td>
 </tr>
 <tr>
 <td class="name">functionName</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the name of the function.</td>
 </tr>
 </tbody>
@@ -5926,7 +5949,7 @@ This method is used to protect or unprotect active sheet.
 <tr>
 <td class="name">isProtected</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional.</span> By default is `true`. If it is `false` active sheet is unprotected.</td>
+<td class="description"><span class="optional">Optional.</span> By default is {{'`true`' | markdownify}}. If it is {{'`false`' | markdownify}} active sheet is unprotected.</td>
 </tr>
 </table>
 
@@ -6019,12 +6042,12 @@ This method is used to remove custom formulae in Spreadsheet.
 <tbody>
 <tr>
 <td class="name">formulaName</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the name of the formula.</td>
 </tr>
 <tr>
 <td class="name">functionName</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the name of the function.</td>
 </tr>
 </tbody>
@@ -7550,7 +7573,7 @@ This method is used to set the conditional formatting rule in the Spreadsheet.
 //initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Sets the conditional formatting rules in Spreadsheet
-xlObj.XLCFormat.setCFRule({ "action": "lessthan", "input1": "30", "color": "yellowft", "addr": "H3:H7" });
+xlObj.XLCFormat.setCFRule({ action: "lessthan", inputs: ["30"], color: "yellowft", range: "H3:H7" });
 </script>
 
 {% endhighlight %}
@@ -9610,7 +9633,7 @@ This method is used to delete the pivot table which is selected.
 <tbody>
 <tr>
 <td class="name">pivotName</td>
-<td class="type"><span class="param-type">String</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the name of the pivot table.</td>
 </tr>
 </tbody>
