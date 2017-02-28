@@ -15,7 +15,7 @@ Communicates with data source and returns the desired result based on the Query 
 
 #### Syntax
 
-{% highlight javascript %}
+{% highlight html %}
 
 var dataManager = new ej.DataManager(datasource, query, adaptor)
 
@@ -52,25 +52,228 @@ var dataManager = new ej.DataManager(datasource, query, adaptor)
 {:.example}
 
 {% highlight html %}
-<style>
-.table,tr,td{ border:1px solid; padding:3px;}
-</style>
-<table class="table" style="border-collapse:collapse">
-<tbody></tbody>
-</table>
-<script>
-var dataManger = ej.DataManager(window.gridData);
-var tbody = ""; 
-for(var i=0;i<5;i++){ row="dataManger.dataSource.json[0];;" tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td></tr>"," row.orderid,="" row.customerid,="" row.employeeid,="" row.shipcity,="" row.freight);="" $(".table="" tbody").html(tbody);};=""></5;i++){>{% endhighlight %}
+
+    <style>
+        .table,tr,td{ border:1px solid; padding:3px;}
+    </style>
+    <table class="table" style="border-collapse:collapse">
+        <tbody></tbody>
+    </table>
+
+    <script>
+        var dataManger = ej.DataManager(window.gridData);
+        var tbody = ""; 
+        for(var i=0;i<5;i++)
+        { 
+            row="dataManger.dataSource.json[0];;" 
+            tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td></tr>"," row.orderid,="" row.customerid,="" row.employeeid,="" row.shipcity,="" row.freight);
+            $(".table="" tbody").html(tbody);
+        }
+    </script>
+
+{% endhighlight %}
  
+## Callback Functions
 
-## Methods
+### beforeSend(request, settings)
+{:#callbackfunctions:beforesend}
 
+Custom headers can be set using pre-request callback beforeSend as follows. The setRequestHeader method can be used to modify the XMLHTTPRequest.
 
-### executeLocal<span class="signature">(query)</span>
-{:#methods:executelocal}
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">request</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Sets the default query for the data source.</td>
+</tr>
+<tr>
+<td class="name">settings</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">A set of key/value pairs that configure the Ajax request.</td>
+</tr>
+</tbody>
+</table>
 
-This method does not execute more than one operation at a time; it waits for one operation to complete, and then executes the next operation.
+#### Example
+{:.example}
+
+{% highlight html %}
+
+    <div class="datatable">
+        <table id="table1" class="table table-striped table-bordered" style="width:700px">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer ID</th>
+                    <th>Employee ID</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+<script type="text/javascript">
+    $(function () {
+
+        var dataManager = ej.DataManager({ url: "http://mvc.syncfusion.com/Services/Northwnd.svc",
+              beforeSend: function (dm, request, settings) {
+              // some services do not support custom header on crossDomain (CORS) request
+                  if (!dm.dataSource.crossDomain) {
+                      request.setRequestHeader("DataServiceVersion", "1.0");
+                      request.setRequestHeader("MaxDataServiceVersion", "1.0");
+                  }
+              }});
+        var query = ej.Query()
+            .from("Orders")
+            .sortBy("OrderID", "descending", false)
+        // executing query
+        var dataSource = dataManager.executeQuery(query);
+        renderTable(dataSource);
+
+    });
+
+    // This function can be better replaced with any template engine. We used this for simplicity in demo.
+    function renderTable(data) {
+        var tbody = "", row;
+        for (var i = 0; i < data.length; i++) {
+            row = data[i];
+            tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
+        }
+        $(".table tbody").html(tbody);
+    }
+</script>
+
+{% endhighlight %}
+
+### done(args)
+{:#callbackfunctions:done}
+
+A function to be called if the request succeeds.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">result</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Contains filtered results on the data based on query.</td>
+</tr>
+<tr>
+<td class="name">query</td>
+<td class="type"><span class="param-type">ej.Query</span></td>
+<td class="description last">A set of key/value pairs that configure the Ajax request.</td>
+</tr>
+<tr>
+<td class="name">xhr</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">XMLHTTPRequest object.</td>
+</tr>
+<tr>
+<td class="name">actual</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Contains all the records as it is from the data source.</td>
+</tr>
+<tr>
+<td class="name">getKnockoutModel</td>
+<td class="type"><span class="param-type">function</span></td>
+<td class="description last">The DataManager contains a default method to subscribe the view model properties as KO observable. This is done at the success of the executeQuery using the getKnockoutModel. You can also provide computed properties to the view model using the getKnockoutModel.</td>
+</tr>
+<tr>
+<td class="name">getTableModel</td>
+<td class="type"><span class="param-type">function</span></td>
+<td class="description last">The DataManager contains a default support to bind a TableModel to the element. You can make the data observable using the getTableModel method. The getTableModel method also accept extra properties or properties with computed value that can be added to the TableModel. In the view, you can create a simple view by using the bindings getTableModel</td>
+</tr>
+<tr>
+<td class="name">count</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Contains total count of records when the requiresCount() method is enabled in the ej.Query()</td>
+</tr>
+<tr>
+<td class="name">request</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Contains all the necessary data before posting a request</td>
+</tr>
+<tr>
+<td class="name">aggregates</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Aggregates data such as sum, average , min and max</td>
+</tr>
+<tr>
+<td class="name">virtualSelectRecords</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">It will have virtually loaded records, when the lazy loading or virtual scrolling is enabled.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+{:.example}
+
+{% highlight html %}
+
+    <div class="datatable">
+        <table id="table1" class="table table-striped table-bordered" style="width:700px">
+            <thead>
+                <tr>
+                    <th>ItemID</th>
+                    <th>ItemName</th>
+                    <th>ItemType</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+<script type="text/javascript">
+    $(function () {
+
+        var dataManager = ej.DataManager({
+            url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Foods",
+            crossDomain: true
+        });
+        var query = ej.Query()
+            .sortBy("ItemID", "descending", false)
+                .select("ItemID", "ItemName", "ItemType")
+        var updateData = { ItemID: 14, ItemName: "Graphes Juice", ItemType: "Veg" };
+        dataManager.update("ItemID", updateData);
+        // executing query
+        var dataSource = dataManager.executeQuery(query).done(function (args) {
+            // Result is successful
+            renderTable(args.result);
+        });
+    });
+
+    // This function can be better replaced with any template engine. We used this for simplicity in demo.
+    function renderTable(data) {
+        var tbody = "", row;
+        for (var i = 0; i < data.length; i++) {
+            row = data[i];
+            tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.ItemID, row.ItemName, row.ItemType);
+        }
+        $(".table tbody").html(tbody);
+    }
+</script>
+
+{% endhighlight %}
+
+### fail(args)
+{:#callbackfunctions:fail}
+
+A function to be called if the request fails.
 
 <table class="params">
 <thead>
@@ -84,36 +287,218 @@ This method does not execute more than one operation at a time; it waits for one
 <tr>
 <td class="name">query</td>
 <td class="type"><span class="param-type">ej.Query</span></td>
-<td class="description last">Sets the default query for the data source.</td>
+<td class="description last">A set of key/value pairs that configure the Ajax request.</td>
+</tr>
+<tr>
+<td class="name">error</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">When an HTTP error occurs, error thrown receives error status of HTTP object.</td>
 </tr>
 </tbody>
 </table>
-
-#### Returns:
-{:#methods:returns:}
-
-Array
 
 #### Example
 {:.example}
 
 {% highlight html %}
-<style>
-.table,tr,td{ border:1px solid; padding:3px;}
-</style>
-<table class="table" style="border-collapse:collapse">
-<tbody></tbody>
+
+    <div class="datatable">
+        <table id="table1" class="table table-striped table-bordered" style="width:700px">
+            <thead>
+                <tr>
+                    <th>ItemID</th>
+                    <th>ItemName</th>
+                    <th>ItemType</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+<script type="text/javascript">
+    $(function () {
+
+        var dataManager = ej.DataManager({
+            url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Foods",
+            crossDomain: true
+        });
+        var query = ej.Query()
+            .sortBy("ItemID", "descending", false)
+                .select("ItemID", "ItemName", "ItemType")
+        var updateData = { ItemID: 14, ItemName: "Graphes Juice", ItemType: "Veg" };
+        dataManager.update("ItemID", updateData);
+        // executing query
+        var dataSource = dataManager.executeQuery(query).done(function (args) {
+
+        renderTable(args.result);
+        }).fail(function (args) {
+            // handling of error
+        });
+
+    });
+
+    // This function can be better replaced with any template engine. We used this for simplicity in demo.
+    function renderTable(data) {
+        var tbody = "", row;
+        for (var i = 0; i < data.length; i++) {
+            row = data[i];
+            tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.ItemID, row.ItemName, row.ItemType);
+        }
+        $(".table tbody").html(tbody);
+    }
+</script>
+
+{% endhighlight %}
+
+### always(args)
+{:#callbackfunctions:always}
+
+A function to be called when the request finishes (after success and error callbacks are executed).
+
+If the request is success, arguments list will be as below.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">result</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Contains filtered results on the data based on query.</td>
+</tr>
+<tr>
+<td class="name">query</td>
+<td class="type"><span class="param-type">ej.Query</span></td>
+<td class="description last">A set of key/value pairs that configure the Ajax request.</td>
+</tr>
+<tr>
+<td class="name">xhr</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">XMLHTTPRequest object.</td>
+</tr>
+<tr>
+<td class="name">actual</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Contains all the records as it is from the data source.</td>
+</tr>
+<tr>
+<td class="name">getKnockoutModel</td>
+<td class="type"><span class="param-type">function</span></td>
+<td class="description last">The DataManager contains a default method to subscribe the view model properties as KO observable. This is done at the success of the executeQuery using the getKnockoutModel. You can also provide computed properties to the view model using the getKnockoutModel.</td>
+</tr>
+<tr>
+<td class="name">getTableModel</td>
+<td class="type"><span class="param-type">function</span></td>
+<td class="description last">The DataManager contains a default support to bind a TableModel to the element. You can make the data observable using the getTableModel method. The getTableModel method also accept extra properties or properties with computed value that can be added to the TableModel. In the view, you can create a simple view by using the bindings getTableModel</td>
+</tr>
+<tr>
+<td class="name">count</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Contains total count of records when the requiresCount() method is enabled in the ej.Query()</td>
+</tr>
+<tr>
+<td class="name">request</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Contains all the necessary data before posting a request</td>
+</tr>
+<tr>
+<td class="name">aggregates</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Aggregates data such as sum, average , min and max</td>
+</tr>
+<tr>
+<td class="name">virtualSelectRecords</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">It will have virtually loaded records, when the lazy loading or virtual scrolling is enabled.</td>
+</tr>
+</tbody>
 </table>
-<script>
-var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().select(["OrderID", "CustomerID", "Freight"]).take(3));
-var tbody="";
-for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dm[i].orderid,="" dm[i].customerid,="" dm[i].freight);="" $(".table="" tbody").html(tbody);};=""></3;i++){>{% endhighlight %}
 
+If the request is fail, the argument list will be as below.
 
-### executeQuery<span class="signature">(query)</span>
-{:#methods:executequery}
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">query</td>
+<td class="type"><span class="param-type">ej.Query</span></td>
+<td class="description last">A set of key/value pairs that configure the Ajax request.</td>
+</tr>
+<tr>
+<td class="name">error</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">When an HTTP error occurs, error thrown receives error status of HTTP object.</td>
+</tr>
+</tbody>
+</table>
 
-The executeQuery property is used to process the data based on the query on URL Binding.
+#### Example
+{:.example}
+
+{% highlight html %}
+
+    <div class="datatable">
+        <table id="table1" class="table table-striped table-bordered" style="width:700px">
+            <thead>
+                <tr>
+                    <th>ItemID</th>
+                    <th>ItemName</th>
+                    <th>ItemType</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+<script type="text/javascript">
+    $(function () {
+
+        var dataManager = ej.DataManager({
+            url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Foods",
+            crossDomain: true
+        });
+        var query = ej.Query()
+            .sortBy("ItemID", "descending", false)
+                .select("ItemID", "ItemName", "ItemType")
+        var updateData = { ItemID: 14, ItemName: "Graphes Juice", ItemType: "Veg" };
+        dataManager.update("ItemID", updateData);
+        // executing query
+        var dataSource = dataManager.executeQuery(query).always(function (args) {
+                // if it is success result can be obtained otherwise it display the error report
+                renderTable(args.result);
+        });
+    });
+
+    // This function can be better replaced with any template engine. We used this for simplicity in demo.
+    function renderTable(data) {
+        var tbody = "", row;
+        for (var i = 0; i < data.length; i++) {
+            row = data[i];
+            tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.ItemID, row.ItemName, row.ItemType);
+        }
+        $(".table tbody").html(tbody);
+    }
+</script>
+
+{% endhighlight %}
+
+## Methods
+
+### executeLocal(query)
+{:#methods:executelocal}
+
+This method does not execute more than one operation at a time; it waits for one operation to complete, and then executes the next operation.
 
 <table class="params">
 <thead>
@@ -141,19 +526,115 @@ JQueryPromise
 {:.example}
 
 {% highlight html %}
+
+    <div class="datatable">
+        <table id="table1" class="table table-striped table-bordered" style="width:700px">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer ID</th>
+                    <th>Employee ID</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+<script type="text/javascript">
+    $(function () {
+
+        var data = [{ OrderID: 10248, CustomerID: "VINET", EmployeeID: 5 },
+                        { OrderID: 10249, CustomerID: "AANAR", EmployeeID: 9 },
+                        { OrderID: 10250, CustomerID: "VICTE", EmployeeID: 2 },
+                        { OrderID: 10251, CustomerID: "TOMSP", EmployeeID: 7 },
+                        { OrderID: 10252, CustomerID: "SUPRD", EmployeeID: 6 }];
+        var dataManager = ej.DataManager(data);
+        var query = ej.Query()
+            .from("Orders")
+            .sortBy("OrderID", "descending", false)
+        // executing query
+        var dataSource = dataManager.executeLocal(query);
+        renderTable(dataSource);
+
+    });
+
+    // This function can be better replaced with any template engine. We used this for simplicity in demo.
+    function renderTable(data) {
+        var tbody = "", row;
+        for (var i = 0; i < data.length; i++) {
+            row = data[i];
+            tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
+        }
+        $(".table tbody").html(tbody);
+    }
+</script>
+
+{% endhighlight %}
+
+### executeQuery(query, done, fail, always)
+{:#methods:executequery}
+
+The executeQuery property is used to process the data based on the query on URL Binding.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">query</td>
+<td class="type"><span class="param-type">ej.Query</span></td>
+<td class="description last">Sets the default query for the data source.</td>
+</tr>
+<tr>
+<td class="name">done</td>
+<td class="type"><span class="param-type">function</span></td>
+<td class="description last">A function to be called if the request succeeds.</td>
+</tr>
+<tr>
+<td class="name">fail</td>
+<td class="type"><span class="param-type">function</span></td>
+<td class="description last">A function to be called if the request fails.</td>
+</tr>
+<tr>
+<td class="name">always</td>
+<td class="type"><span class="param-type">function</span></td>
+<td class="description last">A function to be called when the request finishes (after success and error callbacks are executed).</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+JQueryPromise
+
+#### Example
+{:.example}
+
+{% highlight html %}
+
 <script>
-var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/");
-var query =  ej.Query().select(["OrderID", "CustomerID", "ShipName"]).from("Orders").take(3);
-var promise = dataManager.executeQuery(query);
-promise.done(function(e){});
-promise.fail(function(e){});
-</script>{% endhighlight %}
+
+    var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/");
+    var query =  ej.Query().select(["OrderID", "CustomerID", "ShipName"]).from("Orders").take(3);
+    var promise = dataManager.executeQuery(query);
+    promise.done(function(e){});
+    promise.fail(function(e){});
+
+</script>
+
+{% endhighlight %}
 
 
-### insert<span class="signature">(data, tableName)</span>
+### insert(data, tableName, query)
 {:#methods:insert}
 
-It is a method used to inserts a new record in the table.
+Inserts a data item in the data table.
 
 <table class="params">
 <thead>
@@ -172,7 +653,12 @@ It is a method used to inserts a new record in the table.
 <tr>
 <td class="name">tableName</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">name of the table</td>
+<td class="description last">Name of the table</td>
+</tr>
+<tr>
+<td class="name">query</td>
+<td class="type"><span class="param-type">ej.Query</span></td>
+<td class="description last">Sets the default query for the data source.</td>
 </tr>
 </tbody>
 </table>
@@ -186,26 +672,57 @@ Object
 {:.example}
 
 {% highlight html %}
-<div id="before"></div>
-<style>
-.table,tr,td{ border:1px solid; padding:3px;}
-</style>
-<table class="table" style="border-collapse:collapse">
-<tbody></tbody>
-</table>
-<div id="after"></div>
-<table class="table1" style="border-collapse:collapse">
-<tbody></tbody>
-</table>
-<script>
-var dm = ej.DataManager(window.employeeData);
-var local = dm.executeLocal(ej.Query().select(["EmployeeID", "LastName", "FirstName", "Country"]).where("EmployeeID","equal","5"));
-$("#before").text("before insert:");
-var tbody="";
-for(var i=0;i<3;i++){ var="" j="dm.dataSource.json[i];" tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," j.employeeid,="" j.firstname,="" j.lastname,="" j.country);="" $(".table="" tbody").html(tbody);};="" dm.insert(local.shift());="" $("#after").text("after="" insert:");="" tbody="" ;="" for(var="" i=""></3;i++){><4;i++){ var="" j="dm.dataSource.json[i];" tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," j.employeeid,="" j.firstname,="" j.lastname,="" j.country);="" $(".table1="" tbody").html(tbody);};="" </script>=""></4;i++){>{% endhighlight %}
+
+    <div class="datatable">
+        <table id="table1" class="table table-striped table-bordered" style="width:700px">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer ID</th>
+                    <th>Employee ID</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+<script type="text/javascript">
+
+    $(function () {
+
+        var data = [{ OrderID: 10248, CustomerID: "VINET", EmployeeID: 5 },
+                        { OrderID: 10249, CustomerID: "AANAR", EmployeeID: 9 },
+                        { OrderID: 10250, CustomerID: "VICTE", EmployeeID: 2 },
+                        { OrderID: 10251, CustomerID: "TOMSP", EmployeeID: 7 },
+                        { OrderID: 10252, CustomerID: "SUPRD", EmployeeID: 6 }];
+        var dataManager = ej.DataManager(data);
+        var query = ej.Query()
+            .from("Orders")
+            .sortBy("OrderID", "descending", false)
+        var record = { OrderID: 10253, CustomerID: "STRPQ", EmployeeID: 4 };
+        dataManager.insert(record);
+        // executing query
+        var dataSource = dataManager.executeLocal(query);
+        renderTable(dataSource);
+
+    });
+
+    // This function can be better replaced with any template engine. We used this for simplicity in demo.
+    function renderTable(data) {
+        var tbody = "", row;
+        for (var i = 0; i < data.length; i++) {
+            row = data[i];
+            tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
+        }
+        $(".table tbody").html(tbody);
+    }
+
+</script>
+
+{% endhighlight %}
  
  
-### remove<span class="signature">(keyField, value, tableName)</span>
+### remove(keyField, value, tableName, query)
 {:#methods:remove}
 
 It is used to remove the data from the dataSource.
@@ -222,17 +739,22 @@ It is used to remove the data from the dataSource.
 <tr>
 <td class="name">keyField</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">keyColumn to find the data</td>
+<td class="description last">KeyColumn to find the data</td>
 </tr>
 <tr>
 <td class="name">value</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">specified value for the keyField</td>
+<td class="description last">Specified value for the keyField</td>
 </tr>
 <tr>
 <td class="name">tableName </td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">name of the source table</td>
+<td class="description last">Name of the source table</td>
+</tr>
+<tr>
+<td class="name">query</td>
+<td class="type"><span class="param-type">ej.Query</span></td>
+<td class="description last">Sets the default query for the data source.</td>
 </tr>
 </tbody>
 </table>
@@ -246,26 +768,51 @@ Object
 {:.example}
 
 {% highlight html %}
-<div id="before"></div>
-<style>
-.table,tr,td{ border:1px solid; padding:3px;}
-</style>
-<table class="table" style="border-collapse:collapse">
-<tbody></tbody>
-</table>
-<div id="after"></div>
-<table class="table1" style="border-collapse:collapse">
-<tbody></tbody>
-</table>
-<script>
-var dm = ej.DataManager(window.employeeData);
-var local = dm.executeLocal(ej.Query().select(["EmployeeID", "LastName", "FirstName", "Country"]).where("EmployeeID","equal","2"));
-$("#before").text("before remove:");
-var tbody="";
-for(var i=0;i<3;i++){ var="" j="dm.dataSource.json[i];" tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," j.employeeid,="" j.firstname,="" j.lastname,="" j.country);="" $(".table="" tbody").html(tbody);};="" dm.remove("employeeid",local.shift().employeeid);="" $("#after").text("after="" insert:");="" tbody="" ;="" for(var="" i=""></3;i++){><2;i++){ var="" j="dm.dataSource.json[i];" tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," j.employeeid,="" j.firstname,="" j.lastname,="" j.country);="" $(".table1="" tbody").html(tbody);};="" </script>=""></2;i++){>{% endhighlight %}
+
+    <div class="datatable">
+        <table id="table1" class="table table-striped table-bordered" style="width:700px">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer ID</th>
+                    <th>Employee ID</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+<script type="text/javascript">
+
+    $(function () {
+        var query = ej.Query().sortByDesc("EmployeeID");
+        var data = [{ OrderID: 10248, CustomerID: "VINET", EmployeeID: 5 },
+                        { OrderID: 10249, CustomerID: "AANAR", EmployeeID: 9 },
+                        { OrderID: 10250, CustomerID: "VICTE", EmployeeID: 2 },
+                        { OrderID: 10251, CustomerID: "TOMSP", EmployeeID: 7 },
+                        { OrderID: 10252, CustomerID: "SUPRD", EmployeeID: 6 }];
+        var dataManager = ej.DataManager(data);
+        dataManager.remove("OrderID", 10252, data);
+        var dataSource = dataManager.executeLocal(query);
+        renderTable(dataSource);
+
+    });
+
+    function renderTable(data) {
+        var tbody = "", row;
+        for (var i = 0; i < data.length; i++) {
+            row = data[i];
+            tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
+        }
+        $(".table tbody").html(tbody);
+    }
+
+</script>
+
+{% endhighlight %}
 
 
-### saveChanges<span class="signature">(changes, key, tableName)</span>
+### saveChanges(changes, key, tableName, query)
 {:#methods:savechanges}
 
 This method is used to save the changes to the corresponding table. You can add a new record, edit an existing record, or delete a record by using this method.
@@ -281,18 +828,23 @@ This method is used to save the changes to the corresponding table. You can add 
 <tbody>
 <tr>
 <td class="name">changes</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last"></td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Specified values for the Data Table</td>
 </tr>
 <tr>
 <td class="name">key</td>
 <td class="type"><span class="param-type">String</span></td>
-<td class="description last"></td>
+<td class="description last">KeyColumn to find the data</td>
 </tr>
 <tr>
-<td class="name">tableName</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last"></td>
+<td class="name">tableName </td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the source table</td>
+</tr>
+<tr>
+<td class="name">query</td>
+<td class="type"><span class="param-type">ej.Query</span></td>
+<td class="description last">Sets the default query for the data source.</td>
 </tr>
 </tbody>
 </table>
@@ -306,23 +858,55 @@ Object
 {:.example}
 
 {% highlight html %}
-<style>
-.table,tr,td{ border:1px solid; padding:3px;}
-</style>
-<table class="table" style="border-collapse:collapse">
-<tbody></tbody>
-</table>
-<script>
-var newData = { "added": [{ OrderID: 10248, CustomerID: "VINET", EmployeeID: 25 }], "deleted": {} , "changed":{} };
-var data = [{ OrderID: 10249, CustomerID: "AANAR", EmployeeID: 5 },
-{ OrderID: 10250, CustomerID: "VINET", EmployeeID: 5 },
-{ OrderID: 10251, CustomerID: "SDDER", EmployeeID: 1 }];
-var dm = ej.DataManager(window.gridData).saveChanges(newData);
-$(function (){});
-</script>{% endhighlight %}
 
- 
-### update<span class="signature">(keyField, value, tableName)</span>
+    <div class="datatable">
+        <table id="table1" class="table table-striped table-bordered" style="width:700px">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer ID</th>
+                    <th>Employee ID</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+<script type="text/javascript">
+    $(function () {
+
+        var data = [{ OrderID: 10248, CustomerID: "VINET", EmployeeID: 5 },
+                        { OrderID: 10249, CustomerID: "AANAR", EmployeeID: 9 },
+                        { OrderID: 10250, CustomerID: "VICTE", EmployeeID: 2 },
+                        { OrderID: 10251, CustomerID: "TOMSP", EmployeeID: 7 },
+                        { OrderID: 10252, CustomerID: "SUPRD", EmployeeID: 6 }];
+
+        var newData = { "added": [{ OrderID: 10258, CustomerID: "JOHN", EmployeeID: 25 }], "deleted": {} , "changed":{} };
+        
+        var dataManager = ej.DataManager(data);
+            var query = ej.Query()
+                        .from("Orders")
+                        .sortBy("OrderID", "descending", false)
+
+            var dm = dataManager.saveChanges(newData);
+        
+            renderTable(data);
+    });
+
+    // This function can be better replaced with any template engine. We used this for simplicity in demo.
+    function renderTable(data) {
+        var tbody = "", row;
+        for (var i = 0; i < data.length; i++) {
+            row = data[i];
+            tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
+        }
+        $(".table tbody").html(tbody);
+    }
+</script>
+
+{% endhighlight %}
+
+### update(keyField, value, tableName, query)
 {:#methods:update}
 
 Updates existing record and saves the changes to the table.
@@ -339,17 +923,22 @@ Updates existing record and saves the changes to the table.
 <tr>
 <td class="name">keyField</td>
 <td class="type"><span class="param-type">String</span></td>
-<td class="description last"></td>
+<td class="description last">KeyColumn to find the data</td>
 </tr>
 <tr>
 <td class="name">value</td>
 <td class="type"><span class="param-type">String</span></td>
-<td class="description last"></td>
+<td class="description last">Specified value for the keyField</td>
 </tr>
 <tr>
 <td class="name">tableName</td>
 <td class="type"><span class="param-type">String</span></td>
-<td class="description last"></td>
+<td class="description last">Name of the source table</td>
+</tr>
+<tr>
+<td class="name">query</td>
+<td class="type"><span class="param-type">ej.Query</span></td>
+<td class="description last">Sets the default query for the data source.</td>
 </tr>
 </tbody>
 </table>
@@ -363,16 +952,44 @@ Object
 {:.example}
 
 {% highlight html %}
-<style>
-.table,tr,td{ border:1px solid; padding:3px;}
-</style>
-<table class="table" style="border-collapse:collapse">
-<tbody></tbody>
-</table>
-<script>
-var first = [{ OrderID: 10248, CustomerID: "VINET", EmployeeID: 2 },
-{ OrderID: 10249, CustomerID: "AANAR", EmployeeID: 9 }];
-var updateData = {OrderID: 10249, CustomerID: "Test", EmployeeID: 0 };
-ej.DataManager(first).update("OrderID", updateData, first);
-$(function (){});
-</script>{% endhighlight %}
+
+    <div class="datatable">
+        <table id="table1" class="table table-striped table-bordered" style="width:700px">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Customer ID</th>
+                    <th>Employee ID</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+<script type="text/javascript">
+    $(function () {
+        var query = ej.Query().sortByDesc("EmployeeID");
+        var data = [{ OrderID: 10248, CustomerID: "VINET", EmployeeID: 5 },
+                    { OrderID: 10249, CustomerID: "AANAR", EmployeeID: 9 },
+                    { OrderID: 10250, CustomerID: "VICTE", EmployeeID: 2 },
+                    { OrderID: 10251, CustomerID: "TOMSP", EmployeeID: 7 },
+                    { OrderID: 10252, CustomerID: "SUPRD", EmployeeID: 6 }];
+        var updateData = { OrderID: 10252, CustomerID: "ZAUDS", EmployeeID: 4 };
+        var dataManger = ej.DataManager(data);
+        dataManger.update("OrderID", updateData, data);
+        var result = dataManger.executeLocal(query);
+        renderTable(result);
+
+    });
+
+    function renderTable(data) {
+        var tbody = "", row;
+        for (var i = 0; i < data.length; i++) {
+            row = data[i];
+            tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
+        }
+        $(".table tbody").html(tbody);
+    }
+</script>
+
+{% endhighlight %}
