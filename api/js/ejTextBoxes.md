@@ -79,6 +79,38 @@ $('#percentage').ejPercentageTextbox({value:100});
 ## Members
 
 
+### currencySymbol `string`
+{:#members:currencysymbol}
+
+
+
+Specifies the currency symbol of currency textbox, used when the user wants to overwrite the currency symbol commonly instead of the current culture symbol.
+
+
+#### Default Value
+
+
+
+
+* Based on the culture
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input id="currency" type="text" /> 
+ 
+<script>
+//To set currencySymbol API value during initialization     
+        $("#currency").ejCurrencyTextbox({ positivePattern: "$ n", value:100, currencySymbol: "€"  });                      
+</script>
+{% endhighlight %}
+
 
 
 ### cssClass `string`

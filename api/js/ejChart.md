@@ -2829,7 +2829,7 @@ commonSeriesOptions : {isTransposed : false }
 
 
 
-Render the x mark in the center of the boxplot series type.x represents the average value of the boxplot series.
+Render the x mark in the center of the box and whisker series type.x represents the average value of the box and whisker series.
 
 
 #### Default Value
@@ -2927,7 +2927,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/w5q1jt5k)
 <ts name = "ej.datavisualization.Chart.boxPlotMode"/>
 
 
-Quartile calculation has been performed in three different formulas to render the boxplot series.
+Quartile calculation has been performed in three different formulas to render the box and whisker series.
 
 
 <table class="props">
@@ -14931,7 +14931,7 @@ Brace</td>
 <td class="name">
 CurlyBrace</td>
 <td class="type">string</td>
-<td class="description">To render curely brace border style.</td>
+<td class="description">To render curly brace border style.</td>
 </tr>
 </tbody>
 </table>
@@ -25486,7 +25486,7 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/1ypcv5bf)
 
 
 
-Render the x mark in the center of the boxplot series type.x represents the average value of the boxplot series.
+Render the x mark in the center of the box and whisker series type.x represents the average value of the box and whisker series.
 
 
 #### Default Value
