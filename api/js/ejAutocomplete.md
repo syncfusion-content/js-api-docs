@@ -213,7 +213,7 @@ The root class for the **Autocomplete** textbox widget which helps in customizin
 ### dataSource `Object|Array`
 {:#members:datasource}
 
-The data source contains the list of data for the suggestions list. It can be a string array or JSON array. 
+The data source contains the list of data for the suggestions list. It can be a string array or JSON array or service URL that returns JSON.
 
 #### Default Value: 
 
