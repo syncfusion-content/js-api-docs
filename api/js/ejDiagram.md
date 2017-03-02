@@ -15974,7 +15974,7 @@ Triggers when a node, connector or diagram is clicked
 		<tr>
 			<td class="name">event</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">diagramId</td>
@@ -15984,22 +15984,22 @@ Triggers when a node, connector or diagram is clicked
         <tr>
 			<td class="name">cancel</td>
 			<td class="type">boolean</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter to specify whether or not to cancel the event</td>
 		</tr>
         <tr>
 			<td class="name">elementType</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the elementtype of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">model</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram</td>
 		</tr>
         <tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the type of the event triggered</td>
 		</tr>
         
 	</tbody>
@@ -16174,17 +16174,17 @@ Triggers when the connectors' source point is changed
         <tr>
 			<td class="name">elementType</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the elementtype of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">model</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram</td>
 		</tr>
         <tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the type of the event triggered</td>
 		</tr>
 	</tbody>
 </table>
@@ -16252,17 +16252,17 @@ Triggers when the connectors' target point is changed
         <tr>
 			<td class="name">elementType</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the elementtype of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">model</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram</td>
 		</tr>
         <tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the type of the event triggered</td>
 		</tr>
 	</tbody>
 </table>
@@ -16325,7 +16325,7 @@ Triggers before opening the context menu
         <tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the type of the event triggered</td>
 		</tr>
 	</tbody>
 </table>
@@ -16393,22 +16393,22 @@ Triggers when a context menu item is clicked
         <tr>
 			<td class="name">elementType</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the elementtype of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">model</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram</td>
 		</tr>
         <tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the type of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">cancel</td>
 			<td class="type">boolean</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter to specify whether or not to cancel the event</td>
 		</tr>
         <tr>
 			<td class="name">element</td>
@@ -16423,7 +16423,7 @@ Triggers when a context menu item is clicked
 		<tr>
 			<td class="name">events</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram</td>
 		</tr>
 	</tbody>
 </table>
@@ -16471,22 +16471,22 @@ Triggers when a node, connector or diagram model is clicked twice
         <tr>
 			<td class="name">elementType</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the elementtype of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">model</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram</td>
 		</tr>
         <tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the type of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">cancel</td>
 			<td class="type">boolean</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter to specify whether or not to cancel the event</td>
 		</tr>
 	</tbody>
 </table>
@@ -16549,22 +16549,22 @@ Triggers while dragging the elements in diagram
         <tr>
 			<td class="name">elementType</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the elementtype of the diagram</td>
 		</tr>
         <tr>
 			<td class="name">model</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram</td>
 		</tr>
         <tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the type of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">offset</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the offset of the selecteditems</td>
 		</tr>
 	</tbody>
 </table>
@@ -16612,17 +16612,17 @@ Triggers when a symbol is dragged into diagram from symbol palette
         <tr>
 			<td class="name">elementType</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the elementtype of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">model</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram</td>
 		</tr>
         <tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the type of the event triggered</td>
 		</tr>
 	</tbody>
 </table>
@@ -16670,17 +16670,17 @@ Triggers when a symbol is dragged outside of the diagram.
         <tr>
 			<td class="name">elementType</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the elementtype of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">model</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram</td>
 		</tr>
         <tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the type of the event triggered</td>
 		</tr>
 	</tbody>
 </table>
@@ -16748,17 +16748,17 @@ Triggers when a symbol is dragged over diagram
         <tr>
 			<td class="name">elementType</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the elementtype of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">model</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram</td>
 		</tr>
         <tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the type of the event triggered</td>
 		</tr>
 	</tbody>
 </table>
@@ -16821,17 +16821,17 @@ Triggers when a symbol is dragged and dropped from symbol palette to drawing are
         <tr>
 			<td class="name">elementType</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the elementtype of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">model</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram</td>
 		</tr>
         <tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the type of the event triggered</td>
 		</tr>
 	</tbody>
 </table>
@@ -16947,27 +16947,27 @@ Triggers when a change is reverted or restored(undo/redo)
         <tr>
 			<td class="name">elementType</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the elementtype of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">model</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram</td>
 		</tr>
         <tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the type of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">cancel</td>
 			<td class="type">boolean</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter to specify whether or not to cancel the event</td>
 		</tr>
         <tr>
 			<td class="name">cause</td>
 			<td class="type">boolean</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram</td>
 		</tr>
         		 
 	</tbody>
@@ -17059,7 +17059,7 @@ Triggers when a diagram element is clicked
 		<tr>
 			<td class="name">event</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram</td>
 		</tr>
         <tr>
 			<td class="name">diagramId</td>
@@ -17122,17 +17122,17 @@ Triggers when mouse enters a node/connector
         <tr>
 			<td class="name">elementType</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the elementtype of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">model</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram </td>
 		</tr>
         <tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the type of the event triggered</td>
 		</tr>
 	</tbody>
 </table>
@@ -17190,17 +17190,17 @@ Triggers when mouse leaves node/connector
         <tr>
 			<td class="name">elementType</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the elementtype of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">model</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram</td>
 		</tr>
         <tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the type of the event triggered</td>
 		</tr>
 	</tbody>
 </table>
@@ -17257,17 +17257,17 @@ Triggers when mouse hovers over a node/connector
         <tr>
 			<td class="name">elementType</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the elementtype of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">model</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram</td>
 		</tr>
         <tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the type of the event triggered</td>
 		</tr>
 	</tbody>
 </table>
@@ -17383,22 +17383,22 @@ Triggers when the node properties(x, y,width and height alone) are changed using
         <tr>
 			<td class="name">cancel</td>
 			<td class="type">boolean</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter defines whether to cancel the property change or not</td>
 		</tr>
         <tr>
 			<td class="name">elementType</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the elementtype of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">model</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram</td>
 		</tr>
         <tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the type of the event triggered</td>
 		</tr>
 	</tbody>
 </table>
@@ -17461,7 +17461,7 @@ Triggers when the diagram elements are rotated
         <tr>
 			<td class="name">elementType</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the elementtype of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">model</td>
@@ -17471,7 +17471,7 @@ Triggers when the diagram elements are rotated
         <tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the type of the event triggered</td>
 		</tr>
 	</tbody>
 </table>
@@ -17524,17 +17524,17 @@ Triggers when the diagram is zoomed or panned
         <tr>
 			<td class="name">elementType</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the elementtype of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">model</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram</td>
 		</tr>
         <tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the type of the event triggered</td>
 		</tr>
         <tr>
         <td class="name">cause</td>
@@ -17597,17 +17597,17 @@ Triggers when a connector segment is edited
         <tr>
 			<td class="name">elementType</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the elementtype of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">model</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram</td>
 		</tr>
         <tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the type of the event triggered</td>
 		</tr>
 	</tbody>
 </table>
@@ -17680,22 +17680,22 @@ Triggers when the selection is changed in diagram
         <tr>
 			<td class="name">cause</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the actual cause of the event</td>
 		</tr>
         <tr>
 			<td class="name">elementType</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the elementtype of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">model</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram</td>
 		</tr>
         <tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the type of the event triggered</td>
 		</tr>
 	</tbody>
 </table>
@@ -17763,22 +17763,22 @@ Triggers when a node is resized
         <tr>
 			<td class="name">direction</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the direction of the node is resized</td>
 		</tr>
         <tr>
 			<td class="name">elementType</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the elementtype of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">model</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram</td>
 		</tr>
         <tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the type of the event triggered</td>
 		</tr>
 	</tbody>
 </table>
@@ -17831,22 +17831,22 @@ Triggers when label editing is ended
         <tr>
 			<td class="name">cancel</td>
 			<td class="type">boolean</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter to specify whether or not to cancel the event</td>
 		</tr>
         <tr>
 			<td class="name">elementType</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the elementtype of the event triggered</td>
 		</tr>
         <tr>
 			<td class="name">model</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the model of the diagram</td>
 		</tr>
         <tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
-			<td class="description last">parameter returns the actual click event arguments that explains which button is clicked</td>
+			<td class="description last">parameter returns the type of the event triggered</td>
 		</tr>
 	</tbody>
 </table>
