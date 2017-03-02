@@ -3820,7 +3820,7 @@ Gets or sets a value that indicates the cell selection actions based on the cell
 </tr>
 <tr>
 <td class="name">flow</td>
-<td class="description">It selects cells continously from the start cell to end cell.</td>
+<td class="description">It selects cells continuously from the start cell to end cell.</td>
 </tr>
 <tr>
 <td class="name">box</td>
@@ -8486,7 +8486,7 @@ gridObj.reorderColumns("OrderID", "CustomerID");
 $("#Grid").ejGrid("reorderColumns", "OrderID", "CustomerID");
 </script>{% endhighlight %}
 
-### reorderRows(indexes, toindex)
+### reorderRows(indexes, toIndex)
 {:#methods:reorderrows}
 
 Re-order the row in grid
@@ -8506,9 +8506,9 @@ Re-order the row in grid
 <td class="description last">Pass the indexes of the rows needs to reorder.</td>
 </tr>
 <tr>
-<td class="name">toindex</td>
+<td class="name">toIndex</td>
 <td class="type"><span class="param-type">Number</span></td>
-<td class="description last">Pass the index of a row where to be reorderd.</td>
+<td class="description last">Pass the index of a row where to be reordered.</td>
 </tr>
 </tbody>
 </table>
@@ -9442,7 +9442,7 @@ $("#Grid").ejGrid("setPhoneModeMaxWidth", 500);
 ### setValidation()
 {:#methods:setvalidation}
 
-Set validation to editform in the grid.
+Set validation to edit form in the grid.
 
 #### Returns:
 {:#methods:returns:}
@@ -9474,7 +9474,7 @@ $("#Grid").ejGrid("setValidation");
 ### setValidationToField(fieldName, rules)
 {:#methods:setvalidationtofield}
 
-Set validation to a particular input field in a editfrom dynamically.
+Set validation to a particular input field in a edit form dynamically.
 
 <table class="params">
 <thead>
