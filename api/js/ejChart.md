@@ -33523,21 +33523,39 @@ $("#container").ejChart({
 <tbody>
 <tr>
 <td class="name">{% highlight js %}
-Axis{% endhighlight %}</td>
+axis{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Instance of the corresponding axis.</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-LabelText{% endhighlight %}</td>
+label{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Arguments of axis label value and text.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+Text{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">Formatted text of the respective label. You can also add custom text to the label.</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-LabelValue{% endhighlight %}</td>
+Value{% endhighlight %}</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description last">Actual value of the label.</td>
+</tr>
+</tbody>
+</table>
+</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
