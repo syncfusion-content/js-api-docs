@@ -8,10 +8,10 @@
  keywords: ejGrid, API, Essential JS Grid
 ---
  
-#ejGrid
+# ejGrid
 The grid can be easily configured to the DOM element, such as div. you can create a grid with a highly customizable look and feel.
 
-####Syntax
+#### Syntax
 $(element).ejGrid(options)
 
 <table class="params">
@@ -31,7 +31,7 @@ $(element).ejGrid(options)
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -41,11 +41,10 @@ $(element).ejGrid(options)
 $('#Grid').ejGrid({
     dataSource: window.gridData
 });         
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
-
-
-####Requires
+#### Requires
 {:.require}
 
 * module:jQuery
