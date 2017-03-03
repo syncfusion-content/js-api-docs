@@ -8550,6 +8550,162 @@ Triggers after the cell is clicked.
 
 {% endhighlight %}
 
+### contextOpen
+{:#events:contextopen}
+
+Triggered before the context menu is opened.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">
+Arguments when contextOpen event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the Kanban model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">currentTarget</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the current item.</td>
+</tr>
+<tr>
+<td class="name">status</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the status of contextmenu item which denotes its enabled state.</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the target item.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+     <div id="Kanban"></div> 
+     <script>
+     $("#Kanban").ejKanban({
+     contextOpen: function (args){}
+     });
+    </script>
+    
+{% endhighlight %}
+
+### contextClick
+{:#events:contextclick}
+
+Triggered when context menu item is clicked in Kanban
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">
+Arguments when contextClick event is triggered
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the Kanban model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">currentTarget</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the current item.</td>
+</tr>
+<tr>
+<td class="name">status</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the status of contextmenu item which denotes its enabled state.</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the target item.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+     <div id="Kanban"></div> 
+     <script>
+     $("#Kanban").ejKanban({
+     contextClick: function (args){}
+     });
+    </script>
+    
+{% endhighlight %}
+
 ### dataBound
 {:#events:databound}
 
@@ -8954,78 +9110,78 @@ Triggered initial load.
 Triggered when toolbar item is clicked in Kanban.
 
 <table class="params">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Type</th>
-                <th class="last">Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="name">argument</td>
-                <td class="type"><span class="param-type">Object</span></td>
-                <td class="description last">
-                    Arguments when toolBarClick event is triggered.
-                    <table class="params">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Type</th>
-                                <th class="last">Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="name">cancel</td>
-                                <td class="type"><span class="param-type">boolean</span></td>
-                                <td class="description last">Returns the cancel option value.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">currentTarget</td>
-                                <td class="type"><span class="param-type">object</span></td>
-                                <td class="description last">Returns the current item.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">itemId</td>
-                                <td class="type"><span class="param-type">string</span></td>
-                                <td class="description last">Returns the item id of that current element.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">itemIndex</td>
-                                <td class="type"><span class="param-type">number</span></td>
-                                <td class="description last">Returns the item index of that current element.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">itemName</td>
-                                <td class="type"><span class="param-type">string</span></td>
-                                <td class="description last">Returns the item name of that current element.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">itemText</td>
-                                <td class="type"><span class="param-type">string</span></td>
-                                <td class="description last">Returns the item text of that current element.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">model</td>
-                                <td class="type"><span class="param-type">object</span></td>
-                                <td class="description last">Returns the Kanban model.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">type</td>
-                                <td class="type"><span class="param-type">string</span></td>
-                                <td class="description last">Returns the name of the event.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">toolbarData</td>
-                                <td class="type"><span class="param-type">object</span></td>
-                                <td class="description last">Returns the toolbar object of the Kanban.</td>
-                            </tr>
-                        <tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">
+Arguments when toolBarClick event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">currentTarget</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the current item.</td>
+</tr>
+<tr>
+<td class="name">itemId</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the item id of that current element.</td>
+</tr>
+<tr>
+<td class="name">itemIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the item index of that current element.</td>
+</tr>
+<tr>
+<td class="name">itemName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the item name of that current element.</td>
+</tr>
+<tr>
+<td class="name">itemText</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the item text of that current element.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the Kanban model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">toolbarData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the toolbar object of the Kanban.</td>
+</tr>
+<tbody>
+</table>
+</td>
+</tr>
+</tbody>
 </table>  
   
 #### Example
@@ -9048,68 +9204,68 @@ Triggered when toolbar item is clicked in Kanban.
 Triggered every time a single card rendered request is made to access particular card information.
 
 <table class="params">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Type</th>
-                <th class="last">Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="name">argument</td>
-                <td class="type"><span class="param-type">Object</span></td>
-                <td class="description last">
-                    Event parameters from Kanban
-                    <table class="params">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Type</th>
-                                <th class="last">Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="name">card</td>
-                                <td class="type"><span class="param-type">object</span></td>
-                                <td class="description last">Returns Kanban card.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">cell</td>
-                                <td class="type"><span class="param-type">object</span></td>
-                                <td class="description last">Returns Kanban card.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">cancel</td>
-                                <td class="type"><span class="param-type">boolean</span></td>
-                                <td class="description last">Returns the cancel option value.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">data</td>
-                                <td class="type"><span class="param-type">object</span></td>
-                                <td class="description last">Returns current row record object (JSON).</td>
-                            </tr>
-                            <tr>
-                                <td class="name">column</td>
-                                <td class="type"><span class="param-type">object</span></td>
-                                <td class="description last">Returns the column object.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">model</td>
-                                <td class="type"><span class="param-type">object</span></td>
-                                <td class="description last">Returns the Kanban model.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">type</td>
-                                <td class="type"><span class="param-type">string</span></td>
-                                <td class="description last">Returns the name of the event.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">
+Event parameters from Kanban
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">card</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns Kanban card.</td>
+</tr>
+<tr>
+<td class="name">cell</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns Kanban card.</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current row record object (JSON).</td>
+</tr>
+<tr>
+<td class="name">column</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the column object.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the Kanban model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
 </table>
 
 #### Example
@@ -9120,163 +9276,6 @@ Triggered every time a single card rendered request is made to access particular
      <script>
      $("#Kanban").ejKanban({
      queryCellInfo: function (args){}
-     });
-    </script>
-    
-{% endhighlight %}
-
-### contextOpen
-{:#events:contextopen}
-
-Triggered before the context menu is opened.
-
-<table class="params">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Type</th>
-                <th class="last">Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="name">argument</td>
-                <td class="type"><span class="param-type">Object</span></td>
-                <td class="description last">
-                    Arguments when contextOpen event is triggered.
-                    <table class="params">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Type</th>
-                                <th class="last">Description</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="name">cancel</td>
-                                <td class="type"><span class="param-type">boolean</span></td>
-                                <td class="description last">Returns the cancel option value.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">model</td>
-                                <td class="type"><span class="param-type">object</span></td>
-                                <td class="description last">Returns the Kanban model.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">type</td>
-                                <td class="type"><span class="param-type">string</span></td>
-                                <td class="description last">Returns the name of the event.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">currentTarget</td>
-                                <td class="type"><span class="param-type">object</span></td>
-                                <td class="description last">Returns the current item.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">status</td>
-                                <td class="type"><span class="param-type">boolean</span></td>
-                                <td class="description last">Returns the status of contextmenu item which denotes its enabled state.</td>
-                            </tr>
-                            <tr>
-                                <td class="name">target</td>
-                                <td class="type"><span class="param-type">object</span></td>
-                                <td class="description last">Returns the target item.</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-</table>
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div> 
-     <script>
-     $("#Kanban").ejKanban({
-     contextOpen: function (args){}
-     });
-    </script>
-    
-{% endhighlight %}
-
-### contextClick
-{:#events:contextclick}
-
-Triggered when context menu item is clicked in Kanban
-
-<table class="params">
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Type</th>
-                    <th class="last">Description</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="name">argument</td>
-                    <td class="type"><span class="param-type">Object</span></td>
-                    <td class="description last">
-                        Arguments when contextClick event is triggered
-                        <table class="params">
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Type</th>
-                                    <th class="last">Description</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="name">cancel</td>
-                                    <td class="type"><span class="param-type">boolean</span></td>
-                                    <td class="description last">Returns the cancel option value.</td>
-                                </tr>
-                                <tr>
-                                    <td class="name">model</td>
-                                    <td class="type"><span class="param-type">object</span></td>
-                                    <td class="description last">Returns the Kanban model.</td>
-                                </tr>
-                                <tr>
-                                    <td class="name">type</td>
-                                    <td class="type"><span class="param-type">string</span></td>
-                                    <td class="description last">Returns the name of the event.</td>
-                                </tr>
-                                <tr>
-                                    <td class="name">currentTarget</td>
-                                    <td class="type"><span class="param-type">object</span></td>
-                                    <td class="description last">Returns the current item.</td>
-                                </tr>
-                                <tr>
-                                    <td class="name">status</td>
-                                    <td class="type"><span class="param-type">boolean</span></td>
-                                    <td class="description last">Returns the status of contextmenu item which denotes its enabled state.</td>
-                                </tr>
-                                <tr>
-                                    <td class="name">target</td>
-                                    <td class="type"><span class="param-type">object</span></td>
-                                    <td class="description last">Returns the target item.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-            </tbody>
-</table>
-
-#### Example
-
-{% highlight html %}
-
-     <div id="Kanban"></div> 
-     <script>
-     $("#Kanban").ejKanban({
-     contextClick: function (args){}
      });
     </script>
     
