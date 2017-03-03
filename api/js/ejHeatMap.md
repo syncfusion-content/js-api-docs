@@ -7,7 +7,7 @@ platform: js-api
 keywords: heatmap, ejHeatMap, heatmap api, syncfusion
 ---
 
-#ejHeatMap
+# ejHeatMap
 <ts root="datavisualization" />
 
 Essential HeatMap JS represents tabular data values as gradient colors instead of numbers,low and high values are different colors with different gradients.
@@ -19,11 +19,10 @@ Essential HeatMap JS represents tabular data values as gradient colors instead o
 #### Example
 
 {% highlight html %}
- 
-    <div id="heatmap"></div>
-    <script>
-        $("#heatmap").ejHeatMap({});
-    </script>
+<div id="heatmap"></div>
+<script>
+    $("#heatmap").ejHeatMap({});
+</script>
 
 {% endhighlight %}
 
@@ -54,7 +53,7 @@ Specifies the width of the heat map.
 
 {% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             width: "300"
@@ -62,9 +61,6 @@ Specifies the width of the heat map.
     </script>
 
 {% endhighlight %}
-
-
-
 
 ### height `object`
 {:#members:height}
@@ -79,7 +75,7 @@ Specifies the width of the heat map.
 
 {% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             height: "300"
@@ -88,10 +84,8 @@ Specifies the width of the heat map.
 
 {% endhighlight %}
 
-
-
 ### id `number`
-{:#members:height}
+{:#members:id}
 
 Specifies the name of the heat map.
 
@@ -103,7 +97,7 @@ Specifies the name of the heat map.
 
 {% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             id: "heatmap"
@@ -125,7 +119,7 @@ Enables or disables tooltip of heatmap
 
 {% highlight html %}
 
- <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             showtooltip: true
@@ -133,7 +127,6 @@ Enables or disables tooltip of heatmap
     </script>
 
 {% endhighlight %}
-
 
 ### tooltipSettings `object`
 {:#members:tooltipsettings}
@@ -150,23 +143,23 @@ Defines the tooltip that should be shown when the mouse hovers over rows/columns
 * null
 
 #### Example
+
 {% highlight html %}
- <script type="text/x-jsrender" id="mouseovertoolTipId">
+
+<div id="heatmap"></div>
+    <script type="text/x-jsrender" id="mouseovertoolTipId">
         <div class="tooltip-style">
             Custom Tooltip
             <div style="height:0px;width:100%;border:1px solid white;">
             </div>
             <table>
                 <tr>
-                    <td style="width:50px;">Year  </td>
+                    <td style="width:50px;">Year</td>
                     <td>{{:data.Year}}</td>
                 </tr>
             </table>
         </div>
     </script>
-{% endhighlight %}
-
-{% highlight js %}
 
 $("#heatmap").ejHeatMap({
     //Defines mouse over tooltip
@@ -206,6 +199,7 @@ Defines the tooltip of associate that should be shown when the mouse hovers over
        </tr>
     </tbody>
 </table>
+
 #### Default Value:
 
 * mouseFollow
@@ -246,17 +240,17 @@ $("#heatmap").ejHeatMap({
 {% endhighlight %}
 
 ### tooltipSettings.position `object`
-{:#members:position}
+{:#members:tooltipsettings-position}
 
 Defines various attributes of the Tooltip position
 
 ### tooltipSettings.position.target `object`
-{:#members:position-target}
+{:#members:tooltipsettings-position-target}
 
 Sets the Tooltip position against target.
 
 ### tooltipSettings.position.target.horizontal `enum`
-{:#members:position-target-horizontal}
+{:#members:tooltipsettings-position-target-horizontal}
 
 <ts name = "ej.datavisualization.HeatMap.Horizontal"/>
 
@@ -286,11 +280,11 @@ Sets the arrow position again popup based on horizontal(x) value
 </table>
 
 #### Default Value
-{:.param}
+
 * center
 
 ### tooltipSettings.position.target.vertical `enum`
-{:#members:position-target-vertical}
+{:#members:tooltipsettings-position-target-vertical}
 
 <ts name = "ej.datavisualization.HeatMap.Vertical"/>
 
@@ -304,65 +298,61 @@ Sets the arrow position again popup based on vertical(y) value
        </tr>
    </thead>
     <tbody>
-        <tr>
+       <tr>
             <td class="name">Top</td>
             <td class="description last">Used to display the tooltip horizontally on left side of rows/columns</td>
        </tr>
-        <tr>
+       <tr>
             <td class="name">Center</td>
             <td class="description last">Used to display the tooltip horizontally on center side of rows/columns</td>
        </tr>
-        <tr>
+       <tr>
             <td class="name">Bottom</td>
             <td class="description last">Used to display the tooltip horizontally on right side of rows/columns</td>
        </tr>
-     </tbody>
+    </tbody>
 </table>
 
 #### Default Value
-{:.param}
+
 * top
 
 ### tooltipSettings.position.stem `object`
-{:#members:position-stem}
+{:#members:tooltipsettings-position-stem}
 
 Sets the arrow position again popup.
 
 ### tooltipSettings.position.stem.horizontal `enum`
-{:#members:position-stem-horizontal}
+{:#members:tooltipsettings-position-stem-horizontal}
 
 <ts ref = "ej.datavisualization.HeatMap.Horizontal"/>
 
 Sets the arrow position again popup based on horizontal(x) value
 
 #### Default Value
-{:.param}
+
 * center
 
 ### tooltipSettings.position.stem.vertical `enum`
-{:#members:position-stem-vertical}
+{:#members:tooltipsettings-position-stem-vertical}
 
 <ts ref = "ej.datavisualization.HeatMap.Vertical"/>
 
 Sets the arrow position again popup based on vertical(y) value
 
 #### Default Value
-{:.param}
+
 * bottom
 
 #### Example
-{:.example}
-{% highlight html %}
- 
 
+{% highlight html %}
 <script type="text/javascript">
     $("#heatmap").ejHeatMap({
         //Defines mouse over tooltip
         toolTipSettings: {
             position: {
-                stem: {
-                    horizontal: "left"
-                }
+                stem: {horizontal: "left"}
             };
         }
     });
@@ -488,7 +478,7 @@ $("#heatmap").ejHeatMap({
 {% endhighlight %}
 
 ### itemsSource `object`
-{:#members:itemsSource}
+{:#members:itemssource}
 
 Specifies the source data of the heat map.
 
@@ -499,12 +489,10 @@ Specifies the source data of the heat map.
 #### Example
 
 {% highlight html %}
-
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
-
-        var columns = ["Vegie-spread", "Tofuaa", "Alice Mutton", "Konbu", "Flytemysost"]
-        var itemSource = [];
+    var columns = ["Vegie-spread", "Tofuaa", "Alice Mutton", "Konbu", "Flytemysost"]
+    var itemSource = [];
         for (var i = 0; i < columns.length; i++) {
             for (var j = 0; j < 6; j++) {
                 var value = Math.floor((Math.random() * 100) + 1);
@@ -519,7 +507,7 @@ Specifies the source data of the heat map.
 {% endhighlight %}
 
 ### heatMapCell `object`
-{:#members:heatmapCell}
+{:#members:heatmapcell}
 
 Specifies the property of the heat map cell.
 
@@ -531,7 +519,7 @@ Specifies the property of the heat map cell.
 
 {% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             heatmapCell: { showColor: true }
@@ -540,9 +528,8 @@ Specifies the property of the heat map cell.
 
 {% endhighlight %}
 
-
 ### heatMapCell.showContent `enum`
-{:#members:heatmapCell-showContent}
+{:#members:heatmapcell-showcontent}
  
 <ts name = "ej.datavisualization.HeatMap.CellVisibility"/>
 
@@ -574,9 +561,9 @@ Specifies whether the cell content can be visible or not.
 
 #### Example
 
-{% highlight html %} 
+{% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             heatmapCell: { showContent: ej.HeatMap.CellVisibility.Hidden }
@@ -587,7 +574,7 @@ Specifies whether the cell content can be visible or not.
 
 
 ### heatMapCell.showColor `boolean`
-{:#members:heatmapCell-showColor}
+{:#members:heatmapcell-showcolor}
 
 Specifies whether the cell color can be visible or not.
 
@@ -599,7 +586,7 @@ Specifies whether the cell color can be visible or not.
 
 {% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             heatmapCell: { showColor: true }
@@ -608,11 +595,8 @@ Specifies whether the cell color can be visible or not.
 
 {% endhighlight %}
 
-
-
-
 ### isResponsive `boolean`
-{:#members:isResponsive}
+{:#members:isresponsive}
 
 Specifies can enable responsive mode or not for heat map.
 
@@ -624,7 +608,7 @@ Specifies can enable responsive mode or not for heat map.
 
 {% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             isResponsive: true
@@ -633,9 +617,8 @@ Specifies can enable responsive mode or not for heat map.
 
 {% endhighlight %}
 
-
 ### enableVirtualization `boolean`
-{:#members:enableVirtualization}
+{:#members:enablevirtualization}
 
 Specifies whether the virtualization can be enable or not.
 
@@ -647,7 +630,7 @@ Specifies whether the virtualization can be enable or not.
 
 {% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             enableVirtualization: true
@@ -656,10 +639,8 @@ Specifies whether the virtualization can be enable or not.
 
 {% endhighlight %}
 
- 
-
 ### defaultColumnStyle `object`
-{:#members:defaultColumnStyle}
+{:#members:defaultcolumnstyle}
 
 Specifies the default column properties for all the column style not specified in column properties. 
 
@@ -670,8 +651,7 @@ Specifies the default column properties for all the column style not specified i
 #### Example
 
 {% highlight html %}
-
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             defaultColumnStyle: {
@@ -684,7 +664,7 @@ Specifies the default column properties for all the column style not specified i
 {% endhighlight %}
 
 ### defaultColumnStyle.textAlign `object`
-{:#members:defaultColumnStyle-textAlign}
+{:#members:defaultcolumnstyle-textalign}
 
 Specifies the alignment mode of the heat map column.
 
@@ -722,9 +702,9 @@ Enables/disables the bold style
 
 #### Example
 
-{% highlight html %} 
+{% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             defaultColumnStyle: {
@@ -733,12 +713,11 @@ Enables/disables the bold style
         });
     </script>
 
-
 {% endhighlight %}
 
 
 ### defaultColumnStyle.headerTemplateID`string`
-{:#members:defaultColumnStyle-headerTemplateID}
+{:#members:defaultcolumnstyle-headertemplateid}
 
 Specifies the template id of the heat map column header.
 
@@ -750,7 +729,7 @@ Specifies the template id of the heat map column header.
 
 {% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             defaultColumnStyle: {
@@ -765,9 +744,8 @@ Specifies the template id of the heat map column header.
 
 {% endhighlight %}
 
-
 ### defaultColumnStyle.templateID`string`
-{:#members:defaultColumnStyle-templateID}
+{:#members:defaultcolumnstyle-templateid}
 
 Specifies the template id of all individual cell data of the heat map. 
 
@@ -779,7 +757,7 @@ Specifies the template id of all individual cell data of the heat map.
 
 {% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             defaultColumnStyle: {
@@ -794,11 +772,8 @@ Specifies the template id of all individual cell data of the heat map.
 
 {% endhighlight %}
 
-
-
-
 ### legendCollection `array`
-{:#members:legendCollection}
+{:#members:legendcollection}
 
 Specifies the no of legends can sync with heat map. 
 
@@ -810,7 +785,7 @@ Specifies the no of legends can sync with heat map.
 
 {% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             legendCollection: ["heatmap_legend1", "heatmap_legend2"]
@@ -819,11 +794,8 @@ Specifies the no of legends can sync with heat map.
 
 {% endhighlight %}
 
-
-
-
 ### itemsMapping `object`
-{:#members:itemsMapping}
+{:#members:itemsmapping}
 
 Specifies the property and display value of the heat map column.
 
@@ -835,21 +807,19 @@ Specifies the property and display value of the heat map column.
 
 {% highlight html %}
 
-    <div id="heatmap"></div>
-    <script>
-        $("#heatmap").ejHeatMap({
-            itemsMapping: {
-                column: { "propertyName": "ProductName", "displayName": "Product Name" },
-                row: { "propertyName": "Year", "displayName": "Year", }
+<div id="heatmap"></div>
+<script>
+    $("#heatmap").ejHeatMap({
+        itemsMapping: {
+            column: { "propertyName": "ProductName", "displayName": "Product Name" },
+            row: { "propertyName": "Year", "displayName": "Year" }
             }
-        });
-    </script>
+            });
+</script>
 {% endhighlight %}
 
-
-
 ### itemsMapping.columnStyle `object`
-{:#members:itemsMapping-columnStyle}
+{:#members:itemsmapping-columnstyle}
 
 Column settings for the individual heat map column.
 
@@ -860,22 +830,21 @@ Column settings for the individual heat map column.
 #### Example
 {% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             itemsMapping: {
                 columnStyle: {
                     textAlign: ej.HeatMap.TextAlign.Left
+                    }
                 }
-            }
-        });
+            });
     </script>
 
 {% endhighlight %}
 
-
 ### itemsMapping.columnStyle.width `number`
-{:#members:itemsMapping-columnStyle-width}
+{:#members:itemsmapping-columnstyle-width}
 
 Specifies the width of the heat map column.
 
@@ -885,23 +854,21 @@ Specifies the width of the heat map column.
 
 #### Example
 
-{% highlight html %} 
+{% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             itemsMapping: {
-                columnStyle: {
-                    width: 100
+                columnStyle: {width: 100}
                 }
-            }
-        });
+            });
     </script>
 
 {% endhighlight %}
 
 ### itemsMapping.columnStyle.textAlign `string`
-{:#members:itemsMapping-columnStyle-textAlign}
+{:#members:itemsmapping-columnstyle-textAlign}
 
 Specifies the text align mode of the heat map column.
 
@@ -911,23 +878,23 @@ Specifies the text align mode of the heat map column.
 
 #### Example
 
-{% highlight html %} 
+{% highlight html %}
 
-    <div id="heatmap"></div>
-        <script>
-            $("#heatmap").ejHeatMap({
-                itemsMapping: {
-                    columnStyle: {
-                        textAlign: ej.HeatMap.TextAlign.Left
+<div id="heatmap"></div>
+    <script>
+        $("#heatmap").ejHeatMap({
+            itemsMapping: {
+                columnStyle: {
+                    textAlign: ej.HeatMap.TextAlign.Left
                     }
                 }
             });
-        </script>
+    </script>
 
 {% endhighlight %}
 
 ### itemsMapping.columnStyle.headerTemplateID `string`
-{:#members:itemsMapping-columnStyle-headerTemplateID}
+{:#members:itemsmapping-columnstyle-headertemplateid}
 
 Specifies the template id of the column header.
 
@@ -937,14 +904,13 @@ Specifies the template id of the column header.
 
 #### Example
 
-{% highlight html %} 
+{% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             itemsMapping: {
-                columnStyle: {
-                    headerTemplateID: "template"
+                columnStyle: { headerTemplateID: "template"
                 }
             }
         });
@@ -957,7 +923,7 @@ Specifies the template id of the column header.
 {% endhighlight %}
 
 ### itemsMapping.columnStyle.templateID `string`
-{:#members:itemsMapping-columnStyle-templateID}
+{:#members:itemsmapping-columnstyle-templateid}
 
 Specifies the template id of all individual cell data. 
 
@@ -967,9 +933,9 @@ Specifies the template id of all individual cell data.
 
 #### Example
 
-{% highlight html %} 
+{% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             itemsMapping: {
@@ -986,14 +952,8 @@ Specifies the template id of all individual cell data.
 
 {% endhighlight %}
 
-
-
-
-
-
-
 ### itemsMapping.column `object`
-{:#members:itemsMapping-column}
+{:#members:itemsmapping-column}
 
 Specifies the property and display value of the column.  
 
@@ -1003,9 +963,9 @@ Specifies the property and display value of the column.
 
 #### Example
 
-{% highlight html %} 
+{% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             itemsMapping: {
@@ -1017,7 +977,7 @@ Specifies the property and display value of the column.
 {% endhighlight %}
 
 ### itemsMapping.column.propertyName `string`
-{:#members:itemsMapping-column-propertyName}
+{:#members:itemsmapping-column-propertyname}
 
 Specifies the name of the column or row.
 
@@ -1027,9 +987,9 @@ Specifies the name of the column or row.
 
 #### Example
 
-{% highlight html %} 
+{% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             itemsMapping: {
@@ -1041,7 +1001,7 @@ Specifies the name of the column or row.
 {% endhighlight %}
 
 ### itemsMapping.column.displayName `string`
-{:#members:itemsMapping-column-displayName}
+{:#members:itemsmapping-column-displayname}
 
 Specifies the value of the column or row.
 
@@ -1051,9 +1011,9 @@ Specifies the value of the column or row.
 
 #### Example
 
-{% highlight html %} 
+{% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             itemsMapping: {
@@ -1064,33 +1024,32 @@ Specifies the value of the column or row.
 
 {% endhighlight %}
 
-
-
-
-
-
 ### itemsMapping.row `object`
-{:#members:itemsMapping-row}
+{:#members:itemsmapping-row}
 
-Specifies the property and display value of the heat map.
-row
+Specifies the row property and display value of the heat map.
+
 #### Default Value:
 
 * null
 
 #### Example
 
-{% highlight html %} 
+{% highlight html %}
 
+<div id="heatmap"></div>
+    <script>
         $("#heatmap").ejHeatMap({
             itemsMapping: {
                 row: { "propertyName": "ProductName", "displayName": "Product Name" }
             }
         });
+        </script>
 
 {% endhighlight %}
+
 ### itemsMapping.row.propertyName `string`
-{:#members:itemsMapping-row-propertyName}
+{:#members:itemsmapping-row-propertyname}
 
 Specifies the name of the column or row.
 
@@ -1100,9 +1059,9 @@ Specifies the name of the column or row.
 
 #### Example
 
-{% highlight html %} 
+{% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             itemsMapping: {
@@ -1114,7 +1073,7 @@ Specifies the name of the column or row.
 {% endhighlight %}
 
 ### itemsMapping.row.displayName `string`
-{:#members:itemsMapping-row-displayName}
+{:#members:itemsmapping-row-displayname}
 
 Specifies the value of the column or row.
 
@@ -1124,9 +1083,9 @@ Specifies the value of the column or row.
 
 #### Example
 
-{% highlight html %} 
+{% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             itemsMapping: {
@@ -1137,10 +1096,8 @@ Specifies the value of the column or row.
 
 {% endhighlight %}
 
-
-
 ### itemsMapping.value `object`
-{:#members:itemsMapping-value}
+{:#members:itemsmapping-value}
 
 Specifies the property and display value of the column value.
 
@@ -1150,9 +1107,9 @@ Specifies the property and display value of the column value.
 
 #### Example
 
-{% highlight html %} 
+{% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             itemsMapping: {
@@ -1164,7 +1121,7 @@ Specifies the property and display value of the column value.
 {% endhighlight %}
 
 ### itemsMapping.value.propertyName `string`
-{:#members:itemsMapping-value-propertyName}
+{:#members:itemsmapping-value-propertyname}
 
 Specifies the name of the column or row.
 
@@ -1174,9 +1131,9 @@ Specifies the name of the column or row.
 
 #### Example
 
-{% highlight html %} 
+{% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             itemsMapping: {
@@ -1188,7 +1145,7 @@ Specifies the name of the column or row.
 {% endhighlight %}
 
 ### itemsMapping.value.displayName `string`
-{:#members:itemsMapping-value-displayName}
+{:#members:itemsmapping-value-displayname}
 
 Specifies the value of the column or row.
 
@@ -1198,9 +1155,9 @@ Specifies the value of the column or row.
 
 #### Example
 
-{% highlight html %} 
+{% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             itemsMapping: {
@@ -1211,10 +1168,8 @@ Specifies the value of the column or row.
 
 {% endhighlight %}
 
-
-
 ### itemsMapping.headerMapping `object`
-{:#members:itemsMapping-headerMapping}
+{:#members:itemsmapping-headermapping}
 
 Specifies the property and display value of the header.
 
@@ -1224,9 +1179,9 @@ Specifies the property and display value of the header.
 
 #### Example
 
-{% highlight html %} 
+{% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             itemsMapping: {
@@ -1236,8 +1191,9 @@ Specifies the property and display value of the header.
     </script>
 
 {% endhighlight %}
+
 ### itemsMapping.headerMapping.propertyName `string`
-{:#members:itemsMapping-headerMapping-propertyName}
+{:#members:itemsmapping-headermapping-propertyname}
 
 Specifies the name of the column or row. 
 
@@ -1247,9 +1203,9 @@ Specifies the name of the column or row.
 
 #### Example
 
-{% highlight html %} 
+{% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             itemsMapping: {
@@ -1261,7 +1217,7 @@ Specifies the name of the column or row.
 {% endhighlight %}
 
 ### itemsMapping.headerMapping.displayName `string`
-{:#members:itemsMapping-headerMapping-displayName}
+{:#members:itemsmapping-headermapping-displayname}
 
 Specifies the value of the column or row.
 
@@ -1271,9 +1227,9 @@ Specifies the value of the column or row.
 
 #### Example
 
-{% highlight html %} 
+{% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             itemsMapping: {
@@ -1284,7 +1240,7 @@ Specifies the value of the column or row.
 
 {% endhighlight %}
 ### itemsMapping.headerMapping.columnStyle `object`
-{:#members:itemsMapping-headerMapping-columnStyle}
+{:#members:itemsmapping-headermapping-columnstyle}
 
 Specifies the property and display value of the header. 
 
@@ -1296,7 +1252,7 @@ Specifies the property and display value of the header.
 
 {% highlight html %} 
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             itemsMapping: {
@@ -1310,7 +1266,7 @@ Specifies the property and display value of the header.
 {% endhighlight %} 
 
 ### itemsMapping.columnMapping `array`
-{:#members:itemsMapping-columnMapping}
+{:#members:itemsmapping-columnmapping}
 
 Specifies the property and display value of the collection of column. 
 
@@ -1320,9 +1276,9 @@ Specifies the property and display value of the collection of column.
 
 #### Example
 
-{% highlight html %} 
+{% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             itemsMapping: {
@@ -1338,7 +1294,7 @@ Specifies the property and display value of the collection of column.
  
 
 ### colorMappingCollection `array`
-{:#members:colorMappingCollection}
+{:#members:colormappingcollection}
 
 Specifies the color values of the heat map column data.
 
@@ -1350,7 +1306,7 @@ Specifies the color values of the heat map column data.
 
 {% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             colorMappingCollection: [
@@ -1363,7 +1319,7 @@ Specifies the color values of the heat map column data.
 {% endhighlight %}
 
 ### colorMappingCollection.color`string`
-{:#members:colorMappingCollection-color}
+{:#members:colormappingcollection-color}
 
 Specifies the color of the heat map column data. 
 
@@ -1375,7 +1331,7 @@ Specifies the color of the heat map column data.
 
 {% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             colorMappingCollection: [
@@ -1388,7 +1344,7 @@ Specifies the color of the heat map column data.
 {% endhighlight %}
 
 ### colorMappingCollection.value `number`
-{:#members:colorMappingCollection-value}
+{:#members:colormappingcollection-value}
 
 Specifies the color values of the heat map column data. 
 
@@ -1400,7 +1356,7 @@ Specifies the color values of the heat map column data.
 
 {% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             colorMappingCollection: [
@@ -1413,7 +1369,7 @@ Specifies the color values of the heat map column data.
 {% endhighlight %}
 
 ### colorMappingCollection.label `object`
-{:#members:colorMappingCollection-label}
+{:#members:colormappingcollection-label}
 
 Specifies the label properties of the heat map color.
 
@@ -1425,7 +1381,7 @@ Specifies the label properties of the heat map color.
 
 {% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             colorMappingCollection: [
@@ -1436,7 +1392,7 @@ Specifies the label properties of the heat map color.
 {% endhighlight %}
 
 ### colorMappingCollection.label.bold `boolean`
-{:#members:colorMappingCollection-label-bold}
+{:#members:colormappingcollection-label-bold}
 
 Enables/disables the bold style of the heat map label.
 
@@ -1448,7 +1404,7 @@ Enables/disables the bold style of the heat map label.
 
 {% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             colorMappingCollection: [
@@ -1460,7 +1416,7 @@ Enables/disables the bold style of the heat map label.
 {% endhighlight %}
 
 ### colorMappingCollection.label.italic `boolean`
-{:#members:colorMappingCollection-label-italic}
+{:#members:colormappingcollection-label-italic}
 
 Enables/disables the italic style of the heat map label.
 
@@ -1471,7 +1427,7 @@ Enables/disables the italic style of the heat map label.
 #### Example
 {% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             colorMappingCollection: [
@@ -1483,7 +1439,7 @@ Enables/disables the italic style of the heat map label.
 {% endhighlight %}
 
 ### colorMappingCollection.label.text`string`
-{:#members:colorMappingCollection-label-text}
+{:#members:colormappingcollection-label-text}
 
 specifies the text value of the heat map label.
 
@@ -1495,7 +1451,7 @@ specifies the text value of the heat map label.
 
 {% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             colorMappingCollection: [
@@ -1507,7 +1463,7 @@ specifies the text value of the heat map label.
 {% endhighlight %}
 
 ### colorMappingCollection.label.textDecoration `enum`
-{:#members:colorMappingCollection-label-textDecoration}
+{:#members:colormappingcollection-label-textdecoration}
 
 <ts name = "ej.datavisualization.HeatMap.TextDecoration "/>
 
@@ -1549,7 +1505,7 @@ Specifies the text style of the heat map label.
 
 {% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             colorMappingCollection: [
@@ -1561,7 +1517,7 @@ Specifies the text style of the heat map label.
 {% endhighlight %}
 
 ### colorMappingCollection.label.fontSize `number`
-{:#members:colorMappingCollection-label-fontSize}
+{:#members:colormappingcollection-label-fontsize}
 
 Specifies the font size of the heat map label.
 
@@ -1573,7 +1529,7 @@ Specifies the font size of the heat map label.
 
 {% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             colorMappingCollection: [
@@ -1585,7 +1541,7 @@ Specifies the font size of the heat map label.
 {% endhighlight %}
 
 ### colorMappingCollection.label.fontFamily`string`
-{:#members:colorMappingCollection-label-fontFamily}
+{:#members:colormappingcollection-label-fontfamily}
 
 Specifies the font family of the heat map label.
 
@@ -1597,7 +1553,7 @@ Specifies the font family of the heat map label.
 
 {% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             colorMappingCollection: [
@@ -1609,7 +1565,7 @@ Specifies the font family of the heat map label.
 {% endhighlight %}
 
 ### colorMappingCollection.label.fontColor`string`
-{:#members:colorMappingCollection-label-fontColor}
+{:#members:colormappingcollection-label-fontcolor}
 
 Specifies the font color of the heat map label.
 
@@ -1621,7 +1577,7 @@ Specifies the font color of the heat map label.
 
 {% highlight html %}
 
-    <div id="heatmap"></div>
+<div id="heatmap"></div>
     <script>
         $("#heatmap").ejHeatMap({
             colorMappingCollection: [
@@ -1631,7 +1587,6 @@ Specifies the font color of the heat map label.
     </script>
 
 {% endhighlight %}
-
 
 ## Events
 
