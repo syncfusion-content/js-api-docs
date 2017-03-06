@@ -548,7 +548,8 @@ $("#Grid").ejGrid({
     dataSource:window.gridData,
     columns: [{ field: "ShipName", headerText: 'Ship Name', width: 130, clipMode: ej.Grid.ClipMode.Ellipsis}]                                
  });
-</script> {% endhighlight %}
+</script> 
+{% endhighlight %}
 
 ### columnLayout `enum`
 {:#members:columnlayout}
@@ -1600,7 +1601,8 @@ $("#Grid").ejGrid({
    dataSource:window.gridData,
    columns: [{ field: "ShipName", headerText: 'Ship Name', width: 130, tooltip:"#colTip"}] 
      });
-</script> {% endhighlight %}
+</script> 
+{% endhighlight %}
 
 ### columns.type `String`
 {:#members:columns-type}
@@ -5308,7 +5310,7 @@ Adds a grid model property which is to be ignored upon exporting.
 Void
 
 
-####Example
+#### Example
 
 {% highlight html %}
  
@@ -5339,7 +5341,7 @@ Add a new record in grid control when allowAdding is set as true.
 
 Void
 
-####Example
+#### Example
 
 {% highlight html %}
  
@@ -5392,7 +5394,7 @@ Add a new record in grid control when allowAdding is set as true.
 
 Void
 
-####Example
+#### Example
 
 {% highlight html %}
  
@@ -5425,7 +5427,7 @@ Cancel the modified changes in grid control when edit mode is "batch".
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5458,7 +5460,7 @@ Save the modified changes to data source in grid control when edit mode is "batc
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5493,7 +5495,7 @@ Send a cancel request in grid.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5528,7 +5530,7 @@ Send a cancel request to the edited cell in grid.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5547,7 +5549,8 @@ gridObj.cancelEditCell();
 <script>
 // Sends a cancel request to the edited cell in grid
 $("#Grid").ejGrid("cancelEditCell");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
@@ -5562,7 +5565,7 @@ It is used to clear all the cell selection.
 
 Boolean
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5581,7 +5584,8 @@ gridObj.clearCellSelection();  // clears all of the cell selection
 <script>         
 // clears all of the cell selection
 $("#Grid").ejGrid("clearCellSelection");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### clearCellSelection(rowIndex,columnIndex)
 {:#methods:clearcellselection}
@@ -5615,7 +5619,7 @@ It is used to clear specified cell selection based on the rowIndex and columnInd
 
 Boolean
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5634,7 +5638,8 @@ gridObj.clearCellSelection(1,2);  // clears specified the cell selection
 <script>         
 // clears all of the cell selection
 $("#Grid").ejGrid("clearCellSelection",1,2);        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### clearColumnSelection(\[index\])
@@ -5665,7 +5670,7 @@ It is used to clear all the row selection or at specific row selection based on 
 
 Boolean
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5676,7 +5681,8 @@ Boolean
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.clearColumnSelection(2);  // Removes the selection based on the column index
 gridObj.clearColumnSelection();  // clears all of the column selection
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -5719,7 +5725,7 @@ It is used to clear all the filtering done.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5730,7 +5736,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.clearFiltering("EmployeeID"); //clears the filtering based on the fieldName passed
 gridObj.clearFiltering();  // clears all the filtering
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -5738,7 +5745,8 @@ gridObj.clearFiltering();  // clears all the filtering
 <script>         
 $("#Grid").ejGrid("clearFiltering","EmployeeID");// clears the filtering based on the fieldName passed
 $("#Grid").ejGrid("clearFiltering"); // clears all the filtering
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### clearSearching()
 {:#methods:clearsearching}
@@ -5750,7 +5758,7 @@ Clear the searching from the grid
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5761,7 +5769,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Clears the searching from the grid
 gridObj.clearSearching(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -5769,7 +5778,8 @@ gridObj.clearSearching();
 <script>
 // Clears the searching from the grid
 $("#Grid").ejGrid("clearSearching");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### clearSelection(\[index\])
 {:#methods:clearselection}
@@ -5800,7 +5810,7 @@ Clear all the row selection or at specific row selection based on the index prov
 Boolean
 
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5811,7 +5821,8 @@ Boolean
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.clearSelection(2);  // Removes the selection based on the row index
 gridObj.clearSelection();  // clears all of the row selection
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -5821,7 +5832,8 @@ gridObj.clearSelection();  // clears all of the row selection
 $("#Grid").ejGrid("clearSelection", 2);   
 // clears all of the row selection
 $("#Grid").ejGrid("clearSelection");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### clearSorting()
@@ -5834,7 +5846,7 @@ Clear the sorting from columns in the grid
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5845,7 +5857,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Clears the sorting from columns in the grid
 gridObj.clearSorting(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -5853,7 +5866,8 @@ gridObj.clearSorting();
 <script>
 // Clears the sorting from columns in the grid
 $("#Grid").ejGrid("clearSorting");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### collapseAll()
@@ -5866,7 +5880,7 @@ Collapse all the group caption rows in grid
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5877,7 +5891,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Collapse all the group caption rows
 gridObj.collapseAll(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -5885,7 +5900,8 @@ gridObj.collapseAll();
 <script>
 // Collapse all the group caption rows
 $("#Grid").ejGrid("collapseAll");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### collapseGroupDropArea()
@@ -5898,7 +5914,7 @@ Collapse the group drop area in grid
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5909,7 +5925,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Collapse the group drop area of the grid
 gridObj.collapseGroupDropArea(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -5917,7 +5934,8 @@ gridObj.collapseGroupDropArea();
 <script>
 // Collapse the group drop area of the grid
 $("#Grid").ejGrid("collapseGroupDropArea");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
@@ -5954,7 +5972,7 @@ Add or remove columns in grid column collections
 Void
 
 
-####Example
+#### Example
 {:.example}
 
 
@@ -5967,7 +5985,8 @@ var gridObj = $("#Grid").data("ejGrid");
 gridObj.columns("OrderID", "remove");
 // Add new column into grid or modified already existing column in the grid.
 gridObj.columns("CustomerID", "add"); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -5977,7 +5996,8 @@ gridObj.columns("CustomerID", "add");
 $("#Grid").ejGrid("columns","OrderID", "remove");   
 // Add new column into grid or modified already existing column in the grid.                    
 $("#Grid").ejGrid("columns","CustomerID", "add");                       
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
@@ -6014,7 +6034,7 @@ Refresh the grid with new data source
 Void
 
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6025,7 +6045,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Refreshes the grid data source
 gridObj.dataSource(data); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -6033,7 +6054,8 @@ gridObj.dataSource(data);
 <script>
 // Refreshes the grid data source
 $("#Grid").ejGrid("dataSource", data);        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### deleteRecord(fieldName, data)
@@ -6069,7 +6091,7 @@ Delete a record in grid control when allowDeleting is set as true
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6080,7 +6102,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Sends a delete record request to the grid
 gridObj.deleteRecord("OrderID", { OrderID: 10249, EmployeeID: 3 }); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -6088,7 +6111,8 @@ gridObj.deleteRecord("OrderID", { OrderID: 10249, EmployeeID: 3 });
 <script>
 // Sends a delete record request to the grid
 $("#Grid").ejGrid("deleteRecord", "OrderID", { OrderID: 10249, EmployeeID: 3 });        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### deleteRow($tr)
 {:#methods:deleterow}
@@ -6118,7 +6142,7 @@ Delete the row based on the given tr element in grid.
 
 Element
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6129,7 +6153,8 @@ Element
 var gridObj = $("#Grid").data("ejGrid");
 // Sends a delete record request to the grid
 gridObj.deleteRow($(".gridcontent tr").first()); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -6137,7 +6162,8 @@ gridObj.deleteRow($(".gridcontent tr").first());
 <script>
 // Sends a delete record request to the grid
 $("#Grid").ejGrid("deleteRow", $(".gridcontent tr").first());        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### destroy()
@@ -6150,7 +6176,7 @@ Destroy the grid widget all events bound using this._on will be unbind automatic
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6159,7 +6185,8 @@ Void
 <script>
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.destroy(); // destroy the Grid
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -6167,7 +6194,8 @@ gridObj.destroy(); // destroy the Grid
 <script>
 // destroy the Grid
 $("#Grid").ejGrid("destroy");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### editCell(index, fieldName)
@@ -6203,7 +6231,7 @@ Edit a particular cell based on the row index and field name provided in "batch"
 Void
 
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6213,14 +6241,16 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Edit particular cell based on row index and column field name
 gridObj.editCell(2, "OrderID"); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
 <script>
 // Edit particular cell based on row index and column field name
 $("#Grid").ejGrid("editCell", 2, "OrderID");
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### editFormValidate()
@@ -6233,7 +6263,7 @@ It returns a value and if the input field values of edit form is not based on th
 
 Boolean
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6244,7 +6274,8 @@ Boolean
 var gridObj = $("#Grid").data("ejGrid");
 // Sends a form validation request to the grid
 gridObj.editFormValidate(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -6252,7 +6283,8 @@ gridObj.editFormValidate();
 <script>
 // Sends a form validation request to the grid
 $("#Grid").ejGrid("editFormValidate");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### endEdit()
@@ -6265,7 +6297,7 @@ Send a save request in grid.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6276,7 +6308,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Sends a save request to the grid
 gridObj.endEdit(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -6284,7 +6317,8 @@ gridObj.endEdit();
 <script>
 // Sends a save request to the grid
 $("#Grid").ejGrid("endEdit");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### expandAll()
@@ -6297,7 +6331,7 @@ Expand all the group caption rows in grid.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6308,7 +6342,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Expand all the group caption rows
 gridObj.expandAll(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -6316,7 +6351,8 @@ gridObj.expandAll();
 <script>
 // Expand all the group caption rows
 $("#Grid").ejGrid("expandAll");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### expandCollapse($target)
@@ -6348,7 +6384,7 @@ Expand or collapse the row based on the row state in grid
 Void
 
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6359,7 +6395,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Expands or collapses the row based on the row state
 gridObj.expandCollapse($("tr td.recordplusexpand > div").first());  
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -6367,7 +6404,8 @@ gridObj.expandCollapse($("tr td.recordplusexpand > div").first());
 <script>
 // Expands or collapses the row based on the row state
 $("#Grid").ejGrid("expandCollapse", $("tr td.recordplusexpand > div").first());        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### expandGroupDropArea()
@@ -6380,7 +6418,7 @@ Expand the group drop area in grid.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6391,7 +6429,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Expands the group drop area of the grid
 gridObj.expandGroupDropArea(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -6399,7 +6438,8 @@ gridObj.expandGroupDropArea();
 <script>
 // Expands the group drop area of the grid
 $("#Grid").ejGrid("expandGroupDropArea");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### export(action, \[serverEvent\], \[multipleExport\], \[gridIds\])
 {:#methods:export}
@@ -6454,7 +6494,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Sends an exporting request
 gridObj.export("/api/GridExport/ExcelExport"); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -6462,7 +6503,8 @@ gridObj.export("/api/GridExport/ExcelExport");
 <script>
 // Sends an exporting request
 $("#Grid").ejGrid("export","/api/GridExport/ExcelExport");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### export(action, \[serverEvent\], \[multipleExport\])
 {:#methods:export}
@@ -6512,7 +6554,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Sends an exporting request
 gridObj.export("/api/GridExport/ExcelExport"); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -6520,7 +6563,8 @@ gridObj.export("/api/GridExport/ExcelExport");
 <script>
 // Sends an exporting request
 $("#Grid").ejGrid("export","/api/GridExport/ExcelExport");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### filterColumn(fieldName, filterOperator, filterValue, predicate, \[matchcase\],\[actualFilterValue\])
 {:#methods:filtercolumn}
@@ -6587,14 +6631,16 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Sends a filtering request to the grid
 gridObj.filterColumn("OrderID","equal","10248","and", true);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
 <script>
 // Sends a filtering request to the grid
 $("#Grid").ejGrid("filterColumn","OrderID","equal","10248","and", true);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### filterColumn(filterCollection)
@@ -6637,14 +6683,16 @@ var gridObj = $("#Grid").data("ejGrid");
 // Sends a filtering request to the grid
 gridObj.filterColumn([{field:"OrderID",operator:"lessthan",value:"10266",predicate:"and", matchcase:true},{field:"EmployeeID",operator:"equal",value:2,predicate:"and", matchcase:true}]);
 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
 <script>
 // Sends a filtering request to the grid
 $("#Grid").ejGrid("filterColumn",[{field:"OrderID",operator:"lessthan",value:"10266",predicate:"and", matchcase:true},{field:"EmployeeID",operator:"equal",value:2,predicate:"and", matchcase:true}]);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### getBatchChanges()
@@ -6667,14 +6715,16 @@ Object
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the edit, delete, and add changes of a grid
 gridObj.getBatchChanges(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
 <script>
 // Gets the edit, delete, and add changes of a grid
 $("#Grid").ejGrid("getBatchChanges");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### getBrowserDetails()
@@ -6687,7 +6737,7 @@ Get the browser details
 
 Object
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6699,7 +6749,8 @@ Object
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the browser details of the application being run
 gridObj.getBrowserDetails(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -6708,7 +6759,8 @@ gridObj.getBrowserDetails();
 <script>
 // Gets the browser details of the application being run
 $("#Grid").ejGrid("getBrowserDetails");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### getColumnByField(fieldName)
@@ -6750,7 +6802,8 @@ Object
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the column details based on the given field name
 gridObj.getColumnByField("OrderID");
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -6758,7 +6811,8 @@ gridObj.getColumnByField("OrderID");
 <script>
 // Gets the column details based on the given field name
 $("#Grid").ejGrid("getColumnByField", "OrderID");        
-</script>{% endhighlight %} 
+</script>
+{% endhighlight %} 
 
 ### getColumnByHeaderText(headerText)
 {:#methods:getcolumnbyheadertext}
@@ -6800,7 +6854,8 @@ Object
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the column details based on the given headerText
 gridObj.getColumnByHeaderText("Order ID"); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -6808,7 +6863,8 @@ gridObj.getColumnByHeaderText("Order ID");
 <script>
 // Gets the column details based on the given headerText
 $("#Grid").ejGrid("getColumnByHeaderText", "Order ID");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### getColumnByIndex(columnIndex)
@@ -6848,7 +6904,8 @@ Object
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the column details based on the given column index
 gridObj.getColumnByIndex(1); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -6856,7 +6913,8 @@ gridObj.getColumnByIndex(1);
 <script>
 // Gets the column details based on the given column index
 $("#Grid").ejGrid("getColumnByIndex", 1);        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### getColumnFieldNames()
 {:#methods:getcolumnfieldnames}
@@ -6879,7 +6937,8 @@ Array
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the column field names based on the given index
 gridObj.getColumnFieldNames(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -6887,7 +6946,8 @@ gridObj.getColumnFieldNames();
 <script>
 // Gets the column field names based on the given index
 $("#Grid").ejGrid("getColumnFieldNames");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### getColumnIndexByField(fieldName)
 {:#methods:getcolumnindexbyfield}
@@ -6919,7 +6979,7 @@ Get the column index of the given field in grid.
 number
 
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6931,7 +6991,8 @@ number
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the column index based on the given field name
 gridObj.getColumnIndexByField("OrderID"); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -6940,7 +7001,8 @@ gridObj.getColumnIndexByField("OrderID");
 <script>
 // Gets the column index based on the given field name
 $("#Grid").ejGrid("getColumnIndexByField", "OrderID");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### getColumnIndexByHeaderText(headerText, \[field\])
 {:#methods:getcolumnindexbyheadertext}
@@ -6976,7 +7038,7 @@ Get the column index of the given headerText of column in grid.
 number
 
 
-####Example
+#### Example
 {:.example}
 
 
@@ -6988,7 +7050,8 @@ number
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the column index based on the given headerText
 gridObj.getColumnIndexByHeaderText("Order ID"); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -6997,7 +7060,8 @@ gridObj.getColumnIndexByHeaderText("Order ID");
 <script>
 // Gets the column index based on the given headerText
 $("#Grid").ejGrid("getColumnIndexByHeaderText","Order ID");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### getContent()
@@ -7010,7 +7074,7 @@ Get the content div element of grid.
 
 Element
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7044,7 +7108,7 @@ Get the content table element of grid
 
 Array\<HTMLTableElement\>
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7055,7 +7119,8 @@ Array\<HTMLTableElement\>
 var gridObj = $("#Grid").data("ejGrid");
 // Gets content table of grid control
 gridObj.getContentTable();
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7063,7 +7128,8 @@ gridObj.getContentTable();
 <script>
 // Gets content table of grid control
 $("#Grid").ejGrid("getContentTable");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### getCurrentEditCellData()
 {:#methods:getcurrenteditcelldata}
@@ -7075,7 +7141,7 @@ Get the data of currently edited cell value in "batch" edit mode
 
 Object
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7086,7 +7152,8 @@ Object
 var gridObj = $("#Grid").data("ejGrid");
 // Get data of currently edited cell value
 gridObj.getCurrentEditCellData(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7094,7 +7161,8 @@ gridObj.getCurrentEditCellData();
 <script>
 // Get data of currently edited cell value
 $("#Grid").ejGrid("getCurrentEditCellData");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### getCurrentIndex()
@@ -7108,7 +7176,7 @@ Get the current page index in grid pager.
 number
 
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7119,7 +7187,8 @@ number
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the current page index in grid
 gridObj.getCurrentIndex();  
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7127,7 +7196,8 @@ gridObj.getCurrentIndex();
 <script>
 // Gets the current page index in grid
 $("#Grid").ejGrid("getCurrentIndex");   
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### getCurrentViewData()
@@ -7140,7 +7210,7 @@ Get the current page data source of grid.
 
 Array
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7151,7 +7221,8 @@ Array
 var gridObj = $("#Grid").data("ejGrid");
 // Gets current view data of grid control
 gridObj.getCurrentViewData(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7159,7 +7230,8 @@ gridObj.getCurrentViewData();
 <script>
 // Gets current view data of grid control
 $("#Grid").ejGrid("getCurrentViewData");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### getDataByIndex(rowIndex)
 {:#methods:getdatabyindex}
@@ -7171,7 +7243,7 @@ Get the data of given row index in grid.
 
 Object
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7182,7 +7254,8 @@ Object
 var gridObj = $("#Grid").data("ejGrid");
 // Gets data of corresponding row index in grid control
 gridObj.getDataByIndex(0); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7190,7 +7263,8 @@ gridObj.getDataByIndex(0);
 <script>
 // Gets data of corresponding row index in grid control
 $("#Grid").ejGrid("getDataByIndex",0);        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### getFieldNameByHeaderText(headerText)
 {:#methods:getfieldnamebyheadertext}
@@ -7219,7 +7293,7 @@ Get the column field name from the given header text in grid.
 
 String
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7230,7 +7304,8 @@ String
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the column field name from the given headerText
 gridObj.getFieldNameByHeaderText("Order ID"); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7238,7 +7313,8 @@ gridObj.getFieldNameByHeaderText("Order ID");
 <script>
 // Gets the column field name from the given headerText
 $("#Grid").ejGrid("getFieldNameByHeaderText", "Order ID");
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### getFilterBar()
@@ -7251,7 +7327,7 @@ Get the filter bar of grid
 
 Element
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7262,7 +7338,8 @@ Element
 var gridObj = $("#Grid").data("ejGrid");
 // Gets filter bar of grid control
 gridObj.getFilterBar(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7270,7 +7347,8 @@ gridObj.getFilterBar();
 <script>
 // Gets filter bar of grid control
 $("#Grid").ejGrid("getFilterBar");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### getFilteredRecords()
@@ -7283,7 +7361,7 @@ Get the records filtered or searched in Grid
 
 Array
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7294,7 +7372,8 @@ Array
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the filtered or searched records in Grid
 gridObj.getFilteredRecords();  
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7302,7 +7381,8 @@ gridObj.getFilteredRecords();
 <script>
 // Gets the filtered or searched records in Grid
 $("#Grid").ejGrid("getFilteredRecords");   
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### getFooterContent()
 {:#methods:getfootercontent}
@@ -7314,7 +7394,7 @@ Get the footer content of grid.
 
 Element
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7325,7 +7405,8 @@ Element
 var gridObj = $("#Grid").data("ejGrid");
 // Gets grid footer content of grid control
 gridObj.getFooterContent(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7333,7 +7414,8 @@ gridObj.getFooterContent();
 <script>
 // Gets grid footer content of grid control
 $("#Grid").ejGrid("getFooterContent");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### getFooterTable()
@@ -7346,7 +7428,7 @@ Get the footer table element of grid.
 
 Element
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7357,7 +7439,8 @@ Element
 var gridObj = $("#Grid").data("ejGrid");
 // Gets grid footer table of grid control
 gridObj.getFooterTable(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7365,7 +7448,8 @@ gridObj.getFooterTable();
 <script>
 // Gets grid footer table of grid control
 $("#Grid").ejGrid("getFooterTable");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### getHeaderContent()
 {:#methods:getheadercontent}
@@ -7411,7 +7495,7 @@ Get the header table element of grid
 
 Element
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -7421,7 +7505,8 @@ Element
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.getHeaderTable(); 
 // Gets header table of grid control
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7429,7 +7514,8 @@ gridObj.getHeaderTable();
 <script>
 // Gets header table of grid control
 $("#Grid").ejGrid("getHeaderTable");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### getHeaderTextByFieldName(field)
@@ -7469,14 +7555,16 @@ String
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.getHeaderTextByFieldName("OrderID"); // Gets the column header text from the given field name
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 {% highlight html %}
  
 <script>
 // Gets the column header text from the given field name
 $("#Grid").ejGrid("getHeaderTextByFieldName", "OrderID");
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### getHiddenColumnNames()
@@ -7500,7 +7588,8 @@ Array
 var gridObj = $("#Grid").data("ejGrid");
 // Gets names of all the hidden column collections
 gridObj.getHiddenColumnNames(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7508,7 +7597,8 @@ gridObj.getHiddenColumnNames();
 <script>
 // Gets names of all the hidden column collections
 $("#Grid").ejGrid("getHiddenColumnNames");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### getIndexByRow($tr)
@@ -7540,7 +7630,7 @@ Get the row index based on the given tr element in grid.
 number
 
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7551,7 +7641,8 @@ number
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the row index based on the given row
 gridObj.getIndexByRow($(".gridcontent tr").first()); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7559,7 +7650,8 @@ gridObj.getIndexByRow($(".gridcontent tr").first());
 <script>
 // Gets the row index based on the given row
 $("#Grid").ejGrid("getIndexByRow", $(".gridcontent tr").first());        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### getPager()
@@ -7572,7 +7664,7 @@ Get the pager of grid.
 
 Element
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7583,7 +7675,8 @@ Element
 var gridObj = $("#Grid").data("ejGrid");
 // Gets grid pager of grid control
 gridObj.getPager(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7591,7 +7684,8 @@ gridObj.getPager();
 <script>
 // Gets grid pager of grid control
 $("#Grid").ejGrid("getPager");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### getPrimaryKeyFieldNames()
@@ -7605,7 +7699,7 @@ Get the names of primary key columns in Grid
 Array
 
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7616,7 +7710,8 @@ Array
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the names of primary key columns
 gridObj.getPrimaryKeyFieldNames(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7624,7 +7719,8 @@ gridObj.getPrimaryKeyFieldNames();
 <script>
 // Gets the names of primary key columns
 $("#Grid").ejGrid("getPrimaryKeyFieldNames");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### getRowByIndex(from, to)
@@ -7660,7 +7756,7 @@ Get the rows(tr element) from the given from and to row index in grid
 
 Element
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7671,7 +7767,8 @@ Element
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the rows from the specified row index 
 gridObj.getRowByIndex(3, 6);  
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7679,7 +7776,8 @@ gridObj.getRowByIndex(3, 6);
 <script>
 // Gets the rows from the specified row index
 $("#Grid").ejGrid("getRowByIndex", 3, 6);   
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### getRowHeight()
@@ -7692,7 +7790,7 @@ Get the row height of grid.
 
 number
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7703,7 +7801,8 @@ number
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the row height of the grid
 gridObj.getRowHeight();  
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7711,7 +7810,8 @@ gridObj.getRowHeight();
 <script>
 // Gets the row height of the grid
 $("#Grid").ejGrid("getRowHeight");   
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### getRows()
@@ -7724,7 +7824,7 @@ Get the rows(tr element)of grid which is displayed in the current page.
 
 Element
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7735,7 +7835,8 @@ Element
 var gridObj = $("#Grid").data("ejGrid");
 // Gets grid rows of grid control
 gridObj.getRows(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7743,7 +7844,8 @@ gridObj.getRows();
 <script>
 // Gets grid rows of grid control
 $("#Grid").ejGrid("getRows");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### getScrollObject()
@@ -7757,7 +7859,7 @@ Get the scroller object of grid.
 
 ej.Scroller
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7768,7 +7870,8 @@ ej.Scroller
 var gridObj = $("#Grid").data("ejGrid");
 // Gets scroll object of grid control
 gridObj.getScrollObject(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7776,7 +7879,8 @@ gridObj.getScrollObject();
 <script>
 // Gets scroll object of grid control
 $("#Grid").ejGrid("getScrollObject");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### getSelectedRecords()
@@ -7789,7 +7893,7 @@ Get the selected records details in grid.
 
 Array
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7800,7 +7904,8 @@ Array
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the selected row list
 gridObj.getSelectedRecords();
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7808,7 +7913,8 @@ gridObj.getSelectedRecords();
 <script>
 // Gets the selected row list
 $("#Grid").ejGrid("getSelectedRecords");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### getSelectedRows()
 {:#methods:getselectedrows}
@@ -7820,7 +7926,7 @@ Get the selected row element details in grid.
 
 Array
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7831,7 +7937,8 @@ Array
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the selected row element list
 gridObj.getSelectedRows();
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7839,7 +7946,8 @@ gridObj.getSelectedRows();
 <script>
 // Gets the selected row element list
 $("#Grid").ejGrid("getSelectedRows");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### getsortColumnByField(field)
 {:#methods:getsortcolumnbyfield}
@@ -7870,7 +7978,7 @@ It accepts the string value and returns the field and sorted direction of the co
 number
 
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7882,7 +7990,8 @@ number
 var gridObj = $("#Grid").data("ejGrid");
 // Sorted direction of the column based on the given field.
 gridObj.getsortColumnByField("OrderID"); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7891,7 +8000,8 @@ gridObj.getsortColumnByField("OrderID");
 <script>
 // Sorted direction of the column based on the given field.
 $("#Grid").ejGrid("getsortColumnByField", "OrderID");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### getSummaryValues(summaryCol, summaryData)
 {:#methods:getsummaryvalues}
@@ -7925,7 +8035,7 @@ Get the calculated summary values of JSON data passed to it
 
 Number
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7937,7 +8047,8 @@ var gridObj = $("#Grid").data("ejGrid");
 var summaryCol = { summaryType: ej.Grid.SummaryType.Average, displayColumn: "Freight", dataMember: "Freight" };
 // Get the calculated summary values of JSON data passed to it
 gridObj.getSummaryValues(summaryCol, window.gridData); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7945,7 +8056,8 @@ gridObj.getSummaryValues(summaryCol, window.gridData);
 <script>
 // Get the calculated summary values of JSON data passed to it
 $("#Grid").ejGrid("getSummaryValues", summaryCol, window.gridData);        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### getVisibleColumnNames()
@@ -7958,7 +8070,7 @@ Get the names of all the visible column collections in grid
 
 Array
 
-####Example
+#### Example
 {:.example}
 
 
@@ -7969,7 +8081,8 @@ Array
 var gridObj = $("#Grid").data("ejGrid");
 // Gets the names of all the visible column collections
 gridObj.getVisibleColumnNames(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -7977,7 +8090,8 @@ gridObj.getVisibleColumnNames();
 <script>
 // Gets the names of all the visible column collections
 $("#Grid").ejGrid("getVisibleColumnNames");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### gotoPage(pageIndex)
 {:#methods:gotopage}
@@ -8006,7 +8120,7 @@ Send a paging request to specified page in grid
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8017,7 +8131,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Sends a paging request to the grid with specified page index
 gridObj.gotoPage(3);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -8025,7 +8140,8 @@ gridObj.gotoPage(3);
 <script>
 // Sends a paging request to the grid with specified page index
 $("#Grid").ejGrid("gotoPage", 3);        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### groupColumn(fieldName)
@@ -8055,7 +8171,7 @@ Send a column grouping request in grid.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -8065,7 +8181,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Sends a group column request to the grid
 gridObj.groupColumn("OrderID"); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -8073,7 +8190,8 @@ gridObj.groupColumn("OrderID");
 <script>
 // Sends a group column request to the grid
 $("#Grid").ejGrid("groupColumn", "OrderID");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### hideColumns(headerText)
 {:#methods:hidecolumns}
@@ -8102,7 +8220,7 @@ Hide columns from the grid based on the header text
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8113,7 +8231,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.hideColumns("Order ID"); // Hides column based on the given header text of the column
 gridObj.hideColumns(["Order ID", "Customer ID"]); // Hide columns based on the array of header text of the columns given
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -8123,7 +8242,8 @@ gridObj.hideColumns(["Order ID", "Customer ID"]); // Hide columns based on the a
 $("#Grid").ejGrid("hideColumns", "Order ID"); 
 // Hide columns based on the array of header text of the columns given
 $("#Grid").ejGrid("hideColumns", ["Order ID", "Customer ID"]);                  
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### print()
@@ -8136,7 +8256,7 @@ Print the grid control
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8148,16 +8268,18 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // It prints the grid.
 gridObj.print(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
  
-<div id="Grid"></div&amp;dgt; 
+<div id="Grid"></div> 
 <script>
 // It prints the grid.
 $("#Grid").ejGrid("print");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### refreshBatchEditChanges()
@@ -8170,7 +8292,7 @@ It is used to refresh and reset the changes made in "batch" edit mode
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8181,7 +8303,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.refreshBatchEditChanges(); 
 // It is used to refresh and reset the changes made in batch edit mode
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -8189,7 +8312,8 @@ gridObj.refreshBatchEditChanges();
 <script>
 // It is used to refresh and reset the changes made in batch edit mode
 $("#Grid").ejGrid("refreshBatchEditChanges");
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### refreshHeader()
@@ -8202,7 +8326,7 @@ It is used to refresh the grid header.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8213,7 +8337,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.refreshHeader(); 
 // It is used to refresh the grid header.
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -8221,7 +8346,8 @@ gridObj.refreshHeader();
 <script>
 // It is used to refresh the grid header.
 $("#Grid").ejGrid("refreshHeader");
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### refreshContent(\[templateRefresh\])
@@ -8253,7 +8379,7 @@ Refresh the grid contents. The template refreshment is based on the argument pas
 Void
 
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8265,7 +8391,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.refreshContent(); // Refreshes the grid contents only
 gridObj.refreshContent(true); // Refreshes the template and grid contents
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -8276,7 +8403,8 @@ gridObj.refreshContent(true); // Refreshes the template and grid contents
 $("#Grid").ejGrid("refreshContent");        
 // Refreshes the template and grid contents
 $("#Grid").ejGrid("refreshContent", true);        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### refreshTemplate()
@@ -8289,7 +8417,7 @@ Refresh the template of the grid
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8300,7 +8428,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Refreshes the template of the grid control
 gridObj.refreshTemplate(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -8308,7 +8437,8 @@ gridObj.refreshTemplate();
 <script>
 // Refreshes the template of the grid control.
 $("#Grid").ejGrid("refreshTemplate");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### refreshToolbar()
@@ -8321,7 +8451,7 @@ Refresh the toolbar items in grid.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8333,7 +8463,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Refreshes the toolbar items state
 gridObj.refreshToolbar(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -8342,7 +8473,8 @@ gridObj.refreshToolbar();
 <script>
 // Refreshes the toolbar items state
 $("#Grid").ejGrid("refreshToolbar");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### removeSortedColumns(fieldName)
 {:#methods:removesortedcolumns}
@@ -8384,7 +8516,8 @@ var gridObj = $("#Grid").data("ejGrid");
 gridObj.removeSortedColumns("OrderID"); 
 // Removes specified collection of columns from sorted column collections
 gridObj.removeSortedColumns(["CustomerID", "ShipCity"]); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -8394,7 +8527,8 @@ gridObj.removeSortedColumns(["CustomerID", "ShipCity"]);
 $("#Grid").ejGrid("removeSortedColumns", "OrderID");        
 // Removes specified collection of columns from sorted column collections
 $("#Grid").ejGrid("removeSortedColumns", ["CustomerID", "ShipCity"]);        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### render()
@@ -8408,7 +8542,7 @@ Creates a grid control
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8420,16 +8554,18 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // It renders the grid.
 gridObj.render(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
  
-<div id="Grid"></div&amp;dgt; 
+<div id="Grid"></div>
 <script>
 // It renders the grid.
 $("#Grid").ejGrid("render");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### reorderColumns(fromFieldName, toFieldName)
@@ -8475,7 +8611,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Reorders the column based on the given index
 gridObj.reorderColumns("OrderID", "CustomerID"); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -8483,7 +8620,8 @@ gridObj.reorderColumns("OrderID", "CustomerID");
 <script>
 // Reorders the column based on the given index
 $("#Grid").ejGrid("reorderColumns", "OrderID", "CustomerID");
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### reorderRows(indexes, toIndex)
 {:#methods:reorderrows}
@@ -8528,7 +8666,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Reorders the row based on the given index
 gridObj.reorderRows([0,1],3); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -8536,7 +8675,8 @@ gridObj.reorderRows([0,1],3);
 <script>
 // Reorders the row based on the given index
 $("#Grid").ejGrid("reorderRows", [0], 3);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### resetModelCollections()
@@ -8549,7 +8689,7 @@ Reset the model collections like pageSettings, groupSettings, filterSettings, so
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -8559,14 +8699,16 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Reset model collections
 gridObj.resetModelCollections(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 {% highlight html %}
  
 <script>
 // Reset model collections
 $("#Grid").ejGrid("resetModelCollections");
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### resizeColumns(column,width)
 {:#methods:resizecolumns}
@@ -8610,7 +8752,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // ResizeColumns
 gridObj.resizeColumns("OrderID",width); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -8618,7 +8761,8 @@ gridObj.resizeColumns("OrderID",width);
 <script>
 // ResizeColumns
 $("#Grid").ejGrid("resizeColumns","OrderID",width);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### rowHeightRefresh()
@@ -8631,7 +8775,7 @@ Resolves row height issue when unbound column is used with FrozenColumn
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8642,7 +8786,8 @@ Void
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.rowHeightRefresh(); // Resolves row height issue
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -8651,7 +8796,8 @@ gridObj.rowHeightRefresh(); // Resolves row height issue
 <script>         
 // Resolves row height issue
 $("#Grid").ejGrid("rowHeightRefresh");   
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### saveCell()
@@ -8664,7 +8810,7 @@ Save the particular edited cell in grid.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8675,7 +8821,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Save the edited cell
 gridObj.saveCell(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -8684,7 +8831,8 @@ gridObj.saveCell();
 
 // Save the edited cell
 $("#Grid").ejGrid("saveCell);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### saveCell(preventSaveEvent)
 {:#methods:savecell}
@@ -8713,7 +8861,7 @@ We can prevent the client side cellSave event triggering by passing the preventS
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -8723,14 +8871,16 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Prevent save the edited cell
 gridObj.saveCell(true); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
 <script>
 // Prevent save the edited cell
 $("#Grid").ejGrid("saveCell",true);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 
@@ -8768,7 +8918,7 @@ Set dimension for grid with corresponding to grid parent.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 <pre class="prettyprint">
@@ -8795,7 +8945,7 @@ Send a request to grid to refresh the width set to columns
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8814,7 +8964,8 @@ gridObj.setWidthToColumns();
 <script>
 // Sends a request to the grid to refresh columns width
 $("#Grid").ejGrid("setWidthToColumns");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### search(searchString)
 {:#methods:search}
@@ -8843,7 +8994,7 @@ Send a search request to grid with specified string passed in it
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8854,14 +9005,16 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Sends a search request to the grid
 gridObj.search("France"); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
 <script>
 // Sends a search request to the grid
 $("#Grid").ejGrid("search", "France");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### selectCells(rowCellIndexes)
@@ -8891,7 +9044,7 @@ Select cells in grid.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -8902,14 +9055,16 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Selects cells based on the given index
 gridObj.selectCells([[1, [4, 3, 2]]]); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 {% highlight html %}
  
 <script>
 // Selects cells based on the given index
 $("#Grid").ejGrid("selectCells", [[1, [4, 3, 2]]]);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### selectColumns(fromIndex)
@@ -8951,7 +9106,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Selects columns based on the given index
 gridObj.selectColumns(1,4); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -8959,7 +9115,8 @@ gridObj.selectColumns(1,4);
 <script>
 // Selects columns based on the given index
 $("#Grid").ejGrid("selectColumns", 1, 4);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### selectColumns(columnIndex,\[toIndex\])
 {:#methods:selectcolumns}
@@ -9004,7 +9161,8 @@ Boolean
 var gridObj = $("#Grid").data("ejGrid");
 // Selects columns based on the given index
 gridObj.selectColumns(1,4); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -9012,7 +9170,8 @@ gridObj.selectColumns(1,4);
 <script>
 // Selects columns based on the given index
 $("#Grid").ejGrid("selectColumns", 1, 4);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### selectRows(fromIndex, toIndex)
 {:#methods:selectrows}
@@ -9057,7 +9216,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Selects rows based on the given index
 gridObj.selectRows(1, 4); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -9065,7 +9225,8 @@ gridObj.selectRows(1, 4);
 <script>
 // Selects rows based on the given index
 $("#Grid").ejGrid("selectRows", 1, 4);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### selectRows(from,to,\[target\])
 {:#methods:selectrows}
@@ -9115,7 +9276,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Selects rows based on the given index
 gridObj.selectRows(1, 4); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -9123,7 +9285,8 @@ gridObj.selectRows(1, 4);
 <script>
 // Selects rows based on the given index
 $("#Grid").ejGrid("selectRows", 1, 4);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### selectRows(rowIndexes)
@@ -9153,7 +9316,7 @@ Select rows in grid.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -9165,14 +9328,16 @@ var gridObj = $("#Grid").data("ejGrid");
 // Selects rows based on the given array of indexes
 gridObj.selectRows([1,3,5,7]);
 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
 <script>
 // Selects rows based on the given array of indexes
 $("#Grid").ejGrid("selectRows",[{1,3,5,7}]);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### setCellText()
@@ -9219,7 +9384,7 @@ Used to update a particular cell value based on specified rowIndex and cellIndex
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -9229,14 +9394,16 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // update a particular cell value
 gridObj.setCellText(0, 1, "GREYER");
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 {% highlight html %}
 
 <script>
 // update a particular cell value
 $("#Grid").ejGrid("setCellText", 0, 1, "GREYER");
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 #### setCellText(primaryKeyValue, field, value)
@@ -9287,14 +9454,16 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // update a particular cell value
 gridObj.setCellText(10248,"EmployeeID", "GREYER");
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 {% highlight html %}
  
 <script>
 // update a particular cell value
 $("#Grid").ejGrid("setCellText", 10248, "EmployeeID", "GREYER");
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### setCellValue(index, fieldName, cellValue)
@@ -9336,7 +9505,7 @@ N> It will working only for batch edit mode.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -9347,14 +9516,16 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 //Used to update a particular cell value
 gridObj.setCellValue(1,"EmployeeID", "GREYER");
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 {% highlight html %}
  
 <script>
 //Used to update a particular cell value
 $("#Grid").ejGrid("setCellValue", 1, "EmployeeID", "GREYER");
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### setDefaultData(defaultData)
 {:#methods:setdefaultdata}
@@ -9366,7 +9537,7 @@ It sets the default data to the column in grid during adding record in batch edi
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -9378,7 +9549,8 @@ var gridObj = $("#Grid").data("ejGrid");
 var defaultData = {OrderID:"10000"};
 //Set the default date to the column in grid.
 gridObj.setDefaultData(defaultData);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 {% highlight html %}
  
@@ -9418,7 +9590,7 @@ N> Need to set same value for max-width in ejgrid.responsive.css file
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -9429,14 +9601,16 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 //Used to render grid rows as details view in mobile mode
 gridObj.setPhoneModeMaxWidth(500);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 {% highlight html %}
  
 <script>
 //Used to render grid rows as details view in mobile mode
 $("#Grid").ejGrid("setPhoneModeMaxWidth", 500);
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### setValidation()
 {:#methods:setvalidation}
@@ -9448,7 +9622,7 @@ Set validation to edit form in the grid.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -9459,7 +9633,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // It is used to set validation to columns.
 gridObj.setValidation(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -9467,7 +9642,8 @@ gridObj.setValidation();
 <script>
 // It is used to set validation to columns.
 $("#Grid").ejGrid("setValidation");
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### setValidationToField(fieldName, rules)
@@ -9502,7 +9678,7 @@ Set validation to a particular input field in a edit form dynamically.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -9513,7 +9689,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // It is used to set validation to a field.
 gridObj.setValidationToField("OrderID", { required: true }); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -9521,7 +9698,8 @@ gridObj.setValidationToField("OrderID", { required: true });
 <script>
 // It is used to set validation to a field.
 $("#Grid").ejGrid("setValidationToField", "OrderID", { required: true });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### showColumns(headerText)
@@ -9551,7 +9729,7 @@ Show columns in the grid based on the header text
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -9562,7 +9740,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.showColumns("Order ID"); // Shows column based on the given header text of the column
 gridObj.showColumns(["Order ID", "Customer ID"]); // Shows columns based on the array of header text of the columns given
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -9572,7 +9751,8 @@ gridObj.showColumns(["Order ID", "Customer ID"]); // Shows columns based on the 
 $("#Grid").ejGrid("showColumns", "Order ID"); 
 // Shows columns based on the array of header text of the columns given
 $("#Grid").ejGrid("showColumns", ["Order ID", "Customer ID"]);                  
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### sortColumn(columnName, \[sortingDirection\])
 {:#methods:sortcolumn}
@@ -9607,7 +9787,7 @@ Send a sorting request in grid.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -9617,7 +9797,8 @@ Void
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.sortColumn("OrderID", "ascending"); // Sends a sorting request to the grid with specified columnName and sortDirection
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -9625,7 +9806,8 @@ gridObj.sortColumn("OrderID", "ascending"); // Sends a sorting request to the gr
 <script>
 // Sends a sorting request to the grid with specified columnName and sortDirection
 $("#Grid").ejGrid("sortColumn", "OrderID", "ascending");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### startEdit($tr)
@@ -9655,7 +9837,7 @@ Send an edit record request in grid
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -9666,7 +9848,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Sends an edit record request to the grid
 gridObj.startEdit($(".gridcontent tr").first()); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -9674,7 +9857,8 @@ gridObj.startEdit($(".gridcontent tr").first());
 <script>
 // Sends an edit record request to the grid
 $("#Grid").ejGrid("startEdit", $(".gridcontent tr").first());        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### ungroupColumn(fieldName)
@@ -9704,7 +9888,7 @@ Un-group a column from grouped columns collection in grid
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -9715,7 +9899,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Sends an ungroup column request to the grid
 gridObj.ungroupColumn("OrderID"); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -9723,7 +9908,8 @@ gridObj.ungroupColumn("OrderID");
 <script>
 // Sends an ungroup column request to the grid
 $("#Grid").ejGrid("ungroupColumn", "OrderID");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### updateRecord(fieldName, data)
@@ -9758,7 +9944,7 @@ Update a edited record in grid control when allowEditing is set as true.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 
@@ -9769,7 +9955,8 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Sends a update record request to the grid
 gridObj.updateRecord("OrderID", { OrderID: 10249, EmployeeID: 3 }); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 {% highlight html %}
@@ -9777,7 +9964,8 @@ gridObj.updateRecord("OrderID", { OrderID: 10249, EmployeeID: 3 });
 <script>
 // Sends a update record request to the grid
 $("#Grid").ejGrid("updateRecord", "OrderID", { OrderID: 10249, EmployeeID: 3 });        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### windowonresize()
 {:#methods:windowonresize}
@@ -9789,7 +9977,7 @@ It adapts grid to its parent element or to the browsers window.
 
 Void
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -9799,14 +9987,16 @@ Void
 var gridObj = $("#Grid").data("ejGrid");
 // Used for resizing the grid window
 gridObj.windowonresize(); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 {% highlight html %}
  
 <script>
 // Used for resizing the grid window
 $("#Grid").ejGrid("windowonresize");        
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ## Events
@@ -10516,7 +10706,7 @@ Triggered for every grid action before its starts.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 {% highlight html %} 
 <div id="Grid"></div> 
@@ -10524,7 +10714,8 @@ Triggered for every grid action before its starts.
 $("#Grid").ejGrid({
    actionBegin: function (args){}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### actionComplete
 {:#events:actioncomplete}
@@ -11320,7 +11511,7 @@ columnName</td>
 
 
 
-####Example
+#### Example
 {:.example}
 
 
@@ -11330,7 +11521,8 @@ columnName</td>
 $("#Grid").ejGrid({
    actionComplete: function (args) {}
 }); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### actionFailure
@@ -11918,7 +12110,7 @@ Triggered for every grid action server failure event.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -11927,7 +12119,8 @@ Triggered for every grid action server failure event.
 $("#Grid").ejGrid({
    actionFailure: function (args) {}
 }); 
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### batchAdd
@@ -12010,7 +12203,7 @@ Triggered when record batch add.
 </table>
 
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12019,7 +12212,8 @@ Triggered when record batch add.
 $("#Grid").ejGrid({
    batchAdd: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### batchDelete
 {:#events:batchdelete}
@@ -12087,7 +12281,7 @@ Triggered when record batch delete.
 </table>
 
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12096,7 +12290,8 @@ Triggered when record batch delete.
 $("#Grid").ejGrid({
    batchDelete: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### beforeBatchAdd
@@ -12165,7 +12360,7 @@ cancel</td>
 </table>
 
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12174,7 +12369,8 @@ cancel</td>
 $("#Grid").ejGrid({
    beforeBatchAdd: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### beforeBatchDelete
 {:#events:beforebatchdelete}
@@ -12246,7 +12442,7 @@ Triggered before the batch delete.
 </table>
 
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12255,7 +12451,8 @@ Triggered before the batch delete.
 $("#Grid").ejGrid({
    beforeBatchDelete: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### beforeBatchSave
@@ -12312,7 +12509,7 @@ Triggered before the batch save.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12321,7 +12518,8 @@ Triggered before the batch save.
 $("#Grid").ejGrid({
    beforeBatchSave: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### beforePrint
 {:#events:beforePrint}
@@ -12377,7 +12575,7 @@ Triggered before the print.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12448,7 +12646,7 @@ Triggered before row drop in the grid
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12530,7 +12728,7 @@ Triggered before the record is going to be edited.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12539,7 +12737,8 @@ Triggered before the record is going to be edited.
 $("#Grid").ejGrid({
    beginEdit: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### cellEdit
@@ -12631,7 +12830,7 @@ Triggered when record cell edit.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12640,7 +12839,8 @@ Triggered when record cell edit.
 $("#Grid").ejGrid({
    cellEdit: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### cellSave
 {:#events:cellsave}
@@ -12726,7 +12926,7 @@ Triggered when record cell save.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12735,7 +12935,8 @@ Triggered when record cell save.
 $("#Grid").ejGrid({
    cellSave: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### cellSelected
 {:#events:cellselected}
@@ -12817,7 +13018,7 @@ Triggered after the cell is selected.
 </table>
 
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12826,7 +13027,8 @@ Triggered after the cell is selected.
 $("#Grid").ejGrid({
    cellSelected: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### cellSelecting
 {:#events:cellselecting}
@@ -12912,7 +13114,7 @@ Triggered before the cell is going to be selected.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -12921,7 +13123,8 @@ Triggered before the cell is going to be selected.
 $("#Grid").ejGrid({
    cellSelecting: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### cellDeselected
@@ -12984,7 +13187,7 @@ Triggered after the cell is deselected.
 </table>
 
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13066,7 +13269,7 @@ Triggered before the cell is going to be deselected.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13143,7 +13346,7 @@ Triggered when the column is being dragged.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13152,7 +13355,8 @@ Triggered when the column is being dragged.
 $("#Grid").ejGrid({
    columnDrag: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### columnDragStart
 {:#events:columndragstart}
@@ -13218,7 +13422,7 @@ Triggered when column dragging begins.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13227,7 +13431,8 @@ Triggered when column dragging begins.
 $("#Grid").ejGrid({
     columnDragStart: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### columnDrop
 {:#events:columndrop}
@@ -13293,7 +13498,7 @@ Triggered when the column is dropped.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13302,7 +13507,8 @@ Triggered when the column is dropped.
 $("#Grid").ejGrid({
  columnDrop: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### rowDrag
 {:#events:rowdrag}
@@ -13373,7 +13579,7 @@ Triggered when the row is being dragged.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13382,7 +13588,8 @@ Triggered when the row is being dragged.
 $("#Grid").ejGrid({
    rowDrag: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### rowDragStart
 {:#events:rowdragstart}
@@ -13453,7 +13660,7 @@ Triggered when row dragging begins.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13462,7 +13669,8 @@ Triggered when row dragging begins.
 $("#Grid").ejGrid({
     rowDragStart: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### rowDrop
 {:#events:rowdrop}
@@ -13533,7 +13741,7 @@ Triggered when the row is dropped.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13542,7 +13750,8 @@ Triggered when the row is dropped.
 $("#Grid").ejGrid({
  rowDrop: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### columnSelected
@@ -13624,7 +13833,7 @@ Triggered after the column is selected.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13633,7 +13842,8 @@ Triggered after the column is selected.
 $("#Grid").ejGrid({
    columnSelected: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### columnSelecting
 {:#events:columnselecting}
@@ -13719,7 +13929,7 @@ Triggered before the column is going to be selected.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13728,7 +13938,8 @@ Triggered before the column is going to be selected.
 $("#Grid").ejGrid({
    columnSelecting: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### columnDeselected
@@ -13790,7 +14001,7 @@ Triggered after the column is deselected.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13799,7 +14010,8 @@ Triggered after the column is deselected.
 $("#Grid").ejGrid({
    columnDeselected: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### columnDeselecting
@@ -13871,7 +14083,7 @@ Triggered before the column is going to be deselected.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13880,7 +14092,8 @@ Triggered before the column is going to be deselected.
 $("#Grid").ejGrid({
    columnDeselecting: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### contextClick
@@ -13947,7 +14160,7 @@ Triggered when context menu item is clicked
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -13956,7 +14169,8 @@ Triggered when context menu item is clicked
 $("#Grid").ejGrid({
    contextClick: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### contextOpen
@@ -14023,7 +14237,7 @@ Triggered before the context menu is opened.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -14032,7 +14246,8 @@ Triggered before the context menu is opened.
 $("#Grid").ejGrid({
    contextOpen: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### create
 {:#events:create}
@@ -14083,7 +14298,7 @@ Triggered when the grid is rendered completely.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -14092,7 +14307,8 @@ Triggered when the grid is rendered completely.
 $("#Grid").ejGrid({
    create: function (args){}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### dataBound
@@ -14144,7 +14360,7 @@ Triggered when the grid is bound with data during initial rendering.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -14153,7 +14369,8 @@ Triggered when the grid is bound with data during initial rendering.
 $("#Grid").ejGrid({
  dataBound: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### destroy
 {:#events:destroy}
@@ -14204,7 +14421,7 @@ Triggered when grid going to destroy.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -14213,7 +14430,8 @@ Triggered when grid going to destroy.
 $("#Grid").ejGrid({
    destroy: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### detailsCollapse
 {:#events:detailscollapse}
@@ -14284,7 +14502,7 @@ Triggered when detail template row is clicked to collapse.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -14293,7 +14511,8 @@ Triggered when detail template row is clicked to collapse.
 $("#Grid").ejGrid({
    detailsCollapse: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### detailsDataBound
 {:#events:detailsdatabound}
@@ -14355,7 +14574,7 @@ Triggered detail template row is initialized.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -14364,7 +14583,8 @@ Triggered detail template row is initialized.
 $("#Grid").ejGrid({
    detailsDataBound: function (args){}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### detailsExpand
 {:#events:detailsexpand}
@@ -14435,7 +14655,7 @@ Triggered when detail template row is clicked to expand.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -14444,7 +14664,8 @@ Triggered when detail template row is clicked to expand.
 $("#Grid").ejGrid({
    detailsExpand: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### endAdd
 {:#events:endadd}
@@ -14495,7 +14716,7 @@ Triggered after the record is added.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -14505,7 +14726,8 @@ Triggered after the record is added.
 $("#Grid").ejGrid({
    endAdd: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### endDelete
 {:#events:enddelete}
@@ -14556,7 +14778,7 @@ Triggered after the record is deleted.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -14565,7 +14787,8 @@ Triggered after the record is deleted.
 $("#Grid").ejGrid({
    endDelete: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### endEdit
 {:#events:endedit}
@@ -14616,7 +14839,7 @@ Triggered after the record is edited.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -14626,7 +14849,8 @@ Triggered after the record is edited.
 $("#Grid").ejGrid({
    endEdit: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### load
@@ -14684,7 +14908,7 @@ Triggered initial load.
 </table>
 
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -14693,7 +14917,8 @@ Triggered initial load.
 $("#Grid").ejGrid({
    load: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### mergeCellInfo
 {:#events:mergecellinfo}
@@ -14780,7 +15005,7 @@ Triggered every time a request is made to access particular cell information, el
 </table>
 
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -14789,7 +15014,8 @@ Triggered every time a request is made to access particular cell information, el
 $("#Grid").ejGrid({
    mergeCellInfo: function (args){}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### queryCellInfo
 {:#events:querycellinfo}
@@ -14865,7 +15091,7 @@ Triggered every time a request is made to access particular cell information, el
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -14874,7 +15100,8 @@ Triggered every time a request is made to access particular cell information, el
 $("#Grid").ejGrid({
    queryCellInfo: function (args){}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### recordClick
 {:#events:recordclick}
@@ -14960,7 +15187,7 @@ Triggered when record is clicked.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -14969,7 +15196,8 @@ Triggered when record is clicked.
 $("#Grid").ejGrid({
    recordClick: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### recordDoubleClick
 {:#events:recorddoubleclick}
@@ -15055,7 +15283,7 @@ Triggered when record is double clicked.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -15064,7 +15292,8 @@ Triggered when record is double clicked.
 $("#Grid").ejGrid({
    recordDoubleClick: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### resized
 {:#events:resized}
@@ -15145,7 +15374,7 @@ Triggered after column resized.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -15154,7 +15383,8 @@ Triggered after column resized.
 $("#Grid").ejGrid({
    resized: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### resizeEnd
 {:#events:resizeend}
@@ -15236,7 +15466,7 @@ Triggered when column resize end.
 </table>
 
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -15245,7 +15475,8 @@ Triggered when column resize end.
 $("#Grid").ejGrid({
    resizeEnd: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### resizeStart
@@ -15317,7 +15548,7 @@ Triggered when column resize start.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -15326,7 +15557,8 @@ Triggered when column resize start.
 $("#Grid").ejGrid({
    resizeStart: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### rightClick
 {:#events:rightclick}
@@ -15412,7 +15644,7 @@ Triggered when right clicked on grid element.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 
@@ -15422,7 +15654,8 @@ Triggered when right clicked on grid element.
 $("#Grid").ejGrid({
    rightClick: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### rowDataBound
 {:#events:rowdatabound}
@@ -15488,7 +15721,7 @@ Triggered every time a request is made to access row information, element and da
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 
@@ -15499,7 +15732,8 @@ Triggered every time a request is made to access row information, element and da
 $("#Grid").ejGrid({
    rowDataBound: function (args){}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### rowSelected
 {:#events:rowselected}
@@ -15580,7 +15814,7 @@ Triggered after the row is selected.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -15590,7 +15824,8 @@ Triggered after the row is selected.
 $("#Grid").ejGrid({
    rowSelected: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### rowSelecting
@@ -15667,7 +15902,7 @@ Triggered before the row is going to be selected.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -15676,7 +15911,8 @@ Triggered before the row is going to be selected.
 $("#Grid").ejGrid({
    rowSelecting: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### rowDeselected
@@ -15738,7 +15974,7 @@ Triggered after the row is deselected.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -15748,7 +15984,8 @@ Triggered after the row is deselected.
 $("#Grid").ejGrid({
    rowDeselected: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### rowDeselecting
@@ -15820,7 +16057,7 @@ Triggered before the row is going to be deselected.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -15829,7 +16066,8 @@ Triggered before the row is going to be deselected.
 $("#Grid").ejGrid({
    rowDeselecting: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 
 ### templateRefresh
@@ -15902,7 +16140,7 @@ cancel</td>
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -15911,7 +16149,8 @@ cancel</td>
 $("#Grid").ejGrid({
  templateRefresh: function (args) {}
 });
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### toolbarClick
 {:#events:toolbarclick}
@@ -16002,7 +16241,7 @@ Triggered when toolbar item is clicked in grid.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -16011,5 +16250,5 @@ Triggered when toolbar item is clicked in grid.
 $("#Grid").ejGrid({
    toolbarClick: function (args) {}
 });
-</script>{% endhighlight %}
-
+</script>
+{% endhighlight %}
