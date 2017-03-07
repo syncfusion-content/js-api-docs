@@ -7850,7 +7850,7 @@ Adds tab group dynamically in the ribbon control with given tab index, tab group
 {% endhighlight %}
 
 
-### addTabGroupContent(tabIndex, groupIndex, content, \[contentIndex\], subGroupIndex)
+### addTabGroupContent(tabIndex, groupIndex, content, \[contentIndex\], \[subGroupIndex\])
 {:#methods:addtabgroupcontent}
 
 Adds group content dynamically in the ribbon control with given tab index, group index, content, content index and sub group index position. When content index is null, content is added at the last index.
