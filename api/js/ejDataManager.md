@@ -107,50 +107,37 @@ Custom headers can be set using pre-request callback beforeSend as follows. The 
 
 {% highlight html %}
 
-    <div class="datatable">
-        <table id="table1" class="table table-striped table-bordered" style="width:700px">
+    <div class="datatable" style="padding:10px">
+        <table id="table1" class="table table-striped table-bordered" style="width:700px" >
             <thead>
-                <tr>
-                    <th>Order ID</th>
-                    <th>Customer ID</th>
-                    <th>Employee ID</th>
-                </tr>
+            <tr>
+                <th>Order ID</th>
+                <th>Customer ID</th>
+                <th>Employee ID</th>
+            </tr>
             </thead>
             <tbody></tbody>
         </table>
     </div>
+    <script type="text/javascript">
+        $(function () {
+            var customAdaptor = new ej.UrlAdaptor().extend({
+                beforeSend: function (request, settings) {
+                    settings.setRequestHeader("myData1", "Syncfusion");
+                    settings.setRequestHeader("myData2", 23243);
+                
+                }
+            });
 
-<script type="text/javascript">
-    $(function () {
-
-        var dataManager = ej.DataManager({ url: "http://mvc.syncfusion.com/Services/Northwnd.svc",
-              beforeSend: function (dm, request, settings) {
-              // some services do not support custom header on crossDomain (CORS) request
-                  if (!dm.dataSource.crossDomain) {
-                      request.setRequestHeader("DataServiceVersion", "1.0");
-                      request.setRequestHeader("MaxDataServiceVersion", "1.0");
-                  }
-              }});
-        var query = ej.Query()
-            .from("Orders")
-            .sortBy("OrderID", "descending", false)
-        // executing query
-        var dataSource = dataManager.executeQuery(query);
-        renderTable(dataSource);
-
-    });
-
-    // This function can be better replaced with any template engine. We used this for simplicity in demo.
-    function renderTable(data) {
-        var tbody = "", row;
-        for (var i = 0; i < data.length; i++) {
-            row = data[i];
-            tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
-        }
-        $(".table tbody").html(tbody);
-    }
-</script>
-
+            var dataManager1 = ej.DataManager({ url: "TreeViewFeatures.aspx/Data", adaptor: new customAdaptor() });
+            var query = ej.Query().take(3).skip(2);
+            var execute = dataManager1.executeQuery(query) // executing query
+                    .done(function (e) {
+                        renderTable(e.result);
+                    });
+        });
+    </script>
+  
 {% endhighlight %}
 
 ### done(args)
@@ -492,6 +479,7 @@ If the request is fail, the argument list will be as below.
 </script>
 
 {% endhighlight %}
+
 
 ## Methods
 
