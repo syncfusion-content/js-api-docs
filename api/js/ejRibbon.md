@@ -7850,10 +7850,10 @@ Adds tab group dynamically in the ribbon control with given tab index, tab group
 {% endhighlight %}
 
 
-### addTabGroupContent(tabIndex, groupIndex, subGroupIndex, content, \[contentIndex\])
+### addTabGroupContent(tabIndex, groupIndex, content, \[contentIndex\], subGroupIndex)
 {:#methods:addtabgroupcontent}
 
-Adds group content dynamically in the ribbon control with given tab index, group index, sub group index, content and content index position. When content index is null, content is added at the last index.
+Adds group content dynamically in the ribbon control with given tab index, group index, content, content index and sub group index position. When content index is null, content is added at the last index.
 
 <table class="params">
 <thead>
@@ -7875,11 +7875,6 @@ Adds group content dynamically in the ribbon control with given tab index, group
 <td class="description last">ribbon group index.</td>
 </tr>
 <tr>
-<td class="name">subGroupIndex</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">sub group index in the ribbon group,</td>
-</tr>
-<tr>
 <td class="name">content</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">content to be displayed in the ribbon group.</td>
@@ -7887,7 +7882,12 @@ Adds group content dynamically in the ribbon control with given tab index, group
 <tr>
 <td class="name">contentIndex</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">ribbon content index .this is optional.</td>
+<td class="description last">ribbon content index. This is optional. If the value is not given, then by default contentIndex will be considered as 0.</td>
+</tr>
+<tr>
+<td class="name">subGroupIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">sub group index in the ribbon group. This is optional. If the value is not given, then by default contentIndex will be considered as 0.</td>
 </tr>
 </tbody>
 </table>
@@ -7949,7 +7949,7 @@ Adds group content dynamically in the ribbon control with given tab index, group
     //initialize the Ribbon object
     var ribbonObj = $("#Ribbon").data("ejRibbon");
     // Add new ribbon content with given list
-    ribbonObj.addTabGroupContent(1, 0, 0, content, 2);
+    ribbonObj.addTabGroupContent(1, 0, content, 0, 0);
         </script> 
 
  {% endhighlight %}
@@ -7997,7 +7997,7 @@ Adds group content dynamically in the ribbon control with given tab index, group
                     text: "new",
                 };
             //initialize the Ribbon object
-            $("#Ribbon").ejRibbon("addTabGroupContent",1,0,0,content,2); 
+            $("#Ribbon").ejRibbon("addTabGroupContent",1,0,content,0,0); 
     
     </script> 
 
@@ -9650,7 +9650,7 @@ Update option in existing Backstage.
     
 {% endhighlight %}
 
-### removeTabGroupContent(tabIndex, groupText, \[subGroupIndex\])
+### removeTabGroupContent(tabIndex, groupText, \[contentIndex\], \[subGroupIndex\])
 {:#methods:removetabgroupcontent}
 
 To customize whole content from Tab Group.
@@ -9675,9 +9675,14 @@ To customize whole content from Tab Group.
 <td class="description last">ribbon group text.</td>
 </tr>
 <tr>
+<td class="name">contentIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">ribbon content index. This is optional. If the value is not given, all content groups will be removed.</td>
+</tr>
+<tr>
 <td class="name">subGroupIndex</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">sub group index in the ribbon group,</td>
+<td class="description last">sub group index in the ribbon group. This is optional. If the value is not given, all content groups will be removed.</td>
 </tr>
 </tbody>
 </table>
@@ -9734,11 +9739,7 @@ To customize whole content from Tab Group.
             }]
         });
     });
-    var content = {
-        id: "new",
-        text: "new",
-    };
-    $("#Ribbon").ejRibbon("removeTabGroupContent",1, "One", 0);
+    $("#Ribbon").ejRibbon("removeTabGroupContent",1,"One",0,1);
     </script>
 
  {% endhighlight %}
@@ -9793,14 +9794,10 @@ To customize whole content from Tab Group.
             }]
         });
     });
-    var content = {
-        id: "new",
-        text: "new",
-    };
     //initialize the Ribbon object
     var ribbonObj = $("#Ribbon").data("ejRibbon");
     // remove tab group content in the ribbon 
-    ribbonObj.removeTabGroupContent(1, "One", 0);
+    ribbonObj.removeTabGroupContent(1, "One", 0, 1);
     </script>
 
  {% endhighlight %}
