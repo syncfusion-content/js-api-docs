@@ -1438,20 +1438,6 @@ Enables an option to enhance the space for PivotGrid and PivotChart by hiding Cu
     $("#PivotClient1").ejPivotClient({ displaySettings: { enableTogglePanel: true } });
 {% endhighlight %}
 
-### displaySettings.isResponsive `boolean`
-{:#members:displaysettings-isresponsive}
-
-Allows the user to enable PivotClient’s responsiveness in the browser layout.
-
-#### Default Value: false
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotClient1").ejPivotClient({ displaySettings: { isResponsive: true } });
-{% endhighlight %}
-
 ### displaySettings.mode `enum`
 {:#members:displaysettings-mode}
 
@@ -1706,6 +1692,20 @@ Sets the summary layout for PivotGrid. Following are the ways in which summary c
 {% highlight javascript %}
  
     $("#PivotClient1").ejPivotClient({ gridLayout: ej.PivotGrid.Layout.NoSummaries });
+{% endhighlight %}
+
+### isResponsive `boolean`
+{:#members:isresponsive}
+
+Allows the user to enable PivotClient’s responsiveness in the browser layout.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ isResponsive: true });
 {% endhighlight %}
 
 ### locale `string`
