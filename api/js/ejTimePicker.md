@@ -960,7 +960,7 @@ Defines the width of the TimePicker popup.
 
 
 
-Toggles the readonly state of the TimePicker
+Toggles the readonly state of the TimePicker. When the widget is readOnly, it doesn’t allow your input.
 
 
 
