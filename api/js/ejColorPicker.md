@@ -436,21 +436,21 @@ Defines the localized text values in button and tooltip.
             },
             tooltipText: {
                 switcher: "切换器",
-                addbutton: "添加颜色",
+                addbButton: "添加颜色",
                 basic: "基本",
-                monochrome: "单色铬",
-                flatcolors: "平的颜色",
-                seawolf: "海狼",
-                webcolors: "网颜色",
+                monoChrome: "单色铬",
+                flatColors: "平的颜色",
+                seaWolf: "海狼",
+                webColors: "网颜色",
                 sandy: "沙",
-                pinkshades: "桃红色树荫",
+                pinkShades: "桃红色树荫",
                 misty: "蒙蒙",
                 citrus: "柑橘",
                 vintage: "葡萄酒",
-                moonlight: "月光",
-                candycrush: "糖果粉碎",
-                currentcolor: "当前颜色",
-                selectedcolor: "所选颜色"
+                moonLight: "月光",
+                candyCrush: "糖果粉碎",
+                currentColor: "当前颜色",
+                selectedColor: "所选颜色"
             }
         };
 </script> 
@@ -892,7 +892,7 @@ This property allows to define the customized text or content to displayed when 
 
 #### Default Value
 
-* { switcher: "Switcher", addbutton: "Add Color", basic: "Basic", monochrome: "Mono Chrome", flatcolors: "Flat Color", seawolf: "Sea Wolf", webcolors: "Web Colors", sandy: "Sandy", pinkshades: "Pink Shades", misty: "Misty", citrus: "Citrus", vintage: "Vintage", moonlight: "Moon Light", candycrush: "Candy Crush", currentcolor: "Current Color", selectedcolor: "Selected Color" }
+* { switcher: "Switcher", addButton: "Add Color", basic: "Basic", monoChrome: "Mono Chrome", flatColors: "Flat Color", seaWolf: "Sea Wolf", webColors: "Web Colors", sandy: "Sandy", pinkShades: "Pink Shades", misty: "Misty", citrus: "Citrus", vintage: "Vintage", moonLight: "Moon Light", candyCrush: "Candy Crush", currentColor: "Current Color", selectedColor: "Selected Color" }
 
 
 
@@ -901,7 +901,7 @@ This property allows to define the customized text or content to displayed when 
 
 Sets the tooltip text for the switcher button.
 
-### tooltipText.addbutton `string`
+### tooltipText.addButton `string`
 {:#members:tooltiptext-addbutton}
 
 Sets the tooltip text for the add button.
@@ -911,22 +911,22 @@ Sets the tooltip text for the add button.
 
 Sets the tooltip text for the basic preset.
 
-### tooltipText.monochrome `string`
+### tooltipText.monoChrome `string`
 {:#members:tooltiptext-monochrome}
 
 Sets the tooltip text for the mono chrome preset.
 
-### tooltipText.flatcolors `string`
+### tooltipText.flatColors `string`
 {:#members:tooltiptext-flatcolors}
 
 Sets the tooltip text for the flat colors preset.
 
-### tooltipText.seawolf `string`
+### tooltipText.seaWolf `string`
 {:#members:tooltiptext-seawolf}
 
 Sets the tooltip text for the sea wolf preset.
 
-### tooltipText.webcolors `string`
+### tooltipText.webColors `string`
 {:#members:tooltiptext-webcolors}
 
 Sets the tooltip text for the web colors preset.
@@ -936,7 +936,7 @@ Sets the tooltip text for the web colors preset.
 
 Sets the tooltip text for the sandy preset.
 
-### tooltipText.pinkshades `string`
+### tooltipText.pinkShades `string`
 {:#members:tooltiptext-pinkshades}
 
 Sets the tooltip text for the pink shades preset.
@@ -956,22 +956,22 @@ Sets the tooltip text for the citrus preset.
 
 Sets the tooltip text for the vintage preset.
 
-### tooltipText.moonlight `string`
+### tooltipText.moonLight `string`
 {:#members:tooltiptext-moonlight}
 
 Sets the tooltip text for the moon light preset.
 
-### tooltipText.candycrush `string`
+### tooltipText.candyCrush `string`
 {:#members:tooltiptext-candycrush}
 
 Sets the tooltip text for the candy crush preset.
 
-### tooltipText.currentcolor `string`
+### tooltipText.currentColor `string`
 {:#members:tooltiptext-currentcolor}
 
 Sets the tooltip text for the current color area.
 
-### tooltipText.selectedcolor `string`
+### tooltipText.selectedColor `string`
 {:#members:tooltiptext-selectedcolor}
 
 Sets the tooltip text for the selected color area.
@@ -984,7 +984,7 @@ Sets the tooltip text for the selected color area.
         
         <script>
         //To set tooltipText API during initialization
-        $('#colorPick').ejColorPicker({ value: "#278787",   tooltipText: { switcher: "Switch",  currentcolor: "New Color", selectedcolor: "Old Color" }});
+        $('#colorPick').ejColorPicker({ value: "#278787",   tooltipText: { switcher: "Switch",  currentColor: "New Color", selectedColor: "Old Color" }});
         </script>
 
 {% endhighlight %}
