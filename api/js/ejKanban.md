@@ -9109,7 +9109,7 @@ Triggered initial load.
 
 Triggered every time a single card rendered request is made to access particular card information.
 
-    <table class="params">
+<table class="params">
         <thead>
         <tr>
         <th>Name</th>
@@ -9172,7 +9172,7 @@ Triggered every time a single card rendered request is made to access particular
         </td>
         </tr>
         </tbody>
-    </table>
+</table>
 
 #### Example
 
@@ -9192,7 +9192,7 @@ Triggered every time a single card rendered request is made to access particular
 
 Triggered when toolbar item is clicked in Kanban.
     
-    <table class="params">
+<table class="params">
         <thead>
         <tr>
         <th>Name</th>
@@ -9265,7 +9265,7 @@ Triggered when toolbar item is clicked in Kanban.
         </td>
         </tr>
         </tbody>
-    </table>  
+</table>  
       
 #### Example
 
