@@ -1006,6 +1006,24 @@ string
 Returns the name of the event
 </td>
 </tr>
+<tr>
+<td class="name">
+fileName
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the PDF document name displaying in the PDF viewer.
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
 </tbody>
 </table>
 </td>
@@ -1021,7 +1039,105 @@ Returns the name of the event
             var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', documentLoad:"documentLoaded" });
         });
         function documentLoaded(args) {
-            alert("The document is ready to view");
+            alert("The document" +args.fileName + "is ready to view");
+        }
+</script>
+{% endhighlight %}
+
+
+### documentUnload
+
+{:#events:documentunload}
+
+Triggers when the PDF document gets unloaded from the PDF viewer.
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Event parameters from PDF viewer
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel
+</td>
+<td class="type">
+boolean
+</td>
+<td class="description">
+true, if the event should be canceled; otherwise, false.
+</td>
+</tr>
+<tr>
+<td class="name">
+model
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Returns the PDF viewer model
+</td>
+</tr>
+<tr>
+<td class="name">
+type
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the name of the event
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight html %}
+<script type="text/javascript">
+        $(function () {
+            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', documentUnload:"documentUnloaded" });
+        });
+        function documentUnloaded(args) {
+            alert("The PDF document is unloaded from the PDF viewer");
         }
 </script>
 {% endhighlight %}
