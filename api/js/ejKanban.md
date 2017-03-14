@@ -9194,76 +9194,76 @@ Triggered when toolbar item is clicked in Kanban.
     
 <table class="params">
         <thead>
-        <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th class="last">Description</th>
-        </tr>
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th class="last">Description</th>
+            </tr>
         </thead>
         <tbody>
-        <tr>
-        <td class="name">argument</td>
-        <td class="type"><span class="param-type">Object</span></td>
-        <td class="description last">
-        Arguments when toolBarClick event is triggered.
-        <table class="params">
-        <thead>
-        <tr>
-        <th>Name</th>
-        <th>Type</th>
-        <th class="last">Description</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-        <td class="name">cancel</td>
-        <td class="type"><span class="param-type">boolean</span></td>
-        <td class="description last">Returns the cancel option value.</td>
-        </tr>
-        <tr>
-        <td class="name">currentTarget</td>
-        <td class="type"><span class="param-type">object</span></td>
-        <td class="description last">Returns the current item.</td>
-        </tr>
-        <tr>
-        <td class="name">itemId</td>
-        <td class="type"><span class="param-type">string</span></td>
-        <td class="description last">Returns the item id of that current element.</td>
-        </tr>
-        <tr>
-        <td class="name">itemIndex</td>
-        <td class="type"><span class="param-type">number</span></td>
-        <td class="description last">Returns the item index of that current element.</td>
-        </tr>
-        <tr>
-        <td class="name">itemName</td>
-        <td class="type"><span class="param-type">string</span></td>
-        <td class="description last">Returns the item name of that current element.</td>
-        </tr>
-        <tr>
-        <td class="name">itemText</td>
-        <td class="type"><span class="param-type">string</span></td>
-        <td class="description last">Returns the item text of that current element.</td>
-        </tr>
-        <tr>
-        <td class="name">model</td>
-        <td class="type"><span class="param-type">object</span></td>
-        <td class="description last">Returns the Kanban model.</td>
-        </tr>
-        <tr>
-        <td class="name">type</td>
-        <td class="type"><span class="param-type">string</span></td>
-        <td class="description last">Returns the name of the event.</td>
-        </tr>
-        <tr>
-        <td class="name">toolbarData</td>
-        <td class="type"><span class="param-type">object</span></td>
-        <td class="description last">Returns the toolbar object of the Kanban.</td>
-        </tr>
-        <tbody>
-        </table>
-        </td>
-        </tr>
+            <tr>
+                <td class="name">argument</td>
+                <td class="type"><span class="param-type">Object</span></td>
+                <td class="description last">
+                    Arguments when toolBarClick event is triggered.
+                    <table class="params">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th class="last">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="name">cancel</td>
+                                <td class="type"><span class="param-type">boolean</span></td>
+                                <td class="description last">Returns the cancel option value.</td>
+                            </tr>
+                            <tr>
+                                <td class="name">currentTarget</td>
+                                <td class="type"><span class="param-type">object</span></td>
+                                <td class="description last">Returns the current item.</td>
+                            </tr>
+                            <tr>
+                                <td class="name">itemId</td>
+                                <td class="type"><span class="param-type">string</span></td>
+                                <td class="description last">Returns the item id of that current element.</td>
+                            </tr>
+                            <tr>
+                                <td class="name">itemIndex</td>
+                                <td class="type"><span class="param-type">number</span></td>
+                                <td class="description last">Returns the item index of that current element.</td>
+                            </tr>
+                            <tr>
+                                <td class="name">itemName</td>
+                                <td class="type"><span class="param-type">string</span></td>
+                                <td class="description last">Returns the item name of that current element.</td>
+                            </tr>
+                            <tr>
+                                <td class="name">itemText</td>
+                                <td class="type"><span class="param-type">string</span></td>
+                                <td class="description last">Returns the item text of that current element.</td>
+                            </tr>
+                            <tr>
+                                <td class="name">model</td>
+                                <td class="type"><span class="param-type">object</span></td>
+                                <td class="description last">Returns the Kanban model.</td>
+                            </tr>
+                            <tr>
+                                <td class="name">type</td>
+                                <td class="type"><span class="param-type">string</span></td>
+                                <td class="description last">Returns the name of the event.</td>
+                            </tr>
+                            <tr>
+                                <td class="name">toolbarData</td>
+                                <td class="type"><span class="param-type">object</span></td>
+                                <td class="description last">Returns the toolbar object of the Kanban.</td>
+                            </tr>
+                        <tbody>
+                    </table>
+                </td>
+            </tr>
         </tbody>
 </table>  
       
