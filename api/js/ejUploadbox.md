@@ -2739,7 +2739,7 @@ Fires when the file upload progress is succeeded.
 <script>
 //Complete event for Uploadbox
 $("#uploadbox1").ejUploadbox({
-   complete: function (args) {}
+   success: function (args) {}
 });   
 </script>   {% endhighlight %}
 
