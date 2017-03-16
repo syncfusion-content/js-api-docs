@@ -1023,13 +1023,6 @@ Returns the PDF document name displaying in the PDF viewer.
 </tr>
 </tbody>
 </table>
-</td>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
 
 #### Example:
 
