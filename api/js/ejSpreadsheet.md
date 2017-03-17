@@ -2668,7 +2668,7 @@ $('#Spreadsheet').ejSpreadsheet({
 {% endhighlight %}
 
 ### sheets.frozenRows `number`
-{:#members:sheets-frozenRows}
+{:#members:sheets-frozenrows}
 
 Gets or sets a value to freeze rows in the Spreadsheet.
 
@@ -2687,7 +2687,7 @@ $('#Spreadsheet').ejSpreadsheet({
 {% endhighlight %}
 
 ### sheets.frozenColumns `number`
-{:#members:sheets-frozenColumns}
+{:#members:sheets-frozencolumns}
 
 Gets or sets a value to freeze columns in the Spreadsheet.
 
