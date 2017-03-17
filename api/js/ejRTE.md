@@ -2845,6 +2845,33 @@ Specifies the list of groups and order of those groups displayed in the RTE tool
 </script>
 {% endhighlight %}
 
+### toolbarOverflowMode 'enum|string'
+{:#members:toolbarOverflowMode}
+
+
+<ts name = "ej.RTE.ToolbarOverflowMode"/>
+
+Specifies the overflow mode for RTE responsive toolbar
+
+#### Default Value
+
+* Popup
+
+#### Example
+
+{% highlight html %}
+ 
+    <textarea   id="rteSample">     
+    <p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea ><script>
+    $("#rteSample").ejRTE({toolbarOverflowMode:"inline",isResponsive:true});
+    </script>
+{% endhighlight %}
+
 ### tooltipSettings   `object`
 {:#members:tooltipsettings  }
 
