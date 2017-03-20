@@ -1170,7 +1170,7 @@ Allows to set the page number in series axis to be loaded by default.
 ### valueSortSettings `object`
 {:#members:valueSortSettings}
 
-Holds the neccessary properties for value sorting.
+Holds the necessary properties for value sorting.
 
 >**Note**: This is applicable for Relational datasource only.
 
