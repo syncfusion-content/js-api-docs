@@ -978,7 +978,7 @@ None</td>
 Content</td>
 <td class="type">string</td>
 <td class="default">content</td>
-<td class="description">All panel height will be set the tallest panel height</td>
+<td class="description">Content panel will take height based on the content height.</td>
 </tr>
 <tr>
 <td class="name">
