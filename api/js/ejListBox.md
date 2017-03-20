@@ -643,6 +643,23 @@ Example
 
 {% endhighlight %}
 
+### sortingType 'enum'
+{:#members:sortingtype}
+
+To sort ListBox items either by Ascending or Descending order.
+
+### Default Value
+* ej.sortingType.None
+
+Example
+{:.example}
+
+{% highlight js %}
+
+    $('#list').ejListBox({ sortingType: "ascending" }); 
+
+{% endhighlight %}
+
 ### template `string`
 {:#members:template}
 
