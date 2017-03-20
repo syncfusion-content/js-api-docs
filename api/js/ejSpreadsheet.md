@@ -2672,6 +2672,10 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value to freeze rows in the Spreadsheet.
 
+#### Default Value:
+
+* 0
+
 #### Example
 
 {% highlight html %}
@@ -2690,6 +2694,10 @@ $('#Spreadsheet').ejSpreadsheet({
 {:#members:sheets-frozencolumns}
 
 Gets or sets a value to freeze columns in the Spreadsheet.
+
+#### Default Value:
+
+* 0
 
 #### Example
 
