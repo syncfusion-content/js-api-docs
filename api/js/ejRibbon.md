@@ -66,7 +66,7 @@ Enables the ribbon resize feature.allowResizing is a deprecated property of [`is
 
 {% highlight html %}
  
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
         <li>
             <a>FILE </a>
             <ul>
@@ -86,7 +86,7 @@ Enables the ribbon resize feature.allowResizing is a deprecated property of [`is
                 allowResizing: true,
                 applicationTab: {
                     type: ej.Ribbon.ApplicationTabType.Menu,
-                    menuItemID: "ribbonmenu",
+                    menuItemID: "ribbon",
                     menuSettings: {
                         openOnClick: false
                     }
@@ -175,7 +175,7 @@ When set to true, adapts the Ribbon layout to fit the screen size of devices on 
 
 {% highlight html %}
  
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
         <li>
             <a>FILE </a>
             <ul>
@@ -195,7 +195,7 @@ When set to true, adapts the Ribbon layout to fit the screen size of devices on 
                 isResponsive: true,
                 applicationTab: {
                     type: ej.Ribbon.ApplicationTabType.Menu,
-                    menuItemID: "ribbonmenu",
+                    menuItemID: "ribbon",
                     menuSettings: {
                         openOnClick: false
                     }
@@ -350,7 +350,7 @@ Property to enable the ribbon quick access toolbar.
 
 {% highlight html %}
 
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
     <li><a>FILE </a>
     <ul>
     <li><a>New</a></li>
@@ -367,7 +367,7 @@ Property to enable the ribbon quick access toolbar.
                 showQAT: true,
                 applicationTab: {
                     type: ej.Ribbon.ApplicationTabType.Menu,
-                    menuItemID: "ribbonmenu",
+                    menuItemID: "ribbon",
                     menuSettings: {
                         openOnClick: false
                     }
@@ -431,7 +431,7 @@ Sets custom setting to the collapsible pin in the ribbon.
 {% highlight html %}
 
       <div id="defaultRibbon"></div>
-      <ul id="ribbonmenu">
+      <ul id="ribbon">
 				<li><a>FILE</a>
                     <ul>
                     <li><a>New</a></li>
@@ -448,7 +448,7 @@ Sets custom setting to the collapsible pin in the ribbon.
                 },
                 applicationTab: {
                     type: ej.Ribbon.ApplicationTabType.Menu,
-                    menuItemID: "ribbonmenu",
+                    menuItemID: "ribbon",
                     menuSettings: {
                         openOnClick: false
                     }
@@ -499,7 +499,7 @@ Sets tooltip for the collapse pin .
 {% highlight html %}
       
      <div id="defaultRibbon"></div>
-     <ul id="ribbonmenu">
+     <ul id="ribbon">
 				<li><a>FILE</a>
                     <ul>
                     <li><a>New</a></li>
@@ -516,7 +516,7 @@ Sets tooltip for the collapse pin .
             },
             applicationTab: {
                 type: ej.Ribbon.ApplicationTabType.Menu,
-                menuItemID: "ribbonmenu",
+                menuItemID: "ribbon",
                 menuSettings: {
                     openOnClick: false
                 }
@@ -568,7 +568,7 @@ Specifies the custom tooltip for collapse pin.Refer to ejRibbon#tabs->groups->co
 {% highlight html %}
    
       <div id="defaultRibbon"></div>
-      <ul id="ribbonmenu">
+      <ul id="ribbon">
 				<li><a>FILE</a>
                     <ul>
                     <li><a>New</a></li>
@@ -588,7 +588,7 @@ Specifies the custom tooltip for collapse pin.Refer to ejRibbon#tabs->groups->co
                     },	
             applicationTab: {
                 type: ej.Ribbon.ApplicationTabType.Menu,
-                menuItemID: "ribbonmenu",
+                menuItemID: "ribbon",
                 menuSettings: {
                     openOnClick: false
                 }
@@ -899,7 +899,7 @@ Align content in the ribbon control from right to left by setting the property a
 {% highlight html %}
    
     <div id="defaultRibbon"></div>
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
     <li><a>ملف</a>
         <ul>
             <li><a>جديد</a></li>
@@ -914,7 +914,7 @@ Align content in the ribbon control from right to left by setting the property a
         $("#defaultRibbon").ejRibbon({
             width: "100%",
             enableRTL: true,
-            applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "ribbonmenu", menuSettings: { openOnClick: false } },
+            applicationTab: { type: ej.Ribbon.ApplicationTabType.Menu, menuItemID: "ribbon", menuSettings: { openOnClick: false } },
             tabs: [{
                 id: "home", text: "منزل", groups: [{
                     text: "جديد", alignType: ej.Ribbon.AlignType.Rows, content: [{
@@ -960,7 +960,7 @@ Sets custom setting to the expandable pin in the ribbon.
 {% highlight html %}
    
        <div id="defaultRibbon"></div>
-       <ul id="ribbonmenu">
+       <ul id="ribbon">
 				<li><a>FILE</a>
                     <ul>
                     <li><a>New</a></li>
@@ -977,7 +977,7 @@ Sets custom setting to the expandable pin in the ribbon.
                     },
             applicationTab: {
                 type: ej.Ribbon.ApplicationTabType.Menu,
-                menuItemID: "ribbonmenu",
+                menuItemID: "ribbon",
                 menuSettings: {
                     openOnClick: false
                 }
@@ -1028,7 +1028,7 @@ Sets tooltip for the expand pin.
 {% highlight html %}
 
     <div id="defaultRibbon"></div>
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
        <li><a>FILE</a>
             <ul>
              <li><a>New</a></li>
@@ -1044,7 +1044,7 @@ Sets tooltip for the expand pin.
                     },
             applicationTab: {
                 type: ej.Ribbon.ApplicationTabType.Menu,
-                menuItemID: "ribbonmenu",
+                menuItemID: "ribbon",
                 menuSettings: {
                     openOnClick: false
                 }
@@ -1095,7 +1095,7 @@ Specifies the custom tooltip for expand pin.Refer to ejRibbon#tabs->groups->cont
 {% highlight html %}
 
     <div id="defaultRibbon"></div>
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
 				<li><a>FILE</a>
                     <ul>
                     <li><a>New</a></li>
@@ -1115,7 +1115,7 @@ Specifies the custom tooltip for expand pin.Refer to ejRibbon#tabs->groups->cont
                     },
             applicationTab: {
                 type: ej.Ribbon.ApplicationTabType.Menu,
-                menuItemID: "ribbonmenu",
+                menuItemID: "ribbon",
                 menuSettings: {
                     openOnClick: false
                 }
@@ -6411,7 +6411,7 @@ To add,show and hide controls in Quick Access toolbar.
 
 {% highlight html %}
 
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
     <li><a>FILE </a>
     <ul>
     <li><a>New</a></li>
@@ -6428,7 +6428,7 @@ To add,show and hide controls in Quick Access toolbar.
                 showQAT: true,
                 applicationTab: {
                     type: ej.Ribbon.ApplicationTabType.Menu,
-                    menuItemID: "ribbonmenu",
+                    menuItemID: "ribbon",
                     menuSettings: {
                         openOnClick: false
                     }
@@ -6738,7 +6738,7 @@ Sets custom setting to the groups in the ribbon control.
 {% highlight html %}
 
     <div id="defaultRibbon"></div>
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
 				<li><a>FILE</a>
                     <ul>
                     <li><a>New</a></li>
@@ -6752,7 +6752,7 @@ Sets custom setting to the groups in the ribbon control.
             width: "100%",
             applicationTab: {
                 type: ej.Ribbon.ApplicationTabType.Menu,
-                menuItemID: "ribbonmenu",
+                menuItemID: "ribbon",
                 menuSettings: {
                     openOnClick: false
                 }
@@ -6790,7 +6790,7 @@ Sets tooltip for the group expander of the group.
 {% highlight html %}
   
     <div id="defaultRibbon"></div>
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
 				<li><a>FILE</a>
                     <ul>
                     <li><a>New</a></li>
@@ -6804,7 +6804,7 @@ Sets tooltip for the group expander of the group.
             width: "100%",
             applicationTab: {
                 type: ej.Ribbon.ApplicationTabType.Menu,
-                menuItemID: "ribbonmenu",
+                menuItemID: "ribbon",
                 menuSettings: {
                     openOnClick: false
                 }
@@ -6842,7 +6842,7 @@ Specifies the custom tooltip for group expander.Refer to ejRibbon#tabs->groups->
 {% highlight html %}
 
     div id="defaultRibbon"></div>
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
 				<li><a>FILE</a>
                     <ul>
                     <li><a>New</a></li>
@@ -6856,7 +6856,7 @@ Specifies the custom tooltip for group expander.Refer to ejRibbon#tabs->groups->
             width: "100%",
             applicationTab: {
                 type: ej.Ribbon.ApplicationTabType.Menu,
-                menuItemID: "ribbonmenu",
+                menuItemID: "ribbon",
                 menuSettings: {
                     openOnClick: false
                 }
@@ -7108,7 +7108,7 @@ Gets or sets a value that indicates whether to customizing the user interface (U
 {% highlight html %}
 
     <div id="defaultRibbon"></div>
-    <ul id="ribbonmenu">
+    <ul id="ribbon">
        <li><a>FILE</a>
             <ul>
              <li><a>New</a></li>
@@ -7128,7 +7128,7 @@ Gets or sets a value that indicates whether to customizing the user interface (U
                 showQAT: true,
                 applicationTab: {
                     type: ej.Ribbon.ApplicationTabType.Menu,
-                    menuItemID: "ribbonmenu",
+                    menuItemID: "ribbon",
                     menuSettings: {
                         openOnClick: false
                     }
@@ -7754,7 +7754,7 @@ Adds tab group dynamically in the ribbon control with given tab index, tab group
         }]
     });
     });
-    var ribbonGrp = {
+    var ribbonGroup = {
     text: "New",
     alignType: ej.Ribbon.AlignType.Rows,
     content: [{
@@ -7772,7 +7772,7 @@ Adds tab group dynamically in the ribbon control with given tab index, tab group
     //initialize the Ribbon object
     var ribbonObj = $("#Ribbon").data("ejRibbon");
     // Add new ribbon group with given list
-    ribbonObj.addTabGroup(1, ribbonGrp, 0);
+    ribbonObj.addTabGroup(1, ribbonGroup, 0);
     </script>  
 
 {% endhighlight %}
@@ -7826,7 +7826,7 @@ Adds tab group dynamically in the ribbon control with given tab index, tab group
         }]
     });
     });
-    var ribbonGrp = {
+    var ribbonGroup = {
         text: "New",
         alignType: ej.Ribbon.AlignType.Rows,
         content: [{
@@ -7843,7 +7843,7 @@ Adds tab group dynamically in the ribbon control with given tab index, tab group
     };
     //initialize the Ribbon object
     var ribbonObj = $("#Ribbon").data("ejRibbon");
-    $("#Ribbon").ejRibbon("addTabGroup", 1, ribbonGrp, 0);
+    $("#Ribbon").ejRibbon("addTabGroup", 1, ribbonGroup, 0);
     $("#Ribbon").ejRibbon("addTab", "Tab2", tabGroup, 2);
     </script>  
 
@@ -9434,13 +9434,13 @@ To customize Group alone in the inside content.
             }]
         });
     });
-    var ribbonGrp =
+    var ribbonGroup =
          {
            text: "new one "
           };
     //initialize the Ribbon object
     var ribbonObj = $("#Ribbon").data("ejRibbon");
-    ribbonObj.updateGroup(1, one, ribbonGrp);
+    ribbonObj.updateGroup(1, one, ribbonGroup);
     </script>
 
 {% endhighlight %}
@@ -9496,11 +9496,11 @@ To customize Group alone in the inside content.
             }]
         });
     });
-    var ribbonGrp =
+    var ribbonGroup =
          {
            text: "new one "
           };
-    $("#Ribbon").ejRibbon("updateGroup",1, "one", ribbonGrp);
+    $("#Ribbon").ejRibbon("updateGroup",1, "one", ribbonGroup);
     </script>
 
 {% endhighlight %}
@@ -9637,7 +9637,7 @@ Update option in existing Backstage.
 
         });
     });
-    var updateBackSatge =
+    var updateBackStage =
                     {
                         id: "File",
                         text: "File",
@@ -9645,7 +9645,7 @@ Update option in existing Backstage.
                     }
     //initialize the Ribbon object
     var ribbonObj = $("#Ribbon").data("ejRibbon");
-    ribbonObj.updateBackSatgeItem(1,updateBackSatge);
+    ribbonObj.updateBackStageItem(1,updateBackStage);
     </script>
     
 {% endhighlight %}
@@ -11545,7 +11545,7 @@ Triggered when the QAT menu item is clicked successfully .
             showQAT: true,
             applicationTab: {
                 type: ej.Ribbon.ApplicationTabType.Menu,
-                menuItemID: "ribbonmenu",
+                menuItemID: "ribbon",
                 menuSettings: {
                     openOnClick: false
                 }

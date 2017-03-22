@@ -7352,7 +7352,7 @@ This method is used to update the unique data for the specified range of cells i
 // Initialize Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To update unique data in Spreadsheet.
-xlObj.updateUniqueData([{ value: 10, value2: 10, type: "general"}], [1, 0, 5, 0]); 
+xlObj.updateUniqueData({ value: 10, value2: 10, type: "general"}, [1, 0, 5, 0]); 
 </script>
 
 {% endhighlight %}
@@ -7493,7 +7493,7 @@ xlObj.XLCellType.removeCellTypes("A1:B2", 1);
 ### XLCFormat
 {:#methods:xlcformat}
 
-### XLCFormat.clearCF(isSelected, \[range\])
+### XLCFormat.clearCF(\[range\])
 {:#methods:xlcformat-clearcf}
 
 This method is used to clear the applied conditional formatting rules in the Spreadsheet.
@@ -7506,11 +7506,6 @@ This method is used to clear the applied conditional formatting rules in the Spr
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="name">isSelected</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Pass {{'`true`' | markdownify}} if you want to clear rules from selected cells else it will clear rules from entire sheet.</td>
-</tr>
 <tr>
 <td class="name">range</td>
 <td class="type"><span class="param-type">Array|string</span></td>
@@ -7526,7 +7521,7 @@ This method is used to clear the applied conditional formatting rules in the Spr
 // Initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To clear conditional formatting rules in Spreadsheet.
-xlObj.XLCFormat.clearCF(true, [1, 0, 7, 0]);
+xlObj.XLCFormat.clearCF([1, 0, 7, 0]);
 </script>
 
 {% endhighlight %}
