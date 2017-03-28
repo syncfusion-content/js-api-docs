@@ -1419,7 +1419,7 @@ $("#lb").ejListView ("option", "width", 200);
 
 
 
-Specifies the itemRequestCount.
+Specifies the number of items to be fetched on each scroll. Note: This property works only with Virtual scrolling.
 
 
 #### Default Value
@@ -1484,7 +1484,7 @@ $("#defaultlistbox").ejListView ("option", "itemRequestCount", 10);
 
 
 
-Specifies the totalItemsCount.
+Specifies the maximum number of items to be fetched. Note: This will work only with Virtual scrolling
 
 
 #### Default Value
