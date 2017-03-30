@@ -12789,6 +12789,72 @@ Windows</td>
 
 
 
+### ResponsiveType
+{:#enum:responsivetype}
+
+
+
+
+
+
+
+
+Enum for ResponsiveType in toolbar
+
+
+
+
+
+
+#### Properties
+
+
+
+
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Popup</td>
+<td class="type">string</td>
+<td class="default">Popup</td>
+<td class="description">To display the toolbar overflow items as popup</td>
+</tr>
+<tr>
+<td class="name">
+Inline</td>
+<td class="type">string</td>
+<td class="default">Inline</td>
+<td class="description">To display the toolbar overflow items as inline toolbar</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### RowPosition
 {:#enum:rowposition}
  
@@ -16339,6 +16405,73 @@ ContinuesDraw</td>
 </tr>
 </tbody>
 </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### ToolbarOverflowMode
+{:#enum:toolbaroverflowmode}
+
+
+
+
+
+
+
+
+Enum for ToolbarOverflowMode in RTE
+
+
+
+
+
+
+#### Properties
+
+
+
+
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Popup</td>
+<td class="type">string</td>
+<td class="default">Popup</td>
+<td class="description">To display the RTE toolbar overflow items as popup</td>
+</tr>
+<tr>
+<td class="name">
+Inline</td>
+<td class="type">string</td>
+<td class="default">Inline</td>
+<td class="description">To display the RTE toolbar overflow items as inline toolbar</td>
+</tr>
+</tbody>
+</table>
+
+
 
 
 
