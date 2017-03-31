@@ -688,7 +688,7 @@ Example
 
 {% highlight js %}
 
-    $('#list').ejListBox({ sortingType: ej.sortingType.Ascending }); 
+    $('#list').ejListBox({ sortingType: ej.SortingType.Ascending }); 
 
 {% endhighlight %}
 
