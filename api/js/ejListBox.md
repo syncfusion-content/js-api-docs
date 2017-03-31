@@ -643,6 +643,55 @@ Example
 
 {% endhighlight %}
 
+### sortingType `enum`
+{:#members:sortingtype}
+
+<ts name="ej.SortingType"/>
+
+To sort ListBox items either by Ascending or Descending order. By default Sorting will be set as enum type of "None".
+You can use only below mentioned type for sorting purpose.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+ej.sortingType.None</td>
+
+<td class="description last"> None of the items will be sorted. </td>
+</tr>
+<tr>
+<td class="name">
+ej.sortingType.Ascending</td>
+
+<td class="description last"> To sort ListBox items in Ascending order.</td>
+</tr>
+<tr>
+<td class="name">
+ej.sortingType.Descending</td>
+
+<td class="description last"> To sort ListBox items in Descending order.</td>
+</tr>
+</tbody>
+</table>
+
+### Default Value
+ * ej.sortingType.None
+
+Example
+{:.example}
+
+{% highlight js %}
+
+    $('#list').ejListBox({ sortingType: ej.SortingType.Ascending }); 
+
+{% endhighlight %}
+
 ### template `string`
 {:#members:template}
 
