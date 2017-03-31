@@ -669,13 +669,13 @@ ej.sortingType.None</td>
 <td class="name">
 ej.sortingType.Ascending</td>
 
-<td class="description last"> Can sort ListBox items in Ascending order.</td>
+<td class="description last"> To sort ListBox items in Ascending order.</td>
 </tr>
 <tr>
 <td class="name">
 ej.sortingType.Descending</td>
 
-<td class="description last"> Can sort ListBox items in Descending order.</td>
+<td class="description last"> To sort ListBox items in Descending order.</td>
 </tr>
 </tbody>
 </table>
