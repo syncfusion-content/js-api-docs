@@ -12792,25 +12792,9 @@ Windows</td>
 ### ResponsiveType
 {:#enum:responsivetype}
 
-
-
-
-
-
-
-
 Enum for ResponsiveType in toolbar
 
-
-
-
-
-
 #### Properties
-
-
-
-
 
 
 <table class="props">
@@ -12839,20 +12823,6 @@ Inline</td>
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ### RowPosition
@@ -16423,25 +16393,9 @@ ContinuesDraw</td>
 ### ToolbarOverflowMode
 {:#enum:toolbaroverflowmode}
 
-
-
-
-
-
-
-
 Enum for ToolbarOverflowMode in RTE
 
-
-
-
-
-
 #### Properties
-
-
-
-
 
 
 <table class="props">
@@ -16470,21 +16424,6 @@ Inline</td>
 </tr>
 </tbody>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ### Type
