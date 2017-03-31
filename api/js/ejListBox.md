@@ -646,7 +646,7 @@ Example
 ### sortingType `enum`
 {:#members:sortingtype}
 
-<ts name="ej.sortingType"/>
+<ts name="ej.SortingType"/>
 
 To sort ListBox items either by Ascending or Descending order. By default Sorting will be set as enum type of "None".
 You can use only below mentioned type for sorting purpose.
