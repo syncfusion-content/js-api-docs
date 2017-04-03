@@ -2845,7 +2845,7 @@ Specifies the list of groups and order of those groups displayed in the RTE tool
 </script>
 {% endhighlight %}
 
-### toolbarOverflowMode 'enum|string'
+### toolbarOverflowMode `enum|string`
 {:#members:toolbarOverflowMode}
 
 
