@@ -3770,6 +3770,78 @@ Specifies the list of toolbar items to be rendered in Gantt toolbar
 
 {% endhighlight %}
 
+### toolbarSettings.customToolbarItems `array`
+{:#members:toolbarsettings-customToolbarItems}
+
+Allows the user to insert custom toolbar items.
+
+### toolbarSettings.customToolbarItems.text `string`
+{:#members:toolbarSettings-customToolbarItems-text}
+
+Allows the user to insert the custom icons in toolbar using CSS class name selector.
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+            <div id="gantt"></div> 
+<script>      
+        $("#gantt").ejGantt({toolbarSettings: {customToolbarItems: [{ text: "Reset",tooltipText:"Reset" }]}});
+</script>
+{% endhighlight %}
+
+
+### toolbarSettings.customToolbarItems.templateID `string`
+{:#members:toolbarSettings-customToolbarItems-templateID}
+
+Allows the user to insert the custom icons in toolbar using script templates. Using this property we can bind HTML elements and other EJ controls to Gantt toolbar.
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+ <div id="gantt"></div> 
+<script>      
+         $("#gantt").ejGantt({toolbarSettings: {customToolbarItems: [{ templateID: "#ColumnVisibility",tooltipText:"Column Visibility" }]}});  
+</script>				
+
+{% endhighlight %}
+
+
+### toolbarSettings.customToolbarItems.tooltipText `string`
+{:#members:toolbarSettings-customToolbarItems-tooltipText}
+
+Allows the user to display custom tooltip text for Gantt custom toolbar items.
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+        <div id="gantt"></div> 
+<script>            
+        $("#gantt").ejGantt({toolbarSettings: {customToolbarItems: [{ templateID: "#ColumnVisibility",tooltipText:"Column Visibility" },{ text: "Reset",tooltipText:"Column Visibility" }]}});  
+</script>				
+
+{% endhighlight %}
+
 
 
 ### treeColumnIndex `number`
