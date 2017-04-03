@@ -1455,6 +1455,57 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
+### nameManager `Array`
+{:#members:namemanager}
+
+Gets or sets a value that indicates name manager in Spreadsheet.
+
+### nameManager.name `String`
+{:#members:namemanager-name}
+
+Specifies the name for the cell or a range.
+
+#### Default Value
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    nameManager:[{
+        name: "inputrange",
+		refersto: "=Sheet1!$A$1:$A$2"
+    }]
+});    
+</script>
+
+{% endhighlight %}
+
+### nameManager.refersto `String`
+{:#members:namemanager-refersto}
+
+Specifies the address for the cell or a range.
+
+#### Default Value
+* ""
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    nameManager:[{
+        name: "inputrange",
+		refersto: "=Sheet1!$A$1:$A$2"
+    }]
+});    
+</script>
+
+{% endhighlight %}
+
 ### pictureSettings `Object`
 {:#members:picturesettings}
 
