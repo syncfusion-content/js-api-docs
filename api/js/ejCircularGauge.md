@@ -5436,6 +5436,950 @@ Specify the theme of circular gauge.
 
 
 
+### legend `object`
+{:#members:legend}
+
+Options to customize the legend.
+
+### legend.visible `boolean`
+{:#members:legend-visible}
+
+
+Toggles the visibility of the legend.
+
+
+#### Default Value
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#CoreCircularGauge").ejCircularGauge({
+
+   legend : {visible : true}                     
+
+});
+
+{% endhighlight %}
+
+
+
+
+
+### legend.alignment `enum`
+{:#members:legend-alignment}
+
+<ts name = "ej.datavisualization.CircularGauge.LegendAlignment"/>
+
+Specifies the alignment of the legend.
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Center</td>
+<td class="type">string</td> 
+<td class="description"> Align the legend as center to the circulargauge</td>
+</tr>
+<tr>
+<td class="name">
+Near</td>
+<td class="type">string</td>
+<td class="description"> Align the legend as near to the circulargauge</td>
+</tr> 
+<tr>
+<td class="name">
+Far</td>
+<td class="type">string</td>
+<td class="description"> Align the legend as far to the circulargauge</td>
+</tr> 
+</tbody>
+</table>
+
+#### Default Value
+
+* "Center". See <a href="global.html#members:alignment">Alignment</a>
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#CoreCircularGauge").ejCircularGauge({
+
+   legend :{alignment : "far"}                    
+
+});
+
+{% endhighlight %}
+
+
+
+
+### legend.border `object`
+{:#members:legend-border}
+
+
+
+
+Options for customizing the legend border.
+
+
+
+
+
+### legend.border.color `string`
+{:#members:legend-border-color}
+
+
+
+
+Border color of the legend.
+
+
+#### Default Value
+
+* "transparent"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#CoreCircularGauge").ejCircularGauge({
+
+   legend : {border :{ color :"green"}}                     
+
+});
+
+{% endhighlight %}
+
+
+
+
+### legend.border.width `number`
+{:#members:legend-border-width}
+
+
+
+
+Border width of the legend.
+
+
+#### Default Value
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#CoreCircularGauge").ejCircularGauge({
+
+   legend :{ border :{width :2}}                     
+
+});
+
+{% endhighlight %}
+
+
+### legend.fill `string`
+{:#members:legend-fill}
+
+
+
+
+Fill color for the legend items. By using this property, it displays all legend item shapes in same color. 
+Legend items representing invisible ranges is displayed in gray color.
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#CoreCircularGauge").ejCircularGauge({
+
+   legend :{ fill : "green"}                    
+
+});
+
+{% endhighlight %}
+
+
+
+
+### legend.itemPadding `number`
+{:#members:legend-itempadding}
+
+
+
+
+Gap or padding between the legend items.
+
+
+#### Default Value
+
+* 20
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#CoreCircularGauge").ejCircularGauge({
+
+   legend :{itemPadding : 5}                     
+
+});
+
+{% endhighlight %}
+
+
+
+
+
+
+### legend.itemStyle `object`
+{:#members:legend-itemstyle}
+
+
+
+
+Options to customize the style of legend items.
+
+
+
+
+
+
+### legend.itemStyle.border `object`
+{:#members:legend-itemstyle-border}
+
+
+
+
+Options for customizing the border of legend items.
+
+
+
+
+
+### legend.itemStyle.border.color `string`
+{:#members:legend-itemstyle-border-color}
+
+
+
+
+Border color of the legend items.
+
+
+#### Default Value
+
+* "transparent"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#CoreCircularGauge").ejCircularGauge({
+
+   legend :{ itemStyle :{border : { color : "green' }}}                    
+
+});
+
+{% endhighlight %}
+
+
+
+
+### legend.itemStyle.border.width `number`
+{:#members:legend-itemstyle-border-width}
+
+
+
+
+Border width of the legend items.
+
+
+#### Default Value
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#CoreCircularGauge").ejCircularGauge({
+
+   legend :{ itemStyle :{border :{ width : 2 }}}                    
+
+});
+
+{% endhighlight %}
+
+
+
+
+### legend.itemStyle.height `number`
+{:#members:legend-itemstyle-height}
+
+
+
+
+Height of the shape in legend items.
+
+
+#### Default Value
+
+* 10
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#CoreCircularGauge").ejCircularGauge({
+
+   legend :{ itemStyle :{height : 20}}                    
+
+});
+
+{% endhighlight %}
+
+
+
+
+### legend.itemStyle.width `number`
+{:#members:legend-itemstyle-width}
+
+
+
+
+Width of the shape in legend items.
+
+
+#### Default Value
+
+* 10
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#CoreCircularGauge").ejCircularGauge({
+
+   legend :{ itemStyle :{width : 15}}                    
+
+});
+
+{% endhighlight %}
+
+
+### legend.opacity `number`
+{:#members:legend-opacity}
+
+
+
+
+Opacity of the legend.
+
+
+#### Default Value
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#CoreCircularGauge").ejCircularGauge({
+
+   legend :{ opacity : 0.5}                    
+
+});
+
+{% endhighlight %}
+
+
+
+
+### legend.position `enum`
+{:#members:legend-position}
+
+<ts name = "ej.datavisualization.CircularGauge.LegendPosition"/>
+
+Places the legend at specified position. Legend can be placed at **left**, **right**, **top** or **bottom** of the circular gauge.
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Left</td>
+<td class="type">string</td> 
+<td class="description">Legend will be placed left side of the circulargauge area</td>
+</tr>
+<tr>
+<td class="name">
+Right</td>
+<td class="type">string</td>
+<td class="description">Legend will be placed right side of the circulargauge area</td>
+</tr> 
+<tr>
+<td class="name">
+Top</td>
+<td class="type">string</td>
+<td class="description">Legend will be placed top of the circulargauge area</td>
+</tr> 
+<tr>
+<td class="name">
+Bottom</td>
+<td class="type">string</td>
+<td class="description">Legend will be placed bottom of the circulargauge area</td>
+</tr> 
+</tbody>
+</table>
+
+
+#### Default Value
+
+* "Bottom". See <a href="global.html#members:position">Position</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#CoreCircularGauge").ejCircularGauge({
+
+   legend :{ position : "top"}                    
+
+});
+
+{% endhighlight %}
+
+
+
+
+### legend.shape `enum`
+{:#members:legend-shape}
+
+<ts ref = "ej.datavisualization.CircularGauge.LegendShape"/>
+
+
+
+Shape of the legend items.
+
+
+#### Default Value
+
+* "Circle". See <a href="global.html#members:shape">Shape</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#CoreCircularGauge").ejCircularGauge({
+
+   legend :{ shape : "circle" }                      
+
+});
+
+{% endhighlight %}
+
+
+
+
+
+### legend.size `object`
+{:#members:legend-size}
+
+
+
+
+Options to customize the size of the legend.
+
+
+
+
+
+
+
+### legend.size.height `string`
+{:#members:legend-size-height}
+
+
+
+
+Height of the legend. Height can be specified in pixel.
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#CoreCircularGauge").ejCircularGauge({
+
+   legend :{ size :{height : "100"}}                    
+
+});
+
+{% endhighlight %}
+
+
+
+
+### legend.size.width `string`
+{:#members:legend-size-width}
+
+
+
+
+Width of the legend. Width can be specified in pixel.
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#CoreCircularGauge").ejCircularGauge({
+
+   legend :{ size :{width : "200"}}                    
+
+});
+
+{% endhighlight %}
+
+
+### legend.font `object`
+{:#members:legend-font}
+
+
+
+
+Options to customize the font used for legend item text.
+
+
+
+
+
+
+### legend.font.fontFamily `string`
+{:#members:legend-font-fontfamily}
+
+
+
+
+Font family for legend item text.
+
+
+#### Default Value
+
+* "Segoe UI"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#CoreCircularGauge").ejCircularGauge({
+
+   legend :{ font :{fontFamily : "algerian"}}                    
+
+});
+
+{% endhighlight %}
+
+
+
+
+### legend.font.fontStyle `string`
+{:#members:legend-font-fontstyle}
+
+Font style for legend item text.
+
+
+#### Default Value
+
+* "Normal"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#CoreCircularGauge").ejCircularGauge({
+
+   legend :{ font :{fontStyle : "italic"}}                    
+
+});
+
+{% endhighlight %}
+
+
+
+
+### legend.font.fontWeight `string`
+{:#members:legend-font-fontweight}
+
+Font weight for legend item text.
+
+
+#### Default Value
+
+* "Regular"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#CoreCircularGauge").ejCircularGauge({
+
+   legend :{ font :{fontWeight : "lighter"}}                    
+
+});
+
+{% endhighlight %}
+
+
+
+
+### legend.font.size `string`
+{:#members:legend-font-size}
+
+
+
+
+Font size for legend item text.
+
+
+#### Default Value
+
+* "12px"
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#CoreCircularGauge").ejCircularGauge({
+
+   legend :{ font :{size : "14px"}}                    
+
+});
+
+{% endhighlight %}
+
+### legend.font.color `string`
+{:#members:legend-font-color}
+
+
+
+
+Font color of the text for legend items.
+
+
+#### Default Value
+
+
+
+* "#282828"
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#CoreCircularGauge").ejCircularGauge({
+legend:{font :{color : "green"}}                 
+});
+{% endhighlight %}
+
+
+
+### legendItemRendering
+{:#events:legenditemrendering}
+
+
+
+
+Fires before rendering the legend item. This event is fired for each legend item in CircularGauge. You can use this event to customize legend item shape or add custom text to legend item.
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//legendItemRendering event for chart
+
+$("#CoreCircularGauge").ejCircularGauge({
+
+    legendItemRendering: function (args) {
+            //Do something
+    }
+    
+});
+
+{% endhighlight %}
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Instance of the circulargauge model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Instance of the legend item object that is about to be rendered</td>
+</tr>
+</tbody>
+</table>
+
+
+### legendItemClick
+{:#events:legenditemclick}
+
+
+
+
+Fires on clicking the legend item. 
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//legendItemClick event for chart
+
+$("#CoreCircularGauge").ejCircularGauge({
+
+     legendItemClick: function (args) {
+              //Do something
+     }
+     
+});{% endhighlight %}
+
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Instance of the circulargauge model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Instance of the legend item object that is about to be rendered</td>
+</tr>
+</tbody>
+</table>
+
+
+### rangeMouseMove
+{:#events:rangemousemove}
+
+
+
+
+Fires when mouse moving on ranges. 
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//rangeMouseMove event for chart
+
+$("#CoreCircularGauge").ejCircularGauge({
+
+     rangeMouseMove: function (args) {
+              //Do something
+     }
+     
+});{% endhighlight %}
+
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Instance of the circulargauge model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Region of ranges</td>
+</tr>
+</tbody>
+</table>
+
+
+
 ### tooltip `object`
 {:#members:tooltip}
 

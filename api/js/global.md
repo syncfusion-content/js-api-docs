@@ -16525,6 +16525,13 @@ Pie</td>
 </tr>
 <tr>
 <td class="name">
+PieOfPie</td>
+<td class="type">string</td>
+<td class="default">pieofpie</td>
+<td class="description">Specifies the series type as pieofpie.</td>
+</tr>
+<tr>
+<td class="name">
 Hilo</td>
 <td class="type">string</td>
 <td class="default">hilo</td>
