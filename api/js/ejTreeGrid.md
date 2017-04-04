@@ -838,7 +838,7 @@ Sets the clip mode for TreeGrid cell as ellipsis or clipped content(both header 
 
 {:#members:columns-tooltip}
 
-Sets the template for tooltip in TreeGrid column cells.
+Sets the tooltip template for the specific column.
 
 #### Default Value
 
@@ -856,7 +856,7 @@ Sets the template for tooltip in TreeGrid column cells.
 
 {:#members:columns-headertooltip}
 
-Sets the template for tooltip in TreeGrid column header.
+Sets the tooltip template for the column header
 
 #### Default Value
 
@@ -1304,7 +1304,7 @@ Specifies the position where the new row has to be added.
 ### editSettings.dialogEditorTemplateID  `string`
 {:#members:editsettings-dialogeditortemplateid}
 
-This specifies the id of the template. This template can be used to display the data that you require to be edited using the Dialog Box
+Specifies the template ID for the custom dialog.
 
 
 #### Default Value
