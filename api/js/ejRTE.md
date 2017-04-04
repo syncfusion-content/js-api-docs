@@ -2853,6 +2853,29 @@ Specifies the list of groups and order of those groups displayed in the RTE tool
 
 Specifies the overflow mode for RTE responsive toolbar
 
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Popup</td>
+<td class="description">To display the RTE toolbar overflow items as popup</td>
+</tr>
+<tr>
+<td class="name">
+Inline</td>
+<td class="description">To display the RTE toolbar overflow items as inline toolbar</td>
+</tr>
+</tbody>
+</table>
+
+
 #### Default Value
 
 * Popup
