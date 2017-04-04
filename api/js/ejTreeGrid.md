@@ -794,6 +794,82 @@ We can include or exclude particular column from column visibility list in colum
 
 {% endhighlight %}
 
+### columns.clipMode `enum`
+{:#members:columns-clipmode}
+
+<ts name = "ej.TreeGrid.ClipMode"/>
+
+Sets the clip mode for TreeGrid cell as ellipsis or clipped content(both header and content)
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Ellipsis</td>
+<td class="description">Shows ellipsis for the overflown cell.</td>
+</tr>
+<tr>
+<td class="name">Clip</td>
+<td class="description">Truncate the text in the cell.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.TreeGrid.ClipMode.Clip
+
+
+#### Example
+
+
+{% highlight html %}
+       
+        $("#treegrid").ejTreeGrid({columns: [{ clipMode: ej.TreeGrid.ClipMode.Clip},{clipMode: ej.TreeGrid.ClipMode.Ellipsis}]});
+
+{% endhighlight %}
+
+### columns.tooltip  `string`
+
+{:#members:columns-tooltip}
+
+Sets the tooltip template for the specific column.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+         
+        $("#treegrid").ejTreeGrid({columns: [{  tooltip: "" }]});
+
+{% endhighlight %}
+
+### columns.headerTooltip   `string`
+
+{:#members:columns-headertooltip}
+
+Sets the tooltip template for the column header
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+         
+        $("#treegrid").ejTreeGrid({columns: [{  headerTooltip: "" }]});
+
+{% endhighlight %}
+
 ### columnDialogFields `array`
 {:#members:columndialogfields}
 
@@ -1149,6 +1225,10 @@ specifies the edit mode in TreeGrid , "cellEditing" is for cell type editing and
 <td class="name">RowEditing</td>
 <td class="description">you can edit a row.</td>
 </tr>
+<tr>
+<td class="name">DialogEditing</td>
+<td class="description">you can edit a row in dialog form.</td>
+</tr>
 </tbody>
 </table>
 
@@ -1218,6 +1298,26 @@ Specifies the position where the new row has to be added.
 {% highlight html %}
    
  $("#treegrid").ejTreeGrid({  editSettings:{rowPosition : ej.TreeGrid.RowPosition.Bottom} });
+
+{% endhighlight %}
+
+### editSettings.dialogEditorTemplateID  `string`
+{:#members:editsettings-dialogeditortemplateid}
+
+Specifies the template ID for the custom dialog.
+
+
+#### Default Value
+
+* null
+
+
+#### Example
+
+
+{% highlight html %}
+                  
+        $("#treegrid").ejTreeGrid({  editSettings:{dialogEditorTemplateID  : ""} });     
 
 {% endhighlight %}
 
