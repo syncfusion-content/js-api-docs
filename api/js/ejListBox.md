@@ -643,7 +643,7 @@ Example
 
 {% endhighlight %}
 
-### sortingType `enum`
+### SortingType `enum`
 {:#members:sortingtype}
 
 <ts name="ej.SortingType"/>
@@ -661,19 +661,19 @@ You can use only below mentioned type for sorting purpose.
 <tbody>
 <tr>
 <td class="name">
-ej.sortingType.None</td>
+None</td>
 
 <td class="description last"> None of the items will be sorted. </td>
 </tr>
 <tr>
 <td class="name">
-ej.sortingType.Ascending</td>
+Ascending</td>
 
 <td class="description last"> To sort ListBox items in Ascending order.</td>
 </tr>
 <tr>
 <td class="name">
-ej.sortingType.Descending</td>
+Descending</td>
 
 <td class="description last"> To sort ListBox items in Descending order.</td>
 </tr>
@@ -681,7 +681,7 @@ ej.sortingType.Descending</td>
 </table>
 
 ### Default Value
- * ej.sortingType.None
+ * ej.SortingType.None
 
 Example
 {:.example}
