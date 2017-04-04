@@ -776,6 +776,24 @@ Enables or disables the ability to edit a row or cell.
 
 {% endhighlight %}
 
+### columns.showInColumnChooser `boolean`
+
+{:#members:columns-showincolumnchooser}
+
+We can include or exclude particular column from column visibility list in column menu.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+         
+        $("#treegrid").ejTreeGrid({columns: [{  showInColumnChooser: false }]});
+
+{% endhighlight %}
+
 ### columnDialogFields `array`
 {:#members:columndialogfields}
 
@@ -2374,12 +2392,12 @@ Specifies the list of toolbar items to be rendered in TreeGrid toolbar
 {% endhighlight %}
 
 ### toolbarSettings.customToolbarItems `array`
-{:#members:toolbarsettings-customToolbarItems}
+{:#members:toolbarsettings-customtoolbaritems}
 
 Allows the user to insert custom toolbar items.
 
 ### toolbarSettings.customToolbarItems.text `string`
-{:#members:toolbarSettings-customToolbarItems-text}
+{:#members:toolbarsettings-customtoolbaritems-text}
 
 Allows the user to insert the custom icons in toolbar using CSS class name selector.
 
@@ -2400,7 +2418,7 @@ Allows the user to insert the custom icons in toolbar using CSS class name selec
 
 
 ### toolbarSettings.customToolbarItems.templateID `string`
-{:#members:toolbarSettings-customToolbarItems-templateID}
+{:#members:toolbarsettings-customtoolbaritems-templateid}
 
 Allows the user to insert the custom icons in toolbar using script templates. Using this property we can bind HTML elements and other EJ controls to TreeGrid toolbar.
 
@@ -2421,7 +2439,7 @@ Allows the user to insert the custom icons in toolbar using script templates. Us
 
 
 ### toolbarSettings.customToolbarItems.tooltipText `string`
-{:#members:toolbarSettings-customToolbarItems-tooltipText}
+{:#members:toolbarsettings-customtoolbaritems-tooltiptext}
 
 Allows the user to display custom tooltip text for TreeGrid custom toolbar items.
 
