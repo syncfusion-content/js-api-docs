@@ -238,6 +238,23 @@ Example
               
 {% endhighlight %}
 
+### backgroundScroll `boolean`
+{:#members:backgroundscroll}
+
+To Enable or disable the Modal dialog background scroller.
+
+Default Value:
+{:.param}
+ true
+
+Example
+{:.example}
+
+{% highlight javascript %}
+
+     $("#dialog").ejDialog({backgroundScroll: false});
+         
+{% endhighlight %}
 
 ### closeOnEscape `boolean`
 {:#members:closeonescape}
