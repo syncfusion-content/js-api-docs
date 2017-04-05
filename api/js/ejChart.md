@@ -15137,6 +15137,8 @@ $("#container").ejChart({
                           
 });
 
+{% endhighlight %}
+
 
 
 ### primaryXAxis.stripLine `array`
@@ -23077,6 +23079,9 @@ $("#container").ejChart({
     primaryYAxis: { showNextToAxisLine : false }
                           
 });
+
+{% endhighlight %}
+
 
 ### primaryYAxis.stripLine `array`
 {:#members:primaryyaxis-stripline}

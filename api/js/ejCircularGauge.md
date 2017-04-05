@@ -5924,11 +5924,80 @@ $("#CoreCircularGauge").ejCircularGauge({
 ### legend.shape `enum`
 {:#members:legend-shape}
 
-<ts ref = "ej.datavisualization.CircularGauge.LegendShape"/>
-
-
+<ts name = "ej.datavisualization.CircularGauge.LegendShape"/>
 
 Shape of the legend items.
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Rectangle</td>
+<td class="type">string</td> 
+<td class="description">Legend shpae of circular gauge will be rectangle</td>
+</tr>
+<tr>
+<td class="name">
+Circle</td>
+<td class="type">string</td>
+<td class="description">Legend shpae of circular gauge will be circle</td>
+</tr> 
+<tr>
+<td class="name">
+Triangle</td>
+<td class="type">string</td>
+<td class="description">Legend shpaeof circular gauge will be triangle</td>
+</tr> 
+<tr>
+<td class="name">
+Ellipse</td>
+<td class="type">string</td>
+<td class="description">Legend shpae of circular gauge will be ellipse</td>
+</tr> 
+<tr>
+<td class="name">
+Diamond</td>
+<td class="type">string</td>
+<td class="description">Legend shpae of circular gauge will be diamond</td>
+</tr> 
+<tr>
+<td class="name">
+Pentagon</td>
+<td class="type">string</td>
+<td class="description">Legend shpae of circular gauge will be pentagon</td>
+</tr> 
+<tr>
+<td class="name">
+Slider</td>
+<td class="type">string</td>
+<td class="description">Legend shpae of circular gauge will be slider</td>
+</tr> 
+<td class="name">
+Wedge</td>
+<td class="type">string</td>
+<td class="description">Legend shpae of circular gauge will be wedge</td>
+</tr> 
+<tr>
+<td class="name">
+Trapezoid</td>
+<td class="type">string</td>
+<td class="description">Legend shpae of circular gauge will be trapezoid</td>
+</tr>
+<tr>
+<td class="name">
+Line</td>
+<td class="type">string</td>
+<td class="description">Legend shpae of circular gauge will be line</td>
+</tr>   
+</tbody>
+</table>
 
 
 #### Default Value
