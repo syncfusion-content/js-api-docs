@@ -3173,6 +3173,41 @@ When set to true, displays the all-day row cells on the Schedule.
 
 {% endhighlight %}
 
+### showWeekend `boolean`
+{:#members:showweekend}
+
+When set to false, hids the weekend days of the Schedule.
+
+#### Default Value
+
+* true
+
+#### Example - To hide the weekend days.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                showWeekend: false,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
 ### showCurrentTimeIndicator `boolean`
 {:#members:showcurrenttimeindicator}
 
