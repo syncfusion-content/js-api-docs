@@ -1460,7 +1460,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 Gets or sets a value that indicates name manager in Spreadsheet.
 
-### nameManager.name `String`
+### nameManager.name `string`
 {:#members:namemanager-name}
 
 Specifies the name for the cell or a range.
@@ -1483,7 +1483,7 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
-### nameManager.refersto `String`
+### nameManager.refersto `string`
 {:#members:namemanager-refersto}
 
 Specifies the address for the cell or a range.
