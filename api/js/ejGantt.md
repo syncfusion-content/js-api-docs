@@ -341,6 +341,55 @@ Specifies the baseline background color in Gantt
 
 {% endhighlight %}
 
+### workMapping `string`
+{:#members:workmapping}
+
+Specifies the mapping property path for the work field of a task in the data source. When it is mapped the end date and duration for a task will be calculated automatically.
+
+
+#### Default Value
+{:.param}
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  workMapping : "estimatedHours" });
+</script>
+
+{% endhighlight %}
+
+
+### expandStateMapping `string`
+{:#members:expandstatemapping}
+
+Specifies the mapping property path for the expand status of a record in data source.
+
+
+#### Default Value
+{:.param}
+
+* ""
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  expandStateMapping : "isExpanded" });
+</script>
+
+{% endhighlight %}
 
 ### baselineEndDateMapping `string`
 {:#members:baselineenddatemapping}

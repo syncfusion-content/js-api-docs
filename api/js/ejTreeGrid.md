@@ -255,6 +255,30 @@ Specifies the id of the template that has to be applied for alternate rows.
 {% endhighlight %}
 
 
+### expandStateMapping `string`
+{:#members:expandstatemapping}
+
+Specifies the mapping property path for the expand status of a record in data source.
+
+
+#### Default Value
+{:.param}
+
+* ""
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
+       $("#treegrid").ejTreeGrid({ expandStateMapping : "isExpanded" });
+</script>
+
+{% endhighlight %}
+
 ### childMapping `string`
 {:#members:childmapping}
 
