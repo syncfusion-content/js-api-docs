@@ -1509,7 +1509,7 @@ Allows user to set the visibility of `Add Report` icon in toolbar panel.
 ### toolbarIconSettings.enableNewReport `boolean`
 {:#members:toolbariconsettings-enablenewreport}
 
-Allows the user to set the visibility of `New Report` icon in toolbar panel.
+Allows user to set the visibility of `New Report` icon in toolbar panel.
 
 #### Default Value: true
 
