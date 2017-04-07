@@ -3786,6 +3786,14 @@ Enables/Disables the default behaviors of the diagram.
             <td class="description last">Disables all DiagramConstraints</td>
        </tr>
         <tr>
+            <td class="name">APIUpdate</td>
+            <td class="description last">Enables/Disables interaction done with the help of API methods</td>
+       </tr>
+       <tr>
+            <td class="name">UserInteraction</td>
+            <td class="description last">Enables/Disables UserInteraction</td>
+       </tr>
+        <tr>
             <td class="name">PageEditable</td>
             <td class="description last">Enables/Disables PageEditing</td>
        </tr>
@@ -3812,6 +3820,18 @@ Enables/Disables the default behaviors of the diagram.
         <tr>
             <td class="name">Undoable</td>
             <td class="description last">Enables/Disables undo actions</td>
+       </tr>
+       <tr>
+            <td class="name">Resizable</td>
+            <td class="description last">Enables/Disables the Diagram size updation on the window resize function</td>
+       </tr>
+       <tr>
+            <td class="name">ZoomTextEditor</td>
+            <td class="description last">Enables/Disables the Zooming of labels text editor</td>
+       </tr>
+       <tr>
+            <td class="name">FloatElements</td>
+            <td class="description last">Enables/Disables the drag and drop of element from one diagram to the other</td>
        </tr>
        <tr>
             <td class="name">CrispEdges</td>
@@ -14812,19 +14832,19 @@ Fit the diagram content into diagram viewport
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">[mode]</td>
+			<td class="name">[type]</td>
 			<td class="type">string</td>
-			<td class="description last">to set the mode of fit to command. See [Fit Mode](/api/js/global#fitmode)</td>
+			<td class="description last">To specify whether to fit the diagram into view either in terms of width, height or entire page.</td>
 		</tr>
 		<tr>
 			<td class="name">[region]</td>
 			<td class="type">string</td>
-			<td class="description last">to set whether the region to be fit will be based on diagram elements or page settings [Region](/api/js/global#region)</td>
+			<td class="description last">To specify whether to fit the content that is covered by diagram elements or based on page settings.</td>
 		</tr>
 		<tr>
 			<td class="name">[margin]</td>
 			<td class="type">object</td>
-			<td class="description last">to set the required margin</td>
+			<td class="description last">space that is to be left in between the content and viewport.</td>
 		</tr>
 	</tbody>
 </table>
