@@ -1478,6 +1478,268 @@ Sets the display mode (Only Chart/Only Grid/Both) in PivotClient.
     $("#PivotClient1").ejPivotClient({ displaySettings: { mode: ej.PivotClient.DisplayMode.ChartOnly } });
 {% endhighlight %}
 
+### toolbarIconSettings `object`
+{:#members:toolbariconsettings}
+
+Allows user to set visibility of icons in toolbar panel.
+
+#### Default Value: {}
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ toolbarIconSettings: settingsObject });
+{% endhighlight %}
+
+### toolbarIconSettings.enableAddReport `boolean`
+{:#members:toolbariconsettings-enableaddreport}
+
+Allows user to set the visibility of `Add Report` icon in toolbar panel.
+
+#### Default Value: true
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ toolbarIconSettings: {enableAddReport : true} });
+{% endhighlight %}
+
+### toolbarIconSettings.enableNewReport `boolean`
+{:#members:toolbariconsettings-enablenewreport}
+
+Allows the user to set the visibility of `New Report` icon in toolbar panel.
+
+#### Default Value: true
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ toolbarIconSettings: {enableNewReport : true} });
+{% endhighlight %}
+
+### toolbarIconSettings.enableRenameReport `boolean`
+{:#members:toolbariconsettings-enablerenamereport}
+
+Allows user to set the visibility of `Rename Report` icon in toolbar panel.
+
+#### Default Value: true
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ toolbarIconSettings: {enableRenameReport : true} });
+{% endhighlight %}
+
+### toolbarIconSettings.enableDBManipulation `boolean`
+{:#members:toolbariconsettings-enabledbmanipulation}
+
+Allows user to set the visibility of `DB Manipulation` icon in toolbar panel.
+
+#### Default Value: true
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ toolbarIconSettings: {enableDBManipulation : true} });
+{% endhighlight %}
+
+### toolbarIconSettings.enableWordExport `boolean`
+{:#members:toolbariconsettings-enablewordexport}
+
+Allows user to set the visibility of `Word Export` icon in toolbar panel.
+
+#### Default Value: true
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ toolbarIconSettings: {enableWordExport : true} });
+{% endhighlight %}
+
+### toolbarIconSettings.enableExcelExport `boolean`
+{:#members:toolbariconsettings-enableexcelexport}
+
+Allows user to set the visibility of `Excel Export` icon in toolbar panel.
+
+#### Default Value: true
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ toolbarIconSettings: {enableExcelExport : true} });
+{% endhighlight %}
+
+### toolbarIconSettings.enablePdfExport `boolean`
+{:#members:toolbariconsettings-enablepdfexport}
+
+Allows user to set the visibility of `PDF Export` icon in toolbar panel.
+
+#### Default Value: true
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ toolbarIconSettings: {enablePdfExport : true} });
+{% endhighlight %}
+
+### toolbarIconSettings.enableMDXQuery `boolean`
+{:#members:toolbariconsettings-enablemdxquery}
+
+Allows user to set the visibility of `MDX Query` icon in toolbar panel.
+
+>**Note**: This is not applicable for Relational data source.
+
+#### Default Value: true
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ toolbarIconSettings: {enableMDXQuery : true} });
+{% endhighlight %}
+
+### toolbarIconSettings.enableDeferUpdate `boolean`
+{:#members:toolbariconsettings-enabledeferupdate}
+
+Allows user to set the visibility of `Defer Update` icon in toolbar panel.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ toolbarIconSettings: {enableDeferUpdate : true} });
+{% endhighlight %}
+
+### toolbarIconSettings.enableFullScreen `boolean`
+{:#members:toolbariconsettings-enablefullscreen}
+
+Allows user to set the visibility of `Full Screen` icon in toolbar panel.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ toolbarIconSettings: {enableFullScreen : true} });
+{% endhighlight %}
+
+### toolbarIconSettings.enableSortOrFilterColumn `boolean`
+{:#members:toolbariconsettings-enablesortorfiltercolumn}
+
+Allows user to set the visibility of `Sort/Filter Column` icon in toolbar panel.
+
+>**Note**: This is only applicable for OLAP data bound from server-side.
+
+#### Default Value: true
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ toolbarIconSettings: {enableSortOrFilterColumn : true} });
+{% endhighlight %}
+
+### toolbarIconSettings.enableSortOrFilterRow `boolean`
+{:#members:toolbariconsettings-enablesortorfilterrow}
+
+Allows user to set the visibility of `Sort/Filter Row` icon in toolbar panel.
+
+>**Note**: This is only applicable for OLAP data bound from server-side.
+
+#### Default Value: true
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ toolbarIconSettings: {enableSortOrFilterRow : true} });
+{% endhighlight %}
+
+### toolbarIconSettings.enableToggleAxis `boolean`
+{:#members:toolbariconsettings-enabletoggleaxis}
+
+Allows user to set the visibility of `Toggle Axis` icon in toolbar panel.
+
+#### Default Value: true
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ toolbarIconSettings: {enableToggleAxis : true} });
+{% endhighlight %}
+
+### toolbarIconSettings.enableChartTypes `boolean`
+{:#members:toolbariconsettings-enablecharttypes}
+
+Allows user to set the visibility of `Chart Types` icon in toolbar panel.
+
+#### Default Value: true
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ toolbarIconSettings: {enableChartTypes : true} });
+{% endhighlight %}
+
+### toolbarIconSettings.enableRemoveReport `boolean`
+{:#members:toolbariconsettings-enableremovereport}
+
+Allows user to set the visibility of `Remove Report` icon in toolbar panel.
+
+#### Default Value: true
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ toolbarIconSettings: {enableRemoveReport : true} });
+{% endhighlight %}
+
+### toolbarIconSettings.enableCalculatedMember `boolean`
+{:#members:toolbariconsettings-enablecalculatedmember}
+
+Allows user to set the visibility of `Calculated Member` icon in toolbar panel.
+
+>**Note**: This is only applicable for OLAP data bound from server-side.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ toolbarIconSettings: {enableCalculatedMember : true} });
+{% endhighlight %}
+
+### showUniqueNameOnPivotButton `boolean`
+{:#members:showuniquenameonpivotbutton}
+
+Allows user to show unique name on pivotbutton.
+
+>**Note**: This is only applicable for OLAP data source.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ showUniqueNameOnPivotButton: true });
+{% endhighlight %}
+
 ### enableSplitter `boolean`
 {:#members:enableSplitter}
 
