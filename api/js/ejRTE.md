@@ -215,6 +215,142 @@ Based on the content size, its height is adjusted instead of adding the scrollba
 </script>
 {% endhighlight %}
 
+### cleanupFilterOption `object`
+{:#members:cleanupfilteroption}
+
+Provide the options for filtering elements that are pasted from word document.
+
+#### Default Value
+
+* {}
+
+### cleanupFilterOption.listConversion `boolean`
+{:#members:cleanupfilteroption-listconversion}
+
+This API is used to convert the list elements pasted from word document to editor.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+ <textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea ><script>
+    // Initializes the RTE with the specified colorCode value.
+    $("#rteSample").ejRTE({
+           pasteCleanup:true,
+           cleanupFilterOption:{
+               listConversion:true,
+               cleanCSS:false,
+               removeStyles:false,
+               cleanElements:false
+           }
+    });
+    </script>
+{% endhighlight %}
+
+### cleanupFilterOption.cleanCSS `boolean`
+{:#members:cleanupfilteroption-cleancss}
+
+This API is used to clean the unwanted css in the elements pasted from word document to editor.
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+ <textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea ><script>
+    // Initializes the RTE with the specified colorCode value.
+    $("#rteSample").ejRTE({
+           pasteCleanup:true,
+           cleanupFilterOption:{
+               listConversion:false,
+               cleanCSS:true,
+               removeStyles:false,
+               cleanElements:false
+           }
+    });
+    </script>
+{% endhighlight %}
+
+### cleanupFilterOption.removeStyles `boolean`
+{:#members:cleanupfilteroption-removestyles}
+
+This API is used to remove all styles in the elements pasted from word document to editor.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+ <textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea ><script>
+    // Initializes the RTE with the specified colorCode value.
+    $("#rteSample").ejRTE({
+           pasteCleanup:true,
+           cleanupFilterOption:{
+               listConversion:false,
+               cleanCSS:true,
+               removeStyles:true,
+               cleanElements:false
+           }
+    });
+    </script>
+{% endhighlight %}
+
+### cleanupFilterOption.cleanElements `boolean`
+{:#members:cleanupfilteroption-cleanElements}
+
+This API is used to clean the unwanted elements pasted from word document to editor.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+ <textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea ><script>
+    // Initializes the RTE with the specified colorCode value.
+    $("#rteSample").ejRTE({
+           pasteCleanup:true,
+           cleanupFilterOption:{
+               listConversion:false,
+               cleanCSS:false,
+               removeStyles:false,
+               cleanElements:true
+           }
+    });
+    </script>
+{% endhighlight %}
+
 ### colorCode `object`
 {:#members:colorcode}
 
@@ -1473,6 +1609,33 @@ Sets the name in the RTE. When the name value is not initialized, the ID value i
     $("#rteSample").ejRTE({ name: "ecommentblog" });
 </script>
 {% endhighlight %}
+
+### pasteCleanup `boolean`
+{:#members:pastecleanup}
+
+Cleans the unwanted styles and elements when copy paste content  from word to RTE editor.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+ 
+<textarea   id="rteSample">     
+<p><b>Description:</b></p>
+        <p>The Rich Text Editor (RTE) control is easy to render in the
+        client side. Customers can easily edit the contents and get the HTML content for
+        the displayed content. A rich text editor control provides users with a toolbar
+        that helps them to apply rich text formats to the text entered in the text
+        area. </p></textarea ><script>
+    // Initializes the RTE with the specified showClearAll value.
+    $("#rteSample").ejRTE({ pasteCleanup: true });
+</script>
+{% endhighlight %}
+
+
 
 ### showClearAll `boolean`
 {:#members:showclearall}
