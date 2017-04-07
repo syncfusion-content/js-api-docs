@@ -1296,6 +1296,77 @@ Allows the user to freeze both the row headers and column headers on scrolling.
     $("#PivotGrid1").ejPivotGrid({ frozenHeaderSettings: { enableFrozenHeaders: true } });
 {% endhighlight %}
 
+### frozenHeaderSettings.scrollerSize `integer`
+{:#members:frozenheadersettings-scrollersize}
+
+Allows user to set the size of the scrollbar (horizontal and vertical) visible in PivotGrid.
+
+#### Default Value: 18
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ frozenHeaderSettings: { scrollerSize: 18 } });
+{% endhighlight %}
+
+### headerSettings `object`
+{:#members:headersettings}
+
+Allows user to display header name in PivotGrid control.
+
+#### Default Value: {}
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ headerSettings: { showRowItems: true, showColumnItems: true } });
+{% endhighlight %}
+
+### headerSettings.showRowItems `boolean`
+{:#members:headersettings-showrowitems}
+
+Allows user to enable/disable row header names in PivotGrid control.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ headerSettings: { showRowItems: true } });
+{% endhighlight %}
+
+### headerSettings.showColumnItems `boolean`
+{:#members:headersettings-showcolumnitems}
+
+Allows user to enable/disable column header names in PivotGrid control.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ headerSettings: { showColumnItems: true } });
+{% endhighlight %}
+
+
+### showUniqueNameOnPivotButton `boolean`
+{:#members:showUniqueNameOnPivotButton}
+
+Allows user to show appropriate unique name on Pivot button.
+
+> **Note**: This is only applicable for OLAP datasource.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ showUniqueNameOnPivotButton: true });
+{% endhighlight %}
+
 ### customObject `object`
 {:#members:customobject}
 
