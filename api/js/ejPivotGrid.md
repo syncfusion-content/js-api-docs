@@ -1296,7 +1296,7 @@ Allows the user to freeze both the row headers and column headers on scrolling.
     $("#PivotGrid1").ejPivotGrid({ frozenHeaderSettings: { enableFrozenHeaders: true } });
 {% endhighlight %}
 
-### frozenHeaderSettings.scrollerSize `integer`
+### frozenHeaderSettings.scrollerSize `number`
 {:#members:frozenheadersettings-scrollersize}
 
 Allows user to set the size of the scrollbar (horizontal and vertical) visible in PivotGrid.
