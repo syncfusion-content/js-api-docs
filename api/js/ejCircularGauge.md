@@ -4189,6 +4189,31 @@ Specify backgroundColor for the ranges of circular gauge
 </script>{% endhighlight %}
 
 
+### scales.ranges.text `string`
+{:#members:scales.ranges.text}
+
+
+Specify text for the ranges of circular gauge
+
+
+#### Default Value
+
+
+* null
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
+        $("#CoreCircularGauge").ejCircularGauge({ scales: [{showRanges:true , ranges: [{ text:"high", startValue: 10, endValue: 100,startWidth: 10,endWidth: 10,backgroundColor: "Red" }]  }]});
+</script>{% endhighlight %}
+
+
 
 
 ### scales.ranges.border `object`
