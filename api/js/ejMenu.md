@@ -221,7 +221,7 @@ Specifies the target id of context menu. On right clicking the specified context
 ### container `string`
 {:#members:container}
 
-Specifies the target id of sub menu. On clicking menu the specified container element, sub menu gets shown.
+Specifies the container element selectors for submenu’s collision. The submenu gets displayed based on spacing available with respect to container element.
 
 #### Default Value
 
