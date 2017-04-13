@@ -6267,7 +6267,7 @@ Font color of the text for legend items.
 
 
 
-* "#282828"
+* null
 
 
 #### Example
