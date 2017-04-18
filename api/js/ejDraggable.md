@@ -222,7 +222,7 @@ Distance in pixels after mousedown the mouse must move before dragging should st
 
 
 
-The drag area is used to restrict the dragging element bounds.
+The drag area is used to restrict the dragging element bounds.Specify the id of the container within which the element should be dragged.
 
 
 
@@ -235,7 +235,7 @@ The drag area is used to restrict the dragging element bounds.
 
 
 
-* false
+* null
 
 
 
@@ -251,7 +251,7 @@ The drag area is used to restrict the dragging element bounds.
 {% highlight javascript %}
  
 //To set dragArea API value during initialization  
-        $("#dragable").ejDraggable({ dragArea: true });                         
+        $("#dragable").ejDraggable({ dragArea:"#container"});                         
         
 {% endhighlight %}
 
