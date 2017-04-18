@@ -3785,7 +3785,7 @@ Enables/Disables the default behaviors of the diagram.
             <td class="name">None</td>
             <td class="description last">Disables all DiagramConstraints</td>
        </tr>
-        <tr>
+       <tr>
             <td class="name">APIUpdate</td>
             <td class="description last">Enables/Disables interaction done with the help of API methods</td>
        </tr>
@@ -3822,6 +3822,10 @@ Enables/Disables the default behaviors of the diagram.
             <td class="description last">Enables/Disables undo actions</td>
        </tr>
        <tr>
+            <td class="name">CrispEdges</td>
+            <td class="description last">Enables/Disables the sharp edges</td>
+       </tr>
+       <tr>
             <td class="name">Resizable</td>
             <td class="description last">Enables/Disables the Diagram size updation on the window resize function</td>
        </tr>
@@ -3832,10 +3836,6 @@ Enables/Disables the default behaviors of the diagram.
        <tr>
             <td class="name">FloatElements</td>
             <td class="description last">Enables/Disables the drag and drop of element from one diagram to the other</td>
-       </tr>
-       <tr>
-            <td class="name">CrispEdges</td>
-            <td class="description last">Enables/Disables the sharp edges</td>
        </tr>
         <tr>
             <td class="name">Default</td>
@@ -14717,18 +14717,18 @@ Export the diagram as downloadable files or as data
 </tr>
 <tr>
 <td class="name">format</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">format of the exported file/data. See [File Formats](/api/js/global#fileformats).</td>
+<td class="type"><ts name="ej.datavisualization.Diagram.FileFormats"/>enum</td>
+<td class="description last">format of the exported file/data.</td>
 </tr>
 <tr>
 <td class="name">mode</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">to set whether to export diagram as a file or as raw data. See [Export Modes](/api/js/global#exportmodes).</td>
+<td class="type"><ts name="ej.datavisualization.Diagram.ExportModes"/>enum</td>
+<td class="description last">to set whether to export diagram as a file or as raw data.</td>
 </tr>
 <tr>
 <td class="name">region</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">to set the region of the diagram to be exported. See [Region](/api/js/global#region).</td>
+<td class="type"><ts name="ej.datavisualization.Diagram.Region"/>enum</td>
+<td class="description last">to set the region of the diagram to be exported.</td>
 </tr>
 <tr>
 <td class="name">bounds</td>
@@ -14742,8 +14742,8 @@ Export the diagram as downloadable files or as data
 </tr>
 <tr>
 <td class="name">stretch</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">to set stretch to the exported data.</td>
+<td class="type"><ts name="ej.datavisualization.Diagram.Stretch"/>enum</td>
+<td class="description last">to resize the diagram content to fill its allocated space.</td>
 </tr>
 </tbody>
 </table>
@@ -14765,19 +14765,132 @@ Export the diagram as downloadable files or as data
 //Exports the whole diagram content as an image of JPEG format
 diagram.exportDiagram();
 var options = {
-//name of the file to be downloaded
-fileName: "diagram",
-//Specifies whether to export as files/data
-mode: "download",
-//Format of the exported file
-format: "jpg",
-// Define the custom bounds that has to be exported
-bounds: { x: 1000, y: 1000, width: 500, height: 500 },
+    //name of the file to be downloaded
+    fileName: "diagram",
+    //Specifies whether to export as files/data
+    mode: ej.datavisualization.Diagram.ExportModes.Download,
+    //Format of the exported file
+    format: ej.datavisualization.Diagram.FileFormats.JPG,
+    // Define the custom bounds that has to be exported
+    bounds: {
+        x: 1000,
+        y: 1000,
+        width: 500,
+        height: 500
+    },
 };
 diagram.exportDiagram(options);
 </script>
 
 {% endhighlight %}
+
+#### FileFormats
+
+Used to export the diagram into user defined file format.
+
+<table class="props">
+    <thead>
+        <tr>
+        <th>Name</th>
+        <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>JPG</td>
+            <td>Used to export the diagram into JPG format.</td>
+        </tr>
+        <tr>
+            <td>PNG</td>
+            <td>Used to export the diagram into PNG format.</td>
+        </tr>
+        <tr>
+            <td>BMP</td>
+            <td>Used to export the diagram into BMP format.</td>
+        </tr>
+        <tr>
+            <td>SVG</td>
+            <td>Used to export the diagram into SVG format.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### ExportModes
+
+Used to export the diagram as a file or as raw data.
+
+<table class="props">
+    <thead>
+        <tr>
+        <th>Name</th>
+        <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Download</td>
+            <td>Used to export the diagram as a file.</td>
+        </tr>
+        <tr>
+            <td>Data</td>
+            <td>Used to export the diagram as raw data.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Region
+
+Used to set the region of the diagram to be exported.
+
+<table class="props">
+    <thead>
+        <tr>
+        <th>Name</th>
+        <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Content</td>
+            <td>Used to export the content of the diagram only.</td>
+        </tr>
+        <tr>
+            <td>PageSettings</td>
+            <td>Used to export the page region of the diagram.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Stretch
+
+Used to resize the diagram content to fill its allocated space.
+
+<table class="props">
+    <thead>
+        <tr>
+        <th>Name</th>
+        <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>None</td>
+            <td>The diagram content preserves its original size.</td>
+        </tr>
+        <tr>
+            <td>Fill</td>
+            <td>The diagram content is resized to fill the destination dimensions. The aspect ratio is not preserved.</td>
+        </tr>
+        <tr>
+            <td>Uniform</td>
+            <td>The diagram content is resized to fit in the destination dimensions while it preserves its native aspect ratio.</td>
+        </tr>
+        <tr>
+            <td>UniformToFill</td>
+            <td>The diagram content is resized to fill the destination dimensions while it preserves its native aspect ratio. If the aspect ratio of the destination rectangle differs from the source, the source content is clipped to fit in the destination dimensions.</td>
+        </tr>
+    </tbody>
+</table>
 
 ### findNode(name)
 {:#methods:findnode}
@@ -14832,19 +14945,19 @@ Fit the diagram content into diagram viewport
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">[type]</td>
-			<td class="type">string</td>
-			<td class="description last">To specify whether to fit the diagram into view either in terms of width, height or entire page.</td>
+			<td class="name">[mode]</td>
+			<td class="type"><ts name="ej.datavisualization.Diagram.FitMode"/>enum</td>
+			<td class="description last">to set the mode of fit to command.</td>
 		</tr>
 		<tr>
 			<td class="name">[region]</td>
-			<td class="type">string</td>
-			<td class="description last">To specify whether to fit the content that is covered by diagram elements or based on page settings.</td>
+			<td class="type"><ts ref="ej.datavisualization.Diagram.Region"/>enum</td>
+			<td class="description last">to set whether the region to be fit will be based on diagram elements or page settings.</td>
 		</tr>
 		<tr>
 			<td class="name">[margin]</td>
 			<td class="type">object</td>
-			<td class="description last">space that is to be left in between the content and viewport.</td>
+			<td class="description last">to set the required margin</td>
 		</tr>
 	</tbody>
 </table>
@@ -14860,6 +14973,33 @@ diagram.fitToPage(mode,region,margin);
 </script>
 
 {% endhighlight %}
+
+#### FitMode
+
+Used to fit the diagram content within the view port.
+
+<table class="props">
+    <thead>
+        <tr>
+        <th>Name</th>
+        <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Page</td>
+            <td>Used to fit the diagram content based on page size.</td>
+        </tr>
+        <tr>
+            <td>Width</td>
+            <td>Used to fit the diagram content based on diagram width.</td>
+        </tr>
+        <tr>
+            <td>Height</td>
+            <td>Used to fit the diagram content based on diagram height.</td>
+        </tr>
+    </tbody>
+</table>
 
 ### group()
 {:#methods:group}
