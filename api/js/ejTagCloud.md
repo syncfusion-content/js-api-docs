@@ -1023,7 +1023,6 @@ name</td>
  
 <script>
   var tagObj="";
-var tag = { text: "google", url: "http://www.google.com", frequency: 12 };
 $(function () {
 // document ready
 // initialize the array of data for TagCloud input
@@ -1034,7 +1033,7 @@ $("#tagcloud").ejTagCloud({
 //initialize the TagCloud object
 tagObj = $("#tagcloud").data("ejTagCloud");
 //To Inserts a new item into the TagCloud
-tagObj.remove(tag);
+tagObj.remove("text");
       });     
 </script>{% endhighlight %}
 
@@ -1044,7 +1043,6 @@ tagObj.remove(tag);
 <div id="tagcloud"></div> 
  
 <script>
-var tag = { text: "google", url: "http://www.google.com", frequency: 12 };
 $(function () {
 // document ready
 // initialize the array of data for TagCloud input
@@ -1052,7 +1050,7 @@ $("#tagcloud").ejTagCloud({
             dataSource: window.websiteCollection,
             titleText: "Tech Sites"
 });
-$("#tagcloud").ejTagCloud("remove", tag);
+$("#tagcloud").ejTagCloud("remove", "text");
 });
 </script>{% endhighlight %}
 
