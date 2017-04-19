@@ -3630,6 +3630,51 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
+### rowDropSettings.dragBehaviour `enum`
+{:#members:rowdropsettings-dragbehaviour}
+
+<ts name="ej.Grid.DragBehaviour"/>
+
+Gets or sets a value that indicates whether to define the behaviour for drag.
+
+#### Default Value:
+{:.param}
+* ej.Grid.DragBehaviour.Move
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Move</td>
+<td class="description">Moves a dragged row from one grid to another</td>
+</tr>
+<tr>
+<td class="name">Copy</td>
+<td class="description">Copies a dragged row from one grid to another</td>
+</tr>
+</table>
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid" style="float:left;width:49%"></div>
+<div id="DestGrid" style="float:right;width:49%"></div>
+<script>
+$("#Grid").ejGrid({
+    dataSource: window.gridData,
+    allowRowDragAndDrop: true,
+    rowDropSettings: { dropTargetID: "#DestGrid" ,dragBehaviour:ej.Grid.DragBehaviour.Copy }
+});
+$("#DestGrid").ejGrid({
+    dataSource: [],
+    allowRowDragAndDrop: true,
+    rowDropSettings: { dropTargetID: "#Grid" ,dragBehaviour:ej.Grid.DragBehaviour.Copy }
+});
+</script>
+{% endhighlight %}
+
 ### searchSettings `Object`
 {:#members:searchsettings}
 
