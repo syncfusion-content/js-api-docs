@@ -850,6 +850,80 @@ Specified a selector for elements, within the container.
 
 {% endhighlight %}
 
+### tip `object`
+{:#members:tip}
+
+defines Tooltip size and gap between tooltip against the target element.
+
+### tip.size `object`
+{:#members:tip-size}
+
+Sets the Tooltip size.
+
+### tip.size.width `number`
+{:#members:tip-size-width}
+
+Sets the Tooltip width.
+
+#### Default Value
+{:.param}
+* 20
+
+### tip.size.height `number`
+{:#members:tip-size-height}
+
+Sets the Tooltip height.
+
+#### Default Value
+{:.param}
+* 10
+
+### tip.adjust `object`
+{:#members:tip-adjust}
+
+Sets gap between tooltip against the target element.
+
+### tip.adjust.xValue `number`
+{:#members:tip-adjust-xValue}
+
+Sets horizontal gap between Tooltip and target element.
+
+#### Default Value
+{:.param}
+* 0
+
+### tip.adjust.yValue `number`
+{:#members:tip-adjust-yValue}
+
+Sets vertical gap between Tooltip and target element.
+
+#### Default Value
+{:.param}
+* 0
+
+#### Example
+{:.example}
+{% highlight html %}
+ 
+    <div class="control">
+        TypeScript lets you write <a id="test"><u> JavaScript</u> </a>the way you really want to.
+    </div>
+
+    <script type="text/javascript">
+
+        $("#test").ejTooltip(
+		{
+		    content: "JavaScript is the programming language of HTML and the Web.",
+		    tip :{
+					size : { width : 25, height : 12},
+					adjust : {xValue : 5, yValue: 6}
+				}
+		});
+
+    </script>
+    
+{% endhighlight %}
+
 ### title `string`
 {:#members:title}
 
