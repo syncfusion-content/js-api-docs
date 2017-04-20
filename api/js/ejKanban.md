@@ -9104,6 +9104,89 @@ Triggered initial load.
     
 {% endhighlight %}
 
+### swimlaneClick
+{:#events:swimlaneClick}
+
+Triggers after the swimlane is clicked.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Kanban.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when load event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">action</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Current Action name</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the kanban model.</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns modified data.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns the edited row index.</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns Kanban element.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+{:.example}
+
+{% highlight html %}
+
+    <div id="Kanban"></div> 
+    <script>
+    $("#Kanban").ejKanban({
+    swimlaneClick: function (args) {}
+    });
+    </script>
+    
+{% endhighlight %}
+
 ### queryCellInfo
 {:#events:querycellinfo}
 
