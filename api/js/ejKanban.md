@@ -9107,7 +9107,7 @@ Triggered initial load.
 ### swimlaneClick
 {:#events:swimlaneClick}
 
-Triggers after the swimlane is clicked.
+Triggers before swim lane expand or collapse icon is clicked.
 
 <table class="params">
 <thead>
@@ -9121,7 +9121,7 @@ Triggers after the swimlane is clicked.
 <tr>
 <td class="name">argument</td>
 <td class="type"><ts name="ej.Kanban.Model"/><span class="param-type">Object</span></td>
-<td class="description last">Arguments when load event is triggered.
+<td class="description last">Arguments when swim lane click event is triggered.
 <table class="params">
 <thead>
 <tr>
@@ -9134,7 +9134,7 @@ Triggers after the swimlane is clicked.
 <tr>
 <td class="name">action</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Current Action name</td>
+<td class="description last">Current Action name while swim lane clicked. Actions are "expand" or "collapse"</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -9154,17 +9154,17 @@ Triggers after the swimlane is clicked.
 <tr>
 <td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns modified data.</td>
+<td class="description last">Returns the swim lane group data's.</td>
 </tr>
 <tr>
 <td class="name">rowIndex</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description last">Returns the edited row index.</td>
+<td class="description last">Returns current swim lane row index.</td>
 </tr>
 <tr>
 <td class="name">target</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Returns Kanban element.</td>
+<td class="description last">Returns current target element.</td>
 </tr>
 </tbody>
 </table>
