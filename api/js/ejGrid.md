@@ -1118,7 +1118,7 @@ Gets or sets a value that indicates to groups the column based on its column for
     </script>
 {% endhighlight %}
 
-### columns.field `String`
+### columns.field `string`
 {:#members:columns-field}
 
 Gets or sets a value that indicates to display the columns in the grid mapping with column name of the dataSource.
@@ -1219,7 +1219,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### columns.foreignKeyField `String`
+### columns.foreignKeyField `string`
 {:#members:columns-foreignkeyfield}
 
 Gets or sets a value that indicates to define foreign key field name of the grid datasource.
@@ -1240,7 +1240,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### columns.foreignKeyValue `String`
+### columns.foreignKeyValue `string`
 {:#members:columns-foreignkeyvalue}
 
 Gets or sets a value that indicates to bind the field which is in foreign column datasource based on the foreignKeyField
@@ -1261,7 +1261,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.format `String`
+### columns.format `string`
 {:#members:columns-format}
 
 Gets or sets a value that indicates the format for the text applied on the column
@@ -1282,7 +1282,7 @@ $("#Grid").ejGrid({
 </script>  
 {% endhighlight %}
 
-### columns.headerTemplateID `String`
+### columns.headerTemplateID `string`
 {:#members:columns-headertemplateid}
 
 Gets or sets a value that indicates to add the template within the header element of the particular column.
@@ -1307,7 +1307,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### columns.headerText `String`
+### columns.headerText `string`
 {:#members:columns-headertext}
 
 Gets or sets a value that indicates to display the title of that particular column.
@@ -4316,7 +4316,7 @@ Gets or sets a value that indicates whether to customize the sorting behavior of
 Gets or sets a value that indicates whether to define the direction and field to sort the column.
 
 
-### sortSettings.sortedColumns.direction `String`
+### sortSettings.sortedColumns.direction `string`
 {:#members:sortsettings-sortedcolumns-direction}
 
 Gets or sets a value that indicates whether to define the direction to sort the column.
@@ -4338,7 +4338,7 @@ $("#Grid").ejGrid({
 </script>  
 {% endhighlight %}
 
-### sortSettings.sortedColumns.field `String`
+### sortSettings.sortedColumns.field `string`
 {:#members:sortsettings-sortedcolumns-field}
 
 Gets or sets a value that indicates whether to define the field name of the column to be sort
@@ -4462,7 +4462,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### stackedHeaderRows.stackedHeaderColumns.cssClass `String`
+### stackedHeaderRows.stackedHeaderColumns.cssClass `string`
 {:#members:stackedheaderrows-stackedheadercolumns-cssclass}
 
 Gets or sets a value that indicates class to the corresponding stackedHeaderColumn.
@@ -4501,7 +4501,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### stackedHeaderRows.stackedHeaderColumns.headerText `String`
+### stackedHeaderRows.stackedHeaderColumns.headerText `string`
 {:#members:stackedheaderrows-stackedheadercolumns-headertext}
 
 Gets or sets a value that indicates the header text for the particular stacked header column.
@@ -4535,7 +4535,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### stackedHeaderRows.stackedHeaderColumns.textAlign `String`
+### stackedHeaderRows.stackedHeaderColumns.textAlign `string`
 {:#members:stackedheaderrows-stackedheadercolumns-textalign}
 
 Gets or sets a value that indicates the text alignment of the corresponding headerText.
@@ -4761,7 +4761,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### summaryRows.summaryColumns.customSummaryValue `String`
+### summaryRows.summaryColumns.customSummaryValue `string`
 {:#members:summaryrows-summarycolumns-customsummaryvalue}
 
 Gets or sets a value that indicates the text displayed in the summary column as a value
@@ -4792,7 +4792,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### summaryRows.summaryColumns.dataMember `String`
+### summaryRows.summaryColumns.dataMember `string`
 {:#members:summaryrows-summarycolumns-datamember}
 
 This specifies summary column used to perform the summary calculation
@@ -4822,7 +4822,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### summaryRows.summaryColumns.displayColumn `String`
+### summaryRows.summaryColumns.displayColumn `string`
 {:#members:summaryrows-summarycolumns-displaycolumn}
 
 Gets or sets a value that indicates to define the target column at which to display the summary.
@@ -4852,7 +4852,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### summaryRows.summaryColumns.format `String`
+### summaryRows.summaryColumns.format `string`
 {:#members:summaryrows-summarycolumns-format}
 
 Gets or sets a value that indicates the format for the text applied on the column
@@ -4883,7 +4883,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### summaryRows.summaryColumns.prefix `String`
+### summaryRows.summaryColumns.prefix `string`
 {:#members:summaryrows-summarycolumns-prefix}
 
 Gets or sets a value that indicates the text displayed before the summary column value
@@ -4913,7 +4913,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### summaryRows.summaryColumns.suffix `String`
+### summaryRows.summaryColumns.suffix `string`
 {:#members:summaryrows-summarycolumns-suffix}
 
 Gets or sets a value that indicates the text displayed after the summary column value
@@ -5050,7 +5050,7 @@ $("#Grid").ejGrid({
 {% endhighlight %}
 
 
-### summaryRows.title `String`
+### summaryRows.title `string`
 {:#members:summaryrows-title}
 
 This specifies the grid to show the title for the summary rows.
@@ -5080,7 +5080,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### summaryRows.titleColumn `String`
+### summaryRows.titleColumn `string`
 {:#members:summaryrows-titleColumn}
 
 This specifies the grid to show the title of summary row in the specified column.
@@ -6079,7 +6079,7 @@ Delete a record in grid control when allowDeleting is set as true
 </tr>
 <tr>
 <td class="name">data</td>
-<td class="type"><span class="param-type">array</span></td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Pass the JSON data of record need to be delete.</td>
 </tr>
 </tbody>

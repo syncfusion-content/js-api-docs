@@ -9104,6 +9104,89 @@ Triggered initial load.
     
 {% endhighlight %}
 
+### swimlaneClick
+{:#events:swimlaneclick}
+
+Triggers before swim lane expand or collapse icon is clicked.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Kanban.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when swim lane click event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">action</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Current Action name while swim lane clicked. Actions are "expand" or "collapse"</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the kanban model.</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the swim lane group data's.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Returns current swim lane row index.</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns current target element.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+{:.example}
+
+{% highlight html %}
+
+    <div id="Kanban"></div> 
+    <script>
+    $("#Kanban").ejKanban({
+    swimlaneClick: function (args) {}
+    });
+    </script>
+    
+{% endhighlight %}
+
 ### queryCellInfo
 {:#events:querycellinfo}
 

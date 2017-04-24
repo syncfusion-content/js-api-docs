@@ -894,6 +894,23 @@ Sets the tooltip template for the column header
 
 {% endhighlight %}
 
+### columns.validationRules `Object`
+{:#members:columns-validationrules}
+
+specifies the conditions for saving data to the database while adding or editing the fields.
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="treegrid"></div>          
+<script>
+$("#treegrid").ejTreeGrid({
+  editSettings: {allowEditing: true, allowAdding: true},
+  columns:[{field:"TaskID", validationRules: { required: true, number: true }},{field:"TaskName"},{field:"StartDate"}] 
+});
+</script> 
+{% endhighlight %}
+
 ### columnDialogFields `array`
 {:#members:columndialogfields}
 

@@ -4305,6 +4305,66 @@ gantObj.expandCollapseRecord(23); // To expand collapse an item
 </script>
 {% endhighlight %}
 
+### export(action, \[serverEvent\], \[multipleExport\])
+{:#methods:export}
+
+Export the Gantt content to excel or PDF document.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">action</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Pass the controller action name corresponding to exporting</td>
+</tr>
+<tr>
+<td class="name">serverEvent</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last"><span class="optional">optional</span>ASP server event name corresponding to exporting</td>
+</tr>
+<tr>
+<td class="name">multipleExport</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last"><span class="optional">optional</span>Pass the multiple exporting value as true/false</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create gantt object.
+var ganttObj = $("#Gantt").data("ejGantt");
+// Sends an exporting request
+gridObj.export("/api/GanttExport/ExcelExport"); 
+</script>
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// Sends an exporting request
+$("#Gantt").ejGantt("export","/api/GanttExport/ExcelExport");        
+</script>
+{% endhighlight %}
+
 
 ### hideColumn(headerText)
 {:#methods:hidecolumn}

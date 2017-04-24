@@ -370,18 +370,31 @@ N> This method does not accept any arguments.
 
 {% endhighlight %}
 
-### save()
+### save(filename)
 {:#methods:save}
 
 used to save the drawn image.
 
-N> This method does not accept any arguments.
+<table>
+<tr>
+<th>Name<br/><br/></th>
+<th>Type<br/><br/></th>
+<th>Description<br/><br/></th>
+</tr>
+<tr>
+<td>Filename<br/><br/></td>
+<td>string<br/><br/></td>
+<td>The file name of the signature to be downloaded.<br/><br/></td>
+</tr>
+</table>
+
+ N>  This method accepts string as an argument and this is optional. If the argument filename is not given then the signature will be downloaded with any random name.
 
 #### Example  
 
 {% highlight javascript %}
 
-	$("#signature").ejSignature("save");
+	$("#signature").ejSignature("save","UserSignature");
 
 {% endhighlight %}
 
