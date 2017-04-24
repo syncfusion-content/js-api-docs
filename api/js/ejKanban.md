@@ -9105,7 +9105,7 @@ Triggered initial load.
 {% endhighlight %}
 
 ### swimlaneClick
-{:#events:swimlaneClick}
+{:#events:swimlaneclick}
 
 Triggers before swim lane expand or collapse icon is clicked.
 
