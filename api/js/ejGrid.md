@@ -6079,7 +6079,7 @@ Delete a record in grid control when allowDeleting is set as true
 </tr>
 <tr>
 <td class="name">data</td>
-<td class="type"><span class="param-type">array</span></td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description last">Pass the JSON data of record need to be delete.</td>
 </tr>
 </tbody>
