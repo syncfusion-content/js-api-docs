@@ -3176,7 +3176,7 @@ When set to true, displays the all-day row cells on the Schedule.
 ### showWeekend `boolean`
 {:#members:showweekend}
 
-When set to false, hids the weekend days of the Schedule.
+When set to `false`, hides the weekend days on all the Scheduler views.
 
 #### Default Value
 
