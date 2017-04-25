@@ -210,7 +210,7 @@ type</td>
 </tr>
 <tr>
 <td class="name">
-targetElement</td>
+target/toElement</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the element which accepts the droppable element.</td>
 </tr>
@@ -272,7 +272,7 @@ type</td>
 </tr>
 <tr>
 <td class="name">
-targetElement</td>
+target/toElement</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the mouse out over the element</td>
 </tr>
@@ -337,7 +337,7 @@ type</td>
 </tr>
 <tr>
 <td class="name">
-targetElement</td>
+target/toElement</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the mouse over the element</td>
 </tr>
