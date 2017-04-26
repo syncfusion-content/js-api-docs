@@ -4189,8 +4189,8 @@ Specify backgroundColor for the ranges of circular gauge
 </script>{% endhighlight %}
 
 
-### scales.ranges.text `string`
-{:#members:scales.ranges.text}
+### scales.ranges.legendText `string`
+{:#members:scales.ranges.legendtext}
 
 
 Specify text for the ranges of circular gauge
@@ -4210,7 +4210,7 @@ Specify text for the ranges of circular gauge
 </div> 
  
 <script>                  
-        $("#CoreCircularGauge").ejCircularGauge({ scales: [{showRanges:true , ranges: [{ text:"high", startValue: 10, endValue: 100,startWidth: 10,endWidth: 10,backgroundColor: "Red" }]  }]});
+        $("#CoreCircularGauge").ejCircularGauge({ scales: [{showRanges:true , ranges: [{ legendText:"high", startValue: 10, endValue: 100,startWidth: 10,endWidth: 10,backgroundColor: "Red" }]  }]});
 </script>{% endhighlight %}
 
 
@@ -6283,8 +6283,8 @@ legend:{font :{color : "green"}}
 
 
 
-### legendItemRendering
-{:#events:legenditemrendering}
+### legendItemRender
+{:#events:legenditemrender}
 
 
 
@@ -6297,11 +6297,11 @@ Fires before rendering the legend item. This event is fired for each legend item
 
 {% highlight js %}
  
-//legendItemRendering event for chart
+//legendItemRender event for chart
 
 $("#CoreCircularGauge").ejCircularGauge({
 
-    legendItemRendering: function (args) {
+    legendItemRender: function (args) {
             //Do something
     }
     
