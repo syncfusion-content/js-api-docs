@@ -1514,9 +1514,7 @@ Returns objects (data object) of all the selected items in the autocomplete text
 
 N> This method does not accept any arguments.
 
-####Returns:
-
-object
+#### Returns: object
 
 #### Example  
 
@@ -1533,9 +1531,7 @@ Returns the current selected value from the Autocomplete textbox.
 
 N> This method does not accept any arguments.
 
-####Returns:
-
-string
+#### Returns: string
 
 #### Example  
 
@@ -1552,9 +1548,7 @@ Returns the current active text value in the Autocomplete suggestion list.
 
 N> This method does not accept any arguments.
 
-####Returns:
-
-string
+#### Returns: string
 
 #### Example  
 

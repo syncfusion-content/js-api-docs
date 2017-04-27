@@ -233,7 +233,7 @@ Example
 
 Contains the list of data for generating the list items.
 
-####Default Value:
+#### Default Value:
 
 * null
 
@@ -533,8 +533,7 @@ Loads data for the listbox by default (i.e. on initialization) when it is set to
 
 N> It is used along with cascading feature. See also [cascadeTo](https://help.syncfusion.com//api/js/ejlistbox#members:cascadeto).
 
-Default Value: 
-####true
+#### Default Value: true
 
 Example
 {:.example}
@@ -756,7 +755,9 @@ Specifies the virtual scroll mode to load the list data on demand via scrolling 
 <td>This mode allows you to load the list box data while scrolling i.e. each time the scroll bar is scrolled, it will send request to the server to load the data.<br/><br/></td>
 </tr>
 </table>
+
 #### Default Value:
+
 * ej.VirtualScrollMode.Normal
 
 Example
@@ -796,8 +797,7 @@ Example
 
 Specifies the targetID for the listbox items.
 
-Default Value:
-####null
+#### Default Value: null
 
 Example
 {:.example}
@@ -1130,9 +1130,7 @@ Returns the list of checked items in the ListBox widget. It is dependent on show
 
 N> This method does not accept any arguments.
 
-####Returns:
-
-object
+#### Returns: object
 
 Example
 {:.example}
@@ -1151,9 +1149,7 @@ Returns the list of selected items in the ListBox widget.
 
 N> This method does not accept any arguments.
 
-####Returns:
-
-object
+#### Returns: object
 
 Example
 {:.example}
@@ -1184,9 +1180,7 @@ string</td><td>
 The list item text (label)</td></tr>
 </table>
 
-####Returns:
-
-number
+#### Returns: number
 
 Example
 {:.example}
@@ -1217,9 +1211,7 @@ string</td><td>
 The list item’s value</td></tr>
 </table>
 
-####Returns:
-
-number
+#### Returns: number
 
 Example
 {:.example}
@@ -1249,9 +1241,7 @@ number </td><td>
 The list item index.</td></tr>
 </table>
 
-####Returns:
-
-string
+#### Returns: string
 
 Example
 {:.example}
@@ -1281,9 +1271,7 @@ number </td><td>
 The list item index.</td></tr>
 </table>
 
-####Returns:
-
-object
+#### Returns: object
 
 Example
 {:.example}
@@ -1313,9 +1301,7 @@ string</td><td>
 The list item text.</td></tr>
 </table>
 
-####Returns:
-
-object
+#### Returns: object
 
 Example
 {:.example}
