@@ -466,6 +466,92 @@ Specifies the name of the field from the dataSource to bind with this column.
 {% endhighlight %}
 
 
+### columns.template `string`
+{:#members:columns-template}
+
+Specifies the template string of the script element to enable column template for a column.
+
+#### Default Value
+* ""
+
+#### Example
+
+{% highlight html %}      
+
+$("#treegrid").ejTreeGrid({
+    columns: [{
+         isTemplateColumn: true,
+         template: "<script type="text/x-jsrender" id="columnTemplate">
+                   <div style="display:inline-block;">
+                   <img src="../images/gantt/.png" height="40" /></div></script>"
+           }]
+});
+
+{% endhighlight %}
+
+
+### columns.templateID `string`
+{:#members:columns-templateid}
+
+Specifies the template ID of the script element to enable column template for a column.
+
+#### Default Value
+* ""
+
+#### Example
+
+{% highlight js %}      
+
+<script type="text/x-jsrender" id="columnTemplate">      
+  <div style="display:inline-block;">
+   <img src="../images/gantt/.png" height="40" />
+  </div>        
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}      
+
+$("#treegrid").ejTreeGrid({
+    columns: [{
+        isTemplateColumn: true,
+        templateID: "columnTemplate"
+    }]
+});
+
+{% endhighlight %}
+
+### columns.angularTemplate `string`
+{:#members:columns-angulartemplate}
+
+Specifies the template ID or the template string of the AngularJS script element to enable column template for a column.
+
+#### Default Value
+* ""
+
+#### Example
+
+{% highlight js %}   
+
+<script type="text/ng-template" id="ngColumnTemplate">
+    <div style="padding:5px;">
+        <img src="content/images/treegrid/{{data.FullName}}.png" />
+    </div>
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}    
+
+$("#treegrid").ejTreeGrid({
+   columns: [{
+     isTemplateColumn: true,
+     angularTemplate: "#ngColumnTemplate"  
+   }]
+});
+
+{% endhighlight %}
+
 ### columns.filterEditType `enum`
 {:#members:columns-filteredittype}
 
@@ -760,25 +846,6 @@ Specifies the text alignment for the column
 {% highlight html %}
          
         $("#treegrid").ejTreeGrid({columns: [{  textAlign: ej.TextAlign.Center},{ textAlign: ej.TextAlign.Right}]});
-
-{% endhighlight %}
-
-
-### columns.templateID `String`
-
-{:#members:columns-templateid}
-
-Specifies the template for the TreeGrid column
-
-#### Default Value
-
-* ""
-
-#### Example
-
-{% highlight html %}
-         
-     $("#treegrid").ejTreeGrid({columns: [{ field:"CustomColumn", isTemplateColumn: true, templateID: "customColumnTemplate"}]});
 
 {% endhighlight %}
 
