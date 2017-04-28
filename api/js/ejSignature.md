@@ -187,6 +187,7 @@ Allows the signature image to be saved along with its background.
 #### Default Value:  
 
 * false
+
 #### Example  
 
 {% highlight javascript %}
@@ -505,6 +506,7 @@ Triggered when the pointer is clicked or touched in the signature canvas.
 <td>returns all the event values<br/><br/></td>
 </tr>
 </table>
+
 #### Example  
 
 {% highlight javascript %}

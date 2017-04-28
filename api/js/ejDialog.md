@@ -53,7 +53,7 @@ Requires
 * module:ej.button.js
 * module:ej.draggable.js
 
-##Members
+## Members
 
 
 ### actionButtons `string[]`
@@ -404,7 +404,6 @@ Allows the current model values to be saved in local storage or browser cookies 
 N>[Local storage](http://www.w3schools.com/html/html5_webstorage.asp#) is supported only in Html5 supported browsers.If the browsers don’t have support for local storage,browser cookies will be used to maintain the state.
 
 Default Value:
-
 {:.param}
 false
 
@@ -924,9 +923,7 @@ Example
 
 Closes the dialog widget dynamically.
 
-####Returns:
-
-object
+#### Returns: object
 
 Example
 {:.example}
@@ -942,9 +939,7 @@ Example
 
 Collapses the content area when it is expanded.
 
-####Returns:
-
-object
+#### Returns: object
 
 Example
 {:.example}
@@ -976,9 +971,7 @@ Example
 
 Expands the content area when it is collapsed.
 
-####Returns:
-
-object
+#### Returns: object
 
 Example 
 {:.example}   
@@ -995,9 +988,7 @@ Example
 
 Checks whether the Dialog widget is opened or not. This methods returns Boolean value.
 
-####Returns:
-
-boolean
+#### Returns: boolean
 
 
 Example
@@ -1015,9 +1006,7 @@ Example
 
 Maximizes the Dialog widget.
 
-####Returns:
-
-object
+#### Returns: object
 
 Example
 {:.example}
@@ -1034,9 +1023,7 @@ Example
 
 Minimizes the Dialog widget.
 
-####Returns:
-
-object
+#### Returns: object
 
 Example
 {:.example}
@@ -1053,9 +1040,7 @@ Example
 
 Opens the Dialog widget.
 
-####Returns:
-
-object
+#### Returns: object
 
 Example
 {:.example}
@@ -1071,9 +1056,7 @@ Example
 
 Pins the dialog in its current position.
 
-####Returns:
-
-object
+#### Returns: object
 
 Example
 {:.example}
@@ -1089,9 +1072,7 @@ Example
 
 Refreshes the dialog content dynamically.
 
-####Returns:
-
-void
+#### Returns: void
 
 Example
 {:.example}
@@ -1107,9 +1088,7 @@ Example
 
 Restores the dialog.
 
-####Returns:
-
-object
+#### Returns: object
 
 Example
 {:.example}
@@ -1127,9 +1106,7 @@ Example
 
 Unpins the Dialog widget.
 
-####Returns:
-
-object
+#### Returns: object
 
 
 Example
@@ -1160,9 +1137,7 @@ string</td><td>
 The title for the dialog widget.</td></tr>
 </table>
 
-####Returns:
-
-object
+#### Returns: object
 
 Example
 {:.example}
@@ -1192,9 +1167,7 @@ string</td><td>
 The content for the dialog widget. It accepts both string and HTML string.</td></tr>
 </table>
 
-####Returns:
-
-object
+#### Returns: object
 
 Example
 {:.example}
@@ -1211,9 +1184,7 @@ Example
 
 Sets the focus on the Dialog widget.
 
-####Returns:
-
-object
+#### Returns: object
 
 Example
 {:.example}
@@ -1267,7 +1238,7 @@ Example
 {% endhighlight %}
 
 
-###ajaxError
+### ajaxError
 {:#events:ajaxerror}
 
 This event is triggered whenever the AJAX request fails to retrieve the dialog content.
@@ -1395,7 +1366,7 @@ Example
 {% endhighlight %}
 
 
-###beforeClose
+### beforeClose
 {:#events:beforeclose}
 
 This event is triggered before the dialog widgets get closed.
@@ -1441,7 +1412,7 @@ Example
 {% endhighlight %}
 
 
-###close 
+### close 
 {:#events:close}
 
 This event is triggered after the dialog widget is closed.
@@ -1487,7 +1458,7 @@ Example
 
 
 
-###contentLoad
+### contentLoad
 {:#events:contentload}
 
 Triggered after the dialog content is loaded in DOM.
@@ -1538,7 +1509,7 @@ Example
 {% endhighlight %}
 
 
-###create
+### create
 {:#events:create}
 
 Triggered after the dialog is created successfully
@@ -1577,7 +1548,7 @@ Example
 {% endhighlight %}
 
 
-###destroy
+### destroy
 {:#events:destroy}
 
 Triggered after the dialog widget is destroyed successfully
@@ -1616,7 +1587,7 @@ Example
 {% endhighlight %}
 
 
-###drag
+### drag
 {:#events:drag}
 
 Triggered while the dialog is dragged.
@@ -1660,7 +1631,7 @@ Example
 {% endhighlight %}
 
 
-###dragStart
+### dragStart
 {:#events:dragstart}
 
 Triggered when the user starts dragging the dialog.
@@ -1704,7 +1675,7 @@ $("#dialog").ejDialog({ dragStart: function (args) {} });
 {% endhighlight %}
 
 
-###dragStop
+### dragStop
 {:#events:dragstop}
 
 Triggered when the user stops dragging the dialog.
@@ -1747,7 +1718,7 @@ Example
 {% endhighlight %}
 
 
-###open
+### open
 {:#events:open}
 
 Triggered after the dialog is opened.
@@ -1786,7 +1757,7 @@ Example
 {% endhighlight %}
 
 
-###resize
+### resize
 {:#events:resize}
 
 Triggered while the dialog is resized.
@@ -1830,7 +1801,7 @@ Example
 {% endhighlight %}
 
 
-###resizeStart
+### resizeStart
 {:#events:resizestart}
 
 Triggered when the user starts resizing the dialog.
@@ -1874,7 +1845,7 @@ Example
 {% endhighlight %}
 
 
-###resizeStop
+### resizeStop
 {:#events:resizestop}
 
 Triggered when the user stops resizing the dialog.
@@ -1918,7 +1889,7 @@ Example
 {% endhighlight %}
 
 
-###expand
+### expand
 {:#events:expand}
 
 Triggered when the dialog content is expanded.
@@ -1963,7 +1934,7 @@ Example
 {% endhighlight %}
 
 
-###collapse
+### collapse
 {:#events:collapse}
 
 Triggered when the dialog content is collapsed.
@@ -2009,7 +1980,7 @@ $("#dialog").ejDialog({
 {% endhighlight %}
 
 
-###actionButtonClick
+### actionButtonClick
 {:#events:actionbuttonclick}
 
 Triggered when the custom action button clicked.

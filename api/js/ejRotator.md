@@ -1814,7 +1814,7 @@ The template to display the Rotator widget with customized appearance.
 
 
 
-Example
+#### Example
 {:.example}
 
 
@@ -1859,7 +1859,7 @@ The templateId enables to bind multiple customized template items in Rotator.
 
 
 
-Example
+#### Example
 {:.example}
 
 
