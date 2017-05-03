@@ -650,7 +650,7 @@ Gets or sets a value that indicates to display a column value as checkbox or str
 ### columns.showCheckbox `boolean`
 {:#members:columns-showcheckbox}
 
-Enables or disables the checkbox visibility in a column to make it as a checkbox column
+Enables or disables the checkbox visibility in a column for checkbox selection.
 
 #### Default Value
 
