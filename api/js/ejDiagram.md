@@ -13247,6 +13247,29 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 
 {% endhighlight %}
 
+### selectedItems.userHandles.name `string`
+{:#members:selecteditems-userhandles-name}
+
+Defines the name of the user handle
+
+####Default Value:
+
+* ""
+
+####Example
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
+ var userHandle = [];
+        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+        cloneHandle.name = "cloneHandle";
+        userHandle.push(cloneHandle);
+$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+
+{% endhighlight %}
+
 ### selectedItems.userHandles.backgroundColor `string`
 {:#members:selecteditems-userhandles-backgroundcolor}
 
