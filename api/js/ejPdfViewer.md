@@ -1563,7 +1563,7 @@ Returns the name of the event
 {% highlight html %}
 <script type="text/javascript">
         $(function () {
-            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', brforePrint: "beforePrint" });
+            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', beforePrint: "beforePrint" });
         });
         function beforePrint() {
             alert("Printing started successfully");
