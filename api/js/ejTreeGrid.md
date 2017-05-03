@@ -629,6 +629,24 @@ Header text of the column.
 
 {% endhighlight %}
 
+### columns.displayAsCheckbox `boolean`
+{:#members:columns-displayascheckbox}
+
+Gets or sets a value that indicates to display a column value as checkbox or string
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+         
+        $("#treegrid").ejTreeGrid({columns: [{ field: "Approved", displayAsCheckbox: true, editType: ej.TreeGrid.EditingType.Boolean}]});
+
+{% endhighlight %}
+
+
 ### columns.showCheckbox `boolean`
 {:#members:columns-showcheckbox}
 
