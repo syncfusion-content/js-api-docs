@@ -7,7 +7,7 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for HTML radialmenu control.
+# ejRadialMenu
 
 
 
