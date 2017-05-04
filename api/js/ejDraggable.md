@@ -30,14 +30,14 @@ $(element).ejDraggable()
 
 {% highlight html %}
  
-<div id="dragable"/>
+<div id="draggable"/>
 
  {% endhighlight %}
  
 {% highlight javascript %}
 <script>
-// Create Dragable
-$('#dragable').ejDraggable();   
+// Create draggable
+$('#draggable').ejDraggable();   
 </script>{% endhighlight %}
 
 
@@ -93,7 +93,7 @@ If clone is specified.
 {% highlight javascript %}
  
 //To set clone API value during initialization  
-        $("#dragable").ejDraggable({ clone: true });                           
+        $("#draggable").ejDraggable({ clone: true });                           
         
 {% endhighlight %}
 
@@ -102,7 +102,7 @@ If clone is specified.
  
 //Get or set the clone API, after initialization:
         //Gets the clone value  
-        $("#dragable").ejDraggable('option', 'clone');
+        $("#draggable").ejDraggable('option', 'clone');
                       
 {% endhighlight %}
 
@@ -151,7 +151,7 @@ Sets the offset of the dragging helper relative to the mouse cursor.
 {% highlight javascript %}
  
 //To set cursorAt API value during initialization  
-        $("#dragable").ejDraggable({ cursorAt:  { top: 1, left: -2 } });                                
+        $("#draggable").ejDraggable({ cursorAt:  { top: 1, left: -2 } });                                
        
  {% endhighlight %}
 
@@ -160,7 +160,7 @@ Sets the offset of the dragging helper relative to the mouse cursor.
  
 //Get or set the cursorAt API, after initialization:
         //Gets the cursorAt value  
-        $("#dragable").ejDraggable('option', 'cursorAt');
+        $("#draggable").ejDraggable('option', 'cursorAt');
                    
 {% endhighlight %}
 
@@ -193,7 +193,7 @@ Distance in pixels after mousedown the mouse must move before dragging should st
 {% highlight javascript %}
  
 //To set distance API value during initialization  
-        $("#dragable").ejDraggable({ distance: 1 });                            
+        $("#draggable").ejDraggable({ distance: 1 });                            
         
  {% endhighlight %}
 
@@ -202,7 +202,7 @@ Distance in pixels after mousedown the mouse must move before dragging should st
  
 //Get or set the distance API, after initialization:
         //Gets the distance value  
-        $("#dragable").ejDraggable('option', 'distance');
+        $("#draggable").ejDraggable('option', 'distance');
                    
  {% endhighlight %}
 
@@ -251,7 +251,7 @@ The drag area is used to restrict the dragging element bounds.Specify the id of 
 {% highlight javascript %}
  
 //To set dragArea API value during initialization  
-        $("#dragable").ejDraggable({ dragArea:"#container"});                         
+        $("#draggable").ejDraggable({ dragArea:"#container"});                         
         
 {% endhighlight %}
 
@@ -260,7 +260,7 @@ The drag area is used to restrict the dragging element bounds.Specify the id of 
  
 //Get or set the dragArea API, after initialization:
         //Gets the dragArea value  
-        $("#dragable").ejDraggable('option', 'dragArea');
+        $("#draggable").ejDraggable('option', 'dragArea');
                    
 {% endhighlight %}
 
@@ -309,7 +309,7 @@ If specified, restricts drag start click to the specified element(s).
 {% highlight javascript %}
  
 //To set handle API value during initialization  
-        $("#dragable").ejDraggable({ handle: null });                           
+        $("#draggable").ejDraggable({ handle: null });                           
       
   {% endhighlight %}
 
@@ -318,7 +318,7 @@ If specified, restricts drag start click to the specified element(s).
  
 //Get or set the handle API, after initialization:
         //Gets the handle value  
-        $("#dragable").ejDraggable('option', 'handle');
+        $("#draggable").ejDraggable('option', 'handle');
                      
   {% endhighlight %}
 
@@ -363,7 +363,7 @@ Used to group sets of draggable and droppable items, in addition to droppable's 
 {% highlight javascript %}
  
 //To set scope API value during initialization  
-        $("#dragable").ejDraggable({ scope: 'default' });                               
+        $("#draggable").ejDraggable({ scope: 'default' });                               
         
 {% endhighlight %}
 
@@ -372,7 +372,7 @@ Used to group sets of draggable and droppable items, in addition to droppable's 
  
 //Get or set the scope API, after initialization:
         //Gets the scope value  
-        $("#dragable").ejDraggable('option', 'scope');
+        $("#draggable").ejDraggable('option', 'scope');
                      
  {% endhighlight %}
 
@@ -411,16 +411,16 @@ destroy in the draggable.
 
 {% highlight html %}
  
-< div  id="dragable" > </div > 
+< div  id="draggable" > </div > 
  
 {% endhighlight %}
 
 
 {% highlight javascript %}
 <script>
-// Create dragableObj
-var dragableObj  = $("#dragable").data("ejDraggable");
-dragableObj.destroy(); 
+// Create draggableObj
+var draggableObj  = $("#draggable").data("ejDraggable");
+draggableObj.destroy(); 
 </script>
 
 {% endhighlight %}
@@ -490,7 +490,7 @@ type</td>
 {% highlight javascript %}
  
 //destroy event for Draggable
-$("#dragable").ejDraggable({ 
+$("#draggable").ejDraggable({ 
         destroy: function(args) {}
 });      
 
@@ -568,7 +568,7 @@ target</td>
 {% highlight javascript %}
  
 //drag event for Draggable
-$("#dragable").ejDraggable({ 
+$("#draggable").ejDraggable({ 
         drag: function(args) {}
 });      
 {% endhighlight %}
@@ -644,7 +644,7 @@ target</td>
 {% highlight javascript %}
  
 //dragStart event for Draggable
-$("#dragable").ejDraggable({ 
+$("#draggable").ejDraggable({ 
         dragStart: function(args) {}
 });      
 
@@ -718,7 +718,7 @@ target</td>
 {% highlight javascript %}
  
 //dragStop event for Draggable
-$("#dragable").ejDraggable({ 
+$("#draggable").ejDraggable({ 
         dragStop: function(args) {}
 });     
  {% endhighlight %}
@@ -772,7 +772,7 @@ sender</td>
 {% highlight javascript %}
  
 //helper event for Draggable
-$("#dragable").ejDraggable({ 
+$("#draggable").ejDraggable({ 
         helper: function () {
                 return $('<pre>').html("draggable").appendTo(document.body);}
 });   

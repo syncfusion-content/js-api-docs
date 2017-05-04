@@ -28,15 +28,15 @@ $(element).ejDroppable()
 
 {% highlight html %}
  
-<div  id="dropable" />
+<div  id="droppable" />
  
 {% endhighlight %}
 
 {% highlight javascript %}
 
 <script>
-// Create Dragable
-$('#dropable').ejDroppable();   
+// Create Draggable
+$('#droppable').ejDroppable();   
 </script>
 
 {% endhighlight %}
@@ -161,9 +161,9 @@ destroy in the Droppable.
 {% highlight javascript %}
 
 <script>
-// Create droppabaleObj
-var droppabaleObj  = $("#droppable").data("ejDroppable");
-droppabaleObj.destroy(); 
+// Create droppableObj
+var droppableObj  = $("#droppable").data("ejDroppable");
+droppableObj.destroy(); 
 </script>
 
 {% endhighlight %}

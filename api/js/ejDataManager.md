@@ -97,7 +97,7 @@ Custom headers can be set using pre-request callback beforeSend as follows. The 
 <tr>
 <td class="name">settings</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">A set of key/value pairs that configure the Ajax request.</td>
+<td class="description last">A set of key/value pairs that configure the AJAX request.</td>
 </tr>
 </tbody>
 </table>
@@ -162,7 +162,7 @@ A function to be called if the request succeeds.
 <tr>
 <td class="name">query</td>
 <td class="type"><span class="param-type">ej.Query</span></td>
-<td class="description last">A set of key/value pairs that configure the Ajax request.</td>
+<td class="description last">A set of key/value pairs that configure the AJAX request.</td>
 </tr>
 <tr>
 <td class="name">xhr</td>
@@ -235,7 +235,7 @@ A function to be called if the request succeeds.
         var query = ej.Query()
             .sortBy("ItemID", "descending", false)
                 .select("ItemID", "ItemName", "ItemType")
-        var updateData = { ItemID: 14, ItemName: "Graphes Juice", ItemType: "Veg" };
+        var updateData = { ItemID: 14, ItemName: "Grapes Juice", ItemType: "Veg" };
         dataManager.update("ItemID", updateData);
         // executing query
         var dataSource = dataManager.executeQuery(query).done(function (args) {
@@ -274,7 +274,7 @@ A function to be called if the request fails.
 <tr>
 <td class="name">query</td>
 <td class="type"><span class="param-type">ej.Query</span></td>
-<td class="description last">A set of key/value pairs that configure the Ajax request.</td>
+<td class="description last">A set of key/value pairs that configure the AJAX request.</td>
 </tr>
 <tr>
 <td class="name">error</td>
@@ -312,7 +312,7 @@ A function to be called if the request fails.
         var query = ej.Query()
             .sortBy("ItemID", "descending", false)
                 .select("ItemID", "ItemName", "ItemType")
-        var updateData = { ItemID: 14, ItemName: "Graphes Juice", ItemType: "Veg" };
+        var updateData = { ItemID: 14, ItemName: "Grapes Juice", ItemType: "Veg" };
         dataManager.update("ItemID", updateData);
         // executing query
         var dataSource = dataManager.executeQuery(query).done(function (args) {
@@ -361,7 +361,7 @@ If the request is success, arguments list will be as below.
 <tr>
 <td class="name">query</td>
 <td class="type"><span class="param-type">ej.Query</span></td>
-<td class="description last">A set of key/value pairs that configure the Ajax request.</td>
+<td class="description last">A set of key/value pairs that configure the AJAX request.</td>
 </tr>
 <tr>
 <td class="name">xhr</td>
@@ -420,7 +420,7 @@ If the request is fail, the argument list will be as below.
 <tr>
 <td class="name">query</td>
 <td class="type"><span class="param-type">ej.Query</span></td>
-<td class="description last">A set of key/value pairs that configure the Ajax request.</td>
+<td class="description last">A set of key/value pairs that configure the AJAX request.</td>
 </tr>
 <tr>
 <td class="name">error</td>
@@ -458,7 +458,7 @@ If the request is fail, the argument list will be as below.
         var query = ej.Query()
             .sortBy("ItemID", "descending", false)
                 .select("ItemID", "ItemName", "ItemType")
-        var updateData = { ItemID: 14, ItemName: "Graphes Juice", ItemType: "Veg" };
+        var updateData = { ItemID: 14, ItemName: "Grapes Juice", ItemType: "Veg" };
         dataManager.update("ItemID", updateData);
         // executing query
         var dataSource = dataManager.executeQuery(query).always(function (args) {
