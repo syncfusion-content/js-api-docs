@@ -30,7 +30,7 @@ $(element).ejDropDownList()
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />  
+<input type="text" id="dropdown" />  
  <div id="carsList">
    <ul>
       <li>Audi A4</li>
@@ -41,11 +41,11 @@ $(element).ejDropDownList()
    </ul>
  </div><script>
 // Creates the DropDownList
-$('#drpdwn').ejDropDownList({targetID: "carsList"});    
+$('#dropdown').ejDropDownList({targetID: "carsList"});    
 </script>{% endhighlight %}
 {% highlight html %}
 // Another way to render the DropDownList control.
-  <select name="selectIndex" id="drpdwn">
+  <select name="selectIndex" id="dropdown">
        <option value="Art">Art</option>
        <option value="Architecture">Architecture</option>
        <option value="Biographies">Biographies</option>
@@ -60,7 +60,7 @@ $('#drpdwn').ejDropDownList({targetID: "carsList"});
        <option value="Language">Language</option>
    </select><script>
 // Creates the DropDownList
-$('#drpdwn').ejDropDownList();  
+$('#dropdown').ejDropDownList();  
 </script> 
 {% endhighlight %}
 
@@ -184,7 +184,7 @@ Sets the case sensitivity of the search operation. It supports both enableFilter
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" /><div id="carsList">
+    <input type="text" id="dropdown" /><div id="carsList">
     <ul>
         <li>Audi A4</li>
         <li>Audi A5</li>
@@ -195,7 +195,7 @@ Sets the case sensitivity of the search operation. It supports both enableFilter
     </div>
     <script>
         // Initializes the DropDownList with the caseSensitiveSearch specified.
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
         { 
            targetID: "carsList", 
            enableFilterSearch : true, 
@@ -223,7 +223,7 @@ You can customize the appearance of the dropdown by using the cssClass property.
     <head>
         <link href="http://cdn.syncfusion.com/{{ site.releaseversion }}/js/web/flat-saffron/ej.web.all.min.css" rel="stylesheet" /> 
     </head>
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -237,7 +237,7 @@ You can customize the appearance of the dropdown by using the cssClass property.
     <script>
 
         //Initializes the DropDownList with the cssClass value specified.
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
         { 
             targetID: "carsList", 
             cssClass: "flat-saffron"
@@ -260,13 +260,13 @@ This property is used to serve data from the data services based on the query pr
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
 
     <script>
         // DataManager creation.
         var dataManager = ej.DataManager("http://mvc.syncfusion.com/Services/Northwnd.svc/Customers");
 
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             dataSource: dataManager,
             fields: { text: "CustomerID" }
@@ -288,7 +288,7 @@ Sets the separator when the multiSelectMode with delimiter option or checkbox is
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
 
     <script>
        window.countries = [
@@ -301,7 +301,7 @@ Sets the separator when the multiSelectMode with delimiter option or checkbox is
 
         //Sets the delimiterChar value during initialization.
 
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
         { 
            delimiterChar: ";", 
            dataSource: window.countries, 
@@ -325,7 +325,7 @@ The enabled Animation property uses the easeOutQuad animation to SlideDown and S
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -338,7 +338,7 @@ The enabled Animation property uses the easeOutQuad animation to SlideDown and S
     </div>
     <script>
         // Initializes the enableAnimation with the value specified.
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
         { 
              targetID: "carsList", 
              enableAnimation: true 
@@ -360,7 +360,7 @@ This property is used to indicate whether the DropDownList control responds to t
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -374,7 +374,7 @@ This property is used to indicate whether the DropDownList control responds to t
 
     <script>
         // Initializes the DropDownList with the enabled value specified.
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
         { 
              targetID: "carsList", 
              enabled: false 
@@ -396,7 +396,7 @@ Specifies to perform incremental search for the selection of items from the Drop
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" /> 
+    <input type="text" id="dropdown" /> 
     enableFilterSearch 
     <div id="carsList">
     <ul>
@@ -409,7 +409,7 @@ Specifies to perform incremental search for the selection of items from the Drop
     </div>enableFilterSearch 
     <script>          
         // Initializes the enableIncrementalSearch with the value specified.
-        $("#drpdwn").ejDropDownList({targetID: "carsList",enableIncrementalSearch: true });
+        $("#dropdown").ejDropDownList({targetID: "carsList",enableIncrementalSearch: true });
     </script>
     
 {% endhighlight %}
@@ -427,7 +427,7 @@ This property selects the item in the DropDownList when the item is entered in t
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -440,7 +440,7 @@ This property selects the item in the DropDownList when the item is entered in t
     </div>
     <script>
         // Initializes the enableFilterSearch with the value specified.
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
         { 
              targetID: "carsList", 
              enableFilterSearch: true 
@@ -463,7 +463,7 @@ Saves the current model value to the browser cookies for state maintenance. Whil
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -478,7 +478,7 @@ Saves the current model value to the browser cookies for state maintenance. Whil
     <script>
 
         // Initializes the DropDownList with the enablePersistence value specified.
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
         { 
             targetID: "carsList", 
             enablePersistence: true 
@@ -500,7 +500,7 @@ This enables the resize handler to resize the popup to any size.
 
 {% highlight html %}
 
-    <select name="selectIndex" id="drpdwn">
+    <select name="selectIndex" id="dropdown">
         <option value="Art">Art</option>
         <option value="Architecture">Architecture</option>
         <option value="Biographies">Biographies</option>
@@ -516,7 +516,7 @@ This enables the resize handler to resize the popup to any size.
     </select>
     <script>
         // Creates DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
             enablePopupResize: true 
         });
@@ -537,7 +537,7 @@ Sets the DropDownList textbox direction from right to left align.
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
     <div id="carsList">
         <ul>
             <li>Audi A4</li>
@@ -549,7 +549,7 @@ Sets the DropDownList textbox direction from right to left align.
     </div>
     <script>
         // Initializes the DropDownList with the enableRTL value specified.
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
         { 
             targetID: "carsList", 
             enableRTL: true 
@@ -572,7 +572,7 @@ This property is used to sort the Items in the DropDownList. By default, it sort
 
 {% highlight html %}
  
-    <input id="drpdwn" type="text" /><div id="list">
+    <input id="dropdown" type="text" /><div id="list">
       <ul>
             <li id="Art">Art</li>
             <li id="Architecture">Architecture</li>
@@ -590,7 +590,7 @@ This property is used to sort the Items in the DropDownList. By default, it sort
     </div>
     <script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
             targetID: "list", 
             text: "Computer IT", 
@@ -615,7 +615,7 @@ Specifies the mapping fields for the data items of the DropDownList.
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" /><script>
+    <input type="text" id="dropdown" /><script>
         window.countries = [
            { text: "Algeria", flag: "flag-dz" }, 
            { text: "Argentina", flag: "flag-ar" },
@@ -624,7 +624,7 @@ Specifies the mapping fields for the data items of the DropDownList.
            { text: "Bangladesh", flag: "flag-bd" }
         ];
         //Sets fields with API value during initialization.  
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
         { 
              dataSource: window.countries, 
              fields: { text: "text", value: "flag" } 
@@ -722,7 +722,7 @@ startsWith</td>
 
 {% highlight html %}
  
-    <input id="drpdwn" type="text" /><div id="list">
+    <input id="dropdown" type="text" /><div id="list">
       <ul>
         <li id="Art">Art</li>
         <li id="Architecture">Architecture</li>
@@ -739,7 +739,7 @@ startsWith</td>
       </ul>
     </div><script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
              targetID: "list", 
              text: "Computer IT", 
@@ -756,7 +756,7 @@ startsWith</td>
 
 {% highlight html %}
  
-    <input id="drpdwn" type="text" /><div id="list">
+    <input id="dropdown" type="text" /><div id="list">
       <ul>
         <li id="Art">Art</li>
         <li id="Architecture">Architecture</li>
@@ -773,7 +773,7 @@ startsWith</td>
       </ul>
     </div><script>
         // Creates DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
              targetID: "list", 
              text: "Computer IT", 
@@ -798,7 +798,7 @@ Used to create visualized header for dropdown items
 {% highlight html %}
    
     // Sets the headerTemplate API value during initialization  .   
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
     <script>
         window.countries = [
              { text: "Argentina", flag: "flag-ar" },
@@ -807,7 +807,7 @@ Used to create visualized header for dropdown items
              { text: "Bangladesh", flag: "flag-bd" },
              { text: "Canada", flag: "flag-ca" }
         ];
-        $("#drpdwn").ejDropDownList( 
+        $("#dropdown").ejDropDownList( 
         {
             dataSource: window.countries, 
             template: '<div class="flag ${flag}"> </div>' + '<div class="txt"> ${text} </div>', width: "200px"
@@ -863,7 +863,7 @@ Defines the height of the DropDownList textbox.
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" /><div id="carsList">
+    <input type="text" id="dropdown" /><div id="carsList">
     <ul>
         <li>Audi A4</li>
         <li>Audi A5</li>
@@ -874,7 +874,7 @@ Defines the height of the DropDownList textbox.
     </div>
     <script>
         //Initializes the DropDownList height property with the value specified.
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
         { 
             targetID: "carsList", 
             height: 100 
@@ -896,7 +896,7 @@ It sets the given HTML attributes for the DropDownList control such as ID, name,
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
     <div id="carsList">
         <ul>
             <li>Audi A4</li>
@@ -909,7 +909,7 @@ It sets the given HTML attributes for the DropDownList control such as ID, name,
 
     <script>
         //Initializes the DropDownList height property with the value specified.
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
         { 
              targetID: "carsList", 
              htmlAttributes : { disabled: "disabled"}
@@ -933,7 +933,7 @@ Data can be fetched in the DropDownList control by using the DataSource, specify
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
     <script>
 
         window.countries = [
@@ -944,7 +944,7 @@ Data can be fetched in the DropDownList control by using the DataSource, specify
              { text: "Canada", flag: "flag-ca" }
         ];
 
-        $("#drpdwn").ejDropDownList( 
+        $("#dropdown").ejDropDownList( 
         {
             dataSource: window.countries, 
             itemsCount : 2
@@ -997,14 +997,14 @@ Defines the maximum height of the suggestion box. This property restricts the ma
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
     <script>
         var dm = ej.DataManager({ url:   "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
            dataSource: dm, 
            query: query, 
@@ -1031,7 +1031,7 @@ Defines the minimum height of the suggestion box. This property restricts the mi
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
     <script>
 
         var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
@@ -1039,7 +1039,7 @@ Defines the minimum height of the suggestion box. This property restricts the mi
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
            dataSource: dm, 
            query: query, 
@@ -1066,7 +1066,7 @@ Defines the maximum width of the suggestion box. This property restricts the max
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
     <script>
 
         var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
@@ -1074,7 +1074,7 @@ Defines the maximum width of the suggestion box. This property restricts the max
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
             dataSource: dm, 
             query: query, 
@@ -1102,7 +1102,7 @@ Defines the minimum height of the suggestion box. This property restricts the mi
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
     <script>
 
         var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
@@ -1110,7 +1110,7 @@ Defines the minimum height of the suggestion box. This property restricts the mi
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
             dataSource: dm, 
             query: query, 
@@ -1170,7 +1170,7 @@ visualMode</td>
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
     <div id="carsList">
         <ul>
             <li>Audi A4</li>
@@ -1182,7 +1182,7 @@ visualMode</td>
     </div>
     <script>
         // Creates the DropDownList.        
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
         { 
              targetID: "carsList",  
              multiSelectMode: ej.MultiSelectMode.Delimiter 
@@ -1195,7 +1195,7 @@ visualMode</td>
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -1209,7 +1209,7 @@ visualMode</td>
 
     <script>
         // Creates the DropDownList.
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
         { 
            targetID: "carsList",  
            multiSelectMode: ej.MultiSelectMode.VisualMode 
@@ -1232,7 +1232,7 @@ Defines the height of the suggestion popup box in the DropDownList control.
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
 
     <script>
 
@@ -1241,7 +1241,7 @@ Defines the height of the suggestion popup box in the DropDownList control.
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
             dataSource: dm, 
             query: query, 
@@ -1267,7 +1267,7 @@ Defines the width of the suggestion popup box in the DropDownList control.
 
 {% highlight html %}
  
-   <input type="text" id="drpdwn" />
+   <input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -1281,7 +1281,7 @@ Defines the width of the suggestion popup box in the DropDownList control.
 
     <script>
         //Initializes the DropDownList popupWidth property with the value specified.
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
         { 
            targetID: "carsList", 
            popupWidth: 200 
@@ -1304,7 +1304,7 @@ Specifies the query to retrieve the data from the DataSource.
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
 
     <script>
 
@@ -1313,7 +1313,7 @@ Specifies the query to retrieve the data from the DataSource.
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
            dataSource: dm, 
            query: query, 
@@ -1338,7 +1338,7 @@ Specifies that the DropDownList textbox values should be read-only.
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -1352,7 +1352,7 @@ Specifies that the DropDownList textbox values should be read-only.
 
     <script>
         // Initializes the DropDownList with the readOnly value specified.
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
         { 
            targetID: "carsList", 
            text : "Audi A5",
@@ -1377,7 +1377,7 @@ Specifies an item to be selected in the DropDownList.
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -1391,7 +1391,7 @@ Specifies an item to be selected in the DropDownList.
 
     <script>
         // Sets the selectedItems API value during initialization.    
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
         { 
             targetID: "carsList",            
             selectedIndex: 1
@@ -1414,7 +1414,7 @@ Specifies the selectedItems for the DropDownList.
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -1428,7 +1428,7 @@ Specifies the selectedItems for the DropDownList.
 
     <script>
         // Sets the selectedItems API value during initialization.    
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
         { 
             targetID: "carsList", 
             showCheckbox: true, 
@@ -1451,7 +1451,7 @@ Selects multiple items in the DropDownList with the help of the checkbox control
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -1465,7 +1465,7 @@ Selects multiple items in the DropDownList with the help of the checkbox control
 
     <script>
         // Initializes the DropDownList with the showCheckbox value specified.
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
         { 
            targetID: "carsList", 
            showCheckbox: true 
@@ -1488,7 +1488,7 @@ DropDownList control is displayed with the popup seen.
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -1500,7 +1500,7 @@ DropDownList control is displayed with the popup seen.
 
     <script>
         // Initializes the DropDownList with the showPopupOnLoad value specified.
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
         { 
            targetID: "carsList", 
            showPopupOnLoad: true 
@@ -1523,7 +1523,7 @@ DropDownList textbox displayed with the rounded corner style.
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -1537,7 +1537,7 @@ DropDownList textbox displayed with the rounded corner style.
 
     <script>
         // Initializes the DropDownList with the showRoundedCorner value specified.
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
         { 
            targetID: "carsList", 
            showRoundedCorner: true 
@@ -1581,7 +1581,7 @@ When the enableSorting property value is set to true, this property helps to sor
 
 {% highlight html %}
  
-    <input id="drpdwn" type="text" /><div id="list">
+    <input id="dropdown" type="text" /><div id="list">
       <ul>
         <li id="Art">Art</li>
         <li id="Architecture">Architecture</li>
@@ -1599,7 +1599,7 @@ When the enableSorting property value is set to true, this property helps to sor
     </div>
     <script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
             targetID: "list", 
             text: "Computer IT", 
@@ -1624,7 +1624,7 @@ Specifies the targetID for the DropDownList’s items.
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" /><div id="carsList">
+    <input type="text" id="dropdown" /><div id="carsList">
         <ul>
             <li>Audi A4</li>
             <li>Audi A5</li>
@@ -1635,7 +1635,7 @@ Specifies the targetID for the DropDownList’s items.
     </div>
     <script>
         // Initializes the DropDownList with the targetID value specified.
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
         { 
           targetID: "carsList"
         });
@@ -1658,7 +1658,7 @@ By default, you can add any text or image to the DropDownList item. To customize
 {% highlight html %}
       
     // Sets the template API value during initialization  .   
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
     <script>
         window.countries = [
              { text: "Argentina", flag: "flag-ar" },
@@ -1667,7 +1667,7 @@ By default, you can add any text or image to the DropDownList item. To customize
              { text: "Bangladesh", flag: "flag-bd" },
              { text: "Canada", flag: "flag-ca" }
         ];
-        $("#drpdwn").ejDropDownList( 
+        $("#dropdown").ejDropDownList( 
         {
             dataSource: window.countries, 
             template: '<div class="flag ${flag}"> </div>' + '<div class="txt"> ${text} </div>', width: "200px"
@@ -1707,7 +1707,7 @@ For the single selection mode, the selected item's text will be returned in its 
 
 {% highlight html %}
  
-  <input type="text" id="drpdwn" />
+  <input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -1720,7 +1720,7 @@ For the single selection mode, the selected item's text will be returned in its 
     </div>
     <script>
         // Initializes the DropDownList with the text specified.
-        var DropDownListObj = $('#drpdwn').ejDropDownList(
+        var DropDownListObj = $('#dropdown').ejDropDownList(
                               {
                                   targetID: "carsList",
                                   text : "Audi A7"
@@ -1746,7 +1746,7 @@ Sets the jQuery validation error message in the DropDownList
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" name="drpdwn" />
+    <input type="text" id="dropdown" name="dropdown" />
     <script>
 
         var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
@@ -1755,7 +1755,7 @@ Sets the jQuery validation error message in the DropDownList
 
         // Creates DropDownList.
 
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             dataSource: dm, 
             query: query, 
@@ -1786,7 +1786,7 @@ Sets the jQuery validation rules in the Dropdownlist.
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" name="drpdwn" />
+    <input type="text" id="dropdown" name="dropdown" />
 
     <script>
 
@@ -1795,7 +1795,7 @@ Sets the jQuery validation rules in the Dropdownlist.
         var query = ej.Query().select("ShipName", "ShipCountry");
         // Creates DropDownList.
 
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             dataSource: dm, 
             query: query, 
@@ -1826,7 +1826,7 @@ For the single selection mode, the selected item's value will be returned in its
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -1840,7 +1840,7 @@ For the single selection mode, the selected item's value will be returned in its
 
     <script>
         //Initializes the DropDownList value property with the value specified.
-        var DropDownListObj = $('#drpdwn').ejDropDownList(
+        var DropDownListObj = $('#dropdown').ejDropDownList(
                               {
                                   targetID: "carsList",
                                   value: "Audi A7"
@@ -1865,7 +1865,7 @@ Specifies a short hint that describes the expected value of the DropDownList con
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
     <div id="carsList">
         <ul>
             <li>Audi A4</li>
@@ -1878,7 +1878,7 @@ Specifies a short hint that describes the expected value of the DropDownList con
 
     <script>
        //Initializes the DropDownList with the watermarkText value specified.
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
        { 
            targetID: "carsList", 
            watermarkText: 'Enter text' 
@@ -1900,7 +1900,7 @@ Defines the width of the DropDownList textbox.
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -1914,7 +1914,7 @@ Defines the width of the DropDownList textbox.
 
     <script>
       //Initializes the DropDownList width property with the width value specified.
-        $("#drpdwn").ejDropDownList(
+        $("#dropdown").ejDropDownList(
         {
            targetID: "carsList",
            width: 250 
@@ -1964,7 +1964,7 @@ continuous</td>
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
     <script>
 
         var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
@@ -1972,7 +1972,7 @@ continuous</td>
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
             dataSource: dm, 
             query: query, 
@@ -1990,13 +1990,13 @@ continuous</td>
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
     <script>
         var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
         // Creates DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
             dataSource: dm, 
             query: query, 
@@ -2015,7 +2015,7 @@ continuous</td>
 ### addItem(data)
 {:#methods:additem}
 
-Adding a single item or an array of items into the DropDownList allows you to specify all the field attributes such as value, template, image URL, and HTML attributes for those items. 
+Adding a single item or an array of items into the DropDownList allows you to specify all the field attributes such as value, template, image URL, and HTML attributes for those items.Grouping and sorting will not be supported when we add items through this method. 
 
 <table class="params">
 <thead>
@@ -2039,7 +2039,7 @@ Adding a single item or an array of items into the DropDownList allows you to sp
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
 
     <script>
         window.countries = [
@@ -2051,14 +2051,14 @@ Adding a single item or an array of items into the DropDownList allows you to sp
         ];
 
         // Creates the DropDownList
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
              dataSource: window.countries, 
              field: { text: "text"}, 
              value: "Algeria" 
         });
 
-        $('#drpdwn').ejDropDownList("addItem", { text :"India"});
+        $('#dropdown').ejDropDownList("addItem", { text :"India"});
 
     </script>
 {% endhighlight %}
@@ -2068,7 +2068,7 @@ Adding a single item or an array of items into the DropDownList allows you to sp
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <script>
         window.countries = [
@@ -2080,7 +2080,7 @@ Adding a single item or an array of items into the DropDownList allows you to sp
         ];
 
         // Creates the DropDownList
-        var dropdownobj = $('#drpdwn').ejDropDownList(
+        var dropdownobj = $('#dropdown').ejDropDownList(
         { 
            dataSource: window.countries, 
            field: { text: "text"}, 
@@ -2110,7 +2110,7 @@ This method is used to select all the items in the DropDownList.
 {% highlight html %}
  
 
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -2125,7 +2125,7 @@ This method is used to select all the items in the DropDownList.
     <script>
 
         // Creates the DropDownList.
-        var DropDownListObj = $('#drpdwn').ejDropDownList(
+        var DropDownListObj = $('#dropdown').ejDropDownList(
         { 
             targetID: "carsList", 
             value: "Audi A5", 
@@ -2141,7 +2141,7 @@ This method is used to select all the items in the DropDownList.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -2155,14 +2155,14 @@ This method is used to select all the items in the DropDownList.
 
     <script>
         // Creates DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
             targetID: "carsList", 
             value: "Audi A5", 
             showCheckbox: true 
         }); 
 
-        $('#drpdwn').ejDropDownList("checkAll");
+        $('#dropdown').ejDropDownList("checkAll");
 
     </script>
 {% endhighlight %}
@@ -2176,7 +2176,7 @@ Clears the text in the DropDownList textbox.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -2190,7 +2190,7 @@ Clears the text in the DropDownList textbox.
 
     <script>
         // Creates DropDownList.
-        var DropDownListObj = $('#drpdwn').ejDropDownList(
+        var DropDownListObj = $('#dropdown').ejDropDownList(
                              { 
                                 targetID: "carsList", 
                                 value: "Audi A5" 
@@ -2203,7 +2203,7 @@ Clears the text in the DropDownList textbox.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -2217,13 +2217,13 @@ Clears the text in the DropDownList textbox.
 
     <script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
             targetID: "carsList", 
             value: "Audi A5" 
         });
 
-        $('#drpdwn').ejDropDownList("clearText");
+        $('#dropdown').ejDropDownList("clearText");
 
     </script>
 {% endhighlight %}
@@ -2237,7 +2237,7 @@ Destroys the DropDownList widget.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -2251,7 +2251,7 @@ Destroys the DropDownList widget.
 
     <script>
         // Creates the DropDownList.
-        var DropDownListObj = $('#drpdwn').ejDropDownList(
+        var DropDownListObj = $('#dropdown').ejDropDownList(
                               { 
                                   targetID: "carsList", 
                                   value: "Audi A5"                   
@@ -2265,7 +2265,7 @@ Destroys the DropDownList widget.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -2280,13 +2280,13 @@ Destroys the DropDownList widget.
     <script>
         // Creates the DropDownList.
 
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
              targetID: "carsList", 
              value: "Audi A5" 
         });
 
-        $('#drpdwn').ejDropDownList("destroy");
+        $('#dropdown').ejDropDownList("destroy");
 
     </script>
 {% endhighlight %}
@@ -2300,7 +2300,7 @@ This property is used to disable the DropDownList widget.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -2315,7 +2315,7 @@ This property is used to disable the DropDownList widget.
     <script>
         // Creates the DropDownList
 
-        var DropDownListObj = $('#drpdwn').ejDropDownList(
+        var DropDownListObj = $('#dropdown').ejDropDownList(
                               { 
                                   targetID: "carsList", 
                                   value: "Audi A5"                                     
@@ -2329,7 +2329,7 @@ This property is used to disable the DropDownList widget.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -2343,13 +2343,13 @@ This property is used to disable the DropDownList widget.
 
     <script>
         // Creates DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
             targetID: "carsList", 
             value: "Audi A5" 
         });
 
-        $('#drpdwn').ejDropDownList("disable");
+        $('#dropdown').ejDropDownList("disable");
 
     </script>
 {% endhighlight %}
@@ -2382,7 +2382,7 @@ This property disables the set of items in the DropDownList.
 {% highlight html %}
  
     
-<input type="text" id="drpdwn"/>
+<input type="text" id="dropdown"/>
 
     <ul id="carsList">
         <li>Audi A4</li>
@@ -2400,13 +2400,13 @@ This property disables the set of items in the DropDownList.
     <script>
         // Creates the DropDownList.
 
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
             targetID: "carsList",
             multiSelectMode: "delimiter"
         });
 
-        var DropDownListObj = $("#drpdwn").data("ejDropDownList");
+        var DropDownListObj = $("#dropdown").data("ejDropDownList");
 
         DropDownListObj.disableItemsByIndices("3,5,7");
 
@@ -2416,7 +2416,7 @@ This property disables the set of items in the DropDownList.
 
 {% highlight html %}
  
-  <input type="text" id="drpdwn" />
+  <input type="text" id="dropdown" />
 
     <ul id="carsList">
         <li>Audi A4</li>
@@ -2433,13 +2433,13 @@ This property disables the set of items in the DropDownList.
 
     <script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
             targetID: "carsList",
             multiSelectMode: "delimiter" 
         });
 
-        $('#drpdwn').ejDropDownList("disableItemsByIndices", "3,5,7");
+        $('#dropdown').ejDropDownList("disableItemsByIndices", "3,5,7");
 
     </script>
 {% endhighlight %}
@@ -2453,7 +2453,7 @@ This property enables the DropDownList control.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -2467,7 +2467,7 @@ This property enables the DropDownList control.
 
     <script>
         // Creates the DropDownList.
-        var DropDownListObj = $('#drpdwn').ejDropDownList(
+        var DropDownListObj = $('#dropdown').ejDropDownList(
                               {
                                   targetID: "carsList", 
                                   value: "Audi A5",
@@ -2482,7 +2482,7 @@ This property enables the DropDownList control.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -2496,14 +2496,14 @@ This property enables the DropDownList control.
 
     <script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
              targetID: "carsList", 
              value: "Audi A5", 
              enable: false 
         });
 
-        $('#drpdwn').ejDropDownList("enable");
+        $('#dropdown').ejDropDownList("enable");
 
     </script>
 {% endhighlight %}
@@ -2535,7 +2535,7 @@ Enables an Item or set of Items that are disabled in the DropDownList
 
 {% highlight html %}
  
-   <input type="text" id="drpdwn"/>
+   <input type="text" id="dropdown"/>
 
     <ul id="carsList">
         <li>Audi A4</li>
@@ -2553,13 +2553,13 @@ Enables an Item or set of Items that are disabled in the DropDownList
     <script>
         // Creates the DropDownList.
 
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
             targetID: "carsList", 
             multiSelectMode: "delimiter"
          });
 
-        var DropDownListObj = $("#drpdwn").data("ejDropDownList");
+        var DropDownListObj = $("#dropdown").data("ejDropDownList");
 
         DropDownListObj.disableItemsByIndices("3,5,7");
 
@@ -2571,7 +2571,7 @@ Enables an Item or set of Items that are disabled in the DropDownList
 
 {% highlight html %}
  
-  <input type="text" id="drpdwn" />
+  <input type="text" id="dropdown" />
     <ul id="carsList">
         <li>Audi A4</li>
         <li>Audi A5</li>
@@ -2587,15 +2587,15 @@ Enables an Item or set of Items that are disabled in the DropDownList
 
     <script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
              targetID: "carsList", 
              multiSelectMode: "delimiter"
              
         });
 
-        $('#drpdwn').ejDropDownList("disableItemsByIndices", "3,5,7");
-        $('#drpdwn').ejDropDownList("enableItemsByIndices", "3,7");
+        $('#dropdown').ejDropDownList("disableItemsByIndices", "3,5,7");
+        $('#dropdown').ejDropDownList("enableItemsByIndices", "3,7");
 
     </script>
 {% endhighlight %}
@@ -2632,7 +2632,7 @@ This method will return the whole object corresponds to given value from datasou
 #### Example
 
 {% highlight html %}
- <input type="text" id="drpdwn" />
+ <input type="text" id="dropdown" />
 
     <script>
 
@@ -2641,14 +2641,14 @@ This method will return the whole object corresponds to given value from datasou
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             dataSource: dm, 
             query: query, 
             fields: { text: "ShipName", value: "ShipCountry" }, 
             itemsCount: 20
         });
-        var DropDownListObj = $("#drpdwn").data("ejDropDownList");
+        var DropDownListObj = $("#dropdown").data("ejDropDownList");
         console.log("Target CompanyName - "+ DropDownListObj.getItemDataByValue("Aria Cruz")[0].CompanyName);
 
     </script>
@@ -2657,7 +2657,7 @@ This method will return the whole object corresponds to given value from datasou
 {% endhighlight %}
 
 {% highlight html %}
- <input type="text" id="drpdwn" />
+ <input type="text" id="dropdown" />
 
     <script>
 
@@ -2666,14 +2666,14 @@ This method will return the whole object corresponds to given value from datasou
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             dataSource: dm, 
             query: query, 
             fields: { text: "ShipName", value: "ShipCountry" }, 
             itemsCount: 20
         });
-        var data =  $('#drpdwn').ejDropDownList('getItemDataByValue',"Aria Cruz")
+        var data =  $('#dropdown').ejDropDownList('getItemDataByValue',"Aria Cruz")
         console.log("Target CompanyName - "+ data[0].CompanyName);
 
     </script>
@@ -2697,7 +2697,7 @@ This method will return the whole data which binds with Dropdownlist control
 
 {% highlight html %}
  
-<select name="selectIndex" id="drpdwn">
+<select name="selectIndex" id="dropdown">
 
         <option value="Art">Art</option>
         <option value="Architecture">Architecture</option>
@@ -2717,7 +2717,7 @@ This method will return the whole data which binds with Dropdownlist control
 
         // Creates the DropDownList.
 
-        var DropDownListObj = $('#drpdwn').ejDropDownList(
+        var DropDownListObj = $('#dropdown').ejDropDownList(
                              { 
                                 text: "Comics" 
 
@@ -2732,7 +2732,7 @@ This method will return the whole data which binds with Dropdownlist control
 
 {% highlight html %}
  
-  <select name="selectIndex" id="drpdwn">
+  <select name="selectIndex" id="dropdown">
 
         <option value="Art">Art</option>
         <option value="Architecture">Architecture</option>
@@ -2752,9 +2752,9 @@ This method will return the whole data which binds with Dropdownlist control
     <script>
         // Creates the DropDownList.
 
-        $('#drpdwn').ejDropDownList({ text: "Comics"});
+        $('#dropdown').ejDropDownList({ text: "Comics"});
 
-        var items = $('#drpdwn').ejDropDownList("getListData");
+        var items = $('#dropdown').ejDropDownList("getListData");
         for (var i=0;i< items.length; i++)
 		       console.log("item" + i + " is " + items[i].text);
     </script>
@@ -2773,7 +2773,7 @@ This method will return the selected item elements
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" /><div id="carsList"><ul>
+    <input type="text" id="dropdown" /><div id="carsList"><ul>
         <li>Audi A4</li>
         <li>Audi A5</li>
         <li>Audi A6</li>
@@ -2782,8 +2782,8 @@ This method will return the selected item elements
     </ul></div>
     <script>
         // Create DropDownList
-        $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A8"});
-        var DropDownListObj  = $("#drpdwn").data("ejDropDownList");
+        $('#dropdown').ejDropDownList({targetID: "carsList",value:"Audi A8"});
+        var DropDownListObj  = $("#dropdown").data("ejDropDownList");
         DropDownListObj.getSelectedItem(); 
     </script>
     
@@ -2792,7 +2792,7 @@ This method will return the selected item elements
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" /><div id="carsList"><ul>
+    <input type="text" id="dropdown" /><div id="carsList"><ul>
         <li>Audi A4</li>
         <li>Audi A5</li>
         <li>Audi A6</li>
@@ -2801,8 +2801,8 @@ This method will return the selected item elements
     </ul>
     </div><script>
         // Creates the DropDownList
-        $('#drpdwn').ejDropDownList({targetID: "carsList",value:"Audi A8"});
-        $('#drpdwn').ejDropDownList("getSelectedItem");         
+        $('#dropdown').ejDropDownList({targetID: "carsList",value:"Audi A8"});
+        $('#dropdown').ejDropDownList("getSelectedItem");         
     </script>
 
 {% endhighlight %}
@@ -2820,7 +2820,7 @@ This method will return the selected Item value and separated by delimiterChar i
 
 {% highlight html %}
   
-     <select name="selectIndex" id="drpdwn">
+     <select name="selectIndex" id="dropdown">
 
         <option value="Art">Art</option>
         <option value="Architecture">Architecture</option>
@@ -2840,7 +2840,7 @@ This method will return the selected Item value and separated by delimiterChar i
 
         // Creates the DropDownList.
 
-        var DropDownListObj = $('#drpdwn').ejDropDownList(
+        var DropDownListObj = $('#dropdown').ejDropDownList(
                              { 
                                 text: "Comics" 
 
@@ -2853,7 +2853,7 @@ This method will return the selected Item value and separated by delimiterChar i
 
 {% highlight html %}
 
-    <select name="selectIndex" id="drpdwn">
+    <select name="selectIndex" id="dropdown">
 
         <option value="Art">Art</option>
         <option value="Architecture">Architecture</option>
@@ -2873,9 +2873,9 @@ This method will return the selected Item value and separated by delimiterChar i
     <script>
         // Creates the DropDownList.
 
-        $('#drpdwn').ejDropDownList({ text: "Comics"});
+        $('#dropdown').ejDropDownList({ text: "Comics"});
 
-        alert($('#drpdwn').ejDropDownList("getSelectedValue"));
+        alert($('#dropdown').ejDropDownList("getSelectedValue"));
 
     </script>
 
@@ -2892,7 +2892,7 @@ This method hides the suggestion popup in the DropDownList.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -2907,7 +2907,7 @@ This method hides the suggestion popup in the DropDownList.
     <script>
 
         // Creates the DropDownList
-        var DropDownListObj = $('#drpdwn').ejDropDownList(
+        var DropDownListObj = $('#dropdown').ejDropDownList(
                               { 
                                  targetID: "carsList", 
                                  value: "Audi A5" ,
@@ -2921,7 +2921,7 @@ This method hides the suggestion popup in the DropDownList.
 
 {% highlight html %}
  
-  <input type="text" id="drpdwn" />
+  <input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -2935,14 +2935,14 @@ This method hides the suggestion popup in the DropDownList.
 
     <script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
             targetID: "carsList", 
             value: "Audi A5",
             showPopupOnLoad :true 
         });
 
-        $('#drpdwn').ejDropDownList("hidePopup");
+        $('#dropdown').ejDropDownList("hidePopup");
 
     </script>
 {% endhighlight %}
@@ -2975,7 +2975,7 @@ This method is used to select the list of items in the DropDownList through the 
 
 {% highlight html %}
  
-<select name="selectIndex" id="drpdwn">
+<select name="selectIndex" id="dropdown">
 
         <option value="Art">Art</option>
         <option value="Architecture">Architecture</option>
@@ -2994,7 +2994,7 @@ This method is used to select the list of items in the DropDownList through the 
     <script>
         // Creates the DropDownList.
         var DropDownListObj =     
-        $('#drpdwn').ejDropDownList({showCheckbox : true }).data("ejDropDownList");
+        $('#dropdown').ejDropDownList({showCheckbox : true }).data("ejDropDownList");
 
         DropDownListObj.selectItemsByIndices("2,3"); //selectItembyIndex for the DropDownList text.
 
@@ -3003,7 +3003,7 @@ This method is used to select the list of items in the DropDownList through the 
 
 {% highlight html %}
  
-  <select name="selectIndex" id="drpdwn">
+  <select name="selectIndex" id="dropdown">
 
         <option value="Art">Art</option>
         <option value="Architecture">Architecture</option>
@@ -3022,8 +3022,8 @@ This method is used to select the list of items in the DropDownList through the 
 
     <script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList({showCheckbox : true });
-        $('#drpdwn').ejDropDownList("selectItemsByIndices", "2,3");
+        $('#dropdown').ejDropDownList({showCheckbox : true });
+        $('#dropdown').ejDropDownList("selectItemsByIndices", "2,3");
 
     </script>
 {% endhighlight %}
@@ -3054,7 +3054,7 @@ This method is used to select an item in the DropDownList by using the given tex
 #### Example
 
 {% highlight html %} 
- <select name="selectIndex" id="drpdwn"><option value="Architecture">Architecture</option>
+ <select name="selectIndex" id="dropdown"><option value="Architecture">Architecture</option>
         <option value="Biographies">Biographies</option>
         <option value="Business">Business</option>
         <option value="ComputerIT">Computer IT</option>
@@ -3067,7 +3067,7 @@ This method is used to select an item in the DropDownList by using the given tex
         <option value="Language">Language</option></select><script>
         // Creates the DropDownList.
         var DropDownListObj =  
-         $('#drpdwn').ejDropDownList(
+         $('#dropdown').ejDropDownList(
          {
               showCheckbox : true
          }).data("ejDropDownList");
@@ -3076,7 +3076,7 @@ This method is used to select an item in the DropDownList by using the given tex
 {% endhighlight %}
 
 {% highlight html %}
- <select name="selectIndex" id="drpdwn">
+ <select name="selectIndex" id="dropdown">
         <option value="Art">Art</option>
         <option value="Architecture">Architecture</option>
         <option value="Biographies">Biographies</option>
@@ -3091,8 +3091,8 @@ This method is used to select an item in the DropDownList by using the given tex
         <option value="Language">Language</option>
     </select><script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList({showCheckbox : true});
-        $('#drpdwn').ejDropDownList("selectItemByText", "Computer IT ,Comics ");
+        $('#dropdown').ejDropDownList({showCheckbox : true});
+        $('#dropdown').ejDropDownList("selectItemByText", "Computer IT ,Comics ");
     </script>  
 {% endhighlight %}
 
@@ -3124,7 +3124,7 @@ This method is used to select an item in the DropDownList by using the given val
 
 {% highlight html %}
  
- <select name="selectIndex" id="drpdwn">
+ <select name="selectIndex" id="dropdown">
         <option value="Art">Art</option>
         <option value="Architecture">Architecture</option>
         <option value="Biographies">Biographies</option>
@@ -3140,7 +3140,7 @@ This method is used to select an item in the DropDownList by using the given val
     </select><script>
         // Creates the DropDownList.
         var DropDownListObj = 
-            $('#drpdwn').ejDropDownList(
+            $('#dropdown').ejDropDownList(
             {
                 showCheckbox : true
             }).data("ejDropDownList");
@@ -3150,7 +3150,7 @@ This method is used to select an item in the DropDownList by using the given val
 
 {% highlight html %}
  
-<select name="selectIndex" id="drpdwn">
+<select name="selectIndex" id="dropdown">
         <option value="Art">Art</option>
         <option value="Architecture">Architecture</option>
         <option value="Biographies">Biographies</option>
@@ -3165,8 +3165,8 @@ This method is used to select an item in the DropDownList by using the given val
         <option value="Language">Language</option>
     </select><script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList({showCheckbox : true});
-        $('#drpdwn').ejDropDownList("selectItemByValue", "ComputerIT, Cookery ");
+        $('#dropdown').ejDropDownList({showCheckbox : true});
+        $('#dropdown').ejDropDownList("selectItemByValue", "ComputerIT, Cookery ");
     </script>
 {% endhighlight %}
 
@@ -3179,7 +3179,7 @@ This method shows the DropDownList control with the suggestion popup.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -3193,7 +3193,7 @@ This method shows the DropDownList control with the suggestion popup.
 
     <script>
         // Creates the DropDownList.
-        var DropDownListObj = $('#drpdwn').ejDropDownList(
+        var DropDownListObj = $('#dropdown').ejDropDownList(
                               {
                                  targetID: "carsList", 
                                  value: "Audi A5"
@@ -3206,7 +3206,7 @@ This method shows the DropDownList control with the suggestion popup.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -3220,13 +3220,13 @@ This method shows the DropDownList control with the suggestion popup.
 
     <script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
              targetID: "carsList", 
              value: "Audi A5"
         });
 
-        $('#drpdwn').ejDropDownList("showPopup");
+        $('#dropdown').ejDropDownList("showPopup");
 
     </script>
 {% endhighlight %}
@@ -3240,7 +3240,7 @@ This method is used to unselect all the items in the DropDownList.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" /><div id="carsList">
+<input type="text" id="dropdown" /><div id="carsList">
         <ul>
             <li>Audi A4</li>
             <li>Audi A5</li>
@@ -3250,7 +3250,7 @@ This method is used to unselect all the items in the DropDownList.
         </ul>
     </div><script>
         // Creates the DropDownList.
-        var DropDownListObj = $('#drpdwn').ejDropDownList(
+        var DropDownListObj = $('#dropdown').ejDropDownList(
                               { 
                                   targetID: "carsList", 
                                   value: "Audi A5" ,  
@@ -3264,7 +3264,7 @@ This method is used to unselect all the items in the DropDownList.
 
 {% highlight html %}
  
-  <input type="text" id="drpdwn" /><div id="carsList">
+  <input type="text" id="dropdown" /><div id="carsList">
         <ul>
             <li>Audi A4</li>
             <li>Audi A5</li>
@@ -3274,13 +3274,13 @@ This method is used to unselect all the items in the DropDownList.
         </ul>
     </div><script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         { 
             targetID: "carsList",
             selectedIndex:[1]
         });
 
-        $('#drpdwn').ejDropDownList("uncheckAll");
+        $('#dropdown').ejDropDownList("uncheckAll");
     </script>
 {% endhighlight %}
 
@@ -3311,7 +3311,7 @@ This method is used to unselect the list of items in the DropDownList through In
 
 {% highlight html %}
  
-  <select name="selectIndex" id="drpdwn">
+  <select name="selectIndex" id="dropdown">
         <option value="Art">Art</option>
         <option value="Architecture">Architecture</option>
         <option value="Biographies">Biographies</option>
@@ -3326,7 +3326,7 @@ This method is used to unselect the list of items in the DropDownList through In
         <option value="Language">Language</option>
     </select><script>
         // Creates the DropDownList.
-        var DropDownListObj = $('#drpdwn').ejDropDownList(
+        var DropDownListObj = $('#dropdown').ejDropDownList(
                               {
                                   checkAll: true,   
                                   showCheckbox:true
@@ -3337,7 +3337,7 @@ This method is used to unselect the list of items in the DropDownList through In
 
 {% highlight html %}
  
-<select name="selectIndex" id="drpdwn">
+<select name="selectIndex" id="dropdown">
         <option value="Art">Art</option>
         <option value="Architecture">Architecture</option>
         <option value="Biographies">Biographies</option>
@@ -3352,12 +3352,12 @@ This method is used to unselect the list of items in the DropDownList through In
         <option value="Language">Language</option>
     </select><script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             checkAll: true, 
             showCheckbox:true
         });
-        $('#drpdwn').ejDropDownList("unselectItemsByIndices", "2,3");
+        $('#dropdown').ejDropDownList("unselectItemsByIndices", "2,3");
     </script>
 {% endhighlight %}
 
@@ -3388,7 +3388,7 @@ This method is used to unselect an item in the DropDownList by using the given t
 
 {% highlight html %}
  
- <select name="selectIndex" id="drpdwn">
+ <select name="selectIndex" id="dropdown">
         <option value="Art">Art</option>
         <option value="Architecture">Architecture</option>
         <option value="Biographies">Biographies</option>
@@ -3403,7 +3403,7 @@ This method is used to unselect an item in the DropDownList by using the given t
         <option value="Language">Language</option>
     </select><script>
         // Creates the DropDownList.
-        var DropDownListObj = $('#drpdwn').ejDropDownList(
+        var DropDownListObj = $('#dropdown').ejDropDownList(
                               {
                                   checkAll: true, 
                                   showCheckbox :true
@@ -3414,7 +3414,7 @@ This method is used to unselect an item in the DropDownList by using the given t
 
 {% highlight html %}
  
- <select name="selectIndex" id="drpdwn">
+ <select name="selectIndex" id="dropdown">
         <option value="Art">Art</option>
         <option value="Architecture">Architecture</option>
         <option value="Biographies">Biographies</option>
@@ -3429,12 +3429,12 @@ This method is used to unselect an item in the DropDownList by using the given t
         <option value="Language">Language</option>
     </select><script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             checkAll: true, 
             showCheckbox:true
         });
-        $('#drpdwn').ejDropDownList("unselectItemByText", "Computer IT, Cookery ");
+        $('#dropdown').ejDropDownList("unselectItemByText", "Computer IT, Cookery ");
     </script>
 {% endhighlight %}
 
@@ -3465,7 +3465,7 @@ This method is used to unselect an item in the DropDownList by using the given v
 
 {% highlight html %}
  
-  <select name="selectIndex" id="drpdwn">
+  <select name="selectIndex" id="dropdown">
         <option value="Art">Art</option>
         <option value="Architecture">Architecture</option>
         <option value="Biographies">Biographies</option>
@@ -3480,7 +3480,7 @@ This method is used to unselect an item in the DropDownList by using the given v
         <option value="Language">Language</option>
     </select><script>
         // Creates the DropDownList.
-        var DropDownListObj = $('#drpdwn').ejDropDownList(
+        var DropDownListObj = $('#dropdown').ejDropDownList(
                               {
                                   checkAll: true, 
                                   showCheckbox :true
@@ -3492,7 +3492,7 @@ This method is used to unselect an item in the DropDownList by using the given v
 
 {% highlight html %}
  
-  <select name="selectIndex" id="drpdwn">
+  <select name="selectIndex" id="dropdown">
         <option value="Art">Art</option>
         <option value="Architecture">Architecture</option>
         <option value="Biographies">Biographies</option>
@@ -3507,12 +3507,12 @@ This method is used to unselect an item in the DropDownList by using the given v
         <option value="Language">Language</option>
     </select><script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             checkAll: true, 
             showCheckbox:true
         });
-        $('#drpdwn').ejDropDownList("unselectItemByValue", "ComputerIT, Cookery ");
+        $('#dropdown').ejDropDownList("unselectItemByValue", "ComputerIT, Cookery ");
     </script>
 {% endhighlight %}
 
@@ -3555,7 +3555,7 @@ Fires the action before the XHR request.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <script>
 
@@ -3564,7 +3564,7 @@ Fires the action before the XHR request.
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             dataSource: dm, 
             query: query, 
@@ -3644,7 +3644,7 @@ Fires the action when the list of items is bound to the DropDownList by xhr post
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <script>
 
@@ -3653,7 +3653,7 @@ Fires the action when the list of items is bound to the DropDownList by xhr post
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             dataSource: dm, 
             query: query, 
@@ -3717,7 +3717,7 @@ Fires the action when the xhr post calling failed on remote data binding with th
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <script>
 
@@ -3726,7 +3726,7 @@ Fires the action when the xhr post calling failed on remote data binding with th
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             dataSource: dm, 
             query: query, 
@@ -3804,7 +3804,7 @@ Fires the action when the xhr post calling succeed on remote data binding with t
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <script>
 
@@ -3813,7 +3813,7 @@ Fires the action when the xhr post calling succeed on remote data binding with t
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             dataSource: dm, 
             query: query, 
@@ -3878,7 +3878,7 @@ Fires the action before the popup is ready to hide.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -3893,7 +3893,7 @@ Fires the action before the popup is ready to hide.
     <script> 
 
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             targetID: "carsList", 
             value: "Audi A5", 
@@ -3954,7 +3954,7 @@ Fires the action before the popup is ready to be displayed.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -3968,7 +3968,7 @@ Fires the action before the popup is ready to be displayed.
 
     <script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             targetID: "carsList", 
             value: "Audi A5", 
@@ -4142,7 +4142,7 @@ Fires the action when the DropDownList control’s value is changed.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -4156,7 +4156,7 @@ Fires the action when the DropDownList control’s value is changed.
 
     <script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             targetID: "carsList", 
             value: "Audi A5", 
@@ -4232,7 +4232,7 @@ Fires the action when the list item checkbox value is changed.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -4246,7 +4246,7 @@ Fires the action when the list item checkbox value is changed.
 
     <script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             targetID: "carsList", 
             value: "Audi A5", 
@@ -4298,7 +4298,7 @@ Fires the action once the DropDownList is created.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -4312,7 +4312,7 @@ Fires the action once the DropDownList is created.
 
     <script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             targetID: "carsList", 
             value: "Audi A5", 
@@ -4367,7 +4367,7 @@ Fires the action when the list items is bound to the DropDownList.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <script>
 
@@ -4376,7 +4376,7 @@ Fires the action when the list items is bound to the DropDownList.
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             dataSource: dm, 
             query: query, 
@@ -4429,7 +4429,7 @@ Fires the action when the DropDownList is destroyed.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -4443,7 +4443,7 @@ Fires the action when the DropDownList is destroyed.
 
     <script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             targetID: "carsList", 
             value: "Audi A5", 
@@ -4492,7 +4492,7 @@ Fires the action when the DropDownList is focused.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -4506,7 +4506,7 @@ Fires the action when the DropDownList is focused.
 
     <script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             targetID: "carsList",  
             focusIn: function (args) 
@@ -4554,7 +4554,7 @@ Fires the action when the DropDownList is about to lose focus.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -4568,7 +4568,7 @@ Fires the action when the DropDownList is about to lose focus.
 
     <script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             targetID: "carsList",  
             focusOut: function (args) 
@@ -4627,7 +4627,7 @@ Fires the action, once the popup is closed
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -4640,7 +4640,7 @@ Fires the action, once the popup is closed
     </div>
     <script>
         // Creates DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             targetID: "carsList", 
             value: "Audi A5", 
@@ -4694,14 +4694,14 @@ Fires the action, when the popup is resized.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" /><script>
+<input type="text" id="dropdown" /><script>
 
         var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             dataSource: dm, 
             query: query, 
@@ -4763,7 +4763,7 @@ Fires the action, once the popup is opened.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -4777,7 +4777,7 @@ Fires the action, once the popup is opened.
 
     <script>
         // Creates DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             targetID: "carsList", 
             value: "Audi A5", 
@@ -4833,7 +4833,7 @@ Fires the action, when resizing a popup starts.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
 
     <script>
 
@@ -4842,7 +4842,7 @@ Fires the action, when resizing a popup starts.
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             dataSource: dm, 
             query: query, 
@@ -4900,7 +4900,7 @@ Fires the action, when the popup resizing is stopped.
 
 {% highlight html %}
  
-<input type="text" id="drpdwn" />
+<input type="text" id="dropdown" />
     <script>
 
         var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
@@ -4908,7 +4908,7 @@ Fires the action, when the popup resizing is stopped.
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             dataSource: dm, 
             query: query, 
@@ -4975,7 +4975,7 @@ Fires the action before filtering the list items that starts in the DropDownList
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -4989,7 +4989,7 @@ Fires the action before filtering the list items that starts in the DropDownList
 
     <script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             targetID: "carsList", 
             value: "Audi A5", 
@@ -5065,7 +5065,7 @@ Fires the action, when the list of item is selected.
 
 {% highlight html %}
  
-    <input type="text" id="drpdwn" />
+    <input type="text" id="dropdown" />
 
     <div id="carsList">
         <ul>
@@ -5079,7 +5079,7 @@ Fires the action, when the list of item is selected.
 
     <script>
         // Creates the DropDownList.
-        $('#drpdwn').ejDropDownList(
+        $('#dropdown').ejDropDownList(
         {
             targetID: "carsList", 
             value: "Audi A5", 

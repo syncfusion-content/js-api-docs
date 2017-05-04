@@ -3272,8 +3272,8 @@ Returns the range object.
         area. </p></textarea ><script>
     $("#rteSample").ejRTE();
     // Creates the RTE
-    var rteeObj = $("#rteSample").data("ejRTE");
-    rteeObj.createRange(); //Returns the range object
+    var rteObj = $("#rteSample").data("ejRTE");
+    rteObj.createRange(); //Returns the range object
 </script>
 {% endhighlight %}
 
@@ -3294,8 +3294,8 @@ Disables the RTE control.
         area. </p></textarea ><script>
 $("#rteSample").ejRTE();
 // Creates the RTE
-var rteeObj  = $("#rteSample").data("ejRTE");
-rteeObj.disable(); // Disables the RTE
+var rteObj  = $("#rteSample").data("ejRTE");
+rteObj.disable(); // Disables the RTE
 </script>{% endhighlight %}
 
 {% highlight html %}
@@ -3330,13 +3330,13 @@ Disables the corresponding tool in the RTE ToolBar.
             area. </p></textarea ><script>
     $("#rteSample").ejRTE();
         // Creates the RTE.
-    var rteeObj = $("#rteSample").data("ejRTE");
-    rteeObj.disableToolbarItem("createTable"); // Disables toolbar item.
+    var rteObj = $("#rteSample").data("ejRTE");
+    rteObj.disableToolbarItem("createTable"); // Disables toolbar item.
 </script>Note: Those using the release version before 13.3, please refer to the following<script>
     $("#rteSample").ejRTE();
   // Creates the RTE.
-    var rteeObj = $("#rteSample").data("ejRTE");
-    rteeObj.disableToolbarItem("rteSample createTable"); // Disables toolbar item.
+    var rteObj = $("#rteSample").data("ejRTE");
+    rteObj.disableToolbarItem("rteSample createTable"); // Disables toolbar item.
 </script>
 {% endhighlight %}
 
@@ -3355,7 +3355,7 @@ Disables the corresponding tool in the RTE ToolBar.
 </script>Note: Those using the release version before 13.3, please refer to the following<script>
     $("#rteSample").ejRTE();
     // Creates the RTE
-    var rteeObj = $("#rteSample").data("ejRTE");
+    var rteObj = $("#rteSample").data("ejRTE");
     $("#rteSample").ejRTE("disableToolbarItem", "rteSamplecreateTable"); // Disables toolbar item
 </script>
 {% endhighlight %}
@@ -3378,8 +3378,8 @@ Enables the RTE control.
         area. </p></textarea ><script>
 $("#rteSample").ejRTE();
 // Creates the RTE.
-var rteeObj  = $("#rteSample").data("ejRTE");
-rteeObj.enable(); // Enables RTE
+var rteObj  = $("#rteSample").data("ejRTE");
+rteObj.enable(); // Enables RTE
 </script>{% endhighlight %}
 
 {% highlight html %}
@@ -3415,16 +3415,16 @@ Enables the corresponding tool in the toolbar when the tool is disabled.
 <script>
     $("#rteSample").ejRTE();
     // Creates the RTE
-    var rteeObj = $("#rteSample").data("ejRTE");
-    rteeObj.enableToolbarItem("createTable"); // Enables toolbar item
+    var rteObj = $("#rteSample").data("ejRTE");
+    rteObj.enableToolbarItem("createTable"); // Enables toolbar item
 </script>
 
 Note: When using the release version before 13.3, refer to the following.
 <script>
     $("#rteSample").ejRTE();
     // Creates the RTE
-    var rteeObj = $("#rteSample").data("ejRTE");
-    rteeObj.enableToolbarItem("rteSamplecreateTable"); // Enables toolbar item
+    var rteObj = $("#rteSample").data("ejRTE");
+    rteObj.enableToolbarItem("rteSamplecreateTable"); // Enables toolbar item
 </script>
 {% endhighlight %}
 
@@ -3470,8 +3470,8 @@ Performs the action value based on the given command.
 <script>
 $("#rteSample").ejRTE();
 // Creates the RTE
-var rteeObj  = $("#rteSample").data("ejRTE");
-rteeObj.executeCommand("bold", true); // Gets the content as string from rte
+var rteObj  = $("#rteSample").data("ejRTE");
+rteObj.executeCommand("bold", true); // Gets the content as string from rte
 </script>{% endhighlight %}
 
 ### focus()
@@ -3493,8 +3493,8 @@ Focuses the RTE control.
 <script>
 $("#rteSample").ejRTE();
 // Creates the RTE
-var rteeObj  = $("#rteSample").data("ejRTE");
-rteeObj.focus(); // Focuses the RTE.
+var rteObj  = $("#rteSample").data("ejRTE");
+rteObj.focus(); // Focuses the RTE.
 </script>{% endhighlight %}
 
 {% highlight html %}
@@ -3533,8 +3533,8 @@ Gets the command status of the selected text based on the given comment in the R
 <script>
 $("#rteSample").ejRTE();
 // Creates the RTE
-var rteeObj  = $("#rteSample").data("ejRTE");
-rteeObj.getCommandStatus(("bold");  // Gets the bold status form selected text in RTE.
+var rteObj  = $("#rteSample").data("ejRTE");
+rteObj.getCommandStatus(("bold");  // Gets the bold status form selected text in RTE.
 </script>{% endhighlight %}
 
 ### getDocument()
@@ -3558,8 +3558,8 @@ Gets the Document from the RTE control.
 <script>
     $("#rteSample").ejRTE();
     // Creates the RTE
-    var rteeObj = $("#rteSample").data("ejRTE");
-    rteeObj.getDocument(); // Gets the HTML string from the RTE.
+    var rteObj = $("#rteSample").data("ejRTE");
+    rteObj.getDocument(); // Gets the HTML string from the RTE.
 </script>
 {% endhighlight %}
 
@@ -3584,8 +3584,8 @@ Gets the HTML string from the RTE control.
 <script>
 $("#rteSample").ejRTE();
 // Creates the RTE
-var rteeObj  = $("#rteSample").data("ejRTE");
-rteeObj.getHtml(); // Gets the html string from the rte.
+var rteObj  = $("#rteSample").data("ejRTE");
+rteObj.getHtml(); // Gets the html string from the rte.
 </script>{% endhighlight %}
 
 {% highlight html %}
@@ -3624,8 +3624,8 @@ Gets the selected HTML string from the RTE control.
 <script>
 $("#rteSample").ejRTE();
 // Creates the RTE
-var rteeObj  = $("#rteSample").data("ejRTE");
-rteeObj.getSelectedHtml(); // Gets the content as string from rte
+var rteObj  = $("#rteSample").data("ejRTE");
+rteObj.getSelectedHtml(); // Gets the content as string from rte
 </script>{% endhighlight %}
 
 {% highlight html %}
@@ -3664,8 +3664,8 @@ Gets the content as string from the RTE control.
 <script>
 $("#rteSample").ejRTE();
 // Creates the RTE.
-var rteeObj  = $("#rteSample").data("ejRTE");
-rteeObj.getText(); // Gets the content as string from the RTE.
+var rteObj  = $("#rteSample").data("ejRTE");
+rteObj.getText(); // Gets the content as string from the RTE.
 </script>{% endhighlight %}
 
 {% highlight html %}
@@ -3702,8 +3702,8 @@ Hides the RTE control.
 <script>
 $("#rteSample").ejRTE();
 // Creates the RTE
-var rteeObj  = $("#rteSample").data("ejRTE");
-rteeObj.hide(); // Hides the rte
+var rteObj  = $("#rteSample").data("ejRTE");
+rteObj.hide(); // Hides the rte
 </script>{% endhighlight %}
 
 {% highlight html %}
@@ -3813,8 +3813,8 @@ Sprite CSS class name for menu item icon.
 <script>
 $("#rteSample").ejRTE();
 // Creates the RTE
-var rteeObj  = $("#rteSample").data("ejRTE");// Inserts new item to the contextmenu
-rteeObj.insertMenuOption({newItem:"Show Table Details",targetItem:"Table Properties", insertType:("insertAfter"), menuType:{text:false,image:false,hyperlink:false,table:true},spriteCssClass:"e-rte-toolbar-icon tableProperties"}); 
+var rteObj  = $("#rteSample").data("ejRTE");// Inserts new item to the contextmenu
+rteObj.insertMenuOption({newItem:"Show Table Details",targetItem:"Table Properties", insertType:("insertAfter"), menuType:{text:false,image:false,hyperlink:false,table:true},spriteCssClass:"e-rte-toolbar-icon tableProperties"}); 
 </script>
 {% endhighlight %}
 
@@ -3990,8 +3990,8 @@ This method helps to insert/paste the content at the current cursor (caret) posi
 <script>
     $("#rteSample").ejRTE();
     // Creates the RTE
-    var rteeObj = $("#rteSample").data("ejRTE");
-    rteeObj.pasteContent("place the content in current cursor position/replace the selected text "); 
+    var rteObj = $("#rteSample").data("ejRTE");
+    rteObj.pasteContent("place the content in current cursor position/replace the selected text "); 
 </script>
 {% endhighlight %}
 
@@ -4014,8 +4014,8 @@ Refreshes the RTE control.
 <script>
 $("#rteSample").ejRTE();
 // Creates the RTE
-var rteeObj  = $("#rteSample").data("ejRTE");
-rteeObj.refresh(); // Refreshes the rte
+var rteObj  = $("#rteSample").data("ejRTE");
+rteObj.refresh(); // Refreshes the rte
 </script>{% endhighlight %}
 
 {% highlight html %}
@@ -4266,8 +4266,8 @@ Target Node text.
 <script>
     $("#rteSample").ejRTE();
     // Creates the RTE
-    var rteeObj = $("#rteSample").data("ejRTE");
-    rteeObj.removeMenuOption("Target"); 
+    var rteObj = $("#rteSample").data("ejRTE");
+    rteObj.removeMenuOption("Target"); 
 </script>
 {% endhighlight %}
 
@@ -4290,15 +4290,15 @@ Removes the given tool from the RTE Toolbar.
 <script>
     $("#rteSample").ejRTE();
     // Creates the RTE
-    var rteeObj = $("#rteSample").data("ejRTE");
-    rteeObj.removeToolbarItem("createTable"); // Removes the toolbar item
+    var rteObj = $("#rteSample").data("ejRTE");
+    rteObj.removeToolbarItem("createTable"); // Removes the toolbar item
 </script>
 Note: When you use the release version before 13.3, refer to the following
 <script>
     $("#rteSample").ejRTE();
     // Creates the RTE
-    var rteeObj = $("#rteSample").data("ejRTE");
-    rteeObj.removeToolbarItem("rteSamplecreateTable"); // Removes toolbar item
+    var rteObj = $("#rteSample").data("ejRTE");
+    rteObj.removeToolbarItem("rteSamplecreateTable"); // Removes toolbar item
 </script>
 {% endhighlight %}
 
@@ -4344,8 +4344,8 @@ Selects all the contents within the RTE.
 <script>
     $("#rteSample").ejRTE();
     // Creates the RTE
-    var rteeObj = $("#rteSample").data("ejRTE");
-    rteeObj.selectAll(); 
+    var rteObj = $("#rteSample").data("ejRTE");
+    rteObj.selectAll(); 
 </script>
 {% endhighlight %}
 
@@ -4368,9 +4368,9 @@ Selects the contents in the given range.
 <script>
     $("#rteSample").ejRTE();
     // Creates the RTE
-    var rteeObj = $("#rteSample").data("ejRTE");
-    var range = rteeObj.createRange();
-    var tag = rteeObj.getDocument().getElementsByTagName("p");           
+    var rteObj = $("#rteSample").data("ejRTE");
+    var range = rteObj.createRange();
+    var tag = rteObj.getDocument().getElementsByTagName("p");           
     if (!editor._isIE8()) {
         range.setStart(tag[0], 0);
         range.setEnd(tag[1], 1);
@@ -4402,8 +4402,8 @@ Sets the color picker model type rendered initially in the RTE control.
 <script>
 $("#rteSample").ejRTE();
 // Creates the RTE
-var rteeObj  = $("#rteSample").data("ejRTE");
-rteeObj.setColorPickerType("picker"); // Sets the picker mode
+var rteObj  = $("#rteSample").data("ejRTE");
+rteObj.setColorPickerType("picker"); // Sets the picker mode
 </script>{% endhighlight %}
 
 {% highlight html %}
@@ -4435,8 +4435,8 @@ Sets the HTML string from the RTE control.
 <script>
 $("#rteSample").ejRTE();
 // Creates the RTE
-var rteeObj  = $("#rteSample").data("ejRTE");
-rteeObj.setHtml("The Rich Text Editor (RTE) control is an easy to render in client side."); // Sets the html string to the rte
+var rteObj  = $("#rteSample").data("ejRTE");
+rteObj.setHtml("The Rich Text Editor (RTE) control is an easy to render in client side."); // Sets the html string to the rte
 </script>{% endhighlight %}
 
 {% highlight html %}
@@ -4473,8 +4473,8 @@ Displays the RTE control.
 <script>
 $("#rteSample").ejRTE();
 // Creates the RTE
-var rteeObj  = $("#rteSample").data("ejRTE");
-rteeObj.show(); // Shows the rte
+var rteObj  = $("#rteSample").data("ejRTE");
+rteObj.show(); // Shows the rte
 </script>{% endhighlight %}
 
 {% highlight html %}

@@ -39,7 +39,7 @@ The Tab control is an interface where list of items are expanded from a single i
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -100,7 +100,7 @@ Specifies the ajaxSettings option to load the content to the Tab control.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="http://en.wikipedia.org/wiki/C_Sharp_(programming_language)">C Sharp (C#)</a></li>                      
-        <li><a href="http://en.wikipedia.org/wiki/Visual_Basic_.NET">VB.Net</a></li>                  
+        <li><a href="http://en.wikipedia.org/wiki/Visual_Basic_.NET">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -258,7 +258,7 @@ Tab items interaction with keyboard keys, like headers active navigation.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -307,7 +307,7 @@ Allow to collapsing the active item, while click on the active header.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -356,7 +356,7 @@ Set the root class for Tab theme. This cssClass API helps to use custom skinning
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -405,7 +405,7 @@ Disables the given tab headers and content panels.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -454,7 +454,7 @@ Specifies the animation behavior of the tab.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -503,7 +503,7 @@ When this property is set to false, it disables the tab control.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -552,7 +552,7 @@ Enables the given tab headers and content panels.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -602,7 +602,7 @@ Save current model value to browser cookies for state maintains. While refresh t
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -651,7 +651,7 @@ Display Right to Left direction for headers and panels text of tab.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -700,7 +700,7 @@ Specify to enable scrolling for Tab header.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -749,7 +749,7 @@ The event API to bind the action for active the tab items.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -830,7 +830,7 @@ Right</td>
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -879,7 +879,7 @@ Set the height of the tab header element. Default this property value is null, s
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -928,7 +928,7 @@ Height set the outer panel element. Default this property value is null, so heig
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -1017,7 +1017,7 @@ Fill</td>
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -1083,7 +1083,7 @@ Specifies to hide a pane of Tab control.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -1149,7 +1149,7 @@ Specifies the HTML Attributes of the Tab.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -1204,7 +1204,7 @@ The idPrefix property appends the given string on the added tab item id&rsquo;s 
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -1253,7 +1253,7 @@ Specifies the Tab header in active for given index value.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -1302,7 +1302,7 @@ Display the close button for each tab items. While clicking on the close icon, p
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -1351,7 +1351,7 @@ Display the Reload button for each tab items.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -1400,7 +1400,7 @@ Tab panels and headers to be displayed in rounded corner style.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -1450,7 +1450,7 @@ Set the width for outer panel element, if not it&rsquo;s take parent width.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -1535,7 +1535,7 @@ id</td>
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>
+        <li><a href="#vb">VB.NET</a></li>
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -1564,7 +1564,7 @@ id</td>
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -1606,7 +1606,7 @@ To disable the tab control.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -1633,7 +1633,7 @@ To disable the tab control.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -1673,7 +1673,7 @@ To enable the tab control.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -1700,7 +1700,7 @@ To enable the tab control.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -1742,7 +1742,7 @@ number
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -1769,7 +1769,7 @@ number
             <ul>                      
             <li><a href="#javaScript">JavaScript</a></li>                      
             <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-            <li><a href="#vb">VB.Net</a></li>                  
+            <li><a href="#vb">VB.NET</a></li>                  
             </ul>                  
             <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
             It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -1809,7 +1809,7 @@ This function hides the tab control.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -1836,7 +1836,7 @@ This function hides the tab control.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -1897,7 +1897,7 @@ index</td>
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -1924,7 +1924,7 @@ index</td>
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -1983,7 +1983,7 @@ index</td>
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -2010,7 +2010,7 @@ index</td>
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -2050,7 +2050,7 @@ This function is to show the tab control.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -2077,7 +2077,7 @@ This function is to show the tab control.
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -2139,7 +2139,7 @@ index</td>
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -2166,7 +2166,7 @@ index</td>
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -2288,7 +2288,7 @@ isInteraction</td>
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -2415,7 +2415,7 @@ isInteraction</td>
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -2516,7 +2516,7 @@ URL</td>
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -2641,7 +2641,7 @@ isInteraction</td>
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -2748,7 +2748,7 @@ content</td>
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -2867,7 +2867,7 @@ isInteraction</td>
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -2962,7 +2962,7 @@ index</td>
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -3051,7 +3051,7 @@ type</td>
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -3140,7 +3140,7 @@ type</td>
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -3241,7 +3241,7 @@ tabContent</td>
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
@@ -3336,7 +3336,7 @@ removedTab</td>
         <ul>                      
         <li><a href="#javaScript">JavaScript</a></li>                      
         <li><a href="#cSharp">C Sharp (C#)</a></li>                      
-        <li><a href="#vb">VB.Net</a></li>                  
+        <li><a href="#vb">VB.NET</a></li>                  
         </ul>                  
         <div id="javaScript"> JavaScript (JS) is an interpreted computer programming language. 
         It was originally implemented as part of web browsers so that client-side scripts could interact with the user, control the browser, communicate asynchronously, and alter the document content that was displayed. More recently, however, it has become common in both game development and the creation of desktop applications.                  
