@@ -2015,7 +2015,7 @@ continuous</td>
 ### addItem(data)
 {:#methods:additem}
 
-Adding a single item or an array of items into the DropDownList allows you to specify all the field attributes such as value, template, image URL, and HTML attributes for those items. 
+Adding a single item or an array of items into the DropDownList allows you to specify all the field attributes such as value, template, image URL, and HTML attributes for those items.Grouping and sorting will not be supported when we add items through add items through this method. 
 
 <table class="params">
 <thead>
