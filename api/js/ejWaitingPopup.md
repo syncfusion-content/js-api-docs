@@ -77,6 +77,11 @@ $("#target").ejWaitingPopup({ showOnInit: true });
 * module:ej.waitingpopup.js
 
 
+#### Valid HTML elements
+
+* div
+
+* span
 
 
 ## Members

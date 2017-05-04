@@ -88,6 +88,11 @@ $('#uploadbox1').ejUploadbox();
 * module:ej.draggable.js
 
 
+#### Valid HTML elements
+
+* div
+
+* span
 
 
 ## Members

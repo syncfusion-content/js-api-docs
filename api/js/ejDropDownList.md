@@ -87,6 +87,13 @@ $('#dropdown').ejDropDownList();
 * module:ej.scroller.js
 
 
+#### Valid HTML elements
+
+* select 
+
+* input
+
+
 ## Members
 
 ### allowVirtualScrolling `boolean`

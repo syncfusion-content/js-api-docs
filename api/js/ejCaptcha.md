@@ -84,6 +84,9 @@ Requires
 * module:ej.button.js
 
 
+#### Valid HTML elements
+
+* div
 
 
 ## Members

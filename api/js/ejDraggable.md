@@ -54,6 +54,15 @@ $('#draggable').ejDraggable();
 * module:ej.draggable
 
 
+#### Valid HTML elements
+
+* div
+
+* span
+
+* a
+
+
 ## Members
 
 

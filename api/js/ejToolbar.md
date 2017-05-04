@@ -88,6 +88,13 @@ $(element).ejToolbar()
 * module:ej.toolbar.js
 
 
+#### Valid HTML elements
+
+* div
+
+* span
+
+
 ## Members
 
 

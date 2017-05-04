@@ -112,6 +112,11 @@ $("#rteSample").ejRTE();
 * module:ej.rte.js
 
 
+#### Valid HTML elements
+
+* textarea
+
+
 ### Members
 
 ### allowEditing `boolean`
