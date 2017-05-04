@@ -341,6 +341,55 @@ Specifies the baseline background color in Gantt
 
 {% endhighlight %}
 
+### workMapping `string`
+{:#members:workmapping}
+
+Specifies the mapping property path for the work field of a task in the data source. When it is mapped the end date and duration for a task will be calculated automatically.
+
+
+#### Default Value
+{:.param}
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  workMapping : "estimatedHours" });
+</script>
+
+{% endhighlight %}
+
+
+### expandStateMapping `string`
+{:#members:expandstatemapping}
+
+Specifies the mapping property path for the expand status of a record in data source.
+
+
+#### Default Value
+{:.param}
+
+* ""
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  expandStateMapping : "isExpanded" });
+</script>
+
+{% endhighlight %}
 
 ### baselineEndDateMapping `string`
 {:#members:baselineenddatemapping}
@@ -3770,6 +3819,78 @@ Specifies the list of toolbar items to be rendered in Gantt toolbar
 
 {% endhighlight %}
 
+### toolbarSettings.customToolbarItems `array`
+{:#members:toolbarsettings-customtoolbaritems}
+
+Allows the user to insert custom toolbar items.
+
+### toolbarSettings.customToolbarItems.text `string`
+{:#members:toolbarsettings-customtoolbaritems-text}
+
+Allows the user to insert the custom icons in toolbar using CSS class name selector.
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+            <div id="gantt"></div> 
+<script>      
+        $("#gantt").ejGantt({toolbarSettings: {customToolbarItems: [{ text: "Reset",tooltipText:"Reset" }]}});
+</script>
+{% endhighlight %}
+
+
+### toolbarSettings.customToolbarItems.templateID `string`
+{:#members:toolbarsettings-customtoolbaritems-templateid}
+
+Allows the user to insert the custom icons in toolbar using script templates. Using this property we can bind HTML elements and other EJ controls to Gantt toolbar.
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+ <div id="gantt"></div> 
+<script>      
+         $("#gantt").ejGantt({toolbarSettings: {customToolbarItems: [{ templateID: "#ColumnVisibility",tooltipText:"Column Visibility" }]}});  
+</script>				
+
+{% endhighlight %}
+
+
+### toolbarSettings.customToolbarItems.tooltipText `string`
+{:#members:toolbarsettings-customtoolbaritems-tooltiptext}
+
+Allows the user to display custom tooltip text for Gantt custom toolbar items.
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+        <div id="gantt"></div> 
+<script>            
+        $("#gantt").ejGantt({toolbarSettings: {customToolbarItems: [{ templateID: "#ColumnVisibility",tooltipText:"Column Visibility" },{ text: "Reset",tooltipText:"Column Visibility" }]}});  
+</script>				
+
+{% endhighlight %}
+
 
 
 ### treeColumnIndex `number`
@@ -4181,6 +4302,66 @@ To expand and collapse an item in Gantt using item's ID
 // Create Gantt object.
 var ganttObj = $("#gantt").data("ejGantt");
 gantObj.expandCollapseRecord(23); // To expand collapse an item
+</script>
+{% endhighlight %}
+
+### export(action, \[serverEvent\], \[multipleExport\])
+{:#methods:export}
+
+Export the Gantt content to excel or PDF document.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">action</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Pass the controller action name corresponding to exporting</td>
+</tr>
+<tr>
+<td class="name">serverEvent</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last"><span class="optional">optional</span>ASP server event name corresponding to exporting</td>
+</tr>
+<tr>
+<td class="name">multipleExport</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last"><span class="optional">optional</span>Pass the multiple exporting value as true/false</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create gantt object.
+var ganttObj = $("#Gantt").data("ejGantt");
+// Sends an exporting request
+gridObj.export("/api/GanttExport/ExcelExport"); 
+</script>
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// Sends an exporting request
+$("#Gantt").ejGantt("export","/api/GanttExport/ExcelExport");        
 </script>
 {% endhighlight %}
 

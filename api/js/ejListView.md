@@ -1411,6 +1411,237 @@ $("#lb").ejListView ("option", "width", 200);
 
 
 
+
+
+### itemRequestCount `number`
+{:#members:itemrequestcount}
+
+
+
+
+Specifies the number of items to be fetched on each scroll. Note: This property works only with Virtual scrolling.
+
+
+#### Default Value
+
+
+
+
+* 5
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+//Set the itemRequestCount property in obtrusive way.
+  <div id="defaultlistbox">              
+  </div>
+
+{% endhighlight %}
+
+
+{% highlight javascript  %}
+
+// Set itemRequestCount on initialization. 
+//To set itemRequestCount API value 
+
+    var musicFields = {
+            text: "CustomerID"
+        };
+    var dataManger = ej.DataManager({
+                url: "http://mvc.syncfusion.com/Services/Northwnd.svc"
+            });
+    // Query creation
+    var query = ej.Query().from("Customers");
+
+$("#defaultlistbox").ejListView ({ itemRequestCount: 5,dataSource: dataManger, query: query, fieldSettings: musicFields,height:300,allowVirtualScrolling: true, virtualScrollMode: "normal"});
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+//Get or set  itemRequestCount, after initialization:
+// Get the itemRequestCount API value.             
+ $("#defaultlistbox").ejListView ("option", "itemRequestCount");                       
+// Set the itemRequestCount API
+$("#defaultlistbox").ejListView ("option", "itemRequestCount", 10);
+</script>{% endhighlight %}
+
+
+
+
+
+### totalItemsCount `number`
+{:#members:totalitemscount}
+
+
+
+
+Specifies the maximum number of items to be fetched. Note: This will work only with Virtual scrolling
+
+
+#### Default Value
+
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+//Set the totalItemsCount property in obtrusive way.
+
+  <div id="defaultlistbox">              
+  </div>
+
+{% endhighlight %}
+
+
+{% highlight javascript  %}
+// Set totalItemsCount on initialization. 
+//To set totalItemsCount API value 
+    var musicFields = {
+            text: "CustomerID"
+        };
+    var dataManger = ej.DataManager({
+                url: "http://mvc.syncfusion.com/Services/Northwnd.svc"
+            });
+    // Query creation
+    var query = ej.Query().from("Customers");
+
+$("#defaultlistbox").ejListView ({ totalItemsCount: 100,dataSource: dataManger, query: query, fieldSettings: musicFields,height:300,allowVirtualScrolling: true, virtualScrollMode: "normal"});
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+//Get or set  totalItemsCount, after initialization:
+// Get the totalItemsCount API value.             
+ $("#defaultlistbox").ejListView ("option", "totalItemsCount");                       
+// Set the totalItemsCount API
+$("#defaultlistbox").ejListView ("option", "totalItemsCount", 200);
+</script>{% endhighlight %}
+
+
+
+
+### allowVirtualScrolling `boolean`
+{:#members:allowvirtualscrolling}  
+
+Loads the list data on demand via scrolling behavior to improve the application’s performance. There are two ways to load data which can be defined using **virtualScrollMode** property.
+
+#### Default Value:
+
+* false
+
+Example
+{:.example}
+
+
+{% highlight html %}
+ 
+//Set the allowVirtualScrolling property in obtrusive way.
+
+  <div id="defaultlistbox">              
+  </div>
+
+{% endhighlight %}
+
+
+{% highlight javascript  %}
+// Set allowVirtualScrolling on initialization. 
+//To set allowVirtualScrolling API value 
+    var musicFields = {
+            text: "CustomerID"
+        };
+    var dataManger = ej.DataManager({
+                url: "http://mvc.syncfusion.com/Services/Northwnd.svc"
+            });
+    // Query creation
+    var query = ej.Query().from("Customers");
+
+$("#defaultlistbox").ejListView ({ dataSource: dataManger, query: query, fieldSettings: musicFields,height:300,allowVirtualScrolling: true, virtualScrollMode: "normal"});
+
+{% endhighlight %}
+
+
+
+
+### virtualScrollMode `enum`
+{:#members:virtualscrollmode}
+
+<ts name = "ej.VirtualScrollMode"/>
+
+Specifies the virtual scroll mode to load the list data on demand via scrolling behavior. There are two types of mode.
+
+<table>
+<tr>
+<th>Name<br/><br/></th>
+<th>Description<br/><br/></th>
+</tr>
+<tr>
+<td>continuous<br/><br/></td>
+<td> Each time when we scroll to the end of the Listview widget, the other set of list items will get loaded.<br/><br/></td>
+</tr>
+<tr>
+<td>normal<br/><br/></td>
+<td>This mode allows you to load the list view data while scrolling i.e. each time the scroll bar is scrolled, it will send request to the server to load the data.<br/><br/></td>
+</tr>
+</table>
+
+#### Default Value:
+
+* ej.VirtualScrollMode.Normal
+
+Example
+{:.example}
+
+ {% highlight html %}
+ 
+//Set the VirtualScrollMode property in obtrusive way.
+
+  <div id="defaultlistbox">              
+  </div>
+
+{% endhighlight %}
+
+
+{% highlight javascript  %}
+// Set VirtualScrollMode on initialization. 
+//To set VirtualScrollMode API value 
+    var musicFields = {
+            text: "CustomerID"
+        };
+    var dataManger = ej.DataManager({
+                url: "http://mvc.syncfusion.com/Services/Northwnd.svc"
+            });
+    // Query creation
+    var query = ej.Query().from("Customers");
+
+$("#defaultlistbox").ejListView ({ dataSource: dataManger, query: query, fieldSettings: musicFields,height:300,allowVirtualScrolling: true, virtualScrollMode: "normal"});
+
+{% endhighlight %}
+
+
+
+
+
 ## Methods
 
 

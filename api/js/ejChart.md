@@ -2919,6 +2919,72 @@ commonSeriesOptions :{ labelPosition : "outside"}
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/w5q1jt5k)
 
 
+### commonSeriesOptions.splitMode `enum`
+{:#members:commonseriesoptions-splitmode}
+
+
+<ts name = "ej.datavisualization.Chart.SplitMode"/>
+
+
+Specifies the mode for splitting the data points in pieOfPie series.
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Position</td>
+<td class="type">string</td> 
+<td class="description">Splitting the data points based on the specified position value.</td>
+</tr>
+<tr>
+<td class="name">
+Value</td>
+<td class="type">string</td>
+<td class="description">Splitting the data points based on the specified Y value.</td>
+</tr> 
+<tr>
+<td class="name">
+Percentage</td>
+<td class="type">string</td>
+<td class="description">Splitting the data points based on the specified percentage value.</td>
+</tr> 
+<tr>
+<td class="name">
+Indexes</td>
+<td class="type">string</td>
+<td class="description">The data points with the specified indexes are get splitted.</td>
+</tr> 
+</tbody>
+</table>
+
+
+#### Default Value
+
+
+
+* "value". See <a href="global.html#members:splitmode">SplitMode</a>
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+commonSeriesOptions :{ splitMode : "position"}               
+});
+ {% endhighlight %}
+
 
 ### commonSeriesOptions.boxPlotMode `enum`
 {:#members:commonseriesoptions-boxplotmode}
@@ -4865,7 +4931,92 @@ commonSeriesOptions :{ pieCoefficient : 1}
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yzleny3o)
 
+### commonSeriesOptions.pieOfPieCoefficient `number`
+{:#members:commonseriesoptions-pieofpiecoefficient}
 
+
+
+
+Controls the size of the second pie in pieOfPie series. Value ranges from 0 to 1.
+
+
+#### Default Value
+
+
+
+* 0.6
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{ pieOfPieCoefficient : 1}                  
+});
+ {% endhighlight %}
+
+ 
+### commonSeriesOptions.splitValue `string`
+{:#members:commonSeriesOptions-splitvalue}
+
+
+
+
+Split Value of pieofpie series.
+
+
+#### Default Value
+
+
+
+ * null
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions : [{splitValue: "40" }]                   
+});
+{% endhighlight %}
+ 
+ ### commonSeriesOptions.gapWidth `number`
+{:#members:commonseriesoptions-gapwidth}
+
+
+
+
+Distance between the two pie's in pieOfPie series.
+
+
+#### Default Value
+
+
+
+ * 50
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{ gapWidth : 300}                  
+});
+  {% endhighlight %}
 
 ### commonSeriesOptions.pointColorMappingName `string`
 {:#members:commonseriesoptions-pointcolormappingname}
@@ -14957,6 +15108,38 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
+### primaryXAxis.showNextToAxisLine `boolean`
+{:#members:primaryxaxis-shownexttoaxisline}
+
+
+
+Specifies whether the axis elements need to be placed nearby the axis line, while crossing.
+
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { showNextToAxisLine : false }
+                          
+});
+
+{% endhighlight %}
+
+
 
 ### primaryXAxis.stripLine `array`
 {:#members:primaryxaxis-stripline}
@@ -18978,6 +19161,38 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
+### axes.showNextToAxisLine `boolean`
+{:#members:axes-shownexttoaxisline}
+
+
+
+Specifies whether the axis elements need to be placed nearby the axis line, while crossing.
+
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ showNextToAxisLine : false }]
+                          
+});
+
+{% endhighlight %}
+
+
 
 ### axes.stripLine `array`
 {:#members:axes-stripline}
@@ -22836,6 +23051,36 @@ $("#container").ejChart({
 });
 {% endhighlight %}
 
+### primaryYAxis.showNextToAxisLine `boolean`
+{:#members:primaryyaxis-shownexttoaxisline}
+
+
+
+Specifies whether the axis elements need to be placed nearby the axis line, while crossing.
+
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { showNextToAxisLine : false }
+                          
+});
+
+{% endhighlight %}
 
 
 ### primaryYAxis.stripLine `array`
@@ -25545,6 +25790,34 @@ series : [{labelPosition : "outside" }]
  Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/q013nk40)
 
 
+ ### series.splitMode `enum`
+{:#members:series-splitmode}
+
+<ts ref = "ej.datavisualization.Chart.SplitMode"/>
+
+
+Specifies the mode for splitting the data points in pieOfPie series.
+
+
+
+#### Default Value
+
+
+
+* "value". See <a href="global.html#members:splitmode">SplitMode</a>
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series : [{splitMode : "percentage" }]                   
+});
+ {% endhighlight %}
 
 
 
@@ -27189,7 +27462,91 @@ series : [{pieCoefficient : 0.6 }]
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hpl0ffff)
 
+### series.pieOfPieCoefficient `number`
+{:#members:series-pieofpiecoefficient}
 
+
+
+
+Controls the size of the second pie in pieOfPie series. Value ranges from 0 to 1.
+
+
+
+
+#### Default Value
+
+
+
+ * 0.6
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series : [{pieOfPieCoefficient : 0.8 }]                   
+});
+ {% endhighlight %}
+
+ ### series.splitValue `string`
+{:#members:series-splitvalue}
+
+
+Split Value of pieofpie series.
+
+
+#### Default Value
+
+
+
+ * null
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series : [{splitValue: "40" }]                   
+});
+{% endhighlight %}
+
+### series.gapWidth `number`
+{:#members:series-gapwidth}
+
+
+
+
+Distance between the two pie's in pieOfPie series.
+
+
+#### Default Value
+
+
+
+ * 50
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series : [{gapWidth : 300 }]                   
+});
+ {% endhighlight %}
 
 ### series.emptyPointSettings `object`
 {:#members:series-emptyPointSettings}
@@ -33311,6 +33668,34 @@ chartObj.animate(chartObj.model.indicators[0]);
 </table>
 
 
+### print()
+{:#methods:print}
+
+Prints the rendered chart.
+
+
+#### Returns: void
+
+
+#### Example
+
+
+{% highlight js %}
+// Print Chart
+var chartObj = $("#container").data("ejChart");
+chartObj.print();
+{% endhighlight %}
+
+If you wish to print multiple charts on a same page, then you need to pass the ID of those elements as arguments to the print method.
+
+<div id="container1"></div> 
+<div id="container2"></div> 
+
+{% highlight js %}
+// Print Chart
+var chartObj = $("#container1").data("ejChart");
+chartObj.print("container1","container2");
+{% endhighlight %}
 
 
 ### export(type, URL, exportMultipleChart)

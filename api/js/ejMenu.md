@@ -218,6 +218,64 @@ Specifies the target id of context menu. On right clicking the specified context
 
 {% endhighlight %}
 
+### container `string`
+{:#members:container}
+
+Specifies the container element selectors for submenu’s collision. The submenu gets displayed based on spacing available with respect to container element.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+ 
+ <div id="target">
+    <ul id="menu">
+        <li id="Home"><a>Home</a></li>
+        <li>
+            <a>Search Jobs</a>
+            <ul>
+                <li><a>Advanced Search</a></li>
+                <li><a>Jobs by Company</a></li>
+                <li><a>Jobs by Category</a></li>
+                <li><a>Jobs by Location</a></li>
+                <li><a>Jobs by Skills</a></li>
+                <li><a>Jobs by Designation</a></li>
+            </ul>
+        </li>
+        <li id="Post Resume"><a>Post Resume</a></li>
+        <li id="Job Seeker"><a>JobSeeker Login</a></li>
+        <li id="Fast Forward">
+            <a>Fast Forward</a>
+            <ul>
+                <li><a>Resume writing</a></li>
+                <li><a>Certification</a></li>
+                <li><a>Resume Spotlight</a></li>
+                <li><a>Jobs4u</a></li>
+            </ul>
+        </li>
+        <li id="More">
+            <a>More</a>
+            <ul>
+                <li><a>Mobile</a></li>
+                <li><a>Pay check</a></li>
+                <li><a>Blog</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+{% endhighlight %}
+
+{% highlight javascript %}
+  
+        //To set container API value during initialization  
+ 
+         $("#menu").ejMenu({ orientation: ej.Orientation.Vertical, container:"#target" });
+
+{% endhighlight %}
+
 ### cssClass `string`
 {:#members:cssclass}
 

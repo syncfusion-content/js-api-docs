@@ -255,6 +255,30 @@ Specifies the id of the template that has to be applied for alternate rows.
 {% endhighlight %}
 
 
+### expandStateMapping `string`
+{:#members:expandstatemapping}
+
+Specifies the mapping property path for the expand status of a record in data source.
+
+
+#### Default Value
+{:.param}
+
+* ""
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>                  
+       $("#treegrid").ejTreeGrid({ expandStateMapping : "isExpanded" });
+</script>
+
+{% endhighlight %}
+
 ### childMapping `string`
 {:#members:childmapping}
 
@@ -442,6 +466,92 @@ Specifies the name of the field from the dataSource to bind with this column.
 {% endhighlight %}
 
 
+### columns.template `string`
+{:#members:columns-template}
+
+Specifies the template string of the script element to enable column template for a column.
+
+#### Default Value
+* ""
+
+#### Example
+
+{% highlight html %}      
+
+$("#treegrid").ejTreeGrid({
+    columns: [{
+         isTemplateColumn: true,
+         template: "<script type="text/x-jsrender" id="columnTemplate">
+                   <div style="display:inline-block;">
+                   <img src="../images/gantt/.png" height="40" /></div></script>"
+           }]
+});
+
+{% endhighlight %}
+
+
+### columns.templateID `string`
+{:#members:columns-templateid}
+
+Specifies the template ID of the script element to enable column template for a column.
+
+#### Default Value
+* ""
+
+#### Example
+
+{% highlight js %}      
+
+<script type="text/x-jsrender" id="columnTemplate">      
+  <div style="display:inline-block;">
+   <img src="../images/gantt/.png" height="40" />
+  </div>        
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}      
+
+$("#treegrid").ejTreeGrid({
+    columns: [{
+        isTemplateColumn: true,
+        templateID: "columnTemplate"
+    }]
+});
+
+{% endhighlight %}
+
+### columns.angularTemplate `string`
+{:#members:columns-angulartemplate}
+
+Specifies the template ID or the template string of the AngularJS script element to enable column template for a column.
+
+#### Default Value
+* ""
+
+#### Example
+
+{% highlight js %}   
+
+<script type="text/ng-template" id="ngColumnTemplate">
+    <div style="padding:5px;">
+        <img src="content/images/treegrid/{{data.FullName}}.png" />
+    </div>
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}    
+
+$("#treegrid").ejTreeGrid({
+   columns: [{
+     isTemplateColumn: true,
+     angularTemplate: "#ngColumnTemplate"  
+   }]
+});
+
+{% endhighlight %}
+
 ### columns.filterEditType `enum`
 {:#members:columns-filteredittype}
 
@@ -519,10 +629,28 @@ Header text of the column.
 
 {% endhighlight %}
 
+### columns.displayAsCheckbox `boolean`
+{:#members:columns-displayascheckbox}
+
+Gets or sets a value that indicates to display a column value as checkbox or string
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+         
+        $("#treegrid").ejTreeGrid({columns: [{ field: "Approved", displayAsCheckbox: true, editType: ej.TreeGrid.EditingType.Boolean}]});
+
+{% endhighlight %}
+
+
 ### columns.showCheckbox `boolean`
 {:#members:columns-showcheckbox}
 
-Enables or disables the checkbox visibility in a column to make it as a checkbox column
+Enables or disables the checkbox visibility in a column for checkbox selection.
 
 #### Default Value
 
@@ -739,25 +867,6 @@ Specifies the text alignment for the column
 
 {% endhighlight %}
 
-
-### columns.templateID `String`
-
-{:#members:columns-templateid}
-
-Specifies the template for the TreeGrid column
-
-#### Default Value
-
-* ""
-
-#### Example
-
-{% highlight html %}
-         
-     $("#treegrid").ejTreeGrid({columns: [{ field:"CustomColumn", isTemplateColumn: true, templateID: "customColumnTemplate"}]});
-
-{% endhighlight %}
-
 ### columns.allowEditing `boolean`
 
 {:#members:columns-allowediting}
@@ -774,6 +883,117 @@ Enables or disables the ability to edit a row or cell.
          
         $("#treegrid").ejTreeGrid({columns: [{  allowEditing: false }]});
 
+{% endhighlight %}
+
+### columns.showInColumnChooser `boolean`
+
+{:#members:columns-showincolumnchooser}
+
+We can include or exclude particular column from column visibility list in column menu.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+         
+        $("#treegrid").ejTreeGrid({columns: [{  showInColumnChooser: false }]});
+
+{% endhighlight %}
+
+### columns.clipMode `enum`
+{:#members:columns-clipmode}
+
+<ts name = "ej.TreeGrid.ClipMode"/>
+
+Sets the clip mode for TreeGrid cell as ellipsis or clipped content(both header and content)
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Ellipsis</td>
+<td class="description">Shows ellipsis for the overflown cell.</td>
+</tr>
+<tr>
+<td class="name">Clip</td>
+<td class="description">Truncate the text in the cell.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.TreeGrid.ClipMode.Clip
+
+
+#### Example
+
+
+{% highlight html %}
+       
+        $("#treegrid").ejTreeGrid({columns: [{ clipMode: ej.TreeGrid.ClipMode.Clip},{clipMode: ej.TreeGrid.ClipMode.Ellipsis}]});
+
+{% endhighlight %}
+
+### columns.tooltip  `string`
+
+{:#members:columns-tooltip}
+
+Sets the tooltip template for the specific column.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+         
+        $("#treegrid").ejTreeGrid({columns: [{  tooltip: "" }]});
+
+{% endhighlight %}
+
+### columns.headerTooltip   `string`
+
+{:#members:columns-headertooltip}
+
+Sets the tooltip template for the column header
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+         
+        $("#treegrid").ejTreeGrid({columns: [{  headerTooltip: "" }]});
+
+{% endhighlight %}
+
+### columns.validationRules `Object`
+{:#members:columns-validationrules}
+
+specifies the conditions for saving data to the database while adding or editing the fields.
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="treegrid"></div>          
+<script>
+$("#treegrid").ejTreeGrid({
+  editSettings: {allowEditing: true, allowAdding: true},
+  columns:[{field:"TaskID", validationRules: { required: true, number: true }},{field:"TaskName"},{field:"StartDate"}] 
+});
+</script> 
 {% endhighlight %}
 
 ### columnDialogFields `array`
@@ -1131,6 +1351,10 @@ specifies the edit mode in TreeGrid , "cellEditing" is for cell type editing and
 <td class="name">RowEditing</td>
 <td class="description">you can edit a row.</td>
 </tr>
+<tr>
+<td class="name">DialogEditing</td>
+<td class="description">you can edit a row in dialog form.</td>
+</tr>
 </tbody>
 </table>
 
@@ -1200,6 +1424,26 @@ Specifies the position where the new row has to be added.
 {% highlight html %}
    
  $("#treegrid").ejTreeGrid({  editSettings:{rowPosition : ej.TreeGrid.RowPosition.Bottom} });
+
+{% endhighlight %}
+
+### editSettings.dialogEditorTemplateID  `string`
+{:#members:editsettings-dialogeditortemplateid}
+
+Specifies the template ID for the custom dialog.
+
+
+#### Default Value
+
+* null
+
+
+#### Example
+
+
+{% highlight html %}
+                  
+        $("#treegrid").ejTreeGrid({  editSettings:{dialogEditorTemplateID  : ""} });     
 
 {% endhighlight %}
 
@@ -2372,6 +2616,74 @@ Specifies the list of toolbar items to be rendered in TreeGrid toolbar
         $("#treegrid").ejTreeGrid({ toolbarItems: [ej.TreeGrid.ToolbarItems.Add,ej.TreeGrid.ToolbarItems.Edit] });                       
 
 {% endhighlight %}
+
+### toolbarSettings.customToolbarItems `array`
+{:#members:toolbarsettings-customtoolbaritems}
+
+Allows the user to insert custom toolbar items.
+
+### toolbarSettings.customToolbarItems.text `string`
+{:#members:toolbarsettings-customtoolbaritems-text}
+
+Allows the user to insert the custom icons in toolbar using CSS class name selector.
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+                 
+        $("#treegrid").ejTreeGrid({toolbarSettings: {customToolbarItems: [{ text: "Reset",tooltipText:"Column Visibility" }]}});
+
+{% endhighlight %}
+
+
+### toolbarSettings.customToolbarItems.templateID `string`
+{:#members:toolbarsettings-customtoolbaritems-templateid}
+
+Allows the user to insert the custom icons in toolbar using script templates. Using this property we can bind HTML elements and other EJ controls to TreeGrid toolbar.
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+
+         $("#treegrid").ejTreeGrid({toolbarSettings: {customToolbarItems: [{ templateID: "#ColumnVisibility",tooltipText:"Column Visibility" }]}});                     
+
+{% endhighlight %}
+
+
+### toolbarSettings.customToolbarItems.tooltipText `string`
+{:#members:toolbarsettings-customtoolbaritems-tooltiptext}
+
+Allows the user to display custom tooltip text for TreeGrid custom toolbar items.
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+                  
+        $("#treegrid").ejTreeGrid({toolbarSettings: {customToolbarItems: [{ templateID: "#ColumnVisibility",tooltipText:"Column Visibility" },{ text: "Reset",tooltipText:"Column Visibility" }]}});     
+
+{% endhighlight %}
+
 
 ### treeColumnIndex `number`
 {:#members:treecolumnindex}

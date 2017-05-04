@@ -5359,6 +5359,30 @@ $("#Spreadsheet").ejSpreadsheet("gotoPage", 3, true);
 
 {% endhighlight %}
 
+### hideActivationPanel()
+{:#methods:hideactivationpanel}
+
+This method is used to hide the pivot table activationPanel in the Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.hideActivationPanel(); // To hide the pivot table activationPanel in the Spreadsheet.
+</script>
+
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+// To hide the pivot table activationPanel in the Spreadsheet.
+$("#Spreadsheet").ejSpreadsheet("hideActivationPanel");        
+</script>
+
+{% endhighlight %}
+
 ### hideColumn(startCol, endCol)
 {:#methods:hidecolumn}
 
@@ -7349,7 +7373,7 @@ This method is used to update the details for custom undo and redo operations.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), details = { action: "custom", cell: xlObj.getActiveCell() };
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), details = { action: "custom", cell: xlObj.getActiveCell(), sheetIndex: 1 };
 // To update undo and redo collections.
 xlObj.updateUndoRedoCollection(details); 
 </script>
@@ -8190,7 +8214,7 @@ This method is used to edit the comment in the target Cell in Spreadsheet.
 // Initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 //Sends an edit comment request to the Spreadsheet.
-xlObj.XLComment.editComment({rowIdx: 1, colIdx: 1});
+xlObj.XLComment.editComment({rowIndex: 1, colIndex: 1});
 </script>
 
 {% endhighlight %}
@@ -9001,9 +9025,9 @@ This method is used to update a particular cell value and its format in the Spre
 <script>
 // Initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), className;
-className = xlObj.XLFormat.getFormatHashCode({ color: "red" });
+className = xlObj.XLFormat.getFormatHashCode({ color: "#FF0000" });
 // To update the specified values in a particular cell.
-xlObj.XLEdit.updateCellValue({rowIndex: 1, colIndex: 1}, "product", className,1);
+xlObj.XLEdit.updateCellValue({rowIndex: 1, colIndex: 1}, "product", className, 1);
 </script>
 
 {% endhighlight %}
@@ -9352,7 +9376,7 @@ This method is used to update the decimal places for numeric value for the selec
 <tr>
 <td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Pass the decimal places type in increment/decrement.</td>
+<td class="description">Pass the decimal places type in IncreaseDecimal/DecreaseDecimal.</td>
 </tr>
 <tr>
 <td class="name">range</td>
@@ -9369,7 +9393,7 @@ This method is used to update the decimal places for numeric value for the selec
 // Initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To update decimal place value in the range of cells in the Spreadsheet.
-xlObj.XLFormat.updateDecimalPlaces("increment", "A1:C3");
+xlObj.XLFormat.updateDecimalPlaces("IncreaseDecimal", "A1:C3");
 </script>
 
 {% endhighlight %}
@@ -10122,7 +10146,7 @@ This method is used to dynamically add the contextual tabs in the ribbon.
 //initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 var cTab = { backgroundColor: "#FCFBEB", borderColor: "#F2CC1C", tabs: [{id: "Design", text: "DESIGN",groups: [{ text: "Table Style",type: "custom", contentID: "design" }]}] };
-xlObj.XLRibbon.addContextualTabs(cTab, 2); // To add a contextual tab in the ribbon.
+xlObj.XLRibbon.addContextualTabs(cTab, 7); // To add a contextual tab in the ribbon.
 </script>
 
 {% endhighlight %}
@@ -10298,7 +10322,7 @@ This method is used to dynamically add the tab group in the ribbon.
 <script>
 //initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-var ribbonGrp = { alignType: ej.Ribbon.AlignType.Rows, content: [{ groups: [{  id: "new",  text: "CUT",buttonSettings: {
+var ribbonGrp = { text: "Cut", alignType: ej.Ribbon.AlignType.Rows, content: [{ groups: [{  id: "new",  text: "CUT",buttonSettings: {
                                     contentType: ej.ContentType.TextAndImage,
                                     imagePosition: ej.ImagePosition.ImagetTop,
                                     prefixIcon: "e-icon e-ssr-cut",

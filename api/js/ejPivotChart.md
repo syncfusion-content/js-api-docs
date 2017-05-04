@@ -875,6 +875,20 @@ Allows the user to view PivotChart from right to left.
     $("#PivotChart1").ejPivotChart({ enableRTL: true });
 {% endhighlight %}
 
+### enableMultiLevelLabels `boolean`
+{:#members:enablemultilevellabels}
+
+Allows user to render complete PivotChart on drill operation, that is, when expanding and collapsing members which are shown in multi-level labels.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ enableMultiLevelLabels: true });
+{% endhighlight %}
+
 ### isResponsive `boolean`
 {:#members:isresponsive}
 

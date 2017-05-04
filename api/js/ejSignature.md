@@ -389,7 +389,7 @@ used to save the drawn image.
 </tr>
 </table>
 
- N>  This method accepts string as an argument and this is optional. If the argument filename is not given then the signature will be downloaded with "MySignature" name.
+ N>  This method accepts string as an argument and this is optional. If the argument filename is not given then the signature will be downloaded with any random name.
 
 #### Example  
 
