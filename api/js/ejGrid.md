@@ -3630,16 +3630,16 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### rowDropSettings.dragBehaviour `enum`
-{:#members:rowdropsettings-dragbehaviour}
+### rowDropSettings.dragBehavior `enum`
+{:#members:rowdropsettings-dragbehavior}
 
-<ts name="ej.Grid.DragBehaviour"/>
+<ts name="ej.Grid.DragBehavior"/>
 
-Gets or sets a value that indicates whether to define the behaviour for drag.
+Gets or sets a value that indicates whether to define the behavior for drag.
 
 #### Default Value:
 {:.param}
-* ej.Grid.DragBehaviour.Move
+* ej.Grid.DragBehavior.Move
 
 <table>
 <tr>
@@ -3665,12 +3665,12 @@ Gets or sets a value that indicates whether to define the behaviour for drag.
 $("#Grid").ejGrid({
     dataSource: window.gridData,
     allowRowDragAndDrop: true,
-    rowDropSettings: { dropTargetID: "#DestGrid" ,dragBehaviour:ej.Grid.DragBehaviour.Copy }
+    rowDropSettings: { dropTargetID: "#DestGrid" ,dragBehavior:ej.Grid.DragBehavior.Copy }
 });
 $("#DestGrid").ejGrid({
     dataSource: [],
     allowRowDragAndDrop: true,
-    rowDropSettings: { dropTargetID: "#Grid" ,dragBehaviour:ej.Grid.DragBehaviour.Copy }
+    rowDropSettings: { dropTargetID: "#Grid" ,dragBehavior:ej.Grid.DragBehavior.Copy }
 });
 </script>
 {% endhighlight %}
