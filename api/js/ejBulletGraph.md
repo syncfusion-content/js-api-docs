@@ -3296,6 +3296,51 @@ enableAnimation : false
 
 
 
+### enableResizing `boolean`
+{:#members:enableResizing}
+
+
+
+
+
+
+
+
+Controls whether bullet graph has to be responsive while resizing.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+* true
+
+
+
+
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
+$("#bulletGraph1").ejBulletGraph({
+enableResizing : false                 
+});
+</script>{% endhighlight %}
+
+
+
 
 ### flowDirection `enum`
 {:#members:flowdirection}
@@ -3456,8 +3501,64 @@ isResponsive : false
 });
 </script>{% endhighlight %}
 
+### enableGroupSeparator `boolean`
+{:#members:enablegroupseparator}
 
 
+
+Specifies to convert the date object to string, using locale settings.
+
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+{% highlight html %}
+
+ 
+<div id="bulletGraph1"></div> 
+<script>
+$("#bulletGraph1").ejBulletGraph({
+enableGroupSeparator: true                  
+});
+</script>{% endhighlight %} 
+
+
+
+### locale `string`
+{:#members:locale}
+
+
+
+
+Name of the culture based on which bulletgraph should be localized.
+
+
+#### Default Value
+
+* "en-US"
+
+
+
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="bulletGraph1"></div> 
+<script>
+$("#bulletGraph1").ejBulletGraph({
+locale : "en-US"                   
+});
+</script> {% endhighlight %}
 
 
 
@@ -7012,8 +7113,24 @@ $("#bulletGraph1").ejBulletGraph({
 });{% endhighlight %}
 
 
+### drawTicks
+{:#events:drawticks}
 
 
+
+Fires on rendering the ticks.
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+//drawTicks event for bulletgraph
+$("#bulletGraph1").ejBulletGraph({
+   drawTicks: function (args) {}
+});{% endhighlight %}
 
 
 

@@ -204,6 +204,72 @@ $("#CoreCircularGauge").ejCircularGauge({ enableAnimation: true,scales: [{ point
 </script>{% endhighlight %}
 
 
+### enableGroupSeparator `boolean`
+{:#members:enablegroupseparator}
+
+
+
+Specify to convert the  date object to  string, using locale settings.
+
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
+        $("#CoreCircularGauge").ejCircularGauge({  enableGroupSeparator : true });
+</script>{% endhighlight %}
+
+
+
+
+### enableResize `boolean`
+{:#members:enableresize}
+
+
+
+
+Controls whether circular gauge has to be responsive while resizing.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
+        $("#CoreCircularGauge").ejCircularGauge({  enableResize : true });
+</script>{% endhighlight %}
+
+
+
+
 
 
 ### frame `object`
@@ -627,6 +693,35 @@ Specify isResponsive value of circular gauge
 
 
 
+### locale `string`
+{:#members:locale}
+
+
+
+
+Name of the culture based on which circular gauge should be localized. 
+
+
+#### Default Value
+
+* "en-US"
+
+
+
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
+        $("#CoreCircularGauge").ejCircularGauge({  locale : "en-US" });
+</script>{% endhighlight %}
+
+
+
 ### maximum `number`
 {:#members:maximum}
 
@@ -696,7 +791,7 @@ $("#CoreCircularGauge").ejCircularGauge({ minimum: 10 });
 ### outerCustomLabelPosition `enum`
 {:#members:outercustomlabelposition}
 
-<ts name = "ej.datavisualization.CircularGauge.CustomLabelPositionType"/>
+<ts name = "ej.datavisualization.CircularGauge.OuterCustomLabelPosition"/>
 
 Specify outerCustomLabelPosition value of circular gauge See <a href="global.html#OuterCustomLabelPosition">OuterCustomLabelPosition</a>
 
@@ -1266,6 +1361,41 @@ Specify y-axis  position of labels.
 {% endhighlight %}
 
 
+### scales.customLabels.textAngle `number`
+{:#members:scales.customlabels.textangle}
+
+
+
+
+Specify angle for the rotation of the custom labels in degrees.
+
+
+#### Default Value
+
+
+
+* 0
+
+
+
+
+#### Example
+
+ 
+{% highlight html %}
+ <div id="CoreCircularGauge">
+</div> 
+ 
+<script> 
+                         
+<$("#CoreCircularGauge").ejCircularGauge({ 
+   scales: [{
+    customLabels:[{textAngle:90}]
+    }]                      
+
+}); 
+
+</script>{% endhighlight %}
 
 ### scales.customLabels.font `object`
 {:#members:scales.customlabels.font}
@@ -1395,6 +1525,69 @@ $("#CoreCircularGauge").ejCircularGauge({
     });
  {% endhighlight %}
 
+
+
+### scales.customLabels.positionType `enum`
+{:#members:scales.customlabels.positiontype}
+
+<ts name = "ej.datavisualization.CircularGauge.CustomLabelPositionType"/>
+
+
+Specifies the position of the  custom labels. See <a href="global.html#CustomLabelPositionType">CustomLabelPositionType</a>
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Inner</td>
+<td class="type">string</td> 
+<td class="description">Sets the Custom label position as Inner</td>
+</tr>
+<tr>
+<td class="name">
+Outer</td>
+<td class="type">string</td>
+<td class="description">Sets the Custom label position as Outer</td>
+</tr> 
+</tbody>
+</table>
+
+
+#### Default Value
+
+
+
+* inner
+
+
+
+
+#### Example
+
+ 
+{% highlight html %}
+ 
+ <div id="CoreCircularGauge">
+</div> 
+ 
+<script>                         
+<$("#CoreCircularGauge").ejCircularGauge({ 
+  
+   scales: [{
+    customLabels:[{positionType:"outer"}]
+    }]                      
+
+}); 
+
+</script>{% endhighlight %}
 
 
 
