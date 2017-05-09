@@ -839,7 +839,9 @@ $("#container").ejChart({
 
 
 
-Opacity of the chart border.
+
+
+
 
 
 #### Default Value
@@ -1822,11 +1824,11 @@ $('#container').ejChart({
 
 
 
-### commonSeriesOptions.visibleOnLegend `string`
+### commonSeriesOptions.visibleOnLegend `enum`
 {:#members:commonseriesoptions-visibleonlegend}
 
 
-
+<ts ref = "ej.datavisualization.Chart.VisibleOnLegend"/>
 
 Enables or disables the visibility of legend item.
 
@@ -4041,7 +4043,96 @@ commonSeriesOptions :{marker :{dataLabel :{margin :{ top :10 } }}}
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dff0lfpg)
 
+### commonSeriesOptions.marker.dataLabel.offset `number`
+{:#members:commonseriesoptions-marker-datalabel-offset}
 
+
+
+
+Moves the labels vertically by specified offset.
+
+
+#### Default Value
+
+
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+commonSeriesOptions :[{  marker :{dataLabel :{offset : 10}} }]                  
+});
+ {% endhighlight %}
+
+
+### commonSeriesOptions.marker.dataLabel.offset.x `number`
+{:#members:commonseriesoptions-marker-datalabel-offset-x}
+
+
+
+
+X value or horizontal offset to position the labels in chart.
+
+
+#### Default Value
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   commonSeriesOptions :[{  marker :{dataLabel :{offset : { x:10 }}} }]                    
+
+});
+
+{% endhighlight %}
+
+
+
+
+### commonSeriesOptions.marker.dataLabel.offset.y `number`
+{:#members:commonseriesoptions-marker-datalabel-offset-y}
+
+
+
+
+Y value or vertical offset to position the labels.
+
+
+#### Default Value
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   commonSeriesOptions :[{  marker :{dataLabel :{offset : { y:10 }}} }]                  
+
+});
+
+{% endhighlight %}
 
 ### commonSeriesOptions.marker.dataLabel.opacity `number`
 {:#members:commonseriesoptions-marker-datalabel-opacity}
@@ -7341,6 +7432,39 @@ $("#container").ejChart({
 });
  {% endhighlight %} 
 
+ 
+### commonSeriesOptions.errorBar.opacity `number`
+{:#members:commonSeriesOptions.errorbar.opacity}
+
+
+Opacity of the error bar.
+
+#### Default Value
+
+
+
+ * 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+    commonSeriesOptions : {
+        errorBar:{       
+           opacity: 1
+        }
+
+    }                   
+});
+ {% endhighlight %} 
+
+
 
 ### commonSeriesOptions.trendlines `array`
 {:#members:commonseriesoptions.trendlines}
@@ -7351,6 +7475,34 @@ $("#container").ejChart({
 Option to add the trendlines to chart.
 
 
+### commonSeriesOptions.trendlines.visibleOnLegend `enum`
+{:#members:commonseriesoptions-trendlines-visibleonlegend}
+
+
+<ts ref = "ej.datavisualization.Chart.VisibleOnLegend"/>
+
+Show/hides the trendline legend.
+
+
+#### Default Value
+
+
+
+* visible
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :[{trendlines:[{ visibleOnLegend:'hidden' }]}]                  
+});
+{% endhighlight %}
 
 
 ### commonSeriesOptions.trendlines.visibility `boolean`
@@ -7379,6 +7531,352 @@ Show/hides the trendline.
  
 $("#container").ejChart({
 commonSeriesOptions :{trendlines:[{ visibility:'visible' }]}                 
+});
+{% endhighlight %}
+
+
+### commonSeriesOptions.trendlines.tooltip `object`
+{:#members:commonseriesoptions-trendlines-tooltip}
+
+
+
+
+Options for customizing the tooltip of the trendlines in the chart.
+
+
+### commonSeriesOptions.trendlines.tooltip.border `object`
+{:#members:commonseriesoptions-trendlines-tooltip-border}
+
+
+
+
+Options for customizing the border of the  trendline tooltip.
+
+
+
+
+### commonSeriesOptions.trendlines.tooltip.border.color `string`
+{:#members:commonseriesoptions-trendlines-tooltip-border-color}
+
+
+
+
+Border color of the trendline tooltip.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({        
+commonSeriesOptions :[{ trendlines:[{ tooltip :{border:{ color : "green" }} }]}]                  
+});
+ {% endhighlight %}
+
+
+
+
+### commonSeriesOptions.trendlines.tooltip.border.width `number`
+{:#members:commonseriesoptions-trendlines-tooltip-border-width}
+
+
+
+
+Border width of the trendline tooltip.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :[{ trendlines:[{ tooltip :{border:{  width : 2 }} }]}]                   
+});
+  {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dmvqb51g)
+
+
+
+### commonSeriesOptions.trendlines.tooltip.rx `number`
+{:#members:commonseriesoptions-trendlines-tooltip-rx}
+
+
+
+
+Customize the corner radius of the trendline tooltip rectangle.
+
+
+#### Default Value
+
+
+
+0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :[{ trendlines:[{ tooltip :{rx: 10} }]}]                  
+});
+  {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
+
+
+### commonSeriesOptions.trendlines.tooltip.ry `number`
+{:#members:commonseriesoptions-trendlines-tooltip-ry}
+
+
+
+
+Customize the corner radius of the trendline tooltip rectangle.
+
+
+#### Default Value
+
+
+
+0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :[{ trendlines:[{ tooltip :{ry: 10} }]}]                  
+});
+  {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
+
+
+
+### commonSeriesOptions.trendlines.tooltip.duration `string`
+{:#members:commonseriesoptions-trendlines-tooltip-duration}
+
+
+
+
+Specifies the duration, the tooltip has to be displayed.
+
+
+#### Default Value
+
+
+
+* "500ms"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :[{ trendlines:[{ tooltip :{duration : "300ms"} }]}]                   
+});
+  {% endhighlight %}
+
+
+
+### commonSeriesOptions.trendlines.tooltip.enableAnimation `boolean`
+{:#members:commonseriesoptions-trendlines-tooltip-enableanimation}
+
+
+
+
+Enables/disables the animation of the trendline tooltip when moving from one point to other.
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :[{ trendlines:[{ tooltip :{enableAnimation : false} }]}]                   
+});
+{% endhighlight %}
+
+
+
+### commonSeriesOptions.trendlines.tooltip.fill `string`
+{:#members:commonseriesoptions-trendlines-tooltip-fill}
+
+
+
+
+Background color of the trendline tooltip.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :[{ trendlines:[{ tooltip :{fill : "green"} }]}]                   
+});
+ {% endhighlight %}
+
+
+
+### commonSeriesOptions.trendlines.tooltip.format `string`
+{:#members:commonseriesoptions-trendlines-tooltip-format}
+
+
+
+
+Format of the tooltip content displayed in the trendlines.
+
+
+#### Default Value
+
+
+
+* "#point.x# : #point.y#"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :[{ trendlines:[{ tooltip :{format : "#point.x# : #point.y#%"} }]}]                  
+});
+ {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rzxmpi0c)
+
+
+
+### commonSeriesOptions.trendlines.tooltip.opacity `number`
+{:#members:commonseriesoptions-trendlines-tooltip-opacity}
+
+
+
+
+
+Opacity of the trendline tooltip.
+
+
+#### Default Value
+
+
+
+* 0.5
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :[{ trendlines:[{ tooltip :{opacity : 0.5} }]}]                 
+});
+{% endhighlight %}
+
+
+### commonSeriesOptions.trendlines.intercept `number`
+{:#members:commonseriesoptions-trendlines-intercept}
+
+
+
+
+
+Specifies the intercept value of the trendlines.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{ trendlines:[{ intercept : 10 }]}                 
 });
 {% endhighlight %}
 
@@ -7423,7 +7921,7 @@ commonSeriesOptions :{trendlines:[{ type:'linear' }]}
 
 
 
-Name for the trendlines that is to be displayed in the legend text.
+Specifies name for the trendlines  to be displayed as legend text.
 
 
 #### Default Value
@@ -9252,6 +9750,145 @@ $("#container").ejChart({
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vrm2umdf)
 
+### indicators.font `object`
+{:#members:indicators-font}
+
+
+
+
+Options to customize the font used for indicators item text.
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jo5t2d4u)
+
+
+
+### indicators.font.fontFamily `string`
+{:#members:indicators-font-fontfamily}
+
+
+
+
+
+Font family for indicator item text.
+
+
+#### Default Value
+
+* "Segoe UI"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   indicators :[{ font :{fontFamily : "algerian"}}]                    
+
+});
+
+{% endhighlight %}
+
+
+
+
+### indicators.font.fontStyle `enum`
+{:#members:indicators-font-fontstyle}
+
+<ts ref="ej.datavisualization.Chart.FontStyle"/>
+
+
+Font style for indicators item text.
+
+
+#### Default Value
+
+* "Normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   indicators :[{ font :{fontStyle : "italic"}}]                    
+
+});
+
+{% endhighlight %}
+
+
+
+
+### indicators.font.fontWeight `enum`
+{:#members:indicators-font-fontweight}
+
+<ts ref="ej.datavisualization.Chart.FontWeight"/>
+
+
+Font weight for indicators item text.
+
+
+#### Default Value
+
+* "Regular". See <a href="global.html#members:fontweight">FontWeight</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   indicators :[{ font :{fontWeight : "lighter"}}]                    
+
+});
+
+{% endhighlight %}
+
+
+
+
+### indicators.font.size `string`
+{:#members:indicators-font-size}
+
+
+
+
+Font size for indicators item text.
+
+
+#### Default Value
+
+* "12px"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   indicators :{ font :{size : "14px"}}                    
+
+});
+
+{% endhighlight %}
+
 
 ### indicators.histogram `object`
 {:#members:indicators-histogram}
@@ -10258,6 +10895,38 @@ $("#container").ejChart({
 {% endhighlight %}
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gshculgi)
+
+
+## indicators.visible `boolean`
+{:#members:indicators-visible}
+
+
+
+
+Toggles the visibility of indicator line.
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+      indicators :[{ visible : false}]
+                    
+});
+
+{% endhighlight %}
 
 
 ### indicators.type `string`
@@ -11830,6 +12499,35 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hnrnl1o1)
 
 
+### legend.toggleSeriesVisibility `boolean`
+{:#members:legend-toggleseriesvisibility}
+
+
+
+
+By clicking the legend , the visibility of the series can be shown/hidden.
+
+
+#### Default Value
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   toggleSeriesVisibility : {visible : false}                     
+
+});
+
+{% endhighlight %}
+
 
 ### legend.visible `boolean`
 {:#members:legend-visible}
@@ -12414,6 +13112,38 @@ $("#container").ejChart({
 });
 
 {% endhighlight %}
+
+
+### primaryXAxis.enableAutoIntervalOnZooming`boolean`
+{:#members:primaryxaxis-enableautointervalonzooming}
+
+
+
+Specifies the interval of the axis according to the zoomed data of the chart. 
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { enableAutoIntervalOnZooming: true }
+                          
+});
+
+{% endhighlight %}
+
+
 
 
 
@@ -14221,6 +14951,63 @@ Specifies whether to render the axis at the opposite side of its default positio
 $("#container").ejChart({
 
     primaryXAxis: { opposedPosition : true }
+                          
+});
+
+{% endhighlight %}
+
+
+
+### primaryXAxis.orientation `enum`
+{:#members:primaryxaxis-orientation}
+
+<ts name = "ej.datavisualization.Chart.AxisOrientation"/>
+
+
+Specifies the orientation of the axis line
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Horizontal</td>
+<td class="type">string</td> 
+<td class="description last">The axis line is displayed in horizontal direction </td>
+</tr>
+<tr>
+<td class="name">
+Vertical</td>
+<td class="type">string</td>
+<td class="description last">The axis line is displayed in vertical direction</td>
+</tr> 
+</tbody>
+</table>
+
+
+#### Default Value
+
+
+
+* Horizontal
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { orientation : 'Vertical' }
                           
 });
 
@@ -17225,6 +18012,37 @@ $("#container").ejChart({
 
 
 
+### axes.enableAutoIntervalOnZooming`boolean`
+{:#members:axes-enableautointervalonzooming}
+
+
+Specifies the interval of the axis according to the zoomed data of the chart. 
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes:[ { enableAutoIntervalOnZooming : true } ]   
+                          
+});
+
+{% endhighlight %}
+
+
+
 ### axes.font `object`
 {:#members:axes-font}
 
@@ -18364,6 +19182,39 @@ $("#container").ejChart({
 
 
 
+### axes.orientation `enum`
+{:#members:axes-orientation}
+
+
+<ts ref = "ej.datavisualization.Chart.AxisOrientation"/>
+
+Specifies the orientation of the axis line in the chart.
+
+
+#### Default Value
+
+
+
+* 'horizontal'
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ orientation : 'vertical' }]
+                          
+});
+
+{% endhighlight %}
+
+
+
 
 ### axes.plotOffset `number`
 {:#members:axes-plotoffset}
@@ -19187,6 +20038,179 @@ Specifies whether the axis elements need to be placed nearby the axis line, whil
 $("#container").ejChart({
 
     axes: [{ showNextToAxisLine : false }]
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryXAxis.scrollbarSettings `object`
+{:#members:primaryxaxis-scrollbarsettings}
+
+
+
+
+Options for customizing the axis scrollbar 
+
+
+### primaryXAxis.scrollbarSettings.visible `boolean`
+{:#members:primaryxaxis-scrollbarsettings-visible}
+
+
+
+
+Specifies to enables or disables the scroll bar.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { scrollbarSettings:{visible:true} }
+                      
+});
+
+{% endhighlight %}
+
+
+### primaryXAxis.scrollbarSettings.canResize `boolean`
+{:#members:primaryxaxis-scrollbarsettings-canresize}
+
+
+
+
+Controls whether scrollbar has to be responsive in the chart.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { scrollbarSettings:{canResize:true} }
+                      
+});
+
+{% endhighlight %}
+
+
+
+### primaryXAxis.scrollbarSettings.range `object`
+{:#members:primaryxaxis-scrollbarsettings-range}
+
+
+Options to customize the range for the scrollbar in the axis.
+
+ 
+
+
+### primaryXAxis.scrollbarSettings.range.min `number`
+{:#members:primaryxaxis-scrollbarsettings-range-min}
+
+
+
+
+Minimum value of the scrollbar range.
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { scrollbarSettings : { range : { min: 10 } } }
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryXAxis.scrollbarSettings.range.max `number`
+{:#members:primaryxaxis-scrollbarsettings-range-max}
+
+
+
+
+Maximum value for the scrollbar range .
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { scrollbarSettings : { range : { max: 100 } } } 
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryXAxis.scrollbarSettings.pointsLength `number`
+{:#members:primaryxaxis-scrollbarsettings-pointslength}
+
+
+
+
+The maximum number of points to be displayed in the scrollbar. 
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { scrollbarSettings : { pointsLength : 50 } } 
                           
 });
 
@@ -20442,6 +21466,179 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
+### axes.scrollbarSettings `object`
+{:#members:axes-scrollbarsettings}
+
+
+
+
+Options for customizing the axis scrollbar.
+
+
+### axes.scrollbarSettings.visible `boolean`
+{:#members:axes-scrollbarsettings-visible}
+
+
+
+
+Specifies to enable or disable the scrollbar.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: { scrollbarSettings:{visible:true} }
+                      
+});
+
+{% endhighlight %}
+
+
+### axes.scrollbarSettings.canResize `boolean`
+{:#members:axes-scrollbarsettings-canresize}
+
+
+
+
+Controls whether scrollbar has to be responsive in the chart.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: { scrollbarSettings:{canResize:true} }
+                      
+});
+
+{% endhighlight %}
+
+
+
+### axes.scrollbarSettings.range `object`
+{:#members:axes-scrollbarsettings-range}
+
+
+Options to customize the range for the scrollbar in the axis.
+
+ 
+
+
+### axes.scrollbarSettings.range.min `number`
+{:#members:axes-scrollbarsettings-range-min}
+
+
+
+
+Minimum value of the scrollbar range.
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: { scrollbarSettings : { range : { min: 10 } } }
+                          
+});
+
+{% endhighlight %}
+
+
+### axes.scrollbarSettings.range.max `number`
+{:#members:axes-scrollbarsettings-range-max}
+
+
+
+
+Maximum value for the scrollbar range .
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: { scrollbarSettings : { range : { max: 100 } } } 
+                          
+});
+
+{% endhighlight %}
+
+
+### axes.scrollbarSettings.pointsLength `number`
+{:#members:axes-scrollbarsettings-pointslength}
+
+
+
+
+The maximum number of points to be displayed in the scrollbar. 
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: { scrollbarSettings : { pointsLength : 50 } } 
+                          
+});
+
+{% endhighlight %}
+
+
 
 
 ### primaryYAxis `object`
@@ -20630,6 +21827,39 @@ $("#container").ejChart({
 {% endhighlight %}
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hyakwb3m)
+
+
+### primaryYAxis.enableAutoIntervalOnZooming`boolean`
+{:#members:primaryyaxis-enableautointervalonzooming}
+
+
+
+Specifies the interval of the axis according to the zoomed data of the chart. 
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { enableAutoIntervalOnZooming: true }
+                          
+});
+
+{% endhighlight %}
+
+
 
 
 ### primaryYAxis.axisLine `object`
@@ -22182,6 +23412,39 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
+### primaryYAxis.orientation `enum`
+{:#members:primaryyaxis-orientation}
+
+<ts ref = "ej.datavisualization.Chart.AxisOrientation"/>
+
+
+Specifies the orientation of the axis line in the chart.
+
+
+#### Default Value
+
+
+
+* Vertical
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { orientation : 'Horizontal' }
+                          
+});
+
+{% endhighlight %}
+
+
+
 
 ### primaryYAxis.plotOffset `number`
 {:#members:primaryyaxis-plotoffset}
@@ -23081,6 +24344,185 @@ $("#container").ejChart({
 });
 
 {% endhighlight %}
+
+
+
+### primaryYAxis.scrollbarSettings `object`
+{:#members:primaryyaxis-scrollbarsettings}
+
+
+
+
+Options for customizing the axis scrollbar.
+
+
+### primaryYAxis.scrollbarSettings.visible `boolean`
+{:#members:primaryyaxis-scrollbarsettings-visible}
+
+
+
+
+Specifies to enable or disable the scrollbar.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { scrollbarSettings:{visible:true} }
+                      
+});
+
+{% endhighlight %}
+
+
+### primaryYAxis.scrollbarSettings.canResize `boolean`
+{:#members:primaryyaxis-scrollbarsettings-canresize}
+
+
+
+
+Controls whether scrollbar has to be responsive in the chart.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { scrollbarSettings:{canResize:true} }
+                      
+});
+
+{% endhighlight %}
+
+
+
+### primaryYAxis.scrollbarSettings.range `object`
+{:#members:primaryyaxis-scrollbarsettings-range}
+
+
+Options to customize the range for the scrollbar in the axis.
+
+ 
+
+
+### primaryYAxis.scrollbarSettings.range.min `number`
+{:#members:primaryyaxis-scrollbarsettings-range-min}
+
+
+
+
+Minimum value of the scrollbar range.
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { scrollbarSettings : { range : { min: 10 } } }
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryYAxis.scrollbarSettings.range.max `number`
+{:#members:primaryyaxis-scrollbarsettings-range-max}
+
+
+
+
+Maximum value for the scrollbar range .
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { scrollbarSettings : { range : { max: 100 } } } 
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryYAxis.scrollbarSettings.pointsLength `number`
+{:#members:primaryyaxis-scrollbarsettings-pointslength}
+
+
+
+
+The maximum number of points to be displayed in the scrollbar. 
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { scrollbarSettings : { pointsLength : 50 } } 
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+
 
 
 ### primaryYAxis.stripLine `array`
@@ -26721,6 +28163,97 @@ series :[{marker :{dataLabel :{margin :{ top :10 } }}}]
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/3yoplr42)
 
+### series.marker.dataLabel.offset `number`
+{:#members:series-marker-datalabel-offset}
+
+
+
+
+Moves the label vertically by specified offset.
+
+
+#### Default Value
+
+
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+series :[{  marker :{dataLabel :{offset : 10}} }]                  
+});
+ {% endhighlight %}
+
+
+### series.marker.dataLabel.offset.x `number`
+{:#members:series-marker-datalabel-offset-x}
+
+
+
+
+X value or horizontal offset to position the labels in chart.
+
+
+#### Default Value
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   series :[{  marker :{dataLabel :{offset : { x:10 }}} }]                    
+
+});
+
+{% endhighlight %}
+
+
+
+
+### series.marker.dataLabel.offset.y `number`
+{:#members:series-marker-datalabel-offset-y}
+
+
+
+
+Y value or vertical offset to position the labels.
+
+
+#### Default Value
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   series :[{  marker :{dataLabel :{offset : { y:10 }}} }]                  
+
+});
+
+{% endhighlight %}
+
 
 
 ### series.marker.dataLabel.opacity `number`
@@ -26942,37 +28475,6 @@ series :[{marker :{dataLabel :{template : "item"}}}]
  
  
  
-### series.marker.dataLabel.offset `number`
-{:#members:series-marker-datalabel-offset}
-
-
-
-
-Moves the label vertically by some offset.
-
-
-#### Default Value
-
-
-
-* 0
-
-
-
-
-#### Example
-
-
-{% highlight js %}
- 
-
-$("#container").ejChart({
-series :[{marker :{dataLabel :{offset : 10}}}]                  
-});
- {% endhighlight %}
-
-
-
 ### series.marker.fill `string`
 {:#members:series-marker-fill}
 
@@ -27033,7 +28535,6 @@ $("#container").ejChart({
 series :[{marker :{ imageUrl: "../images/sample.png"}}]                  
 });
 {% endhighlight %}
-
 
 
 
@@ -27238,6 +28739,7 @@ $("#container").ejChart({
 });
 
 {% endhighlight %} 
+
 
 
 ### series.opacity `number`
@@ -28514,6 +30016,39 @@ $("#container").ejChart({
 });
  {% endhighlight %} 
  
+
+### series.errorBar.opacity `number`
+{:#members:series.errorbar.opacity}
+
+
+Specifies the opacity of the error bar.
+
+#### Default Value
+
+
+
+ * 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+    series : [{
+        errorBar:{       
+           opacity: 1
+        }
+
+    }]                   
+});
+ {% endhighlight %} 
+
+
   
 
 ### series.points `array`
@@ -28607,13 +30142,43 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
 
 
-### series.points.visibleOnLegend `string`
+### series.points.visibleOnLegend `enum`
 {:#members:series-points-visibleonlegend}
+
+
+<ts name = "ej.datavisualization.Chart.VisibleOnLegend"/>
 
 
 
 
 Enables or disables the visibility of legend item.
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Visible</td>
+<td class="type">string</td> 
+<td class="description">Displays the series in the legend</td>
+</tr>
+<tr>
+<td class="name">
+Hidden</td>
+<td class="type">string</td>
+<td class="description">Hides the series in the legend</td>
+</tr> 
+</tbody>
+</table>
+
+
 
 
 
@@ -30852,11 +32417,11 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/mg5325qz)
 
 
 
-### series.visibleOnLegend `string`
+### series.visibleOnLegend `enum`
 {:#members:series-visibleonlegend}
 
 
-
+<ts ref = "ej.datavisualization.Chart.VisibleOnLegend"/>
 
 Enables or disables the visibility of legend item.
 
@@ -31248,6 +32813,34 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xsmhbrfn)
 
 Option to add trendlines to chart.
 
+### series.trendlines.visibleOnLegend `enum`
+{:#members:series-trendlines-visibleonlegend}
+
+<ts ref = "ej.datavisualization.Chart.VisibleOnLegend"/>
+
+
+On Click,toggles the visibility of the trendline legend
+
+
+#### Default Value
+
+
+
+* visible
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{trendlines:[{ visibleOnLegend:'hidden' }]}]                  
+});
+{% endhighlight %}
 
 
 
@@ -31277,6 +32870,353 @@ Show/hides the trendline.
  
 $("#container").ejChart({
 series :[{trendlines:[{ visibility:'visible' }]}]                  
+});
+{% endhighlight %}
+
+
+
+### series.trendlines.tooltip `object`
+{:#members:series-trendlines-tooltip}
+
+
+
+
+Options for customizing the trendline tooltip
+
+
+### series.trendlines.tooltip.border `object`
+{:#members:series-trendlines-tooltip-border}
+
+
+
+
+Options for customizing the border of the trendline tooltip.
+
+
+
+
+### series.trendlines.tooltip.border.color `string`
+{:#members:series-trendlines-tooltip-border-color}
+
+
+
+
+Specify the Border color of the  trendline tooltip.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({        
+series :[{ trendlines:[{ tooltip :{border:{ color : "green" }} }]}]                  
+});
+ {% endhighlight %}
+
+
+
+
+### series.trendlines.tooltip.border.width `number`
+{:#members:series-trendlines-tooltip-border-width}
+
+
+
+
+Border width of the trendline tooltip.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{ trendlines:[{ tooltip :{border:{  width : 2 }} }]}]                   
+});
+  {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dmvqb51g)
+
+
+
+### series.trendlines.tooltip.rx `number`
+{:#members:series-trendlines-tooltip-rx}
+
+
+
+
+Customize the corner radius of the trendline tooltip rectangle.
+
+
+#### Default Value
+
+
+
+0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{ trendlines:[{ tooltip :{rx: 10} }]}]                  
+});
+  {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
+
+
+### series.trendlines.tooltip.ry `number`
+{:#members:series-trendlines-tooltip-ry}
+
+
+
+
+Customize the corner radius of the trendline tooltip rectangle.
+
+
+#### Default Value
+
+
+
+0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{ trendlines:[{ tooltip :{ry: 10} }]}]                  
+});
+  {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
+
+
+
+### series.trendlines.tooltip.duration `string`
+{:#members:series-trendlines-tooltip-duration}
+
+
+
+
+Specifies the duration of the trendline tooltip to be displayed.
+
+
+#### Default Value
+
+
+
+* "500ms"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{ trendlines:[{ tooltip :{duration : "300ms"} }]}]                   
+});
+  {% endhighlight %}
+
+
+
+### series.trendlines.tooltip.enableAnimation `boolean`
+{:#members:series-trendlines-tooltip-enableanimation}
+
+
+
+
+Enables/disables the animation of the trendline tooltip when moving from one point to other.
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{ trendlines:[{ tooltip :{enableAnimation : false} }]}]                   
+});
+{% endhighlight %}
+
+
+
+### series.trendlines.tooltip.fill `string`
+{:#members:series-trendlines-tooltip-fill}
+
+
+
+
+Background color of the trendline tooltip.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{ trendlines:[{ tooltip :{fill : "green"} }]}]                   
+});
+ {% endhighlight %}
+
+
+
+### series.trendlines.tooltip.format `string`
+{:#members:series-trendlines-tooltip-format}
+
+
+
+
+Format of the trendline tooltip content.
+
+
+#### Default Value
+
+
+
+* "#point.x# : #point.y#"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{ trendlines:[{ tooltip :{format : "#point.x# : #point.y#%"} }]}]                  
+});
+ {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rzxmpi0c)
+
+
+
+### series.trendlines.tooltip.opacity `number`
+{:#members:series-trendlines-tooltip-opacity}
+
+
+
+
+
+Opacity of the trendline tooltip.
+
+
+#### Default Value
+
+
+
+* 0.5
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{ trendlines:[{ tooltip :{opacity : 0.5} }]}]                 
+});
+{% endhighlight %}
+
+
+### series.trendlines.intercept `number`
+{:#members:series-trendlines-intercept}
+
+
+
+
+
+Specifies the trendline intercept value
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{ trendlines:[{ intercept : 10 }]}]                 
 });
 {% endhighlight %}
 
@@ -31321,7 +33261,7 @@ series :[{trendlines:[{ type:'linear' }]}]
 
 
 
-Name for the trendlines that is to be displayed in legend text.
+Specifies the name for the trendlines to be displayed as legend text.
 
 
 #### Default Value
@@ -33801,6 +35741,26 @@ $("#container").ejChart("redraw");
 {% endhighlight %}
 
 
+### destroy()
+{:#methods:destroy}
+
+
+
+
+Deletes the chart instance. 
+
+
+
+#### Example
+
+
+{% highlight js %}
+// Destroy Chart
+var chartObj = $("#container").data("ejChart");
+chartObj.destroy();
+{% endhighlight %}
+
+
 
 ## Events
 
@@ -34272,6 +36232,33 @@ type{% endhighlight %}</td>
 </table>
 
 
+### chartMouseLeave
+{:#events:chartmouseleave}
+
+
+The mouseleave event occurs when the mouse pointer leaves the selected element in the chart.
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//chartMouseLeave event for chart
+
+$("#container").ejChart({
+
+    chartMouseLeave: function (args) {
+            //Do something
+    }
+    
+}); 
+
+{% endhighlight %}
+
+
+
 ### create
 {:#events:create}
 
@@ -34478,6 +36465,139 @@ type{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+
+### dragging
+{:#events:dragging}
+
+
+
+
+Fires on dragging the particular point in the series when dragging is enabled. 
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Instance of the chart model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+newValue{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">returns the position of the starting range value on changing </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+oldValue{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">returns the position of the old range value on changing</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+pointIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Index of the point in series whose data label is being rendered</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+seriesIndexs{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Index of the series in series Collection whose data label is being rendered</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//dragging event for chart
+
+$("#container").ejChart({
+
+     dragging: function (args) {
+              //Do something
+     }
+     
+});{% endhighlight %}
+
+
+
+### dragStart
+{:#events:dragstart}
+
+
+
+
+Fires when the drag is started for the particular series. 
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//dragging event for chart
+
+$("#container").ejChart({
+
+     dragStart: function (args) {
+              //Do something
+     }
+     
+});{% endhighlight %}
+
+
+### dragEnd
+{:#events:dragend}
+
+
+
+
+Fires when the dragging is completed for the particular series. 
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//dragEnd event for chart
+
+$("#container").ejChart({
+
+     dragEnd: function (args) {
+              //Do something
+     }
+     
+});{% endhighlight %}
+
+
 
 
 
@@ -34903,6 +37023,90 @@ type{% endhighlight %}</td>
 </table>
 
 
+
+### loaded
+{:#events:loaded}
+
+
+
+
+Fires after the chart is completely rendered.
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//loaded event for chart
+
+$("#container").ejChart({
+
+    loaded: function (args) {
+             //Do something
+    }
+    
+});
+
+{% endhighlight %}
+
+
+
+
+### multiLevelLabelClick
+{:#events:multilevellabelclick}
+
+
+
+
+Fires when clicking  the multilevellabels in the chart.
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//multiLevelLabelClick event for chart
+
+$("#container").ejChart({
+
+    multiLevelLabelClick: function (args) {
+             //Do something
+    }
+    
+});
+
+{% endhighlight %}
+
+
+### multiLevelLabelRendering
+{:#events:multilevellabelrendering}
+
+
+
+
+Fires before multilevel labels are rendered in the chart.
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//multiLevelLabelRendering event for chart
+
+$("#container").ejChart({
+
+    multiLevelLabelRendering: function (args) {
+             //Do something
+    }
+    
+});
+
+{% endhighlight %}
+
+
 ### rangeSelected
 {:#events:rangeselected}
 
@@ -34965,6 +37169,33 @@ data{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+
+### trendlineRendering
+{:#events:trendlinerendering}
+
+
+
+
+Fires before rendering the trendlines in chart.
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//trendlineRendering event for chart
+
+$("#container").ejChart({
+
+    trendlineRendering: function (args) {
+             //Do something
+    }
+    
+});
+
+{% endhighlight %}
 
 
 
@@ -35315,6 +37546,31 @@ series{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
+
+### subtitleRendering
+{:#events:subtitlerendering}
+
+
+
+
+Fires before rendering the subtitle in the chart.
+
+#### Example
+
+
+{% highlight js %}
+ 
+//subtitleRendering event for chart
+
+$("#container").ejChart({
+
+    subtitleRendering: function (args) {
+              //Do something
+    }
+    
+});
+
+{% endhighlight %}
 
 
 ### symbolRendering
@@ -36657,4 +38913,30 @@ type{% endhighlight %}</td>
 //scrollbarChanged event for chart
 $("#container").ejChart({
    scrollEnd: function (args) {}
-});{% endhighlight %}
+});
+{% endhighlight %}
+
+
+### zoomed
+{:#events:zoomed}
+
+
+
+
+Fires, after zooming the particular area.
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//zoomed event for chart
+
+$("#container").ejChart({
+
+    zoomed: function (args) {
+              //Do something
+    }
+   
+});

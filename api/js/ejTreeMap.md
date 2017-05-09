@@ -1410,6 +1410,87 @@ Specifies the items layout mode of the treemap. Accepted itemsLayoutMode values 
 {% endhighlight %}
 
 
+### enableGroupSeparator `boolean`
+{:#members:enablegroupseparator}
+
+
+
+Specify to convert the date object to string, using locale settings.
+
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//To set enableGroupSeparator API value during initialization 
+  $("#container").ejTreeMap({enableGroupSeparator : true});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the enableGroupSeparator API, after initialization:
+   
+   //Gets the enableGroupSeparator value 
+   
+   var property =$("#container").data("ejTreeMap").model.enableGroupSeparator;
+ 
+   //Sets the enableGroupSeparator value 
+   
+   $("#container").data("ejTreeMap").model.enableGroupSeparator = true; 
+
+{% endhighlight %}
+
+
+
+### locale `string`
+{:#members:locale}
+
+
+
+
+Name of the culture based on which Tree Map should be localized.
+
+
+#### Default Value
+
+* "en-US"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//Get or set the locale API, after initialization:
+
+   //Gets the locale value 
+
+    var property =$("#container").data("ejTreeMap").model.locale;
+      
+         
+   //Sets the locale value
+
+   $("#container").data("ejTreeMap").model.locale = "en-US";  
+      
+
+{% endhighlight %}
+
+
 ### leafItemSettings `Object`
 {:#members:leafitemsettings}
 
@@ -1482,6 +1563,40 @@ Specifies the border thickness of the leaf item.
    $("#container").data("ejTreeMap").model.leafItemSettings = { borderThickness: 1}; 
 
 {% endhighlight %}
+
+### leafItemSettings.gap `number`
+{:#members:leafitemsettings-gap}
+
+Specifies the space between the leaf items.
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight js %}
+ 
+//To set gap API value during initialization 
+  $("#container").ejTreeMap({leafItemSettings:{ gap: 1}});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the gap API, after initialization:
+   
+   //Gets the gap value 
+   
+   var property =$("#container").data("ejTreeMap").model.leafItemSettings.gap;
+ 
+   //Sets the gap value 
+   
+   $("#container").data("ejTreeMap").model.leafItemSettings = { gap: 1}; 
+
+{% endhighlight %}
+
 
 
 ### leafItemSettings.itemTemplate `string`
@@ -2897,3 +3012,107 @@ Triggers on treemap item selected.
   });
 
 {% endhighlight %}
+
+### drillStarted
+{:#events:drillstarted}
+
+Triggers when drilldown is started
+
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Returns selected drilled treeMap object.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+{% highlight js %}
+ 
+//drillStarted event for treemap
+  $("#container").ejTreeMap({
+   drillStarted: function () {}
+  });
+
+{% endhighlight %}
+
+### drillDownItemSelected
+{:#events:drilldownitemselected}
+
+Triggers on treemap  drilldown  item  selected.
+
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Returns selected drilldown treeMap object.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+{% highlight js %}
+ 
+//drillDownItemSelected event for treemap
+  $("#container").ejTreeMap({
+   drillDownItemSelected: function () {}
+  });
+
+{% endhighlight %}
+
+### refreshed
+{:#events:refreshed}
+
+Triggers after refreshing the treemap items.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Refresh and load the treemap.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+{% highlight js %}
+ 
+//refreshed event for treemap
+  $("#container").ejTreeMap({
+   refreshed: function () {}
+  });
+
+{% endhighlight %}
+
+
+
