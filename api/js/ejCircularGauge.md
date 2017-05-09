@@ -5983,7 +5983,7 @@ $("#CoreCircularGauge").ejCircularGauge({
 
 
 
-Height of the shape in legend items.
+Specifies the height of the  legend item shapes.
 
 
 #### Default Value
@@ -6015,8 +6015,7 @@ $("#CoreCircularGauge").ejCircularGauge({
 
 
 
-Width of the shape in legend items.
-
+Specifies the width of the  legend item shapes.
 
 #### Default Value
 
@@ -6159,60 +6158,60 @@ Shape of the legend items.
 <td class="name">
 Rectangle</td>
 <td class="type">string</td> 
-<td class="description">Legend shpae of circular gauge will be rectangle</td>
+<td class="description">Legend shape of circular gauge will be rectangle</td>
 </tr>
 <tr>
 <td class="name">
 Circle</td>
 <td class="type">string</td>
-<td class="description">Legend shpae of circular gauge will be circle</td>
+<td class="description">Legend shape of circular gauge will be circle</td>
 </tr> 
 <tr>
 <td class="name">
 Triangle</td>
 <td class="type">string</td>
-<td class="description">Legend shpaeof circular gauge will be triangle</td>
+<td class="description">Legend shape of circular gauge will be triangle</td>
 </tr> 
 <tr>
 <td class="name">
 Ellipse</td>
 <td class="type">string</td>
-<td class="description">Legend shpae of circular gauge will be ellipse</td>
+<td class="description">Legend shape of circular gauge will be ellipse</td>
 </tr> 
 <tr>
 <td class="name">
 Diamond</td>
 <td class="type">string</td>
-<td class="description">Legend shpae of circular gauge will be diamond</td>
+<td class="description">Legend shape of circular gauge will be diamond</td>
 </tr> 
 <tr>
 <td class="name">
 Pentagon</td>
 <td class="type">string</td>
-<td class="description">Legend shpae of circular gauge will be pentagon</td>
+<td class="description">Legend shape of circular gauge will be pentagon</td>
 </tr> 
 <tr>
 <td class="name">
 Slider</td>
 <td class="type">string</td>
-<td class="description">Legend shpae of circular gauge will be slider</td>
+<td class="description">Legend shape of circular gauge will be slider</td>
 </tr> 
 <td class="name">
 Wedge</td>
 <td class="type">string</td>
-<td class="description">Legend shpae of circular gauge will be wedge</td>
+<td class="description">Legend shape of circular gauge will be wedge</td>
 </tr> 
 <tr>
 <td class="name">
 Trapezoid</td>
 <td class="type">string</td>
-<td class="description">Legend shpae of circular gauge will be trapezoid</td>
+<td class="description">Legend shape of circular gauge will be trapezoid</td>
 </tr>
 <tr>
 <td class="name">
 Line</td>
 <td class="type">string</td>
-<td class="description">Legend shpae of circular gauge will be line</td>
+<td class="description">Legend shape of circular gauge will be line</td>
 </tr>   
 </tbody>
 </table>
@@ -6262,7 +6261,7 @@ Options to customize the size of the legend.
 
 
 
-Height of the legend. Height can be specified in pixel.
+Specify the height of the legend. Height can be specified in pixel.
 
 
 #### Default Value
@@ -6294,7 +6293,7 @@ $("#CoreCircularGauge").ejCircularGauge({
 
 
 
-Width of the legend. Width can be specified in pixel.
+Specify the width of the legend. Width can be specified in pixel.
 
 
 #### Default Value
@@ -6490,7 +6489,7 @@ Fires before rendering the legend item. This event is fired for each legend item
 
 {% highlight js %}
  
-//legendItemRender event for chart
+//legendItemRender event for circular gauge
 
 $("#CoreCircularGauge").ejCircularGauge({
 
@@ -6554,7 +6553,7 @@ Fires on clicking the legend item.
 
 {% highlight js %}
  
-//legendItemClick event for chart
+//legendItemClick event for circular gauge
 
 $("#CoreCircularGauge").ejCircularGauge({
 
@@ -6617,7 +6616,7 @@ Fires when mouse moving on ranges.
 
 {% highlight js %}
  
-//rangeMouseMove event for chart
+//rangeMouseMove event for circular gauge
 
 $("#CoreCircularGauge").ejCircularGauge({
 
