@@ -380,6 +380,50 @@ $("#DigitalCore").ejDigitalGauge({ isResponsive: true });
 
 
 
+### enableResize `boolean`
+{:#members:enableresize}
+
+
+
+
+
+
+
+Specifies the responsiveness of the Digital gauge 
+
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="DigitalCore"></div> 
+ 
+<script>
+$("#DigitalCore").ejDigitalGauge({ enableResize: true }); 
+</script>{% endhighlight %}
+
+
+
 
 
 

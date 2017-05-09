@@ -446,6 +446,33 @@ $("#container").ejSparkline({
 
 {% endhighlight %}
 
+### locale `string`
+{:#members:locale}
+
+
+
+
+Name of the culture based on which sparkline should be localized.
+
+
+#### Default Value
+
+* "en-US"
+
+
+
+
+#### Example
+
+{% highlight js %}
+ 
+$("#container").ejSparkline({
+    locale : "en-US"
+});
+{% endhighlight %}
+
+
+ 
 
 
 
@@ -514,7 +541,26 @@ $("#container").ejSparkline({
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fay4avfj)
 
+### enableGroupSeparator `boolean`
+{:#members:enablegroupseparator}
 
+Specify to convert the date object to string, using locale settings.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight js %}
+ 
+$("#container").ejSparkline({
+
+    enableGroupSeparator : true
+
+});
+
+{% endhighlight %}
 
 
 ### dataSource `object`
