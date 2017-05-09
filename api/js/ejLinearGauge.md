@@ -376,6 +376,77 @@ Specifies the can resize state.
 </script> {% endhighlight %}
 
 
+### enableGroupSeparator `boolean`
+{:#members:enablegroupseparator}
+
+
+
+Used to Convert the date object to  string while using the  locale settings 
+
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
+ 
+<script>
+        $("#LinearGauge1").ejLinearGauge({ enableGroupSeparator: true });   
+</script> {% endhighlight %}
+
+
+### enableResize `boolean`
+{:#members:enableresize}
+
+
+
+
+
+Responsiveness of the linear gauge is controlled 
+
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
+ 
+<script>
+        $("#LinearGauge1").ejLinearGauge({ enableResize: true });   
+</script> {% endhighlight %}
+
+
+
 
 
 
@@ -667,7 +738,31 @@ Specifies the labelColor for Linear gauge.
 
 
 
+### locale `string`
+{:#members:locale}
 
+
+
+
+Set the  localization culture  for the Linear gauge
+
+#### Default Value
+
+* "en-US"
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="LinearGauge1"></div> 
+ 
+<script>
+        $("#LinearGauge1").ejLinearGauge({ locale : "en-US" }); 
+</script>    {% endhighlight %}
 
 
 
@@ -3045,7 +3140,7 @@ Specifies the opacity in bar indicators
 
 
 
-* NaN
+* null
 
 
 

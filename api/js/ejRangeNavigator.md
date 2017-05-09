@@ -611,6 +611,27 @@ Enable the scrollbar option in the rangenavigator.
 </script>  {% endhighlight %}
 
 
+### enableAutoResizing `boolean`
+{:#members:enableautoresizing}
+
+Enable the resize option in the rangenavigator.
+
+#### Default Value
+
+* false
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
+        $("#container").ejRangeNavigator({
+      enableAutoResizing: true,
+   });
+</script>  {% endhighlight %}
+
 
 
 
@@ -2785,7 +2806,7 @@ Specifies the label color. This color is applied to the labels in range navigato
 
 
 
-* "#FFFFFF"
+* "#333333"
 
 
 
@@ -6040,6 +6061,115 @@ Specifies width of the major tick lines.
 
 
 
+### valueAxisSettings.range `object`
+{:#members:valueaxissettings-range}
+
+
+
+
+
+
+ You can customize the range of the axis by setting minimum , maximum and interval.
+
+
+### valueAxisSettings.range.min `number`
+{:#members:valueaxissettings-range-min}
+
+
+#### Default Value
+
+
+
+
+
+
+* null
+
+
+
+
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
+        $("#container").ejRangeNavigator({
+   valueAxisSettings:{range:{ min :0 }},
+   });
+</script>  {% endhighlight %}
+
+
+### valueAxisSettings.range.max `number`
+{:#members:valueaxissettings-range-max}
+
+
+#### Default Value
+
+
+
+
+
+
+* null
+
+
+
+
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
+        $("#container").ejRangeNavigator({
+   valueAxisSettings:{range:{ max :100 }},
+   });
+</script>  {% endhighlight %}
+
+
+### valueAxisSettings.range.interval `number`
+{:#members:valueaxissettings-range-interval}
+
+
+#### Default Value
+
+
+
+
+
+
+* null
+
+
+
+
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
+        $("#container").ejRangeNavigator({
+   valueAxisSettings:{range:{ interval :10 }},
+   });
+</script>  {% endhighlight %}
+
 
 
 
@@ -6765,6 +6895,51 @@ type{% endhighlight %}</td>
 //scrollbarChanged event for rangenavigator
 $("#container").ejRangeNavigator({
    scrollStart: function (args) {}
+});{% endhighlight %}
+
+
+
+### selectedRangeStart
+{:#events:selectedrangestart}
+
+
+
+Fires on when starting to change the  slider position of range navigator.
+
+
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//selectedRangeStart event for rangenavigator
+$("#container").ejRangeNavigator({
+   selectedRangeStart: function (args) {}
+});{% endhighlight %}
+
+### selectedRangeEnd 
+{:#events:selectedrangeend}
+
+
+
+Fires when the selection  ends in the range navigator
+
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//selectedRangeEnd event for rangenavigator
+$("#container").ejRangeNavigator({
+   selectedRangeEnd: function (args) {}
 });{% endhighlight %}
 
 
