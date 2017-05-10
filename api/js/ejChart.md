@@ -2962,7 +2962,7 @@ Percentage</td>
 <td class="name">
 Indexes</td>
 <td class="type">string</td>
-<td class="description">The data points with the specified indexes are get splitted.</td>
+<td class="description">The data points are splitted based on the specified indexes.</td>
 </tr> 
 </tbody>
 </table>
@@ -35623,7 +35623,7 @@ Prints the rendered chart.
 {% highlight js %}
 // Print Chart
 var chartObj = $("#container").data("ejChart");
-chartObj.print();
+chartObj.print("container");
 {% endhighlight %}
 
 If you wish to print multiple charts on a same page, then you need to pass the ID of those elements as arguments to the print method.
