@@ -642,12 +642,12 @@ Example
 
 {% endhighlight %}
 
-### SortingType `enum`
-{:#members:sortingtype}
+### sortOrder `enum`
+{:#members:sortOrder}
 
-<ts name="ej.SortingType"/>
+<ts name="ej.SortOrder"/>
 
-To sort ListBox items either by Ascending or Descending order. By default Sorting will be set as enum type of "None".
+To sort ListBox items either by Ascending or Descending order. By default sortOrder will be set as enum type of "None".
 You can use only below mentioned type for sorting purpose.
 
 <table class="params">
@@ -680,14 +680,14 @@ Descending</td>
 </table>
 
 ### Default Value
- * ej.SortingType.None
+ * ej.SortOrder.None
 
 Example
 {:.example}
 
 {% highlight js %}
 
-    $('#list').ejListBox({ sortingType: ej.SortingType.Ascending }); 
+    $('#list').ejListBox({ sortOrder: ej.SortOrder.Ascending }); 
 
 {% endhighlight %}
 
