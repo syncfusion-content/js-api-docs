@@ -4009,40 +4009,6 @@ Specifies the tooltip template for shapes.
 {% endhighlight %}
 
 
-### layers.urlTemplate `string`
-{:#members:layers-urltemplate}
-
-Specifies the URL template for the OSM type map.
-
-#### Default Value
-
-* 'http://a.tile.openstreetmap.org/level/tileX/tileY.png'
-
-#### Example
-
-{% highlight js %}
-  
-// Set the urlTemplate during initialization.                   
-   $("#container").ejMap({layers: [{ urlTemplate:'http://a.tile.openstreetmap.org/level/tileX/tileY.png' }]})
-
-{% endhighlight %}
-
-
-{% highlight js %}
- 
-//Get or set the urlTemplate after initialization:
- 
-   //Gets the urlTemplate from map.
-  
-   var property =$("#container").data("ejMap").model.layers[layerIndex].urlTemplate;
-   
-   //Sets the urlTemplate to map.
-   
-   $("#container").data("ejMap").model.layers[layerIndex].urlTemplate  = 'http://a.tile.openstreetmap.org/level/tileX/tileY.png';
-
-{% endhighlight %}
-
-
 ### subLayers `array`
 {:#members:layers-sublayers}
 
@@ -6721,7 +6687,7 @@ Shows or hides the tooltip for shapes
 
 
 ### layers.subLayers.tooltipTemplate `string`
-{:#members:layers-sublayerstooltiptemplate}
+{:#members:layers-sublayers-tooltiptemplate}
 
 Specifies the tooltip template for shapes.
 
@@ -6748,41 +6714,6 @@ Specifies the tooltip template for shapes.
    $("#container").data("ejMap").model.layers[layerIndex].subLayers[layerIndex].tooltipTemplate  ="Template";
 
 {% endhighlight %}
-
-
-### layers.subLayers.urlTemplate `string`
-{:#members:layers-sublayers-urltemplate}
-
-Specifies the URL template for the OSM type map.
-
-#### Default Value
-
-* 'http://a.tile.openstreetmap.org/level/tileX/tileY.png'
-
-#### Example
-
-{% highlight js %}
-  
-// Set the urlTemplate during initialization.                   
-   $("#container").ejMap({subLayers: [{ urlTemplate:'http://a.tile.openstreetmap.org/level/tileX/tileY.png' }]})
-
-{% endhighlight %}
-
-
-{% highlight js %}
- 
-//Get or set the urlTemplate after initialization:
- 
-   //Gets the urlTemplate from map.
-  
-   var property =$("#container").data("ejMap").model.layers[layerIndex].subLayers[layerIndex].urlTemplate;
-   
-   //Sets the urlTemplate to map.
-   
-   $("#container").data("ejMap").model.layers[layerIndex].subLayers[layerIndex].urlTemplate  = 'http://a.tile.openstreetmap.org/level/tileX/tileY.png';
-
-{% endhighlight %}
-
 
 ## Methods
 
