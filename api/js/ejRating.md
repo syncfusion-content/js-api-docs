@@ -49,11 +49,6 @@ $(element).ejRating()
 * module:ej.rating.js
 
 
-#### Valid HTML elements
-
-* input
-
-
 ## Members
 
 ### allowReset `boolean`
