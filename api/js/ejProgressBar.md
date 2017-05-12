@@ -72,11 +72,7 @@ $("#progress").ejProgressBar({value: 50});
 * module:ej.progressbar.js
 
 
-#### Valid HTML elements
 
-* div
-
-* span
 
 
 ## Members
