@@ -64,13 +64,6 @@ JavaScript (JS) is an interpreted computer programming language.
 * module:ej.accordion.js
 
 
-#### Valid HTML elements
-
-* div
-
-* span
-
-
 ## Members
 
 ### ajaxSettings  `object`
