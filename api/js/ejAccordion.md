@@ -1120,8 +1120,8 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 <script>
 // addItem the Accordion
 $("#accordion").ejAccordion();
-var accObj = $("#accordion").data("ejAccordion");
-accObj.addItem("New item", "The accordion content", 2); //Calls the addItem method of Accordion.   
+var Object = $("#accordion").data("ejAccordion");
+Object.addItem("New item", "The accordion content", 2); //Calls the addItem method of Accordion.   
 </script>{% endhighlight %}
 
 
@@ -1182,8 +1182,8 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 <script>
 // collapse All the Accordion
 $("#accordion").ejAccordion();
-var accObj = $("#accordion").data("ejAccordion");
-accObj.collapseAll(); //Calls the collapseAll method of Accordion.      
+var Object = $("#accordion").data("ejAccordion");
+Object.collapseAll(); //Calls the collapseAll method of Accordion.      
 </script>{% endhighlight %}
 
 
@@ -1242,8 +1242,8 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 <script>
 // collapse Panel the Accordion
 $("#accordion").ejAccordion();
-var accObj = $("#accordion").data("ejAccordion");
-accObj.collapsePanel(0); //Calls the collapsePanel method of Accordion.      
+var Object = $("#accordion").data("ejAccordion");
+Object.collapsePanel(0); //Calls the collapsePanel method of Accordion.      
 </script>{% endhighlight %}
 
 
@@ -1274,8 +1274,8 @@ JavaScript (JS) is an interpreted computer programming language. It was original
    </div>
 <script>
            $("#accordion").ejAccordion();
-var accObj = $("#accordion").data("ejAccordion");
-accObj.destroy(); //Calls the destroy method of Accordion.
+var Object = $("#accordion").data("ejAccordion");
+Object.destroy(); //Calls the destroy method of Accordion.
 </script>{% endhighlight %}
 
 
@@ -1358,8 +1358,8 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 <script>
 // disable the Accordion
 $("#accordion").ejAccordion();
-var accObj = $("#accordion").data("ejAccordion");
-accObj.disable(); //Calls the disable method of Accordion.      
+var Object = $("#accordion").data("ejAccordion");
+Object.disable(); //Calls the disable method of Accordion.      
 </script>{% endhighlight %}
 
 
@@ -1437,8 +1437,8 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 <script>
 // disableItems the Accordion
 $("#accordion").ejAccordion();
-var accObj = $("#accordion").data("ejAccordion");
-accObj.disableItems([1]); //Calls the disableItems method of Accordion.   
+var Object = $("#accordion").data("ejAccordion");
+Object.disableItems([1]); //Calls the disableItems method of Accordion.   
 </script>{% endhighlight %}
 
 
@@ -1498,8 +1498,8 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 <script>
 // destroy the Accordion
 $("#accordion").ejAccordion();
-var accObj = $("#accordion").data("ejAccordion");
-accObj.enable(); //Calls the enable method of Accordion.        
+var Object = $("#accordion").data("ejAccordion");
+Object.enable(); //Calls the enable method of Accordion.        
 </script>{% endhighlight %}
 
 
@@ -1581,10 +1581,10 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 <script>
 // enableItems the Accordion
 $("#accordion").ejAccordion();
-var accObj = $("#accordion").data("ejAccordion");
-accObj.disableItems([0]);
-accObj.disableItems([1]);
-accObj.enableItems([1]); //Calls the enable method of Accordion.  
+var Object = $("#accordion").data("ejAccordion");
+Object.disableItems([0]);
+Object.disableItems([1]);
+Object.enableItems([1]); //Calls the enable method of Accordion.  
 </script>{% endhighlight %}
 
 
@@ -1648,8 +1648,8 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 <script>
 // expand All the Accordion
 $("#accordion").ejAccordion();
-var accObj = $("#accordion").data("ejAccordion");
-accObj.expandAll(); //Calls the expandAll method of Accordion.  
+var Object = $("#accordion").data("ejAccordion");
+Object.expandAll(); //Calls the expandAll method of Accordion.  
 </script>{% endhighlight %}
 
 
@@ -1709,8 +1709,8 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 <script>
 // expand Panel the Accordion
 $("#accordion").ejAccordion();
-var accObj = $("#accordion").data("ejAccordion");
-accObj.expandPanel(1); //Calls the expandPanel method of Accordion.  
+var Object = $("#accordion").data("ejAccordion");
+Object.expandPanel(1); //Calls the expandPanel method of Accordion.  
 </script>{% endhighlight %}
 
 
@@ -1776,8 +1776,8 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 <script>
 // getItemsCount the Accordion
 $("#accordion").ejAccordion();
-var accObj = $("#accordion").data("ejAccordion");
-accObj.getItemsCount(); //Calls the getItemsCount method of Accordion.  
+var Object = $("#accordion").data("ejAccordion");
+Object.getItemsCount(); //Calls the getItemsCount method of Accordion.  
 </script>{% endhighlight %}
 
 
@@ -1838,8 +1838,8 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 <script>
 // hide the Accordion
 $("#accordion").ejAccordion();
-var accObj = $("#accordion").data("ejAccordion");
-accObj.hide(); //Calls the hide method of Accordion.    
+var Object = $("#accordion").data("ejAccordion");
+Object.hide(); //Calls the hide method of Accordion.    
 </script>{% endhighlight %}
 
 ### refresh()
@@ -1896,8 +1896,8 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 <script>
 // refresh the Accordion
 $("#accordion").ejAccordion();
-var accObj = $("#accordion").data("ejAccordion");
-accObj.refresh(); //Calls the refresh method of Accordion.   
+var Object = $("#accordion").data("ejAccordion");
+Object.refresh(); //Calls the refresh method of Accordion.   
 </script>{% endhighlight %}
 
 
@@ -1975,8 +1975,8 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 <script>
 // removeItem the Accordion
 $("#accordion").ejAccordion();
-var accObj = $("#accordion").data("ejAccordion");
-accObj.addItem(2); //Calls the removeItem method of Accordion.   
+var Object = $("#accordion").data("ejAccordion");
+Object.addItem(2); //Calls the removeItem method of Accordion.   
 </script>{% endhighlight %}
 
 
@@ -2037,8 +2037,8 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 <script>
 // show the Accordion
 $("#accordion").ejAccordion();
-var accObj = $("#accordion").data("ejAccordion");
-accObj.show(); //Calls the show method of Accordion.    
+var Object = $("#accordion").data("ejAccordion");
+Object.show(); //Calls the show method of Accordion.    
 </script>{% endhighlight %}
 
 
