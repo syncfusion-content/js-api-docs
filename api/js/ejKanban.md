@@ -25,7 +25,7 @@ The Kanban can be easily configured to the DOM element, such as div. You can cre
    
     <div id="Kanban"></div>
     <script>
-    window.kanbandata = [
+    window.kanban = [
             { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
             { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
             { Id: 3, Status: "In Progress", Summary: "Task 3", Assignee: "Andrew" },
@@ -33,7 +33,7 @@ The Kanban can be easily configured to the DOM element, such as div. You can cre
     ];
     // Create Kanban
     $("#Kanban").ejKanban({
-        dataSource: window.kanbandata,
+        dataSource: window.kanban,
         keyField:"Status",
         columns: [
             { headerText: "Backlog", key: "Open" },
@@ -89,14 +89,14 @@ Gets or sets a value that indicates whether to enable allowDragAndDrop behavior 
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
         { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban({
             dataSource: data,
             allowDragAndDrop: true,
@@ -132,14 +132,14 @@ To enable or disable the title of the card.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
         { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban({
             dataSource: data,
             columns: [
@@ -175,14 +175,14 @@ Customize the settings for swim lane.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
         { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban({
             dataSource: data,
             columns: [
@@ -221,14 +221,14 @@ To enable or disable items count in swim lane.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
         { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban({
             dataSource: data,
             columns: [
@@ -267,14 +267,14 @@ To enable or disable DragAndDrop across swim lane.
   
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
         { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban({
             dataSource: data,
             allowDragAndDrop: true,
@@ -314,14 +314,14 @@ Customize the settings for unassigned category of swim lane.
   
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "" },
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
         { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban({
             dataSource: data,
             allowDragAndDrop: true,
@@ -363,14 +363,14 @@ To enable or disable unassigned category change with swim lane key values.
   
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "" },
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
         { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban({
             dataSource: data,
             allowDragAndDrop: true,
@@ -412,14 +412,14 @@ To set the user defined values which are need to categorized as unassigned categ
   
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "" },
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
         { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban({
             dataSource: data,
             allowDragAndDrop: true,
@@ -462,14 +462,14 @@ To enable or disable the column expand /collapse.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
         { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -506,14 +506,14 @@ To enable Searching operation in Kanban.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -550,14 +550,14 @@ To enable filtering behavior on Kanban.User can specify query in filterSettings 
 
      <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Janet Leverling" },
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
         { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Janet Leverling" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
                 {
                     dataSource: data,
@@ -601,14 +601,14 @@ Gets or sets a value that indicates whether to enable allowSelection behavior on
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -645,14 +645,14 @@ Gets or sets a value that indicates whether to allow card hover actions.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -689,14 +689,14 @@ To allow keyboard navigation actions.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -733,7 +733,7 @@ Gets or sets a value that indicates whether to enable the scrollbar in the Kanba
   
     <div id="kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -742,7 +742,7 @@ Gets or sets a value that indicates whether to enable the scrollbar in the Kanba
        { Id: 6, Status: "Close", Summary: "Task 6", Assignee: "Robert" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#kanban").ejKanban(
             {
                 dataSource: data,
@@ -784,14 +784,14 @@ Gets or sets a value that indicates whether to enable printing option.
   
     <div id="kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
        { Id: 4, Status: "Close", Summary: "Task 6", Assignee: "Robert" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#kanban").ejKanban(
             {
                 dataSource: data,
@@ -829,7 +829,7 @@ Gets or sets an object that indicates whether to customize the context menu beha
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
     { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
     { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
     { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -837,7 +837,7 @@ Gets or sets an object that indicates whether to customize the context menu beha
     { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }    
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -877,7 +877,7 @@ To enable context menu.All default context menu will show.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
      { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
      { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
      { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -885,7 +885,7 @@ To enable context menu.All default context menu will show.
      { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }     
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -924,7 +924,7 @@ Gets or sets a value that indicates the list of items needs to be disable from d
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -932,7 +932,7 @@ Gets or sets a value that indicates the list of items needs to be disable from d
         { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }        
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -972,7 +972,7 @@ Its used to add specific default context menu items.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -980,7 +980,7 @@ Its used to add specific default context menu items.
          { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,		
@@ -1020,7 +1020,7 @@ Gets or sets a value that indicates whether to add custom contextMenu items.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -1028,7 +1028,7 @@ Gets or sets a value that indicates whether to add custom contextMenu items.
          { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -1100,7 +1100,7 @@ Its sets target element to custom context menu item.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -1108,7 +1108,7 @@ Its sets target element to custom context menu item.
          { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -1151,7 +1151,7 @@ Gets the display name to custom menu item.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -1159,7 +1159,7 @@ Gets the display name to custom menu item.
          { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -1207,7 +1207,7 @@ Gets the template to render custom context menu item.
         <li><a>Testing</a></li>        
     </ul>    
     <script type="text/javascript">
-        window.kanbandata = [
+        window.kanban = [
              { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
              { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
              { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -1215,7 +1215,7 @@ Gets the template to render custom context menu item.
              { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
         ];
         $(function () {
-            var data = ej.DataManager(window.kanbandata);
+            var data = ej.DataManager(window.kanban);
             $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -1258,7 +1258,7 @@ Gets or sets an object that indicates to render the Kanban with specified column
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -1267,7 +1267,7 @@ Gets or sets an object that indicates to render the Kanban with specified column
         { Id: 6, Status: "Testing", Summary: "Task 6", Assignee: "Robert" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -1304,7 +1304,7 @@ Gets or sets an object that indicates to render the Kanban with specified column
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -1312,7 +1312,7 @@ Gets or sets an object that indicates to render the Kanban with specified column
          { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -1349,14 +1349,14 @@ To customize the totalCount properties.
  
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
          { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 enableTotalCount: true,
@@ -1392,14 +1392,14 @@ To customize the totalCount text properties.
  
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
          { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 enableTotalCount: true,
@@ -1435,7 +1435,7 @@ Gets or sets an object that indicates to render the Kanban with specified column
  
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -1443,7 +1443,7 @@ Gets or sets an object that indicates to render the Kanban with specified column
          { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -1590,14 +1590,14 @@ To set column collapse or expand state
  
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "In Progress", Summary: "Task 3", Assignee: "Andrew" },
        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -1633,14 +1633,14 @@ To customize the column level constraints with minimum ,maximum limit validation
  
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "In Progress", Summary: "Task 3", Assignee: "Andrew" },
        { Id: 4, Status: "Done", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -1677,7 +1677,7 @@ It is used to specify the type of constraints as column or swimlane.
  
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -1685,7 +1685,7 @@ It is used to specify the type of constraints as column or swimlane.
          { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -1722,7 +1722,7 @@ It is used to specify the minimum amount of card in particular column cell or sw
  
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -1730,7 +1730,7 @@ It is used to specify the minimum amount of card in particular column cell or sw
          { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -1768,7 +1768,7 @@ It is used to specify the maximum amount of card in particular column cell or sw
  
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -1776,7 +1776,7 @@ It is used to specify the maximum amount of card in particular column cell or sw
          { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -1831,7 +1831,7 @@ Gets or sets a value that indicates to add the template within the header elemen
     }
     </style>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -1839,7 +1839,7 @@ Gets or sets a value that indicates to add the template within the header elemen
        { Id: 3, Status: "Close", Summary: "Task 3", Assignee: "Andrew" },
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -1876,7 +1876,7 @@ Gets or sets an object that indicates to render the Kanban with specified column
       
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -1884,7 +1884,7 @@ Gets or sets an object that indicates to render the Kanban with specified column
          { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -1921,7 +1921,7 @@ Gets or sets an object that indicates to set specific column visibility.
  
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
                     { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
                     { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
                     { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -1929,7 +1929,7 @@ Gets or sets an object that indicates to set specific column visibility.
                     { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -1966,7 +1966,7 @@ Gets or sets an object that indicates whether to show add new button.
  
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
                     { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
                     { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
                     { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -1974,7 +1974,7 @@ Gets or sets an object that indicates whether to show add new button.
                     { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -2021,14 +2021,14 @@ Gets or sets an object that indicates whether to Customize the card settings.
      
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Type: "UG" },
         { Id: 2, Status: "Close", Summary: "Task 2", Assignee: "Andrew", Type: "Improvement" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
         { Id: 4, Status: "Testing", Summary: "Task4", Type: "Issue", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata)
+        var data = ej.DataManager(window.kanban)
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -2114,14 +2114,14 @@ Gets or sets a value that indicates to add the template for card .
         }
     </style>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Type: "UG" },
         { Id: 2, Status: "Close", Summary: "Task 2", Assignee: "Andrew", Type: "Improvement" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
         { Id: 4, Status: "Testing", Summary: "Task4", Type: "Issue", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata)
+        var data = ej.DataManager(window.kanban)
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -2160,14 +2160,14 @@ To customize the card border color based on assigned task. Colors and correspond
  
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Type: "UG" },
         { Id: 2, Status: "Close", Summary: "Task 2", Assignee: "Andrew", Type: "Improvement" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
         { Id: 4, Status: "Testing", Summary: "Task4", Type: "Issue", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata)
+        var data = ej.DataManager(window.kanban)
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -2225,14 +2225,14 @@ Gets or sets a value that indicates whether to add customToolbarItems within the
         }
     </style>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
         { Id: 2, Status: "Close", Summary: "Task 2", Assignee: "Andrew" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
         { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -2254,8 +2254,8 @@ Gets or sets a value that indicates whether to add customToolbarItems within the
                 },
                 toolbarClick: function (args) {
                     if (args.itemName == "Delete" && this.element.find(".e-kanbancard").hasClass("e-cardselection")) {
-                        var selectedcard = this.element.find(".e-cardselection");
-                        this.KanbanEdit.deleteCard(selectedcard.attr("id"));
+                        var selected = this.element.find(".e-cardselection");
+                        this.KanbanEdit.deleteCard(selected.attr("id"));
                     }
                 }
             });
@@ -2291,14 +2291,14 @@ Gets the template to render customToolbarItems.
     }
     </style>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
         { Id: 2, Status: "Close", Summary: "Task 2", Assignee: "Andrew" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
         { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -2320,8 +2320,8 @@ Gets the template to render customToolbarItems.
                 },
                 toolbarClick: function (args) {
                     if (args.itemName == "Delete" && this.element.find(".e-kanbancard").hasClass("e-cardselection")) {
-                        var selectedcard = this.element.find(".e-cardselection");
-                        this.KanbanEdit.deleteCard(selectedcard.attr("id"));
+                        var selected = this.element.find(".e-cardselection");
+                        this.KanbanEdit.deleteCard(selected.attr("id"));
                     }
                 }
             });
@@ -2353,13 +2353,13 @@ Gets or sets a value that indicates to render the Kanban with custom theme.
         }
     </style>
     <script>
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#kanban").ejKanban(
         {
             dataSource: data,
@@ -2395,13 +2395,13 @@ Gets or sets the data to render the Kanban with cards.
     
     <div id="kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#kanban").ejKanban(
         {
             dataSource: data,
@@ -2436,14 +2436,14 @@ To perform kanban functionalities with touch interaction.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -2479,14 +2479,14 @@ Align content in the Kanban control align from right to left by setting the prop
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -2522,14 +2522,14 @@ To show total count of cards in each column.
  
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
          { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 enableTotalCount: true,
@@ -2565,14 +2565,14 @@ Get or sets an object that indicates whether to customize the editing behavior o
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
          { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -2621,14 +2621,14 @@ Gets or sets a value that indicates whether to enable the editing action in card
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
          { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -2675,14 +2675,14 @@ Gets or sets a value that indicates whether to enable the adding action in cards
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
          { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Estimate: "3" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -2745,7 +2745,7 @@ This specifies the id of the template which is require to be edited using the Di
     </table>
     </script>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
@@ -2753,7 +2753,7 @@ This specifies the id of the template which is require to be edited using the Di
         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata)
+        var data = ej.DataManager(window.kanban)
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -2825,7 +2825,7 @@ Get or sets an object that indicates whether to customize the editMode of the Ka
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
@@ -2833,7 +2833,7 @@ Get or sets an object that indicates whether to customize the editMode of the Ka
         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata)
+        var data = ej.DataManager(window.kanban)
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -2881,7 +2881,7 @@ Get or sets an object that indicates whether to customize the editing fields of 
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
@@ -2889,7 +2889,7 @@ Get or sets an object that indicates whether to customize the editing fields of 
         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata)
+        var data = ej.DataManager(window.kanban)
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -2937,7 +2937,7 @@ It is used to map editing field from the data source.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
@@ -2945,7 +2945,7 @@ It is used to map editing field from the data source.
         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata)
+        var data = ej.DataManager(window.kanban)
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -3034,7 +3034,7 @@ It is used to set the particular editType in the card for editing.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
@@ -3042,7 +3042,7 @@ It is used to set the particular editType in the card for editing.
         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata)
+        var data = ej.DataManager(window.kanban)
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -3090,7 +3090,7 @@ Gets or sets a value that indicates to define constraints for saving data to the
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
@@ -3098,7 +3098,7 @@ Gets or sets a value that indicates to define constraints for saving data to the
         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata)
+        var data = ej.DataManager(window.kanban)
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -3147,7 +3147,7 @@ It is used to set the particular editparams in the card for editing.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
@@ -3155,7 +3155,7 @@ It is used to set the particular editparams in the card for editing.
          { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata)
+        var data = ej.DataManager(window.kanban)
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -3204,7 +3204,7 @@ It is used to specify defaultValue for the fields while adding new card.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
@@ -3212,7 +3212,7 @@ It is used to specify defaultValue for the fields while adding new card.
          { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,                
@@ -3277,7 +3277,7 @@ This specifies the id of the template which is require to be edited using the Ex
     </table>
     </script>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
@@ -3285,7 +3285,7 @@ This specifies the id of the template which is require to be edited using the Ex
         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata)
+        var data = ej.DataManager(window.kanban)
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -3349,7 +3349,7 @@ This specifies to set the position of an External edit form either in the right 
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
@@ -3357,7 +3357,7 @@ This specifies to set the position of an External edit form either in the right 
         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata)
+        var data = ej.DataManager(window.kanban)
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -3406,15 +3406,15 @@ To customize field mappings for card , editing title and control key parameters
      
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Type: "UG", Tags: "Analyze,Requirements", ImgUrl: "../themes/images/kanban/1.png" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Type: "Issue", Tags: "Improvement,Performance", ImgUrl: "../themes/images/kanban/2.png" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Type: "Improvement", Tags: "Improvement,Performance", ImgUrl: "../themes/images/kanban/2.png" },
          { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Type: "UG", Tags: "Analyze,Requirements", ImgUrl: "../themes/images/kanban/1.png" },
-         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Janet Leverling", Type: "Epic", Tags: "Meeting,Requirments", ImgUrl: "../themes/images/kanban/3.png" }
+         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Janet", Type: "Epic", Tags: "Meeting,Requirements", ImgUrl: "../themes/images/kanban/3.png" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -3463,7 +3463,7 @@ The primarykey field is mapped to data source field. And this will used for Drag
      
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
@@ -3471,7 +3471,7 @@ The primarykey field is mapped to data source field. And this will used for Drag
          { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -3507,7 +3507,7 @@ To enable swimlane grouping based on the given key field from datasource mapping
      
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
@@ -3515,7 +3515,7 @@ To enable swimlane grouping based on the given key field from datasource mapping
          { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -3553,7 +3553,7 @@ Priority field has been mapped data source field to maintain cards priority.
     
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", RankId: 1 },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", RankId: 2 },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", RankId: 2 },
@@ -3561,7 +3561,7 @@ Priority field has been mapped data source field to maintain cards priority.
          { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", RankId: 3 }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -3598,7 +3598,7 @@ Content field has been Mapped into card text.
      
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
@@ -3606,7 +3606,7 @@ Content field has been Mapped into card text.
          { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -3642,7 +3642,7 @@ Tag field has been Mapped into card tag.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Estimate: "2.5" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Estimate: "1.5" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Estimate: "1" },
@@ -3650,7 +3650,7 @@ Tag field has been Mapped into card tag.
          { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert", Estimate: "1.5" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -3687,7 +3687,7 @@ Title field has been Mapped to field in datasource for title content. If title f
      
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -3695,7 +3695,7 @@ Title field has been Mapped to field in datasource for title content. If title f
          { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -3732,15 +3732,15 @@ To customize the card has been Mapped into card color field.
      
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Type: "UG" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", Type: "Issue" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", Type: "Improvement" },
          { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", Type: "UG" },
-         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Janet Leverling", Type: "Epic" }
+         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Janet", Type: "Epic" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -3785,15 +3785,15 @@ ImageUrl field has been Mapped into card image.
      
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", ImgUrl: "../themes/images/kanban/1.png" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew", ImgUrl: "../themes/images/kanban/2.png" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew", ImgUrl: "../themes/images/kanban/2.png" },
          { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy", ImgUrl: "../themes/images/kanban/1.png" },
-         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Janet Leverling", ImgUrl: "../themes/images/kanban/3.png" }
+         { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Janet", ImgUrl: "../themes/images/kanban/3.png" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -3830,14 +3830,14 @@ To map datasource field for column values mapping
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
         { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -3872,7 +3872,7 @@ When set to true, adapts the Kanban layout to fit the screen size of devices on 
   
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -3880,7 +3880,7 @@ When set to true, adapts the Kanban layout to fit the screen size of devices on 
          { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,                
@@ -3917,7 +3917,7 @@ Gets or sets a value that indicates whether to set the minimum width of the resp
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
          { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
          { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
          { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -3925,7 +3925,7 @@ Gets or sets a value that indicates whether to set the minimum width of the resp
          { Id: 5, Status: "Close", Summary: "Task 6", Assignee: "Robert" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -3963,14 +3963,14 @@ To customize the filtering behavior based on queries given.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
-           { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Janet Leverling" },
+    window.kanban = [
+           { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Janet" },
            { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
            { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
-           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Janet Leverling" }
+           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Janet" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -3986,7 +3986,7 @@ To customize the filtering behavior based on queries given.
                 },
                 allowFiltering:true,
                 filterSettings: [
-                         { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet Leverling"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
+                         { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
                          { text: "Testing Issues", query: new ej.Query().where("Status", "equal", "Testing"), description: "Display the issues of 'Testing'" }
                 ],
             }
@@ -4011,14 +4011,14 @@ Gets or sets an object of display name to filter queries.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
-           { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Janet Leverling" },
+    window.kanban = [
+           { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Janet" },
            { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
            { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
-           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Janet Leverling" }
+           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Janet" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -4033,7 +4033,7 @@ Gets or sets an object of display name to filter queries.
                     content: "Summary"
                 },
                 filterSettings: [
-                         { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet Leverling"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
+                         { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
                          { text: "Testing Issues", query: new ej.Query().where("Status", "equal", "Testing"), description: "Display the issues of 'Testing'" }
                 ],
             }
@@ -4058,14 +4058,14 @@ Gets or sets an object that Queries to perform filtering
  
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
-           { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Janet Leverling" },
+    window.kanban = [
+           { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Janet" },
            { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
            { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
-           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Janet Leverling" }
+           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Janet" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -4105,14 +4105,14 @@ Gets or sets an object of tooltip to filter buttons.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
-           { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Janet Leverling" },
+    window.kanban = [
+           { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Janet" },
            { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
            { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
-           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Janet Leverling" }
+           { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Janet" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -4128,7 +4128,7 @@ Gets or sets an object of tooltip to filter buttons.
                     content: "Summary"
                 },
                 filterSettings: [
-                         { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet Leverling"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
+                         { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet"), description: "Displays issues which matches the assignee as 'Janet'" },
                          { text: "Testing Issues", query: new ej.Query().where("Status", "equal", "Testing"), description: "Display the issues of 'Testing'" }
                 ],
             }
@@ -4153,14 +4153,14 @@ ej Query to query database of Kanban.
 
     <div id="kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
      { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
      { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
      { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" }
     ];
     $(function () {
         var query = ej.Query().select(["Status", "Id", "Summary"]);
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#kanban").ejKanban(
             {
                 dataSource: data,
@@ -4196,14 +4196,14 @@ To change the key in keyboard interaction to Kanban control.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
            { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
            { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
            { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
            { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -4260,7 +4260,7 @@ Gets or sets an object that indicates whether to customize the scrolling behavio
   
     <div id="kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -4269,7 +4269,7 @@ Gets or sets an object that indicates whether to customize the scrolling behavio
        { Id: 6, Status: "Close", Summary: "Task 6", Assignee: "Robert" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#kanban").ejKanban(
             {
                 dataSource: data,
@@ -4311,7 +4311,7 @@ Gets or sets an object that indicates to render the Kanban with specified scroll
   
     <div id="kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -4320,7 +4320,7 @@ Gets or sets an object that indicates to render the Kanban with specified scroll
        { Id: 6, Status: "Close", Summary: "Task 6", Assignee: "Robert" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#kanban").ejKanban(
             {
                 dataSource: data,
@@ -4361,7 +4361,7 @@ Gets or sets an object that indicates to render the Kanban with specified scroll
   
     <div id="kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -4370,7 +4370,7 @@ Gets or sets an object that indicates to render the Kanban with specified scroll
        { Id: 6, Status: "Close", Summary: "Task 6", Assignee: "Robert" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#kanban").ejKanban(
             {
                 dataSource: data,
@@ -4412,7 +4412,7 @@ To allow the Kanban to freeze particular swimlane at the time of scrolling , unt
   
     <div id="kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -4424,7 +4424,7 @@ To allow the Kanban to freeze particular swimlane at the time of scrolling , unt
        { Id: 9, Status: "Close", Summary: "Task 9", Assignee: "Robert" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#kanban").ejKanban(
             {
                 dataSource: data,
@@ -4467,14 +4467,14 @@ To customize the searching behavior of the Kanban.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "In Progress", Summary: "Task 3", Assignee: "Andrew" },
        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -4517,14 +4517,14 @@ To customize the fields the searching operation can be perform.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "In Progress", Summary: "Task 3", Assignee: "Andrew" },
        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -4567,14 +4567,14 @@ To customize the searching string.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "In Progress", Summary: "Task 3", Assignee: "Andrew" },
        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -4616,14 +4616,14 @@ To customize the operator based on searching.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "In Progress", Summary: "Task 3", Assignee: "Andrew" },
        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -4665,14 +4665,14 @@ To customize the ignore case based on searching.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "In Progress", Summary: "Task 3", Assignee: "Andrew" },
        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
@@ -4735,14 +4735,14 @@ To allow customize selection type. Accepting types are "single" and "multiple".
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
 
@@ -4779,7 +4779,7 @@ Gets or sets an object that indicates to managing the collection of stacked head
  
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
             { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
             { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
             { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -4787,7 +4787,7 @@ Gets or sets an object that indicates to managing the collection of stacked head
             { Id: 5, Status: "Validate", Summary: "Task 5", Assignee: "Andrew" },
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
              {
                  dataSource: data,
@@ -4830,7 +4830,7 @@ Gets or sets a value that indicates whether to add stacked header columns into t
   
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
             { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
             { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
             { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -4838,7 +4838,7 @@ Gets or sets a value that indicates whether to add stacked header columns into t
             { Id: 5, Status: "Validate", Summary: "Task 5", Assignee: "Andrew" },
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
              {
                  dataSource: data,
@@ -4881,7 +4881,7 @@ Gets or sets a value that indicates the headerText for the particular stacked he
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
             { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
             { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
             { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -4889,7 +4889,7 @@ Gets or sets a value that indicates the headerText for the particular stacked he
             { Id: 5, Status: "Validate", Summary: "Task 5", Assignee: "Andrew" },
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
              {
                  dataSource: data,
@@ -4932,7 +4932,7 @@ Gets or sets a value that indicates the column for the particular stacked header
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
             { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
             { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
             { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -4940,7 +4940,7 @@ Gets or sets a value that indicates the column for the particular stacked header
             { Id: 5, Status: "Validate", Summary: "Task 5", Assignee: "Andrew" },
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
              {
                  dataSource: data,
@@ -4989,14 +4989,14 @@ To enable or disable the tooltip display.
 
     <div id="Kanban"></div>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
        { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#kanban").ejKanban(
             {
                 dataSource: data,
@@ -5076,14 +5076,14 @@ To customize the tooltip display based on your requirements.
     </div>
     </script>
     <script type="text/javascript">
-    window.kanbandata = [
+    window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Type: "Epic", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Type: "Story", Assignee: "Andrew" },
-       { Id: 3, Status: "InProgress", Summary: "Task 3", Type: "Improvment", Assignee: "Andrew" },
+       { Id: 3, Status: "InProgress", Summary: "Task 3", Type: "Improvement", Assignee: "Andrew" },
        { Id: 4, Status: "Testing", Summary: "Task 4", Type: "Issue", Assignee: "Nancy" }
     ];
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#kanban").ejKanban(
             {
                 dataSource: data,
@@ -5290,7 +5290,7 @@ Gets or sets a value that indicates whether to customizing the user interface (U
 
     <div id="Kanban"></div>
     <script>
-    window.kanbandata = [
+    window.kanban = [
             { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
             { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
             { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
@@ -5311,7 +5311,7 @@ Gets or sets a value that indicates whether to customizing the user interface (U
         Min: "Min."
     };
     $(function () {
-        var data = ej.DataManager(window.kanbandata);
+        var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
         {
             dataSource: data,
@@ -6132,7 +6132,7 @@ Send a search request to Kanban with specified string passed in it.
     // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
     // Sends a search request to the Kanban
-    kanbanObj.KanbanFilter.searchCards("Analyse"); 
+    kanbanObj.KanbanFilter.searchCards("Analyze"); 
     </script>
 
 {% endhighlight %}
@@ -6142,7 +6142,7 @@ Send a search request to Kanban with specified string passed in it.
 
     <script>
     // Sends a search request to the Kanban
-    $("#Kanban").ejKanban("searchCards", "Analyse");        
+    $("#Kanban").ejKanban("searchCards", "Analyze");        
     </script>
     
 {% endhighlight %}
@@ -6194,7 +6194,7 @@ Send a filtering request to cards in the kanban.
     // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
     // Sends filtering request to the cards
-    kanbanObj.KanbanFilter.filterCards(new ej.Query().where("Assignee", "equal", "Janet Leverling"));
+    kanbanObj.KanbanFilter.filterCards(new ej.Query().where("Assignee", "equal", "Janet"));
     </script>
     
 {% endhighlight %}
