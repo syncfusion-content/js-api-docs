@@ -86,11 +86,6 @@ $(element).ejMenu()
 * module:ej.checkbox.js
 
 
-#### Valid HTML elements
-
-* ul
-
-
 ## Members
 
 ### animationType `enum`
