@@ -84,11 +84,6 @@ $(function () {
 * module:ej.tagcloud.js
 
 
-#### Valid HTML elements
-
-* div
-
-* span
 
 
 ## Members
