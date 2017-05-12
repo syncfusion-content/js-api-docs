@@ -54,16 +54,6 @@ $('#droppable').ejDroppable();
 
 * module:ej.droppable
 
-
-#### Valid HTML elements
-
-* div
-
-* span
-
-* a
-
-
 ## Members
 
 
