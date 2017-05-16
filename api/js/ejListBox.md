@@ -645,7 +645,7 @@ Example
 ### sortOrder `enum`
 {:#members:sortOrder}
 
-<ts name="ej.SortOrder"/>
+<ts name="ej.ListBox.SortOrder"/>
 
 Set to sort ListBox items either by Ascending or Descending order. By default sortOrder is set as enum type of "None".
 You can use only below mentioned type for sorting purpose.
