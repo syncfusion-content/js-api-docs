@@ -345,6 +345,24 @@ Enables or disables the ability to filter the rows based on this column.
         $("#treegrid").ejTreeGrid({ columns: [{ allowFiltering: true },{allowFiltering: false }] });
 {% endhighlight %}
 
+### columns.allowFilteringBlankContent `boolean`
+{:#members:columns-allowfilteringblankcontent}
+
+Enables the blanks option in ejDropDownList mapped in TreeGrid column
+
+#### Default Value
+
+* true
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+        $("#treegrid").ejTreeGrid({ columns: [{ allowFilteringBlankContent: false }});
+		
+{% endhighlight %}
 
 ### columns.allowSorting `boolean`
 {:#members:columns-allowsorting}
@@ -381,6 +399,28 @@ Enables/disables cell selection.
 {% highlight html %}
  
         $("#treegrid").ejTreeGrid({ columns: [{ allowCellSelection: true },{allowCellSelection: false }]  });
+
+{% endhighlight %}
+
+### columns.editParams `Object`
+{:#members:columns-editparams}
+
+To customize the ej controls defined in TreeGrid column with their native property.
+
+
+#### Default Value
+
+* -
+
+
+#### Example
+
+
+{% highlight html %}
+      
+        $("#treegrid").ejTreeGrid({columns: [                    
+{ field: "priority", headerText: "Priority", editType: "dropdownedit", dropdownData: stageData, editParams: { fields: { text: "text", value: "value" } } }]
+});
 
 {% endhighlight %}
 
@@ -444,6 +484,29 @@ Specifies the edit type of the column.
 
 {% endhighlight %}
 
+### columns.dropdownData `string`
+{:#members:columns-dropdowndata}
+
+To bind the dropdown data for TreeGrid column mapped with ejDropDownList
+
+
+#### Default Value
+
+* -
+
+
+#### Example
+
+
+{% highlight html %}
+       var dataSource = [
+                    //
+          { id: 4, text: "Critical", value: "Critical" }
+        ];
+        $("#treegrid").ejTreeGrid(columns: [                    
+{ field: "priority", headerText: "Priority", editType: "dropdownedit", dropdownData: dataSource}]);
+	
+{% endhighlight %}
 
 ### columns.field `string`
 {:#members:columns-field}
@@ -1133,21 +1196,43 @@ Specifies hierarchical or self-referential data to populate the TreeGrid.
 {% endhighlight %}
 
 
-### headerTextOverflow `string`
+### headerTextOverflow `enum`
 {:#members:headertextoverflow}
+
+<ts name = "ej.TreeGrid.HeaderTextOverflow"/>
 
 Specifies whether to wrap the header text when it is overflown i.e., when it exceeds the header width.
 
-#### Default Value
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">None</td>
+<td class="description">You can disable the word wrap</td>
+</tr>
+<tr>
+<td class="name">Wrap</td>
+<td class="description">You can wrap the header content</td>
+</tr>
+</tbody>
+</table>
 
-* "none"
+#### Default Value
+{:.param}
+
+* ej.TreeGrid.HeaderTextOverflow.None
 
 #### Example
 
 
 {% highlight html %}
          
-        $("#treegrid").ejTreeGrid({ headerTextOverflow: "wrap"});
+        $("#treegrid").ejTreeGrid({ headerTextOverflow: ej.TreeGrid.HeaderTextOverflow.Wrap});
 
 {% endhighlight %}
 
@@ -1539,8 +1624,10 @@ Specifies whether to render only the visual elements that are visible in the UI.
 
 Specifies the settings for column resize
 
-### columnResizeSettings.columnResizeMode `string`
+### columnResizeSettings.columnResizeMode `enum`
 {:#members:columnresizesettings-columnresizemode}
+
+<ts name = "ej.TreeGrid.ColumnResizeMode"/>
 
 Specifies the mode for column resizing 
 
@@ -1568,18 +1655,37 @@ Specifies the mode for column resizing
 </table>
 
 #### Default Value
+{:.param}
 
-* "normal"
+* ej.TreeGrid.ColumnResizeMode.Normal
 
 #### Example
 
 
 {% highlight html %}
  
-        $("#treegrid").ejTreeGrid({  columnResizeSettings: { columnResizeMode : "fixedColumn"} });
+        $("#treegrid").ejTreeGrid({  columnResizeSettings: { columnResizeMode : ej.TreeGrid.ColumnResizeMode.FixedColumns} });
 
 {% endhighlight %}
 
+### commonWidth `number`
+{:#members:commonwidth}
+
+Defines the common width for all the columns in TreeGrid
+
+#### Default Value
+
+* 150
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+        $("#treegrid").ejTreeGrid({  commonWidth:180 });
+
+{% endhighlight %}
 
 ### filterSettings `object`
 {:#members:filtersettings}
@@ -1605,8 +1711,10 @@ Specifies the mode on which column filtering should start
 
 {% endhighlight %}
 
-### filterSettings.filterType `string`
+### filterSettings.filterType `enum`
 {:#members:filtersettings-filtertype}
+
+<ts name = "ej.TreeGrid.FilterType"/>
 
 Specifies the type of column filtering.
 
@@ -1630,8 +1738,9 @@ Specifies the type of column filtering.
 </table>
 
 #### Default Value
+{:.param}
 
-* "filterbar"
+* ej.TreeGrid.FilterType.FilterBar
 
 
 #### Example
@@ -1639,7 +1748,7 @@ Specifies the type of column filtering.
 
 {% highlight html %}
  
-        $("#treegrid").ejTreeGrid({  filterSettings: { filterType : "menu"} });
+        $("#treegrid").ejTreeGrid({  filterSettings: { filterType : ej.TreeGrid.FilterType.Menu} });
 
 {% endhighlight %}
 
@@ -1652,6 +1761,42 @@ Specifies the column collection for filtering the TreeGrid content on initial lo
 #### Default Value
 
 * []
+
+### filterSettings.filteredColumns.value `string`
+{:#members:filtersettings-filteredcolumns-value}
+
+Specifies the value to be filtered in TreeGrid.
+
+#### Default Value
+
+* -
+
+### filterSettings.filteredColumns.field `string`
+{:#members:filtersettings-filteredcolumns-field}
+
+Specifies the field where filtering has to be performed.
+
+#### Default Value
+
+* -
+
+### filterSettings.filteredColumns.predicate `string`
+{:#members:filtersettings-filteredcolumns-predicate}
+
+Specifies the predicate(and/or) value to perform filtering.
+
+#### Default Value
+
+* -
+
+### filterSettings.filteredColumns.operator `string`
+{:#members:filtersettings-filteredcolumns-operator}
+
+Specifies the filter condition to filtered column. See <a href="global.html#enum:filteroperator">operator</a>
+
+#### Default Value
+
+* -
 
 #### Example
 
@@ -2062,6 +2207,43 @@ Specifies the index of the selected row.
 
 {% endhighlight %}
 
+### selectedCellIndexes `array`
+{:#members:selectedcellindexes}
+
+Specifies the selected cell information on rendering TreeGrid.
+
+### selectedCellIndexes.rowIndex `number`
+{:#members:selectedcellindexes-rowIndex}
+
+
+Specifies the row index of the cell to be selected in TreeGrid control
+
+
+#### Default Value
+{:.param}
+
+* ""
+
+### selectedCellIndexes.cellIndex `number`
+{:#members:selectedcellindexes-cellIndex}
+
+Specifies the cell index to be selected in the row.
+
+
+#### Default Value
+{:.param}
+
+* " "
+
+#### Example
+{:.example}
+
+
+{% highlight html %} 
+                 
+        $("#treegrid").ejTreeGrid({selectedCellIndexes:[{rowIndex: 2, cellIndex: 3}]});            
+
+{% endhighlight %}
 
 ### selectionSettings `object`
 {:#members:selectionsettings}
@@ -2379,6 +2561,127 @@ Specifies the summary row collection object to be displayed
 {:.param}
 * []
 
+### summaryRows.title `string`
+{:#members:summaryrows-title}
+
+Specifies the title for summary row collection in TreeGrid
+
+#### Default Value
+{:.param}
+* -
+
+### summaryRows.summaryColumns `array`
+{:#members:summaryrows-summarycolumns}
+
+Specifies the summary columns in the summary rows.
+
+#### Default Value
+{:.param}
+* -
+
+### summaryRows.summaryColumns.summaryType `enum`
+{:#members:summaryrows-summarycolumns-summarytype}
+
+<ts name = "ej.TreeGrid.SummaryType"/>
+
+Specifies the summary type to perform calculations in a corresponding summary column. See <a href="global.html#enum:summarytype">summaryType</a>.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Sum</td>
+<td class="description">Displays the sum of summary column</td>
+</tr>
+<tr>
+<td class="name">Average</td>
+<td class="description">Displays the average of summary column</td>
+</tr>
+<tr>
+<td class="name">Maximum</td>
+<td class="description">Displays the maximum value of summary column</td>
+</tr>
+<tr>
+<td class="name">Minimum</td>
+<td class="description">Displays the minimum value of summary column</td>
+</tr>
+<tr>
+<td class="name">Count</td>
+<td class="description">Displays the total count of summary column</td>
+</tr>
+<tr>
+<td class="name">MinimumDate</td>
+<td class="description">Displays the minimum date value in summary column</td>
+</tr>
+<tr>
+<td class="name">MaximumDate</td>
+<td class="description">Displays the maximum date value in summary column</td>
+</tr>
+<tr>
+<td class="name">TrueCount</td>
+<td class="description">Displays the true count value for boolean summary columns</td>
+</tr>
+<tr>
+<td class="name">FalseCount</td>
+<td class="description">Displays the false count value for boolean summary columns</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+{:.param}
+* -
+
+### summaryRows.summaryColumns.dataMember `string`
+{:#members:summaryrows-summarycolumns-datamember}
+
+Specifies summary column used to perform the summary calculation.
+
+#### Default Value
+{:.param}
+* -
+
+### summaryRows.summaryColumns.displayColumn `string`
+{:#members:summaryrows-summarycolumns-displaycolumn}
+
+Specifies the required column to display the summary.
+
+#### Default Value
+{:.param}
+* -
+
+### summaryRows.summaryColumns.prefix `string`
+{:#members:summaryrows-summarycolumns-prefix}
+
+Specifies the text to be displayed before the summary column value.
+
+#### Default Value
+{:.param}
+* -
+
+### summaryRows.summaryColumns.suffix `string`
+{:#members:summaryrows-summarycolumns-suffix}
+
+Specifies the text to be displayed after the summary column value.
+
+#### Default Value
+{:.param}
+* -
+
+### summaryRows.summaryColumns.format `string`
+{:#members:summaryrows-summarycolumns-format}
+
+Specifies the format to be applied on the summary column value.
+
+#### Default Value
+{:.param}
+* -
+
 #### Example
 
 {% highlight html %}
@@ -2390,12 +2693,13 @@ $("#treegrid").ejTreeGrid({
             summaryType: ej.TreeGrid.SummaryType.Maximum,
             dataMember: "TotalUnits",
             displayColumn: "TotalUnits",
-            prefix: "Individual maximum unit = "
+            prefix: "Individual maximum unit = ",
         }, {
             summaryType: ej.TreeGrid.SummaryType.Maximum,
             dataMember: "TotalCosts",
             displayColumn: "TotalCosts",
             prefix: "Individual maximum Cost = ",
+			suffix:"/-",
             format: "{0:C}"
         }]
     }, ],
@@ -2517,11 +2821,53 @@ Option to add columns based on which the rows have to be sorted recursively.
 
 {% highlight html %}
           
-        $("#treegrid").ejTreeGrid({ sortSettings{sortedColumns : []}});            
+        $("#treegrid").ejTreeGrid({ sortSettings:{sortedColumns : [{ field:"startDate",direction:"ascending" }]}});      
 
 {% endhighlight %}
 
+### sortSettings.sortedColumns.field `string`
+{:#members:sortsettings-sortedcolumns-field}
 
+Specifies the field to be sorted in TreeGrid
+
+
+#### Default Value
+{:.param}
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+        
+        $("#treegrid").ejTreeGrid({ sortSettings:{sortedColumns : [{ field:"startDate" }]}});                
+
+{% endhighlight %}
+
+### sortSettings.sortedColumns.direction `string`
+{:#members:sortsettings-sortedcolumns-direction}
+
+Specifies the sort direction in TreeGrid
+
+
+#### Default Value
+{:.param}
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+    $("#treegrid").ejTreeGrid({ sortSettings:{sortedColumns : [{ direction:"ascending" }]}});                  
+
+{% endhighlight %}
 
 
 ### toolbarSettings `object`
@@ -3186,45 +3532,6 @@ treegridObj.saveCell();
 </script>
 {% endhighlight %}
 
-
-### search(searchString)
-{:#methods:search}
-
-To search an item with search string provided at the run time
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">searchString</td>
-<td class="type">string</td>
-<td class="description">you can pass a searchString to search the tree grid</td>
-</tr>
-</tbody>
-</table>
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<div id="treegrid"></div> 
- 
-<script>
-// Create Tree Grid object
-var treegridObj = $("#treegrid").data("ejTreeGrid");
-treegridObj.search("Plan"); // To search a Plan string in tree grid data
-</script>
-
-{% endhighlight %}
-
 ### showColumn(headerText)
 {:#methods:showcolumn}
 
@@ -3265,7 +3572,7 @@ treegridObj.showColumn("Task Name");
 {% endhighlight %}
 
 
-### sortColumn(columnName, columnSortDirection)
+### sortColumn(fieldName, columnSortDirection)
 {:#methods:sortcolumn}
 
 To sorting the data based on the particular fields
@@ -3280,7 +3587,7 @@ To sorting the data based on the particular fields
 </thead>
 <tbody>
 <tr>
-<td class="name">columnName</td>
+<td class="name">fieldName</td>
 <td class="type">string</td>
 <td class="description">you can pass a name of column to sort.</td>
 </tr>
@@ -4786,6 +5093,227 @@ Triggered when TreeGrid is rendered completely
 <script>
 $("#treegrid").ejTreeGrid({
    create: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+### detailsDataBound 
+{:#events:detailsdatabound }
+
+Triggered while rendering details template in TreeGrid
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when detailsDataBound event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type">object</td>
+<td class="description">Returns the data collection of selected row.</td>
+</tr>
+<tr>
+<td class="name">detailsElement</td>
+<td class="type">object</td>
+<td class="description">Returns the details element of selected row.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the rowIndex of selected row.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the TreeGrid model</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
+$("#treegrid").ejTreeGrid({
+   detailsDataBound: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+### detailsShown 
+{:#events:detailsshown }
+
+Triggered when details template pop-up is shown.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when detailsShown event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type">object</td>
+<td class="description">Returns the data collection of selected row.</td>
+</tr>
+<tr>
+<td class="name">detailsElement</td>
+<td class="type">object</td>
+<td class="description">Returns the details element of selected row.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the rowIndex of selected row.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the TreeGrid model</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
+$("#treegrid").ejTreeGrid({
+   detailsShown: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+### detailsHidden 
+{:#events:detailshidden }
+
+Triggered when details template pop-up is hidden.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when detailsHidden event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the TreeGrid model</td>
+</tr>
+<tr>
+<td class="name">rowData</td>
+<td class="type">object</td>
+<td class="description">Returns the data collection of hidden details Template</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
+$("#treegrid").ejTreeGrid({
+   detailsHidden: function (args) {}
 });
 </script>
 {% endhighlight %}

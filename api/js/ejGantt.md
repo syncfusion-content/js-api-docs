@@ -50,7 +50,7 @@ $('#gantt').ejGantt();
 
 ## Members
 
-### addDialogFields `Array`
+### addDialogFields `array`
 {:#members:adddialogfields}
 
 Specifies the fields to be included in the add dialog in Gantt
@@ -76,6 +76,57 @@ Specifies the fields to be included in the add dialog in Gantt
  });            
 </script>
 
+{% endhighlight %}
+
+### addDialogFields.field `string`
+{:#members:adddialogfields-field}
+
+Specifies mapping name to include required fields in Gantt
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    addDialogFields: [{ field: "taskId" }]
+ });            
+</script>
+{% endhighlight %}
+
+
+### addDialogFields.editType `string`
+{:#members:adddialogfields-edittype}
+
+Specifies editType of fields to be included in the add dialog in Gantt
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    addDialogFields: [{ editType: "stringedit" }]
+ });            
+</script>
 {% endhighlight %}
 
 
@@ -723,6 +774,34 @@ Specifies the dateFormat for Gantt , given format is displayed in tooltip , Grid
 
 {% endhighlight %}
 
+### dayWorkingTime `array`
+{:#members:dayworkingtime}
+
+Specifies the customized working time for tasks in Gantt 
+
+
+#### Default Value
+{:.param}
+
+* [{ "from": "08:00 AM", "to": "12:00 PM" }, { "from": "01:00 PM", "to": "05:00 PM" }]
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
+        $("#gantt").ejGantt(
+ {
+    dayWorkingTime: [{ "from": "08:00 AM", "to": "12:00 PM" }, { "from": "01:00 PM", "to": "05:00 PM" }]
+ });            
+</script>
+
+{% endhighlight %}
+
 
 ### durationMapping `string`
 {:#members:durationmapping}
@@ -801,7 +880,7 @@ Specifies the duration unit for each tasks whether days or hours or minutes
 {% endhighlight %}
 
 
-### editDialogFields `Array`
+### editDialogFields `array`
 {:#members:editdialogfields}
 
 Specifies the fields to be included in the edit dialog in Gantt
@@ -827,6 +906,57 @@ Specifies the fields to be included in the edit dialog in Gantt
  });            
 </script>
 
+{% endhighlight %}
+
+### editDialogFields.field `string`
+{:#members:editdialogfields-field}
+
+Specifies mapping name to include required fields in Gantt
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    editDialogFields: [{ field: "taskId" }]
+ });            
+</script>
+{% endhighlight %}
+
+
+### editDialogFields.editType `string`
+{:#members:editdialogfields-edittype}
+
+Specifies editType of fields to be included in the edit dialog in Gantt
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    editDialogFields: [{ editType: "stringedit" }]
+ });            
+</script>
 {% endhighlight %}
 
 ### isResponsive `boolean`
@@ -1613,6 +1743,81 @@ Collection of holidays with date, background and label information to be display
 
 {% endhighlight %}
 
+### holidays.day `string`
+{:#members:holidays-day}
+
+Specifies holiday date to be displayed in Gantt
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    holidays:[{day:"12/2/2000" }]
+ });            
+</script>
+{% endhighlight %}
+
+### holidays.background `string`
+{:#members:holidays-background}
+
+Specifies the background color for holiday date in Gantt Schedule
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    holidays:[{background:"cyan" }]   
+ });            
+</script>
+{% endhighlight %}
+
+
+### holidays.label `string`
+{:#members:holidays-label}
+
+Specifies the label to be displayed for rendered holiday in Gantt
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    holidays:[{label:"local holiday" }]
+ });            
+</script>
+{% endhighlight %}
 
 ### includeWeekend `boolean`
 {:#members:includeweekend}
@@ -2347,35 +2552,6 @@ Enables or Disables rendering baselines in Gantt , when enabled baseline is rend
 {% endhighlight %}
 
 
-
-### validateManualTasksOnLinking `boolean`
-{:#members:validatemanaultasksonlinking}
-
-Enables or disables the schedule date validation while connecting a manually scheduled task with predecessor
-
-#### Default Value
-{:.param}
-
-* "false"
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>          
-        $("#gantt").ejGantt(
- {
-    validateManualTasksOnLinking: true
- });            
-</script>
-
-{% endhighlight %}
-
-
 ### resourceIdMapping `string`
 {:#members:resourceidmapping}
 
@@ -2592,7 +2768,7 @@ Specified the format for day view in schedule header
 #### Default Value
 {:.param}
 
-* "ddd"
+* ""
 
 
 #### Example
@@ -2876,7 +3052,7 @@ Specified the format for week view in schedule header
 #### Default Value
 {:.param}
 
-* "ddd"
+* "MMM dd , yyyy"
 
 
 #### Example
@@ -3214,7 +3390,7 @@ Specifies the height of Gantt control
 #### Default Value
 {:.param}
 
-* "450px"
+* ""
 
 
 #### Example
@@ -3243,7 +3419,7 @@ Specifies the width of Gantt control
 #### Default Value
 {:.param}
 
-* "1000px"
+* ""
 
 
 #### Example
@@ -3332,11 +3508,60 @@ Specifies the sorted columns for Gantt
  
 <div id="gantt"></div> 
 <script>          
-        $("#gantt").ejGantt({ sortSettings{sortedColumns : []}});                  
+        $("#gantt").ejGantt({ sortSettings:{sortedColumns : [{ field:"startDate",direction:"ascending" }]}});                  
 </script>
 
 {% endhighlight %}
 
+### sortSettings.sortedColumns.field `string`
+{:#members:sortsettings-sortedcolumns-field}
+
+Specifies the field to be sorted in Gantt
+
+
+#### Default Value
+{:.param}
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
+        $("#gantt").ejGantt({ sortSettings:{sortedColumns : [{ field:"startDate" }]}});                  
+</script>
+
+{% endhighlight %}
+
+### sortSettings.sortedColumns.direction `string`
+{:#members:sortsettings-sortedcolumns-direction}
+
+Specifies the sort direction in Gantt
+
+
+#### Default Value
+{:.param}
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
+        $("#gantt").ejGantt({ sortSettings:{sortedColumns : [{ direction:"ascending" }]}});                  
+</script>
+
+{% endhighlight %}
 
 ### splitterPosition `string`
 {:#members:splitterposition}
@@ -3424,6 +3649,130 @@ Specifies the options for striplines
 
 {% endhighlight %}
 
+### stripLines.day `string`
+{:#members:striplines-day}
+
+Specifies date to render striplines in Gantt
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+     $("#gantt").ejGantt(stripLines: [{ day: "12/2/2000"}]); 
+ });            
+</script>
+{% endhighlight %}
+
+### stripLines.label `string`
+{:#members:striplines-label}
+
+Specifies label to be displayed for striplines in Gantt
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+     $("#gantt").ejGantt(stripLines: [{ label: "Project Release" }]); 
+ });            
+</script>
+{% endhighlight %}
+
+### stripLines.lineStyle `string`
+{:#members:striplines-linestyle}
+
+Specifies line style for rendered striplines in Gantt
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+     $("#gantt").ejGantt(stripLines: [{ lineStyle: "dotted"}]); 
+ });            
+</script>
+{% endhighlight %}
+
+### stripLines.lineColor `string`
+{:#members:striplines-linecolor}
+
+Specifies the line color for rendered striplines in Gantt
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+     $("#gantt").ejGantt(stripLines: [{ lineColor: "Darkblue"}]); 
+ });            
+</script>
+{% endhighlight %}
+
+### stripLines.lineWidth `string`
+{:#members:striplines-linewidth}
+
+Specifies the width of the stripline in Gantt
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+     $("#gantt").ejGantt(stripLines: [{ lineWidth : 2}]); 
+ });            
+</script>
+{% endhighlight %}
 
 ### taskbarBackground `string`
 {:#members:taskbarbackground}
@@ -3510,6 +3859,35 @@ Specifies the template Id for customized tooltip for taskbar editing in Gantt
 
 {% endhighlight %}
 
+
+### taskbarHeight `number`
+{:#members:taskbarheight}
+
+
+Specifies the height of taskBar in Gantt.
+
+
+#### Default Value
+{:.param}
+
+* 20
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
+        $("#gantt").ejGantt(
+ {
+    taskbarHeight: 25
+ });            
+</script>
+
+{% endhighlight %}
 
 ### taskbarTooltipTemplate `string`
 {:#members:taskbartooltiptemplate}
@@ -3964,6 +4342,33 @@ Specifies the type of selection whether to select row or cell.
 
 {% endhighlight %}
 
+### validateManualTasksOnLinking `boolean`
+{:#members:validatemanualtasksonlinking}
+
+Enables or disables the schedule date validation while connecting a manually scheduled task with predecessor
+
+#### Default Value
+{:.param}
+
+* "false"
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
+        $("#gantt").ejGantt(
+ {
+    validateManualTasksOnLinking: true
+ });            
+</script>
+
+{% endhighlight %}
+
 ### weekendBackground `string`
 {:#members:weekendbackground}
 
@@ -4165,6 +4570,48 @@ Positions the splitter by the specified column index.
 // Create Gantt object
 var ganttObj = $("#gantt").data("ejGantt");
 gantObj.setSplitterIndex(3); // Set splitter position after column index 3
+</script>
+{% endhighlight %}
+
+### sortColumn(mappingName, columnSortDirection)
+{:#methods:sortcolumn}
+
+To sort the column in required direction
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">mappingName</td>
+<td class="type">string</td>
+<td class="description">Defines the column's mapping name in which sorting have to be performed</td>
+</tr>
+<tr>
+<td class="name">columnSortDirection</td>
+<td class="type">string</td>
+<td class="description">Defines the sort direction whether the column has to sorted in ascending/descending order. By default it is sorting in an ascending order</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+ 
+<script>
+// Create Gantt
+var ganttObj = $("#gantt").data("ejGantt");
+ganttObj.sortColumn("startDate","ascending"); // To sort a column
 </script>
 {% endhighlight %}
 
