@@ -1246,6 +1246,88 @@ event</td>
 
 {% endhighlight %}
 
+
+### mousemove
+{:#events:mousemove}
+
+
+Fires when mouse move is moving the Rating control.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from rating
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+value</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">returns the current value.</td>
+</tr>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Rating.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the rating model</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">
+event</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the mouse click event args values.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+    <input id="rating"></input>
+
+    <script>
+        //mousemove event for Rating
+        $("#rating").ejRating({
+            mousemove: function (args) { }
+        });
+    </script>
+
+{% endhighlight %}
+
 ### mouseover
 {:#events:mouseover}
 
