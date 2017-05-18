@@ -7,15 +7,17 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for HTML radialmenu control.
+# ejRadialMenu
 
+The RadialMenu control is a context that represents the menu items are arranged in a circular order with a centric button element in it. By default, only the center button is visible. The Radial Menu displays the root level menu item with rotational animation effects on clicking the center menu button. 
 
+#### Syntax
 
+{% highlight js %}
 
+      $(element).ejRadialMenu()
 
-$(element).ejRadialMenu()
-
-
+{% endhighlight %}
 
 
 
