@@ -559,6 +559,36 @@ When set to true, allows the spellcheck to render based upon screen size.
 
 {% endhighlight %}
 
+### enableValidateOnType `boolean`
+{:#members:enablevalidateontype}
+
+Gets or sets a value that indicates whether to enable the spellcheck operation on Enter/Space key-press.
+
+### Default Value 
+
+* false
+
+#### Example - To validate for spellcheck the content on press the Enter & Space key.
+
+{% highlight html %}
+
+<div id="SpellCheck"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#SpellCheck").ejSpellCheck({
+                dictionarySettings: {
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+	
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+                },
+                enableValidateOnType:true
+            });
+        });
+</script>
+
+{% endhighlight %}
+
 ### controlsToValidate `string`
 {:#members:controlstovalidate}
 
