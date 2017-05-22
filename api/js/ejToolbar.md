@@ -215,10 +215,10 @@ Specifies dataSource value for the Toolbar control during initialization.
 <script>
 // to set dataSource value during initialization. 
         //To set dataSource  API value 
-        items = [{ edid: "1", spriteCssClass: "editTools cursor", text: "Cursor" },
-{ edid: "2", spriteCssClass: "editTools select", text: "Select" },
-{ edid: "3", spriteCssClass: "editTools move", text: "Move" },
-{ edid: "4", spriteCssClass: "editTools rectselect", text: "Rectangle Select" }];
+        items = [{ id: "1", spriteCssClass: "editTools cursor", text: "Cursor" },
+{ id: "2", spriteCssClass: "editTools select", text: "Select" },
+{ id: "3", spriteCssClass: "editTools move", text: "Move" },
+{ id: "4", spriteCssClass: "editTools rectselect", text: "Rectangle Select" }];
 $("#toolbar1").ejToolbar({ dataSource:  items}); 
 </script>{% endhighlight %}
 
@@ -582,15 +582,15 @@ Specifies the mapping fields for the data items of the Toolbar
 <script>
 // To set fields API value during initialization. 
         //To set the fields API value.
-        items = [{ edid: "1", spriteCssClass: "editTools cursor", text: "Cursor" },
- { edid: "2", spriteCssClass: "editTools select", text: "Select" },
- { edid: "3", spriteCssClass: "editTools move", text: "Move" },
- { edid: "4", spriteCssClass: "editTools rectselect", text: "Rectangle Select"
+        items = [{ id: "1", spriteCssClass: "editTools cursor", text: "Cursor" },
+ { id: "2", spriteCssClass: "editTools select", text: "Select" },
+ { id: "3", spriteCssClass: "editTools move", text: "Move" },
+ { id: "4", spriteCssClass: "editTools rectselect", text: "Rectangle Select"
  }];
 $("#toolbar1").ejToolbar(
                 {
                         dataSource:  items,
-          fields:  { id: "empid",spriteCssClass: "spriteCss"}
+          fields:  { id: "id",spriteCssClass: "spriteCss"}
         });
 </script>
 
