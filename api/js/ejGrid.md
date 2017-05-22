@@ -5235,6 +5235,67 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
+### toolbarSettings.customToolbarItems.templateID `string`
+{:#members:toolbarsettings-customtoolbaritems-templateid}
+
+Gets or sets a value that indicates whether to add custom toolbar item as a template element.
+
+#### Default Value:
+{:.param}
+* -
+
+#### Example
+{:.example}
+{% highlight html %}
+<script id="Refresh" type="text/x-jsrender">
+    <a  class="e-toolbaricons e-icon refresh" />
+</script>
+<div id="Grid"></div> 
+<style type="text/css" class="cssStyles">
+  .refresh:before
+    {
+        content:"\e677";
+    }
+</style>
+<script>
+$("#Grid").ejGrid({
+  dataSource:window.gridData, 
+  toolbarSettings:{showToolbar:true, customToolbarItems:[{ templateID: "#Refresh"]}
+});
+</script>
+{% endhighlight %}
+
+### toolbarSettings.customToolbarItems.tooltip `string`
+{:#members:toolbarsettings-customtoolbaritems-tooltip}
+
+Gets or sets a value that indicates whether to add custom toolbar item with a custom tooltip.
+
+#### Default Value:
+{:.param}
+* -
+
+#### Example
+{:.example}
+{% highlight html %}
+<script id="Refresh" type="text/x-jsrender">
+    <a  class="e-toolbaricons e-icon refresh" />
+</script>
+<div id="Grid"></div> 
+<style type="text/css" class="cssStyles">
+  .refresh:before
+    {
+        content:"\e677";
+    }
+</style>
+<script>
+$("#Grid").ejGrid({
+  dataSource:window.gridData, 
+  toolbarSettings:{showToolbar:true, customToolbarItems:[{ templateID: "#Refresh", tooltip: "Refresh Grid"]}
+});
+</script>
+{% endhighlight %}
+
+
 ### toolbarSettings.showToolbar `Boolean`
 {:#members:toolbarsettings-showtoolbar}
 
