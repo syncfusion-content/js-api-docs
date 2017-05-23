@@ -966,12 +966,12 @@ Allows the user to set the particular country or region language for the DropDow
 
 {% highlight html %}
 
-    <input type="text" id="selectcompany" />
+    <input type="text" id="company" />
 
     $(function () {
-        var datalist = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Customers" });
-        $('#selectcompany').ejDropDownList({
-            dataSource: datalist,
+        var data = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Customers" });
+        $('#company').ejDropDownList({
+            dataSource: data,
             fields: { text: "CompanyName", value: 'ContactName' },
             width: 260,
             showCheckbox: true,
