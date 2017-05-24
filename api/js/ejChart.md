@@ -34903,6 +34903,68 @@ type{% endhighlight %}</td>
 </table>
 
 
+### zoomed
+{:#events:zoomed}
+
+
+Fires while performing rectangle zooming in chart.
+
+#### Example
+
+
+{% highlight js %}
+ 
+//zoomed event for chart
+
+$("#container").ejChart({
+
+    zoomed: function (args) {
+            //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Instance of the chart model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Selected data collection of object</td>
+</tr>
+</tbody>
+</table>
+
+
+
 ### rangeSelected
 {:#events:rangeselected}
 
