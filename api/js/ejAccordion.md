@@ -2049,7 +2049,7 @@ Object.show(); //Calls the show method of Accordion.
 {:#events:activate}
 
 
-Triggered after a Accordion item is active or inactive. Argument values are activeIndex, activeHeader, inActiveHeader, inActiveIndex and current model value.
+Triggered after a Accordion item is active . Argument values are activeIndex, activeHeader, isInteraction and current model values.
 
 
 <table class="params">
@@ -2533,7 +2533,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 ### beforeInactivate
 {:#events:beforeinactivate}
 
-Triggered after a Accordion item is active or inactive. Argument values are activeIndex, activeHeader, inActiveHeader, inActiveIndex and current model value.
+Triggered before a Accordion item is inactive. Argument values are  inActiveIndex and  model values.
 
 <table class="params">
 <thead>
@@ -2742,7 +2742,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 ### inActivate
 {:#events:inactivate}
 
-Triggered after a Accordion item is active or inactive. Argument values are activeIndex, activeHeader, inActiveHeader, inActiveIndex and current model value.
+Triggered after a Accordion item is inactive. Argument values are  inActiveHeader, inActiveIndex ,isInteraction and current model values.
 
 
 <table class="params">
