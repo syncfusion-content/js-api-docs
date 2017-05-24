@@ -304,6 +304,54 @@ Shows/Hides the sub-total of the field in PivotGrid.
     $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ fieldName: "Country", showSubTotal : false }] } });
 {% endhighlight %}
 
+### dataSource.columns.format `string`
+{:#members:datasource-columns-format}
+
+Allows to set the format for the column headers.
+
+>**Note**: This is applicable only for Relational datasource.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ format : "date" }] } });
+{% endhighlight %}
+
+### dataSource.columns.formatString `string`
+{:#members:datasource-columns-formatstring}
+
+This property sets type of display of date.
+
+>**Note**: This is applicable only when the format is set as "date".
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ formatString : "MM/DD/YYYY" }] } });
+{% endhighlight %}
+
+### dataSource.columns.cssClass `string`
+{:#members:datasource-columns-cssclass}
+
+Allows to set the custom theme for the column headers.
+
+>**Note**: This is applicable only for Relational datasource.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ cssClass : "className" }] } });
+{% endhighlight %}
+
 ### dataSource.columns.sortOrder `enum`
 {:#members:datasource-columns-sortorder}
 
@@ -602,6 +650,54 @@ Shows/Hides the sub-total of the field.
     $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ fieldName: "Country", showSubTotal : false }] } });
 {% endhighlight %}
 
+### dataSource.rows.format `string`
+{:#members:datasource-rows-format}
+
+Allows to set the format for the row headers.
+
+>**Note**: This is applicable only for Relational datasource.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ format : "date" }] } });
+{% endhighlight %}
+
+### dataSource.rows.formatString `string`
+{:#members:datasource-rows-formatstring}
+
+This property sets type of display of date.
+
+>**Note**: This is applicable only when the format is set as "date".
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ formatString : "MM/DD/YYYY" }] } });
+{% endhighlight %}
+
+### dataSource.rows.cssClass `string`
+{:#members:datasource-rows-cssclass}
+
+Allows to set the custom theme for the row headers.
+
+>**Note**: This is applicable only for Relational datasource.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ cssClass : "className" }] } });
+{% endhighlight %}
+
 ### dataSource.rows.sortOrder `enum`
 {:#members:datasource-rows-sortorder}
 
@@ -872,7 +968,7 @@ Allows to set the type of PivotGrid summary calculation for the value field with
 ### dataSource.values.format `string`
 {:#members:datasource-values-format}
 
-Allows to set the format of the values.
+Allows to set the format for the values.
 
 >**Note**: This is applicable only for Relational datasource.
 
@@ -913,6 +1009,22 @@ Allows to set the formula for calculation of values for calculated members in Re
 {% highlight javascript %}
  
     $("#PivotGrid1").ejPivotGrid({ dataSource: { values: [{ formula : "Quantity*10" }] } });
+{% endhighlight %}
+
+### dataSource.values.cssClass `string`
+{:#members:datasource-values-cssclass}
+
+Allows to set the custom theme for the values.
+
+>**Note**: This is applicable only for Relational datasource.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ dataSource: { values: [{ cssClass : "className" }] } });
 {% endhighlight %}
 
 ### dataSource.filters `array`
@@ -1035,6 +1147,57 @@ Contains the respective cube name from OLAP database as string type.
 {% highlight javascript %}
  
     $("#PivotGrid1").ejPivotGrid({ dataSource: { cube: "Adventure Works" } });
+{% endhighlight %}
+
+### dataSource.sourceInfo `string`
+{:#members:datasource-sourceinfo}
+
+To set the data source name to fetch data from that. 
+
+>**Note**: This is applicable only for Mondrian connection.
+
+#### Default Value: “”
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ dataSource: { sourceInfo: "Provider Mondrian" } });
+{% endhighlight %}
+
+### dataSource.providerName `enum`
+{:#members:datasource-providerName}
+
+Set the provider name for PivotGrid to identify whether the provider is SSAS or Mondrian. 
+
+>**Note**: This is applicable only for client side OLAP data.
+
+#### Default Value: ej.olap.Providers.SSAS
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">SSAS</td>
+            <td class="description">To bind an OLAP data source to PivotGrid through SSAS provider.</td>
+        </tr>
+        <tr>
+            <td class="name">Mondrian</td>
+            <td class="description">To bind a relational data source to PivotGrid through Mondrian provider.</td>
+        </tr>
+    </tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ dataSource: { providerName: ej.olap.Providers.Mondrian } });
 {% endhighlight %}
 
 ### dataSource.data `object`
@@ -1550,6 +1713,34 @@ Enables the display of GroupingBar allowing you to filter, sort and remove field
 {% highlight javascript %}
  
     $("#PivotGrid1").ejPivotGrid({ enableGroupingBar: true });
+{% endhighlight %}
+
+### enableMemberEditorPaging `boolean`
+{:#members:enablemembereditorpaging}
+
+Enables/Disables paging in Member Editor for viewing the large count of members in pages. 
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ enableMemberEditorPaging: true });
+{% endhighlight %}
+
+### memberEditorPageSize `number`
+{:#members:memberEditorPageSize}
+
+Allows the user to set the number of members to be displayed in each page of Member Editor on applying paging in it. 
+
+#### Default Value: 100
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ memberEditorPageSize: 50 });
 {% endhighlight %}
 
 ### enableGrandTotal `boolean`
