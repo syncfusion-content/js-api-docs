@@ -7344,6 +7344,8 @@ $("#Grid").ejGrid("getCurrentViewData");
 
 Get the data of given row index in grid.
 
+N> It will work only for batch edit mode.
+
 #### Returns:
 {:#methods:returns:}
 
