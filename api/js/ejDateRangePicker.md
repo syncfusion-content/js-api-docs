@@ -1338,7 +1338,7 @@ label</td>
 $("#daterangepicker").ejDateRangePicker();
 // Create DateRangePicker instance
 var dateObj = $("#daterangepicker").data("ejDateRangePicker");
-dateObj.dateObj.setRange("new Range"); lear  the DateRangePicker ranges selection
+dateObj.dateObj.setRange("new Range"); learn  the DateRangePicker ranges selection
 </script>
 
 {% endhighlight %}
@@ -1560,7 +1560,7 @@ endDate</td>
  
 <input type="text" id="daterangepicker" />
 <script>
-//onCchange event for DateRangePicker
+//onChange event for DateRangePicker
 $("#daterangepicker").ejDateRangePicker({
    onChange: function (args) {}
 });  
