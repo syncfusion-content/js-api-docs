@@ -551,10 +551,10 @@ To enable filtering behavior on Kanban.User can specify query in filterSettings 
      <div id="Kanban"></div>
     <script type="text/javascript">
     window.kanban = [
-        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Janet Leverling" },
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Janet" },
         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
-        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Janet Leverling" }
+        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Janet" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanban);
@@ -572,7 +572,7 @@ To enable filtering behavior on Kanban.User can specify query in filterSettings 
                     allowFiltering:true,		
                     keyField: "Status",
                     filterSettings: [
-                         { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet Leverling"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
+                         { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
                          { text: "Testing Issues", query: new ej.Query().where("Status", "equal", "Testing"), description: "Display the issues of 'Testing'" }
                     ],
 					fields: {
@@ -1202,7 +1202,7 @@ Gets the template to render custom context menu item.
 {% highlight html %}
 
     <div id="Kanban"></div>
-    <ul id="contexttemplate">
+    <ul id="template">
         <li><a>Backlog</a></li>
         <li><a>Testing</a></li>        
     </ul>    
@@ -1234,7 +1234,7 @@ Gets the template to render custom context menu item.
                 contextMenuSettings: {
                     enable: true,
                     customMenuItems: [
-                              { text: "Hide Column", template: "#contexttemplate" },
+                              { text: "Hide Column", template: "#template" },
                     ],
                 }
             });
@@ -1482,9 +1482,9 @@ To enable/disable allowDrop for specific column wise.
     <script type="text/javascript">
 	window.kanbanPizzaData=[
 	{Id:1,Title:"Mexican Green Wave",Type:"Vegetarian",Size:"Small",Category:"Order",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_09.png" },
-	{Id:2,Title:"Milan Veg Fantasy",Type:"Vegetarian",Size:"Medium",Category:"Order",Description:"Zucchini wrapped in spicy grilled seasoning along with tomato and jalapeno.",Tags:"Onions, Pepper, Tomato, Zucchini",ImageURL:"../content/images/kanban/menu_01.png" },
-	{Id:3,Title:"Peppy Paneer",Type:"Vegetarian",Size:"Large",Category:"Ready to Serve",Description:"It's made using toppings of tomato, mozzarella cheese and fresh basil, which represent the red, white and green of the Italian flag.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_02.png" },
-	{Id:4,Title:"Margherita",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
+	{Id:2,Title:"Milan Veg Fantasy",Type:"Vegetarian",Size:"Medium",Category:"Order",Description:"Zucchini wrapped in spicy grilled seasoning along with tomato.",Tags:"Onions, Pepper, Tomato, Zucchini",ImageURL:"../content/images/kanban/menu_01.png" },
+	{Id:3,Title:"Peppy",Type:"Vegetarian",Size:"Large",Category:"Ready to Serve",Description:"It's made using toppings of tomato, mozzarella cheese and fresh basil, which represent the red, white and green of the Italian flag.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_02.png" },
+	{Id:4,Title:"Labanese",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
 	{Id:5,Title:"Farm House",Type:"Vegetarian",Size:"Small",Category:"Delivered",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_04.png" },
 	]
         $(function() {
@@ -1537,9 +1537,9 @@ To enable/disable allowDrag for specific column wise.
     <script type="text/javascript">
 	window.kanbanPizzaData=[
 	{Id:1,Title:"Mexican Green Wave",Type:"Vegetarian",Size:"Small",Category:"Order",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_09.png" },
-	{Id:2,Title:"Milan Veg Fantasy",Type:"Vegetarian",Size:"Medium",Category:"Order",Description:"Zucchini wrapped in spicy grilled seasoning along with tomato and jalapeno.",Tags:"Onions, Pepper, Tomato, Zucchini",ImageURL:"../content/images/kanban/menu_01.png" },
-	{Id:3,Title:"Peppy Paneer",Type:"Vegetarian",Size:"Large",Category:"Ready to Serve",Description:"It's made using toppings of tomato, mozzarella cheese and fresh basil, which represent the red, white and green of the Italian flag.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_02.png" },
-	{Id:4,Title:"Margherita",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
+	{Id:2,Title:"Milan Veg Fantasy",Type:"Vegetarian",Size:"Medium",Category:"Order",Description:"Zucchini wrapped in spicy grilled seasoning along with tomato.",Tags:"Onions, Pepper, Tomato, Zucchini",ImageURL:"../content/images/kanban/menu_01.png" },
+	{Id:3,Title:"Peppy",Type:"Vegetarian",Size:"Large",Category:"Ready to Serve",Description:"It's made using toppings of tomato, mozzarella cheese and fresh basil, which represent the red, white and green of the Italian flag.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_02.png" },
+	{Id:4,Title:"Labanese",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
 	{Id:5,Title:"Farm House",Type:"Vegetarian",Size:"Small",Category:"Delivered",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_04.png" },
 	]
         $(function() {
@@ -1816,7 +1816,7 @@ Gets or sets a value that indicates to add the template within the header elemen
     <span class="e-calender e-icon headericon"></span>
     In Progress
     </div>
-    <div id="userlogin">
+    <div id="login">
     <span class="e-userlogin e-icon employee"></span>
     Testing
     </div>
@@ -1846,7 +1846,7 @@ Gets or sets a value that indicates to add the template within the header elemen
                 columns: [
                     { headerText: "Backlog", key: "Open" },
                     { headerText: "In Progress", key: "InProgress", headerTemplate: "#calender" },
-                    { headerText: "Testing", key: "Testing", headerTemplate: "#userlogin" },
+                    { headerText: "Testing", key: "Testing", headerTemplate: "#login" },
                     { headerText: "Done", key: "Close", headerTemplate: "#image" }
                 ],
                 keyField: "Status",
@@ -2072,7 +2072,7 @@ Gets or sets a value that indicates to add the template for card .
 {% highlight html %}
 
     <div id="Kanban"></div>
-    <script id="cardtemplate" type="text/x-jsrender">
+    <script id="template" type="text/x-jsrender">
     <table>
         <tr>
             <td class="photo">
@@ -2137,7 +2137,7 @@ Gets or sets a value that indicates to add the template for card .
                     content: "Summary"
                 },
                 cardSettings: {
-                    template: "#cardtemplate",
+                    template: "#template",
                 }
             });
     });
@@ -3986,7 +3986,7 @@ To customize the filtering behavior based on queries given.
                 },
                 allowFiltering:true,
                 filterSettings: [
-                         { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
+                         { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet"), description: "Displays issues which matches the assignee as 'Janet'" },
                          { text: "Testing Issues", query: new ej.Query().where("Status", "equal", "Testing"), description: "Display the issues of 'Testing'" }
                 ],
             }
@@ -4033,7 +4033,7 @@ Gets or sets an object of display name to filter queries.
                     content: "Summary"
                 },
                 filterSettings: [
-                         { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
+                         { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet"), description: "Displays issues which matches the assignee as 'Janet'" },
                          { text: "Testing Issues", query: new ej.Query().where("Status", "equal", "Testing"), description: "Display the issues of 'Testing'" }
                 ],
             }
@@ -4080,7 +4080,7 @@ Gets or sets an object that Queries to perform filtering
                     content: "Summary"
                 },
                 filterSettings: [
-                         { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet Leverling"), description: "Displays issues which matches the assignee as 'Janet Leverling'" },
+                         { text: "Janet Issues", query: new ej.Query().where("Assignee", "equal", "Janet"), description: "Displays issues which matches the assignee as 'Janet'" },
                          { text: "Testing Issues", query: new ej.Query().where("Status", "equal", "Testing"), description: "Display the issues of 'Testing'" }
                 ],
             }
@@ -5136,9 +5136,9 @@ Gets or sets an object that indicates to render the Kanban with specified workfl
     <script type="text/javascript">
 	window.kanbanPizzaData=[
 	{Id:1,Title:"Mexican Green Wave",Type:"Vegetarian",Size:"Small",Category:"Order",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_09.png" },
-	{Id:2,Title:"Milan Veg Fantasy",Type:"Vegetarian",Size:"Medium",Category:"Order",Description:"Zucchini wrapped in spicy grilled seasoning along with tomato and jalapeno.",Tags:"Onions, Pepper, Tomato, Zucchini",ImageURL:"../content/images/kanban/menu_01.png" },
-	{Id:3,Title:"Peppy Paneer",Type:"Vegetarian",Size:"Large",Category:"Ready to Serve",Description:"It's made using toppings of tomato, mozzarella cheese and fresh basil, which represent the red, white and green of the Italian flag.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_02.png" },
-	{Id:4,Title:"Margherita",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
+	{Id:2,Title:"Milan Veg Fantasy",Type:"Vegetarian",Size:"Medium",Category:"Order",Description:"Zucchini wrapped in spicy grilled seasoning along with tomato.",Tags:"Onions, Pepper, Tomato, Zucchini",ImageURL:"../content/images/kanban/menu_01.png" },
+	{Id:3,Title:"Peppy",Type:"Vegetarian",Size:"Large",Category:"Ready to Serve",Description:"It's made using toppings of tomato, mozzarella cheese and fresh basil, which represent the red, white and green of the Italian flag.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_02.png" },
+	{Id:4,Title:"Labanese",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
 	{Id:5,Title:"Farm House",Type:"Vegetarian",Size:"Small",Category:"Delivered",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_04.png" },
 	]
         $(function() {
@@ -5188,9 +5188,9 @@ Gets or sets an object that indicates to render the Kanban with specified workfl
     <script type="text/javascript">
 	window.kanbanPizzaData=[
 	{Id:1,Title:"Mexican Green Wave",Type:"Vegetarian",Size:"Small",Category:"Order",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_09.png" },
-	{Id:2,Title:"Milan Veg Fantasy",Type:"Vegetarian",Size:"Medium",Category:"Order",Description:"Zucchini wrapped in spicy grilled seasoning along with tomato and jalapeno.",Tags:"Onions, Pepper, Tomato, Zucchini",ImageURL:"../content/images/kanban/menu_01.png" },
-	{Id:3,Title:"Peppy Paneer",Type:"Vegetarian",Size:"Large",Category:"Ready to Serve",Description:"It's made using toppings of tomato, mozzarella cheese and fresh basil, which represent the red, white and green of the Italian flag.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_02.png" },
-	{Id:4,Title:"Margherita",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
+	{Id:2,Title:"Milan Veg Fantasy",Type:"Vegetarian",Size:"Medium",Category:"Order",Description:"Zucchini wrapped in spicy grilled seasoning along with tomato.",Tags:"Onions, Pepper, Tomato, Zucchini",ImageURL:"../content/images/kanban/menu_01.png" },
+	{Id:3,Title:"Peppy",Type:"Vegetarian",Size:"Large",Category:"Ready to Serve",Description:"It's made using toppings of tomato, mozzarella cheese and fresh basil, which represent the red, white and green of the Italian flag.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_02.png" },
+	{Id:4,Title:"Labanese",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
 	{Id:5,Title:"Farm House",Type:"Vegetarian",Size:"Small",Category:"Delivered",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_04.png" },
 	]
         $(function() {
@@ -5240,9 +5240,9 @@ Gets or sets an object that indicates to render the Kanban with specified workfl
     <script type="text/javascript">
 	window.kanbanPizzaData=[
 	{Id:1,Title:"Mexican Green Wave",Type:"Vegetarian",Size:"Small",Category:"Order",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_09.png" },
-	{Id:2,Title:"Milan Veg Fantasy",Type:"Vegetarian",Size:"Medium",Category:"Order",Description:"Zucchini wrapped in spicy grilled seasoning along with tomato and jalapeno.",Tags:"Onions, Pepper, Tomato, Zucchini",ImageURL:"../content/images/kanban/menu_01.png" },
-	{Id:3,Title:"Peppy Paneer",Type:"Vegetarian",Size:"Large",Category:"Ready to Serve",Description:"It's made using toppings of tomato, mozzarella cheese and fresh basil, which represent the red, white and green of the Italian flag.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_02.png" },
-	{Id:4,Title:"Margherita",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
+	{Id:2,Title:"Milan Veg Fantasy",Type:"Vegetarian",Size:"Medium",Category:"Order",Description:"Zucchini wrapped in spicy grilled seasoning along with tomato.",Tags:"Onions, Pepper, Tomato, Zucchini",ImageURL:"../content/images/kanban/menu_01.png" },
+	{Id:3,Title:"Peppy",Type:"Vegetarian",Size:"Large",Category:"Ready to Serve",Description:"It's made using toppings of tomato, mozzarella cheese and fresh basil, which represent the red, white and green of the Italian flag.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_02.png" },
+	{Id:4,Title:"Labanese",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
 	{Id:5,Title:"Farm House",Type:"Vegetarian",Size:"Small",Category:"Delivered",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_04.png" },
 	]
         $(function() {
@@ -5378,7 +5378,7 @@ Add or remove columns in Kanban columns collections.Default action is add.
     // remove Kanban column
     kanbanObj.columns("Testing","Testing", "remove");
     // Add new column into Kanban or modified already existing column in the Kanban.
-    kanbanObj.columns("Codereview","codereview","add"); 
+    kanbanObj.columns("Review","Review","add"); 
     </script>
     
 {% endhighlight %}
@@ -5937,7 +5937,7 @@ Update a card in Kanban control based on key and JSON data given.
     // Create Kanban object.
     var kanbanObj = $("#Kanban").data("ejKanban");
     // Sends a update card request to the Kanban
-    kanbanObj.updateCard(2,{ Id: 2, Status: "Open", Summary: "Task 1", Assignee: "Andrew Piller"});
+    kanbanObj.updateCard(2,{ Id: 2, Status: "Open", Summary: "Task 1", Assignee: "Andrew"});
     </script>
     
 {% endhighlight %}
