@@ -551,7 +551,7 @@ Example
 
 {% endhighlight %}
 
-### locale `number`
+### locale `string`
 {:#members:locale}
 Set the localization culture for Dialog Widget.
 
@@ -570,7 +570,7 @@ Example
 
 
 
-### maxHeight `number`
+### maxHeight `string` `number`
 {:#members:maxheight}
 
 Sets the maximum height for the dialog widget.
@@ -589,7 +589,7 @@ Example
 {% endhighlight %}
 
 
-### maxWidth `number`
+### maxWidth `string` `number`
 {:#members:maxwidth}
 
 Sets the maximum width for the dialog widget.
@@ -608,7 +608,7 @@ Example
 {% endhighlight %}
 
 
-### minHeight `number`
+### minHeight `string` `number`
 {:#members:minheight}
 
 Sets the minimum height for the dialog widget.
@@ -626,7 +626,7 @@ Example
 
 {% endhighlight %}
 
-### minWidth `number`
+### minWidth `string` `number`
 {:#members:minwidth}
 
 Sets the minimum width for the dialog widget.
