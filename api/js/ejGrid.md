@@ -3630,6 +3630,51 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
+### rowDropSettings.dragBehavior `enum`
+{:#members:rowdropsettings-dragbehavior}
+
+<ts name="ej.Grid.DragBehavior"/>
+
+Gets or sets a value that indicates whether to define the behavior for drag.
+
+#### Default Value:
+{:.param}
+* ej.Grid.DragBehavior.Move
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Move</td>
+<td class="description">Moves a dragged row from one grid to another</td>
+</tr>
+<tr>
+<td class="name">Copy</td>
+<td class="description">Copies a dragged row from one grid to another</td>
+</tr>
+</table>
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid" style="float:left;width:49%"></div>
+<div id="DestGrid" style="float:right;width:49%"></div>
+<script>
+$("#Grid").ejGrid({
+    dataSource: window.gridData,
+    allowRowDragAndDrop: true,
+    rowDropSettings: { dropTargetID: "#DestGrid" ,dragBehavior:ej.Grid.DragBehavior.Copy }
+});
+$("#DestGrid").ejGrid({
+    dataSource: [],
+    allowRowDragAndDrop: true,
+    rowDropSettings: { dropTargetID: "#Grid" ,dragBehavior:ej.Grid.DragBehavior.Copy }
+});
+</script>
+{% endhighlight %}
+
 ### searchSettings `Object`
 {:#members:searchsettings}
 
@@ -5189,6 +5234,67 @@ $("#Grid").ejGrid({
 });
 </script>
 {% endhighlight %}
+
+### toolbarSettings.customToolbarItems.templateID `string`
+{:#members:toolbarsettings-customtoolbaritems-templateid}
+
+Gets or sets a value that indicates whether to add custom toolbar item as a template element.
+
+#### Default Value:
+{:.param}
+* -
+
+#### Example
+{:.example}
+{% highlight html %}
+<script id="Refresh" type="text/x-jsrender">
+    <a  class="e-toolbaricons e-icon refresh" />
+</script>
+<div id="Grid"></div> 
+<style type="text/css" class="cssStyles">
+  .refresh:before
+    {
+        content:"\e677";
+    }
+</style>
+<script>
+$("#Grid").ejGrid({
+  dataSource:window.gridData, 
+  toolbarSettings:{showToolbar:true, customToolbarItems:[{ templateID: "#Refresh"]}
+});
+</script>
+{% endhighlight %}
+
+### toolbarSettings.customToolbarItems.tooltip `string`
+{:#members:toolbarsettings-customtoolbaritems-tooltip}
+
+Gets or sets a value that indicates whether to add custom toolbar item with a custom tooltip.
+
+#### Default Value:
+{:.param}
+* -
+
+#### Example
+{:.example}
+{% highlight html %}
+<script id="Refresh" type="text/x-jsrender">
+    <a  class="e-toolbaricons e-icon refresh" />
+</script>
+<div id="Grid"></div> 
+<style type="text/css" class="cssStyles">
+  .refresh:before
+    {
+        content:"\e677";
+    }
+</style>
+<script>
+$("#Grid").ejGrid({
+  dataSource:window.gridData, 
+  toolbarSettings:{showToolbar:true, customToolbarItems:[{ templateID: "#Refresh", tooltip: "Refresh Grid"]}
+});
+</script>
+{% endhighlight %}
+
 
 ### toolbarSettings.showToolbar `Boolean`
 {:#members:toolbarsettings-showtoolbar}
@@ -14972,6 +15078,71 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
+### mergeHeaderCellInfo
+{:#events:mergeheadercellinfo}
+
+Triggered every time a request is made to access particular header cell information, element and data.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from grid
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">headerCellMerge</td>
+<td class="type"><span class="param-type">void</span></td>
+<td class="description last">Method to merge the header cells.</td>
+</tr>
+
+<tr>
+<td class="name">columnHeaders</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the column headers.</td>
+</tr>
+
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the grid model.</td>
+</tr>
+
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+{:.example}
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   mergeHeaderCellInfo: function (args){}
+});
+</script>
+{% endhighlight %}
+
 ### mergeCellInfo
 {:#events:mergecellinfo}
 
@@ -15010,7 +15181,7 @@ Triggered every time a request is made to access particular cell information, el
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">data</td>
+<td class="name">rowData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current row record object (JSON).</td>
 </tr>
@@ -15107,7 +15278,7 @@ Triggered every time a request is made to access particular cell information, el
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">data</td>
+<td class="name">rowData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current row record object (JSON).</td>
 </tr>
@@ -15747,7 +15918,7 @@ Triggered every time a request is made to access row information, element and da
 <td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">data</td>
+<td class="name">rowData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns current row record object (JSON).</td>
 </tr>
@@ -16166,7 +16337,7 @@ cancel</td>
 <td class="description last">Returns the column object.</td>
 </tr>
 <tr>
-<td class="name">data</td>
+<td class="name">rowData</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the current row data.</td>
 </tr>

@@ -9171,6 +9171,40 @@ xlObj.XLFilter.filterByActiveCell();
 ### XLFormat
 {:#methods:xlformat}
 
+### XLFormat.addFontFamily(fontName)
+{:#methods:xlformat-addfontfamily}
+
+This method is used to add the font to the Ribbon font family dropdown.  
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fontName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Font name which needs to add into the font family option.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLFormat.addFontFamily("Gisha"); // To add the font name into font family option.
+</script>
+
+{% endhighlight %}
+
 ### XLFormat.convertToRange(options)
 {:#methods:xlformat-converttorange}
 
@@ -9282,6 +9316,40 @@ This method is used to set format style and values in a cell or range of cells.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Sends a format request to the Spreadsheet.
 xlObj.XLFormat.format({style:{ "background-color": "#C0C0C0"}}, "A1:C10");
+</script>
+
+{% endhighlight %}
+
+### XLFormat.removeFontFamily(fontName)
+{:#methods:xlformat-removefontfamily}
+
+This method is used to remove the font from the Ribbon font family dropdown.  
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fontName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Font name which needs to remove from the font family drop down.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+xlObj.XLFormat.removeFontFamily("Gisha"); // To remove the name from the font family drop down.
 </script>
 
 {% endhighlight %}
