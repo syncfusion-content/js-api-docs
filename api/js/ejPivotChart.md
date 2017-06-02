@@ -267,6 +267,57 @@ Contains the respective cube name from OLAP database as string type.
     $("#PivotChart1").ejPivotChart({ dataSource: { cube: "Adventure Works" } });
 {% endhighlight %}
 
+### dataSource.sourceInfo `string`
+{:#members:datasource-sourceinfo}
+
+To set the data source name to fetch data from that. 
+
+>**Note**: This is applicable only for Mondrian connection.
+
+#### Default Value: “”
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ dataSource: { sourceInfo: "Provider Mondrian" } });
+{% endhighlight %}
+
+### dataSource.providerName `enum`
+{:#members:datasource-providerName}
+
+Set the provider name for PivotChart to identify whether the provider is SSAS or Mondrian. 
+
+>**Note**: This is applicable only for client side OLAP data.
+
+#### Default Value: ej.olap.Providers.SSAS
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">SSAS</td>
+            <td class="description">To bind an OLAP data source to PivotChart through SSAS provider.</td>
+        </tr>
+        <tr>
+            <td class="name">Mondrian</td>
+            <td class="description">To bind a relational data source to PivotChart through Mondrian provider.</td>
+        </tr>
+    </tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ dataSource: { providerName: ej.olap.Providers.Mondrian } });
+{% endhighlight %}
+
 ### dataSource.data `object`
 {:#members:datasource-data}
 
