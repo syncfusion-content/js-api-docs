@@ -2168,3 +2168,60 @@ $("#slider").ejSlider({
 });
 </script>{% endhighlight %}
 
+### renderScale
+{:#events:renderscale}
+
+
+Fires when the slider large scale has been created.   
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from slider control
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+value</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">return the slider scale tick value</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="slider"> </div> 
+<script>
+//renderScale event for slider control
+$("#slider").ejSlider({
+   renderScale: function (args) {
+           args.value = "your custom text" + args.value;
+   }
+});
+</script>{% endhighlight %}
