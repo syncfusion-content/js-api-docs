@@ -3853,6 +3853,8 @@ This property is used to configure the selection behavior of the grid.
 ### selectionSettings.cellSelectionMode `enum`
 {:#members:selectionsettings-cellselectionmode}
 
+<ts name="ej.Grid.CellSelectionMode"/>
+
 Gets or sets a value that indicates the cell selection actions based on the cell selection mode.
 
 #### Default Value:
