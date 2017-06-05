@@ -750,6 +750,41 @@ $("#container").ejChart({
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/2nqhtn0y)
 
+### background `string`
+{:#members:background}
+
+
+
+
+Sets the background color of the  chart.
+
+
+#### Default Value
+
+* transparent
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   background: "skyblue"                      
+
+});
+
+{% endhighlight %}
+
+
+Try it: [JS playground Sample](http://jsplayground.syncfusion.com/fqyoilqm)
+
+
+
+
 
 ### backGroundImageUrl `string`
 {:#members:backgroundimageurl}
@@ -8381,7 +8416,32 @@ commonSeriesOptions :{selectionSettings:{customPattern:""}}
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ne1iit3s)
 
 
+### selectedDataPointIndexes `array`
+{:#members:selecteddatapointindexes}
 
+Options for displaying the chart along with selected points while loading 
+
+#### Default Value
+
+* [ ]
+
+#### Example
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+  selectedDataPointIndexes: [
+               { seriesIndex:0 , pointIndex:2 },
+               { seriesIndex:1 , pointIndex:4 }
+           ],     
+
+});
+
+{% endhighlight %}
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/b3oj1nlt)
 
 ### crosshair `object`
 {:#members:crosshair}
@@ -12416,6 +12476,38 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
+### primaryXAxis.enableAutoIntervalOnZooming`boolean`
+{:#members:primaryxaxis-enableautointervalonzooming}
+
+
+
+Specifies the interval of the axis according to the zoomed data of the chart. 
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { enableAutoIntervalOnZooming: true }
+                          
+});
+
+{% endhighlight %}
+
+
+
+
 
 ### primaryXAxis.axisLine `object`
 {:#members:primaryxaxis-axisline}
@@ -14221,6 +14313,63 @@ Specifies whether to render the axis at the opposite side of its default positio
 $("#container").ejChart({
 
     primaryXAxis: { opposedPosition : true }
+                          
+});
+
+{% endhighlight %}
+
+
+
+### primaryXAxis.orientation `enum`
+{:#members:primaryxaxis-orientation}
+
+<ts name = "ej.datavisualization.Chart.AxisOrientation"/>
+
+
+Specifies the orientation of the axis line
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Horizontal</td>
+<td class="type">string</td> 
+<td class="description last">The axis line is displayed in horizontal direction </td>
+</tr>
+<tr>
+<td class="name">
+Vertical</td>
+<td class="type">string</td>
+<td class="description last">The axis line is displayed in vertical direction</td>
+</tr> 
+</tbody>
+</table>
+
+
+#### Default Value
+
+
+
+* Horizontal
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { orientation : 'Vertical' }
                           
 });
 
@@ -16514,6 +16663,179 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
+### primaryXAxis.scrollbarSettings `object`
+{:#members:primaryxaxis-scrollbarsettings}
+
+
+
+
+Options for customizing the axis scrollbar 
+
+
+### primaryXAxis.scrollbarSettings.visible `boolean`
+{:#members:primaryxaxis-scrollbarsettings-visible}
+
+
+
+
+Specifies to enables or disables the scroll bar.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { scrollbarSettings:{visible:true} }
+                      
+});
+
+{% endhighlight %}
+
+
+### primaryXAxis.scrollbarSettings.canResize `boolean`
+{:#members:primaryxaxis-scrollbarsettings-canresize}
+
+
+
+
+Controls whether scrollbar has to be responsive in the chart.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { scrollbarSettings:{canResize:true} }
+                      
+});
+
+{% endhighlight %}
+
+
+
+### primaryXAxis.scrollbarSettings.range `object`
+{:#members:primaryxaxis-scrollbarsettings-range}
+
+
+Options to customize the range for the scrollbar in the axis.
+
+ 
+
+
+### primaryXAxis.scrollbarSettings.range.min `number`
+{:#members:primaryxaxis-scrollbarsettings-range-min}
+
+
+
+
+Minimum value of the scrollbar range.
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { scrollbarSettings : { range : { min: 10 } } }
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryXAxis.scrollbarSettings.range.max `number`
+{:#members:primaryxaxis-scrollbarsettings-range-max}
+
+
+
+
+Maximum value for the scrollbar range .
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { scrollbarSettings : { range : { max: 100 } } } 
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryXAxis.scrollbarSettings.pointsLength `number`
+{:#members:primaryxaxis-scrollbarsettings-pointslength}
+
+
+
+
+The maximum number of points to be displayed in the scrollbar. 
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryXAxis: { scrollbarSettings : { pointsLength : 50 } } 
+                          
+});
+
+{% endhighlight %}
+
+
 
 ### axes `array`
 {:#members:axes}
@@ -17225,6 +17547,37 @@ $("#container").ejChart({
 
 
 
+### axes.enableAutoIntervalOnZooming `boolean`
+{:#members:axes-enableautointervalonzooming}
+
+
+Specifies the interval of the axis according to the zoomed data of the chart. 
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes:[ { enableAutoIntervalOnZooming : true } ]   
+                          
+});
+
+{% endhighlight %}
+
+
+
 ### axes.font `object`
 {:#members:axes-font}
 
@@ -17463,7 +17816,7 @@ Specifies whether to inverse the axis.
 
 $("#container").ejChart({
 
-     axes: { isInversed : true}
+     axes:[{ isInversed : true}]
                            
 });
 
@@ -18225,7 +18578,7 @@ $("#container").ejChart({
     axes: [{ minorTickLines: { visible: true } }]
                           
 });
-Width of the minor tick line.
+
 {% endhighlight %}
 
 
@@ -18357,6 +18710,39 @@ Specifies whether to render the axis at the opposite side of its default positio
 $("#container").ejChart({
 
     axes: [{ opposedPosition : true }]
+                          
+});
+
+{% endhighlight %}
+
+
+
+### axes.orientation `enum`
+{:#members:axes-orientation}
+
+
+<ts ref = "ej.datavisualization.Chart.AxisOrientation"/>
+
+Specifies the orientation of the axis line in the chart.
+
+
+#### Default Value
+
+
+
+* 'horizontal'
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ orientation : 'vertical' }]
                           
 });
 
@@ -19191,6 +19577,8 @@ $("#container").ejChart({
 });
 
 {% endhighlight %}
+
+
 
 
 
@@ -20442,6 +20830,179 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
+### axes.scrollbarSettings `object`
+{:#members:axes-scrollbarsettings}
+
+
+
+
+Options for customizing the axis scrollbar.
+
+
+### axes.scrollbarSettings.visible `boolean`
+{:#members:axes-scrollbarsettings-visible}
+
+
+
+
+Specifies to enable or disable the scrollbar.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ scrollbarSettings:{visible:true} }]
+                      
+});
+
+{% endhighlight %}
+
+
+### axes.scrollbarSettings.canResize `boolean`
+{:#members:axes-scrollbarsettings-canresize}
+
+
+
+
+Controls whether scrollbar has to be responsive in the chart.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes:[{ scrollbarSettings:{canResize:true} }]
+                      
+});
+
+{% endhighlight %}
+
+
+
+### axes.scrollbarSettings.range `object`
+{:#members:axes-scrollbarsettings-range}
+
+
+Options to customize the range for the scrollbar in the axis.
+
+ 
+
+
+### axes.scrollbarSettings.range.min `number`
+{:#members:axes-scrollbarsettings-range-min}
+
+
+
+
+Minimum value of the scrollbar range.
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes:[ { scrollbarSettings : { range : { min: 10 } } }]
+                          
+});
+
+{% endhighlight %}
+
+
+### axes.scrollbarSettings.range.max `number`
+{:#members:axes-scrollbarsettings-range-max}
+
+
+
+
+Maximum value for the scrollbar range .
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes:[{ scrollbarSettings : { range : { max: 100 } } } ]
+                          
+});
+
+{% endhighlight %}
+
+
+### axes.scrollbarSettings.pointsLength `number`
+{:#members:axes-scrollbarsettings-pointslength}
+
+
+
+
+The maximum number of points to be displayed in the scrollbar. 
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    axes: [{ scrollbarSettings : { pointsLength : 50 } } ]
+                          
+});
+
+{% endhighlight %}
+
+
 
 
 ### primaryYAxis `object`
@@ -20630,6 +21191,39 @@ $("#container").ejChart({
 {% endhighlight %}
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hyakwb3m)
+
+
+### primaryYAxis.enableAutoIntervalOnZooming`boolean`
+{:#members:primaryyaxis-enableautointervalonzooming}
+
+
+
+Specifies the interval of the axis according to the zoomed data of the chart. 
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { enableAutoIntervalOnZooming: true }
+                          
+});
+
+{% endhighlight %}
+
+
 
 
 ### primaryYAxis.axisLine `object`
@@ -22182,6 +22776,39 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
+### primaryYAxis.orientation `enum`
+{:#members:primaryyaxis-orientation}
+
+<ts ref = "ej.datavisualization.Chart.AxisOrientation"/>
+
+
+Specifies the orientation of the axis line in the chart.
+
+
+#### Default Value
+
+
+
+* Vertical
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { orientation : 'Horizontal' }
+                          
+});
+
+{% endhighlight %}
+
+
+
 
 ### primaryYAxis.plotOffset `number`
 {:#members:primaryyaxis-plotoffset}
@@ -23081,6 +23708,185 @@ $("#container").ejChart({
 });
 
 {% endhighlight %}
+
+
+
+### primaryYAxis.scrollbarSettings `object`
+{:#members:primaryyaxis-scrollbarsettings}
+
+
+
+
+Options for customizing the axis scrollbar.
+
+
+### primaryYAxis.scrollbarSettings.visible `boolean`
+{:#members:primaryyaxis-scrollbarsettings-visible}
+
+
+
+
+Specifies to enable or disable the scrollbar.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { scrollbarSettings:{visible:true} }
+                      
+});
+
+{% endhighlight %}
+
+
+### primaryYAxis.scrollbarSettings.canResize `boolean`
+{:#members:primaryyaxis-scrollbarsettings-canresize}
+
+
+
+
+Controls whether scrollbar has to be responsive in the chart.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { scrollbarSettings:{canResize:true} }
+                      
+});
+
+{% endhighlight %}
+
+
+
+### primaryYAxis.scrollbarSettings.range `object`
+{:#members:primaryyaxis-scrollbarsettings-range}
+
+
+Options to customize the range for the scrollbar in the axis.
+
+ 
+
+
+### primaryYAxis.scrollbarSettings.range.min `number`
+{:#members:primaryyaxis-scrollbarsettings-range-min}
+
+
+
+
+Minimum value of the scrollbar range.
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { scrollbarSettings : { range : { min: 10 } } }
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryYAxis.scrollbarSettings.range.max `number`
+{:#members:primaryyaxis-scrollbarsettings-range-max}
+
+
+
+
+Maximum value for the scrollbar range .
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { scrollbarSettings : { range : { max: 100 } } } 
+                          
+});
+
+{% endhighlight %}
+
+
+### primaryYAxis.scrollbarSettings.pointsLength `number`
+{:#members:primaryyaxis-scrollbarsettings-pointslength}
+
+
+
+
+The maximum number of points to be displayed in the scrollbar. 
+
+
+#### Default Value
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejChart({
+
+    primaryYAxis: { scrollbarSettings : { pointsLength : 50 } } 
+                          
+});
+
+{% endhighlight %}
+
+
+
+
+
 
 
 ### primaryYAxis.stripLine `array`
@@ -36017,6 +36823,80 @@ pageY{% endhighlight %}</td>
 </table>
 
 
+### multiLevelLabelClick
+{:#events:chartclick}
+
+
+
+
+Fires, on the clicking the Multi level labels of the chart .
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//MultilevelLabelsClick event for chart
+
+$("#container").ejChart({
+
+    multiLevelLabelClick: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event    </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Instance of the chart model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+location{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">X and Y co-ordinate of the points with respect to chart area.  </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+axis{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">axis of the multilevellabels. </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+multilevellabel{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Multi level label details  </td>
+</tr>
+</tbody>
+</table>
+
 ### chartMouseMove
 {:#events:chartmousemove}
 
@@ -36102,8 +36982,6 @@ pageY{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
-
-
 
 ### chartDoubleClick
 {:#events:chartdoubleclick}
@@ -36192,6 +37070,92 @@ pageY{% endhighlight %}</td>
 </table>
 
 
+### chartMouseLeave
+{:#events:chartMouseLeave}
+
+
+
+
+Fires when the mouse pointer leaves the chart
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//chartMouseLeave event for chart
+
+$("#container").ejChart({
+
+    chartMouseLeave: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event    </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Instance of the chart model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+location{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">X and Y co-ordinate of the points with respect to chart area.  </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+id{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">ID of the target element. </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+size{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Width and height of the chart. </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+pageX{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">x-coordinate of the pointer, relative to the page </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+pageY{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">y-coordinate of the pointer, relative to the page </td>
+</tr>
+</tbody>
+</table>
+
 ### annotationClick
 {:#events:annotationClick}
 
@@ -36271,7 +37235,6 @@ pageY{% endhighlight %}</td>
 </tr>
 </tbody>
 </table>
-
 
 
 ### afterResize
@@ -36516,6 +37479,150 @@ errorbar{% endhighlight %}</td>
 </table>
 
 
+### multiLevelLabelRendering
+{:#events:multiLevelLabelRendering}
+
+
+
+
+Fires, when multi level labels are rendering.
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//multi level labels rendering event for chart
+
+$("#container").ejChart({
+
+  multiLevelLabelRendering: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event    </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Instance of the chart model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+multilevellabels{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">MultiLevel Label Object  </td>
+</tr>
+</tbody>
+</table>
+
+
+### trendlineRendering
+{:#events:trendlineRendering}
+
+
+
+
+Fires, when trendlines are rendering.
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//trendline rendering event for chart
+
+$("#container").ejChart({
+
+  trendlineRendering: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event    </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Instance of the chart model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+trendlines{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Trendline Object  </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+series{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Series data of the chart</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+forwardForecast{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last"> Forward Forecast value for the trendline </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+backwardForecast{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Backward Forecast value for the trendline  </td>
+</tr>
+</tbody>
+</table>
+
+
 
 ### scrollChanged
 {:#events:scrollchanged}
@@ -36720,3 +37827,322 @@ type{% endhighlight %}</td>
 $("#container").ejChart({
    scrollEnd: function (args) {}
 });{% endhighlight %}
+
+
+
+### dragStart
+{:#events:dragStart}
+
+
+
+
+Fires when the dragging is started
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//Drag Start event for chart
+
+$("#container").ejChart({
+
+    dragStart: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event    </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Instance of the chart model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+seriesIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Series Index of the point held for dragging  </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+pointIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">PointIndex of the point held for dragging </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+point{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Information of the point held for dragging</td>
+</tr>
+</tbody>
+</table>
+
+
+### dragging
+{:#events:dragging}
+
+
+
+
+Fires while  dragging 
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//Dragging event for chart
+
+$("#container").ejChart({
+
+    dragging: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event    </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Instance of the chart model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+seriesIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Series Index of the point held for dragging  </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+pointIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">PointIndex of the point held for dragging </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+oldValue{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Previous value of the point before dragging</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+newValue{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Current value of the point</td>
+</tr>
+</tbody>
+</table>
+
+
+### dragEnd
+{:#events:dragEnd}
+
+
+
+
+Fires when the dragging is completed 
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//DragEnd event for chart
+
+$("#container").ejChart({
+
+    dragEnd: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event    </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Instance of the chart model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+seriesIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Series Index of the point held for dragging  </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+pointIndex{% endhighlight %}</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">PointIndex of the point held for dragging </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+oldValue{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Previous value of the point before dragging</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+newValue{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Current value of the point</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+series{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Contains the all the series information of the chart</td>
+</tr>
+</tbody>
+</table>
+
+### subTitleRendering
+{:#events:subTitleRendering}
+
+
+
+
+Fires when the sub Title of the chart is rendered
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//Subtitle rendering event for chart
+
+$("#container").ejChart({
+
+    subTitleRendering: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event    </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Instance of the chart model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+location{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">location of the subTitle text </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+subtitle{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">text of the subtitle</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+size{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Size of the Subtitle text </td>
+</tr>
+</tbody>
+</table>
+
