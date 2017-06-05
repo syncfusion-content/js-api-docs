@@ -3850,14 +3850,16 @@ $("#Grid").ejGrid({
 
 This property is used to configure the selection behavior of the grid.
 
-### selectionSettings.cellSelectionMode `String`
+### selectionSettings.cellSelectionMode `enum`
 {:#members:selectionsettings-cellselectionmode}
+
+<ts name="ej.Grid.CellSelectionMode"/>
 
 Gets or sets a value that indicates the cell selection actions based on the cell selection mode.
 
 #### Default Value:
 {:.param}
-* flow
+* ej.Grid.CellSelectionMode.Flow
 
 <table>
 <tr>
@@ -3865,11 +3867,11 @@ Gets or sets a value that indicates the cell selection actions based on the cell
 <th>Description</th>
 </tr>
 <tr>
-<td class="name">flow</td>
+<td class="name">Flow</td>
 <td class="description">It selects cells continuously from the start cell to end cell.</td>
 </tr>
 <tr>
-<td class="name">box</td>
+<td class="name">Box</td>
 <td class="description">It selects range of cells as a block from start cell to the end cell.</td>
 </tr> 
 </table>
@@ -3883,7 +3885,7 @@ $("#Grid").ejGrid({
     dataSource:  window.gridData,
     allowSelection: true,
     selectionType: ej.Grid.SelectionType.Multiple,     
-    selectionSettings: {selectionMode: ["cell"], cellSelectionMode: "box" }
+    selectionSettings: {selectionMode: ["cell"], cellSelectionMode: ej.Grid.CellSelectionMode.Box }
 });
 </script>
 {% endhighlight %}
