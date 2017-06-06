@@ -96,6 +96,40 @@ When set to true, Schedule allows the appointments to be dragged and dropped at 
 
 {% endhighlight %}
 
+### allowInline `boolean`
+{:#members:allowinline}
+
+When set to true, allows the user to create/edit appointments inline - simply through a single click made either on the Scheduler cells or on the existing appointment’s Subject text respectively. Pressing enter key after the new Subject text   typed onto the inline created text box, will save/update the appointments appropriately.
+
+#### Default Value
+
+* false
+
+#### Example - To create/edit appointments through inline.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                allowInline: true,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
 
 ### allowKeyboardNavigation `boolean`
 {:#members:allowkeyboardnavigation}
@@ -343,6 +377,42 @@ When set to false, doesn't consider the time difference offset calculation on ap
                   currentDate:new Date(2014,4,5),
         		  appointmentSettings: {
                     applyTimeOffset: false,
+                    dataSource: [{
+                        EventId: 101,
+                        EventStartTime: new Date(2014, 4, 5, 10, 00),
+                        EventEndTime: new Date(2014, 4, 5, 12, 00)
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### appointmentSettings.editFutureEventsOnly `boolean`
+{:#members:appointmentsettings-editfutureeventsonly}
+
+When set to true, future appointments in recurrence series can be edit.
+
+#### Default Value
+
+* false
+
+#### Example - To edit future appointments in recurrence series
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                  currentDate:new Date(2014,4,5),
+        		  appointmentSettings: {
+                    editFutureEventsOnly: true,
                     dataSource: [{
                         EventId: 101,
                         EventStartTime: new Date(2014, 4, 5, 10, 00),
