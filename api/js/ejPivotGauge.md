@@ -136,6 +136,8 @@ To set the data source name to fetch data from that.
 ### dataSource.providerName `enum`
 {:#members:datasource-providerName}
 
+<ts ref = "ej.olap.Providers"/>
+
 Set the provider name for PivotGauge to identify whether the provider is SSAS or Mondrian. 
 
 >**Note**: This is applicable only for client side OLAP data.
