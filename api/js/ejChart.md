@@ -3083,6 +3083,126 @@ commonSeriesOptions :{ boxPlotMode : "inclusive"}
  
 
 
+### commonSeriesOptions.bubbleOptions `object`
+{:#members:commonseriesoptions-bubbleoptions}
+
+Options for customizing the bubble options of the Bubble series 
+
+### commonSeriesOptions.bubbleOptions.radiusMode `enum`
+{:#members:commonseriesoptions-bubbleoptions-radiusmode}
+
+
+
+<ts name = "ej.datavisualization.Chart.RadiusMode"/>
+
+
+Used for the calculation of the bubble radius based on the mode selected 
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+MinMax</td>
+<td class="type">string</td> 
+<td class="description">To render the bubble based on the Minimum and Maximum radius </td>
+</tr>
+<tr>
+<td class="name">
+Auto</td>
+<td class="type">string</td>
+<td class="description">To render the bubble based on the Range and Size of the Chart</td>
+</tr> 
+</tbody>
+</table>
+
+
+#### Default Value
+
+
+
+* "minmax"
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+commonSeriesOptions :{ bubbleOptions: { radiusMode: "minmax" }}                  
+});
+
+ {% endhighlight %}
+ 
+### commonSeriesOptions.bubbleOptions.minRadius `Number`
+{:#members:commonseriesoptions-bubbleoptions-minRadius}
+
+
+
+Used for the setting the minimum radius of the bubble 
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+commonSeriesOptions :{ bubbleOptions: { minRadius: 3 }}                  
+});
+
+ {% endhighlight %}
+
+
+### commonSeriesOptions.bubbleOptions.maxRadius `Number`
+{:#members:commonseriesoptions-bubbleoptions-maxRadius}
+
+
+
+Used for setting the maximum radius of the bubble 
+
+
+#### Default Value
+
+
+
+* 3
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+commonSeriesOptions :{ bubbleOptions: { maxRadius: 7 }}                  
+});
+
+ {% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdnbwech)
+
 
 
 ### commonSeriesOptions.lineCap `enum`
@@ -4107,6 +4227,71 @@ commonSeriesOptions :{marker :{dataLabel :{opacity : 0.5}}}
 });
 {% endhighlight %}
 
+### commonSeriesOptions.marker.dataLabel.offset `object|number`
+{:#members:commonseriesoptions-marker-datalabel-offset}
+
+Options for customizing the datalabel positions 
+
+### commonSeriesOptions.marker.dataLabel.offset.x `number`
+{:#members:commonseriesoptions-marker-datalabel-offset-x}
+
+
+
+
+X value or horizontal offset to position the labels in chart.
+
+
+#### Default Value
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   commonSeriesOptions :[{  marker :{dataLabel :{offset : { x:10 }}} }]                    
+
+});
+
+{% endhighlight %}
+
+
+
+
+### commonSeriesOptions.marker.dataLabel.offset.y `number`
+{:#members:commonseriesoptions-marker-datalabel-offset-y}
+
+
+
+
+Y value or vertical offset to position the labels.
+
+
+#### Default Value
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   commonSeriesOptions :[{  marker :{dataLabel :{offset : { y:10 }}} }]                  
+
+});
+
+{% endhighlight %}
 
 
 
@@ -7419,6 +7604,33 @@ commonSeriesOptions :{trendlines:[{ visibility:'visible' }]}
 
 
 
+### commonSeriesOptions.trendlines.visibleOnLegend `string`
+{:#members:commonseriesoptions-trendlines-visibleonlegend}
+
+
+Show/hides the trendline legend.
+
+
+#### Default Value
+
+
+
+* visible
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :[{trendlines:[{ visibleOnLegend:'hidden' }]}]                  
+});
+{% endhighlight %}
+
 
 
 ### commonSeriesOptions.trendlines.type `string`
@@ -7727,6 +7939,353 @@ commonSeriesOptions :{trendlines:[{ period: 3 }]}
 {% endhighlight %}
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/opxwgddc)
+
+
+### commonSeriesOptions.trendlines.tooltip `object`
+{:#members:commonseriesoptions-trendlines-tooltip}
+
+
+
+
+Options for customizing the tooltip of the trendlines in the chart.
+
+
+### commonSeriesOptions.trendlines.tooltip.border `object`
+{:#members:commonseriesoptions-trendlines-tooltip-border}
+
+
+
+
+Options for customizing the border of the  trendline tooltip.
+
+
+
+
+### commonSeriesOptions.trendlines.tooltip.border.color `string`
+{:#members:commonseriesoptions-trendlines-tooltip-border-color}
+
+
+
+
+Border color of the trendline tooltip.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({        
+commonSeriesOptions :[{ trendlines:[{ tooltip :{border:{ color : "green" }} }]}]                  
+});
+ {% endhighlight %}
+
+
+
+
+### commonSeriesOptions.trendlines.tooltip.border.width `number`
+{:#members:commonseriesoptions-trendlines-tooltip-border-width}
+
+
+
+
+Border width of the trendline tooltip.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :[{ trendlines:[{ tooltip :{border:{  width : 2 }} }]}]                   
+});
+  {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dmvqb51g)
+
+
+
+### commonSeriesOptions.trendlines.tooltip.rx `number`
+{:#members:commonseriesoptions-trendlines-tooltip-rx}
+
+
+
+
+Customize the corner radius of the trendline tooltip rectangle.
+
+
+#### Default Value
+
+
+
+0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :[{ trendlines:[{ tooltip :{rx: 10} }]}]                  
+});
+  {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
+
+
+### commonSeriesOptions.trendlines.tooltip.ry `number`
+{:#members:commonseriesoptions-trendlines-tooltip-ry}
+
+
+
+
+Customize the corner radius of the trendline tooltip rectangle.
+
+
+#### Default Value
+
+
+
+0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :[{ trendlines:[{ tooltip :{ry: 10} }]}]                  
+});
+  {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
+
+
+
+### commonSeriesOptions.trendlines.tooltip.duration `string`
+{:#members:commonseriesoptions-trendlines-tooltip-duration}
+
+
+
+
+Specifies the duration, the tooltip has to be displayed.
+
+
+#### Default Value
+
+
+
+* "500ms"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :[{ trendlines:[{ tooltip :{duration : "300ms"} }]}]                   
+});
+  {% endhighlight %}
+
+
+
+### commonSeriesOptions.trendlines.tooltip.enableAnimation `boolean`
+{:#members:commonseriesoptions-trendlines-tooltip-enableanimation}
+
+
+
+
+Enables/disables the animation of the trendline tooltip when moving from one point to other.
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :[{ trendlines:[{ tooltip :{enableAnimation : false} }]}]                   
+});
+{% endhighlight %}
+
+
+
+### commonSeriesOptions.trendlines.tooltip.fill `string`
+{:#members:commonseriesoptions-trendlines-tooltip-fill}
+
+
+
+
+Background color of the trendline tooltip.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :[{ trendlines:[{ tooltip :{fill : "green"} }]}]                   
+});
+ {% endhighlight %}
+
+
+
+### commonSeriesOptions.trendlines.tooltip.format `string`
+{:#members:commonseriesoptions-trendlines-tooltip-format}
+
+
+
+
+Format of the tooltip content displayed in the trendlines.
+
+
+#### Default Value
+
+
+
+* "#point.x# : #point.y#"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :[{ trendlines:[{ tooltip :{format : "#point.x# : #point.y#%"} }]}]                  
+});
+ {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rzxmpi0c)
+
+
+
+### commonSeriesOptions.trendlines.tooltip.opacity `number`
+{:#members:commonseriesoptions-trendlines-tooltip-opacity}
+
+
+
+
+
+Opacity of the trendline tooltip.
+
+
+#### Default Value
+
+
+
+* 0.5
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :[{ trendlines:[{ tooltip :{opacity : 0.5} }]}]                 
+});
+{% endhighlight %}
+
+
+### commonSeriesOptions.trendlines.intercept `number`
+{:#members:commonseriesoptions-trendlines-intercept}
+
+
+
+
+
+Specifies the intercept value of the trendlines.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+commonSeriesOptions :{ trendlines:[{ intercept : 10 }]}                 
+});
+{% endhighlight %}
+
 
 
 ### commonSeriesOptions.highlightSettings `object`
@@ -11923,6 +12482,38 @@ $("#container").ejChart({
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dwcvfzuv)
 
+
+### legend.toggleSeriesVisibility `boolean`
+{:#members:legend-toggleSeriesVisibility}
+
+
+
+
+Controls the selection through the legend.
+
+
+#### Default Value
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   legend : {toggleSeriesVisibility : false}                     
+
+});
+
+{% endhighlight %}
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/f1oocjec)
 
 
 
@@ -26658,6 +27249,102 @@ series : [{boxPlotMode : "inclusive" }]
  
 
 
+### series.bubbleOptions `object`
+{:#members:series-bubbleoptions}
+
+Options for customizing the bubble options of the Bubble series 
+
+### series.bubbleOptions.radiusMode `enum`
+{:#members:series-bubbleoptions-radiusmode}
+
+
+
+<ts ref = "ej.datavisualization.Chart.RadiusMode"/>
+
+
+Used for the calculation of the bubble radius based on the mode selected 
+
+
+#### Default Value
+
+
+
+* "minmax" .See <a href="global.html#members:RadiusMode">RadiusMode</a>
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+series : [{ bubbleOptions: { radiusMode: "minmax" }}]                  
+});
+
+ {% endhighlight %}
+ 
+### series.bubbleOptions.minRadius `Number`
+{:#members:series-bubbleoptions-minRadius}
+
+
+
+Used for the setting the minimum radius of the bubble 
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+series : [ { bubbleOptions: { minRadius: 3 }} ]                 
+});
+
+ {% endhighlight %}
+
+
+### series.bubbleOptions.maxRadius `Number`
+{:#members:series-bubbleoptions-maxRadius}
+
+
+
+Used for setting the maximum radius of the bubble 
+
+
+#### Default Value
+
+
+
+* 3
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejChart({
+series : [ { bubbleOptions: { maxRadius: 7 }} ]                  
+});
+
+ {% endhighlight %}
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdnbwech)
+
+
 
 
 ### series.lineCap `enum`
@@ -27748,18 +28435,22 @@ series :[{marker :{dataLabel :{template : "item"}}}]
  
  
  
-### series.marker.dataLabel.offset `number`
+### series.marker.dataLabel.offset `object|number`
 {:#members:series-marker-datalabel-offset}
 
+Options for customizing the datalabel positions
+
+### series.marker.dataLabel.offset.x `number`
+
+{:#members:series-marker-datalabel-offset-x}
 
 
 
-Moves the label vertically by some offset.
+
+X value or horizontal offset to position the labels in chart.
 
 
 #### Default Value
-
-
 
 * 0
 
@@ -27771,11 +28462,45 @@ Moves the label vertically by some offset.
 
 {% highlight js %}
  
-
 $("#container").ejChart({
-series :[{marker :{dataLabel :{offset : 10}}}]                  
+
+   series :[{  marker :{dataLabel :{offset : { x:10 }}} }]                    
+
 });
- {% endhighlight %}
+
+{% endhighlight %}
+
+
+
+
+### series.marker.dataLabel.offset.y `number`
+{:#members:series-marker-datalabel-offset-y}
+
+
+
+
+Y value or vertical offset to position the labels.
+
+
+#### Default Value
+
+* 0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   series :[{  marker :{dataLabel :{offset : { y:10 }}} }]                  
+
+});
+
+{% endhighlight %}
 
 
 
@@ -32397,6 +33122,381 @@ series :[{trendlines:[{ period: 3 }]}]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gdpriupt)
 
 
+
+### series.trendlines.tooltip `object`
+{:#members:series-trendlines-tooltip}
+
+
+
+
+Options for customizing the trendline tooltip
+
+
+### series.trendlines.tooltip.border `object`
+{:#members:series-trendlines-tooltip-border}
+
+
+
+
+Options for customizing the border of the trendline tooltip.
+
+
+
+
+### series.trendlines.tooltip.border.color `string`
+{:#members:series-trendlines-tooltip-border-color}
+
+
+
+
+Specify the Border color of the  trendline tooltip.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({        
+series :[{ trendlines:[{ tooltip :{border:{ color : "green" }} }]}]                  
+});
+ {% endhighlight %}
+
+
+
+
+### series.trendlines.tooltip.border.width `number`
+{:#members:series-trendlines-tooltip-border-width}
+
+
+
+
+Border width of the trendline tooltip.
+
+
+#### Default Value
+
+
+
+* 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{ trendlines:[{ tooltip :{border:{  width : 2 }} }]}]                   
+});
+  {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/dmvqb51g)
+
+
+
+### series.trendlines.tooltip.rx `number`
+{:#members:series-trendlines-tooltip-rx}
+
+
+
+
+Customize the corner radius of the trendline tooltip rectangle.
+
+
+#### Default Value
+
+
+
+0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{ trendlines:[{ tooltip :{rx: 10} }]}]                  
+});
+  {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
+
+
+### series.trendlines.tooltip.ry `number`
+{:#members:series-trendlines-tooltip-ry}
+
+
+
+
+Customize the corner radius of the trendline tooltip rectangle.
+
+
+#### Default Value
+
+
+
+0
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{ trendlines:[{ tooltip :{ry: 10} }]}]                  
+});
+  {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/y4bnt0gl)
+
+
+
+### series.trendlines.tooltip.duration `string`
+{:#members:series-trendlines-tooltip-duration}
+
+
+
+
+Specifies the duration of the trendline tooltip to be displayed.
+
+
+#### Default Value
+
+
+
+* "500ms"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{ trendlines:[{ tooltip :{duration : "300ms"} }]}]                   
+});
+  {% endhighlight %}
+
+
+
+### series.trendlines.tooltip.enableAnimation `boolean`
+{:#members:series-trendlines-tooltip-enableanimation}
+
+
+
+
+Enables/disables the animation of the trendline tooltip when moving from one point to other.
+
+
+#### Default Value
+
+
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{ trendlines:[{ tooltip :{enableAnimation : false} }]}]                   
+});
+{% endhighlight %}
+
+
+
+### series.trendlines.tooltip.fill `string`
+{:#members:series-trendlines-tooltip-fill}
+
+
+
+
+Background color of the trendline tooltip.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{ trendlines:[{ tooltip :{fill : "green"} }]}]                   
+});
+ {% endhighlight %}
+
+
+
+### series.trendlines.tooltip.format `string`
+{:#members:series-trendlines-tooltip-format}
+
+
+
+
+Format of the trendline tooltip content.
+
+
+#### Default Value
+
+
+
+* "#point.x# : #point.y#"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{ trendlines:[{ tooltip :{format : "#point.x# : #point.y#%"} }]}]                  
+});
+ {% endhighlight %}
+
+
+
+Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rzxmpi0c)
+
+
+
+### series.trendlines.tooltip.opacity `number`
+{:#members:series-trendlines-tooltip-opacity}
+
+
+
+
+
+Opacity of the trendline tooltip.
+
+
+#### Default Value
+
+
+
+* 0.5
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{ trendlines:[{ tooltip :{opacity : 0.5} }]}]                 
+});
+{% endhighlight %}
+
+
+
+### series.trendlines.visibleOnLegend `string`
+{:#members:series-trendlines-visibleonlegend}
+
+
+Show/hides the trendline legend.
+
+
+#### Default Value
+
+
+
+* visible
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{trendlines:[{ visibleOnLegend:'hidden' }]}]                  
+});
+{% endhighlight %}
+
+
+
+### series.trendlines.intercept `number`
+{:#members:series-trendlines-intercept}
+
+
+Specifies the trendline intercept value
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{ trendlines:[{ intercept : 10 }]}]                 
+});
+{% endhighlight %}
+
+
+
 ### series.highlightSettings `object`
 {:#members:series.highlightsettings}
 
@@ -33643,6 +34743,122 @@ $("#container").ejChart({
 
 
 
+### title.visible `boolean`
+{:#members:title-visible}
+
+
+
+
+Controls the visibility of the Chart title
+
+
+#### Default Value
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   title : { visible : false }                     
+
+});
+
+{% endhighlight %}
+
+
+### title.enableTrim `boolean`
+{:#members:title-enableTrim}
+
+
+
+
+Specifies whether to trim the Chart Title when the width of the title exceeds the maximumWidth.
+
+
+#### Default Value
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   title : { enableTrim : true }                     
+
+});
+
+{% endhighlight %}
+
+
+
+### title.maximumWidth `string`
+{:#members:title-maximumWidth}
+
+
+Maximum width of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true. 
+
+
+#### Default Value
+
+* auto
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   title : { maximumWidth : 150 }                     
+
+});
+
+{% endhighlight %}
+
+
+
+### title.textOverflow `enum`
+{:#members:title-textOverflow}
+
+<ts ref = "ej.datavisualization.Chart.TextOverflow"/>
+
+Specifies the action taken when the Chart width is more than the titleWidth. 
+
+
+#### Default Value
+
+* trim.
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   title : { textOverflow : "trim" }                     
+
+});
+
+{% endhighlight %}
+
 
 ### title.subTitle `object`
 {:#members:title-subtitle}
@@ -34070,6 +35286,124 @@ $("#container").ejChart({
 
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yh1hzrly)
+
+
+### title.subTitle.visible `boolean`
+{:#members:title-subtitle-visible}
+
+
+
+
+Controls the visibility of the Chart SubTitle
+
+
+#### Default Value
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   title :{ subTitle: { visible : false }  }                   
+
+});
+
+{% endhighlight %}
+
+
+### title.subTitle.enableTrim `boolean`
+{:#members:title-subtitle-enableTrim}
+
+
+
+
+Specifies whether to trim the Chart SubTitle when the width of the Subtitle exceeds the maximumWidth.
+
+
+#### Default Value
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   title : { subTitle:{ enableTrim : true } }                    
+
+});
+
+{% endhighlight %}
+
+
+
+### title.subTitle.maximumWidth `string`
+{:#members:title-subtitle-maximumWidth}
+
+
+Maximum width of the Subtitle, when the Subtitle exceeds this width, the Subtitle gets trimmed, when enableTrim is true. 
+
+
+#### Default Value
+
+* auto
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   title : { subTitle: { maximumWidth : 150 }  }                   
+
+});
+
+{% endhighlight %}
+
+
+
+### title.subTitle.textOverflow `enum`
+{:#members:title-subTitle-textOverflow}
+
+<ts ref = "ej.datavisualization.Chart.TextOverflow"/>
+
+Specifies the action taken when the Chart width is more than the SubTitleWidth. 
+
+
+#### Default Value
+
+* trim.
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejChart({
+
+   title : { subTitle: { textOverflow : "trim" }  }                   
+
+});
+
+{% endhighlight %}
+
 
 
 ### title.text `string`
