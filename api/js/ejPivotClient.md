@@ -1321,16 +1321,14 @@ To set the data source name to fetch data from that.
     $("#PivotClient1").ejPivotClient({ dataSource: { sourceInfo: "Provider Mondrian" } });
 {% endhighlight %}
 
-### dataSource.providerName `enum`
+### dataSource.providerName `string`
 {:#members:datasource-providerName}
-
-<ts name = "ej.olap.Providers"/>
 
 Set the provider name for PivotClient to identify whether the provider is SSAS or Mondrian. 
 
 >**Note**: This is applicable only for client side OLAP data.
 
-#### Default Value: ej.olap.Providers.SSAS
+#### Default Value: "ssas"
 
 <table class="params">
     <thead>
@@ -1341,11 +1339,11 @@ Set the provider name for PivotClient to identify whether the provider is SSAS o
     </thead>
     <tbody>
         <tr>
-            <td class="name">SSAS</td>
+            <td class="name">ssas</td>
             <td class="description">To bind an OLAP data source to PivotClient through SSAS provider.</td>
         </tr>
         <tr>
-            <td class="name">Mondrian</td>
+            <td class="name">mondrian</td>
             <td class="description">To bind a relational data source to PivotClient through Mondrian provider.</td>
         </tr>
     </tbody>
@@ -1355,7 +1353,7 @@ Set the provider name for PivotClient to identify whether the provider is SSAS o
 
 {% highlight javascript %}
  
-    $("#PivotClient1").ejPivotClient({ dataSource: { providerName: ej.olap.Providers.Mondrian } });
+    $("#PivotClient1").ejPivotClient({ dataSource: { providerName: "mondrian" } });
 {% endhighlight %}
 
 ### dataSource.data `object`
