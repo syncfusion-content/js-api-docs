@@ -155,6 +155,39 @@ Specify the center position where map should be displayed
 
 {% endhighlight %}
 
+### draggingOnSelection `boolean`
+{:#members:draggingonselection}
+
+Controls the selection through dragging
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight js %}
+ 
+//To set draggingOnSelection API value during initialization 
+   $("#container").ejMap({draggingOnSelection:true});  
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the draggingOnSelection API, after initialization:
+   
+   //Gets the draggingOnSelection value 
+   
+   var property = $("#container").data("ejMap").model.draggingOnSelection;
+         
+   //Sets the draggingOnSelection value
+    
+   $("#container").data("ejMap").model.draggingOnSelection=true }); 
+
+{% endhighlight %}
+
 
 ### enableAnimation `boolean`
 {:#members:enableanimation}
@@ -290,6 +323,41 @@ Determines whether map need to resize when container is resized
    
    $("#container").data("ejMap").model.enableResize= true }); 
 {% endhighlight %}
+
+
+
+### isResponsive `boolean`
+{:#members:isResponsive}
+
+Determines whether map need to resize when container is resized
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight js %}
+ 
+//To set isResponsive API value during initialization 
+   $("#container").ejMap({isResponsive:true});     
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the isResponsive API, after initialization:
+   
+   //Gets the isResponsive value 
+   
+   var property = $("#container").data("ejMap").model.isResponsive;
+            
+   //Sets the isResponsive value 
+   
+   $("#container").data("ejMap").model.isResponsive= true }); 
+{% endhighlight %}
+
 
 
 ### zoomSettings `object`
@@ -749,6 +817,42 @@ Set the orientation value for navigation control
    $("#container").data("ejMap").model.navigationControl.orientation='vertical' });
 
 {% endhighlight %}
+
+
+### locale `string`
+{:#members:locale}
+
+Name of the culture based on which map should be localized. Labels are localized with respect to the culture name.
+String type properties like template text are not localized automatically. Provide localized text as value to string type properties.
+
+#### Default Value
+
+* "en-US"
+
+#### Example
+
+{% highlight js %}
+ 
+//To set locale for map during initialization 
+   $("#container").ejMap(locale:"en-US");
+
+{% endhighlight %}
+
+
+{% highlight js %}
+
+//Get or set locale for map, after initialization:
+
+   //Gets the locale
+   
+   var property = $("#container").data("ejMap").model.locale;
+   
+   //Sets the locale
+   
+   $("#container").data("ejMap").model.locale= "en-US" });
+{% endhighlight %}
+
+
 
 
 ### layers `array`
@@ -2573,9 +2677,78 @@ Specifies the map items template for shapes.
 
 Specify markers for shape layer.
 
+### layers.markers.label `string`
+
+Display the value in the marker 
+
 #### Default Value
 
-* []
+* " "
+
+#### Example
+
+{% highlight js %}
+  
+// Set the markers during initialization.                       
+   $("#container").ejMap({layers: [{markers:[{label : "chennai",latitude : 13.08 ,longitude : 80.27}]}]})
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the markers after initialization:
+   
+   //Gets the markers from map.
+   
+   var marker =$("#container").data("ejMap").model.layers[layerIndex].markers[markerIndex];
+   
+   //Sets the marker to map.
+   
+   $("#container").data("ejMap").model.layers[layerIndex].markers[markerIndex]  = {label : "chennai",latitude : 13.08 ,longitude : 80.27};
+
+{% endhighlight %}
+
+### layers.markers.latitude `number`
+
+Display the value in the marker 
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight js %}
+  
+// Set the markers during initialization.                       
+   $("#container").ejMap({layers: [{markers:[{label : "chennai",latitude : 13.08 ,longitude : 80.27}]}]})
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the markers after initialization:
+   
+   //Gets the markers from map.
+   
+   var marker =$("#container").data("ejMap").model.layers[layerIndex].markers[markerIndex];
+   
+   //Sets the marker to map.
+   
+   $("#container").data("ejMap").model.layers[layerIndex].markers[markerIndex]  = {label : "chennai",latitude : 13.08 ,longitude : 80.27};
+
+{% endhighlight %}
+
+
+### layers.markers.longitude `number`
+
+Display the value in the marker 
+
+#### Default Value
+
+* 0
 
 #### Example
 
@@ -3572,6 +3745,2616 @@ Specifies the URL template for the OSM type map.
    $("#container").data("ejMap").model.layers[layerIndex].urlTemplate  = 'http://a.tile.openstreetmap.org/level/tileX/tileY.png';
 
 {% endhighlight %}
+
+### layers.sublayers `array`
+{:#members:layers-sublayers}
+
+Sublayer is the collection of shape Layer 
+
+
+### layers.sublayers.bingMapType `enum`
+{:#members:layers-sublayers-bingmaptype}
+
+<ts ref = "ej.datavisualization.Map.BingMapType"/>
+
+to get the type of bing map.
+
+#### Default Value
+
+* "aerial"
+
+#### Example
+
+{% highlight js %}
+  
+// Set the type of bing map during initialization.                      
+   $("#container").ejMap({layers: [{ sublayers: [{ bingMapType:'aerial' }]} ]})
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the type of bing map after initialization:
+
+  //Gets the type of bing map.
+
+  var property =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].bingMapType;
+
+  //Sets the type of bing map.
+
+  $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].bingMapType  = 'aerial';
+  
+{% endhighlight %}
+
+
+### layers.sublayers.bubbleSettings `object`
+{:#members:layers-sublayers-bubblesettings}
+
+Specifies the bubble settings for map
+
+#### Example
+
+{% highlight js %}
+ 
+// Set the bubbleSettings of layer during initialization.                       
+   $("#container").ejMap({layers: [{ sublayers: [{ layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" },bubbleSettings:{ valuePath: "valuePath", minValue: 20, maxValue: 30, color: "#379F64",}, shapeData: mapShapeData }]} ]})
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the bubbleSettings after initialization:
+  
+  //Gets the bubbleSettings from map.
+  
+  var bubbleSettings =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].bubbleSettings;
+  
+  //Sets the bubbleSettings to map.
+  
+  $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].bubbleSettings  = { valuePath: "valuePath", minValue: 20, maxValue: 30, color: "#379F64"};
+
+{% endhighlight %}
+
+
+### layers.sublayers.bubbleSettings.bubbleOpacity `number`
+{:#members:layers-sublayers-bubblesettings-bubbleopacity}
+
+Specifies the bubble Opacity value of bubbles for shape layer in map
+
+#### Default Value
+
+* "0.9"
+
+#### Example
+
+{% highlight js %}
+ 
+//To set bubbleOpacity API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{ bubbleSettings: {bubbleOpacity:'0.9'}}] } ]);
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the bubbleOpacity API, after initialization:
+
+   //Gets the bubble Opacity value 
+   
+   var bubbleProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].bubbleSettings.bubbleOpacity;
+  
+   //Sets the bubble Opacity value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex]bubbleSettings.bubbleOpacity='0.9'; 
+
+{% endhighlight %}
+
+
+### layers.sublayers.bubbleSettings.color `string`
+{:#members:layers-sublayers-bubblesettings-color}
+
+Specifies the mouse hover color of the shape layer in map
+
+#### Default Value
+
+* "gray"
+
+#### Example
+
+{% highlight js %}
+ 
+//To set color API value during initialization 
+    $("#container").ejMap({layers:[{ subLayers: [{ bubbleSettings: {color:'gray'}}] } ]);
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the color API, after initialization:
+   
+   //Gets the color value 
+   
+   var bubbleProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].bubbleSettings.color;
+  
+   //Sets the color value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex]bubbleSettings.color='gray'; 
+
+{% endhighlight %}
+
+### layers.sublayers.bubbleSettings.colorMappings `object`
+{:#members:layers-sublayers-bubblesettings-colormappings}
+
+Specifies the colorMappings of the shape layer in map
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set colorMappings API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{bubbleSettings: {colorMappings:{rangeColorMapping:{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]} }}}]}]});
+  
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the colorMappings API, after initialization:
+   
+   //Gets the colorMappings value 
+   
+   var bubbleProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].bubbleSettings.colorMappings;
+  
+   //Sets the colorMappings value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].bubbleSettings.colorMappings={rangeColorMapping:{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]} ]}}; 
+
+{% endhighlight %}
+
+### layers.sublayers.bubbleSettings.colorMappings.rangeColorMapping `array`
+{:#members:layers-sublayers-bubbleSettings-colormappings-rangecolormapping}
+
+Specifies the range colorMappings in the bubble layer.
+
+#### Default Value
+
+* null
+### layers.sublayers.bubbleSettings.colorMappings.rangeColorMapping.from `number`
+{:#members:layers-sublayers-bubbleSettings-colormappings-rangecolormapping-from}
+
+Start range colorMappings in the bubble layer.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set start range colorMapping API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers:[{ bubbleSettings: {colorMappings:{rangeColorMapping:[{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]} ]}} }]}]});
+{% endhighlight %}
+
+### layers.sublayers.bubbleSettings.colorMappings.rangeColorMapping.to `number`
+{:#members:layers-sublayers-bubbleSettings-colormappings-rangecolormapping-to}
+
+End range colorMappings in the bubble layer.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set to range colorMapping API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{ bubbleSettings: {colorMappings:{rangeColorMapping:[{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]} ]}}}]}}]});
+{% endhighlight %}
+
+### layers.sublayers.bubbleSettings.colorMappings.rangeColorMapping.gradientColors `array`
+{:#members:layers-sublayers-bubbleSettings-colormappings-rangecolormapping-gradientcolors}
+
+GradientColors in the bubble layer of map.
+
+### layers.sublayers.bubbleSettings.colorMappings.rangeColorMapping.color `string`
+{:#members:layers-sublayers-bubbleSettings-colormappings-rangecolormapping-gradientcolors}
+
+Color of the bubble layer.
+
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set gradientColors API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers:[{ bubbleSettings: {colorMappings:{rangeColorMapping:[{from: 0,to: 100000,color:"#9CBF4E"}]}}]}]});
+{% endhighlight %}
+
+
+### layers.sublayers.bubbleSettings.colorValuePath `string`
+{:#members:layers-sublayers-bubblesettings-colorvaluepath}
+
+Specifies the bubble color valuePath of the shape layer in map
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set colorValuePath  API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{bubbleSettings: {colorValuePath :'sales'}}]}]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the colorValuePath  API, after initialization:
+   //Gets the colorValuePath  value 
+   
+   var bubbleProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].bubbleSettings.colorValuePath ;
+        
+   //Sets the colorValuePath  value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].bubbleSettings.colorValuePath ='sales'; 
+
+{% endhighlight %}
+
+### layers.sublayers.bubbleSettings.maxValue `number`
+{:#members:layers-sublayers-bubblesettings-maxvalue}
+
+Specifies the maximum size value of bubbles for shape layer in map
+
+#### Default Value
+
+* "20"
+
+#### Example
+
+{% highlight js %}
+ 
+//To set maxValue API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{bubbleSettings: {maxValue:'20'}}]}] });
+  
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the maxValue API, after initialization:
+   
+   //Gets the maxValue value 
+   
+   var bubbleProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].bubbleSettings.maxValue;
+       
+   //Sets the maxValue value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].bubbleSettings.maxValue='20'; 
+
+{% endhighlight %}
+
+
+### layers.sublayers.bubbleSettings.minValue  `number`
+{:#members:layers-sublayers-bubblesettings-minvalue}
+
+Specifies the minimum size value of bubbles for shape layer in map
+
+#### Default Value
+
+* "10"
+
+#### Example
+
+{% highlight js %}
+ 
+//To set minValue API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{bubbleSettings: {minValue:'10'}}]}]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the minValue API, after initialization:
+   
+   //Gets the minValue value 
+   
+   var bubbleProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].bubbleSettings.minValue;
+       
+   //Sets the minValue value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].bubbleSettings.minValue='10'; 
+
+{% endhighlight %}
+
+
+### layers.sublayers.bubbleSettings.showBubble `boolean`
+{:#members:layers-sublayers-bubblesettings-showbubble}
+
+Specifies the showBubble visibility status map
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight js %}
+ 
+//To set showBubble API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{bubbleSettings: {showBubble:true}}]}]});
+  
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the showBubble API, after initialization:
+   
+   //Gets the showBubble value 
+   
+   var bubbleProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].bubbleSettings.showBubble;
+     
+   //Sets the showBubble value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].bubbleSettings.showBubble=true; 
+
+{% endhighlight %}
+
+
+### layers.sublayers.bubbleSettings.showTooltip `boolean`
+{:#members:layers-sublayers-bubblesettings-showtooltip}
+
+Specifies the tooltip visibility status of the shape layer in map
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight js %}
+ 
+//To set showTooltip API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{bubbleSettings: {showTooltip:false}}]}]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the showTooltip API, after initialization:
+   
+   //Gets the showTooltip value 
+   
+   var bubbleProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].bubbleSettings.showTooltip;
+    
+   //Sets the showTooltip value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].bubbleSettings.showTooltip=false; 
+
+{% endhighlight %}
+
+
+### layers.sublayers.bubbleSettings.tooltipTemplate `string`
+{:#members:layers-sublayers-bubblesettings-tooltiptemplate}
+
+Specifies the bubble tooltip template of the shape layer in map
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set tooltipTemplate API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{bubbleSettings: {tooltipTemplate:'template'}}]}]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the tooltipTemplate API, after initialization:
+   
+   //Gets the tooltipTemplate value 
+   
+   var bubbleProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].bubbleSettings.tooltipTemplate;
+        
+   //Sets the tooltipTemplate value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].bubbleSettings.tooltipTemplate='template'; 
+
+{% endhighlight %}
+
+
+### layers.sublayers.bubbleSettings.valuePath `string`
+{:#members:layers-sublayers-bubblesettings-valuepath}
+
+Specifies the bubble valuePath of the shape layer in map
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set valuePath API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{bubbleSettings: {valuePath:'name'}}]}]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the valuePath API, after initialization:
+   
+   //Gets the valuePath value 
+   
+   var bubbleProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].bubbleSettings.valuePath;
+      
+   //Sets the valuePath value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].bubbleSettings.valuePath='name'; 
+
+{% endhighlight %}
+
+
+### layers.sublayers.dataSource `object`
+{:#members:layers-sublayers-datasource}
+
+Specifies the datasource for the shape layer
+
+#### Example
+
+{% highlight js %}
+
+// Set the dataSource of layer during initialization.                        
+   $("#container").ejMap({layers: [{ subLayers: [{ layerType: "geometry", dataSource: source,  shapeData: mapShapeData }]} ]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the dataSource after initialization:
+   
+   //Gets the dataSource from map layer.
+   
+   var dataSource =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].dataSource;
+   
+   //Sets the dataSource to map layer.
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].dataSource  = source;
+
+{% endhighlight %}
+
+
+### layers.sublayers.shapeDataPath `string`
+{:#members:layers-sublayers-shapedatapath}
+
+Specifies the data path of shape 
+
+
+#### Example
+
+{% highlight js %}
+
+// Set the shapeDataPath of layer during initialization.                        
+   $("#container").ejMap({layers: [{ subLayers: [{ shapeDataPath: "name"}]} ]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the shapeDataPath after initialization:
+   
+   //Gets the shapeDataPath from map layer.
+   
+   var property =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeDataPath;
+   
+   //Sets the shapeDataPath to map layer.
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeDataPath  = 'name';
+
+{% endhighlight %}
+
+
+### layers.sublayers.shapePropertyPath `string`
+{:#members:layers-sublayers-shapepropertypath}
+
+Specifies the data path of shape 
+
+
+#### Example
+
+{% highlight js %}
+
+// Set the shapePropertyPath of layer during initialization.                        
+   $("#container").ejMap({layers: [{ subLayers: [{ shapePropertyPath: "name"}]} ]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the shapePropertyPath after initialization:
+   
+   //Gets the shapePropertyPath from map layer.
+   
+   var property =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapePropertyPath;
+   
+   //Sets the shapePropertyPath to map layer.
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapePropertyPath  = 'name';
+
+{% endhighlight %}
+
+
+### layers.sublayers.enableMouseHover `boolean`
+{:#members:layers-sublayers-enablemousehover}
+
+Enables or disables the shape mouse hover
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight js %}
+  
+// Set the enableMouseHover during initialization.                      
+   $("#container").ejMap({layers: [{ subLayers: [{ enableMouseHover:false }]} ]});
+   {% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the enableMouseHover after initialization:
+   
+   //Gets the enableMouseHover from map.
+   
+   var property =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].enableMouseHover;
+   
+   //Sets the enableMouseHover to map.
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].enableMouseHover  = false;
+   
+{% endhighlight %}
+
+
+### layers.sublayers.enableSelection `boolean`
+{:#members:layers-sublayers-enableselection}
+
+Enables or disables the shape selection
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight js %}
+  
+// Set the enableSelection during initialization.                       
+   $("#container").ejMap({layers: [{ subLayers: [{ enableSelection:true }]} ]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the enableSelection after initialization:
+   
+   //Gets the enableSelection from map.
+   
+   var property =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].enableSelection;
+   
+   //Sets the enableSelection to map.
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].enableSelection  = true;
+
+{% endhighlight %}
+
+
+### layers.sublayers.key `string`
+{:#members:layers-sublayers-key}}
+
+to get the key of bing map
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//to get the key of bing map during initialization 
+   $("#container").ejMap({layers: [{ subLayers: [{  layerType: 'bing', key: "" }]} ]});           
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the key of bing map after initialization:
+   
+   //Gets the key of bing map value 
+   
+   var property = =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].key;     
+   
+   //Sets the bing map key value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].key = "";
+
+{% endhighlight %}
+
+
+### layers.sublayers.labelSettings `object`
+{:#members:layers-sublayers-labelsettings}
+
+Options for enabling and configuring labelSettings labelPath, smartLabelSize, labelLength etc.,
+
+
+### layers.sublayers.labelSettings.enableSmartLabel `Boolean`
+{:#members:layers-sublayers-labelsettings-enablesmartlabel}
+
+enable or disable the enableSmartLabel property
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight js %}
+
+// Set the enableSmartLabel value of layer during initialization.                    
+   $("#container").ejMap({layers:[{ subLayers: [{labelSettings: { enableSmartLabel: false}}]} ]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the enableSmartLabel value after initialization:
+   
+   //Gets the enableSmartLabel value 
+   
+   var labelSettings =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].labelSettings.enableSmartLabel;
+   
+   //Sets the enableSmartLabel value
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].labelSettings = { enableSmartLabel: false};                   
+
+{% endhighlight %}
+
+
+### layers.sublayers.labelSettings.labelLength `number`
+{:#members:layers-sublayers-labelsettings-labellength}
+
+set the labelLength property
+
+#### Default Value
+
+* '2'
+
+#### Example
+
+
+{% highlight js %}
+
+// Set the labelLength value of layer during initialization.                         
+   $("#container").ejMap({layers:[{subLayers: [{labelSettings: { labelLength: 2}}]} ]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the labelLength value after initialization:
+   
+   //Gets the labelLength value 
+   
+   var labelSettings =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].labelSettings.labelLength;
+   
+   //Sets the labelLength value
+
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].labelSettings = { labelLength: 2};                     
+
+{% endhighlight %}
+
+
+
+### layers.sublayers.labelSettings.labelPath `string`
+{:#members:layers-sublayers-labelsettings-labelpath}
+
+set the labelPath property
+
+#### Default Value
+
+* null
+
+#### Example
+{:.example}
+
+
+{% highlight js %}
+
+// Set the labelPath value of layer during initialization.                   
+   $("#container").ejMap({layers:[{subLayers:[{ labelSettings: { labelPath: ""}}]} ]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the labelPath value after initialization:
+   
+   //Gets the labelPath value 
+   
+   var labelSettings =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].labelSettings.labelPath;
+   
+   //Sets the labelPath value
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].labelSettings = { labelPath: ""};                      
+
+{% endhighlight %}
+
+
+
+### layers.sublayers.labelSettings.showLabels `boolean`
+{:#members:layers-sublayers-labelsettings-showlabels}
+
+The property specifies whether to show labels or not.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight js %}
+// Set the showLabel value of layer during initialization.                   
+   $("#container").ejMap({layers:[{ subLayers: [{labelSettings: { showLabels: false}}]} ]});
+        
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the showLabel value after initialization:
+   
+   //Gets the showLabel value 
+   
+   var labelSettings =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].labelSettings.showLabels;
+   
+   //Sets the showLabel value
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].labelSettings = { showLabels: false};                  
+
+{% endhighlight %}
+
+
+### layers.sublayers.labelSettings.smartLabelSize `enum`
+{:#members:layers-sublayers-labelsettings-smartlabelsize}
+
+<ts ref = "ej.datavisualization.Map.LabelSize"/>
+
+set the smartLabelSize property
+
+#### Default Value
+
+* "fixed"
+
+#### Example
+
+{% highlight js %}
+// Set the smartLabelSize value of layer during initialization.                      
+   $("#container").ejMap({layers:[{ subLayers:[{ labelSettings: { smartLabelSize: 'fixed'}}]} ]});
+ 
+ {% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the smartLabelSize value after initialization:
+   
+   //Gets the smartLabelSize value 
+   
+   var labelSettings =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].labelSettings.smartLabelSize;
+   
+   //Sets the smartLabelSize value
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].labelSettings = { smartLabelSize: 'fixed'};                    
+
+{% endhighlight %}
+
+
+
+### layers.sublayers.geometryType `enum`
+{:#members:layers-sublayers-geometrytype}
+
+<ts ref = "ej.datavisualization.Map.GeometryType"/>
+
+Specifies the map view type.
+
+#### Default Value
+
+* 'geographic'
+
+#### Example
+
+{% highlight js %}
+  
+// Set the geometryType during initialization.                     
+   $("#container").ejMap({layers: [{ subLayers: [{ geometryType:'geographic' }]} ]});
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the geometryType after initialization:
+   
+   //Gets the geometryType from map.
+   
+   var property =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].geometryType;
+   
+   //Sets the geometryType to map.
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].geometryType  = 'normal';
+
+{% endhighlight %}
+
+
+### layers.sublayers.layerType `enum`
+{:#members:layers-sublayers-layertype}
+
+<ts ref = "ej.datavisualization.Map.LayerType"/>
+
+Specifies the map type.
+
+#### Default Value
+
+* 'geometry'
+
+#### Example
+
+{% highlight js %}
+  
+// Set the layerType during initialization.                     
+   $("#container").ejMap({layers: [{ sublayers: [{ layerType:'geometry' }]} ]});
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the layerType after initialization:
+   
+   //Gets the layerType from map.
+   
+   var property =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].layerType;
+   
+   //Sets the layerType to map.
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].layerType  = 'geometry';
+
+{% endhighlight %}
+
+
+### layers.sublayers.legendSettings `object`
+{:#members:layers-sublayers-legendsettings}
+
+Options for enabling and configuring legendSettings position, height, width, mode, type etc.,
+
+
+### layers.sublayers.legendSettings.dockOnMap `boolean`
+{:#members:layers-sublayers-legendsettings-dockonmap}
+
+Determines whether the legend should be placed outside or inside the map bounds
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight js %}
+ 
+//To set dockOnMap API value during initialization 
+   $("#container").ejMap({layers: [{ subLayers: [{legendSettings: {dockOnMap:false} }]} ]});           
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the dockOnMap API, after initialization:
+   
+   //Gets the dockOnMap value 
+   
+   var property = =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings.dockOnMap;        
+   
+   //Sets the dockOnMap value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings  = {dockOnMap:false};
+
+{% endhighlight %}
+
+
+### layers.sublayers.legendSettings.dockPosition `enum`
+{:#members:layers-sublayers-legendsettings-dockposition}
+
+<ts ref = "ej.datavisualization.Map.DockPosition"/>
+
+Determines the legend placement and it is valid only when dockOnMap is true
+
+#### Default Value
+
+* "top"
+
+#### Example
+
+{% highlight js %}
+ 
+//To set dockPosition value during initialization 
+   $("#container").ejMap({layers: [{ subLayers: [{legendSettings: {dockPosition:"top"} }]} ]});           
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set dockPosition value after initialization:
+  
+  //Gets the dockPosition value
+  
+  var property = =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings.dockPosition;     
+  
+  //Sets the dockPosition value value 
+  
+  $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings  = {dockPosition:"top"};
+
+{% endhighlight %}
+
+
+### layers.sublayers.legendSettings.height `number`
+{:#members:layers-sublayers-legendsettings-height}
+
+height value for legend setting
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight js %}
+ 
+//To set height value for legend during initialization 
+   $("#container").ejMap({layers: [{ subLayers: [{legendSettings: {height:20} }]} ]});           
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the height value for legend, after initialization:
+   
+   //Gets the height value for legend value 
+   
+   var property = =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings.height;   
+   
+   //Sets the height value for legend value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings  = {height:20};
+   
+{% endhighlight %}
+
+
+### layers.sublayers.legendSettings.icon `enum`
+{:#members:layers-sublayers-legendsettings-icon}
+
+<ts ref = "ej.datavisualization.Map.LegendIcons"/>
+
+to get icon value for legend setting
+
+#### Default Value
+
+* "rectangle"
+
+#### Example
+
+
+{% highlight js %}
+ 
+//To set icon value during initialization 
+   $("#container").ejMap({layers: [{ subLayers: [{legendSettings: {icon:"rectangle"} }]} ]});           
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set icon value after initialization:
+   
+   //Gets the icon value value 
+   
+   var property = =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings.icon;     
+   
+   //Sets the icon value value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings  = {icon:"rectangle"};
+
+{% endhighlight %}
+
+
+### layers.sublayers.legendSettings.iconHeight `number`
+{:#members:layers-sublayers-legendsettings-iconheight}
+
+icon height value for legend setting
+
+#### Default Value
+
+* 20
+
+#### Example
+
+{% highlight js %}
+ 
+//To set iconHeight value for legend during initialization 
+   $("#container").ejMap({layers: [{ subLayers: [{legendSettings: {iconHeight:20} }]} ]}) ;          
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the iconHeight value for legend, after initialization:
+   
+   //Gets the iconHeight value for legend value 
+   
+   var property = =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings.iconHeight;       
+   
+   //Sets the iconHeight value for legend value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings  = {iconHeight:20};
+
+{% endhighlight %}
+
+
+### layers.sublayers.legendSettings.iconWidth `number`
+{:#members:layers-sublayers-legendsettings-iconwidth}
+
+icon Width value for legend setting
+
+#### Default Value:
+
+* 20
+
+#### Example
+
+
+{% highlight js %}
+ 
+//To set iconWidth value for legend during initialization 
+   $("#container").ejMap({layers: [{ subLayers: [{legendSettings: {iconWidth:20} }]} ]});           
+
+{% endhighlight %}
+
+{% highlight js %}
+ 
+//Get or set the iconWidth value for legend, after initialization:
+   
+   //Gets the iconWidth value for legend value 
+   
+   var property = =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings.iconWidth;        
+   
+   //Sets the iconWidth value for legend value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings  = {iconWidth:20};
+   
+{% endhighlight %}
+
+
+### layers.sublayers.legendSettings.labelOrientation `enum`
+{:#members:layers-sublayers-legendsettings-labelorientation}
+
+<ts ref = "ej.datavisualization.Map.LabelOrientation"/>
+
+set the orientation of legend labels
+
+#### Default Value
+
+* vertical
+
+#### Example
+
+{% highlight js %}
+ 
+//To set label orientaion API value for legend setting during initialization 
+   $("#container").ejMap({layers: [{ subLayers: [{legendSettings: {labelOrientation: "vertical"} }]} ]});                      
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the label orientation API, after initialization:
+   
+   //Gets the label orientation value 
+   
+   var property = =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings.labelOrientation; 
+   
+   //Sets the label orientation value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings  = {labelOrientation: "vertical"};
+
+{% endhighlight %}
+
+
+### layers.sublayers.legendSettings.leftLabel `string`
+{:#members:layers-sublayers-legendsettings-leftlabel}
+
+to get leftLabel value for legend setting
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set leftLabel value during initialization 
+   $("#container").ejMap({layers: [{ subLayers: [{legendSettings: {leftLabel:""} }]} ]});           
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set leftLabel value after initialization:
+   
+   //Gets the leftLabel value value 
+   
+   var property = =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings.leftLabel;        
+   
+   //Sets the leftLabel value value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings  = {leftLabel:""};
+
+{% endhighlight %}
+
+
+### layers.sublayers.legendSettings.mode `enum`
+{:#members:layers-sublayers-legendsettings-mode}
+
+<ts ref = "ej.datavisualization.Map.Mode"/>
+
+to get mode of legend setting
+
+#### Default Value
+
+* "default"
+
+#### Example
+
+{% highlight js %}
+ 
+//To set legend mode during initialization 
+   $("#container").ejMap({layers: [{ subLayers: [{legendSettings: {mode:"default"} }]} ]});
+              
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the legend mode after initialization:
+   
+   //Gets the legend mode value 
+   
+   var property = =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings.mode;     
+   
+   //Sets the legend mode value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings  = {mode:"default"};
+
+{% endhighlight %}
+
+
+### layers.sublayers.legendSettings.position `enum`
+{:#members:layers-sublayers-legendsettings-position}
+
+<ts ref = "ej.datavisualization.Map.Position"/>
+
+set the position of legend settings
+
+#### Default Value
+
+* topleft
+
+#### Example
+
+{% highlight js %}
+ 
+//To set legend position API value for legend setting during initialization 
+   $("#container").ejMap({layers: [{ subLayers: [{legendSettings: {position: "topleft"} }]} ]});                      
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the legend position API, after initialization:
+   
+   //Gets the legend position value 
+   
+   var property = =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings.position; 
+   
+   //Sets the legend position value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings  = {position: "topleft"};
+
+{% endhighlight %}
+
+
+### layers.sublayers.legendSettings.positionX `number`
+{:#members:layers-sublayers-legendsettings-positionx}
+
+x position value for legend setting
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight js %}
+ 
+//To set x position value during initialization 
+   $("#container").ejMap({layers: [{ subLayers: [{legendSettings: {positionX: 0} }]} ]});           
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the x position, after initialization:
+   
+   //Gets the x position value 
+   
+   var property = =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings.positionX;        
+   
+   //Sets the x position value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings  = {positionX: 0};
+
+{% endhighlight %}
+
+
+### layers.sublayers.legendSettings.positionY `number`
+{:#members:layers-sublayers-legendsettings-positiony}
+
+y position value for legend setting
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight js %}
+ 
+//To set y position value during initialization 
+   $("#container").ejMap({layers: [{ subLayers: [{legendSettings: {positionY: 0} }]} ]});           
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the y position, after initialization:
+   
+   //Gets the y position value 
+   
+   var property = =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings.positionY;        
+   
+   //Sets the y position value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings  = {positionY: 0};
+
+{% endhighlight %}
+
+
+### layers.sublayers.legendSettings.rightLabel `string`
+{:#members:layers-sublayers-legendsettings-rightlabel}
+
+to get rightLabel value for legend setting
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set rightLabel value during initialization 
+   $("#container").ejMap({layers: [{ subLayers: [{legendSettings: {rightLabel:""} }]} ]});           
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set rightLabel value after initialization:
+   
+   //Gets the rightLabel value value 
+   
+   var property = =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings.rightLabel;       
+   
+   //Sets the rightLabel value value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings  = {rightLabel:""};
+
+{% endhighlight %}
+
+
+### layers.sublayers.legendSettings.showLabels `boolean`
+{:#members:layers-sublayers-legendsettings-showlabels}
+
+Enables or Disables the showLabels
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight js %}
+ 
+//To set showLabels API value during initialization 
+   $("#container").ejMap({layers: [{ subLayers: [{legendSettings: {showLabels:false} }]} ]});           
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the showLabels API, after initialization:
+   
+   //Gets the showLabels value 
+   
+   var property = =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings.showLabels;       
+   
+   //Sets the showLabels value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings  = {showLabels:false};
+
+{% endhighlight %}
+
+
+### layers.sublayers.legendSettings.showLegend `boolean`
+{:#members:layers-sublayers-legendsettings-showlegend}
+
+Enables or Disables the showLegend
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight js %}
+ 
+//To set showLegend API value during initialization 
+   $("#container").ejMap({layers: [{ subLayers: [{legendSettings: {showLegend:false} }]} ]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the showLegend API, after initialization:
+   
+   //Gets the showLegend value 
+   
+   var property = =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings.showLegend;       
+   
+   //Sets the showLegend value 
+
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings  = {showLegend:false};
+  
+{% endhighlight %}
+
+
+### layers.sublayers.legendSettings.title `string`
+{:#members:layers-sublayers-legendsettings-title}
+
+to get title of legend setting
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set legend title during initialization 
+   $("#container").ejMap({layers: [{ subLayers: [{legendSettings: {title: ""} }]} ]}) ;          
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the legend title after initialization:
+   
+   //Gets the legend title value 
+   
+   var property = =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings.title;    
+   
+   //Sets the legend title value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings  = {title: ""};
+
+{% endhighlight %}
+
+
+### layers.sublayers.legendSettings.type `enum`
+{:#members:layers-sublayers-legendsettings-type}
+
+<ts ref = "ej.datavisualization.Map.LegendType"/>
+
+to get type of legend setting
+
+#### Default Value
+
+* "layers"
+
+#### Example
+
+{% highlight js %}
+ 
+//To set legend type value during initialization 
+   $("#container").ejMap({layers: [{ subLayers: [{legendSettings: {type:"layers"} }]} ]});           
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the legend type value after initialization:
+   
+   //Gets the legend type value 
+   
+   var property = =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings.type;     
+   
+   //Sets the legend type value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings  = {type:"layers"};
+
+{% endhighlight %}
+
+
+### layers.sublayers.legendSettings.width `number`
+{:#members:layers-sublayers-legendsettings-width}
+
+width value for legend setting
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight js %}
+ 
+//To set width value for legend during initialization 
+   $("#container").ejMap({layers: [{ subLayers: [{legendSettings: {width:20} }]} ]}) ;          
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the width value for legend, after initialization:
+   
+   //Gets the width value for legend value 
+   
+   var property = =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings.width;    
+   
+   //Sets the width value for legend value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings  = {width:20};
+
+{% endhighlight %}
+
+
+### layers.sublayers.mapItemsTemplate `string`
+{:#members:layers-sublayers-mapitemstemplate}
+
+Specifies the map items template for shapes.
+
+#### Example
+
+{% highlight js %}
+
+// Set the mapItemsTemplate of layer during initialization.                  
+   $("#container").ejMap({layers: [{ subLayers: [{ layerType: "geometry", mapItemsTemplate: "Template",  shapeData: mapShapeData }]} ]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the mapItemsTemplate after initialization:
+   
+   //Gets the mapItemsTemplate from map.
+   
+   var mapItemsTemplate =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].mapItemsTemplate;
+   
+   //Sets the mapItemsTemplate to map.
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].mapItemsTemplate  = "Template";
+
+{% endhighlight %}
+
+
+### layers.sublayers.markers `Array`
+{:#members:layers-sublayers-markers}
+
+Specify markers for shape layer.
+
+### layers.sublayers.markers.label `string`
+
+Display the value in the marker 
+
+#### Default Value
+
+* " "
+
+#### Example
+
+{% highlight js %}
+  
+// Set the markers during initialization.                       
+   $("#container").ejMap({layers: [{ subLayers: [{markers:[{label : "chennai",latitude : 13.08 ,longitude : 80.27}]} ]}]} ]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the markers after initialization:
+   
+   //Gets the markers from map.
+   
+   var marker =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].markers[markerIndex];
+   
+   //Sets the marker to map.
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].markers[markerIndex]  = {label : "chennai",latitude : 13.08 ,longitude : 80.27};
+
+{% endhighlight %}
+
+### layers.sublayers.markers.latitude `number`
+
+Display the value in the marker 
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+  
+// Set the markers during initialization.                       
+   $("#container").ejMap({layers: [{ subLayers: [{markers:[{label : "chennai",latitude : 13.08 ,longitude : 80.27}]} ]}]} ]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the markers after initialization:
+   
+   //Gets the markers from map.
+   
+   var marker =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].markers[markerIndex];
+   
+   //Sets the marker to map.
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].markers[markerIndex]  = {label : "chennai",latitude : 13.08 ,longitude : 80.27};
+
+{% endhighlight %}
+
+
+### layers.sublayers.markers.longitude `number`
+
+Display the value in the marker 
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+  
+// Set the markers during initialization.                       
+   $("#container").ejMap({layers: [{ subLayers: [{markers:[{label : "chennai",latitude : 13.08 ,longitude : 80.27}]} ]}]} ]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the markers after initialization:
+   
+   //Gets the markers from map.
+   
+   var marker =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].markers[markerIndex];
+   
+   //Sets the marker to map.
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].markers[markerIndex]  = {label : "chennai",latitude : 13.08 ,longitude : 80.27};
+
+{% endhighlight %}
+
+
+### layers.sublayers.markerTemplate `string`
+{:#members:layers-sublayers-markertemplate}
+
+Specifies the map marker template for map layer.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+
+// Set the markerTemplate of layer during initialization.                    
+   $("#container").ejMap({layers: [{ subLayers: [{ layerType: "geometry", markerTemplate: "Template",  shapeData: mapShapeData }]} ]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the markerTemplate after initialization:
+   
+   //Gets the markerTemplate from map.
+   
+   var markerTemplate =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].markerTemplate;
+   
+   //Sets the markerTemplate to map.
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].markerTemplate  = "Template";
+
+{% endhighlight %}
+
+
+### layers.sublayers.selectedMapShapes `Array`
+{:#members:layers-sublayers-selectedmapshapes}
+
+Specify selectedMapShapes for shape layer
+
+#### Default Value
+
+* []
+
+#### Example
+
+{% highlight js %}
+ 
+//Gets the selectedMapShapes from map 
+   var selectedShapes =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].selectedMapShapes;         
+
+{% endhighlight %}
+
+
+### layers.sublayers.selectionMode `enum`
+{:#members:layers-sublayers-selectionmode}
+
+<ts ref = "ej.datavisualization.Map.SelectionMode"/>
+
+Specifies the selection mode of the map. Accepted selection mode values are Default and Multiple.
+
+
+#### Default Value
+
+* "default"
+
+#### Example
+
+
+{% highlight js %}
+  
+// Set the selection mode during initialization.                        
+   $("#container").ejMap({layers: [{ subLayers: [{ selectionMode:'default' }]} ]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the selection mode after initialization:
+   
+   //Gets the selection mode from map.
+   
+   var property =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].selectionMode;
+   
+   //Sets the selection mode to map.
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].selectionMode  = 'default';
+
+{% endhighlight %}
+
+
+### layers.sublayers.shapeData `object`
+{:#members:layers-sublayers-shapedata}
+
+Specifies the shape data for the shape layer
+
+#### Example
+
+{% highlight js %}
+
+// Set the shapeData of layer during initialization.                         
+   $("#container").ejMap({layers: [{ subLayers: [{ layerType: "geometry", shapeData: mapShapeData }]} ]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the data after initialization:
+   
+   //Gets the data from map layer.
+   
+   var data =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeData;
+   
+   //Sets the data to map layer.
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeData  = mapShapeData;
+
+{% endhighlight %}
+
+
+### layers.sublayers.shapeSettings `object`
+{:#members:layers-sublayers-shapesettings}
+
+Specifies the shape settings of map layer
+
+#### Example
+
+{% highlight js %}
+
+// Set the shapeSettings of layer during initialization.                     
+   $("#container").ejMap({layers: [{ subLayers: [{ layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" }, shapeData: Africa }]} ]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the shapeSettings after initialization:
+   
+   //Gets the shapeSettings from map.
+   
+   var shapeSettings =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeSettings;
+   
+   //Sets the shapeSettings to map.
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex]  = { layerType: "geometry", enableMouseHover: true, shapeSettings: { stroke: "black", fill: "#C3E6ED", highlightColor: "#63B7B7", selectionColor: "#207BB2", strokeThickness: "0.5" }, shapeData: Africa };
+
+{% endhighlight %}
+
+
+### layers.sublayers.shapeSettings.autoFill `boolean`
+{:#members:layers-sublayers-shapesettings-autofill}
+
+Enables or Disables the auto fill colors for shape layer in map. When this property value set to true, shapes will be filled with palette colors.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight js %}
+ 
+//To set autoFill API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{shapeSettings: {autoFill:false}}});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the autoFill API, after initialization:
+   
+   //Gets the autoFill value 
+   
+   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeSettings.autoFill;
+         
+   //Sets the autoFill value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].shapeSettings.autoFill=false;
+    
+{% endhighlight %}
+
+
+### layers.sublayers.shapeSettings.colorMappings `object`
+{:#members:layers-sublayers-shapesettings-colormappings}
+
+Specifies the colorMappings of the shape layer in map
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set colorMappings API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{ shapeSettings: {colorMappings:{rangeColorMapping:[{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]} ]}}}]}]}] });
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the colorMappings API, after initialization:
+   
+   //Gets the colorMappings value 
+   
+   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeSettings.colorMappings;
+    
+   //Sets the colorMappings value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].shapeSettings.colorMappings={rangeColorMapping:[{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]} ]}]} ]}; 
+{% endhighlight %}
+
+
+
+### layers.sublayers.shapeSettings.colorMappings.rangeColorMapping `array`
+{:#members:layers-sublayers-shapesettings-colormappings-rangecolormapping}
+
+Specifies the range colorMappings in the shape layer of map.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set rangeColorMapping API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers:[{ shapeSettings: {colorMappings:{rangeColorMapping:[{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]} ]}]} ]}}}}]}]});
+{% endhighlight %}
+
+### layers.sublayers.shapeSettings.colorMappings.rangeColorMapping.from `number`
+{:#members:layers-sublayers-shapesettings-colormappings-rangecolormapping-from}
+
+Specifies the start range colorMappings in the shape layer of map.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set start range colorMapping API value during initialization 
+  $("#container").ejMap({layers:{ shapeSettings: {colorMappings:{rangeColorMapping:[{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]} ]}]} ]}}}});
+{% endhighlight %}
+
+### layers.sublayers.shapeSettings.colorMappings.rangeColorMapping.to `number`
+{:#members:layers-sublayers-shapesettings-colormappings-rangecolormapping-to}
+
+Specifies the to range colorMappings in the shape layer of map.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set to range colorMapping API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers:[{ shapeSettings: {colorMappings:{rangeColorMapping:[{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]} ]}]} ]}}}]}]});
+{% endhighlight %}
+
+### layers.sublayers.shapeSettings.colorMappings.rangeColorMapping.gradientColors `array`
+{:#members:layers-sublayers-shapesettings-colormappings-rangecolormapping-gradientcolors}
+
+Specifies the gradientColors in the shape layer of map.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set gradientColors API value during initialization 
+  $("#container").ejMap({layers:[{subLayers:[{ shapeSettings: {colorMappings:{rangeColorMapping:[{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]} ]}]}}]} ]});
+{% endhighlight %}
+
+### layers.sublayers.shapeSettings.colorMappings.equalColorMapping `array`
+{:#members:layers-sublayers-shapesettings-colormappings-equalcolormapping}
+
+Specifies the equalColorMapping in the shape layer of map.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set equalColorMapping API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers:[{ shapeSettings: {colorMappings:{equalColorMapping:[{ value: "Romney", color: "#D84444" }]} ]}]}]});
+{% endhighlight %}
+
+### layers.sublayers.shapeSettings.colorMappings.equalColorMapping.value `string`
+{:#members:layers-sublayers-shapesettings-colormappings-equalcolormapping-value}
+
+Specifies the equalColorMapping value in the shape layer of map.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set equalColorMapping value API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers:[{ shapeSettings: {colorMappings:{equalColorMapping:[{ value: "Romney", color: "#D84444" }]}}}]}]});
+{% endhighlight %}
+
+### layers.sublayers.shapeSettings.colorMappings.equalColorMapping.color `string`
+{:#members:layers-sublayers-shapesettings-colormappings-equalcolormapping-color}
+
+Specifies the equalColorMapping color in the shape layer of map.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set equalColorMapping color API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers:[{ shapeSettings: {colorMappings:{equalColorMapping:[{ value: "Romney", color: "#D84444" }]}}}]}]});
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the colorMappings API, after initialization:
+   
+   //Gets the colorMappings value 
+   
+   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeSettings.colorMappings;
+    
+   //Sets the colorMappings value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].shapeSettings.colorMappings={rangeColorMapping:{from: 0,to: 100000,gradientColors: ["#9CBF4E", "#B8CE7B"]} ]}}; 
+{% endhighlight %}
+
+
+### layers.sublayers.shapeSettings.colorPalette `enum`
+{:#members:layers-sublayers-shapesettings-colorpalette}
+
+<ts ref = "ej.datavisualization.Map.ColorPalette"/>
+
+Specifies the shape color palette value of the shape layer in map. Accepted colorPalette values are palette1, palette2, palette3 and custompalette.
+
+#### Default Value
+
+* "palette1"
+
+#### Example
+
+{% highlight js %}
+ 
+//To set colorPalette API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{shapeSettings: {colorPalette:'palette1'}}]}]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the colorPalette API, after initialization:
+   
+   //Gets the colorPalette value 
+   
+   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeSettings.colorPalette;
+     
+   //Sets the colorPalette value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].shapeSettings.colorPalette='palette1'; 
+
+{% endhighlight %}
+
+
+### layers.sublayers.shapeSettings.colorValuePath `string`
+{:#members:layers-sublayers-shapesettings-colorvaluepath}
+
+Specifies the shape color valuePath of the shape layer in map
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set colorValuePath  API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{shapeSettings: {colorValuePath :'sales'}}]}]});
+
+{% endhighlight %}
+
+{% highlight js %}
+ 
+//Get or set the colorValuePath  API, after initialization:
+   
+   //Gets the colorValuePath  value 
+   
+   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeSettings.colorValuePath ;
+  
+   //Sets the colorValuePath  value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].shapeSettings.colorValuePath ='sales'; 
+
+{% endhighlight %}
+
+
+### layers.sublayers.shapeSettings.enableGradient `boolean`
+{:#members:layers-sublayers-shapesettings-enablegradient}
+
+Enables or Disables the gradient colors for map shapes.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight js %}
+ 
+//To set enableGradient API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{shapeSettings: {enableGradient:false}}]}]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the enableGradient API, after initialization:
+   
+   //Gets the enableGradient value 
+   
+   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeSettings.enableGradient;
+   
+   //Sets the enableGradient value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].shapeSettings.enableGradient=false; 
+
+{% endhighlight %}
+
+
+### layers.sublayers.shapeSettings.fill `string`
+{:#members:layers-sublayers-shapesettings-fill}
+
+Specifies the shape fill color of the shape layer in map
+
+#### Default Value
+
+* "#E5E5E5"
+
+#### Example
+
+{% highlight js %}
+ 
+//To set fill API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{shapeSettings: {fill:'#E5E5E5'}}]}]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the fill API, after initialization:
+
+   //Gets the fill value 
+   
+   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeSettings.fill;
+     
+   //Sets the fill value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].shapeSettings.fill='#E5E5E5'; 
+
+{% endhighlight %}
+
+
+### layers.sublayers.shapeSettings.highlightBorderWidth `number`
+{:#members:layers-sublayers-shapesettings-highlightborderwidth}
+
+Specifies the mouse over width of the shape layer in map
+
+#### Default Value
+
+* 1
+
+#### Example
+
+{% highlight js %}
+ 
+//To set highlightBorderWidth API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{shapeSettings: {highlightBorderWidth:1}}]}]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the highlightBorderWidth API, after initialization:
+   
+   //Gets the highlightBorderWidth value 
+   
+   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeSettings.highlightBorderWidth;
+     
+   //Sets the highlightBorderWidth value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].shapeSettings.highlightBorderWidth=1;
+    
+{% endhighlight %}
+
+
+### layers.sublayers.shapeSettings.highlightColor `string`
+{:#members:layers-sublayers-shapesettings-highlightcolor}
+
+Specifies the mouse hover color of the shape layer in map
+
+#### Default Value
+
+* "gray"
+
+Example
+
+{% highlight js %}
+ 
+//To set highlightColor API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{shapeSettings: {highlightColor:'gray'}}]}]});
+  
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the highlightColor API, after initialization:
+   
+   //Gets the highlightColor value 
+   
+   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeSettings.highlightColor;
+   
+   //Sets the highlightColor value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].shapeSettings.highlightColor='gray'; 
+
+{% endhighlight %}
+
+
+### layers.sublayers.shapeSettings.highlightStroke `string`
+{:#members:layers-sublayers-shapesettings-highlightstroke}
+
+Specifies the mouse over stroke color of the shape layer in map
+
+#### Default Value
+
+* "#C1C1C1"
+
+#### Example
+
+{% highlight js %}
+ 
+//To set highlightStroke API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{shapeSettings: {highlightStroke:'#C1C1C1'}}]}]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the highlightStroke API, after initialization:
+   
+   //Gets the highlightStroke value 
+   
+   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeSettings.highlightStroke;
+  
+   //Sets the highlightStroke value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].shapeSettings.highlightStroke='#C1C1C1'; 
+
+{% endhighlight %}
+
+
+### layers.sublayers.shapeSettings.selectionColor `string`
+{:#members:layers-sublayers-shapesettings-selectioncolor}
+
+Specifies the shape selection color of the shape layer in map
+
+#### Default Value
+
+* "gray"
+
+#### Example
+
+{% highlight js %}
+ 
+//To set selectionColor API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{shapeSettings: {selectionColor:'gray'}}]}]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the selectionColor API, after initialization:
+   
+   //Gets the selectionColor value 
+   
+   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeSettings.selectionColor;
+   
+   //Sets the selectionColor value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].shapeSettings.selectionColor='gray'; 
+
+{% endhighlight %}
+
+
+### layers.sublayers.shapeSettings.selectionStroke `string`
+{:#members:layers-sublayers-shapesettings-selectionstroke}
+
+Specifies the shape selection stroke color of the shape layer in map
+
+#### Default Value
+
+* "#C1C1C1"
+
+#### Example
+
+{% highlight js %}
+ 
+//To set selectionStroke API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{shapeSettings: {selectionStroke:'#C1C1C1'}}]}]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the selectionStroke API, after initialization:
+   
+   //Gets the selectionStroke value 
+   
+   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeSettings.selectionStroke;
+  
+   //Sets the selectionStroke value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].shapeSettings.selectionStroke='#C1C1C1'; 
+
+{% endhighlight %}
+
+
+### layers.sublayers.shapeSettings.selectionStrokeWidth `number`
+{:#members:layers-sublayers-shapesettings-selectionstrokewidth}
+
+Specifies the shape selection stroke width of the shape layer in map
+
+#### Default Value
+
+* 1
+
+#### Example
+
+{% highlight js %}
+ 
+//To set selectionStrokeWidth API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{shapeSettings: {selectionStrokeWidth:1}}]}]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the selectionStrokeWidth API, after initialization:
+   
+   //Gets the selectionStrokeWidth value 
+   
+   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeSettings.selectionStrokeWidth;
+     
+   //Sets the selectionStrokeWidth value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].shapeSettings.selectionStrokeWidth=1; 
+
+{% endhighlight %}
+
+
+### layers.sublayers.shapeSettings.stroke `string`
+{:#members:layers-sublayers-shapesettings-stroke}
+
+Specifies the shape stroke color of the shape layer in map
+
+#### Default Value
+
+* "#C1C1C1"
+
+#### Example
+
+{% highlight js %}
+ 
+//To set stroke API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{shapeSettings: {stroke:'#C1C1C1'}}]}]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the stroke API, after initialization:
+   
+   //Gets the stroke value 
+   
+   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeSettings.stroke;
+   
+   //Sets the stroke value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].shapeSettings.stroke='#C1C1C1'; 
+
+{% endhighlight %}
+
+
+### layers.sublayers.shapeSettings.strokeThickness `number`
+{:#members:layers-sublayers-shapesettings-strokethickness}
+
+Specifies the shape stroke thickness value of the shape layer in map
+
+#### Default Value
+
+* "0.2"
+
+#### Example
+
+{% highlight js %}
+ 
+//To set strokeThickness API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{shapeSettings: {strokeThickness:'0.2'}}]}]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the strokeThickness API, after initialization:
+   
+   //Gets the strokeThickness value 
+   
+   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeSettings.strokeThickness;
+  
+   //Sets the strokeThickness value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].shapeSettings.strokeThickness='0.2'; 
+
+{% endhighlight %}
+
+
+### layers.sublayers.shapeSettings.valuePath `string`
+{:#members:layers-sublayers-shapesettings-valuepath}
+
+Specifies the shape valuePath of the shape layer in map
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set valuePath API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{shapeSettings: {valuePath:'name'}}]}]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the valuePath API, after initialization:
+   
+   //Gets the valuePath value 
+   
+   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeSettings.valuePath;
+        
+   //Sets the valuePath value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].shapeSettings.valuePath='name'; 
+
+{% endhighlight %}
+
+
+### layers.sublayers.showMapItems `boolean`
+{:#members:layers-sublayers-showmapitems}
+
+Shows or hides the map items.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight js %}
+  
+// Set the showMapItems during initialization.                  
+   $("#container").ejMap({layers: [{ subLayers: [{ showMapItems:false }]} ]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the showMapItems after initialization:
+
+  //Gets the showMapItems from map.
+
+  var property =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].showMapItems;
+
+  //Sets the showMapItems to map.
+
+  $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].showMapItems  = false;
+
+{% endhighlight %}
+
+
+### layers.sublayers.showTooltip `boolean`
+{:#members:layers-sublayers-showtooltip}
+
+Shows or hides the tooltip for shapes
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight js %}
+  
+// Set the showTooltip during initialization.                   
+   $("#container").ejMap({layers: [{ subLayers: [{ showTooltip:false }]} ]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the showTooltip after initialization:
+
+  //Gets the showTooltip from map.
+
+  var property =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].showTooltip;
+
+  //Sets the showTooltip to map.
+
+  $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].showTooltip  = false;
+
+{% endhighlight %}
+
+
+### layers.sublayers.tooltipTemplate `string`
+{:#members:layers-sublayers-tooltiptemplate}
+
+Specifies the tooltip template for shapes.
+
+#### Example
+
+{% highlight js %}
+
+// Set the tooltipTemplate of layer during initialization.                   
+        $("#container").ejMap({layers: [{ subLayers: [{ layerType: "geometry", tooltipTemplate: "Template",  shapeData: mapShapeData }]} ]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the tooltipTemplate after initialization:
+   
+   //Gets the tooltipTemplate from map.
+   
+   var tooltipTemplate =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].tooltipTemplate;
+   
+   //Sets the tooltipTemplate to map.
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].tooltipTemplate  ="Template";
+
+{% endhighlight %}
+
+
+### layers.sublayers.urlTemplate `string`
+{:#members:layers-sublayers-urltemplate}
+
+Specifies the URL template for the OSM type map.
+
+#### Default Value
+
+* 'http://a.tile.openstreetmap.org/level/tileX/tileY.png'
+
+#### Example
+
+{% highlight js %}
+  
+// Set the urlTemplate during initialization.                   
+   $("#container").ejMap({layers: [{ subLayers: [{ urlTemplate:'http://a.tile.openstreetmap.org/level/tileX/tileY.png' }]} ]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the urlTemplate after initialization:
+ 
+   //Gets the urlTemplate from map.
+  
+   var property =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].urlTemplate;
+   
+   //Sets the urlTemplate to map.
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].urlTemplate  = 'http://a.tile.openstreetmap.org/level/tileX/tileY.png';
+
+{% endhighlight %}
+
+
 
 
 ## Methods

@@ -3115,4 +3115,36 @@ Triggers after refreshing the treemap items.
 {% endhighlight %}
 
 
+### treeMapGroupSelected
+{:#events:treeMapGroupSelected}
+
+Triggers when the group selection is performed on treemap items.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+           <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Returns the  selected group of treeMapItems as  object.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+{% highlight js %}
+ 
+//treeMapGroupSelected event for treemap
+  $("#container").ejTreeMap({
+   treeMapGroupSelected: function () {}
+  });
+
+{% endhighlight %}
 
