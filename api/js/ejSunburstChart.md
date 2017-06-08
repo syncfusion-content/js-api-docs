@@ -736,6 +736,45 @@ $("#container").ejSunburstChart({
 
 {% endhighlight %}
  
+### tooltip.format `string`
+{:#members:tooltip-format}
+
+Setting the format for the data displayed in the tooltip
+
+#### Default Value
+
+* "#point.x# : #point.y#"
+
+#### Example
+
+{% highlight js %}
+
+$("#container").ejSunburstChart({
+    tooltip :{format : "#point.x# : #point.y#%"}                  
+});
+
+{% endhighlight %}
+
+### tooltip.opacity `number`
+{:#members:tooltip-opacity}
+
+Sets the opacity of the dispalyed tooltip
+
+#### Default Value
+
+* 0.95
+
+#### Example
+
+{% highlight js %}
+
+$("#container").ejSunburstChart({
+    tooltip :{opacity : 1}                  
+});
+
+{% endhighlight %}
+
+
 
 
 
@@ -3673,8 +3712,8 @@ $("#container").ejSparkline("redraw");
 {% endhighlight %}
 
 
-### _destroy ()
-{:#methods:_destroy}
+### destroy ()
+{:#methods:destroy}
 
 
 destroy the sunburst
