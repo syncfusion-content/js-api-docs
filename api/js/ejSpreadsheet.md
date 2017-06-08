@@ -4510,7 +4510,7 @@ This method is used to delete the selected cells and shift the remaining cells t
 
 {% highlight html %}
 <script>
-var startCell= {rowIdx: 1, colIdx: 2}, endCell= {rowIdx: 1, colIdx: 2};
+var startCell= {rowIndex: 1, colIndex: 2}, endCell= {rowIndex: 1, colIndex: 2};
 // Initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 //Delete a cell and shift cells left in the sheet.
@@ -4558,7 +4558,7 @@ This method is used to delete the selected cells and shift the remaining cells u
 
 {% highlight html %}
 <script>
-var startCell= {rowIdx: 1, colIdx: 2}, endCell= {rowIdx: 1, colIdx: 2};
+var startCell= {rowIndex: 1, colIndex: 2}, endCell= {rowIndex: 1, colIndex: 2};
 // Initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Delete a cell and shift cells up in the sheet.
@@ -6530,7 +6530,7 @@ This method is used to set border for the specified range of cells in the Spread
 <script>
 // Initialize Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.setBorder({ borderStyle: "solid", ID: "outside", hexaCode: "#000000"}, "B2:B6"); // To set borders in Spreadsheet
+xlObj.setBorder({ style: "solid", type: "outside", color: "#000000"}, "B2:B6"); // To set borders in Spreadsheet
 </script>
 
 {% endhighlight %}
@@ -6538,7 +6538,7 @@ xlObj.setBorder({ borderStyle: "solid", ID: "outside", hexaCode: "#000000"}, "B2
 {% highlight html %}
 <script>
 // To set borders in Spreadsheet.
-$("#Spreadsheet").ejSpreadsheet("setBorder", { borderStyle: "solid", ID: "outside", hexaCode: "#000000"}, "B2:B6");        
+$("#Spreadsheet").ejSpreadsheet("setBorder", { style: "solid", type: "outside", color: "#000000"}, "B2:B6");        
 </script>
 
 {% endhighlight %}
@@ -7908,7 +7908,7 @@ This method is used to resize the chart of specified id in the Spreadsheet.
 <script>
 // Create Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLChart.resizeChart("Spreadsheet_Chart1", 200, 300); // It is used to resize the chart in Spreadsheet.
+xlObj.XLChart.resizeChart("Spreadsheet_chart1", 200, 300); // It is used to resize the chart in Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -9538,7 +9538,7 @@ This method is used to update the unique format for selected range of cells in t
 // Initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To update the unique format.
-xlObj.XLFormat.updateUniqueFormat("e-formatFFFF006N2N2N1N1N1N1N2N1N", [1, 0, 4, 0]);
+xlObj.XLFormat.updateUniqueFormat("e-formatFFFF006N2N2N251N1N2N", [1, 0, 4, 0]);
 </script>
 
 {% endhighlight %}
@@ -9634,7 +9634,7 @@ This method is used to freeze rows and columns before the specified cell in the 
 // Initialize the Spreadsheet object
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Freeze some rows and columns in the sheet.
-xlObj.XLFreeze.freezePanes(2, 3});
+xlObj.XLFreeze.freezePanes(2, 3);
 </script>
 
 {% endhighlight %}
