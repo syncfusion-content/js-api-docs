@@ -35985,9 +35985,9 @@ $("#container").ejChart({
 <tbody>
 <tr>
 <td class="name">{% highlight js %}
-series{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Instance of the series that completed has animation.</td>
+<td class="description last"><ul> <li>series - Instance of the series that completed has animation.</li></ul></td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
@@ -36048,39 +36048,12 @@ $("#container").ejChart({
 <tbody>
 <tr>
 <td class="name">{% highlight js %}
-axis{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Instance of the corresponding axis.</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-label{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Arguments of axis label value and text.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">{% highlight js %}
-Text{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">Formatted text of the respective label. You can also add custom text to the label.</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-Value{% endhighlight %}</td>
-<td class="type"><span class="param-type">String</span></td>
-<td class="description last">Actual value of the label.</td>
-</tr>
-</tbody>
-</table>
-</td>
+<td class="description last"><ul><li>axis - Instance of the corresponding axis.
+    </li>
+    <li>label - Arguments of axis label value and text.</li>
+                             </ul></td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
@@ -36143,9 +36116,9 @@ $("#container").ejChart({
 <tbody>
 <tr>
 <td class="name">{% highlight js %}
-dataAxes{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Collection of axes in Chart</td>
+<td class="description last"> <b>dataAxes</b> - Collection of axes in Chart</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
@@ -36205,27 +36178,13 @@ $("#container").ejChart({
 <tbody>
 <tr>
 <td class="name">{% highlight js %}
-delta{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Difference between minimum and maximum value of axis range.</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-interval{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Interval value of axis range. Grid lines, tick lines and axis labels are drawn based on this interval value.</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-max{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Maximum value of axis range.</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-min{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Minimum value of axis range.</td>
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last"><ul><li>delta - Difference between minimum and maximum value of axis range.</li>
+    <li>interval - Interval value of axis range. Grid lines, tick lines and axis labels are drawn based on this interval value.</li>
+    <li>max - Maximum value of axis range.</li>
+    <li>min - Minimum value of axis range.</li>    
+                             </ul></td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
@@ -36286,27 +36245,14 @@ $("#container").ejChart({
 <tbody>
 <tr>
 <td class="name">{% highlight js %}
-axes{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Instance of the axis whose title is being rendered</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-locationX{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">X-coordinate of title location</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-locationY{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Y-coordinate of title location</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-title{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Axis title text. You can add custom text to the title.</td>
+<td class="description last"><ul><li>
+    axes - Instance of the axis whose title is being rendered</li>
+    <li>locationX - X-coordinate of title location</li>
+    <li>locationY - Y-coordinate of title location</li>
+    <li>title - Axis title text. You can add custom text to the title.</li>
+</ul></td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
@@ -36368,27 +36314,13 @@ $("#container").ejChart({
 <tbody>
 <tr>
 <td class="name">{% highlight js %}
-areaBoundsHeight{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Height of the chart area.</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-areaBoundsWidth{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Width of the chart area.</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-areaBoundsX{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">X-coordinate of the chart area.</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-areaBoundsY{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Y-coordinate of the chart area.</td>
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last"><ul><li>areaBoundsHeight - Height of the chart area.</li>
+    <li>areaBoundsWidth - Width of the chart area.</li>
+    <li>areaBoundsX - X-coordinate of the chart area.</li>
+    <li>areaBoundsY - Y-coordinate of the chart area.</li>
+</ul></td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
@@ -36570,33 +36502,14 @@ $("#container").ejChart({
 <tbody>
 <tr>
 <td class="name">{% highlight js %}
-text{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Text displayed in data label. You can add custom text to the data label</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-locationX{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">X-coordinate of data label location</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-locationY{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Y-coordinate of data label location</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-seriesIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Index of the series in series Collection whose data label is being rendered </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-pointIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Index of the point in series whose data label is being rendered </td>
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last"><ul><li>text - Text displayed in data label. You can add custom text to the data label</li>
+    <li>locationX - X-coordinate of data label location</li>
+    <li>locationY - Y-coordinate of data label location</li>
+    <li>seriesIndex - Index of the series in series Collection whose data label is being rendered</li>
+    <li>pointIndex - Index of the point in series whose data label is being rendered</li>
+</ul></td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
@@ -36658,21 +36571,12 @@ $("#container").ejChart({
 <tbody>
 <tr>
 <td class="name">{% highlight js %}
-legendBoundsHeight{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Height of the legend.</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-legendBoundsWidth{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Width of the legend.</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-legendBoundsRows{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Number of rows to display the legend items</td>
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last"><ul><li>legendBoundsHeight - Height of the legend</li>
+    <li>legendBoundsWidth - Width of the legend.</li>
+    <li>legendBoundsRows - Number of rows to display the legend items</li>
+</ul></td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
@@ -36751,45 +36655,16 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-startX{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">X-coordinate of legend item in pixel</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-startY{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Y-coordinate of legend item in pixel</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-LegendItem{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Instance of the legend item object that is about to be rendered</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-style{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Options to customize the legend item styles such as border, color, size, etc…,</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-Bounds{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Instance that holds information about legend bounds and legend item bounds.</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-symbolShape{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Name of the legend item shape. Use this option to customize legend item shape before rendering</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-series{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Instance of the series object corresponding to the legend item</td>
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last"><ul><li>startX - X-coordinate of legend item in pixel</li>
+    <li>startY - Y-coordinate of legend item in pixel</li>
+    <li>LegendItem - Instance of the legend item object that is about to be rendered</li>
+    <li>style - Options to customize the legend item styles such as border, color, size, etc…,</li>
+    <li>Bounds - Instance that holds information about legend bounds and legend item bounds.</li>
+    <li>symbolShape - Name of the legend item shape. Use this option to customize legend item shape before rendering</li>
+    <li>series - Instance of the series object corresponding to the legend item</li>
+</ul></td>
 </tr>
 </tbody>
 </table>
@@ -36850,45 +36725,16 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-startX{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">X-coordinate of legend item in pixel</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-startY{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Y-coordinate of legend item in pixel</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-LegendItem{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Instance of the legend item object that is about to be rendered</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-style{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Options to customize the legend item styles such as border, color, size, etc…,</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-Bounds{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Options to customize the legend item styles such as border, color, size, etc…,</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-symbolShape{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Name of the legend item shape. Use this option to customize legend item shape before rendering</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-series{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Instance of the series object corresponding to the legend item</td>
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last"><ul><li>startX - X-coordinate of legend item in pixel</li>
+    <li>startY - Y-coordinate of legend item in pixel</li>
+    <li>LegendItem - Instance of the legend item object that is about to be rendered</li>
+    <li>style - Options to customize the legend item styles such as border, color, size, etc…,</li>
+    <li>Bounds - Instance that holds information about legend bounds and legend item bounds.</li>
+    <li>symbolShape - Name of the legend item shape. Use this option to customize legend item shape before rendering</li>
+    <li>series - Instance of the series object corresponding to the legend item</li>
+</ul></td>
 </tr>
 </tbody>
 </table>
@@ -36951,33 +36797,14 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-startX{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">X-coordinate of legend item in pixel</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-startY{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Y-coordinate of legend item in pixel</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-legendItem{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Instance of the legend item object that is about to be rendered</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-style{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Options to customize the legend item styles such as border, color, size, etc.</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-symbolShape{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Name of the legend item shape. Use this option to customize legend item shape before rendering</td>
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last"><ul><li>startX - X-coordinate of legend item in pixel</li>
+    <li>startY - Y-coordinate of legend item in pixel</li>
+    <li>legendItem - Instance of the legend item object that is about to be rendered</li>
+    <li>style - Options to customize the legend item styles such as border, color, size, etc.</li>
+    <li>symbolShape - Name of the legend item shape. Use this option to customize legend item shape before rendering</li>
+</ul></td>
 </tr>
 </tbody>
 </table>
@@ -37225,27 +37052,14 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-locationX{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">X-coordinate of point in pixel</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-locationY{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Y-coordinate of point in pixel</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-pointIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Index of the point in series</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-seriesIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Index of the series in series collection to which the point belongs</td>
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last"><ul>
+    <li>locationX - X-coordinate of point in pixel</li>
+    <li>locationY - Y-coordinate of point in pixel</li>
+    <li>seriesIndex - Index of the series in series collection to which the point belongs</li>
+    <li>pointIndex - Index of the point in series</li>
+</ul></td>
 </tr>
 </tbody>
 </table>
@@ -37304,27 +37118,14 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-locationX{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">X-coordinate of point in pixel</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-locationY{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Y-coordinate of point in pixel</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-pointIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Index of the point in series</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-seriesIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Index of the series in series collection to which the point belongs</td>
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last"><ul>
+    <li>locationX - X-coordinate of point in pixel</li>
+    <li>locationY - Y-coordinate of point in pixel</li>
+    <li>seriesIndex - Index of the series in series collection to which the point belongs</li>
+    <li>pointIndex - Index of the point in series</li>
+</ul></td>
 </tr>
 </tbody>
 </table>
@@ -37440,17 +37241,14 @@ type{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Name of the event</td>
 </tr>
-<tr>
+    <tr>
 <td class="name">{% highlight js %}
-series{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Instance of the selected series</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-seriesIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Index of the selected series</td>
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last"><ul>
+    <li>series - Instance of the selected series</li>
+    <li>seriesIndex - Index of the selected series</li>
+</ul></td>
 </tr>
 </tbody>
 </table>
@@ -37511,9 +37309,9 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-series{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Instance of the series which is about to get rendered</td>
+<td class="description last"><b>series</b> - Instance of the series which is about to get rendered</td>
 </tr>
 </tbody>
 </table>
@@ -37575,15 +37373,12 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-location{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Instance that holds the location of marker symbol</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-style{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Options to customize the marker style such as color, border and size</td>
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last"><ul>
+    <li>location - Instance that holds the location of marker symbol</li>
+    <li>style - Options to customize the marker style such as color, border and size</li>
+</ul></td>
 </tr>
 </tbody>
 </table>
@@ -37644,21 +37439,13 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-location{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Option to customize the title location in pixels</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-size{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Read-only option to find the size of the title</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-title{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Use this option to add custom text in title</td>
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last"><ul>
+    <li>location - Option to customize the title location in pixels</li>
+    <li>size - Read-only option to find the size of the title</li>
+    <li>title - Use this option to add custom text in title</li>
+</ul></td>
 </tr>
 </tbody>
 </table>
@@ -37718,21 +37505,13 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-currentText{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Text to be displayed in tooltip. Set this option to customize the text displayed in tooltip</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-pointIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Index of the point on which mouse is hovered</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-seriesIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Index of the series in series collection whose point is hovered by mouse</td>
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last"><ul>
+    <li>currentText - Text to be displayed in tooltip. Set this option to customize the text displayed in tooltip</li>
+    <li>pointIndex - Index of the point on which mouse is hovered</li>
+    <li>seriesIndex - Index of the series in series collection whose point is hovered by mouse</li>
+</ul></td>
 </tr>
 </tbody>
 </table>
@@ -37793,27 +37572,14 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-location{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Location of the crosshair label in pixels</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-axisIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Index of the axis for which crosshair label is displayed</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-crossAxis{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Instance of the chart axis object for which cross hair label is displayed</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-currentTrackText{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Text to be displayed in crosshair label. Use this option to add custom text in crosshair label</td>
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last"><ul>
+    <li>location - Location of the crosshair label in pixels</li>
+    <li>axisIndex - Index of the axis for which crosshair label is displayed</li>
+    <li>crossAxis - Instance of the chart axis object for which cross hair label is displayed</li>
+    <li>currentTrackText - Text to be displayed in crosshair label. Use this option to add custom text in crosshair label</li>
+</ul></td>
 </tr>
 </tbody>
 </table>
@@ -37874,33 +37640,15 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-location{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Location of the trackball tooltip in pixels</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-pointIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Index of the point for which trackball tooltip is displayed</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-seriesIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Index of the series in series collection</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-currentText{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Text to be displayed in trackball tooltip. Use this option to add custom text in trackball tooltip</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-series{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Instance of the series object for which trackball tooltip is displayed.</td>
+<td class="description last"><ul>
+    <li>location - Location of the trackball tooltip in pixels</li>
+    <li>pointIndex - Index of the point for which trackball tooltip is displayed</li>
+    <li>seriesIndex - Index of the series in series collection</li>
+    <li>currentText - Text to be displayed in trackball tooltip. Use this option to add custom text in trackball tooltip</li>
+    <li>series - Instance of the series object for which trackball tooltip is displayed.</li>
+</ul></td>
 </tr>
 </tbody>
 </table>
@@ -37962,27 +37710,14 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-location{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">X and Y co-ordinate of the labels in chart area. </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-index{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Index of the label.</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-axis{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Instance of the corresponding axis.</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-text{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Label that is clicked.</td>
+<td class="description last"><ul><li> location - X and Y co-ordinate of the labels in chart area. 
+    </li>
+    <li>index - Index of the label.</li>
+    <li>axis - Instance of the corresponding axis.</li>
+    <li>text - Label that is clicked.</li>
+                             </ul></td>
 </tr>
 </tbody>
 </table>
@@ -38044,27 +37779,14 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-location{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">X and Y co-ordinate of the labels in chart area. </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-index{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Index of the label.</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-axis{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Instance of the corresponding axis.</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-text{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Label that is hovered.</td>
+<td class="description last"><ul><li>location - X and Y co-ordinate of the labels in chart area. 
+    </li>
+    <li>index - Index of the label.</li>
+    <li>axis - Instance of the corresponding axis.</li>
+    <li>text - Label that is hovered.</li>
+                             </ul></td>
 </tr>
 </tbody>
 </table>
@@ -38125,40 +37847,21 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-location{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">X and Y co-ordinate of the points with respect to chart area.  </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-id{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">ID of the target element. </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-size{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Width and height of the chart. </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-pageX{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">x-coordinate of the pointer, relative to the page </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-pageY{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">y-coordinate of the pointer, relative to the page </td>
+<td class="description last"><ul><li>location - X and Y co-ordinate of the points with respect to chart area.</li>
+<li>id - ID of the target element.</li>
+    <li>size - Width and height of the chart.</li>
+    <li>pageX - x-coordinate of the pointer, relative to the page</li>
+    <li>pageY - y-coordinate of the pointer, relative to the page</li>
+</ul>  </td>
 </tr>
 </tbody>
 </table>
 
 
 ### multiLevelLabelClick
-{:#events:chartclick}
+{:#events:multilevellabelclick}
 
 
 
@@ -38212,21 +37915,12 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-location{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">X and Y co-ordinate of the points with respect to chart area.  </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-axis{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">axis of the multilevellabels. </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-multilevellabel{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Multi level label details  </td>
+<td class="description last"><ul><li>location - X and Y co-ordinate of the points with respect to chart area.</li>
+    <li>axis - axis of the multilevellabels.</li>
+    <li>multilevellabel - Multi level label details</li>
+</ul></td>
 </tr>
 </tbody>
 </table>
@@ -38285,34 +37979,16 @@ type{% endhighlight %}</td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
+<tr>
 <td class="name">{% highlight js %}
-location{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">X and Y co-ordinate of the points with respect to chart area.  </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-id{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">ID of the target element. </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-size{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Width and height of the chart. </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-pageX{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">x-coordinate of the pointer, relative to the page </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-pageY{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">y-coordinate of the pointer, relative to the page </td>
+<td class="description last"><ul><li>location - X and Y co-ordinate of the points with respect to chart area.</li>
+<li>id - ID of the target element.</li>
+    <li>size - Width and height of the chart.</li>
+    <li>pageX - x-coordinate of the pointer, relative to the page</li>
+    <li>pageY - y-coordinate of the pointer, relative to the page</li>
+</ul>  </td>
 </tr>
 </tbody>
 </table>
@@ -38371,41 +38047,23 @@ type{% endhighlight %}</td>
 <td class="description last">Name of the event</td>
 </tr>
 <tr>
+<tr>
 <td class="name">{% highlight js %}
-location{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">X and Y co-ordinate of the points with respect to chart area.  </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-id{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">ID of the target element. </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-size{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Width and height of the chart. </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-pageX{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">x-coordinate of the pointer, relative to the page </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-pageY{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">y-coordinate of the pointer, relative to the page </td>
+<td class="description last"><ul><li>location - X and Y co-ordinate of the points with respect to chart area.</li>
+<li>id - ID of the target element.</li>
+    <li>size - Width and height of the chart.</li>
+    <li>pageX - x-coordinate of the pointer, relative to the page</li>
+    <li>pageY - y-coordinate of the pointer, relative to the page</li>
+</ul>  </td>
 </tr>
 </tbody>
 </table>
 
 
 ### chartMouseLeave
-{:#events:chartMouseLeave}
+{:#events:chartmouseleave}
 
 
 
@@ -38459,39 +38117,20 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-location{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">X and Y co-ordinate of the points with respect to chart area.  </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-id{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">ID of the target element. </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-size{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Width and height of the chart. </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-pageX{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">x-coordinate of the pointer, relative to the page </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-pageY{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">y-coordinate of the pointer, relative to the page </td>
+<td class="description last"><ul><li>location - X and Y co-ordinate of the points with respect to chart area.</li>
+<li>id - ID of the target element.</li>
+    <li>size - Width and height of the chart.</li>
+    <li>pageX - x-coordinate of the pointer, relative to the page</li>
+    <li>pageY - y-coordinate of the pointer, relative to the page</li>
+</ul>  </td>
 </tr>
 </tbody>
 </table>
 
 ### annotationClick
-{:#events:annotationClick}
+{:#events:annotationclick}
 
 
 
@@ -38545,30 +38184,16 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-location{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">X and Y co-ordinate of the annotation in chart area.  </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-contentData{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Information about the annotation, like Coordinate unit, Region, content </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-pageX{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">x-coordinate of the pointer, relative to the page  </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-pageY{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">y-coordinate of the pointer, relative to the page </td>
+<td class="description last"><ul>
+    <li>location - X and Y co-ordinate of the annotation in chart area. </li>
+    <li>contentData - Information about the annotation, like Coordinate unit, Region, content</li>
+    <li>pageX- x-coordinate of the pointer, relative to the page</li>
+    <li>pageY - y-coordinate of the pointer, relative to the page</li>
+                             </ul> </td>
 </tr>
 </tbody>
-</table>
 
 
 ### afterResize
@@ -38626,39 +38251,17 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-width{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Chart width, after resize  </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-height{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Chart height, after resize  </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-prevWidth{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Chart width, before resize  </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-prevHeight{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Chart height, before resize  </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-originalWidth{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Chart width, when the chart was first rendered  </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-originalHeight{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Chart height, when the chart was first rendered  </td>
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last"><ul><li>
+    width - Chart width, after resize</li>
+    <li>height - Chart height, after resize</li>
+    <li>prevWidth - Chart width, before resize</li>
+    <li>prevHeight - Chart height, before resize</li>
+    <li>originalWidth- Chart width, when the chart was first rendered</li>
+    <li>originalHeight - Chart height, when the chart was first rendered </li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
@@ -38721,27 +38324,13 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-currentWidth{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Chart width, before resize  </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-currentHeight{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Chart height, before resize  </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-newWidth{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Chart width, after resize   </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-newHeight{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Chart height, after resize   </td>
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last"><ul><li>currentWidth - Chart width, before resize</li>
+    <li>currentHeight - Chart height, before resize</li>
+    <li>newWidth - Chart width, after resize</li>
+    <li>newHeight - Chart height, after resize</li>
+</ul> </td>
 </tr>
 </tbody>
 </table>
@@ -38751,7 +38340,7 @@ newHeight{% endhighlight %}</td>
 
 
 ### errorBarRendering
-{:#events:errorBarRendering}
+{:#events:errorbarrendering}
 
 
 
@@ -38805,16 +38394,16 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-errorbar{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Error bar Object  </td>
+<td class="description last"> <b>errorbar</b> - Error bar Object  </td>
 </tr>
 </tbody>
 </table>
 
 
 ### multiLevelLabelRendering
-{:#events:multiLevelLabelRendering}
+{:#events:multilevellabelrendering}
 
 
 
@@ -38868,16 +38457,16 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-multilevellabels{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">MultiLevel Label Object  </td>
+<td class="description last"><b>multilevellabels</b> - MultiLevel Label Object  </td>
 </tr>
 </tbody>
 </table>
 
 
 ### trendlineRendering
-{:#events:trendlineRendering}
+{:#events:trendlinerendering}
 
 
 
@@ -38931,27 +38520,14 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-trendlines{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Trendline Object  </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-series{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Series data of the chart</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-forwardForecast{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last"> Forward Forecast value for the trendline </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-backwardForecast{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Backward Forecast value for the trendline  </td>
+<td class="description last"><ul>
+    <li>trendlines - Trendline Object</li>
+    <li>series - Series data of the chart</li>
+    <li>forwardForecast - Forward Forecast value for the trendline</li>
+    <li>backwardForecast - Backward Forecast value for the trendline</li>
+</ul></td>
 </tr>
 </tbody>
 </table>
@@ -38976,22 +38552,13 @@ Trigger, after the scrollbar position is changed.
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
+<td class="name">{% highlight js %}
 data{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameters from RangeNavigator</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-dataoldRange{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the scrollbar position old start and end range value on changing scrollbar</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-datanewRange{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the scrollbar position new start and end range value on changing scrollbar</td>
+<td class="description last"><ul>
+    <li>oldRange - returns the scrollbar position old start and end range value on change end of scrollbar</li>
+    <li>newRange - returns the scrollbar position new start and end range value on change end of scrollbar</li>
+</ul></td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -39044,22 +38611,13 @@ Event triggered when scroll starts
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
+<td class="name">{% highlight js %}
 data{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameters from RangeNavigator</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-datastartRange{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the scrollbar position starting range value on changing scrollbar</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-dataendRange{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the scrollbar position end range value on changing scrollbar</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last"><ul>
+    <li>startRange - returns the scrollbar position starting range value on changing scrollbar</li>
+    <li>endRange - returns the scrollbar position end range value on changing scrollbar</li>
+</ul></td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -39113,22 +38671,13 @@ Event triggered when scroll end
 </thead>
 <tbody>
 <tr>
-<td class="name">{% highlight html %}
+<td class="name">{% highlight js %}
 data{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">parameters from RangeNavigator</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-dataoldRange{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the scrollbar position old start and end range value on change end of scrollbar</td>
-</tr>
-<tr>
-<td class="name">{% highlight html %}
-datanewRange{% endhighlight %}</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the scrollbar position new start and end range value on change end of scrollbar</td>
+<td class="description last"><ul>
+    <li>oldRange - returns the scrollbar position old start and end range value on change end of scrollbar</li>
+    <li>newRange - returns the scrollbar position new start and end range value on change end of scrollbar</li>
+</ul></td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
@@ -39165,7 +38714,7 @@ $("#container").ejChart({
 
 
 ### dragStart
-{:#events:dragStart}
+{:#events:dragstart}
 
 
 
@@ -39219,24 +38768,16 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-seriesIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Series Index of the point held for dragging  </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-pointIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">PointIndex of the point held for dragging </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-point{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Information of the point held for dragging</td>
+<td class="description last"><ul><li>seriesIndex - Series Index of the point held for dragging</li>
+    <li>pointIndex - PointIndex of the point held for dragging</li>
+    <li>point - Information of the point held for dragging</li>
+</ul>  </td>
 </tr>
 </tbody>
 </table>
+
 
 
 ### dragging
@@ -39294,34 +38835,20 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-seriesIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Series Index of the point held for dragging  </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-pointIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">PointIndex of the point held for dragging </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-oldValue{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Previous value of the point before dragging</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-newValue{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Current value of the point</td>
+<td class="description last"><ul><li>seriesIndex - Series Index of the point held for dragging</li>
+    <li>pointIndex - PointIndex of the point held for dragging</li>
+    <li>oldValue - Previous value of the point before dragging</li>
+    <li>newValue - Current value of the point</li>
+</ul>  </td>
 </tr>
 </tbody>
 </table>
 
 
 ### dragEnd
-{:#events:dragEnd}
+{:#events:dragend}
 
 
 
@@ -39375,39 +38902,20 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-seriesIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Series Index of the point held for dragging  </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-pointIndex{% endhighlight %}</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">PointIndex of the point held for dragging </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-oldValue{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">Previous value of the point before dragging</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-newValue{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Current value of the point</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-series{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Contains the all the series information of the chart</td>
+<td class="description last"><ul><li>seriesIndex - Series Index of the point held for dragging</li>
+    <li>pointIndex - PointIndex of the point held for dragging</li>
+    <li>oldValue - Previous value of the point before dragging</li>
+    <li>newValue - Current value of the point</li>
+    <li>series - Contains the all the series information of the chart</li>
+</ul>  </td>
 </tr>
 </tbody>
 </table>
 
 ### subTitleRendering
-{:#events:subTitleRendering}
+{:#events:subtitlerendering}
 
 
 
@@ -39461,21 +38969,13 @@ type{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight js %}
-location{% endhighlight %}</td>
+data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">location of the subTitle text </td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-subtitle{% endhighlight %}</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">text of the subtitle</td>
-</tr>
-<tr>
-<td class="name">{% highlight js %}
-size{% endhighlight %}</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description last">Size of the Subtitle text </td>
+<td class="description last"><ul>
+    <li>location - location of the subTitle text</li>
+    <li>subtitle - text of the subtitle</li>
+    <li>size - Size of the Subtitle text</li>
+</ul></td>
 </tr>
 </tbody>
 </table>
