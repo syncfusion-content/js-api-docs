@@ -541,6 +541,199 @@ series :[{fill : "green"}]
 });
 {% endhighlight %}
 
+### seriesSettings `array`
+{:#members:seriessettings}
+
+
+
+
+Specifies the  properties used for customizing all the range series.
+
+
+
+### seriesSettings.xName `string`
+{:#members:seriessettings.xname}
+
+
+
+
+Name of the property in the datasource that contains x value for the series.
+
+
+#### Default Value
+
+
+
+ * null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejRangeNavigator({
+seriesSettings : [{xName: "XValue" }]                   
+});
+ {% endhighlight %}
+
+
+
+### seriesSettings.yName `string`
+{:#members:seriessettings.xname}
+
+
+
+
+Name of the property in the datasource that contains y value for the series.
+
+
+#### Default Value
+
+
+
+ * null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+
+$("#container").ejRangeNavigator({
+seriesSettings : [{xName: "YValue" }]                   
+});
+ {% endhighlight %}
+
+
+
+### seriesSettings.dataSource `object`
+{:#members:seriesSettings-datasource}
+
+
+
+
+Specifies the dataSource for the series. It can be an array of JSON objects or an instance of ej.DataManager.
+
+
+#### Default Value
+
+
+
+* null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejRangeNavigator({
+seriesSettings : [{dataSource: data }]                   
+});
+ {% endhighlight %}
+
+
+
+### seriesSettings.type `enum`
+{:#members:seriesSettings.type}
+
+
+<ts ref = "ej.datavisualization.RangeNavigator.Type"/>
+
+Specifies the type of the series to render in chart.
+
+
+#### Default Value
+
+
+
+* "column". see <a href="global.html#members:type">Type</a>
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejRangeNavigator({
+seriesSettings : [{type : "line" }]                   
+});
+ {% endhighlight %}
+
+
+### seriesSettings.enableAnimation `boolean`
+{:#members:seriesSettings-enableanimation}
+
+
+
+
+Enable/disable the animation of series.
+
+
+#### Default Value
+
+
+
+* false
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejRangeNavigator({
+seriesSettings : [{enableAnimation : true }]                   
+});
+{% endhighlight %}
+
+
+
+### seriesSettings.fill `string`
+{:#members:seriesSettings-fill}
+
+
+
+
+Fill color of the series.
+
+
+#### Default Value
+
+
+
+ * null
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejRangeNavigator({
+seriesSettings :[{fill : "green"}]                 
+});
+{% endhighlight %}
+
+
 
 ### enableDeferredUpdate `boolean`
 {:#members:enabledeferredupdate}

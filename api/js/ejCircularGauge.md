@@ -171,6 +171,63 @@ $("#CoreCircularGauge").ejCircularGauge({  gaugePosition:"center", distanceFromC
 </script>{% endhighlight %}
 
 
+### rangeZOrder `enum`
+{:#members:rangezorder}
+
+<ts name= "ej.datavisualization.CircularGauge.RangeZOrderPlacement"/>
+
+
+Specify range zOrder placement of circular gauge.
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Rear</td>
+<td class="type">string</td>
+<td class="description">Place the ranges above the ticks of the gauge</td>
+</tr>
+<tr>
+<td class="name">
+Front</td>
+<td class="type">string</td>
+<td class="description">Place the ticks above the ranges of the gauge</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Default Value
+
+
+
+* Rear
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>  
+        $("#CoreCircularGauge").ejCircularGauge({rangeZOrder:"rear"});
+</script>{% endhighlight %}
+
+
+
+
 
 
 ### enableAnimation `boolean`
@@ -5687,7 +5744,32 @@ $("#CoreCircularGauge").ejCircularGauge({
 {% endhighlight %}
 
 
+### legend.toggleVisibility `boolean`
+{:#members:legend-togglevisibility}
 
+
+Toggles the visibility of the ranges.
+
+
+#### Default Value
+
+* true
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#CoreCircularGauge").ejCircularGauge({
+
+   legend : {toggleVisibility : false}                     
+
+});
+
+{% endhighlight %}
 
 
 ### legend.alignment `enum`
