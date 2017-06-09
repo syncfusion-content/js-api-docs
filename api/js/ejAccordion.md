@@ -103,17 +103,17 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 {% endhighlight %}
 
 
-### ajaxSettings.async `Boolean`
+### ajaxSettings.async `boolean`
 {:#members:ajaxsettings-async}
 
 It specifies, whether to enable or disable asynchronous request.
 
-### ajaxSettings.cache `Boolean`
+### ajaxSettings.cache `boolean`
 {:#members:ajaxsettings-cache}
 
 It specifies the page will be cached in the web browser.
 
-### ajaxSettings.contentType `String`
+### ajaxSettings.contentType `string`
 {:#members:ajaxsettings-contenttype}
 
 It specifies the type of data is send in the query string.
@@ -123,17 +123,17 @@ It specifies the type of data is send in the query string.
 
 It specifies the data as an object, will be passed in the query string.
 
-### ajaxSettings.dataType `String`
+### ajaxSettings.dataType `string`
 {:#members:ajaxsettings-datatype}
 
 It specifies the type of data that you're expecting back from the response.
 
-### ajaxSettings.type `String`
+### ajaxSettings.type `string`
 {:#members:ajaxsettings-type}
 
 It specifies the HTTP request type.
 
-### allowKeyboardNavigation `Boolean`
+### allowKeyboardNavigation `boolean`
 {:#members:allowkeyboardnavigation}
 
 Accordion headers can be expanded and collapsed on keyboard action.
@@ -239,7 +239,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
          $("#accordion").ejAccordion({ collapsible: true});
 </script>{% endhighlight %}
 
-### cssClass `String`
+### cssClass `string`
 {:#members:cssclass}
 
 Sets the root CSS class for Accordion theme, which is used customize. 
@@ -287,12 +287,12 @@ Allows you to set the custom header Icon. It accepts two key values “header”
 
 * "{ header: "e-collapse", selectedHeader: "e-expand" }"
 
-### customIcon.header `String`
+### customIcon.header `string`
 {:#members:customicon-header}
 
 This class name set to collapsing header. 
 
-### customIcon.selectedHeader `String`
+### customIcon.selectedHeader `string`
 {:#members:customicon-selectedheader}
 
 This class name set to expanded (active) header. 
@@ -367,7 +367,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 </script>{% endhighlight %}
 
 
-### enableAnimation `Boolean`
+### enableAnimation `boolean`
 {:#members:enableanimation}
 
 Specifies the animation behavior in accordion.
@@ -404,7 +404,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 {% endhighlight %}
 
 
-### enabled `Boolean`
+### enabled `boolean`
 {:#members:enabled}
 
 With this enabled property, you can enable or disable the Accordion.
@@ -475,7 +475,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
         $("#accordion").ejAccordion({ enabledItems: [0,1] });
 </script>{% endhighlight %}
 
-### enableMultipleOpen `Boolean`
+### enableMultipleOpen `boolean`
 {:#members:enablemultipleopen}
 
 Multiple content panels to activate at a time.
@@ -510,7 +510,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 </script>{% endhighlight %}
 
 
-### enablePersistence `Boolean`
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 Save current model value to browser cookies for maintaining states. When refreshing the accordion control page, the model value is applied from browser cookies or HTML 5
@@ -546,7 +546,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
 </script>{% endhighlight %}
 
 
-### enableRTL `Boolean`
+### enableRTL `boolean`
 {:#members:enablertl}
 
 Display headers and panel text from right-to-left.
@@ -580,7 +580,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
         $("#accordion").ejAccordion({ enableRTL: true});
 </script>{% endhighlight %}
 
-### events `String`
+### events `string`
 {:#members:events}
 
 The events API binds the action for activating the accordion header. Users can activate the header by using mouse actions such as mouse-over, mouse-up, mouse-down, and so
@@ -919,7 +919,7 @@ JavaScript (JS) is an interpreted computer programming language. It was original
         $("#accordion").ejAccordion({ selectedItems: [0,1] });
 </script>{% endhighlight %}
 
-### showCloseButton `Boolean`
+### showCloseButton `boolean`
 {:#members:showclosebutton}
 
 Used to determines the close button visibility an each accordion items. This close button helps to remove the accordion item from the control.  
