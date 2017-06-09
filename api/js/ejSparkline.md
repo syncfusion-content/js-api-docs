@@ -1684,7 +1684,7 @@ type{% endhighlight %}</td>
 
 
 ### tooltipInitialize
-{:#events:tooltipinitialization}
+{:#events:tooltipinitialize}
 
 Fires before rendering trackball tooltip. You can use this event to customize the text displayed in trackball tooltip.
 
