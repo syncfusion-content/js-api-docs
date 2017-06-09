@@ -5491,7 +5491,7 @@ $("#Grid").ejGrid("addIgnoreOnToolbarServerClick","filterSettings");
 ### addRecord([data,\[serverChange\]])
 {:#methods:addrecord}
 
-Add a new record in grid control when allowAdding is set as true.Without passing this parameters it will add empty row. 
+Add a new record in grid control when allowAdding is set as true.Without passing parameters it will add empty row. 
 
 <table class="params">
 <thead>
@@ -8872,7 +8872,7 @@ $("#Grid").ejGrid("rowHeightRefresh");
 ### saveCell([preventSaveEvent])
 {:#methods:savecell}
 
-We can prevent the client side cellSave event triggering by passing the preventSaveEvent argument as true.Without argument it will save the particluar edited grid cell.
+We can prevent the client side cellSave event triggering by passing the preventSaveEvent argument as true.Without argument it will save the particular edited grid cell.
 
 <table class="params">
 <thead>
