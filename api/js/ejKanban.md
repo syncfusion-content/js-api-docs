@@ -5640,7 +5640,7 @@ Get the column details based on the given header text in Kanban.
 
 {:#methods:returns:}
 
-String
+string
 
 #### Example
 
@@ -5674,7 +5674,7 @@ Get the table details based on the given header table in Kanban.
 
 {:#methods:returns:}
 
-String
+string
 
 #### Example
 
