@@ -748,7 +748,7 @@ Controls the visibility of the column.
 
 {% endhighlight %}
 
-### columns.width `Number`
+### columns.width `number`
 
 {:#members:columns-width}
 
@@ -765,7 +765,7 @@ Gets or sets a value for treegrid column width
 {% endhighlight %}
 
 
-### columns.headerTemplateID `String`
+### columns.headerTemplateID `string`
 
 {:#members:columns-headertemplateid}
 
