@@ -884,7 +884,7 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png"});
 $("#tile").ejTile("option", "imageUrl", "themes/sample/tile/people.png"); </script>           
 {% endhighlight %}
 
-### locale `String`
+### locale `string`
 {:#members:locale}
 
 Set the localization culture for Tile Widget.

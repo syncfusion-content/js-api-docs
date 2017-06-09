@@ -2205,6 +2205,33 @@ Example
 
 Triggers before the AJAX request begins to load data in the ListBox widget. 
 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the ListBox model</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+
 Example
 {:.example}
 
@@ -2227,6 +2254,58 @@ $("#list").ejListBox({
 {:#events:actionsuccess}
 
 Triggers after the data requested via AJAX is successfully loaded in the ListBox widget. 
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">count</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns number of times trying to fetch the data</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the ListBox model</td>
+</tr>
+<tr>
+<td class="name">query</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the query for data retrieval </td>
+</tr>
+<tr>
+<td class="name">request</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the query for data retrieval from the Database </td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">result</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Returns the number of items fetched from remote data</td>
+</tr>
+<tr>
+<td class="name">xhr</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the requested data</td>
+</tr>
+</tbody>
+</table>
 
 N> It internally uses jQuery ajaxSuccess event. For details refer [here](http://api.jquery.com/ajaxsuccess/).
 
@@ -2253,6 +2332,58 @@ $("#list").ejListBox({
 
 Triggers when the AJAX requests complete. The request may get failed or succeed.
 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">count</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns number of times trying to fetch the data</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the ListBox model</td>
+</tr>
+<tr>
+<td class="name">query</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the query for data retrieval </td>
+</tr>
+<tr>
+<td class="name">request</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the query for data retrieval from the Database </td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">result</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Returns the number of items fetched from remote data</td>
+</tr>
+<tr>
+<td class="name">xhr</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the requested data</td>
+</tr>
+</tbody>
+</table>
+
 N> It internally uses jQuery ajaxComplete event. For details refer [here](http://api.jquery.com/ajaxcomplete/).
 
 Example
@@ -2278,6 +2409,43 @@ $("#list").ejListBox({
 {:#events:actionfailure}
 
 Triggers when the data requested from AJAX get failed.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">error</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the error message</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the ListBox model</td>
+</tr>
+<tr>
+<td class="name">query</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the query for data retrieval </td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
 
 N> It internally uses jQuery ajaxError event. For details refer [here](http://api.jquery.com/ajaxerror/).
 
