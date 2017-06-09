@@ -122,20 +122,20 @@ Enables or disables selecting the animation style for the popup list. Animation 
 
 <table>
 <tr>
-<th>Name<br/><br/></th>
-<th>Description<br/><br/></th>
+<th>Name<br/></th>
+<th>Description<br/></th>
 </tr>
 <tr>
-<td>none<br/><br/></td>
-<td>Supports to animation type with none type only.<br/><br/></td>
+<td>none<br/></td>
+<td>Supports to animation type with none type only.<br/></td>
 </tr>
 <tr>
-<td>slide<br/><br/></td>
-<td>Supports to animation type with slide type only.<br/><br/></td>
+<td>slide<br/></td>
+<td>Supports to animation type with slide type only.<br/></td>
 </tr>
 <tr>
-<td>fade<br/><br/></td>
-<td>Supports to animation type with fade type only.<br/><br/></td>
+<td>fade<br/></td>
+<td>Supports to animation type with fade type only.<br/></td>
 </tr>
 </table>
 
@@ -1033,16 +1033,16 @@ Enables or disables selecting multiple values from the suggestion list. Multiple
 
 <table>
 <tr>
-<th>Name<br/><br/></th>
-<th>Description<br/><br/></th>
+<th>Name<br/></th>
+<th>Description<br/></th>
 </tr>
 <tr>
-<td>Delimiter<br/><br/></td>
-<td>Multiple values are separated using a given special character.<br/><br/></td>
+<td>Delimiter<br/></td>
+<td>Multiple values are separated using a given special character.<br/></td>
 </tr>
 <tr>
-<td>VisualMode<br/><br/></td>
-<td>Each values are displayed in separate box with close button.<br/><br/></td>
+<td>VisualMode<br/></td>
+<td>Each values are displayed in separate box with close button.<br/></td>
 </tr>
 </table>
 
@@ -1272,16 +1272,16 @@ Sort order specifies whether the suggestion list values has to be displayed in a
 
 <table>
 <tr>
-<th>Name<br/><br/></th>
-<th>Description<br/><br/></th>
+<th>Name<br/></th>
+<th>Description<br/></th>
 </tr>
 <tr>
-<td>Ascending<br/><br/></td>
-<td>Items to be displayed in the suggestion list in ascending order.<br/><br/></td>
+<td>Ascending<br/></td>
+<td>Items to be displayed in the suggestion list in ascending order.<br/></td>
 </tr>
 <tr>
-<td>Descending<br/><br/></td>
-<td>Items to be displayed in the suggestion list in descending order.<br/><br/></td>
+<td>Descending<br/></td>
+<td>Items to be displayed in the suggestion list in descending order.<br/></td>
 </tr>
 </table>
 
@@ -1596,14 +1596,14 @@ Sets the value of the Autocomplete textbox based on the given key value.
 
 <table>
 <tr>
-<th>Name<br/><br/></th>
-<th>Type<br/><br/></th>
-<th>Description<br/><br/></th>
+<th>Name<br/></th>
+<th>Type<br/></th>
+<th>Description<br/></th>
 </tr>
 <tr>
-<td>Key<br/><br/></td>
-<td>string<br/><br/></td>
-<td>The key value of the specific suggestion item.<br/><br/></td>
+<td>Key<br/></td>
+<td>string<br/></td>
+<td>The key value of the specific suggestion item.<br/></td>
 </tr>
 </table>
 
@@ -1624,14 +1624,14 @@ Sets the value of the Autocomplete textbox based on the given input text value.
 
 <table>
 <tr>
-<th>Name<br/><br/></th>
-<th>Type<br/><br/></th>
-<th>Description<br/><br/></th>
+<th>Name<br/></th>
+<th>Type<br/></th>
+<th>Description<br/></th>
 </tr>
 <tr>
-<td>Text<br/><br/></td>
-<td>string<br/><br/></td>
-<td>The text (label) value of the specific suggestion item.<br/><br/></td>
+<td>Text<br/></td>
+<td>string<br/></td>
+<td>The text (label) value of the specific suggestion item.<br/></td>
 </tr>
 </table>
 
@@ -1647,7 +1647,35 @@ Sets the value of the Autocomplete textbox based on the given input text value.
 
 ### actionBegin
 {:#events:actionBegin}
+
 Triggers when the AJAX requests Begins.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the Autocomplete model</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
 
  N>  It internally uses jQuery ajaxStart event. For details refer [here](http://api.jquery.com/ajaxStart/#).
 
@@ -1668,6 +1696,58 @@ Triggers when the AJAX requests Begins.
 
 Triggers when the data requested from AJAX will get successfully loaded in the **Autocomplete** widget. 
 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">count</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns number of times trying to fetch the data</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the Autocomplete model</td>
+</tr>
+<tr>
+<td class="name">query</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the query for data retrieval </td>
+</tr>
+<tr>
+<td class="name">request</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the query for data retrieval from the Database </td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">result</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Returns the number of items fetched from remote data</td>
+</tr>
+<tr>
+<td class="name">xhr</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the requested data</td>
+</tr>
+</tbody>
+</table>
+
  N>  It internally uses jQuery ajaxSuccess event. For details refer [here](http://api.jquery.com/ajaxsuccess/#).
 
 #### Example
@@ -1687,6 +1767,58 @@ Triggers when the data requested from AJAX will get successfully loaded in the *
 
 Triggers when the AJAX requests complete. The request may get failed or succeed.
 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">count</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns number of times trying to fetch the data</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the Autocomplete model</td>
+</tr>
+<tr>
+<td class="name">query</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the query for data retrieval </td>
+</tr>
+<tr>
+<td class="name">request</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the query for data retrieval from the Database </td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">result</td>
+<td class="type"><span class="param-type">array</span></td>
+<td class="description">Returns the number of items fetched from remote data</td>
+</tr>
+<tr>
+<td class="name">xhr</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the requested data</td>
+</tr>
+</tbody>
+</table>
+
 N> It internally uses jQuery ajaxComplete event. For details refer [here](http://api.jquery.com/ajaxcomplete/#).
 
 #### Example
@@ -1705,6 +1837,43 @@ N> It internally uses jQuery ajaxComplete event. For details refer [here](http:/
 {:#events:actionfailure}
 
 Triggers when the data requested from AJAX get failed.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">error</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the error message</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the Autocomplete model</td>
+</tr>
+<tr>
+<td class="name">query</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the query for data retrieval </td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
 
  N>  It internally uses jQuery ajaxError event. For details refer [here](http://api.jquery.com/ajaxerror/#).
 
@@ -1727,29 +1896,29 @@ Triggers when the text box value is changed.
 
 <table>
 <tr>
-<th>Name<br/><br/></th>
-<th>Type<br/><br/></th>
-<th>Description<br/><br/></th>
+<th>Name<br/></th>
+<th>Type<br/></th>
+<th>Description<br/></th>
 </tr>
 <tr>
-<td>cancel<br/><br/></td>
-<td>boolean<br/><br/></td>
-<td>Set this option to true to cancel the event.<br/><br/></td>
+<td>cancel<br/></td>
+<td>boolean<br/></td>
+<td>Set this option to true to cancel the event.<br/></td>
 </tr>
 <tr>
-<td>model<br/><br/></td>
-<td><ts ref="ej.Autocomplete.Model"/>Object<br/><br/></td>
-<td>Instance of the autocomplete model object.<br/><br/></td>
+<td>model<br/></td>
+<td><ts ref="ej.Autocomplete.Model"/>Object<br/></td>
+<td>Instance of the autocomplete model object.<br/></td>
 </tr>
 <tr>
-<td>type<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Name of the event.<br/><br/></td>
+<td>type<br/></td>
+<td>string<br/></td>
+<td>Name of the event.<br/></td>
 </tr>
 <tr>
-<td>value<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Value of the autocomplete textbox.<br/><br/></td>
+<td>value<br/></td>
+<td>string<br/></td>
+<td>Value of the autocomplete textbox.<br/></td>
 </tr>
 </table>
 
@@ -1772,24 +1941,24 @@ Triggers after the suggestion popup is closed.
 
 <table>
 <tr>
-<th>Name<br/><br/></th>
-<th>Type<br/><br/></th>
-<th>Description<br/><br/></th>
+<th>Name<br/></th>
+<th>Type<br/></th>
+<th>Description<br/></th>
 </tr>
 <tr>
-<td>cancel<br/><br/></td>
-<td>boolean<br/><br/></td>
-<td>Set this option to true to cancel the event.<br/><br/></td>
+<td>cancel<br/></td>
+<td>boolean<br/></td>
+<td>Set this option to true to cancel the event.<br/></td>
 </tr>
 <tr>
-<td>model<br/><br/></td>
-<td><ts ref="ej.Autocomplete.Model"/>Object<br/><br/></td>
-<td>Instance of the autocomplete model object.<br/><br/></td>
+<td>model<br/></td>
+<td><ts ref="ej.Autocomplete.Model"/>Object<br/></td>
+<td>Instance of the autocomplete model object.<br/></td>
 </tr>
 <tr>
-<td>type<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Name of the event.<br/><br/></td>
+<td>type<br/></td>
+<td>string<br/></td>
+<td>Name of the event.<br/></td>
 </tr>
 </table>
 
@@ -1812,24 +1981,24 @@ Triggers when Autocomplete widget is created.
 
 <table>
 <tr>
-<th>Name<br/><br/></th>
-<th>Type<br/><br/></th>
-<th>Description<br/><br/></th>
+<th>Name<br/></th>
+<th>Type<br/></th>
+<th>Description<br/></th>
 </tr>
 <tr>
-<td>cancel<br/><br/></td>
-<td>boolean<br/><br/></td>
-<td>Set this option to true to cancel the event.<br/><br/></td>
+<td>cancel<br/></td>
+<td>boolean<br/></td>
+<td>Set this option to true to cancel the event.<br/></td>
 </tr>
 <tr>
-<td>model<br/><br/></td>
-<td><ts ref="ej.Autocomplete.Model"/>Object<br/><br/></td>
-<td>Instance of the autocomplete model object.<br/><br/></td>
+<td>model<br/></td>
+<td><ts ref="ej.Autocomplete.Model"/>Object<br/></td>
+<td>Instance of the autocomplete model object.<br/></td>
 </tr>
 <tr>
-<td>type<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Name of the event.<br/><br/></td>
+<td>type<br/></td>
+<td>string<br/></td>
+<td>Name of the event.<br/></td>
 </tr>
 </table>
 
@@ -1852,24 +2021,24 @@ Triggers after the Autocomplete widget is destroyed.
 
 <table>
 <tr>
-<th>Name<br/><br/></th>
-<th>Type<br/><br/></th>
-<th>Description<br/><br/></th>
+<th>Name<br/></th>
+<th>Type<br/></th>
+<th>Description<br/></th>
 </tr>
 <tr>
-<td>cancel<br/><br/></td>
-<td>boolean<br/><br/></td>
-<td>Set this option to true to cancel the event.<br/><br/></td>
+<td>cancel<br/></td>
+<td>boolean<br/></td>
+<td>Set this option to true to cancel the event.<br/></td>
 </tr>
 <tr>
-<td>model<br/><br/></td>
-<td><ts ref="ej.Autocomplete.Model"/>Object<br/><br/></td>
-<td>Instance of the autocomplete model object.<br/><br/></td>
+<td>model<br/></td>
+<td><ts ref="ej.Autocomplete.Model"/>Object<br/></td>
+<td>Instance of the autocomplete model object.<br/></td>
 </tr>
 <tr>
-<td>type<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Name of the event.<br/><br/></td>
+<td>type<br/></td>
+<td>string<br/></td>
+<td>Name of the event.<br/></td>
 </tr>
 </table>
 
@@ -1892,29 +2061,29 @@ Triggers after the autocomplete textbox is focused.
 
 <table>
 <tr>
-<th>Name<br/><br/></th>
-<th>Type<br/><br/></th>
-<th>Description<br/><br/></th>
+<th>Name<br/></th>
+<th>Type<br/></th>
+<th>Description<br/></th>
 </tr>
 <tr>
-<td>cancel<br/><br/></td>
-<td>boolean<br/><br/></td>
-<td>Set this option to true to cancel the event.<br/><br/></td>
+<td>cancel<br/></td>
+<td>boolean<br/></td>
+<td>Set this option to true to cancel the event.<br/></td>
 </tr>
 <tr>
-<td>model<br/><br/></td>
-<td><ts ref="ej.Autocomplete.Model"/>Object<br/><br/></td>
-<td>Instance of the autocomplete model object.<br/><br/></td>
+<td>model<br/></td>
+<td><ts ref="ej.Autocomplete.Model"/>Object<br/></td>
+<td>Instance of the autocomplete model object.<br/></td>
 </tr>
 <tr>
-<td>type<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Name of the event.<br/><br/></td>
+<td>type<br/></td>
+<td>string<br/></td>
+<td>Name of the event.<br/></td>
 </tr>
 <tr>
-<td>value<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Value of the autocomplete textbox.<br/><br/></td>
+<td>value<br/></td>
+<td>string<br/></td>
+<td>Value of the autocomplete textbox.<br/></td>
 </tr>
 </table>
 
@@ -1937,29 +2106,29 @@ Triggers after the Autocomplete textbox gets out of the focus.
 
 <table>
 <tr>
-<th>Name<br/><br/></th>
-<th>Type<br/><br/></th>
-<th>Description<br/><br/></th>
+<th>Name<br/></th>
+<th>Type<br/></th>
+<th>Description<br/></th>
 </tr>
 <tr>
-<td>cancel<br/><br/></td>
-<td>boolean<br/><br/></td>
-<td>Set this option to true to cancel the event.<br/><br/></td>
+<td>cancel<br/></td>
+<td>boolean<br/></td>
+<td>Set this option to true to cancel the event.<br/></td>
 </tr>
 <tr>
-<td>model<br/><br/></td>
-<td><ts ref="ej.Autocomplete.Model"/>Object<br/><br/></td>
-<td>Instance of the autocomplete model object.<br/><br/></td>
+<td>model<br/></td>
+<td><ts ref="ej.Autocomplete.Model"/>Object<br/></td>
+<td>Instance of the autocomplete model object.<br/></td>
 </tr>
 <tr>
-<td>type<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Name of the event.<br/><br/></td>
+<td>type<br/></td>
+<td>string<br/></td>
+<td>Name of the event.<br/></td>
 </tr>
 <tr>
-<td>value<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Value of the autocomplete textbox.<br/><br/></td>
+<td>value<br/></td>
+<td>string<br/></td>
+<td>Value of the autocomplete textbox.<br/></td>
 </tr>
 </table>
 
@@ -1982,24 +2151,24 @@ Triggers after the suggestion list is opened.
 
 <table>
 <tr>
-<th>Name<br/><br/></th>
-<th>Type<br/><br/></th>
-<th>Description<br/><br/></th>
+<th>Name<br/></th>
+<th>Type<br/></th>
+<th>Description<br/></th>
 </tr>
 <tr>
-<td>cancel<br/><br/></td>
-<td>boolean<br/><br/></td>
-<td>Set this option to true to cancel the event.<br/><br/></td>
+<td>cancel<br/></td>
+<td>boolean<br/></td>
+<td>Set this option to true to cancel the event.<br/></td>
 </tr>
 <tr>
-<td>model<br/><br/></td>
-<td><ts ref="ej.Autocomplete.Model"/>Object<br/><br/></td>
-<td>Instance of the autocomplete model object.<br/><br/></td>
+<td>model<br/></td>
+<td><ts ref="ej.Autocomplete.Model"/>Object<br/></td>
+<td>Instance of the autocomplete model object.<br/></td>
 </tr>
 <tr>
-<td>type<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Name of the event.<br/><br/></td>
+<td>type<br/></td>
+<td>string<br/></td>
+<td>Name of the event.<br/></td>
 </tr>
 </table>
 
@@ -2022,44 +2191,44 @@ Triggers when an item has been selected from the suggestion list.
 
 <table>
 <tr>
-<th>Name<br/><br/></th>
-<th>Type<br/><br/></th>
-<th>Description<br/><br/></th>
+<th>Name<br/></th>
+<th>Type<br/></th>
+<th>Description<br/></th>
 </tr>
 <tr>
-<td>cancel<br/><br/></td>
-<td>boolean<br/><br/></td>
-<td>Set this option to true to cancel the event.<br/><br/></td>
+<td>cancel<br/></td>
+<td>boolean<br/></td>
+<td>Set this option to true to cancel the event.<br/></td>
 </tr>
 <tr>
-<td>model<br/><br/></td>
-<td><ts ref="ej.Autocomplete.Model"/>Object<br/><br/></td>
-<td>Instance of the autocomplete model object.<br/><br/></td>
+<td>model<br/></td>
+<td><ts ref="ej.Autocomplete.Model"/>Object<br/></td>
+<td>Instance of the autocomplete model object.<br/></td>
 </tr>
 <tr>
-<td>type<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Name of the event.<br/><br/></td>
+<td>type<br/></td>
+<td>string<br/></td>
+<td>Name of the event.<br/></td>
 </tr>
 <tr>
-<td>value<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Value of the autocomplete textbox.<br/><br/></td>
+<td>value<br/></td>
+<td>string<br/></td>
+<td>Value of the autocomplete textbox.<br/></td>
 </tr>
 <tr>
-<td>text<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Text of the selected item.<br/><br/></td>
+<td>text<br/></td>
+<td>string<br/></td>
+<td>Text of the selected item.<br/></td>
 </tr>
 <tr>
-<td>key<br/><br/></td>
-<td>string<br/><br/></td>
-<td>Key of the selected item.<br/><br/></td
+<td>key<br/></td>
+<td>string<br/></td>
+<td>Key of the selected item.<br/></td
 ></tr>
 <tr>
-<td>Item<br/><br/></td>
-<td><ts ref="ej.Autocomplete.Model"/>Object<br/><br/></td>
-<td>Data object of the selected item.<br/><br/></td>
+<td>Item<br/></td>
+<td><ts ref="ej.Autocomplete.Model"/>Object<br/></td>
+<td>Data object of the selected item.<br/></td>
 </tr>
 </table>
 
