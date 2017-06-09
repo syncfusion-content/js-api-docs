@@ -1550,7 +1550,7 @@ to get the key of bing map
 Options for enabling and configuring labelSettings labelPath, smartLabelSize, labelLength etc.,
 
 
-### layers.labelSettings.enableSmartLabel `Boolean`
+### layers.labelSettings.enableSmartLabel `boolean`
 {:#members:layers-labelsettings-enablesmartlabel}
 
 enable or disable the enableSmartLabel property
@@ -4419,7 +4419,7 @@ to get the key of bing map
 Options for enabling and configuring labelSettings labelPath, smartLabelSize, labelLength etc.,
 
 
-### layers.sublayers.labelSettings.enableSmartLabel `Boolean`
+### layers.sublayers.labelSettings.enableSmartLabel `boolean`
 {:#members:layers-sublayers-labelsettings-enablesmartlabel}
 
 enable or disable the enableSmartLabel property
