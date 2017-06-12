@@ -16897,6 +16897,11 @@ Triggers when editor got focus at the time of node's label or text node editing.
 			<td class="type">object</td>
 			<td class="description last">Returns the diagram model.</td>
 		</tr>
+        <tr>
+			<td class="name">event</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the event triggered</td>
+		</tr>
 		<tr>
 			<td class="name">type</td>
 			<td class="type">string</td>
