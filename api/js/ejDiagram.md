@@ -16900,7 +16900,7 @@ Triggers when editor got focus at the time of node's label or text node editing.
         <tr>
 			<td class="name">event</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the event triggered</td>
+			<td class="description last">parameter returns the diagram editbox event object</td>
 		</tr>
 		<tr>
 			<td class="name">type</td>
