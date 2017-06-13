@@ -77,7 +77,7 @@ $('#Grid').ejGrid({
 
 ## Members
 
-### allowCellMerging `Boolean`
+### allowCellMerging `boolean`
 {:#members:allowcellmerging}
 
 Gets or sets a value that indicates whether to customizing cell based on our needs.
@@ -98,7 +98,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### allowGrouping `Boolean`
+### allowGrouping `boolean`
 {:#members:allowgrouping}
 
 Gets or sets a value that indicates whether to enable dynamic grouping behavior. Grouping can be done by drag on drop desired columns to grid&rsquo;s GroupDropArea. This can be further customized through &ldquo;groupSettings&rdquo; property.
@@ -119,7 +119,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### allowKeyboardNavigation `Boolean`
+### allowKeyboardNavigation `boolean`
 {:#members:allowkeyboardnavigation}
 
 Gets or sets a value that indicates whether to enable keyboard support for performing grid actions. selectionType &ndash; Gets or sets a value that indicates whether to enable single row or multiple rows selection behavior in grid. Multiple selection can be done through by holding CTRL and clicking the grid rows
@@ -140,7 +140,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### allowFiltering `Boolean`
+### allowFiltering `boolean`
 {:#members:allowFiltering}
 
 Gets or sets a value that indicates whether to enable dynamic filtering behavior on grid. Filtering can be used to limit the records displayed using required criteria and this can be further customized through &ldquo;filterSettings&rdquo; property
@@ -161,7 +161,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### allowSorting `Boolean`
+### allowSorting `boolean`
 {:#members:allowsorting}
 
 Gets or sets a value that indicates whether to enable the dynamic sorting behavior on grid data. Sorting can be done through clicking on particular column header.
@@ -182,7 +182,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### allowMultiSorting `Boolean`
+### allowMultiSorting `boolean`
 {:#members:allowmultisorting}
 
 Gets or sets a value that indicates whether to enable multi columns sorting behavior in grid. Sort multiple columns by holding CTRL and click on the corresponding column header.
@@ -204,7 +204,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### allowPaging `Boolean`
+### allowPaging `boolean`
 {:#members:allowpaging}
 
 This specifies the grid to show the paginated data. Also enables pager control at the bottom of grid for dynamic navigation through data source. Paging can be further customized through &ldquo;pageSettings&rdquo; property.
@@ -225,7 +225,7 @@ $("#Grid").ejGrid({
 </script>                 
 {% endhighlight %}
 
-### allowReordering `Boolean`
+### allowReordering `boolean`
 {:#members:allowreordering}
 
 Gets or sets a value that indicates whether to enable the columns reordering behavior in the grid. Reordering can be done through by drag and drop the particular column from one index to another index within the grid.
@@ -246,7 +246,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### allowResizeToFit `Boolean`
+### allowResizeToFit `boolean`
 {:#members:allowresizetofit}
 
 Gets or sets a value that indicates whether the column is non resizable. Column width is set automatically based on the content or header text which is large.
@@ -267,7 +267,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### allowResizing `Boolean`
+### allowResizing `boolean`
 {:#members:allowresizing}
 
 Gets or sets a value that indicates whether to enable dynamic resizable of columns. Resize the width of the columns by simply click and move the particular column header line
@@ -290,7 +290,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### allowRowDragAndDrop `Boolean`
+### allowRowDragAndDrop `boolean`
 {:#members:allowrowdraganddrop}
 
 Gets or sets a value that indicates whether to enable the rows reordering in Grid and drag & drop rows between multiple Grid.
@@ -311,7 +311,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### allowScrolling `Boolean`
+### allowScrolling `boolean`
 {:#members:allowscrolling}
 
 Gets or sets a value that indicates whether to enable the scrollbar in the grid and view the records by scroll through the grid manually
@@ -333,7 +333,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### allowSearching `Boolean`
+### allowSearching `boolean`
 {:#members:allowsearching}
 
 Gets or sets a value that indicates whether to enable dynamic searching behavior in grid. Currently search box can be enabled through &ldquo;toolbarSettings&rdquo;
@@ -355,7 +355,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### allowSelection `Boolean`
+### allowSelection `boolean`
 {:#members:allowselection}
 
 Gets or sets a value that indicates whether user can select rows on grid. On enabling feature, selected row will be highlighted.
@@ -376,7 +376,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### allowTextWrap `Boolean`
+### allowTextWrap `boolean`
 {:#members:allowtextwrap}
 
 Gets or sets a value that indicates whether the Content will wrap to the next line if the content exceeds the boundary of the Column Cells.
@@ -397,7 +397,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### allowMultipleExporting `Boolean`
+### allowMultipleExporting `boolean`
 {:#members:allowmultipleexporting}
 
 Gets or sets a value that indicates whether to enable the multiple exporting behavior on grid data. 
@@ -418,7 +418,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### commonWidth `Number`
+### commonWidth `number`
 {:#members:commonwidth}
 
 Gets or sets a value that indicates to define common width for all the columns in the grid.
@@ -484,7 +484,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### childGrid `Object`
+### childGrid `object`
 {:#members:childgrid}
 
 This specifies the grid to add the grid control inside the grid row of the parent with expand/collapse options
@@ -593,7 +593,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### columns `Array`
+### columns `array`
 {:#members:columns}
 
 Gets or sets an object that indicates to render the grid with specified columns
@@ -614,7 +614,7 @@ var value = $("#Grid").ejGrid("option", "columns");
 </script> 
 {% endhighlight %}
 
-### columns.allowEditing `Boolean`
+### columns.allowEditing `boolean`
 {:#members:columns-allowediting}
 
 Gets or sets a value that indicates whether to enable editing behavior for particular column.
@@ -636,7 +636,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.allowFiltering `Boolean`
+### columns.allowFiltering `boolean`
 {:#members:columns-allowfiltering}
 
 Gets or sets a value that indicates whether to enable dynamic filtering behavior for particular column.
@@ -658,7 +658,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.allowGrouping `Boolean`
+### columns.allowGrouping `boolean`
 {:#members:columns-allowgrouping}
 
 Gets or sets a value that indicates whether to enable dynamic grouping behavior for particular column.
@@ -680,7 +680,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.allowSorting `Boolean`
+### columns.allowSorting `boolean`
 {:#members:columns-allowsorting}
 
 Gets or sets a value that indicates whether to enable dynamic sorting behavior for particular column.
@@ -702,7 +702,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.allowResizing `Boolean`
+### columns.allowResizing `boolean`
 {:#members:columns-allowresizing}
 
 Gets or sets a value that indicates whether to enable dynamic resizable for particular column.
@@ -724,7 +724,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.commands `Array`
+### columns.commands `array`
 {:#members:columns-commands}
 
 Gets or sets an object that indicates to define a command column in the grid.
@@ -760,7 +760,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.commands.buttonOptions `Object`
+### columns.commands.buttonOptions `object`
 {:#members:columns-commands-buttonoptions}
 
 Gets or sets an object that indicates to define all the button options which are available in ejButton.
@@ -854,7 +854,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.cssClass `String`
+### columns.cssClass `string`
 {:#members:columns-cssclass}
 
 Gets or sets a value that indicates to provide custom CSS for an individual column.
@@ -880,7 +880,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.customAttributes `Object`
+### columns.customAttributes `object`
 {:#members:columns-customattributes}
 
 Gets or sets a value that indicates the attribute values to the td element of a particular column
@@ -901,7 +901,7 @@ $("#Grid").ejGrid({
 </script>  
 {% endhighlight %}
 
-### columns.dataSource `Object`
+### columns.dataSource `object`
 {:#members:columns-datasource}
 
 Gets or sets a value that indicates to bind the external datasource to the particular column when column `editType` as `dropdownedit` and also it is used to bind the datasource to the foreign key column while editing the grid. //Where data is array of JSON objects of text and value for the drop-down and array of JSON objects for foreign key column.
@@ -924,7 +924,7 @@ $("#Grid").ejGrid({
 {% endhighlight %}
 
 
-### columns.defaultValue `String|Number|Boolean|Date`
+### columns.defaultValue `string|number|boolean|date`
 {:#members:columns-defaultvalue}
 
 Gets or sets a value that indicates to display the specified default value while adding a new record to the grid
@@ -947,7 +947,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### columns.disableHtmlEncode `Boolean`
+### columns.disableHtmlEncode `boolean`
 {:#members:columns-disablehtmlencode}
 
 Gets or sets a value that indicates to render the grid content and header with an HTML elements
@@ -968,7 +968,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### columns.displayAsCheckBox `Boolean`
+### columns.displayAsCheckBox `boolean`
 {:#members:columns-displayascheckbox}
 
 Gets or sets a value that indicates to display a column value as checkbox or string
@@ -989,7 +989,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### columns.editParams `Object`
+### columns.editParams `object`
 {:#members:columns-editparams}
 
 Gets or sets a value that indicates to customize ejNumericTextbox of an editable column. See editingType
@@ -1011,7 +1011,7 @@ $("#Grid").ejGrid({
 </script>  
 {% endhighlight %}
 
-### columns.editTemplate `Object`
+### columns.editTemplate `object`
 {:#members:columns-edittemplate}
 
 Gets or sets a template that displays a custom editor used to edit column values. See editTemplate
@@ -1088,7 +1088,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.enableGroupByFormat `Boolean`
+### columns.enableGroupByFormat `boolean`
 {:#members:columns-enablegroupbyformat}
 
 Gets or sets a value that indicates to groups the column based on its column format.
@@ -1139,7 +1139,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.filterBarTemplate `Object`
+### columns.filterBarTemplate `object`
 {:#members:columns-filterbartemplate}
 
 Gets or sets a template that customize the filter control from default . See filterBarTemplate
@@ -1374,7 +1374,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.headerTooltip `String`
+### columns.headerTooltip `string`
 {:#members:columns-headertooltip}
 
 It accepts the string value and shows the tooltip for the Grid column header.
@@ -1395,7 +1395,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.isFrozen `Boolean`
+### columns.isFrozen `boolean`
 {:#members:columns-isfrozen}
 
 You can use this property to freeze selected columns in grid at the time of scrolling.
@@ -1418,7 +1418,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.isIdentity `Boolean`
+### columns.isIdentity `boolean`
 {:#members:columns-isidentity}
 
 Gets or sets a value that indicates the column has an identity in the database.
@@ -1439,7 +1439,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.isPrimaryKey `Boolean`
+### columns.isPrimaryKey `boolean`
 {:#members:columns-isprimarykey}
 
 Gets or sets a value that indicates the column is act as a primary key(read-only) of the grid. The editing is performed based on the primary key column
@@ -1461,7 +1461,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.priority `Number`
+### columns.priority `number`
 {:#members:columns-priority}
 
 Gets or sets a value that indicates the order of Column that are to be hidden or visible when Grid element is in responsive mode and could not occupy all columns. 
@@ -1485,7 +1485,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.showInColumnChooser `Boolean`
+### columns.showInColumnChooser `boolean`
 {:#members:columns-showincolumnchooser}
 
 Used to hide the particular column in column chooser by giving value as false.
@@ -1508,7 +1508,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.template `Boolean|String`
+### columns.template `boolean|string`
 {:#members:columns-template}
 
 Gets or sets a value that indicates whether to enables column template for a particular column.
@@ -1604,7 +1604,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.type `String`
+### columns.type `string`
 {:#members:columns-type}
 
 Gets or sets a value that indicates to specify the data type of the specified columns.
@@ -1625,7 +1625,7 @@ $("#Grid").ejGrid({
 </script>  
 {% endhighlight %}
 
-### columns.validationRules `Object`
+### columns.validationRules `object`
 {:#members:columns-validationrules}
 
 Gets or sets a value that indicates to define constraints for saving data to the database.
@@ -1643,7 +1643,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.visible `Boolean`
+### columns.visible `boolean`
 {:#members:columns-visible}
 
 Gets or sets a value that indicates whether this column is visible in the grid.
@@ -1664,7 +1664,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### columns.width `Number`
+### columns.width `number`
 {:#members:columns-width}
 
 Gets or sets a value that indicates to define the width for a particular column in the grid.
@@ -1685,7 +1685,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### contextMenuSettings `Object`
+### contextMenuSettings `object`
 {:#members:contextmenusettings}
 
 Gets or sets an object that indicates whether to customize the context menu behavior of the grid.
@@ -1716,7 +1716,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### contextMenuSettings.customContextMenuItems `Array`
+### contextMenuSettings.customContextMenuItems `array`
 {:#members:contextmenusettings-customcontextmenuitems}
 
 Gets or sets a value that indicates whether to add custom contextMenu items within the toolbar to perform any action in the grid
@@ -1739,7 +1739,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### contextMenuSettings.enableContextMenu `Boolean`
+### contextMenuSettings.enableContextMenu `boolean`
 {:#members:contextmenusettings-enablecontextmenu}
 
 Gets or sets a value that indicates whether to enable the context menu action in the grid.
@@ -1765,7 +1765,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### contextMenuSettings.subContextMenu `Array`
+### contextMenuSettings.subContextMenu `array`
 {:#members:contextmenusettings-subcontextmenu}
 
 Used to get or set the subMenu to the corresponding custom context menu item.
@@ -1779,7 +1779,7 @@ Used to get or set the corresponding custom context menu item to which the subme
 {:.param}
 * null
 
-### contextMenuSettings.subContextMenu.subMenu `Array`
+### contextMenuSettings.subContextMenu.subMenu `array`
 {:#members:contextmenusettings-subcontextmenu-submenu}
 
 Used to get or set the sub menu items to the custom context menu item.
@@ -1804,7 +1804,7 @@ $("#Grid").ejGrid({
 {% endhighlight %}
 
 
-### contextMenuSettings.disableDefaultItems `Boolean`
+### contextMenuSettings.disableDefaultItems `boolean`
 {:#members:contextmenusettings-disabledefaultitems}
 
 Gets or sets a value that indicates whether to disable the default context menu items in the grid.
@@ -1831,7 +1831,7 @@ $("#Grid").ejGrid({
 {% endhighlight %}
 
 
-### cssClass `String`
+### cssClass `string`
 {:#members:cssclass}
 
 Gets or sets a value that indicates to render the grid with custom theme. 
@@ -1861,7 +1861,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### dataSource `Object`
+### dataSource `object`
 {:#members:datasource}
 
 Gets or sets the data to render the grid with records
@@ -1881,7 +1881,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### detailsTemplate `String`
+### detailsTemplate `string`
 {:#members:detailstemplate}
 This specifies the grid to add the details row for the corresponding master row
 
@@ -1911,12 +1911,12 @@ $("#Grid").ejGrid({
 </script>            
 {% endhighlight %}
 
-### editSettings `Object`
+### editSettings `object`
 {:#members:editsettings}
 
 Gets or sets an object that indicates whether to customize the editing behavior of the grid.
 
-### editSettings.allowAdding `Boolean`
+### editSettings.allowAdding `boolean`
 {:#members:editsettings-allowadding}
 
 Gets or sets a value that indicates whether to enable insert action in the editing mode.
@@ -1939,7 +1939,7 @@ $("#Grid").ejGrid({
 </script>                
 {% endhighlight %}
 
-### editSettings.allowDeleting `Boolean`
+### editSettings.allowDeleting `boolean`
 {:#members:editsettings-allowdeleting}
 
 Gets or sets a value that indicates whether to enable the delete action in the editing mode.
@@ -1962,7 +1962,7 @@ $("#Grid").ejGrid({
 </script>                  
 {% endhighlight %}
 
-### editSettings.allowEditing `Boolean`
+### editSettings.allowEditing `boolean`
 {:#members:editsettings-allowediting}
 
 Gets or sets a value that indicates whether to enable the edit action in the editing mode.
@@ -1985,7 +1985,7 @@ $("#Grid").ejGrid({
 </script>             
 {% endhighlight %}
 
-### editSettings.allowEditOnDblClick `Boolean`
+### editSettings.allowEditOnDblClick `boolean`
 {:#members:editsettings-alloweditondblclick}
 
 Gets or sets a value that indicates whether to enable the editing action while double click on the record
@@ -2009,7 +2009,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### editSettings.dialogEditorTemplateID `String`
+### editSettings.dialogEditorTemplateID `string`
 {:#members:editsettings-dialogeditortemplateid}
 
 This specifies the id of the template. This template can be used to display the data that you require to be edited using the Dialog Box
@@ -2115,7 +2115,7 @@ $("#Grid").ejGrid({
 </script>                          
 {% endhighlight %}
 
-### editSettings.externalFormTemplateID `String`
+### editSettings.externalFormTemplateID `string`
 {:#members:editsettings-externalformtemplateid}
 
 This specifies the id of the template. This template can be used to display the data that you require to be edited using the External edit form
@@ -2196,7 +2196,7 @@ $("#Grid").ejGrid({
 </script>    
 {% endhighlight %}
 
-### editSettings.inlineFormTemplateID `String`
+### editSettings.inlineFormTemplateID `string`
 {:#members:editsettings-inlineformtemplateid}
 
 This specifies the id of the template. This template can be used to display the data that you require to be edited using the Inline edit form
@@ -2277,7 +2277,7 @@ $("#Grid").ejGrid({
 </script>                          
 {% endhighlight %}
 
-### editSettings.showConfirmDialog `Boolean`
+### editSettings.showConfirmDialog `boolean`
 {:#members:editsettings-showconfirmdialog}
 
 Gets or sets a value that indicates whether the confirm dialog has to be shown while saving or discarding the batch changes
@@ -2300,7 +2300,7 @@ $("#Grid").ejGrid({
 </script>                          
 {% endhighlight %}
 
-### editSettings.showDeleteConfirmDialog `Boolean`
+### editSettings.showDeleteConfirmDialog `boolean`
 {:#members:editsettings-showdeleteconfirmdialog}
 
 Gets or sets a value that indicates whether the confirm dialog has to be shown while deleting record
@@ -2323,7 +2323,7 @@ $("#Grid").ejGrid({
 </script>                          
 {% endhighlight %}
 
-### editSettings.titleColumn `String`
+### editSettings.titleColumn `string`
 {:#members:editsettings-titleColumn}
 
 Gets or sets a value that indicates whether the title for edit form is different from the primarykey column.
@@ -2346,7 +2346,7 @@ $("#Grid").ejGrid({
 </script>                 
 {% endhighlight %}
 
-### editSettings.showAddNewRow `Boolean`
+### editSettings.showAddNewRow `boolean`
 {:#members:editsettings-showaddnewrow}
 
 Gets or sets a value that indicates whether to display the add new form by default in the grid.
@@ -2369,7 +2369,7 @@ $("#Grid").ejGrid({
 </script>                 
 {% endhighlight %}
 
-### enableAltRow `Boolean`
+### enableAltRow `boolean`
 {:#members:enablealtrow}
 
 Gets or sets a value that indicates whether to enable the alternative rows differentiation in the grid records based on corresponding theme.
@@ -2390,7 +2390,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### enableAutoSaveOnSelectionChange `Boolean`
+### enableAutoSaveOnSelectionChange `boolean`
 {:#members:enableautosaveonselectionchange}
 
 Gets or sets a value that indicates whether to enable the save action in the grid through row selection
@@ -2414,7 +2414,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### enableHeaderHover `Boolean`
+### enableHeaderHover `boolean`
 {:#members:enableheaderhover}
 
 Gets or sets a value that indicates whether to enable mouse over effect on the corresponding column header cell of the grid
@@ -2435,7 +2435,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### enablePersistence `Boolean`
+### enablePersistence `boolean`
 {:#members:enablepersistence}
 
 Gets or sets a value that indicates whether to persist the grid model state in page using applicable medium i.e., HTML5 localStorage or cookies
@@ -2457,7 +2457,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### enableResponsiveRow `Boolean`
+### enableResponsiveRow `boolean`
 {:#members:enableresponsiverow}
 
 Gets or sets a value that indicates whether the grid rows has to be rendered as detail view in mobile mode
@@ -2479,7 +2479,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### enableRowHover `Boolean`
+### enableRowHover `boolean`
 {:#members:enablerowhover}
 
 Gets or sets a value that indicates whether to enable mouse over effect on corresponding grid row.
@@ -2500,7 +2500,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### enableRTL `Boolean`
+### enableRTL `boolean`
 {:#members:enablertl}
 
 Align content in the grid control from right to left by setting the property as true.
@@ -2521,7 +2521,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### enableTouch `Boolean`
+### enableTouch `boolean`
 {:#members:enabletouch}
 
 To Disable the mouse swipe property as false.
@@ -2542,7 +2542,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### enableToolbarItems `Boolean`
+### enableToolbarItems `boolean`
 {:#members:enabletoolbaritems}
 
 It sets a value that indicates whether to enable toolbar items, when allowEditing, allowAdding and allowDeleting property set as false in the grid.
@@ -2631,12 +2631,12 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### filterSettings `Object`
+### filterSettings `object`
 {:#members:filtersettings}
 
 Gets or sets an object that indicates whether to customize the filtering behavior of the grid
 
-### filterSettings.enableCaseSensitivity `Boolean`
+### filterSettings.enableCaseSensitivity `boolean`
 {:#members:filtersettings-enablecasesensitivity}
 
 Gets or sets a value that indicates to perform the filter operation with case sensitive in excel styled filter menu mode
@@ -2658,7 +2658,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### filterSettings.enableInterDeterminateState `Boolean`
+### filterSettings.enableInterDeterminateState `boolean`
 {:#members:filtersettings-enableinterdeterminatestate}
 
 Gets or sets a value that indicates to define the interDeterminateState of checkbox in excel filter dialog.
@@ -2719,7 +2719,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### filterSettings.filteredColumns `Array`
+### filterSettings.filteredColumns `array`
 {:#members:filtersettings-filteredcolumns}
 
 Gets or sets a value that indicates whether to define the filtered columns details programmatically at initial load
@@ -2733,7 +2733,7 @@ Gets or sets a value that indicates whether to define the filtered columns detai
 
 Gets or sets a value that indicates whether to define the field name of the column to be filter.
 
-### filterSettings.filteredColumns.matchCase `Boolean`
+### filterSettings.filteredColumns.matchCase `boolean`
 {:#members:filtersettings-filteredcolumns-matchcase}
 
 Gets or sets a value that indicates whether to define the matchCase of given value to be filter.
@@ -2857,7 +2857,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### filterSettings.immediateModeDelay `Number`
+### filterSettings.immediateModeDelay `number`
 {:#members:filtersettings-immediatemodedelay}
 
 This specifies the grid to delay the filter action while typing in the filterBar.
@@ -2879,7 +2879,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### filterSettings.maxFilterChoices `Number`
+### filterSettings.maxFilterChoices `number`
 {:#members:filtersettings-maxfilterchoices}
 
 Gets or sets a value that indicates the maximum number of filter choices that can be showed in the excel styled filter menu.
@@ -2901,7 +2901,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### filterSettings.showFilterBarStatus `Boolean`
+### filterSettings.showFilterBarStatus `boolean`
 {:#members:filtersettings-showfilterbarstatus}
 
 This specifies the grid to show the filter text within the grid pager itself.
@@ -2923,7 +2923,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### filterSettings.showPredicate `Boolean`
+### filterSettings.showPredicate `boolean`
 {:#members:filtersettings-showpredicate}
 
 Gets or sets a value that indicates whether to enable the predicate options in the filtering menu
@@ -2945,12 +2945,12 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### groupSettings `Object`
+### groupSettings `object`
 {:#members:groupsettings}
 
 Gets or sets an object that indicates whether to customize the grouping behavior of the grid.
 
-### groupSettings.captionFormat `String`
+### groupSettings.captionFormat `string`
 {:#members:groupsettings-captionformat}
 
 Gets or sets a value that customize the group caption format.
@@ -2972,7 +2972,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### groupSettings.enableDropAreaAutoSizing `Boolean`
+### groupSettings.enableDropAreaAutoSizing `boolean`
 {:#members:groupsettings-enabledropareaautosizing}
 
 Gets or sets a value that indicates whether to enable animation button option in the group drop area of the grid.
@@ -2994,7 +2994,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### groupSettings.groupedColumns `Array`
+### groupSettings.groupedColumns `array`
 {:#members:groupsettings-groupedcolumns}
 
 Gets or sets a value that indicates whether to add grouped columns programmatically at initial load
@@ -3016,7 +3016,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### groupSettings.showDropArea `Boolean`
+### groupSettings.showDropArea `boolean`
 {:#members:groupsettings-showdroparea}
 
 Gets or sets a value that indicates whether to show the group drop area just above the column header. It can be used to avoid ungrouping the already grouped column using `groupSettings`.
@@ -3039,7 +3039,7 @@ $("#Grid").ejGrid({
 </script>   
 {% endhighlight %}
 
-### groupSettings.showGroupedColumn `Boolean`
+### groupSettings.showGroupedColumn `boolean`
 {:#members:groupsettings-showgroupedcolumn}
 
 Gets or sets a value that indicates whether to hide the grouped columns from the grid
@@ -3063,7 +3063,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### groupSettings.showToggleButton `Boolean`
+### groupSettings.showToggleButton `boolean`
 {:#members:groupsettings-showtogglebutton}
 
 Gets or sets a value that indicates whether to show the group button image(toggle button)in the column header and also in the grouped column in the group drop area . It can be used to group/ungroup the columns by click on the toggle button.
@@ -3085,7 +3085,7 @@ $("#Grid").ejGrid({
 </script>   
 {% endhighlight %}
 
-### groupSettings.showUngroupButton `Boolean`
+### groupSettings.showUngroupButton `boolean`
 {:#members:groupsettings-showungroupbutton}
 
 Gets or sets a value that indicates whether to enable the close button in the grouped column which is in the group drop area to ungroup the grouped column
@@ -3107,7 +3107,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### isResponsive `Boolean`
+### isResponsive `boolean`
 {:#members:isresponsive}
 
 Gets or sets a value that indicates whether the grid design has be to made responsive.
@@ -3129,7 +3129,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### keySettings `Object`
+### keySettings `object`
 {:#members:keysettings}
 
 This specifies to change the key in keyboard interaction to grid control
@@ -3153,7 +3153,7 @@ moveCellRight: "13",
 </script>
 {% endhighlight %}
 
-### locale `String`
+### locale `string`
 {:#members:locale}
 
 Gets or sets a value that indicates whether to customizing the user interface (UI) as locale-specific in order to display regional data i.e. in a language and culture specific to a particular country or region.
@@ -3178,7 +3178,7 @@ $("#Grid").ejGrid({
 </script>             
 {% endhighlight %}
 
-### minWidth `Number`
+### minWidth `number`
 {:#members:minwidth}
 
 Gets or sets a value that indicates whether to set the minimum width of the responsive grid while isResponsive property is true and enableResponsiveRow property is set as false.
@@ -3200,12 +3200,12 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### pageSettings `Object`
+### pageSettings `object`
 {:#members:pagesettings}
 
 Gets or sets an object that indicates whether to modify the pager default configuration.
 
-### pageSettings.currentPage `Number`
+### pageSettings.currentPage `number`
 {:#members:pagesettings-currentpage}
 
 Gets or sets a value that indicates whether to define which page to display currently in the grid
@@ -3227,7 +3227,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### pageSettings.enableQueryString `Boolean`
+### pageSettings.enableQueryString `boolean`
 {:#members:pagesettings-enablequerystring}
 
 Gets or sets a value that indicates whether to pass the current page information as a query string along with the URL while navigating to other page.
@@ -3249,7 +3249,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### pageSettings.enableTemplates `Boolean`
+### pageSettings.enableTemplates `boolean`
 {:#members:pagesettings-enabletemplates}
 
 Gets or sets a value that indicates whether to enables pager template for the grid.
@@ -3274,7 +3274,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### pageSettings.pageCount `Number`
+### pageSettings.pageCount `number`
 {:#members:pagesettings-pagecount}
 
 Gets or sets a value that indicates whether to define the number of pages displayed in the pager for navigation
@@ -3296,7 +3296,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### pageSettings.pageSize `Number`
+### pageSettings.pageSize `number`
 {:#members:pagesettings-pagesize}
 
 Gets or sets a value that indicates whether to define the number of records displayed per page
@@ -3318,7 +3318,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### pageSettings.showDefaults `Boolean`
+### pageSettings.showDefaults `boolean`
 {:#members:pagesettings-showdefaults}
 
 Gets or sets a value that indicates whether to enables default pager for the grid.
@@ -3343,7 +3343,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### pageSettings.template `String`
+### pageSettings.template `string`
 {:#members:pagesettings-template}
 
 Gets or sets a value that indicates to add the template as a pager template for grid.
@@ -3368,7 +3368,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### pageSettings.totalPages `Number`
+### pageSettings.totalPages `number`
 {:#members:pagesettings-totalpages}
 
 Get the value of total number of pages in the grid. The totalPages value is calculated based on page size and total records of grid
@@ -3392,7 +3392,7 @@ $("#print").text("TotalPages: " + value);
 </script>
 {% endhighlight %}
 
-### pageSettings.totalRecordsCount `Number`
+### pageSettings.totalRecordsCount `number`
 {:#members:pagesettings-totalrecordscount}
 
 Get the value of total number of records which is bound to the grid. The totalRecordsCount value is calculated based on dataSource bound to the grid.
@@ -3455,7 +3455,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### query `Object`
+### query `object`
 {:#members:query}
 
 Query the dataSource from the table for Grid.
@@ -3478,7 +3478,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### resizeSettings `Object`
+### resizeSettings `object`
 {:#members:resizesettings}
 
 Gets or sets an object that indicates whether to modify the resizing behavior.
@@ -3527,7 +3527,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### rowTemplate `String`
+### rowTemplate `string`
 {:#members:rowtemplate}
 
 Gets or sets a value that indicates to render the grid with template rows. The template row must be a table row. That table row must have the JavaScript render binding format ({{:columnName}}) then the grid data source binds the data to the corresponding table row of the template.
@@ -3559,7 +3559,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### rowDropSettings `Object`
+### rowDropSettings `object`
 {:#members:rowdropsettings}
 
 Gets or sets an object that indicates whether to customize the drag and drop behavior of the grid rows    
@@ -3675,7 +3675,7 @@ $("#DestGrid").ejGrid({
 </script>
 {% endhighlight %}
 
-### searchSettings `Object`
+### searchSettings `object`
 {:#members:searchsettings}
 
 Gets or sets an object that indicates whether to customize the searching behavior of the grid
@@ -3779,7 +3779,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### selectedRecords `Array`
+### selectedRecords `array`
 {:#members:selectedrecords}
 
 Gets a value that indicates whether the grid model to hold multiple selected records . selectedRecords can be used to displayed hold the single or multiple selected records using &ldquo;selectedRecords&rdquo; property
@@ -3803,7 +3803,7 @@ $("#Grid").ejGrid("model.selectedRecords")
 </script>
 {% endhighlight %}
 
-### selectedRowIndex `Number`
+### selectedRowIndex `number`
 {:#members:selectedrowindex}
 
 Gets or sets a value that indicates to select the row while initializing the grid
@@ -3824,7 +3824,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### selectedRowIndices `Array`
+### selectedRowIndices `array`
 {:#members:selectedrowindices}
 
 Gets or sets a value that indicates the selected rows in grid
@@ -3845,12 +3845,12 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### selectionSettings `Object`
+### selectionSettings `object`
 {:#members:selectionsettings}
 
 This property is used to configure the selection behavior of the grid.
 
-### selectionSettings.cellSelectionMode `String`
+### selectionSettings.cellSelectionMode `string`
 {:#members:selectionsettings-cellselectionmode}
 
 Gets or sets a value that indicates the cell selection actions based on the cell selection mode.
@@ -3888,7 +3888,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### selectionSettings.enableToggle `Boolean`
+### selectionSettings.enableToggle `boolean`
 {:#members:selectionsettings-enabletoggle}
 
 Gets or sets a value that indicates whether to enable the toggle selection behavior for row, cell and column.
@@ -3910,7 +3910,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### selectionSettings.selectionMode `Array`
+### selectionSettings.selectionMode `array`
 {:#members:selectionsettings-selectionmode}
 
 Gets or sets a value that indicates whether to add the default selection actions as a selection mode.See selectionMode
@@ -3987,12 +3987,12 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### scrollSettings `Object`
+### scrollSettings `object`
 {:#members:scrollsettings}
 
 Gets or sets an object that indicates whether to customize the scrolling behavior of the grid.
 
-### scrollSettings.allowVirtualScrolling `Boolean`
+### scrollSettings.allowVirtualScrolling `boolean`
 {:#members:scrollsettings-allowvirtualscrolling}
 
 This specify the grid to to view data that you require without buffering the entire load of a huge database
@@ -4014,7 +4014,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### scrollSettings.autoHide `Boolean`
+### scrollSettings.autoHide `boolean`
 {:#members:scrollsettings-autohide}
  
 It accepts the boolean value and shows or hides the scrollbar while focus in or focus out of the Grid.
@@ -4036,7 +4036,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### scrollSettings.buttonSize `Number`
+### scrollSettings.buttonSize `number`
 {:#members:scrollsettings-buttonsize}
  
 Specifies the height and width of button in the scrollbar.
@@ -4058,7 +4058,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### scrollSettings.enableTouchScroll `Boolean`
+### scrollSettings.enableTouchScroll `boolean`
 {:#members:scrollsettings-enabletouchscroll}
 
 This specify the grid to enable/disable touch control for scrolling.
@@ -4080,7 +4080,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### scrollSettings.frozenColumns `Number`
+### scrollSettings.frozenColumns `number`
 {:#members:scrollsettings-frozencolumns}
 
 This specify the grid to freeze particular columns at the time of scrolling.
@@ -4102,7 +4102,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### scrollSettings.frozenRows `Number`
+### scrollSettings.frozenRows `number`
 {:#members:scrollsettings-frozenrows}
 
 This specify the grid to freeze particular rows at the time of scrolling.
@@ -4124,7 +4124,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### scrollSettings.height `String|Number`
+### scrollSettings.height `string|number`
 {:#members:scrollsettings-height}
 
 This specify the grid to show the vertical scroll bar, to scroll and view the grid contents.
@@ -4146,7 +4146,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### scrollSettings.scrollerSize `Number`
+### scrollSettings.scrollerSize `number`
 {:#members:scrollsettings-scrollersize}
  
 It accepts the integer value and sets the width of scrollbar.
@@ -4206,7 +4206,7 @@ $("#Grid").ejGrid({
 </script>                          
 {% endhighlight %}
 
-### scrollSettings.enableVirtualization `Boolean`
+### scrollSettings.enableVirtualization `boolean`
 {:#members:scrollsettings-enablevirtualization}
 
 This is used to enable the enhanced virtual scrolling in Grid.
@@ -4228,7 +4228,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### scrollSettings.width `String|Number`
+### scrollSettings.width `string|number`
 {:#members:scrollsettings-width}
 
 This specify the grid to show the horizontal scroll bar, to scroll and view the grid contents
@@ -4250,7 +4250,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### scrollSettings.scrollOneStepBy `Number`
+### scrollSettings.scrollOneStepBy `number`
 {:#members:scrollsettings-scrollonestepby}
  
 This specify the scroll down pixel of mouse wheel, to scroll mouse wheel and view the grid contents.
@@ -4272,7 +4272,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### showColumnChooser `Boolean`
+### showColumnChooser `boolean`
 {:#members:showcolumnchooser}
 Gets or sets a value that indicates whether to enable column chooser on grid. On enabling feature able to show/hide grid columns
 
@@ -4293,7 +4293,7 @@ $("#Grid").ejGrid({
 </script>                 
 {% endhighlight %}
 
-### showStackedHeader `Boolean`
+### showStackedHeader `boolean`
 {:#members:showstackedheader}
 
 Gets or sets a value that indicates stacked header should be shown on grid layout when the property &ldquo;stackedHeaderRows&rdquo; is set.
@@ -4327,7 +4327,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### showSummary `Boolean`
+### showSummary `boolean`
 {:#members:showsummary}
 
 Gets or sets a value that indicates summary rows should be shown on grid layout when the property &ldquo;summaryRows&rdquo; is set
@@ -4350,12 +4350,12 @@ $("#Grid").ejGrid({
 </script>  
 {% endhighlight %}
 
-### sortSettings `Object`
+### sortSettings `object`
 {:#members:sortsettings}
 
 Gets or sets a value that indicates whether to customize the sorting behavior of the grid.
 
-### sortSettings.sortedColumns `Array`
+### sortSettings.sortedColumns `array`
 {:#members:sortsettings-sortedcolumns}
 
 Gets or sets a value that indicates whether to define the direction and field to sort the column.
@@ -4405,7 +4405,7 @@ $("#Grid").ejGrid({
 </script>  
 {% endhighlight %}
 
-### stackedHeaderRows `Array`
+### stackedHeaderRows `array`
 {:#members:stackedheaderrows}
 
 Gets or sets an object that indicates to managing the collection of stacked header rows for the grid.
@@ -4439,7 +4439,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### stackedHeaderRows.stackedHeaderColumns `Array`
+### stackedHeaderRows.stackedHeaderColumns `array`
 {:#members:stackedheaderrows-stackedheadercolumns}
 
 Gets or sets a value that indicates whether to add stacked header columns into the stacked header rows
@@ -4473,7 +4473,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### stackedHeaderRows.stackedHeaderColumns.column `Object`
+### stackedHeaderRows.stackedHeaderColumns.column `object`
 {:#members:stackedheaderrows-stackedheadercolumns-column}
 
 Gets or sets a value that indicates the header text for the particular stacked header column.
@@ -4614,7 +4614,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### stackedHeaderRows.stackedHeaderColumns.tooltip `String`
+### stackedHeaderRows.stackedHeaderColumns.tooltip `string`
 {:#members:stackedheaderrows-stackedheadercolumns-tooltip}
 
 Sets the template for tooltip for the Grid stackedHeaderColumns.
@@ -4651,7 +4651,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### summaryRows `Array`
+### summaryRows `array`
 {:#members:summaryrows}
 
 Gets or sets an object that indicates to managing the collection of summary rows for the grid.
@@ -4681,7 +4681,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### summaryRows.showCaptionSummary `Boolean`
+### summaryRows.showCaptionSummary `boolean`
 {:#members:summaryrows-showcaptionsummary}
 
 Gets or sets a value that indicates whether to show the summary value within the group caption area for the corresponding summary column while grouping the column
@@ -4713,7 +4713,7 @@ $("#Grid").ejGrid({
 </script>           
 {% endhighlight %}
 
-### summaryRows.showGroupSummary `Boolean`
+### summaryRows.showGroupSummary `boolean`
 {:#members:summaryrows-showgroupsummary}
 
 Gets or sets a value that indicates whether to show the group summary value for the corresponding summary column while grouping a column
@@ -4745,7 +4745,7 @@ $("#Grid").ejGrid({
 </script>           
 {% endhighlight %}
 
-### summaryRows.showTotalSummary `Boolean`
+### summaryRows.showTotalSummary `boolean`
 {:#members:summaryrows-showtotalsummary}
 
 Gets or sets a value that indicates whether to show the total summary value the for the corresponding summary column. The summary row is added after the grid content.
@@ -4776,7 +4776,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### summaryRows.summaryColumns `Array`
+### summaryRows.summaryColumns `array`
 {:#members:summaryrows-summarycolumns}
 
 Gets or sets a value that indicates whether to add summary columns into the summary rows.
@@ -5059,7 +5059,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### summaryRows.summaryColumns.template `String`
+### summaryRows.summaryColumns.template `string`
 {:#members:summaryRows-summaryColumns-template}
 
 Gets or sets a value that indicates to add the template for the summary value of dataMember given.
@@ -5156,7 +5156,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### textWrapSettings `Object`
+### textWrapSettings `object`
 {:#members:textwrapsettings}
 
 Gets or sets an object that indicates whether to auto wrap the grid header or content or both
@@ -5203,12 +5203,12 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### toolbarSettings `Object`
+### toolbarSettings `object`
 {:#members:toolbarsettings}
 
 Gets or sets an object that indicates whether to enable the toolbar in the grid and add toolbar items
 
-### toolbarSettings.customToolbarItems `Array`
+### toolbarSettings.customToolbarItems `array`
 {:#members:toolbarsettings-customtoolbaritems}
 
 Gets or sets a value that indicates whether to add custom toolbar items within the toolbar to perform any action in the grid
@@ -5296,7 +5296,7 @@ $("#Grid").ejGrid({
 {% endhighlight %}
 
 
-### toolbarSettings.showToolbar `Boolean`
+### toolbarSettings.showToolbar `boolean`
 {:#members:toolbarsettings-showtoolbar}
 
 Gets or sets a value that indicates whether to enable toolbar in the grid.
@@ -5319,7 +5319,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### toolbarSettings.toolbarItems `Array`
+### toolbarSettings.toolbarItems `array`
 {:#members:toolbarsettings-toolbaritems}
 
 <ts name="ej.Grid.ToolBarItems" />
@@ -5487,41 +5487,11 @@ $("#Grid").ejGrid("addIgnoreOnToolbarServerClick","filterSettings");
 </script>
 {% endhighlight %}
 
-### addRecord()
+
+### addRecord([data,\[serverChange\]])
 {:#methods:addrecord}
 
-Add a new record in grid control when allowAdding is set as true.
-
-#### Returns:
-{:#methods:returns:}
-
-Void
-
-#### Example
-
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Sends an add new record request to the grid
-gridObj.addRecord(); 
-</script>
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// add new record to the grid
-$("#Grid").ejGrid("addRecord");       
-</script>
-{% endhighlight %}
-
-### addRecord(data,\[serverChange\])
-{:#methods:addrecord}
-
-Add a new record in grid control when allowAdding is set as true.
+Add a new record in grid control when allowAdding is set as true.Without passing parameters it will add empty row. 
 
 <table class="params">
 <thead>
@@ -6597,7 +6567,7 @@ $("#Grid").ejGrid("expandGroupDropArea");
 </script>
 {% endhighlight %}
 
-### export(action, \[serverEvent\], \[multipleExport\], \[gridIds\])
+### export([action, \[serverEvent\], \[multipleExport\], \[gridIds\]])
 {:#methods:export}
 
 Export the grid content to excel, word or PDF document.
@@ -6662,65 +6632,6 @@ $("#Grid").ejGrid("export","/api/GridExport/ExcelExport");
 </script>
 {% endhighlight %}
 
-### export(action, \[serverEvent\], \[multipleExport\])
-{:#methods:export}
-
-Export the grid content to excel, word or PDF document.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">action</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">Pass the controller action name corresponding to exporting</td>
-</tr>
-<tr>
-<td class="name">serverEvent</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last"><span class="optional">optional</span>ASP server event name corresponding to exporting</td>
-</tr>
-<tr>
-<td class="name">multipleExport</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last"><span class="optional">optional</span>Pass the multiple exporting value as true/false</td>
-</tr>
-</tbody>
-</table>
-
-#### Returns:
-{:#methods:returns:}
-
-Void
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Sends an exporting request
-gridObj.export("/api/GridExport/ExcelExport"); 
-</script>
-{% endhighlight %}
-
-
-{% highlight html %}
- 
-<script>
-// Sends an exporting request
-$("#Grid").ejGrid("export","/api/GridExport/ExcelExport");        
-</script>
-{% endhighlight %}
 
 ### filterColumn(fieldName, filterOperator, filterValue, predicate, \[matchcase\],\[actualFilterValue\])
 {:#methods:filtercolumn}
@@ -8958,44 +8869,10 @@ $("#Grid").ejGrid("rowHeightRefresh");
 {% endhighlight %}
 
 
-### saveCell()
+### saveCell([preventSaveEvent])
 {:#methods:savecell}
 
-Save the particular edited cell in grid.
-
-#### Returns:
-{:#methods:returns:}
-
-Void
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<script>
-// Create grid object.
-var gridObj = $("#Grid").data("ejGrid");
-// Save the edited cell
-gridObj.saveCell(); 
-</script>
-{% endhighlight %}
-
-
-{% highlight html %}
-
-<script>
-
-// Save the edited cell
-$("#Grid").ejGrid("saveCell);
-</script>
-{% endhighlight %}
-
-### saveCell(preventSaveEvent)
-{:#methods:savecell}
-
-We can prevent the client side cellSave event triggering by passing the preventSaveEvent argument as true.
+We can prevent the client side cellSave event triggering by passing the preventSaveEvent argument as true.Without argument it will save the particular edited grid cell.
 
 <table class="params">
 <thead>
