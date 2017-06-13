@@ -2250,7 +2250,7 @@ $('#Spreadsheet').ejSpreadsheet({
 ### sheets.border.type `enum`
 {:#members:sheets-border-type}
 
-<ts name="ej.Spreadsheet.BorderType"/> 
+<ts name="ej.Spreadsheet.BorderType"/>
 
 Specifies border type in the Spreadsheet.
 
