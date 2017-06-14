@@ -5689,7 +5689,7 @@ It is used to clear all the cell selection.
 #### Returns:
 {:#methods:returns:}
 
-Boolean
+boolean
 
 #### Example
 {:.example}
@@ -5794,7 +5794,7 @@ It is used to clear all the row selection or at specific row selection based on 
 #### Returns:
 {:#methods:returns:}
 
-Boolean
+boolean
 
 #### Example
 {:.example}
@@ -5849,7 +5849,7 @@ It is used to clear all the filtering done.
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -5882,7 +5882,7 @@ Clear the searching from the grid
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -5933,7 +5933,7 @@ Clear all the row selection or at specific row selection based on the index prov
 #### Returns:
 {:#methods:returns:}
 
-Boolean
+boolean
 
 
 #### Example
@@ -5970,7 +5970,7 @@ Clear the sorting from columns in the grid
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -6004,7 +6004,7 @@ Collapse all the group caption rows in grid
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -6038,7 +6038,7 @@ Collapse the group drop area in grid
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -6095,7 +6095,7 @@ Add or remove columns in grid column collections
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 
 #### Example
@@ -6157,7 +6157,7 @@ Refresh the grid with new data source
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 
 #### Example
@@ -6215,7 +6215,7 @@ Delete a record in grid control when allowDeleting is set as true
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -6300,7 +6300,7 @@ Destroy the grid widget all events bound using this._on will be unbind automatic
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -6354,7 +6354,7 @@ Edit a particular cell based on the row index and field name provided in "batch"
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 
 #### Example
@@ -6387,7 +6387,7 @@ It returns a value and if the input field values of edit form is not based on th
 #### Returns:
 {:#methods:returns:}
 
-Boolean
+boolean
 
 #### Example
 {:.example}
@@ -6421,7 +6421,7 @@ Send a save request in grid.
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -6455,7 +6455,7 @@ Expand all the group caption rows in grid.
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -6507,7 +6507,7 @@ Expand or collapse the row based on the row state in grid
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 
 #### Example
@@ -6542,7 +6542,7 @@ Expand the group drop area in grid.
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -6607,7 +6607,7 @@ Export the grid content to excel, word or PDF document.
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -6685,7 +6685,7 @@ Pass the value to filtered in a column</td>
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -6736,7 +6736,7 @@ Send a filtering request to filter single or multiple column in grid.
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -6770,7 +6770,7 @@ Get the batch changes of edit, delete and add operations of grid.
 #### Returns:
 {:#methods:returns:}
 
-Object
+object
 
 #### Example
 {:.example}
@@ -6802,7 +6802,7 @@ Get the browser details
 #### Returns:
 {:#methods:returns:}
 
-Object
+object
 
 #### Example
 {:.example}
@@ -6856,7 +6856,7 @@ Get the column details based on the given field in grid
 #### Returns:
 {:#methods:returns:}
 
-Object
+object
 
 #### Example
 {:.example}
@@ -6907,7 +6907,7 @@ Get the column details based on the given header text in grid.
 #### Returns:
 {:#methods:returns:}
 
-Object
+object
 
 
 #### Example
@@ -6959,7 +6959,7 @@ Get the column details based on the given column index in grid
 #### Returns:
 {:#methods:returns:}
 
-Object
+object
 
 #### Example
 {:.example}
@@ -6991,7 +6991,7 @@ Get the list of field names from column collection in grid.
 #### Returns:
 {:#methods:returns:}
 
-Array
+array
 
 #### Example
 {:.example}
@@ -7173,7 +7173,7 @@ Get the content table element of grid
 #### Returns:
 {:#methods:returns:}
 
-Array\<HTMLTableElement\>
+array\<HTMLTableElement\>
 
 #### Example
 {:.example}
@@ -7206,7 +7206,7 @@ Get the data of currently edited cell value in "batch" edit mode
 #### Returns:
 {:#methods:returns:}
 
-Object
+object
 
 #### Example
 {:.example}
@@ -7275,7 +7275,7 @@ Get the current page data source of grid.
 #### Returns:
 {:#methods:returns:}
 
-Array
+array
 
 #### Example
 {:.example}
@@ -7310,7 +7310,7 @@ N> It will work only for batch edit mode.
 #### Returns:
 {:#methods:returns:}
 
-Object
+object
 
 #### Example
 {:.example}
@@ -7360,7 +7360,7 @@ Get the column field name from the given header text in grid.
 #### Returns:
 {:#methods:returns:}
 
-String
+string
 
 #### Example
 {:.example}
@@ -7428,7 +7428,7 @@ Get the records filtered or searched in Grid
 #### Returns:
 {:#methods:returns:}
 
-Array
+array
 
 #### Example
 {:.example}
@@ -7612,7 +7612,7 @@ Get the column header text from the given field name in grid.
 #### Returns:
 {:#methods:returns:}
 
-String
+string
 
 #### Example
 {:.example}
@@ -7765,7 +7765,7 @@ Get the names of primary key columns in Grid
 #### Returns:
 {:#methods:returns:}
 
-Array
+array
 
 
 #### Example
@@ -7960,7 +7960,7 @@ Get the selected records details in grid.
 #### Returns:
 {:#methods:returns:}
 
-Array
+array
 
 #### Example
 {:.example}
@@ -7993,7 +7993,7 @@ Get the selected row element details in grid.
 #### Returns:
 {:#methods:returns:}
 
-Array
+array
 
 #### Example
 {:.example}
@@ -8102,7 +8102,7 @@ Get the calculated summary values of JSON data passed to it
 #### Returns:
 {:#methods:returns:}
 
-Number
+number
 
 #### Example
 {:.example}
@@ -8137,7 +8137,7 @@ Get the names of all the visible column collections in grid
 #### Returns:
 {:#methods:returns:}
 
-Array
+array
 
 #### Example
 {:.example}
@@ -8187,7 +8187,7 @@ Send a paging request to specified page in grid
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -8238,7 +8238,7 @@ Send a column grouping request in grid.
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -8287,7 +8287,7 @@ Hide columns from the grid based on the header text
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -8323,7 +8323,7 @@ Print the grid control
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -8359,7 +8359,7 @@ It is used to refresh and reset the changes made in "batch" edit mode
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -8393,7 +8393,7 @@ It is used to refresh the grid header.
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -8445,7 +8445,7 @@ Refresh the grid contents. The template refreshment is based on the argument pas
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 
 #### Example
@@ -8484,7 +8484,7 @@ Refresh the template of the grid
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -8518,7 +8518,7 @@ Refresh the toolbar items in grid.
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -8570,7 +8570,7 @@ Remove a column or collection of columns from a sorted column collections in gri
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -8609,7 +8609,7 @@ Creates a grid control
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -8667,7 +8667,7 @@ Re-order the column in grid
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -8722,7 +8722,7 @@ Re-order the row in grid
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -8756,7 +8756,7 @@ Reset the model collections like pageSettings, groupSettings, filterSettings, so
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -8809,7 +8809,7 @@ Resize the columns by giving column name and width for the corresponding one.
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -8842,7 +8842,7 @@ Resolves row height issue when unbound column is used with FrozenColumn
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -8894,7 +8894,7 @@ We can prevent the client side cellSave event triggering by passing the preventS
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -8951,7 +8951,7 @@ Set dimension for grid with corresponding to grid parent.
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -8978,7 +8978,7 @@ Send a request to grid to refresh the width set to columns
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -9027,7 +9027,7 @@ Send a search request to grid with specified string passed in it
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -9077,7 +9077,7 @@ Select cells in grid.
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -9128,7 +9128,7 @@ Select columns in grid.
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -9183,7 +9183,7 @@ Select the specified columns in grid based on Index provided.
 #### Returns:
 {:#methods:returns:}
 
-Boolean
+boolean
 
 #### Example
 {:.example}
@@ -9238,7 +9238,7 @@ Select rows in grid.
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -9298,7 +9298,7 @@ Select specified rows in grid based on Index provided.
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -9349,7 +9349,7 @@ Select rows in grid.
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -9417,7 +9417,7 @@ Used to update a particular cell value based on specified rowIndex and cellIndex
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -9476,7 +9476,7 @@ Used to update a particular cell value based on specified primarykeyvalue and fi
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -9538,7 +9538,7 @@ N> It will working only for batch edit mode.
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -9570,7 +9570,7 @@ It sets the default data to the column in grid during adding record in batch edi
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -9623,7 +9623,7 @@ N> Need to set same value for max-width in ejgrid.responsive.css file
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -9655,7 +9655,7 @@ Set validation to edit form in the grid.
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -9711,7 +9711,7 @@ Set validation to a particular input field in a edit form dynamically.
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -9762,7 +9762,7 @@ Show columns in the grid based on the header text
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -9820,7 +9820,7 @@ Send a sorting request in grid.
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -9870,7 +9870,7 @@ Send an edit record request in grid
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -9921,7 +9921,7 @@ Un-group a column from grouped columns collection in grid
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -9977,7 +9977,7 @@ Update a edited record in grid control when allowEditing is set as true.
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
@@ -10010,7 +10010,7 @@ It adapts grid to its parent element or to the browsers window.
 #### Returns:
 {:#methods:returns:}
 
-Void
+void
 
 #### Example
 {:.example}
