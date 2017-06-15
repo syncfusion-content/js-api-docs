@@ -2172,7 +2172,7 @@ $("#slider").ejSlider({
 {:#events:renderscale}
 
 
-Fires when the slider large scale has been created.   
+Fires when the slider large tick value has been created.
 
 <table class="params">
 <thead>
