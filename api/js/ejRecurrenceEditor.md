@@ -348,7 +348,7 @@ Generates the recurrence rule with the options selected within the Recurrence Ed
 #### Returns:
 {:#methods:returns:}
 
-String
+string
 
 #### Example
 
@@ -402,7 +402,7 @@ Generates the collection of date, that lies within the selected recurrence start
 #### Returns:
 {:#methods:returns:}
 
-Object
+object
 
 #### Example
 
@@ -455,7 +455,7 @@ schObj.recurrenceDateGenerator(recurrenceString,startDate);
 #### Returns:
 {:#methods:returns:}
 
-Object
+object
 
 #### Example
 

@@ -47,7 +47,7 @@ Append the custom HTML after the selected content.
 
 #### Default Value:
 
-*null
+* null
 
 #### Example
 
@@ -101,7 +101,7 @@ A selector that specifies a particular element to be excluded from printing.
 
 #### Default Value:
 
-*null
+* null
 
 #### Example
 
@@ -135,7 +135,7 @@ Specifies whether the URL of an external stylesheet can be included to customize
 
 #### Default Value:
 
-*null
+* null
 
 #### Example 
 
@@ -170,7 +170,7 @@ Prepend a doctype to the document frame.
 
 #### Default Value:
 
-*<!doctype html>
+* <!doctype html>
 
 
 #### Example
@@ -207,7 +207,7 @@ Specifies whether the global styles can be applied to the element to be printed.
 
 #### Default Value:
 
-*true
+* true
 
 #### Example
 
@@ -240,7 +240,7 @@ Sets the height of the print window.
 
 #### Default Value:
 
-*454
+* 454
 
 #### Example
 
@@ -275,7 +275,7 @@ Prepends the custom HTML before the selected content.
 
 #### Default Value:
 
-*null
+* null
 
 #### Example
 
@@ -308,7 +308,7 @@ Allows printing the content in a new window.
 
 #### Default Value:
 
-*false
+* false
 
 #### Example
 
@@ -341,7 +341,7 @@ Sets the period of time to wait before printing the content.
 
 #### Default Value:
 
-*1000
+* 1000
 
 #### Example
 
@@ -375,7 +375,7 @@ Sets the title of the print document.
 
 #### Default Value:
 
-*null
+* null
 
 #### Example
 
@@ -407,7 +407,7 @@ Defines the width of the print window.
 
 #### Default Value:
 
-*1024
+* 1024
 
 #### Example
 
@@ -505,7 +505,7 @@ Event triggers before the document page or an element in it gets printed.
 
 <tr>
 <td> model </td>
-<td> <ts ref="ej.Print.Model"/><span class="param-type">Object</span></td>
+<td><ts ref="ej.Print.Model"/><span class="param-type">Object</span></td>
 <td> Returns the Print model </td>
 </tr>
 <tr>
