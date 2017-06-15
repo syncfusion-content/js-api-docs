@@ -475,6 +475,26 @@ $("#defaultradialmenu").ejRadialMenu({ items:[{ imageUrl:"/Bold.jpg"}] });
 </script>{% endhighlight %}
 
 
+### items.prependTo `string`
+{:#members:items-prependTo}
+
+
+Specifies the template property of RadialMenu for SVG icon.
+
+
+Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="defaultradialmenu">
+</div>
+ 
+<script>
+$(function () {
+$("#defaultradialmenu").ejRadialMenu({ items:[{ prependTo:"#template"}] }); 
+});
+</script> {% endhighlight %}
 
 
 ### items.text `string`
