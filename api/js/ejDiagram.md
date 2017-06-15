@@ -10187,6 +10187,39 @@ $("#symbolpalette").ejSymbolPalette({
 
 {% endhighlight %}
 
+### nodes.paletteItem.label `string`
+{:#members:nodes-paletteitem-label}
+
+To display a name for nodes in the symbol palette
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#symbolpalette").ejSymbolPalette({
+	//Defines the palette collection 
+	palettes: [{
+		name: "Nodes", expanded: true,
+		items: [
+		{
+			name: "Rectangle", 
+			//Sets the name for node in the symbol palette
+			paletteItem: {
+				label: "label"
+			}
+		}]
+	}]
+});
+</script>
+
+{% endhighlight %}
+
 ### nodes.paletteItem.margin `object`
 {:#members:nodes-paletteitem-margin}
 
