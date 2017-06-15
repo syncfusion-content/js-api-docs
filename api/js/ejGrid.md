@@ -1536,7 +1536,7 @@ $("#Grid").ejGrid({
 ### columns.textAlign `enum`
 {:#members:columns-textalign}
 
-<ts ref=" ej.TextAlign"/>
+<ts ref="ej.TextAlign"/>
 
 Gets or sets a value that indicates to align the text within the column. See <a href="global.html#enum:textalign">textAlign</a> 
 
