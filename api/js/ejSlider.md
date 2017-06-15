@@ -2167,3 +2167,4 @@ $("#slider").ejSlider({
    tooltipChange: function (args) {}
 });
 </script>{% endhighlight %}
+
