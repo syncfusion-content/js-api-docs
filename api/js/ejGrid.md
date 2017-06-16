@@ -8315,6 +8315,60 @@ $("#Grid").ejGrid("hideColumns", ["Order ID", "Customer ID"]);
 {% endhighlight %}
 
 
+### hideColumns(columnIndex)
+{:#methods:hidecolumns}
+
+Hide columns from the grid based on the columnIndex.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">column Index</td>
+<td class="type"><span class="param-type">array/number</span></td>
+<td class="description last">you can pass either array of columnIndex of various columns or a columnIndex of a column to hide</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+gridObj.hideColumns(0); // Hides column based on the given column Index of the column
+gridObj.hideColumns([0,1]); // Hide columns based on the array of column Indexes of the columns given
+</script>
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// Hide column based on the given column Index of the column
+$("#Grid").ejGrid("hideColumns", 0); 
+// Hide columns based on the array of column Indexes of the columns given
+	
+$("#Grid").ejGrid("hideColumns", [0,1]);                  
+</script>
+{% endhighlight %}
+
+
 ### print()
 {:#methods:print}
 
@@ -9788,6 +9842,60 @@ $("#Grid").ejGrid("showColumns", "Order ID");
 $("#Grid").ejGrid("showColumns", ["Order ID", "Customer ID"]);                  
 </script>
 {% endhighlight %}
+
+
+### showColumns(columnIndex)
+{:#methods:showcolumns}
+
+Show columns in the grid based on the columnIndex.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">columnIndex</td>
+<td class="type"><span class="param-type">array/number</span></td>
+<td class="description last">you can pass either array of column Indexes of various columns or a column Index of a column to show</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+gridObj.showColumns(0); // Shows column based on the given columnIndex of the column
+gridObj.showColumns([0,1]); // Shows columns based on the array of column Indexes of the columns given
+</script>
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// Shows column based on the given column Index of the column
+$("#Grid").ejGrid("showColumns", 0); 
+// Shows columns based on the array of column Indexes of the columns given
+$("#Grid").ejGrid("showColumns", [0,1]);                  
+</script>
+{% endhighlight %}
+
 
 ### sortColumn(columnName, \[sortingDirection\])
 {:#methods:sortcolumn}
