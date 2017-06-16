@@ -646,8 +646,7 @@ Specifies the navigation control template for map
 ### navigationControl.dockPosition `enum`
 {:#members:navigationcontrol-dockposition}
 
-<ts name = "ej.datavisualization.Map.Position"/>
-
+<ts name="ej.datavisualization.Map.Position"/>
 Set the dockPosition value for navigation control
 
 <table class="params">
@@ -767,8 +766,7 @@ Enables or Disables the Navigation for handling zooming map
 ### navigationControl.orientation `enum`
 {:#members:navigationcontrol-orientation}
 
-<ts name = "ej.datavisualization.Map.LabelOrientation"/>
-
+<ts name="ej.datavisualization.Map.LabelOrientation"/>
 Set the orientation value for navigation control
 
 <table class="params">
@@ -864,8 +862,7 @@ Layer for holding the map shapes
 ### layers.bingMapType `enum`
 {:#members:layers-bingmaptype}
 
-<ts name = "ej.datavisualization.Map.BingMapType"/>
-
+<ts name="ej.datavisualization.Map.BingMapType"/>
 to get the type of bing map.
 
 <table class="params">
@@ -1693,8 +1690,7 @@ The property specifies whether to show labels or not.
 ### layers.labelSettings.smartLabelSize `enum`
 {:#members:layers-labelsettings-smartlabelsize}
 
-<ts name = "ej.datavisualization.Map.LabelSize"/>
-
+<ts name="ej.datavisualization.Map.LabelSize"/>
 set the smartLabelSize property
 
 <table class="params">
@@ -1748,8 +1744,7 @@ set the smartLabelSize property
 ### layers.geometryType `enum`
 {:#members:layers-geometrytype}
 
-<ts name = "ej.datavisualization.Map.GeometryType"/>
-
+<ts name="ej.datavisualization.Map.GeometryType"/>
 Specifies the map view type.
 
 <table class="params">
@@ -1802,8 +1797,7 @@ Specifies the map view type.
 ### layers.layerType `enum`
 {:#members:layers-layertype}
 
-<ts name = "ej.datavisualization.Map.LayerType"/>
-
+<ts name="ej.datavisualization.Map.LayerType"/>
 Specifies the map type.
 
 <table class="params">
@@ -1900,8 +1894,7 @@ Determines whether the legend should be placed outside or inside the map bounds
 ### layers.legendSettings.dockPosition `enum`
 {:#members:layers-legendsettings-dockposition}
 
-<ts name = "ej.datavisualization.Map.DockPosition"/>
-
+<ts name="ej.datavisualization.Map.DockPosition"/>
 Determines the legend placement and it is valid only when dockOnMap is true
 
 <table class="params">
@@ -1997,8 +1990,7 @@ height value for legend setting
 ### layers.legendSettings.icon `enum`
 {:#members:layers-legendsettings-icon}
 
-<ts name = "ej.datavisualization.Map.LegendIcons"/>
-
+<ts name="ej.datavisualization.Map.LegendIcons"/>
 to get icon value for legend setting
 
 <table class="params">
@@ -2121,8 +2113,7 @@ icon Width value for legend setting
 ### layers.legendSettings.labelOrientation `enum`
 {:#members:layers-legendsettings-labelorientation}
 
-<ts name = "ej.datavisualization.Map.LabelOrientation"/>
-
+<ts name="ej.datavisualization.Map.LabelOrientation"/>
 set the orientation of legend labels
 
 <table class="params">
@@ -2210,8 +2201,7 @@ to get leftLabel value for legend setting
 ### layers.legendSettings.mode `enum`
 {:#members:layers-legendsettings-mode}
 
-<ts name = "ej.datavisualization.Map.Mode"/>
-
+<ts name="ej.datavisualization.Map.Mode"/>
 to get mode of legend setting
 
 <table class="params">
@@ -2266,7 +2256,7 @@ to get mode of legend setting
 ### layers.legendSettings.position `enum`
 {:#members:layers-legendsettings-position}
 
-<ts ref = "ej.datavisualization.Map.Position"/>
+<ts ref="ej.datavisualization.Map.Position"/>
 
 set the position of legend settings
 
@@ -2556,8 +2546,7 @@ to get title of legend setting
 ### layers.legendSettings.type `enum`
 {:#members:layers-legendsettings-type}
 
-<ts name = "ej.datavisualization.Map.LegendType"/>
-
+<ts name="ej.datavisualization.Map.LegendType"/>
 to get type of legend setting
 
 <table class="params">
@@ -2831,8 +2820,7 @@ Specify selectedMapShapes for shape layer
 ### layers.selectionMode `enum`
 {:#members:layers-selectionmode}
 
-<ts name = "ej.datavisualization.Map.SelectionMode"/>
-
+<ts name="ej.datavisualization.Map.SelectionMode"/>
 Specifies the selection mode of the map. Accepted selection mode values are Default and Multiple.
 
 <table class="params">
@@ -3148,8 +3136,7 @@ Specifies the equalColorMapping color in the shape layer of map.
 ### layers.shapeSettings.colorPalette `enum`
 {:#members:layers-shapesettings-colorpalette}
 
-<ts name = "ej.datavisualization.Map.ColorPalette"/>
-
+<ts name="ej.datavisualization.Map.ColorPalette"/>
 Specifies the shape color palette value of the shape layer in map. Accepted colorPalette values are palette1, palette2, palette3 and custompalette.
 
 <table class="params">
@@ -3755,7 +3742,7 @@ Sublayer is the collection of shape Layer
 ### layers.sublayers.bingMapType `enum`
 {:#members:layers-sublayers-bingmaptype}
 
-<ts ref = "ej.datavisualization.Map.BingMapType"/>
+<ts ref="ej.datavisualization.Map.BingMapType"/>
 
 to get the type of bing map.
 
@@ -4562,7 +4549,7 @@ The property specifies whether to show labels or not.
 ### layers.sublayers.labelSettings.smartLabelSize `enum`
 {:#members:layers-sublayers-labelsettings-smartlabelsize}
 
-<ts ref = "ej.datavisualization.Map.LabelSize"/>
+<ts ref="ej.datavisualization.Map.LabelSize"/>
 
 set the smartLabelSize property
 
@@ -4598,7 +4585,7 @@ set the smartLabelSize property
 ### layers.sublayers.geometryType `enum`
 {:#members:layers-sublayers-geometrytype}
 
-<ts ref = "ej.datavisualization.Map.GeometryType"/>
+<ts ref="ej.datavisualization.Map.GeometryType"/>
 
 Specifies the map view type.
 
@@ -4633,7 +4620,7 @@ Specifies the map view type.
 ### layers.sublayers.layerType `enum`
 {:#members:layers-sublayers-layertype}
 
-<ts ref = "ej.datavisualization.Map.LayerType"/>
+<ts ref="ej.datavisualization.Map.LayerType"/>
 
 Specifies the map type.
 
@@ -4708,7 +4695,7 @@ Determines whether the legend should be placed outside or inside the map bounds
 ### layers.sublayers.legendSettings.dockPosition `enum`
 {:#members:layers-sublayers-legendsettings-dockposition}
 
-<ts ref = "ej.datavisualization.Map.DockPosition"/>
+<ts ref="ej.datavisualization.Map.DockPosition"/>
 
 Determines the legend placement and it is valid only when dockOnMap is true
 
@@ -4778,7 +4765,7 @@ height value for legend setting
 ### layers.sublayers.legendSettings.icon `enum`
 {:#members:layers-sublayers-legendsettings-icon}
 
-<ts ref = "ej.datavisualization.Map.LegendIcons"/>
+<ts ref="ej.datavisualization.Map.LegendIcons"/>
 
 to get icon value for legend setting
 
@@ -4883,7 +4870,7 @@ icon Width value for legend setting
 ### layers.sublayers.legendSettings.labelOrientation `enum`
 {:#members:layers-sublayers-legendsettings-labelorientation}
 
-<ts ref = "ej.datavisualization.Map.LabelOrientation"/>
+<ts ref="ej.datavisualization.Map.LabelOrientation"/>
 
 set the orientation of legend labels
 
@@ -4953,7 +4940,7 @@ to get leftLabel value for legend setting
 ### layers.sublayers.legendSettings.mode `enum`
 {:#members:layers-sublayers-legendsettings-mode}
 
-<ts ref = "ej.datavisualization.Map.Mode"/>
+<ts ref="ej.datavisualization.Map.Mode"/>
 
 to get mode of legend setting
 
@@ -4989,7 +4976,7 @@ to get mode of legend setting
 ### layers.sublayers.legendSettings.position `enum`
 {:#members:layers-sublayers-legendsettings-position}
 
-<ts ref = "ej.datavisualization.Map.Position"/>
+<ts ref="ej.datavisualization.Map.Position"/>
 
 set the position of legend settings
 
@@ -5228,7 +5215,7 @@ to get title of legend setting
 ### layers.sublayers.legendSettings.type `enum`
 {:#members:layers-sublayers-legendsettings-type}
 
-<ts ref = "ej.datavisualization.Map.LegendType"/>
+<ts ref="ej.datavisualization.Map.LegendType"/>
 
 to get type of legend setting
 
@@ -5484,7 +5471,7 @@ Specify selectedMapShapes for shape layer
 ### layers.sublayers.selectionMode `enum`
 {:#members:layers-sublayers-selectionmode}
 
-<ts ref = "ej.datavisualization.Map.SelectionMode"/>
+<ts ref="ej.datavisualization.Map.SelectionMode"/>
 
 Specifies the selection mode of the map. Accepted selection mode values are Default and Multiple.
 
@@ -5783,7 +5770,7 @@ Specifies the equalColorMapping color in the shape layer of map.
 ### layers.sublayers.shapeSettings.colorPalette `enum`
 {:#members:layers-sublayers-shapesettings-colorpalette}
 
-<ts ref = "ej.datavisualization.Map.ColorPalette"/>
+<ts ref="ej.datavisualization.Map.ColorPalette"/>
 
 Specifies the shape color palette value of the shape layer in map. Accepted colorPalette values are palette1, palette2, palette3 and custompalette.
 

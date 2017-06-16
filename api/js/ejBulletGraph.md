@@ -371,7 +371,6 @@ captionSettings :{font :{fontFamily : "algerian"}}
 {:#members:captionsettings-font-fontstyle}
 
 <ts name="ej.datavisualization.BulletGraph.FontStyle"/>
-
 Specifies the fontStyle of caption
 
 
@@ -449,7 +448,6 @@ captionSettings :{font :{fontStyle : "italic"}}
 
 
 <ts name="ej.datavisualization.BulletGraph.FontWeight"/>
-
 Specifies the fontWeight of caption
 
 
@@ -472,7 +470,7 @@ Normal</td>
 <td class="name">
 Bold</td>
 <td class="type">string</td>
-<td class="description last">The texts are displayed in the Bold </td>
+<td class="description last">The texts are displayed in the Bold</td>
 </tr> 
 <tr>
 <td class="name">
@@ -1645,7 +1643,6 @@ captionSettings :{ indicator :{text : "Power Production"} }
 {:#members:captionsettings-indicator-textalignment}
 
 <ts name="ej.datavisualization.BulletGraph.TextAlignment"/>
-
 Specifies the alignment of indicator with respect to scale based on text position
 
 
@@ -1726,7 +1723,6 @@ captionSettings :{ indicator:{textAlignment: 'Far'}}
 
 
 <ts name="ej.datavisualization.BulletGraph.TextAnchor"/>
-
 Specifies where indicator text should be anchored when indicator overlaps with other caption group text. Text will be anchored when overlapping caption group text are at same position. Anchoring is not applicable for float position.
 
 
@@ -1853,7 +1849,6 @@ captionSettings :{ indicator :{textAngle :10} }
 
 
 <ts name="ej.datavisualization.BulletGraph.TextPosition"/>
-
 Specifies where indicator should be placed
 
 
@@ -3347,9 +3342,6 @@ enableResizing : false
 
 
 <ts name="ej.datavisualization.BulletGraph.FlowDirection"/>
-
-
-
 Specifies the direction of flow in bullet graph. Neither it may be backward nor forward. 
 
 
@@ -3568,7 +3560,6 @@ locale : "en-US"
 
 
 <ts name="ej.datavisualization.BulletGraph.Orientation"/>
-
 Bullet graph will render in the specified orientation.
 
 
@@ -4968,7 +4959,6 @@ quantitativeScaleSettings : { labelSettings : { font :{ opacity : 0.5 } } }
 
 
 <ts name="ej.datavisualization.BulletGraph.LabelPlacement"/>
-
 Specifies the placement of labels in bullet graph scale.
 
 
@@ -5186,8 +5176,7 @@ quantitativeScaleSettings : { labelSettings : { offset : 25 } }
 ### quantitativeScaleSettings.labelSettings.position `enum`
 {:#members:quantitativescalesettings-labelsettings-position}
 
-<ts name= "ej.datavisualization.BulletGraph.LabelPosition"/>
-
+<ts name="ej.datavisualization.BulletGraph.LabelPosition"/>
 Specifies the position of the labels to render either above or below the graph. See <a href="global.html#Position">Position</a>
 
 
@@ -5963,7 +5952,6 @@ quantitativeScaleSettings : { minorTicksPerInterval : 5 }
 
 
 <ts name="ej.datavisualization.BulletGraph.TickPlacement"/>
-
 Specifies the placement of ticks to render either inside or outside the scale.
 
 
@@ -6034,7 +6022,6 @@ quantitativeScaleSettings : { tickPlacement : "inside" }
 
 
 <ts name="ej.datavisualization.BulletGraph.TickPosition"/>
-
 Specifies the position of the ticks to render either above,below or inside
 
 

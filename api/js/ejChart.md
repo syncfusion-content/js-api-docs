@@ -147,9 +147,7 @@ Try it: [Annotation Content](http://jsplayground.syncfusion.com/plihjtm3)
 ### annotations.coordinateUnit `enum`
 {:#members:annotations-coordinateunit}
 
-<ts name = "ej.datavisualization.Chart.CoordinateUnit"/>
-
-
+<ts name="ej.datavisualization.Chart.CoordinateUnit"/>
 Specifies how annotations have to be placed in Chart.
 
 <table class="props">
@@ -208,9 +206,7 @@ $("#container").ejChart({
 ### annotations.horizontalAlignment `enum`
 {:#members:annotations-horizontalalignment}
 
-<ts name = "ej.datavisualization.Chart.HorizontalAlignment"/>
-
-
+<ts name="ej.datavisualization.Chart.HorizontalAlignment"/>
 Specifies the horizontal alignment of the annotation.
 
 <table class="props">
@@ -452,9 +448,7 @@ Try it: [Annotation Opacity](http://jsplayground.syncfusion.com/rgl4uwkj)
 ### annotations.region `enum`
 {:#members:annotations-region}
 
-<ts name = "ej.datavisualization.Chart.Region"/>
-
-
+<ts name="ej.datavisualization.Chart.Region"/>
 Specifies whether annotation has to be placed with respect to chart or series.
 
 
@@ -512,9 +506,7 @@ Try it: [Annotation Region](http://jsplayground.syncfusion.com/yfxghhut)
 ### annotations.verticalAlignment `enum`
 {:#members:annotations-verticalalignment}
 
-<ts name = "ej.datavisualization.Chart.VerticalAlignment"/>
-
-
+<ts name="ej.datavisualization.Chart.VerticalAlignment"/>
 Specifies the vertical alignment of the annotation.
 
 <table class="props">
@@ -1037,9 +1029,7 @@ $("#container").ejChart({
 {:#members:exportsettings-type}
 
 
-<ts name = "ej.datavisualization.Chart.ExportingType"/>
-
-
+<ts name="ej.datavisualization.Chart.ExportingType"/>
 Specifies the format of the file to export
 
 <table class="props">
@@ -1117,9 +1107,7 @@ $("#container").ejChart({
 {:#members:exportsettings-orientation}
 
 
-<ts name = "ej.datavisualization.Chart.ExportingOrientation"/>
-
-
+<ts name="ej.datavisualization.Chart.ExportingOrientation"/>
 Specifies the orientation of the document
 
 <table class="props">
@@ -1173,9 +1161,7 @@ $("#container").ejChart({
 ### exportSettings.mode `enum`
 {:#members:exportsettings-mode}
 
-<ts name = "ej.datavisualization.Chart.ExportingMode"/>
-
-
+<ts name="ej.datavisualization.Chart.ExportingMode"/>
 Specifies the mode of exporting
 
 <table class="props">
@@ -1433,9 +1419,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdfd1sai)
 ### columnDefinitions.unit `enum`
 {:#members:columnDefinitions.unit}
 
-<ts name = "ej.datavisualization.Chart.Unit"/>
-
-
+<ts name="ej.datavisualization.Chart.Unit"/>
 Specifies the unit to measure the width of the column in plotting area.
 
 
@@ -1708,8 +1692,7 @@ commonSeriesOptions :{border :{ width : 2 } }
 ### commonSeriesOptions.columnFacet `enum`
 {:#members:commonseriesoptions-columnfacet}
 
-<ts name = "ej.datavisualization.Chart.ColumnFacet"/>
-
+<ts name="ej.datavisualization.Chart.ColumnFacet"/>
 To render the column and bar type series in rectangle/cylinder shape. See <a href="global.html#ColumnFacet">ColumnFacet</a>
 
 
@@ -2056,9 +2039,7 @@ commonSeriesOptions :{ doughnutSize : 0.9}
 {:#members:commonseriesoptions-drawtype}
 
 
-<ts name = "ej.datavisualization.Chart.DrawType"/>
-
-
+<ts name="ej.datavisualization.Chart.DrawType"/>
 Specifies the type of series to be drawn in radar or polar series. 
 
 
@@ -2468,9 +2449,7 @@ commonSeriesOptions :{ font : { fontFamily : "Algerian"}}
 {:#members:commonseriesoptions-font-fontstyle}
 
 
-<ts name = "ej.datavisualization.Chart.FontStyle"/>
-
-
+<ts name="ej.datavisualization.Chart.FontStyle"/>
 Specifies the font Style for all the series.
 
 
@@ -2526,9 +2505,7 @@ commonSeriesOptions : {font :{fontStyle : "italic"}}
 {:#members:commonseriesoptions-font-fontweight}
 
 
-<ts name = "ej.datavisualization.Chart.FontWeight"/>
-
-
+<ts name="ej.datavisualization.Chart.FontWeight"/>
 Specifies the font weight for all the series.
 
 
@@ -2894,9 +2871,7 @@ commonSeriesOptions : {showMedian : true }
 {:#members:commonseriesoptions-labelposition}
 
 
-<ts name = "ej.datavisualization.Chart.LabelPosition"/>
-
-
+<ts name="ej.datavisualization.Chart.LabelPosition"/>
 Position of the data label in pie/doughnut/pyramid/funnel series. OutsideExtended position is not applicable for pyramid/funnel.
 
 
@@ -2958,9 +2933,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/w5q1jt5k)
 {:#members:commonseriesoptions-splitmode}
 
 
-<ts name = "ej.datavisualization.Chart.SplitMode"/>
-
-
+<ts name="ej.datavisualization.Chart.SplitMode"/>
 Specifies the mode for splitting the data points in pieOfPie series.
 
 
@@ -3025,9 +2998,7 @@ commonSeriesOptions :{ splitMode : "position"}
 {:#members:commonseriesoptions-boxplotmode}
 
 
-<ts name = "ej.datavisualization.Chart.boxPlotMode"/>
-
-
+<ts name="ej.datavisualization.Chart.boxPlotMode"/>
 Quartile calculation has been performed in three different formulas to render the box and whisker series.
 
 
@@ -3093,9 +3064,7 @@ Options for customizing the bubble options of the Bubble series
 
 
 
-<ts name = "ej.datavisualization.Chart.RadiusMode"/>
-
-
+<ts name="ej.datavisualization.Chart.RadiusMode"/>
 Used for the calculation of the bubble radius based on the mode selected 
 
 
@@ -3144,7 +3113,7 @@ commonSeriesOptions :{ bubbleOptions: { radiusMode: "minmax" }}
 
  {% endhighlight %}
  
-### commonSeriesOptions.bubbleOptions.minRadius `Number`
+### commonSeriesOptions.bubbleOptions.minRadius `number`
 {:#members:commonseriesoptions-bubbleoptions-minRadius}
 
 
@@ -3173,7 +3142,7 @@ commonSeriesOptions :{ bubbleOptions: { minRadius: 3 }}
  {% endhighlight %}
 
 
-### commonSeriesOptions.bubbleOptions.maxRadius `Number`
+### commonSeriesOptions.bubbleOptions.maxRadius `number`
 {:#members:commonseriesoptions-bubbleoptions-maxRadius}
 
 
@@ -3209,9 +3178,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdnbwech)
 {:#members:commonseriesoptions-linecap}
 
 
-<ts name = "ej.datavisualization.Chart.LineCap"/>
-
-
+<ts name="ej.datavisualization.Chart.LineCap"/>
 Specifies the line cap of the series. 
 
 
@@ -3272,9 +3239,7 @@ commonSeriesOptions :{lineCap : "butt"}
 {:#members:commonseriesoptions-linejoin}
 
 
-<ts name = "ej.datavisualization.Chart.LineJoin"/>
-
-
+<ts name="ej.datavisualization.Chart.LineJoin"/>
 Specifies the type of shape to be used where two lines meet.
 
 
@@ -3615,9 +3580,7 @@ Options for displaying and customizing the line that connects point and data lab
 {:#members:commonseriesoptions-marker-datalabel-connectorline-type}
 
 
-<ts name = "ej.datavisualization.Chart.ConnectorLineType"/>
-
-
+<ts name="ej.datavisualization.Chart.ConnectorLineType"/>
 Specifies when the connector has to be drawn as Bezier curve or straight line. This is applicable only for Pie and Doughnut chart types.
 
 
@@ -3993,9 +3956,7 @@ commonSeriesOptions :{marker :{dataLabel :{font : { size : "14px" }}}}
 {:#members:commonseriesoptions-marker-datalabel-horizontaltextalignment}
 
 
-<ts name = "ej.datavisualization.Chart.HorizontalTextAlignment"/>
-
-
+<ts name="ej.datavisualization.Chart.HorizontalTextAlignment"/>
 Horizontal alignment of the data label. 
 
 
@@ -4299,9 +4260,7 @@ $("#container").ejChart({
 {:#members:commonseriesoptions-marker-datalabel-shape}
 
 
-<ts name = "ej.datavisualization.Chart.Shape"/>
-
-
+<ts name="ej.datavisualization.Chart.Shape"/>
 Background shape of the data label. 
 
 
@@ -4520,9 +4479,7 @@ commonseriesoptions : { marker : { dataLabel : { textMappingName : "TextFieldNam
 {:#members:commonseriesoptions-marker-datalabel-textposition}
 
 
-<ts name = "ej.datavisualization.Chart.TextPosition"/>
-
-
+<ts name="ej.datavisualization.Chart.TextPosition"/>
 Specifies the position of the data label. This property can be used only for the series such as column, bar, stacked column, stacked bar, 100% stacked column, 100% stacked bar, candle and OHLC.
 
 
@@ -4588,9 +4545,7 @@ Try it: [JS Playground  Sample](http://jsplayground.syncfusion.com/tzmb3o0y)
 {:#members:commonseriesoptions-marker-datalabel-verticaltextalignment}
 
 
-<ts name = "ej.datavisualization.Chart.VerticalTextAlignment"/>
-
-
+<ts name="ej.datavisualization.Chart.VerticalTextAlignment"/>
 Vertical alignment of the data label. 
 
 
@@ -4787,7 +4742,7 @@ commonSeriesOptions :{marker :{ opacity : 0.5 }}
 {:#members:commonseriesoptions-marker-shape}
 
 
-<ts ref = "ej.datavisualization.Chart.Shape"/>
+<ts ref="ej.datavisualization.Chart.Shape"/>
 
 
 Specifies the shape of the marker. 
@@ -4976,7 +4931,7 @@ Options for customizing the outlier of the series.
 {:#members:commonseriesoptions-outliersettings-shape}
 
 
-<ts ref = "ej.datavisualization.Chart.Shape"/>
+<ts ref="ej.datavisualization.Chart.Shape"/>
 
 
 Specifies the shape of the outlier. 
@@ -5275,9 +5230,7 @@ commonSeriesOptions : {pointColorMappingName: "color" }
 {:#members:commonseriesoptions-pyramidmode}
 
 
-<ts name = "ej.datavisualization.Chart.PyramidMode"/>
-
-
+<ts name="ej.datavisualization.Chart.PyramidMode"/>
 Specifies the mode of the pyramid series. 
 
 
@@ -5918,8 +5871,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tpizvdt0)
 {:#members:commonseriesoptions-type}
 
 
-<ts name = "ej.datavisualization.Chart.Type"/>
-
+<ts name="ej.datavisualization.Chart.Type"/>
 Specifies the type of the series to render in chart. 
 
 
@@ -6509,9 +6461,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hpl0ffff)
 {:#members:commonSeriesOptions-emptypointsettings-displaymode}
 
 
-<ts name = "ej.datavisualization.Chart.EmptyPointMode"/>
-
-
+<ts name="ej.datavisualization.Chart.EmptyPointMode"/>
 Specifies the mode of empty point.
 
 
@@ -6980,9 +6930,7 @@ $("#container").ejChart({
 ### commonSeriesOptions.errorBar.type `enum`
 {:#members:commonSeriesOptions.errorbar.type}
 
-<ts name = "ej.datavisualization.Chart.ErrorBarType"/>
-
-
+<ts name="ej.datavisualization.Chart.ErrorBarType"/>
 Specifies the type of error bar.
 
 
@@ -7050,9 +6998,7 @@ $("#container").ejChart({
 ### commonSeriesOptions.errorBar.mode `enum`
 {:#members:commonSeriesOptions.errorbar.mode}
  
-<ts name = "ej.datavisualization.Chart.ErrorBarMode"/>
- 
-
+<ts name="ej.datavisualization.Chart.ErrorBarMode"/>
 Specifies the mode of error bar.
 
 
@@ -7116,8 +7062,7 @@ $("#container").ejChart({
 {:#members:commonSeriesOptions.errorbar.direction}
 
 
-<ts name = "ej.datavisualization.Chart.ErrorBarDirection"/>
-
+<ts name="ej.datavisualization.Chart.ErrorBarDirection"/>
 Specifies the direction of error bar.
 
 
@@ -8334,11 +8279,7 @@ commonSeriesOptions :{highlightSettings:{enable:true}}
 {:#members:commonSeriesOptions-highlightSettings-mode}
 
 
-<ts name = "ej.datavisualization.Chart.Mode"/>
-
-
-
-
+<ts name="ej.datavisualization.Chart.Mode"/>
 Specifies whether the series or data point has to be highlighted.
 
 
@@ -8637,8 +8578,7 @@ commonSeriesOptions :{selectionSettings:{enable:true}}
 ### commonSeriesOptions.selectionSettings.type `enum`
 {:#members:commonseriesOptions-selectionSettings-type}
 
-<ts name = "ej.datavisualization.Chart.SelectionType"/>
-
+<ts name="ej.datavisualization.Chart.SelectionType"/>
 Specifies the type of selection.
 
 
@@ -8696,7 +8636,7 @@ commonSeriesOptions:{
 
 
 
-<ts ref = "ej.datavisualization.Chart.Mode"/>
+<ts ref="ej.datavisualization.Chart.Mode"/>
 
 
 Specifies whether the series or data point has to be selected.
@@ -8730,8 +8670,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/yghrxu21)
 ### commonSeriesOptions.selectionSettings.rangeType `enum`
 {:#members:commonseriesoptions-selectionsettings-rangetype}
 
-<ts name = "ej.datavisualization.Chart.RangeType"/>
-
+<ts name="ej.datavisualization.Chart.RangeType"/>
 Specifies the drawn rectangle type.
 
 
@@ -9160,8 +9099,7 @@ $("#container").ejChart({
 ### crosshair.trackballTooltipSettings.mode `enum`
 {:#members:crosshair-trackballtooltipsettings-mode}
 
-<ts name = "ej.datavisualization.Chart.CrosshairMode"/>
-
+<ts name="ej.datavisualization.Chart.CrosshairMode"/>
 Specifies the mode of the trackball tooltip.
 
 
@@ -9497,8 +9435,7 @@ $("#container").ejChart({
 ### crosshair.type `enum`
 {:#members:crosshair-type}
 
-<ts name = "ej.datavisualization.Chart.CrosshairType"/>
-
+<ts name="ej.datavisualization.Chart.CrosshairType"/>
 Specifies the type of the crosshair. It can be trackball or crosshair
 
 <table class="props">
@@ -11142,9 +11079,7 @@ Options to customize the legend items and legend title.
 ### legend.alignment `enum`
 {:#members:legend-alignment}
 
-<ts name = "ej.datavisualization.Chart.Alignment"/>
-
-
+<ts name="ej.datavisualization.Chart.Alignment"/>
 Horizontal alignment of the legend.
 
 
@@ -11871,8 +11806,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/nlewhk5r)
 ### legend.position `enum`
 {:#members:legend-position}
 
-<ts name = "ej.datavisualization.Chart.Position"/>
-
+<ts name="ej.datavisualization.Chart.Position"/>
 Places the legend at specified position. Legend can be placed at **left**, **right**, **top** or **bottom** of the chart area. 
 To manually specify the location of legend, set **custom** as value to this property.
 
@@ -11978,7 +11912,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/tovkgqw5)
 ### legend.shape `enum`
 {:#members:legend-shape}
 
-<ts ref = "ej.datavisualization.Chart.Shape"/>
+<ts ref="ej.datavisualization.Chart.Shape"/>
 
 
 
@@ -12282,8 +12216,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ux1xb3j4)
 ### legend.title.textAlignment `enum`
 {:#members:legend-title-textalignment}
 
-<ts name = "ej.datavisualization.Chart.Alignment"/>
-
+<ts name="ej.datavisualization.Chart.Alignment"/>
 Alignment of the legend title.
 
 
@@ -12348,8 +12281,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hnrnl1o1)
 ### legend.textOverflow `enum`
 {:#members:legend-textoverflow}
 
-<ts name = "ej.datavisualization.Chart.TextOverflow"/>
-
+<ts name="ej.datavisualization.Chart.TextOverflow"/>
 Specifies the action taken when the legend width is more than the textWidth.
 
 
@@ -13425,8 +13357,7 @@ $("#container").ejChart({
 ### primaryXAxis.labelPlacement `enum`
 {:#members:primaryxaxis-labelplacement}
 
-<ts name = "ej.datavisualization.Chart.LabelPlacement"/>
-
+<ts name="ej.datavisualization.Chart.LabelPlacement"/>
 Specifies the placement of labels. 
 
 
@@ -13481,8 +13412,7 @@ $("#container").ejChart({
 ### primaryXAxis.edgeLabelPlacement `enum`
 {:#members:primaryxaxis-edgelabelplacement}
 
-<ts name = "ej.datavisualization.Chart.EdgeLabelPlacement"/>
-
+<ts name="ej.datavisualization.Chart.EdgeLabelPlacement"/>
 Specifies the position of labels at the edge of the axis. 
 
 
@@ -13767,8 +13697,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xm2ur0jj)
 ### primaryXAxis.intervalType `enum`
 {:#members:primaryxaxis-intervaltype}
 
-<ts name = "ej.datavisualization.Chart.IntervalType"/>
-
+<ts name="ej.datavisualization.Chart.IntervalType"/>
 Specifies the type of interval in date time axis.
 
 
@@ -13927,8 +13856,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/x22gftws)
 ### primaryXAxis.labelIntersectAction `enum`
 {:#members:primaryxaxis-labelintersectaction}
 
-<ts name = "ej.datavisualization.Chart.LabelIntersectAction"/>
-
+<ts name="ej.datavisualization.Chart.LabelIntersectAction"/>
 Specifies the action to take when the axis labels are overlapping with each other. 
 
 
@@ -14024,8 +13952,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/sedhp2ek)
 ### primaryXAxis.labelPosition `enum`
 {:#members:primaryxaxis-labelposition}
 
-<ts name = "ej.datavisualization.Chart.LabelPosition"/>
-
+<ts name="ej.datavisualization.Chart.LabelPosition"/>
 Specifies the position of the axis labels.
 
 
@@ -14087,8 +14014,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/u0s1y0dg)
 ### primaryXAxis.alignment `enum`
 {:#members:primaryxaxis-alignment}
 
-<ts name = "ej.datavisualization.Chart.LabelAlignment"/>
-
+<ts name="ej.datavisualization.Chart.LabelAlignment"/>
 Specifies the position of the axis labels.
 
 
@@ -14914,9 +14840,7 @@ $("#container").ejChart({
 ### primaryXAxis.orientation `enum`
 {:#members:primaryxaxis-orientation}
 
-<ts name = "ej.datavisualization.Chart.AxisOrientation"/>
-
-
+<ts name="ej.datavisualization.Chart.AxisOrientation"/>
 Specifies the orientation of the axis line
 
 <table class="props">
@@ -15107,8 +15031,7 @@ $("#container").ejChart({
 ### primaryXAxis.rangePadding `enum`
 {:#members:primaryxaxis-rangepadding}
 
-<ts name = "ej.datavisualization.Chart.RangePadding"/>
-
+<ts name="ej.datavisualization.Chart.RangePadding"/>
 Specifies the padding for the axis range.
 
 
@@ -15423,7 +15346,7 @@ $("#container").ejChart({
 ### primaryXAxis.multiLevelLabels.textAlignment `enum`
 {:#members:primaryxaxis-multilevellabels-textalignment}
 
-<ts ref = "ej.datavisualization.Chart.TextAlignment"/>
+<ts ref="ej.datavisualization.Chart.TextAlignment"/>
 
 
 Specifies the alignment of the text in multi level labels.
@@ -15455,7 +15378,7 @@ $("#container").ejChart({
 ### primaryXAxis.multiLevelLabels.textOverflow `enum`
 {:#members:primaryxaxis-multilevellabels-textoverflow}
 
-<ts ref = "ej.datavisualization.Chart.TextOverflow"/>
+<ts ref="ej.datavisualization.Chart.TextOverflow"/>
 
 
 Specifies the handling of text over flow in multi level labels.
@@ -15779,9 +15702,7 @@ $("#container").ejChart({
 {:#members:primaryxaxis-multilevellabels-border-type}
 
 
-<ts name = "ej.datavisualization.Chart.MultiLevelLabelsBorderType"/>
-
-
+<ts name="ej.datavisualization.Chart.MultiLevelLabelsBorderType"/>
 Border type of the multi level labels.
 
 
@@ -16324,8 +16245,7 @@ $("#container").ejChart({
 ### primaryXAxis.stripLine.textAlignment `enum`
 {:#members:primaryxaxis-stripline-textalignment}
 
-<ts name = "ej.datavisualization.Chart.TextAlignment"/>
-
+<ts name="ej.datavisualization.Chart.TextAlignment"/>
 Specifies the alignment of the text inside the strip line.
 
 
@@ -16459,8 +16379,7 @@ $("#container").ejChart({
 ### primaryXAxis.stripLine.zIndex `enum`
 {:#members:primaryxaxis-stripline-zindex}
 
-<ts name = "ej.datavisualization.Chart.ZIndex"/>
-
+<ts name="ej.datavisualization.Chart.ZIndex"/>
 Specifies the order where the strip line and the series have to be rendered. When Z-order is “behind”, strip line is rendered under the series and when it is “over”, it is rendered above the series.
 
 
@@ -16518,8 +16437,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/1at44wzi)
 ### primaryXAxis.tickLinesPosition `enum`
 {:#members:primaryxaxis-ticklinesposition}
 
-<ts name = "ej.datavisualization.Chart.TickLinesPosition"/>
-
+<ts name="ej.datavisualization.Chart.TickLinesPosition"/>
 Specifies the position of the axis tick lines.
 
 
@@ -17020,7 +16938,7 @@ $("#container").ejChart({
 ### primaryXAxis.title.position `enum`
 {:#members:primaryxaxis-title-position}
 
-<ts ref = "ej.datavisualization.Chart.LabelPosition"/>
+<ts ref="ej.datavisualization.Chart.LabelPosition"/>
 
 Specifies the position of the axis title.
 
@@ -17050,7 +16968,7 @@ $("#container").ejChart({
 ### primaryXAxis.title.alignment `enum`
 {:#members:primaryxaxis-title-alignment}
 
-<ts ref = "ej.datavisualization.Chart.TextAlignment"/>
+<ts ref="ej.datavisualization.Chart.TextAlignment"/>
 
 Specifies the position of the axis title.
 
@@ -17082,8 +17000,7 @@ $("#container").ejChart({
 ### primaryXAxis.valueType `enum`
 {:#members:primaryxaxis-valuetype}
 
-<ts name = "ej.datavisualization.Chart.ValueType"/>
-
+<ts name="ej.datavisualization.Chart.ValueType"/>
 Specifies the type of data the axis is handling.
 
 
@@ -18046,7 +17963,7 @@ $("#container").ejChart({
 ### axes.labelPlacement `enum`
 {:#members:axes-labelplacement}
 
-<ts ref = "ej.datavisualization.Chart.LabelPlacement"/>
+<ts ref="ej.datavisualization.Chart.LabelPlacement"/>
 
 Specifies the placement of labels. 
 
@@ -18076,7 +17993,7 @@ $("#container").ejChart({
 ### axes.edgeLabelPlacement `enum`
 {:#members:axes-edgelabelplacement}
 
-<ts ref = "ej.datavisualization.Chart.EdgeLabelPlacement"/>
+<ts ref="ej.datavisualization.Chart.EdgeLabelPlacement"/>
 
 Specifies the position of labels at the edge of the axis. 
 
@@ -18357,7 +18274,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5x5zgpnf)
 ### axes.intervalType `enum`
 {:#members:axes-intervaltype}
 
-<ts ref = "ej.datavisualization.Chart.IntervalType"/>
+<ts ref="ej.datavisualization.Chart.IntervalType"/>
 
 Specifies the type of interval in date time axis.
 
@@ -18453,7 +18370,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wurgvm33)
 ### axes.labelIntersectAction `enum`
 {:#members:axes-labelintersectaction}
 
-<ts ref = "ej.datavisualization.Chart.LabelIntersectAction"/>
+<ts ref="ej.datavisualization.Chart.LabelIntersectAction"/>
 
 Specifies the action to take when the axis labels are overlapping with each other. 
 
@@ -18484,7 +18401,7 @@ $("#container").ejChart({
 ### axes.labelPosition `enum`
 {:#members:axes-labelposition}
 
-<ts ref = "ej.datavisualization.Chart.LabelPosition"/>
+<ts ref="ej.datavisualization.Chart.LabelPosition"/>
 
 Specifies the position of the axis labels.
 
@@ -18518,7 +18435,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/4qljgc5m)
 ### axes.alignment `enum`
 {:#members:axes-alignment}
 
-<ts ref = "ej.datavisualization.Chart.LabelAlignment"/>
+<ts ref="ej.datavisualization.Chart.LabelAlignment"/>
 
 Specifies the position of the axis labels.
 
@@ -19312,7 +19229,7 @@ $("#container").ejChart({
 {:#members:axes-orientation}
 
 
-<ts ref = "ej.datavisualization.Chart.AxisOrientation"/>
+<ts ref="ej.datavisualization.Chart.AxisOrientation"/>
 
 Specifies the orientation of the axis line in the chart.
 
@@ -19480,7 +19397,7 @@ $("#container").ejChart({
 ### axes.rangePadding `enum`
 {:#members:axes-rangepadding}
 
-<ts ref = "ej.datavisualization.Chart.RangePadding"/>
+<ts ref="ej.datavisualization.Chart.RangePadding"/>
 
 Specifies the padding for the axis range.
 #### Default Value
@@ -19756,7 +19673,7 @@ $("#container").ejChart({
 ### axes.multiLevelLabels.textAlignment `enum`
 {:#members:axes-multilevellabels-textalignment}
 
-<ts ref = "ej.datavisualization.Chart.TextAlignment"/>
+<ts ref="ej.datavisualization.Chart.TextAlignment"/>
 
 
 Specifies the alignment of the text in multi level labels.
@@ -19788,7 +19705,7 @@ $("#container").ejChart({
 ### axes.multiLevelLabels.textOverflow `enum`
 {:#members:axes-multilevellabels-textoverflow}
 
-<ts ref = "ej.datavisualization.Chart.TextOverflow"/>
+<ts ref="ej.datavisualization.Chart.TextOverflow"/>
 
 
 Specifies the handling of text over flow in multi level labels.
@@ -20112,7 +20029,7 @@ $("#container").ejChart({
 {:#members:axes-multilevellabels-border-type}
 
 
-<ts ref = "ej.datavisualization.Chart.MultiLevelLabelsBorderType"/>
+<ts ref="ej.datavisualization.Chart.MultiLevelLabelsBorderType"/>
 
 
 Border type of the multi level labels.
@@ -20616,7 +20533,7 @@ $("#container").ejChart({
 ### axes.stripLine.textAlignment `enum`
 {:#members:axes-stripline-textalignment}
 
-<ts ref = "ej.datavisualization.Chart.TextAlignment"/>
+<ts ref="ej.datavisualization.Chart.TextAlignment"/>
 
 Specifies the alignment of the text inside the strip line.
 
@@ -20719,7 +20636,7 @@ $("#container").ejChart({
 ### axes.stripLine.zIndex `enum`
 {:#members:axes-stripline-zindex}
 
-<ts ref = "ej.datavisualization.Chart.ZIndex"/>
+<ts ref="ej.datavisualization.Chart.ZIndex"/>
 
 Specifies the order where the strip line and the series have to be rendered. When Z-order is “behind”, strip line is rendered under the series and when it is “over”, it is rendered above the series.
 
@@ -20752,7 +20669,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/vuduvnu1)
 ### axes.tickLinesPosition `enum`
 {:#members:axes-ticklinesposition}
 
-<ts ref = "ej.datavisualization.Chart.TickLinesPosition"/>
+<ts ref="ej.datavisualization.Chart.TickLinesPosition"/>
 
 Specifies the position of the axis tick lines.
 
@@ -21226,7 +21143,7 @@ $("#container").ejChart({
 ### axes.title.position `enum`
 {:#members:axes-title-position}
 
-<ts ref = "ej.datavisualization.Chart.LabelPosition"/>
+<ts ref="ej.datavisualization.Chart.LabelPosition"/>
 
 Specifies the position of the axis title.
 
@@ -21256,7 +21173,7 @@ $("#container").ejChart({
 ### axes.title.alignment `enum`
 {:#members:axes-title-alignment}
 
-<ts ref = "ej.datavisualization.Chart.TextAlignment"/>
+<ts ref="ej.datavisualization.Chart.TextAlignment"/>
 
 Specifies the position of the axis title.
 
@@ -21288,7 +21205,7 @@ $("#container").ejChart({
 ### axes.valueType `enum`
 {:#members:axes-valuetype}
 
-<ts ref = "ej.datavisualization.Chart.ValueType"/>
+<ts ref="ej.datavisualization.Chart.ValueType"/>
 
 Specifies the type of data the axis is handling.
 
@@ -22159,7 +22076,7 @@ $("#container").ejChart({
 ### primaryYAxis.labelPlacement `enum`
 {:#members:primaryyaxis-labelplacement}
 
-<ts ref = "ej.datavisualization.Chart.LabelPlacement"/>
+<ts ref="ej.datavisualization.Chart.LabelPlacement"/>
 
 Specifies the placement of labels. 
 
@@ -22188,7 +22105,7 @@ $("#container").ejChart({
 ### primaryYAxis.edgeLabelPlacement `enum`
 {:#members:primaryyaxis-edgelabelplacement}
 
-<ts ref = "ej.datavisualization.Chart.EdgeLabelPlacement"/>
+<ts ref="ej.datavisualization.Chart.EdgeLabelPlacement"/>
 
 
 Specifies the position of labels at the edge of the axis. 
@@ -22442,7 +22359,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/s1dshld4))
 ### primaryYAxis.intervalType `enum`
 {:#members:primaryyaxis-intervaltype}
 
-<ts ref = "ej.datavisualization.Chart.IntervalType"/>
+<ts ref="ej.datavisualization.Chart.IntervalType"/>
 
 
 Specifies the type of interval in date time axis.
@@ -22546,7 +22463,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/n2dwkjtr)
 {:#members:primaryyaxis-labelintersectaction}
 
 
-<ts ref = "ej.datavisualization.Chart.LabelIntersectAction"/>
+<ts ref="ej.datavisualization.Chart.LabelIntersectAction"/>
 
 Specifies the action to take when the axis labels are overlapping with each other. 
 
@@ -22579,7 +22496,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pm2ksurr)
 ### primaryYAxis.labelPosition `enum`
 {:#members:primaryyaxis-labelposition}
 
-<ts ref = "ej.datavisualization.Chart.LabelPosition"/>
+<ts ref="ej.datavisualization.Chart.LabelPosition"/>
 
 Specifies the position of the axis labels.
 
@@ -22612,7 +22529,7 @@ $("#container").ejChart({
 ### primaryYAxis.alignment `enum`
 {:#members:primaryyaxis-alignment}
 
-<ts ref = "ej.datavisualization.Chart.LabelAlignment"/>
+<ts ref="ej.datavisualization.Chart.LabelAlignment"/>
 
 Specifies the position of the axis labels.
 
@@ -23370,7 +23287,7 @@ $("#container").ejChart({
 ### primaryYAxis.orientation `enum`
 {:#members:primaryyaxis-orientation}
 
-<ts ref = "ej.datavisualization.Chart.AxisOrientation"/>
+<ts ref="ej.datavisualization.Chart.AxisOrientation"/>
 
 
 Specifies the orientation of the axis line in the chart.
@@ -23540,7 +23457,7 @@ $("#container").ejChart({
 ### primaryYAxis.rangePadding `enum`
 {:#members:primaryyaxis-rangepadding}
 
-<ts ref = "ej.datavisualization.Chart.RangePadding"/>
+<ts ref="ej.datavisualization.Chart.RangePadding"/>
 
 
 Specifies the padding for the axis range.
@@ -23887,7 +23804,7 @@ $("#container").ejChart({
 ### primaryYAxis.multiLevelLabels.textAlignment `enum`
 {:#members:primaryyaxis-multilevellabels-textalignment}
 
-<ts ref = "ej.datavisualization.Chart.TextAlignment"/>
+<ts ref="ej.datavisualization.Chart.TextAlignment"/>
 
 
 Specifies the alignment of the text in multi level labels.
@@ -23919,7 +23836,7 @@ $("#container").ejChart({
 ### primaryYAxis.multiLevelLabels.textOverflow `enum`
 {:#members:primaryyaxis-multilevellabels-textoverflow}
 
-<ts ref = "ej.datavisualization.Chart.TextOverflow"/>
+<ts ref="ej.datavisualization.Chart.TextOverflow"/>
 
 
 Specifies the handling of text over flow in multi level labels.
@@ -24243,7 +24160,7 @@ $("#container").ejChart({
 {:#members:primaryyaxis-multilevellabels-border-type}
 
 
-<ts ref = "ej.datavisualization.Chart.MultiLevelLabelsBorderType"/>
+<ts ref="ej.datavisualization.Chart.MultiLevelLabelsBorderType"/>
 
 
 Border type of the multi level labels.
@@ -24925,7 +24842,7 @@ $("#container").ejChart({
 ### primaryYAxis.stripLine.textAlignment `enum`
 {:#members:primaryyaxis-stripline-textalignment}
 
-<ts ref = "ej.datavisualization.Chart.TextAlignment"/>
+<ts ref="ej.datavisualization.Chart.TextAlignment"/>
 
 
 Specifies the alignment of the text inside the strip line.
@@ -25027,7 +24944,7 @@ $("#container").ejChart({
 ### primaryYAxis.stripLine.zIndex `enum`
 {:#members:primaryyaxis-stripline-zindex}
 
-<ts ref = "ej.datavisualization.Chart.ZIndex"/>
+<ts ref="ej.datavisualization.Chart.ZIndex"/>
 
 
 
@@ -25062,7 +24979,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pigg3hc0)
 ### primaryYAxis.tickLinesPosition `enum`
 {:#members:primaryyaxis-ticklinesposition}
 
-<ts ref = "ej.datavisualization.Chart.TickLinesPosition"/>
+<ts ref="ej.datavisualization.Chart.TickLinesPosition"/>
 
 
 
@@ -25536,7 +25453,7 @@ $("#container").ejChart({
 ### primaryYAxis.title.position `enum`
 {:#members:primaryyaxis-title-position}
 
-<ts ref = "ej.datavisualization.Chart.LabelPosition"/>
+<ts ref="ej.datavisualization.Chart.LabelPosition"/>
 
 Specifies the position of the axis title.
 
@@ -25566,7 +25483,7 @@ $("#container").ejChart({
 ### primaryYAxis.title.alignment `enum`
 {:#members:primaryyaxis-title-alignment}
 
-<ts ref = "ej.datavisualization.Chart.TextAlignment"/>
+<ts ref="ej.datavisualization.Chart.TextAlignment"/>
 
 Specifies the position of the axis title.
 
@@ -25598,7 +25515,7 @@ $("#container").ejChart({
 ### primaryYAxis.valueType `enum`
 {:#members:primaryyaxis-valuetype}
 
-<ts ref = "ej.datavisualization.Chart.ValueType"/>
+<ts ref="ej.datavisualization.Chart.ValueType"/>
 
 
 Specifies the type of data the axis is handling.
@@ -25786,8 +25703,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jydjcqbo)
 ### rowDefinitions.unit `enum`
 {:#members:rowDefinitions.unit}
 
-<ts name = "ej.datavisualization.Chart.Unit"/>
-
+<ts name="ej.datavisualization.Chart.Unit"/>
 Specifies the unit to measure the height of the row in plotting area.
 
 
@@ -26138,7 +26054,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/v540kjyb)
 ### series.columnFacet `enum`
 {:#members:series-columnfacet}
 
-<ts ref = "ej.datavisualization.Chart.ColumnFacet"/>
+<ts ref="ej.datavisualization.Chart.ColumnFacet"/>
 
 To render the column and bar type series in rectangle/cylinder shape. See <a href="global.html#ColumnFacet">ColumnFacet</a>
 
@@ -26423,7 +26339,7 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/eyi1qmre)
 ### series.drawType `enum`
 {:#members:series-drawtype}
 
-<ts ref = "ej.datavisualization.Chart.DrawType"/>
+<ts ref="ej.datavisualization.Chart.DrawType"/>
 
 
 Type of series to be drawn in radar or polar series. 
@@ -27157,7 +27073,7 @@ series : [{showMedian : true }]
 ### series.labelPosition `enum`
 {:#members:series-labelposition}
 
-<ts ref = "ej.datavisualization.Chart.LabelPosition"/>
+<ts ref="ej.datavisualization.Chart.LabelPosition"/>
 
 
 Position of the data label in pie/doughnut/pyramid/funnel series. OutsideExtended position is not applicable for pyramid/funnel.
@@ -27190,7 +27106,7 @@ series : [{labelPosition : "outside" }]
  ### series.splitMode `enum`
 {:#members:series-splitmode}
 
-<ts ref = "ej.datavisualization.Chart.SplitMode"/>
+<ts ref="ej.datavisualization.Chart.SplitMode"/>
 
 
 Specifies the mode for splitting the data points in pieOfPie series.
@@ -27221,7 +27137,7 @@ series : [{splitMode : "percentage" }]
 ### series.boxPlotMode `enum`
 {:#members:series-boxplotmode}
 
-<ts ref = "ej.datavisualization.Chart.LabelPosition"/>
+<ts ref="ej.datavisualization.Chart.LabelPosition"/>
 
 
 Quartile calculation has been performed in three different formulas to render the boxplot series .
@@ -27259,7 +27175,7 @@ Options for customizing the bubble options of the Bubble series
 
 
 
-<ts ref = "ej.datavisualization.Chart.RadiusMode"/>
+<ts ref="ej.datavisualization.Chart.RadiusMode"/>
 
 
 Used for the calculation of the bubble radius based on the mode selected 
@@ -27285,7 +27201,7 @@ series : [{ bubbleOptions: { radiusMode: "minmax" }}]
 
  {% endhighlight %}
  
-### series.bubbleOptions.minRadius `Number`
+### series.bubbleOptions.minRadius `number`
 {:#members:series-bubbleoptions-minRadius}
 
 
@@ -27314,7 +27230,7 @@ series : [ { bubbleOptions: { minRadius: 3 }} ]
  {% endhighlight %}
 
 
-### series.bubbleOptions.maxRadius `Number`
+### series.bubbleOptions.maxRadius `number`
 {:#members:series-bubbleoptions-maxRadius}
 
 
@@ -27350,7 +27266,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdnbwech)
 ### series.lineCap `enum`
 {:#members:series-linecap}
 
-<ts ref = "ej.datavisualization.Chart.LineCap"/>
+<ts ref="ej.datavisualization.Chart.LineCap"/>
 
 
 Specifies the line cap of the series. 
@@ -27382,7 +27298,7 @@ series :[{lineCap : "butt"}]
 ### series.lineJoin `enum`
 {:#members:series-linejoin}
 
-<ts ref = "ej.datavisualization.Chart.LineJoin"/>
+<ts ref="ej.datavisualization.Chart.LineJoin"/>
 
 
 Specifies the type of shape to be used where two lines meet.
@@ -27691,7 +27607,7 @@ Options for displaying and customizing the line that connects point and data lab
 ### series.marker.dataLabel.connectorLine.type `enum`
 {:#members:series-marker-datalabel-connectorline-type}
 
-<ts ref = "ej.datavisualization.Chart.Type"/>
+<ts ref="ej.datavisualization.Chart.Type"/>
 
 
 Specifies when the connector has to be drawn as Bezier curve or straight line. This is applicable only for Pie and Doughnut chart types. 
@@ -28044,7 +27960,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fjr0nbgc)
 ### series.marker.dataLabel.horizontalTextAlignment `enum`
 {:#members:series-marker-datalabel-horizontaltextalignment}
 
-<ts ref = "ej.datavisualization.Chart.HorizontalTextAlignment"/>
+<ts ref="ej.datavisualization.Chart.HorizontalTextAlignment"/>
 
 
 Horizontal alignment of the data label. 
@@ -28251,7 +28167,7 @@ series :[{marker :{dataLabel :{opacity : 0.5}}}]
 ### series.marker.dataLabel.shape `enum`
 {:#members:series-marker-datalabel-shape}
 
-<ts ref = "ej.datavisualization.Chart.Shape"/>
+<ts ref="ej.datavisualization.Chart.Shape"/>
 
 
 Background shape of the data label. 
@@ -28311,7 +28227,7 @@ series :[{marker :{dataLabel :{textMappingName : "TextFieldName"}}}]
 ### series.marker.dataLabel.textPosition `enum`
 {:#members:series-marker-datalabel-textposition}
 
-<ts ref = "ej.datavisualization.Chart.TextPosition"/>
+<ts ref="ej.datavisualization.Chart.TextPosition"/>
 
 
 Specifies the position of the data label. This property can be used only for the series such as column, bar, stacked column, stacked bar, 100% stacked column, 100% stacked bar, candle and OHLC. 
@@ -28341,7 +28257,7 @@ series :[{marker :{dataLabel :{textPosition : "bottom"}}}]
 ### series.marker.dataLabel.verticalTextAlignment `enum`
 {:#members:series-marker-datalabel-verticaltextalignment}
 
-<ts ref = "ej.datavisualization.Chart.VerticalTextAlignment"/>
+<ts ref="ej.datavisualization.Chart.VerticalTextAlignment"/>
 
 
 Vertical alignment of the data label. 
@@ -28605,7 +28521,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/1bavaoqq)
 ### series.marker.shape `enum`
 {:#members:series-marker-shape}
 
-<ts ref = "ej.datavisualization.Chart.Shape"/>
+<ts ref="ej.datavisualization.Chart.Shape"/>
 
 
 Specifies the shape of the marker.  
@@ -28814,7 +28730,7 @@ Options for customizing the outlier of individual series.
 ### series.outlierSettings.shape `enum`
 {:#members:series-outliersettings-shape}
 
-<ts ref = "ej.datavisualization.Chart.Shape"/>
+<ts ref="ej.datavisualization.Chart.Shape"/>
 
 
 Specifies the shape of the outlier.  
@@ -29131,7 +29047,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hpl0ffff)
 ### series.emptyPointSettings.displayMode `enum`
 {:#members:series-emptypointsettings-displaymode}
 
-<ts ref = "ej.datavisualization.Chart.EmptyPointMode"/>
+<ts ref="ej.datavisualization.Chart.EmptyPointMode"/>
 
 
 Specifies the mode of empty point.
@@ -29571,7 +29487,7 @@ $("#container").ejChart({
 ### series.errorBar.type `enum`
 {:#members:series.errorbar.type}
 
-<ts ref = "ej.datavisualization.Chart.ErrorBarType"/>
+<ts ref="ej.datavisualization.Chart.ErrorBarType"/>
 
 Specifies the type of error bar.
 
@@ -29602,7 +29518,7 @@ $("#container").ejChart({
 ### series.errorBar.mode `enum`
 {:#members:series.errorbar.mode}
 
-<ts ref = "ej.datavisualization.Chart.ErrorBarMode"/>
+<ts ref="ej.datavisualization.Chart.ErrorBarMode"/>
 Specifies the mode of error bar.
 
 #### Default Value
@@ -29633,7 +29549,7 @@ $("#container").ejChart({
 ### series.errorBar.direction `enum`
 {:#members:series.errorbar.direction}
 
-<ts ref = "ej.datavisualization.Chart.ErrorBarDirection"/>
+<ts ref="ej.datavisualization.Chart.ErrorBarDirection"/>
 
 Specifies the direction of error bar.
 
@@ -30626,7 +30542,7 @@ Options for displaying and customizing the line that connects point and data lab
 ### series.points.marker.dataLabel.connectorLine.type `enum`
 {:#members:series-points-marker-datalabel-connectorline-type}
 
-<ts ref = "ej.datavisualization.Chart.ConnectorLineType"/>
+<ts ref="ej.datavisualization.Chart.ConnectorLineType"/>
 
 
 Specifies when the connector has to be drawn as Bezier curve or straight line. This is applicable only for Pie and Doughnut chart types. 
@@ -30898,7 +30814,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/v4rp3aio)
 ### series.points.marker.dataLabel.horizontalTextAlignment `enum`
 {:#members:series-points-marker-datalabel-horizontaltextalignment}
 
-<ts ref = "ej.datavisualization.Chart.HorizontalTextAlignment"/>
+<ts ref="ej.datavisualization.Chart.HorizontalTextAlignment"/>
 
 
 Horizontal alignment of the data label. 
@@ -31106,7 +31022,7 @@ series :[{ points:[{ marker :{dataLabel :{opacity : 0.5}}}] }]
 {:#members:series-points-marker-datalabel-shape}
 
 
-<ts ref = "ej.datavisualization.Chart.Shape"/>
+<ts ref="ej.datavisualization.Chart.Shape"/>
 
 Background shape of the data label. 
 
@@ -31136,7 +31052,7 @@ series :[{ points:[{ marker :{dataLabel :{shape : "circle"}}}] }]
 {:#members:series-points-marker-datalabel-textposition}
 
 
-<ts ref = "ej.datavisualization.Chart.TextPosition"/>
+<ts ref="ej.datavisualization.Chart.TextPosition"/>
 
 Specifies the position of the data label. This property can be used only for the series such as column, bar, stacked column, stacked bar, 100% stacked column, 100% stacked bar, candle and OHLC. 
 
@@ -31165,7 +31081,7 @@ series :[{ points:[{ marker :{dataLabel :{textPosition : "bottom"}}}] }]
 ### series.points.marker.dataLabel.verticalTextAlignment `enum`
 {:#members:series-points-marker-datalabel-verticaltextalignment}
 
-<ts ref = "ej.datavisualization.Chart.VerticalTextAlignment"/>
+<ts ref="ej.datavisualization.Chart.VerticalTextAlignment"/>
 
 
 Vertical alignment of the data label. 
@@ -31391,7 +31307,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/fr1zj5v3)
 ### series.points.marker.shape `enum`
 {:#members:series-points-marker-shape}
 
-<ts ref = "ej.datavisualization.Chart.Shape"/>
+<ts ref="ej.datavisualization.Chart.Shape"/>
 
 
 Specifies the shape of the marker.  
@@ -31660,7 +31576,7 @@ series :[{ points:[{ y : 20 }] }]
 ### series.pyramidMode `enum`
 {:#members:series.pyramidmode}
 
-<ts ref = "ej.datavisualization.Chart.PyramidMode"/>
+<ts ref="ej.datavisualization.Chart.PyramidMode"/>
 
 
 Specifies the mode of the pyramid series.
@@ -32319,7 +32235,7 @@ series : [{tooltip : {visible : true} }]
 {:#members:series.type}
 
 
-<ts ref = "ej.datavisualization.Chart.Type"/>
+<ts ref="ej.datavisualization.Chart.Type"/>
 
 Specifies the type of the series to render in chart.
 
@@ -33542,7 +33458,7 @@ series :[{highlightSettings:{enable:true}}]
 ### series.highlightSettings.mode `enum`
 {:#members:series-highlightsettings-mode}
 
-<ts ref = "ej.datavisualization.Chart.Mode"/>
+<ts ref="ej.datavisualization.Chart.Mode"/>
 
 
 Specifies whether series or data point has to be highlighted.
@@ -33807,7 +33723,7 @@ series :[{selectionSettings:{enable:true}}]
 ### series.selectionSettings.mode `enum`
 {:#members:series-selectionSettings-mode}
 
-<ts ref = "ej.datavisualization.Chart.Mode"/>
+<ts ref="ej.datavisualization.Chart.Mode"/>
 
 
 Specifies whether series or data point has to be selected.
@@ -33839,7 +33755,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/f0udmdts)
 ### series.selectionSettings.type `enum`
 {:#members:series-selectionSettings-type}
 
-<ts ref = "ej.datavisualization.Chart.SelectionType"/>
+<ts ref="ej.datavisualization.Chart.SelectionType"/>
 
 Specifies the type of selection.
 
@@ -33874,7 +33790,7 @@ $("#container").ejChart({
 ### series.selectionSettings.rangeType `enum`
 {:#members:series-selectionSettings-rangetype}
 
-<ts ref = "ej.datavisualization.Chart.RangeType"/>
+<ts ref="ej.datavisualization.Chart.RangeType"/>
 
 Specifies the drawn rectangle type.
 
@@ -34237,8 +34153,7 @@ $("#container").ejChart({
 ### theme `enum`
 {:#members:theme}
 
-<ts name = "ej.datavisualization.Chart.Theme"/>
-
+<ts name="ej.datavisualization.Chart.Theme"/>
 Specifies the theme for Chart.
 
 <table class="props">
@@ -34836,7 +34751,7 @@ $("#container").ejChart({
 ### title.textOverflow `enum`
 {:#members:title-textOverflow}
 
-<ts ref = "ej.datavisualization.Chart.TextOverflow"/>
+<ts ref="ej.datavisualization.Chart.TextOverflow"/>
 
 Specifies the action taken when the Chart width is more than the titleWidth. 
 
@@ -35258,7 +35173,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/e3thfz5p)
 ### title.subTitle.textAlignment `enum`
 {:#members:title-subtitle-textalignment}
 
-<ts ref = "ej.datavisualization.Chart.Alignment"/>
+<ts ref="ej.datavisualization.Chart.Alignment"/>
 
 
 Alignment of sub title text.
@@ -35381,7 +35296,7 @@ $("#container").ejChart({
 ### title.subTitle.textOverflow `enum`
 {:#members:title-subTitle-textOverflow}
 
-<ts ref = "ej.datavisualization.Chart.TextOverflow"/>
+<ts ref="ej.datavisualization.Chart.TextOverflow"/>
 
 Specifies the action taken when the Chart width is more than the SubTitleWidth. 
 
@@ -35444,7 +35359,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/rk0x1e5u)
 ### title.textAlignment `enum`
 {:#members:title-textalignment}
 
-<ts ref = "ej.datavisualization.Chart.Alignment"/>
+<ts ref="ej.datavisualization.Chart.Alignment"/>
 
 
 Alignment of the title text.

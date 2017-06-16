@@ -668,8 +668,7 @@ $("#container").ejSparkline({
 ### type `enum`
 {:#members:type}
 
-<ts name = "ej.datavisualization.Sparkline.Type"/>
-
+<ts name="ej.datavisualization.Sparkline.Type"/>
 Specifies the type of the series to render in sparkline.
 
 <table class="props">
@@ -737,8 +736,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/wmt2ic0a)
 ### theme `enum`
 {:#members:theme}
 
-<ts name = "ej.datavisualization.Sparkline.Theme"/>
-
+<ts name="ej.datavisualization.Sparkline.Theme"/>
 Specifies the theme for Sparkline.
 
 <table class="props">
@@ -1033,9 +1031,7 @@ tooltip :{ font : { fontFamily : "Algerian"}}
 {:#members:tooltip-font-fontstyle}
 
 
-<ts name = "ej.datavisualization.Sparkline.FontStyle"/>
-
-
+<ts name="ej.datavisualization.Sparkline.FontStyle"/>
 Specifies the font Style for the tooltip.
 
 
@@ -1088,9 +1084,7 @@ tooltip : {font :{fontStyle : "italic"}}
 {:#members:tooltip-font-fontweight}
 
 
-<ts name = "ej.datavisualization.Sparkline.FontWeight"/>
-
-
+<ts name="ej.datavisualization.Sparkline.FontWeight"/>
 Specifies the font weight for the tooltip.
 
 
