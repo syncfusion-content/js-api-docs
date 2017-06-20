@@ -131,6 +131,41 @@ When set to true, allows the user to create/edit appointments inline - simply th
 
 {% endhighlight %}
 
+## allowDelete `boolean`
+{:#members:allowdelete}
+
+When set to `false`, disables the appointment delete option on the Scheduler.
+
+#### Default Value
+
+* true
+
+#### Example - To disable deletion of appointments from the scheduler.
+
+{% highlight html %}
+ 
+<div id="Schedule"></div> 
+ 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+		        currentDate:new Date(2014,4,5),
+                allowDelete: false,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                } 
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+
 ### allowKeyboardNavigation `boolean`
 {:#members:allowkeyboardnavigation}
 
