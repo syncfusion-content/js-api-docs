@@ -395,7 +395,7 @@ When set to false, doesn't consider the time difference offset calculation on ap
 ### appointmentSettings.editFutureEventsOnly `boolean`
 {:#members:appointmentsettings-editfutureeventsonly}
 
-When set to true, future appointments in recurrence series can be edit.
+When set to true, introduces a new option to edit only the future occurrences of the appointments in a recurrence series from the currently selected appointment's date.
 
 #### Default Value
 
