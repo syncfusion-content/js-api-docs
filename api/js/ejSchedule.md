@@ -4982,6 +4982,105 @@ Binds the name of `resourceId` field in dataSource. Specifies the id of the reso
 
 {% endhighlight %}
 
+### blockoutSettings.groupId `string`
+{:#members:blockoutsettings-resourceid}
+
+Binds the name of `groupId` field in dataSource. Specifies the id of the resource group, to which the time intervals are needed to be blocked.
+
+#### Default Value
+
+* null
+
+#### Example - Block intervals for multiple resources scenario.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 2),
+                group: {
+                    resources: ["Owners", "Rooms"]
+                },
+                resources: [{
+                    field: "ownerId",
+                    title: "Owner",
+                    name: "Owners",
+                    resourceSettings: {
+                        dataSource: [{
+                            OwnerText: "Nancy",
+                            id: 1,
+                            OwnerColor: "#f8a398"
+                        }, {
+                            OwnerText: "Steven",
+                            id: 2,
+                            OwnerColor: "#56ca95"
+                        }],
+                        text: "OwnerText", id: "id", color: "OwnerColor"
+                    }
+                }, {
+                    field: "roomId",
+                    title: "Room(s)",
+                    name: "Rooms",
+                    resourceSettings: {
+                        dataSource: [{
+                            text: "Room1",
+                            id: 1,
+                            groupId: 1,
+                            color: "#f8a398"
+                        }, {
+                            text: "Room2",
+                            id: 2,
+                            groupId: 2,
+                            color: "#56ca85"
+                        }, {
+                            text: "Room3", id: 3, groupId: 2, color: "#56ac88"
+                        }],
+                        text: "text", id: "id", color: "color", groupId: "groupId"
+                    }
+                }],
+                appointmentSettings: {
+                    dataSource: [{
+                        EventId: 100,
+                        EventSubject: "Research on Sky Miracles",
+                        EventStartTime: new Date(2014, 4, 2, 9, 00),
+                        EventEndTime: new Date(2014, 4, 2, 10, 30),
+                        ownerId: 2,
+                        roomId: 1
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime",
+                    subject: "EventSubject",
+                    resourceFields: "ownerId,roomId"
+                },
+                blockoutSettings: {
+                    enable: true,
+                    dataSource: [{
+                        BlockId: 101,
+                        BlockStartTime: new Date(2014, 4, 1, 10, 00),
+                        BlockEndTime: new Date(2014, 4, 1, 11, 00),
+                        BlockSubject: "Travel",
+                        IsBlockAppointment: true,
+                        BlockResId: 2,
+                        BlockGrpId: 1,
+                    }],
+                    id: "BlockId",
+                    startTime: "BlockStartTime",
+                    endTime: "BlockEndTime",
+                    subject: "BlockSubject",
+                    isBlockAppointment: "IsBlockAppointment",
+                    resourceId: "BlockResId",
+                    groupId: "BlockGrpId",
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
 ### blockoutSettings.customStyle `string`
 {:#members:blockoutsettings-customstyle}
 
