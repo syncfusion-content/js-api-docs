@@ -673,7 +673,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{ characterSettings: {spacing: 3} }] }
 {:#members:items-charactersettings-type}
 
 <ts name="ej.datavisualization.DigitalGauge.CharacterType"/>
-
 Specifies the character type for the text to be displayed.
 
 
@@ -913,7 +912,6 @@ $("#DigitalCore").ejDigitalGauge({items: [{enableCustomFont: true ,font: { fontF
 {:#members:items-font-fontstyle}
 
 <ts name="ej.datavisualization.DigitalGauge.FontStyle"/>
-
 Set the font style for the font
 
 
