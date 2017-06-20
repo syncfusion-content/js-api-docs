@@ -8406,7 +8406,7 @@ Gets text of the given index tab in the ribbon control.
 #### Returns:
 {:#methods:returns:}
 
-String
+string
 
 
 #### Example
@@ -8638,7 +8638,7 @@ Checks whether the given text tab in the ribbon control is enabled or not.
 #### Returns:
 {:#methods:returns:}
 
-Boolean
+boolean
 
 #### Example
 
@@ -8756,7 +8756,7 @@ Checks whether the given text tab in the ribbon control is visible or not.
 #### Returns:
 {:#methods:returns:}
 
-Boolean
+boolean
 
 #### Example
 
