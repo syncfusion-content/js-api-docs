@@ -38109,7 +38109,7 @@ data{% endhighlight %}</td>
                              </ul> </td>
 </tr>
 </tbody>
-
+</table>
 
 ### afterResize
 {:#events:afterresize}
