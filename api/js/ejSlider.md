@@ -2168,3 +2168,28 @@ $("#slider").ejSlider({
 });
 </script>{% endhighlight %}
 
+### renderingTicks
+{:#events:renderingticks}
+
+
+
+
+Fires when the slider scale ticks has been created.
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="slider"> </div> 
+<script>
+//renderingTicks event for slider control
+$("#slider").ejSlider({
+   showScale : true,
+   renderingTicks: function (args) {
+       args.value = "Your custom value" + args.value
+   }
+});
+</script>{% endhighlight %}
