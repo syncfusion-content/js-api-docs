@@ -3451,10 +3451,40 @@ Note: When you are using our release version before 13.3, refer to the following
 </script>
 {% endhighlight %}
 
-### executeCommand()
+### executeCommand(cmdName, args, [textnodeType])
 {:#methods:executecommand}
 
 Performs the action value based on the given command. 
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cmdName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Command Name.</td>
+</tr>
+<tr>
+<td class="name">
+args</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Content to be inserted as argument.</td>
+</tr>
+<tr>
+<td class="name">
+textnodeType</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Boolean value to specify whether the argument is textnode or not, this is optional.</td>
+</tr>
+</tbody>
+</table>
 
 #### Example
 
