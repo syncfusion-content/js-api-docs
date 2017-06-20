@@ -100,7 +100,7 @@ When set to true, Schedule allows the appointments to be dragged and dropped at 
 ## allowDelete `boolean`
 {:#members:allowdelete}
 
-When set to false, disables the appointment delete option from the scheduler.
+When set to `false`, disables the appointment delete option on the Scheduler.
 
 #### Default Value
 
