@@ -1688,7 +1688,7 @@ Returns the current page number in view.
 
 {:#events:ajaxRequestFailure}
 
-Triggers when the Ajax request is failed in the PDF viewer control.
+Triggers when the ajax request is failed.
 <table>
 <thead>
 <tr>
