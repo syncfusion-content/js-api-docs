@@ -2149,9 +2149,80 @@ $("#slider").ejSlider({
 
 
 
-Fires when display the custom tooltip
+Fires when display the custom tooltip.
 
 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from slider control
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">
+id</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns slider id.</td>
+</tr>
+<tr>
+<td class="name">
+isInteraction</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">returns true if event triggered by interaction else returns false. </td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Slider.Model"/><span class="param-type">object</span></td>
+<td class="description">returns the slider model.</td>
+</tr>
+<tr>
+<td class="name">
+sliderIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">returns current handle number or index</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">
+value</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">returns the slider value.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Example
