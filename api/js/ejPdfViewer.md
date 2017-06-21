@@ -196,13 +196,13 @@ Below code snippet shows only the magnification tools in the toolbar.
 
 ### serverActionSettings `object`
 
-{:#members:serverActionSettings}
+{:#members:serveractionsettings}
 
 Specifies the name of the action method in the server.
 
 ### serverActionSettings.load `string`
 
-{:#members:serverActionSettings-load}
+{:#members:serveractionsettings-load}
 
 Specifies the name of the action method used for loading the PDF document.
 
@@ -210,7 +210,7 @@ Specifies the name of the action method used for loading the PDF document.
 
 ### serverActionSettings.fileUpload `string`
 
-{:#members:serverActionSettings-fileUpload}
+{:#members:serveractionsettings-fileupload}
 
 Specifies the name of the action method used for uploading the PDF document to the PDF viewer control.
 
@@ -218,11 +218,11 @@ Specifies the name of the action method used for uploading the PDF document to t
 
 ### serverActionSettings.print `string`
 
-{:#members:serverActionSettings-print}
+{:#members:serveractionsettings-print}
 
 Specifies the name of the action method used for printing the PDF document in the PDF viewer control.
 
-**Default Value**: Print
+**Default Value**: Load
 
 ### serverActionSettings.download `string`
 
@@ -251,7 +251,7 @@ Sets the PDF Web API service URL
 
 ### documentPath `string`
 
-{:#members:documentPath}
+{:#members:documentpath}
 
 Sets the PDF document path for initial loading.
 
@@ -268,7 +268,7 @@ Sets the PDF document path for initial loading.
 
 ### enableTextMarkupAnnotations `boolean`
 
-{:#members:enableTextMarkupAnnotations}
+{:#members:enabletextmarkupannotations}
 
 Enables or disables the text markup annotations.
 
@@ -287,9 +287,9 @@ Enables or disables the text markup annotations.
 
 ### enableHighlightAnnotation `boolean`
 
-{:#members:enableHighlightAnnotation}
+{:#members:enablehighlightannotation}
 
-Enables or disables the highlight annotations.
+Enables or disables the highlight annotation.
 
 **Default Value**: true
 
@@ -306,9 +306,9 @@ Enables or disables the highlight annotations.
 
 ### enableUnderlineAnnotation `boolean`
 
-{:#members:enableUnderlineAnnotation}
+{:#members:enableunderlineannotation}
 
-Enables or disables the underline annotations.
+Enables or disables the underline annotation.
 
 **Default Value**: true
 
@@ -325,9 +325,9 @@ Enables or disables the underline annotations.
 
 ### enableStrikethroughAnnotation `boolean`
 
-{:#members:enableStrikethroughAnnotation}
+{:#members:enablestrikethroughannotation}
 
-Enables or disables the strikethrough annotations.
+Enables or disables the strikethrough annotation.
 
 **Default Value**: true
 
@@ -344,13 +344,13 @@ Enables or disables the strikethrough annotations.
 
 ### strikethroughSettings `object`
 
-{:#members:strikethroughSettings}
+{:#members:strikethroughsettings}
 
 Gets/sets the settings of the strikethrough annotation.
 
 ### strikethroughSettings.color `string`
 
-{:#members:strikethroughSettings-color}
+{:#members:strikethroughsettings-color}
 
 Gets/sets the color of the strikethrough annotation.
 
@@ -358,7 +358,7 @@ Gets/sets the color of the strikethrough annotation.
 
 ### strikethroughSettings.author `string`
 
-{:#members:strikethroughSettings-author}
+{:#members:strikethroughsettings-author}
 
 Gets/sets the author of the strikethrough annotation.
 
@@ -366,7 +366,7 @@ Gets/sets the author of the strikethrough annotation.
 
 ### strikethroughSettings.opacity `number`
 
-{:#members:strikethroughSettings-opacity}
+{:#members:strikethroughsettings-opacity}
 
 Gets/sets the opacity of the strikethrough annotation.
 
@@ -374,7 +374,7 @@ Gets/sets the opacity of the strikethrough annotation.
 
 ### strikethroughSettings.subject `string`
 
-{:#members:strikethroughSettings-subject}
+{:#members:strikethroughsettings-subject}
 
 Gets/sets the subject of the strikethrough annotation.
 
@@ -382,7 +382,7 @@ Gets/sets the subject of the strikethrough annotation.
 
 ### strikethroughSettings.modifiedDate `string`
 
-{:#members:strikethroughSettings-modifiedDate}
+{:#members:strikethroughsettings-modifieddate}
 
 Gets/sets the modified Date of the strikethrough annotation.
 
@@ -390,7 +390,7 @@ Gets/sets the modified Date of the strikethrough annotation.
 
 ### strikethroughSettings.isLocked `boolean`
 
-{:#members:strikethroughSettings-isLocked}
+{:#members:strikethroughsettings-islocked}
 
 Gets/sets the locked property of the strikethrough annotation.
 
@@ -411,13 +411,13 @@ Gets/sets the locked property of the strikethrough annotation.
 
 ### underlineSettings `object`
 
-{:#members:underlineSettings}
+{:#members:underlinesettings}
 
 Gets/sets the settings of the underline annotation.
 
 ### underlineSettings.color `string`
 
-{:#members:underlineSettings-color}
+{:#members:underlinesettings-color}
 
 Gets/sets the color of the underline annotation.
 
@@ -425,7 +425,7 @@ Gets/sets the color of the underline annotation.
 
 ### underlineSettings.author `string`
 
-{:#members:underlineSettings-author}
+{:#members:underlinesettings-author}
 
 Gets/sets the author of the underline annotation.
 
@@ -433,7 +433,7 @@ Gets/sets the author of the underline annotation.
 
 ### underlineSettings.opacity `number`
 
-{:#members:underlineSettings-opacity}
+{:#members:underlinesettings-opacity}
 
 Gets/sets the opacity of the underline annotation.
 
@@ -441,7 +441,7 @@ Gets/sets the opacity of the underline annotation.
 
 ### underlineSettings.subject `string`
 
-{:#members:underlineSettings-subject}
+{:#members:underlinesettings-subject}
 
 Gets/sets the subject of the underline annotation.
 
@@ -449,7 +449,7 @@ Gets/sets the subject of the underline annotation.
 
 ### underlineSettings.modifiedDate `string`
 
-{:#members:underlineSettings-modifiedDate}
+{:#members:underlinesettings-modifieddate}
 
 Gets/sets the modified Date of the underline annotation.
 
@@ -457,7 +457,7 @@ Gets/sets the modified Date of the underline annotation.
 
 ### underlineSettings.isLocked `boolean`
 
-{:#members:underlineSettings-isLocked}
+{:#members:underlinesettings-islocked}
 
 Gets/sets the locked property of the underline annotation.
 
@@ -478,13 +478,13 @@ Gets/sets the locked property of the underline annotation.
 
 ### highlightSettings `object`
 
-{:#members:highlightSettings}
+{:#members:highlightsettings}
 
 Gets/sets the settings of the highlight annotation.
 
 ### highlightSettings.color `string`
 
-{:#members:highlightSettings-color}
+{:#members:highlightsettings-color}
 
 Gets/sets the color of the highlight  annotation.
 
@@ -492,7 +492,7 @@ Gets/sets the color of the highlight  annotation.
 
 ### highlightSettings.author `string`
 
-{:#members:highlightSettings-author}
+{:#members:highlightsettings-author}
 
 Gets/sets the author of the highlight annotation.
 
@@ -500,7 +500,7 @@ Gets/sets the author of the highlight annotation.
 
 ### highlightSettings.opacity `number`
 
-{:#members:highlightSettings-opacity}
+{:#members:highlightsettings-opacity}
 
 Gets/sets the opacity of the highlight annotation.
 
@@ -508,7 +508,7 @@ Gets/sets the opacity of the highlight annotation.
 
 ### highlightSettings.subject `string`
 
-{:#members:highlightSettings-subject}
+{:#members:highlightsettings-subject}
 
 Gets/sets the subject of the highlight annotation.
 
@@ -516,7 +516,7 @@ Gets/sets the subject of the highlight annotation.
 
 ### highlightSettings.modifiedDate `string`
 
-{:#members:highlightSettings-modifiedDate}
+{:#members:highlightsettings-modifieddate}
 
 Gets/sets the modified Date of the highlight annotation.
 
@@ -524,7 +524,7 @@ Gets/sets the modified Date of the highlight annotation.
 
 ### highlightSettings.isLocked `boolean`
 
-{:#members:highlightSettings-isLocked}
+{:#members:highlightsettings-islocked}
 
 Gets/sets the locked property of the highlight annotation.
 
@@ -545,7 +545,7 @@ Gets/sets the locked property of the highlight annotation.
 
 ### annotationType `enum`
 
-{:#members:annotationType}
+{:#members:annotationtype}
 
 <ts name="ej.PdfViewer.AnnotationType"/>
 
@@ -771,7 +771,7 @@ Enables or disables the hyperlinks in PDF document.
 {% endhighlight %}
 
 ### enableTextSelection `boolean`
-{:#members:enableTextSelection}
+{:#members:enabletextselection}
 
 Enables or disables the text selection in PDF document.
 
@@ -789,7 +789,7 @@ Enables or disables the text selection in PDF document.
 {% endhighlight %}
 
 ### isResponsive `boolean`
-{:#members:isResponsive}
+{:#members:isresponsive}
 
 Enables or disables the responsiveness of the PDF viewer control during the window resize.
 
@@ -809,7 +809,7 @@ Enables or disables the responsiveness of the PDF viewer control during the wind
 {% endhighlight %}
 
 ### isDocumentEdited `boolean`
-{:#members:isDocumentEdited}
+{:#members:isdocumentedited}
 
 Checks whether the PDF document is edited. 
 
@@ -828,7 +828,7 @@ var isEdited = pdfviewerObj.isDocumentEdited;
 {% endhighlight %}
 
 ### allowClientBuffering `boolean`
-{:#members:allowClientBuffering}
+{:#members:allowclientbuffering}
 
 Enables or disables the buffering of the PDF pages in the client side.
 
@@ -1684,6 +1684,115 @@ Returns the current page number in view.
 {% endhighlight %}
 
 
+### ajaxRequestFailure
+
+{:#events:ajaxrequestfailure}
+
+Triggers when the ajax request is failed.
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Event parameters from PDF viewer
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel
+</td>
+<td class="type">
+boolean
+</td>
+<td class="description">
+true, if the event should be canceled; otherwise, false.
+</td>
+</tr>
+<tr>
+<td class="name">
+model
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Returns the PDF viewer model
+</td>
+</tr>
+<tr>
+<td class="name">
+type
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the name of the event
+</td>
+</tr>
+<tr>
+<td class="name">
+message
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the exception details.
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight html %}
+<script type="text/javascript">
+        $(function () {
+            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', ajaxRequestFailure:"ajaxRequestFailed" });
+        });
+        function ajaxRequestFailed(args) {
+            alert("Please find the Exception details"+ args.message);
+        }
+</script>
+{% endhighlight %}
+
+
 ### zoomChange
 
 {:#events:zoomchange}
@@ -2231,7 +2340,7 @@ Returns the current Y position
 
 ### annotationAdd
 
-{:#events:annotationAdd}
+{:#events:annotationadd}
 
 Triggers when an annotation is added over the page of the PDF document.
 <table>
@@ -2383,7 +2492,7 @@ Returns the type of the annotation added in the page of the PDF document.
 
 ### annotationRemove
 
-{:#events:annotationRemove}
+{:#events:annotationremove}
 
 Triggers when an annotation is removed from the page of the PDF document.
 <table>
@@ -2513,7 +2622,7 @@ Returns the type of the annotation removed from the page of the PDF document.
 
 ### annotationPropertiesChange
 
-{:#events:annotationPropertiesChange}
+{:#events:annotationpropertieschange}
 
 Triggers when the property of the annotation is changed in the page of the PDF document.
 <table>
@@ -2665,7 +2774,7 @@ Specifies that the opacity of the annotation is changed.
 
 ### bufferStart
 
-{:#events:bufferStart}
+{:#events:bufferstart}
 
 Triggers when the client buffering process starts.
 <table>
@@ -2773,7 +2882,7 @@ Specifies the state of the buffering
 
 ### bufferEnd
 
-{:#events:bufferEnd}
+{:#events:bufferend}
 
 Triggers when the client buffering process ends.
 <table>
