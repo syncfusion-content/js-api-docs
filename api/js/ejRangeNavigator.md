@@ -407,8 +407,7 @@ series : [{dataSource: data }]
 {:#members:series.type}
 
 
-<ts name = "ej.datavisualization.RangeNavigator.Type"/>
-
+<ts name="ej.datavisualization.RangeNavigator.Type"/>
 Specifies the type of the series to render in chart.
 
 
@@ -648,7 +647,7 @@ seriesSettings : [{dataSource: data }]
 {:#members:seriesSettings.type}
 
 
-<ts ref = "ej.datavisualization.RangeNavigator.Type"/>
+<ts ref="ej.datavisualization.RangeNavigator.Type"/>
 
 Specifies the type of the series to render in chart.
 
@@ -1311,12 +1310,6 @@ Specifies the width of grid lines in higher level.
 {:#members:labelsettings-higherlevel-intervaltype}
 
 <ts name="ej.datavisualization.RangeNavigator.IntervalType"/>
-
-
-
-
-
-
 Specifies the intervalType for higher level labels. See <a href="global.html#IntervalType">IntervalType</a>
 
 
@@ -1414,7 +1407,6 @@ Minutes</td>
 {:#members:labelsettings-higherlevel-labelplacement}
 
 <ts name="ej.datavisualization.RangeNavigator.LabelPlacement"/>
-
 Specifies the position of the labels to render either inside or outside of plot area
 
 
@@ -1488,7 +1480,6 @@ Specifies the position of the labels to render either inside or outside of plot 
 
 
 <ts name="ej.datavisualization.RangeNavigator.Position"/>
-
 Specifies the position of the labels in higher level
 
 
@@ -3177,7 +3168,6 @@ Specifies the label font size. Labels render with the specified font size.
 {:#members:labelsettings-style-font-style}
 
 <ts name="ej.datavisualization.RangeNavigator.FontStyle"/>
-
 Specifies the label font style. Labels render with the specified font style..
 
 
@@ -3259,7 +3249,6 @@ Specifies the label font style. Labels render with the specified font style..See
 {:#members:labelsettings-style-font-weight}
 
 <ts name="ej.datavisualization.RangeNavigator.FontWeight"/>
-
 Specifies the label font weight
 
 
@@ -3335,7 +3324,6 @@ Specifies the label font weight. Labels render with the specified font weight. S
 {:#members:labelsettings-style-horizontalalignment}
 
 <ts name="ej.datavisualization.RangeNavigator.HorizontalAlignment"/>
-
 Specifies the horizontalAlignment of the label in RangeNavigator
 
 
@@ -4746,7 +4734,6 @@ Padding specifies the gap between the container and the range navigator.
 {:#members:rangepadding}
 
 <ts name="ej.datavisualization.RangeNavigator.RangePadding"/>
-
 If the range is not given explicitly, range will be calculated automatically.
 
 
@@ -6468,7 +6455,7 @@ Toggles the visibility of axis in range navigator.
 ### valueType `enum`
 {:#members:valuetype}
 
-<ts name='ej.datavisualization.RangeNavigator.ValueType'/>
+<ts name="ej.datavisualization.RangeNavigator.ValueType"/>
 You can plot data of type date time or numeric. This property determines the type of data that this axis will handle.
 
 

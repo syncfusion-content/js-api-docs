@@ -33,12 +33,24 @@ $(element).ejPdfViewer({serviceUrl: ‘../api/PdfViewer’});
 * module:jquery.js
 * module:jquery.easing.min.js
 * module:ej.core.js
+* module:ej.data.js
+* module:ej.globalize.js
+* module:ej.draggable.js
 * module:ej.pdfviewer.js
 * module:ej.dropdownlist.js
 * module:ej.toolbar.js
 * module:ej.button.js
 * module:ej.waitingpopup.js
 * module:ej.scroller.js
+* module:ej.checkbox.js
+* module:ej.tooltip.js
+* module:ej.maskedit.js
+* module:ej.dialog.js
+* module:ej.tab.js
+* module:ej.colorpicker.js
+* module:ej.splitbutton.js
+* module:ej.menu.js
+* module:ej.slider.js
 
 ## Members
 
@@ -142,6 +154,22 @@ Shows only download tool in the toolbar.
 </tr>
 <tr>
 <td class="name">
+TextSearchTool
+</td>
+<td class="description">
+Shows only text search tool in the toolbar.
+</td>
+</tr>
+<tr>
+<td class="name">
+TextMarkupAnnotationTools
+</td>
+<td class="description">
+Shows only text markup annotation tools in the toolbar.
+</td>
+</tr>
+<tr>
+<td class="name">
 All
 </td>
 <td class="description">
@@ -168,13 +196,13 @@ Below code snippet shows only the magnification tools in the toolbar.
 
 ### serverActionSettings `object`
 
-{:#members:serverActionSettings}
+{:#members:serveractionsettings}
 
 Specifies the name of the action method in the server.
 
 ### serverActionSettings.load `string`
 
-{:#members:serverActionSettings-load}
+{:#members:serveractionsettings-load}
 
 Specifies the name of the action method used for loading the PDF document.
 
@@ -182,7 +210,7 @@ Specifies the name of the action method used for loading the PDF document.
 
 ### serverActionSettings.fileUpload `string`
 
-{:#members:serverActionSettings-fileUpload}
+{:#members:serveractionsettings-fileupload}
 
 Specifies the name of the action method used for uploading the PDF document to the PDF viewer control.
 
@@ -190,11 +218,11 @@ Specifies the name of the action method used for uploading the PDF document to t
 
 ### serverActionSettings.print `string`
 
-{:#members:serverActionSettings-print}
+{:#members:serveractionsettings-print}
 
 Specifies the name of the action method used for printing the PDF document in the PDF viewer control.
 
-**Default Value**: Print
+**Default Value**: Load
 
 ### serverActionSettings.download `string`
 
@@ -223,7 +251,7 @@ Sets the PDF Web API service URL
 
 ### documentPath `string`
 
-{:#members:documentPath}
+{:#members:documentpath}
 
 Sets the PDF document path for initial loading.
 
@@ -237,6 +265,330 @@ Sets the PDF document path for initial loading.
         });
 </script>
 {% endhighlight %}
+
+### enableTextMarkupAnnotations `boolean`
+
+{:#members:enabletextmarkupannotations}
+
+Enables or disables the text markup annotations.
+
+**Default Value**: true
+
+#### Example:
+
+{% highlight html %}
+<div id="viewer"></div>
+<script type="text/javascript">
+        $(function () {
+            $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', enableTextMarkupAnnotations: true });
+        });
+</script>
+{% endhighlight %}
+
+### enableHighlightAnnotation `boolean`
+
+{:#members:enablehighlightannotation}
+
+Enables or disables the highlight annotation.
+
+**Default Value**: true
+
+#### Example:
+
+{% highlight html %}
+<div id="viewer"></div>
+<script type="text/javascript">
+        $(function () {
+            $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', enableHighlightAnnotation: true });
+        });
+</script>
+{% endhighlight %}
+
+### enableUnderlineAnnotation `boolean`
+
+{:#members:enableunderlineannotation}
+
+Enables or disables the underline annotation.
+
+**Default Value**: true
+
+#### Example:
+
+{% highlight html %}
+<div id="viewer"></div>
+<script type="text/javascript">
+        $(function () {
+            $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', enableUnderlineAnnotation: true });
+        });
+</script>
+{% endhighlight %}
+
+### enableStrikethroughAnnotation `boolean`
+
+{:#members:enablestrikethroughannotation}
+
+Enables or disables the strikethrough annotation.
+
+**Default Value**: true
+
+#### Example:
+
+{% highlight html %}
+<div id="viewer"></div>
+<script type="text/javascript">
+        $(function () {
+            $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', enableStrikethroughAnnotation: true });
+        });
+</script>
+{% endhighlight %}
+
+### strikethroughSettings `object`
+
+{:#members:strikethroughsettings}
+
+Gets/sets the settings of the strikethrough annotation.
+
+### strikethroughSettings.color `string`
+
+{:#members:strikethroughsettings-color}
+
+Gets/sets the color of the strikethrough annotation.
+
+**Default Value**: "#ff0000"
+
+### strikethroughSettings.author `string`
+
+{:#members:strikethroughsettings-author}
+
+Gets/sets the author of the strikethrough annotation.
+
+**Default Value**: "Guest"
+
+### strikethroughSettings.opacity `number`
+
+{:#members:strikethroughsettings-opacity}
+
+Gets/sets the opacity of the strikethrough annotation.
+
+**Default Value**: 1
+
+### strikethroughSettings.subject `string`
+
+{:#members:strikethroughsettings-subject}
+
+Gets/sets the subject of the strikethrough annotation.
+
+**Default Value**: "Strikethrough"
+
+### strikethroughSettings.modifiedDate `string`
+
+{:#members:strikethroughsettings-modifieddate}
+
+Gets/sets the modified Date of the strikethrough annotation.
+
+**Default Value**: null
+
+### strikethroughSettings.isLocked `boolean`
+
+{:#members:strikethroughsettings-islocked}
+
+Gets/sets the locked property of the strikethrough annotation.
+
+**Default Value**: false
+
+#### Example:
+
+{% highlight html %}
+<div id="viewer"></div>
+<script type="text/javascript">
+        $(function () {
+            $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', strikethroughSettings: {
+				color: "#ff0000", author: "Guest", opacity: 0.5, subject: "strikethrough", modifiedDate: "2017-03-27 12:00:51", isLocked: true
+			} });
+        });
+</script>
+{% endhighlight %}
+
+### underlineSettings `object`
+
+{:#members:underlinesettings}
+
+Gets/sets the settings of the underline annotation.
+
+### underlineSettings.color `string`
+
+{:#members:underlinesettings-color}
+
+Gets/sets the color of the underline annotation.
+
+**Default Value**: "#00ff00" 
+
+### underlineSettings.author `string`
+
+{:#members:underlinesettings-author}
+
+Gets/sets the author of the underline annotation.
+
+**Default Value**: "Guest"
+
+### underlineSettings.opacity `number`
+
+{:#members:underlinesettings-opacity}
+
+Gets/sets the opacity of the underline annotation.
+
+**Default Value**: 1
+
+### underlineSettings.subject `string`
+
+{:#members:underlinesettings-subject}
+
+Gets/sets the subject of the underline annotation.
+
+**Default Value**: "Underline"
+
+### underlineSettings.modifiedDate `string`
+
+{:#members:underlinesettings-modifieddate}
+
+Gets/sets the modified Date of the underline annotation.
+
+**Default Value**: null
+
+### underlineSettings.isLocked `boolean`
+
+{:#members:underlinesettings-islocked}
+
+Gets/sets the locked property of the underline annotation.
+
+**Default Value**: false
+
+#### Example:
+
+{% highlight html %}
+<div id="viewer"></div>
+<script type="text/javascript">
+        $(function () {
+            $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', underlineSettings: {
+				color: "#00ff00", author: "Guest", opacity: 0.5, subject: "underline", modifiedDate: "2017-03-27 12:00:51", isLocked: true
+			} });
+        });
+</script>
+{% endhighlight %}
+
+### highlightSettings `object`
+
+{:#members:highlightsettings}
+
+Gets/sets the settings of the highlight annotation.
+
+### highlightSettings.color `string`
+
+{:#members:highlightsettings-color}
+
+Gets/sets the color of the highlight  annotation.
+
+**Default Value**: "#ffff00"
+
+### highlightSettings.author `string`
+
+{:#members:highlightsettings-author}
+
+Gets/sets the author of the highlight annotation.
+
+**Default Value**: "Guest"
+
+### highlightSettings.opacity `number`
+
+{:#members:highlightsettings-opacity}
+
+Gets/sets the opacity of the highlight annotation.
+
+**Default Value**: 1
+
+### highlightSettings.subject `string`
+
+{:#members:highlightsettings-subject}
+
+Gets/sets the subject of the highlight annotation.
+
+**Default Value**: "Highlight"
+
+### highlightSettings.modifiedDate `string`
+
+{:#members:highlightsettings-modifieddate}
+
+Gets/sets the modified Date of the highlight annotation.
+
+**Default Value**: null
+
+### highlightSettings.isLocked `boolean`
+
+{:#members:highlightsettings-islocked}
+
+Gets/sets the locked property of the highlight annotation.
+
+**Default Value**: false
+
+#### Example:
+
+{% highlight html %}
+<div id="viewer"></div>
+<script type="text/javascript">
+        $(function () {
+            $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', highlightSettings: {
+				color: "#ffff00", author: "Guest", opacity: 0.5, subject: "highlight", modifiedDate: "2017-03-27 12:00:51", isLocked: true
+			} });
+        });
+</script>
+{% endhighlight %}
+
+### annotationType `enum`
+
+{:#members:annotationtype}
+
+<ts name="ej.PdfViewer.AnnotationType"/>
+
+Specifies the type of the annotations.
+
+<table class="params">
+<thead>
+<tr>
+<th>
+Name
+</th>
+<th>
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Underline
+</td>
+<td class="description">
+Specifies the underline annotation.
+</td>
+</tr>
+<tr>
+<td class="name">
+Strikethrough
+</td>
+<td class="description">
+Specifies the strikethrough annotation.
+</td>
+</tr>
+<tr>
+<td class="name">
+Highlight
+</td>
+<td class="description">
+Specifies the highlight annotation.
+</td>
+</tr>
+</tbody>
+</table>
 
 ### pageCount `number`
 
@@ -419,7 +771,7 @@ Enables or disables the hyperlinks in PDF document.
 {% endhighlight %}
 
 ### enableTextSelection `boolean`
-{:#members:enableTextSelection}
+{:#members:enabletextselection}
 
 Enables or disables the text selection in PDF document.
 
@@ -437,7 +789,7 @@ Enables or disables the text selection in PDF document.
 {% endhighlight %}
 
 ### isResponsive `boolean`
-{:#members:isResponsive}
+{:#members:isresponsive}
 
 Enables or disables the responsiveness of the PDF viewer control during the window resize.
 
@@ -457,7 +809,7 @@ Enables or disables the responsiveness of the PDF viewer control during the wind
 {% endhighlight %}
 
 ### isDocumentEdited `boolean`
-{:#members:isDocumentEdited}
+{:#members:isdocumentedited}
 
 Checks whether the PDF document is edited. 
 
@@ -476,7 +828,7 @@ var isEdited = pdfviewerObj.isDocumentEdited;
 {% endhighlight %}
 
 ### allowClientBuffering `boolean`
-{:#members:allowClientBuffering}
+{:#members:allowclientbuffering}
 
 Enables or disables the buffering of the PDF pages in the client side.
 
@@ -705,6 +1057,36 @@ var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.showPageNavigationTools(false);
 {% endhighlight %}
 
+### showTextMarkupAnnotationTools(show)
+{:#methods:showtextmarkupannotationtools}
+
+Shows/hides the text markup annotation tools in the toolbar.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+show</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">shows/hides text markup annotation tools in the toolbar</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight javascript %}
+var pdfviewerObj = $("#viewer").data("ejPdfViewer");
+pdfviewerObj.showTextMarkupAnnotationTools(false);
+{% endhighlight %}
+
 ### goToPage(pageNumber)
 
 {:#methods:gotopage}
@@ -911,6 +1293,63 @@ var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.zoomTo(130);
 {% endhighlight %}
 
+### addAnnotation(annotationType)
+{:#methods:addannotation}
+
+Adds annotations to the PDF document.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+annotationType
+<ts ref="ej.PdfViewer.AnnotationType"/>
+</td>
+<td class="type"><span class="param-type">enum</span></td>
+<td class="description">type of the annotation to be added in the PDF document.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight javascript %}
+var pdfviewerObj = $("#viewer").data("ejPdfViewer");
+pdfviewerObj.addAnnotation(ej.PdfViewer.AnnotationType.Underline);
+{% endhighlight %}
+
+### undo()
+
+{:#methods:undo}
+
+Performs undo function for the included annotations in the PDF document.
+ 
+#### Example:
+
+{% highlight javascript %}
+var pdfviewerObj = $("#viewer").data("ejPdfViewer");
+pdfviewerObj.undo();
+{% endhighlight %}
+
+### redo()
+
+{:#methods:redo}
+
+Performs redo function for the included annotations in the PDF document.
+ 
+#### Example:
+
+{% highlight javascript %}
+var pdfviewerObj = $("#viewer").data("ejPdfViewer");
+pdfviewerObj.redo();
+{% endhighlight %}
 
 ### unload()
 
@@ -1240,6 +1679,115 @@ Returns the current page number in view.
         });
         function currentPageChanged(args) {
             alert("The current page number is " + args.currentPageNumber);
+        }
+</script>
+{% endhighlight %}
+
+
+### ajaxRequestFailure
+
+{:#events:ajaxrequestfailure}
+
+Triggers when the ajax request is failed.
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Event parameters from PDF viewer
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel
+</td>
+<td class="type">
+boolean
+</td>
+<td class="description">
+true, if the event should be canceled; otherwise, false.
+</td>
+</tr>
+<tr>
+<td class="name">
+model
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Returns the PDF viewer model
+</td>
+</tr>
+<tr>
+<td class="name">
+type
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the name of the event
+</td>
+</tr>
+<tr>
+<td class="name">
+message
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the exception details.
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight html %}
+<script type="text/javascript">
+        $(function () {
+            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', ajaxRequestFailure:"ajaxRequestFailed" });
+        });
+        function ajaxRequestFailed(args) {
+            alert("Please find the Exception details"+ args.message);
         }
 </script>
 {% endhighlight %}
@@ -1790,9 +2338,443 @@ Returns the current Y position
 </script>
 {% endhighlight %}
 
+### annotationAdd
+
+{:#events:annotationadd}
+
+Triggers when an annotation is added over the page of the PDF document.
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Event parameters from PDF viewer
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel
+</td>
+<td class="type">
+boolean
+</td>
+<td class="description">
+True, if the event should be canceled; otherwise, false.
+</td>
+</tr>
+<tr>
+<td class="name">
+model
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Returns the PDF viewer model
+</td>
+</tr>
+<tr>
+<td class="name">
+type
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the name of the event
+</td>
+</tr>
+<tr>
+<td class="name">
+annotationSettings
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Returns the settings of the annotation added to the PDF document.
+</td>
+</tr>
+<tr>
+<td class="name">
+annotationID
+</td>
+<td class="type">
+number
+</td>
+<td class="description">
+Returns the id of the annotation added in the page of the PDF document.
+</td>
+</tr>
+<tr>
+<td class="name">
+annotationBound
+</td>
+<td class="type">
+array
+</td>
+<td class="description">
+Returns the bounds of the annotation added in the page of the PDF document.
+</td>
+</tr>
+<tr>
+<td class="name">
+pageID
+</td>
+<td class="type">
+number
+</td>
+<td class="description">
+Returns the page number in which the annotation is added.
+</td>
+</tr>
+<tr>
+<td class="name">
+annotationType
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the type of the annotation added in the page of the PDF document.
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight html %}
+<script type="text/javascript">
+        $(function () {
+            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', annotationAdd: "annotationAdd" });
+        });
+        function annotationAdd(args) {
+            alert("The annotation is added to the PDF document successfully");
+        }
+</script>
+{% endhighlight %}
+
+### annotationRemove
+
+{:#events:annotationremove}
+
+Triggers when an annotation is removed from the page of the PDF document.
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Event parameters from PDF viewer
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel
+</td>
+<td class="type">
+boolean
+</td>
+<td class="description">
+True, if the event should be canceled; otherwise, false.
+</td>
+</tr>
+<tr>
+<td class="name">
+model
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Returns the PDF viewer model
+</td>
+</tr>
+<tr>
+<td class="name">
+type
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the name of the event
+</td>
+</tr>
+<tr>
+<td class="name">
+annotationID
+</td>
+<td class="type">
+number
+</td>
+<td class="description">
+Returns the id of the annotation removed from the page of the PDF document.
+</td>
+</tr>
+<tr>
+<td class="name">
+pageID
+</td>
+<td class="type">
+number
+</td>
+<td class="description">
+Returns the page number in which the annotation is removed.
+</td>
+</tr>
+<tr>
+<td class="name">
+annotationType
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the type of the annotation removed from the page of the PDF document.
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight html %}
+<script type="text/javascript">
+        $(function () {
+            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', annotationRemove: "annotationRemove" });
+        });
+        function annotationRemove(args) {
+            alert("The annotation is removed from the PDF document successfully");
+        }
+</script>
+{% endhighlight %}
+
+### annotationPropertiesChange
+
+{:#events:annotationpropertieschange}
+
+Triggers when the property of the annotation is changed in the page of the PDF document.
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Event parameters from PDF viewer
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel
+</td>
+<td class="type">
+boolean
+</td>
+<td class="description">
+True, if the event should be canceled; otherwise, false.
+</td>
+</tr>
+<tr>
+<td class="name">
+model
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Returns the PDF viewer model
+</td>
+</tr>
+<tr>
+<td class="name">
+type
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the name of the event
+</td>
+</tr>
+<tr>
+<td class="name">
+annotationID
+</td>
+<td class="type">
+number
+</td>
+<td class="description">
+Returns the id of the annotation added in the page of the PDF document.
+</td>
+</tr>
+<tr>
+<td class="name">
+pageID
+</td>
+<td class="type">
+number
+</td>
+<td class="description">
+Returns the page number in which the annotation is added.
+</td>
+</tr>
+<tr>
+<td class="name">
+annotationType
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the type of the annotation added in the page of the PDF document.
+</td>
+</tr>
+<tr>
+<td class="name">
+isColorChanged
+</td>
+<td class="type">
+boolean
+</td>
+<td class="description">
+Specifies that the color of the annotation is changed.
+</td>
+</tr>
+<tr>
+<td class="name">
+isOpacityChanged
+</td>
+<td class="type">
+boolean
+</td>
+<td class="description">
+Specifies that the opacity of the annotation is changed.
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight html %}
+<script type="text/javascript">
+        $(function () {
+            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', annotationAdd: "annotationAdd" });
+        });
+        function annotationAdd(args) {
+            alert("The annotation is added to the PDF document successfully");
+        }
+</script>
+{% endhighlight %}
+
 ### bufferStart
 
-{:#events:bufferStart}
+{:#events:bufferstart}
 
 Triggers when the client buffering process starts.
 <table>
@@ -1900,7 +2882,7 @@ Specifies the state of the buffering
 
 ### bufferEnd
 
-{:#events:bufferEnd}
+{:#events:bufferend}
 
 Triggers when the client buffering process ends.
 <table>

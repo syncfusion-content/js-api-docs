@@ -10187,6 +10187,39 @@ $("#symbolpalette").ejSymbolPalette({
 
 {% endhighlight %}
 
+### nodes.paletteItem.label `string`
+{:#members:nodes-paletteitem-label}
+
+To display a name for nodes in the symbol palette
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+$("#symbolpalette").ejSymbolPalette({
+	//Defines the palette collection 
+	palettes: [{
+		name: "Nodes", expanded: true,
+		items: [
+		{
+			name: "Rectangle", 
+			//Sets the name for node in the symbol palette
+			paletteItem: {
+				label: "label"
+			}
+		}]
+	}]
+});
+</script>
+
+{% endhighlight %}
+
 ### nodes.paletteItem.margin `object`
 {:#members:nodes-paletteitem-margin}
 
@@ -16882,6 +16915,38 @@ drop:function (args) {}
 ### editorFocusChange
 {:#events:editorfocuschange}
 Triggers when editor got focus at the time of node's label or text node editing.
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">model</td>
+			<td class="type">object</td>
+			<td class="description last">Returns the diagram model.</td>
+		</tr>
+        <tr>
+			<td class="name">event</td>
+			<td class="type">object</td>
+			<td class="description last">parameter returns the editor element</td>
+		</tr>
+		<tr>
+			<td class="name">type</td>
+			<td class="type">string</td>
+			<td class="description last">Returns the name of the event</td>
+		</tr>
+        <tr>
+			<td class="name">diagramId</td>
+			<td class="type">string</td>
+			<td class="description last">parameter returns the id of the diagram</td>
+		</tr>
+	</tbody>
+</table>
 
 #### Example
 
