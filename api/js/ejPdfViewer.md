@@ -1311,7 +1311,7 @@ Adds annotations to the PDF document.
 <td class="name">
 annotationType
 </td>
-<td class="type"><span class="param-type"><ts name="ej.PdfViewer.AnnotationType"/>enum</span></td>
+<td class="type"><ts name="ej.PdfViewer.AnnotationType"/>enum</td>
 <td class="description">type of the annotation to be added in the PDF document.</td>
 </tr>
 </tbody>
