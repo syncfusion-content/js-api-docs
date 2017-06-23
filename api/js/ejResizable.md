@@ -251,7 +251,7 @@ If specified, restricts resize start click to the specified element(s).
 
 
 
-Sets the max height for resizing
+Sets the max height till which an element has to be resized.
 
 
 
@@ -309,7 +309,7 @@ Sets the max height for resizing
 
 
 
-Sets the max width for resizing
+Sets the max width till which an element has to be resized.
 
 
 
@@ -367,7 +367,7 @@ Sets the max width for resizing
 
 
 
-Sets the min Height for resizing
+Sets the min Height below which an element cannot be resized.
 
 
 
@@ -425,8 +425,7 @@ Sets the min Height for resizing
 
 
 
-Sets the min Width for resizing
-
+Sets the min Width below which an element cannot be resized.
 
 
 
@@ -539,8 +538,8 @@ Used to group sets of resizable items.
 
 
 
-### _destroy()
-{:#methods:_destroy}
+### destroy()
+{:#methods:destroy}
 
 
 

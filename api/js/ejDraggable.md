@@ -389,8 +389,8 @@ Used to group sets of draggable and droppable items, in addition to droppable's 
 
 
 
-### _destroy()
-{:#methods:_destroy}
+### destroy()
+{:#methods:destroy}
 
 
 
