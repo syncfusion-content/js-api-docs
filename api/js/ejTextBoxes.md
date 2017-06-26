@@ -798,6 +798,7 @@ N>Numeric Textbox support positivePattern for all the cultures. The default Valu
  
 	 <script>
 	 //To set positivePattern API value during initialization  
+         $("#numeric").ejNumericTextbox({ positivePattern:"n kg", value:100  });  //100 kg
          $("#percentage").ejPercentageTextbox({ positivePattern:"% n", value:100  });      //% 100
          $("#currency").ejCurrencyTextbox({ positivePattern:"n $", value:505  });  //505 $                       
 	 </script>{% endhighlight %} 
