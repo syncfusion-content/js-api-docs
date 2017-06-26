@@ -715,7 +715,9 @@ Specifies the name of the editor.
         $("#numeric").ejNumericTextbox({ name: "numeric", value:5  });  
         $("#currency").ejCurrencyTextbox({ name: "currency", value:55  });
         $("#percentage").ejPercentageTextbox({ name: "percentage", value:500  });                        
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
 
 
 
@@ -755,7 +757,9 @@ Specifies the pattern for formatting positive values in editor.We have maintaine
 	     $("#numeric").ejNumericTextbox({ negativePattern:"( n)", value:-5 });         //output: ( 5)
          $("#percentage").ejPercentageTextbox({ negativePattern:"-% n", value:-100  });      //output: -% 100
          $("#currency").ejCurrencyTextbox({ negativePattern:"-n $", value:-505 , minValue:-600 });  //output: -505 $                       
-	 </script>{% endhighlight %} 
+	 </script>
+         
+{% endhighlight %} 
     
     
     
@@ -770,7 +774,7 @@ Specifies the pattern for formatting positive values in editor.We have maintaine
 Specifies the pattern for formatting positive values in editor.We have maintained some standard to define the positive pattern. you have to specify 'n' to place the digit in your pattern.ejTextbox allows you to define a currency or percent symbol where you want to place it.
 
 
-N>NumericTextBox does not support for positive pattern.
+N>Numeric Textbox support positivePattern for all the cultures. The default Value of positivePattern is “n”.
 
 
 ####Default value
