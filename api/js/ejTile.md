@@ -634,7 +634,7 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", enablePersistence
 $("#tile").ejTile("option", "enablePersistence", true);</script>            {% endhighlight %}
 
 
-### height `number`
+### height `string` `number`
 {:#members:height}
 
 Customize the tile size height.
@@ -1278,7 +1278,7 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", tileSize:"medium"
 // Set the tileSize API
 $("#tile").ejTile("option", "tileSize", "medium");</script>            {% endhighlight %}
 
-### width `number`
+### width `string` `number`
 {:#members:width}
 
 Customize the tile size width.

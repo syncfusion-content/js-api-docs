@@ -292,7 +292,7 @@ N> This method does not accept any arguments.
 
 {% highlight javascript %}
 
-	$("#signature").ejSignature("clearText");
+	$("#signature").ejSignature("clear");
 
 {% endhighlight %}
 
