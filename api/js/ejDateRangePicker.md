@@ -1145,9 +1145,8 @@ $("#daterangepicker").ejDateRangePicker("enable");
 
 
 
-
-### getSelectedValue()
-{:#methods:getSelectedValue}
+### getSelectedRange()
+{:#methods:getSelectedRange}
 
 
 
@@ -1161,7 +1160,7 @@ Returns the startDate and endDate values in the selected ranges in the DateRange
 #### Returns:
 
 
-string
+Object
 
 
 #### Example
@@ -1175,7 +1174,7 @@ string
 $("#daterangepicker").ejDateRangePicker();
 // Create DateRangePicker instance
 var dateObj = $("#daterangepicker").data("ejDateRangePicker");
-dateObj.getSelectedValue(); // returns the start and end date values
+dateObj.getSelectedRange(); // returns the start and end date values
 </script>
 
 {% endhighlight %}
@@ -1187,7 +1186,7 @@ dateObj.getSelectedValue(); // returns the start and end date values
 <script>
 // returns the start and end date values
 $("#daterangepicker").ejDateRangePicker();
-$("#daterangepicker").ejDateRangePicker("getSelectedValue");
+$("#daterangepicker").ejDateRangePicker("getSelectedRange");
 </script>
 
 {% endhighlight %}
