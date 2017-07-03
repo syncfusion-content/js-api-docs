@@ -96,6 +96,75 @@ When set to true, Schedule allows the appointments to be dragged and dropped at 
 
 {% endhighlight %}
 
+### allowInline `boolean`
+{:#members:allowinline}
+
+When set to true, allows the user to create/edit appointments inline - simply through a single click made either on the Scheduler cells or on the existing appointment’s Subject text respectively. Pressing enter key after the new Subject text   typed onto the inline created text box, will save/update the appointments appropriately.
+
+#### Default Value
+
+* false
+
+#### Example - To create/edit appointments through inline.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                allowInline: true,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+## allowDelete `boolean`
+{:#members:allowdelete}
+
+When set to `false`, disables the appointment delete option on the Scheduler.
+
+#### Default Value
+
+* true
+
+#### Example - To disable deletion of appointments from the scheduler.
+
+{% highlight html %}
+ 
+<div id="Schedule"></div> 
+ 
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+		        currentDate:new Date(2014,4,5),
+                allowDelete: false,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00)
+                    }]
+                } 
+            });
+        });
+</script>
+
+{% endhighlight %}
+
 
 ### allowKeyboardNavigation `boolean`
 {:#members:allowkeyboardnavigation}
@@ -343,6 +412,42 @@ When set to false, doesn't consider the time difference offset calculation on ap
                   currentDate:new Date(2014,4,5),
         		  appointmentSettings: {
                     applyTimeOffset: false,
+                    dataSource: [{
+                        EventId: 101,
+                        EventStartTime: new Date(2014, 4, 5, 10, 00),
+                        EventEndTime: new Date(2014, 4, 5, 12, 00)
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### appointmentSettings.editFutureEventsOnly `boolean`
+{:#members:appointmentsettings-editfutureeventsonly}
+
+When set to true, introduces a new option to edit only the future occurrences of the appointments in a recurrence series from the currently selected appointment's date.
+
+#### Default Value
+
+* false
+
+#### Example - To edit future appointments in recurrence series
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                  currentDate:new Date(2014,4,5),
+        		  appointmentSettings: {
+                    editFutureEventsOnly: true,
                     dataSource: [{
                         EventId: 101,
                         EventStartTime: new Date(2014, 4, 5, 10, 00),
@@ -4870,6 +4975,105 @@ Binds the name of `resourceId` field in dataSource. Specifies the id of the reso
                     subject: "BlockSubject",
                     isBlockAppointment: "IsBlockAppointment",
                     resourceId: "BlockResId"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### blockoutSettings.groupId `string`
+{:#members:blockoutsettings-resourceid}
+
+Binds the name of `groupId` field in dataSource. Specifies the id of the resource group, to which the time intervals are needed to be blocked.
+
+#### Default Value
+
+* null
+
+#### Example - Block intervals for multiple resources scenario.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 4, 2),
+                group: {
+                    resources: ["Owners", "Rooms"]
+                },
+                resources: [{
+                    field: "ownerId",
+                    title: "Owner",
+                    name: "Owners",
+                    resourceSettings: {
+                        dataSource: [{
+                            OwnerText: "Nancy",
+                            id: 1,
+                            OwnerColor: "#f8a398"
+                        }, {
+                            OwnerText: "Steven",
+                            id: 2,
+                            OwnerColor: "#56ca95"
+                        }],
+                        text: "OwnerText", id: "id", color: "OwnerColor"
+                    }
+                }, {
+                    field: "roomId",
+                    title: "Room(s)",
+                    name: "Rooms",
+                    resourceSettings: {
+                        dataSource: [{
+                            text: "Room1",
+                            id: 1,
+                            groupId: 1,
+                            color: "#f8a398"
+                        }, {
+                            text: "Room2",
+                            id: 2,
+                            groupId: 2,
+                            color: "#56ca85"
+                        }, {
+                            text: "Room3", id: 3, groupId: 2, color: "#56ac88"
+                        }],
+                        text: "text", id: "id", color: "color", groupId: "groupId"
+                    }
+                }],
+                appointmentSettings: {
+                    dataSource: [{
+                        EventId: 100,
+                        EventSubject: "Research on Sky Miracles",
+                        EventStartTime: new Date(2014, 4, 2, 9, 00),
+                        EventEndTime: new Date(2014, 4, 2, 10, 30),
+                        ownerId: 2,
+                        roomId: 1
+                    }],
+                    id: "EventId",
+                    startTime: "EventStartTime",
+                    endTime: "EventEndTime",
+                    subject: "EventSubject",
+                    resourceFields: "ownerId,roomId"
+                },
+                blockoutSettings: {
+                    enable: true,
+                    dataSource: [{
+                        BlockId: 101,
+                        BlockStartTime: new Date(2014, 4, 1, 10, 00),
+                        BlockEndTime: new Date(2014, 4, 1, 11, 00),
+                        BlockSubject: "Travel",
+                        IsBlockAppointment: true,
+                        BlockResId: 2,
+                        BlockGrpId: 1,
+                    }],
+                    id: "BlockId",
+                    startTime: "BlockStartTime",
+                    endTime: "BlockEndTime",
+                    subject: "BlockSubject",
+                    isBlockAppointment: "IsBlockAppointment",
+                    resourceId: "BlockResId",
+                    groupId: "BlockGrpId",
                 }
             });
         });

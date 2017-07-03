@@ -417,6 +417,71 @@ Property to enable the ribbon quick access toolbar.
 
 {% endhighlight %}
 
+### cssClass `string`
+{:#members:cssclass}
+
+Sets the root CSS class for Ribbon which allow us to customize the appearance.
+
+
+#### Example
+
+{% highlight html %}
+
+    <ul id="menu">
+    <li><a>FILE </a>
+    <ul>
+    <li><a>New</a></li>
+    <li><a>Open</a></li>
+    <li><a>Save</a></li>
+    <li><a>Save as</a></li>
+    <li><a>Print</a></li>
+    </ul></li></ul>
+    <div id="Ribbon"></div> 
+    <script>
+    $(function() {
+        $("#Ribbon").ejRibbon({
+            width: "100%",
+            cssClass: "customCss",
+            buttonDefaults: {
+                width: 50,
+                height: 40,
+                showRoundedCorner: true
+            },
+            applicationTab: {
+                type: ej.Ribbon.ApplicationTabType.Menu,
+                menuItemID: "menu",
+                menuSettings: {
+                    openOnClick: false
+                }
+            },
+            tabs: [{
+                id: "home",
+                text: "HOME",
+                groups: [{
+                    text: "New",
+                    alignType: ej.Ribbon.AlignType.Rows,
+                    content: [{
+                        groups: [{
+                            id: "new",
+                            text: "New",
+                            toolTip: "New",
+                            type: ej.Ribbon.Type.Button,
+                            buttonSettings: {
+                                width: 70,
+                                height: 50
+                            }
+                        }]
+                    }]
+                }]
+            }]
+        });
+    });
+    </script>
+
+{% endhighlight %}
+
+
+
 ### collapsePinSettings `Object`
 {:#members:collapsepinsettings}
 

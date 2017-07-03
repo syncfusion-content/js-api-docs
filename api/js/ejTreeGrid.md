@@ -2072,6 +2072,46 @@ Specifies the mode of record count in a page, whether it should count all the re
 {% endhighlight %}
 
 
+### pageSettings.printMode `enum`
+{:#members:pagesettings-printmode}
+
+<ts name = "ej.TreeGrid.PrintMode"/>
+
+Specifies the mode of printing the control, whether it should print the all the records or the current page content.  
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">AllPages</td>
+<td class="description">To print all the pages</td>
+</tr>
+<tr>
+<td class="name">CurrentPage</td>
+<td class="description">To print only the current page content.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.TreeGrid.PrintMode.AllPages
+
+
+#### Example
+
+
+{% highlight html %}
+          
+        $("#treegrid").ejTreeGrid({ pageSettings :{ printMode:ej.TreeGrid.PrintMode.CurrentPage} });                   
+
+{% endhighlight %}
+
 ### pageSettings.template `string`
 {:#members:pagesettings-template}
 
@@ -2945,6 +2985,10 @@ Specifies the list of toolbar items to be rendered in TreeGrid toolbar
 <tr>
 <td class="name">ExcelExport</td>
 <td class="description">Enables the excel export icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Print</td>
+<td class="description">Enables the printing icon in toolbar</td>
 </tr>
 </tbody>
 </table>
@@ -4140,6 +4184,68 @@ $("#treegrid").ejTreeGrid({
 });
 </script>
 {% endhighlight %}
+
+### beforePrint
+{:#events:beforeprint}
+
+Triggered before the printing initiated in TreeGrid.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when beforePrint event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description">Returns the treegrid element which is going to be print</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type">string</td>
+<td class="description">Returns request type.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
+$("#treegrid").ejTreeGrid({
+   beforePrint: function (args) {}
+});
+</script>
+{% endhighlight %}
+
 
 
 ### beginEdit

@@ -2391,6 +2391,39 @@ $("#uploadbox1").ejUploadbox("refresh");
 
 
 
+### upload()
+{:#methods:upload}
+
+Upload the selected files.
+ 
+#### Example
+ 
+{% highlight html %}
+ 
+<div id="uploadbox1"></div> 
+ 
+<script>
+// Upload the files
+$("#uploadbox1").ejUploadbox();
+var uploadObj = $("#uploadbox1").data("ejUploadbox");
+uploadObj.upload(); // Upload the files
+</script>
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="uploadbox1"></div> 
+ 
+<script>
+// Upload the files
+$("#uploadbox1").ejUploadbox();
+$("#uploadbox1").ejUploadbox("upload"); 
+</script>
+
+{% endhighlight %}
+
 
 
 ## Events

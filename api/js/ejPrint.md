@@ -46,6 +46,7 @@ keywords: ejPrint, API, Essential JS Print
 Append the custom HTML after the selected content.
 
 #### Default Value:
+
 * null
 
 #### Example
@@ -99,6 +100,7 @@ Append the custom HTML after the selected content.
 A selector that specifies a particular element to be excluded from printing.
 
 #### Default Value:
+
 * null
 
 #### Example
@@ -126,12 +128,13 @@ A selector that specifies a particular element to be excluded from printing.
     
 {% endhighlight %}
 
-### externalStyles `String`
+### externalStyles `string`
 {:#members:externalstyles}
 
 Specifies whether the URL of an external stylesheet can be included to customize and print that page.
 
 #### Default Value:
+
 * null
 
 #### Example 
@@ -196,13 +199,14 @@ Prepend a doctype to the document frame.
 
 
 
-### globalStyles `Boolean`
+### globalStyles `boolean`
 {:#members:globalstyles}
 
 Specifies whether the global styles can be applied to the element to be printed.
 
 
 #### Default Value:
+
 * true
 
 #### Example
@@ -228,13 +232,14 @@ Specifies whether the global styles can be applied to the element to be printed.
     
 {% endhighlight %}
 
-### height `Number`
+### height `number`
 {:#members:height}
 
 Sets the height of the print window.
 
 
 #### Default Value:
+
 * 454
 
 #### Example
@@ -269,6 +274,7 @@ Prepends the custom HTML before the selected content.
 
 
 #### Default Value:
+
 * null
 
 #### Example
@@ -294,13 +300,14 @@ Prepends the custom HTML before the selected content.
 
 {% endhighlight %}
 
-### printInNewWindow `Boolean`
+### printInNewWindow `boolean`
 {:#members:printInNewWindow}
 
 Allows printing the content in a new window.
 
 
 #### Default Value:
+
 * false
 
 #### Example
@@ -326,13 +333,14 @@ Allows printing the content in a new window.
 
 {% endhighlight %}
 
-### timeOutPeriod `Number`
+### timeOutPeriod `number`
 {:#members:timeOutPeriod}
 
 Sets the period of time to wait before printing the content.
 
 
 #### Default Value:
+
 * 1000
 
 #### Example
@@ -366,6 +374,7 @@ Sets the period of time to wait before printing the content.
 Sets the title of the print document.
 
 #### Default Value:
+
 * null
 
 #### Example
@@ -391,12 +400,13 @@ Sets the title of the print document.
 
 {% endhighlight %}
 
-### width  `Number`
+### width  `number`
 {:#members:width}
 
 Defines the width of the print window.
 
 #### Default Value:
+
 * 1024
 
 #### Example
@@ -495,7 +505,7 @@ Event triggers before the document page or an element in it gets printed.
 
 <tr>
 <td> model </td>
-<td> <ts ref="ej.Print.Model"/><span class="param-type">Object</span></td>
+<td><ts ref="ej.Print.Model"/><span class="param-type">Object</span></td>
 <td> Returns the Print model </td>
 </tr>
 <tr>

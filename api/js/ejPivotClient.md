@@ -458,6 +458,54 @@ Shows/Hides the sub-total of the field in PivotGrid.
     $("#PivotClient1").ejPivotClient({ dataSource: { columns: [{ fieldName: "Country", showSubTotal : false }] } });
 {% endhighlight %}
 
+### dataSource.columns.format `string`
+{:#members:datasource-columns-format}
+
+Allows to set the format for the column headers.
+
+>**Note**: This is applicable only for Relational datasource.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { columns: [{ format : "date" }] } });
+{% endhighlight %}
+
+### dataSource.columns.formatString `string`
+{:#members:datasource-columns-formatstring}
+
+This property sets type of display of date.
+
+>**Note**: This is applicable only when the format is set as "date".
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { columns: [{ formatString : "MM/DD/YYYY" }] } });
+{% endhighlight %}
+
+### dataSource.columns.cssClass `string`
+{:#members:datasource-columns-cssclass}
+
+Allows to set the custom theme for the column headers.
+
+>**Note**: This is applicable only for Relational datasource.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { columns: [{ cssClass : "className" }] } });
+{% endhighlight %}
+
 ### dataSource.columns.sortOrder `enum`
 {:#members:datasource-columns-sortorder}
 
@@ -754,6 +802,54 @@ Shows/Hides the sub-total of the field.
 {% highlight javascript %}
  
     $("#PivotClient1").ejPivotClient({ dataSource: { rows: [{ fieldName: "Country", showSubTotal : false }] } });
+{% endhighlight %}
+
+### dataSource.rows.format `string`
+{:#members:datasource-rows-format}
+
+Allows to set the format for the row headers.
+
+>**Note**: This is applicable only for Relational datasource.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { rows: [{ format : "date" }] } });
+{% endhighlight %}
+
+### dataSource.rows.formatString `string`
+{:#members:datasource-rows-formatstring}
+
+This property sets type of display of date.
+
+>**Note**: This is applicable only when the format is set as "date".
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { rows: [{ formatString : "MM/DD/YYYY" }] } });
+{% endhighlight %}
+
+### dataSource.rows.cssClass `string`
+{:#members:datasource-rows-cssclass}
+
+Allows to set the custom theme for the row headers.
+
+>**Note**: This is applicable only for Relational datasource.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { rows: [{ cssClass : "className" }] } });
 {% endhighlight %}
 
 ### dataSource.rows.sortOrder `enum`
@@ -1057,6 +1153,22 @@ This property sets type of display of date.
     $("#PivotClient1").ejPivotClient({ dataSource: { values: [{ formatString : "MM/DD/YYYY" }] } });
 {% endhighlight %}
 
+### dataSource.values.cssClass `string`
+{:#members:datasource-values-cssclass}
+
+Allows to set the custom theme for the values.
+
+>**Note**: This is applicable only for Relational datasource.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { values: [{ cssClass : "className" }] } });
+{% endhighlight %}
+
 ### dataSource.values.formula `string`
 {:#members:datasource-values-formula}
 
@@ -1193,6 +1305,56 @@ Contains the respective cube name from OLAP database as string type.
     $("#PivotClient1").ejPivotClient({ dataSource: { cube: "Adventure Works" } });
 {% endhighlight %}
 
+### dataSource.sourceInfo `string`
+{:#members:datasource-sourceinfo}
+
+To set the data source name to fetch data from that. 
+
+>**Note**: This is applicable only for Mondrian connection.
+
+#### Default Value: “”
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { sourceInfo: "Provider Mondrian" } });
+{% endhighlight %}
+
+### dataSource.providerName `string`
+{:#members:datasource-providerName}
+
+Set the provider name for PivotClient to identify whether the provider is SSAS or Mondrian. 
+
+>**Note**: This is applicable only for client side OLAP data.
+
+#### Default Value: "ssas"
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">ssas</td>
+            <td class="description">To bind an OLAP data source to PivotClient through SSAS provider.</td>
+        </tr>
+        <tr>
+            <td class="name">mondrian</td>
+            <td class="description">To bind a relational data source to PivotClient through Mondrian provider.</td>
+        </tr>
+    </tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ dataSource: { providerName: "mondrian" } });
+{% endhighlight %}
 
 ### dataSource.data `object`
 {:#members:datasource-data}
@@ -1884,8 +2046,6 @@ Allows the user to enable virtual scrolling for both the PivotChart and PivotGri
 
 Enables/Disables paging in Member Editor for viewing the large count of members in pages. 
 
-> **Note**: This property is applicable only for OLAP data.
-
 #### Default Value: false
 
 **Example:**
@@ -1899,8 +2059,6 @@ Enables/Disables paging in Member Editor for viewing the large count of members 
 {:#members:memberEditorPageSize}
 
 Allows the user to set the number of members to be displayed in each page of Member Editor on applying paging in it. 
-
-> **Note**: This property is applicable only for OLAP data.
 
 #### Default Value: 100
 
@@ -1954,6 +2112,20 @@ Sets the summary layout for PivotGrid. Following are the ways in which summary c
 {% highlight javascript %}
  
     $("#PivotClient1").ejPivotClient({ gridLayout: ej.PivotGrid.Layout.NoSummaries });
+{% endhighlight %}
+
+### collapseCubeBrowserByDefault `boolean`
+{:#members:collapsecubebrowserbydefault}
+
+Allows the user to hide PivotClient's Cube Browser and Axis Element Builder while initiate the widget.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ collapseCubeBrowserByDefault: true });
 {% endhighlight %}
 
 ### isResponsive `boolean`
@@ -2267,6 +2439,20 @@ Allows the user to set the custom name for the service method responsible for up
 Allows the user to set the custom name for the service method responsible on navigating between pages in paged PivotClient.
 
 #### Default Value: "Paging"
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({  serviceMethodSettings: { calculatedMember: "CalculatedMember" } }); 
+{% endhighlight %}
+
+### serviceMethodSettings.calculatedMember `string`
+{:#members:servicemethodsettings-calculatedmember}
+
+Allows the user to set the custom name for the service method responsible for updating report with calculated member.
+
+#### Default Value: "CalculatedMember"
 
 **Example:**
 
