@@ -230,6 +230,23 @@ Enables/disables pagination of rows in TreeGrid
         
 {% endhighlight %}
 
+### allowTextWrap `boolean`
+{:#members:allowtextwrap}
+ 
+Gets or sets a value that indicates whether the Content will wrap to the next line if the content exceeds the boundary of the Column Cells.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}   
+              
+        $("#treegrid").ejTreeGrid({ allowTextWrap : true });
+                                 
+{% endhighlight %}
+
 
 ### altRowTemplateID `string`
 {:#members:altrowtemplateid}
