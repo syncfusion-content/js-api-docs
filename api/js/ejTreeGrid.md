@@ -965,6 +965,99 @@ Enables or disables the ability to edit a row or cell.
 
 {% endhighlight %}
 
+### columns.commands `array`
+{:#members:columns-commands}
+
+Using this property we can enable command column in TreeGrid
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}
+$("#treegrid").ejTreeGrid({ columns:[{
+              headerText: "Manage Records",
+              commands: [
+                  { type: ej.TreeGrid.UnboundType.Edit, buttonOptions: { text: "Edit" } },
+                  { type: ej.TreeGrid.UnboundType.Delete, buttonOptions: { text: "Delete" } },
+                  { type: ej.TreeGrid.UnboundType.Save, buttonOptions: { text: "Save" } },
+                  { type: ej.TreeGrid.UnboundType.Cancel, buttonOptions: { text: "Cancel" } }
+               ],
+             }
+    ] });
+{% endhighlight %}
+
+### columns.commands.buttonOptions `object`
+{:#members:columns-commands-buttonoptions}
+
+Using this we can customize command column button with ejButton properties.
+
+#### Default Value:
+{:.param}
+* -
+
+#### Example
+{:.example}
+{% highlight html %}
+$("#treegrid").ejTreeGrid({ columns:[{commands: [buttonOptions: { text: "Edit" } }]}]});
+{% endhighlight %}
+
+### columns.commands.type `enum`
+{:#members:columns-commands-type}
+
+<ts name="ej.TreeGrid.UnboundType"/>
+
+Using this we can define the type of command button for TreeGrid.
+
+#### Default Value:
+{:.param}
+* -
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Edit</td>
+<td class="description">Unbound type to perform edit action</td>
+</tr>
+<tr>
+<td class="name">Save</td>
+<td class="description">Unbound type to perform save action</td>
+</tr> 
+<tr>
+<td class="name">Delete</td>
+<td class="description">Unbound type to perform delete action</td>
+</tr> 
+<tr>
+<td class="name">Cancel</td>
+<td class="description">Unbound type to perform cancel action</td>
+</tr> 
+</table>
+
+#### Example
+{% highlight html %}
+<div id="TreeGrid"></div> 
+<script>
+$("#TreeGrid").ejTreeGrid({    
+    columns:[          
+           {
+              headerText: "Manage Records",
+              commands: [
+                  { type: ej.TreeGrid.UnboundType.Edit, buttonOptions: { text: "Edit" } },
+                  { type: ej.TreeGrid.UnboundType.Delete, buttonOptions: { text: "Delete" } },
+                  { type: ej.TreeGrid.UnboundType.Save, buttonOptions: { text: "Save" } },
+                  { type: ej.TreeGrid.UnboundType.Cancel, buttonOptions: { text: "Cancel" } }
+               ]             
+           }
+	] 
+});
+</script> 
+{% endhighlight %}
+
 ### columns.showInColumnChooser `boolean`
 
 {:#members:columns-showincolumnchooser}
