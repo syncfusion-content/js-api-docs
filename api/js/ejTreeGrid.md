@@ -968,7 +968,7 @@ Enables or disables the ability to edit a row or cell.
 ### columns.commands `array`
 {:#members:columns-commands}
 
-Using this property we can enable command column in TreeGrid
+Gets or sets an object to define a command column in TreeGrid.
 
 #### Default Value:
 {:.param}
@@ -992,7 +992,7 @@ $("#treegrid").ejTreeGrid({ columns:[{
 ### columns.commands.buttonOptions `object`
 {:#members:columns-commands-buttonoptions}
 
-Using this we can customize command column button with ejButton properties.
+Gets or sets an object to customize command button with available ejButton properties.
 
 #### Default Value:
 {:.param}
@@ -1009,7 +1009,7 @@ $("#treegrid").ejTreeGrid({ columns:[{commands: [buttonOptions: { text: "Edit" }
 
 <ts name="ej.TreeGrid.UnboundType"/>
 
-Using this we can define the type of command button for TreeGrid.
+Gets or sets a value that define the command column buttons to be displayed.
 
 #### Default Value:
 {:.param}
