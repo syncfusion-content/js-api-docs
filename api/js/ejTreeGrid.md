@@ -230,6 +230,23 @@ Enables/disables pagination of rows in TreeGrid
         
 {% endhighlight %}
 
+### allowTextWrap `boolean`
+{:#members:allowtextwrap}
+ 
+Gets or sets a value that indicates whether the Content will wrap to the next line if the content exceeds the boundary of the Column Cells.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}   
+              
+        $("#treegrid").ejTreeGrid({ allowTextWrap : true });
+                                 
+{% endhighlight %}
+
 
 ### altRowTemplateID `string`
 {:#members:altrowtemplateid}
@@ -946,6 +963,99 @@ Enables or disables the ability to edit a row or cell.
          
         $("#treegrid").ejTreeGrid({columns: [{  allowEditing: false }]});
 
+{% endhighlight %}
+
+### columns.commands `array`
+{:#members:columns-commands}
+
+Gets or sets an object to define a command column in TreeGrid.
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}
+$("#treegrid").ejTreeGrid({ columns:[{
+              headerText: "Manage Records",
+              commands: [
+                  { type: ej.TreeGrid.UnboundType.Edit, buttonOptions: { text: "Edit" } },
+                  { type: ej.TreeGrid.UnboundType.Delete, buttonOptions: { text: "Delete" } },
+                  { type: ej.TreeGrid.UnboundType.Save, buttonOptions: { text: "Save" } },
+                  { type: ej.TreeGrid.UnboundType.Cancel, buttonOptions: { text: "Cancel" } }
+               ],
+             }
+    ] });
+{% endhighlight %}
+
+### columns.commands.buttonOptions `object`
+{:#members:columns-commands-buttonoptions}
+
+Gets or sets an object to customize command button with available ejButton properties.
+
+#### Default Value:
+{:.param}
+* -
+
+#### Example
+{:.example}
+{% highlight html %}
+$("#treegrid").ejTreeGrid({ columns:[{commands: [buttonOptions: { text: "Edit" } }]}]});
+{% endhighlight %}
+
+### columns.commands.type `enum`
+{:#members:columns-commands-type}
+
+<ts name="ej.TreeGrid.UnboundType"/>
+
+Gets or sets a value that define the command column buttons to be displayed.
+
+#### Default Value:
+{:.param}
+* -
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Edit</td>
+<td class="description">Unbound type to perform edit action</td>
+</tr>
+<tr>
+<td class="name">Save</td>
+<td class="description">Unbound type to perform save action</td>
+</tr> 
+<tr>
+<td class="name">Delete</td>
+<td class="description">Unbound type to perform delete action</td>
+</tr> 
+<tr>
+<td class="name">Cancel</td>
+<td class="description">Unbound type to perform cancel action</td>
+</tr> 
+</table>
+
+#### Example
+{% highlight html %}
+<div id="TreeGrid"></div> 
+<script>
+$("#TreeGrid").ejTreeGrid({    
+    columns:[          
+           {
+              headerText: "Manage Records",
+              commands: [
+                  { type: ej.TreeGrid.UnboundType.Edit, buttonOptions: { text: "Edit" } },
+                  { type: ej.TreeGrid.UnboundType.Delete, buttonOptions: { text: "Delete" } },
+                  { type: ej.TreeGrid.UnboundType.Save, buttonOptions: { text: "Save" } },
+                  { type: ej.TreeGrid.UnboundType.Cancel, buttonOptions: { text: "Cancel" } }
+               ]             
+           }
+	] 
+});
+</script> 
 {% endhighlight %}
 
 ### columns.showInColumnChooser `boolean`
