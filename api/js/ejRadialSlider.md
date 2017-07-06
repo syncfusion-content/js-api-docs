@@ -349,6 +349,32 @@ Specifies the Space between the radial slider element and the label.
 
 
 
+### locale `string`
+{:#members:locale}
+
+Change the Radial Slider ticks value based on the given culture.
+
+#### Default Value
+
+* "en-US"
+
+#### Example
+
+{% highlight html %}
+
+    <div id="radialSlider">
+    </div>
+
+    $(function () {
+       $("#radialSlider").ejRadialSlider({ 
+           innerCircleImageUrl:"../images/radialslider/chevron-right.png",
+           locale:"fr-FR"
+       });
+    });
+    
+{% endhighlight %}
+
+
 
 ### radius `number`
 {:#members:radius}
