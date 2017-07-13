@@ -1576,7 +1576,25 @@ $("#container").ejChart({
 Options for configuring the properties of all the series. You can also override the options for specific series by using series collection.
 
 
+### commonSeriesOptions.animationDuration `string`
+{:#members:commonseriesoptions-animationduration}
 
+Specifies animation duration for series rendering
+
+#### Default Value
+
+ * null
+
+#### Example
+
+{% highlight js %}
+
+$("#container").ejChart({
+commonSeriesOptions : [{
+            animationDuration : 2000 
+        }]                   
+});
+{% endhighlight %}
 
 
 
@@ -1964,7 +1982,22 @@ commonSeriesOptions : {dataSource: data }
  
  Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ubbu5ukf)
 
+### commonSeriesOptions.cardinalSplineTension `number`
+{:#members:commonseriesoptions-cardinalsplinetension} 
 
+Specifies spline tension value for cardianal spline type. Value ranges from 0 to 1.
+
+#### Default Value
+
+* 0.5
+
+#### Example
+
+{% highlight js %} 
+$("#container").ejChart({
+commonSeriesOptions :{ cardinalSplineTension : 0.5}                  
+});
+{% endhighlight %}
 
 
 ### commonSeriesOptions.doughnutCoefficient `number`
@@ -3172,7 +3205,60 @@ commonSeriesOptions :{ bubbleOptions: { maxRadius: 7 }}
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdnbwech)
 
+## commonSeriesOptions.splineType `enum`
+{:#members:commonseriesoptions-splinetype} 
 
+<ts name="ej.datavisualization.Chart.SplineType"/> 
+To render the spline series curve in different forms. 
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Natural</td>
+<td class="type">string</td> 
+<td class="description">To render the series with natural curve</td>
+</tr>
+<tr>
+<td class="name">
+Monotonic</td>
+<td class="type">string</td>
+<td class="description">To render the series with monotonic curve</td>
+</tr> 
+<tr>
+<td class="name">
+Cardinal</td>
+<td class="type">string</td>
+<td class="description">To render the series with cardinal curve</td>
+</tr> 
+<tr>
+<td class="name">
+Clamped</td>
+<td class="type">string</td>
+<td class="description">To render the series with clamped curve</td>
+</tr> 
+</tbody>
+</table>
+
+#### Default Value
+
+* "natural"
+
+#### Example
+
+{% highlight js %} 
+
+$("#container").ejChart({
+commonSeriesOptions :{ splineType : "cardinal"}                  
+});
+{% endhighlight %}
 
 ### commonSeriesOptions.lineCap `enum`
 {:#members:commonseriesoptions-linecap}
@@ -3483,6 +3569,22 @@ commonSeriesOptions :{marker :{dataLabel :{enableWrap : false}}}
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/klibjzkp)
 
+### commonSeriesOptions.marker.dataLabel.enableContrastColor `boolean`
+{:#members:commonseriesoptions-marker-datalabel-enablecontrastcolor}
+
+Enables saturation to the data label. 
+
+#### Default Value
+
+ * false
+
+#### Example
+
+{% highlight js %}
+$("#container").ejChart({
+commonSeriesOptions :{marker :{dataLabel :{enableContrastColor : false}}}                  
+});
+ {% endhighlight %}
 
 ### commonSeriesOptions.marker.dataLabel.border `object`
 {:#members:commonseriesoptions-marker-datalabel-border}
@@ -6012,6 +6114,18 @@ StackingBar</td>
 StackingBar100</td>
 <td class="type">string</td>
 <td class="description">Specifies the series type as stackingbar100.</td>
+</tr> 
+<tr>
+<td class="name">
+StackingSplineArea</td>
+<td class="type">string</td>
+<td class="description">sets the seriesType of chart to stackingsplinearea</td>
+</tr>
+<tr>
+<td class="name">
+StackingSplineArea100</td>
+<td class="type">string</td>
+<td class="description">sets the seriesType of chart to stackingsplinearea100</td>
 </tr> 
 <tr>
 <td class="name">
@@ -9774,6 +9888,25 @@ $("#container").ejChart({
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/p443wnjd)
 
+### indicators.animationDuration `boolean`
+{:#members:indicators-animationduration}
+
+Specifies animation duration for indicator rendering.
+
+#### Default Value
+
+* null
+
+#### Example
+
+
+{% highlight js %}
+$("#container").ejChart({
+
+     indicators :[{ animationDuration:2000}]
+});
+
+{% endhighlight %}
 
 ### indicators.fill `string`
 {:#members:indicators-fill}
@@ -26017,6 +26150,24 @@ series : [{
  
 Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/vf2xong1)
 
+### series.animationDuration `string`
+{:#members:series-animationduration}
+
+Specifies animation duration for series rendering.
+
+#### Default Value
+
+ * null
+
+#### Example
+
+{% highlight js %} 
+$("#container").ejChart({
+series : [{
+            animationDuration : 2000 
+        }]                   
+});
+{% endhighlight %}
 
 ### series.bullFillColor `string`
 {:#members:series-bullfillcolor}
@@ -26270,6 +26421,22 @@ series : [{dataSource: data }]
 
 Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/soesgx0m)
 
+### series.cardinalSplineTension `number`
+{:#members:series-cardinalsplinetension}
+
+Specifies spline tension values for cardianal spline type.Value ranges from 0 to 1.
+
+#### Default Value
+
+* 0.5
+
+#### Example
+
+{% highlight js %} 
+$("#container").ejChart({
+series : [{cadinalSplineTension : 0.5 }]                   
+});
+{% endhighlight %}
 
 ### series.doughnutCoefficient `number`
 {:#members:series-doughnutcoefficient}
@@ -27260,7 +27427,23 @@ series : [ { bubbleOptions: { maxRadius: 7 }} ]
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdnbwech)
 
+### series.splineType `enum`
+{:#members:series-splinetype} 
+<ts ref="ej.datavisualization.Chart.SplineType"/>
 
+To render spline series curves in different forms. 
+
+#### Default Value
+
+* "natural" see <a href="global.html#members:splineType">SplineType</a>
+
+#### Example
+
+{% highlight js %} 
+$("#container").ejChart({
+series : [{splineType : "cardinal" }]                   
+});
+{% endhighlight %}
 
 
 ### series.lineCap `enum`
@@ -27514,6 +27697,22 @@ series :[{marker :{dataLabel :{enableWrap : true}}]
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/klibjzkp)
 
+### series.marker.dataLabel.enableContrastColor `boolean`
+{:#members:series-marker-datalabel-enablecontrastcolor}
+
+Enables saturation to the data label. 
+
+#### Default Value
+
+ * false
+
+#### Example
+
+{% highlight js %}
+$("#container").ejChart({
+series :[{marker :{dataLabel :{enableContrastColor : true}}]            
+});
+ {% endhighlight %}
 
 ### series.marker.dataLabel.border `object`
 {:#members:series-marker-datalabel-border}
