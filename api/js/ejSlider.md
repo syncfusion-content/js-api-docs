@@ -1856,11 +1856,16 @@ Fires when the slider scale ticks has been created.
  
 <div id="slider"> </div> 
 <script>
-//renderingTicks event for slider control
+// In this event, we can customize the slider ticks label values and ticks tooltip values.
 $("#slider").ejSlider({
    showScale : true,
    renderingTicks: function (args) {
-       args.value = "Your custom value" + args.value
+        if(args.valueType == "toolTipValue")
+        // To customize the ticks tooltip value.
+           args.value = "&" + args.value;        
+        if(args.valueType == "labelValue")
+        // To customize the ticks label value.
+           args.value = "$" + args.value;           
    }
 });
 </script>{% endhighlight %}
