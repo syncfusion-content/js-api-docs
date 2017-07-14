@@ -13632,6 +13632,322 @@ $("#diagramcontent").ejDiagram({showTooltip: true});
 
 {% endhighlight %}
 
+
+### rulerSettings `object`
+{:#members:rulersettings}
+
+Defines the properties of the both the horizontal and vertical gauge to measure the diagram area.
+
+### rulerSettings.showRulers `boolean`
+{:#members:rulersettings-showrulers}
+
+Enables or disables both the horizontal and vertical ruler.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({ rulerSettings:{ showRulers: true } });
+
+{% endhighlight %}
+
+### rulerSettings.horizontalRuler `object`
+{:#members:rulersettings-horizontalruler}
+
+Defines the appearance of horizontal ruler
+
+### rulerSettings.horizontalRuler.interval `number`
+{:#members:rulersettings-horizontalruler-interval}
+
+Defines the number of intervals to be present on the each segment of the horizontal ruler. 
+
+#### Default Value:
+
+* 5
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: {horizontalRuler:{interval: 10  } }});
+
+{% endhighlight %}
+
+### rulerSettings.horizontalRuler.segmentWidth `number`
+{:#members:rulersettings-horizontalruler-segmentwidth}
+
+Defines the textual description of the ruler segment, and the appearance of the ruler ticks of the horizontal ruler.
+
+#### Default Value:
+
+* 100
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: {horizontalRuler:{segmentWidth: 50  } }});
+
+{% endhighlight %}
+
+### rulerSettings.horizontalRuler.arrangeTick `object`
+{:#members:rulersettings-horizontalruler-arrangetick}
+
+Defines the method which used to position and arrange the tick elements of the horizontal ruler.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: {horizontalRuler:{arrangeTick: function alignTick(args){ }  } }});
+
+{% endhighlight %}
+
+### rulerSettings.horizontalRuler.tickAlignment`enum`
+{:#members:rulersettings-horizontalruler-tickalignment}
+
+<ts name = "ej.datavisualization.Diagram.TickAlignment"/>
+Defines and sets the tick alignment of the ruler scale.
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">LeftOrTop</td>
+            <td class="description last">Align the ruler scale either left or top position of the ruler.</td>
+       </tr>
+        <tr>
+            <td class="name">RightOrBottom</td>
+            <td class="description last">Align the ruler scale either right or bottom position of the ruler.</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.TickAlignment.RightOrBottom
+
+#### Example
+
+{% highlight html %}
+$("#diagramcontent").ejDiagram({rulerSettings: {horizontalRuler:{tickAlignment: ej.datavisualization.Diagram.TickAlignment.LeftOrTop  } }});
+
+{% endhighlight %}
+
+### rulerSettings.horizontalRuler.markerColor `string`
+{:#members:rulersettings-horizontalruler-markercolor}
+
+Defines the color of the horizontal marker brush.
+
+#### Default Value:
+
+* "red"
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: {horizontalRuler:{markerColor: "pink"  } }});
+
+{% endhighlight %}
+
+### rulerSettings.horizontalRuler.length `number`
+{:#members:rulersettings-horizontalruler-length}
+
+Defines the width of the horizontal ruler.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: {horizontalRuler:{length: 1000  } }});
+
+{% endhighlight %}
+
+### rulerSettings.horizontalRuler.thickness `number`
+{:#members:rulersettings-horizontalruler-thickness}
+
+Defines the height of the horizontal ruler.
+
+#### Default Value:
+
+* 25
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: {horizontalRuler:{thickness: 50  } }});
+
+{% endhighlight %}
+
+### rulerSettings.verticalRuler `object`
+{:#members:rulersettings- verticalruler }
+
+Defines the appearance of vertical ruler
+
+### rulerSettings.verticalRuler.interval `number`
+{:#members:rulersettings- verticalruler -interval}
+
+Defines the number of intervals to be present on the each segment of the vertical ruler. 
+
+#### Default Value:
+
+* 5
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: { verticalRuler:{interval: 10  } }});
+
+{% endhighlight %}
+
+### rulerSettings.verticalRuler.segmentWidth `number`
+{:#members:rulersettings- verticalruler -segmentwidth}
+
+Defines the textual description of the ruler segment, and the appearance of the ruler ticks of the vertical ruler.
+
+#### Default Value:
+
+* 100
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: { verticalRuler:{segmentWidth: 50  } }});
+
+{% endhighlight %}
+
+### rulerSettings.verticalRuler.arrangeTick `object`
+{:#members:rulersettings- verticalruler -arrangetick}
+
+Defines the method which used to position and arrange the tick elements of the vertical ruler.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: { verticalRuler:{arrangeTick: function alignTick(args){ }  } }});
+
+{% endhighlight %}
+
+### rulerSettings. verticalRuler.tickAlignment`enum`
+{:#members:rulersettings- verticalruler -tickalignment}
+
+<ts name = "ej.datavisualization.Diagram.TickAlignment"/>
+Defines and sets the tick alignment of the ruler scale.
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">LeftOrTop</td>
+            <td class="description last">Align the ruler scale either left or top position of the ruler.</td>
+       </tr>
+        <tr>
+            <td class="name">RightOrBottom</td>
+            <td class="description last">Align the ruler scale either right or bottom position of the ruler.</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.TickAlignment.RightOrBottom
+
+#### Example
+
+{% highlight html %}
+$("#diagramcontent").ejDiagram({rulerSettings: { verticalRuler:{tickAlignment: ej.datavisualization.Diagram.TickAlignment.LeftOrTop  } }});
+
+{% endhighlight %}
+
+### rulerSettings.verticalRuler.markerColor `string`
+{:#members:rulersettings-verticalruler-markercolor}
+
+Defines the color of the vertical marker brush.
+
+#### Default Value:
+
+* "red"
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: { verticalRuler:{markerColor: "pink"  } }});
+
+{% endhighlight %}
+
+### rulerSettings.verticalRuler.length `number`
+{:#members:rulersettings-verticalruler-length}
+
+Defines the height of the vertical ruler.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: { verticalRuler:{length: 1000  } }});
+
+{% endhighlight %}
+
+### rulerSettings.verticalRuler.thickness `number`
+{:#members:rulersettings-verticalruler-thickness}
+
+Defines the width of the vertical ruler.
+
+#### Default Value:
+
+* 25
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: { verticalRuler:{thickness: 50  } }});
+
+{% endhighlight %}
+
+
+
+
+
+
+
+
+
+
 ### snapSettings `object`
 {:#members:snapsettings}
 
