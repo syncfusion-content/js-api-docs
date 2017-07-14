@@ -1844,8 +1844,65 @@ $("#slider").ejSlider({
 
 
 
+Fires before creating each slider scale tick. You can use this event to add custom text in tick values.
 
-Fires when the slider scale ticks has been created.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from slider control
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">
+value</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">returns slider tick value</td>
+</tr>
+<tr>
+<td class="name">
+valueType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the value type either tooltip or label value</td>
+</tr>
+<tr>
+<td class="name">
+tick</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the current Li element</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
 
 
 #### Example
@@ -1856,15 +1913,10 @@ Fires when the slider scale ticks has been created.
  
 <div id="slider"> </div> 
 <script>
-// In this event, we can customize the slider ticks label values and ticks tooltip values.
+// renderingTicks for slider
 $("#slider").ejSlider({
    showScale : true,
    renderingTicks: function (args) {
-        if(args.valueType == "toolTipValue")
-        // To customize the ticks tooltip value.
-           args.value = "&" + args.value;        
-        if(args.valueType == "labelValue")
-        // To customize the ticks label value.
            args.value = "$" + args.value;           
    }
 });
