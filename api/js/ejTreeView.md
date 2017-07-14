@@ -3718,6 +3718,10 @@ To get the updated datasource of TreeView after performing some operation like d
 
 If you pass the ID of TreeView node as arguments for this method then it will return the updated data source with child of specified node otherwise it will return the entire updated data source of TreeView.
 
+You can also get the updated data source for remote data binding after performing the operation like editing, selecting/unselecting, expanding/collapsing, checking/unchecking and removing node. You cannot get the updated data source when you perform operation like drag and drop, adding node for remote data binding.
+
+The updated data source also contains custom attributes ("ContactTitle", "OrderID", "EmployeeID", "Freight") if you return these from server.
+
 <table class="params">
 <thead>
 <tr>
@@ -3765,6 +3769,28 @@ treeObj.getTreeData(); // It will return the updated datasource as array of JSON
 treeObj.getTreeData("book"); // It will return the updated datasource with child of specified node as array of JSON object, after performing some operation.
 </script>{% endhighlight %}
 
+{% highlight html %}
+<div id="treeView"></div>
+<script type="text/javascript">
+// DataManager creation
+var dataManager = ej.DataManager({
+    url: "http://js.syncfusion.com/ejServices/Wcf/Northwind.svc/", crossDomain: true
+});
+// Query creation
+var query = ej.Query().from("Orders").select("CustomerID,OrderID,EmployeeID,Freight").take(3);
+$("#treeView").ejTreeView({
+    fields: {
+        dataSource: dataManager, query: query, id: "CustomerID", text: "CustomerID",
+        child: {
+            dataSource: dataManager, tableName: "Customers", id: "Country", parentId: "CustomerID", text: "ContactName", ContactTitle: "ContactTitle"
+        }
+    }
+});
+
+var treeObj = $("#treeView").data("ejTreeView");
+treeObj.getTreeData(); // It will return the updated data source as array of JSON object, after performing some operation.
+treeObj.getTreeData("VINET"); // It will return the updated data source with child of specified node as array of JSON object, after performing some operation.
+</script>{% endhighlight %}
 
 {% highlight html %}
 <script>
