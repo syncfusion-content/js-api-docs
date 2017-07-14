@@ -3205,11 +3205,16 @@ commonSeriesOptions :{ bubbleOptions: { maxRadius: 7 }}
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdnbwech)
 
-## commonSeriesOptions.splineType `enum`
-{:#members:commonseriesoptions-splinetype} 
 
-<ts name="ej.datavisualization.Chart.SplineType"/> 
+
+### commonSeriesOptions.splineType `enum`
+{:#members:commonseriesoptions-splinetype}
+
+
+<ts name="ej.datavisualization.Chart.SplineType"/>
 To render the spline series curve in different forms. 
+
+
 
 <table class="props">
 <thead>
@@ -3247,9 +3252,12 @@ Clamped</td>
 </tbody>
 </table>
 
+
 #### Default Value
 
-* "natural"
+
+
+* "natural". See <a href="global.html#members:splinetype">SplineType</a>
 
 #### Example
 
@@ -3259,6 +3267,8 @@ $("#container").ejChart({
 commonSeriesOptions :{ splineType : "cardinal"}                  
 });
 {% endhighlight %}
+
+
 
 ### commonSeriesOptions.lineCap `enum`
 {:#members:commonseriesoptions-linecap}
@@ -27428,20 +27438,31 @@ series : [ { bubbleOptions: { maxRadius: 7 }} ]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdnbwech)
 
 ### series.splineType `enum`
-{:#members:series-splinetype} 
+{:#members:series-splineType}
+
 <ts ref="ej.datavisualization.Chart.SplineType"/>
 
-To render spline series curves in different forms. 
+
+Specifies the different types of spline curve. 
+
 
 #### Default Value
 
-* "natural" see <a href="global.html#members:splineType">SplineType</a>
+
+
+* "Natural". See <a href="global.html#members:splinetype">SplineType</a>
+
+
+
 
 #### Example
 
-{% highlight js %} 
+
+{% highlight js %}
+ 
+ 
 $("#container").ejChart({
-series : [{splineType : "cardinal" }]                   
+series :[{splineType : "cardinal"}]                  
 });
 {% endhighlight %}
 
