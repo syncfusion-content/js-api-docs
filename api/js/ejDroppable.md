@@ -142,8 +142,8 @@ Used to group sets of droppable items, in addition to droppable's accept option.
 
 
 
-### _destroy()
-{:#methods:_destroy}
+### destroy()
+{:#methods:destroy}
 
 destroy in the Droppable.
 
