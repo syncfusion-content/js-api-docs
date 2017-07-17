@@ -842,7 +842,15 @@ Enables or disables the behaviors of connectors.
        </tr>
         <tr>
             <td class="name">InheritBridging</td>
-            <td class="description last">Enables bridging to the connector</td>
+            <td class="description last">Inherit the bridging option defined in the diagram constraints.</td>
+       </tr>
+       <tr>
+            <td class="name">AllowDrop</td>
+            <td class="description last">Allows the object to drop over the connector.</td>
+       </tr>
+       <tr>
+            <td class="name">InheritTooltip</td>
+            <td class="description last">Inherit the tooltip option defined in the diagram constraints.</td>
        </tr>
         <tr>
             <td class="name">PointerEvents</td>
@@ -851,6 +859,18 @@ Enables or disables the behaviors of connectors.
        <tr>
             <td class="name">CrispEdges</td>
             <td class="description last">Enables the contrast between clean edges of connector over rendering speed and geometric precision</td>
+       </tr>
+       <tr>
+            <td class="name">InheritCrispEdges</td>
+            <td class="description last">Enables the contrast between clean edges of connector over rendering speed and geometric precision</td>
+       </tr>
+       <tr>
+            <td class="name">DragLimit</td>
+            <td class="description last">Enables the contrast between clean edges of connector over rendering speed and geometric precision</td>
+       </tr>
+       <tr>
+            <td class="name">Interaction</td>
+            <td class="description last">Enables connector to be selected and dragged.</td>
        </tr>
         <tr>
             <td class="name">Default</td>
@@ -1520,6 +1540,119 @@ connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200,
          labels:[{ text:"label", offset:{ x:0 }, horizontalAlignment:"left", margin:{ bottom: 5 }}]
       }];
 $("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.dragLimit `object`
+{:#members:connectors-labels-dragLimit}
+
+Sets the value which is used to drag the label within certain bounds.
+
+#### Default Value:
+
+* null
+
+### connectors.labels.dragLimit.right `number`
+{:#members:connectors-labels-dragLimit-right}
+
+To set the drag limit of the label in right direction
+
+#### Default Value:
+
+* 10
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+    var connectors;
+    connectors = [{ 
+        name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+            //Leaves 5px space between the left boundary of connector and label
+        labels:[{ text:"label", offset:{ x:0 }, horizontalAlignment:"left", dragLimit:{ right: 5 }}]
+    }];
+    $("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.dragLimit.left `number`
+{:#members:connectors-labels-dragLimit-left}
+
+To set the drag limit of the label in left direction
+
+#### Default Value:
+
+* 10
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+    var connectors;
+    connectors = [{ 
+        name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+            //Leaves 5px space between the left boundary of connector and label
+        labels:[{ text:"label", offset:{ x:0 }, horizontalAlignment:"left", dragLimit:{ left: 5 }}]
+    }];
+    $("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.dragLimit.top `number`
+{:#members:connectors-labels-dragLimit-top}
+
+To set the drag limit of the label in top direction
+
+#### Default Value:
+
+* 10
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+    var connectors;
+    connectors = [{ 
+        name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+            //Leaves 5px space between the left boundary of connector and label
+        labels:[{ text:"label", offset:{ x:0 }, horizontalAlignment:"left", dragLimit:{ top: 10 }}]
+    }];
+    $("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.dragLimit.bottom `number`
+{:#members:connectors-labels-dragLimit-bottom}
+
+To set the drag limit of the label in bottom direction
+
+#### Default Value:
+
+* 10
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+    var connectors;
+    connectors = [{ 
+        name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+            //Leaves 5px space between the left boundary of connector and label
+        labels:[{ text:"label", offset:{ x:0 }, horizontalAlignment:"left", dragLimit:{ bottom: 10 }}]
+    }];
+    $("#diagramcontent").ejDiagram({connectors:connectors});
 </script>
 
 {% endhighlight %}
@@ -5678,6 +5811,26 @@ Sets the space to be vertically left between nodes
 <script>
 //verticalSpacing of the layout
 $("#diagramcontent").ejDiagram({layout: { verticalSpacing: 50 }});
+</script>
+{% endhighlight %}
+
+### layout.root `string`
+{:#members:layout-root}
+
+Sets the value is used to define the root node of the layout.
+
+#### Default Value:
+
+* 30
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+    //verticalSpacing of the layout
+    $("#diagramcontent").ejDiagram({layout: { root: 'rootnode' }});
 </script>
 {% endhighlight %}
 
@@ -13095,6 +13248,18 @@ Controls the visibility of selector.
             <td class="name">UserHandles</td>
             <td class="description last">Sets the visibility of user handles as visible</td>
        </tr>
+       <tr>
+            <td class="name">Tooltip</td>
+            <td class="description last">Enables the default tooltip of the diagram control.</td>
+       </tr>
+       <tr>
+            <td class="name">DragOnEmptySpace</td>
+            <td class="description last">Enables dragging when click and drag the empty space of the multiple selected nodes.</td>
+       </tr>
+       <tr>
+            <td class="name">AutoHideThumbs</td>
+            <td class="description last">Show/Hide the selection handles while performing the interaction with selected node.</td>
+       </tr>
         <tr>
             <td class="name">All</td>
             <td class="description last">Sets the visibility of all selection handles as visible</td>
@@ -13631,6 +13796,322 @@ $("#diagramcontent").ejDiagram({showTooltip: true});
 </script>
 
 {% endhighlight %}
+
+
+### rulerSettings `object`
+{:#members:rulersettings}
+
+Defines the properties of the both the horizontal and vertical gauge to measure the diagram area.
+
+### rulerSettings.showRulers `boolean`
+{:#members:rulersettings-showrulers}
+
+Enables or disables both the horizontal and vertical ruler.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({ rulerSettings:{ showRulers: true } });
+
+{% endhighlight %}
+
+### rulerSettings.horizontalRuler `object`
+{:#members:rulersettings-horizontalruler}
+
+Defines the appearance of horizontal ruler
+
+### rulerSettings.horizontalRuler.interval `number`
+{:#members:rulersettings-horizontalruler-interval}
+
+Defines the number of intervals to be present on the each segment of the horizontal ruler. 
+
+#### Default Value:
+
+* 5
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: {horizontalRuler:{interval: 10  } }});
+
+{% endhighlight %}
+
+### rulerSettings.horizontalRuler.segmentWidth `number`
+{:#members:rulersettings-horizontalruler-segmentwidth}
+
+Defines the textual description of the ruler segment, and the appearance of the ruler ticks of the horizontal ruler.
+
+#### Default Value:
+
+* 100
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: {horizontalRuler:{segmentWidth: 50  } }});
+
+{% endhighlight %}
+
+### rulerSettings.horizontalRuler.arrangeTick `object`
+{:#members:rulersettings-horizontalruler-arrangetick}
+
+Defines the method which used to position and arrange the tick elements of the horizontal ruler.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: {horizontalRuler:{arrangeTick: function alignTick(args){ }  } }});
+
+{% endhighlight %}
+
+### rulerSettings.horizontalRuler.tickAlignment`enum`
+{:#members:rulersettings-horizontalruler-tickalignment}
+
+<ts name = "ej.datavisualization.Diagram.TickAlignment"/>
+Defines and sets the tick alignment of the ruler scale.
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">LeftOrTop</td>
+            <td class="description last">Align the ruler scale either left or top position of the ruler.</td>
+       </tr>
+        <tr>
+            <td class="name">RightOrBottom</td>
+            <td class="description last">Align the ruler scale either right or bottom position of the ruler.</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.TickAlignment.RightOrBottom
+
+#### Example
+
+{% highlight html %}
+$("#diagramcontent").ejDiagram({rulerSettings: {horizontalRuler:{tickAlignment: ej.datavisualization.Diagram.TickAlignment.LeftOrTop  } }});
+
+{% endhighlight %}
+
+### rulerSettings.horizontalRuler.markerColor `string`
+{:#members:rulersettings-horizontalruler-markercolor}
+
+Defines the color of the horizontal marker brush.
+
+#### Default Value:
+
+* "red"
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: {horizontalRuler:{markerColor: "pink"  } }});
+
+{% endhighlight %}
+
+### rulerSettings.horizontalRuler.length `number`
+{:#members:rulersettings-horizontalruler-length}
+
+Defines the width of the horizontal ruler.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: {horizontalRuler:{length: 1000  } }});
+
+{% endhighlight %}
+
+### rulerSettings.horizontalRuler.thickness `number`
+{:#members:rulersettings-horizontalruler-thickness}
+
+Defines the height of the horizontal ruler.
+
+#### Default Value:
+
+* 25
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: {horizontalRuler:{thickness: 50  } }});
+
+{% endhighlight %}
+
+### rulerSettings.verticalRuler `object`
+{:#members:rulersettings- verticalruler }
+
+Defines the appearance of vertical ruler
+
+### rulerSettings.verticalRuler.interval `number`
+{:#members:rulersettings- verticalruler -interval}
+
+Defines the number of intervals to be present on the each segment of the vertical ruler. 
+
+#### Default Value:
+
+* 5
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: { verticalRuler:{interval: 10  } }});
+
+{% endhighlight %}
+
+### rulerSettings.verticalRuler.segmentWidth `number`
+{:#members:rulersettings- verticalruler -segmentwidth}
+
+Defines the textual description of the ruler segment, and the appearance of the ruler ticks of the vertical ruler.
+
+#### Default Value:
+
+* 100
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: { verticalRuler:{segmentWidth: 50  } }});
+
+{% endhighlight %}
+
+### rulerSettings.verticalRuler.arrangeTick `object`
+{:#members:rulersettings- verticalruler -arrangetick}
+
+Defines the method which used to position and arrange the tick elements of the vertical ruler.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: { verticalRuler:{arrangeTick: function alignTick(args){ }  } }});
+
+{% endhighlight %}
+
+### rulerSettings. verticalRuler.tickAlignment`enum`
+{:#members:rulersettings- verticalruler -tickalignment}
+
+<ts name = "ej.datavisualization.Diagram.TickAlignment"/>
+Defines and sets the tick alignment of the ruler scale.
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">LeftOrTop</td>
+            <td class="description last">Align the ruler scale either left or top position of the ruler.</td>
+       </tr>
+        <tr>
+            <td class="name">RightOrBottom</td>
+            <td class="description last">Align the ruler scale either right or bottom position of the ruler.</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.TickAlignment.RightOrBottom
+
+#### Example
+
+{% highlight html %}
+$("#diagramcontent").ejDiagram({rulerSettings: { verticalRuler:{tickAlignment: ej.datavisualization.Diagram.TickAlignment.LeftOrTop  } }});
+
+{% endhighlight %}
+
+### rulerSettings.verticalRuler.markerColor `string`
+{:#members:rulersettings-verticalruler-markercolor}
+
+Defines the color of the vertical marker brush.
+
+#### Default Value:
+
+* "red"
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: { verticalRuler:{markerColor: "pink"  } }});
+
+{% endhighlight %}
+
+### rulerSettings.verticalRuler.length `number`
+{:#members:rulersettings-verticalruler-length}
+
+Defines the height of the vertical ruler.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: { verticalRuler:{length: 1000  } }});
+
+{% endhighlight %}
+
+### rulerSettings.verticalRuler.thickness `number`
+{:#members:rulersettings-verticalruler-thickness}
+
+Defines the width of the vertical ruler.
+
+#### Default Value:
+
+* 25
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({rulerSettings: { verticalRuler:{thickness: 50  } }});
+
+{% endhighlight %}
+
+
+
+
+
+
+
+
+
 
 ### snapSettings `object`
 {:#members:snapsettings}
@@ -15349,6 +15830,86 @@ Remove either the given node/connector or the selected element from diagram
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
 diagram.remove();
+</script>
+
+{% endhighlight %}
+
+### removePorts(name, ports)
+{:#methods:removeports}
+
+Add a collection of ports to the node specified by name
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">name</td>
+			<td class="type">string</td>
+			<td class="description last">name of the node to which the ports have to be added</td>
+		</tr>
+		<tr>
+			<td class="name">ports</td>
+			<td class="type">array</td>
+			<td class="description last">a collection of ports to be deleted from the specified node</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var diagram = $("#diagramcontent").ejDiagram("instance");
+var node = diagram.findNode("Rect1");
+diagram.removePorts("Rect1", node.ports);
+</script>
+
+{% endhighlight %}
+
+### removeLabels(name, labels)
+{:#methods:removelabels}
+
+Add a collection of ports to the node specified by name
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">name</td>
+			<td class="type">string</td>
+			<td class="description last">name of the node to which the ports have to be added</td>
+		</tr>
+		<tr>
+			<td class="name">labels</td>
+			<td class="type">array</td>
+			<td class="description last">a collection of labels to be deleted from the specified node</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var diagram = $("#diagramcontent").ejDiagram("instance");
+var node = diagram.findNode("Rect1");
+diagram.removeLabels("Rect1", node.labels);
 </script>
 
 {% endhighlight %}
