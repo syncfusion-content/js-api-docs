@@ -632,6 +632,52 @@ ranges: [
 
 
 
+### separator `string`
+{:#members:separator}
+
+
+
+
+
+
+
+
+Used to seperate the two date strings of the value in the DateRangePicker popup.
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* "-"
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="daterangepicker" />
+<script>
+//To set different separator during initialization  
+        $("#daterangepicker").ejDateRangePicker({  separator : "$" });
+</script>
+
+{% endhighlight %}
+
+
 ### startDate `string | date`
 {:#members:startdate}
 
