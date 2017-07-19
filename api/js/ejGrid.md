@@ -3318,6 +3318,28 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
+### pageSettings.pageSizeList `array`
+{:#members:pagesettings-pagesizelist}
+
+Gets or sets a value that indicates whether to display the list of values provided for pageSize as a drop down
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+    dataSource: window.gridData,
+    allowPaging: true,   
+    pageSettings: { pageSize: 14, pageSizeList: [8, 12, 9, 5] }
+});
+</script>
+{% endhighlight %}
+
 ### pageSettings.showDefaults `boolean`
 {:#members:pagesettings-showdefaults}
 
