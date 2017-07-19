@@ -3815,6 +3815,142 @@ ImageUrl field has been Mapped into card image.
      
 {% endhighlight %}
 
+### fields.collapsibleCards `Object`
+{:#members:fields-collapsiblecards}
+
+To show/hide the particular status cards based on the collapsible card's field and key mapping.
+
+#### Default Value
+
+* Object
+
+#### Example
+
+{% highlight html %}
+ 
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanban = [
+       { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+       { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+       { Id: 3, Status: "In Progress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Done", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanban);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                enableTotalCount: true,
+                columns: [
+                     { headerText: "Backlog", key: "Open" },
+                     { headerText: "In Progress", key: "InProgress" },
+                     { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",                    
+                    content: "Summary",
+                    collapsibleCards: { field: "Status", key: "Close" }
+                }               
+            });        
+     });
+    </script>
+
+{% endhighlight %}      
+
+### fields.collapsibleCards.field `string`
+{:#members:fields-collapsiblecards-field}
+
+To map the collapsible card's datasource field for fields values mapping 
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+ 
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanban = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+         { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanban);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                     { headerText: "Backlog", key: "Open" },
+                     { headerText: "In Progress", key: "InProgress" },
+                     { headerText: "Testing", key: "Testing" },
+                     { headerText: "Done", key: "Close" },
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",                    
+                    content: "Summary",
+                    collapsibleCards: { field: "Status", key: "Close" }
+                },
+            }
+        );
+    });
+    </script>
+
+{% endhighlight %}
+
+### fields.collapsibleCards.key `string`
+{:#members:fields-collapsiblecards-key}
+
+To map the collapsible card's datasource key for fields values mapping 
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+ 
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanban = [
+         { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+         { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+         { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+         { Id: 4, Status: "Testing", Summary: "Task 4", Assignee: "Nancy" },
+         { Id: 5, Status: "Close", Summary: "Task 5", Assignee: "Andrew" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanban);
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                     { headerText: "Backlog", key: "Open" },
+                     { headerText: "In Progress", key: "InProgress" },
+                     { headerText: "Testing", key: "Testing" },
+                     { headerText: "Done", key: "Close" },
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",                    
+                    content: "Summary",
+                    collapsibleCards: { field: "Status", key: "Close" }
+                },
+            }
+        );
+    });
+    </script>
+
+{% endhighlight %}
+
 ### keyField `string`
 {:#members:keyfield}
 
