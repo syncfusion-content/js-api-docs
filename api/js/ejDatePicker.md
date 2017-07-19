@@ -2178,7 +2178,7 @@ Specifies the water mark text to be displayed in input text.
 
 
 ### weekNumber `boolean`
-{:#members:width}
+{:#members:weeknumber}
 
 
 
