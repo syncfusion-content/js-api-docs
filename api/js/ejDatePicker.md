@@ -2177,6 +2177,36 @@ Specifies the water mark text to be displayed in input text.
 
 
 
+### weekNumber `boolean`
+{:#members:width}
+
+
+
+Allows to embed  a new column with the calendar in the popup, which will display the week number of every week in a calendar year.
+
+
+
+
+#### Default Value
+
+
+* false
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
+//To set weekNumber API during initialization  
+        $("#datepicker").ejDatePicker({  weekNumber: true });
+</script> {% endhighlight %}
+
+
+
 
 
 ### width `string`
@@ -2206,7 +2236,6 @@ Specifies the width of the DatePicker input text.
 //To set width API during initialization  
         $("#datepicker").ejDatePicker({  width: 200 });
 </script> {% endhighlight %}
-
 
 
 
