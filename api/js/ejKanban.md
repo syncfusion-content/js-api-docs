@@ -3818,7 +3818,7 @@ ImageUrl field has been Mapped into card image.
 ### fields.collapsibleCards `Object`
 {:#members:fields-collapsiblecards}
 
-To show/hide the particular status cards based on the collapsible card's field and key mapping.
+Get or sets an object that indicates the options to map the cards to the collapsible area.
 
 #### Default Value
 
@@ -3833,15 +3833,14 @@ To show/hide the particular status cards based on the collapsible card's field a
     window.kanban = [
        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
-       { Id: 3, Status: "In Progress", Summary: "Task 3", Assignee: "Andrew" },
-       { Id: 4, Status: "Done", Summary: "Task4", Assignee: "Nancy" }
+       { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+       { Id: 4, Status: "Close", Summary: "Task4", Assignee: "Nancy" }
     ];
     $(function () {
         var data = ej.DataManager(window.kanban);
         $("#Kanban").ejKanban(
             {
                 dataSource: data,
-                enableTotalCount: true,
                 columns: [
                      { headerText: "Backlog", key: "Open" },
                      { headerText: "In Progress", key: "InProgress" },
@@ -3862,7 +3861,7 @@ To show/hide the particular status cards based on the collapsible card's field a
 ### fields.collapsibleCards.field `string`
 {:#members:fields-collapsiblecards-field}
 
-To map the collapsible card's datasource field for fields values mapping 
+It is used to specify the collapsible card's field mapping which is available in datasource value of field mapped in `collapsible`.
 
 #### Default Value
 
@@ -3908,7 +3907,7 @@ To map the collapsible card's datasource field for fields values mapping
 ### fields.collapsibleCards.key `string`
 {:#members:fields-collapsiblecards-key}
 
-To map the collapsible card's datasource key for fields values mapping 
+It is used to specify the collapsible card's key mapping which is available in datasource value of field mapped in `collapsible`.
 
 #### Default Value
 
