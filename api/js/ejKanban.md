@@ -3907,7 +3907,7 @@ It is used to specify the collapsible card's field mapping which is available in
 ### fields.collapsibleCards.key `string`
 {:#members:fields-collapsiblecards-key}
 
-It is used to specify the collapsible card's key mapping which is available in datasource value of field mapped in `collapsible`.
+It is used to specify the collapsible card's key mapping which is available in datasource value of field mapped in `collapsibleCards.field`.
 
 #### Default Value
 
