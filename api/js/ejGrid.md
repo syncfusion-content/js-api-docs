@@ -3321,7 +3321,7 @@ $("#Grid").ejGrid({
 ### pageSettings.pageSizeList `array`
 {:#members:pagesettings-pagesizelist}
 
-Gets or sets multiple page size values for the Grid. Allows pager to have a dropdownlist which contains multiple pageSize values from which one value can be selected as page size for Grid.
+Gets or sets different page size values to the Dropdown in Grid Pager, by which number of records in a page can be changed dynamically.
 
 #### Default Value:
 {:.param}
