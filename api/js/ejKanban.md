@@ -3861,7 +3861,7 @@ Get or sets an object that indicates the options to map the cards to the collaps
 ### fields.collapsibleCards.field `string`
 {:#members:fields-collapsiblecards-field}
 
-It is used to specify the collapsible card's field mapping which is available in datasource value of field mapped in `collapsible`.
+It is used to specify the collapsible card's field mapping.
 
 #### Default Value
 
