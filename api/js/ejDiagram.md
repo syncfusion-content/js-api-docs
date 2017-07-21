@@ -2567,7 +2567,7 @@ Sets the type of the message flow. Applicable, if the connector is of type "BPMN
 <div id="diagramcontent"></div>
 <script>        
 var connector = [{ name: "connector1", sourcePoint: { x: 50, y: 600 }, targetPoint: { x: 200, y: 600 }, 
-     segments: [{ type: "straight" }], shape: { type: "bpmn", flow: "message", message: "noninitiatingmessage" } }],
+     segments: [{ type: "straight" }], shape: { type: "bpmn", flow: "message", message: "NonInitiatingMessage" } }],
 
 $("#diagramcontent").ejDiagram({connectors : connector});
 </script>
