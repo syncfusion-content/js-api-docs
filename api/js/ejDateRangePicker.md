@@ -1599,7 +1599,7 @@ endDate</td>
 <script>
 //Change event for DateRangePicker
 $("#daterangepicker").ejDateRangePicker({
-   Change: function (args) {}
+   change: function (args) {}
 });  
 </script> 
 
