@@ -404,6 +404,40 @@ Re-renders the control with the data source bound to the pivot control at that i
 
 ## Events
 
+### load
+{:#events:load}
+
+Triggers when PivotSchemaDesigner loading is initiated.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotSchemaDesigner control.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotSchemaDesigner1").$("#PivotSchemaDesigner1")({
+        load: function (args) {}
+    });
+{% endhighlight %}
+
 ### afterServiceInvoke
 {:#events:afterserviceinvoke}
 
