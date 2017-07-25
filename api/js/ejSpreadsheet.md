@@ -3824,6 +3824,29 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
+
+### sheets.sheetName `string`
+{:#members:sheets-sheetname}
+
+Specifies the name for sheet in the Spreadsheet.
+
+#### Default Value
+* string
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+	sheets:[{
+		sheetName: "Sheet Name"
+	}]
+});   
+</script>
+
+{% endhighlight %}
+
 ### sheets.startCell `string`
 {:#members:sheets-startcell}
 
