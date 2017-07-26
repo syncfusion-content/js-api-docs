@@ -284,7 +284,7 @@ To set the data source name to fetch data from that.
 {% endhighlight %}
 
 ### dataSource.providerName `string`
-{:#members:datasource-providerName}
+{:#members:datasource-providername}
 
 Set the provider name for PivotChart to identify whether the provider is SSAS or Mondrian. 
 
