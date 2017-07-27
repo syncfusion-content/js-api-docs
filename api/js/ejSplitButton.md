@@ -688,7 +688,41 @@ Specifies the list content for Split Button while initialization
 <script>
 //To set targetID API value during initialization  
 $("#sbutton").ejSplitButton({targetID:"target",width:100 });
-</script>{% endhighlight %}
+</script>
+
+{% endhighlight %}
+
+N> Useage of target API is recommended since targerID API is to be deprecated.
+
+### target `string`
+{:#members:target}
+
+
+Specifies the target of splitbutton menu while initialization with ID or class as a selector. 
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<button id="sbutton">File</button>
+<ul id="target">
+   <li><a href="#">Open..</a></li>
+   <li><a href="#">Save</a></li>
+   <li><a href="#">Delete</a></li>
+</ul>
+<script>
+//To set target API value during initialization  
+$("#sbutton").ejSplitButton({target:"#target",width:100 });
+</script>
+
+{% endhighlight %}
 
 
 
