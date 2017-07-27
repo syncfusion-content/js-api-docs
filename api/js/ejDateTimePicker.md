@@ -1200,7 +1200,7 @@ Top</td>
 
 
 
-* ej.DateTimePicker.Bottom
+* ej.PopupPosition.Bottom
 
 
 
