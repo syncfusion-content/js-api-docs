@@ -241,6 +241,32 @@ $("#pager").ejPager({pageSize: 2 })
 {% endhighlight %}
 
 
+### pageSizeList `Array`
+
+{:#members:pagesizelist}
+
+It allows to have multiple choices of pageSize values for Pager control. The "[pageSize](https://help.syncfusion.com/api/js/ejpager#members:pagesize)" API value of the pager will be updated depending upon the value being selected from the dropdown.
+
+#### Default Value
+{:.param}
+* null
+
+#### Example
+
+{:.example}
+{% highlight html %}
+
+<div id="pager"></div> 
+
+<script>
+// Set pageSizeList value during initialization.
+$("#pager").ejPager({pageSizeList: [1,2,3] })
+
+</script>
+
+{% endhighlight %}
+
+
 ### totalPages `number`
 {:#members:totalpages}
 
