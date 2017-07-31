@@ -556,7 +556,7 @@ $('#Spreadsheet').ejSpreadsheet({
     allowImport: true,
     importSettings:
         {
-            importMapper: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import"
+            importMapper: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/Import"
         }
 });         
 </script>
@@ -1118,9 +1118,9 @@ N> User must specify [`excelUrl`](https://help.syncfusion.com/api/js/ejspreadshe
 $('#Spreadsheet').ejSpreadsheet({
     exportSettings:{
         allowExporting: true,
-        csvUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToCsv", // It is used to set the url of the csv export.
-        excelUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExcel", //It is used to set the url of the excel export.
-        pdfUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToPdf", //It is used to set the url of the pdf export.
+        csvUrl: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/CsvExport", // It is used to set the url of the csv export.
+        excelUrl: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/ExcelExport", //It is used to set the url of the excel export.
+        pdfUrl: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/PdfExport", //It is used to set the url of the pdf export.
     }
 });        
 </script>
@@ -1145,7 +1145,7 @@ N> User must specify [`allowExporting`](https://help.syncfusion.com/api/js/ejspr
 $('#Spreadsheet').ejSpreadsheet({
     exportSettings:{
         allowExporting: true,
-        csvUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToCsv", // It is used to set the url of the csv export.
+        csvUrl: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/CsvExport", // It is used to set the url of the csv export.
     }
 });        
 </script>
@@ -1170,7 +1170,7 @@ N> User must specify [`allowExporting`](https://help.syncfusion.com/api/js/ejspr
 $('#Spreadsheet').ejSpreadsheet({
     exportSettings:{
         allowExporting: true,
-        excelUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExcel", //It is used to set the url of the excel export.
+        excelUrl: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/ExcelExport", //It is used to set the url of the excel export.
     }
 });        
 </script>
@@ -1195,7 +1195,7 @@ N> User must specify [`allowExporting`](https://help.syncfusion.com/api/js/ejspr
 $('#Spreadsheet').ejSpreadsheet({
     exportSettings:{
         allowExporting: true,
-        excelUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToExcel", //It is used to set the url of the excel export
+        excelUrl: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/ExcelExport", //It is used to set the url of the excel export
         password :"Spreadsheet"
     }
 });        
@@ -1221,7 +1221,7 @@ N> User must specify [`allowExporting`](https://help.syncfusion.com/api/js/ejspr
 $('#Spreadsheet').ejSpreadsheet({
     exportSettings:{
         allowExporting: true,
-        pdfUrl: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/ExportToPdf", //It is used to set the url of the pdf export.
+        pdfUrl: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/PdfExport", //It is used to set the url of the pdf export.
     }
 });        
 </script>
@@ -1330,7 +1330,7 @@ N> [`allowImport`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allo
 $('#Spreadsheet').ejSpreadsheet({
     allowImport: true,
     importSettings:{
-        importMapper: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import"
+        importMapper: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/Import"
     }
 });        
 </script>
@@ -1404,7 +1404,7 @@ N> [`allowImport`](https://help.syncfusion.com/api/js/ejspreadsheet#members:allo
 $('#Spreadsheet').ejSpreadsheet({
     allowImport: true,
     importSettings:{
-        importMapper: "http://js.syncfusion.com/ExportingServices/api/JSXLExport/Import",
+        importMapper: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/Import",
         password: "Spreadsheet" //It opens the excel file using this password.
     }
 });        
@@ -9058,7 +9058,7 @@ xlObj.XLEdit.updateCellValue({rowIndex: 1, colIndex: 1}, "product", className, 1
 ### XLExport
 {:#methods:xlexport}
 
-### XLExport.export(type)
+### XLExport.export(type, fileName)
 {:#methods:xlexport-export}
 
 This method is used to save the sheet data as Excel ,CSV or PDF document (.xls, .xlsx .csv, .pdf) in Spreadsheet.
@@ -9079,6 +9079,11 @@ N> To use export, user must provide the [`excelUrl`](https://help.syncfusion.com
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the export type that you want. </td>
 </tr>
+<tr>
+<td class="name">fileName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the export filename that you want. </td>
+</tr>
 </tbody>
 </table>
 
@@ -9089,7 +9094,7 @@ N> To use export, user must provide the [`excelUrl`](https://help.syncfusion.com
 // Initialize the Spreadsheet object.
 var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To save the worksheet on Excel format.
-xlObj.XLExport.export("Excel");
+xlObj.XLExport.export("Excel", "sample");
 </script>
 
 {% endhighlight %}
