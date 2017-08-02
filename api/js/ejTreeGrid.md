@@ -444,7 +444,7 @@ To customize the ej controls defined in TreeGrid column with their native proper
 ### columns.editTemplate `Object`
 {:#members:columns-edittemplate}
 
-Get or set a template that displays a custom editor used to edit the column values.
+Gets or sets a template that displays a custom editor for editing the column values.
 
 #### Default Value:
 
@@ -1210,7 +1210,7 @@ $("#treegrid").ejTreeGrid({
 ### columns.priority `number`
 {:#members:columns-priority}
 
-Get or set the priority value of the column. It is used to hidden or visible the tree grid column in responsive mode.
+Gets or sets the priority value of the column. It is used to show/hide TreeGrid columns in responsive mode.
 
 #### Default Value
 

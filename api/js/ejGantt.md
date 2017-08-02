@@ -4448,7 +4448,7 @@ Specifies the working time schedule of day
 ### workWeek `array`
 {:#members:workweek}
 
-Get or set the working day of the week in a project.
+Gets or sets the working days of a week in a project.
 
 #### Default Value
 
