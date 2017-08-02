@@ -441,6 +441,44 @@ To customize the ej controls defined in TreeGrid column with their native proper
 
 {% endhighlight %}
 
+### columns.editTemplate `Object`
+{:#members:columns-edittemplate}
+
+Gets or sets a template that displays a custom editor for editing the column values.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{:.example}
+{% highlight html %}
+
+$("#Treegrid ").ejTreeGrid ({
+      //...
+      columns: [
+                 { field: "taskName", headerText: "Task Name", editType: "stringedit",
+                 editTemplate: {
+                        create: function () {
+                                return "<input>";
+                        },
+                        write: function (args) {
+                                obj = $('#TreeGridContainer').ejTreeGrid('instance');
+                                var data = ej.DataManager(obj.model.flatRecords).executeLocal(new ej.Query().select("taskName"));
+                                args.element.ejAutocomplete({ width: "100%", height:"28px", dataSource: data, enableDistinct: true, value: args.rowdata !== undefined ? args.rowdata["taskName"] : "" });
+                        },
+                        read: function (args) {
+                                args.ejAutocomplete('suggestionList').css('display', 'none');
+                                return args.ejAutocomplete("getValue");
+                        },
+                 },
+            ],
+     //...
+});
+
+{% endhighlight %}
+
 ### columns.editType `enum`
 {:#members:columns-edittype}
 
@@ -1165,6 +1203,36 @@ specifies the conditions for saving data to the database while adding or editing
 $("#treegrid").ejTreeGrid({
   editSettings: {allowEditing: true, allowAdding: true},
   columns:[{field:"TaskID", validationRules: { required: true, number: true }},{field:"TaskName"},{field:"StartDate"}] 
+});
+</script> 
+{% endhighlight %}
+
+### columns.priority `number`
+{:#members:columns-priority}
+
+Gets or sets the priority value of the column. It is used to show/hide TreeGrid columns in responsive mode.
+
+#### Default Value
+
+* -1
+
+#### Example
+
+{:.example}
+{% highlight html %}
+<div id="treegrid"></div>          
+<script>
+$("#treegrid").ejTreeGrid({
+      //...
+      columns: [
+                { field: "taskID", headerText: "Task Id", width: "45", editType: "numericedit" },
+                { field: "taskName", headerText: "Task Name", width: "90", editType: "stringedit" },
+                { field: "startDate", headerText: "Start Date", editType: "datepicker", format: dateFormat },
+                { field: "endDate", headerText: "End Date", format: dateFormat, editType: "datepicker", priority:5 },
+                { field: "duration", headerText: "Duration", editType: "numericedit", priority: 6 },
+                { field: "progress", headerText: "Progress", editType: "numericedit",priority:6 }
+            ],
+      //... 
 });
 </script> 
 {% endhighlight %}
