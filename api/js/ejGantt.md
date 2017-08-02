@@ -4445,7 +4445,29 @@ Specifies the working time schedule of day
 
 {% endhighlight %}
 
+### workWeek `array`
+{:#members:workweek}
 
+Get or set the working day of the week in a project.
+
+#### Default Value
+
+* ["Monday","Tuesday","Wednesday","Thursday","Friday"]
+
+#### Example
+
+{:.example}
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
+$("#gantt").ejGantt(
+{      
+        workweek:["Sunday","Monday","Tuesday","Wednesday","Thursday"],
+});            
+</script>
+
+{% endhighlight %}
 
 
 ## Methods
