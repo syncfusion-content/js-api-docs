@@ -362,7 +362,7 @@ Enables or disables the strikethrough annotation.
 
 {:#members:enableSignature}
 
- Enables or disables the handwritten signature when the PDF viewer control is loaded initially.
+ Enables or disables the adding of handwritten signature over the PDF document.
 
 **Default Value**: true
 
@@ -581,7 +581,7 @@ Gets/sets the locked property of the highlight annotation.
 
 {:#members:signaturesettings}
 
-Gets or sets the settings of the handwritten signature.
+Gets/sets the settings of the handwritten signature.
 
 ### signatureSettings.color `string`
 
@@ -761,7 +761,7 @@ The below code snippet shows the service accessed from remote server.
 
 <ts name="ej.PdfViewer.InteractionMode"/>
 
-Specifies the text selection or panning mode to the PDF viewer control.
+Specifies the viewer interaction mode.
 
 <table class="params">
 <thead>
