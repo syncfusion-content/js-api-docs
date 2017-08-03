@@ -15215,7 +15215,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-### primaryXAxis.multiLevelLabels.start `number`
+### primaryXAxis.multiLevelLabels.start `object`
 {:#members:primaryxaxis-multilevellabels-start}
 
 
@@ -15246,7 +15246,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-### primaryXAxis.multiLevelLabels.end `number`
+### primaryXAxis.multiLevelLabels.end `object`
 {:#members:primaryxaxis-multilevellabels-end}
 
 
@@ -19542,7 +19542,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-### axes.multiLevelLabels.start `number`
+### axes.multiLevelLabels.start `object`
 {:#members:axes-multilevellabels-start}
 
 
@@ -19573,7 +19573,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-### axes.multiLevelLabels.end `number`
+### axes.multiLevelLabels.end `object`
 {:#members:axes-multilevellabels-end}
 
 
