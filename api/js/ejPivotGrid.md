@@ -1947,8 +1947,8 @@ Allows the user to adjust the width of the columns dynamically within given widg
     $("#PivotGrid1").ejPivotGrid({ enableColumnResizing: true });
 {% endhighlight %}
 
-### columnResizeToFit `boolean`
-{:#members:columnresizetofit}
+### resizeColumnsToFit `boolean`
+{:#members:resizecolumnstofit}
 
 Allows the user to fit the width of the columns based on its content. This is only applicable for **enableColumnResizing** option.
 
@@ -1958,7 +1958,7 @@ Allows the user to fit the width of the columns based on its content. This is on
 
 {% highlight javascript %}
  
-    $("#PivotGrid1").ejPivotGrid({ columnResizeToFit: true });
+    $("#PivotGrid1").ejPivotGrid({ resizeColumnsToFit: true });
 {% endhighlight %}
 
 ### enableVirtualScrolling `boolean`
