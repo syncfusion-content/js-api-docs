@@ -1651,7 +1651,7 @@ $("#defaultlistbox").ejListView ({ dataSource: dataManger, query: query, fieldSe
 {:#methods:additem}
 
 
-To add item in the given index. If you have enabled grouping in ListView then you need to pass the corresponding group list title to add item in it. Depending on the data bound tp ListView, we need to pass either an HTML element or JSON objects in this method.
+To add item in the given index. If you have enabled grouping in ListView then you need to pass the corresponding group list title to add item in it. Depending on the data bound to ListView, we need to pass either an HTML element or JSON objects in this method.
 
 **Passing the element**
 
