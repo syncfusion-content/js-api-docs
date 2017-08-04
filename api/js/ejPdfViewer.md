@@ -611,6 +611,7 @@ Gets/sets the opacity of the handwritten signature.
         });
 </script>
 {% endhighlight %}
+
 ### annotationType `enum`
 
 {:#members:annotationtype}
