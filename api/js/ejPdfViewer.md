@@ -360,7 +360,7 @@ Enables or disables the strikethrough annotation.
 
 ### enableSignature `boolean`
 
-{:#members:enableSignature}
+{:#members:enablesignature}
 
  Enables or disables the adding of handwritten signature over the PDF document.
 
@@ -577,6 +577,7 @@ Gets/sets the locked property of the highlight annotation.
         });
 </script>
 {% endhighlight %}
+
 ### signatureSettings `object`
 
 {:#members:signaturesettings}
@@ -611,6 +612,7 @@ Gets/sets the opacity of the handwritten signature.
         });
 </script>
 {% endhighlight %}
+
 ### annotationType `enum`
 
 {:#members:annotationtype}
