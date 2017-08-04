@@ -1651,10 +1651,9 @@ $("#defaultlistbox").ejListView ({ dataSource: dataManger, query: query, fieldSe
 {:#methods:additem}
 
 
+To add item in the given index. If you have enabled grouping in ListView then you need to pass the corresponding group list title to add item in it. Depending on the data bound to ListView, we need to pass either an HTML element or JSON objects in this method.
 
-
-To add item in the given index. If you have enabled grouping in ListView then you need to pass the corresponding group list title to add item in it.
-
+**Passing the element**
 
 <table class="params">
 <thead>
@@ -1668,8 +1667,8 @@ To add item in the given index. If you have enabled grouping in ListView then yo
 <tr>
 <td class="name">
 item</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Specifies the item to be added in ListView</td>
+<td class="type"><span class="param-type">string | Object</span></td>
+<td class="description">To pass the list item as element/ JSON object</td>
 </tr>
 <tr>
 <td class="name">
@@ -1686,10 +1685,7 @@ groupid</td>
 </tbody>
 </table>
 
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1710,13 +1706,66 @@ groupid</td>
 <script>
 // Call addItem method.
 $(document).ready(function(){
-$("#lb").ejListView();
-$("#lb").ejListView("addItem",$("&amp;ltli data-ej-text='Comic / Cartoon'></li>"),2);
+    $("#lb").ejListView();
+    $("#lb").ejListView("addItem","<li data-ej-text='Comic / Cartoon'></li>",2);
 });
-</script>{% endhighlight %}
+</script>
 
+{% endhighlight %}
 
+**Passing Array of JSON objects**
 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+item</td>
+<td class="type"><span class="param-type">Array</span></td>
+<td class="description">To pass the array of JSON objects to be added in ListView</td>
+</tr>
+<tr>
+<td class="name">
+index</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Specifies the index where item to be added</td>
+</tr>
+<tr>
+<td class="name">
+groupid</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description"><span class="optional">optional</span>This is an optional parameter. You must pass the group list title here if grouping is enabled in the ListView</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+  <div id="defaultlistbox"></div>
+  <script>
+     var dbitem =
+        [{ "Texts": "Discover Music" },
+        { "Texts": "Sales and Events" },
+        { "Texts": "Categories" },
+        { "Texts": "MP3 Albums" },
+        { "Texts": "More in Music" }];
+     var musicFields = {
+        "text": "Texts"
+     };
+     var addnew = [{ "Texts": "Artwork" }];
+      $("#defaultlistbox").ejListView({ dataSource: dbitem, fieldSettings: musicFields, width: 400, height: "300" });
+      $("#defaultlistbox").ejListView("addItem", addnew, 0);
+  </script>
+
+{% endhighlight %}
 
 ### checkAllItem()
 {:#methods:checkallitem}
