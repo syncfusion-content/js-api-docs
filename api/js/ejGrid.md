@@ -3318,6 +3318,28 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
+### pageSettings.pageSizeList `array`
+{:#members:pagesettings-pagesizelist}
+
+Gets or sets different page size values to the Dropdown in Grid Pager, by which number of records in a page can be changed dynamically.
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+    dataSource: window.gridData,
+    allowPaging: true,   
+    pageSettings: { pageSize: 14, pageSizeList: [8, 12, 9, 5] }
+});
+</script>
+{% endhighlight %}
+
 ### pageSettings.showDefaults `boolean`
 {:#members:pagesettings-showdefaults}
 

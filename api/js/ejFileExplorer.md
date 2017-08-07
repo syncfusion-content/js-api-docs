@@ -1664,6 +1664,32 @@ The property path denotes the filesystem path that are to be explored. The path 
 {% endhighlight %}
 
 
+### rootFolderName `string`
+{:#members:rootfoldername}
+
+Sets the alias name of root folder name in FileExplorer. It is used to replace the actual root folder name in FileExplorer.
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% highlight html %}
+        
+        <div id="fileExplorer"></div> 
+        
+        <script>
+        // Initialize the FileExplorer with ajaxAction value specified.
+        $('#fileExplorer').ejFileExplorer({            
+        path: "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",           
+        ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations",
+        rootFolderName: "This PC", // The name to replace your actual root folder name(FileBrowser).
+        });
+        </script>
+
+{% endhighlight %}
+
 
 ### selectedFolder `string`
 {:#members:selectedfolder}

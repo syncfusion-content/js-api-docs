@@ -230,6 +230,23 @@ Enables/disables pagination of rows in TreeGrid
         
 {% endhighlight %}
 
+### allowTextWrap `boolean`
+{:#members:allowtextwrap}
+ 
+Gets or sets a value that indicates whether the Content will wrap to the next line if the content exceeds the boundary of the Column Cells.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}   
+              
+        $("#treegrid").ejTreeGrid({ allowTextWrap : true });
+                                 
+{% endhighlight %}
+
 
 ### altRowTemplateID `string`
 {:#members:altrowtemplateid}
@@ -420,6 +437,44 @@ To customize the ej controls defined in TreeGrid column with their native proper
       
         $("#treegrid").ejTreeGrid({columns: [                    
 { field: "priority", headerText: "Priority", editType: "dropdownedit", dropdownData: stageData, editParams: { fields: { text: "text", value: "value" } } }]
+});
+
+{% endhighlight %}
+
+### columns.editTemplate `Object`
+{:#members:columns-edittemplate}
+
+Gets or sets a template that displays a custom editor for editing the column values.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{:.example}
+{% highlight html %}
+
+$("#Treegrid ").ejTreeGrid ({
+      //...
+      columns: [
+                 { field: "taskName", headerText: "Task Name", editType: "stringedit",
+                 editTemplate: {
+                        create: function () {
+                                return "<input>";
+                        },
+                        write: function (args) {
+                                obj = $('#TreeGridContainer').ejTreeGrid('instance');
+                                var data = ej.DataManager(obj.model.flatRecords).executeLocal(new ej.Query().select("taskName"));
+                                args.element.ejAutocomplete({ width: "100%", height:"28px", dataSource: data, enableDistinct: true, value: args.rowdata !== undefined ? args.rowdata["taskName"] : "" });
+                        },
+                        read: function (args) {
+                                args.ejAutocomplete('suggestionList').css('display', 'none');
+                                return args.ejAutocomplete("getValue");
+                        },
+                 },
+            ],
+     //...
 });
 
 {% endhighlight %}
@@ -948,6 +1003,99 @@ Enables or disables the ability to edit a row or cell.
 
 {% endhighlight %}
 
+### columns.commands `array`
+{:#members:columns-commands}
+
+Gets or sets an object to define a command column in TreeGrid.
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}
+$("#treegrid").ejTreeGrid({ columns:[{
+              headerText: "Manage Records",
+              commands: [
+                  { type: ej.TreeGrid.UnboundType.Edit, buttonOptions: { text: "Edit" } },
+                  { type: ej.TreeGrid.UnboundType.Delete, buttonOptions: { text: "Delete" } },
+                  { type: ej.TreeGrid.UnboundType.Save, buttonOptions: { text: "Save" } },
+                  { type: ej.TreeGrid.UnboundType.Cancel, buttonOptions: { text: "Cancel" } }
+               ],
+             }
+    ] });
+{% endhighlight %}
+
+### columns.commands.buttonOptions `object`
+{:#members:columns-commands-buttonoptions}
+
+Gets or sets an object to customize command button with available ejButton properties.
+
+#### Default Value:
+{:.param}
+* -
+
+#### Example
+{:.example}
+{% highlight html %}
+$("#treegrid").ejTreeGrid({ columns:[{commands: [buttonOptions: { text: "Edit" } }]}]});
+{% endhighlight %}
+
+### columns.commands.type `enum`
+{:#members:columns-commands-type}
+
+<ts name="ej.TreeGrid.UnboundType"/>
+
+Gets or sets a value that define the command column buttons to be displayed.
+
+#### Default Value:
+{:.param}
+* -
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Edit</td>
+<td class="description">Unbound type to perform edit action</td>
+</tr>
+<tr>
+<td class="name">Save</td>
+<td class="description">Unbound type to perform save action</td>
+</tr> 
+<tr>
+<td class="name">Delete</td>
+<td class="description">Unbound type to perform delete action</td>
+</tr> 
+<tr>
+<td class="name">Cancel</td>
+<td class="description">Unbound type to perform cancel action</td>
+</tr> 
+</table>
+
+#### Example
+{% highlight html %}
+<div id="TreeGrid"></div> 
+<script>
+$("#TreeGrid").ejTreeGrid({    
+    columns:[          
+           {
+              headerText: "Manage Records",
+              commands: [
+                  { type: ej.TreeGrid.UnboundType.Edit, buttonOptions: { text: "Edit" } },
+                  { type: ej.TreeGrid.UnboundType.Delete, buttonOptions: { text: "Delete" } },
+                  { type: ej.TreeGrid.UnboundType.Save, buttonOptions: { text: "Save" } },
+                  { type: ej.TreeGrid.UnboundType.Cancel, buttonOptions: { text: "Cancel" } }
+               ]             
+           }
+	] 
+});
+</script> 
+{% endhighlight %}
+
 ### columns.showInColumnChooser `boolean`
 
 {:#members:columns-showincolumnchooser}
@@ -1055,6 +1203,36 @@ specifies the conditions for saving data to the database while adding or editing
 $("#treegrid").ejTreeGrid({
   editSettings: {allowEditing: true, allowAdding: true},
   columns:[{field:"TaskID", validationRules: { required: true, number: true }},{field:"TaskName"},{field:"StartDate"}] 
+});
+</script> 
+{% endhighlight %}
+
+### columns.priority `number`
+{:#members:columns-priority}
+
+Gets or sets the priority value of the column. It is used to show/hide TreeGrid columns in responsive mode.
+
+#### Default Value
+
+* -1
+
+#### Example
+
+{:.example}
+{% highlight html %}
+<div id="treegrid"></div>          
+<script>
+$("#treegrid").ejTreeGrid({
+      //...
+      columns: [
+                { field: "taskID", headerText: "Task Id", width: "45", editType: "numericedit" },
+                { field: "taskName", headerText: "Task Name", width: "90", editType: "stringedit" },
+                { field: "startDate", headerText: "Start Date", editType: "datepicker", format: dateFormat },
+                { field: "endDate", headerText: "End Date", format: dateFormat, editType: "datepicker", priority:5 },
+                { field: "duration", headerText: "Duration", editType: "numericedit", priority: 6 },
+                { field: "progress", headerText: "Progress", editType: "numericedit",priority:6 }
+            ],
+      //... 
 });
 </script> 
 {% endhighlight %}

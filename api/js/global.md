@@ -16426,6 +16426,55 @@ Inline</td>
 </table>
 
 
+### SplineType
+{:#enum:splinetype}
+
+Enum for spline series type.
+
+#### Properties
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th>Default</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Natural</td>
+<td class="type">string</td> 
+<td class="default">natural</td>
+<td class="description">To render the series with natural curve</td>
+</tr>
+<tr>
+<td class="name">
+Monotonic</td>
+<td class="type">string</td>
+<td class="default">monotonic</td>
+<td class="description">To render the series with monotonic curve</td>
+</tr> 
+<tr>
+<td class="name">
+Cardinal</td>
+<td class="type">string</td>
+<td class="default">cardinal</td>
+<td class="description">To render the series with cardinal curve</td>
+</tr> 
+<tr>
+<td class="name">
+Clamped</td>
+<td class="type">string</td>
+<td class="default">clamped</td>
+<td class="description">To render the series with clamped curve</td>
+</tr> 
+</tbody>
+</table>
+
 ### Type
 {:#enum:type}
 
@@ -16620,6 +16669,20 @@ StackingBar100</td>
 <td class="type">string</td>
 <td class="default">stackingbar100</td>
 <td class="description">sets the seriesType of chart to stackingbar100.</td>
+</tr>
+<tr>
+<td class="name">
+StackingSplineArea</td>
+<td class="type">string</td>
+<td class="default">stackingsplinearea</td>
+<td class="description">sets the seriesType of chart to stackingsplinearea</td>
+</tr>
+<tr>
+<td class="name">
+StackingSplineArea100</td>
+<td class="type">string</td>
+<td class="default">stackingsplinearea100</td>
+<td class="description">sets the seriesType of chart to stackingsplinearea100</td>
 </tr>
 <tr>
 <td class="name">

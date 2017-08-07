@@ -170,6 +170,22 @@ Shows only text markup annotation tools in the toolbar.
 </tr>
 <tr>
 <td class="name">
+SignatureTool
+</td>
+<td class="description">
+Shows only signature tool in the toolbar.
+</td>
+</tr>
+<tr>
+<td class="name">
+SelectionTool
+</td>
+<td class="description">
+Shows only selection tool in the toolbar.
+</td>
+</tr>
+<tr>
+<td class="name">
 All
 </td>
 <td class="description">
@@ -338,6 +354,25 @@ Enables or disables the strikethrough annotation.
 <script type="text/javascript">
         $(function () {
             $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', enableStrikethroughAnnotation: true });
+        });
+</script>
+{% endhighlight %}
+
+### enableSignature `boolean`
+
+{:#members:enablesignature}
+
+ Enables or disables the adding of handwritten signature over the PDF document.
+
+**Default Value**: true
+
+#### Example:
+
+{% highlight html %}
+<div id="viewer"></div>
+<script type="text/javascript">
+        $(function () {
+            $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', enableSignature: true });
         });
 </script>
 {% endhighlight %}
@@ -543,6 +578,41 @@ Gets/sets the locked property of the highlight annotation.
 </script>
 {% endhighlight %}
 
+### signatureSettings `object`
+
+{:#members:signaturesettings}
+
+Gets/sets the settings of the handwritten signature.
+
+### signatureSettings.color `string`
+
+{:#members:signaturesettings-color}
+
+Gets/sets the color of the handwritten signature.
+
+**Default Value**: "#000000"
+
+### signatureSettings.opacity `number`
+
+{:#members:signaturesettings-opacity}
+
+Gets/sets the opacity of the handwritten signature.
+
+**Default Value**: 1
+
+#### Example:
+
+{% highlight html %}
+<div id="viewer"></div>
+<script type="text/javascript">
+        $(function () {
+            $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', signatureSettings: {
+				color: "#000000", opacity: 1
+			} });
+        });
+</script>
+{% endhighlight %}
+
 ### annotationType `enum`
 
 {:#members:annotationtype}
@@ -683,6 +753,61 @@ The below code snippet shows the service accessed from remote server.
 <script type="text/javascript">
         $(function () {
            $("#viewer").ejPdfViewer({serviceUrl: 'http://mvc.syncfusion.com/PDFViewer/pdfviewer.asmx/PostViewerAction', pdfService : ej.PdfViewer.PdfService.Remote});
+        });
+</script>
+{% endhighlight %}
+
+### interactionMode `enum`
+
+{:#members:interactionmode}
+
+<ts name="ej.PdfViewer.InteractionMode"/>
+
+Specifies the viewer interaction mode.
+
+<table class="params">
+<thead>
+<tr>
+<th>
+Name
+</th>
+<th>
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+TextSelection
+</td>
+<td class="description">
+To set the text selection mode to the PDF viewer control.
+</td>
+</tr>
+<tr>
+<td class="name">
+Pan
+</td>
+<td class="description">
+To set the panning mode to the PDF viewer control.
+</td>
+</tr>
+</tbody>
+</table>
+
+**Default value:** ej.PdfViewer.InteractionMode.TextSelection
+
+#### Example:
+
+The below code snippet shows to set the Panning mode to the PDF viewer control.
+
+
+{% highlight javascript %}
+<div id="viewer"></div>
+<script type="text/javascript">
+        $(function () {
+           $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', interactionMode: ej.PdfViewer.InteractionMode.Pan});
         });
 </script>
 {% endhighlight %}
@@ -1085,6 +1210,66 @@ show</td>
 {% highlight javascript %}
 var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.showTextMarkupAnnotationTools(false);
+{% endhighlight %}
+
+### showSignatureTool(show)
+{:#methods:showsignaturetool}
+
+Shows/hides the signature tool in the toolbar.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+show</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">shows/hides signature tool in the toolbar</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight javascript %}
+var pdfviewerObj = $("#viewer").data("ejPdfViewer");
+pdfviewerObj.showSignatureTool(false);
+{% endhighlight %}
+
+### showSelectionTool(show)
+{:#methods:showselectiontool}
+
+Shows/hides the selection tool in the toolbar.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+show</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">shows/hides selection tool in the toolbar</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight javascript %}
+var pdfviewerObj = $("#viewer").data("ejPdfViewer");
+pdfviewerObj.showSelectionTool(false);
 {% endhighlight %}
 
 ### goToPage(pageNumber)
@@ -2767,6 +2952,559 @@ Specifies that the opacity of the annotation is changed.
         });
         function annotationAdd(args) {
             alert("The annotation is added to the PDF document successfully");
+        }
+</script>
+{% endhighlight %}
+
+### signatureAdd
+
+{:#events:signatureadd}
+
+Triggers when a handwritten signature is added over the page of the PDF document.
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Event parameters from PDF viewer
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel
+</td>
+<td class="type">
+boolean
+</td>
+<td class="description">
+True, if the event should be canceled; otherwise, false.
+</td>
+</tr>
+<tr>
+<td class="name">
+model
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Returns the PDF viewer model
+</td>
+</tr>
+<tr>
+<td class="name">
+type
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the name of the event
+</td>
+</tr>
+<tr>
+<td class="name">
+signatureSettings
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Returns the settings of the signature added to the PDF document.
+</td>
+</tr>
+<tr>
+<td class="name">
+signatureBound
+</td>
+<td class="type">
+array
+</td>
+<td class="description">
+Returns the bounds of the signature added in the page of the PDF document.
+</td>
+</tr>
+<tr>
+<td class="name">
+pageNumber
+</td>
+<td class="type">
+number
+</td>
+<td class="description">
+Returns the page number in which the signature is added.
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight html %}
+<script type="text/javascript">
+        $(function () {
+            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', signatureAdd: "signatureadd" });
+        });
+        function signatureAdd(args) {
+            alert("The signature is added to the PDF document successfully");
+        }
+</script>
+{% endhighlight %}
+
+### signatureDelete
+
+{:#events:signaturedelete}
+
+Triggers when a handwritten signature is removed from the page of the PDF document.
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Event parameters from PDF viewer
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel
+</td>
+<td class="type">
+boolean
+</td>
+<td class="description">
+True, if the event should be canceled; otherwise, false.
+</td>
+</tr>
+<tr>
+<td class="name">
+model
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Returns the PDF viewer model
+</td>
+</tr>
+<tr>
+<td class="name">
+type
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the name of the event
+</td>
+</tr>
+<tr>
+<td class="name">
+pageNumber
+</td>
+<td class="type">
+number
+</td>
+<td class="description">
+Returns the page number in which the signature is removed.
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight html %}
+<script type="text/javascript">
+        $(function () {
+            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', signatureDelete: "signaturedelete" });
+        });
+        function signatureDelete(args) {
+            alert("The signature is removed from the page of the PDF document successfully");
+        }
+</script>
+{% endhighlight %}
+
+### signaturePropertiesChange
+
+{:#events:signaturepropertieschange}
+
+Triggers when a handwritten signature properties is changed in the PDF document.
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Event parameters from PDF viewer
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel
+</td>
+<td class="type">
+boolean
+</td>
+<td class="description">
+True, if the event should be canceled; otherwise, false.
+</td>
+</tr>
+<tr>
+<td class="name">
+model
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Returns the PDF viewer model
+</td>
+</tr>
+<tr>
+<td class="name">
+type
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the name of the event
+</td>
+</tr>
+<tr>
+<td class="name">
+pageID
+</td>
+<td class="type">
+number
+</td>
+<td class="description">
+Returns the page number in which the signature properties is changed.
+</td>
+</tr>
+<tr>
+<td class="name">
+isColorChange
+</td>
+<td class="type">
+boolean
+</td>
+<td class="description">
+Specifies that the color of the signature is changed.
+</td>
+</tr>
+<tr>
+<td class="name">
+isOpacityChange
+</td>
+<td class="type">
+boolean
+</td>
+<td class="description">
+Specifies that the opacity of the signature is changed.
+</td>
+</tr>
+<tr>
+<td class="name">
+perviousColor
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the previous color of the signature.
+</td>
+</tr>
+<tr>
+<td class="name">
+currentColor
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the current color of the signature.
+</td>
+</tr>
+<tr>
+<td class="name">
+previousOpacity
+</td>
+<td class="type">
+number
+</td>
+<td class="description">
+Returns the previous opacity of the signature.
+</td>
+</tr>
+<tr>
+<td class="name">
+currentOpacity
+</td>
+<td class="type">
+number
+</td>
+<td class="description">
+Returns the current opacity of the signature.
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight html %}
+<script type="text/javascript">
+        $(function () {
+            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', signaturePropertiesChange: "signaturepropertieschange" });
+        });
+        function signaturePropertiesChange(args) {
+            alert("The signature properties is changed from the page of the PDF document successfully");
+        }
+</script>
+{% endhighlight %}
+
+### signatureResize
+
+{:#events:signatureresize}
+
+Triggers when a handwritten signature is resized in the PDF document.
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Event parameters from PDF viewer
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel
+</td>
+<td class="type">
+boolean
+</td>
+<td class="description">
+True, if the event should be canceled; otherwise, false.
+</td>
+</tr>
+<tr>
+<td class="name">
+model
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Returns the PDF viewer model
+</td>
+</tr>
+<tr>
+<td class="name">
+type
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the name of the event
+</td>
+</tr>
+<tr>
+<td class="name">
+signatureSettings
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Returns the settings of the signature added to the PDF document.
+</td>
+</tr>
+<tr>
+<td class="name">
+pageNumber
+</td>
+<td class="type">
+number
+</td>
+<td class="description">
+Returns the page number in which the signature is added.
+</td>
+</tr>
+<tr>
+<td class="name">
+signatureCurrentBound
+</td>
+<td class="type">
+array
+</td>
+<td class="description">
+Returns the current bounds of the signature resized in the page of the PDF document.
+</td>
+</tr>
+<tr>
+<td class="name">
+signaturePreviousBound
+</td>
+<td class="type">
+array
+</td>
+<td class="description">
+Returns the previous bounds of the signature resized in the page of the PDF document.
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight html %}
+<script type="text/javascript">
+        $(function () {
+            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', signatureResize: "signatureresize" });
+        });
+        function signatureResize(args) {
+            alert("The signature is resized to the PDF document successfully");
         }
 </script>
 {% endhighlight %}
