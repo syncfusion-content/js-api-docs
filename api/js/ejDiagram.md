@@ -2567,7 +2567,7 @@ Sets the type of the message flow. Applicable, if the connector is of type "BPMN
 <div id="diagramcontent"></div>
 <script>        
 var connector = [{ name: "connector1", sourcePoint: { x: 50, y: 600 }, targetPoint: { x: 200, y: 600 }, 
-     segments: [{ type: "straight" }], shape: { type: "bpmn", flow: "message", message: "noninitiatingmessage" } }],
+     segments: [{ type: "straight" }], shape: { type: "bpmn", flow: "message", message: "ej.datavisualization.Diagram.BPMNMessageFlows.NonInitiatingMessage" } }],
 
 $("#diagramcontent").ejDiagram({connectors : connector});
 </script>
@@ -3724,7 +3724,7 @@ Sets the z-index of the connector
 
 <div id="diagramcontent"></div>
 <script>
-var connector = { name:"connectorghj", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
+var connector = { name:"connector", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
                   zOrder: 1000 }; 
 $("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
@@ -9044,7 +9044,7 @@ Sets the overflowType of the labels
 <script>
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
-         labels:[{ text:"labeuhirnfnrnfinrnfurnl",fontColor:"red",textOverflow:true,
+         labels:[{ text:"label1",fontColor:"red",textOverflow:true,
          overflowType: ej.datavisualization.Diagram.OverflowType.Ellipsis}]
       }];
 $("#diagramcontent").ejDiagram({nodes:nodes});
@@ -9243,7 +9243,7 @@ Defines the overflowed content is displayed or not.
 <script>
 var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
-         labels:[{ text:"labeuhirnfnrnfinrnfurnl",fontColor:"red",textOverflow:true,
+         labels:[{ text:"label1",fontColor:"red",textOverflow:true,
          overflowType: ej.datavisualization.Diagram.OverflowType.Ellipsis}]
       }];
 $("#diagramcontent").ejDiagram({nodes:nodes});
@@ -9580,7 +9580,7 @@ Defines the header of the lane
 var swimlane = {type: "swimlane",name: "swimlane", offsetX:300, offsetY:100,
 lanes:[{name:"lane1", width:200, 
 	//Defines the lane header
-	header:{fillColor:"blue", fontColor:"white", text:"Functon 1"} }]}
+	header:{fillColor:"blue", fontColor:"white", text:"Function 1"} }]}
 $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
@@ -16568,7 +16568,7 @@ Triggers when a context menu item is clicked
         <tr>
 			<td class="name">element</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the elementof the object that was clicked</td>
+			<td class="description last">parameter returns the element of the object that was clicked</td>
 		</tr>
         <tr>
 			<td class="name">selectedItem</td>
@@ -16689,7 +16689,7 @@ Triggers while dragging the elements in diagram
         <tr>
 			<td class="name">offset</td>
 			<td class="type">object</td>
-			<td class="description last">parameter returns the offset of the selecteditems</td>
+			<td class="description last">parameter returns the offset of the selected items</td>
 		</tr>
 	</tbody>
 </table>
@@ -16698,7 +16698,7 @@ Triggers while dragging the elements in diagram
 
 {% highlight html %}
 
-// deag event for diagram
+// drag event for diagram
 $("#diagramcontent").ejDiagram({
 drag:function (args) {}
 });
