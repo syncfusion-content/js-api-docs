@@ -352,6 +352,22 @@ Allows to set the custom theme for the column headers.
     $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ cssClass : "className" }] } });
 {% endhighlight %}
 
+### dataSource.columns.delimiter `string`
+{:#members:datasource-columns-delimiter}
+
+Allows the user to set delimiter for date type format in **formatString**. This is applicable for **groupByDate** option for row/column headers.
+
+>**Note**: This is applicable only for Relational datasource with ClientMode.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ delimiter : "-" }] } });
+{% endhighlight %}
+
 ### dataSource.columns.sortOrder `enum`
 {:#members:datasource-columns-sortorder}
 
@@ -470,6 +486,36 @@ Contains the collection of items to be included/excluded among the field members
 {% highlight javascript %}
  
     $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ fieldName: "Country", filterItems: { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% endhighlight %}
+
+### dataSource.columns.groupByDate `object`
+{:#members:datasource-columns-groupbydate}
+
+Allows the user to group the field by date. This is applicable only when the format is set as "date".
+
+>**Note**: This is applicable only for Relational datasource with ClientMode.
+
+#### Default Value: null
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ fieldName: "Date", format: "date", formatString: "yyyy-MM-dd", delimiter: "-", groupByDate: { } }] } });
+{% endhighlight %}
+
+### dataSource.columns.filterItems.interval `array`
+{:#members:datasource-columns-filteritems-interval}
+
+Contains the collection of formatString to group item from the field.
+
+#### Default Value: []
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({dataSource: { columns: [{ fieldName: "Date", format: "date", formatString: "yyyy-MM-dd", delimiter: "-", groupByDate: { interval: ["yyyy", "qqq", "MMMM", "dd-MMM"] } }] } });
 {% endhighlight %}
 
 ### dataSource.rows `array`
@@ -698,6 +744,22 @@ Allows to set the custom theme for the row headers.
     $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ cssClass : "className" }] } });
 {% endhighlight %}
 
+### dataSource.rows.delimiter `string`
+{:#members:datasource-columns-delimiter}
+
+Allows the user to set delimiter for date type format in **formatString**. This is applicable for **groupByDate** option for row/column headers.
+
+>**Note**: This is applicable only for Relational datasource with ClientMode.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ delimiter : "-" }] } });
+{% endhighlight %}
+
 ### dataSource.rows.sortOrder `enum`
 {:#members:datasource-rows-sortorder}
 
@@ -816,6 +878,36 @@ Contains the collection of items to be included/excluded among the field members
 {% highlight javascript %}
  
     $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+{% endhighlight %}
+
+### dataSource.columns.groupByDate `object`
+{:#members:datasource-columns-groupbydate}
+
+Allows the user to group the field by date. This is applicable only when the format is set as "date".
+
+>**Note**: This is applicable only for Relational datasource with ClientMode.
+
+#### Default Value: null
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ fieldName: "Date", format: "date", formatString: "yyyy-MM-dd", delimiter: "-", groupByDate: { } }] } });
+{% endhighlight %}
+
+### dataSource.columns.filterItems.interval `array`
+{:#members:datasource-columns-filteritems-interval}
+
+Contains the collection of formatString to group item from the field.
+
+#### Default Value: []
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({dataSource: { columns: [{ fieldName: "Date", format: "date", formatString: "yyyy-MM-dd", delimiter: "-", groupByDate: { interval: ["yyyy", "qqq", "MMMM", "dd-MMM"] } }] } });
 {% endhighlight %}
 
 ### dataSource.values `array`
@@ -1166,7 +1258,7 @@ To set the data source name to fetch data from that.
 {% endhighlight %}
 
 ### dataSource.providerName `string`
-{:#members:datasource-providerName}
+{:#members:datasource-providername}
 
 Set the provider name for PivotGrid to identify whether the provider is SSAS or Mondrian. 
 
@@ -1730,7 +1822,7 @@ Enables/Disables paging in Member Editor for viewing the large count of members 
 {% endhighlight %}
 
 ### memberEditorPageSize `number`
-{:#members:memberEditorPageSize}
+{:#members:membereditorpagesize}
 
 Allows the user to set the number of members to be displayed in each page of Member Editor on applying paging in it. 
 
@@ -1844,7 +1936,7 @@ Allows the user to enable the animation effects in tooltip.
 ### enableColumnResizing `boolean`
 {:#members:enablecolumnresizing}
 
-Allows the user to adjust the width of the columns dynamically.
+Allows the user to adjust the width of the columns dynamically within given widget size.
 
 #### Default Value: false
 
@@ -1853,6 +1945,20 @@ Allows the user to adjust the width of the columns dynamically.
 {% highlight javascript %}
  
     $("#PivotGrid1").ejPivotGrid({ enableColumnResizing: true });
+{% endhighlight %}
+
+### resizeColumnsToFit `boolean`
+{:#members:resizecolumnstofit}
+
+Allows the user to fit the width of the columns based on its content. This is only applicable for **enableColumnResizing** option.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ resizeColumnsToFit: true });
 {% endhighlight %}
 
 ### enableVirtualScrolling `boolean`

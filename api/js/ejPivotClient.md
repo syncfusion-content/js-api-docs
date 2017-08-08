@@ -1322,7 +1322,7 @@ To set the data source name to fetch data from that.
 {% endhighlight %}
 
 ### dataSource.providerName `string`
-{:#members:datasource-providerName}
+{:#members:datasource-providername}
 
 Set the provider name for PivotClient to identify whether the provider is SSAS or Mondrian. 
 
@@ -2128,6 +2128,22 @@ Allows the user to hide PivotClient's Cube Browser and Axis Element Builder whil
     $("#PivotClient1").ejPivotClient({ collapseCubeBrowserByDefault: true });
 {% endhighlight %}
 
+### enableKPI `boolean`
+{:#members:enablekpi}
+
+Allows the user to view the KPI elements in tree-view inside PivotClient's Cube Browser.
+
+> **Note**: This property is applicable for OLAP data bound from server-side alone.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ enableKPI: true });
+{% endhighlight %}
+
 ### isResponsive `boolean`
 {:#members:isresponsive}
 
@@ -2926,6 +2942,45 @@ Triggers before rendering the PivotChart.
  
     $("#PivotClient1").ejPivotClient({
         chartLoad: function (args) { }
+    });      
+
+{% endhighlight %}
+
+### schemaLoad
+{:#events:schemaload}
+
+Triggers before rendering the PivotSchemaDesigner.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotSchemaDesigner control.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({
+        schemaLoad: function (args) { }
     });      
 
 {% endhighlight %}
