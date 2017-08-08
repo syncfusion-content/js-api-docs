@@ -2636,7 +2636,7 @@ $("#Grid").ejGrid({
 
 Gets or sets an object that indicates whether to customize the filtering behavior of the grid
 
-### filterSettings.enableCaseSensitivity `Boolean`
+### filterSettings.enableCaseSensitivity `boolean`
 {:#members:filtersettings-enablecasesensitivity}
 
 Gets or sets a value that indicates to perform the filter operation with case sensitive in excel styled filter menu mode
@@ -2950,7 +2950,7 @@ $("#Grid").ejGrid({
 
 Gets or sets an object that indicates whether to customize the grouping behavior of the grid.
 
-### groupSettings.captionFormat `String`
+### groupSettings.captionFormat `string`
 {:#members:groupsettings-captionformat}
 
 Gets or sets a value that customize the group caption format.
@@ -4251,7 +4251,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### showColumnChooser `Boolean`
+### showColumnChooser `boolean`
 {:#members:showcolumnchooser}
 Gets or sets a value that indicates whether to enable column chooser on grid. On enabling feature able to show/hide grid columns
 
