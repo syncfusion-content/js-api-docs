@@ -1799,8 +1799,7 @@ Specifies whether to render only the visual elements that are visible in the UI.
 ### enableLoadOnDemand `boolean`
 {:#members:enableloadondemand}
 
-Specifies whether to render child records and page data on demand or not. 
-
+Gets or sets a value that indicates whether to enable load on demand approach, for rendering child records and page records.
 
 #### Default Value
 
