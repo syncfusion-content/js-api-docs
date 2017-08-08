@@ -1796,6 +1796,26 @@ Specifies whether to render only the visual elements that are visible in the UI.
 
 {% endhighlight %}
 
+### enableLoadOnDemand `boolean`
+{:#members:enableloadondemand}
+
+Specifies whether to render child records and page data on demand or not. 
+
+
+#### Default Value
+
+* false
+
+
+#### Example
+
+
+{% highlight html %}
+                 
+        $("#treegrid").ejTreeGrid({ enableLoadOnDemand : true});                      
+
+{% endhighlight %}
+
 
 ### columnResizeSettings `object`
 {:#members:columnresizesettings}
