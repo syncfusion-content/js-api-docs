@@ -906,7 +906,7 @@ paneIndex</td>
 $("#innerSplitter").ejSplitter();
 // Create splitter control
 var splitterObj = $("#innerSplitter").data("ejSplitter");
-splitterObj.collapse(0); // collpase the splitter control pane.
+splitterObj.collapse(0); // collapse the splitter control pane.
 </script>{% endhighlight %}
 
 
@@ -922,7 +922,7 @@ splitterObj.collapse(0); // collpase the splitter control pane.
 </div>
 <script>
 $("#innerSplitter").ejSplitter();
-// collpase the splitter control
+// collapse the splitter control
 $("#innerSplitter").ejSplitter("collapse", 0);
 </script>{% endhighlight %}
 

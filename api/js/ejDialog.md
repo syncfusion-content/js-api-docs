@@ -89,7 +89,7 @@ Specifies the ajaxSettings option to load the content to the Dialog control.
 
     <script>
     // Set the ajaxSettings options during initialization.                  
-            $("#basicdialog").ejDialog({  ajaxSettings: { type: 'GET', cache: false, data: {}, dataType: "html", contentType: "html", async: true } });
+            $("#basicDialog").ejDialog({  ajaxSettings: { type: 'GET', cache: false, data: {}, dataType: "html", contentType: "html", async: true } });
     </script>
 
 {% endhighlight %}
@@ -291,7 +291,7 @@ Example
 
 {% highlight javascript %}
 
-    $("#dialog").ejDialog({containment: "#dragarea"}); 
+    $("#dialog").ejDialog({containment: "#dragArea"}); 
 
 {% endhighlight %}
 
@@ -525,7 +525,7 @@ Specifies the HTML Attributes of the Dialog.
 
         <script type="text/javascript">         
         // Set the htmlAttributes  during initialization.                     
-                $("#basicdialog").ejDialog({width:"300px", htmlAttributes: {class:"my-class", style:"border:1px solid red"} }); 
+                $("#basicDialog").ejDialog({width:"300px", htmlAttributes: {class:"my-class", style:"border:1px solid red"} }); 
         </script> 
 
  {% endhighlight %}
@@ -752,7 +752,7 @@ Example
 
 {% highlight javascript %}
 
-    $("#dialog").ejDialog({target: "#samplearea" }); 
+    $("#dialog").ejDialog({target: "#sampleArea" }); 
 
 {% endhighlight %}
 

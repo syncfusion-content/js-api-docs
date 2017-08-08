@@ -30,7 +30,7 @@ Example
 // Create radialmenu in obtrusive way
 <script> 
 $(function(){
-$("#defaultradialmenu").ejRadialMenu(); 
+$("#defaultRadialMenu").ejRadialMenu(); 
 });
 </script>
 <div >
@@ -39,7 +39,7 @@ $("#defaultradialmenu").ejRadialMenu();
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social"></li>
@@ -112,7 +112,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social"></li>
@@ -128,7 +128,7 @@ data-ej-text="browser"></li>
 </div>
 <script>
 $(function () {
-$("#defaultradialmenu").ejRadialMenu({ "autoOpen":true });      
+$("#defaultRadialMenu").ejRadialMenu({ "autoOpen":true });      
 });
 </script>{% endhighlight %}
 
@@ -138,9 +138,9 @@ $("#defaultradialmenu").ejRadialMenu({ "autoOpen":true });
 //Get or set the Radialmenu autoOpen, after initialization:
 <script>
 // Gets the autoOpen API.               
-$("#defaultradialmenu").ejRadialMenu ("option", "autoOpen");                    
+$("#defaultRadialMenu").ejRadialMenu ("option", "autoOpen");                    
 // Sets the autoOpen API
-$("#defaultradialmenu").ejRadialMenu ("option", "autoOpen", true);            
+$("#defaultRadialMenu").ejRadialMenu ("option", "autoOpen", true);            
 </script>{% endhighlight %}
 
 
@@ -179,7 +179,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social"></li>
@@ -195,7 +195,7 @@ data-ej-text="browser"></li>
 </div>
 <script>
 $(function () {
-$("#defaultradialmenu").ejRadialMenu({ "backImageClass":"e-backimage" });       
+$("#defaultRadialMenu").ejRadialMenu({ "backImageClass":"e-backimage" });       
 });
 </script>{% endhighlight %}
 
@@ -205,9 +205,9 @@ $("#defaultradialmenu").ejRadialMenu({ "backImageClass":"e-backimage" });
 //Get or set the Radialmenu backImageClass, after initialization:
 <script>
 // Gets the backImageClass API.         
-$("#defaultradialmenu").ejRadialMenu ("option", "backImageClass");                      
+$("#defaultRadialMenu").ejRadialMenu ("option", "backImageClass");                      
 // Sets the backImageClass API
-$("#defaultradialmenu").ejRadialMenu ("option", "backImageClass", "e-backimage");            
+$("#defaultRadialMenu").ejRadialMenu ("option", "backImageClass", "e-backimage");            
 </script>{% endhighlight %}
 
 
@@ -246,7 +246,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social"></li>
@@ -262,7 +262,7 @@ data-ej-text="browser"></li>
 </div>
 <script>
 $(function () {
-$("#defaultradialmenu").ejRadialMenu({ "cssClass":"customclass" });     
+$("#defaultRadialMenu").ejRadialMenu({ "cssClass":"customClass" });     
 });
 </script>{% endhighlight %}
 
@@ -272,9 +272,9 @@ $("#defaultradialmenu").ejRadialMenu({ "cssClass":"customclass" });
 //Get or set the Radialmenu cssClass, after initialization:
 <script>
 // Gets the cssClass API.               
-$("#defaultradialmenu").ejRadialMenu ("option", "cssClass");                    
+$("#defaultRadialMenu").ejRadialMenu ("option", "cssClass");                    
 // Sets the cssClass API
-$("#defaultradialmenu").ejRadialMenu ("option", "cssClass", "customclass");            
+$("#defaultRadialMenu").ejRadialMenu ("option", "cssClass", "customClass");            
 </script>{% endhighlight %}
 
 
@@ -313,7 +313,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social"></li>
@@ -329,7 +329,7 @@ data-ej-text="browser"></li>
 </div>
 <script>
 $(function () {
-$("#defaultradialmenu").ejRadialMenu({ "enableAnimation":true });       
+$("#defaultRadialMenu").ejRadialMenu({ "enableAnimation":true });       
 });
 </script>{% endhighlight %}
 
@@ -339,9 +339,9 @@ $("#defaultradialmenu").ejRadialMenu({ "enableAnimation":true });
 //Get or set the Radialmenu enableAnimation, after initialization:
 <script>
 // Gets the enableAnimation API.                
-$("#defaultradialmenu").ejRadialMenu ("option", "enableAnimation");                     
+$("#defaultRadialMenu").ejRadialMenu ("option", "enableAnimation");                     
 // Sets the enableAnimation API
-$("#defaultradialmenu").ejRadialMenu ("option", "enableAnimation", true);            
+$("#defaultRadialMenu").ejRadialMenu ("option", "enableAnimation", true);            
 </script>{% endhighlight %}
 
 
@@ -380,7 +380,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social"></li>
@@ -396,7 +396,7 @@ data-ej-text="browser"></li>
 </div>
 <script>
 $(function () {
-$("#defaultradialmenu").ejRadialMenu({ "imageClass":"e-radialimage" }); 
+$("#defaultRadialMenu").ejRadialMenu({ "imageClass":"e-radialimage" }); 
 });
 </script>{% endhighlight %}
 
@@ -434,12 +434,12 @@ Example
 
 {% highlight html %}
  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 </div>
  
 <script>
 $(function () {
-$("#defaultradialmenu").ejRadialMenu({ items:[{ text:"textField", imageUrl:"/Bold.jpg"}] }); 
+$("#defaultRadialMenu").ejRadialMenu({ items:[{ text:"textField", imageUrl:"/Bold.jpg"}] }); 
 });
 </script>{% endhighlight %}
 
@@ -465,12 +465,12 @@ Example
 
 {% highlight html %}
  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 </div>
  
 <script>
 $(function () {
-$("#defaultradialmenu").ejRadialMenu({ items:[{ imageUrl:"/Bold.jpg"}] }); 
+$("#defaultRadialMenu").ejRadialMenu({ items:[{ imageUrl:"/Bold.jpg"}] }); 
 });
 </script>{% endhighlight %}
 
@@ -487,12 +487,12 @@ Example
 
 {% highlight html %}
  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 </div>
  
 <script>
 $(function () {
-$("#defaultradialmenu").ejRadialMenu({ items:[{ prependTo:"#template"}] }); 
+$("#defaultRadialMenu").ejRadialMenu({ items:[{ prependTo:"#template"}] }); 
 });
 </script> {% endhighlight %}
 
@@ -511,12 +511,12 @@ Specifies the text of RadialMenu item.
 
 {% highlight html %}
  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 </div>
  
 <script>
 $(function () {
-$("#defaultradialmenu").ejRadialMenu({ items:[{ text:"textField" }] }); 
+$("#defaultRadialMenu").ejRadialMenu({ items:[{ text:"textField" }] }); 
 });
 </script>{% endhighlight %}
 
@@ -536,12 +536,12 @@ Example
 
 {% highlight html %}
  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 </div>
  
 <script>
 $(function () {
-$("#defaultradialmenu").ejRadialMenu({ items:[{ enabled:false }] }); 
+$("#defaultRadialMenu").ejRadialMenu({ items:[{ enabled:false }] }); 
 });
 </script>{% endhighlight %}
 
@@ -787,7 +787,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social"></li>
@@ -803,7 +803,7 @@ data-ej-text="browser"></li>
 </div>
 <script>
 $(function () {
-$("#defaultradialmenu").ejRadialMenu({ "radius":150});  
+$("#defaultRadialMenu").ejRadialMenu({ "radius":150});  
 });
 </script>{% endhighlight %}
 
@@ -821,8 +821,8 @@ $("#radialmenu").ejRadialMenu ("option", "radius", 150);
 
 
 
-### targetElementId `string`
-{:#members:targetelementid}
+### targetElementID `string`
+{:#members:targetElementID}
 
 
 
@@ -846,15 +846,15 @@ Example
 
 {% highlight html %}
  
-// Set Radialmenu targetelementid on initialization. 
-//To set targetelementid API 
+// Set Radialmenu targetElementID on initialization. 
+//To set targetElementID API 
 <div >
 <br />
 <p>
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social"></li>
@@ -870,19 +870,19 @@ data-ej-text="browser"></li>
 </div>
 <script>
 $(function () {
-$("#defaultradialmenu").ejRadialMenu({ "targetElementId":"target" });   
+$("#defaultRadialMenu").ejRadialMenu({ "targetElementID":"target" });   
 });
 </script>{% endhighlight %}
 
 
 {% highlight html %}
  
-//Get or set the Radialmenu targetelementid, after initialization:
+//Get or set the Radialmenu targetElementID, after initialization:
 <script>
-// Gets the targetelementid API.                
-$("#defaultradialmenu").ejRadialMenu ("option", "targetElementId");                     
-// Sets the targetElementId API
-$("#defaultradialmenu").ejRadialMenu ("option", "targetElementId", "target");            
+// Gets the targetElementID API.                
+$("#defaultRadialMenu").ejRadialMenu ("option", "targetElementID");                     
+// Sets the targetElementID API
+$("#defaultRadialMenu").ejRadialMenu ("option", "targetElementID", "target");            
 </script>{% endhighlight %}
 
 
@@ -920,7 +920,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social"></li>
@@ -936,7 +936,7 @@ data-ej-text="browser"></li>
 </div>
 <script>
 $(function () {
-$("#defaultradialmenu").ejRadialMenu({ position:{x:10,y:10} });   
+$("#defaultRadialMenu").ejRadialMenu({ position:{x:10,y:10} });   
 });
 </script>{% endhighlight %}
 
@@ -946,9 +946,9 @@ $("#defaultradialmenu").ejRadialMenu({ position:{x:10,y:10} });
 //Get or set the Radialmenu position, after initialization:
 <script>
 // Gets the position API.                
-$("#defaultradialmenu").ejRadialMenu ("option", "position");                     
+$("#defaultRadialMenu").ejRadialMenu ("option", "position");                     
 // Sets the position API
-$("#defaultradialmenu").ejRadialMenu ("option", "position");            
+$("#defaultRadialMenu").ejRadialMenu ("option", "position");            
 </script>{% endhighlight %}
 
 
@@ -981,7 +981,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social"></li>
@@ -1000,7 +1000,7 @@ data-ej-text="browser"></li>
 {% highlight html %}
  
 <script>
-$("#defaultradialmenu").ejRadialMenu ("hide");
+$("#defaultRadialMenu").ejRadialMenu ("hide");
 </script>{% endhighlight %}
 
 
@@ -1028,7 +1028,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social"></li>
@@ -1047,7 +1047,7 @@ data-ej-text="browser"></li>
 {% highlight html %}
  
 <script>
-$("#defaultradialmenu").ejRadialMenu ("menuHide");
+$("#defaultRadialMenu").ejRadialMenu ("menuHide");
 </script>{% endhighlight %}
 
 
@@ -1075,7 +1075,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social"></li>
@@ -1094,7 +1094,7 @@ data-ej-text="browser"></li>
 {% highlight html %}
  
 <script>
-$("#defaultradialmenu").ejRadialMenu ("hideMenu");
+$("#defaultRadialMenu").ejRadialMenu ("hideMenu");
 </script>{% endhighlight %}
 
 
@@ -1122,7 +1122,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social"></li>
@@ -1141,7 +1141,7 @@ data-ej-text="browser"></li>
 {% highlight html %}
  
 <script>
-$("#defaultradialmenu").ejRadialMenu ("show");
+$("#defaultRadialMenu").ejRadialMenu ("show");
 </script>{% endhighlight %}
 
 
@@ -1168,7 +1168,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social"></li>
@@ -1187,7 +1187,7 @@ data-ej-text="browser"></li>
 {% highlight html %}
  
 <script>
-$("#defaultradialmenu").ejRadialMenu ("showMenu");
+$("#defaultRadialMenu").ejRadialMenu ("showMenu");
 </script>{% endhighlight %}
 
 
@@ -1226,7 +1226,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social" data-ej-enabled="false"></li>
@@ -1245,8 +1245,8 @@ data-ej-text="browser"></li>
 {% highlight html %}
  
 <script>
-$("#defaultradialmenu").ejRadialMenu ({ "autoOpen":true});
-var obj=$("#defaultradialmenu").ejRadialMenu("instance");
+$("#defaultRadialMenu").ejRadialMenu ({ "autoOpen":true});
+var obj=$("#defaultRadialMenu").ejRadialMenu("instance");
 obj.enableItemByIndex(0);
 </script>{% endhighlight %}
 
@@ -1286,7 +1286,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social" data-ej-enabled="false"></li>
@@ -1305,8 +1305,8 @@ data-ej-text="browser"></li>
 {% highlight html %}
  
 <script>
-$("#defaultradialmenu").ejRadialMenu ({ "autoOpen":true});
-var obj=$("#defaultradialmenu").ejRadialMenu("instance");
+$("#defaultRadialMenu").ejRadialMenu ({ "autoOpen":true});
+var obj=$("#defaultRadialMenu").ejRadialMenu("instance");
 obj.enableItemsByIndices([0,2]);
 </script>{% endhighlight %}
 
@@ -1345,7 +1345,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social"></li>
@@ -1364,8 +1364,8 @@ data-ej-text="browser"></li>
 {% highlight html %}
  
 <script>
-$("#defaultradialmenu").ejRadialMenu({ "autoOpen":true});  
-var obj=$("#defaultradialmenu").ejRadialMenu("instance");
+$("#defaultRadialMenu").ejRadialMenu({ "autoOpen":true});  
+var obj=$("#defaultRadialMenu").ejRadialMenu("instance");
 obj.disableItemByIndex(0);
 </script>{% endhighlight %}
 
@@ -1403,7 +1403,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social"></li>
@@ -1422,8 +1422,8 @@ data-ej-text="browser"></li>
 {% highlight html %}
  
 <script>
-$("#defaultradialmenu").ejRadialMenu({ "autoOpen":true});  
-var obj=$("#defaultradialmenu").ejRadialMenu("instance");
+$("#defaultRadialMenu").ejRadialMenu({ "autoOpen":true});  
+var obj=$("#defaultRadialMenu").ejRadialMenu("instance");
 obj.disableItemsByIndices([1,3]);
 </script>{% endhighlight %}
 
@@ -1463,7 +1463,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social" data-ej-enabled="false"></li>
@@ -1482,8 +1482,8 @@ data-ej-text="browser"></li>
 {% highlight html %}
  
 <script>
-$("#defaultradialmenu").ejRadialMenu({ "autoOpen":true});  
-var obj=$("#defaultradialmenu").ejRadialMenu("instance");
+$("#defaultRadialMenu").ejRadialMenu({ "autoOpen":true});  
+var obj=$("#defaultRadialMenu").ejRadialMenu("instance");
 obj.enableItem("social");
 </script>{% endhighlight %}
 
@@ -1523,7 +1523,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social"></li>
@@ -1542,8 +1542,8 @@ data-ej-text="browser"></li>
 {% highlight html %}
  
 <script>
-$("#defaultradialmenu").ejRadialMenu({ "autoOpen":true});  
-var obj=$("#defaultradialmenu").ejRadialMenu("instance");
+$("#defaultRadialMenu").ejRadialMenu({ "autoOpen":true});  
+var obj=$("#defaultRadialMenu").ejRadialMenu("instance");
 obj.disableItem("social");
 </script>{% endhighlight %}
 
@@ -1584,7 +1584,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social" data-ej-enabled="false"></li>
@@ -1603,8 +1603,8 @@ data-ej-text="browser"></li>
 {% highlight html %}
  
 <script>
-$("#defaultradialmenu").ejRadialMenu({ "autoOpen":true});  
-var obj=$("#defaultradialmenu").ejRadialMenu("instance");
+$("#defaultRadialMenu").ejRadialMenu({ "autoOpen":true});  
+var obj=$("#defaultRadialMenu").ejRadialMenu("instance");
 obj.enableItems(["social","direction"]);
 </script>{% endhighlight %}
 
@@ -1644,7 +1644,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social"></li>
@@ -1663,8 +1663,8 @@ data-ej-text="browser"></li>
 {% highlight html %}
  
 <script>
-$("#defaultradialmenu").ejRadialMenu({ "autoOpen":true});  
-var obj=$("#defaultradialmenu").ejRadialMenu("instance");
+$("#defaultRadialMenu").ejRadialMenu({ "autoOpen":true});  
+var obj=$("#defaultRadialMenu").ejRadialMenu("instance");
 obj.disableItems(["social","direction"]);
 </script>{% endhighlight %}
 
@@ -1708,7 +1708,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social" data-ej-badge-enabled="true" data-ej-badge-value="3"></li>
@@ -1727,8 +1727,8 @@ data-ej-text="browser"></li>
 {% highlight html %}
  
 <script>
-$("#defaultradialmenu").ejRadialMenu({ "autoOpen":true});  
-var obj=$("#defaultradialmenu").ejRadialMenu("instance");
+$("#defaultRadialMenu").ejRadialMenu({ "autoOpen":true});  
+var obj=$("#defaultRadialMenu").ejRadialMenu("instance");
 obj.updateBadgeValue(0,4);
 </script>{% endhighlight %}
 
@@ -1770,7 +1770,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social" data-ej-badge-enabled="true" data-ej-badge-value="3"></li>
@@ -1789,8 +1789,8 @@ data-ej-text="browser"></li>
 {% highlight html %}
  
 <script>
-$("#defaultradialmenu").ejRadialMenu({ "autoOpen":true});  
-var obj=$("#defaultradialmenu").ejRadialMenu("instance");
+$("#defaultRadialMenu").ejRadialMenu({ "autoOpen":true});  
+var obj=$("#defaultRadialMenu").ejRadialMenu("instance");
 obj.showBadge(0);
 </script>{% endhighlight %}
 
@@ -1830,7 +1830,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social" data-ej-badge-enabled="true" data-ej-badge-value="3"></li>
@@ -1849,8 +1849,8 @@ data-ej-text="browser"></li>
 {% highlight html %}
  
 <script>
-$("#defaultradialmenu").ejRadialMenu({ "autoOpen":true});  
-var obj=$("#defaultradialmenu").ejRadialMenu("instance");
+$("#defaultRadialMenu").ejRadialMenu({ "autoOpen":true});  
+var obj=$("#defaultRadialMenu").ejRadialMenu("instance");
 obj.hideBadge(0);
 </script>{% endhighlight %}
 
@@ -1945,7 +1945,7 @@ Example
 Syncfusion is the enterprise technology partner of choice for Windows development
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social"></li>
@@ -1960,7 +1960,7 @@ data-ej-text="browser"></li>
 </ul>
 </div>
 <script>
-$("#defaultradialmenu").ejRadialMenu({
+$("#defaultRadialMenu").ejRadialMenu({
   select: function (args) { //handle the event
 }
 });         
@@ -2052,7 +2052,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social"></li>
@@ -2067,7 +2067,7 @@ data-ej-text="browser"></li>
 </ul>
 </div>
 <script>
-$("#defaultradialmenu").ejRadialMenu({
+$("#defaultRadialMenu").ejRadialMenu({
   click: function (args) { //handle the event
 }
 });         
@@ -2146,7 +2146,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social"></li>
@@ -2161,7 +2161,7 @@ data-ej-text="browser"></li>
 </ul>
 </div>
 <script>
-$("#defaultradialmenu").ejRadialMenu({
+$("#defaultRadialMenu").ejRadialMenu({
   open: function (args) { //handle the event
 }
 });         
@@ -2240,7 +2240,7 @@ Example
 Model-view-controller (MVC) is a software architecture pattern which separates the representation of information from the user's interaction with it.
 </p>
 </div>  
-<div id="defaultradialmenu">
+<div id="defaultRadialMenu">
 <ul>
 <li data-ej-imageurl="../themes/sample/radialmenu/social.png"
 data-ej-text="social"></li>
@@ -2255,7 +2255,7 @@ data-ej-text="browser"></li>
 </ul>
 </div>
 <script>
-$("#defaultradialmenu").ejRadialMenu({
+$("#defaultRadialMenu").ejRadialMenu({
   close: function (args) { //handle the event
 }
 });         

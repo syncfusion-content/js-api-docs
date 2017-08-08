@@ -1825,8 +1825,8 @@ The template to display the Rotator widget with customized appearance.
         </ul>
 
         <script>
-           var themeslist = [
-                { text: "Colorful-Night", url: "../content/images/rotator/snowfall.jpg", cls: "text" },
+           var themesList = [
+                { text: "Colorful-Night", url: "../content/images/rotator/snowfall.jpg" },
                 { text: "Technology", url: "../content/images/rotator/tablet.jpg" },
                 { text: "Nature", url: "../content/images/rotator/nature.jpg" },
                 { text: "Snow Fall", url: "../content/images/rotator/snowfall.jpg" },
@@ -1836,7 +1836,7 @@ The template to display the Rotator widget with customized appearance.
                 ];
 
             $("#sliderContent").ejRotator({
-		dataSource: themeslist,
+		dataSource: themesList,
                 slideWidth: "100%",
                 frameSpace: "0px",
 		slideHeight: "auto",

@@ -584,7 +584,7 @@ Sets the root class for Tile theme. This cssClass API helps to use custom skinni
 <div id="tile" ></div>
 <script> 
 // Create Tile control 
-$("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", cssClass:"customclass"}); 
+$("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", cssClass:"customClass"}); 
 </script>{% endhighlight %}
 
 
@@ -594,7 +594,7 @@ $("#tile").ejTile({ imageUrl: "themes/sample/tile/people.png", cssClass:"customc
 // Get the cssClass API value.
  $("#tile").ejTile("option", "cssClass");                       
 // Set the cssClass API
-$("#tile").ejTile("option", "cssClass", "customclass");</script>           {% endhighlight %}
+$("#tile").ejTile("option", "cssClass", "custom class");</script>           {% endhighlight %}
 
 
 ### enablePersistence `boolean`

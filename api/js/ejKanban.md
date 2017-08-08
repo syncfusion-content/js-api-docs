@@ -1484,7 +1484,7 @@ To enable/disable allowDrop for specific column wise.
 	{Id:1,Title:"Mexican Green Wave",Type:"Vegetarian",Size:"Small",Category:"Order",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_09.png" },
 	{Id:2,Title:"Milan Veg Fantasy",Type:"Vegetarian",Size:"Medium",Category:"Order",Description:"Zucchini wrapped in spicy grilled seasoning along with tomato.",Tags:"Onions, Pepper, Tomato, Zucchini",ImageURL:"../content/images/kanban/menu_01.png" },
 	{Id:3,Title:"Peppy",Type:"Vegetarian",Size:"Large",Category:"Ready to Serve",Description:"It's made using toppings of tomato, mozzarella cheese and fresh basil, which represent the red, white and green of the Italian flag.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_02.png" },
-	{Id:4,Title:"Labanese",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
+	{Id:4,Title:"Lebanese",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
 	{Id:5,Title:"Farm House",Type:"Vegetarian",Size:"Small",Category:"Delivered",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_04.png" },
 	]
         $(function() {
@@ -1539,7 +1539,7 @@ To enable/disable allowDrag for specific column wise.
 	{Id:1,Title:"Mexican Green Wave",Type:"Vegetarian",Size:"Small",Category:"Order",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_09.png" },
 	{Id:2,Title:"Milan Veg Fantasy",Type:"Vegetarian",Size:"Medium",Category:"Order",Description:"Zucchini wrapped in spicy grilled seasoning along with tomato.",Tags:"Onions, Pepper, Tomato, Zucchini",ImageURL:"../content/images/kanban/menu_01.png" },
 	{Id:3,Title:"Peppy",Type:"Vegetarian",Size:"Large",Category:"Ready to Serve",Description:"It's made using toppings of tomato, mozzarella cheese and fresh basil, which represent the red, white and green of the Italian flag.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_02.png" },
-	{Id:4,Title:"Labanese",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
+	{Id:4,Title:"Lebanese",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
 	{Id:5,Title:"Farm House",Type:"Vegetarian",Size:"Small",Category:"Delivered",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_04.png" },
 	]
         $(function() {
@@ -5273,7 +5273,7 @@ Gets or sets an object that indicates to render the Kanban with specified workfl
 	{Id:1,Title:"Mexican Green Wave",Type:"Vegetarian",Size:"Small",Category:"Order",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_09.png" },
 	{Id:2,Title:"Milan Veg Fantasy",Type:"Vegetarian",Size:"Medium",Category:"Order",Description:"Zucchini wrapped in spicy grilled seasoning along with tomato.",Tags:"Onions, Pepper, Tomato, Zucchini",ImageURL:"../content/images/kanban/menu_01.png" },
 	{Id:3,Title:"Peppy",Type:"Vegetarian",Size:"Large",Category:"Ready to Serve",Description:"It's made using toppings of tomato, mozzarella cheese and fresh basil, which represent the red, white and green of the Italian flag.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_02.png" },
-	{Id:4,Title:"Labanese",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
+	{Id:4,Title:"Lebanese",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
 	{Id:5,Title:"Farm House",Type:"Vegetarian",Size:"Small",Category:"Delivered",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_04.png" },
 	]
         $(function() {
@@ -5325,7 +5325,7 @@ Gets or sets an object that indicates to render the Kanban with specified workfl
 	{Id:1,Title:"Mexican Green Wave",Type:"Vegetarian",Size:"Small",Category:"Order",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_09.png" },
 	{Id:2,Title:"Milan Veg Fantasy",Type:"Vegetarian",Size:"Medium",Category:"Order",Description:"Zucchini wrapped in spicy grilled seasoning along with tomato.",Tags:"Onions, Pepper, Tomato, Zucchini",ImageURL:"../content/images/kanban/menu_01.png" },
 	{Id:3,Title:"Peppy",Type:"Vegetarian",Size:"Large",Category:"Ready to Serve",Description:"It's made using toppings of tomato, mozzarella cheese and fresh basil, which represent the red, white and green of the Italian flag.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_02.png" },
-	{Id:4,Title:"Labanese",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
+	{Id:4,Title:"Lebanese",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
 	{Id:5,Title:"Farm House",Type:"Vegetarian",Size:"Small",Category:"Delivered",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_04.png" },
 	]
         $(function() {
@@ -5377,7 +5377,7 @@ Gets or sets an object that indicates to render the Kanban with specified workfl
 	{Id:1,Title:"Mexican Green Wave",Type:"Vegetarian",Size:"Small",Category:"Order",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_09.png" },
 	{Id:2,Title:"Milan Veg Fantasy",Type:"Vegetarian",Size:"Medium",Category:"Order",Description:"Zucchini wrapped in spicy grilled seasoning along with tomato.",Tags:"Onions, Pepper, Tomato, Zucchini",ImageURL:"../content/images/kanban/menu_01.png" },
 	{Id:3,Title:"Peppy",Type:"Vegetarian",Size:"Large",Category:"Ready to Serve",Description:"It's made using toppings of tomato, mozzarella cheese and fresh basil, which represent the red, white and green of the Italian flag.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_02.png" },
-	{Id:4,Title:"Labanese",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
+	{Id:4,Title:"Lebanese",Type:"Vegetarian",Size:"Small",Category:"Ready to Deliver",Description:"Lebanese Pizza topped with tomato sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_03.png" },
 	{Id:5,Title:"Farm House",Type:"Vegetarian",Size:"Small",Category:"Delivered",Description:"Stromboli sandwich with chili sauce.",Tags:"Onions, Pepper, Cheese",ImageURL:"../content/images/kanban/menu_04.png" },
 	]
         $(function() {
