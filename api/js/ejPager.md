@@ -419,8 +419,8 @@ Send a paging request to specified page through the pager control.
 <div id="pager"></div> 
  
 <script>
-$('#pager').ejpager();
-var pgObj = $("#pager").data("ejpager");
+$('#pager').ejPager();
+var pgObj = $("#pager").data("ejPager");
 pgObj.refreshPager(); 
 </script>
 

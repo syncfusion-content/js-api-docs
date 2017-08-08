@@ -639,7 +639,7 @@ ranges: [
 
 
 
-Used to seperate the two date strings of the value in the DateRangePicker popup.
+Used to separate the two date strings of the value in the DateRangePicker popup.
 
 
 
