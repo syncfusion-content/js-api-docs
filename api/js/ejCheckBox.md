@@ -27,11 +27,11 @@ The CheckBox control allows you to check an option to perform an action. This co
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
         // Create CheckBox 
-        $("#chkbox").ejCheckBox(); 
+        $("#checkBox").ejCheckBox(); 
         </script>
 
 {% endhighlight %}
@@ -75,11 +75,11 @@ Specifies whether CheckBox has to be in checked or not. We can also specify arra
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
         //To set check API value during initialization  
-        $("#chkbox").ejCheckBox({ checked:  true });
+        $("#checkBox").ejCheckBox({ checked:  true });
         </script>
 
 {% endhighlight %}
@@ -162,11 +162,11 @@ Indeterminate</td>
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
         //To set CheckState API value during initialization
-        $("#chkbox").ejCheckBox({ enableTriState: true , checkState:"indeterminate"});
+        $("#checkBox").ejCheckBox({ enableTriState: true , checkState:"indeterminate"});
         </script>
 
 {% endhighlight %}
@@ -212,11 +212,11 @@ Sets the root CSS class for CheckBox theme, which is used customize.
 
 
 {% highlight html %}
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script>  
         // Set the root class for CheckBox control theme. This cssClass API helps to use custom skinning option for CheckBox control. By defining the root class using this API, we need to include this root class in CSS.                     
-        $("#chkbox").ejCheckBox({cssClass: "gradient-lime"}); 
+        $("#checkBox").ejCheckBox({cssClass: "gradient-lime"}); 
         </script>
 
 {% endhighlight %}
@@ -265,12 +265,12 @@ Specifies the checkbox control state.
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
         //To Enable checkbox on initialization. 
         //To set width API value 
-        $("#chkbox").ejCheckBox ({ enabled: true });
+        $("#checkBox").ejCheckBox ({ enabled: true });
         </script>
 
 {% endhighlight %}
@@ -319,11 +319,11 @@ Specifies the persist property for CheckBox while initialization. The persist AP
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
         //To set persist API value 
-        $("#chkbox").ejCheckBox({ enablePersistence : false });
+        $("#checkBox").ejCheckBox({ enablePersistence : false });
         </script>
 
 {% endhighlight %}
@@ -372,11 +372,11 @@ Specify the Right to Left direction to Checkbox
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
         // Set the RTL during initialization.
-        $("#chkbox").ejCheckBox({  enableRTL : true });
+        $("#checkBox").ejCheckBox({  enableRTL : true });
         </script>
 
 {% endhighlight %}
@@ -425,12 +425,12 @@ Specifies the enable or disable Tri-State for checkbox control.
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
         // Specifies to enable or disable Tri-State option checkbox while initialization. 
         //To set enableTriState API value 
-        $("#chkbox").ejCheckBox({  enableTriState: true });
+        $("#checkBox").ejCheckBox({  enableTriState: true });
         </script>
 
 {% endhighlight %}
@@ -479,11 +479,11 @@ It allows to define the characteristics of the CheckBox control. It will helps t
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
         //Set HtmlAttributes to CheckBox element during initialization  
-        $("#chkbox").ejCheckBox({ htmlAttributes : {required:"required"}});
+        $("#checkBox").ejCheckBox({ htmlAttributes : {required:"required"}});
         </script>
 
 {% endhighlight %}
@@ -531,11 +531,11 @@ Specified value to be added an id attribute of the CheckBox.
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
         //To set id API value during initialization  
-        $("#chkbox").ejCheckBox({  id: "sync" });
+        $("#checkBox").ejCheckBox({  id: "sync" });
         </script>
 
 {% endhighlight %}
@@ -584,11 +584,11 @@ Specify the prefix value of id to be added before the current id of the CheckBox
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
         // To set  idPrefix  API value
-        $("#chkbox").ejCheckBox ({  idPrefix : "ej" });
+        $("#checkBox").ejCheckBox ({  idPrefix : "ej" });
         </script>
 
 {% endhighlight %}
@@ -637,11 +637,11 @@ Specifies the name attribute of the CheckBox.
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
         //To set name API value during initialization  
-        $("#chkbox").ejCheckBox({  name: "sync" });
+        $("#checkBox").ejCheckBox({  name: "sync" });
         </script>
 
 {% endhighlight %}
@@ -689,11 +689,11 @@ Displays rounded corner borders to CheckBox
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
         //To Set the rounded corner during initialization.
-        $("#chkbox").ejCheckBox({ showRoundedCorner: true });
+        $("#checkBox").ejCheckBox({ showRoundedCorner: true });
         </script>
 
 {% endhighlight %}
@@ -759,11 +759,11 @@ Small</td>
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
         //To set size API value during initialization
-        $("#chkbox").ejCheckBox({  size: "medium"});
+        $("#checkBox").ejCheckBox({  size: "medium"});
         </script>
         
 {% endhighlight %}
@@ -812,10 +812,10 @@ Specifies the text content to be displayed for CheckBox.
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
+        <input type="checkbox" id="checkBox"/>
         <script> 
         // To set text API value 
-        $("#chkbox").ejCheckBox({ text: "Hello World"});
+        $("#checkBox").ejCheckBox({ text: "Hello World"});
         </script>
         
 {% endhighlight %}
@@ -865,11 +865,11 @@ N> The property will work when the widget present inside the form. Additionally 
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script>
         //To set validationMessage API during initialization  
-                $("#chkbox").ejCheckBox({ 
+                $("#checkBox").ejCheckBox({ 
                 validationRules:{                     
                     required:true
                 },
@@ -925,11 +925,11 @@ N> The property will work when the widget present inside the form. Additionally 
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script>
         //To set validationRules API during initialization  
-                $("#chkbox").ejCheckBox({ 
+                $("#checkBox").ejCheckBox({ 
                 validationRules:{                     
                     required:true
                 }
@@ -982,11 +982,11 @@ Specifies the value attribute of the CheckBox.
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
         //To set value API value during initialization  
-        $("#chkbox").ejCheckBox({ value: "Hello World"});
+        $("#checkBox").ejCheckBox({ value: "Hello World"});
         </script>
 
 {% endhighlight %}
@@ -1026,13 +1026,13 @@ Destroy the CheckBox widget all events bound using this._on will be unbind autom
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
-        $("#chkbox").ejCheckBox();
+        $("#checkBox").ejCheckBox();
         // Create CheckBox instance
-        var chkObj = $("#chkbox").data("ejCheckBox");
-        chkObj.destroy();// Destroy the CheckBox control
+        var checkBoxObj = $("#checkBox").data("ejCheckBox");
+        checkBoxObj.destroy();// Destroy the CheckBox control
         </script>
 
 {% endhighlight %}
@@ -1040,12 +1040,12 @@ Destroy the CheckBox widget all events bound using this._on will be unbind autom
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
-        $("#chkbox").ejCheckBox();
+        $("#checkBox").ejCheckBox();
         //To destroy the CheckBox control
-        $("#chkbox").ejCheckBox("destroy");
+        $("#checkBox").ejCheckBox("destroy");
         </script>
         
 {% endhighlight %}
@@ -1078,13 +1078,13 @@ Disable the CheckBox to prevent all user interactions.
 
 {% highlight html %}
         
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
-        $("#chkbox").ejCheckBox();
+        $("#checkBox").ejCheckBox();
         // Create CheckBox instance 
-        var chkObj = $("#chkbox").data("ejCheckBox");
-        chkObj.disable(); //disables the CheckBox
+        var checkBoxObj = $("#checkBox").data("ejCheckBox");
+        checkBoxObj.disable(); //disables the CheckBox
         </script>
 
 {% endhighlight %}
@@ -1092,12 +1092,12 @@ Disable the CheckBox to prevent all user interactions.
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
-        $("#chkbox").ejCheckBox();
+        $("#checkBox").ejCheckBox();
         //To disable the CheckBox
-        $("#chkbox").ejCheckBox("disable");
+        $("#checkBox").ejCheckBox("disable");
         </script>
 
 {% endhighlight %}
@@ -1130,13 +1130,13 @@ To enable the CheckBox
 
 {% highlight html %}
         
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
-        $("#chkbox").ejCheckBox();
+        $("#checkBox").ejCheckBox();
         // Create CheckBox instance 
-        var chkObj = $("#chkbox").data("ejCheckBox");
-        chkObj.enable(); // enables the CheckBox
+        var checkBoxObj = $("#checkBox").data("ejCheckBox");
+        checkBoxObj.enable(); // enables the CheckBox
         </script>
 
 {% endhighlight %}
@@ -1144,12 +1144,12 @@ To enable the CheckBox
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
-        $("#chkbox").ejCheckBox();
+        $("#checkBox").ejCheckBox();
         //To enable the CheckBox
-        $("#chkbox").ejCheckBox("enable");
+        $("#checkBox").ejCheckBox("enable");
         </script>
 
 {% endhighlight %}
@@ -1184,13 +1184,13 @@ boolean
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
-        $("#chkbox").ejCheckBox();
+        $("#checkBox").ejCheckBox();
         // Create CheckBox  instance
-        var chkObj = $("#chkbox").data("ejCheckBox");
-        chkObj.isChecked(); // check the status of checkbox
+        var checkBoxObj = $("#checkBox").data("ejCheckBox");
+        checkBoxObj.isChecked(); // check the status of checkbox
         </script>
 
 {% endhighlight %}
@@ -1198,12 +1198,12 @@ boolean
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
-        $("#chkbox").ejCheckBox();
+        $("#checkBox").ejCheckBox();
         //To check the status of checkbox
-        $("#chkbox").ejCheckBox("isChecked");
+        $("#checkBox").ejCheckBox("isChecked");
         </script>
 
 {% endhighlight %}
@@ -1287,11 +1287,11 @@ isChecked</td>
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script>  
         //To create beforeChange event for checkbox
-        $("#chkbox").ejCheckBox({
+        $("#checkBox").ejCheckBox({
         beforeChange: function (args) {}
         });
          </script>
@@ -1375,11 +1375,11 @@ checkState</td>
 
 {% highlight html %}
 
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
         // change event for checkbox
-        $("#chkbox").ejCheckBox({
+        $("#checkBox").ejCheckBox({
         change: function (args) {}
         });
         </script>
@@ -1446,11 +1446,11 @@ type</td>
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
         //To create event for checkbox
-        $("#chkbox").ejCheckBox({
+        $("#checkBox").ejCheckBox({
         create: function (args) {}
         });    
         </script>
@@ -1517,11 +1517,11 @@ type</td>
 
 {% highlight html %}
  
-        <input type="checkbox" id="chkbox"/>
-        <label for="chkbox">Experienced</label>
+        <input type="checkbox" id="checkBox"/>
+        <label for="checkBox">Experienced</label>
         <script> 
         //To create destroy event for checkbox
-        $("#chkbox").ejCheckBox({
+        $("#checkBox").ejCheckBox({
         destroy: function (args) {}
         });
         </script>
