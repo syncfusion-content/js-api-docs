@@ -828,7 +828,7 @@ Used  the required fields for special Dates in DatePicker in order to customize 
 <script>
 //To set fields API value during initialization     
 var today = new Date(), year = today.getFullYear(), month = today.getMonth(),
-spldays = [
+specialDays = [
            { date: new Date(year, month, 8), tooltip: "In Australia", iconClass: "flags sprite-Australia" },
            { date: new Date(year, month, 21), tooltip: "In France", iconClass: "flags sprite-France" },
            { date: new Date(year, month, 17), tooltip: "In USA", iconClass: "flags sprite-USA" },
@@ -837,7 +837,7 @@ spldays = [
 ]
 // declaration
 $("#datepicker").ejDatePicker({ 
-specialDates: spldays, fields: {date:"date",tooltip:"tooltip",iconClass:"iconClass"}});
+specialDates: specialDays, fields: {date:"date",tooltip:"tooltip",iconClass:"iconClass"}});
 </script>{% endhighlight %}
 
 
@@ -1725,7 +1725,7 @@ Specifies the special dates in DatePicker.
 <script>
 //To set specialDates API value during initialization
 var today = new Date(), year = today.getFullYear(), month = today.getMonth(),
-spldays = [
+specialDays = [
            { date: new Date(year, month, 8), tooltip: "In Australia", iconClass: "flags sprite-Australia" },
            { date: new Date(year, month, 21), tooltip: "In France", iconClass: "flags sprite-France" },
            { date: new Date(year, month, 17), tooltip: "In USA", iconClass: "flags sprite-USA" },
@@ -1733,7 +1733,7 @@ spldays = [
            { date: new Date(year, month - 1, 22), tooltip: "In India", iconClass: "flags sprite-India" },
 ]
 // declaration
-$("#datepicker").ejDatePicker({specialDates: spldays});
+$("#datepicker").ejDatePicker({specialDates: specialDays});
 </script>{% endhighlight %}
 
 
