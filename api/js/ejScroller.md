@@ -37,7 +37,7 @@ $(element).ejScroller()
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;">
+<div id="scrollContent" style="width:900px;">
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -59,7 +59,7 @@ kinds of components, the MVC design defines the interactions between them.
  
 <script>
 // Create Scroller
-$('#scrollcontent').ejScroller();       
+$('#scrollContent').ejScroller();       
 </script>
 
 {% endhighlight %}
@@ -110,7 +110,7 @@ Specifies the swipe scrolling speed(in millisecond).
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -132,7 +132,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 //To set the animationSpeed property of Scroller during initialization
-        $("#scrollcontent").ejScroller({animationSpeed: 1000 });      
+        $("#scrollContent").ejScroller({animationSpeed: 1000 });      
 </script> 
 {% endhighlight %}
 
@@ -166,7 +166,7 @@ Set true to hides the scrollbar, when mouseout the content area.
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -188,7 +188,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 //To enable the autoHide property of Scroller during initialization
-        $("#scrollcontent").ejScroller({autoHide: true });      
+        $("#scrollContent").ejScroller({autoHide: true });      
 </script> 
 {% endhighlight %}
 
@@ -222,7 +222,7 @@ Specifies the height and width of button in the scrollbar.
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -244,7 +244,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 //To set Button Size of Scroller during initialization
-        $("#scrollcontent").ejScroller({buttonSize: 20 });      
+        $("#scrollContent").ejScroller({buttonSize: 20 });      
 </script>{% endhighlight %}
 
 
@@ -275,7 +275,7 @@ Specifies to enable or disable the scroller
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -297,7 +297,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 //Enable or disable scroller API on initialization
-        $("#scrollcontent").ejScroller({enabled: true });       
+        $("#scrollContent").ejScroller({enabled: true });       
 </script> {% endhighlight %}
 
 
@@ -328,7 +328,7 @@ Save current model value to browser cookies for state maintenance. While refresh
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -350,7 +350,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 //Enable enablePersistence API on initialization
-        $("#scrollcontent").ejScroller({enablePersistence: true });
+        $("#scrollContent").ejScroller({enablePersistence: true });
 </script>
  {% endhighlight %}
 
@@ -382,7 +382,7 @@ Indicates the Right to Left direction to scroller
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -404,7 +404,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 //Enable enableRTL API on initialization
-        $("#scrollcontent").ejScroller({enableRTL: true });     
+        $("#scrollContent").ejScroller({enableRTL: true });     
 </script> {% endhighlight %}
 
 
@@ -435,7 +435,7 @@ Enables or Disable the touch Scroll
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -457,7 +457,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 //Disable Touch Scroll API on initialization
-        $("#scrollcontent").ejScroller({enableTouchScroll: false });    
+        $("#scrollContent").ejScroller({enableTouchScroll: false });    
 </script> {% endhighlight %}
 
 
@@ -488,7 +488,7 @@ Specifies the height of Scroll panel and scrollbars.
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -510,7 +510,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 //To set height API value during initialization  
-        $("#scrollcontent").ejScroller({height: 200 }); 
+        $("#scrollContent").ejScroller({height: 200 }); 
 </script>{% endhighlight %}
 
 
@@ -540,7 +540,7 @@ If the scrollbar has vertical it set as width, else it will set as height of the
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -563,7 +563,7 @@ It can also send commands to the model to update the model's state (e.g., editin
 <script>
 //Enable scrollerSize on initialization 
         //To set scroller Size API value 
-        $("#scrollcontent").ejScroller({scrollerSize: 20 });    
+        $("#scrollContent").ejScroller({scrollerSize: 20 });    
 </script>{% endhighlight %}
 
 
@@ -594,7 +594,7 @@ The Scroller content and scrollbars move left with given value.
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -616,7 +616,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 //To set Scroll left API during initialization
-        $("#scrollcontent").ejScroller({scrollLeft: 40 });      
+        $("#scrollContent").ejScroller({scrollLeft: 40 });      
 </script>{% endhighlight %}
 
 
@@ -647,7 +647,7 @@ While press on the arrow key the scrollbar position added to the given pixel val
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -669,7 +669,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 //To set scrollOneStepBy API value during initialization
-        $("#scrollcontent").ejScroller({scrollOneStepBy: 40 }); 
+        $("#scrollContent").ejScroller({scrollOneStepBy: 40 }); 
 </script>{% endhighlight %}
 
 
@@ -700,7 +700,7 @@ The Scroller content and scrollbars move to top position with specified value.
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -722,7 +722,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 //To set Scroll top API during initialization
-        $("#scrollcontent").ejScroller({scrollTop: 40 });       
+        $("#scrollContent").ejScroller({scrollTop: 40 });       
 </script>{% endhighlight %}
 
 
@@ -753,7 +753,7 @@ Indicates the target area to which scroller have to appear.
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -775,7 +775,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 //To set Scroller for the specified target panel during initialization
-        $("#scrollcontent").ejScroller({targetPane: "contentarea" });   
+        $("#scrollContent").ejScroller({targetPane: "contentarea" });   
 </script>{% endhighlight %}
 
 
@@ -806,7 +806,7 @@ Specifies the width of Scroll panel and scrollbars.
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -828,7 +828,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 //To set width API value during initialization
-        $("#scrollcontent").ejScroller({width: 500 });  
+        $("#scrollContent").ejScroller({width: 500 });  
 </script>{% endhighlight %}
 
 
@@ -854,7 +854,7 @@ destroy the Scroller control, unbind the all ej control related events automatic
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -874,16 +874,16 @@ It can also send commands to the model to update the model's state (e.g., editin
 </div> 
  
 <script>
-$('#scrollcontent').ejScroller();       
+$('#scrollContent').ejScroller();       
 // Destroy Scroller
-var scrollerObj  = $("#scrollcontent").data("ejScroller");
+var scrollerObj  = $("#scrollContent").data("ejScroller");
 scrollerObj.destroy(); // destroy the scroller
 </script>{% endhighlight %}
 
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -903,9 +903,9 @@ It can also send commands to the model to update the model's state (e.g., editin
 </div> 
  
 <script>
-$('#scrollcontent').ejScroller();       
+$('#scrollContent').ejScroller();       
 // destroy the scroller
-$("#scrollcontent").ejScroller("destroy");      
+$("#scrollContent").ejScroller("destroy");      
 </script>{% endhighlight %}
 
 
@@ -927,7 +927,7 @@ User disables the Scroller control at any time.
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -948,16 +948,16 @@ It can also send commands to the model to update the model's state (e.g., editin
 </div> 
  
 <script>
-$('#scrollcontent').ejScroller();       
+$('#scrollContent').ejScroller();       
 // To disable the Scroller control at any time.
-var scrollerObj  = $("#scrollcontent").data("ejScroller");
+var scrollerObj  = $("#scrollContent").data("ejScroller");
 scrollerObj.disable(); // disable the Scroller control at any time
 </script>{% endhighlight %}
 
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -978,9 +978,9 @@ It can also send commands to the model to update the model's state (e.g., editin
 </div> 
  
 <script>
-$('#scrollcontent').ejScroller();       
+$('#scrollContent').ejScroller();       
 // disable the scroller control
-$("#scrollcontent").ejScroller("disable");      
+$("#scrollContent").ejScroller("disable");      
 </script>{% endhighlight %}
 
 
@@ -1002,7 +1002,7 @@ User enables the Scroller control at any time.
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -1023,16 +1023,16 @@ It can also send commands to the model to update the model's state (e.g., editin
 </div> 
  
 <script>
-$('#scrollcontent').ejScroller();       
+$('#scrollContent').ejScroller();       
 // To enable the Scroller control at any time.
-var scrollerObj  = $("#scrollcontent").data("ejScroller");
+var scrollerObj  = $("#scrollContent").data("ejScroller");
 scrollerObj.enable(); // enable the Scroller control at any time
 </script>{% endhighlight %}
 
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -1053,9 +1053,9 @@ It can also send commands to the model to update the model's state (e.g., editin
 </div> 
  
 <script>
-$('#scrollcontent').ejScroller();       
+$('#scrollContent').ejScroller();       
 // enables the scroller control
-$("#scrollcontent").ejScroller("enable");       
+$("#scrollContent").ejScroller("enable");       
 </script>{% endhighlight %}
 
 
@@ -1082,7 +1082,7 @@ boolean
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -1104,14 +1104,14 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 // To check horizontal scrollbar is rendered or not
-var scrollerObj  = $("#scrollcontent").data("ejScroller");
+var scrollerObj  = $("#scrollContent").data("ejScroller");
 scrollerObj.isHScroll(); // Returns horizontal scrollbar is shown or not.
 </script>{% endhighlight %}
 
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -1133,7 +1133,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 // To check horizontal scrollbar is rendered or not
-$("#scrollcontent").ejScroller("isHScroll");    
+$("#scrollContent").ejScroller("isHScroll");    
 </script>{% endhighlight %}
 
 
@@ -1160,7 +1160,7 @@ boolean
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -1181,16 +1181,16 @@ It can also send commands to the model to update the model's state (e.g., editin
 </div> 
  
 <script>
-$('#scrollcontent').ejScroller();       
+$('#scrollContent').ejScroller();       
 // To check vertical scrollbar is rendered or not
-var scrollerObj  = $("#scrollcontent").data("ejScroller");
+var scrollerObj  = $("#scrollContent").data("ejScroller");
 scrollerObj.isVScroll(); // Returns vertical scrollbar is shown or not.
 </script>{% endhighlight %}
 
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;">
+<div id="scrollContent" style="width:900px;">
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -1211,9 +1211,9 @@ It can also send commands to the model to update the model's state (e.g., editin
 </div> 
  
 <script>
-$('#scrollcontent').ejScroller();       
+$('#scrollContent').ejScroller();       
 // To check vertical scrollbar is rendered or not
-$("#scrollcontent").ejScrollBar("isVScroll");   
+$("#scrollContent").ejScrollBar("isVScroll");   
 </script>{% endhighlight %}
 
 
@@ -1235,7 +1235,7 @@ User refreshes the Scroller control at any time.
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -1256,16 +1256,16 @@ It can also send commands to the model to update the model's state (e.g., editin
 </div> 
  
 <script>
-$('#scrollcontent').ejScroller();       
+$('#scrollContent').ejScroller();       
 // To refresh the Scroller control at any time.
-var scrollerObj  = $("#scrollcontent").data("ejScroller");
+var scrollerObj  = $("#scrollContent").data("ejScroller");
 scrollerObj.refresh(); // refreshes the Scroller control at any time
 </script>{% endhighlight %}
 
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -1286,9 +1286,9 @@ It can also send commands to the model to update the model's state (e.g., editin
 </div> 
  
 <script>
-$('#scrollcontent').ejScroller();       
+$('#scrollContent').ejScroller();       
 // Refresh the scroller control
-$("#scrollcontent").ejScroller("refresh");      
+$("#scrollContent").ejScroller("refresh");      
 </script>{% endhighlight %}
 
 
@@ -1337,7 +1337,7 @@ animationSpeed </td>
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -1358,9 +1358,9 @@ It can also send commands to the model to update the model's state (e.g., editin
 </div> 
  
 <script>
-$('#scrollcontent').ejScroller();       
+$('#scrollContent').ejScroller();       
 // Moves scroller to given pixel in X (left) position.
-var scrollerObj  = $("#scrollcontent").data("ejScroller");
+var scrollerObj  = $("#scrollContent").data("ejScroller");
 scrollerObj.scrollX(25); // call scrollX method(with animation disabled)
 scrollObj.scrollX(25,false,1000); // call scrollX method(with animation enabled. the third parameter "1000" indicates the animation speed while re-positioning the scroller)
 </script>{% endhighlight %}
@@ -1368,7 +1368,7 @@ scrollObj.scrollX(25,false,1000); // call scrollX method(with animation enabled.
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -1389,10 +1389,10 @@ It can also send commands to the model to update the model's state (e.g., editin
 </div> 
  
 <script>
-$('#scrollcontent').ejScroller();       
+$('#scrollContent').ejScroller();       
 //Moves scroller to given pixel in X (left) position.
-$("#scrollcontent").ejScroller("scrollX", 25, true);    // call scrollX method(with animation disabled. "true" indicates animation is off)
-$("#scrollcontent").ejScroller("scrollX", 25,false,1000);       // call scrollX method(with animation enabled. Here, the fourth parameter "1000" indicates the animation speed while re-positioning the scroller)
+$("#scrollContent").ejScroller("scrollX", 25, true);    // call scrollX method(with animation disabled. "true" indicates animation is off)
+$("#scrollContent").ejScroller("scrollX", 25,false,1000);       // call scrollX method(with animation enabled. Here, the fourth parameter "1000" indicates the animation speed while re-positioning the scroller)
 </script>{% endhighlight %}
 
 
@@ -1439,7 +1439,7 @@ animationSpeed </td>
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -1460,9 +1460,9 @@ It can also send commands to the model to update the model's state (e.g., editin
 </div> 
  
 <script>
-$('#scrollcontent').ejScroller();       
+$('#scrollContent').ejScroller();       
 // Moves scroller to given pixel in Y (top) position.
-var scrollerObj  = $("#scrollcontent").data("ejScroller");
+var scrollerObj  = $("#scrollContent").data("ejScroller");
 scrollerObj.scrollY(25); // call scrollY method(with animation disabled)
 scrollObj.scrollY(25,false,1000); // call scrollY method(with animation enabled. the third parameter "1000" indicates the animation speed while re-positioning the scroller)
 </script>{% endhighlight %}
@@ -1470,7 +1470,7 @@ scrollObj.scrollY(25,false,1000); // call scrollY method(with animation enabled.
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -1491,10 +1491,10 @@ It can also send commands to the model to update the model's state (e.g., editin
 </div> 
  
 <script>
-$('#scrollcontent').ejScroller();       
+$('#scrollContent').ejScroller();       
 //Moves scroller to given pixel in Y (top) position.
-$("#scrollcontent").ejScroller("scrollY", 25, true);    // call scrollY method(with animation disabled. "true" indicates animation is off)
-$("#scrollcontent").ejScroller("scrollY", 25,false,1000);       // call scrollY method(with animation enabled. Here, fourth parameter "1000" indicates the animation speed while re-positioning the scroller)
+$("#scrollContent").ejScroller("scrollY", 25, true);    // call scrollY method(with animation disabled. "true" indicates animation is off)
+$("#scrollContent").ejScroller("scrollY", 25,false,1000);       // call scrollY method(with animation enabled. Here, fourth parameter "1000" indicates the animation speed while re-positioning the scroller)
 </script>{% endhighlight %}
 
 
@@ -1550,7 +1550,7 @@ type</td>
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -1572,7 +1572,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 //create event for scroller
-$("#scrollcontent").ejScroller({
+$("#scrollContent").ejScroller({
    create: function (args) {}
 });   
 </script>   {% endhighlight %}
@@ -1625,7 +1625,7 @@ type</td>
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -1647,7 +1647,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 //destroy event for scroller
-$("#scrollcontent").ejScroller({
+$("#scrollContent").ejScroller({
    destroy: function (args) {}
 });  
 </script>     {% endhighlight %}
@@ -1710,7 +1710,7 @@ type</td>
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -1732,7 +1732,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 //thumbMove event for scroller
-$("#scrollcontent").ejScroller({
+$("#scrollContent").ejScroller({
    thumbMove: function (args) {}
 });  
 </script>     
@@ -1795,7 +1795,7 @@ type</td>
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -1817,7 +1817,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 //thumbStart event for scroller
-$("#scrollcontent").ejScroller({
+$("#scrollContent").ejScroller({
    thumbStart: function (args) {}
 });  
 </script>     
@@ -1881,7 +1881,7 @@ type</td>
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -1903,7 +1903,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 //thumbEnd event for scroller
-$("#scrollcontent").ejScroller({
+$("#scrollContent").ejScroller({
    thumbEnd: function (args) {}
 });  
 </script>     
@@ -1977,7 +1977,7 @@ type</td>
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -1999,7 +1999,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 //wheelMove event for scroller
-$("#scrollcontent").ejScroller({
+$("#scrollContent").ejScroller({
    wheelMove: function (args) {}
 });  
 </script>    
@@ -2065,7 +2065,7 @@ type</td>
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -2087,7 +2087,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 //wheelStart event for scroller
-$("#scrollcontent").ejScroller({
+$("#scrollContent").ejScroller({
    wheelStart: function (args) {}
 });  
 </script>     
@@ -2161,7 +2161,7 @@ scrollData</td>
 
 {% highlight html %}
  
-<div id="scrollcontent" style="width:900px;" >
+<div id="scrollContent" style="width:900px;" >
 <div>
 <p>Model view controller (MVC) is a software architecture pattern which separates the
 representation of information from the user's interaction with it.
@@ -2183,7 +2183,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 //wheelStop event for scroller
-$("#scrollcontent").ejScroller({
+$("#scrollContent").ejScroller({
    wheelStop: function (args) {}
 });  
 </script>     

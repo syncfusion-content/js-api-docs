@@ -35,13 +35,13 @@ $(element).ejRadioButton()
 
 
 {% highlight html %}
-<input type="radio" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>
-<br/> <input type="radio" name="radiobutn" id="radiobtn1"/>
-<label for="radiobtn1"> Fresher </label>
+<input type="radio" id="radioButton"/>
+<label for="radioButton">Experienced</label>
+<br/> <input type="radio" name="radioButton" id="radioButton1"/>
+<label for="radioButton1"> Fresher </label>
 <script>
-$("#radiobtn").ejRadioButton({checked:true});
-$("#radiobtn1").ejRadioButton();
+$("#radioButton").ejRadioButton({checked:true});
+$("#radioButton1").ejRadioButton();
 </script>{% endhighlight %}
 
 
@@ -88,14 +88,14 @@ Specifies the check attribute of the Radio Button.
 
 {% highlight html %}
  
-<input type="radio" name="radiobutn" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>
-<br/> <input type="radio" name="radiobutn" id="radiobtn1"/>
-<label for="radiobtn1">Fresher </label>
+<input type="radio" name="radioButton" id="radioButton"/>
+<label for="radioButton">Experienced</label>
+<br/> <input type="radio" name="radioButton" id="radioButton1"/>
+<label for="radioButton1">Fresher </label>
 <script>
 //To set check API value during initialization  
-        $("#radiobtn").ejRadioButton({ checked:  true });       
-        $("#radiobtn1").ejRadioButton({ checked:  true });
+        $("#radioButton").ejRadioButton({ checked:  true });       
+        $("#radioButton1").ejRadioButton({ checked:  true });
 </script>{% endhighlight %}
 
 
@@ -126,14 +126,14 @@ Specify the CSS class to RadioButton to achieve custom theme.
 
 {% highlight html %}
  
-<input type="radio" name="radiobutn" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>
-<br/> <input type="radio" name="radiobutn" id="radiobtn1"/>
-<label for="radiobtn1">Fresher </label>
+<input type="radio" name="radioButton" id="radioButton"/>
+<label for="radioButton">Experienced</label>
+<br/> <input type="radio" name="radioButton" id="radioButton1"/>
+<label for="radioButton1">Fresher </label>
 <script>
 // Set the root class for RadioButton control theme. This cssClass API helps to use custom skinning option for RadioButton control. By defining the root class using this API, we need to include this root class in CSS.                       
-        $("#radiobtn").ejRadioButton({cssClass: "gradient-lime"});
-        $("#radiobtn1").ejRadioButton({cssClass: "gradient-lime"});
+        $("#radioButton").ejRadioButton({cssClass: "gradient-lime"});
+        $("#radioButton1").ejRadioButton({cssClass: "gradient-lime"});
 </script>{% endhighlight %}
 
 
@@ -164,15 +164,15 @@ Specifies the RadioButton control state.
 
 {% highlight html %}
  
-<input type="radio" name="radiobutn" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>
-<br/> <input type="radio" name="radiobutn" id="radiobtn1"/>
-<label for="radiobtn1">Fresher </label>
+<input type="radio" name="radioButton" id="radioButton"/>
+<label for="radioButton">Experienced</label>
+<br/> <input type="radio" name="radioButton" id="radioButton1"/>
+<label for="radioButton1">Fresher </label>
 <script>
 // Enable RadioButton on initialization. 
         //To set width API value 
-         $("#radiobtn").ejRadioButton ({ enabled: true });      
-         $("#radiobtn1").ejRadioButton ({ enabled: true });     
+         $("#radioButton").ejRadioButton ({ enabled: true });      
+         $("#radioButton1").ejRadioButton ({ enabled: true });     
 </script>{% endhighlight %}
 
 
@@ -203,14 +203,14 @@ Specifies the enablePersistence property for RadioButton while initialization. T
 
 {% highlight html %}
  
-<input type="radio" name="radiobutn" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>
-<br/> <input type="radio" name="radiobutn" id="radiobtn1"/>
-<label for="radiobtn1">Fresher </label>
+<input type="radio" name="radioButton" id="radioButton"/>
+<label for="radioButton">Experienced</label>
+<br/> <input type="radio" name="radioButton" id="radioButton1"/>
+<label for="radioButton1">Fresher </label>
 <script>
 // To set enablePersistence API value 
-$("#radiobtn").ejRadioButton({ enablePersistence: false });     
-$("#radiobtn1").ejRadioButton({ enablePersistence: false });
+$("#radioButton").ejRadioButton({ enablePersistence: false });     
+$("#radioButton1").ejRadioButton({ enablePersistence: false });
 </script>{% endhighlight %}
 
 
@@ -241,14 +241,14 @@ Specify the Right to Left direction to RadioButton
 
 {% highlight html %}
  
-<input type="radio" name="radiobutn" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>
-<br/> <input type="radio" name="radiobutn" id="radiobtn1"/>
-<label for="radiobtn1">Fresher </label>
+<input type="radio" name="radioButton" id="radioButton"/>
+<label for="radioButton">Experienced</label>
+<br/> <input type="radio" name="radioButton" id="radioButton1"/>
+<label for="radioButton1">Fresher </label>
 <script>
 // Set the enableRTL during initialization.                     
-        $("#radiobtn").ejRadioButton({  enableRTL:true });      
-        $("#radiobtn1").ejRadioButton({  enableRTL:true });     
+        $("#radioButton").ejRadioButton({  enableRTL:true });      
+        $("#radioButton1").ejRadioButton({  enableRTL:true });     
 </script>{% endhighlight %}
 
 
@@ -279,13 +279,13 @@ Specifies the HTML Attributes of the Checkbox
 
 {% highlight html %}
  
-<input type="radio" name="radiobutn" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>
-<br/> <input type="radio" name="radiobutn" id="radiobtn1"/>
-<label for="radiobtn1">Fresher </label>
+<input type="radio" name="radioButton" id="radioButton"/>
+<label for="radioButton">Experienced</label>
+<br/> <input type="radio" name="radioButton" id="radioButton1"/>
+<label for="radioButton1">Fresher </label>
 <script>
 // Set the htmlAttributes during initialization.                        
-        $("#radiobtn").ejRadioButton({ htmlAttributes: {disabled:"disabled"} });        
+        $("#radioButton").ejRadioButton({ htmlAttributes: {disabled:"disabled"} });        
 </script>{% endhighlight %}
 
 
@@ -316,14 +316,14 @@ Specifies the id attribute for the Radio Button while initialization.
 
 {% highlight html %}
  
-<input type="radio" name="radiobtn" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>
-<br/> <input type="radio" name="radiobtn" id="radiobtn1"/>
-<label for="radiobtn1">Fresher </label>
+<input type="radio" name="radioButton" id="radioButton"/>
+<label for="radioButton">Experienced</label>
+<br/> <input type="radio" name="radioButton" id="radioButton1"/>
+<label for="radioButton1">Fresher </label>
 <script>
 //To set id API value during initialization  
-        $("#radiobtn").ejRadioButton({  id: "sync" });
-        $("#radiobtn1").ejRadioButton({  id: "sync1" });
+        $("#radioButton").ejRadioButton({  id: "sync" });
+        $("#radioButton1").ejRadioButton({  id: "sync1" });
 </script>{% endhighlight %}
 
 
@@ -354,14 +354,14 @@ Specify the idPrefix value to be added before the current id of the RadioButton.
 
 {% highlight html %}
  
-<input type="radio" name="radiobutn" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>
-<br/> <input type="radio" name="radiobutn" id="radiobtn1"/>
-<label for="radiobtn1">Fresher </label>
+<input type="radio" name="radioButton" id="radioButton"/>
+<label for="radioButton">Experienced</label>
+<br/> <input type="radio" name="radioButton" id="radioButton1"/>
+<label for="radioButton1">Fresher </label>
 <script>
 // To set  idPrefix  API value
-$("#radiobtn").ejRadioButton ({  idPrefix : "ej" }); 
-$("#radiobtn1").ejRadioButton ({  idPrefix : "ej" }); 
+$("#radioButton").ejRadioButton ({  idPrefix : "ej" }); 
+$("#radioButton1").ejRadioButton ({  idPrefix : "ej" }); 
 </script>{% endhighlight %}
 
 
@@ -439,14 +439,14 @@ Medium</td>
 
 {% highlight html %}
  
-<input type="radio" name="radiobutn" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>
-<br/> <input type="radio" name="radiobutn" id="radiobtn1"/>
-<label for="radiobtn1">Fresher </label>
+<input type="radio" name="radioButton" id="radioButton"/>
+<label for="radioButton">Experienced</label>
+<br/> <input type="radio" name="radioButton" id="radioButton1"/>
+<label for="radioButton1">Fresher </label>
 <script>
 //To set size API value during initialization  
-        $("#radiobtn").ejRadioButton({  size: "medium"});       
-        $("#radiobtn1").ejRadioButton({  size: "medium"});
+        $("#radioButton").ejRadioButton({  size: "medium"});       
+        $("#radioButton1").ejRadioButton({  size: "medium"});
 </script>{% endhighlight %}
 
 
@@ -499,13 +499,13 @@ Set the jQuery validation error message in radio button.
 
 {% highlight html %}
  
-<input type="radio" name="radiobutn" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>
-<br/> <input type="radio" name="radiobutn" id="radiobtn1"/>
-<label for="radiobtn1">Fresher </label>
+<input type="radio" name="radioButton" id="radioButton"/>
+<label for="radioButton">Experienced</label>
+<br/> <input type="radio" name="radioButton" id="radioButton1"/>
+<label for="radioButton1">Fresher </label>
 <script>
 //To set validationMessage API during initialization  
-$("#radiobtn").ejRadioButton ({   
+$("#radioButton").ejRadioButton ({   
   validationRules:{                     
           required:true
         },
@@ -513,7 +513,7 @@ $("#radiobtn").ejRadioButton ({
           required: "Required Radio value"
         }
 });
-$("#radiobtn1").ejRadioButton ();
+$("#radioButton1").ejRadioButton ();
 </script>{% endhighlight %}
 
 
@@ -544,18 +544,18 @@ Set the jQuery validation rules in radio button.
 
 {% highlight html %}
  
-<input type="radio" name="radiobutn" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>
-<br/> <input type="radio" name="radiobutn" id="radiobtn1"/>
-<label for="radiobtn1">Fresher </label>
+<input type="radio" name="radioButton" id="radioButton"/>
+<label for="radioButton">Experienced</label>
+<br/> <input type="radio" name="radioButton" id="radioButton1"/>
+<label for="radioButton1">Fresher </label>
 <script>
 //To set validationRules API during initialization  
-$("#radiobtn").ejRadioButton ({   
+$("#radioButton").ejRadioButton ({   
   validationRules:{                     
           required:true
         }
 });
-$("#radiobtn1").ejRadioButton ();
+$("#radioButton1").ejRadioButton ();
 </script>{% endhighlight %}
 
 
@@ -586,14 +586,14 @@ Specifies the value attribute of the Radio Button.
 
 {% highlight html %}
  
-<input type="radio" name="radiobutn" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>
-<br/> <input type="radio" name="radiobutn" id="radiobtn1"/>
-<label for="radiobtn1">Fresher </label>
+<input type="radio" name="radioButton" id="radioButton"/>
+<label for="radioButton">Experienced</label>
+<br/> <input type="radio" name="radioButton" id="radioButton1"/>
+<label for="radioButton1">Fresher </label>
 <script>
 //To set value API value during initialization  
-        $("#radiobtn").ejRadioButton({ value: "Experienced"});
-        $("#radiobtn1").ejRadioButton({ value: "Fresher"});
+        $("#radioButton").ejRadioButton({ value: "Experienced"});
+        $("#radioButton1").ejRadioButton({ value: "Fresher"});
 </script>         {% endhighlight %}
 
 
@@ -619,24 +619,24 @@ To disable the RadioButton
 
 {% highlight html %}
  
-<input type="radio" name="radiobutn" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>           
+<input type="radio" name="radioButton" id="radioButton"/>
+<label for="radioButton">Experienced</label>           
 <script> 
 // Create RadioButton
-$("#radiobtn").ejRadioButton();
-var chkObj = $("#radiobtn").data("ejRadioButton");
-chkObj.disable();
+$("#radioButton").ejRadioButton();
+var checkObj = $("#radioButton").data("ejRadioButton");
+checkObj.disable();
 </script>{% endhighlight %}
 
 
 {% highlight html %}
  
-<input type="radio" name="radiobutn" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>
+<input type="radio" name="radioButton" id="radioButton"/>
+<label for="radioButton">Experienced</label>
 <script> 
 // disable the RadioButton
-$("#radiobtn").ejRadioButton();
-$("#radiobtn").ejRadioButton("disable");        
+$("#radioButton").ejRadioButton();
+$("#radioButton").ejRadioButton("disable");        
 </script>{% endhighlight %}
 
 
@@ -658,24 +658,24 @@ To enable the RadioButton
 
 {% highlight html %}
  
-<input type="radio" name="radiobutn" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>
+<input type="radio" name="radioButton" id="radioButton"/>
+<label for="radioButton">Experienced</label>
 <script> 
 // Create RadioButton
-$("#radiobtn").ejRadioButton();
-var chkObj = $("#radiobtn").data("ejRadioButton");
-chkObj.enable();
+$("#radioButton").ejRadioButton();
+var checkObj = $("#radioButton").data("ejRadioButton");
+checkObj.enable();
 </script>{% endhighlight %}
 
 
 {% highlight html %}
  
-<input type="radio" name="radiobutn" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>
+<input type="radio" name="radioButton" id="radioButton"/>
+<label for="radioButton">Experienced</label>
 <script> 
 // enable the RadioButton
-$("#radiobtn").ejRadioButton();
-$("#radiobtn").ejRadioButton("enable"); 
+$("#radioButton").ejRadioButton();
+$("#radioButton").ejRadioButton("enable"); 
 </script>{% endhighlight %}
 
 
@@ -742,11 +742,11 @@ isInteraction</td>
 
 {% highlight html %}
  
-<input type="radio" name="radiobutn" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>   
+<input type="radio" name="radioButton" id="radioButton"/>
+<label for="radioButton">Experienced</label>   
 <script>
 //beforeChange event for RadioButton
-$("#radiobtn").ejRadioButton({
+$("#radioButton").ejRadioButton({
   beforeChange:function (args){ }
 });  
 </script>         {% endhighlight %}
@@ -811,11 +811,11 @@ isInteraction</td>
 
 {% highlight html %}
  
-<input type="radio" name="radiobutn" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>
+<input type="radio" name="radioButton" id="radioButton"/>
+<label for="radioButton">Experienced</label>
 <script>
 //change event for RadioButton
-$("#radiobtn").ejRadioButton({
+$("#radioButton").ejRadioButton({
   change: function (args){}
 }); 
 </script>          {% endhighlight %}
@@ -868,11 +868,11 @@ type</td>
 
 {% highlight html %}
  
-<input type="radio" name="radiobutn" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>
+<input type="radio" name="radioButton" id="radioButton"/>
+<label for="radioButton">Experienced</label>
 <script>
 // //create event for RadioButton
-$("#radiobtn").ejRadioButton({
+$("#radioButton").ejRadioButton({
   create:function(args){}
 }); 
 </script>          {% endhighlight %}
@@ -925,11 +925,11 @@ type</td>
 
 {% highlight html %}
  
-<input type="radio" name="radiobutn" id="radiobtn"/>
-<label for="radiobtn">Experienced</label>
+<input type="radio" name="radioButton" id="radioButton"/>
+<label for="radioButton">Experienced</label>
 <script>
 // //destroy event for RadioButton
-$("#radiobtn").ejRadioButton({
+$("#radioButton").ejRadioButton({
   destroy:function(args){}
 }); 
 </script>          {% endhighlight %}
