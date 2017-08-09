@@ -13254,11 +13254,11 @@ Controls the visibility of selector.
        </tr>
        <tr>
             <td class="name">DragOnEmptySpace</td>
-            <td class="description last">Enables dragging when click and drag the empty space of the multiple selected nodes.</td>
+            <td class="description last">Enables dragging while selecting the multiple nodes and click on the empty region of the selection rectangle.</td>
        </tr>
        <tr>
             <td class="name">AutoHideThumbs</td>
-            <td class="description last">Show/Hide the selection handles while performing the interaction with selected node.</td>
+            <td class="description last">Show/Hide the selection handles when it is overlapped with each other's.</td>
        </tr>
         <tr>
             <td class="name">All</td>
