@@ -262,7 +262,7 @@ data-ej-text="browser"></li>
 </div>
 <script>
 $(function () {
-$("#defaultRadialMenu").ejRadialMenu({ "cssClass":"customClass" });     
+$("#defaultRadialMenu").ejRadialMenu({ "cssClass":"custom-class" });     
 });
 </script>{% endhighlight %}
 
@@ -274,7 +274,7 @@ $("#defaultRadialMenu").ejRadialMenu({ "cssClass":"customClass" });
 // Gets the cssClass API.               
 $("#defaultRadialMenu").ejRadialMenu ("option", "cssClass");                    
 // Sets the cssClass API
-$("#defaultRadialMenu").ejRadialMenu ("option", "cssClass", "customClass");            
+$("#defaultRadialMenu").ejRadialMenu ("option", "cssClass", "custom-class");            
 </script>{% endhighlight %}
 
 
@@ -821,8 +821,8 @@ $("#radialmenu").ejRadialMenu ("option", "radius", 150);
 
 
 
-### targetElementID `string`
-{:#members:targetElementID}
+### targetElementId `string`
+{:#members:targetElementId}
 
 
 
@@ -846,8 +846,8 @@ Example
 
 {% highlight html %}
  
-// Set Radialmenu targetElementID on initialization. 
-//To set targetElementID API 
+// Set Radialmenu targetElementId on initialization. 
+//To set targetElementId API 
 <div >
 <br />
 <p>
@@ -870,19 +870,19 @@ data-ej-text="browser"></li>
 </div>
 <script>
 $(function () {
-$("#defaultRadialMenu").ejRadialMenu({ "targetElementID":"target" });   
+$("#defaultRadialMenu").ejRadialMenu({ "targetElementId":"target" });   
 });
 </script>{% endhighlight %}
 
 
 {% highlight html %}
  
-//Get or set the Radialmenu targetElementID, after initialization:
+//Get or set the Radialmenu targetElementId, after initialization:
 <script>
-// Gets the targetElementID API.                
-$("#defaultRadialMenu").ejRadialMenu ("option", "targetElementID");                     
-// Sets the targetElementID API
-$("#defaultRadialMenu").ejRadialMenu ("option", "targetElementID", "target");            
+// Gets the targetElementId API.                
+$("#defaultRadialMenu").ejRadialMenu ("option", "targetElementId");                     
+// Sets the targetElementId API
+$("#defaultRadialMenu").ejRadialMenu ("option", "targetElementId", "target");            
 </script>{% endhighlight %}
 
 

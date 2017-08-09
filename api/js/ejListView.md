@@ -212,7 +212,7 @@ Sets the root class for ListView theme. This cssClass API helps to use custom sk
 <script>
 // Set cssClass on initialization. 
 //To set cssClass API value 
-$("#lb").ejListView ({ cssClass: "customClass" });
+$("#lb").ejListView ({ cssClass: "custom-class" });
 </script>{% endhighlight %}
 
 
@@ -223,7 +223,7 @@ $("#lb").ejListView ({ cssClass: "customClass" });
 // Get the cssClass API value.          
  $("#lb").ejListView ("option", "cssClass");                    
 // Set the cssClass API
-$("#lb").ejListView ("option", "cssClass", "customClass");
+$("#lb").ejListView ("option", "cssClass", "custom-class");
 </script>{% endhighlight %}
 
 

@@ -143,7 +143,7 @@ It specifies, whether to enable or disable asynchronous request.
 It specifies the page will be cached in the web browser.
 
 ### ajaxSettings.contentType `string`
-{:#members:ajaxsettings-contentType}
+{:#members:ajaxsettings-contenttype}
 
 It specifies the type of data is send in the query string.
 
@@ -300,7 +300,7 @@ Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range
 </div>
 <script>
 $(function () {
-$("#navigationPane").ejNavigationDrawer("cssClass","customClass");     
+$("#navigationPane").ejNavigationDrawer("cssClass","custom-class");     
 });
 </script>{% endhighlight %}
 
@@ -313,7 +313,7 @@ $(function () {
 // Gets the cssClass API value.         
 $("#navigationPane").ejNavigationDrawer("option", "cssClass"); 
 // Sets the cssClass API        
-$("#navigationPane").ejNavigationDrawer ("option", "cssClass", "customClass");  
+$("#navigationPane").ejNavigationDrawer ("option", "cssClass", "custom-class");  
 });
 </script>  {% endhighlight %}
 
