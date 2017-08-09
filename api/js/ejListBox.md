@@ -1362,7 +1362,7 @@ Example
 {% endhighlight %}
 
 ### mergeData(data)
-{:#methods:mergeData}
+{:#methods:mergedata}
 
 Merges the given data with the existing data items in the listbox.
 
