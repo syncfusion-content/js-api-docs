@@ -495,7 +495,7 @@ Allows the user to group the field by date. This is applicable only when the for
 
 >**Note**: This is applicable only for Relational datasource with ClientMode.
 
-#### Default Value: null
+#### Default Value: {}
 
 **Example:**
 
@@ -504,8 +504,8 @@ Allows the user to group the field by date. This is applicable only when the for
     $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ fieldName: "Date", format: "date", formatString: "yyyy-MM-dd", delimiter: "-", groupByDate: { } }] } });
 {% endhighlight %}
 
-### dataSource.columns.filterItems.interval `array`
-{:#members:datasource-columns-filteritems-interval}
+### dataSource.columns.groupByDate.interval `array`
+{:#members:datasource-columns-groupbydate-interval}
 
 Contains the collection of formatString to group item from the field.
 
@@ -745,7 +745,7 @@ Allows to set the custom theme for the row headers.
 {% endhighlight %}
 
 ### dataSource.rows.delimiter `string`
-{:#members:datasource-columns-delimiter}
+{:#members:datasource-rows-delimiter}
 
 Allows the user to set delimiter for date type format in **formatString**. This is applicable for **groupByDate** option for row/column headers.
 
@@ -880,24 +880,24 @@ Contains the collection of items to be included/excluded among the field members
     $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
 {% endhighlight %}
 
-### dataSource.columns.groupByDate `object`
-{:#members:datasource-columns-groupbydate}
+### dataSource.rows.groupByDate `object`
+{:#members:datasource-rows-groupbydate}
 
 Allows the user to group the field by date. This is applicable only when the format is set as "date".
 
 >**Note**: This is applicable only for Relational datasource with ClientMode.
 
-#### Default Value: null
+#### Default Value: {}
 
 **Example:**
 
 {% highlight javascript %}
  
-    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ fieldName: "Date", format: "date", formatString: "yyyy-MM-dd", delimiter: "-", groupByDate: { } }] } });
+    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ fieldName: "Date", format: "date", formatString: "yyyy-MM-dd", delimiter: "-", groupByDate: { } }] } });
 {% endhighlight %}
 
-### dataSource.columns.filterItems.interval `array`
-{:#members:datasource-columns-filteritems-interval}
+### dataSource.rows.groupByDate.interval `array`
+{:#members:datasource-rows-groupbydate-interval}
 
 Contains the collection of formatString to group item from the field.
 
@@ -907,7 +907,7 @@ Contains the collection of formatString to group item from the field.
 
 {% highlight javascript %}
  
-    $("#PivotGrid1").ejPivotGrid({dataSource: { columns: [{ fieldName: "Date", format: "date", formatString: "yyyy-MM-dd", delimiter: "-", groupByDate: { interval: ["yyyy", "qqq", "MMMM", "dd-MMM"] } }] } });
+    $("#PivotGrid1").ejPivotGrid({dataSource: { rows: [{ fieldName: "Date", format: "date", formatString: "yyyy-MM-dd", delimiter: "-", groupByDate: { interval: ["yyyy", "qqq", "MMMM", "dd-MMM"] } }] } });
 {% endhighlight %}
 
 ### dataSource.values `array`
