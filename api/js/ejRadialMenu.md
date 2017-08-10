@@ -822,7 +822,7 @@ $("#radialmenu").ejRadialMenu ("option", "radius", 150);
 
 
 ### targetElementId `string`
-{:#members:targetElementId}
+{:#members:targetelementid}
 
 
 
