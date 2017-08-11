@@ -529,7 +529,7 @@ Allows the user to set the custom name for the service method responsible for in
 
 {% highlight javascript %}
  
-    $("#PivotTreeMap1").ejPivotTreeMap({ serviceMethodSettings: { initialize: "IninlizeTreeMapMyMethod" } });
+    $("#PivotTreeMap1").ejPivotTreeMap({ serviceMethodSettings: { initialize: "InitializeTreeMapMyMethod" } });
 {% endhighlight %}
 
 ### serviceMethodSettings.drillDown `string`
