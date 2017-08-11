@@ -1115,7 +1115,7 @@ Allows the user to set the custom name for the service method responsible for in
 
 {% highlight javascript %}
  
-    $("#PivotChart1").ejPivotChart({ serviceMethodSettings: { initialize: "IninlizeChartMyMethod" } });
+    $("#PivotChart1").ejPivotChart({ serviceMethodSettings: { initialize: "InitializeChartMyMethod" } });
 {% endhighlight %}
  
  ### serviceMethodSettings.paging `string`
