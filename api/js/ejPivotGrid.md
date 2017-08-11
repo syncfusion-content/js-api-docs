@@ -1950,7 +1950,7 @@ Allows the user to adjust the width of the columns dynamically within given widg
 ### resizeColumnsToFit `boolean`
 {:#members:resizecolumnstofit}
 
-Allows the user to fit the width of the columns based on its content. This is only applicable for **enableColumnResizing** option.
+Allows the user to fit the width of the column based on its maximum text width.
 
 #### Default Value: false
 
@@ -1959,6 +1959,20 @@ Allows the user to fit the width of the columns based on its content. This is on
 {% highlight javascript %}
  
     $("#PivotGrid1").ejPivotGrid({ resizeColumnsToFit: true });
+{% endhighlight %}
+
+### enableContextMenu `boolean`
+{:#members:enablecontextmenu}
+
+Allows the user to enable/disable the context menu of Pivot buttons in the PivotGrid.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ enableContextMenu: true });
 {% endhighlight %}
 
 ### enableVirtualScrolling `boolean`
@@ -2433,6 +2447,34 @@ Allows the user to set the custom name for the service method responsible for pe
     $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { drillThroughDataTable: "MyDrillThroughDataTableMethod" } });
 {% endhighlight %}
 
+### serviceMethodSettings.valueSorting `string`
+{:#members:servicemethodsettings-valuesorting}
+
+Allows the user to set the custom name for the service method responsible for performing value sorting operation in PivotGrid.
+
+#### Default Value: "ValueSorting"
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { valueSorting: "MyValueSorting" } });
+{% endhighlight %}
+
+### serviceMethodSettings.removeButton `string`
+{:#members:servicemethodsettings-removebutton}
+
+Allows the user to set the custom name for the service method responsible for removing pivot button from GroupingBar/Field List.
+
+#### Default Value: "RemoveButton"
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { removeButton: "MyRemoveButton" } });
+{% endhighlight %}
+
 ### serviceMethodSettings.writeBack `string`
 {:#members:servicemethodsettings-writeback}
 
@@ -2542,6 +2584,19 @@ This function re-renders the control with the report available at that instant.
     gridObj.refreshControl();
 {% endhighlight %}
 
+### destroy()
+{:#methods:destroy}
+
+This function Destroy the PivotGrid widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+
+**Example:**
+
+{% highlight javascript %}
+
+    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
+    gridObj.destroy();
+{% endhighlight %}
+
 ### calculateCellWidths()
 {:#methods:calculatecellwidths}
 
@@ -2559,8 +2614,8 @@ object
     var gridDimensions = gridObj.calculateCellWidths();
 {% endhighlight %}
 
-### createConditionalDialog()
-{:#methods:createconditionaldialog}
+### openConditionalFormattingDialog()
+{:#methods:openconditionalformattingdialog}
 
 This function creates the conditional formatting dialog to apply conditional formatting for PivotGrid control.
 
@@ -2569,7 +2624,7 @@ This function creates the conditional formatting dialog to apply conditional for
 {% highlight javascript %}
 
     var gridObj = $("#PivotGrid1").data("ejPivotGrid");
-    gridObj.createConditionalDialog();
+    gridObj.openConditionalFormattingDialog();
 {% endhighlight %}
 
 ### saveReport()
