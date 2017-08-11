@@ -203,8 +203,8 @@ Sets the Pivot control bound with this PivotSchemaDesigner.
     $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ pivotControl: controlObject });
 {% endhighlight %}
 
-### serviceMethod `object`
-{:#members:servicemethod}
+### serviceMethods `object`
+{:#members:servicemethods}
 
 Allows the user to set custom name for the methods at service-end, communicated during AJAX post.
 
@@ -214,7 +214,7 @@ Allows the user to set custom name for the methods at service-end, communicated 
 
 {% highlight javascript %}
  
-    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ serviceMethod: { initialize: "InitializeGrid"} });
+    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ serviceMethods: { initialize: "InitializeGrid"} });
 {% endhighlight %}
 
 
@@ -401,6 +401,18 @@ Re-renders the control with the data source bound to the pivot control at that i
     schemaObj.refreshControl();
 {% endhighlight %}
 
+### destroy()
+{:#methods:destroy}
+
+This function Destroy the PivotSchemaDesigner widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+   var schemaObj = $("#PivotSchemaDesigner1").data("ejPivotSchemaDesigner");
+    schemaObj.destroy();
+{% endhighlight %}
 
 ## Events
 

@@ -1486,6 +1486,20 @@ Allows to set the page number in series axis to be loaded by default.
     $("#PivotClient1").ejPivotClient({ dataSource: { pagerOptions: { seriesCurrentPage: 7 } } }); 
 {% endhighlight %}
 
+### enableDrillThrough `boolean`
+{:#members:enabledrillthrough}
+
+Enables the Drill-Through feature which retrieves the raw items that are used to create the specific cell in PivotGrid.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ enableDrillThrough: true });
+{% endhighlight %}
+
 ### displaySettings `object`
 {:#members:displaysettings}
 
@@ -2056,7 +2070,7 @@ Enables/Disables paging in Member Editor for viewing the large count of members 
 {% endhighlight %}
 
 ### memberEditorPageSize `number`
-{:#members:memberEditorPageSize}
+{:#members:membereditorpagesize}
 
 Allows the user to set the number of members to be displayed in each page of Member Editor on applying paging in it. 
 
@@ -2156,6 +2170,20 @@ Allows the user to enable PivotClient’s responsiveness in the browser layout.
 {% highlight javascript %}
  
     $("#PivotClient1").ejPivotClient({ isResponsive: true });
+{% endhighlight %}
+
+### size `object`
+{:#members:size}
+
+Options to customize the size of the PivotClient control.
+
+#### Default Value: { height: "685px", width: "1000px" }
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ size: { width: "50%" , height: "80%" } });
 {% endhighlight %}
 
 ### locale `string`
@@ -2321,6 +2349,34 @@ Allows the user to set the custom name for the service method responsible for lo
     $("#PivotClient1").ejPivotClient({ serviceMethodSettings: { loadReport: "LoadReportFromDBMyMethod" } }); 
 {% endhighlight %}
 
+### serviceMethodSettings.removeDBReport `string`
+{:#members:servicemethodsettings-removedbreport}
+
+Allows the user to set the custom name for the service method responsible for remove a report collection from the database.
+
+#### Default Value: "RemoveReportFromDB"
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ serviceMethodSettings: { removeDBReport: "RemoveReportFromMyDBMethod" } }); 
+{% endhighlight %}
+
+### serviceMethodSettings.renameDBReport `string`
+{:#members:servicemethodsettings-renamedbreport}
+
+Allows the user to set the custom name for the service method responsible for rename the report collection in the database.
+
+#### Default Value: "RenameReportInDB"
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ serviceMethodSettings: { renameDBReport: "RenameReportInMyDBMethod" } }); 
+{% endhighlight %}
+
 ### serviceMethodSettings.mdxQuery `string`
 {:#members:servicemethodsettings-mdxquery}
 
@@ -2477,6 +2533,34 @@ Allows the user to set the custom name for the service method responsible for up
     $("#PivotClient1").ejPivotClient({  serviceMethodSettings: { paging: "PagingMyMethod" } }); 
 {% endhighlight %}
 
+### serviceMethodSettings.drillThroughHierarchies `string`
+{:#members:servicemethodsettings-drillthroughhierarchies}
+
+Allows the user to set the custom name for the service method responsible for performing drill through operation.
+
+#### Default Value: "DrillThroughHierarchies"
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ serviceMethodSettings: { drillThroughHierarchies: "MyDrillThroughHierarchiesMethod" } });
+{% endhighlight %}
+
+### serviceMethodSettings.drillThroughDataTable `string`
+{:#members:servicemethodsettings-drillthroughdatatable}
+
+Allows the user to set the custom name for the service method responsible for performing drill through operation in data table.
+
+#### Default Value: "DrillThroughDataTable"
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ serviceMethodSettings: { drillThroughDataTable: "MyDrillThroughDataTableMethod" } });
+{% endhighlight %}
+
 ### title `string`
 {:#members:title}
 
@@ -2585,6 +2669,32 @@ Re-renders the control with the report at that instant.
  
     var clientObj = $("#PivotClient1").data("ejPivotClient");
     clientObj.refreshControl();
+{% endhighlight %}
+
+### getActiveTab()
+{:#methods:getactivetab}
+
+Returns the control tab string that displays currently in PivotClient.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var clientObj = $("#PivotClient1").data("ejPivotClient");
+    var report = clientObj.getActiveTab();
+{% endhighlight %}
+
+### destroy()
+{:#methods:destroy}
+
+This function Destroy the PivotClient widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var clientObj = $("#PivotClient1").data("ejPivotClient");
+    clientObj.destroy();
 {% endhighlight %}
 
 ### getOlapReport()
@@ -3026,6 +3136,45 @@ Triggers before rendering the PivotTreeMap.
  
     $("#PivotClient1").ejPivotClient({
         treeMapLoad: function (args) { }
+    });
+{% endhighlight %}
+
+### drillThrough
+{:#events:drillthrough}
+
+Triggers while clicking value cells in PivotGrid. 
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">data</td>
+<td class="type">object</td>
+<td class="description last">return the JSON records of the generated cells on drill-through operation.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotClient.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({
+        drillThrough: function (args) {}
     });
 {% endhighlight %}
 
