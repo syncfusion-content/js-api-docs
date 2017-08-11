@@ -1889,7 +1889,7 @@ Allows user to set the visibility of `Calculated Member` icon in toolbar panel.
 ### showUniqueNameOnPivotButton `boolean`
 {:#members:showuniquenameonpivotbutton}
 
-Allows user to show unique name on pivotbutton.
+Allows user to show unique name on pivot button.
 
 >**Note**: This is only applicable for OLAP data source.
 
