@@ -1059,6 +1059,19 @@ Allows the user to rotate the angle of PivotChart in 3D view.
     $("#PivotChart1").ejPivotChart({ rotation: 45 });
 {% endhighlight %}
 
+### enableContextMenu `boolean`
+{:#members:enablecontextmenu}
+
+Allows the user to enable/disable the control options of PivotChart.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({ enableContextMenu: true });
+{% endhighlight %}
 
 ### serviceMethodSettings `object`
 {:#members:servicemethodsettings}
@@ -1118,7 +1131,7 @@ Allows the user to set the custom name for the service method responsible for in
     $("#PivotChart1").ejPivotChart({ serviceMethodSettings: { initialize: "IninlizeChartMyMethod" } });
 {% endhighlight %}
  
- ### serviceMethodSettings.paging `string`
+### serviceMethodSettings.paging `string`
 {:#members:servicemethodsettings-paging}
 
 Allows the user to set the custom name for the service method responsible for navigating between pages in paged PivotChart.
@@ -1324,7 +1337,7 @@ Sets the PivotEngine required to render the control.
 {% endhighlight %}
 
 ### refreshControl()
-{:#methods:refreshControl}
+{:#methods:refreshcontrol}
 
 Re-renders the control with the data source at the instant.
 
@@ -1337,6 +1350,19 @@ Re-renders the control with the data source at the instant.
     var chartObj = $("#PivotChart1").data("ejPivotChart");
     chartObj.model.dataSource = newDataSource;
     chartObj.refreshControl();
+{% endhighlight %}
+
+### destroy()
+{:#methods:destroy}
+
+This function Destroy the PivotChart widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+
+**Example:**
+
+{% highlight javascript %}
+
+   var chartObj = $("#PivotChart1").data("ejPivotChart");
+    chartObj.destroy();
 {% endhighlight %}
 
 ### generateJSON()
@@ -1507,6 +1533,39 @@ Triggers before any AJAX request is passed from PivotChart to service methods.
 
 {% endhighlight %}
 
+### beforePivotEnginePopulate
+{:#events:beforepivotenginepopulate}
+
+Triggers before Pivot Engine starts to populate.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">chartObj</td>
+<td class="type">object</td>
+<td class="description last">returns the current instance of PivotChart.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart1").ejPivotChart({
+        beforePivotEnginePopulate: function (args) {}
+    });
+{% endhighlight %}
 
 
 ### drillSuccess
