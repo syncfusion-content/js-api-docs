@@ -8076,8 +8076,8 @@ destroy the linear gauge all events bound using this._on will be unbind automati
  
 <script>
 $("#LinearGauge1").ejLinearGauge();
-var linearGaugeobj = $("#LinearGauge1").data("ejLinearGauge");
-linearGaugeobj.destroy();
+var linearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
+linearGaugeObj.destroy();
 </script>{% endhighlight %}
 
 

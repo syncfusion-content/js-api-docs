@@ -357,7 +357,7 @@ Specifies the fontFamily of caption. Caption text render with this fontFamily
 <div id="bulletGraph1"></div> 
 <script>
 $("#bulletGraph1").ejBulletGraph({
-captionSettings :{font :{fontFamily : "algerian"}}
+captionSettings :{font :{fontFamily : "Algerian"}}
 });
 </script>{% endhighlight %}
 
@@ -6491,8 +6491,8 @@ To destroy the bullet graph
  
 <script>
 // Destroy Bullet graph
-var gphObj = $("#bulletGraph1").data("ejBulletGraph");
-gphObj.destroy(); // destroy the graph
+var graphObj = $("#bulletGraph1").data("ejBulletGraph");
+graphObj.destroy(); // destroy the graph
 </script>{% endhighlight %}
 
 
@@ -6537,8 +6537,8 @@ To redraw the bullet graph
  
 <script>
 // Create Bullet graph
-var gphObj = $("#bulletGraph1").data("ejBulletGraph");
-gphObj.redraw(); // redraw the graph
+var graphObj = $("#bulletGraph1").data("ejBulletGraph");
+graphObj.redraw(); // redraw the graph
 </script>{% endhighlight %}
 
 
