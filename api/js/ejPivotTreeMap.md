@@ -529,7 +529,7 @@ Allows the user to set the custom name for the service method responsible for in
 
 {% highlight javascript %}
  
-    $("#PivotTreeMap1").ejPivotTreeMap({ serviceMethodSettings: { initialize: "IninlizeTreeMapMyMethod" } });
+    $("#PivotTreeMap1").ejPivotTreeMap({ serviceMethodSettings: { initialize: "InitializeTreeMapMyMethod" } });
 {% endhighlight %}
 
 ### serviceMethodSettings.drillDown `string`
@@ -561,7 +561,6 @@ Connects the service using the specified URL for any server updates.
     $("#PivotTreeMap1").ejPivotTreeMap({ url: "/PivotTreeMapService" });
 {% endhighlight %}
 
-
 ## Methods
 
 ### doAjaxPost()
@@ -575,6 +574,19 @@ Performs an asynchronous HTTP (AJAX) request.
  
     var treemapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
     treemapObj.doAjaxPost("POST", "/PivotTreeMapService.svc/Initialize", { "key", "Hello World" }, successEvent, null);
+{% endhighlight %}
+
+### doPostBack()
+{:#methods:dopostback}
+
+Performs an asynchronous HTTP (FullPost) submit.
+
+**Example:**
+
+{% highlight javascript %}
+
+    var treemapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
+    treemapObj.doPostBack("/OlapService/Initialize", { "key", "Hello World" });
 {% endhighlight %}
 
 ### getOlapReport()
@@ -680,6 +692,18 @@ This function receives the update from service-end, which would be utilized for 
     treeMapObj.renderControlSuccess({ "OlapReport": this.getOlapReport(), "JsonRecords": this.getJSONRecords() });
 {% endhighlight %}
 
+### destroy()
+{:#methods:destroy}
+
+This function Destroy the PivotTreemap widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+   var treemapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
+    treemapObj.destroy();
+{% endhighlight %}
 
 ## Events
 
