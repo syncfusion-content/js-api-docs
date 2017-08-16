@@ -2048,7 +2048,7 @@ Specifies the legend label value for rangeColorMapping.
 
 {% highlight js %}
   
-// Set the legendlabel value for rangeColorMapping during initialization.                       
+// Set the legend label value for rangeColorMapping during initialization.                       
    $("#container").ejTreeMap({rangeColorMapping: [{ legendlabel: "1% Growth" }]})
 
 {% endhighlight %}
@@ -2056,13 +2056,13 @@ Specifies the legend label value for rangeColorMapping.
 
 {% highlight js %}
  
-//Get or set the legendlabel value for rangeColorMapping after initialization:
+//Get or set the legend label value for rangeColorMapping after initialization:
 
-  //Gets the legendlabel value for rangeColorMapping from map.
+  //Gets the legend label value for rangeColorMapping from map.
 
   var property =$("#container").data("ejTreeMap").model.rangeColorMapping.legendlabel;
 
-  //Sets the legendlabel value for rangeColorMapping to map.
+  //Sets the legend label value for rangeColorMapping to map.
 
   $("#container").data("ejTreeMap").model.rangeColorMapping.legendlabel  = "1% Growth";
 
@@ -2405,7 +2405,7 @@ Specify levels of treemap for grouped visualization of data
   
   //Sets the levels to map.
   
-  $("#container").data("ejTreeMap").model.levels[levelIndex]  = { groupPath: "Continent", groupGap: 5, headerHeight: 30, headerTemplate: 'headertemplate' };
+  $("#container").data("ejTreeMap").model.levels[levelIndex]  = { groupPath: "Continent", groupGap: 5, headerHeight: 30, headerTemplate: 'Template' };
 
 {% endhighlight %}
 

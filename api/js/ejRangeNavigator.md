@@ -3235,7 +3235,7 @@ Specifies the label font style. Labels render with the specified font style..See
 <div id="RangeNavigator"></div> 
 <script>
         $("#container").ejRangeNavigator({
-   labelSettings:{style:{ font:{style:"Noraml"}}},
+   labelSettings:{style:{ font:{style:"Normal"}}},
    });
 </script>{% endhighlight %}
 
@@ -6442,7 +6442,7 @@ Toggles the visibility of axis in range navigator.
 <div id="RangeNavigator"></div> 
 <script>
         $("#container").ejRangeNavigator({
-   valueAxisSettings:{visble: true}
+   valueAxisSettings:{visible: true}
    });
 </script>  {% endhighlight %}
 
