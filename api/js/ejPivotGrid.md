@@ -507,7 +507,7 @@ Allows the user to group the field by date. This is applicable only when the for
 ### dataSource.columns.groupByDate.interval `array`
 {:#members:datasource-columns-groupbydate-interval}
 
-Specifies the intervals to seperating date as different periods.
+Specifies the intervals to seperating the date and time.
 
 #### Default Value: []
 
@@ -899,7 +899,7 @@ Allows the user to group the field by date. This is applicable only when the for
 ### dataSource.rows.groupByDate.interval `array`
 {:#members:datasource-rows-groupbydate-interval}
 
-Contains the collection of formatString to group item from the field.
+Specifies the intervals to seperating the date and time.
 
 #### Default Value: []
 
