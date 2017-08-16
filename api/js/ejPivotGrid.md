@@ -1892,7 +1892,7 @@ Allows the user to adjust the width of the columns dynamically within given widg
 ### resizeColumnsToFit `boolean`
 {:#members:resizecolumnstofit}
 
-Allows the user to fit the width of the column based on its maximum text width.
+Allows the user to fit the column width its maximum text size.
 
 #### Default Value: false
 
@@ -1906,7 +1906,7 @@ Allows the user to fit the width of the column based on its maximum text width.
 ### enableContextMenu `boolean`
 {:#members:enablecontextmenu}
 
-Allows the user to enable/disable the context menu of Pivot buttons in the PivotGrid.
+Allows the user to enable/disable the context menu of cells in the PivotGrid.
 
 #### Default Value: false
 
