@@ -755,7 +755,7 @@ $("#container").ejSunburstChart({
 ### tooltip.opacity `number`
 {:#members:tooltip-opacity}
 
-Sets the opacity of the dispalyed tooltip
+Sets the opacity of the displayed tooltip
 
 #### Default Value
 
@@ -1056,7 +1056,7 @@ Font family of the data label.
  
  
 $("#container").ejSunburstChart({
-    dataLabelSettings :{ font :{fontFamily : "algerian"}}                 
+    dataLabelSettings :{ font :{fontFamily : "Algerian"}}                 
 });
 {% endhighlight %}
 
@@ -2467,7 +2467,7 @@ Font family for legend item text.
  
 $("#container").ejSunburstChart({
 
-   legend :{ font :{fontFamily : "algerian"}}                    
+   legend :{ font :{fontFamily : "Algerian"}}                    
 
 });
 
@@ -3923,7 +3923,7 @@ Fires before rendering the datalabel
 
 {% highlight js %}
  
-//datalabelrendering event for sunburst
+//dataLabelRendering event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -3984,7 +3984,7 @@ Fires before rendering each segment
 
 {% highlight js %}
  
-//segmentrendering event for sunburst
+//segmentRendering event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -4047,7 +4047,7 @@ Fires before rendering sunburst title.
 
 {% highlight js %}
  
-//titlerendering event for sunburst
+//titleRendering event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -4109,7 +4109,7 @@ Fires during initialization of tooltip.
 
 {% highlight js %}
  
-//tooltipinitialize event for sunburst
+//tooltipInitialize event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -4171,7 +4171,7 @@ Fires after clicking the point in sunburst
 
 {% highlight js %}
  
-//pointregionclick event for sunburst
+//pointRegionClick event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -4232,7 +4232,7 @@ Fires while moving the mouse over sunburst points
 
 {% highlight js %}
  
-//pointregionmousemove event for sunburst
+//pointRegionMouseMove event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -4294,7 +4294,7 @@ Fires when clicking the point to perform drilldown.
 
 {% highlight js %}
  
-//drilldownclick event for sunburst
+//drillDownClick event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -4356,7 +4356,7 @@ Fires when resetting drilldown points.
 
 {% highlight js %}
  
-//drilldownback event for sunburst
+//drillDownBack event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -4419,7 +4419,7 @@ Fires after resetting the sunburst points
 
 {% highlight js %}
  
-//drilldownreset event for sunburst
+//drillDownReset event for sunburst
 
 $("#container").ejSunburstChart({
 

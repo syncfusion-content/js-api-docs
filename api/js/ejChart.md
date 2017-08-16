@@ -955,7 +955,7 @@ Specifies the downloading filename
  
 $("#container").ejChart({
 
-     exportSettings: { filename : "mychart" }
+     exportSettings: { filename : "myChart" }
                           
 });
 
@@ -1798,7 +1798,7 @@ Relative width of the columns in column type series. Value ranges from 0 to 1. W
 
 $('#container').ejChart({
 
-    commonseriesoptions: {
+    commonSeriesOptions: {
     
         //Width of columns in column type series
 		columnWidth: 0.8
@@ -1842,7 +1842,7 @@ Spacing between columns of different series. Value ranges from 0 to 1
 
 $('#container').ejChart({
 
-    commonseriesoptions: {
+    commonSeriesOptions: {
     
         //20% Spacing between columns
 		columnWidth: 0.2
@@ -1985,7 +1985,7 @@ commonSeriesOptions : {dataSource: data }
 ### commonSeriesOptions.cardinalSplineTension `number`
 {:#members:commonseriesoptions-cardinalsplinetension} 
 
-Specifies spline tension value for cardianal spline type. Value ranges from 0 to 1.
+Specifies spline tension value for cardinal spline type. Value ranges from 0 to 1.
 
 #### Default Value
 
@@ -3914,7 +3914,7 @@ Font family of the data label.
  
  
 $("#container").ejChart({
-commonSeriesOptions :{marker :{dataLabel :{ font :{fontFamily : "algerian"}}}}                 
+commonSeriesOptions :{marker :{dataLabel :{ font :{fontFamily : "Algerian"}}}}                 
 });
 {% endhighlight %}
 
@@ -4550,7 +4550,7 @@ Custom template to format the data label content. Use “point.x” and “point
  
  
 $("#container").ejChart({
-commonseriesoptions : { marker : { dataLabel : { template : "LabelTemplateID" }}}                 
+commonSeriesOptions : { marker : { dataLabel : { template : "LabelTemplateID" }}}                 
 });
 
 {% endhighlight %}
@@ -4579,7 +4579,7 @@ Name of a field in data source, where datalabel text is displayed.
  
  
 $("#container").ejChart({
-commonseriesoptions : { marker : { dataLabel : { textMappingName : "TextFieldName" }}}                 
+commonSeriesOptions : { marker : { dataLabel : { textMappingName : "TextFieldName" }}}                 
 });
 
 {% endhighlight %}
@@ -6428,7 +6428,7 @@ Name of the property in the datasource that contains open value for the series.
  
  
 $("#container").ejChart({
-commonSeriesOptions : {open: "oepn" }                   
+commonSeriesOptions : {open: "open" }                   
 });
 {% endhighlight %}
 
@@ -11538,7 +11538,7 @@ Font family for legend item text.
  
 $("#container").ejChart({
 
-   legend :{ font :{fontFamily : "algerian"}}                    
+   legend :{ font :{fontFamily : "Algerian"}}                    
 
 });
 
@@ -16801,7 +16801,7 @@ Font family of the title text.
 
 $("#container").ejChart({
 
-    primaryXAxis: { title: { font : { fontFamily : "Algerain"} } }
+    primaryXAxis: { title: { font : { fontFamily : "Algerian"} } }
                       
 });
 
@@ -26434,7 +26434,7 @@ Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/soesgx0m)
 ### series.cardinalSplineTension `number`
 {:#members:series-cardinalsplinetension}
 
-Specifies spline tension values for cardianal spline type.Value ranges from 0 to 1.
+Specifies spline tension values for cardinal spline type.Value ranges from 0 to 1.
 
 #### Default Value
 
@@ -35378,7 +35378,7 @@ Text to be displayed in sub title.
  
 $("#container").ejChart({
 
-   title: { subTitle: { text : "Performace chart" } }                      
+   title: { subTitle: { text : "Performance chart" } }                      
 
 });
 
@@ -38053,8 +38053,8 @@ type{% endhighlight %}</td>
 data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last"><ul><li>location - X and Y co-ordinate of the points with respect to chart area.</li>
-    <li>axis - axis of the multilevellabels.</li>
-    <li>multilevellabel - Multi level label details</li>
+    <li>axis - axis of the multi level labels.</li>
+    <li>multiLevelLabel - Multi level label details</li>
 </ul></td>
 </tr>
 </tbody>

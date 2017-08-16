@@ -2102,8 +2102,8 @@ To destroy the digital gauge
  
 <script>
 $("#DigitalGauge1").ejDigitalGauge();
-var gphObj = $("#DigitalGauge1").data("ejDigitalGauge");
-gphObj.destroy();
+var graphObj = $("#DigitalGauge1").data("ejDigitalGauge");
+graphObj.destroy();
 </script>{% endhighlight %}
 
 

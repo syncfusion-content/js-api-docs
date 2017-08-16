@@ -2143,7 +2143,7 @@ set the orientation of legend labels
 
 {% highlight js %}
  
-//To set label orientaion API value for legend setting during initialization 
+//To set label orientation API value for legend setting during initialization 
    $("#container").ejMap({layers: [{legendSettings: {labelOrientation: "vertical"} }]})                      
 
 {% endhighlight %}
@@ -4882,7 +4882,7 @@ set the orientation of legend labels
 
 {% highlight js %}
  
-//To set label orientaion API value for legend setting during initialization 
+//To set label orientation API value for legend setting during initialization 
    $("#container").ejMap({layers: [{ subLayers: [{legendSettings: {labelOrientation: "vertical"} }]} ]});                      
 
 {% endhighlight %}
