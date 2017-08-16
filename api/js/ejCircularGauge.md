@@ -6417,7 +6417,7 @@ Font family for legend item text.
  
 $("#CoreCircularGauge").ejCircularGauge({
 
-   legend :{ font :{fontFamily : "algerian"}}                    
+   legend :{ font :{fontFamily : "Algerian"}}                    
 
 });
 
