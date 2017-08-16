@@ -4485,7 +4485,7 @@ Specifies the read method to get the created nodes from client side to the serve
 ### dataSourceSettings.customFields `array`
 {:#members:datasourcesettings-customfields}
 
-Specifies the customfields to get the updated data from client side to the server side                         
+Specifies the custom fields to get the updated data from client side to the server side                         
 
 #### Default Value:
 
@@ -4606,7 +4606,7 @@ Sets the unique id of the connection data source item
 ### dataSourceSettings.connectionDataSource.sourceNode `string`
 {:#members:datasourcesettings-connectiondatasource-sourcenode}
 
-Sets the sourcenode of the connection data source item
+Sets the source node of the connection data source item
 
 #### Default Value:
 
@@ -4636,7 +4636,7 @@ Sets the sourcenode of the connection data source item
 ### dataSourceSettings.connectionDataSource.targetNode `string`
 {:#members:datasourcesettings-connectiondatasource-targetnode}
 
-Sets the targetnode of the connection data source item
+Sets the target node of the connection data source item
 
 #### Default Value:
 
@@ -4666,7 +4666,7 @@ Sets the targetnode of the connection data source item
 ### dataSourceSettings.connectionDataSource.sourcePointX `string`
 {:#members:datasourcesettings-connectiondatasource-sourcepointx}
 
-Sets the sourcepoint-x value of the connection data source item
+Sets the sourcePointX value of the connection data source item
 
 #### Default Value:
 
@@ -4696,7 +4696,7 @@ Sets the sourcepoint-x value of the connection data source item
 ### dataSourceSettings.connectionDataSource.sourcePointY `string`
 {:#members:datasourcesettings-connectiondatasource-sourcepointy}
 
-Sets the sourcePoint-y value of the connection data source item
+Sets the sourcePointY value of the connection data source item
 
 #### Default Value:
 
@@ -4952,7 +4952,7 @@ Specifies the read method which is used to get the data from client side to the 
 ### dataSourceSettings.connectionDataSource.customFields `array`
 {:#members:datasourcesettings-connectiondatasource-customfields}
 
-Specifies the customfields to get the updated data from client side to the server side                         
+Specifies the custom fields to get the updated data from client side to the server side                         
 
 #### Default Value:
 
@@ -5517,7 +5517,7 @@ Defines the fixed node with reference to which, the layout will be arranged and 
 {% highlight html %}
 
 //fixedNode of the layout
-$("#diagramcontent").ejDiagram({ layout: { fixedNode: "nodename"}});
+$("#diagramcontent").ejDiagram({ layout: { fixedNode: "nodeName"}});
 
 {% endhighlight %}
 
@@ -5830,7 +5830,7 @@ Sets the value is used to define the root node of the layout.
 <div id="diagramcontent"></div>
 <script>
     //verticalSpacing of the layout
-    $("#diagramcontent").ejDiagram({layout: { root: 'rootnode' }});
+    $("#diagramcontent").ejDiagram({layout: { root: 'rootNode' }});
 </script>
 {% endhighlight %}
 
@@ -12302,7 +12302,7 @@ Sets the id of svg/html templates. Applicable, if the node is HTML or native.
 <script>
 var nodes;
 nodes=[{ name: "Clayton", width: 100, height:50, offsetX:50, offsetY:50, 
-		addInfo:{source:"clayton.png"},
+		addInfo:{source:"Clayton.png"},
 		type:"native", templateId:"svgTemplate" }];
 $("#diagramcontent").ejDiagram({nodes:nodes});
 
