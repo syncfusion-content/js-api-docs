@@ -4291,7 +4291,7 @@ $("#Grid").ejGrid({
    allowSorting:true,
    showStackedHeader:true,
    stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID"}
-         ,{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
+         ,{headerText:"Logistics",column:"Freight,EmployeeID,OrderDate"}
          ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
            ]}
           ],
@@ -4403,7 +4403,7 @@ $("#Grid").ejGrid({
    allowSorting:true,
    showStackedHeader:true,
    stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID"}
-         ,{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
+         ,{headerText:"Logistics",column:"Freight,EmployeeID,OrderDate"}
          ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
            ]}
           ],
@@ -4437,7 +4437,7 @@ $("#Grid").ejGrid({
    allowSorting:true,
    showStackedHeader:true,
    stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID"}
-         ,{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
+         ,{headerText:"Logistics",column:"Freight,EmployeeID,OrderDate"}
          ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
            ]}
           ],
@@ -4471,7 +4471,7 @@ $("#Grid").ejGrid({
    allowSorting:true,
    showStackedHeader:true,
    stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID"}
-         ,{headerText:"Frieght",column:["Freight","EmployeeID","OrderDate"]}
+         ,{headerText:"Logistics",column:["Freight","EmployeeID","OrderDate"]}
          ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
            ]}
           ],
@@ -4510,7 +4510,7 @@ $("#Grid").ejGrid({
    allowSorting:true,
    showStackedHeader:true,
    stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID", cssClass:
-         "temp"},{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
+         "temp"},{headerText:"Logistics",column:"Freight,EmployeeID,OrderDate"}
          ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
            ]}
           ],
@@ -4544,7 +4544,7 @@ $("#Grid").ejGrid({
    allowSorting:true,
    showStackedHeader:true,
    stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID"}
-         ,{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
+         ,{headerText:"Logistics",column:"Freight,EmployeeID,OrderDate"}
          ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
            ]}
           ],
@@ -4578,7 +4578,7 @@ $("#Grid").ejGrid({
    allowSorting:true,
    showStackedHeader:true,
    stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID", textAlign: 
-         ej.TextAlign.Right},{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
+         ej.TextAlign.Right},{headerText:"Logistics",column:"Freight,EmployeeID,OrderDate"}
          ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
            ]}
           ],
@@ -4615,7 +4615,7 @@ $("#Grid").ejGrid({
    allowSorting:true,
    showStackedHeader:true,
    stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",tooltip:"#colTip",column:"CustomerID", textAlign: 
-         ej.TextAlign.Right},{headerText:"Frieght",tooltip:"#colTip",column:"Freight,EmployeeID,OrderDate"}
+         ej.TextAlign.Right},{headerText:"Logistics",tooltip:"#colTip",column:"Freight,EmployeeID,OrderDate"}
          ,{headerText:"Date &amp; Location Top Level",tooltip:"#colTip",column:"ShipCity"}
            ]}
           ],
