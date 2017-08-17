@@ -1062,7 +1062,7 @@ Allows the user to rotate the angle of PivotChart in 3D view.
 ### enableContextMenu `boolean`
 {:#members:enablecontextmenu}
 
-Allows the user to enable/disable the control options of PivotChart.
+Allows the user to enable/disable the context menu options in the PivotChart.
 
 #### Default Value: false
 
