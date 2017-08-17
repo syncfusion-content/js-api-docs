@@ -10826,6 +10826,42 @@ xlObj.XLRibbon.updateRibbonIcons();
 
 {% endhighlight %}
 
+### XLScroll
+{:#methods:xlscroll}
+
+### XLScroll.scrollToCell(cellAddr)
+{:#methods:xlscroll-scrolltocell}
+
+This method is used to scroll the sheet content to the specified cell address in the Spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">range</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the cell address that you want to scroll to it.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To scroll the sheet to the specified cell address.
+xlObj.XLScroll.scrollToCell("A30");
+</script>
+
+{% endhighlight %}
 
 ### XLSearch
 {:#methods:xlsearch}
