@@ -488,7 +488,6 @@ Contains the collection of items to be included/excluded among the field members
     $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ fieldName: "Country", filterItems: { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
 {% endhighlight %}
 
-
 ### dataSource.rows `array`
 {:#members:datasource-rows}
 
@@ -850,7 +849,6 @@ Contains the collection of items to be included/excluded among the field members
  
     $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ fieldName: "Country", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
 {% endhighlight %}
-
 
 ### dataSource.values `array`
 {:#members:datasource-values}
