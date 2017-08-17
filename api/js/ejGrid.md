@@ -2452,7 +2452,7 @@ Gets or sets a value that indicates whether to persist the grid model state in p
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     allowGrouping: true,
-    enablePresistence:true
+    enablePersistence:true
 });
 </script> 
 {% endhighlight %}
@@ -3603,7 +3603,7 @@ This specifies the grid to drop the grid rows only at particular target element.
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowRowDragAndDrop: true,
-   rowDropSettings: { dropTargetID: "#DestGrid" }
+   rowDropSettings: { dropTargetID: "#OrdersGrid" }
 });
 </script> 
 {% endhighlight %}
@@ -3625,7 +3625,7 @@ This helps in mapping server-side action when rows are dragged from Grid.
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowRowDragAndDrop: true,
-   rowDropSettings: { dropTargetID: "#DestGrid", dragMapper: "Home/DragHandler" }
+   rowDropSettings: { dropTargetID: "#OrdersGrid", dragMapper: "Home/DragHandler" }
 });
 </script> 
 {% endhighlight %}
@@ -3647,7 +3647,7 @@ This helps in mapping server-side action when rows are dropped in Grid.
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowRowDragAndDrop: true,
-   rowDropSettings: { dropTargetID: "#DestGrid", dropMapper: "Home/DragHandler" }
+   rowDropSettings: { dropTargetID: "#OrdersGrid", dropMapper: "Home/DragHandler" }
 });
 </script> 
 {% endhighlight %}
@@ -4577,7 +4577,7 @@ $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowSorting:true,
    showStackedHeader:true,
-   stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID", textalign: 
+   stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID", textAlign: 
          ej.TextAlign.Right},{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
          ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
            ]}
@@ -4614,7 +4614,7 @@ $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowSorting:true,
    showStackedHeader:true,
-   stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",tooltip:"#colTip",column:"CustomerID", textalign: 
+   stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",tooltip:"#colTip",column:"CustomerID", textAlign: 
          ej.TextAlign.Right},{headerText:"Frieght",tooltip:"#colTip",column:"Freight,EmployeeID,OrderDate"}
          ,{headerText:"Date &amp; Location Top Level",tooltip:"#colTip",column:"ShipCity"}
            ]}
