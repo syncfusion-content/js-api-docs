@@ -10856,9 +10856,9 @@ This method is used to scroll the sheet content to the specified cell address in
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var spreadsheetObj = $("#Spreadsheet").data("ejSpreadsheet");
+var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To scroll the sheet to the specified cell address.
-spreadsheetObj.XLScroll.scrollToCell("A30");
+xlObj.XLScroll.scrollToCell("A30");
 </script>
 
 {% endhighlight %}
