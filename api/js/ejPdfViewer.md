@@ -3306,7 +3306,7 @@ Specifies that the opacity of the signature is changed.
 </tr>
 <tr>
 <td class="name">
-perviousColor
+previousColor
 </td>
 <td class="type">
 string
