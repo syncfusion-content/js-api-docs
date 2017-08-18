@@ -2037,7 +2037,7 @@ Allow us to use custom template in order to create TreeView.
 <script>
 // Initialize the TreeView with the template value specified
 $("#treeView").ejTreeView({ 
-   template: "#templatelocaldata"
+   template: "#templateLocalData"
 });
  </script>{% endhighlight %}
 
@@ -3365,7 +3365,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.getNodeIndex($("#book")); // Given TreeView node index postion will be returned.
+treeObj.getNodeIndex($("#book")); // Given TreeView node index position will be returned.
 </script>{% endhighlight %}
 
 
@@ -4993,7 +4993,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.removeNode($("#book")); // Given TreeView node will be removed and childnodes also removed.
+treeObj.removeNode($("#book")); // Given TreeView node will be removed and child nodes also removed.
 </script>{% endhighlight %}
 
 

@@ -218,7 +218,7 @@ Based on the content size, its height is adjusted instead of adding the scrollba
 ### pasteCleanupSettings   `object`
 {:#members:pasteCleanupSettings  }
 
-This API holds configuration setting for paste clenaup behavior.
+This API holds configuration setting for paste cleanup behavior.
 
 #### Default Value
  
@@ -1619,7 +1619,7 @@ Sets the name in the RTE. When the name value is not initialized, the ID value i
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
     // Initializes the RTE with the specified name value.
-    $("#rteSample").ejRTE({ name: "ecommentblog" });
+    $("#rteSample").ejRTE({ name: "ecommentBlog" });
 </script>
 {% endhighlight %}
 

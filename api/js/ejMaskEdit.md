@@ -225,7 +225,7 @@ Specifies the list of HTML attributes to be added to mask edit textbox.
 
     <script>
         //To set htmlAttributes API value during initialization
-        $("#mask").ejMaskEdit({ maskFormat: "99-9999", htmlAttributes: { name:"masktxtbox" } });
+        $("#mask").ejMaskEdit({ maskFormat: "99-9999", htmlAttributes: { name:"maskTextBox" } });
     </script>
 
 {% endhighlight %}
