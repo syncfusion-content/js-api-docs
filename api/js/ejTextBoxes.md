@@ -1211,12 +1211,12 @@ $("#numeric").ejNumericTextbox({value:5});
 $("#currency").ejCurrencyTextbox({value:55});
 $("#percentage").ejPercentageTextbox({value:555});
 // Create Editors
-var numObj = $("#numeric").data("ejNumericTextbox");
-var curObj = $("#currency").data("ejCurrencyTextbox");
-var perObj = $("#percentage").data("ejPercentageTextbox");
-numObj.destroy(); // destroy the numericTextbox
-curObj.destroy(); // destroy the currencyTextbox
-perObj.destroy(); // destroy the percentagTextbox
+var numericObj = $("#numeric").data("ejNumericTextbox");
+var currencyObj = $("#currency").data("ejCurrencyTextbox");
+var percentObj = $("#percentage").data("ejPercentageTextbox");
+numericObj.destroy(); // destroy the numericTextbox
+currencyObj.destroy(); // destroy the currencyTextbox
+percentObj.destroy(); // destroy the percentageTextbox
 </script>{% endhighlight %}
 
 
@@ -1268,12 +1268,12 @@ $("#numeric").ejNumericTextbox({value:20});
 $("#currency").ejCurrencyTextbox({value:400});
 $("#percentage").ejPercentageTextbox({value:2000});
 // Create Editors       
-var numObj = $("#numeric").data("ejNumericTextbox");
-var curObj = $("#currency").data("ejCurrencyTextbox");
-var perObj = $("#percentage").data("ejPercentageTextbox");
-numObj.disable(); // disable the numericTextbox
-curObj.disable(); // disable the currencyTextbox
-perObj.disable(); // disable the percentagTextbox
+var numericObj = $("#numeric").data("ejNumericTextbox");
+var currencyObj = $("#currency").data("ejCurrencyTextbox");
+var percentObj = $("#percentage").data("ejPercentageTextbox");
+numericObj.disable(); // disable the numericTextbox
+currencyObj.disable(); // disable the currencyTextbox
+percentObj.disable(); // disable the percentageTextbox
 </script>
                  {% endhighlight %}
 
@@ -1326,12 +1326,12 @@ $("#numeric").ejNumericTextbox({value:10});
 $("#currency").ejCurrencyTextbox({value:100});
 $("#percentage").ejPercentageTextbox({value:1000});
 // Create Editors
-var numObj = $("#numeric").data("ejNumericTextbox");
-var curObj = $("#currency").data("ejCurrencyTextbox");
-var perObj = $("#percentage").data("ejPercentageTextbox");
-numObj.enable(); // enable the numericTextbox
-curObj.enable(); // enable the currencyTextbox
-perObj.enable(); // enable the percentagTextbox
+var numericObj = $("#numeric").data("ejNumericTextbox");
+var currencyObj = $("#currency").data("ejCurrencyTextbox");
+var percentObj = $("#percentage").data("ejPercentageTextbox");
+numericObj.enable(); // enable the numericTextbox
+currencyObj.enable(); // enable the currencyTextbox
+percentObj.enable(); // enable the percentageTextbox
 </script>
                 
  {% endhighlight %}
@@ -1390,12 +1390,12 @@ $("#numeric").ejNumericTextbox({value:20});
 $("#currency").ejCurrencyTextbox({value:500});
 $("#percentage").ejPercentageTextbox({value:1000});
 // Create Editors
-var numObj = $("#numeric").data("ejNumericTextbox");
-var curObj = $("#currency").data("ejCurrencyTextbox");
-var perObj = $("#percentage").data("ejPercentageTextbox");
-numObj.getValue(); // get value from numericTextbox
-curObj.getValue(); // get value from currencyTextbox
-perObj.getValue(); // get value from percentagTextbox
+var numericObj = $("#numeric").data("ejNumericTextbox");
+var currencyObj = $("#currency").data("ejCurrencyTextbox");
+var percentObj = $("#percentage").data("ejPercentageTextbox");
+numericObj.getValue(); // get value from numericTextbox
+currencyObj.getValue(); // get value from currencyTextbox
+percentObj.getValue(); // get value from percentageTextbox
 </script>
                  
   {% endhighlight %}

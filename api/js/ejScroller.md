@@ -45,7 +45,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -118,7 +118,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -174,7 +174,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -230,7 +230,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -283,7 +283,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -336,7 +336,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -390,7 +390,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -443,7 +443,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -496,7 +496,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -548,7 +548,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -602,7 +602,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -655,7 +655,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -708,7 +708,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -761,7 +761,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -775,7 +775,7 @@ It can also send commands to the model to update the model's state (e.g., editin
  
 <script>
 //To set Scroller for the specified target panel during initialization
-        $("#scrollContent").ejScroller({targetPane: "contentarea" });   
+        $("#scrollContent").ejScroller({targetPane: "contentArea" });   
 </script>{% endhighlight %}
 
 
@@ -814,7 +814,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -862,7 +862,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul><li>
@@ -891,7 +891,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul><li>
@@ -935,7 +935,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -965,7 +965,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -1010,7 +1010,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -1040,7 +1040,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -1090,7 +1090,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -1119,7 +1119,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -1168,7 +1168,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -1198,7 +1198,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -1243,7 +1243,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -1273,7 +1273,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -1345,7 +1345,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -1376,7 +1376,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -1447,7 +1447,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -1478,7 +1478,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -1558,7 +1558,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -1633,7 +1633,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -1718,7 +1718,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -1803,7 +1803,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -1889,7 +1889,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -1985,7 +1985,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -2073,7 +2073,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
@@ -2169,7 +2169,7 @@ The model consists of application data, business rules, logic, and functions. A 
 output representation of data, such as a chart or a diagram. Multiple views of the same data 
 are possible, such as a bar chart for management and a tabular view for accountants. 
 The controller mediates input, converting it to commands for the model or view.The central 
-ideas behind MVC are code reusability and n addition to dividing the application into three 
+ideas behind MVC are code reusable and in addition to dividing the application into three 
 kinds of components, the MVC design defines the interactions between them.
 
 <ul>
