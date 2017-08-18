@@ -23,9 +23,9 @@ Communicates with data source and returns the desired result based on the Query 
 <tbody></tbody>
 </table>
 <script>
-var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().take(5));
-var tbody = ""; 
-for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td></tr>"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity,="" dm[i].freight);="" $(".table="" tbody").html(tbody);};=""></3;i++){>{% endhighlight %}
+var dataManagerObj = ej.DataManager(window.gridData).executeLocal(ej.Query().take(5));
+var tableBody = ""; 
+for(var i=0;i<3;i++){ tableBody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td></tr>"," dataManagerObj[i].orderid,="" dataManagerObj[i].customerid,="" dataManagerObj[i].shipcity,="" dataManagerObj[i].freight);="" $(".table="" tbody").html(tableBody);};=""></3;i++){>{% endhighlight %}
 
  
 ## Methods
@@ -68,7 +68,7 @@ ej.Query
 
 {% highlight html %}
 <script>
-var dm = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"}).executeQuery(new ej.Query().addParams("test","value"));
+var dataManagerObj = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/Orders/"}).executeQuery(new ej.Query().addParams("test","value"));
 </script>{% endhighlight %}
 
 
@@ -93,10 +93,10 @@ ej.Query
 <tbody></tbody>
 </table>
 <script>
-var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().where("OrderID","equal","10250").clone());
-var tbody="";
-tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", dm[0].OrderID, dm[0].CustomerID, dm[0].ShipCity);
-$(".table tbody").html(tbody);
+var dataManagerObj = ej.DataManager(window.gridData).executeLocal(ej.Query().where("OrderID","equal","10250").clone());
+var tableBody="";
+tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", dataManagerObj[0].OrderID, dataManagerObj[0].CustomerID, dataManagerObj[0].ShipCity);
+$(".table tbody").html(tableBody);
 </script>{% endhighlight %}
  
 
@@ -170,8 +170,8 @@ Array
 
 {% highlight html %}
 <script>
-var dm = ej.DataManager(window.gridData);
-var promise =  ej.Query().select(["OrderID", "CustomerID", "ShipName", "ShipCity", "Freight"]).executeLocal(dm).take(3);
+var dataManagerObj = ej.DataManager(window.gridData);
+var promise =  ej.Query().select(["OrderID", "CustomerID", "ShipName", "ShipCity", "Freight"]).executeLocal(dataManagerObj).take(3);
 </script>{% endhighlight %}
 
 
@@ -207,7 +207,7 @@ ej.Query
 
 {% highlight html %}
 <script>
-var dm = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"})
+var dataManagerObj = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"})
 .executeQuery(ej.Query().from("Orders").select("OrderID", "CustomerID", "ShipCity", "Employee.FirstName").expand("Employee"));
 </script>{% endhighlight %}
 
@@ -244,7 +244,7 @@ ej.Query
 
 {% highlight html %}
 <script>
-var dm = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"})
+var dataManagerObj = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"})
 .executeQuery(ej.Query().from("Orders")
 .hierarchy(ej.Query().from("Order_Details").foreignKey("OrderID").sortBy("Quantity"),function () {
  return [10250, 10251, 10252, 10253] }));
@@ -289,9 +289,9 @@ ej.Query
 <tbody></tbody>
 </table>
 <script>
-var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().from("Orders"));
-var tbody="";
-for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""></3;i++){>{% endhighlight %}
+var dataManagerObj = ej.DataManager(window.gridData).executeLocal(ej.Query().from("Orders"));
+var tableBody="";
+for(var i=0;i<3;i++){ tableBody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dataManagerObj[i].orderid,="" dataManagerObj[i].customerid,="" dataManagerObj[i].shipcity);="" $(".table="" tbody").html(tableBody);}=""></3;i++){>{% endhighlight %}
  
  
 ### group<span class="signature">(fieldName)</span>
@@ -332,9 +332,9 @@ ej.Query
 <tbody></tbody>
 </table>
 <script>
-var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().group("CustomerID"));
-var tbody="";
-for(var i=0;i<3;i++){ row="dm[0].items[i];" tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," row.orderid,="" row.customerid,="" row.shipcity);="" $(".table="" tbody").html(tbody);}=""></3;i++){>{% endhighlight %}
+var dataManagerObj = ej.DataManager(window.gridData).executeLocal(ej.Query().group("CustomerID"));
+var tableBody="";
+for(var i=0;i<3;i++){ row="dataManagerObj[0].items[i];" tableBody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," row.orderid,="" row.customerid,="" row.shipcity);="" $(".table="" tbody").html(tableBody);}=""></3;i++){>{% endhighlight %}
 
  
 ### hierarchy<span class="signature">(query)</span>
@@ -369,7 +369,7 @@ ej.Query
 
 {% highlight html %}
 <script>
-var dm = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"})
+var dataManagerObj = ej.DataManager({url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"})
 .executeQuery(ej.Query().from("Orders")
 .hierarchy(ej.Query().foreignKey("OrderID").from("Order_Details"),function () {
  return [10248] }));
@@ -420,9 +420,9 @@ ej.Query
 </table>
 <script>
 //page(pageIndex,pageSize)
-var dm = ej.DataManager(window.employeeData).executeLocal(ej.Query().page(2,3));
-var tbody="";
-for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dm[i].employeeid,="" dm[i].lastname,="" dm[i].firstname);="" $(".table="" tbody").html(tbody);}=""></3;i++){>{% endhighlight %}
+var dataManagerObj = ej.DataManager(window.employeeData).executeLocal(ej.Query().page(2,3));
+var tableBody="";
+for(var i=0;i<3;i++){ tableBody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dataManagerObj[i].employeeid,="" dataManagerObj[i].lastname,="" dataManagerObj[i].firstname);="" $(".table="" tbody").html(tableBody);}=""></3;i++){>{% endhighlight %}
  
 
 ### range<span class="signature">(start, end)</span>
@@ -470,9 +470,9 @@ ej.Query
 </table>
 <script>
 //range(startIndex,endIndex)
-var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().take(20).range(2,5));
-var tbody="";
-for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""></3;i++){>{% endhighlight %}
+var dataManagerObj = ej.DataManager(window.gridData).executeLocal(ej.Query().take(20).range(2,5));
+var tableBody="";
+for(var i=0;i<3;i++){ tableBody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dataManagerObj[i].orderid,="" dataManagerObj[i].customerid,="" dataManagerObj[i].shipcity);="" $(".table="" tbody").html(tableBody);}=""></3;i++){>{% endhighlight %}
 
  
 ### requiresCount<span class="signature">()</span>
@@ -490,7 +490,7 @@ ej.Query
 
 {% highlight html %}
 <script>
-var dm =ej.DataManager(window.gridData).executeLocal(ej.Query().requiresCount());
+var dataManagerObj =ej.DataManager(window.gridData).executeLocal(ej.Query().requiresCount());
 </script>{% endhighlight %}
 
 
@@ -548,10 +548,10 @@ ej.Query
 <tbody></tbody>
 </table>
 <script>
-var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().select(["OrderID","ShipCity","CustomerID"]).search("10251","OrderID","equal"));
-var tbody="";
-tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", dm[0].OrderID, dm[0].CustomerID, dm[0].ShipCity);
-$(".table tbody").html(tbody);
+var dataManagerObj = ej.DataManager(window.gridData).executeLocal(ej.Query().select(["OrderID","ShipCity","CustomerID"]).search("10251","OrderID","equal"));
+var tableBody="";
+tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", dataManagerObj[0].OrderID, dataManagerObj[0].CustomerID, dataManagerObj[0].ShipCity);
+$(".table tbody").html(tableBody);
 </script>{% endhighlight %} 
 
 
@@ -593,9 +593,9 @@ ej.Query
 <tbody></tbody>
 </table>
 <script>
-var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().select(["OrderID","CustomerID","ShipCity"]));
-var tbody="";
-for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""></3;i++){>{% endhighlight %}
+var dataManagerObj = ej.DataManager(window.gridData).executeLocal(ej.Query().select(["OrderID","CustomerID","ShipCity"]));
+var tableBody="";
+for(var i=0;i<3;i++){ tableBody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dataManagerObj[i].orderid,="" dataManagerObj[i].customerid,="" dataManagerObj[i].shipcity);="" $(".table="" tbody").html(tableBody);}=""></3;i++){>{% endhighlight %}
 
 
 ### skip<span class="signature">(nos)</span>
@@ -636,9 +636,9 @@ ej.Query
 <tbody></tbody>
 </table>
 <script>
-var dm = ej.DataManager(window.employeeData).executeLocal(ej.Query().skip(5));
-var tbody="";
-for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dm[i].employeeid,="" dm[i].lastname,="" dm[i].firstname);="" $(".table="" tbody").html(tbody);}=""></3;i++){>{% endhighlight %}
+var dataManagerObj = ej.DataManager(window.employeeData).executeLocal(ej.Query().skip(5));
+var tableBody="";
+for(var i=0;i<3;i++){ tableBody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dataManagerObj[i].employeeid,="" dataManagerObj[i].lastname,="" dataManagerObj[i].firstname);="" $(".table="" tbody").html(tableBody);}=""></3;i++){>{% endhighlight %}
 
 
 ### sortBy<span class="signature">(fieldName)</span>
@@ -679,9 +679,9 @@ ej.Query
 <tbody></tbody>
 </table>
 <script>
-var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().sortBy("CustomerID desc"));
-var tbody="";
-for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""></3;i++){>{% endhighlight %}
+var dataManagerObj = ej.DataManager(window.gridData).executeLocal(ej.Query().sortBy("CustomerID desc"));
+var tableBody="";
+for(var i=0;i<3;i++){ tableBody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dataManagerObj[i].orderid,="" dataManagerObj[i].customerid,="" dataManagerObj[i].shipcity);="" $(".table="" tbody").html(tableBody);}=""></3;i++){>{% endhighlight %}
 
 
 ### sortByDesc<span class="signature">(fieldName)</span>
@@ -722,9 +722,9 @@ ej.Query
 <tbody></tbody>
 </table>
 <script>
-var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().sortByDesc("CustomerID"));
-var tbody="";
-for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""></3;i++){>{% endhighlight %}
+var dataManagerObj = ej.DataManager(window.gridData).executeLocal(ej.Query().sortByDesc("CustomerID"));
+var tableBody="";
+for(var i=0;i<3;i++){ tableBody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dataManagerObj[i].orderid,="" dataManagerObj[i].customerid,="" dataManagerObj[i].shipcity);="" $(".table="" tbody").html(tableBody);}=""></3;i++){>{% endhighlight %}
 
 
 ### take<span class="signature">(nos)</span>
@@ -765,9 +765,9 @@ ej.Query
 <tbody></tbody>
 </table>
 <script>
-var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().take(5));
-var tbody="";
-for(var i=0;i<5;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""></5;i++){>{% endhighlight %}
+var dataManagerObj = ej.DataManager(window.gridData).executeLocal(ej.Query().take(5));
+var tableBody="";
+for(var i=0;i<5;i++){ tableBody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dataManagerObj[i].orderid,="" dataManagerObj[i].customerid,="" dataManagerObj[i].shipcity);="" $(".table="" tbody").html(tableBody);}=""></5;i++){>{% endhighlight %}
 
 
 ### using<span class="signature">(dataManager)</span>
@@ -808,11 +808,11 @@ ej.Query
 <tbody></tbody>
 </table>
 <script>
-var dm = ej.DataManager(window.gridData);
-var local = dm.executeLocal(ej.Query().using(dm).take(1));
-var tbody = ""; 
- tbody += String.format("<tr><td>{0}</td><td>{1}</td></tr>", local[0].OrderID, local[0].CustomerID);
- $(".table tbody").html(tbody); 
+var dataManagerObj = ej.DataManager(window.gridData);
+var local = dataManagerObj.executeLocal(ej.Query().using(dataManagerObj).take(1));
+var tableBody = ""; 
+ tableBody += String.format("<tr><td>{0}</td><td>{1}</td></tr>", local[0].OrderID, local[0].CustomerID);
+ $(".table tbody").html(tableBody); 
 </script>{% endhighlight %}
  
  
@@ -869,8 +869,6 @@ ej.Query
 <tbody></tbody>
 </table>
 <script>
-var dm = ej.DataManager(window.gridData).executeLocal(ej.Query().where("OrderID","lessthan","10253"));
-var tbody="";
-for(var i=0;i<3;i++){ tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dm[i].orderid,="" dm[i].customerid,="" dm[i].shipcity);="" $(".table="" tbody").html(tbody);}=""></3;i++){>{% endhighlight %}
-
-
+var dataManagerObj = ej.DataManager(window.gridData).executeLocal(ej.Query().where("OrderID","lessthan","10253"));
+var tableBody="";
+for(var i=0;i<3;i++){ tableBody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>"," dataManagerObj[i].orderid,="" dataManagerObj[i].customerid,="" dataManagerObj[i].shipcity);="" $(".table="" tbody").html(tableBody);}=""></3;i++){>{% endhighlight %}

@@ -46,7 +46,7 @@ The Tab control is an interface where list of items are expanded from a single i
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -265,7 +265,7 @@ Tab items interaction with keyboard keys, like headers active navigation.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -314,7 +314,7 @@ Allow to collapsing the active item, while click on the active header.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -363,7 +363,7 @@ Set the root class for Tab theme. This cssClass API helps to use custom skinning
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -412,7 +412,7 @@ Disables the given tab headers and content panels.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>   
         <script type="text/javascript">         
@@ -461,7 +461,7 @@ Specifies the animation behavior of the tab.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -510,7 +510,7 @@ When this property is set to false, it disables the tab control.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -559,7 +559,7 @@ Enables the given tab headers and content panels.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>   
         <script type="text/javascript">         
@@ -609,7 +609,7 @@ Save current model value to browser cookies for state maintains. While refresh t
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div> 
         <script type="text/javascript">         
@@ -658,7 +658,7 @@ Display Right to Left direction for headers and panels text of tab.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -707,7 +707,7 @@ Specify to enable scrolling for Tab header.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -756,7 +756,7 @@ The event API to bind the action for active the tab items.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>     
         <script type="text/javascript">         
@@ -837,7 +837,7 @@ Right</td>
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -886,7 +886,7 @@ Set the height of the tab header element. Default this property value is null, s
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -935,7 +935,7 @@ Height set the outer panel element. Default this property value is null, so heig
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -1024,7 +1024,7 @@ Fill</td>
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div> 
         <script type="text/javascript">         
@@ -1090,7 +1090,7 @@ Specifies to hide a pane of Tab control.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div> 
         <script type="text/javascript">         
@@ -1156,7 +1156,7 @@ Specifies the HTML Attributes of the Tab.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div> 
         <script type="text/javascript">         
@@ -1211,7 +1211,7 @@ The idPrefix property appends the given string on the added tab item id&rsquo;s 
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -1260,7 +1260,7 @@ Specifies the Tab header in active for given index value.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -1309,7 +1309,7 @@ Display the close button for each tab items. While clicking on the close icon, p
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>   
         <script type="text/javascript">         
@@ -1358,7 +1358,7 @@ Display the Reload button for each tab items.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -1407,7 +1407,7 @@ Tab panels and headers to be displayed in rounded corner style.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -1457,7 +1457,7 @@ Set the width for outer panel element, if not it&rsquo;s take parent width.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -1542,9 +1542,9 @@ id</td>
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>  
-        <div id="new"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="new"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>             
         </div>
         <script type="text/javascript">         
@@ -1571,9 +1571,9 @@ id</td>
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div> 
-        <div id="new"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="new"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">  
@@ -1613,7 +1613,7 @@ To disable the tab control.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">  
@@ -1640,7 +1640,7 @@ To disable the tab control.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">  
@@ -1680,7 +1680,7 @@ To enable the tab control.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">   
@@ -1707,7 +1707,7 @@ To enable the tab control.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">     
@@ -1749,7 +1749,7 @@ number
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">    
@@ -1776,7 +1776,7 @@ number
             </div>                  
             <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
             </div>                  
-            <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+            <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
             </div>              
             </div>
             <script type="text/javascript">    
@@ -1816,7 +1816,7 @@ This function hides the tab control.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">   
@@ -1843,7 +1843,7 @@ This function hides the tab control.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">   
@@ -1904,7 +1904,7 @@ index</td>
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">   
@@ -1931,7 +1931,7 @@ index</td>
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">   
@@ -1990,7 +1990,7 @@ index</td>
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">    
@@ -2017,7 +2017,7 @@ index</td>
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript"> 
@@ -2057,7 +2057,7 @@ This function is to show the tab control.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript"> 
@@ -2084,7 +2084,7 @@ This function is to show the tab control.
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">    
@@ -2146,7 +2146,7 @@ index</td>
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript"> 
@@ -2173,7 +2173,7 @@ index</td>
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">    
@@ -2295,7 +2295,7 @@ isInteraction</td>
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -2422,7 +2422,7 @@ isInteraction</td>
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -2523,7 +2523,7 @@ URL</td>
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -2648,7 +2648,7 @@ isInteraction</td>
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -2755,7 +2755,7 @@ content</td>
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -2874,7 +2874,7 @@ isInteraction</td>
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -2969,7 +2969,7 @@ index</td>
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -3058,7 +3058,7 @@ type</td>
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -3147,7 +3147,7 @@ type</td>
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -3248,7 +3248,7 @@ tabContent</td>
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         
@@ -3343,7 +3343,7 @@ removedTab</td>
         </div>                  
         <div id="cSharp"> C# is intended to be a simple, modern, general-purpose, object-oriented programming language. Its development team is led by Anders Hejlsberg. The most recent version is C# 5.0, which was released on August 15, 2012.                  
         </div>                  
-        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the freeware .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
+        <div id="vb"> The command-line compiler, VBC.EXE, is installed as part of the Freeware  .NET Framework SDK. Mono also includes a command-line VB.NET compiler. The most recent version is VB 2012, which was released on August 15, 2012.                  
         </div>              
         </div>
         <script type="text/javascript">         

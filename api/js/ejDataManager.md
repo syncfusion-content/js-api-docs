@@ -62,12 +62,12 @@ var dataManager = new ej.DataManager(datasource, query, adaptor)
 
     <script>
         var dataManger = ej.DataManager(window.gridData);
-        var tbody = ""; 
+        var tableBody = ""; 
         for(var i=0;i<5;i++)
         { 
             row="dataManger.dataSource.json[0];;" 
-            tbody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td></tr>"," row.orderid,="" row.customerid,="" row.employeeid,="" row.shipcity,="" row.freight);
-            $(".table="" tbody").html(tbody);
+            tableBody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td></tr>"," row.orderid,="" row.customerid,="" row.employeeid,="" row.shipcity,="" row.freight);
+            $(".table="" tbody").html(tableBody);
         }
     </script>
 
@@ -246,12 +246,12 @@ A function to be called if the request succeeds.
 
     // This function can be better replaced with any template engine. We used this for simplicity in demo.
     function renderTable(data) {
-        var tbody = "", row;
+        var tableBody = "", row;
         for (var i = 0; i < data.length; i++) {
             row = data[i];
-            tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.ItemID, row.ItemName, row.ItemType);
+            tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.ItemID, row.ItemName, row.ItemType);
         }
-        $(".table tbody").html(tbody);
+        $(".table tbody").html(tableBody);
     }
 </script>
 
@@ -326,12 +326,12 @@ A function to be called if the request fails.
 
     // This function can be better replaced with any template engine. We used this for simplicity in demo.
     function renderTable(data) {
-        var tbody = "", row;
+        var tableBody = "", row;
         for (var i = 0; i < data.length; i++) {
             row = data[i];
-            tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.ItemID, row.ItemName, row.ItemType);
+            tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.ItemID, row.ItemName, row.ItemType);
         }
-        $(".table tbody").html(tbody);
+        $(".table tbody").html(tableBody);
     }
 </script>
 
@@ -469,12 +469,12 @@ If the request is fail, the argument list will be as below.
 
     // This function can be better replaced with any template engine. We used this for simplicity in demo.
     function renderTable(data) {
-        var tbody = "", row;
+        var tableBody = "", row;
         for (var i = 0; i < data.length; i++) {
             row = data[i];
-            tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.ItemID, row.ItemName, row.ItemType);
+            tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.ItemID, row.ItemName, row.ItemType);
         }
-        $(".table tbody").html(tbody);
+        $(".table tbody").html(tableBody);
     }
 </script>
 
@@ -548,12 +548,12 @@ JQueryPromise
 
     // This function can be better replaced with any template engine. We used this for simplicity in demo.
     function renderTable(data) {
-        var tbody = "", row;
+        var tableBody = "", row;
         for (var i = 0; i < data.length; i++) {
             row = data[i];
-            tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
+            tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
         }
-        $(".table tbody").html(tbody);
+        $(".table tbody").html(tableBody);
     }
 </script>
 
@@ -697,12 +697,12 @@ Object
 
     // This function can be better replaced with any template engine. We used this for simplicity in demo.
     function renderTable(data) {
-        var tbody = "", row;
+        var tableBody = "", row;
         for (var i = 0; i < data.length; i++) {
             row = data[i];
-            tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
+            tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
         }
-        $(".table tbody").html(tbody);
+        $(".table tbody").html(tableBody);
     }
 
 </script>
@@ -787,12 +787,12 @@ Object
     });
 
     function renderTable(data) {
-        var tbody = "", row;
+        var tableBody = "", row;
         for (var i = 0; i < data.length; i++) {
             row = data[i];
-            tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
+            tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
         }
-        $(".table tbody").html(tbody);
+        $(".table tbody").html(tableBody);
     }
 
 </script>
@@ -876,19 +876,19 @@ Object
                         .from("Orders")
                         .sortBy("OrderID", "descending", false)
 
-            var dm = dataManager.saveChanges(newData);
+            var dataManagerObj = dataManager.saveChanges(newData);
         
             renderTable(data);
     });
 
     // This function can be better replaced with any template engine. We used this for simplicity in demo.
     function renderTable(data) {
-        var tbody = "", row;
+        var tableBody = "", row;
         for (var i = 0; i < data.length; i++) {
             row = data[i];
-            tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
+            tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
         }
-        $(".table tbody").html(tbody);
+        $(".table tbody").html(tableBody);
     }
 </script>
 
@@ -971,12 +971,12 @@ Object
     });
 
     function renderTable(data) {
-        var tbody = "", row;
+        var tableBody = "", row;
         for (var i = 0; i < data.length; i++) {
             row = data[i];
-            tbody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
+            tableBody += String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td></tr>", row.OrderID, row.CustomerID, row.EmployeeID);
         }
-        $(".table tbody").html(tbody);
+        $(".table tbody").html(tableBody);
     }
 </script>
 
