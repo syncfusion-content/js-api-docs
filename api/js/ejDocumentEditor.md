@@ -386,7 +386,7 @@ Returns the name of the event.
 
 {% highlight html %}
 <div id="container"></div>
-<span id="sp"></span>
+<span id="pageCountSpan"></span>
 <script>
     $("#container").ejDocumentEditor({
         importExportSetting: {
@@ -396,7 +396,7 @@ Returns the name of the event.
         });
     function onDocumentChange(args) {
 		var documentEditorObj = $("#container").data("ejDocumentEditor");
-		$("#sp").text(documentEditorObj.getPageCount());
+		$("#pageCountSpan").text(documentEditorObj.getPageCount());
 	}
 </script>
 {% endhighlight %}
@@ -489,7 +489,7 @@ Returns the name of the event.
 
 {% highlight html %}
 <div id="container"></div>
-<span id="sp"></span>
+<span id="pageNumberSpan"></span>
 <script>
     $("#container").ejDocumentEditor({
         importExportSetting: {
@@ -499,7 +499,7 @@ Returns the name of the event.
     });
     function onSelectionChange(args) {
 		var documentEditorObj = $("#container").data("ejDocumentEditor");
-		$("#sp").text(documentEditorObj.getCurrentPageNumber());
+		$("#pageNumberSpan").text(documentEditorObj.getCurrentPageNumber());
     }
     </script>
 {% endhighlight %}
@@ -592,17 +592,17 @@ Returns the name of the event.
 
 {% highlight html %}
 <div id="container"></div>
-<span id="sp"></span>
+<span id="zoomFactorSpan"></span>
 <script>
     $("#container").ejDocumentEditor({
         importExportSetting: {
             importUrl: "http://js.syncfusion.com/demos/ejservices/api/DocumentEditor/ImportDocument",
         },
-        zoomFactorChange: "onzoomFactorChange",
+        zoomFactorChange: "onZoomFactorChange",
     });
-    function onzoomFactorChange(args) {
+    function onZoomFactorChange(args) {
 		var documentEditorObj = $("#container").data("ejDocumentEditor");
-		$("#sp").text(documentEditorObj.getZoomFactor()*100+"%")
+		$("#zoomFactorSpan").text(documentEditorObj.getZoomFactor()*100+"%")
     }
 </script>
 {% endhighlight %}
