@@ -798,7 +798,7 @@ Set `enableOnDemand` as true to load ribbon tab and backstage contents while cor
                                 {
                                     text: "Print Layout", alignType: ej.Ribbon.AlignType.Rows, content: [{
                                         groups: [{
-                                            id: "printlayout",
+                                            id: "printLayout",
                                             text: "Print Layout",
                                             buttonSettings: {
                                                 contentType: ej.ContentType.TextAndImage,
@@ -928,7 +928,7 @@ Set `collapsible` property as true to render ribbon in initially collapsed state
 					{
 					    text: "Print Layout", alignType: ej.Ribbon.AlignType.Rows, content: [{
 					        groups: [{
-					            id: "printlayout",
+					            id: "printLayout",
 					            text: "Print Layout",
 					            buttonSettings: {
 					                contentType: ej.ContentType.TextAndImage,
@@ -3719,7 +3719,7 @@ It is used to set the count of gallery contents in a row.
     </li>
     </ul>
     <div id="Ribbon"></div>
-    <ul id="custommenu">
+    <ul id="customMenu">
     <li>
         <a>New Quick Step</a>
         <ul>
@@ -3776,7 +3776,7 @@ It is used to set the count of gallery contents in a row.
                         }],
                         customGalleryItems: [{
                             customItemType: ej.Ribbon.customItemType.menu,
-                            menuId: "custommenu",
+                            menuId: "customMenu",
                             menuSettings: {
                                 openOnClick: false
                             }
@@ -3822,7 +3822,7 @@ Specifies the custom items such as div, table, controls as custom controls with 
     <li><a>Print</a></li>
     </ul></li></ul>
     <div id="Ribbon"></div> 
-    <input id="fontcolor"/> 
+    <input id="fontColor"/> 
     <script type="text/javascript">   
     $(function() {
     $("#Ribbon").ejRibbon({
@@ -3852,11 +3852,11 @@ Specifies the custom items such as div, table, controls as custom controls with 
                             height: 50
                         }
                     }, {
-                        id: "fontcolor",
+                        id: "fontColor",
                         text: "Font Color",
                         toolTip: "Font Color",
                         type: ej.Ribbon.Type.Custom,
-                        contentID: "fontcolor"
+                        contentID: "fontColor"
                     }]
                 }]
             }]
@@ -3866,7 +3866,7 @@ Specifies the custom items such as div, table, controls as custom controls with 
     });
 
     function createControl(args) {
-    $("#fontcolor").ejColorPicker({
+    $("#fontColor").ejColorPicker({
         value: "#FFFF00",
         modelType: "palette",
         cssClass: "e-ribbon",
@@ -3964,7 +3964,7 @@ Specifies the Syncfusion button and menu as gallery extra items.
     <li><a>Print</a></li>
     </ul></li></ul>
     <div id="Ribbon"></div> 
-    <ul id="custommenu">
+    <ul id="customMenu">
                 <li><a>New Quick Step</a>
                 <ul>
                 <li><a>Move to new folder</a></li>
@@ -4020,7 +4020,7 @@ Specifies the Syncfusion button and menu as gallery extra items.
                          }],
                          customGalleryItems: [{
                              customItemType: ej.Ribbon.customItemType.menu,
-                             menuId: "custommenu",
+                             menuId: "customMenu",
                              menuSettings: {
                                  openOnClick: false
                              }
@@ -4074,7 +4074,7 @@ Specifies the Syncfusion button members, events by using buttonSettings.
     <li><a>Print</a></li>
     </ul></li></ul>
     <div id="Ribbon"></div> 
-    <ul id="custommenu">
+    <ul id="customMenu">
                 <li><a>New Quick Step</a>
                 <ul>
                 <li><a>Move to new folder</a></li>
@@ -4130,7 +4130,7 @@ Specifies the Syncfusion button members, events by using buttonSettings.
                          }],
                          customGalleryItems: [{
                              customItemType: ej.Ribbon.customItemType.menu,
-                             menuId: "custommenu",
+                             menuId: "customMenu",
                              menuSettings: {
                                  openOnClick: false
                              }
@@ -4207,7 +4207,7 @@ Specifies the type as ej.Ribbon.CustomItemType.Menu or ej.Ribbon.CustomItemType.
     <li><a>Print</a></li>
     </ul></li></ul>
     <div id="Ribbon"></div> 
-    <ul id="custommenu">
+    <ul id="customMenu">
                 <li><a>New Quick Step</a>
                 <ul>
                 <li><a>Move to new folder</a></li>
@@ -4263,7 +4263,7 @@ Specifies the type as ej.Ribbon.CustomItemType.Menu or ej.Ribbon.CustomItemType.
                          }],
                          customGalleryItems: [{
                              customItemType: ej.Ribbon.customItemType.menu,
-                             menuId: "custommenu",
+                             menuId: "customMenu",
                              menuSettings: {
                                  openOnClick: false
                              }
@@ -4318,7 +4318,7 @@ Specifies the custom tooltip for gallery extra item's button. Refer to ejRibbon#
     <li><a>Print</a></li>
     </ul></li></ul>
     <div id="Ribbon"></div> 
-    <ul id="custommenu">
+    <ul id="customMenu">
                 <li><a>New Quick Step</a>
                 <ul>
                 <li><a>Move to new folder</a></li>
@@ -4374,7 +4374,7 @@ Specifies the custom tooltip for gallery extra item's button. Refer to ejRibbon#
                          }],
                          customGalleryItems: [{
                              customItemType: ej.Ribbon.customItemType.menu,
-                             menuId: "custommenu",
+                             menuId: "customMenu",
                              menuSettings: {
                                  openOnClick: false
                              }
@@ -4430,7 +4430,7 @@ Specifies the UL list id to render menu as gallery extra item.
     <li><a>Print</a></li>
     </ul></li></ul>
     <div id="Ribbon"></div> 
-    <ul id="custommenu">
+    <ul id="customMenu">
                  <li><a>New Quick Step</a>
                 <ul>
                 <li><a>Move to new folder</a></li>
@@ -4486,7 +4486,7 @@ Specifies the UL list id to render menu as gallery extra item.
                          }],
                          customGalleryItems: [{
                              customItemType: ej.Ribbon.customItemType.menu,
-                             menuId: "custommenu",
+                             menuId: "customMenu",
                              menuSettings: {
                                  openOnClick: false
                              }
@@ -4542,7 +4542,7 @@ Specifies the Syncfusion menu members, events by using menuSettings.
     <li><a>Print</a></li>
     </ul></li></ul>
     <div id="Ribbon"></div> 
-    <ul id="custommenu">
+    <ul id="customMenu">
                 <li><a>New Quick Step</a>
                 <ul>
                 <li><a>Move to new folder</a></li>
@@ -4598,7 +4598,7 @@ Specifies the Syncfusion menu members, events by using menuSettings.
                          }],
                          customGalleryItems: [{
                              customItemType: ej.Ribbon.customItemType.menu,
-                             menuId: "custommenu",
+                             menuId: "customMenu",
                              menuSettings: {
                                  openOnClick: false
                              }
@@ -4654,7 +4654,7 @@ Specifies the text for gallery extra item's button.
     <li><a>Print</a></li>
     </ul></li></ul>
     <div id="Ribbon"></div> 
-    <ul id="custommenu">
+    <ul id="customMenu">
                 <li><a>New Quick Step</a>
                 <ul>
                 <li><a>Move to new folder</a></li>
@@ -4710,7 +4710,7 @@ Specifies the text for gallery extra item's button.
                   }],
                   customGalleryItems: [{
                       customItemType: ej.Ribbon.customItemType.menu,
-                      menuId: "custommenu",
+                      menuId: "customMenu",
                       menuSettings: {
                           openOnClick: false
                       }
@@ -4762,7 +4762,7 @@ Specifies the tooltip for gallery extra item's button.
     <li><a>Print</a></li>
     </ul></li></ul>
     <div id="Ribbon"></div> 
-    <ul id="custommenu">
+    <ul id="customMenu">
                 <li><a>New Quick Step</a>
                 <ul>
                 <li><a>Move to new folder</a></li>
@@ -4818,7 +4818,7 @@ Specifies the tooltip for gallery extra item's button.
                           }],
                           customGalleryItems: [{
                               customItemType: ej.Ribbon.customItemType.menu,
-                              menuId: "custommenu",
+                              menuId: "customMenu",
                               menuSettings: {
                                   openOnClick: false
                               }
@@ -5143,7 +5143,7 @@ Specifies the Syncfusion dropdown list members, events by using this dropdownSet
     }
     </style>
     <script type="text/javascript">  
-    var fontfamily = ["Segoe UI", "Arial", "Times New Roman", "Tahoma", "Helvetica"];
+    var fontFamily = ["Segoe UI", "Arial", "Times New Roman", "Tahoma", "Helvetica"];
     $(function() {
     $("#Ribbon").ejRibbon({
         // Set the width during initialization.         
@@ -5163,11 +5163,11 @@ Specifies the Syncfusion dropdown list members, events by using this dropdownSet
                 alignType: ej.Ribbon.AlignType.Rows,
                 content: [{
                     groups: [{
-                        id: "fontfamily",
+                        id: "fontFamily",
                         toolTip: "Font",
                         type: ej.Ribbon.Type.DropDownList,
                         dropdownSettings: {
-                            dataSource: fontfamily,
+                            dataSource: fontFamily,
                             value: "Segoe UI",
                             width: 150
                         }
@@ -5274,7 +5274,7 @@ Sets the count of gallery contents in a row, when the gallery is in expanded sta
     <li><a>Print</a></li>
     </ul></li></ul>
     <div id="Ribbon"></div> 
-    <ul id="custommenu">
+    <ul id="customMenu">
                 <li><a>New Quick Step</a>
                 <ul>
                 <li><a>Move to new folder</a></li>
@@ -5330,7 +5330,7 @@ Sets the count of gallery contents in a row, when the gallery is in expanded sta
                          }],
                          customGalleryItems: [{
                              customItemType: ej.Ribbon.customItemType.menu,
-                             menuId: "custommenu",
+                             menuId: "customMenu",
                              menuSettings: {
                                  openOnClick: false
                              }
@@ -5382,7 +5382,7 @@ Defines each gallery content.
     <li><a>Print</a></li>
     </ul></li></ul>
     <div id="Ribbon"></div> 
-    <ul id="custommenu">
+    <ul id="customMenu">
                 li><a>New Quick Step</a>
                 <ul>
                 <li><a>Move to new folder</a></li>
@@ -5438,7 +5438,7 @@ Defines each gallery content.
                          }],
                          customGalleryItems: [{
                              customItemType: ej.Ribbon.customItemType.menu,
-                             menuId: "custommenu",
+                             menuId: "customMenu",
                              menuSettings: {
                                  openOnClick: false
                              }
@@ -5494,7 +5494,7 @@ Specifies the Syncfusion button members, events by using buttonSettings.
     <li><a>Print</a></li>
     </ul></li></ul>
     <div id="Ribbon"></div> 
-    <ul id="custommenu">
+    <ul id="customMenu">
                 <li><a>New Quick Step</a>
                 <ul>
                 <li><a>Move to new folder</a></li>
@@ -5553,7 +5553,7 @@ Specifies the Syncfusion button members, events by using buttonSettings.
                          }],
                          customGalleryItems: [{
                              customItemType: ej.Ribbon.customItemType.menu,
-                             menuId: "custommenu",
+                             menuId: "customMenu",
                              menuSettings: {
                                  openOnClick: false
                              }
@@ -5605,7 +5605,7 @@ Specifies the custom tooltip for gallery content. Refer to ejRibbon#tabs->groups
     <li><a>Print</a></li>
     </ul></li></ul>
     <div id="Ribbon"></div> 
-    <ul id="custommenu">
+    <ul id="customMenu">
                 <li><a>New Quick Step</a>
                 <ul>
                 <li><a>Move to new folder</a></li>
@@ -5665,7 +5665,7 @@ Specifies the custom tooltip for gallery content. Refer to ejRibbon#tabs->groups
                         }],
                         customGalleryItems: [{
                             customItemType: ej.Ribbon.customItemType.menu,
-                            menuId: "custommenu",
+                            menuId: "customMenu",
                             menuSettings: {
                                 openOnClick: false
                             }
@@ -5718,7 +5718,7 @@ Sets text for the gallery content.
     <li><a>Print</a></li>
     </ul></li></ul>
     <div id="Ribbon"></div> 
-    <ul id="custommenu">
+    <ul id="customMenu">
                 <li><a>New Quick Step</a>
                 <ul>
                 <li><a>Move to new folder</a></li>
@@ -5774,7 +5774,7 @@ Sets text for the gallery content.
                          }],
                          customGalleryItems: [{
                              customItemType: ej.Ribbon.customItemType.menu,
-                             menuId: "custommenu",
+                             menuId: "customMenu",
                              menuSettings: {
                                  openOnClick: false
                              }
@@ -5826,7 +5826,7 @@ Sets tooltip for the gallery content.
     <li><a>Print</a></li>
     </ul></li></ul>
     <div id="Ribbon"></div> 
-    <ul id="custommenu">
+    <ul id="customMenu">
                 <li><a>New Quick Step</a>
                 <ul>
                 <li><a>Move to new folder</a></li>
@@ -5882,7 +5882,7 @@ Sets tooltip for the gallery content.
                         }],
                         customGalleryItems: [{
                             customItemType: ej.Ribbon.customItemType.menu,
-                            menuId: "custommenu",
+                            menuId: "customMenu",
                             menuSettings: {
                                 openOnClick: false
                             }
@@ -6038,7 +6038,7 @@ Sets the height of each gallery content.
     <li><a>Print</a></li>
     </ul></li></ul>
     <div id="Ribbon"></div> 
-    <ul id="custommenu">
+    <ul id="customMenu">
                 <li><a>New Quick Step</a>
                 <ul>
                 <li><a>Move to new folder</a></li>
@@ -6094,7 +6094,7 @@ Sets the height of each gallery content.
                          }],
                          customGalleryItems: [{
                              customItemType: ej.Ribbon.customItemType.menu,
-                             menuId: "custommenu",
+                             menuId: "customMenu",
                              menuSettings: {
                                  openOnClick: false
                              }
@@ -6146,7 +6146,7 @@ Sets the width of each gallery content.
     <li><a>Print</a></li>
     </ul></li></ul>
     <div id="Ribbon"></div> 
-    <ul id="custommenu">
+    <ul id="customMenu">
                 <li><a>New Quick Step</a>
                 <ul>
                 <li><a>Move to new folder</a></li>
@@ -6202,7 +6202,7 @@ Sets the width of each gallery content.
                         }],
                         customGalleryItems: [{
                             customItemType: ej.Ribbon.customItemType.menu,
-                            menuId: "custommenu",
+                            menuId: "customMenu",
                             menuSettings: {
                                 openOnClick: false
                             }
@@ -10566,7 +10566,7 @@ Triggered when an item in the Gallery control is clicked successfully.
                          }],
                          customGalleryItems: [{
                              customItemType: ej.Ribbon.customItemType.menu,
-                             menuId: "custommenu",
+                             menuId: "customMenu",
                              menuSettings: {
                                  openOnClick: false
                              }

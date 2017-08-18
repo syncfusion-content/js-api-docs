@@ -474,17 +474,17 @@ The customMenuFields property is used to define custom functionality for custom 
                         {
                                 id: "Tile",
                                 text: "Tile view",
-                                action: "onlayout"
+                                action: "onLayout"
                         },
                         {
                                 id: "Grid",
                                 text: "Grid view",
-                                action: "onlayout"
+                                action: "onLayout"
                         },
                         {
                                 id: "LargeIcons",
                                 text: "Large icons view",
-                                action: "onlayout"
+                                action: "onLayout"
                         },]
                 },]
         },
@@ -493,9 +493,9 @@ The customMenuFields property is used to define custom functionality for custom 
         });
         
         //define the action for custom ContextMenu item
-        function onlayout(args) {
-                var feObj = $('#fileExplorer').data("ejFileExplorer");
-                feObj.option("layout", args.ID);
+        function onLayout(args) {
+                var fileExplorerObj = $('#fileExplorer').data("ejFileExplorer");
+                fileExplorerObj.option("layout", args.ID);
         }
         </script>
 
@@ -2467,8 +2467,8 @@ Refresh the size of FileExplorer control.
         ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"           
         });
         // Create FileExplorer instance
-        var feObj = $("#fileExplorer").data("ejFileExplorer");
-        feObj.adjustSize(); // refresh the size of file explorer               
+        var fileExplorerObj = $("#fileExplorer").data("ejFileExplorer");
+        fileExplorerObj.adjustSize(); // refresh the size of file explorer               
         </script>
 
 {% endhighlight %}
@@ -2514,8 +2514,8 @@ item</td>
         ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"           
         });
         // Create FileExplorer instance
-        var feObj = $("#fileExplorer").data("ejFileExplorer");
-        feObj.disableMenuItem("Upload"); // disable upload option                         
+        var fileExplorerObj = $("#fileExplorer").data("ejFileExplorer");
+        fileExplorerObj.disableMenuItem("Upload"); // disable upload option                         
         </script>
 
 {% endhighlight %}
@@ -2569,8 +2569,8 @@ item</td>
         ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"           
         });
         // Create FileExplorer instance
-        var feObj = $("#fileExplorer").data("ejFileExplorer");
-        feObj.disableToolbarItem("Searchbar"); // disable search bar                           
+        var fileExplorerObj = $("#fileExplorer").data("ejFileExplorer");
+        fileExplorerObj.disableToolbarItem("Searchbar"); // disable search bar                           
         </script>
 
 {% endhighlight %}
@@ -2616,8 +2616,8 @@ item</td>
         ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"            
         });
         // Create FileExplorer instance
-        var feObj = $("#fileExplorer").data("ejFileExplorer");
-        feObj.enableMenuItem("Upload"); // enable upload option in context menu                     
+        var fileExplorerObj = $("#fileExplorer").data("ejFileExplorer");
+        fileExplorerObj.enableMenuItem("Upload"); // enable upload option in context menu                     
         </script>
 
 {% endhighlight %}
@@ -2672,8 +2672,8 @@ item</td>
         ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"            
         });
         // Create FileExplorer instance
-        var feObj = $("#fileExplorer").data("ejFileExplorer");
-        feObj.enableToolbarItem("Searchbar"); // enable search bar                     
+        var fileExplorerObj = $("#fileExplorer").data("ejFileExplorer");
+        fileExplorerObj.enableToolbarItem("Searchbar"); // enable search bar                     
         </script>
 
 {% endhighlight %}
@@ -2701,8 +2701,8 @@ Refresh the content of the selected folder in FileExplorer control.
         ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"           
         });
         // Create FileExplorer instance
-        var feObj = $("#fileExplorer").data("ejFileExplorer");
-        feObj.refresh(); // refresh the content of selected folder               
+        var fileExplorerObj = $("#fileExplorer").data("ejFileExplorer");
+        fileExplorerObj.refresh(); // refresh the content of selected folder               
         </script>
 
 {% endhighlight %}
@@ -2756,8 +2756,8 @@ item</td>
         ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"            
         });
         // Create FileExplorer instance
-        var feObj = $("#fileExplorer").data("ejFileExplorer");
-        feObj.removeToolbarItem("Searchbar"); // remove search bar                     
+        var fileExplorerObj = $("#fileExplorer").data("ejFileExplorer");
+        fileExplorerObj.removeToolbarItem("Searchbar"); // remove search bar                     
         </script>
 
 {% endhighlight %}

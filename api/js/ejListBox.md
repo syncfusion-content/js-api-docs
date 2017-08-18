@@ -135,7 +135,7 @@ Example
 
 {% highlight js %}
 
-            $("#customerlist").ejListBox({
+            $("#customerList").ejListBox({
 
             allowVirtualScrolling: true           
 
@@ -242,7 +242,7 @@ Example
 
 {% highlight js %}
 
-            $("#customerlist").ejListBox({
+            $("#customerList").ejListBox({
 
                 dataSource: customerData
 
@@ -353,7 +353,7 @@ Example
 
 {% highlight js %}
        
-$("#countrylist").ejListBox({
+$("#countryList").ejListBox({
 
     dataSource: countries,
 
@@ -454,15 +454,15 @@ Example
 {% highlight js %}
 
     BikeList = [
-        { empid: "bk1", text: "Aache RTR" }, { empid: "bk2", text: "CBR 150-R" }, { empid: "bk3", text: "CBZ Xtreme" },
-        { empid: "bk4", text: "Discover" }, { empid: "bk5", text: "Dazzler" }, { empid: "bk6", text: "Flame" },
-        { empid: "bk7", text: "Fazzer" }, { empid: "bk8", text: "FZ-S" }, { empid: "bk9", text: "Pulsar" },
-        { empid: "bk10", text: "Shine" }, { empid: "bk11", text: "R15" }, { empid: "bk12", text: "Unicorn" }
+        { employeeId: "bk1", text: "Apache RTR" }, { employeeId: "bk2", text: "CBR 150-R" }, { employeeId: "bk3", text: "CBZ Xtreme" },
+        { employeeId: "bk4", text: "Discover" }, { employeeId: "bk5", text: "Dazzler" }, { employeeId: "bk6", text: "Flame" },
+        { employeeId: "bk7", text: "Fazer" }, { employeeId: "bk8", text: "FZ-S" }, { employeeId: "bk9", text: "Pulsar" },
+        { employeeId: "bk10", text: "Shine" }, { employeeId: "bk11", text: "R15" }, { employeeId: "bk12", text: "Unicorn" }
     ];
 
-    $("#selectbike").ejListBox({
+    $("#selectBike").ejListBox({
         dataSource: BikeList, itemHeight:"40px",
-        fields: { id: "empid", value: "text" }
+        fields: { id: "employeeId", value: "text" }
     });
 
 {% endhighlight %}
@@ -517,7 +517,7 @@ Example
 
 {% highlight js %}
 
-$("#customerlist").ejListBox({
+$("#customerList").ejListBox({
 
     itemRequestCount: 6
 
@@ -565,7 +565,7 @@ var query = ej.Query()
 
 .from("Customers").take(10);
 
-$("#customerlist").ejListBox({
+$("#customerList").ejListBox({
 
     query: query
 
@@ -706,7 +706,7 @@ Example
 
             $('#selectExperts').ejListBox({
 
-                template: '&lt;div class="ename"&gt; ${text} &lt;/div&gt;&lt;div class="desig"&gt; ${desig} &lt;/div&gt;&lt;div class="cont"&gt; ${country} &lt;/div&gt;'
+                template: '&lt;div class="ename"&gt; ${text} &lt;/div&gt;&lt;div class="design"&gt; ${design} &lt;/div&gt;&lt;div class="cont"&gt; ${country} &lt;/div&gt;'
 
             });
         
@@ -735,29 +735,29 @@ Example
 
             var list = [
 
-            { empid: "cr1", text: "Dodge Avenger" },
+            { employeeId: "cr1", text: "Dodge Avenger" },
 
-            { empid: "cr2", text: "Chrysler 200" },
+            { employeeId: "cr2", text: "Chrysler 200" },
 
-            { empid: "cr3", text: "Ford Focus" },
+            { employeeId: "cr3", text: "Ford Focus" },
 
-            { empid: "cr4", text: "Ford Taurus", },
+            { employeeId: "cr4", text: "Ford Taurus", },
 
-            { empid: "cr5", text: "Dazzler", },
+            { employeeId: "cr5", text: "Dazzler", },
 
-            { empid: "cr6", text: "Chevy Spark", },
+            { employeeId: "cr6", text: "Chevy Spark", },
 
-            { empid: "cr7", text: "Chevy Volt", },
+            { employeeId: "cr7", text: "Chevy Volt", },
 
-            { empid: "cr8", text: "Honda Fit", },
+            { employeeId: "cr8", text: "Honda Fit", },
 
-            { empid: "cr9", text: "Honda Crosstour", },
+            { employeeId: "cr9", text: "Honda CrossTour", },
 
-            { empid: "cr10", text: "Acura RL", },
+            { employeeId: "cr10", text: "Acura RL", },
 
-            { empid: "cr11", text: "Hyundai Elantra", },
+            { employeeId: "cr11", text: "Hyundai Elantra", },
 
-            { empid: "cr12", text: "Mazda3", }
+            { employeeId: "cr12", text: "Mazda3", }
 
             ];
 
@@ -813,7 +813,7 @@ Example
 {:.example}
 
  {% highlight js %}
-            $("#customerlist").ejListBox({
+            $("#customerList").ejListBox({
             
                     allowVirtualScrolling: true, 
             
@@ -853,7 +853,7 @@ Example
 
  {% highlight js %}
  
-    $('#list').ejListBox({ targetID: "carslist"}); 
+    $('#list').ejListBox({ targetID: "carsList"}); 
     
  {% endhighlight %}
  
@@ -1385,7 +1385,7 @@ Example
 {% highlight html %}
 
  <ul id="list"></ul>
-<button id="mergedata">Merge Data </button>
+<button id="mergeData">Merge Data </button>
 <script type="text/javascript">
 BikeList = [{ BikeName: "Apache RTR" }, { BikeName: "CBR 150-R" },{ BikeName: "Discover" }, { BikeName: "Dazzler" }];
 NewBikeList = [{ BikeName: "Honda" }, { BikeName: "TVS" }];
@@ -1393,7 +1393,7 @@ $('#list').ejListBox({
 dataSource: BikeList,
 fields: { text: "BikeName" }
 });
-$("#mergedata").click(function () {
+$("#mergeData").click(function () {
 $("#list").ejListBox("mergeData", NewBikeList);
 });
 </script>
@@ -1459,7 +1459,7 @@ Example
 
 {% highlight js %}
 
-                $("#customerlist").ejListBox("refresh", true);
+                $("#customerList").ejListBox("refresh", true);
 
 {% endhighlight %}
 

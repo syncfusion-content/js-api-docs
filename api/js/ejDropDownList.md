@@ -103,9 +103,9 @@ The Virtual Scrolling(lazy loading) feature is used to display a large amount of
 {% highlight html %}
 
     <input type="text" id="CompanyNames" />
-    var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Customers" });
+    var dataManagerObj = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Customers" });
     $('#CompanyNames').ejDropDownList({
-        "dataSource": dm,
+        "dataSource": dataManagerObj,
         "fields": { text: "CompanyName", value: 'ContactName' },
         "width": 260,
         "itemsCount": 10,
@@ -999,14 +999,14 @@ Defines the maximum height of the suggestion box. This property restricts the ma
  
     <input type="text" id="dropdown" />
     <script>
-        var dm = ej.DataManager({ url:   "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
+        var dataManagerObj = ej.DataManager({ url:   "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates DropDownList.
         $('#dropdown').ejDropDownList(
         { 
-           dataSource: dm, 
+           dataSource: dataManagerObj, 
            query: query, 
            fields: { text: "ShipName", groupBy: "ShipCountry" }, 
            itemsCount : 20,
@@ -1034,14 +1034,14 @@ Defines the minimum height of the suggestion box. This property restricts the mi
     <input type="text" id="dropdown" />
     <script>
 
-        var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
+        var dataManagerObj = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates DropDownList.
         $('#dropdown').ejDropDownList(
         { 
-           dataSource: dm, 
+           dataSource: dataManagerObj, 
            query: query, 
            fields: { text: "ShipName", groupBy: "ShipCountry" },  
            itemsCount : 20,  
@@ -1069,14 +1069,14 @@ Defines the maximum width of the suggestion box. This property restricts the max
     <input type="text" id="dropdown" />
     <script>
 
-        var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
+        var dataManagerObj = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates DropDownList.
         $('#dropdown').ejDropDownList(
         { 
-            dataSource: dm, 
+            dataSource: dataManagerObj, 
             query: query, 
             fields: { text: "ShipName", groupBy: "ShipCountry" },  
             itemsCount : 20,                                        
@@ -1105,14 +1105,14 @@ Defines the minimum height of the suggestion box. This property restricts the mi
     <input type="text" id="dropdown" />
     <script>
 
-        var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
+        var dataManagerObj = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates DropDownList.
         $('#dropdown').ejDropDownList(
         { 
-            dataSource: dm, 
+            dataSource: dataManagerObj, 
             query: query, 
             fields: { text: "ShipName", groupBy: "ShipCountry" },
             itemsCount : 20,
@@ -1236,14 +1236,14 @@ Defines the height of the suggestion popup box in the DropDownList control.
 
     <script>
 
-        var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
+        var dataManagerObj = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates DropDownList.
         $('#dropdown').ejDropDownList(
         { 
-            dataSource: dm, 
+            dataSource: dataManagerObj, 
             query: query, 
             fields: { text: "ShipName", groupBy: "ShipCountry" },   
             itemsCount : 20,
@@ -1308,14 +1308,14 @@ Specifies the query to retrieve the data from the DataSource.
 
     <script>
 
-        var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
+        var dataManagerObj = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates DropDownList.
         $('#dropdown').ejDropDownList(
         { 
-           dataSource: dm, 
+           dataSource: dataManagerObj, 
            query: query, 
            fields: { text: "ShipName", groupBy: "ShipCountry" },    
            itemsCount: 20
@@ -1749,7 +1749,7 @@ Sets the jQuery validation error message in the DropDownList
     <input type="text" id="dropdown" name="dropdown" />
     <script>
 
-        var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
+        var dataManagerObj = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
 
@@ -1757,7 +1757,7 @@ Sets the jQuery validation error message in the DropDownList
 
         $('#dropdown').ejDropDownList(
         {
-            dataSource: dm, 
+            dataSource: dataManagerObj, 
             query: query, 
             fields: { text: "ShipName", groupBy: "ShipCountry" }, 
             itemsCount: 20,
@@ -1790,14 +1790,14 @@ Sets the jQuery validation rules in the Dropdownlist.
 
     <script>
 
-        var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
+        var dataManagerObj = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
         // Creates DropDownList.
 
         $('#dropdown').ejDropDownList(
         {
-            dataSource: dm, 
+            dataSource: dataManagerObj, 
             query: query, 
             fields: { text: "ShipName", groupBy: "ShipCountry" }, 
             itemsCount: 20,
@@ -1967,14 +1967,14 @@ continuous</td>
     <input type="text" id="dropdown" />
     <script>
 
-        var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
+        var dataManagerObj = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates DropDownList.
         $('#dropdown').ejDropDownList(
         { 
-            dataSource: dm, 
+            dataSource: dataManagerObj, 
             query: query, 
             fields: { text: "ShipName", value: "ShipCountry" }, 
             itemsCount: 20, 
@@ -1992,13 +1992,13 @@ continuous</td>
  
     <input type="text" id="dropdown" />
     <script>
-        var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
+        var dataManagerObj = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
         // Creates DropDownList.
         $('#dropdown').ejDropDownList(
         { 
-            dataSource: dm, 
+            dataSource: dataManagerObj, 
             query: query, 
             fields: { text: "ShipName", value: "ShipCountry" }, 
             itemsCount: 20, 
@@ -2080,7 +2080,7 @@ Adding a single item or an array of items into the DropDownList allows you to sp
         ];
 
         // Creates the DropDownList
-        var dropdownobj = $('#dropdown').ejDropDownList(
+        var dropdownObj = $('#dropdown').ejDropDownList(
         { 
            dataSource: window.countries, 
            field: { text: "text"}, 
@@ -2093,7 +2093,7 @@ Adding a single item or an array of items into the DropDownList allows you to sp
 			{ text: "Pakistan"},
 			];
         
-       dropdownobj.addItem(newCountries );
+       dropdownObj.addItem(newCountries );
 
     </script>
 
@@ -2636,14 +2636,14 @@ This method will return the whole object corresponds to given value from datasou
 
     <script>
 
-        var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
+        var dataManagerObj = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates the DropDownList.
         $('#dropdown').ejDropDownList(
         {
-            dataSource: dm, 
+            dataSource: dataManagerObj, 
             query: query, 
             fields: { text: "ShipName", value: "ShipCountry" }, 
             itemsCount: 20
@@ -2661,14 +2661,14 @@ This method will return the whole object corresponds to given value from datasou
 
     <script>
 
-        var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
+        var dataManagerObj = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates the DropDownList.
         $('#dropdown').ejDropDownList(
         {
-            dataSource: dm, 
+            dataSource: dataManagerObj, 
             query: query, 
             fields: { text: "ShipName", value: "ShipCountry" }, 
             itemsCount: 20
@@ -2996,7 +2996,7 @@ This method is used to select the list of items in the DropDownList through the 
         var DropDownListObj =     
         $('#dropdown').ejDropDownList({showCheckbox : true }).data("ejDropDownList");
 
-        DropDownListObj.selectItemsByIndices("2,3"); //selectItembyIndex for the DropDownList text.
+        DropDownListObj.selectItemsByIndices("2,3"); //selectItemByIndex for the DropDownList text.
 
     </script>
 {% endhighlight %}
@@ -3559,14 +3559,14 @@ Fires the action before the XHR request.
 
     <script>
 
-        var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
+        var dataManagerObj = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates the DropDownList.
         $('#dropdown').ejDropDownList(
         {
-            dataSource: dm, 
+            dataSource: dataManagerObj, 
             query: query, 
             fields: { text: "ShipName", value: "ShipCountry" }, 
             itemsCount: 20, 
@@ -3648,14 +3648,14 @@ Fires the action when the list of items is bound to the DropDownList by xhr post
 
     <script>
 
-        var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
+        var dataManagerObj = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates the DropDownList.
         $('#dropdown').ejDropDownList(
         {
-            dataSource: dm, 
+            dataSource: dataManagerObj, 
             query: query, 
             fields: { text: "ShipName", value: "ShipCountry" }, 
             itemsCount: 20, 
@@ -3721,14 +3721,14 @@ Fires the action when the xhr post calling failed on remote data binding with th
 
     <script>
 
-        var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
+        var dataManagerObj = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates the DropDownList.
         $('#dropdown').ejDropDownList(
         {
-            dataSource: dm, 
+            dataSource: dataManagerObj, 
             query: query, 
             fields: { text: "ShipName", value: "ShipCountry" }, 
             itemsCount: 20, 
@@ -3808,14 +3808,14 @@ Fires the action when the xhr post calling succeed on remote data binding with t
 
     <script>
 
-        var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
+        var dataManagerObj = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates DropDownList.
         $('#dropdown').ejDropDownList(
         {
-            dataSource: dm, 
+            dataSource: dataManagerObj, 
             query: query, 
             fields: { text: "ShipName", value: "ShipCountry" }, 
             itemsCount: 20, 
@@ -4371,14 +4371,14 @@ Fires the action when the list items is bound to the DropDownList.
 
     <script>
 
-        var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
+        var dataManagerObj = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates DropDownList.
         $('#dropdown').ejDropDownList(
         {
-            dataSource: dm, 
+            dataSource: dataManagerObj, 
             query: query, 
             fields: { text: "ShipName", value: "ShipCountry" }, 
             itemsCount: 20, 
@@ -4696,14 +4696,14 @@ Fires the action, when the popup is resized.
  
 <input type="text" id="dropdown" /><script>
 
-        var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
+        var dataManagerObj = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates the DropDownList.
         $('#dropdown').ejDropDownList(
         {
-            dataSource: dm, 
+            dataSource: dataManagerObj, 
             query: query, 
             fields: { text: "ShipName", value: "ShipCountry" }, 
             itemsCount: 20, 
@@ -4837,14 +4837,14 @@ Fires the action, when resizing a popup starts.
 
     <script>
 
-        var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
+        var dataManagerObj = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" })
 
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates the DropDownList.
         $('#dropdown').ejDropDownList(
         {
-            dataSource: dm, 
+            dataSource: dataManagerObj, 
             query: query, 
             fields: { text: "ShipName", value: "ShipCountry" }, 
             itemsCount: 20, 
@@ -4903,14 +4903,14 @@ Fires the action, when the popup resizing is stopped.
 <input type="text" id="dropdown" />
     <script>
 
-        var dm = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
+        var dataManagerObj = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Orders" });
 
         var query = ej.Query().select("ShipName", "ShipCountry");
 
         // Creates the DropDownList.
         $('#dropdown').ejDropDownList(
         {
-            dataSource: dm, 
+            dataSource: dataManagerObj, 
             query: query, 
             fields: { text: "ShipName", value: "ShipCountry" }, 
             itemsCount: 20, 
