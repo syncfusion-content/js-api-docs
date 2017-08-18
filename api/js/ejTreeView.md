@@ -1140,7 +1140,19 @@ $("#treeView").ejTreeView({
 It receives the child level or inner level data source such as Essential DataManager object and JSON object.
 
 
-
+{% highlight html %}
+ 
+<div id="treeView"></div>
+<script>
+// Initialize the TreeView with the fields value specified. 
+$("#treeView").ejTreeView({
+    fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" ,
+    child:{
+        dataSource:window.childData, id:"id",parendId:"parentid", text: "name"
+    }
+    }
+});
+ </script>{% endhighlight %}
 
 
 
@@ -1166,7 +1178,7 @@ It receives Essential DataManager object and JSON object.
 
 
 
-
+To know more details about dataSource , please click the [here](https://help.syncfusion.com/js/treeview/populate-data)
 
 
 
@@ -1386,7 +1398,7 @@ It receives query to retrieve data from the table (query is same as SQL).
 
 
 
-
+To know more details to add the query, please click [here](https://help.syncfusion.com/js/treeview/populate-data#remote-data)
 
 
 
@@ -1470,6 +1482,7 @@ It receives the table name to execute query on the corresponding table.
 Specifies the text of TreeView node items list.
 
 
+To know more details about treeview fields, please click [here](https://help.syncfusion.com/js/treeview/populate-data#fields) 
 
 
 ### fullRowSelect `boolean`
