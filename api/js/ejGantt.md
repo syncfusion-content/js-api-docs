@@ -2462,7 +2462,7 @@ Specifies the template ID for customized tooltip for progressbar editing in Gant
 <script>  
         $("#gantt").ejGantt(
  {
-    progressbarTooltipTemplateId: "tooltiptemplateID"
+    progressbarTooltipTemplateId: "tooltipTemplateID"
  });            
 </script>
 
