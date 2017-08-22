@@ -397,7 +397,7 @@ Specify the URL of the frame background image for circular gauge
 {:#members:frame.frametype}
 
 <ts name="ej.datavisualization.CircularGauge.FrameType"/>
-Specifies the frameType of circular gauge. See <a href="global.html#Frame">Frame</a>
+Specifies the frameType of circular gauge. See <a href="global.html#frame.frametype">Frame</a>
 
 
 <table class="props">
@@ -845,7 +845,7 @@ $("#CoreCircularGauge").ejCircularGauge({ minimum: 10 });
 {:#members:outercustomlabelposition}
 
 <ts name="ej.datavisualization.CircularGauge.OuterCustomLabelPosition"/>
-Specify outerCustomLabelPosition value of circular gauge See <a href="global.html#OuterCustomLabelPosition">OuterCustomLabelPosition</a>
+Specify outerCustomLabelPosition value of circular gauge See <a href="global.html#outercustomlabelposition">OuterCustomLabelPosition</a>
 
 
 <table class="props">
@@ -1142,10 +1142,10 @@ Specify border width of circular gauge
 
 
 ### scales.direction `enum`
-{:#members:scales.direction}
+{:#members:scales-direction}
 
 <ts name="ej.datavisualization.CircularGauge.Direction"/>
-Specify scale direction of circular gauge. See <a href="global.html#Directions">Directions</a>
+Specify scale direction of circular gauge. See <a href="global.html#scales-direction">Directions</a>
 
 <table class="props">
 <thead>
@@ -1579,10 +1579,10 @@ $("#CoreCircularGauge").ejCircularGauge({
 
 
 ### scales.customLabels.positionType `enum`
-{:#members:scales.customlabels.positiontype}
+{:#members:scales-customlabels-positiontype}
 
 <ts name="ej.datavisualization.CircularGauge.CustomLabelPositionType"/>
-Specifies the position of the  custom labels. See <a href="global.html#CustomLabelPositionType">CustomLabelPositionType</a>
+Specifies the position of the  custom labels. See <a href="global.html#scales-customlabels-positiontype">CustomLabelPositionType</a>
 
 
 <table class="props">
@@ -2150,10 +2150,10 @@ stateRanges: [{ endValue: 70, startValue: 0, text: "staterange1", textColor: "Ye
 
 
 ### scales.indicators.type `enum`
-{:#members:scales.indicators.type}
+{:#members:scales-indicators-type}
 
 <ts name="ej.datavisualization.CircularGauge.IndicatorTypes"/>
-Specify indicator style of circular gauge. See <a href="global.html#IndicatorType">IndicatorType</a>
+Specify indicator style of circular gauge. See <a href="global.html#scales-indicators-type">IndicatorType</a>
 
 
 <table class="props">
@@ -2627,10 +2627,10 @@ Specify opacity value for labels of circular gauge
 
 
 ### scales.labels.placement `enum`
-{:#members:scales.labels.placement}
+{:#members:scales-labels-placement}
 
 <ts name="ej.datavisualization.CircularGauge.Placement"/>
-Specify label placement of circular gauge. See <a href="global.html#LabelPlacement">LabelPlacement</a>
+Specify label placement of circular gauge. See <a href="global.html#scales.labels.placement">LabelPlacement</a>
 
 
 <table class="props">
@@ -2688,10 +2688,10 @@ Center</td>
 
 
 ### scales.labels.type `enum`
-{:#members:scales.labels.type}
+{:#members:scales-labels-type}
 
 <ts name="ej.datavisualization.CircularGauge.LabelType"/>
-Specify label Style of circular gauge. See <a href="global.html#LabelType">LabelType</a>
+Specify label Style of circular gauge. See <a href="global.html#scales.labels.type">LabelType</a>
 
 
 <table class="props">
@@ -2776,7 +2776,7 @@ Specify unitText of circular gauge
 
 
 ### scales.labels.unitTextPosition `enum`
-{:#members:scales.labels.unittextposition}
+{:#members:scales-labels-unittextposition}
 
 <ts name="ej.datavisualization.CircularGauge.UnitTextPlacement"/>
 Specify unitTextPosition of circular gauge. See UnitTextPosition
@@ -3525,10 +3525,10 @@ Specify pointer length of circular gauge
 
 
 ### scales.pointers.markerType `enum`
-{:#members:scales.pointers.markertype}
+{:#members:scales-pointers-markertype}
 
 <ts name="ej.datavisualization.CircularGauge.MarkerType"/>
-Specify marker Style value of circular gauge. See <a href="global.html#MarkerType">MarkerType</a>
+Specify marker Style value of circular gauge. See <a href="global.html#scales-pointers-markertype">MarkerType</a>
 
 
 <table class="props">
@@ -3641,10 +3641,10 @@ Image</td>
 
 
 ### scales.pointers.needleType `enum`
-{:#members:scales.pointers.needletype}
+{:#members:scales-pointers-needletype}
 
 <ts name="ej.datavisualization.CircularGauge.NeedleType"/>
-Specify needle Style value of circular gauge. See <a href="global.html#NeedleType">NeedleType</a>
+Specify needle Style value of circular gauge. See <a href="global.html#scales-pointers-needletype">NeedleType</a>
 
 
 <table class="props">
@@ -3781,7 +3781,7 @@ Specify radius value for pointer of circular gauge
 
 <ts ref="ej.datavisualization.CircularGauge.Placement"/>
 
-Specify pointer Placement value of circular gauge. See <a href="global.html#PointerPlacement">PointerPlacement</a>
+Specify pointer Placement value of circular gauge. See <a href="global.html#scales-pointers-placement">PointerPlacement</a>
 
 
 #### Default Value
@@ -4208,7 +4208,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ showBackNeedle
 {:#members:scales.pointers.type}
 
 <ts name="ej.datavisualization.CircularGauge.PointerType"/>
-Specify pointer type value of circular gauge. See <a href="global.html#PointerType">PointerType</a>
+Specify pointer type value of circular gauge. See <a href="global.html#scales-pointers-type">PointerType</a>
 
 
 <table class="props">
@@ -4721,7 +4721,7 @@ Specify opacity value for ranges of circular gauge
 <ts ref="ej.datavisualization.CircularGauge.Placement"/>
 
 
-Specify placement of circular gauge. See <a href="global.html#RangePlacement">RangePlacement</a>
+Specify placement of circular gauge. See <a href="global.html#scales-ranges-placement">RangePlacement</a>
 
 
 #### Default Value
@@ -5570,7 +5570,7 @@ Specify tick height of circular gauge
 <ts ref="ej.datavisualization.CircularGauge.Placement"/>
 
 
-Specify tick placement of circular gauge. See <a href="global.html#TickPlacement">TickPlacement</a>
+Specify tick placement of circular gauge. See <a href="global.html#scales-ticks-placement">TickPlacement</a>
 
 
 #### Default Value
@@ -5795,7 +5795,7 @@ Far</td>
 
 #### Default Value
 
-* "Center". See <a href="global.html#members:alignment">Alignment</a>
+* "Center". See <a href="global.html#members:legend-alignment">Alignment</a>
 
 #### Example
 
@@ -6182,7 +6182,7 @@ Bottom</td>
 
 #### Default Value
 
-* "Bottom". See <a href="global.html#members:position">Position</a>
+* "Bottom". See <a href="global.html#members:legend-position">Position</a>
 
 
 
@@ -6283,7 +6283,7 @@ Line</td>
 
 #### Default Value
 
-* "Circle". See <a href="global.html#members:shape">Shape</a>
+* "Circle". See <a href="global.html#members:legend-shape">Shape</a>
 
 
 
