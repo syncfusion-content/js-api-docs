@@ -182,7 +182,7 @@ Points</td>
 
 #### Default Value
 
-* "none". See <a href="global.html#members:coordinateunit">CoordinateUnit</a>
+* "none". See <a href="global.html#members:annotations-coordinateunit">CoordinateUnit</a>
 
 
 
@@ -242,7 +242,7 @@ Middle</td>
 
 #### Default Value
 
-* "middle". See <a href="global.html#members:horizontalalignment">HorizontalAlignment</a>
+* "middle". See <a href="global.html#members:annotations-horizontalalignment">HorizontalAlignment</a>
 
 
 
@@ -479,7 +479,7 @@ Series</td>
 
 #### Default Value
 
-* "chart". See <a href="global.html#members:region">Region</a>
+* "chart". See <a href="global.html#members:annotations-region">Region</a>
 
 
 
@@ -542,7 +542,7 @@ Middle</td>
 
 #### Default Value
 
-* "middle". See <a href="global.html#members:verticalalignment">VerticalAlignment</a>
+* "middle". See <a href="global.html#members:annotations-verticalalignment">VerticalAlignment</a>
 
 
 
@@ -1417,7 +1417,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdfd1sai)
 
 
 ### columnDefinitions.unit `enum`
-{:#members:columnDefinitions.unit}
+{:#members:columnDefinitions-unit}
 
 <ts name="ej.datavisualization.Chart.Unit"/>
 Specifies the unit to measure the width of the column in plotting area.
@@ -1450,7 +1450,7 @@ Pixel</td>
 
 #### Default Value
 
-* 'pixel'. See <a href="global.html#members:unit">Unit</a>
+* 'pixel'. See <a href="global.html#members:columnDefinitions">Unit</a>
 
 
 
@@ -1472,7 +1472,7 @@ $("#container").ejChart({
 
 
 ### columnDefinitions.columnWidth `number`
-{:#members:columnDefinitions.columnWidth}
+{:#members:columnDefinitions-columnWidth}
 
 
 
@@ -1642,7 +1642,7 @@ commonSeriesOptions :{border :{ color : "green" } }
 
 
 ### commonSeriesOptions.border.dashArray `string`
-{:#members:commonSeriesOptions-border-dasharray}
+{:#members:commonseriesoptions-border-dasharray}
 
 
 
@@ -2111,7 +2111,7 @@ Column</td>
 
 
 
-* "line". See <a href="global.html#members:drawtype">DrawType</a>
+* "line". See <a href="global.html#members:commonseriesoptions-drawtype">DrawType</a>
 
 #### Example
 
@@ -2839,7 +2839,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/g40hdrpl)
 
 
 ### commonSeriesOptions.isTransposed `boolean`
-{:#members:commonseriesoptions-isTransposed}
+{:#members:commonseriesoptions-istransposed}
 
 
 
@@ -2943,7 +2943,7 @@ OutsideExtended</td>
 
 
 
-* "inside". See <a href="global.html#members:labelposition">LabelPosition</a>
+* "inside". See <a href="global.html#members:commonseriesoptions-labelposition">LabelPosition</a>
 
 
 
@@ -3011,7 +3011,7 @@ Indexes</td>
 
 
 
-* "value". See <a href="global.html#members:splitmode">SplitMode</a>
+* "value". See <a href="global.html#members:commonseriesoptions-splitmode">SplitMode</a>
 
 
 
@@ -3147,7 +3147,7 @@ commonSeriesOptions :{ bubbleOptions: { radiusMode: "minmax" }}
  {% endhighlight %}
  
 ### commonSeriesOptions.bubbleOptions.minRadius `number`
-{:#members:commonseriesoptions-bubbleoptions-minRadius}
+{:#members:commonseriesoptions-bubbleoptions-minradius}
 
 
 
@@ -3176,7 +3176,7 @@ commonSeriesOptions :{ bubbleOptions: { minRadius: 3 }}
 
 
 ### commonSeriesOptions.bubbleOptions.maxRadius `number`
-{:#members:commonseriesoptions-bubbleoptions-maxRadius}
+{:#members:commonseriesoptions-bubbleoptions-maxradius}
 
 
 
@@ -3314,7 +3314,7 @@ Square</td>
 
 
 
-* "butt". See <a href="global.html#members:linecap">LineCap</a>
+* "butt". See <a href="global.html#members:commonseriesoptions-linecap">LineCap</a>
 
 
 #### Example
@@ -3374,7 +3374,7 @@ Miter</td>
 
 
 
-* "round". See <a href="global.html#members:linejoin">LineJoin</a>
+* "round". See <a href="global.html#members:commonseriesoptions-linejoin">LineJoin</a>
 
 
 #### Example
@@ -3726,7 +3726,7 @@ Bezier</td>
 
 
 
-* "line". See <a href="global.html#connectorlinetype">ConnectorLineType</a>
+* "line". See <a href="global.html#members:commonseriesoptions-marker-datalabel-connectorline-type">ConnectorLineType</a>
 
 
 #### Example
@@ -3747,7 +3747,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pmnp5qjl)
 
 
 ### commonSeriesOptions.marker.dataLabel.connectorLine.width `number`
-{:#members:commonseriesoptions.marker.datalabel.connectorline.width}
+{:#members:commonseriesoptions-marker-datalabel-connectorline-width}
 
 
 
@@ -3934,7 +3934,7 @@ Font style of the data label.
 
 
 
-* "normal". See <a href="global.html#fontstyle">FontStyle</a>
+* "normal". See <a href="global.html#members:commonseriesoptions-marker-datalabel-font-fontstyle">FontStyle</a>
 
 
 #### Example
@@ -3965,7 +3965,7 @@ Font weight of the data label.
 
 
 
-* "regular". See <a href="global.html#members:fontweight">FontWeight</a>
+* "regular". See <a href="global.html#members:commonseriesoptions-marker-datalabel-font-fontweight">FontWeight</a>
 
 
 
@@ -4510,7 +4510,7 @@ SeriesType</td>
 
 
 
-* "none". See <a href="global.html#members:shape">Shape</a>
+* "none". See <a href="global.html#members:commonseriesoptions-marker-datalabel-shape">Shape</a>
 
 
 
@@ -4632,7 +4632,7 @@ Middle</td>
 
 
 
-* "top". See <a href="global.html#members:textposition">TextPosition</a>
+* "top". See <a href="global.html#members:series-marker-datalabel-textposition">TextPosition</a>
 
 
 
@@ -5053,7 +5053,7 @@ Specifies the shape of the outlier.
 
 
 
-* "circle". See <a href="global.html#members:shape">Shape</a>
+* "circle". See <a href="global.html#members:commonseriesoptions-outliersettings-shape">Shape</a>
 
 
 
@@ -5249,7 +5249,7 @@ commonSeriesOptions :{ pieOfPieCoefficient : 1}
 
  
 ### commonSeriesOptions.splitValue `string`
-{:#members:commonSeriesOptions-splitvalue}
+{:#members:commonseriesoptions-splitvalue}
 
 
 
@@ -5376,7 +5376,7 @@ Surface</td>
 
 
 
-* "linear". See <a href="global.html#members:pyramidmode">PyramidMode</a>
+* "linear". See <a href="global.html#members:commonseriesoptions-pyramidmode">PyramidMode</a>
 
 #### Example
 
@@ -5428,7 +5428,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gposb4vh)
 
 
 ### commonSeriesOptions.cornerRadius `object`
-{:#members:commonSeriesOptions-cornerradius}
+{:#members:commonseriesoptions-cornerradius}
 
 
 
@@ -5452,7 +5452,7 @@ commonSeriesOptions : {
 
 
 ### commonSeriesOptions.cornerRadius.topLeft `number`
-{:#members:commonSeriesOptions.cornerradius.topleft}
+{:#members:commonseriesoptions-cornerradius-topleft}
 
 
 
@@ -5485,7 +5485,7 @@ commonSeriesOptions : {
 
 
 ### commonSeriesOptions.cornerRadius.topRight `number`
-{:#members:commonSeriesOptions.cornerradius.topright}
+{:#members:commonSeriesOptions-cornerradius-topright}
 
 
 
@@ -5519,7 +5519,7 @@ commonSeriesOptions : {
 
 
 ### commonSeriesOptions.cornerRadius.bottomLeft `number`
-{:#members:commonSeriesOptions.cornerradius.bottomleft}
+{:#members:commonseriesoptions-cornerradius-bottomleft}
 
 
 
@@ -5552,7 +5552,7 @@ commonSeriesOptions : {
 
 
 ### commonSeriesOptions.cornerRadius.bottomRight `number`
-{:#members:commonSeriesOptions.cornerradius.bottomright}
+{:#members:commonseriesoptions-cornerradius-bottomright}
 
 
 
@@ -6181,7 +6181,7 @@ RangeArea</td>
 
 
 
-* "column". See <a href="global.html#members:type">Type</a>
+* "column". See <a href="global.html#members:commonseriesoptions-type">Type</a>
 
 
 #### Example
@@ -7632,7 +7632,7 @@ $("#container").ejChart({
 
 
 ### commonSeriesOptions.trendlines `array`
-{:#members:commonseriesoptions.trendlines}
+{:#members:commonseriesoptions-trendlines}
 
 
 
@@ -7702,20 +7702,62 @@ commonSeriesOptions :[{trendlines:[{ visibleOnLegend:'hidden' }]}]
 
 
 
-### commonSeriesOptions.trendlines.type `string`
+### commonSeriesOptions.trendlines.type `enum`
 {:#members:commonseriesoptions-trendlines-type}
 
 
-
+<ts name="ej.datavisualization.Chart.TrendlinesType"/>
 
 Specifies the type of the trendline for the series.
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Linear</td>
+<td class="type">string</td> 
+<td class="description">Specifies the trendline type as linear.</td>
+</tr>
+<tr>
+<td class="name">
+Exponential</td>
+<td class="type">string</td>
+<td class="description">Specifies the trendline type as exponential.</td>
+</tr> 
+<tr>
+<td class="name">
+Logarithmic</td>
+<td class="type">string</td>
+<td class="description">Specifies the trendline type as lograthmic.</td>
+</tr> 
+<tr>
+<td class="name">
+Power</td>
+<td class="type">string</td>
+<td class="description">Specifies the trendline type as power.</td>
+</tr>
+<tr>
+<td class="name">
+Polynomial</td>
+<td class="type">string</td>
+<td class="description">Specifies the trendline type as polynomial.</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Default Value
 
 
 
-* "linear". See <a href="global.html#members:trendlinestype">TrendlinesType</a>
+* "linear". See <a href="global.html#members:commonseriesoptions-trendlines-type">TrendlinesType</a>
 
 
 
@@ -8400,7 +8442,7 @@ commonSeriesOptions :{highlightSettings:{enable:true}}
 
 
 ### commonSeriesOptions.highlightSettings.mode `enum`
-{:#members:commonSeriesOptions-highlightSettings-mode}
+{:#members:commonseriesoptions-highlightsettings-mode}
 
 
 <ts name="ej.datavisualization.Chart.Mode"/>
@@ -8448,7 +8490,7 @@ Range</td>
 
 
 
-* "series". See <a href="global.html#members:mode">Mode</a>
+* "series". See <a href="global.html#members:commonseriesoptions-highlightsettings-mode">Mode</a>
 
 
 
@@ -8770,7 +8812,7 @@ Specifies whether the series or data point has to be selected.
 
 
 
-* "series". See <a href="global.html#members:mode">Mode</a>
+* "series". See <a href="global.html#members:commonseriesoptions-highlightsettings-mode">Mode</a>
 
 
 
@@ -9254,7 +9296,7 @@ Grouping</td>
 
 #### Default Value
 
-* "float". See <a href="global.html#members:crosshairmode">CrosshairMode</a>
+* "float". See <a href="global.html#members:crosshair-trackballtooltipsettings-mode">CrosshairMode</a>
 
 #### Example
 
@@ -9589,7 +9631,7 @@ Trackball</td>
 
 #### Default Value
 
-* "crosshair". See <a href="global.html#members:crosshairtype">CrosshairType</a>
+* "crosshair". See <a href="global.html#members:crosshair-type">CrosshairType</a>
 
 
 
@@ -11258,7 +11300,7 @@ Far</td>
 
 #### Default Value
 
-* "Center". See <a href="global.html#members:alignment">Alignment</a>
+* "Center". See <a href="global.html#members:legend-alignment">Alignment</a>
 
 
 
@@ -11558,7 +11600,7 @@ Font style for legend item text.
 
 #### Default Value
 
-* "Normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+* "Normal". See <a href="global.html#members:legend-font-fontstyle">FontStyle</a>
 
 
 
@@ -11590,7 +11632,7 @@ Font weight for legend item text.
 
 #### Default Value
 
-* "Regular". See <a href="global.html#members:fontweight">FontWeight</a>
+* "Regular". See <a href="global.html#members:legend-font-fontweight">FontWeight</a>
 
 
 
@@ -11993,7 +12035,7 @@ Bottom</td>
 
 #### Default Value
 
-* "Bottom". See <a href="global.html#members:position">Position</a>
+* "Bottom". See <a href="global.html#members:legend-position">Position</a>
 
 
 
@@ -12064,7 +12106,7 @@ Shape of the legend items. Default shape for pie and doughnut series is circle a
 
 #### Default Value
 
-* "None". See <a href="global.html#members:shape">Shape</a>
+* "None". See <a href="global.html#members:legend-shape">Shape</a>
 
 
 
@@ -12236,7 +12278,7 @@ Font style for legend title.
 
 #### Default Value
 
-* "normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+* "normal". See <a href="global.html#members:legend-title-font-fontstyle">FontStyle</a>
 
 
 
@@ -12268,7 +12310,7 @@ Font weight for legend title.
 
 #### Default Value
 
-* "normal". See <a href="global.html#members:fontweight">FontWeight</a>
+* "normal". See <a href="global.html#members:legend-title-font-fontweight">FontWeight</a>
 
 
 
@@ -12399,7 +12441,7 @@ Far</td>
 
 #### Default Value
 
-* "center". See <a href="global.html#members:alignment">Alignment</a>
+* "center". See <a href="global.html#members:legend-title-textalignment">Alignment</a>
 
 
 
@@ -12469,7 +12511,7 @@ WrapAndTrim</td>
 
 #### Default Value
 
-* "none". See <a href="global.html#members:textoverflow">textOverflow</a>
+* "none". See <a href="global.html#members:legend-textoverflow">textOverflow</a>
 
 
 
@@ -13534,7 +13576,7 @@ BetweenTicks</td>
 
 
 
-* ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See <a href="global.html#members:labelplacement">LabelPlacement</a>
+* ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See <a href="global.html#members:primaryxaxis-labelplacement">LabelPlacement</a>
 
 
 #### Example
@@ -13597,7 +13639,7 @@ Hide</td>
 
 
 
-* ej.datavisualization.Chart.EdgeLabelPlacement.None. See <a href="global.html#members:edgelabelplacement">EdgeLabelPlacement</a>
+* ej.datavisualization.Chart.EdgeLabelPlacement.None. See <a href="global.html#members:primaryxaxis-edgelabelplacement">EdgeLabelPlacement</a>
 
 
 
@@ -13714,7 +13756,7 @@ Font style of labels.
 
 
 
-* ej.datavisualization.Chart.FontStyle.Normal. See <a href="global.html#members:fontstyle">FontStyle</a>
+* ej.datavisualization.Chart.FontStyle.Normal. See <a href="global.html#members:primaryxaxis-font-fontstyle">FontStyle</a>
 
 
 
@@ -13748,7 +13790,7 @@ Font weight of the label.
 
 
 
-* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
+* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:primaryxaxis-font-fontweight">FontWeight</a>
 
 
 
@@ -13907,7 +13949,7 @@ Years</td>
 
 
 
-* null. See <a href="global.html#members:intervaltype">IntervalType</a>
+* null. See <a href="global.html#members:primaryxaxis-intervaltype">IntervalType</a>
 
 
 
@@ -14071,7 +14113,7 @@ MultipleRows</td>
 
 
 
-* ej.datavisualization.Chart.LabelIntersectAction.None. See <a href="global.html#members:labelintersectaction">LabelIntersectAction</a>
+* ej.datavisualization.Chart.LabelIntersectAction.None. See <a href="global.html#members:primaryxaxis-labelintersectaction">LabelIntersectAction</a>
 
 
 
@@ -14132,7 +14174,7 @@ OutSide</td>
 
 
 
-* "outside". See <a href="global.html#members:labelposition">LabelPosition</a>
+* "outside". See <a href="global.html#members:primaryxaxis-labelposition">LabelPosition</a>
 
 
 
@@ -14196,7 +14238,7 @@ Center</td>
 
 
 
-* "center". See <a href="global.html#members:alignment">Alignment</a>
+* "center". See <a href="global.html#members:primaryxaxis-alignment">Alignment</a>
 
 
 
@@ -15219,7 +15261,7 @@ Round</td>
 #### Default Value
 
 
-* "None". See <a href="global.html#members:rangePadding">RangePadding</a>
+* "None". See <a href="global.html#members:primaryxaxis-rangepadding">RangePadding</a>
 
 
 
@@ -15499,7 +15541,7 @@ Specifies the alignment of the text in multi level labels.
 
 
 
-* "center". See <a href="global.html#members:textalignment">TextAlignment</a>
+* "center". See <a href="global.html#members:primaryxaxis-multilevellabels-textalignment">TextAlignment</a>
 
 
 
@@ -15531,7 +15573,7 @@ Specifies the handling of text over flow in multi level labels.
 
 
 
-* "center". See <a href="global.html#members:textoverflow">TextOverflow</a>
+* "center". See <a href="global.html#members:primaryxaxis-multilevellabels-textoverflow">TextOverflow</a>
 
 
 
@@ -15895,7 +15937,7 @@ CurlyBrace</td>
 
 
 
-* "rectangle". See <a href="global.html#members:multilevellabelsbordertype">Type</a>
+* "rectangle". See <a href="global.html#members:primaryxaxis-multilevellabels-border-type">Type</a>
 
 
 
@@ -16430,7 +16472,7 @@ MiddleBottom</td>
 
 
 
-* "middlecenter". See <a href="global.html#members:textalignment">TextAlignment</a>
+* "middlecenter". See <a href="global.html#members:primaryxaxis-stripline-textalignment">TextAlignment</a>
 
 
 
@@ -16556,7 +16598,7 @@ Over</td>
 
 
 
-* "over". See <a href="global.html#members:zindex">ZIndex</a>
+* "over". See <a href="global.html#members:primaryxaxis-stripline-zindex">ZIndex</a>
 
 
 
@@ -16618,7 +16660,7 @@ Outside</td>
 
 
 
-* "outside". See <a href="global.html#members:ticklinesposition">TickLinesPosition</a>
+* "outside". See <a href="global.html#members:primaryxaxis-ticklinesposition">TickLinesPosition</a>
 
 
 
@@ -16858,7 +16900,7 @@ Font weight of the title text.
 
 
 
-* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
+* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:primaryxaxis-title-font-fontweight">FontWeight</a>
 
 
 
@@ -17090,7 +17132,7 @@ Specifies the position of the axis title.
 
 
 
-* "outside". See <a href="global.html#members:labelposition">Position</a>
+* "outside". See <a href="global.html#members:primaryxaxis-title-position">Position</a>
 
 
 
@@ -17120,7 +17162,7 @@ Specifies the position of the axis title.
 
 
 
-* "center". See <a href="global.html#members:textalignment">Alignment</a>
+* "center". See <a href="global.html#members:primaryxaxis-title-alignment">Alignment</a>
 
 
 
@@ -17192,7 +17234,7 @@ Logarithmic</td>
 
 
 
-* null. See <a href="global.html#members:valuetype">ValueType</a>
+* null. See <a href="global.html#members:primaryxaxis-valuetype">ValueType</a>
 
 
 
@@ -18115,7 +18157,7 @@ Specifies the placement of labels.
 
 
 
-* ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See <a href="global.html#members:labelplacement">LabelPlacement</a>
+* ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See <a href="global.html#members:axes-labelplacement">LabelPlacement</a>
 
 
 #### Example
@@ -18144,7 +18186,7 @@ Specifies the position of labels at the edge of the axis.
 
 
 
-* ej.datavisualization.Chart.EdgeLabelPlacement.None. See <a href="global.html#members:edgelabelplacement">EdgeLabelPlacement</a>
+* ej.datavisualization.Chart.EdgeLabelPlacement.None. See <a href="global.html#members:primaryxaxis-edgelabelplacement">EdgeLabelPlacement</a>
 
 
 
@@ -18291,7 +18333,7 @@ Font style of labels.
 
 
 
-* ej.datavisualization.Chart.FontStyle.Normal. See <a href="global.html#members:fontstyle">FontStyle</a>
+* ej.datavisualization.Chart.FontStyle.Normal. See <a href="global.html#members:axes-font-fontstyle">FontStyle</a>
 
 
 
@@ -18325,7 +18367,7 @@ Font weight of the label.
 
 
 
-* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
+* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:axes-font-fontweight">FontWeight</a>
 
 
 
@@ -18425,7 +18467,7 @@ Specifies the type of interval in date time axis.
 #### Default Value
 
 
-* null. See <a href="global.html#members:intervaltype">IntervalType</a>
+* null. See <a href="global.html#members:axes-intervaltype">IntervalType</a>
 
 
 #### Example
@@ -18522,7 +18564,7 @@ Specifies the action to take when the axis labels are overlapping with each othe
 
 
 
-* ej.datavisualization.Chart.LabelIntersectAction.None. See <a href="global.html#members:labelintersectaction">LabelIntersectAction</a>
+* ej.datavisualization.Chart.LabelIntersectAction.None. See <a href="global.html#members:axes-labelintersectaction">LabelIntersectAction</a>
 
 
 
@@ -18553,7 +18595,7 @@ Specifies the position of the axis labels.
 
 
 
-* "outside". See <a href="global.html#members:labelposition">LabelPosition</a>
+* "outside". See <a href="global.html#members:axes-labelposition">LabelPosition</a>
 
 
 
@@ -18588,7 +18630,7 @@ Specifies the position of the axis labels.
 
 
 
-* "center". See <a href="global.html#members:alignment">Alignment</a>
+* "center". See <a href="global.html#members:axes-alignment">Alignment</a>
 
 
 
@@ -19546,7 +19588,7 @@ Specifies the padding for the axis range.
 #### Default Value
 
 
-* "None". See <a href="global.html#members:rangePadding">RangePadding</a>
+* "None". See <a href="global.html#members:axes-rangepadding">RangePadding</a>
 
 
 
@@ -19826,7 +19868,7 @@ Specifies the alignment of the text in multi level labels.
 
 
 
-* "center". See <a href="global.html#members:textalignment">TextAlignment</a>
+* "center". See <a href="global.html#members:axes-multilevellabels-textalignment">TextAlignment</a>
 
 
 
@@ -19858,7 +19900,7 @@ Specifies the handling of text over flow in multi level labels.
 
 
 
-* "center". See <a href="global.html#members:textoverflow">TextOverflow</a>
+* "center". See <a href="global.html#members:axes-multilevellabels-textoverflow">TextOverflow</a>
 
 
 
@@ -20181,7 +20223,7 @@ Border type of the multi level labels.
 
 
 
-* "rectangle". See <a href="global.html#members:multilevellabelsbordertype">Type</a>
+* "rectangle". See <a href="global.html#members:axes-multilevellabels-border-type">Type</a>
 
 
 
@@ -20687,7 +20729,7 @@ Specifies the alignment of the text inside the strip line.
 
 
 
-* "middlecenter". See <a href="global.html#members:textalignment">TextAlignment</a>
+* "middlecenter". See <a href="global.html#members:axes-stripline-textalignment">TextAlignment</a>
 
 
 
@@ -20788,7 +20830,7 @@ Specifies the order where the strip line and the series have to be rendered. Whe
 
 
 
-* "over". See <a href="global.html#members:zindex">ZIndex</a>
+* "over". See <a href="global.html#members:axes-stripline-zindex">ZIndex</a>
 
 
 
@@ -20823,7 +20865,7 @@ Specifies the position of the axis tick lines.
 
 
 
-* "outside". See <a href="global.html#members:ticklinesposition">TickLinesPosition</a>
+* "outside". See <a href="global.html#members:axes-ticklinesposition">TickLinesPosition</a>
 
 
 
@@ -21295,7 +21337,7 @@ Specifies the position of the axis title.
 
 
 
-* "outside". See <a href="global.html#members:labelposition">Position</a>
+* "outside". See <a href="global.html#members:axes-title-position">Position</a>
 
 
 
@@ -21325,7 +21367,7 @@ Specifies the position of the axis title.
 
 
 
-* "center". See <a href="global.html#members:textalignment">Alignment</a>
+* "center". See <a href="global.html#members:axes-title-alignment">Alignment</a>
 
 
 
@@ -21360,7 +21402,7 @@ Specifies the type of data the axis is handling.
 
 
 
-* null. See <a href="global.html#members:valuetype">ValueType</a>
+* null. See <a href="global.html#members:axes-valuetype">ValueType</a>
 
 
 
@@ -22228,7 +22270,7 @@ Specifies the placement of labels.
 
 
 
-* ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See <a href="global.html#members:labelplacement">LabelPlacement</a>
+* ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See <a href="global.html#members:primaryyaxis-labelplacement">LabelPlacement</a>
 
 
 #### Example
@@ -22259,7 +22301,7 @@ Specifies the position of labels at the edge of the axis.
 
 
 
-* ej.datavisualization.Chart.EdgeLabelPlacement.None. See <a href="global.html#members:edgelabelplacement">EdgeLabelPlacement</a>
+* ej.datavisualization.Chart.EdgeLabelPlacement.None. See <a href="global.html#members:primaryxaxis-edgelabelplacement">EdgeLabelPlacement</a>
 
 
 
@@ -22375,7 +22417,7 @@ Font style of labels.
 
 
 
-ej.datavisualization.Chart.FontStyle.Normal. See <a href="global.html#members:fontstyle">FontStyle</a>
+ej.datavisualization.Chart.FontStyle.Normal. See <a href="global.html#members:primaryyaxis-font-fontstyle">FontStyle</a>
 
 
 
@@ -22410,7 +22452,7 @@ Font weight of the label.
 
 
 
-* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
+* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:commonseriesoptions-font-fontweight">FontWeight</a>
 
 
 
@@ -22513,7 +22555,7 @@ Specifies the type of interval in date time axis.
 
 
 
-* null. See <a href="global.html#members:intervaltype">IntervalType</a>
+* null. See <a href="global.html#members:primaryyaxis-intervaltype">IntervalType</a>
 
 
 
@@ -22648,7 +22690,7 @@ Specifies the position of the axis labels.
 
 
 
-* "outside". See <a href="global.html#members:labelposition">LabelPosition</a>
+* "outside". See <a href="global.html#members:primaryyaxis-labelposition">LabelPosition</a>
 
 
 
@@ -22681,7 +22723,7 @@ Specifies the position of the axis labels.
 
 
 
-* "center". See <a href="global.html#members:alignment">Alignment</a>
+* "center". See <a href="global.html#members:primaryyaxis-alignment">Alignment</a>
 
 
 
@@ -23611,7 +23653,7 @@ Specifies the padding for the axis range.
 
 
 
-* ej.datavisualization.Chart.RangePadding.None. See <a href="global.html#members:rangepadding">RangePadding</a>
+* ej.datavisualization.Chart.RangePadding.None. See <a href="global.html#members:primaryyaxis-rangepadding">RangePadding</a>
 
 
 
@@ -23957,7 +23999,7 @@ Specifies the alignment of the text in multi level labels.
 
 
 
-* "center". See <a href="global.html#members:textalignment">TextAlignment</a>
+* "center". See <a href="global.html#members:primaryyaxis-multilevellabels-textalignment">TextAlignment</a>
 
 
 
@@ -23989,7 +24031,7 @@ Specifies the handling of text over flow in multi level labels.
 
 
 
-* "center". See <a href="global.html#members:textoverflow">TextOverflow</a>
+* "center". See <a href="global.html#members:primaryyaxis-multilevellabels-textoverflow">TextOverflow</a>
 
 
 
@@ -24313,7 +24355,7 @@ Border type of the multi level labels.
 
 
 
-* "rectangle". See <a href="global.html#members:multilevellabelsbordertype">Type</a>
+* "rectangle". See <a href="global.html#members:primaryyaxis-multilevellabels-border-type">Type</a>
 
 
 
@@ -24996,7 +25038,7 @@ Specifies the alignment of the text inside the strip line.
 
 
 
-* "middlecenter". See <a href="global.html#members:textalignment">TextAlignment</a>
+* "middlecenter". See <a href="global.html#members:primaryyaxis-stripline-textalignment">TextAlignment</a>
 
 
 
@@ -25099,7 +25141,7 @@ Specifies the order in which strip line and the series have to be rendered. When
 
 
 
-* "over". See <a href="global.html#members:zindex">ZIndex</a>
+* "over". See <a href="global.html#members:primaryyaxis-stripline-zindex">ZIndex</a>
 
 
 
@@ -25134,7 +25176,7 @@ Specifies the position of the axis tick lines.
 
 
 
-* "outside". See <a href="global.html#members:ticklinesposition">TickLinesPosition</a>
+* "outside". See <a href="global.html#members:primaryyaxis-ticklinesposition">TickLinesPosition</a>
 
 
 
@@ -25373,7 +25415,7 @@ Font weight of the title text.
 
 
 
-* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
+* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:commonseriesoptions-title-font-fontweight">FontWeight</a>
 
 
 
@@ -25605,7 +25647,7 @@ Specifies the position of the axis title.
 
 
 
-* "outside". See <a href="global.html#members:labelposition">Position</a>
+* "outside". See <a href="global.html#members:primaryyaxis-title-position">Position</a>
 
 
 
@@ -25635,7 +25677,7 @@ Specifies the position of the axis title.
 
 
 
-* "center". See <a href="global.html#members:textalignment">Alignment</a>
+* "center". See <a href="global.html#members:primaryyaxis-title-alignment">Alignment</a>
 
 
 
@@ -25669,7 +25711,7 @@ Specifies the type of data the axis is handling.
 
 
 
-* null. See <a href="global.html#members:valuetype">ValueType</a>
+* null. See <a href="global.html#members:primaryyaxis-valuetype">ValueType</a>
 
 
 
@@ -25880,7 +25922,7 @@ Percentage</td>
 
 #### Default Value
 
-* 'pixel'. See <a href="global.html#members:unit">Unit</a>
+* 'pixel'. See <a href="global.html#members:rowDefinitions.unit">Unit</a>
 
 
 
@@ -26217,7 +26259,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/v540kjyb)
 
 <ts ref="ej.datavisualization.Chart.ColumnFacet"/>
 
-To render the column and bar type series in rectangle/cylinder shape. See <a href="global.html#ColumnFacet">ColumnFacet</a>
+To render the column and bar type series in rectangle/cylinder shape. See <a href="global.html#commonseriesoptions-columnfacet">ColumnFacet</a>
 
 
 #### Default Value
@@ -26526,7 +26568,7 @@ Type of series to be drawn in radar or polar series.
 
 
 
-* "line". See <a href="global.html#members:drawtype">DrawType</a>
+* "line". See <a href="global.html#members:commonseriesoptions-drawtype">DrawType</a>
 
 
 
@@ -27261,7 +27303,7 @@ Position of the data label in pie/doughnut/pyramid/funnel series. OutsideExtende
 
 
 
-* "inside". See <a href="global.html#members:labelposition">LabelPosition</a>
+* "inside". See <a href="global.html#members:commonseriesoptions-labelposition">LabelPosition</a>
 
 
 
@@ -27294,7 +27336,7 @@ Specifies the mode for splitting the data points in pieOfPie series.
 
 
 
-* "value". See <a href="global.html#members:splitmode">SplitMode</a>
+* "value". See <a href="global.html#members:commonseriesoptions-splitmode">SplitMode</a>
 
 
 
@@ -27325,7 +27367,7 @@ Quartile calculation has been performed in three different formulas to render th
 
 
 
-* "exclusive"
+* "exclusive".See <a href="global.html#members:commonseriesoptions-boxplotmode">BoxPlotMode</a>
 
 
 
@@ -27362,7 +27404,7 @@ Used for the calculation of the bubble radius based on the mode selected
 
 
 
-* "minmax" .See <a href="global.html#members:RadiusMode">RadiusMode</a>
+* "minmax" .See <a href="global.html#members:commonseriesoptions-bubbleoptions-radiusmode">RadiusMode</a>
 
 
 
@@ -27450,7 +27492,7 @@ Specifies the different types of spline curve.
 
 
 
-* "Natural". See <a href="global.html#members:splinetype">SplineType</a>
+* "Natural". See <a href="global.html#members:commonseriesoptions-splinetype">SplineType</a>
 
 
 
@@ -27480,7 +27522,7 @@ Specifies the line cap of the series.
 
 
 
-* "Butt". See <a href="global.html#members:linecap">LineCap</a>
+* "Butt". See <a href="global.html#members:commonseriesoptions-linecap">LineCap</a>
 
 
 
@@ -27512,7 +27554,7 @@ Specifies the type of shape to be used where two lines meet.
 
 
 
-* "Round". See <a href="global.html#members:linejoin">LineJoin</a>
+* "Round". See <a href="global.html#members:commonseriesoptions-linejoin">LineJoin</a>
 
 
 #### Example
@@ -27837,7 +27879,7 @@ Specifies when the connector has to be drawn as Bezier curve or straight line. T
 
 
 
- * "line". See <a href="global.html#members:connectorlinetype">ConnectorLineType</a>
+ * "line". See <a href="global.html#members:commonseriesoptions-marker-datalabel-connectorline-type">ConnectorLineType</a>
 
 
 
@@ -28061,7 +28103,7 @@ Font style of the data label.
 
 
 
-* "normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+* "normal". See <a href="global.html#members:commonseriesoptions-marker-datalabel-font-fontstyle">FontStyle</a>
 
 
 
@@ -28093,7 +28135,7 @@ Font weight of the data label.
 
 
 
-* "regular". See <a href="global.html#members:fontweight">FontWeight</a>
+* "regular". See <a href="global.html#members:commonseriesoptions-marker-datalabel-font-fontweight">FontWeight</a>
 
 
 #### Example
@@ -28397,7 +28439,7 @@ Background shape of the data label.
 
 
 
-* No shape is rendered by default, so its value is ‘none’. See <a href="global.html#members:shape">Shape</a>
+* No shape is rendered by default, so its value is ‘none’. See <a href="global.html#members:commonseriesoptions-marker-datalabel-shape">Shape</a>
 
 
 #### Example
@@ -28457,7 +28499,7 @@ Specifies the position of the data label. This property can be used only for the
 
 
 
-* "top". See <a href="global.html#members:textposition">TextPosition</a>
+* "top". See <a href="global.html#members:commonseriesoptions-marker-datalabel-textposition">TextPosition</a>
 
 
 #### Example
@@ -28751,7 +28793,7 @@ Specifies the shape of the marker.
 
 
 
-* "circle". See <a href="global.html#members:shape">Shape</a>
+* "circle". See <a href="global.html#members:commonseriesoptions-marker-shape">Shape</a>
 
 
 #### Example
@@ -28960,7 +29002,7 @@ Specifies the shape of the outlier.
 
 
 
-* "circle". See <a href="global.html#members:shape">Shape</a>
+* "circle". See <a href="global.html#members:commonseriesoptions-outliersettings-shape">Shape</a>
 
 
 #### Example
@@ -30772,7 +30814,7 @@ Specifies when the connector has to be drawn as Bezier curve or straight line. T
 
 
 
- * "line". See <a href="global.html#members:connectorlinetype">ConnectorLineType</a>
+ * "line". See <a href="global.html#members:commonseriesoptions-points-marker-datalabel-connectorline-type">ConnectorLineType</a>
 
 
 
@@ -30915,7 +30957,7 @@ Font style of the data label.
 
 
 
-* "normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+* "normal". See <a href="global.html#members:commonseriesoptions-points-marker-datalabel-font-fontstyle">FontStyle</a>
 
 
 
@@ -30947,7 +30989,7 @@ Font weight of the data label.
 
 
 
-* "regular". See <a href="global.html#members:fontweight">FontWeight</a>
+* "regular". See <a href="global.html#members:commonseriesoptions-points-marker-datalabel-font-fontweight">FontWeight</a>
 
 
 #### Example
@@ -31251,7 +31293,7 @@ Background shape of the data label.
 
 
 
-* No shape is rendered by default, so its value is ‘none’. See <a href="global.html#members:shape">Shape</a>
+* No shape is rendered by default, so its value is ‘none’. See <a href="global.html#members:commonseriesoptions-points-marker-datalabel-shape">Shape</a>
 
 
 #### Example
@@ -31281,7 +31323,7 @@ Specifies the position of the data label. This property can be used only for the
 
 
 
-* "top". See <a href="global.html#members:textposition">TextPosition</a>
+* "top". See <a href="global.html#members:commonseriesoptions-points-marker-datalabel-textposition">TextPosition</a>
 
 
 #### Example
@@ -31537,7 +31579,7 @@ Specifies the shape of the marker.
 
 
 
-* "circle". See <a href="global.html#members:shape">Shape</a>
+* "circle". See <a href="global.html#members:commonseriesoptions-points-marker-shape">Shape</a>
 
 
 #### Example
@@ -32464,7 +32506,7 @@ Specifies the type of the series to render in chart.
 
 
 
-* "column". see <a href="global.html#members:type">Type</a>
+* "column". see <a href="global.html#members:commonseriesoptions.type">Type</a>
 
 
 
@@ -33688,7 +33730,7 @@ Specifies whether series or data point has to be highlighted.
 
 
 
-* "series". See <a href="global.html#members:mode">Mode</a>
+* "series". See <a href="global.html#members:commonseriesoptions-highlightsettings-mode">Mode</a>
 
 
 
@@ -33953,7 +33995,7 @@ Specifies whether series or data point has to be selected.
 
 
 
-* "series". See <a href="global.html#members:mode">Mode</a>
+* "series". See <a href="global.html#members:commonseriesoptions-selectionSettings-mode">Mode</a>
 
 
 
@@ -34762,7 +34804,7 @@ Font style for Chart title.
 
 #### Default Value
 
-* "Normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+* "Normal". See <a href="global.html#members:title-font-fontstyle">FontStyle</a>
 
 
 
@@ -34794,7 +34836,7 @@ Font weight for Chart title.
 
 #### Default Value
 
-* "Regular". See <a href="global.html#members:fontweight">FontWeight</a>
+* "Regular". See <a href="global.html#members:title-font-fontweight">FontWeight</a>
 
 
 
@@ -35063,7 +35105,7 @@ Font style for sub title.
 
 #### Default Value
 
-* "Normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+* "Normal". See <a href="global.html#members:title-subtitle-font-fontstyle">FontStyle</a>
 
 
 
@@ -35095,7 +35137,7 @@ Font weight for sub title.
 
 #### Default Value
 
-* "Regular". See <a href="global.html#members:fontweight">FontWeight</a>
+* "Regular". See <a href="global.html#members:title-subtitle-font-fontweight">FontWeight</a>
 
 
 
@@ -35401,7 +35443,7 @@ Alignment of sub title text.
 
 #### Default Value
 
-* "far". See <a href="global.html#members:textalignment">TextAlignment</a>
+* "far". See <a href="global.html#members:title-subtitle-textalignment">TextAlignment</a>
 
 
 
@@ -35587,7 +35629,7 @@ Alignment of the title text.
 
 #### Default Value
 
-* "Center". See <a href="global.html#members:textalignment">TextAlignment</a>
+* "Center". See <a href="global.html#members:title-textalignment">TextAlignment</a>
 
 
 
