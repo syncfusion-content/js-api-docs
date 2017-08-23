@@ -722,7 +722,7 @@ EightCrossEightSquareMatrix</td>
 
 
 
-Specifies the character type for the text to be displayed. See <a href="global.html#CharacterType">CharacterType</a>
+Specifies the character type for the text to be displayed. See <a href="global.html#items-charactersettings-type">CharacterType</a>
 
 
 
@@ -962,7 +962,7 @@ Strikeout</td>
 
 
 
-Set the font style for the font. See <a href="global.html#FontStyle">FontStyle</a>
+Set the font style for the font. See <a href="global.html#items-font-fontstyle">FontStyle</a>
 
 
 
