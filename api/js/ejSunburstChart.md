@@ -1014,7 +1014,7 @@ Normal</td>
 
 #### Default Value
 
-* "Angle". See <a href="global.html#members:datalabelsettings-labelrotationmode">DatalabelAlignment</a>
+* "Angle". See <a href="ejsunburstchart.html#members:datalabelsettings-labelrotationmode">DatalabelAlignment</a>
 
 
 #### Example
@@ -1075,7 +1075,7 @@ Font style of the data label.
 #### Default Value
 
 
-* "normal". See <a href="global.html#datalabelsettings-font-fontstyle">FontStyle</a>
+* "normal". See <a href="ejsunburstchart.html#datalabelsettings-font-fontstyle">FontStyle</a>
 
 
 #### Example
@@ -1104,7 +1104,7 @@ Font weight of the data label.
 #### Default Value
 
 
-* "regular". See <a href="global.html#members:datalabelsettings-font-fontweight">FontWeight</a>
+* "regular". See <a href="ejsunburstchart.html#members:datalabelsettings-font-fontweight">FontWeight</a>
 
 
 #### Example
@@ -1278,7 +1278,7 @@ None</td>
 
 #### Default Value
 
-* "Trim". See <a href="global.html#members:datalabelsettings-labeloverflowmode">LabelOverflowMode</a>
+* "Trim". See <a href="ejsunburstchart.html#members:datalabelsettings-labeloverflowmode">LabelOverflowMode</a>
 
 
 #### Example
@@ -1394,7 +1394,7 @@ Far</td>
 
 #### Default Value
 
-* "center". See <a href="global.html#members:title-textalignment">TextAlignment</a>
+* "center". See <a href="ejsunburstchart.html#members:title-textalignment">TextAlignment</a>
 
 
 #### Example
@@ -1458,7 +1458,7 @@ Font style for Sunburst title.
 
 #### Default Value
 
-* "Normal". See <a href="global.html#members:title-font-fontstyle">FontStyle</a>
+* "Normal". See <a href="ejsunburstchart.html#members:title-font-fontstyle">FontStyle</a>
 
 
 #### Example
@@ -1487,7 +1487,7 @@ Font weight for Sunburst title.
 
 #### Default Value
 
-* "Regular". See <a href="global.html#members:title-font-fontweight">FontWeight</a>
+* "Regular". See <a href="ejsunburstchart.html#members:title-font-fontweight">FontWeight</a>
 
 
 #### Example
@@ -1632,7 +1632,7 @@ Sub title text alignment
 
 #### Default Value
 
-* "far". See <a href="global.html#members:title-subtitle-textalignment">TextAlignment</a>
+* "far". See <a href="ejsunburstchart.html#members:title-subtitle-textalignment">TextAlignment</a>
 
 
 #### Example
@@ -1694,7 +1694,7 @@ Font style for sub title.
 
 #### Default Value
 
-* "Normal". See <a href="global.html#members:title-subtitle-font-fontstyle">FontStyle</a>
+* "Normal". See <a href="ejsunburstchart.html#members:title-subtitle-font-fontstyle">FontStyle</a>
 
 
 #### Example
@@ -1723,7 +1723,7 @@ Font weight for sub title.
 
 #### Default Value
 
-* "Regular". See <a href="global.html#members:title-subtitle-font-fontweight">FontWeight</a>
+* "Regular". See <a href="ejsunburstchart.html#members:title-subtitle-font-fontweight">FontWeight</a>
 
 
 
@@ -1879,7 +1879,7 @@ All</td>
 #### Default Value
 
 
-* "point". See <a href="global.html#members:highlightsettings-mode">Mode</a>
+* "point". See <a href="ejsunburstchart.html#members:highlightsettings-mode">Mode</a>
 
 
 #### Example
@@ -1982,7 +1982,7 @@ Color</td>
 #### Default Value
 
 
-* "opacity". See <a href="global.html#members:highlightsettings-type">Mode</a>
+* "opacity". See <a href="ejsunburstchart.html#members:highlightsettings-type">Mode</a>
 
 
 #### Example
@@ -2044,7 +2044,7 @@ Specifies whether the levels or data point has to be selected.
 #### Default Value
 
 
-* "point". See <a href="global.html#members:selectionsettings-mode">Mode</a>
+* "point". See <a href="ejsunburstchart.html#members:selectionsettings-mode">Mode</a>
 
 
 #### Example
@@ -2126,7 +2126,7 @@ Specifies whether the levels or data point has to be selected.
 #### Default Value
 
 
-* "opacity". See <a href="global.html#members:selectionsettings-type">Mode</a>
+* "opacity". See <a href="ejsunburstchart.html#members:selectionsettings-type">Mode</a>
 
 
 #### Example
@@ -2241,7 +2241,7 @@ ToggleSegmentSelection</td>
 
 #### Default Value
 
-* "toggleSegmentVisibility". See <a href="global.html#members:legend-clickaction">Alignment</a>
+* "toggleSegmentVisibility". See <a href="ejsunburstchart.html#members:legend-clickaction">Alignment</a>
 
 
 #### Example
@@ -2298,7 +2298,7 @@ Far</td>
 
 #### Default Value
 
-* "Center". See <a href="global.html#members:legend-alignment">Alignment</a>
+* "Center". See <a href="ejsunburstchart.html#members:legend-alignment">Alignment</a>
 
 
 #### Example
@@ -2486,7 +2486,7 @@ Font style for legend item text.
 
 #### Default Value
 
-* "Normal". See <a href="global.html#members:legend-font-fontstyle">FontStyle</a>
+* "Normal". See <a href="ejsunburstchart.html#members:legend-font-fontstyle">FontStyle</a>
 
 
 #### Example
@@ -2515,7 +2515,7 @@ Font weight for legend item text.
 
 #### Default Value
 
-* "Regular". See <a href="global.html#members:legend-font-fontweight">FontWeight</a>
+* "Regular". See <a href="ejsunburstchart.html#members:legend-font-fontweight">FontWeight</a>
 
 
 
@@ -2773,7 +2773,7 @@ Bottom</td>
 
 #### Default Value
 
-* "Bottom". See <a href="global.html#members:legend-position">Position</a>
+* "Bottom". See <a href="ejsunburstchart.html#members:legend-position">Position</a>
 
 
 #### Example
@@ -2851,7 +2851,7 @@ Triangle</td>
 
 #### Default Value
 
-* "None". See <a href="global.html#members:legend-shape">Shape</a>
+* "None". See <a href="ejsunburstchart.html#members:legend-shape">Shape</a>
 
 
 
@@ -3015,7 +3015,7 @@ Font style for legend title.
 
 #### Default Value
 
-* "normal". See <a href="global.html#members:legend-title-font-fontstyle">FontStyle</a>
+* "normal". See <a href="ejsunburstchart.html#members:legend-title-font-fontstyle">FontStyle</a>
 
 
 
@@ -3047,7 +3047,7 @@ Font weight for legend title.
 
 #### Default Value
 
-* "normal". See <a href="global.html#members:legend-title-font-fontweight">FontWeight</a>
+* "normal". See <a href="ejsunburstchart.html#members:legend-title-font-fontweight">FontWeight</a>
 
 
 
@@ -3200,7 +3200,7 @@ Far</td>
 
 #### Default Value
 
-* "center". See <a href="global.html#members:legend-title-textalignment">Alignment</a>
+* "center". See <a href="ejsunburstchart.html#members:legend-title-textalignment">Alignment</a>
 
 
 
@@ -3256,7 +3256,7 @@ FlatDark</td>
 
 #### Default Value
 
-* "Flatlight". See <a href="global.html#members:theme">Theme</a>
+* "Flatlight". See <a href="ejsunburstchart.html#members:theme">Theme</a>
 
 
 #### Example
@@ -3530,7 +3530,7 @@ Right</td>
 
 #### Default Value
 
-* "right". See <a href="global.html#members:zoomsettings-toolbarhorizontalalignment">Alignment</a>
+* "right". See <a href="ejsunburstchart.html#members:zoomsettings-toolbarhorizontalalignment">Alignment</a>
 
 
 
@@ -3589,7 +3589,7 @@ Middle</td>
 
 #### Default Value
 
-* "top". See <a href="global.html#members:zoomsettings-toolbarverticalalignment">Alignment</a>
+* "top". See <a href="ejsunburstchart.html#members:zoomsettings-toolbarverticalalignment">Alignment</a>
 
 
 
@@ -3643,7 +3643,7 @@ FadeIn</td>
 
 #### Default Value
 
-* "rotation". See <a href="global.html#members:animationtype">Alignment</a>
+* "rotation". See <a href="ejsunburstchart.html#members:animationtype">Alignment</a>
 
 
 

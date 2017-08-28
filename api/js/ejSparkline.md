@@ -715,7 +715,7 @@ WinLoss</td>
 
 #### Default Value
 
-* "line". See <a href="global.html#members:type">Type</a>
+* "line". See <a href="ejsparkline.html#members:type">Type</a>
 
 #### Example
 
@@ -813,7 +813,7 @@ GradientDark</td>
 
 #### Default Value
 
-* "Flatlight". See <a href="global.html#members:theme">Theme</a>
+* "Flatlight". See <a href="ejsparkline.html#members:theme">Theme</a>
 
 #### Example
 
