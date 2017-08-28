@@ -394,10 +394,10 @@ Specify the URL of the frame background image for circular gauge
 
 
 ### frame.frameType `enum`
-{:#members:frame.frametype}
+{:#members:frame-frametype}
 
 <ts name="ej.datavisualization.CircularGauge.FrameType"/>
-Specifies the frameType of circular gauge. See <a href="global.html#frame.frametype">Frame</a>
+Specifies the frameType of circular gauge. See <a href="ejcirculargauge.html#members:frame-frametype">Frame</a>
 
 
 <table class="props">
@@ -845,7 +845,7 @@ $("#CoreCircularGauge").ejCircularGauge({ minimum: 10 });
 {:#members:outercustomlabelposition}
 
 <ts name="ej.datavisualization.CircularGauge.OuterCustomLabelPosition"/>
-Specify outerCustomLabelPosition value of circular gauge See <a href="global.html#outercustomlabelposition">OuterCustomLabelPosition</a>
+Specify outerCustomLabelPosition value of circular gauge See <a href="ejcirculargauge.html#members:outercustomlabelposition">OuterCustomLabelPosition</a>
 
 
 <table class="props">
@@ -1145,7 +1145,7 @@ Specify border width of circular gauge
 {:#members:scales-direction}
 
 <ts name="ej.datavisualization.CircularGauge.Direction"/>
-Specify scale direction of circular gauge. See <a href="global.html#scales-direction">Directions</a>
+Specify scale direction of circular gauge. See <a href="ejcirculargauge.html#members:scales-direction">Directions</a>
 
 <table class="props">
 <thead>
@@ -1582,7 +1582,7 @@ $("#CoreCircularGauge").ejCircularGauge({
 {:#members:scales-customlabels-positiontype}
 
 <ts name="ej.datavisualization.CircularGauge.CustomLabelPositionType"/>
-Specifies the position of the  custom labels. See <a href="global.html#scales-customlabels-positiontype">CustomLabelPositionType</a>
+Specifies the position of the  custom labels. See <a href="ejcirculargauge.html#members:scales-customlabels-positiontype">CustomLabelPositionType</a>
 
 
 <table class="props">
@@ -2153,7 +2153,7 @@ stateRanges: [{ endValue: 70, startValue: 0, text: "staterange1", textColor: "Ye
 {:#members:scales-indicators-type}
 
 <ts name="ej.datavisualization.CircularGauge.IndicatorTypes"/>
-Specify indicator style of circular gauge. See <a href="global.html#scales-indicators-type">IndicatorType</a>
+Specify indicator style of circular gauge. See <a href="ejcirculargauge.html#members:scales-indicators-type">IndicatorType</a>
 
 
 <table class="props">
@@ -2630,7 +2630,7 @@ Specify opacity value for labels of circular gauge
 {:#members:scales-labels-placement}
 
 <ts name="ej.datavisualization.CircularGauge.Placement"/>
-Specify label placement of circular gauge. See <a href="global.html#scales.labels.placement">LabelPlacement</a>
+Specify label placement of circular gauge. See <a href="ejcirculargauge.html#members:scales.labels.placement">LabelPlacement</a>
 
 
 <table class="props">
@@ -2691,7 +2691,7 @@ Center</td>
 {:#members:scales-labels-type}
 
 <ts name="ej.datavisualization.CircularGauge.LabelType"/>
-Specify label Style of circular gauge. See <a href="global.html#scales.labels.type">LabelType</a>
+Specify label Style of circular gauge. See <a href="ejcirculargauge.html#members:scales.labels.type">LabelType</a>
 
 
 <table class="props">
@@ -3528,7 +3528,7 @@ Specify pointer length of circular gauge
 {:#members:scales-pointers-markertype}
 
 <ts name="ej.datavisualization.CircularGauge.MarkerType"/>
-Specify marker Style value of circular gauge. See <a href="global.html#scales-pointers-markertype">MarkerType</a>
+Specify marker Style value of circular gauge. See <a href="ejcirculargauge.html#members:scales-pointers-markertype">MarkerType</a>
 
 
 <table class="props">
@@ -3644,7 +3644,7 @@ Image</td>
 {:#members:scales-pointers-needletype}
 
 <ts name="ej.datavisualization.CircularGauge.NeedleType"/>
-Specify needle Style value of circular gauge. See <a href="global.html#scales-pointers-needletype">NeedleType</a>
+Specify needle Style value of circular gauge. See <a href="ejcirculargauge.html#members:scales-pointers-needletype">NeedleType</a>
 
 
 <table class="props">
@@ -3781,7 +3781,7 @@ Specify radius value for pointer of circular gauge
 
 <ts ref="ej.datavisualization.CircularGauge.Placement"/>
 
-Specify pointer Placement value of circular gauge. See <a href="global.html#scales-pointers-placement">PointerPlacement</a>
+Specify pointer Placement value of circular gauge. See <a href="ejcirculargauge.html#members:scales-pointers-placement">PointerPlacement</a>
 
 
 #### Default Value
@@ -4208,7 +4208,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ showBackNeedle
 {:#members:scales.pointers.type}
 
 <ts name="ej.datavisualization.CircularGauge.PointerType"/>
-Specify pointer type value of circular gauge. See <a href="global.html#scales-pointers-type">PointerType</a>
+Specify pointer type value of circular gauge. See <a href="ejcirculargauge.html#members:scales-pointers-type">PointerType</a>
 
 
 <table class="props">
@@ -4721,7 +4721,7 @@ Specify opacity value for ranges of circular gauge
 <ts ref="ej.datavisualization.CircularGauge.Placement"/>
 
 
-Specify placement of circular gauge. See <a href="global.html#scales-ranges-placement">RangePlacement</a>
+Specify placement of circular gauge. See <a href="ejcirculargauge.html#members:scales-ranges-placement">RangePlacement</a>
 
 
 #### Default Value
@@ -5570,7 +5570,7 @@ Specify tick height of circular gauge
 <ts ref="ej.datavisualization.CircularGauge.Placement"/>
 
 
-Specify tick placement of circular gauge. See <a href="global.html#scales-ticks-placement">TickPlacement</a>
+Specify tick placement of circular gauge. See <a href="ejcirculargauge.html#members:scales-ticks-placement">TickPlacement</a>
 
 
 #### Default Value
@@ -5603,7 +5603,7 @@ Specify tick placement of circular gauge. See <a href="global.html#scales-ticks-
 <ts ref="ej.datavisualization.CircularGauge.LabelType"/>
 
 
-Specify tick Style of circular gauge. See <a href="global.html#TickType">TickType</a>
+Specify tick Style of circular gauge. See <a href="ejcirculargauge.html#members:TickType">TickType</a>
 
 
 #### Default Value
@@ -5795,7 +5795,7 @@ Far</td>
 
 #### Default Value
 
-* "Center". See <a href="global.html#members:legend-alignment">Alignment</a>
+* "Center". See <a href="ejcirculargauge.html#members:legend-alignment">Alignment</a>
 
 #### Example
 
@@ -6182,7 +6182,7 @@ Bottom</td>
 
 #### Default Value
 
-* "Bottom". See <a href="global.html#members:legend-position">Position</a>
+* "Bottom". See <a href="ejcirculargauge.html#members:legend-position">Position</a>
 
 
 
@@ -6283,7 +6283,7 @@ Line</td>
 
 #### Default Value
 
-* "Circle". See <a href="global.html#members:legend-shape">Shape</a>
+* "Circle". See <a href="ejcirculargauge.html#members:legend-shape">Shape</a>
 
 
 
