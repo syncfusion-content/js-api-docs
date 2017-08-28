@@ -404,7 +404,7 @@ Oblique</td>
 </tbody>
 </table>
 
-Specifies the fontStyle of caption. Caption text render with this fontStyle. See <a href="global.html#captionsettings-font-fontstyle">FontStyle</a>
+Specifies the fontStyle of caption. Caption text render with this fontStyle. See <a href="global.html#enum:fontstyle">FontStyle</a>
 
 
 
@@ -488,7 +488,7 @@ Lighter</td>
 </table>
 
 
-Specifies the fontWeight of caption. Caption text render with this fontWeight. See <a href="global.html#captionsettings-font-fontweight">FontWeight</a>
+Specifies the fontWeight of caption. Caption text render with this fontWeight. See <a href="global.html#enum:fontweight">FontWeight</a>
 
 
 
@@ -777,7 +777,7 @@ captionSettings :{indicator :{font : { fontFamily :"Algerian" }}}
 
 
 
-Specifies the fontStyle of indicator. Indicator text render with this fontStyle. See <a href="global.html#captionsettings-indicator-font-fontstyle">FontStyle</a>
+Specifies the fontStyle of indicator. Indicator text render with this fontStyle. See <a href="global.html#enum:fontstyle">FontStyle</a>
 
 
 
@@ -826,7 +826,7 @@ captionSettings :{indicator :{font : { fontStyle :"italic" }}}
 
 
 
-Specifies the fontWeight of indicator. Indicator text render with this fontWeight. See <a href="global.html#captionsettings-indicator-font-fontweight">FontWeight</a>
+Specifies the fontWeight of indicator. Indicator text render with this fontWeight. See <a href="global.html#enum:fontweight">FontWeight</a>
 
 
 
@@ -2353,7 +2353,7 @@ captionSettings :{subTitle :{font : { fontFamily :"Algerian" }}}
 
 
 
-Specifies the fontStyle of subtitle. Subtitle text render with this fontStyle. See <a href="global.html#captionsettings-subtitle-font-fontstyle">FontStyle</a>
+Specifies the fontStyle of subtitle. Subtitle text render with this fontStyle. See <a href="global.html#enum:fontstyle">FontStyle</a>
 
 
 
@@ -2398,7 +2398,7 @@ captionSettings :{subTitle :{font : { fontStyle :"italic" }}}
 
 
 
-Specifies the fontWeight of subtitle. Subtitle text render with this fontWeight. See <a href="global.html#captionsettings-subtitle-font-fontweight">FontWeight</a>
+Specifies the fontWeight of subtitle. Subtitle text render with this fontWeight. See <a href="global.html#enum:fontweight">FontWeight</a>
 
 
 
@@ -4817,7 +4817,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ fontFamily : "Algerian" 
 
 
 
-Specifies the fontStyle of labels in bullet graph. Labels render with this fontStyle. See <a href="global.html#quantitativescalesettings-labelsettings-font-fontstyle">FontStyle</a>
+Specifies the fontStyle of labels in bullet graph. Labels render with this fontStyle. See <a href="global.html#enum:fontstyle">FontStyle</a>
 
 
 
@@ -4866,7 +4866,7 @@ quantitativeScaleSettings : { labelSettings : { font :{ fontStyle : "italic" } }
 
 
 
-Specifies the fontWeight of labels in bullet graph. Labels render with this fontWeight. See <a href="global.html#quantitativescalesettings-labelsettings-font-fontweight">FontWeight</a>
+Specifies the fontWeight of labels in bullet graph. Labels render with this fontWeight. See <a href="global.html#enum:fontweight">FontWeight</a>
 
 
 
@@ -5177,7 +5177,7 @@ quantitativeScaleSettings : { labelSettings : { offset : 25 } }
 {:#members:quantitativescalesettings-labelsettings-position}
 
 <ts name="ej.datavisualization.BulletGraph.LabelPosition"/>
-Specifies the position of the labels to render either above or below the graph. See <a href="global.html#quantitativescalesettings-labelsettings-position">Position</a>
+Specifies the position of the labels to render either above or below the graph. See <a href="ejbulletgraph.html#quantitativescalesettings-labelsettings-position">Position</a>
 
 
 <table class="props">
@@ -5978,7 +5978,7 @@ Outside</td>
 </tr> 
 </tbody>
 </table>
-Specifies the placement of ticks to render either inside or outside the scale. See <a href="global.html#quantitativescalesettings-tickplacement">LabelPlacement</a>
+Specifies the placement of ticks to render either inside or outside the scale. See <a href="ejbulletgraph.html#quantitativescalesettings-tickplacement">LabelPlacement</a>
 
 
 
@@ -6056,7 +6056,7 @@ Cross</td>
 </table>
 
 
-Specifies the position of the ticks to render either above, below or inside the graph. See <a href="global.html#quantitativescalesettings-tickposition">LabelPosition</a>
+Specifies the position of the ticks to render either above, below or inside the graph. See <a href="ejbulletgraph.html#quantitativescalesettings-tickposition">LabelPosition</a>
 
 
 
