@@ -134,7 +134,7 @@ To set the data source name to fetch data from that.
 {% endhighlight %}
 
 ### dataSource.providerName `string`
-{:#members:datasource-providerName}
+{:#members:datasource-providername}
 
 Set the provider name for PivotGauge to identify whether the provider is SSAS or Mondrian. 
 
@@ -986,6 +986,19 @@ This function receives the JSON formatted datasource and renders the PivotGauge 
 
     var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
     gaugeObj.renderControlFromJSON(this.getJSONRecords());
+{% endhighlight %}
+
+### destroy()
+{:#methods:destroy}
+
+This function Destroy the PivotGauge widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    var gaugeObj = $("#PivotGauge1").data("ejPivotGauge");
+    gaugeObj.destroy();
 {% endhighlight %}
 
 ### getOlapReport()

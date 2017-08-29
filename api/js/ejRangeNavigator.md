@@ -464,7 +464,7 @@ StepLine</td>
 
 
 
-* "column". see <a href="global.html#members:type">Type</a>
+* "column". see <a href="ejrangenavigator.html#members:series.type">Type</a>
 
 
 
@@ -644,7 +644,7 @@ seriesSettings : [{dataSource: data }]
 
 
 ### seriesSettings.type `enum`
-{:#members:seriesSettings.type}
+{:#members:seriessettings-type}
 
 
 <ts ref="ej.datavisualization.RangeNavigator.Type"/>
@@ -656,7 +656,7 @@ Specifies the type of the series to render in chart.
 
 
 
-* "column". see <a href="global.html#members:type">Type</a>
+* "column". see <a href="ejrangenavigator.html#members:seriessettings-type">Type</a>
 
 
 
@@ -1310,7 +1310,7 @@ Specifies the width of grid lines in higher level.
 {:#members:labelsettings-higherlevel-intervaltype}
 
 <ts name="ej.datavisualization.RangeNavigator.IntervalType"/>
-Specifies the intervalType for higher level labels. See <a href="global.html#IntervalType">IntervalType</a>
+Specifies the intervalType for higher level labels. See <a href="ejrangenavigator.html#labelsettings-higherlevel-intervaltype">IntervalType</a>
 
 
 <table class="props">
@@ -1436,7 +1436,7 @@ Outside</td>
 
 
 
-Specifies the position of the labels to render either inside or outside of plot area. See <a href="global.html#LabelPlacement">LabelPlacement</a>
+Specifies the position of the labels to render either inside or outside of plot area. See <a href="ejrangenavigator.html#labelsettings-higherlevel-labelplacement">LabelPlacement</a>
 
 
 
@@ -1509,7 +1509,7 @@ Bottom</td>
 
 
 
-Specifies the position of the labels in higher level.See <a href="global.html#Position">Position</a>
+Specifies the position of the labels in higher level.See <a href="ejrangenavigator.html#labelsettings-higherlevel-position">Position</a>
 
 
 
@@ -2351,7 +2351,7 @@ Specifies the width of grid lines in lower level.
 
 
 
-Specifies the intervalType of the labels in lower level.See <a href="global.html#IntervalType">IntervalType</a>
+Specifies the intervalType of the labels in lower level.See <a href="ejrangenavigator.html#labelsettings-lowerlevel-intervaltype">IntervalType</a>
 
 
 
@@ -2400,7 +2400,7 @@ Specifies the intervalType of the labels in lower level.See <a href="global.html
 
 
 
-Specifies the position of the labels to render either inside or outside of plot area. See <a href="global.html#LabelPlacement">LabelPlacement</a>
+Specifies the position of the labels to render either inside or outside of plot area. See <a href="ejrangenavigator.html#labelsettings-lowerlevel-labelplacement">LabelPlacement</a>
 
 
 
@@ -2449,7 +2449,7 @@ Specifies the position of the labels to render either inside or outside of plot 
 
 
 
-Specifies the position of the labels in lower level.See <a href="global.html#Position">Position</a>
+Specifies the position of the labels in lower level.See <a href="ejrangenavigator.html#labelsettings-lowerlevel-position">Position</a>
 
 
 
@@ -3206,7 +3206,7 @@ Italic</td>
 
 
 
-Specifies the label font style. Labels render with the specified font style..See <a href="global.html#FontStyle">FontStyle</a>
+Specifies the label font style. Labels render with the specified font style..See <a href="ejrangenavigator.html#labelsettings-style-font-style">FontStyle</a>
 
 
 
@@ -3235,7 +3235,7 @@ Specifies the label font style. Labels render with the specified font style..See
 <div id="RangeNavigator"></div> 
 <script>
         $("#container").ejRangeNavigator({
-   labelSettings:{style:{ font:{style:"Noraml"}}},
+   labelSettings:{style:{ font:{style:"Normal"}}},
    });
 </script>{% endhighlight %}
 
@@ -3281,7 +3281,7 @@ Regular</td>
 
 
 
-Specifies the label font weight. Labels render with the specified font weight. See <a href="global.html#FontWeight">FontWeight</a>
+Specifies the label font weight. Labels render with the specified font weight. See <a href="ejrangenavigator.html#labelsettings-style-font-weight">FontWeight</a>
 
 
 
@@ -3362,7 +3362,7 @@ Right</td>
 
 
 
-Specifies the horizontalAlignment of the label in range navigator. See <a href="global.html#HorizontalAlignment">HorizontalAlignment</a>
+Specifies the horizontalAlignment of the label in range navigator. See <a href="ejrangenavigator.html#labelsettings-style-horizontalalignment">HorizontalAlignment</a>
 
 
 
@@ -4776,7 +4776,7 @@ Round</td>
 
 
 
-If the range is not given explicitly, range will be calculated automatically. You can customize the automatic range calculation using rangePadding. See <a href="global.html#RangePadding">RangePadding</a>
+If the range is not given explicitly, range will be calculated automatically. You can customize the automatic range calculation using rangePadding. See <a href="ejrangenavigator.html#rangepadding">RangePadding</a>
 
 
 
@@ -6442,7 +6442,7 @@ Toggles the visibility of axis in range navigator.
 <div id="RangeNavigator"></div> 
 <script>
         $("#container").ejRangeNavigator({
-   valueAxisSettings:{visble: true}
+   valueAxisSettings:{visible: true}
    });
 </script>  {% endhighlight %}
 

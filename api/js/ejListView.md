@@ -212,7 +212,7 @@ Sets the root class for ListView theme. This cssClass API helps to use custom sk
 <script>
 // Set cssClass on initialization. 
 //To set cssClass API value 
-$("#lb").ejListView ({ cssClass: "customclass" });
+$("#lb").ejListView ({ cssClass: "custom-class" });
 </script>{% endhighlight %}
 
 
@@ -223,7 +223,7 @@ $("#lb").ejListView ({ cssClass: "customclass" });
 // Get the cssClass API value.          
  $("#lb").ejListView ("option", "cssClass");                    
 // Set the cssClass API
-$("#lb").ejListView ("option", "cssClass", "customclass");
+$("#lb").ejListView ("option", "cssClass", "custom-class");
 </script>{% endhighlight %}
 
 
@@ -259,9 +259,9 @@ Contains the list of data for generating the ListView items.
 </div>           
 <script>
 $(function(){
-$("#lb").ejListView({dataSource:window.dbitem});
+$("#lb").ejListView({dataSource:window.dataSourceItem});
 });
-window.dbitem =
+window.dataSourceItem =
 [   { "text": "Hot Singles"},
     { "text": "Rising Artists"},
     { "text": "Live Music" },
@@ -655,24 +655,24 @@ Specifies the field settings to map the datasource.
 <div id="lb" >
 </div>           
 <script>
-window.dbitem =
+window.dataSourceItem =
 [{ "Texts": "Discover Music", "PrimaryKeys": "1" },
-    { "Texts": "Hot Singles", "ParentPrimaryKeyss": "1" },
-    { "Texts": "Rising Artists", "PrimaryKeyss": null, "ParentPrimaryKeyss": "1" },
-    { "Texts": "Live Music", "ParentPrimaryKeyss": "1" },
-    { "Texts": "Best of 2013 So Far", "ParentPrimaryKeyss": "1" },
+    { "Texts": "Hot Singles", "ParentPrimaryKeys": "1" },
+    { "Texts": "Rising Artists", "PrimaryKeys": null, "ParentPrimaryKeys": "1" },
+    { "Texts": "Live Music", "ParentPrimaryKeys": "1" },
+    { "Texts": "Best of 2013 So Far", "ParentPrimaryKeys": "1" },
 { "Texts": "Sales and Events", "PrimaryKeys": "2" },
-    { "Texts": "100 Albums - $5 Each", "ParentPrimaryKeyss": "2" },
-    { "Texts": "Hip-Hop and R&amp;B Sale", "ParentPrimaryKeyss": "2" },
-    { "Texts": "CD Deals", "ParentPrimaryKeyss": "2" }];
+    { "Texts": "100 Albums - $5 Each", "ParentPrimaryKeys": "2" },
+    { "Texts": "Hip-Hop and R&amp;B Sale", "ParentPrimaryKeys": "2" },
+    { "Texts": "CD Deals", "ParentPrimaryKeys": "2" }];
 window.musicFields = {    
 "href": "Hrefs",
 "text": "Texts",
 "primaryKey": "PrimaryKeys",
-"parentPrimaryKey": "ParentPrimaryKeyss"
+"parentPrimaryKey": "ParentPrimaryKeys"
 };    
 $(function(){
-$("#lb").ejListView({fieldSettings:"window.musicFields",dataSource:"window.dbitem"});
+$("#lb").ejListView({fieldSettings:"window.musicFields",dataSource:"window.dataSourceItem"});
 });
 </script>{% endhighlight %}
 
@@ -712,9 +712,9 @@ Contains the array of items to be added in ListView.
 </div>           
 <script>
 $(function(){
-$("#lb").ejListView({items:window.dbitem});
+$("#lb").ejListView({items:window.dataSourceItem});
 });
-window.dbitem =
+window.dataSourceItem =
 [   { "text": "Hot Singles"},
     { "text": "Rising Artists"},
     { "text": "Live Music" },
@@ -1077,9 +1077,9 @@ Specifies the query to execute with the datasource.
                 window.datasource = ej.DataManager({
         url: "http://mvc.syncfusion.com/Services/Northwnd.svc/"
                 });
-                window.dbitem = { "text": "ShipCity" };   
+                window.dataSourceItem = { "text": "ShipCity" };   
 $(function(){
-$("#lb").ejListView({fieldSettings:"window.dbitem",dataSource:"window.datasource",query:"ej.Query().from('Orders').select('ShipCity').take(5)"});
+$("#lb").ejListView({fieldSettings:"window.dataSourceItem",dataSource:"window.datasource",query:"ej.Query().from('Orders').select('ShipCity').take(5)"});
 });         
 </script>{% endhighlight %}
 
@@ -1439,7 +1439,7 @@ Specifies the number of items to be fetched on each scroll. Note: This property 
 {% highlight html %}
  
 //Set the itemRequestCount property in obtrusive way.
-  <div id="defaultlistbox">              
+  <div id="defaultListBox">              
   </div>
 
 {% endhighlight %}
@@ -1459,7 +1459,7 @@ Specifies the number of items to be fetched on each scroll. Note: This property 
     // Query creation
     var query = ej.Query().from("Customers");
 
-$("#defaultlistbox").ejListView ({ itemRequestCount: 5,dataSource: dataManger, query: query, fieldSettings: musicFields,height:300,allowVirtualScrolling: true, virtualScrollMode: "normal"});
+$("#defaultListBox").ejListView ({ itemRequestCount: 5,dataSource: dataManger, query: query, fieldSettings: musicFields,height:300,allowVirtualScrolling: true, virtualScrollMode: "normal"});
 
 {% endhighlight %}
 
@@ -1469,9 +1469,9 @@ $("#defaultlistbox").ejListView ({ itemRequestCount: 5,dataSource: dataManger, q
 <script>
 //Get or set  itemRequestCount, after initialization:
 // Get the itemRequestCount API value.             
- $("#defaultlistbox").ejListView ("option", "itemRequestCount");                       
+ $("#defaultListBox").ejListView ("option", "itemRequestCount");                       
 // Set the itemRequestCount API
-$("#defaultlistbox").ejListView ("option", "itemRequestCount", 10);
+$("#defaultListBox").ejListView ("option", "itemRequestCount", 10);
 </script>{% endhighlight %}
 
 
@@ -1505,7 +1505,7 @@ Specifies the maximum number of items to be fetched. Note: This will work only w
  
 //Set the totalItemsCount property in obtrusive way.
 
-  <div id="defaultlistbox">              
+  <div id="defaultListBox">              
   </div>
 
 {% endhighlight %}
@@ -1523,7 +1523,7 @@ Specifies the maximum number of items to be fetched. Note: This will work only w
     // Query creation
     var query = ej.Query().from("Customers");
 
-$("#defaultlistbox").ejListView ({ totalItemsCount: 100,dataSource: dataManger, query: query, fieldSettings: musicFields,height:300,allowVirtualScrolling: true, virtualScrollMode: "normal"});
+$("#defaultListBox").ejListView ({ totalItemsCount: 100,dataSource: dataManger, query: query, fieldSettings: musicFields,height:300,allowVirtualScrolling: true, virtualScrollMode: "normal"});
 
 {% endhighlight %}
 
@@ -1533,9 +1533,9 @@ $("#defaultlistbox").ejListView ({ totalItemsCount: 100,dataSource: dataManger, 
 <script>
 //Get or set  totalItemsCount, after initialization:
 // Get the totalItemsCount API value.             
- $("#defaultlistbox").ejListView ("option", "totalItemsCount");                       
+ $("#defaultListBox").ejListView ("option", "totalItemsCount");                       
 // Set the totalItemsCount API
-$("#defaultlistbox").ejListView ("option", "totalItemsCount", 200);
+$("#defaultListBox").ejListView ("option", "totalItemsCount", 200);
 </script>{% endhighlight %}
 
 
@@ -1558,7 +1558,7 @@ Example
  
 //Set the allowVirtualScrolling property in obtrusive way.
 
-  <div id="defaultlistbox">              
+  <div id="defaultListBox">              
   </div>
 
 {% endhighlight %}
@@ -1576,7 +1576,7 @@ Example
     // Query creation
     var query = ej.Query().from("Customers");
 
-$("#defaultlistbox").ejListView ({ dataSource: dataManger, query: query, fieldSettings: musicFields,height:300,allowVirtualScrolling: true, virtualScrollMode: "normal"});
+$("#defaultListBox").ejListView ({ dataSource: dataManger, query: query, fieldSettings: musicFields,height:300,allowVirtualScrolling: true, virtualScrollMode: "normal"});
 
 {% endhighlight %}
 
@@ -1616,7 +1616,7 @@ Example
  
 //Set the VirtualScrollMode property in obtrusive way.
 
-  <div id="defaultlistbox">              
+  <div id="defaultListBox">              
   </div>
 
 {% endhighlight %}
@@ -1634,7 +1634,7 @@ Example
     // Query creation
     var query = ej.Query().from("Customers");
 
-$("#defaultlistbox").ejListView ({ dataSource: dataManger, query: query, fieldSettings: musicFields,height:300,allowVirtualScrolling: true, virtualScrollMode: "normal"});
+$("#defaultListBox").ejListView ({ dataSource: dataManger, query: query, fieldSettings: musicFields,height:300,allowVirtualScrolling: true, virtualScrollMode: "normal"});
 
 {% endhighlight %}
 
@@ -1651,10 +1651,9 @@ $("#defaultlistbox").ejListView ({ dataSource: dataManger, query: query, fieldSe
 {:#methods:additem}
 
 
+To add item in the given index. If you have enabled grouping in ListView then you need to pass the corresponding group list title to add item in it. Depending on the data bound to ListView, we need to pass either an HTML element or JSON objects in this method.
 
-
-To add item in the given index. If you have enabled grouping in ListView then you need to pass the corresponding group list title to add item in it.
-
+**Passing the element**
 
 <table class="params">
 <thead>
@@ -1668,8 +1667,8 @@ To add item in the given index. If you have enabled grouping in ListView then yo
 <tr>
 <td class="name">
 item</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Specifies the item to be added in ListView</td>
+<td class="type"><span class="param-type">string | Object</span></td>
+<td class="description">To pass the list item as element/ JSON object</td>
 </tr>
 <tr>
 <td class="name">
@@ -1686,10 +1685,7 @@ groupid</td>
 </tbody>
 </table>
 
-
 #### Example
-
-
 
 {% highlight html %}
  
@@ -1710,13 +1706,66 @@ groupid</td>
 <script>
 // Call addItem method.
 $(document).ready(function(){
-$("#lb").ejListView();
-$("#lb").ejListView("addItem",$("&amp;ltli data-ej-text='Comic / Cartoon'></li>"),2);
+    $("#lb").ejListView();
+    $("#lb").ejListView("addItem","<li data-ej-text='Comic / Cartoon'></li>",2);
 });
-</script>{% endhighlight %}
+</script>
 
+{% endhighlight %}
 
+**Passing Array of JSON objects**
 
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+item</td>
+<td class="type"><span class="param-type">Array</span></td>
+<td class="description">To pass the array of JSON objects to be added in ListView</td>
+</tr>
+<tr>
+<td class="name">
+index</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Specifies the index where item to be added</td>
+</tr>
+<tr>
+<td class="name">
+groupid</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description"><span class="optional">optional</span>This is an optional parameter. You must pass the group list title here if grouping is enabled in the ListView</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+  <div id="defaultListBox"></div>
+  <script>
+     var dataSourceItem =
+        [{ "Texts": "Discover Music" },
+        { "Texts": "Sales and Events" },
+        { "Texts": "Categories" },
+        { "Texts": "MP3 Albums" },
+        { "Texts": "More in Music" }];
+     var musicFields = {
+        "text": "Texts"
+     };
+     var addnew = [{ "Texts": "Artwork" }];
+      $("#defaultListBox").ejListView({ dataSource: dataSourceItem, fieldSettings: musicFields, width: 400, height: "300" });
+      $("#defaultListBox").ejListView("addItem", addnew, 0);
+  </script>
+
+{% endhighlight %}
 
 ### checkAllItem()
 {:#methods:checkallitem}
@@ -1844,15 +1893,15 @@ $(document).ready(function(){
 $("#button").ejButton();
 $("#button").ejButton({ text: "Clear" });
 $("#lb").ejListView();
-$("#lb").ejListView({dataSource:"window.dbitem1"});
+$("#lb").ejListView({dataSource:"window.dataSourceItem1"});
 $("#button").ejButton({ 
 click: function (args) { 
 $('#lb').ejListView("clear");
-$("#lb").ejListView({dataSource:"window.dbitem2"});
+$("#lb").ejListView({dataSource:"window.dataSourceItem2"});
 }
 });
 });
-window.dbitem1 =
+window.dataSourceItem1 =
 [   { "text": "Hot Singles"},
     { "text": "Rising Artists"},
     { "text": "Live Music" },
@@ -1860,7 +1909,7 @@ window.dbitem1 =
     { "text": "100 Albums - $5 Each"},
     { "text": "Hip-Hop and R&amp;B Sale"},
     { "text": "CD Deals"}];
-window.dbitem2 =
+window.dataSourceItem2 =
 [   { "text": "Music"},
     { "text": "Videos"},
     { "text": "Games" },

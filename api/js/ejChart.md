@@ -182,7 +182,7 @@ Points</td>
 
 #### Default Value
 
-* "none". See <a href="global.html#members:coordinateunit">CoordinateUnit</a>
+* "none". See <a href="ejchart.html#members:annotations-coordinateunit">CoordinateUnit</a>
 
 
 
@@ -242,7 +242,7 @@ Middle</td>
 
 #### Default Value
 
-* "middle". See <a href="global.html#members:horizontalalignment">HorizontalAlignment</a>
+* "middle". See <a href="ejchart.html#members:annotations-horizontalalignment">HorizontalAlignment</a>
 
 
 
@@ -479,7 +479,7 @@ Series</td>
 
 #### Default Value
 
-* "chart". See <a href="global.html#members:region">Region</a>
+* "chart". See <a href="ejchart.html#members:annotations-region">Region</a>
 
 
 
@@ -542,7 +542,7 @@ Middle</td>
 
 #### Default Value
 
-* "middle". See <a href="global.html#members:verticalalignment">VerticalAlignment</a>
+* "middle". See <a href="ejchart.html#members:annotations-verticalalignment">VerticalAlignment</a>
 
 
 
@@ -955,7 +955,7 @@ Specifies the downloading filename
  
 $("#container").ejChart({
 
-     exportSettings: { filename : "mychart" }
+     exportSettings: { filename : "myChart" }
                           
 });
 
@@ -1417,7 +1417,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdfd1sai)
 
 
 ### columnDefinitions.unit `enum`
-{:#members:columnDefinitions.unit}
+{:#members:columnDefinitions-unit}
 
 <ts name="ej.datavisualization.Chart.Unit"/>
 Specifies the unit to measure the width of the column in plotting area.
@@ -1450,7 +1450,7 @@ Pixel</td>
 
 #### Default Value
 
-* 'pixel'. See <a href="global.html#members:unit">Unit</a>
+* 'pixel'. See <a href="ejchart.html#members:columnDefinitions">Unit</a>
 
 
 
@@ -1472,7 +1472,7 @@ $("#container").ejChart({
 
 
 ### columnDefinitions.columnWidth `number`
-{:#members:columnDefinitions.columnWidth}
+{:#members:columnDefinitions-columnWidth}
 
 
 
@@ -1576,7 +1576,25 @@ $("#container").ejChart({
 Options for configuring the properties of all the series. You can also override the options for specific series by using series collection.
 
 
+### commonSeriesOptions.animationDuration `string`
+{:#members:commonseriesoptions-animationduration}
 
+Specifies animation duration for series rendering
+
+#### Default Value
+
+ * null
+
+#### Example
+
+{% highlight js %}
+
+$("#container").ejChart({
+commonSeriesOptions : [{
+            animationDuration : 2000 
+        }]                   
+});
+{% endhighlight %}
 
 
 
@@ -1624,7 +1642,7 @@ commonSeriesOptions :{border :{ color : "green" } }
 
 
 ### commonSeriesOptions.border.dashArray `string`
-{:#members:commonSeriesOptions-border-dasharray}
+{:#members:commonseriesoptions-border-dasharray}
 
 
 
@@ -1780,7 +1798,7 @@ Relative width of the columns in column type series. Value ranges from 0 to 1. W
 
 $('#container').ejChart({
 
-    commonseriesoptions: {
+    commonSeriesOptions: {
     
         //Width of columns in column type series
 		columnWidth: 0.8
@@ -1824,7 +1842,7 @@ Spacing between columns of different series. Value ranges from 0 to 1
 
 $('#container').ejChart({
 
-    commonseriesoptions: {
+    commonSeriesOptions: {
     
         //20% Spacing between columns
 		columnWidth: 0.2
@@ -1964,7 +1982,22 @@ commonSeriesOptions : {dataSource: data }
  
  Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/ubbu5ukf)
 
+### commonSeriesOptions.cardinalSplineTension `number`
+{:#members:commonseriesoptions-cardinalsplinetension} 
 
+Specifies spline tension value for cardinal spline type. Value ranges from 0 to 1.
+
+#### Default Value
+
+* 0.5
+
+#### Example
+
+{% highlight js %} 
+$("#container").ejChart({
+commonSeriesOptions :{ cardinalSplineTension : 0.5}                  
+});
+{% endhighlight %}
 
 
 ### commonSeriesOptions.doughnutCoefficient `number`
@@ -2078,7 +2111,7 @@ Column</td>
 
 
 
-* "line". See <a href="global.html#members:drawtype">DrawType</a>
+* "line". See <a href="ejchart.html#members:commonseriesoptions-drawtype">DrawType</a>
 
 #### Example
 
@@ -2806,7 +2839,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/g40hdrpl)
 
 
 ### commonSeriesOptions.isTransposed `boolean`
-{:#members:commonseriesoptions-isTransposed}
+{:#members:commonseriesoptions-istransposed}
 
 
 
@@ -2910,7 +2943,7 @@ OutsideExtended</td>
 
 
 
-* "inside". See <a href="global.html#members:labelposition">LabelPosition</a>
+* "inside". See <a href="ejchart.html#members:commonseriesoptions-labelposition">LabelPosition</a>
 
 
 
@@ -2978,7 +3011,7 @@ Indexes</td>
 
 
 
-* "value". See <a href="global.html#members:splitmode">SplitMode</a>
+* "value". See <a href="ejchart.html#members:commonseriesoptions-splitmode">SplitMode</a>
 
 
 
@@ -3114,7 +3147,7 @@ commonSeriesOptions :{ bubbleOptions: { radiusMode: "minmax" }}
  {% endhighlight %}
  
 ### commonSeriesOptions.bubbleOptions.minRadius `number`
-{:#members:commonseriesoptions-bubbleoptions-minRadius}
+{:#members:commonseriesoptions-bubbleoptions-minradius}
 
 
 
@@ -3143,7 +3176,7 @@ commonSeriesOptions :{ bubbleOptions: { minRadius: 3 }}
 
 
 ### commonSeriesOptions.bubbleOptions.maxRadius `number`
-{:#members:commonseriesoptions-bubbleoptions-maxRadius}
+{:#members:commonseriesoptions-bubbleoptions-maxradius}
 
 
 
@@ -3171,6 +3204,69 @@ commonSeriesOptions :{ bubbleOptions: { maxRadius: 7 }}
  {% endhighlight %}
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdnbwech)
+
+
+
+### commonSeriesOptions.splineType `enum`
+{:#members:commonseriesoptions-splinetype}
+
+
+<ts name="ej.datavisualization.Chart.SplineType"/>
+To render the spline series curve in different forms. 
+
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Natural</td>
+<td class="type">string</td> 
+<td class="description">To render the series with natural curve</td>
+</tr>
+<tr>
+<td class="name">
+Monotonic</td>
+<td class="type">string</td>
+<td class="description">To render the series with monotonic curve</td>
+</tr> 
+<tr>
+<td class="name">
+Cardinal</td>
+<td class="type">string</td>
+<td class="description">To render the series with cardinal curve</td>
+</tr> 
+<tr>
+<td class="name">
+Clamped</td>
+<td class="type">string</td>
+<td class="description">To render the series with clamped curve</td>
+</tr> 
+</tbody>
+</table>
+
+
+#### Default Value
+
+
+
+* "natural". See <a href="ejchart.html#members:splinetype">SplineType</a>
+
+#### Example
+
+{% highlight js %} 
+
+$("#container").ejChart({
+commonSeriesOptions :{ splineType : "cardinal"}                  
+});
+{% endhighlight %}
 
 
 
@@ -3218,7 +3314,7 @@ Square</td>
 
 
 
-* "butt". See <a href="global.html#members:linecap">LineCap</a>
+* "butt". See <a href="ejchart.html#members:commonseriesoptions-linecap">LineCap</a>
 
 
 #### Example
@@ -3278,7 +3374,7 @@ Miter</td>
 
 
 
-* "round". See <a href="global.html#members:linejoin">LineJoin</a>
+* "round". See <a href="ejchart.html#members:commonseriesoptions-linejoin">LineJoin</a>
 
 
 #### Example
@@ -3483,6 +3579,22 @@ commonSeriesOptions :{marker :{dataLabel :{enableWrap : false}}}
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/klibjzkp)
 
+### commonSeriesOptions.marker.dataLabel.enableContrastColor `boolean`
+{:#members:commonseriesoptions-marker-datalabel-enablecontrastcolor}
+
+Enables saturation to the data label. 
+
+#### Default Value
+
+ * false
+
+#### Example
+
+{% highlight js %}
+$("#container").ejChart({
+commonSeriesOptions :{marker :{dataLabel :{enableContrastColor : false}}}                  
+});
+ {% endhighlight %}
 
 ### commonSeriesOptions.marker.dataLabel.border `object`
 {:#members:commonseriesoptions-marker-datalabel-border}
@@ -3614,7 +3726,7 @@ Bezier</td>
 
 
 
-* "line". See <a href="global.html#connectorlinetype">ConnectorLineType</a>
+* "line". See <a href="ejchart.html#members:commonseriesoptions-marker-datalabel-connectorline-type">ConnectorLineType</a>
 
 
 #### Example
@@ -3635,7 +3747,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pmnp5qjl)
 
 
 ### commonSeriesOptions.marker.dataLabel.connectorLine.width `number`
-{:#members:commonseriesoptions.marker.datalabel.connectorline.width}
+{:#members:commonseriesoptions-marker-datalabel-connectorline-width}
 
 
 
@@ -3802,7 +3914,7 @@ Font family of the data label.
  
  
 $("#container").ejChart({
-commonSeriesOptions :{marker :{dataLabel :{ font :{fontFamily : "algerian"}}}}                 
+commonSeriesOptions :{marker :{dataLabel :{ font :{fontFamily : "Algerian"}}}}                 
 });
 {% endhighlight %}
 
@@ -3822,7 +3934,7 @@ Font style of the data label.
 
 
 
-* "normal". See <a href="global.html#fontstyle">FontStyle</a>
+* "normal". See <a href="ejchart.html#members:commonseriesoptions-marker-datalabel-font-fontstyle">FontStyle</a>
 
 
 #### Example
@@ -3853,7 +3965,7 @@ Font weight of the data label.
 
 
 
-* "regular". See <a href="global.html#members:fontweight">FontWeight</a>
+* "regular". See <a href="ejchart.html#members:commonseriesoptions-marker-datalabel-font-fontweight">FontWeight</a>
 
 
 
@@ -4398,7 +4510,7 @@ SeriesType</td>
 
 
 
-* "none". See <a href="global.html#members:shape">Shape</a>
+* "none". See <a href="ejchart.html#members:commonseriesoptions-marker-datalabel-shape">Shape</a>
 
 
 
@@ -4438,7 +4550,7 @@ Custom template to format the data label content. Use “point.x” and “point
  
  
 $("#container").ejChart({
-commonseriesoptions : { marker : { dataLabel : { template : "LabelTemplateID" }}}                 
+commonSeriesOptions : { marker : { dataLabel : { template : "LabelTemplateID" }}}                 
 });
 
 {% endhighlight %}
@@ -4467,7 +4579,7 @@ Name of a field in data source, where datalabel text is displayed.
  
  
 $("#container").ejChart({
-commonseriesoptions : { marker : { dataLabel : { textMappingName : "TextFieldName" }}}                 
+commonSeriesOptions : { marker : { dataLabel : { textMappingName : "TextFieldName" }}}                 
 });
 
 {% endhighlight %}
@@ -4520,7 +4632,7 @@ Middle</td>
 
 
 
-* "top". See <a href="global.html#members:textposition">TextPosition</a>
+* "top". See <a href="ejchart.html#members:series-marker-datalabel-textposition">TextPosition</a>
 
 
 
@@ -4752,7 +4864,7 @@ Specifies the shape of the marker.
 
 
 
-* "circle". See <a href="global.html#members:shape">Shape</a>
+* "circle". See <a href="ejchart.html#members:shape">Shape</a>
 
 
 
@@ -4941,7 +5053,7 @@ Specifies the shape of the outlier.
 
 
 
-* "circle". See <a href="global.html#members:shape">Shape</a>
+* "circle". See <a href="ejchart.html#members:commonseriesoptions-outliersettings-shape">Shape</a>
 
 
 
@@ -5137,7 +5249,7 @@ commonSeriesOptions :{ pieOfPieCoefficient : 1}
 
  
 ### commonSeriesOptions.splitValue `string`
-{:#members:commonSeriesOptions-splitvalue}
+{:#members:commonseriesoptions-splitvalue}
 
 
 
@@ -5264,7 +5376,7 @@ Surface</td>
 
 
 
-* "linear". See <a href="global.html#members:pyramidmode">PyramidMode</a>
+* "linear". See <a href="ejchart.html#members:commonseriesoptions-pyramidmode">PyramidMode</a>
 
 #### Example
 
@@ -5316,7 +5428,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/gposb4vh)
 
 
 ### commonSeriesOptions.cornerRadius `object`
-{:#members:commonSeriesOptions-cornerradius}
+{:#members:commonseriesoptions-cornerradius}
 
 
 
@@ -5340,7 +5452,7 @@ commonSeriesOptions : {
 
 
 ### commonSeriesOptions.cornerRadius.topLeft `number`
-{:#members:commonSeriesOptions.cornerradius.topleft}
+{:#members:commonseriesoptions-cornerradius-topleft}
 
 
 
@@ -5373,7 +5485,7 @@ commonSeriesOptions : {
 
 
 ### commonSeriesOptions.cornerRadius.topRight `number`
-{:#members:commonSeriesOptions.cornerradius.topright}
+{:#members:commonseriesoptions-cornerradius-topright}
 
 
 
@@ -5407,7 +5519,7 @@ commonSeriesOptions : {
 
 
 ### commonSeriesOptions.cornerRadius.bottomLeft `number`
-{:#members:commonSeriesOptions.cornerradius.bottomleft}
+{:#members:commonseriesoptions-cornerradius-bottomleft}
 
 
 
@@ -5440,7 +5552,7 @@ commonSeriesOptions : {
 
 
 ### commonSeriesOptions.cornerRadius.bottomRight `number`
-{:#members:commonSeriesOptions.cornerradius.bottomright}
+{:#members:commonseriesoptions-cornerradius-bottomright}
 
 
 
@@ -6015,6 +6127,18 @@ StackingBar100</td>
 </tr> 
 <tr>
 <td class="name">
+StackingSplineArea</td>
+<td class="type">string</td>
+<td class="description">sets the seriesType of chart to stackingsplinearea</td>
+</tr>
+<tr>
+<td class="name">
+StackingSplineArea100</td>
+<td class="type">string</td>
+<td class="description">sets the seriesType of chart to stackingsplinearea100</td>
+</tr> 
+<tr>
+<td class="name">
 Pyramid</td>
 <td class="type">string</td> 
 <td class="description">Specifies the series type as pyramid.</td>
@@ -6057,7 +6181,7 @@ RangeArea</td>
 
 
 
-* "column". See <a href="global.html#members:type">Type</a>
+* "column". See <a href="ejchart.html#members:commonseriesoptions-type">Type</a>
 
 
 #### Example
@@ -6304,7 +6428,7 @@ Name of the property in the datasource that contains open value for the series.
  
  
 $("#container").ejChart({
-commonSeriesOptions : {open: "oepn" }                   
+commonSeriesOptions : {open: "open" }                   
 });
 {% endhighlight %}
 
@@ -7508,7 +7632,7 @@ $("#container").ejChart({
 
 
 ### commonSeriesOptions.trendlines `array`
-{:#members:commonseriesoptions.trendlines}
+{:#members:commonseriesoptions-trendlines}
 
 
 
@@ -7578,20 +7702,62 @@ commonSeriesOptions :[{trendlines:[{ visibleOnLegend:'hidden' }]}]
 
 
 
-### commonSeriesOptions.trendlines.type `string`
+### commonSeriesOptions.trendlines.type `enum`
 {:#members:commonseriesoptions-trendlines-type}
 
 
-
+<ts name="ej.datavisualization.Chart.TrendlinesType"/>
 
 Specifies the type of the trendline for the series.
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Linear</td>
+<td class="type">string</td> 
+<td class="description">Specifies the trendline type as linear.</td>
+</tr>
+<tr>
+<td class="name">
+Exponential</td>
+<td class="type">string</td>
+<td class="description">Specifies the trendline type as exponential.</td>
+</tr> 
+<tr>
+<td class="name">
+Logarithmic</td>
+<td class="type">string</td>
+<td class="description">Specifies the trendline type as lograthmic.</td>
+</tr> 
+<tr>
+<td class="name">
+Power</td>
+<td class="type">string</td>
+<td class="description">Specifies the trendline type as power.</td>
+</tr>
+<tr>
+<td class="name">
+Polynomial</td>
+<td class="type">string</td>
+<td class="description">Specifies the trendline type as polynomial.</td>
+</tr>
+</tbody>
+</table>
 
 
 #### Default Value
 
 
 
-* "linear". See <a href="global.html#members:trendlinestype">TrendlinesType</a>
+* "linear". See <a href="ejchart.html#members:commonseriesoptions-trendlines-type">TrendlinesType</a>
 
 
 
@@ -8276,7 +8442,7 @@ commonSeriesOptions :{highlightSettings:{enable:true}}
 
 
 ### commonSeriesOptions.highlightSettings.mode `enum`
-{:#members:commonSeriesOptions-highlightSettings-mode}
+{:#members:commonseriesoptions-highlightsettings-mode}
 
 
 <ts name="ej.datavisualization.Chart.Mode"/>
@@ -8324,7 +8490,7 @@ Range</td>
 
 
 
-* "series". See <a href="global.html#members:mode">Mode</a>
+* "series". See <a href="ejchart.html#members:commonseriesoptions-highlightsettings-mode">Mode</a>
 
 
 
@@ -8646,7 +8812,7 @@ Specifies whether the series or data point has to be selected.
 
 
 
-* "series". See <a href="global.html#members:mode">Mode</a>
+* "series". See <a href="ejchart.html#members:commonseriesoptions-highlightsettings-mode">Mode</a>
 
 
 
@@ -9130,7 +9296,7 @@ Grouping</td>
 
 #### Default Value
 
-* "float". See <a href="global.html#members:crosshairmode">CrosshairMode</a>
+* "float". See <a href="ejchart.html#members:crosshair-trackballtooltipsettings-mode">CrosshairMode</a>
 
 #### Example
 
@@ -9465,7 +9631,7 @@ Trackball</td>
 
 #### Default Value
 
-* "crosshair". See <a href="global.html#members:crosshairtype">CrosshairType</a>
+* "crosshair". See <a href="ejchart.html#members:crosshair-type">CrosshairType</a>
 
 
 
@@ -9774,6 +9940,25 @@ $("#container").ejChart({
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/p443wnjd)
 
+### indicators.animationDuration `boolean`
+{:#members:indicators-animationduration}
+
+Specifies animation duration for indicator rendering.
+
+#### Default Value
+
+* null
+
+#### Example
+
+
+{% highlight js %}
+$("#container").ejChart({
+
+     indicators :[{ animationDuration:2000}]
+});
+
+{% endhighlight %}
 
 ### indicators.fill `string`
 {:#members:indicators-fill}
@@ -11115,7 +11300,7 @@ Far</td>
 
 #### Default Value
 
-* "Center". See <a href="global.html#members:alignment">Alignment</a>
+* "Center". See <a href="ejchart.html#members:legend-alignment">Alignment</a>
 
 
 
@@ -11395,7 +11580,7 @@ Font family for legend item text.
  
 $("#container").ejChart({
 
-   legend :{ font :{fontFamily : "algerian"}}                    
+   legend :{ font :{fontFamily : "Algerian"}}                    
 
 });
 
@@ -11415,7 +11600,7 @@ Font style for legend item text.
 
 #### Default Value
 
-* "Normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+* "Normal". See <a href="global.html#enum:fontstyle">FontStyle</a>
 
 
 
@@ -11447,7 +11632,7 @@ Font weight for legend item text.
 
 #### Default Value
 
-* "Regular". See <a href="global.html#members:fontweight">FontWeight</a>
+* "Regular". See <a href="global.html#enum:fontweight">FontWeight</a>
 
 
 
@@ -11850,7 +12035,7 @@ Bottom</td>
 
 #### Default Value
 
-* "Bottom". See <a href="global.html#members:position">Position</a>
+* "Bottom". See <a href="ejchart.html#members:legend-position">Position</a>
 
 
 
@@ -11921,7 +12106,7 @@ Shape of the legend items. Default shape for pie and doughnut series is circle a
 
 #### Default Value
 
-* "None". See <a href="global.html#members:shape">Shape</a>
+* "None". See <a href="ejchart.html#members:legend-shape">Shape</a>
 
 
 
@@ -12093,7 +12278,7 @@ Font style for legend title.
 
 #### Default Value
 
-* "normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+* "normal". See <a href="global.html#enum:fontstyle">FontStyle</a>
 
 
 
@@ -12125,7 +12310,7 @@ Font weight for legend title.
 
 #### Default Value
 
-* "normal". See <a href="global.html#members:fontweight">FontWeight</a>
+* "normal". See <a href="global.html#enum:fontweight">FontWeight</a>
 
 
 
@@ -12256,7 +12441,7 @@ Far</td>
 
 #### Default Value
 
-* "center". See <a href="global.html#members:alignment">Alignment</a>
+* "center". See <a href="ejchart.html#members:legend-title-textalignment">Alignment</a>
 
 
 
@@ -12326,7 +12511,7 @@ WrapAndTrim</td>
 
 #### Default Value
 
-* "none". See <a href="global.html#members:textoverflow">textOverflow</a>
+* "none". See <a href="ejchart.html#members:legend-textoverflow">textOverflow</a>
 
 
 
@@ -13391,7 +13576,7 @@ BetweenTicks</td>
 
 
 
-* ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See <a href="global.html#members:labelplacement">LabelPlacement</a>
+* ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See <a href="ejchart.html#members:primaryxaxis-labelplacement">LabelPlacement</a>
 
 
 #### Example
@@ -13454,7 +13639,7 @@ Hide</td>
 
 
 
-* ej.datavisualization.Chart.EdgeLabelPlacement.None. See <a href="global.html#members:edgelabelplacement">EdgeLabelPlacement</a>
+* ej.datavisualization.Chart.EdgeLabelPlacement.None. See <a href="ejchart.html#members:primaryxaxis-edgelabelplacement">EdgeLabelPlacement</a>
 
 
 
@@ -13571,7 +13756,7 @@ Font style of labels.
 
 
 
-* ej.datavisualization.Chart.FontStyle.Normal. See <a href="global.html#members:fontstyle">FontStyle</a>
+* ej.datavisualization.Chart.FontStyle.Normal. See <a href="global.html#enum:fontstyle">FontStyle</a>
 
 
 
@@ -13605,7 +13790,7 @@ Font weight of the label.
 
 
 
-* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
+* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#enum:fontweight">FontWeight</a>
 
 
 
@@ -13764,7 +13949,7 @@ Years</td>
 
 
 
-* null. See <a href="global.html#members:intervaltype">IntervalType</a>
+* null. See <a href="ejchart.html#members:primaryxaxis-intervaltype">IntervalType</a>
 
 
 
@@ -13928,7 +14113,7 @@ MultipleRows</td>
 
 
 
-* ej.datavisualization.Chart.LabelIntersectAction.None. See <a href="global.html#members:labelintersectaction">LabelIntersectAction</a>
+* ej.datavisualization.Chart.LabelIntersectAction.None. See <a href="ejchart.html#members:primaryxaxis-labelintersectaction">LabelIntersectAction</a>
 
 
 
@@ -13989,7 +14174,7 @@ OutSide</td>
 
 
 
-* "outside". See <a href="global.html#members:labelposition">LabelPosition</a>
+* "outside". See <a href="ejchart.html#members:primaryxaxis-labelposition">LabelPosition</a>
 
 
 
@@ -14053,7 +14238,7 @@ Center</td>
 
 
 
-* "center". See <a href="global.html#members:alignment">Alignment</a>
+* "center". See <a href="ejchart.html#members:primaryxaxis-alignment">Alignment</a>
 
 
 
@@ -15076,7 +15261,7 @@ Round</td>
 #### Default Value
 
 
-* "None". See <a href="global.html#members:rangePadding">RangePadding</a>
+* "None". See <a href="ejchart.html#members:primaryxaxis-rangepadding">RangePadding</a>
 
 
 
@@ -15215,7 +15400,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-### primaryXAxis.multiLevelLabels.start `number`
+### primaryXAxis.multiLevelLabels.start `object`
 {:#members:primaryxaxis-multilevellabels-start}
 
 
@@ -15246,7 +15431,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-### primaryXAxis.multiLevelLabels.end `number`
+### primaryXAxis.multiLevelLabels.end `object`
 {:#members:primaryxaxis-multilevellabels-end}
 
 
@@ -15356,7 +15541,7 @@ Specifies the alignment of the text in multi level labels.
 
 
 
-* "center". See <a href="global.html#members:textalignment">TextAlignment</a>
+* "center". See <a href="global.html#enum:textalignment">TextAlignment</a>
 
 
 
@@ -15388,7 +15573,7 @@ Specifies the handling of text over flow in multi level labels.
 
 
 
-* "center". See <a href="global.html#members:textoverflow">TextOverflow</a>
+* "center". See <a href="ejchart.html#members:legend-textoverflow">TextOverflow</a>
 
 
 
@@ -15752,7 +15937,7 @@ CurlyBrace</td>
 
 
 
-* "rectangle". See <a href="global.html#members:multilevellabelsbordertype">Type</a>
+* "rectangle". See <a href="ejchart.html#members:primaryxaxis-multilevellabels-border-type">Type</a>
 
 
 
@@ -16287,7 +16472,7 @@ MiddleBottom</td>
 
 
 
-* "middlecenter". See <a href="global.html#members:textalignment">TextAlignment</a>
+* "middlecenter". See <a href="ejchart.html#members:primaryxaxis-stripline-textalignment">TextAlignment</a>
 
 
 
@@ -16413,7 +16598,7 @@ Over</td>
 
 
 
-* "over". See <a href="global.html#members:zindex">ZIndex</a>
+* "over". See <a href="ejchart.html#members:primaryxaxis-stripline-zindex">ZIndex</a>
 
 
 
@@ -16475,7 +16660,7 @@ Outside</td>
 
 
 
-* "outside". See <a href="global.html#members:ticklinesposition">TickLinesPosition</a>
+* "outside". See <a href="ejchart.html#members:primaryxaxis-ticklinesposition">TickLinesPosition</a>
 
 
 
@@ -16658,7 +16843,7 @@ Font family of the title text.
 
 $("#container").ejChart({
 
-    primaryXAxis: { title: { font : { fontFamily : "Algerain"} } }
+    primaryXAxis: { title: { font : { fontFamily : "Algerian"} } }
                       
 });
 
@@ -16715,7 +16900,7 @@ Font weight of the title text.
 
 
 
-* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
+* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#enum:fontweight">FontWeight</a>
 
 
 
@@ -16947,7 +17132,7 @@ Specifies the position of the axis title.
 
 
 
-* "outside". See <a href="global.html#members:labelposition">Position</a>
+* "outside". See <a href="ejchart.html#members:primaryxaxis-title-position">Position</a>
 
 
 
@@ -16977,7 +17162,7 @@ Specifies the position of the axis title.
 
 
 
-* "center". See <a href="global.html#members:textalignment">Alignment</a>
+* "center". See <a href="ejchart.html#members:primaryxaxis-alignment">Alignment</a>
 
 
 
@@ -17049,7 +17234,7 @@ Logarithmic</td>
 
 
 
-* null. See <a href="global.html#members:valuetype">ValueType</a>
+* null. See <a href="ejchart.html#members:primaryxaxis-valuetype">ValueType</a>
 
 
 
@@ -17972,7 +18157,7 @@ Specifies the placement of labels.
 
 
 
-* ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See <a href="global.html#members:labelplacement">LabelPlacement</a>
+* ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See <a href="ejchart.html#members:primaryxaxis-labelplacement">LabelPlacement</a>
 
 
 #### Example
@@ -18001,7 +18186,7 @@ Specifies the position of labels at the edge of the axis.
 
 
 
-* ej.datavisualization.Chart.EdgeLabelPlacement.None. See <a href="global.html#members:edgelabelplacement">EdgeLabelPlacement</a>
+* ej.datavisualization.Chart.EdgeLabelPlacement.None. See <a href="ejchart.html#members:primaryxaxis-edgelabelplacement">EdgeLabelPlacement</a>
 
 
 
@@ -18148,7 +18333,7 @@ Font style of labels.
 
 
 
-* ej.datavisualization.Chart.FontStyle.Normal. See <a href="global.html#members:fontstyle">FontStyle</a>
+* ej.datavisualization.Chart.FontStyle.Normal. See <a href="global.html#enum:fontstyle">FontStyle</a>
 
 
 
@@ -18182,7 +18367,7 @@ Font weight of the label.
 
 
 
-* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
+* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#enum:fontweight">FontWeight</a>
 
 
 
@@ -18282,7 +18467,7 @@ Specifies the type of interval in date time axis.
 #### Default Value
 
 
-* null. See <a href="global.html#members:intervaltype">IntervalType</a>
+* null. See <a href="ejchart.html#members:primaryxaxis-intervaltype">IntervalType</a>
 
 
 #### Example
@@ -18379,7 +18564,7 @@ Specifies the action to take when the axis labels are overlapping with each othe
 
 
 
-* ej.datavisualization.Chart.LabelIntersectAction.None. See <a href="global.html#members:labelintersectaction">LabelIntersectAction</a>
+* ej.datavisualization.Chart.LabelIntersectAction.None. See <a href="ejchart.html#members:primaryxaxis-labelintersectaction">LabelIntersectAction</a>
 
 
 
@@ -18410,7 +18595,7 @@ Specifies the position of the axis labels.
 
 
 
-* "outside". See <a href="global.html#members:labelposition">LabelPosition</a>
+* "outside". See <a href="ejchart.html#members:primaryxaxis-labelposition">LabelPosition</a>
 
 
 
@@ -18445,7 +18630,7 @@ Specifies the position of the axis labels.
 
 
 
-* "center". See <a href="global.html#members:alignment">Alignment</a>
+* "center". See <a href="ejchart.html#members:primaryxaxis-alignment">Alignment</a>
 
 
 
@@ -19403,7 +19588,7 @@ Specifies the padding for the axis range.
 #### Default Value
 
 
-* "None". See <a href="global.html#members:rangePadding">RangePadding</a>
+* "None". See <a href="ejchart.html#members::primaryxaxis-rangepadding">RangePadding</a>
 
 
 
@@ -19542,7 +19727,7 @@ $("#container").ejChart({
 {% endhighlight %}
 
 
-### axes.multiLevelLabels.start `number`
+### axes.multiLevelLabels.start `object`
 {:#members:axes-multilevellabels-start}
 
 
@@ -19573,7 +19758,7 @@ $("#container").ejChart({
 
 {% endhighlight %}
 
-### axes.multiLevelLabels.end `number`
+### axes.multiLevelLabels.end `object`
 {:#members:axes-multilevellabels-end}
 
 
@@ -19683,7 +19868,7 @@ Specifies the alignment of the text in multi level labels.
 
 
 
-* "center". See <a href="global.html#members:textalignment">TextAlignment</a>
+* "center". See <a href="ejchart.html#members:primaryxaxis-stripline-textalignment">TextAlignment</a>
 
 
 
@@ -19715,7 +19900,7 @@ Specifies the handling of text over flow in multi level labels.
 
 
 
-* "center". See <a href="global.html#members:textoverflow">TextOverflow</a>
+* "center". See <a href="ejchart.html#members:legend-textoverflow">TextOverflow</a>
 
 
 
@@ -20038,7 +20223,7 @@ Border type of the multi level labels.
 
 
 
-* "rectangle". See <a href="global.html#members:multilevellabelsbordertype">Type</a>
+* "rectangle". See <a href="ejchart.html#members:primaryxaxis-multilevellabels-border-type">Type</a>
 
 
 
@@ -20544,7 +20729,7 @@ Specifies the alignment of the text inside the strip line.
 
 
 
-* "middlecenter". See <a href="global.html#members:textalignment">TextAlignment</a>
+* "middlecenter". See <a href="ejchart.html#members:legend-title-textalignment">TextAlignment</a>
 
 
 
@@ -20645,7 +20830,7 @@ Specifies the order where the strip line and the series have to be rendered. Whe
 
 
 
-* "over". See <a href="global.html#members:zindex">ZIndex</a>
+* "over". See <a href="ejchart.html#members:primaryxaxis-stripline-zindex">ZIndex</a>
 
 
 
@@ -20680,7 +20865,7 @@ Specifies the position of the axis tick lines.
 
 
 
-* "outside". See <a href="global.html#members:ticklinesposition">TickLinesPosition</a>
+* "outside". See <a href="ejchart.html#members:primaryxaxis-ticklinesposition">TickLinesPosition</a>
 
 
 
@@ -20920,7 +21105,7 @@ Font weight of the title text.
 
 
 
-* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
+* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#enum:fontweight">FontWeight</a>
 
 
 
@@ -21152,7 +21337,7 @@ Specifies the position of the axis title.
 
 
 
-* "outside". See <a href="global.html#members:labelposition">Position</a>
+* "outside". See <a href="ejchart.html#members:axes-title-position">Position</a>
 
 
 
@@ -21182,7 +21367,7 @@ Specifies the position of the axis title.
 
 
 
-* "center". See <a href="global.html#members:textalignment">Alignment</a>
+* "center". See <a href="ejchart.html#members:axes-title-alignment">Alignment</a>
 
 
 
@@ -21217,7 +21402,7 @@ Specifies the type of data the axis is handling.
 
 
 
-* null. See <a href="global.html#members:valuetype">ValueType</a>
+* null. See <a href="ejchart.html#members:primaryxaxis-valuetype">ValueType</a>
 
 
 
@@ -22085,7 +22270,7 @@ Specifies the placement of labels.
 
 
 
-* ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See <a href="global.html#members:labelplacement">LabelPlacement</a>
+* ej.datavisualization.Chart.LabelPlacement.BetweenTicks. See <a href="ejchart.html#members:primaryxaxis-labelplacement">LabelPlacement</a>
 
 
 #### Example
@@ -22116,7 +22301,7 @@ Specifies the position of labels at the edge of the axis.
 
 
 
-* ej.datavisualization.Chart.EdgeLabelPlacement.None. See <a href="global.html#members:edgelabelplacement">EdgeLabelPlacement</a>
+* ej.datavisualization.Chart.EdgeLabelPlacement.None. See <a href="ejchart.html#members:primaryxaxis-edgelabelplacement">EdgeLabelPlacement</a>
 
 
 
@@ -22232,7 +22417,7 @@ Font style of labels.
 
 
 
-ej.datavisualization.Chart.FontStyle.Normal. See <a href="global.html#members:fontstyle">FontStyle</a>
+ej.datavisualization.Chart.FontStyle.Normal. See <a href="global.html#enum:fontstyle">FontStyle</a>
 
 
 
@@ -22267,7 +22452,7 @@ Font weight of the label.
 
 
 
-* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
+* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#enum:fontweight">FontWeight</a>
 
 
 
@@ -22370,7 +22555,7 @@ Specifies the type of interval in date time axis.
 
 
 
-* null. See <a href="global.html#members:intervaltype">IntervalType</a>
+* null. See <a href="ejchart.html#members:primaryxaxis-intervaltype">IntervalType</a>
 
 
 
@@ -22505,7 +22690,7 @@ Specifies the position of the axis labels.
 
 
 
-* "outside". See <a href="global.html#members:labelposition">LabelPosition</a>
+* "outside". See <a href="ejchart.html#members:primaryxaxis-labelposition">LabelPosition</a>
 
 
 
@@ -22538,7 +22723,7 @@ Specifies the position of the axis labels.
 
 
 
-* "center". See <a href="global.html#members:alignment">Alignment</a>
+* "center". See <a href="ejchart.html#members:primaryxaxis-alignment">Alignment</a>
 
 
 
@@ -23468,7 +23653,7 @@ Specifies the padding for the axis range.
 
 
 
-* ej.datavisualization.Chart.RangePadding.None. See <a href="global.html#members:rangepadding">RangePadding</a>
+* ej.datavisualization.Chart.RangePadding.None. See <a href="ejchart.html#members:primaryyaxis-rangepadding">RangePadding</a>
 
 
 
@@ -23814,7 +23999,7 @@ Specifies the alignment of the text in multi level labels.
 
 
 
-* "center". See <a href="global.html#members:textalignment">TextAlignment</a>
+* "center". See <a href="ejchart.html#members:primaryyaxis-multilevellabels-textalignment">TextAlignment</a>
 
 
 
@@ -23846,7 +24031,7 @@ Specifies the handling of text over flow in multi level labels.
 
 
 
-* "center". See <a href="global.html#members:textoverflow">TextOverflow</a>
+* "center". See <a href="ejchart.html#members:primaryyaxis-multilevellabels-textoverflow">TextOverflow</a>
 
 
 
@@ -24170,7 +24355,7 @@ Border type of the multi level labels.
 
 
 
-* "rectangle". See <a href="global.html#members:multilevellabelsbordertype">Type</a>
+* "rectangle". See <a href="ejchart.html#members:primaryyaxis-multilevellabels-border-type">Type</a>
 
 
 
@@ -24853,7 +25038,7 @@ Specifies the alignment of the text inside the strip line.
 
 
 
-* "middlecenter". See <a href="global.html#members:textalignment">TextAlignment</a>
+* "middlecenter". See <a href="ejchart.html#members:primaryyaxis-stripline-textalignment">TextAlignment</a>
 
 
 
@@ -24956,7 +25141,7 @@ Specifies the order in which strip line and the series have to be rendered. When
 
 
 
-* "over". See <a href="global.html#members:zindex">ZIndex</a>
+* "over". See <a href="ejchart.html#members:primaryyaxis-stripline-zindex">ZIndex</a>
 
 
 
@@ -24991,7 +25176,7 @@ Specifies the position of the axis tick lines.
 
 
 
-* "outside". See <a href="global.html#members:ticklinesposition">TickLinesPosition</a>
+* "outside". See <a href="ejchart.html#members:primaryyaxis-ticklinesposition">TickLinesPosition</a>
 
 
 
@@ -25230,7 +25415,7 @@ Font weight of the title text.
 
 
 
-* ej.datavisualization.Chart.FontWeight.Regular. See <a href="global.html#members:fontweight">FontWeight</a>
+* ej.datavisualization.Chart.FontWeight.Regular. See <a href="ejchart.html#members:commonseriesoptions-title-font-fontweight">FontWeight</a>
 
 
 
@@ -25462,7 +25647,7 @@ Specifies the position of the axis title.
 
 
 
-* "outside". See <a href="global.html#members:labelposition">Position</a>
+* "outside". See <a href="ejchart.html#members:primaryyaxis-title-position">Position</a>
 
 
 
@@ -25492,7 +25677,7 @@ Specifies the position of the axis title.
 
 
 
-* "center". See <a href="global.html#members:textalignment">Alignment</a>
+* "center". See <a href="ejchart.html#members:primaryyaxis-title-alignment">Alignment</a>
 
 
 
@@ -25526,7 +25711,7 @@ Specifies the type of data the axis is handling.
 
 
 
-* null. See <a href="global.html#members:valuetype">ValueType</a>
+* null. See <a href="ejchart.html#members:primaryyaxis-valuetype">ValueType</a>
 
 
 
@@ -25737,7 +25922,7 @@ Percentage</td>
 
 #### Default Value
 
-* 'pixel'. See <a href="global.html#members:unit">Unit</a>
+* 'pixel'. See <a href="ejchart.html#members:rowDefinitions.unit">Unit</a>
 
 
 
@@ -26017,6 +26202,24 @@ series : [{
  
 Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/vf2xong1)
 
+### series.animationDuration `string`
+{:#members:series-animationduration}
+
+Specifies animation duration for series rendering.
+
+#### Default Value
+
+ * null
+
+#### Example
+
+{% highlight js %} 
+$("#container").ejChart({
+series : [{
+            animationDuration : 2000 
+        }]                   
+});
+{% endhighlight %}
 
 ### series.bullFillColor `string`
 {:#members:series-bullfillcolor}
@@ -26056,7 +26259,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/v540kjyb)
 
 <ts ref="ej.datavisualization.Chart.ColumnFacet"/>
 
-To render the column and bar type series in rectangle/cylinder shape. See <a href="global.html#ColumnFacet">ColumnFacet</a>
+To render the column and bar type series in rectangle/cylinder shape. See <a href="global.html#commonseriesoptions-columnfacet">ColumnFacet</a>
 
 
 #### Default Value
@@ -26270,6 +26473,22 @@ series : [{dataSource: data }]
 
 Try it : [JS Playground Sample](http://jsplayground.syncfusion.com/soesgx0m)
 
+### series.cardinalSplineTension `number`
+{:#members:series-cardinalsplinetension}
+
+Specifies spline tension values for cardinal spline type.Value ranges from 0 to 1.
+
+#### Default Value
+
+* 0.5
+
+#### Example
+
+{% highlight js %} 
+$("#container").ejChart({
+series : [{cadinalSplineTension : 0.5 }]                   
+});
+{% endhighlight %}
 
 ### series.doughnutCoefficient `number`
 {:#members:series-doughnutcoefficient}
@@ -26349,7 +26568,7 @@ Type of series to be drawn in radar or polar series.
 
 
 
-* "line". See <a href="global.html#members:drawtype">DrawType</a>
+* "line". See <a href="ejchart.html#members:commonseriesoptions-drawtype">DrawType</a>
 
 
 
@@ -27084,7 +27303,7 @@ Position of the data label in pie/doughnut/pyramid/funnel series. OutsideExtende
 
 
 
-* "inside". See <a href="global.html#members:labelposition">LabelPosition</a>
+* "inside". See <a href="ejchart.html#members:commonseriesoptions-labelposition">LabelPosition</a>
 
 
 
@@ -27117,7 +27336,7 @@ Specifies the mode for splitting the data points in pieOfPie series.
 
 
 
-* "value". See <a href="global.html#members:splitmode">SplitMode</a>
+* "value". See <a href="ejchart.html#members:commonseriesoptions-splitmode">SplitMode</a>
 
 
 
@@ -27148,7 +27367,7 @@ Quartile calculation has been performed in three different formulas to render th
 
 
 
-* "exclusive"
+* "exclusive".See <a href="ejchart.html#members:commonseriesoptions-boxplotmode">BoxPlotMode</a>
 
 
 
@@ -27185,7 +27404,7 @@ Used for the calculation of the bubble radius based on the mode selected
 
 
 
-* "minmax" .See <a href="global.html#members:RadiusMode">RadiusMode</a>
+* "minmax" .See <a href="ejchart.html#members:commonseriesoptions-bubbleoptions-radiusmode">RadiusMode</a>
 
 
 
@@ -27260,7 +27479,34 @@ series : [ { bubbleOptions: { maxRadius: 7 }} ]
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdnbwech)
 
+### series.splineType `enum`
+{:#members:series-splineType}
 
+<ts ref="ej.datavisualization.Chart.SplineType"/>
+
+
+Specifies the different types of spline curve. 
+
+
+#### Default Value
+
+
+
+* "Natural". See <a href="ejchart.html#members:commonseriesoptions-splinetype">SplineType</a>
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejChart({
+series :[{splineType : "cardinal"}]                  
+});
+{% endhighlight %}
 
 
 ### series.lineCap `enum`
@@ -27276,7 +27522,7 @@ Specifies the line cap of the series.
 
 
 
-* "Butt". See <a href="global.html#members:linecap">LineCap</a>
+* "Butt". See <a href="ejchart.html#members:commonseriesoptions-linecap">LineCap</a>
 
 
 
@@ -27308,7 +27554,7 @@ Specifies the type of shape to be used where two lines meet.
 
 
 
-* "Round". See <a href="global.html#members:linejoin">LineJoin</a>
+* "Round". See <a href="ejchart.html#members:commonseriesoptions-linejoin">LineJoin</a>
 
 
 #### Example
@@ -27514,6 +27760,22 @@ series :[{marker :{dataLabel :{enableWrap : true}}]
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/klibjzkp)
 
+### series.marker.dataLabel.enableContrastColor `boolean`
+{:#members:series-marker-datalabel-enablecontrastcolor}
+
+Enables saturation to the data label. 
+
+#### Default Value
+
+ * false
+
+#### Example
+
+{% highlight js %}
+$("#container").ejChart({
+series :[{marker :{dataLabel :{enableContrastColor : true}}]            
+});
+ {% endhighlight %}
 
 ### series.marker.dataLabel.border `object`
 {:#members:series-marker-datalabel-border}
@@ -27617,7 +27879,7 @@ Specifies when the connector has to be drawn as Bezier curve or straight line. T
 
 
 
- * "line". See <a href="global.html#members:connectorlinetype">ConnectorLineType</a>
+ * "line". See <a href="ejchart.html#members:commonseriesoptions-marker-datalabel-connectorline-type">ConnectorLineType</a>
 
 
 
@@ -27841,7 +28103,7 @@ Font style of the data label.
 
 
 
-* "normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+* "normal". See <a href="ejchart.html#members:commonseriesoptions-marker-datalabel-font-fontstyle">FontStyle</a>
 
 
 
@@ -27873,7 +28135,7 @@ Font weight of the data label.
 
 
 
-* "regular". See <a href="global.html#members:fontweight">FontWeight</a>
+* "regular". See <a href="ejchart.html#members:commonseriesoptions-marker-datalabel-font-fontweight">FontWeight</a>
 
 
 #### Example
@@ -28177,7 +28439,7 @@ Background shape of the data label.
 
 
 
-* No shape is rendered by default, so its value is ‘none’. See <a href="global.html#members:shape">Shape</a>
+* No shape is rendered by default, so its value is ‘none’. See <a href="ejchart.html#members:commonseriesoptions-marker-datalabel-shape">Shape</a>
 
 
 #### Example
@@ -28237,7 +28499,7 @@ Specifies the position of the data label. This property can be used only for the
 
 
 
-* "top". See <a href="global.html#members:textposition">TextPosition</a>
+* "top". See <a href="ejchart.html#members:commonseriesoptions-marker-datalabel-textposition">TextPosition</a>
 
 
 #### Example
@@ -28531,7 +28793,7 @@ Specifies the shape of the marker.
 
 
 
-* "circle". See <a href="global.html#members:shape">Shape</a>
+* "circle". See <a href="ejchart.html#members:commonseriesoptions-marker-shape">Shape</a>
 
 
 #### Example
@@ -28740,7 +29002,7 @@ Specifies the shape of the outlier.
 
 
 
-* "circle". See <a href="global.html#members:shape">Shape</a>
+* "circle". See <a href="ejchart.html#members:commonseriesoptions-outliersettings-shape">Shape</a>
 
 
 #### Example
@@ -30552,7 +30814,7 @@ Specifies when the connector has to be drawn as Bezier curve or straight line. T
 
 
 
- * "line". See <a href="global.html#members:connectorlinetype">ConnectorLineType</a>
+ * "line". See <a href="ejchart.html#members:commonseriesoptions-points-marker-datalabel-connectorline-type">ConnectorLineType</a>
 
 
 
@@ -30695,7 +30957,7 @@ Font style of the data label.
 
 
 
-* "normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+* "normal". See <a href="ejchart.html#members:commonseriesoptions-points-marker-datalabel-font-fontstyle">FontStyle</a>
 
 
 
@@ -30727,7 +30989,7 @@ Font weight of the data label.
 
 
 
-* "regular". See <a href="global.html#members:fontweight">FontWeight</a>
+* "regular". See <a href="ejchart.html#members:commonseriesoptions-points-marker-datalabel-font-fontweight">FontWeight</a>
 
 
 #### Example
@@ -31031,7 +31293,7 @@ Background shape of the data label.
 
 
 
-* No shape is rendered by default, so its value is ‘none’. See <a href="global.html#members:shape">Shape</a>
+* No shape is rendered by default, so its value is ‘none’. See <a href="ejchart.html#members:commonseriesoptions-points-marker-datalabel-shape">Shape</a>
 
 
 #### Example
@@ -31061,7 +31323,7 @@ Specifies the position of the data label. This property can be used only for the
 
 
 
-* "top". See <a href="global.html#members:textposition">TextPosition</a>
+* "top". See <a href="ejchart.html#members:commonseriesoptions-points-marker-datalabel-textposition">TextPosition</a>
 
 
 #### Example
@@ -31317,7 +31579,7 @@ Specifies the shape of the marker.
 
 
 
-* "circle". See <a href="global.html#members:shape">Shape</a>
+* "circle". See <a href="ejchart.html#members:commonseriesoptions-points-marker-shape">Shape</a>
 
 
 #### Example
@@ -32244,7 +32506,7 @@ Specifies the type of the series to render in chart.
 
 
 
-* "column". see <a href="global.html#members:type">Type</a>
+* "column". see <a href="ejchart.html#members:commonseriesoptions.type">Type</a>
 
 
 
@@ -33468,7 +33730,7 @@ Specifies whether series or data point has to be highlighted.
 
 
 
-* "series". See <a href="global.html#members:mode">Mode</a>
+* "series". See <a href="ejchart.html#members:commonseriesoptions-highlightsettings-mode">Mode</a>
 
 
 
@@ -33733,7 +33995,7 @@ Specifies whether series or data point has to be selected.
 
 
 
-* "series". See <a href="global.html#members:mode">Mode</a>
+* "series". See <a href="ejchart.html#members:commonseriesoptions-selectionSettings-mode">Mode</a>
 
 
 
@@ -34234,7 +34496,7 @@ GradientDark</td>
 
 #### Default Value
 
-* "Flatlight". See <a href="global.html#members:theme">Theme</a>
+* "Flatlight". See <a href="ejchart.html#members:theme">Theme</a>
 
 
 
@@ -34542,7 +34804,7 @@ Font style for Chart title.
 
 #### Default Value
 
-* "Normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+* "Normal". See <a href="ejchart.html#members:title-font-fontstyle">FontStyle</a>
 
 
 
@@ -34574,7 +34836,7 @@ Font weight for Chart title.
 
 #### Default Value
 
-* "Regular". See <a href="global.html#members:fontweight">FontWeight</a>
+* "Regular". See <a href="ejchart.html#members:title-font-fontweight">FontWeight</a>
 
 
 
@@ -34843,7 +35105,7 @@ Font style for sub title.
 
 #### Default Value
 
-* "Normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+* "Normal". See <a href="ejchart.html#members:title-subtitle-font-fontstyle">FontStyle</a>
 
 
 
@@ -34875,7 +35137,7 @@ Font weight for sub title.
 
 #### Default Value
 
-* "Regular". See <a href="global.html#members:fontweight">FontWeight</a>
+* "Regular". See <a href="ejchart.html#members:title-subtitle-font-fontweight">FontWeight</a>
 
 
 
@@ -35158,7 +35420,7 @@ Text to be displayed in sub title.
  
 $("#container").ejChart({
 
-   title: { subTitle: { text : "Performace chart" } }                      
+   title: { subTitle: { text : "Performance chart" } }                      
 
 });
 
@@ -35181,7 +35443,7 @@ Alignment of sub title text.
 
 #### Default Value
 
-* "far". See <a href="global.html#members:textalignment">TextAlignment</a>
+* "far". See <a href="ejchart.html#members:title-subtitle-textalignment">TextAlignment</a>
 
 
 
@@ -35367,7 +35629,7 @@ Alignment of the title text.
 
 #### Default Value
 
-* "Center". See <a href="global.html#members:textalignment">TextAlignment</a>
+* "Center". See <a href="ejchart.html#members:title-textalignment">TextAlignment</a>
 
 
 
@@ -37833,8 +38095,8 @@ type{% endhighlight %}</td>
 data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last"><ul><li>location - X and Y co-ordinate of the points with respect to chart area.</li>
-    <li>axis - axis of the multilevellabels.</li>
-    <li>multilevellabel - Multi level label details</li>
+    <li>axis - axis of the multi level labels.</li>
+    <li>multiLevelLabel - Multi level label details</li>
 </ul></td>
 </tr>
 </tbody>

@@ -352,6 +352,22 @@ Allows to set the custom theme for the column headers.
     $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ cssClass : "className" }] } });
 {% endhighlight %}
 
+### dataSource.columns.delimiter `string`
+{:#members:datasource-columns-delimiter}
+
+Allows the user to set delimiter for date type format in **formatString**. This is applicable for **groupByDate** option for row/column headers.
+
+>**Note**: This is applicable only for Relational datasource with ClientMode.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ dataSource: { columns: [{ delimiter : "-" }] } });
+{% endhighlight %}
+
 ### dataSource.columns.sortOrder `enum`
 {:#members:datasource-columns-sortorder}
 
@@ -696,6 +712,22 @@ Allows to set the custom theme for the row headers.
 {% highlight javascript %}
  
     $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ cssClass : "className" }] } });
+{% endhighlight %}
+
+### dataSource.rows.delimiter `string`
+{:#members:datasource-rows-delimiter}
+
+Allows the user to set delimiter for date type format in **formatString**. This is applicable for **groupByDate** option for row/column headers.
+
+>**Note**: This is applicable only for Relational datasource with ClientMode.
+
+#### Default Value: ""
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ dataSource: { rows: [{ delimiter : "-" }] } });
 {% endhighlight %}
 
 ### dataSource.rows.sortOrder `enum`
@@ -1166,7 +1198,7 @@ To set the data source name to fetch data from that.
 {% endhighlight %}
 
 ### dataSource.providerName `string`
-{:#members:datasource-providerName}
+{:#members:datasource-providername}
 
 Set the provider name for PivotGrid to identify whether the provider is SSAS or Mondrian. 
 
@@ -1730,7 +1762,7 @@ Enables/Disables paging in Member Editor for viewing the large count of members 
 {% endhighlight %}
 
 ### memberEditorPageSize `number`
-{:#members:memberEditorPageSize}
+{:#members:membereditorpagesize}
 
 Allows the user to set the number of members to be displayed in each page of Member Editor on applying paging in it. 
 
@@ -1844,7 +1876,7 @@ Allows the user to enable the animation effects in tooltip.
 ### enableColumnResizing `boolean`
 {:#members:enablecolumnresizing}
 
-Allows the user to adjust the width of the columns dynamically.
+Allows the user to adjust the width of the columns dynamically within given widget size.
 
 #### Default Value: false
 
@@ -1853,6 +1885,34 @@ Allows the user to adjust the width of the columns dynamically.
 {% highlight javascript %}
  
     $("#PivotGrid1").ejPivotGrid({ enableColumnResizing: true });
+{% endhighlight %}
+
+### resizeColumnsToFit `boolean`
+{:#members:resizecolumnstofit}
+
+Allows the user to fit the width of the column based on its maximum text width.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ resizeColumnsToFit: true });
+{% endhighlight %}
+
+### enableContextMenu `boolean`
+{:#members:enablecontextmenu}
+
+Allows the user to enable/disable the context menu of Pivot buttons in the PivotGrid.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ enableContextMenu: true });
 {% endhighlight %}
 
 ### enableVirtualScrolling `boolean`
@@ -2327,6 +2387,34 @@ Allows the user to set the custom name for the service method responsible for pe
     $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { drillThroughDataTable: "MyDrillThroughDataTableMethod" } });
 {% endhighlight %}
 
+### serviceMethodSettings.valueSorting `string`
+{:#members:servicemethodsettings-valuesorting}
+
+Allows the user to set the custom name for the service method responsible for performing value sorting operation in PivotGrid.
+
+#### Default Value: "ValueSorting"
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { valueSorting: "MyValueSorting" } });
+{% endhighlight %}
+
+### serviceMethodSettings.removeButton `string`
+{:#members:servicemethodsettings-removebutton}
+
+Allows the user to set the custom name for the service method responsible for removing pivot button from GroupingBar/Field List.
+
+#### Default Value: "RemoveButton"
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ serviceMethodSettings: { removeButton: "MyRemoveButton" } });
+{% endhighlight %}
+
 ### serviceMethodSettings.writeBack `string`
 {:#members:servicemethodsettings-writeback}
 
@@ -2436,6 +2524,19 @@ This function re-renders the control with the report available at that instant.
     gridObj.refreshControl();
 {% endhighlight %}
 
+### destroy()
+{:#methods:destroy}
+
+This function Destroy the PivotGrid widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+
+**Example:**
+
+{% highlight javascript %}
+
+    var gridObj = $("#PivotGrid1").data("ejPivotGrid");
+    gridObj.destroy();
+{% endhighlight %}
+
 ### calculateCellWidths()
 {:#methods:calculatecellwidths}
 
@@ -2453,8 +2554,8 @@ object
     var gridDimensions = gridObj.calculateCellWidths();
 {% endhighlight %}
 
-### createConditionalDialog()
-{:#methods:createconditionaldialog}
+### openConditionalFormattingDialog()
+{:#methods:openconditionalformattingdialog}
 
 This function creates the conditional formatting dialog to apply conditional formatting for PivotGrid control.
 
@@ -2463,7 +2564,7 @@ This function creates the conditional formatting dialog to apply conditional for
 {% highlight javascript %}
 
     var gridObj = $("#PivotGrid1").data("ejPivotGrid");
-    gridObj.createConditionalDialog();
+    gridObj.openConditionalFormattingDialog();
 {% endhighlight %}
 
 ### saveReport()

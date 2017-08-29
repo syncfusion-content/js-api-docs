@@ -809,7 +809,7 @@ Binds the name of location field in dataSource. It indicates the appointment loc
                         EventSubject: "Research on Sky Miracles",
                         EventStartTime: new Date(2014, 4, 2, 9, 00),
                         EventEndTime: new Date(2014, 4, 2, 10, 30),
-                        EventLocation: "Hawaai"
+                        EventLocation: "Hawaii"
                     }],
                     id: "EventId",
                     startTime: "EventStartTime",
@@ -934,7 +934,7 @@ Template design that applies on the Schedule appointments. All the field names t
 
 <div id="Schedule"></div>
     
-<script id="apptemplate" type="text/x-jsrender">
+<script id="appTemplate" type="text/x-jsrender">
    <div style="height:100%">
       <div>{{:Description}}</div>
    </div>
@@ -943,7 +943,7 @@ Template design that applies on the Schedule appointments. All the field names t
 <script type="text/javascript">
         $(function () {
             $("#Schedule").ejSchedule({
-                appointmentTemplateId: "#apptemplate",
+                appointmentTemplateId: "#appTemplate",
 	         currentDate:new Date(2014,4,5),
                 appointmentSettings: {
                     dataSource: [{
@@ -1398,14 +1398,14 @@ All the Scheduler cell related context menu items are grouped under this cells m
         { id: "gotodate", text: "Go to date" },
         { id: "settings", text: "Settings" },
         { id: "view", text: "View", parentId: "settings" },
-        { id: "timemode", text: "TimeMode", parentId: "settings" },
+        { id: "timeMode", text: "TimeMode", parentId: "settings" },
         { id: "view_Day", text: "Day", parentId: "view" },
         { id: "view_Week", text: "Week", parentId: "view" },
         { id: "view_Workweek", text: "Workweek", parentId: "view" },
         { id: "view_Month", text: "Month", parentId: "view" },
         { id: "view_Agenda", text: "Agenda", parentId: "view" },
-        { id: "timemode_Hour12", text: "12 Hours", parentId: "timemode" },
-        { id: "timemode_Hour24", text: "24 Hours", parentId: "timemode" },
+        { id: "timeMode_Hour12", text: "12 Hours", parentId: "timeMode" },
+        { id: "timeMode_Hour24", text: "24 Hours", parentId: "timeMode" },
         { id: "workhours", text: "Work Hours", parentId: "settings" }
     ]
   
@@ -1435,13 +1435,13 @@ All the Scheduler cell related context menu items are grouped under this cells m
                         { id: "gotodate", text: "Go to date" },
                         { id: "settings", text: "Settings" },
                         { id: "view", text: "View", parentId: "settings" },
-                        { id: "timemode", text: "TimeMode", parentId: "settings" },
+                        { id: "timeMode", text: "TimeMode", parentId: "settings" },
                         { id: "view_Day", text: "Day", parentId: "view" },
                         { id: "view_Week", text: "Week", parentId: "view" },
                         { id: "view_Workweek", text: "Workweek", parentId: "view" },
                         { id: "view_Month", text: "Month", parentId: "view" },
-                        { id: "timemode_Hour12", text: "12 Hours", parentId: "timemode" },
-                        { id: "timemode_Hour24", text: "24 Hours", parentId: "timemode" },
+                        { id: "timeMode_Hour12", text: "12 Hours", parentId: "timeMode" },
+                        { id: "timeMode_Hour24", text: "24 Hours", parentId: "timeMode" },
                         { id: "workhours", text: "Work Hours", parentId: "settings" }
                       ]
                     }
@@ -3228,7 +3228,7 @@ Binds appointmentClass field name in the dataSource. It applies custom CSS class
                     },
                     {
                         Id: 101,
-                        Subject: "Discovery of exo-planets",
+                        Subject: "Discovery of Exoplanets",
                         StartTime: new Date(2014, 04, 07, 6, 00),
                         EndTime: new Date(2014, 04, 07, 9, 30),
                         ownerId: 1
@@ -3923,7 +3923,7 @@ You can customize the Date column display based on the requirement.
 
 <div id="Schedule"></div>
 
-<script id="datecolumntemplate" type="text/x-jsrender">
+<script id="dateColumnTemplate" type="text/x-jsrender">
         <div style="height:100%">           
             <div>
                 <div>{{:StartTime}}</div>
@@ -3937,7 +3937,7 @@ You can customize the Date column display based on the requirement.
                 currentDate: new Date(2014, 4, 2),
                 agendaViewSettings: {
                     daysInAgenda: 7,
-                    dateColumnTemplateId: "#datecolumntemplate"
+                    dateColumnTemplateId: "#dateColumnTemplate"
                 },
             });
         });
@@ -4324,7 +4324,7 @@ Accepts the id value of the template layout defined for the all-day cells and cu
 
 <div id="Schedule"></div>
 
-<script id="datecolumntemplate" type="text/x-jsrender">
+<script id="dateColumnTemplate" type="text/x-jsrender">
         <div style="height:100%">           
             <div></div>
         </div>
@@ -4334,7 +4334,7 @@ Accepts the id value of the template layout defined for the all-day cells and cu
         $(function () {
             $("#Schedule").ejSchedule({
                 currentDate: new Date(2014, 4, 2),
-                    allDayCellsTemplateId: "#datecolumntemplate"
+                    allDayCellsTemplateId: "#dateColumnTemplate"
             });
         });
 </script>
@@ -4356,7 +4356,7 @@ Accepts the id value of the template layout defined for the work cells and month
 
 <div id="Schedule"></div>
 
-<script id="datecolumntemplate" type="text/x-jsrender">
+<script id="dateColumnTemplate" type="text/x-jsrender">
         <div style="height:100%">           
             <div></div>
         </div>
@@ -4366,7 +4366,7 @@ Accepts the id value of the template layout defined for the work cells and month
         $(function () {
             $("#Schedule").ejSchedule({
                 currentDate: new Date(2014, 4, 2),
-                workCellsTemplateId: "#datecolumntemplate"
+                workCellsTemplateId: "#dateColumnTemplate"
             });
         });
 </script>
@@ -4388,7 +4388,7 @@ Accepts the id value of the template layout defined for the date header cells an
 
 <div id="Schedule"></div>
 
-<script id="datecolumntemplate" type="text/x-jsrender">
+<script id="dateColumnTemplate" type="text/x-jsrender">
         <div style="height:100%">           
             <div></div>
         </div>
@@ -4398,7 +4398,7 @@ Accepts the id value of the template layout defined for the date header cells an
         $(function () {
             $("#Schedule").ejSchedule({
                 currentDate: new Date(2014, 4, 2),
-                dateHeaderTemplateId: "#datecolumntemplate"
+                dateHeaderTemplateId: "#dateColumnTemplate"
             });
         });
 </script>
@@ -4569,7 +4569,7 @@ Template design that applies on the Schedule block intervals. All the field name
 
 <div id="Schedule"></div>
     
-<script id="blocktemplate" type="text/x-jsrender">
+<script id="blockTemplate" type="text/x-jsrender">
    <div style="height:100%">
       <div>{{:Subject}}</div>
    </div>
@@ -4581,7 +4581,7 @@ Template design that applies on the Schedule block intervals. All the field name
                 currentDate:new Date(2014,4,5),
                 blockoutSettings: {
                     enable: true,
-                    templateId: "#blocktemplate",
+                    templateId: "#blockTemplate",
                     dataSource: [{
                         Id: 101,
                         Subject: "Talk with Nature",
@@ -5096,7 +5096,7 @@ Binds the name of `customStyle` field in dataSource. It applies the custom CSS t
 
 <div id="Schedule"></div>
 <style type="text/css">
-    .customcss
+    .custom-css
     {
         background-color: Teal !important;
     }
@@ -5113,7 +5113,7 @@ Binds the name of `customStyle` field in dataSource. It applies the custom CSS t
                         BlockEndTime: new Date(2014, 4, 5, 11, 00),
                         BlockSubject: "Service",
                         IsBlockAppointment: true,
-                        BlockStyle: "customcss"
+                        BlockStyle: "custom-css"
                     }],
                     id: "BlockId",
                     startTime: "BlockStartTime",

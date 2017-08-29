@@ -77,8 +77,8 @@ Append the custom HTML after the selected content.
     
     <script>
     function onPrint(e) {
-            var ele = $("#Grid");
-            if (!ele.hasClass("e-print")) {
+            var gridElement = $("#Grid");
+            if (!gridElement.hasClass("e-print")) {
                 $("#Grid").ejPrint(
                  {
                      append: "#Grid"
@@ -111,8 +111,8 @@ A selector that specifies a particular element to be excluded from printing.
     <div id="Grid"></div>
     <script>
       function onPrint(e) {
-            var ele = $("#Grid");
-            if (!ele.hasClass("e-print")) {
+            var gridElement = $("#Grid");
+            if (!gridElement.hasClass("e-print")) {
                 $("#Grid").ejPrint(
             {
                 excludeSelector: "#Grid"
@@ -145,8 +145,8 @@ Specifies whether the URL of an external stylesheet can be included to customize
     <div id="Grid"></div>
     <script>
           function onPrint(e) {
-            var ele = $("#Grid");
-            if (!ele.hasClass("e-print")) {
+            var gridElement = $("#Grid");
+            if (!gridElement.hasClass("e-print")) {
                 $("#Grid").ejPrint(
                  {
                      globalStyles: false,
@@ -181,8 +181,8 @@ Prepend a doctype to the document frame.
     <div id="Grid"></div>
     <script>
      function onPrint(e) {
-            var ele = $("#Grid");
-            if (!ele.hasClass("e-print")) {
+            var gridElement = $("#Grid");
+            if (!gridElement.hasClass("e-print")) {
                 $("#Grid").ejPrint(
                  {
                      docType: "<!doctype html>"
@@ -215,8 +215,8 @@ Specifies whether the global styles can be applied to the element to be printed.
 
     <script>
         function onPrint(e) {
-            var ele = $("#Grid");
-            if (!ele.hasClass("e-print")) {
+            var gridElement = $("#Grid");
+            if (!gridElement.hasClass("e-print")) {
                 $("#Grid").ejPrint(
                  {
                      globalStyles: false
@@ -250,8 +250,8 @@ Sets the height of the print window.
    
     <script>
         function onPrint(e) {
-            var ele = $("#Grid");
-            if (!ele.hasClass("e-print")) {
+            var gridElement = $("#Grid");
+            if (!gridElement.hasClass("e-print")) {
                 $("#Grid").ejPrint(
                  {
                      height: 500
@@ -284,8 +284,8 @@ Prepends the custom HTML before the selected content.
     <div id="Grid"></div>
     <script>
     function onPrint(e) {
-            var ele = $("#Grid");
-            if (!ele.hasClass("e-print")) {
+            var gridElement = $("#Grid");
+            if (!gridElement.hasClass("e-print")) {
                 $("#Grid").ejPrint(
                  {
                      prepend: "#Grid"
@@ -317,8 +317,8 @@ Allows printing the content in a new window.
     <div id="Grid"></div>
     <script>
      function onPrint(e) {
-            var ele = $("#Grid");
-            if (!ele.hasClass("e-print")) {
+            var gridElement = $("#Grid");
+            if (!gridElement.hasClass("e-print")) {
                 $("#Grid").ejPrint(
                  {
                      printInNewWindow:true
@@ -351,8 +351,8 @@ Sets the period of time to wait before printing the content.
     <div id="Grid"></div>
     <script>
     function onPrint(e) {
-            var ele = $("#Grid");
-            if (!ele.hasClass("e-print")) {
+            var gridElement = $("#Grid");
+            if (!gridElement.hasClass("e-print")) {
                 $("#Grid").ejPrint(
                  {
                      timeOutPeriod: 1200
@@ -384,8 +384,8 @@ Sets the title of the print document.
     <div id="Grid"></div>
     <script>
     function onPrint(e) {
-            var ele = $("#Grid");
-            if (!ele.hasClass("e-print")) {
+            var gridElement = $("#Grid");
+            if (!gridElement.hasClass("e-print")) {
                 $("#Grid").ejPrint(
                  {
                      title: "Print Grid"
@@ -416,8 +416,8 @@ Defines the width of the print window.
     <div id="Grid"></div>
     <script>
     function onPrint(e) {
-            var ele = $("#Grid");
-            if (!ele.hasClass("e-print")) {
+            var gridElement = $("#Grid");
+            if (!gridElement.hasClass("e-print")) {
                 $("#Grid").ejPrint(
                  {
                      width: 1500
@@ -454,8 +454,8 @@ void
     <script>
     //Print the particular element
         function onPrint(e) {
-            var ele = $("#Grid");
-            if (!ele.hasClass("e-print")) {
+            var gridElement = $("#Grid");
+            if (!gridElement.hasClass("e-print")) {
                 $("#Grid").ejPrint();
                 $("#Grid").ejPrint("print","#print");  
             } else {
@@ -465,8 +465,8 @@ void
         }
         //Print the current page
           function onPrint (e) {
-            var ele = $(document.body);
-            if (!ele.hasClass("e-print")) {
+            var gridElement = $(document.body);
+            if (!gridElement.hasClass("e-print")) {
                 $(document.body).ejPrint();
             } else {
                 obj = $(document.body).ejPrint("instance");

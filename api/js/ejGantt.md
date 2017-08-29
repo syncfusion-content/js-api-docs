@@ -2193,7 +2193,7 @@ Specifies the mapping property path for resource's percent effort involved in a 
 <div id="gantt"></div> 
 <script>                  
         $("#gantt").ejGantt({  
-                        resourceunitmapping : "Unit"});
+                        resourceUnitMapping : "Unit"});
 </script>
 
 {% endhighlight %}
@@ -3610,7 +3610,7 @@ Specifies the mapping property path for start date of a task in datasource
  
 <div id="gantt"></div> 
 <script>                                  
-        $("#gantt").ejGantt({  startDateMapping : "startdate" });                
+        $("#gantt").ejGantt({  startDateMapping : "startDate" });                
 </script>
 
 {% endhighlight %}
@@ -3823,7 +3823,7 @@ Specifies the template script for customized tooltip for taskbar editing in Gant
 <script>                  
         $("#gantt").ejGantt(
  {
-    taskbarEditingTooltipTemplate: "tooltiptemplate"
+    taskbarEditingTooltipTemplate: "tooltipTemplate"
  });            
 </script>
 
@@ -4445,7 +4445,29 @@ Specifies the working time schedule of day
 
 {% endhighlight %}
 
+### workWeek `array`
+{:#members:workweek}
 
+Gets or sets the working days of a week in a project.
+
+#### Default Value
+
+* ["Monday","Tuesday","Wednesday","Thursday","Friday"]
+
+#### Example
+
+{:.example}
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
+$("#gantt").ejGantt(
+{      
+        workweek:["Sunday","Monday","Tuesday","Wednesday","Thursday"],
+});            
+</script>
+
+{% endhighlight %}
 
 
 ## Methods
@@ -4569,7 +4591,7 @@ Positions the splitter by the specified column index.
 <script>
 // Create Gantt object
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.setSplitterIndex(3); // Set splitter position after column index 3
+ganttObj.setSplitterIndex(3); // Set splitter position after column index 3
 </script>
 {% endhighlight %}
 
@@ -4629,7 +4651,7 @@ To cancel the edited state of an item in Gantt
 <script>
 // Create Gantt object
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.cancelEdit(); // To cancel edited
+ganttObj.cancelEdit(); // To cancel edited
 </script>
 {% endhighlight %}
 
@@ -4649,7 +4671,7 @@ To collapse all the parent items in Gantt
 <script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.collapseAllItems(); // To collapse all parent items in Gantt
+ganttObj.collapseAllItems(); // To collapse all parent items in Gantt
 </script>
 {% endhighlight %}
 
@@ -4669,7 +4691,7 @@ To delete a selected item in Gantt
 <script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.deleteItem(); // To delete a task
+ganttObj.deleteItem(); // To delete a task
 </script>
 {% endhighlight %}
 
@@ -4688,9 +4710,9 @@ destroy the Gantt widget all events bound using this._on will be unbind automati
 <div id="gantt"></div> 
  
 <script>
-// Create gantt Object
+// Create Gantt Object
 var ganttObj = $("#gantt").data("ejGantt");
-ganttObj.destroy(); // destroy the gantt
+ganttObj.destroy(); // destroy the Gantt
 </script>
 {% endhighlight %}
 
@@ -4711,7 +4733,7 @@ To Expand all the parent items in Gantt
 <script>
 // Create Gantt Object
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.expandAllItems(); // To expand all parent items in Gantt
+ganttObj.expandAllItems(); // To expand all parent items in Gantt
 </script>
 {% endhighlight %}
 
@@ -4748,7 +4770,7 @@ To expand and collapse an item in Gantt using item's ID
 <script>
 // Create Gantt object.
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.expandCollapseRecord(23); // To expand collapse an item
+ganttObj.expandCollapseRecord(23); // To expand collapse an item
 </script>
 {% endhighlight %}
 
@@ -4796,7 +4818,7 @@ Void
 {% highlight html %}
  
 <script>
-// Create gantt object.
+// Create Gantt object.
 var ganttObj = $("#Gantt").data("ejGantt");
 // Sends an exporting request
 gridObj.export("/api/GanttExport/ExcelExport"); 
@@ -4846,7 +4868,7 @@ To hide the column by using header text
 <script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.hideColumn("Task Name");
+ganttObj.hideColumn("Task Name");
 </script>
 {% endhighlight %}
 
@@ -4867,7 +4889,7 @@ To indent a selected item in Gantt
 <script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.indentItem(); // To indent a selected item in Gantt
+ganttObj.indentItem(); // To indent a selected item in Gantt
 </script>
 {% endhighlight %}
 
@@ -4888,7 +4910,7 @@ To Open the dialog to add new task to the Gantt
 <script>
 // Create Gantt Object.
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.openAddDialog(); // To open the add dialog
+ganttObj.openAddDialog(); // To open the add dialog
 </script>
 {% endhighlight %}
 
@@ -4909,7 +4931,7 @@ To Open the dialog to edit existing task to the Gantt
 <script>
 // Create Gantt object
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.openEditDialog(); // To open the add dialog
+ganttObj.openEditDialog(); // To open the add dialog
 </script>
 {% endhighlight %}
 
@@ -4930,7 +4952,7 @@ To outdent a selected item in Gantt
 <script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.outdentItem(); // To outdent a selected item in Gantt
+ganttObj.outdentItem(); // To outdent a selected item in Gantt
 </script>
 {% endhighlight %}
 
@@ -4951,7 +4973,7 @@ To save the edited state of an item in Gantt
 <script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.saveEdit(); // To save edited state of an item
+ganttObj.saveEdit(); // To save edited state of an item
 </script>
 {% endhighlight %}
 
@@ -4989,7 +5011,7 @@ To search an item with search string provided at the run time
 <script>
 // Create Gantt Object
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.searchItem($("#text").val()); // To search a task
+ganttObj.searchItem($("#text").val()); // To search a task
 </script>
 {% endhighlight %}
 
@@ -5027,7 +5049,7 @@ To set the grid width in Gantt
 <script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.ejGantt("setSplitterPosition","40%");
+ganttObj.ejGantt("setSplitterPosition","40%");
 </script>
 {% endhighlight %}
 
@@ -5065,7 +5087,7 @@ To show the column by using header text
 <script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
-gantObj.showColumn("Task Name");
+ganttObj.showColumn("Task Name");
 </script>
 {% endhighlight %}
 

@@ -915,7 +915,7 @@ Specifies the orientation for Linear gauge.
 
 
 <ts name="ej.datavisualization.LinearGauge.OuterCustomLabelPosition"/>
-Specify labelPosition value of Linear gauge See <a href="global.html#OuterCustomLabelPosition">OuterCustomLabelPosition</a>
+Specify labelPosition value of Linear gauge See <a href="ejlineargauge.html#members:outercustomlabelposition">OuterCustomLabelPosition</a>
 
 
 
@@ -2058,7 +2058,7 @@ Specifies the fontFamily in customLabels
 
 
 <ts name="ej.datavisualization.LinearGauge.FontStyle"/>
-Specifies the fontStyle in customLabels. See <a href="global.html#FontStyle">FontStyle</a>
+Specifies the fontStyle in customLabels. See <a href="ejlineargauge.html#members:scales-customlabels-font-fontstyle">FontStyle</a>
 
 
 <table class="props">
@@ -2524,7 +2524,7 @@ Specifies the label Value in customLabels
 
 
 <ts name="ej.datavisualization.LinearGauge.Direction"/>
-Specifies the scale Direction of the Scale. See <a href="global.html#Directions">Directions</a>
+Specifies the scale Direction of the Scale. See <a href="ejlineargauge.html#members:scales-direction">Directions</a>
 
 
 <table class="props">
@@ -2968,7 +2968,7 @@ $("#LinearGauge1").ejLinearGauge({
 
 
 
-Specifies the fontStyle of font in bar indicators. See <a href="global.html#FontStyle">FontStyle</a>
+Specifies the fontStyle of font in bar indicators. See <a href="ejlineargauge.html#members:scales-indicators-font-fontstyle">FontStyle</a>
 
 
 
@@ -4336,7 +4336,7 @@ Specifies the fontFamily of font.
 
 
 
-Specifies the fontStyle of font.See <a href="global.html#FontStyle">FontStyle</a>
+Specifies the fontStyle of font.See <a href="ejlineargauge.html#members:scales-labels-font-fontstyle">FontStyle</a>
 
 
 
@@ -4522,7 +4522,7 @@ Specifies the opacity of label.
 {:#members:scales-labels-placement}
 
 <ts name="ej.datavisualization.LinearGauge.PointerPlacement"/>
-Specifies the label Placement of label. See <a href="global.html#LabelPlacement">LabelPlacement</a>
+Specifies the label Placement of label. See <a href="ejlineargauge.html#members:scales-labels-placement">LabelPlacement</a>
 
 
 <table class="props">
@@ -4643,7 +4643,7 @@ $("#LinearGauge1").ejLinearGauge({  scales:[{labels:[{textColor: "green"}]}]});
 
 
 <ts name="ej.datavisualization.LinearGauge.ScaleType"/>
-Specifies the label Style of label. See <a href="global.html#LabelType">LabelType</a>
+Specifies the label Style of label. See <a href="ejlineargauge.html#members:scales-labels-type">LabelType</a>
 
 
 <table class="props">
@@ -4759,7 +4759,7 @@ Specifies the unitText of label.
 
 
 <ts name="ej.datavisualization.LinearGauge.UnitTextPlacement"/>
-Specifies the unitText Position of label.See <a href="global.html#UnitTextPlacement">UnitTextPlacement</a>
+Specifies the unitText Position of label.See <a href="ejlineargauge.html#members:scales-labels-unittextplacement">UnitTextPlacement</a>
 
 
 <table class="props">
@@ -5368,7 +5368,7 @@ Specifies the opacity of marker pointer
 
 
 
-Specifies the pointer Placement of marker pointer See <a href="global.html#PointerPlacement">PointerPlacement</a>
+Specifies the pointer Placement of marker pointer See <a href="ejlineargauge.html#members:scales-markerpointers-placement">PointerPlacement</a>
 
 
 
@@ -5410,7 +5410,7 @@ Specifies the pointer Placement of marker pointer See <a href="global.html#Point
 {:#members:scales-markerpointers-type}
 
 <ts name="ej.datavisualization.LinearGauge.MarkerType"/>
-Specifies the marker Style of marker pointerSee <a href="global.html#MarkerType">MarkerType</a>
+Specifies the marker Style of marker pointerSee <a href="ejlineargauge.html#members:scales-markerpointers-type">MarkerType</a>
 
 
 <table class="props">
@@ -6459,7 +6459,7 @@ Specifies the opacity in the ranges.
 
 
 
-Specifies the range Position in the ranges. See <a href="global.html#RangePlacement">RangePlacement</a>
+Specifies the range Position in the ranges. See <a href="ejlineargauge.html#members:scales-ranges-placement">RangePlacement</a>
 
 
 
@@ -7372,7 +7372,7 @@ Specifies the opacity in the tick.
 
 
 
-Specifies the tick Placement in the tick. See <a href="global.html#TickPlacement">TickPlacement</a>
+Specifies the tick Placement in the tick. See <a href="ejlineargauge.html#members:scales-ticks-placement">TickPlacement</a>
 
 
 
@@ -7415,7 +7415,7 @@ Specifies the tick Placement in the tick. See <a href="global.html#TickPlacement
 
 
 <ts name="ej.datavisualization.LinearGauge.TicksType"/>
-Specifies the tick Style in the tick. See <a href="global.html#TickType">TickType</a>
+Specifies the tick Style in the tick. See <a href="ejlineargauge.html#members:scales-ticks-type">TickType</a>
 
 
 
@@ -7528,7 +7528,7 @@ Specifies the tick Width in the tick.
 {:#members:scales-type}
 
 <ts name="ej.datavisualization.LinearGauge.ScaleType"/>
-Specifies the scaleBar type .See <a href="global.html#ScaleType">ScaleType</a>
+Specifies the scaleBar type .See <a href="ejlineargauge.html#members:scales-type">ScaleType</a>
 
 
 
@@ -8076,8 +8076,8 @@ destroy the linear gauge all events bound using this._on will be unbind automati
  
 <script>
 $("#LinearGauge1").ejLinearGauge();
-var linearGaugeobj = $("#LinearGauge1").data("ejLinearGauge");
-linearGaugeobj.destroy();
+var linearGaugeObj = $("#LinearGauge1").data("ejLinearGauge");
+linearGaugeObj.destroy();
 </script>{% endhighlight %}
 
 

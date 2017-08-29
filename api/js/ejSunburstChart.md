@@ -755,7 +755,7 @@ $("#container").ejSunburstChart({
 ### tooltip.opacity `number`
 {:#members:tooltip-opacity}
 
-Sets the opacity of the dispalyed tooltip
+Sets the opacity of the displayed tooltip
 
 #### Default Value
 
@@ -982,7 +982,7 @@ $("#container").ejSunburstChart({
 
 
 ### dataLabelSettings.labelRotationMode `enum`
-{:#members:datalabelsettings-labelRotationMode}
+{:#members:datalabelsettings-labelrotationmode}
 
 <ts name="ej.datavisualization.Sunburst.SunburstLabelRotationMode"/>
 Alignment of sunburst datalabel
@@ -1014,7 +1014,7 @@ Normal</td>
 
 #### Default Value
 
-* "Angle". See <a href="global.html#members:DataLabelAlignment">DatalabelAlignment</a>
+* "Angle". See <a href="ejsunburstchart.html#members:datalabelsettings-labelrotationmode">DatalabelAlignment</a>
 
 
 #### Example
@@ -1056,7 +1056,7 @@ Font family of the data label.
  
  
 $("#container").ejSunburstChart({
-    dataLabelSettings :{ font :{fontFamily : "algerian"}}                 
+    dataLabelSettings :{ font :{fontFamily : "Algerian"}}                 
 });
 {% endhighlight %}
 
@@ -1075,7 +1075,7 @@ Font style of the data label.
 #### Default Value
 
 
-* "normal". See <a href="global.html#fontstyle">FontStyle</a>
+* "normal". See <a href="ejsunburstchart.html#datalabelsettings-font-fontstyle">FontStyle</a>
 
 
 #### Example
@@ -1104,7 +1104,7 @@ Font weight of the data label.
 #### Default Value
 
 
-* "regular". See <a href="global.html#members:fontweight">FontWeight</a>
+* "regular". See <a href="ejsunburstchart.html#members:datalabelsettings-font-fontweight">FontWeight</a>
 
 
 #### Example
@@ -1240,7 +1240,7 @@ $("#container").ejSunburstChart({
 
 
 ### dataLabelSettings.labelOverflowMode `enum`
-{:#members:datalabelsettings-labelOverflowMode}
+{:#members:datalabelsettings-labeloverflowmode}
 
 <ts name="ej.datavisualization.Sunburst.SunburstLabelOverflowMode"/>
 Datalabel overflow mode
@@ -1278,7 +1278,7 @@ None</td>
 
 #### Default Value
 
-* "Trim". See <a href="global.html#members:LabelOverflowMode">LabelOverflowMode</a>
+* "Trim". See <a href="ejsunburstchart.html#members:datalabelsettings-labeloverflowmode">LabelOverflowMode</a>
 
 
 #### Example
@@ -1357,7 +1357,7 @@ $("#container").ejSunburstChart({
 
 
 ### title.textAlignment `enum`
-{:#members:title-textAlignment}
+{:#members:title-textalignment}
 
 <ts name="ej.datavisualization.Sunburst.SunburstAlignment"/>
 Title text alignment
@@ -1394,7 +1394,7 @@ Far</td>
 
 #### Default Value
 
-* "center". See <a href="global.html#members:TextAlignment">TextAlignment</a>
+* "center". See <a href="ejsunburstchart.html#members:title-textalignment">TextAlignment</a>
 
 
 #### Example
@@ -1458,7 +1458,7 @@ Font style for Sunburst title.
 
 #### Default Value
 
-* "Normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+* "Normal". See <a href="ejsunburstchart.html#members:title-font-fontstyle">FontStyle</a>
 
 
 #### Example
@@ -1487,7 +1487,7 @@ Font weight for Sunburst title.
 
 #### Default Value
 
-* "Regular". See <a href="global.html#members:fontweight">FontWeight</a>
+* "Regular". See <a href="ejsunburstchart.html#members:title-font-fontweight">FontWeight</a>
 
 
 #### Example
@@ -1624,7 +1624,7 @@ $("#container").ejSunburstChart({
 
 
 ### title.subtitle.textAlignment `enum`
-{:#members:title-subtitle-textAlignment}
+{:#members:title-subtitle-textalignment}
 
 <ts ref="ej.datavisualization.Sunburst.SunburstAlignment"/>
 
@@ -1632,7 +1632,7 @@ Sub title text alignment
 
 #### Default Value
 
-* "far". See <a href="global.html#members:textalignment">TextAlignment</a>
+* "far". See <a href="ejsunburstchart.html#members:title-subtitle-textalignment">TextAlignment</a>
 
 
 #### Example
@@ -1694,7 +1694,7 @@ Font style for sub title.
 
 #### Default Value
 
-* "Normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+* "Normal". See <a href="ejsunburstchart.html#members:title-subtitle-font-fontstyle">FontStyle</a>
 
 
 #### Example
@@ -1723,7 +1723,7 @@ Font weight for sub title.
 
 #### Default Value
 
-* "Regular". See <a href="global.html#members:fontweight">FontWeight</a>
+* "Regular". See <a href="ejsunburstchart.html#members:title-subtitle-font-fontweight">FontWeight</a>
 
 
 
@@ -1832,7 +1832,7 @@ $("#container").ejSunburstChart({
 
 
 ### highlightSettings.mode `enum`
-{:#members:highlightSettings-mode}
+{:#members:highlightsettings-mode}
 
 
 <ts name="ej.datavisualization.Sunburst.SunburstHighlightMode"/>
@@ -1879,7 +1879,7 @@ All</td>
 #### Default Value
 
 
-* "point". See <a href="global.html#members:mode">Mode</a>
+* "point". See <a href="ejsunburstchart.html#members:highlightsettings-mode">Mode</a>
 
 
 #### Example
@@ -1947,7 +1947,7 @@ $("#container").ejSunburstChart({
 
 
 ### highlightSettings.type `enum`
-{:#members:highlightSettings-type}
+{:#members:highlightsettings-type}
 
 
 <ts name="ej.datavisualization.Sunburst.SunburstHighlightType"/>
@@ -1982,7 +1982,7 @@ Color</td>
 #### Default Value
 
 
-* "opacity". See <a href="global.html#members:type">Mode</a>
+* "opacity". See <a href="ejsunburstchart.html#members:highlightsettings-type">Mode</a>
 
 
 #### Example
@@ -2031,7 +2031,7 @@ $("#container").ejSunburstChart({
 
 
 ### selectionSettings.mode `enum`
-{:#members:selectionSettings-mode}
+{:#members:selectionsettings-mode}
 
 
 <ts ref="ej.datavisualization.Sunburst.SunburstHighlightMode"/>
@@ -2044,7 +2044,7 @@ Specifies whether the levels or data point has to be selected.
 #### Default Value
 
 
-* "point". See <a href="global.html#members:mode">Mode</a>
+* "point". See <a href="ejsunburstchart.html#members:selectionsettings-mode">Mode</a>
 
 
 #### Example
@@ -2112,7 +2112,7 @@ $("#container").ejSunburstChart({
 
 
 ### selectionSettings.type `enum`
-{:#members:selectionSettings-type}
+{:#members:selectionsettings-type}
 
 
 <ts ref="ej.datavisualization.Sunburst.SunburstHighlightType"/>
@@ -2126,7 +2126,7 @@ Specifies whether the levels or data point has to be selected.
 #### Default Value
 
 
-* "opacity". See <a href="global.html#members:type">Mode</a>
+* "opacity". See <a href="ejsunburstchart.html#members:selectionsettings-type">Mode</a>
 
 
 #### Example
@@ -2241,7 +2241,7 @@ ToggleSegmentSelection</td>
 
 #### Default Value
 
-* "toggleSegmentVisibility". See <a href="global.html#members:togglevisibility">Alignment</a>
+* "toggleSegmentVisibility". See <a href="ejsunburstchart.html#members:legend-clickaction">Alignment</a>
 
 
 #### Example
@@ -2298,7 +2298,7 @@ Far</td>
 
 #### Default Value
 
-* "Center". See <a href="global.html#members:alignment">Alignment</a>
+* "Center". See <a href="ejsunburstchart.html#members:legend-alignment">Alignment</a>
 
 
 #### Example
@@ -2467,7 +2467,7 @@ Font family for legend item text.
  
 $("#container").ejSunburstChart({
 
-   legend :{ font :{fontFamily : "algerian"}}                    
+   legend :{ font :{fontFamily : "Algerian"}}                    
 
 });
 
@@ -2486,7 +2486,7 @@ Font style for legend item text.
 
 #### Default Value
 
-* "Normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+* "Normal". See <a href="ejsunburstchart.html#members:legend-font-fontstyle">FontStyle</a>
 
 
 #### Example
@@ -2515,7 +2515,7 @@ Font weight for legend item text.
 
 #### Default Value
 
-* "Regular". See <a href="global.html#members:fontweight">FontWeight</a>
+* "Regular". See <a href="ejsunburstchart.html#members:legend-font-fontweight">FontWeight</a>
 
 
 
@@ -2773,7 +2773,7 @@ Bottom</td>
 
 #### Default Value
 
-* "Bottom". See <a href="global.html#members:position">Position</a>
+* "Bottom". See <a href="ejsunburstchart.html#members:legend-position">Position</a>
 
 
 #### Example
@@ -2851,7 +2851,7 @@ Triangle</td>
 
 #### Default Value
 
-* "None". See <a href="global.html#members:shape">Shape</a>
+* "None". See <a href="ejsunburstchart.html#members:legend-shape">Shape</a>
 
 
 
@@ -3015,7 +3015,7 @@ Font style for legend title.
 
 #### Default Value
 
-* "normal". See <a href="global.html#members:fontstyle">FontStyle</a>
+* "normal". See <a href="ejsunburstchart.html#members:legend-title-font-fontstyle">FontStyle</a>
 
 
 
@@ -3047,7 +3047,7 @@ Font weight for legend title.
 
 #### Default Value
 
-* "normal". See <a href="global.html#members:fontweight">FontWeight</a>
+* "normal". See <a href="ejsunburstchart.html#members:legend-title-font-fontweight">FontWeight</a>
 
 
 
@@ -3200,7 +3200,7 @@ Far</td>
 
 #### Default Value
 
-* "center". See <a href="global.html#members:alignment">Alignment</a>
+* "center". See <a href="ejsunburstchart.html#members:legend-title-textalignment">Alignment</a>
 
 
 
@@ -3256,7 +3256,7 @@ FlatDark</td>
 
 #### Default Value
 
-* "Flatlight". See <a href="global.html#members:theme">Theme</a>
+* "Flatlight". See <a href="ejsunburstchart.html#members:theme">Theme</a>
 
 
 #### Example
@@ -3530,7 +3530,7 @@ Right</td>
 
 #### Default Value
 
-* "right". See <a href="global.html#members:alignment">Alignment</a>
+* "right". See <a href="ejsunburstchart.html#members:zoomsettings-toolbarhorizontalalignment">Alignment</a>
 
 
 
@@ -3589,7 +3589,7 @@ Middle</td>
 
 #### Default Value
 
-* "top". See <a href="global.html#members:alignment">Alignment</a>
+* "top". See <a href="ejsunburstchart.html#members:zoomsettings-toolbarverticalalignment">Alignment</a>
 
 
 
@@ -3643,7 +3643,7 @@ FadeIn</td>
 
 #### Default Value
 
-* "rotation". See <a href="global.html#members:animation">Alignment</a>
+* "rotation". See <a href="ejsunburstchart.html#members:animationtype">Alignment</a>
 
 
 
@@ -3923,7 +3923,7 @@ Fires before rendering the datalabel
 
 {% highlight js %}
  
-//datalabelrendering event for sunburst
+//dataLabelRendering event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -3984,7 +3984,7 @@ Fires before rendering each segment
 
 {% highlight js %}
  
-//segmentrendering event for sunburst
+//segmentRendering event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -4047,7 +4047,7 @@ Fires before rendering sunburst title.
 
 {% highlight js %}
  
-//titlerendering event for sunburst
+//titleRendering event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -4109,7 +4109,7 @@ Fires during initialization of tooltip.
 
 {% highlight js %}
  
-//tooltipinitialize event for sunburst
+//tooltipInitialize event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -4171,7 +4171,7 @@ Fires after clicking the point in sunburst
 
 {% highlight js %}
  
-//pointregionclick event for sunburst
+//pointRegionClick event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -4232,7 +4232,7 @@ Fires while moving the mouse over sunburst points
 
 {% highlight js %}
  
-//pointregionmousemove event for sunburst
+//pointRegionMouseMove event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -4294,7 +4294,7 @@ Fires when clicking the point to perform drilldown.
 
 {% highlight js %}
  
-//drilldownclick event for sunburst
+//drillDownClick event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -4356,7 +4356,7 @@ Fires when resetting drilldown points.
 
 {% highlight js %}
  
-//drilldownback event for sunburst
+//drillDownBack event for sunburst
 
 $("#container").ejSunburstChart({
 
@@ -4419,7 +4419,7 @@ Fires after resetting the sunburst points
 
 {% highlight js %}
  
-//drilldownreset event for sunburst
+//drillDownReset event for sunburst
 
 $("#container").ejSunburstChart({
 

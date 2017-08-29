@@ -859,12 +859,12 @@ Specific button element</td></tr>
         </ul>
     </div>
     <script type="text/javascript">
-        var grpBtnObj;
+        var groupButtonObj;
         $(function () {           
             //create the instance to the ejGroupButton
             $("#groupButton").ejGroupButton();
-            grpBtnObj = $("#groupButton").ejGroupButton('instance');
-            grpBtnObj.deselectItem(getSelectedItem());
+            groupButtonObj = $("#groupButton").ejGroupButton('instance');
+            groupButtonObj.deselectItem(getSelectedItem());
         });
     </script>
 {% endhighlight %}
@@ -896,8 +896,8 @@ Destroy the GroupButton widget all events bound using this._on will be unbind au
         <script>
         // Create Button
                     $("#groupButton").ejGroupButton();
-                    grpBtnObj = $("#groupButton").ejGroupButton('instance');
-                    grpBtnObj.destroy(); // destroy the GroupButton
+                    groupButtonObj = $("#groupButton").ejGroupButton('instance');
+                    groupButtonObj.destroy(); // destroy the GroupButton
         </script>
 
 {% endhighlight %}
@@ -950,12 +950,12 @@ Disables the GroupButton control
         </div>
  
         <script type="text/javascript">
-            var grpBtnObj;
+            var groupButtonObj;
             $(function () {           
                 //create the instance to the ejGroupButton
                 $("#groupButton").ejGroupButton();
-                grpBtnObj = $("#groupButton").ejGroupButton('instance');
-                grpBtnObj.disable();
+                groupButtonObj = $("#groupButton").ejGroupButton('instance');
+                groupButtonObj.disable();
             });
         </script>
 
@@ -1017,13 +1017,13 @@ Specific button element</td></tr>
             </div>
         
             <script type="text/javascript">
-            var grpBtnObj, element;
+            var groupButtonObj, element;
             $(function () {           
                 //create the instance to the ejGroupButton
                 $("#groupButton").ejGroupButton();
-                grpBtnObj = $("#groupButton").ejGroupButton('instance');
+                groupButtonObj = $("#groupButton").ejGroupButton('instance');
                 element = $("#groupButton").find('li')[0];
-                grpBtnObj.disableItem(element);
+                groupButtonObj.disableItem(element);
             });
             </script>
 
@@ -1054,12 +1054,12 @@ Enables the disabled ejGroupButton control.
         </div>
         
         <script type="text/javascript">
-            var grpBtnObj;
+            var groupButtonObj;
             $(function () {           
                 //create the instance to the ejGroupButton
                 $("#groupButton").ejGroupButton();
-                grpBtnObj = $("#groupButton").ejGroupButton('instance'); 
-                grpBtnObj.enable();
+                groupButtonObj = $("#groupButton").ejGroupButton('instance'); 
+                groupButtonObj.enable();
             });
         </script>
 
@@ -1120,13 +1120,13 @@ Specific button element</td></tr>
         </div>
     
         <script type="text/javascript">
-        var grpBtnObj, element;
+        var groupButtonObj, element;
         $(function () {           
             //create the instance to the ejGroupButton
             $("#groupButton").ejGroupButton();
-            grpBtnObj = $("#groupButton").ejGroupButton('instance');
+            groupButtonObj = $("#groupButton").ejGroupButton('instance');
             element = $("#groupButton").find('li')[0];
-            grpBtnObj.enableItem(element);
+            groupButtonObj.enableItem(element);
         });
         </script>
 
@@ -1169,13 +1169,13 @@ number
                 </ul>
          </div>
         <script type="text/javascript">
-        var grpBtnObj, element;
+        var groupButtonObj, element;
         $(function () {           
             //create the instance to the ejGroupButton
             $("#groupButton").ejGroupButton();
-            grpBtnObj = $("#groupButton").ejGroupButton('instance');
+            groupButtonObj = $("#groupButton").ejGroupButton('instance');
             element = $("#groupButton").find('li')[0];
-            grpBtnObj.getIndex(element);
+            groupButtonObj.getIndex(element);
         });
         </script>
 
@@ -1207,12 +1207,12 @@ object
      </div>
     
     <script type="text/javascript">
-    var grpBtnObj;
+    var groupButtonObj;
     $(function () {           
         //create the instance to the ejGroupButton
         $("#groupButton").ejGroupButton();
-        grpBtnObj = $("#groupButton").ejGroupButton('instance');
-        grpBtnObj.getSelectedItem();
+        groupButtonObj = $("#groupButton").ejGroupButton('instance');
+        groupButtonObj.getSelectedItem();
     });
     </script>
 
@@ -1245,12 +1245,12 @@ Hides the GroupButton control
          
          
         <script type="text/javascript">
-            var grpBtnObj;
+            var groupButtonObj;
             $(function () {           
                 //create the instance to the ejGroupButton
                 $("#groupButton").ejGroupButton();
-                grpBtnObj = $("#groupButton").ejGroupButton('instance');
-                grpBtnObj.hide();
+                groupButtonObj = $("#groupButton").ejGroupButton('instance');
+                groupButtonObj.hide();
             });
         </script>
 
@@ -1311,13 +1311,13 @@ Specific button element</td></tr>
             </ul>
         </div>
         <script type="text/javascript">
-        var grpBtnObj, element;
+        var groupButtonObj, element;
         $(function () {           
             //create the instance to the ejGroupButton
             $("#groupButton").ejGroupButton();
-            grpBtnObj = $("#groupButton").ejGroupButton('instance');
+            groupButtonObj = $("#groupButton").ejGroupButton('instance');
             element = $("#groupButton").find('li')[0];
-            grpBtnObj.hideItem(element);
+            groupButtonObj.hideItem(element);
         });
         </script>
 
@@ -1351,13 +1351,13 @@ boolean
         </div>
         
         <script type="text/javascript">
-            var grpBtnObj, element;
+            var groupButtonObj, element;
             $(function () {           
                 //create the instance to the ejGroupButton
                 $("#groupButton").ejGroupButton();
-                grpBtnObj = $("#groupButton").ejGroupButton('instance');
+                groupButtonObj = $("#groupButton").ejGroupButton('instance');
                 element = $("#groupButton").find('li')[0];
-                grpBtnObj.isDisabled(element);
+                groupButtonObj.isDisabled(element);
             });
         </script>
 
@@ -1392,13 +1392,13 @@ boolean
         </div>
 
         <script type="text/javascript">
-            var grpBtnObj, element;
+            var groupButtonObj, element;
             $(function () {           
                 //create the instance to the ejGroupButton
                 $("#groupButton").ejGroupButton();
-                grpBtnObj = $("#groupButton").ejGroupButton('instance');
+                groupButtonObj = $("#groupButton").ejGroupButton('instance');
                 element = $("#groupButton").find('li')[0];
-                grpBtnObj.isSelected(element);
+                groupButtonObj.isSelected(element);
             });
         </script>
 
@@ -1441,13 +1441,13 @@ Specific button element</td></tr>
             </ul>
         </div>
         <script type="text/javascript">
-        var grpBtnObj, element;
+        var groupButtonObj, element;
         $(function () {           
             //create the instance to the ejGroupButton
             $("#groupButton").ejGroupButton();
-            grpBtnObj = $("#groupButton").ejGroupButton('instance');
+            groupButtonObj = $("#groupButton").ejGroupButton('instance');
             element = $("#groupButton").find('li')[0];
-            grpBtnObj.selectItem(element);
+            groupButtonObj.selectItem(element);
         });
         </script>
 
@@ -1480,12 +1480,12 @@ Shows the GroupButton control, if its hide.
             </div>
         
         <script type="text/javascript">
-            var grpBtnObj;
+            var groupButtonObj;
             $(function () {           
                 //create the instance to the ejGroupButton
                 $("#groupButton").ejGroupButton();
-                grpBtnObj = $("#groupButton").ejGroupButton('instance');
-                grpBtnObj.show();
+                groupButtonObj = $("#groupButton").ejGroupButton('instance');
+                groupButtonObj.show();
             });
         </script>
 
@@ -1547,13 +1547,13 @@ Specific button element</td></tr>
         </div>
     
         <script type="text/javascript">
-        var grpBtnObj, element;
+        var groupButtonObj, element;
         $(function () {           
             //create the instance to the ejGroupButton
             $("#groupButton").ejGroupButton();
-            grpBtnObj = $("#groupButton").ejGroupButton('instance');
+            groupButtonObj = $("#groupButton").ejGroupButton('instance');
             element = $("#groupButton").find('li')[0];
-            grpBtnObj.showItem(element);
+            groupButtonObj.showItem(element);
         });
         </script>
 
@@ -1663,7 +1663,7 @@ Triggered before any button element in the GroupButton get selected.
         </div>
     
         <script type="text/javascript">
-            var grpBtnObj, element;
+            var groupButtonObj, element;
             $(function () {           
                 //create the the ejGroupButton
                 $("#groupButton").ejGroupButton({
@@ -1729,7 +1729,7 @@ type</td>
             </ul>
         </div>
         <script type="text/javascript">
-            var grpBtnObj, element;
+            var groupButtonObj, element;
             $(function () {           
                 //create the the ejGroupButton
                 $("#groupButton").ejGroupButton({
@@ -1798,7 +1798,7 @@ type</td>
             </div>
         
         <script type="text/javascript">
-            var grpBtnObj, element;
+            var groupButtonObj, element;
             $(function () {           
                 //create the the ejGroupButton
                 $("#groupButton").ejGroupButton({
@@ -1910,7 +1910,7 @@ Triggered once the key is pressed, when the control is in focused state.
             </ul>
         </div>
         <script type="text/javascript">
-            var grpBtnObj, element;
+            var groupButtonObj, element;
             $(function () {           
                 //create the the ejGroupButton
                 $("#groupButton").ejGroupButton({
@@ -2025,7 +2025,7 @@ Triggered when the button element get selected.
         
         
         <script type="text/javascript">
-        var grpBtnObj, element;
+        var groupButtonObj, element;
         $(function () {           
             //create the the ejGroupButton
             $("#groupButton").ejGroupButton({

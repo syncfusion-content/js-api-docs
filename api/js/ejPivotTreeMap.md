@@ -105,6 +105,57 @@ Contains the respective cube name from OLAP database as string type.
     $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { cube: "Adventure Works" } });
 {% endhighlight %}
 
+### dataSource.sourceInfo `string`
+{:#members:datasource-sourceinfo}
+
+To set the data source name to fetch data from that. 
+
+>**Note**: This is applicable only for Mondrian connection.
+
+#### Default Value: “”
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotTreeMap1").ejPivotTreeMap( { dataSource: { sourceInfo: "Provider Mondrian" } });
+{% endhighlight %}
+
+### dataSource.providerName `string`
+{:#members:datasource-providername}
+
+Set the provider name for PivotTreeMap to identify whether the provider is SSAS or Mondrian. 
+
+>**Note**: This is applicable only for client side OLAP data.
+
+#### Default Value: "ssas"
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">ssas</td>
+            <td class="description">To bind an OLAP data source to PivotTreeMap through SSAS provider.</td>
+        </tr>
+        <tr>
+            <td class="name">mondrian</td>
+            <td class="description">To bind a relational data source to PivotTreeMap through Mondrian provider.</td>
+        </tr>
+    </tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotTreeMap1").ejPivotTreeMap( { dataSource: { providerName: "mondrian" } });
+{% endhighlight %}
+
 ### dataSource.catalog `string`
 {:#members:datasource-catalog}
 
@@ -478,7 +529,7 @@ Allows the user to set the custom name for the service method responsible for in
 
 {% highlight javascript %}
  
-    $("#PivotTreeMap1").ejPivotTreeMap({ serviceMethodSettings: { initialize: "IninlizeTreeMapMyMethod" } });
+    $("#PivotTreeMap1").ejPivotTreeMap({ serviceMethodSettings: { initialize: "InitializeTreeMapMyMethod" } });
 {% endhighlight %}
 
 ### serviceMethodSettings.drillDown `string`
@@ -510,7 +561,6 @@ Connects the service using the specified URL for any server updates.
     $("#PivotTreeMap1").ejPivotTreeMap({ url: "/PivotTreeMapService" });
 {% endhighlight %}
 
-
 ## Methods
 
 ### doAjaxPost()
@@ -524,6 +574,19 @@ Performs an asynchronous HTTP (AJAX) request.
  
     var treemapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
     treemapObj.doAjaxPost("POST", "/PivotTreeMapService.svc/Initialize", { "key", "Hello World" }, successEvent, null);
+{% endhighlight %}
+
+### doPostBack()
+{:#methods:dopostback}
+
+Performs an asynchronous HTTP (FullPost) submit.
+
+**Example:**
+
+{% highlight javascript %}
+
+    var treemapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
+    treemapObj.doPostBack("/OlapService/Initialize", { "key", "Hello World" });
 {% endhighlight %}
 
 ### getOlapReport()
@@ -629,6 +692,18 @@ This function receives the update from service-end, which would be utilized for 
     treeMapObj.renderControlSuccess({ "OlapReport": this.getOlapReport(), "JsonRecords": this.getJSONRecords() });
 {% endhighlight %}
 
+### destroy()
+{:#methods:destroy}
+
+This function Destroy the PivotTreemap widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+
+**Example:**
+
+{% highlight javascript %}
+ 
+   var treemapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
+    treemapObj.destroy();
+{% endhighlight %}
 
 ## Events
 

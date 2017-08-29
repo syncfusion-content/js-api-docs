@@ -1750,6 +1750,66 @@ Specifies the position of the leaf labels.
 
 {% endhighlight %}
 
+### leafItemSettings.textOverflow `enum`
+{:#members:leafitemsettings-textOverflow}
+
+<ts name="ej.datavisualization.TreeMap.TextOverflow"/>
+Specifies the overflow options for leaf labels.
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name </th>			
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">none</td>			
+			<td class="description">Displays the label within the grid width</td>
+		</tr>
+		<tr>
+			<td class="name">hide</td>			
+			<td class="description">Hides the label when its width exceeds grid width</td>
+		</tr>
+    <tr>
+			<td class="name">wrap</td>			
+			<td class="description">Wrap the label by letter when its width exceeds grid width</td>
+		</tr>
+    <tr>
+			<td class="name">wrapbyword</td>			
+			<td class="description">Wrap the label by word when its width exceeds grid width</td>
+		</tr>    
+	</tbody>
+</table>
+
+#### Default Value
+
+* none
+
+#### Example
+
+{% highlight js %}
+ 
+//To set textOverflow API value during initialization 
+  $("#container").ejTreeMap({leafItemSettings:{ textOverflow: "wrap"}});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the textOverflow API, after initialization:
+   
+   //Gets the textOverflow value 
+   
+   var property =$("#container").data("ejTreeMap").model.leafItemSettings.textOverflow;
+ 
+   //Sets the textOverflow value 
+   
+   $("#container").data("ejTreeMap").model.leafItemSettings.textOverflow= "wrapbyword"; 
+
+{% endhighlight %}
 
 ### leafItemSettings.labelVisibilityMode `enum`
 {:#members:leafitemsettings-labelvisibilitymode}
@@ -1988,7 +2048,7 @@ Specifies the legend label value for rangeColorMapping.
 
 {% highlight js %}
   
-// Set the legendlabel value for rangeColorMapping during initialization.                       
+// Set the legend label value for rangeColorMapping during initialization.                       
    $("#container").ejTreeMap({rangeColorMapping: [{ legendlabel: "1% Growth" }]})
 
 {% endhighlight %}
@@ -1996,13 +2056,13 @@ Specifies the legend label value for rangeColorMapping.
 
 {% highlight js %}
  
-//Get or set the legendlabel value for rangeColorMapping after initialization:
+//Get or set the legend label value for rangeColorMapping after initialization:
 
-  //Gets the legendlabel value for rangeColorMapping from map.
+  //Gets the legend label value for rangeColorMapping from map.
 
   var property =$("#container").data("ejTreeMap").model.rangeColorMapping.legendlabel;
 
-  //Sets the legendlabel value for rangeColorMapping to map.
+  //Sets the legend label value for rangeColorMapping to map.
 
   $("#container").data("ejTreeMap").model.rangeColorMapping.legendlabel  = "1% Growth";
 
@@ -2345,7 +2405,7 @@ Specify levels of treemap for grouped visualization of data
   
   //Sets the levels to map.
   
-  $("#container").data("ejTreeMap").model.levels[levelIndex]  = { groupPath: "Continent", groupGap: 5, headerHeight: 30, headerTemplate: 'headertemplate' };
+  $("#container").data("ejTreeMap").model.levels[levelIndex]  = { groupPath: "Continent", groupGap: 5, headerHeight: 30, headerTemplate: 'Template' };
 
 {% endhighlight %}
 
@@ -2757,6 +2817,67 @@ Specifies the position of the labels.
 
 {% endhighlight %}
 
+### levels.textOverflow `enum`
+{:#members:levels-textOverflow}
+
+<ts ref="ej.datavisualization.TreeMap.TextOverflow"/>
+
+Specifies the overflow options for leaf labels.
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name </th>			
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+	  <tr>
+			<td class="name">none</td>			
+			<td class="description">Displays the label within the grid width</td>
+		</tr>
+		<tr>
+			<td class="name">hide</td>			
+			<td class="description">Hides the label when its width exceeds grid width</td>
+		</tr>
+    <tr>
+			<td class="name">wrap</td>			
+			<td class="description">Wrap the label by letter when its width exceeds grid width</td>
+		</tr>
+    <tr>
+			<td class="name">wrapbyword</td>			
+			<td class="description">Wrap the label by word when its width exceeds grid width</td>
+		</tr> 
+	</tbody>
+</table>
+
+#### Default Value
+
+* none
+
+#### Example
+
+{% highlight js %}
+ 
+//To set textOverflow API value during initialization 
+  $("#container").ejTreeMap({levels:[{ textOverflow: "wrap"]}});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the textOverflow API, after initialization:
+   
+   //Gets the textOverflow value 
+   
+   var property =$("#container").data("ejTreeMap").model.levels[0].textOverflow;
+ 
+   //Sets the textOverflow value 
+   
+   $("#container").data("ejTreeMap").model.levels[0].textOverflow= "wrapbyword"; 
+
+{% endhighlight %}
 
 ### levels.labelTemplate `string`
 {:#members:levels-labeltemplate}
@@ -3070,6 +3191,40 @@ Triggers on treemap  drilldown  item  selected.
 //drillDownItemSelected event for treemap
   $("#container").ejTreeMap({
    drillDownItemSelected: function () {}
+  });
+
+{% endhighlight %}
+
+### headerTemplateRendering
+{:#events:headerTemplateRendering}
+
+Triggers before rendering the treemap drilldown header template
+
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Returns drilldown header.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+{% highlight js %}
+ 
+//headerTemplateRendering event for treemap
+  $("#container").ejTreeMap({
+   headerTemplateRendering: function () {}
   });
 
 {% endhighlight %}

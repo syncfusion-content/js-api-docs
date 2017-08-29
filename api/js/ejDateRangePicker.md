@@ -639,7 +639,7 @@ ranges: [
 
 
 
-Used to seperate the two date strings of the value in the DateRangePicker popup.
+Used to separate the two date strings of the value in the DateRangePicker popup.
 
 
 
@@ -1532,8 +1532,8 @@ $("#daterangepicker").ejDateRangePicker({
 
 
 
-### onChange
-{:#events:onChange}
+### Change
+{:#events:change}
 
 
 Fires when the DateRangePicker values get changed.
@@ -1597,9 +1597,9 @@ endDate</td>
  
 <input type="text" id="daterangepicker" />
 <script>
-//onChange event for DateRangePicker
+//Change event for DateRangePicker
 $("#daterangepicker").ejDateRangePicker({
-   onChange: function (args) {}
+   change: function (args) {}
 });  
 </script> 
 

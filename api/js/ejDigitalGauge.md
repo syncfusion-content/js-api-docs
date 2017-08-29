@@ -722,7 +722,7 @@ EightCrossEightSquareMatrix</td>
 
 
 
-Specifies the character type for the text to be displayed. See <a href="global.html#CharacterType">CharacterType</a>
+Specifies the character type for the text to be displayed. See <a href="ejdigitalgauge.html#members:items-charactersettings-type">CharacterType</a>
 
 
 
@@ -962,7 +962,7 @@ Strikeout</td>
 
 
 
-Set the font style for the font. See <a href="global.html#FontStyle">FontStyle</a>
+Set the font style for the font. See <a href="ejdigitalgauge.html#members:items-font-fontstyle">FontStyle</a>
 
 
 
@@ -2102,8 +2102,8 @@ To destroy the digital gauge
  
 <script>
 $("#DigitalGauge1").ejDigitalGauge();
-var gphObj = $("#DigitalGauge1").data("ejDigitalGauge");
-gphObj.destroy();
+var graphObj = $("#DigitalGauge1").data("ejDigitalGauge");
+graphObj.destroy();
 </script>{% endhighlight %}
 
 

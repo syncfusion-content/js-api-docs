@@ -2452,7 +2452,7 @@ Gets or sets a value that indicates whether to persist the grid model state in p
 $("#Grid").ejGrid({
     dataSource:window.gridData,
     allowGrouping: true,
-    enablePresistence:true
+    enablePersistence:true
 });
 </script> 
 {% endhighlight %}
@@ -2636,7 +2636,7 @@ $("#Grid").ejGrid({
 
 Gets or sets an object that indicates whether to customize the filtering behavior of the grid
 
-### filterSettings.enableCaseSensitivity `Boolean`
+### filterSettings.enableCaseSensitivity `boolean`
 {:#members:filtersettings-enablecasesensitivity}
 
 Gets or sets a value that indicates to perform the filter operation with case sensitive in excel styled filter menu mode
@@ -2950,7 +2950,7 @@ $("#Grid").ejGrid({
 
 Gets or sets an object that indicates whether to customize the grouping behavior of the grid.
 
-### groupSettings.captionFormat `String`
+### groupSettings.captionFormat `string`
 {:#members:groupsettings-captionformat}
 
 Gets or sets a value that customize the group caption format.
@@ -3318,6 +3318,28 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
+### pageSettings.pageSizeList `array`
+{:#members:pagesettings-pagesizelist}
+
+Gets or sets different page size values to the Dropdown in Grid Pager, by which number of records in a page can be changed dynamically.
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+    dataSource: window.gridData,
+    allowPaging: true,   
+    pageSettings: { pageSize: 14, pageSizeList: [8, 12, 9, 5] }
+});
+</script>
+{% endhighlight %}
+
 ### pageSettings.showDefaults `boolean`
 {:#members:pagesettings-showdefaults}
 
@@ -3581,7 +3603,7 @@ This specifies the grid to drop the grid rows only at particular target element.
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowRowDragAndDrop: true,
-   rowDropSettings: { dropTargetID: "#DestGrid" }
+   rowDropSettings: { dropTargetID: "#OrdersGrid" }
 });
 </script> 
 {% endhighlight %}
@@ -3603,7 +3625,7 @@ This helps in mapping server-side action when rows are dragged from Grid.
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowRowDragAndDrop: true,
-   rowDropSettings: { dropTargetID: "#DestGrid", dragMapper: "Home/DragHandler" }
+   rowDropSettings: { dropTargetID: "#OrdersGrid", dragMapper: "Home/DragHandler" }
 });
 </script> 
 {% endhighlight %}
@@ -3625,7 +3647,7 @@ This helps in mapping server-side action when rows are dropped in Grid.
 $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowRowDragAndDrop: true,
-   rowDropSettings: { dropTargetID: "#DestGrid", dropMapper: "Home/DragHandler" }
+   rowDropSettings: { dropTargetID: "#OrdersGrid", dropMapper: "Home/DragHandler" }
 });
 </script> 
 {% endhighlight %}
@@ -4229,7 +4251,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### showColumnChooser `Boolean`
+### showColumnChooser `boolean`
 {:#members:showcolumnchooser}
 Gets or sets a value that indicates whether to enable column chooser on grid. On enabling feature able to show/hide grid columns
 
@@ -4269,7 +4291,7 @@ $("#Grid").ejGrid({
    allowSorting:true,
    showStackedHeader:true,
    stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID"}
-         ,{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
+         ,{headerText:"Logistics",column:"Freight,EmployeeID,OrderDate"}
          ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
            ]}
           ],
@@ -4381,7 +4403,7 @@ $("#Grid").ejGrid({
    allowSorting:true,
    showStackedHeader:true,
    stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID"}
-         ,{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
+         ,{headerText:"Logistics",column:"Freight,EmployeeID,OrderDate"}
          ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
            ]}
           ],
@@ -4415,7 +4437,7 @@ $("#Grid").ejGrid({
    allowSorting:true,
    showStackedHeader:true,
    stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID"}
-         ,{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
+         ,{headerText:"Logistics",column:"Freight,EmployeeID,OrderDate"}
          ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
            ]}
           ],
@@ -4449,7 +4471,7 @@ $("#Grid").ejGrid({
    allowSorting:true,
    showStackedHeader:true,
    stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID"}
-         ,{headerText:"Frieght",column:["Freight","EmployeeID","OrderDate"]}
+         ,{headerText:"Logistics",column:["Freight","EmployeeID","OrderDate"]}
          ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
            ]}
           ],
@@ -4488,7 +4510,7 @@ $("#Grid").ejGrid({
    allowSorting:true,
    showStackedHeader:true,
    stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID", cssClass:
-         "temp"},{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
+         "temp"},{headerText:"Logistics",column:"Freight,EmployeeID,OrderDate"}
          ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
            ]}
           ],
@@ -4522,7 +4544,7 @@ $("#Grid").ejGrid({
    allowSorting:true,
    showStackedHeader:true,
    stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID"}
-         ,{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
+         ,{headerText:"Logistics",column:"Freight,EmployeeID,OrderDate"}
          ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
            ]}
           ],
@@ -4555,8 +4577,8 @@ $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowSorting:true,
    showStackedHeader:true,
-   stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID", textalign: 
-         ej.TextAlign.Right},{headerText:"Frieght",column:"Freight,EmployeeID,OrderDate"}
+   stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",column:"CustomerID", textAlign: 
+         ej.TextAlign.Right},{headerText:"Logistics",column:"Freight,EmployeeID,OrderDate"}
          ,{headerText:"Date &amp; Location Top Level",column:"ShipCity"}
            ]}
           ],
@@ -4592,8 +4614,8 @@ $("#Grid").ejGrid({
    dataSource:window.gridData,
    allowSorting:true,
    showStackedHeader:true,
-   stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",tooltip:"#colTip",column:"CustomerID", textalign: 
-         ej.TextAlign.Right},{headerText:"Frieght",tooltip:"#colTip",column:"Freight,EmployeeID,OrderDate"}
+   stackedHeaderRows:[{stackedHeaderColumns:[{headerText:"ID &amp; Freight",tooltip:"#colTip",column:"CustomerID", textAlign: 
+         ej.TextAlign.Right},{headerText:"Logistics",tooltip:"#colTip",column:"Freight,EmployeeID,OrderDate"}
          ,{headerText:"Date &amp; Location Top Level",tooltip:"#colTip",column:"ShipCity"}
            ]}
           ],

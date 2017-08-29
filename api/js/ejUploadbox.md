@@ -803,7 +803,7 @@ Specifies the actions for dialog popup while initialization.
  
 <script>
 //Sets the  dialogAction API value 
-        $("#uploadbox1").ejUploadbox({ dialogAction:{ modal:false, closeOnComplete:false,resize: false, drag:true, content:"#controlid"}});     
+        $("#uploadbox1").ejUploadbox({ dialogAction:{ modal:false, closeOnComplete:false,resize: false, drag:true, content:"#controlId"}});     
 </script>
 
 {% endhighlight %}

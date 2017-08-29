@@ -67,7 +67,7 @@ Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range
 </div>
 <script>
 $(function () {
-$("#navpane").ejNavigationDrawer();     
+$("#navigationPane").ejNavigationDrawer();     
 });
 </script>{% endhighlight %}
 
@@ -115,7 +115,7 @@ Specifies the ajaxSettings option to load the content to the NavigationDrawer co
 {% highlight html %}
  
     <div id="container"> </div>
-    <div id="navpane">
+    <div id="navigationPane">
     <ul>
         <li data-ej-text="Artwork"></li>
         <li data-ej-text="Abstract"></li>
@@ -126,7 +126,7 @@ Specifies the ajaxSettings option to load the content to the NavigationDrawer co
     </div>
     <script>
     // Set the ajaxSettings options during initialization.                  
-            $("#navpane").ejNavigationDrawer({  ajaxSettings: { type: 'GET', cache: false, data: {}, dataType: "html", contentType: "html", async: true } });
+            $("#navigationPane").ejNavigationDrawer({  ajaxSettings: { type: 'GET', cache: false, data: {}, dataType: "html", contentType: "html", async: true } });
     </script>
 
 {% endhighlight %}
@@ -203,7 +203,7 @@ Specifies the contentId for navigation drawer, where the AJAX content need to up
 // Set Navigation Drawer contentId on initialization. 
 //To set contentId API value 
 <div id="container"> </div>
-<div id="navpane">
+<div id="navigationPane">
 <ul>
                 <li data-ej-text="Artwork"></li>
                 <li data-ej-text="Abstract"></li>
@@ -214,7 +214,7 @@ Specifies the contentId for navigation drawer, where the AJAX content need to up
 </div>
 <script>
 $(function () {
-$("#navpane").ejNavigationDrawer("contentId","container");      
+$("#navigationPane").ejNavigationDrawer("contentId","container");      
 });
 </script>{% endhighlight %}
 
@@ -225,9 +225,9 @@ $("#navpane").ejNavigationDrawer("contentId","container");
 //Get or set the Navigation Drawer contentId, after initialization:
 $(function () {
 // Gets the contentId API value.                
-$("#navpane").ejNavigationDrawer("option", "contenttId");       
+$("#navigationPane").ejNavigationDrawer("option", "contentId");       
 // Sets the contentId API       
-$("#navpane").ejNavigationDrawer ("option", "contentId", "container");  
+$("#navigationPane").ejNavigationDrawer ("option", "contentId", "container");  
 });
 </script>  {% endhighlight %}
 
@@ -300,7 +300,7 @@ Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range
 </div>
 <script>
 $(function () {
-$("#navpane").ejNavigationDrawer("cssClass","customclass");     
+$("#navigationPane").ejNavigationDrawer("cssClass","custom-class");     
 });
 </script>{% endhighlight %}
 
@@ -311,9 +311,9 @@ $("#navpane").ejNavigationDrawer("cssClass","customclass");
 //Get or set the Navigation Drawer cssClass, after initialization:
 $(function () {
 // Gets the cssClass API value.         
-$("#navpane").ejNavigationDrawer("option", "cssClass"); 
+$("#navigationPane").ejNavigationDrawer("option", "cssClass"); 
 // Sets the cssClass API        
-$("#navpane").ejNavigationDrawer ("option", "cssClass", "customclass");  
+$("#navigationPane").ejNavigationDrawer ("option", "cssClass", "custom-class");  
 });
 </script>  {% endhighlight %}
 
@@ -420,7 +420,7 @@ Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range
 </div>
 <script>
 $(function () {
-$("#navpane").ejNavigationDrawer("direction","left");   
+$("#navigationPane").ejNavigationDrawer("direction","left");   
 });
 </script>{% endhighlight %}
 
@@ -431,9 +431,9 @@ $("#navpane").ejNavigationDrawer("direction","left");
 //Get or set the Navigation Drawer direction, after initialization:
 $(function () {
 // Gets the direction API value.                
-$("#navpane").ejNavigationDrawer("option", "direction");        
+$("#navigationPane").ejNavigationDrawer("option", "direction");        
 // Sets the direction API       
-$("#navpane").ejNavigationDrawer ("option", "direction", "left");  
+$("#navigationPane").ejNavigationDrawer ("option", "direction", "left");  
 });
 </script>  {% endhighlight %}
 
@@ -505,7 +505,7 @@ Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range
 </div>
 <script>
 $(function () {
-$("#navpane").ejNavigationDrawer("enableListView","false");     
+$("#navigationPane").ejNavigationDrawer("enableListView","false");     
 });
 </script>{% endhighlight %}
 
@@ -516,9 +516,9 @@ $("#navpane").ejNavigationDrawer("enableListView","false");
 //Get or set the Navigation Drawer listview, after initialization:
 $(function () {
 // Gets the listview API value.         
-$("#navpane").ejNavigationDrawer("option", "enableListView");   
+$("#navigationPane").ejNavigationDrawer("option", "enableListView");   
 // Sets the listview API        
-$("#navpane").ejNavigationDrawer ("option", "enableListView", "false");  
+$("#navigationPane").ejNavigationDrawer ("option", "enableListView", "false");  
 });
 </script>  {% endhighlight %}
 
@@ -590,7 +590,7 @@ Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range
 </div>
 <script>
 $(function () {
-$("#navpane").ejNavigationDrawer({enableListview:true,items:[{text:"Item1"},{text:"Item2"},{text:"Item3"}]});   
+$("#navigationPane").ejNavigationDrawer({enableListview:true,items:[{text:"Item1"},{text:"Item2"},{text:"Item3"}]});   
 });
 </script>{% endhighlight %}
 
@@ -601,9 +601,9 @@ $("#navpane").ejNavigationDrawer({enableListview:true,items:[{text:"Item1"},{tex
 //Get or set the Navigation Drawer listview items, after initialization:
 $(function () {
 // Gets the listViewSettings API value.         
-$("#navpane").ejNavigationDrawer("option", "items");    
+$("#navigationPane").ejNavigationDrawer("option", "items");    
 // Sets the listViewSettings API        
-$("#navpane").ejNavigationDrawer ("option", "items", [{text:"Item1"},{text:"Item2"},{text:"Item3"}]);  
+$("#navigationPane").ejNavigationDrawer ("option", "items", [{text:"Item1"},{text:"Item2"},{text:"Item3"}]);  
 });
 </script>  {% endhighlight %}
 
@@ -659,7 +659,7 @@ Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range
 </div>
 <script>
 $(function () {
-$("#navpane").ejNavigationDrawer({model.listViewSettings{width:200});   
+$("#navigationPane").ejNavigationDrawer({model.listViewSettings{width:200});   
 });
 </script>{% endhighlight %}
 
@@ -670,9 +670,9 @@ $("#navpane").ejNavigationDrawer({model.listViewSettings{width:200});
 //Get or set the Navigation Drawer listViewSettings, after initialization:
 $(function () {
 // Gets the listViewSettings API value.         
-$("#navpane").ejNavigationDrawer("option", "listViewSettings.width");   
+$("#navigationPane").ejNavigationDrawer("option", "listViewSettings.width");   
 // Sets the listViewSettings API        
-$("#navpane").ejNavigationDrawer ("option", "listViewSettings.width", "200");  
+$("#navigationPane").ejNavigationDrawer ("option", "listViewSettings.width", "200");  
 });
 </script>  {% endhighlight %}
 
@@ -744,7 +744,7 @@ Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range
 </div>
 <script>
 $(function () {
-$("#navpane").ejNavigationDrawer("position","fixed");   
+$("#navigationPane").ejNavigationDrawer("position","fixed");   
 });
 </script>{% endhighlight %}
 
@@ -755,9 +755,9 @@ $("#navpane").ejNavigationDrawer("position","fixed");
 //Get or set the Navigation Drawer position, after initialization:
 $(function () {
 // Gets the position API value.         
-$("#navpane").ejNavigationDrawer("option", "position"); 
+$("#navigationPane").ejNavigationDrawer("option", "position"); 
 // Sets the position API        
-$("#navpane").ejNavigationDrawer ("option", "position", "fixed");  
+$("#navigationPane").ejNavigationDrawer ("option", "position", "fixed");  
 });
 </script>  {% endhighlight %}
 
@@ -830,7 +830,7 @@ Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range
 </div>
 <script>
 $(function () {
-$("#navpane").ejNavigationDrawer("targetId","target");  
+$("#navigationPane").ejNavigationDrawer("targetId","target");  
 });
 </script>{% endhighlight %}
 
@@ -841,9 +841,9 @@ $("#navpane").ejNavigationDrawer("targetId","target");
 //Get or set the Navigation Drawer targetId, after initialization:
 $(function () {
 // Gets the targetId API value.         
-$("#navpane").ejNavigationDrawer("option", "targetId"); 
+$("#navigationPane").ejNavigationDrawer("option", "targetId"); 
 // Sets the targetId API        
-$("#navpane").ejNavigationDrawer ("option", "targetId", "left");  
+$("#navigationPane").ejNavigationDrawer ("option", "targetId", "left");  
 });
 </script>  {% endhighlight %}
 
@@ -910,7 +910,7 @@ Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range
 </div>
 <script>
 $(function () {
-$("#navpane").ejNavigationDrawer("type","overlay");     
+$("#navigationPane").ejNavigationDrawer("type","overlay");     
 });
 </script>{% endhighlight %}
 
@@ -921,9 +921,9 @@ $("#navpane").ejNavigationDrawer("type","overlay");
 //Get or set the Navigation Drawer type, after initialization:
 $(function () {
 // Gets the type API value.             
-$("#navpane").ejNavigationDrawer("option", "type");     
+$("#navigationPane").ejNavigationDrawer("option", "type");     
 // Sets the type API    
-$("#navpane").ejNavigationDrawer ("option", "type", "overlay");  
+$("#navigationPane").ejNavigationDrawer ("option", "type", "overlay");  
 });
 </script>  {% endhighlight %}
 
@@ -995,7 +995,7 @@ Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range
 </div>
 <script>
 $(function () {
-$("#navpane").ejNavigationDrawer("width","200");        
+$("#navigationPane").ejNavigationDrawer("width","200");        
 });
 </script>{% endhighlight %}
 
@@ -1006,9 +1006,9 @@ $("#navpane").ejNavigationDrawer("width","200");
 //Get or set the Navigation Drawer width, after initialization:
 $(function () {
 // Gets the width API value.            
-$("#navpane").ejNavigationDrawer("option", "width");    
+$("#navigationPane").ejNavigationDrawer("option", "width");    
 // Sets the width API   
-$("#navpane").ejNavigationDrawer ("option", "width", "overlay");  
+$("#navigationPane").ejNavigationDrawer ("option", "width", "overlay");  
 });
 </script>  {% endhighlight %}
 
@@ -1045,7 +1045,7 @@ Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range
 </div>
 <script>
 $(function () {
-$("#navpane").ejNavigationDrawer({isPaneOpen:true});        
+$("#navigationPane").ejNavigationDrawer({isPaneOpen:true});        
 });
 </script>{% endhighlight %}
 
@@ -1056,9 +1056,9 @@ $("#navpane").ejNavigationDrawer({isPaneOpen:true});
 //Get or set the Navigation Drawer isPaneOpen, after initialization:
 $(function () {
 // Gets the isPaneOpen API value.            
-$("#navpane").ejNavigationDrawer("option", "isPaneOpen");    
+$("#navigationPane").ejNavigationDrawer("option", "isPaneOpen");    
 // Sets the isPaneOpen API   
-$("#navpane").ejNavigationDrawer ("option", "isPaneOpen",false);  
+$("#navigationPane").ejNavigationDrawer ("option", "isPaneOpen",false);  
 });
 </script>  {% endhighlight %}
 
@@ -1110,14 +1110,14 @@ Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range
   width:200px;
   }
 </style>
-<div id="navpane" >
+<div id="navigationPane" >
 <div class="list"> Home </div>
 <div class="list"> Communities </div>
 </div>
 <script >
 $(function(){
-  $("#navpane").ejNavigationDrawer();
-  $("#navpane").ejNavigationDrawer("close");
+  $("#navigationPane").ejNavigationDrawer();
+  $("#navigationPane").ejNavigationDrawer("close");
 });
 </script >{% endhighlight %}
 
@@ -1136,25 +1136,25 @@ To load AJAX content into NavigationDrawer container.
 {% highlight html %}
 
     <div class="e-header">
-      <div id="butdrawer" class="drawericon e-icon"></div>
+      <div id="buttonDrawer" class="drawericon e-icon"></div>
       <h2>Template Content</h2>
     </div>
-    <div id="navpane">
+    <div id="navigationPane">
       <div id="basicAccordion" class="control_frame">
         <h3><a href="#">Menu</a></h3>
         <div>
-          <div class="selectedAcc" data-url="#Home">Home</div>
-          <div class="selectedAcc" data-url="#People">People</div>
-          <div class="selectedAcc" data-url="#Profile">Profile</div>
+          <div class="selectedAccordion" data-url="#Home">Home</div>
+          <div class="selectedAccordion" data-url="#People">People</div>
+          <div class="selectedAccordion" data-url="#Profile">Profile</div>
         </div>
       </div>
     </div>
     <script >
     $(function(){
       $("#basicAccordion").ejAccordion({width:"100%",height:"100%"});
-      $("#navpane").ejNavigationDrawer({ targetId: "butdrawer", contentId: "content_container", type: "overlay", direction: "left", position: "normal" });
-      $(".selectedAcc").click(function(e){
-          var navObj = $("#navpane").ejNavigationDrawer("instance");
+      $("#navigationPane").ejNavigationDrawer({ targetId: "buttonDrawer", contentId: "content_container", type: "overlay", direction: "left", position: "normal" });
+      $(".selectedAccordion").click(function(e){
+          var navObj = $("#navigationPane").ejNavigationDrawer("instance");
           navObj.loadContent($("#content_container") ,"/Content/NavigationDrawer/"+$(e.currentTarget).attr("data-url").replace("#","")+".html");
         });
     });
@@ -1204,14 +1204,14 @@ Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range
   width:200px;
   }
 </style>
-<div id="navpane" >
+<div id="navigationPane" >
 <div class="list"> Home </div>
 <div class="list"> Communities </div>
 </div>
 <script >
 $(function(){
-        $("#navpane").ejNavigationDrawer();
-  $("#navpane").ejNavigationDrawer("open");
+        $("#navigationPane").ejNavigationDrawer();
+  $("#navigationPane").ejNavigationDrawer("open");
 });
 </script >{% endhighlight %}
 
@@ -1260,14 +1260,14 @@ Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range
   width:200px;
   }
 </style>
-<div id="navpane" >
+<div id="navigationPane" >
 <div class="list"> Home </div>
 <div class="list"> Communities </div>
 </div>
 <script >
 $(function(){
-        $("#navpane").ejNavigationDrawer();
-  $("#navpane").ejNavigationDrawer("toggle");
+        $("#navigationPane").ejNavigationDrawer();
+  $("#navigationPane").ejNavigationDrawer("toggle");
 });
 </script >{% endhighlight %}
 
@@ -1361,13 +1361,13 @@ model</td>
       width:200px;
       }
     </style>
-    <div id="navpane" >
+    <div id="navigationPane" >
     <div class="list"> Home </div>
     <div class="list"> Communities </div>
     </div>
     <script >
     $(function(){
-            $("#navpane").ejNavigationDrawer({
+            $("#navigationPane").ejNavigationDrawer({
               ajaxComplete: function (args) { //handle the event }
             }
             });
@@ -1468,13 +1468,13 @@ textStatus</td>
       width:200px;
       }
     </style>
-    <div id="navpane" >
+    <div id="navigationPane" >
     <div class="list"> Home </div>
     <div class="list"> Communities </div>
     </div>
     <script >
     $(function(){
-            $("#navpane").ejNavigationDrawer({
+            $("#navigationPane").ejNavigationDrawer({
               ajaxError: function (args) { //handle the event }
             }
             });
@@ -1575,13 +1575,13 @@ URL</td>
       width:200px;
       }
     </style>
-    <div id="navpane" >
+    <div id="navigationPane" >
     <div class="list"> Home </div>
     <div class="list"> Communities </div>
     </div>
     <script >
     $(function(){
-            $("#navpane").ejNavigationDrawer({
+            $("#navigationPane").ejNavigationDrawer({
               ajaxSuccess: function (args) { //handle the event }
             }
             });
@@ -1678,16 +1678,16 @@ Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range
   width:200px;
   }
 </style>
-<div id="navpane" >
+<div id="navigationPane" >
 <div class="list"> Home </div>
 <div class="list"> Communities </div>
 </div>
 <script>
-$("#navpane").ejNavigationDrawer({
+$("#navigationPane").ejNavigationDrawer({
   beforeClose: function (args) { //handle the event
 }
 });   
-$("#navpane").ejNavigationDrawer("close");
+$("#navigationPane").ejNavigationDrawer("close");
 </script>{% endhighlight %}
 
 
@@ -1783,16 +1783,16 @@ Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range
   width:200px;
   }
 </style>
-<div id="navpane" >
+<div id="navigationPane" >
 <div class="list"> Home </div>
 <div class="list"> Communities </div>
 </div>
 <script>
-$("#navpane").ejNavigationDrawer({
+$("#navigationPane").ejNavigationDrawer({
   open: function (args) { //handle the event
 }
 });   
-$("#navpane").ejNavigationDrawer("open");   
+$("#navigationPane").ejNavigationDrawer("open");   
 </script>{% endhighlight %}
 
 
@@ -1888,12 +1888,12 @@ Founded by industry experts in 2001,Syncfusion, Inc. provides the broadest range
   width:200px;
   }
 </style>
-<div id="navpane" >
+<div id="navigationPane" >
 <div class="list"> Home </div>
 <div class="list"> Communities </div>
 </div>
 <script>
-$("#navpane").ejNavigationDrawer({
+$("#navigationPane").ejNavigationDrawer({
   swipe: function (args) { //handle the event
 }
 });   

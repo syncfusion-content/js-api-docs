@@ -45,11 +45,11 @@ options</td>
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         // Create Color picker
-        $('#colorPick').ejColorPicker({ value: "#278787" });
+        $('#colorPicker').ejColorPicker({ value: "#278787" });
         </script>
 
 {% endhighlight %}
@@ -104,11 +104,11 @@ The ColorPicker control allows to define the customized text to displayed in but
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set buttonText API during initialization
-        $('#colorPick').ejColorPicker({ value: "#278787",   buttonText: {apply: "Set", cancel: "Close" }});
+        $('#colorPicker').ejColorPicker({ value: "#278787",   buttonText: {apply: "Set", cancel: "Close" }});
         </script>
 
 {% endhighlight %}
@@ -123,11 +123,11 @@ Sets the text for the apply button.
 
 {% highlight html %}
  
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set buttonText API during initialization
-        $('#colorPick').ejColorPicker({ value: "#278787",   buttonText: {apply: "select"}});
+        $('#colorPicker').ejColorPicker({ value: "#278787",   buttonText: {apply: "select"}});
         </script>
  
  {% endhighlight %}
@@ -143,11 +143,11 @@ Sets the text for the cancel button.
 
 {% highlight html %}
  
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set buttonText API during initialization
-        $('#colorPick').ejColorPicker({ value: "#278787",   buttonText: {cancel: "Exit" }});
+        $('#colorPicker').ejColorPicker({ value: "#278787",   buttonText: {cancel: "Exit" }});
         </script>
  
  {% endhighlight %}
@@ -162,11 +162,11 @@ Sets the header text for the swatches area.
 
 {% highlight html %}
  
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set buttonText API during initialization
-        $('#colorPick').ejColorPicker({ value: "#278787",   buttonText: {swatches: "colors"}});
+        $('#colorPicker').ejColorPicker({ value: "#278787",   buttonText: {swatches: "colors"}});
         </script>
  
  {% endhighlight %}
@@ -211,11 +211,11 @@ Dropdown</td>
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set buttonText API during initialization
-        $('#colorPick').ejColorPicker({ value: "#278787",  buttonMode: ej.ButtonMode.Dropdown});
+        $('#colorPicker').ejColorPicker({ value: "#278787",  buttonMode: ej.ButtonMode.Dropdown});
         </script>
 
 {% endhighlight %}
@@ -240,11 +240,11 @@ Specifies the number of columns to be displayed color palette model.
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set columns API during initialization  
-        $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", columns: 5});
+        $('#colorPicker').ejColorPicker({ value: "#278787", modelType: "palette", columns: 5});
         </script>
 
 {% endhighlight %}
@@ -268,11 +268,11 @@ This property allows you to customize its appearance using user-defined CSS and 
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set cssClass API during initialization
-        $('#colorPick').ejColorPicker({ value: "#278787",  cssClass : "gradient-lime"});
+        $('#colorPicker').ejColorPicker({ value: "#278787",  cssClass : "gradient-lime"});
         </script>
 
 {% endhighlight %}
@@ -295,11 +295,11 @@ This property allows to define the custom colors in the palette model.Custom pal
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set custom API during initialization
-        $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", palette: "custompalette", custom: ["ffffff", "ffccff", "ff99ff", "ff66ff", "ff33ff", "ff00ff", "ccffff", "ccccff"]});
+        $('#colorPicker').ejColorPicker({ value: "#278787", modelType: "palette", palette: "custompalette", custom: ["ffffff", "ffccff", "ff99ff", "ff66ff", "ff33ff", "ff00ff", "ccffff", "ccccff"]});
         </script>
 
 {% endhighlight %}
@@ -323,11 +323,11 @@ This property allows to embed the popup in the order of DOM element flow . When 
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set displayInline API during initialization
-        $('#colorPick').ejColorPicker({ value: "#278787",  displayInline: true});
+        $('#colorPicker').ejColorPicker({ value: "#278787",  displayInline: true});
         </script>
 
 {% endhighlight %}
@@ -349,11 +349,11 @@ This property allows to change the control in enabled or disabled state.
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set enabled API during initialization
-        $('#colorPick').ejColorPicker({ value: "#278787",  enabled: false});
+        $('#colorPicker').ejColorPicker({ value: "#278787",  enabled: false});
         </script>
 
 {% endhighlight %}
@@ -374,11 +374,11 @@ This property allows to enable or disable the opacity slider in the color picker
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set enableOpacity API during initialization  
-        $('#colorPick').ejColorPicker({ value: "#278787", enableOpacity: false });
+        $('#colorPicker').ejColorPicker({ value: "#278787", enableOpacity: false });
         </script>       
 
 {% endhighlight %}
@@ -400,11 +400,11 @@ It allows to define the characteristics of the ColorPicker control. It will help
 
 {% highlight html %}
  
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         // Set HtmlAttributes to Button on initialization. 
-                $('#colorPick').ejColorPicker({ htmlAttributes : {disabled:"disabled"}});       
+                $('#colorPicker').ejColorPicker({ htmlAttributes : {disabled:"disabled"}});       
         </script>
 
 {% endhighlight %}
@@ -423,10 +423,10 @@ Defines the localized text values in button and tooltip.
 
 {% highlight html %}
  
-<input type="text" id="colorpick" />
+<input type="text" id="colorpicker" />
 <script>
 // Set the locale value during initialization.                  
-        $("#colorpick").ejColorPicker({ value: "#278787",  locale : "zh-CN" });
+        $("#colorpicker").ejColorPicker({ value: "#278787",  locale : "zh-CN" });
 
         ej.ColorPicker.Locale["zh-CN"] = {
             buttonText: {
@@ -498,11 +498,11 @@ Picker</td>
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set modelType API during initialization
-        $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette"});
+        $('#colorPicker').ejColorPicker({ value: "#278787", modelType: "palette"});
         </script>
 
 {% endhighlight %}
@@ -523,11 +523,11 @@ This property allows to change the opacity value .The selected color opacity wil
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set opacityValue API during initialization  
-        $('#colorPick').ejColorPicker({ value: "#278787", opacityValue: 20 });
+        $('#colorPicker').ejColorPicker({ value: "#278787", opacityValue: 20 });
         </script>
 
 {% endhighlight %}
@@ -576,11 +576,11 @@ CustomPalette</td>
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set palette API during initialization 
-        $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", palette: "basicpalette"});
+        $('#colorPicker').ejColorPicker({ value: "#278787", modelType: "palette", palette: "basicpalette"});
         </script>
 
 {% endhighlight %}
@@ -675,11 +675,11 @@ WebColors</td>
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set presetType API during initialization 
-        $('#colorPick').ejColorPicker({ value: "#278787", modelType: "palette", presetType: "vintage"});
+        $('#colorPicker').ejColorPicker({ value: "#278787", modelType: "palette", presetType: "vintage"});
         </script>
 
 {% endhighlight %}
@@ -700,11 +700,11 @@ Allows to show/hides the apply and cancel buttons in ColorPicker control
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set showApplyCancel API during initialization
-        $('#colorPick').ejColorPicker({ value: "#278787", showApplyCancel: false});
+        $('#colorPicker').ejColorPicker({ value: "#278787", showApplyCancel: false});
         </script>
 
 {% endhighlight %}
@@ -728,11 +728,11 @@ Allows to show/hides the clear button in ColorPicker control
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set showClearButton API during initialization
-        $('#colorPick').ejColorPicker({ value: "#278787", showClearButton: false});
+        $('#colorPicker').ejColorPicker({ value: "#278787", showClearButton: false});
         </script>
 
 {% endhighlight %}
@@ -755,11 +755,11 @@ This property allows to provides live preview support for current cursor selecti
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set showPreview API during initialization
-        $('#colorPick').ejColorPicker({ value: "#278787", showPreview: false});
+        $('#colorPicker').ejColorPicker({ value: "#278787", showPreview: false});
         </script>
 
 {% endhighlight %}
@@ -782,11 +782,11 @@ This property allows to store the color values in custom list.The ColorPicker wi
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set showRecentColors API during initialization
-        $('#colorPick').ejColorPicker({ value: "#278787",   showRecentColors: true});
+        $('#colorPicker').ejColorPicker({ value: "#278787",   showRecentColors: true});
         </script>
 
 {% endhighlight %}
@@ -808,11 +808,11 @@ Allows to show/hides the switcher button in ColorPicker control.It helps to swit
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set showSwitcher API during initialization
-        $('#colorPick').ejColorPicker({ value: "#278787", showSwitcher: false});
+        $('#colorPicker').ejColorPicker({ value: "#278787", showSwitcher: false});
         </script>
 
 {% endhighlight %}
@@ -838,11 +838,11 @@ This property allows to shows tooltip to notify the slider value in color picker
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set showTooltip API during initialization
-        $('#colorPick').ejColorPicker({ value: "#278787", showTooltip: true});
+        $('#colorPicker').ejColorPicker({ value: "#278787", showTooltip: true});
         </script>
 
 {% endhighlight %}
@@ -863,11 +863,11 @@ Specifies the toolIcon to be displayed in dropdown control color area.
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set toolIcon API during initialization
-        $('#colorPick').ejColorPicker({ value: "#278787",  toolIcon: "e-fontcolor-icon"});
+        $('#colorPicker').ejColorPicker({ value: "#278787",  toolIcon: "e-fontcolor-icon"});
         </script>
         <style>
         .e-colorwidget .e-tool .e-fontcolor-icon:before
@@ -980,11 +980,11 @@ Sets the tooltip text for the selected color area.
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set tooltipText API during initialization
-        $('#colorPick').ejColorPicker({ value: "#278787",   tooltipText: { switcher: "Switch",  currentcolor: "New Color", selectedcolor: "Old Color" }});
+        $('#colorPicker').ejColorPicker({ value: "#278787",   tooltipText: { switcher: "Switch",  currentcolor: "New Color", selectedcolor: "Old Color" }});
         </script>
 
 {% endhighlight %}
@@ -1006,11 +1006,11 @@ Specifies the color value for color picker control, the value is in hexadecimal 
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //To set value API during initialization
-        $('#colorPick').ejColorPicker({ value: "#278787"});
+        $('#colorPicker').ejColorPicker({ value: "#278787"});
         </script>
 
 {% endhighlight %}
@@ -1030,13 +1030,13 @@ Disables the color picker control
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         // Create Color picker
-        $('#colorPick').ejColorPicker({ value: "#278787" });
+        $('#colorPicker').ejColorPicker({ value: "#278787" });
         // Create ColorPicker instance
-        var colorObj = $("#colorPick").data("ejColorPicker");
+        var colorObj = $("#colorPicker").data("ejColorPicker");
         colorObj.disable(); // disables the colorPicker
         </script> 
 
@@ -1045,13 +1045,13 @@ Disables the color picker control
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         // Create Color picker
-        $('#colorPick').ejColorPicker({ value: "#278787" });
+        $('#colorPicker').ejColorPicker({ value: "#278787" });
         // disables the colorPicker
-        $("#colorPick").ejColorPicker("disable");
+        $("#colorPicker").ejColorPicker("disable");
         </script>  
 
  {% endhighlight %}
@@ -1068,13 +1068,13 @@ Enable the color picker control
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         // Create Color picker
-        $('#colorPick').ejColorPicker({ value: "#278787" });
+        $('#colorPicker').ejColorPicker({ value: "#278787" });
         // Create ColorPicker instance
-        var colorObj = $("#colorPick").data("ejColorPicker");
+        var colorObj = $("#colorPicker").data("ejColorPicker");
         colorObj.enable(); // enables the colorPicker
         </script> 
 
@@ -1083,13 +1083,13 @@ Enable the color picker control
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         // Create Color picker
-        $('#colorPick').ejColorPicker({ value: "#278787" });
+        $('#colorPicker').ejColorPicker({ value: "#278787" });
         // enable the colorPicker
-        $("#colorPick").ejColorPicker("enable");
+        $("#colorPicker").ejColorPicker("enable");
         </script>      
 
  {% endhighlight %}
@@ -1112,13 +1112,13 @@ object
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         // Create Color picker
-        $('#colorPick').ejColorPicker({ value: "#278787" });
+        $('#colorPicker').ejColorPicker({ value: "#278787" });
         // Create ColorPicker instance
-        var colorObj = $("#colorPick").data("ejColorPicker");
+        var colorObj = $("#colorPicker").data("ejColorPicker");
         var color=colorObj.getColor(); // gets the selected color in RGB format
         alert("Red="+color.r+", Green="+color.g+", Blue="+color.b);
         </script> 
@@ -1128,13 +1128,13 @@ object
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         // Create Color picker
-        $('#colorPick').ejColorPicker({ value: "#278787" });
+        $('#colorPicker').ejColorPicker({ value: "#278787" });
         // gets the selected color in RGB format
-        var color=$("#colorPick").ejColorPicker("getColor");
+        var color=$("#colorPicker").ejColorPicker("getColor");
         alert("Red="+color.r+", Green="+color.g+", Blue="+color.b);
         </script>    
 
@@ -1154,13 +1154,13 @@ string
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         // Create Color picker
-        $('#colorPick').ejColorPicker({ value: "#278787" });
+        $('#colorPicker').ejColorPicker({ value: "#278787" });
         // Create ColorPicker instance
-        var colorObj = $("#colorPick").data("ejColorPicker");
+        var colorObj = $("#colorPicker").data("ejColorPicker");
         alert(colorObj.getValue()); // gets the selected color value as string
         </script> 
 
@@ -1169,13 +1169,13 @@ string
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         // Create Color picker
-        $('#colorPick').ejColorPicker({ value: "#278787" });
+        $('#colorPicker').ejColorPicker({ value: "#278787" });
         // gets the selected color value as string
-        alert($("#colorPick").ejColorPicker("getValue"));
+        alert($("#colorPicker").ejColorPicker("getValue"));
         </script>      
 
 {% endhighlight %}
@@ -1215,13 +1215,13 @@ colorCode </td>
 
 {% highlight html %}
         
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         // Create Color picker
-        $('#colorPick').ejColorPicker({ value: "#278787" });
+        $('#colorPicker').ejColorPicker({ value: "#278787" });
         // Create ColorPicker instance
-        var colorObj = $("#colorPick").data("ejColorPicker");
+        var colorObj = $("#colorPicker").data("ejColorPicker");
         var color=colorObj.hexCodeToRGB("#278787"); // Convert color value from hexCode to RGB
         alert("Red="+color.r+", Green="+color.g+", Blue="+color.b);
         </script> 
@@ -1231,13 +1231,13 @@ colorCode </td>
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         // Create Color picker
-        $('#colorPick').ejColorPicker({ value: "#278787" });
+        $('#colorPicker').ejColorPicker({ value: "#278787" });
         // Convert color value from hexCode to RGB
-        var color=$("#colorPick").ejColorPicker("hexCodeToRGB","#278787");
+        var color=$("#colorPicker").ejColorPicker("hexCodeToRGB","#278787");
         alert("Red="+color.r+", Green="+color.g+", Blue="+color.b);
         </script>      
 
@@ -1253,13 +1253,13 @@ Hides the ColorPicker popup, if in opened state.
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         // Create Color picker
-        $('#colorPick').ejColorPicker({ value: "#278787" });
+        $('#colorPicker').ejColorPicker({ value: "#278787" });
         // Create ColorPicker instance
-        var colorObj = $("#colorPick").data("ejColorPicker");
+        var colorObj = $("#colorPicker").data("ejColorPicker");
         colorObj.hide(); // hide the ColorPicker popup
         </script> 
 
@@ -1268,13 +1268,13 @@ Hides the ColorPicker popup, if in opened state.
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         // Create Color picker
-        $('#colorPick').ejColorPicker({ value: "#278787" });
+        $('#colorPicker').ejColorPicker({ value: "#278787" });
         // hide the ColorPicker popup
-        $("#colorPick").ejColorPicker("hide");
+        $("#colorPicker").ejColorPicker("hide");
         </script>      
 
  {% endhighlight %}
@@ -1312,13 +1312,13 @@ HSV </td>
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         // Create Color picker
-        $('#colorPick').ejColorPicker({ value: "#278787" });
+        $('#colorPicker').ejColorPicker({ value: "#278787" });
         // Create ColorPicker instance
-        var colorObj = $("#colorPick").data("ejColorPicker");
+        var colorObj = $("#colorPicker").data("ejColorPicker");
         var color=colorObj.HSVToRGB({h:230,s:98,v:98}); // Convert color value from HSV to RGB
         alert("Red="+color.r+", Green="+color.g+", Blue="+color.b);
         </script> 
@@ -1328,13 +1328,13 @@ HSV </td>
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         // Create Color picker
-        $('#colorPick').ejColorPicker({ value: "#278787" });
+        $('#colorPicker').ejColorPicker({ value: "#278787" });
         // Convert color value from HSV to RGB        
-        var color=$("#colorPick").ejColorPicker("HSVToRGB","{h:230,s:98,v:98}");
+        var color=$("#colorPicker").ejColorPicker("HSVToRGB","{h:230,s:98,v:98}");
         alert("Red="+color.r+", Green="+color.g+", Blue="+color.b);
         </script>   
 
@@ -1374,13 +1374,13 @@ RGB</td>
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         // Create Color picker
-        $('#colorPick').ejColorPicker({ value: "#278787" });
+        $('#colorPicker').ejColorPicker({ value: "#278787" });
         // Create ColorPicker instance
-        var colorObj = $("#colorPick").data("ejColorPicker");
+        var colorObj = $("#colorPicker").data("ejColorPicker");
         alert(colorObj.RGBToHEX(colorObj.getColor())); // Convert color value from RGB to HEX
         </script> 
 
@@ -1389,15 +1389,15 @@ RGB</td>
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         // Create Color picker
-        $('#colorPick').ejColorPicker({ value: "#278787" });
+        $('#colorPicker').ejColorPicker({ value: "#278787" });
         // Create ColorPicker instance
-        var colorObj = $("#colorPick").data("ejColorPicker");
+        var colorObj = $("#colorPicker").data("ejColorPicker");
         // Convert color value from RGB to HEX
-        alert($("#colorPick").ejColorPicker("RGBToHEX",colorObj.getColor()));
+        alert($("#colorPicker").ejColorPicker("RGBToHEX",colorObj.getColor()));
         </script>      
 
 
@@ -1441,13 +1441,13 @@ RGB </td>
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         // Create Color picker
-        $('#colorPick').ejColorPicker({ value: "#278787" });
+        $('#colorPicker').ejColorPicker({ value: "#278787" });
         // Create ColorPicker instance
-        var colorObj = $("#colorPick").data("ejColorPicker");
+        var colorObj = $("#colorPicker").data("ejColorPicker");
         var color=colorObj.RGBToHSV({r:39,g:135,b:135}); // Convert color value from RGB to HSV
         alert("H="+color.r+", S="+color.g+", V="+color.b);
         </script>
@@ -1457,13 +1457,13 @@ RGB </td>
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         // Create Color picker
-        $('#colorPick').ejColorPicker({ value: "#278787" });
+        $('#colorPicker').ejColorPicker({ value: "#278787" });
         // Convert color value from RGB to HSV        
-        var color=$("#colorPick").ejColorPicker("RGBToHSV","{r:39,g:135,b:125}");
+        var color=$("#colorPicker").ejColorPicker("RGBToHSV","{r:39,g:135,b:125}");
         alert("H="+color.r+", S="+color.g+", V="+color.b);
         </script>   
 
@@ -1482,13 +1482,13 @@ Open the ColorPicker popup.
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         // Create Color picker
-        $('#colorPick').ejColorPicker({ value: "#278787" });
+        $('#colorPicker').ejColorPicker({ value: "#278787" });
         // Create ColorPicker instance
-        var colorObj = $("#colorPick").data("ejColorPicker");
+        var colorObj = $("#colorPicker").data("ejColorPicker");
         colorObj.show(); // open the ColorPicker popup
         </script>
 
@@ -1497,13 +1497,13 @@ Open the ColorPicker popup.
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         // Create Color picker
-        $('#colorPick').ejColorPicker({ value: "#278787" });
+        $('#colorPicker').ejColorPicker({ value: "#278787" });
         // open the ColorPicker popup
-        $("#colorPick").ejColorPicker("show");
+        $("#colorPicker").ejColorPicker("show");
         </script>      
 
 {% endhighlight %}
@@ -1571,11 +1571,11 @@ value</td>
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //change event for color picker
-        $('#colorPick').ejColorPicker({              
+        $('#colorPicker').ejColorPicker({              
         value: "#278787", 
         change: function (args) {
         // Write a code block to perform operation after changing the color.
@@ -1632,11 +1632,11 @@ type</td>
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //close event for color picker
-        $('#colorPick').ejColorPicker({              
+        $('#colorPicker').ejColorPicker({              
         value: "#278787", 
         close: function (args) {
         // Write a code block to perform operation after closing the color picker popup.
@@ -1693,11 +1693,11 @@ type</td>
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //create event for color picker
-        $('#colorPick').ejColorPicker({              
+        $('#colorPicker').ejColorPicker({              
         value: "#278787", 
         create: function (args) {
         // Write a code block to perform operation after creating the color picker.
@@ -1752,11 +1752,11 @@ type</td>
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //create event for color picker
-        $('#colorPick').ejColorPicker({              
+        $('#colorPicker').ejColorPicker({              
         value: "#278787", 
         destroy: function (args) {
         // Write a code block to perform operation after creating the color picker.
@@ -1810,11 +1810,11 @@ type</td>
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //open event for color picker
-        $('#colorPick').ejColorPicker({              
+        $('#colorPicker').ejColorPicker({              
         value: "#278787", 
         open: function (args) {
         // Write a code block to perform operation after opening the color picker popup.
@@ -1877,11 +1877,11 @@ value</td>
 
 {% highlight html %}
    
-        <input type="text" id="colorPick"/> 
+        <input type="text" id="colorPicker"/> 
         
         <script>
         //select event for color picker
-        $('#colorPick').ejColorPicker({              
+        $('#colorPicker').ejColorPicker({              
         value: "#278787", 
         select: function (args) {
         // Write a code block to perform operation after selecting the color.
