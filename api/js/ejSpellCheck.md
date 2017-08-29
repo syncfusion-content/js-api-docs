@@ -632,6 +632,35 @@ It allows to spell check the multiple target HTML element's texts and correct it
 {% endhighlight %}
 
 > You need to pass the target HTML element's id value to this property with the comma separator. For example, in the above code example passed id values of div(control1), textarea(control2) and span(control3) element.
+
+### enableAsync `boolean`
+{:#members:enableasync}
+
+When set to true, allows the spellcheck to send Asynchronous ajax request to check the spelling errors.
+
+#### Default Value
+
+* true
+
+#### Example – To check the spelling of the target element by sending Synchronous request
+
+{% highlight html %}
+
+<div id="SpellCheck"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#SpellCheck").ejSpellCheck({
+                dictionarySettings: {
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",	
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+                },
+                enableAsync:false
+            });
+        });
+</script>
+
+{% endhighlight %}
  
 ## Methods
 
@@ -1018,6 +1047,50 @@ object
 
 {% endhighlight %}
 
+### getSuggestionWords(errorword)
+{:#methods:getsuggestionwords}
+
+To get the possible suggestion words to an error word.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">errorWord</td>
+            <td class="type">string</td>
+            <td class="description">Error word to get the suggestions</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Returns
+
+object
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="SpellCheck"></div> 
+ 
+<script>
+            $("#SpellCheck").ejSpellCheck({
+                dictionarySettings: {
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+                }
+            });
+            var schObj = $("#SpellCheck").data("ejSpellCheck");
+            schObj.getSuggestionWords("textarea");
+</script>
+
+{% endhighlight %}
 
 ## Events
 
