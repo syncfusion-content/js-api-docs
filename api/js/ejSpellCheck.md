@@ -636,7 +636,7 @@ It allows to spell check the multiple target HTML element's texts and correct it
 ### enableAsync `boolean`
 {:#members:enableasync}
 
-When set to true, allows the spellcheck to send Asynchronous ajax request to check the spelling errors.
+When set to true, allows sending Asynchronous ajax request for checking the spelling errors.
 
 #### Default Value
 
@@ -1050,7 +1050,7 @@ object
 ### getSuggestionWords(errorword)
 {:#methods:getsuggestionwords}
 
-To get the possible suggestion words to an error word.
+Retrieves the possible suggestion words for the error word passed as an argument.
 
 <table class="params">
     <thead>
