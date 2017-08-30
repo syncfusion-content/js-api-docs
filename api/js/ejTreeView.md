@@ -1178,7 +1178,7 @@ It receives Essential DataManager object and JSON object.
 
 
 
-To know more details about dataSource , please click the [here](https://help.syncfusion.com/js/treeview/populate-data)
+To know more details about dataSource , please click [here](https://help.syncfusion.com/js/treeview/populate-data)
 
 
 
