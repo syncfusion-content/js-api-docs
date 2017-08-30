@@ -315,7 +315,8 @@ Defines the localized maskFormat for MaskEdit.
 <script>
 //To set locale API value during initialization  
         $("#mask").ejMaskEdit({ maskFormat: "$99,999.99",locale:"de-DE" });                   
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 
 ### maskFormat `string`
 {:#members:maskformat}
@@ -393,17 +394,17 @@ C</td>
 <tr>
 <td class="name">
 $</td>
-<td class="description">Currency symbol value will change based on the corresponding culture.</td>
+<td class="description">Currency symbol value will be changed based on the corresponding culture.</td>
 </tr>
 <tr>
 <td class="name">
 .</td>
-<td class="description">Decimal Separator value will change based on the corresponding culture</td>
+<td class="description">Decimal Separator value will be changed based on the corresponding culture</td>
 </tr>
 <tr>
 <td class="name">
 ,</td>
-<td class="description">Thousand Separator will change based on the corresponding culture</td>
+<td class="description">Thousand Separator will be changed based on the corresponding culture</td>
 </tr>
 </tbody>
 </table>
