@@ -294,7 +294,7 @@ Text</td>
 {:#members:locale}
 
 
-Defines the localized maskFormat for MaskEdit.
+Defines the localization culture for MaskEdit.
 
 
 
