@@ -5659,6 +5659,58 @@ $("#Grid").ejGrid("cancelEditCell");
 
 
 
+### calculatePageSizeByParentHeight(containerHeight)
+{:#methods:calculatepagesizebyparentheight}
+
+Returns the total page size need to be displayed in grid based on the given container height. This method will also work when the property `allowTextWrap` as true only when wrap mode is header. 
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">containerHeight</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">When passing the container height as integer or percentage, it will returns the page size that need to be displayed for grid. </td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+number
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// returns the page size based on the container height
+grid.calculatePageSizeByParentHeight(400)
+</script>
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// returns the page size based on the container height
+$("#Grid").ejGrid("calculatePageSizeByParentHeight",400)
+</script>
+{% endhighlight %}
+
+
+
 
 ### clearCellSelection()
 {:#methods:clearcellselection}
