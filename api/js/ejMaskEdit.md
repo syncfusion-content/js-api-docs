@@ -290,6 +290,34 @@ Text</td>
 {% endhighlight %}
 
 
+### locale `string`
+{:#members:locale}
+
+
+Defines the localization culture for MaskEdit.
+
+
+
+#### Default Value
+
+
+* en-US
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input id="mask" type="text" /> 
+  
+<script>
+//To set locale API value during initialization  
+        $("#mask").ejMaskEdit({ maskFormat: "$99,999.99",locale:"de-DE" });                   
+</script>
+{% endhighlight %}
+
 ### maskFormat `string`
 {:#members:maskformat}
 
@@ -362,6 +390,21 @@ C</td>
 <td class="name">
 ?</td>
 <td class="description">Allows only the values between a to z and A to Z</td>
+</tr>
+<tr>
+<td class="name">
+$</td>
+<td class="description">Currency symbol value will be changed based on the corresponding culture.</td>
+</tr>
+<tr>
+<td class="name">
+.</td>
+<td class="description">Decimal Separator value will be changed based on the corresponding culture</td>
+</tr>
+<tr>
+<td class="name">
+,</td>
+<td class="description">Thousand Separator will be changed based on the corresponding culture</td>
 </tr>
 </tbody>
 </table>
