@@ -7735,7 +7735,7 @@ Exponential</td>
 <td class="name">
 Logarithmic</td>
 <td class="type">string</td>
-<td class="description">Specifies the trendline type as lograthmic.</td>
+<td class="description">Specifies the trendline type as logarithmic.</td>
 </tr> 
 <tr>
 <td class="name">
@@ -38634,7 +38634,7 @@ type{% endhighlight %}</td>
 <td class="name">{% highlight js %}
 data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last"><b>multilevellabels</b> - MultiLevel Label Object  </td>
+<td class="description last"><b>MultiLevelLabels</b> - MultiLevel Label Object  </td>
 </tr>
 </tbody>
 </table>

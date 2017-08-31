@@ -3834,7 +3834,7 @@ Specifies the bubble Opacity value of bubbles for shape layer in map
   
    //Sets the bubble Opacity value 
    
-   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex]bubbleSettings.bubbleOpacity='0.9'; 
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].bubbleSettings.bubbleOpacity='0.9'; 
 
 {% endhighlight %}
 
@@ -3868,7 +3868,7 @@ Specifies the mouse hover color of the shape layer in map
   
    //Sets the color value 
    
-   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex]bubbleSettings.color='gray'; 
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].bubbleSettings.color='gray'; 
 
 {% endhighlight %}
 
