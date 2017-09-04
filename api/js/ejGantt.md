@@ -3641,7 +3641,7 @@ Specifies the options for striplines
     day: "12/2/2000,
     label: "Project Release",
     lineStyle: "dotted",
-    lineColor: "Darkblue",
+    lineColor: "DarkBlue",
     lineWidth: 2
   }
 ]); 
