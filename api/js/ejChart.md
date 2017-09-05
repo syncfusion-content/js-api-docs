@@ -5254,7 +5254,7 @@ commonSeriesOptions :{ pieOfPieCoefficient : 1}
 
 
 
-Split Value of pieofpie series.
+Split Value of pieOfPie series.
 
 
 #### Default Value
@@ -6129,7 +6129,7 @@ StackingBar100</td>
 <td class="name">
 StackingSplineArea</td>
 <td class="type">string</td>
-<td class="description">sets the seriesType of chart to stackingsplinearea</td>
+<td class="description">sets the seriesType of chart to stackingSplineArea</td>
 </tr>
 <tr>
 <td class="name">
@@ -29206,7 +29206,7 @@ series : [{pieOfPieCoefficient : 0.8 }]
 {:#members:series-splitvalue}
 
 
-Split Value of pieofpie series.
+Split Value of pieOfPie series.
 
 
 #### Default Value
@@ -38571,7 +38571,7 @@ type{% endhighlight %}</td>
 <td class="name">{% highlight js %}
 data{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last"> <b>errorbar</b> - Error bar Object  </td>
+<td class="description last"> <b>errorBar</b> - Error bar Object  </td>
 </tr>
 </tbody>
 </table>
