@@ -968,7 +968,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-### columns.displayAsCheckBox `boolean`
+### columns.displayAsCheckbox `boolean`
 {:#members:columns-displayascheckbox}
 
 Gets or sets a value that indicates to display a column value as checkbox or string
@@ -984,7 +984,7 @@ Gets or sets a value that indicates to display a column value as checkbox or str
 <script>
 $("#Grid").ejGrid({
     dataSource:window.gridData,
-    columns:[{field:"OrderID"}, {field:"Verified", displayAsCheckBox: false}]
+    columns:[{field:"OrderID"}, {field:"Verified", displayAsCheckbox: false}]
   });
 </script>
 {% endhighlight %}
