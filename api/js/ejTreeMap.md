@@ -2060,11 +2060,11 @@ Specifies the legend label value for rangeColorMapping.
 
   //Gets the legend label value for rangeColorMapping from map.
 
-  var property =$("#container").data("ejTreeMap").model.rangeColorMapping.legendlabel;
+  var property =$("#container").data("ejTreeMap").model.rangeColorMapping.legendLabel;
 
   //Sets the legend label value for rangeColorMapping to map.
 
-  $("#container").data("ejTreeMap").model.rangeColorMapping.legendlabel  = "1% Growth";
+  $("#container").data("ejTreeMap").model.rangeColorMapping.legendLabel  = "1% Growth";
 
 {% endhighlight %}
 
