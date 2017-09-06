@@ -453,7 +453,7 @@ This property selects the item in the DropDownList when the item is entered in t
 ### enableServerFiltering  `boolean`
 {:#members:enableServerFiltering}
 
-The server-filtering is to perform filter action when text is typed in the search box and filtering will be done based on the collection which contains the matched item from entire datasource. Server-filtering is based on the filtering capability of the DataSource.
+The serverfiltering is to perform filter action when text is typed in the search box and filtering will be done based on the collection which contains the matched item from entire datasource. Serverfiltering will be done based on the entire items in DataSource. 
 
 #### Default Value
 
@@ -464,7 +464,7 @@ The server-filtering is to perform filter action when text is typed in the searc
 {% highlight html %}
  
     <input type="text" id="CompanyNames" />
-    var dataManagerObj = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Customers" });
+    var dataManagerObj = ej.DataManager({ url: "http://js.syncfusion.com/ejServices/Wcf/Northwind.svc/" });
     $('#CompanyNames').ejDropDownList({
         "dataSource": dataManagerObj,
         "fields": { text: "CompanyName", value: 'ContactName' },
