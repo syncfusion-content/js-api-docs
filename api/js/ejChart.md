@@ -3130,7 +3130,7 @@ Auto</td>
 
 
 
-* "minmax"
+* "minMax"
 
 
 
@@ -3141,7 +3141,7 @@ Auto</td>
  
 
 $("#container").ejChart({
-commonSeriesOptions :{ bubbleOptions: { radiusMode: "minmax" }}                  
+commonSeriesOptions :{ bubbleOptions: { radiusMode: "minMax" }}                  
 });
 
  {% endhighlight %}
@@ -27404,7 +27404,7 @@ Used for the calculation of the bubble radius based on the mode selected
 
 
 
-* "minmax" .See <a href="ejchart.html#members:commonseriesoptions-bubbleoptions-radiusmode">RadiusMode</a>
+* "minMax" .See <a href="ejchart.html#members:commonseriesoptions-bubbleoptions-radiusmode">RadiusMode</a>
 
 
 
@@ -27415,7 +27415,7 @@ Used for the calculation of the bubble radius based on the mode selected
  
 
 $("#container").ejChart({
-series : [{ bubbleOptions: { radiusMode: "minmax" }}]                  
+series : [{ bubbleOptions: { radiusMode: "minMax" }}]                  
 });
 
  {% endhighlight %}
