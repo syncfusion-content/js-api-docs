@@ -1148,7 +1148,7 @@ It receives the child level or inner level data source such as Essential DataMan
 $("#treeView").ejTreeView({
     fields: { dataSource: window.treeData, id: "id", parentId: "pid", text: "name", hasChild: "hasChild", expanded: "expanded" ,
     child:{
-        dataSource:window.childData, id:"id",parendId:"parentid", text: "name"
+        dataSource:window.childData, id:"id",parentId:"parentTd", text: "name"
     }
     }
 });
@@ -4770,7 +4770,7 @@ $("#treeView").ejTreeView({
 });
 
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.loadData("myapplication/childdata", "book"); // The array of JSON data returned from the given URL, will be appended as child of node, which node is having ID book.
+treeObj.loadData("myApplication/childData", "book"); // The array of JSON data returned from the given URL, will be appended as child of node, which node is having ID book.
 </script>{% endhighlight %}
 
 
@@ -4779,7 +4779,7 @@ treeObj.loadData("myapplication/childdata", "book"); // The array of JSON data r
  
 <script>
 var treeObj = $("#treeView").data("ejTreeView");
-treeObj.loadData("myapplication/childdata", $("#book"));
+treeObj.loadData("myApplication/childData", $("#book"));
 </script>{% endhighlight %}
 
 

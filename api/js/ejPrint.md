@@ -189,7 +189,7 @@ Prepend a doctype to the document frame.
                  });
             } else {
                 var obj = $("#Grid").ejPrint("instance")
-                obj.option("docType", "<!doctype html>");
+                obj.option("docType", "<!DOCTYPE html>");
                 obj.print();
             }
         }

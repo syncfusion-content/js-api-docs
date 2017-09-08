@@ -1760,9 +1760,9 @@ groupid</td>
      var musicFields = {
         "text": "Texts"
      };
-     var addnew = [{ "Texts": "Artwork" }];
+     var addNew = [{ "Texts": "Artwork" }];
       $("#defaultListBox").ejListView({ dataSource: dataSourceItem, fieldSettings: musicFields, width: 400, height: "300" });
-      $("#defaultListBox").ejListView("addItem", addnew, 0);
+      $("#defaultListBox").ejListView("addItem", addNew, 0);
   </script>
 
 {% endhighlight %}

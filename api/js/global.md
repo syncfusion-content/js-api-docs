@@ -16675,14 +16675,14 @@ StackingBar100</td>
 StackingSplineArea</td>
 <td class="type">string</td>
 <td class="default">stackingsplinearea</td>
-<td class="description">sets the seriesType of chart to stackingsplinearea</td>
+<td class="description">sets the seriesType of chart to StackingSplineArea</td>
 </tr>
 <tr>
 <td class="name">
 StackingSplineArea100</td>
 <td class="type">string</td>
 <td class="default">stackingsplinearea100</td>
-<td class="description">sets the seriesType of chart to stackingsplinearea100</td>
+<td class="description">sets the seriesType of chart to StackingSplineArea100</td>
 </tr>
 <tr>
 <td class="name">

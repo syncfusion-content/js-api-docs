@@ -692,7 +692,7 @@ $("#splitButton").ejSplitButton({targetID:"target",width:100 });
 
 {% endhighlight %}
 
-N> Useage of target API is recommended since targerID API is to be deprecated.
+N> Usage of target API is recommended since targetID API is to be deprecated.
 
 ### target `string`
 {:#members:target}

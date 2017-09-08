@@ -93,7 +93,7 @@ Sets the starting day of the week.
 <script type="text/javascript">
         $(function () {
             $("#RecurrenceEditor").ejRecurrenceEditor({
-              firstDayOfWeek: "tuesday"
+              firstDayOfWeek: "Tuesday"
             });
         });
 </script>
