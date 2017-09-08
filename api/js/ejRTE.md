@@ -3451,7 +3451,7 @@ Note: When you are using our release version before 13.3, refer to the following
 </script>
 {% endhighlight %}
 
-### executeCommand(cmdName, args, [textNodeType])
+### executeCommand(cmdName, args, [textnodeType])
 {:#methods:executecommand}
 
 Performs the action value based on the given command. 
@@ -3479,7 +3479,7 @@ args</td>
 </tr>
 <tr>
 <td class="name">
-textNodeType</td>
+textnodeType</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description">Boolean value to specify whether the argument is textNode or not, this is optional.</td>
 </tr>
