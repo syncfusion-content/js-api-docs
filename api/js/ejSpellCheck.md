@@ -603,16 +603,16 @@ It allows to spell check the multiple target HTML element's texts and correct it
 {% highlight html %}
 
 <div id="control1">
-     London, one of the most popular touist destinations in the world for a reason. A cultural and hisorical hub, London has an excellent public transportation system that allows visitors to see all the fantatic sights without spending a ton of money on a rental car.
+     London, one of the most popular tourist destinations in the world for a reason. A cultural and historical hub, London has an excellent public transportation system that allows visitors to see all the fantastic sights without spending a ton of money on a rental car.
      London contains four World Heritage Sites.
 </div><br />
 <textarea id="control2" style="width:940px">
-     Paris, the city of lihts and love - this short guide is full of ideas for how to make the most of the romnticism that oozes from every one of its beautiful corners.You couldn't possibly visit Paris without seeing the Eiffel Tower.
+     Paris, the city of lights and love - this short guide is full of ideas for how to make the most of the romanticism that oozes from every one of its beautiful corners.You couldn't possibly visit Paris without seeing the Eiffel Tower.
      Even if you do not want to visit this world famous structure, you will see its top from all over Paris.
 </textarea><br />
 <span id="control3">
-     Rome, one of the world's most facinating cities. The old adage that Rome was not built in a day - and that you won't see it in one or even in three - is true. For the intrepid traveler who can keep pace, here is a list of must-sees.
-     But reember what the Romans say: Even a lifetime isn't enough to see Rome.
+     Rome, one of the world's most fascinating cities. The old adage that Rome was not built in a day - and that you won't see it in one or even in three - is true. For the intrepid traveler who can keep pace, here is a list of must-sees.
+     But remember what the Romans say: Even a lifetime isn't enough to see Rome.
 </span><br /><br />
 
 <div id="SpellCheck"></div>
@@ -750,7 +750,7 @@ object
 <div id="SpellCheck"></div> 
  
 <script>
-            var targetSentence = "This exmple sentence cantains errow words".
+            var targetSentence = "This example sentence contains error words".
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
                     dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",
@@ -806,7 +806,7 @@ object
 <div id="SpellCheck"></div> 
  
 <script>
-            var targetSentence = "The first textarea sampeel uses a dialog textarea to display the sampeel spell textarea errrors".
+            var targetSentence = "The first textarea sample uses a dialog textarea to display the sample spell textarea errors".
 
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
@@ -864,7 +864,7 @@ object
 <div id="SpellCheck"></div> 
  
 <script>
-            var targetSentence = "The first textarea sampeel uses a dialog textarea to display the sampeel spell textarea errrors".
+            var targetSentence = "The first textarea sample uses a dialog textarea to display the sample spell textarea errors".
 
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
@@ -927,7 +927,7 @@ object
 <div id="SpellCheck"></div> 
  
 <script>
-            var targetSentence = "The first textarea sampeel uses a dialog textarea to display the sampeel spell textarea errrors".
+            var targetSentence = "The first textarea sample uses a dialog textarea to display the sample spell textarea errors".
 
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
@@ -988,7 +988,7 @@ object
 <div id="SpellCheck"></div> 
  
 <script>
-            var targetSentence = "The first textarea sampeel uses a dialog textarea to display the sampeel spell textarea errrors".
+            var targetSentence = "The first textarea sample uses a dialog textarea to display the sample spell textarea errors".
 
             $("#SpellCheck").ejSpellCheck({
                 dictionarySettings: {
@@ -1047,7 +1047,7 @@ object
 
 {% endhighlight %}
 
-### getSuggestionWords(errorword)
+### getSuggestionWords(errorWord)
 {:#methods:getsuggestionwords}
 
 Retrieves the possible suggestion words for the error word passed as an argument.
