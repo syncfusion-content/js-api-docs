@@ -1619,7 +1619,7 @@ Sets the name in the RTE. When the name value is not initialized, the ID value i
         that helps them to apply rich text formats to the text entered in the text
         area. </p></textarea ><script>
     // Initializes the RTE with the specified name value.
-    $("#rteSample").ejRTE({ name: "ecommentBlog" });
+    $("#rteSample").ejRTE({ name: "commentBlog" });
 </script>
 {% endhighlight %}
 
@@ -2803,7 +2803,7 @@ Specifies the name for customUnorderedList item.
                         customUnorderedList: [{
                         name: "UnorderedInsert",
                         tooltip: "Custom UnorderedList",
-                        css: "e-rte-toolbar-icon e-rte-unlistitems customunOrdered",
+                        css: "e-rte-toolbar-icon e-rte-unlistitems customuUnordered",
 	                    text: "Smiley",
                         listImage:"url('../content/images/rte/Smiley-GIF.gif')"                   
             }]    
@@ -3356,7 +3356,7 @@ Disables the corresponding tool in the RTE ToolBar.
     $("#rteSample").ejRTE();
     // Creates the RTE
     var rteObj = $("#rteSample").data("ejRTE");
-    $("#rteSample").ejRTE("disableToolbarItem", "rteSamplecreateTable"); // Disables toolbar item
+    $("#rteSample").ejRTE("disableToolbarItem", "rteSampleCreateTable"); // Disables toolbar item
 </script>
 {% endhighlight %}
 
@@ -3424,7 +3424,7 @@ Note: When using the release version before 13.3, refer to the following.
     $("#rteSample").ejRTE();
     // Creates the RTE
     var rteObj = $("#rteSample").data("ejRTE");
-    rteObj.enableToolbarItem("rteSamplecreateTable"); // Enables toolbar item
+    rteObj.enableToolbarItem("rteSampleCreateTable"); // Enables toolbar item
 </script>
 {% endhighlight %}
 
@@ -3447,11 +3447,11 @@ Note: When you are using our release version before 13.3, refer to the following
 <script>
     $("#rteSample").ejRTE();
     // Creates the RTE
-    $("#rteSample").ejRTE("enableToolbarItem", " rteSamplecreateTable "); // Enables toolbar item        
+    $("#rteSample").ejRTE("enableToolbarItem", " rteSampleCreateTable "); // Enables toolbar item        
 </script>
 {% endhighlight %}
 
-### executeCommand(cmdName, args, [textnodeType])
+### executeCommand(cmdName, args, [textNodeType])
 {:#methods:executecommand}
 
 Performs the action value based on the given command. 
@@ -3479,9 +3479,9 @@ args</td>
 </tr>
 <tr>
 <td class="name">
-textnodeType</td>
+textNodeType</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Boolean value to specify whether the argument is textnode or not, this is optional.</td>
+<td class="description">Boolean value to specify whether the argument is textNode or not, this is optional.</td>
 </tr>
 </tbody>
 </table>
@@ -4328,7 +4328,7 @@ Note: When you use the release version before 13.3, refer to the following
     $("#rteSample").ejRTE();
     // Creates the RTE
     var rteObj = $("#rteSample").data("ejRTE");
-    rteObj.removeToolbarItem("rteSamplecreateTable"); // Removes toolbar item
+    rteObj.removeToolbarItem("rteSampleCreateTable"); // Removes toolbar item
 </script>
 {% endhighlight %}
 
@@ -4351,7 +4351,7 @@ Note: When using the release version before 13.3, refer to the following
 <script>
     $("#rteSample").ejRTE();
     // Creates the RTE
-    $("#rteSample").ejRTE("removeToolbarItem", "rteSamplecreateTable"); // Remove the toolbar item        
+    $("#rteSample").ejRTE("removeToolbarItem", "rteSampleCreateTable"); // Remove the toolbar item        
 </script>
 {% endhighlight %}
 

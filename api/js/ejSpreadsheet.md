@@ -1475,7 +1475,7 @@ Specifies the name for the cell or a range.
 <script>
 $('#Spreadsheet').ejSpreadsheet({
     nameManager:[{
-        name: "inputrange",
+        name: "inputRange",
 		refersto: "=Sheet1!$A$1:$A$2"
     }]
 });    
@@ -1498,7 +1498,7 @@ Specifies the address for the cell or a range.
 <script>
 $('#Spreadsheet').ejSpreadsheet({
     nameManager:[{
-        name: "inputrange",
+        name: "inputRange",
 		refersto: "=Sheet1!$A$1:$A$2"
     }]
 });    
@@ -3983,8 +3983,8 @@ This method is used to add custom formulas in Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.addCustomFormula("CUSTOMTOTAL","customTotal"); // Sends a add custom formula request to the Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.addCustomFormula("CUSTOMTOTAL","customTotal"); // Sends a add custom formula request to the Spreadsheet.
 function customTotal(args){}//args-It uses the value given by the user while using custom formula in Spreadsheet.
 </script>
 
@@ -4009,8 +4009,8 @@ This method is used to add a new sheet in the last position of the sheet contain
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.addNewSheet(); // Sends a add new sheet request to the Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.addNewSheet(); // Sends a add new sheet request to the Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -4050,8 +4050,8 @@ It is used to clear all the data and format in the specified range of cells in S
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.clearAll("A2:A6"); // Sends a clear all request to the Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.clearAll("A2:A6"); // Sends a clear all request to the Spreadsheet.
 </script>
 {% endhighlight %}
 
@@ -4090,8 +4090,8 @@ This property is used to clear all the formats applied in the specified range in
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.clearAllFormat("A2:A6"); // Sends a clear all format request to the Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.clearAllFormat("A2:A6"); // Sends a clear all format request to the Spreadsheet.
 </script>
 {% endhighlight %}
 
@@ -4129,8 +4129,8 @@ Used to clear the applied border in the specified range in Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.clearBorder("A2:A6"); // Sends a clear border request to the Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.clearBorder("A2:A6"); // Sends a clear border request to the Spreadsheet.
 </script>
 {% endhighlight %}
 
@@ -4168,8 +4168,8 @@ This property is used to clear the contents in the specified range in Spreadshee
 {% highlight html %}
 <script>
 // Create Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.clearContents("A2:A6"); // Sends a clear content request to the Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.clearContents("A2:A6"); // Sends a clear content request to the Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -4208,8 +4208,8 @@ This method is used to remove only the data in the range denoted by the specifie
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.clearRange("updateTable"); // Sends a clear range request to the Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.clearRange("updateTable"); // Sends a clear range request to the Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -4275,17 +4275,17 @@ It is used to remove data in the specified range of cells based on the defined p
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.clearRangeData("A1:A5", ["value", "value2"], xlObj.getRange("A1:A5"), true);
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.clearRangeData("A1:A5", ["value", "value2"], excelObj.getRange("A1:A5"), true);
 </script>
 
 {% endhighlight %}
 
 {% highlight html %}
 <script>
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Sends a clear range data request to the Spreadsheet.
-$("#Spreadsheet").ejSpreadsheet("clearRangeData", "A1:A5", ["value", "value2"], xlObj.getRange("A1:A5"), false);        
+$("#Spreadsheet").ejSpreadsheet("clearRangeData", "A1:A5", ["value", "value2"], excelObj.getRange("A1:A5"), false);        
 </script>
 
 {% endhighlight %}
@@ -4301,8 +4301,8 @@ This method is used to clear undo and redo collections in the Spreadsheet.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.clearUndoRedo(); 
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.clearUndoRedo(); 
 </script>
 
 {% endhighlight %}
@@ -4351,9 +4351,9 @@ This method is used to copy or move the sheets in Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.copySheet(2, 1, true); // Sends a copy sheet request to the Spreadsheet.
-//xlObj.copySheet(2, 1, false); // Sends a move sheet request to the Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.copySheet(2, 1, true); // Sends a copy sheet request to the Spreadsheet.
+//excelObj.copySheet(2, 1, false); // Sends a move sheet request to the Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -4399,9 +4399,9 @@ This method is used to delete the entire column which is selected.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Delete a column in the sheet.
-xlObj.deleteEntireColumn(2, 3);
+excelObj.deleteEntireColumn(2, 3);
 </script>
 
 {% endhighlight %}
@@ -4446,9 +4446,9 @@ This method is used to delete the entire row which is selected.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Delete a row in the sheet.
-xlObj.deleteEntireRow(2,3);
+excelObj.deleteEntireRow(2,3);
 </script>
 
 {% endhighlight %}
@@ -4488,8 +4488,8 @@ This method is used to delete a particular sheet in the Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.deleteSheet(3); // Sends a sheet delete request to the Spreadsheet
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.deleteSheet(3); // Sends a sheet delete request to the Spreadsheet
 </script>
 
 {% endhighlight %}
@@ -4535,9 +4535,9 @@ This method is used to delete the selected cells and shift the remaining cells t
 <script>
 var startCell= {rowIndex: 1, colIndex: 2}, endCell= {rowIndex: 1, colIndex: 2};
 // Initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 //Delete a cell and shift cells left in the sheet.
-xlObj.deleteShiftLeft(startCell, endCell);
+excelObj.deleteShiftLeft(startCell, endCell);
 </script>
 
 {% endhighlight %}
@@ -4583,9 +4583,9 @@ This method is used to delete the selected cells and shift the remaining cells u
 <script>
 var startCell= {rowIndex: 1, colIndex: 2}, endCell= {rowIndex: 1, colIndex: 2};
 // Initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Delete a cell and shift cells up in the sheet.
-xlObj.deleteShiftUp(startCell, endCell);
+excelObj.deleteShiftUp(startCell, endCell);
 </script>
 
 {% endhighlight %}
@@ -4631,7 +4631,7 @@ This method is used to edit data in the specified range of cells based on its co
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 var updateFn = function(cell, cellIdx) {
 if (cellIdx % 2 == 0)
 return "SpreadSheet";
@@ -4659,9 +4659,9 @@ parentId: null,
 showPanel: true
 };
 //Update new rangeSettings property before invoking edit range
-xlObj.model.sheets[1].rangeSettings["updateTable"] = rangeSettings;
+excelObj.model.sheets[1].rangeSettings["updateTable"] = rangeSettings;
 //Sends a edit range request to the Spreadsheet
-xlObj.editRange("updateTable", updateFn); 
+excelObj.editRange("updateTable", updateFn); 
 </script>
 
 {% endhighlight %}
@@ -4687,8 +4687,8 @@ Element
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.getActivationPanel(); // Gets sheet  ActivationPanel element in Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.getActivationPanel(); // Gets sheet  ActivationPanel element in Spreadsheet.
 </script>
 {% endhighlight %}
 
@@ -4731,15 +4731,15 @@ Object
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.getActiveCell(1); // Gets the activecell  object in specified sheet index.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.getActiveCell(1); // Gets the activeCell  object in specified sheet index.
 </script>
 
 {% endhighlight %}
 
 {% highlight html %}
 <script>
-// Gets the activecell element in specified sheetindex
+// Gets the activeCell element in specified sheetindex
 $("#Spreadsheet").ejSpreadsheet("getActiveCell", 1);        
 </script>
 
@@ -4775,15 +4775,15 @@ Element
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.getActiveCellElem(1); // Gets activecell element in Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.getActiveCellElem(1); // Gets activeCell element in Spreadsheet.
 </script>
 
 {% endhighlight %}
 
 {% highlight html %}
 <script>
-// Gets activecell element in Spreadsheet.
+// Gets activeCell element in Spreadsheet.
 $("#Spreadsheet").ejSpreadsheet("getActiveCellElem", 1);        
 </script>
 
@@ -4803,15 +4803,15 @@ number
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.getActiveSheetIndex(); // Gets activesheet index in Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.getActiveSheetIndex(); // Gets activeSheet index in Spreadsheet.
 </script>
 
 {% endhighlight %}
 
 {% highlight html %}
 <script>
-// Gets activesheet index in Spreadsheet
+// Gets activeSheet index in Spreadsheet
 $("#Spreadsheet").ejSpreadsheet("getActiveSheetIndex");        
 </script>
 
@@ -4831,8 +4831,8 @@ Element
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.getAutoFillElem(); // Gets autofill element in Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.getAutoFillElem(); // Gets autofill element in Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -4886,8 +4886,8 @@ Element
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.getCell(2, 3, 1); // Get the cell based on rowIndex and colIndex.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.getCell(2, 3, 1); // Get the cell based on rowIndex and colIndex.
 </script>
 
 {% endhighlight %}
@@ -4930,8 +4930,8 @@ number
 <div id="Spreadsheet"></div>
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.getDataSettings(1); // Gets the data settings in Spreadsheet
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.getDataSettings(1); // Gets the data settings in Spreadsheet
 </script>
 
 {% endhighlight %}
@@ -4974,8 +4974,8 @@ number
 <div id="Spreadsheet"></div>
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.getFrozenColumns(1); // Gets the frozen column index in Spreadsheet
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.getFrozenColumns(1); // Gets the frozen column index in Spreadsheet
 </script>
 
 {% endhighlight %}
@@ -5018,8 +5018,8 @@ number
 <div id="Spreadsheet"></div>
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.getFrozenRows(1); // Gets the frozen row index in Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.getFrozenRows(1); // Gets the frozen row index in Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -5061,8 +5061,8 @@ Object
 {% highlight html %}
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.getHyperlink(xlObj.getCell(1, 1)); // To get the hyperlink data of specified cell.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.getHyperlink(excelObj.getCell(1, 1)); // To get the hyperlink data of specified cell.
 </script>
 
 {% endhighlight %}
@@ -5070,7 +5070,7 @@ xlObj.getHyperlink(xlObj.getCell(1, 1)); // To get the hyperlink data of specifi
 {% highlight html %}
 <script>
 // To get the hyperlink data of specified cell.
-$("#Spreadsheet").ejSpreadsheet("getHyperlink", xlObj.getCell(1, 1, 1));        
+$("#Spreadsheet").ejSpreadsheet("getHyperlink", excelObj.getCell(1, 1, 1));        
 </script>
 
 {% endhighlight %}
@@ -5115,8 +5115,8 @@ Element
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.getRange("A2:A5", 1, false); // Get the cells based on the given range
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.getRange("A2:A5", 1, false); // Get the cells based on the given range
 </script>
 
 {% endhighlight %}
@@ -5159,8 +5159,8 @@ Array
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.getRangeData({range: [2, 6, 2, 6], property: ["value", "value2", "format"], sheetIdx: 1}); // To get the cells data of specified range
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.getRangeData({range: [2, 6, 2, 6], property: ["value", "value2", "format"], sheetIdx: 1}); // To get the cells data of specified range
 </script>
 
 {% endhighlight %}
@@ -5204,8 +5204,8 @@ Array
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.getRangeIndices("A1:A9"); // Get range indicesbased on specified alpha range.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.getRangeIndices("A1:A9"); // Get range indices based on specified alpha range.
 </script>
 
 {% endhighlight %}
@@ -5248,8 +5248,8 @@ Object
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.getSheet(1); // Gets sheet details of Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.getSheet(1); // Gets sheet details of Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -5293,8 +5293,8 @@ Element
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.getSheetElement(1); // Gets sheet content of Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.getSheetElement(1); // Gets sheet content of Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -5321,8 +5321,8 @@ Array
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.getSheets(); // Gets sheets details of Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.getSheets(); // Gets sheets details of Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -5368,8 +5368,8 @@ This method is used to send a paging request to the specified sheet Index in the
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.gotoPage(1, false); // Sends a paging request to the Spreadsheet with specified sheet index
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.gotoPage(1, false); // Sends a paging request to the Spreadsheet with specified sheet index
 </script>
 
 {% endhighlight %}
@@ -5392,8 +5392,8 @@ This method is used to hide the pivot table activationPanel in the Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.hideActivationPanel(); // To hide the pivot table activationPanel in the Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.hideActivationPanel(); // To hide the pivot table activationPanel in the Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -5439,11 +5439,11 @@ This method is used to hide the entire columns from the specified range (startCo
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Hide the column by passing column index in the active sheet.
-xlObj.hideColumn(1);
+excelObj.hideColumn(1);
 // Hide the columns from startCol to endCol in the active sheet.
-xlObj.hideColumn(1, 4);
+excelObj.hideColumn(1, 4);
 </script>
 
 {% endhighlight %}
@@ -5468,9 +5468,9 @@ This method is used to hide the formula bar in Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 //To hide formula bar in Spreadsheet.
-xlObj.hideFormulaBar();
+excelObj.hideFormulaBar();
 </script>
 
 {% endhighlight %}
@@ -5508,11 +5508,11 @@ This method is used to hide the rows, based on the specified row index in Spread
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Hide the row by passing row index in the active sheet.
-xlObj.hideRow(1);
+excelObj.hideRow(1);
 // Hide a rows from startRow to endRow in the active sheet.
-xlObj.hideRow(1, 4);
+excelObj.hideRow(1, 4);
 </script>
 
 
@@ -5556,9 +5556,9 @@ This method is used to hide the sheet based on the specified sheetIndex or sheet
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 //Sends a hide sheet request to the Spreadsheet.
-xlObj.hideSheet("Sheet2");
+excelObj.hideSheet("Sheet2");
 </script>
 
 {% endhighlight %}
@@ -5582,9 +5582,9 @@ This method is used to hide the displayed waiting pop-up in Spreadsheet.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // hide waiting popup in the Spreadsheet.
-xlObj.hideWaitingPopUp();
+excelObj.hideWaitingPopUp();
 </script>
 
 {% endhighlight %}
@@ -5630,9 +5630,9 @@ This method is used to insert a column before the active cell's column in the Sp
 <div id="Spreadsheet"></div>
 <script>
 //initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Insert a column in the sheet.
-xlObj.insertEntireColumn(1, 2);
+excelObj.insertEntireColumn(1, 2);
 </script>
 
 {% endhighlight %}
@@ -5678,9 +5678,9 @@ This method is used to insert a row before the active cell's row in the Spreadsh
 <div id="Spreadsheet"></div>
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Insert a row in the sheet.
-xlObj.insertEntireRow(1, 2);
+excelObj.insertEntireRow(1, 2);
 </script>
 
 {% endhighlight %}
@@ -5704,8 +5704,8 @@ This method is used to insert a new sheet to the left of the current active shee
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.insertSheet(); // Sends a insert new sheet request to the Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.insertSheet(); // Sends a insert new sheet request to the Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -5752,9 +5752,9 @@ This method is used to insert cells in the selected or specified range and shift
 <script>
 var startCell= {rowIndex: 1, colIndex: 2}, endCell= {rowIndex: 1, colIndex: 2};
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Insert a cells and shift cells bottom in the sheet.
-xlObj.insertShiftBottom(startCell, endCell);
+excelObj.insertShiftBottom(startCell, endCell);
 </script>
 
 {% endhighlight %}
@@ -5802,9 +5802,9 @@ This method is used to insert cells in the selected or specified range and shift
 <script>
 var startCell= {rowIndex: 1, colIndex: 2}, endCell= {rowIndex: 1, colIndex: 2};
 //initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Insert a cells and shift cells right in the sheet.
-xlObj.insertShiftRight(startCell, endCell);
+excelObj.insertShiftRight(startCell, endCell);
 </script>
 
 {% endhighlight %}
@@ -5848,9 +5848,9 @@ The Objects are File, Password, URL, FileStream, FileType.
 
 <div id="Spreadsheet"></div> 
 <script>
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet"); // Initialize the Spreadsheet object.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet"); // Initialize the Spreadsheet object.
 var importRequest = { Url:"http://staging.syncfusion.com:7777/ejSpreadsheet/Spreadsheet.xlsx" };
-xlObj.import(importRequest); 
+excelObj.import(importRequest); 
 </script>
 
 {% endhighlight %}
@@ -5883,9 +5883,9 @@ This method is used to load JSON data in Spreadsheet.
  
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), response;
-response = xlObj.saveAsJSON();
-xlObj.loadFromJSON(response); // To load JSON data in the Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet"), response;
+response = excelObj.saveAsJSON();
+excelObj.loadFromJSON(response); // To load JSON data in the Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -5923,8 +5923,8 @@ This method is used to lock/unlock the range of cells in active sheet. Lock cell
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.lockCells("A3:B5", true); // To lock cells in the Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.lockCells("A3:B5", true); // To lock cells in the Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -5969,8 +5969,8 @@ This method is used to merge cells by across in the Spreadsheet.
 {% highlight html %}
 <script>
 // Create Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.mergeAcrossCells("A3:B5", true); // To merge cells across in the Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.mergeAcrossCells("A3:B5", true); // To merge cells across in the Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -6015,15 +6015,15 @@ This method is used to merge the selected cells in the Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.mergeCells("A3:B5", true); // To merge the selecetd cell in Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.mergeCells("A3:B5", true); // To merge the selected cell in Spreadsheet.
 </script>
 
 {% endhighlight %}
 
 {% highlight html %}
 <script>
-// To merge the selecetd cell in Spreadsheet
+// To merge the selected cell in Spreadsheet
 $("#Spreadsheet").ejSpreadsheet("mergeCells","A3:B5");        
 </script>
 
@@ -6060,11 +6060,11 @@ This method is used to select a cell or range in the Spreadsheet.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To perform selection for the specified range.
-xlObj.performSelection({ rowIndex: 1, colIndex: 1 }, { rowIndex: 2, colIndex: 2 }); 
+excelObj.performSelection({ rowIndex: 1, colIndex: 1 }, { rowIndex: 2, colIndex: 2 }); 
 // Range as string
-xlObj.performSelection("B1:C3");
+excelObj.performSelection("B1:C3");
 </script>
 
 {% endhighlight %}
@@ -6102,9 +6102,9 @@ This method is used to protect or unprotect active sheet.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To protect sheet in Spreadsheet.
-xlObj.protectSheet(false);
+excelObj.protectSheet(false);
 </script>
 {% endhighlight %}
 
@@ -6140,8 +6140,8 @@ This method is used to refresh the content in Spreadsheet.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.refreshContent(1);
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.refreshContent(1);
 </script>
 {% endhighlight %}
 
@@ -6160,8 +6160,8 @@ This method is used to refresh the Spreadsheet.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.refreshSpreadsheet();
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.refreshSpreadsheet();
 </script>
 {% endhighlight %}
 
@@ -6200,8 +6200,8 @@ This method is used to remove custom formulae in Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.removeCustomFormula("CUSTOMTOTAL","customTotal"); // Sends a remove custom formula request to the Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.removeCustomFormula("CUSTOMTOTAL","customTotal"); // Sends a remove custom formula request to the Spreadsheet.
 function customTotal(args){}//args-It uses the value given by the user while using custom formula in Spreadsheet.
 </script>
 {% endhighlight %}
@@ -6261,8 +6261,8 @@ This method is used to remove the hyperlink from selected cells of current sheet
 {% highlight html %}
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.removeHyperlink("A2:A3", false); // To remove the hyperlink  of specified range
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.removeHyperlink("A2:A3", false); // To remove the hyperlink  of specified range
 </script>
 {% endhighlight %}
 
@@ -6301,9 +6301,9 @@ This method is used to remove the range data and its defined rangeSettings prope
 {% highlight html %}
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Sends a remove range request to the Spreadsheet.
-xlObj.removeRange("updateTable"); 
+excelObj.removeRange("updateTable"); 
 </script>
 
 {% endhighlight %}
@@ -6344,9 +6344,9 @@ This method is used to remove the readonly option for the specified range.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Removes readonly option for the range.
-xlObj.removeReadOnly("B3"); 
+excelObj.removeReadOnly("B3"); 
 </script>
 
 {% endhighlight %}
@@ -6372,8 +6372,8 @@ Object
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.saveAsJSON();
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.saveAsJSON();
 </script>
 {% endhighlight %}
 
@@ -6411,9 +6411,9 @@ This method is used to save batch changes in Spreadsheet.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 //Set sheet index for Spreadsheet. 
-xlObj.saveBatchChanges(1);
+excelObj.saveBatchChanges(1);
 </script>
 
 {% endhighlight %}
@@ -6463,15 +6463,15 @@ This method is used to set the active cell in the Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.setActiveCell(1, 0, 1); // Sets activecell in Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.setActiveCell(1, 0, 1); // Sets activeCell in Spreadsheet.
 </script>
 
 {% endhighlight %}
 
 {% highlight html %}
 <script>
-// Sets activecell in Spreadsheet.
+// Sets activeCell in Spreadsheet.
 $("#Spreadsheet").ejSpreadsheet("setActiveCell", 1, 0, 1);
 </script>
 
@@ -6505,9 +6505,9 @@ This method is used to set active sheet index for the Spreadsheet.
 <script>
 var sheetIndex= 1;
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 //Set active sheet index for Spreadsheet. 
-xlObj.setActiveSheetIndex(sheetIndex);
+excelObj.setActiveSheetIndex(sheetIndex);
 </script>
 
 {% endhighlight %}
@@ -6552,8 +6552,8 @@ This method is used to set border for the specified range of cells in the Spread
 {% highlight html %}
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.setBorder({ style: "solid", type: "outside", color: "#000000"}, "B2:B6"); // To set borders in Spreadsheet
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.setBorder({ style: "solid", type: "outside", color: "#000000"}, "B2:B6"); // To set borders in Spreadsheet
 </script>
 
 {% endhighlight %}
@@ -6595,11 +6595,11 @@ This method is used to set the height for the rows in the Spreadsheet.
 <script>
 var heightRowObj= [{rowIndex: 2, height: 40}, {rowIndex: 3, height: 50}], heightRowArr = [50, 40];
 //Initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Set height for specified rows in active sheet.
-xlObj.setHeightToRows(heightRowObj);
+excelObj.setHeightToRows(heightRowObj);
 // Set height for rows starting from the '0'th index in active sheet.
-xlObj.setHeightToRows(heightRowArr);
+excelObj.setHeightToRows(heightRowArr);
 </script>
 
 {% endhighlight %}
@@ -6653,8 +6653,8 @@ This method is used to set the hyperlink in selected cells of the current sheet.
 
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.setHyperlink("A2:A3",{"cellAddr":"A2:A8"}, 3); // To set the hyperlink  of specified range.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.setHyperlink("A2:A3",{"cellAddr":"A2:A8"}, 3); // To set the hyperlink  of specified range.
 </script>
 
 {% endhighlight %}
@@ -6695,9 +6695,9 @@ This method is used to set the readonly option for the specified range.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Sets readonly option for the range.
-xlObj.setReadOnly("B3"); 
+excelObj.setReadOnly("B3"); 
 </script>
 
 {% endhighlight %}
@@ -6720,9 +6720,9 @@ This method is used to set the focus to the Spreadsheet.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Set focus on Spreadsheet.
-xlObj.setSheetFocus();
+excelObj.setSheetFocus();
 </script>
 
 {% endhighlight %}
@@ -6762,11 +6762,11 @@ This method is used to set the width for the columns in the Spreadsheet.
 <script>
 var widthCollObj= [{colIndex: 2, width: 40}, {colIndex: 3, width: 50}], widthCollArr = [80, 90];
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Set width for specified columns in active sheet
-xlObj.setWidthToColumns(widthCollObj);
+excelObj.setWidthToColumns(widthCollObj);
 // Set width for columns starting from the '0'th index in active sheet.
-xlObj.setWidthToColumns(widthCollArr);
+excelObj.setWidthToColumns(widthCollArr);
 </script>
 
 {% endhighlight %}
@@ -6808,8 +6808,8 @@ This method is used to rename the active sheet.
 {% highlight html %}
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.sheetRename("Sep-Billing"); // Sends a sheet rename request to the Spreadsheet
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.sheetRename("Sep-Billing"); // Sends a sheet rename request to the Spreadsheet
 </script>
 
 {% endhighlight %}
@@ -6848,8 +6848,8 @@ This method is used to display the activationPanel for the specified range name.
 {% highlight html %}
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.showActivationPanel("upTable"); // To display the activationPanel in Spreadsheet
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.showActivationPanel("upTable"); // To display the activationPanel in Spreadsheet
 </script>
 
 {% endhighlight %}
@@ -6893,11 +6893,11 @@ This method is used to show the hidden columns within the specified range in the
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // show the hidden column by passing column index in the active sheet.
-xlObj.showColumn(1);
+excelObj.showColumn(1);
 // show the hidden columns from startColIdx to startColIdx in the active sheet.
-xlObj.showColumn(3, 6);
+excelObj.showColumn(3, 6);
 
 </script>
 
@@ -6923,9 +6923,9 @@ This method is used to show the formula bar in Spreadsheet.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 //To show the formula bar in Spreadsheet
-xlObj.showFormulaBar();
+excelObj.showFormulaBar();
 </script>
 
 {% endhighlight %}
@@ -6964,9 +6964,9 @@ This method is used to show/hide gridlines in active sheet in the Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To hide the gridlines in the sheet.
-xlObj.showGridlines(false);
+excelObj.showGridlines(false);
 </script>
 
 {% endhighlight %}
@@ -7005,9 +7005,9 @@ This method is used to show/hide the headers in active sheet in the Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To hide the headers in the sheet.
-xlObj.showHeadings(false);
+excelObj.showHeadings(false);
 </script>
 {% endhighlight %}
 
@@ -7045,8 +7045,8 @@ This method is used to show/hide pager in the Spreadsheet.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.showPager(false); // Gets or sets the value to show/hide pager.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.showPager(false); // Gets or sets the value to show/hide pager.
 </script>
 
 {% endhighlight %}
@@ -7090,11 +7090,11 @@ This method is used to show the hidden rows in the specified range in the Spread
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // show the hidden row by passing row index in the active sheet.
-xlObj.showRow(1);
+excelObj.showRow(1);
 // To show the hidden rows for startRow to endRow in the active sheet.
-xlObj.showRow(3, 6);
+excelObj.showRow(3, 6);
 </script>
 
 {% endhighlight %}
@@ -7119,9 +7119,9 @@ This method is used to show waiting pop-up in Spreadsheet.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To show waiting popup in Spreadsheet
-xlObj.showWaitingPopUp();
+excelObj.showWaitingPopUp();
 </script>
 
 {% endhighlight %}
@@ -7160,9 +7160,9 @@ This method is used to unhide the sheet based on specified sheet name or sheet i
 {% highlight html %}
 <script>
 //Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 //To unhide a sheet in Spreadsheet.
-xlObj.unhideSheet("Sheet2");
+excelObj.unhideSheet("Sheet2");
 </script>
 
 {% endhighlight %}
@@ -7201,9 +7201,9 @@ This method is used to unmerge the selected range of cells in the Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To unmerge the selected cells in Spreadsheet.
-xlObj.unmergeCells("A3:B5"); 
+excelObj.unmergeCells("A3:B5"); 
 </script>
 
 {% endhighlight %}
@@ -7242,9 +7242,9 @@ This method is used to unwrap the selected range of cells in the Spreadsheet.
 {% highlight html %}
 <script>
 //Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To unwrap the cell text.
-xlObj.unWrapText("A1:B3");
+excelObj.unWrapText("A1:B3");
 </script>
 
 {% endhighlight %}
@@ -7288,9 +7288,9 @@ This method is used to update the data for the specified range of cells in the S
 {% highlight html %}
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To update data in the specified range of the cells in Spreadsheet.
-xlObj.updateData([{ value: 10, value2: 10, type: "general"}, { value: 25000, value2: 25000, type: "general"}], "A3"); 
+excelObj.updateData([{ value: 10, value2: 10, type: "general"}, { value: 25000, value2: 25000, type: "general"}], "A3"); 
 </script>
 
 {% endhighlight %}
@@ -7313,9 +7313,9 @@ This method is used to update the formula bar in the Spreadsheet.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 //To update the formula bar in Spreadsheet
-xlObj.updateFormulaBar();
+excelObj.updateFormulaBar();
 </script>
 
 {% endhighlight %}
@@ -7351,10 +7351,10 @@ This method is used to update the range of cells based on the specified settings
 {% highlight html %}
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 var settings = { dataSource: [{ Product: "XYZ", Price: "2000" }], showHeader: "true", startCell: "F1" };
 // To update range of cells with the specified settings
-xlObj.updateRange(1, settings); 
+excelObj.updateRange(1, settings); 
 </script>
 
 {% endhighlight %}
@@ -7396,16 +7396,16 @@ This method is used to update the details for custom undo and redo operations.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), details = { action: "custom", cell: xlObj.getActiveCell(), sheetIndex: 1 };
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet"), details = { action: "custom", cell: excelObj.getActiveCell(), sheetIndex: 1 };
 // To update undo and redo collections.
-xlObj.updateUndoRedoCollection(details); 
+excelObj.updateUndoRedoCollection(details); 
 </script>
 
 {% endhighlight %}
 
 {% highlight html %}
 <script>
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), details = { action: "custom", cell: xlObj.getActiveCell() };
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet"), details = { action: "custom", cell: excelObj.getActiveCell() };
 // To update undo and redo collections.
 $("#Spreadsheet").ejSpreadsheet("updateUndoRedoCollection", details);        
 </script>
@@ -7448,9 +7448,9 @@ This method is used to update the unique data for the specified range of cells i
 {% highlight html %}
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To update unique data in Spreadsheet.
-xlObj.updateUniqueData({ value: 10, value2: 10, type: "general"}, [1, 0, 5, 0]); 
+excelObj.updateUniqueData({ value: 10, value2: 10, type: "general"}, [1, 0, 5, 0]); 
 </script>
 
 {% endhighlight %}
@@ -7489,9 +7489,9 @@ This method is used to wrap the selected range of cells in the Spreadsheet.
 {% highlight html %}
 <script>
 //Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To wrap the cell Text.
-xlObj.wrapText("A1:B3");
+excelObj.wrapText("A1:B3");
 </script>
 
 {% endhighlight %}
@@ -7543,9 +7543,9 @@ This method is used to set a cell type from the specified range of cells in the 
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To add cell types in Spreadsheet.
-xlObj.XLCellType.addCellTypes("A1:B3", {"type" : ej.Spreadsheet.CustomCellType.Button, "text" : "Button1", "background-color" : "green" },  1);
+excelObj.XLCellType.addCellTypes("A1:B3", {"type" : ej.Spreadsheet.CustomCellType.Button, "text" : "Button1", "background-color" : "green" },  1);
 </script>
 
 {% endhighlight %}
@@ -7581,9 +7581,9 @@ This method is used to remove cell type from the specified range of cells in the
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To remove cell types in Spreadsheet.
-xlObj.XLCellType.removeCellTypes("A1:B2", 1);
+excelObj.XLCellType.removeCellTypes("A1:B2", 1);
 </script>
 
 {% endhighlight %}
@@ -7617,9 +7617,9 @@ This method is used to clear the applied conditional formatting rules in the Spr
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To clear conditional formatting rules in Spreadsheet.
-xlObj.XLCFormat.clearCF([1, 0, 7, 0]);
+excelObj.XLCFormat.clearCF([1, 0, 7, 0]);
 </script>
 
 {% endhighlight %}
@@ -7659,9 +7659,9 @@ Array
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Gets the conditional formatting rules in Spreadsheet.
-xlObj.XLCFormat.getCFRule(2, 0);
+excelObj.XLCFormat.getCFRule(2, 0);
 </script>
 
 {% endhighlight %}
@@ -7693,9 +7693,9 @@ This method is used to set the conditional formatting rule in the Spreadsheet.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Sets the conditional formatting rules in Spreadsheet
-xlObj.XLCFormat.setCFRule({ action: "lessthan", inputs: ["30"], color: "yellowft", range: "H3:H7" });
+excelObj.XLCFormat.setCFRule({ action: "lessthan", inputs: ["30"], color: "yellowft", range: "H3:H7" });
 </script>
 
 {% endhighlight %}
@@ -7731,9 +7731,9 @@ This method is used to change the theme of the chart in the Spreadsheet.
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1"
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1"
 var theme = ej.datavisualization.Chart.Theme.Azuredark;
-xlObj.XLChart.changeTheme(chartId, theme); // To update chart theme.
+excelObj.XLChart.changeTheme(chartId, theme); // To update chart theme.
 </script>
 
 {% endhighlight %}
@@ -7768,8 +7768,8 @@ This method is used to change the type of the chart in the Spreadsheet.
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1"
-xlObj.XLChart.changeType(chartId,{type: "radar", enable3D: false, marker: {visible: false}} ); // To change chart type.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1"
+excelObj.XLChart.changeType(chartId,{type: "radar", enable3D: false, marker: {visible: false}} ); // To change chart type.
 </script>
 
 {% endhighlight %}
@@ -7814,8 +7814,8 @@ Legend range of chart data.</td></tr>
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1";
-xlObj.XLChart.changeDataRange(chartId, "A2:A7", "A2:B5", "A1:B1"); // To change the data range of the chart.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1";
+excelObj.XLChart.changeDataRange(chartId, "A2:A7", "A2:B5", "A1:B1"); // To change the data range of the chart.
 </script>
 
 {% endhighlight %}
@@ -7852,8 +7852,8 @@ This method is used to create a chart for specified range in Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLChart.createChart("A3:A7",{"type":"stackingcolumn100","enable3D":"true","marker":{"visible":false}}); // To create chart in Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLChart.createChart("A3:A7",{"type":"stackingcolumn100","enable3D":"true","marker":{"visible":false}}); // To create chart in Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -7889,8 +7889,8 @@ This method is used to refresh the chart in the Spreadsheet.
 {% highlight html %}
 <script>
 // Create Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLChart.refreshChart(id,{"type":"stackingcolumn100","enable3D":"true","marker":{"visible":false}}); // To refresh the chart in Spreadsheet
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLChart.refreshChart(id,{"type":"stackingcolumn100","enable3D":"true","marker":{"visible":false}}); // To refresh the chart in Spreadsheet
 </script>
 {% endhighlight %}
 
@@ -7930,8 +7930,8 @@ This method is used to resize the chart of specified id in the Spreadsheet.
 {% highlight html %}
 <script>
 // Create Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLChart.resizeChart("Spreadsheet_chart1", 200, 300); // It is used to resize the chart in Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLChart.resizeChart("Spreadsheet_chart1", 200, 300); // It is used to resize the chart in Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -7970,8 +7970,8 @@ This method is used to update the chart element, such as axes, titles, data labe
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1", value = ej.Spreadsheet.ChartProperties.PrimaryHorizontal; 
-xlObj.XLChart.updateChartElement(chartId, value); // To update chart property.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1", value = ej.Spreadsheet.ChartProperties.PrimaryHorizontal; 
+excelObj.XLChart.updateChartElement(chartId, value); // To update chart property.
 </script>
 
 {% endhighlight %}
@@ -8104,8 +8104,8 @@ Pass the chart id.</td></tr>
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1";
-xlObj.XLChart.switchRowColumn(chartId);
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet"), chartId = "Spreadsheet_chart1";
+excelObj.XLChart.switchRowColumn(chartId);
 </script>
 
 {% endhighlight %}
@@ -8122,9 +8122,9 @@ This method is used to copy the selected cells in the Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To copy cells in a Spreadsheet.
-xlObj.XLClipboard.copy();
+excelObj.XLClipboard.copy();
 </script>
 
 {% endhighlight %}
@@ -8139,9 +8139,9 @@ This method is used to cut the selected cells in the Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To cut cells in a Spreadsheet
-xlObj.XLClipboard.cut();
+excelObj.XLClipboard.cut();
 </script>
 
 {% endhighlight %}
@@ -8156,9 +8156,9 @@ This method is used to paste the cut or copied cells data in the Spreadsheet.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To paste data in Spreadsheet
-xlObj.XLClipboard.paste();
+excelObj.XLClipboard.paste();
 </script>
 
 {% endhighlight %}
@@ -8202,9 +8202,9 @@ This method is used to delete the comment in the specified range in Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 //Sends a delete comment request to the Spreadsheet.
-xlObj.XLComment.deleteComment("A1:D3", 1, true);
+excelObj.XLComment.deleteComment("A1:D3", 1, true);
 </script>
 
 {% endhighlight %}
@@ -8235,9 +8235,9 @@ This method is used to edit the comment in the target Cell in Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 //Sends an edit comment request to the Spreadsheet.
-xlObj.XLComment.editComment({rowIndex: 1, colIndex: 1});
+excelObj.XLComment.editComment({rowIndex: 1, colIndex: 1});
 </script>
 
 {% endhighlight %}
@@ -8256,9 +8256,9 @@ boolean
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 //Sends a find next comment request to the Spreadsheet.
-xlObj.XLComment.findNextComment();
+excelObj.XLComment.findNextComment();
 </script>
 
 {% endhighlight %}
@@ -8277,9 +8277,9 @@ boolean
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 //Sends a find previous comment request to the Spreadsheet.
-xlObj.XLComment.findPrevComment();
+excelObj.XLComment.findPrevComment();
 </script>
 
 {% endhighlight %}
@@ -8314,8 +8314,8 @@ Object
 <div id="Spreadsheet"></div> 
 <script>
 // Create Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.getComment(xlObj.getCell(1, 5)); // Get the specified cell comment data.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.getComment(excelObj.getCell(1, 5)); // Get the specified cell comment data.
 </script>
 
 {% endhighlight %}
@@ -8323,7 +8323,7 @@ xlObj.getComment(xlObj.getCell(1, 5)); // Get the specified cell comment data.
 {% highlight html %}
 <script>
 // Get the specified cell comment data
-$("#Spreadsheet").ejSpreadsheet("getComment", xlObj.getCell(1, 5));        
+$("#Spreadsheet").ejSpreadsheet("getComment", excelObj.getCell(1, 5));        
 </script>
 
 {% endhighlight %}
@@ -8369,9 +8369,9 @@ This method is used to set new comment in Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 //To set comment in Spreadsheet.
-xlObj.XLComment.setComment("A2", "Spreadsheet Comment!");
+excelObj.XLComment.setComment("A2", "Spreadsheet Comment!");
 </script>
 
 {% endhighlight %}
@@ -8386,9 +8386,9 @@ This method is used to show all the comments in the Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 //Sends a show all comment request to the Spreadsheet.
-xlObj.XLComment.showAllComments();
+excelObj.XLComment.showAllComments();
 </script>
 
 {% endhighlight %}
@@ -8419,9 +8419,9 @@ This method is used to show or hide the specific comment in the Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 //To show/hide comment request in Spreadsheet.
-xlObj.XLComment.showHideComment(xlObj.getCell(1, 5));
+excelObj.XLComment.showHideComment(excelObj.getCell(1, 5));
 </script>
 
 {% endhighlight %}
@@ -8465,8 +8465,8 @@ This method is used to dynamically add items in the context menu.
 {% highlight html %}
 <script>
 // Create Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLCMenu.addItem(ej.Spreadsheet.ContextMenu.Cell, [{"text":"Added item 1!!!", "url":"#", "id": "Added item1", "spriteCssClass": "e-icon e-ss-cut" }], 'insertbefore'); // To add a item in the context menu.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLCMenu.addItem(ej.Spreadsheet.ContextMenu.Cell, [{"text":"Added item 1!!!", "url":"#", "id": "Added item1", "spriteCssClass": "e-icon e-ss-cut" }], 'insertbefore'); // To add a item in the context menu.
 </script>
 
 {% endhighlight %}
@@ -8502,8 +8502,8 @@ This method is used to change data source in the context menu.
 {% highlight html %}
 <script>
 // Create Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLCMenu.changeDataSource(ej.Spreadsheet.ContextMenu.Cell,[{ id: "Comment", text: 'cmnt', parentId: null, spriteCssClass: "e-icon e-ss-newcmnt" }]); // To change the data source in the context menu.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLCMenu.changeDataSource(ej.Spreadsheet.ContextMenu.Cell,[{ id: "Comment", text: 'cmnt', parentId: null, spriteCssClass: "e-icon e-ss-newcmnt" }]); // To change the data source in the context menu.
 </script>
 
 {% endhighlight %}
@@ -8539,8 +8539,8 @@ This method is used to disable the items in the context menu.
 {% highlight html %}
 <script>
 // Create Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLCMenu.disableItem(ej.Spreadsheet.ContextMenu.Cell, [1,2,3]); // To disable the item in the context menu.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLCMenu.disableItem(ej.Spreadsheet.ContextMenu.Cell, [1,2,3]); // To disable the item in the context menu.
 </script>
 
 {% endhighlight %}
@@ -8576,8 +8576,8 @@ This method is used to enable the items in the context menu.
 {% highlight html %}
 <script>
 // Create Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLCMenu.enableItem(ej.Spreadsheet.ContextMenu.Cell, [1,2,3]); // To enable the item in the context menu.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLCMenu.enableItem(ej.Spreadsheet.ContextMenu.Cell, [1,2,3]); // To enable the item in the context menu.
 </script>
 
 {% endhighlight %}
@@ -8613,8 +8613,8 @@ This method is used to remove the items in the context menu.
 {% highlight html %}
 <script>
 // Create Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLCMenu.removeItem(ej.Spreadsheet.ContextMenu.Cell, [1,2,3]); // To remove the item in the context menu.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLCMenu.removeItem(ej.Spreadsheet.ContextMenu.Cell, [1,2,3]); // To remove the item in the context menu.
 </script>
 
 {% endhighlight %}
@@ -8653,9 +8653,9 @@ This method is used to drag and drop the selected range of cells to destination 
 {% highlight html %}
 <script>
 // Create Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 var options = {sourcerange: [1,2,1,2], destinationrange: [1,3,1,6]}
-xlObj.XLDragDrop.moveRangeTo(options.sourcerange, options.destinationrange); // To perform drag and drop in Spreadsheet.
+excelObj.XLDragDrop.moveRangeTo(options.sourcerange, options.destinationrange); // To perform drag and drop in Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -8689,9 +8689,9 @@ This method is used to perform auto fill in Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 var options = {dataRange: "A1:B1", direction: "right", fillRange:"A1:B2"}
-xlObj.XLDragFill.autoFill(options); // To perform autofill in Spreadsheet.
+excelObj.XLDragFill.autoFill(options); // To perform autofill in Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -8707,9 +8707,9 @@ This method is used to hide the auto fill element in the Spreadsheet.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To hide auto fill element in Spreadsheet
-xlObj.XLDragFill.hideAutoFillElement();
+excelObj.XLDragFill.hideAutoFillElement();
 </script>
 
 {% endhighlight %}
@@ -8725,9 +8725,9 @@ This method is used to hide the auto fill options in the Spreadsheet.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To hide auto fill element in Spreadsheet
-xlObj.XLDragFill.hideAutoFillOptions();
+excelObj.XLDragFill.hideAutoFillOptions();
 </script>
 
 {% endhighlight %}
@@ -8759,8 +8759,8 @@ This method is used to set position of the auto fill element in the Spreadsheet.
 {% highlight html %}
 <script>
 // Create Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLDragFill.positionAutoFillElement(false); // set position of the autofill element in Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLDragFill.positionAutoFillElement(false); // set position of the autofill element in Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -8794,8 +8794,8 @@ This method is used to calculate formulas in the specified sheet.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLEdit.calcNow(1); // To calculate formulas in specified sheet in Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLEdit.calcNow(1); // To calculate formulas in specified sheet in Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -8898,7 +8898,7 @@ Object|string|Array
 // Initialize the Spreadsheet object.
 var ssObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Get the cell property value.
-xlObj.XLEdit.getPropertyValue(1, 1, "value", 1);
+excelObj.XLEdit.getPropertyValue(1, 1, "value", 1);
 </script>
 
 {% endhighlight %}
@@ -8944,9 +8944,9 @@ Object|string|Array
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Get the cell property value based on tag element.
-xlObj.XLEdit.getPropertyValueByElem(xlObj.getCell(1, 1), "value", 1);
+excelObj.XLEdit.getPropertyValueByElem(excelObj.getCell(1, 1), "value", 1);
 </script>
 
 {% endhighlight %}
@@ -8961,9 +8961,9 @@ This method is used to save the edited cell value in the Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Save the edited cell value
-xlObj.XLEdit.saveCell();
+excelObj.XLEdit.saveCell();
 </script>
 
 {% endhighlight %}
@@ -8999,9 +8999,9 @@ This method is used to update a particular cell value in the Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Update the specified values to a particular cell.
-xlObj.XLEdit.updateCell({rowIndex: 1, colIndex: 1}, "product");
+excelObj.XLEdit.updateCell({rowIndex: 1, colIndex: 1}, "product");
 </script>
 
 {% endhighlight %}
@@ -9047,10 +9047,10 @@ This method is used to update a particular cell value and its format in the Spre
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), className;
-className = xlObj.XLFormat.getFormatHashCode({ color: "#FF0000" });
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet"), className;
+className = excelObj.XLFormat.getFormatHashCode({ color: "#FF0000" });
 // To update the specified values in a particular cell.
-xlObj.XLEdit.updateCellValue({rowIndex: 1, colIndex: 1}, "product", className, 1);
+excelObj.XLEdit.updateCellValue({rowIndex: 1, colIndex: 1}, "product", className, 1);
 </script>
 
 {% endhighlight %}
@@ -9092,9 +9092,9 @@ N> To use export, user must provide the [`excelUrl`](https://help.syncfusion.com
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To save the worksheet on Excel format.
-xlObj.XLExport.export("Excel", "sample");
+excelObj.XLExport.export("Excel", "sample");
 </script>
 
 {% endhighlight %}
@@ -9111,8 +9111,8 @@ Object
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLExport.getExportProps(); // Gets export properties in Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLExport.getExportProps(); // Gets export properties in Spreadsheet.
 </script>
 {% endhighlight %}
 
@@ -9137,9 +9137,9 @@ This method is used to clear the filter in filtered columns in the Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Clear filter for columns in the sheet.
-xlObj.XLFilter.clearFilter();
+excelObj.XLFilter.clearFilter();
 </script>
 
 {% endhighlight %}
@@ -9171,9 +9171,9 @@ This method is used to apply filter for the selected range of cells in the Sprea
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To apply filter for specified range of cells.
-xlObj.XLFilter.filter("A3:C8");
+excelObj.XLFilter.filter("A3:C8");
 </script>
 
 {% endhighlight %}
@@ -9189,9 +9189,9 @@ This method is used to apply filter for the column by active cell's value in the
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Apply filter for columns with active cell in the sheet.
-xlObj.XLFilter.filterByActiveCell();
+excelObj.XLFilter.filterByActiveCell();
 </script>
 
 {% endhighlight %}
@@ -9227,8 +9227,8 @@ This method is used to add the font to the Ribbon font family dropdown.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLFormat.addFontFamily("Gisha"); // To add the font name into font family option.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLFormat.addFontFamily("Gisha"); // To add the font name into font family option.
 </script>
 
 {% endhighlight %}
@@ -9261,8 +9261,8 @@ This method is used to convert table range to normal range.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLFormat.convertToRange({sheetIdx: 1, tableId: 1}); // To convert table range to normal range.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLFormat.convertToRange({sheetIdx: 1, tableId: 1}); // To convert table range to normal range.
 </script>
 
 {% endhighlight %}
@@ -9301,10 +9301,10 @@ string
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), tableObj;
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet"), tableObj;
 tableObj = { header: true, name: "Table1", formatName: "TableStyleLight1"};
 // Sends a create table request to the Spreadsheet
-xlObj.XLFormat.createTable(tableObj, "A1:C6");
+excelObj.XLFormat.createTable(tableObj, "A1:C6");
 </script>
 
 {% endhighlight %}
@@ -9341,9 +9341,9 @@ This method is used to set format style and values in a cell or range of cells.
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Sends a format request to the Spreadsheet.
-xlObj.XLFormat.format({style:{ "background-color": "#C0C0C0"}}, "A1:C10");
+excelObj.XLFormat.format({style:{ "background-color": "#C0C0C0"}}, "A1:C10");
 </script>
 
 {% endhighlight %}
@@ -9376,8 +9376,8 @@ This method is used to remove the font from the Ribbon font family dropdown.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLFormat.removeFontFamily("Gisha"); // To remove the name from the font family drop down.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLFormat.removeFontFamily("Gisha"); // To remove the name from the font family drop down.
 </script>
 
 {% endhighlight %}
@@ -9414,9 +9414,9 @@ This method is used to remove the style in the specified range.
 {% highlight html %}
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Sends a remove style request to the Spreadsheet.
-xlObj.XLFormat.removeStyle("E4:F13",{ cellStyle: true, tableStyle: true, format: true, border: true }); 
+excelObj.XLFormat.removeStyle("E4:F13",{ cellStyle: true, tableStyle: true, format: true, border: true }); 
 </script>
 
 {% endhighlight %}
@@ -9448,9 +9448,9 @@ This method is used to remove table with specified tableId in the Spreadsheet.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Sends a remove table request to the Spreadsheet.
-xlObj.XLFormat.removeTable(1);
+excelObj.XLFormat.removeTable(1);
 </script>
 
 {% endhighlight %}
@@ -9487,9 +9487,9 @@ This method is used to update the decimal places for numeric value for the selec
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To update decimal place value in the range of cells in the Spreadsheet.
-xlObj.XLFormat.updateDecimalPlaces("IncreaseDecimal", "A1:C3");
+excelObj.XLFormat.updateDecimalPlaces("IncreaseDecimal", "A1:C3");
 </script>
 
 {% endhighlight %}
@@ -9525,10 +9525,10 @@ This method is used to update the format for the selected range of cells in the 
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), formatObj;
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet"), formatObj;
 formatObj = { format: ["e-formatFFFF006N2N2N1N1N1N1N2N1N", "", "e-formatFFFF006N2N2N1N1N1N1N2N1N"], leftborder: ["","",""], topborder: ["e-border1N1N6N1N1N6NS1N1N6N11000000"]};
 // To update a format in the specified range of cells.
-xlObj.XLFormat.updateFormat(formatObj, [1, 0, 3, 0]);
+excelObj.XLFormat.updateFormat(formatObj, [1, 0, 3, 0]);
 </script>
 
 {% endhighlight %}
@@ -9564,9 +9564,9 @@ This method is used to update the unique format for selected range of cells in t
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To update the unique format.
-xlObj.XLFormat.updateUniqueFormat("e-formatFFFF006N2N2N251N1N2N", [1, 0, 4, 0]);
+excelObj.XLFormat.updateUniqueFormat("e-formatFFFF006N2N2N251N1N2N", [1, 0, 4, 0]);
 </script>
 
 {% endhighlight %}
@@ -9602,9 +9602,9 @@ This method is used to freeze columns upto the specified column index in the Spr
 <div id="Spreadsheet"></div> 
 <script>
 //Initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Freeze a column in the sheet.
-xlObj.XLFreeze.freezeColumns(2);
+excelObj.XLFreeze.freezeColumns(2);
 </script>
 
 {% endhighlight %}
@@ -9620,9 +9620,9 @@ This method is used to freeze the first column in the Spreadsheet.
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Freeze the first column in the sheet.
-xlObj.XLFreeze.freezeLeftColumn();
+excelObj.XLFreeze.freezeLeftColumn();
 </script>
 
 {% endhighlight %}
@@ -9660,9 +9660,9 @@ This method is used to freeze rows and columns before the specified cell in the 
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Freeze some rows and columns in the sheet.
-xlObj.XLFreeze.freezePanes(2, 3);
+excelObj.XLFreeze.freezePanes(2, 3);
 </script>
 
 {% endhighlight %}
@@ -9693,9 +9693,9 @@ This method is used to freeze rows upto the specified row index in the Spreadshe
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Freeze a row in the sheet.
-xlObj.XLFreeze.freezeRows(2);
+excelObj.XLFreeze.freezeRows(2);
 </script>
 
 {% endhighlight %}
@@ -9711,9 +9711,9 @@ This method is used to freeze the top row in the Spreadsheet.
 <div id="Spreadsheet"></div> 
 <script>
 //Initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Freeze the top row in the sheet.
-xlObj.XLFreeze.freezeTopRow();
+excelObj.XLFreeze.freezeTopRow();
 </script>
 
 {% endhighlight %}
@@ -9728,9 +9728,9 @@ This method is used to unfreeze the frozen rows and columns in the Spreadsheet.
 {% highlight html %}
 <script>
 //Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To unfreeze the frozen rows and columns in the sheet.
-xlObj.XLFreeze.unfreezePanes();
+excelObj.XLFreeze.unfreezePanes();
 </script>
 
 {% endhighlight %}
@@ -9766,8 +9766,8 @@ This property is used to clear the pivot table list in Spreadsheet.
 {% highlight html %}
 <script>
 // Create Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLPivot.clearPivotFieldList("name"); // Sends a clear pivot field list request to the Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLPivot.clearPivotFieldList("name"); // Sends a clear pivot field list request to the Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -9823,14 +9823,14 @@ string
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // create a pivot table in the sheet.
 var settings = {
                  rows: [ {fieldName: "Country",},{fieldName: "State",}],
                  columns: [{fieldName: "Product",}],
                  values: [{fieldName: "Amount", },{fieldName: "Quantity", } ],
                  filters: [ {fieldName: "Date", }] };
-xlObj.XLPivot.createPivotTable("Sheet1!$A$1:$F$25","Sheet1!$A$1", null, settings);
+excelObj.XLPivot.createPivotTable("Sheet1!$A$1:$F$25","Sheet1!$A$1", null, settings);
 </script>
 
 {% endhighlight %}
@@ -9862,9 +9862,9 @@ This method is used to delete the pivot table which is selected.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Delete pivot table in the sheet.
-xlObj.XLPivot.deletePivotTable("name");
+excelObj.XLPivot.deletePivotTable("name");
 </script>
 
 {% endhighlight %}
@@ -9900,8 +9900,8 @@ This method is used to refresh data in pivot table.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLPivot.refreshDataSource(); // Sends a refresh data source request to the Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLPivot.refreshDataSource(); // Sends a refresh data source request to the Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -9918,9 +9918,9 @@ This method is used to print the selected contents in the Spreadsheet.
 
 {% highlight html %}
 <script>
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Print the selected area in the sheet.
-xlObj.XLPrint.printSelection();
+excelObj.XLPrint.printSelection();
 </script>
 
 {% endhighlight %}
@@ -9934,9 +9934,9 @@ This method is used to print the entire contents in the active sheet.
 
 {% highlight html %}
 <script>
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 //Sends a print entire sheet request to the Spreadsheet.
-xlObj.XLPrint.printSheet();
+excelObj.XLPrint.printSheet();
 </script>
 
 {% endhighlight %}
@@ -9970,9 +9970,9 @@ This method is used to fit the height of rows in the Spreadsheet.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To fit the height of the rows in Spreadsheet.
-xlObj.XLResize.fitHeight([2,3,4,5])
+excelObj.XLResize.fitHeight([2,3,4,5])
 </script>
 
 {% endhighlight %}
@@ -10003,9 +10003,9 @@ This method is used to fit the width of columns in the Spreadsheet.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To fit the width of the columns in Spreadsheet.
-xlObj.XLResize.fitWidth([2,3,4,5])
+excelObj.XLResize.fitWidth([2,3,4,5])
 </script>
 
 {% endhighlight %}
@@ -10040,9 +10040,9 @@ number
 <div id="Spreadsheet"></div> 
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Gets the particular column width in Spreadsheet.
-xlObj.XLResize.getColWidth(2);
+excelObj.XLResize.getColWidth(2);
 </script>
 
 {% endhighlight %}
@@ -10077,9 +10077,9 @@ number
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Gets the particular row height in Spreadsheet.
-xlObj.XLResize.getRowHeight(2);
+excelObj.XLResize.getRowHeight(2);
 </script>
 
 {% endhighlight %}
@@ -10123,9 +10123,9 @@ This method is used to set the column width of the specified column index in the
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Sets the column width in the Spreadsheet.
-xlObj.XLResize.setColWidth(2, 100);
+excelObj.XLResize.setColWidth(2, 100);
 </script>
 
 {% endhighlight %}
@@ -10161,9 +10161,9 @@ This method is used to set the row height of the specified row index in the Spre
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Sets the row height in Spreadsheet.
-xlObj.XLResize.setRowHeight(2, 100);
+excelObj.XLResize.setRowHeight(2, 100);
 </script>
 
 {% endhighlight %}
@@ -10202,9 +10202,9 @@ This method is used to add a new item in the backstage.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 var addBackStage = {   id: "File", text: "File", itemType: ej.Ribbon.ItemType.Tab};
-xlObj.XLRibbon.addBackStageItem(addBackStage, 1); // To add a item in the backstage.
+excelObj.XLRibbon.addBackStageItem(addBackStage, 1); // To add a item in the backstage.
 </script>
 
 {% endhighlight %}
@@ -10240,9 +10240,9 @@ This method is used to dynamically add the contextual tabs in the ribbon.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 var cTab = { backgroundColor: "#FCFBEB", borderColor: "#F2CC1C", tabs: [{id: "Design", text: "DESIGN",groups: [{ text: "Table Style",type: "custom", contentID: "design" }]}] };
-xlObj.XLRibbon.addContextualTabs(cTab, 7); // To add a contextual tab in the ribbon.
+excelObj.XLRibbon.addContextualTabs(cTab, 7); // To add a contextual tab in the ribbon.
 </script>
 
 {% endhighlight %}
@@ -10278,8 +10278,8 @@ This method is used to dynamically add the menu item in the file menu.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLRibbon.addMenuItem([{ id: "SignIn1", text: "AddMenuItem", parentId: "FILE", spriteCssClass: "e-icon e-ssr-cut" }], 2); // To add the menu item in the ribbon.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLRibbon.addMenuItem([{ id: "SignIn1", text: "AddMenuItem", parentId: "FILE", spriteCssClass: "e-icon e-ssr-cut" }], 2); // To add the menu item in the ribbon.
 </script>
 
 {% endhighlight %}
@@ -10325,9 +10325,9 @@ This method is used to add a new name in the Spreadsheet name manager.
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To define new name in the Spreadsheet.
-xlObj.XLRibbon.addNamedRange("PRICE_LIST", "=Sheet1!$A$2:$A$7", "Month_Wise");
+excelObj.XLRibbon.addNamedRange("PRICE_LIST", "=Sheet1!$A$2:$A$7", "Month_Wise");
 </script>
 
 {% endhighlight %}
@@ -10368,7 +10368,7 @@ This method is used to dynamically add the tab in the ribbon.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 var tabGroup = [{ alignType: ej.Ribbon.AlignType.Rows, content: [{ groups: [{ id: "new", text: "New", toolTip: "New", 
                      buttonSettings: {
                                     contentType: ej.ContentType.ImageOnly,
@@ -10376,7 +10376,7 @@ var tabGroup = [{ alignType: ej.Ribbon.AlignType.Rows, content: [{ groups: [{ id
                                     prefixIcon: "e-icon e-ssr-cut",
                                     click: "executeAction"
                                 }}], defaults: { type: ej.Ribbon.Type.Button, width: 60, height: 70} }] }];
-xlObj.XLRibbon.addTab("Tab2", tabGroup, 2); // To add the tab in the ribbon.
+excelObj.XLRibbon.addTab("Tab2", tabGroup, 2); // To add the tab in the ribbon.
 </script>
 
 {% endhighlight %}
@@ -10417,14 +10417,14 @@ This method is used to dynamically add the tab group in the ribbon.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 var ribbonGrp = { text: "Cut", alignType: ej.Ribbon.AlignType.Rows, content: [{ groups: [{  id: "new",  text: "CUT",buttonSettings: {
                                     contentType: ej.ContentType.TextAndImage,
-                                    imagePosition: ej.ImagePosition.ImagetTop,
+                                    imagePosition: ej.ImagePosition.ImageTop,
                                     prefixIcon: "e-icon e-ssr-cut",
                                     click: "executeAction"
                                 } }], defaults: { type: ej.Ribbon.Type.Button,  width: 60, height: 70 } }] };
-xlObj.XLRibbon.addTabGroup(1, ribbonGrp, 0); // To add the tab group in the ribbon.
+excelObj.XLRibbon.addTabGroup(1, ribbonGrp, 0); // To add the tab group in the ribbon.
 </script>
 
 {% endhighlight %}
@@ -10460,8 +10460,8 @@ This method is used to insert the few type (SUM, MAX, MIN, AVG, COUNT) of formul
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLRibbon.autoSum("SUM", "A2:A6"); // To insert the formula after selected range of cells in Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLRibbon.autoSum("SUM", "A2:A6"); // To insert the formula after selected range of cells in Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -10494,9 +10494,9 @@ This method is used to change the dimensions for chart/picture.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To change chart/picture dimensions.
-xlObj.XLRibbon.changeDimension({id:"Spreadsheet_chart1" , width: 330, height: 500, shapeType: "chart"}); 
+excelObj.XLRibbon.changeDimension({id:"Spreadsheet_chart1" , width: 330, height: 500, shapeType: "chart"}); 
 </script>
 
 {% endhighlight %}
@@ -10529,8 +10529,8 @@ This method is used to disable ribbon items in the Spreadsheet.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLRibbon.disableRibbonItems(["Spreadsheet_Ribbon_Insert_Illustrations_Pictures"]); // To disable ribbon items.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLRibbon.disableRibbonItems(["Spreadsheet_Ribbon_Insert_Illustrations_Pictures"]); // To disable ribbon items.
 </script>
 
 {% endhighlight %}
@@ -10563,8 +10563,8 @@ This method is used to enable ribbon items in the Spreadsheet.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLRibbon.enableRibbonItems(["Spreadsheet_Ribbon_Insert_Illustrations_Pictures"]); // To enable ribbon items.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLRibbon.enableRibbonItems(["Spreadsheet_Ribbon_Insert_Illustrations_Pictures"]); // To enable ribbon items.
 </script>
 
 {% endhighlight %}
@@ -10579,8 +10579,8 @@ This method is used to hide the file menu in the ribbon tab.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLRibbon.hideMenu(); // To hide the file menu option in the Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLRibbon.hideMenu(); // To hide the file menu option in the Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -10611,8 +10611,8 @@ This method is used to remove the item from the backstage in the spreadsheet.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLRibbon.removeBackStageItem(2); // To remove the item in the backstage.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLRibbon.removeBackStageItem(2); // To remove the item in the backstage.
 </script>
 
 {% endhighlight %}
@@ -10643,8 +10643,8 @@ This method is used to remove the menu item form file menu in spreadsheet.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLRibbon.removeMenuItem(2); // To remove the item in the file menu.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLRibbon.removeMenuItem(2); // To remove the item in the file menu.
 </script>
 
 {% endhighlight %}
@@ -10675,9 +10675,9 @@ This method is used to delete the defined name in the Spreadsheet name manager.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To remove the define name in Spreadsheet name manager.
-xlObj.XLRibbon.removeNamedRange("PRICE_LIST");
+excelObj.XLRibbon.removeNamedRange("PRICE_LIST");
 </script>
 
 {% endhighlight %}
@@ -10713,8 +10713,8 @@ This method is used to remove the tab form ribbon in the spreadsheet.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLRibbon.removeTab(2, true) // To remove the tab from the ribbon.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLRibbon.removeTab(2, true) // To remove the tab from the ribbon.
 </script>
 
 {% endhighlight %}
@@ -10750,8 +10750,8 @@ This method is used to remove the tab group form ribbon in the spreadsheet.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLRibbon.removeTabGroup(1,"Clipboard"); // To remove the tab group from the ribbon.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLRibbon.removeTabGroup(1,"Clipboard"); // To remove the tab group from the ribbon.
 </script>
 
 {% endhighlight %}
@@ -10766,8 +10766,8 @@ This method is used to show the file menu in the ribbon tab.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLRibbon.showMenu(); // To show the file menu option in the Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLRibbon.showMenu(); // To show the file menu option in the Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -10803,8 +10803,8 @@ This method is used to update the menu item in the file menu.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLRibbon.updateMenuItem([{ id: "SignIn1", text: "AddMenuItem", parentId: "FILE", spriteCssClass: "e-icon e-ssr-cut"}], 3); // To update the menu item in the file menu
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLRibbon.updateMenuItem([{ id: "SignIn1", text: "AddMenuItem", parentId: "FILE", spriteCssClass: "e-icon e-ssr-cut"}], 3); // To update the menu item in the file menu
 </script>
 
 {% endhighlight %}
@@ -10819,9 +10819,9 @@ This method is used to update the ribbon icons in the Spreadsheet.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To update the ribbon icons in the spreadsheet based on the active sheet index.
-xlObj.XLRibbon.updateRibbonIcons();
+excelObj.XLRibbon.updateRibbonIcons();
 </script>
 
 {% endhighlight %}
@@ -10856,9 +10856,9 @@ This method is used to scroll the sheet content to the specified cell address in
 {% highlight html %}
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To scroll the sheet to the specified cell address.
-xlObj.XLScroll.scrollToCell("A30");
+excelObj.XLScroll.scrollToCell("A30");
 </script>
 
 {% endhighlight %}
@@ -10904,9 +10904,9 @@ This method is used to find the next occurrence of given value in the sheet/work
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To find the next occurrence of given value.
-xlObj.XLSearch.findNext("g", {isCSen: false, isEMatch: false, type: "value", mode: "sheet", searchBy: "rows"}, 1); 
+excelObj.XLSearch.findNext("g", {isCSen: false, isEMatch: false, type: "value", mode: "sheet", searchBy: "rows"}, 1); 
 </script>
 
 {% endhighlight %}
@@ -10949,9 +10949,9 @@ This method is used to find the previous occurrence of given value in the sheet/
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
  // To find the previous occurrence of given value.
-xlObj.XLSearch.findPrevious("g", {isCSen: true, isEMatch: false, type: "value", mode: "sheet", searchBy: "columns"}, 1);
+excelObj.XLSearch.findPrevious("g", {isCSen: true, isEMatch: false, type: "value", mode: "sheet", searchBy: "columns"}, 1);
 </script>
 
 {% endhighlight %}
@@ -10984,8 +10984,8 @@ This method is used to perform goto operation in the Spreadsheet.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLSearch.goTo("L4"); // To perform goto operation.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLSearch.goTo("L4"); // To perform goto operation.
 </script>
 
 {% endhighlight %}
@@ -11023,9 +11023,9 @@ This method is used to perform goto special operation in the Spreadsheet.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To perform goto special operation.
-xlObj.XLSearch.goToSpecial("comments",{isNumber:true, isText:true, isLogical:true, isError: true}); 
+excelObj.XLSearch.goToSpecial("comments",{isNumber:true, isText:true, isLogical:true, isError: true}); 
 </script>
 
 {% endhighlight %}
@@ -11071,8 +11071,8 @@ This method is used to find and replace all data by workbook in the Spreadsheet.
 {% highlight html %}
 <script>
 // initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLSearch.replaceAllByBook("Sheet", "Spreadsheet", true, false); // Sends a replace all by workbook request to the Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLSearch.replaceAllByBook("Sheet", "Spreadsheet", true, false); // Sends a replace all by workbook request to the Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -11118,8 +11118,8 @@ This method is used to find and replace all data by sheet in Spreadsheet.
 {% highlight html %}
 <script>
 // initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLSearch.replaceAllBySheet("Sheet", "Spreadsheet", true, false); // Sends a replace all by sheet request to Spreadsheet
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLSearch.replaceAllBySheet("Sheet", "Spreadsheet", true, false); // Sends a replace all by sheet request to Spreadsheet
 </script>
 
 {% endhighlight %}
@@ -11139,8 +11139,8 @@ This method is used to clear the selection of the active sheet in the Spreadshee
 <div id="Spreadsheet"></div> 
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLSelection.clearAll(); // To clear selection.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLSelection.clearAll(); // To clear selection.
 </script>
 
 {% endhighlight %}
@@ -11175,8 +11175,8 @@ Element
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLSelection.getSelectedCells(1); //Gets the selected cells element.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLSelection.getSelectedCells(1); //Gets the selected cells element.
 </script>
 
 {% endhighlight %}
@@ -11207,9 +11207,9 @@ This method is used to refresh the selection in the Spreadsheet.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To defined refresh selection in Spreadsheet.
-xlObj.XLSelection.refreshSelection("A1:D3");
+excelObj.XLSelection.refreshSelection("A1:D3");
 </script>
 
 {% endhighlight %}
@@ -11240,8 +11240,8 @@ This method is used to select a single column in the Spreadsheet.
 {% highlight html %}
 <script>
 // initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLSelection.selectColumn(1); //To select a single column in the active sheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLSelection.selectColumn(1); //To select a single column in the active sheet.
 </script>
 
 {% endhighlight %}
@@ -11277,8 +11277,8 @@ This method is used to select entire columns in a specified range (start index a
 {% highlight html %}
 <script>
 // initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLSelection.selectColumns(2, 4); //To select entire columns in the specified range.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLSelection.selectColumns(2, 4); //To select entire columns in the specified range.
 </script>
 
 {% endhighlight %}
@@ -11309,8 +11309,8 @@ This method is used to select the specified range of cells in the Spreadsheet.
 {% highlight html %}
 <script>
 // initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLSelection.selectRange("A1:B2"); //To select range of cells in Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLSelection.selectRange("A1:B2"); //To select range of cells in Spreadsheet.
 </script>
 {% endhighlight %}
 
@@ -11340,8 +11340,8 @@ This method is used to select a single row in the Spreadsheet.
 {% highlight html %}
 <script>
 // initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLSelection.selectRow(1); //To select a single row in the specified sheet index in Spreadsheet.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLSelection.selectRow(1); //To select a single row in the specified sheet index in Spreadsheet.
 </script>
 
 {% endhighlight %}
@@ -11377,8 +11377,8 @@ This method is used to select entire rows in a specified range (start index and 
 {% highlight html %}
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLSelection.selectRows(2, 4); //To select entire rows in the specified range.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLSelection.selectRows(2, 4); //To select entire rows in the specified range.
 </script>
 
 {% endhighlight %}
@@ -11393,8 +11393,8 @@ This method is used to select all cells in active sheet.
 {% highlight html %}
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLSelection.selectSheet(); //To select all cells in a sheet
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLSelection.selectSheet(); //To select all cells in a sheet
 </script>
 
 {% endhighlight %}
@@ -11435,8 +11435,8 @@ This method is used to change the picture.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLShape.changePicture('Spreadsheet_picture1', "img.png"); // To change the picture.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLShape.changePicture('Spreadsheet_picture1', "img.png"); // To change the picture.
 </script>
 
 {% endhighlight %}
@@ -11484,9 +11484,9 @@ This method is used to change the border of the picture.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To change the border of the picture.
-xlObj.XLShape.changePictureBorder("Spreadsheet_picture1", "1px", "solid", "#89c987"); 
+excelObj.XLShape.changePictureBorder("Spreadsheet_picture1", "1px", "solid", "#89c987"); 
 </script>
 
 {% endhighlight %}
@@ -11524,8 +11524,8 @@ This method is used to reset the picture.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet"), pictureId = "Spreadsheet_picture1";
-xlObj.XLShape.resetPicture(pictureId, "resetsize"); // To reset the picture.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet"), pictureId = "Spreadsheet_picture1";
+excelObj.XLShape.resetPicture(pictureId, "resetSize"); // To reset the picture.
 </script>
 
 {% endhighlight %}
@@ -11585,9 +11585,9 @@ string
 {% highlight html %}
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 //To set the picture in the Spreadsheet.
-xlObj.XLShape.setPicture('D4', "../images/spreadsheet/ladybug.png", 538, 319);
+excelObj.XLShape.setPicture('D4', "../images/spreadsheet/ladybug.png", 538, 319);
 </script>
  
 {% endhighlight %}
@@ -11632,9 +11632,9 @@ This method is used to sort a particular range of cells based on its cell or fon
 {% highlight html %}
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 //To sort range based on cell color in the Spreadsheet.
-xlObj.XLSort.sortByColor("PutCellColor", {"background-color" : "#EC2024", color:  "#6N2N2N"}, "D2:D8"); </script>
+excelObj.XLSort.sortByColor("PutCellColor", {"background-color" : "#EC2024", color:  "#6N2N2N"}, "D2:D8"); </script>
 
 {% endhighlight %}
 
@@ -11677,9 +11677,9 @@ boolean
 {% highlight html %}
 <script>
 // Initialize Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 //To sort the cell value in a specified range in the Spreadsheet.
-xlObj.XLSort.sortByRange("A1:D3", "B",  "ascending"); 
+excelObj.XLSort.sortByRange("A1:D3", "B",  "ascending"); 
 </script>
 
 {% endhighlight %}
@@ -11734,9 +11734,9 @@ This method is used to apply data validation rules in a selected range of cells 
 {% highlight html %}
 <script>
 //Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To apply validation rule to allow whole number between 15 and 20.
-xlObj.XLValidate.applyDVRules("A1:D3", ["Between", "15", "20"], "number" ,true, true);
+excelObj.XLValidate.applyDVRules("A1:D3", ["Between", "15", "20"], "number" ,true, true);
 </script>
 
 {% endhighlight %}
@@ -11803,8 +11803,8 @@ This method is used to clear invalid data highlights in the given range.
 <div id="Spreadsheet"></div>
 <script>
 // Initialize the Spreadsheet object.
-var xlObj = $("#Spreadsheet").data("ejSpreadsheet");
-xlObj.XLValidate.clearHighlightedValData("A1:K15"); // To clear highlighted data.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLValidate.clearHighlightedValData("A1:K15"); // To clear highlighted data.
 </script>
 
 {% endhighlight %}

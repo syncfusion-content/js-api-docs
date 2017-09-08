@@ -1395,7 +1395,7 @@ All the Scheduler cell related context menu items are grouped under this cells m
         { id: "new", text: "New Appointment" },
         { id: "recurrence", text: "New Recurring Appointment" },
         { id: "today", text: "Today" },
-        { id: "gotodate", text: "Go to date" },
+        { id: "gotoDate", text: "Go to date" },
         { id: "settings", text: "Settings" },
         { id: "view", text: "View", parentId: "settings" },
         { id: "timeMode", text: "TimeMode", parentId: "settings" },
@@ -1432,7 +1432,7 @@ All the Scheduler cell related context menu items are grouped under this cells m
                         { id: "new", text: "New Appointment" },
                         { id: "recurrence", text: "New Recurring Appointment" },
                         { id: "today", text: "Today" },
-                        { id: "gotodate", text: "Go to date" },
+                        { id: "gotoDate", text: "Go to date" },
                         { id: "settings", text: "Settings" },
                         { id: "view", text: "View", parentId: "settings" },
                         { id: "timeMode", text: "TimeMode", parentId: "settings" },
@@ -1486,7 +1486,7 @@ All the Scheduler cell related context menu items are grouped under this cells m
                         { id: "new", text: "New Appointment" },
                         { id: "recurrence", text: "New Recurring Appointment" },
                         { id: "today", text: "Today" },
-                        { id: "gotodate", text: "Go to date" }
+                        { id: "gotoDate", text: "Go to date" }
                       ]
                     }
                 }, 
@@ -3228,7 +3228,7 @@ Binds appointmentClass field name in the dataSource. It applies custom CSS class
                     },
                     {
                         Id: 101,
-                        Subject: "Discovery of Exoplanets",
+                        Subject: "Discovery of Exo-planets",
                         StartTime: new Date(2014, 04, 07, 6, 00),
                         EndTime: new Date(2014, 04, 07, 9, 30),
                         ownerId: 1
@@ -3960,7 +3960,7 @@ You can customize the time column display based on the requirement.
 
 <div id="Schedule"></div>
 
-<script id="timecolumntemplate" type="text/x-jsrender">
+<script id="timeColumnTemplate" type="text/x-jsrender">
         <div style="height:100%">           
             <div>
                 <div>{{:StartTime}}</div>
@@ -3974,7 +3974,7 @@ You can customize the time column display based on the requirement.
                 currentDate: new Date(2014, 4, 2),
                 agendaViewSettings: {
                     daysInAgenda: 7,
-                    timeColumnTemplateId: "#timecolumntemplate"
+                    timeColumnTemplateId: "#timeColumnTemplate"
                 }
             });
         });
@@ -5884,14 +5884,14 @@ void
  
 <script>
 $(function () {
-	window.signalr = $.signalR.scheduleHub;
-	window.signalr.client.modify = function (action, data) {
+	window.signalR = $.signalR.scheduleHub;
+	window.signalR.client.modify = function (action, data) {
 		$("#Schedule1").ejSchedule('instance').notifyChanges(action, data);
 	};
 	$.signalR.hub.start({ jsonp: true }).done(function () {
 		window.actionComplete = function (args) {
 			if (args.methodType != "public" && (args.type == "beforeAppointmentCreate" || args.type == "beforeAppointmentChange" || args.type == "beforeAppointmentRemove")) {
-				window.signalr.server.modify(args.type, args.appointment);
+				window.signalR.server.modify(args.type, args.appointment);
 			}
 		};
 	});
