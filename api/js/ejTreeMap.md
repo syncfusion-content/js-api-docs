@@ -1777,7 +1777,7 @@ Specifies the overflow options for leaf labels.
 			<td class="description">Wrap the label by letter when its width exceeds grid width</td>
 		</tr>
     <tr>
-			<td class="name">wrapbyword</td>			
+			<td class="name">wrapByWord</td>			
 			<td class="description">Wrap the label by word when its width exceeds grid width</td>
 		</tr>    
 	</tbody>
@@ -1807,7 +1807,7 @@ Specifies the overflow options for leaf labels.
  
    //Sets the textOverflow value 
    
-   $("#container").data("ejTreeMap").model.leafItemSettings.textOverflow= "wrapbyword"; 
+   $("#container").data("ejTreeMap").model.leafItemSettings.textOverflow= "wrapByWord"; 
 
 {% endhighlight %}
 
@@ -2845,7 +2845,7 @@ Specifies the overflow options for leaf labels.
 			<td class="description">Wrap the label by letter when its width exceeds grid width</td>
 		</tr>
     <tr>
-			<td class="name">wrapbyword</td>			
+			<td class="name">wrapByWord</td>			
 			<td class="description">Wrap the label by word when its width exceeds grid width</td>
 		</tr> 
 	</tbody>
@@ -2875,7 +2875,7 @@ Specifies the overflow options for leaf labels.
  
    //Sets the textOverflow value 
    
-   $("#container").data("ejTreeMap").model.levels[0].textOverflow= "wrapbyword"; 
+   $("#container").data("ejTreeMap").model.levels[0].textOverflow= "wrapByWord"; 
 
 {% endhighlight %}
 

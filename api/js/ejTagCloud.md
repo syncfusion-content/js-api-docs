@@ -404,7 +404,7 @@ Specifies the list of HTML attributes to be added to TagCloud control.
 <div id="tagcloud"></div> 
  
 <script>
-// Set the htmlattributes during initialization.                   
+// Set the htmlAttributes during initialization.                   
         $("#tagcloud").ejTagCloud({ htmlAttributes:{"aria-label":"tagcloud"} });                      
 </script>
 {% endhighlight %}
