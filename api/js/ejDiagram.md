@@ -5420,6 +5420,10 @@ function customUndoRedo(args) {
 
 {% endhighlight %}
 
+#### Returns:
+
+* string
+
 ### historyManager.undoStack `array`
 {:#members:historymanager-undostack}
 
