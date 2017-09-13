@@ -621,7 +621,7 @@ Specifies the mapping fields for the data items of the DropDownList.
            { text: "Argentina", flag: "flag-ar" },
            { text: "Armenia", flag: "flag-am" }, 
            { text: "Brazil", flag: "flag-br" },
-           { text: "Bangladesh", flag: "flag-bd" }
+           { text: "Bangladesh", flag: "flag-bangladesh" }
         ];
         //Sets fields with API value during initialization.  
         $("#dropdown").ejDropDownList(
@@ -804,7 +804,7 @@ Used to create visualized header for dropdown items
              { text: "Argentina", flag: "flag-ar" },
              { text: "Armenia", flag: "flag-am" }, 
              { text: "Brazil", flag: "flag-br" },
-             { text: "Bangladesh", flag: "flag-bd" },
+             { text: "Bangladesh", flag: "flag-bangladesh" },
              { text: "Canada", flag: "flag-ca" }
         ];
         $("#dropdown").ejDropDownList( 
@@ -843,7 +843,7 @@ Used to create visualized header for dropdown items
         }
         .flag.flag-am {background-position: -25px 0;}
         .flag.flag-ar {background-position: -50px 0;}
-        .flag.flag-bd {background-position: -75px 0;}
+        .flag.flag-bangladesh {background-position: -75px 0;}
         .flag.flag-br {background-position: -100px 0;}
         .flag.flag-ca {background-position: -125px 0;}
     </style>
@@ -940,7 +940,7 @@ Data can be fetched in the DropDownList control by using the DataSource, specify
              { text: "Argentina", flag: "flag-ar" },
              { text: "Armenia", flag: "flag-am" }, 
              { text: "Brazil", flag: "flag-br" },
-             { text: "Bangladesh", flag: "flag-bd" },
+             { text: "Bangladesh", flag: "flag-bangladesh" },
              { text: "Canada", flag: "flag-ca" }
         ];
 
@@ -1664,7 +1664,7 @@ By default, you can add any text or image to the DropDownList item. To customize
              { text: "Argentina", flag: "flag-ar" },
              { text: "Armenia", flag: "flag-am" }, 
              { text: "Brazil", flag: "flag-br" },
-             { text: "Bangladesh", flag: "flag-bd" },
+             { text: "Bangladesh", flag: "flag-bangladesh" },
              { text: "Canada", flag: "flag-ca" }
         ];
         $("#dropdown").ejDropDownList( 
@@ -1685,7 +1685,7 @@ By default, you can add any text or image to the DropDownList item. To customize
         }
         .flag.flag-am {background-position: -25px 0;}
         .flag.flag-ar {background-position: -50px 0;}
-        .flag.flag-bd {background-position: -75px 0;}
+        .flag.flag-bangladesh {background-position: -75px 0;}
         .flag.flag-br {background-position: -100px 0;}
         .flag.flag-ca {background-position: -125px 0;}
     </style>
@@ -4054,20 +4054,20 @@ Fires when the cascading happens between two DropDownList exactly after the valu
         var countries = [
             { value: 11, parentId: 'a', text: "Algeria", flag: "flag-dz" },
             { value: 12, parentId: 'a', text: "Armenia", flag: "flag-am" },
-            { value: 13, parentId: 'a', text: "Bangladesh", flag: "flag-bd" },
+            { value: 13, parentId: 'a', text: "Bangladesh", flag: "flag-bangladesh" },
             { value: 14, parentId: 'a', text: "Cuba", flag: "flag-cu" },
-            { value: 15, parentId: 'b', text: "Denmark", flag: "flag-dk" },
+            { value: 15, parentId: 'b', text: "Denmark", flag: "flag-denmark" },
             { value: 16, parentId: 'b', text: "Egypt", flag: "flag-eg" },
             { value: 17, parentId: 'c', text: "Finland", flag: "flag-fi" },
             { value: 18, parentId: 'c', text: "India", flag: "flag-in" },
             { value: 19, parentId: 'c', text: "Malaysia", flag: "flag-my" },
-            { value: 20, parentId: 'd', text: "New Zealand", flag: "flag-nz" },
+            { value: 20, parentId: 'd', text: "New Zealand", flag: "flag-new-zealand" },
             { value: 21, parentId: 'd', text: "Norway", flag: "flag-no" },
             { value: 22, parentId: 'd', text: "Poland", flag: "flag-pl" },
             { value: 23, parentId: 'e', text: "Romania", flag: "flag-ro" },
-            { value: 24, parentId: 'e', text: "Singapore", flag: "flag-sg" },
+            { value: 24, parentId: 'e', text: "Singapore", flag: "flag-singapore" },
             { value: 25, parentId: 'e', text: "Thailand", flag: "flag-th" },
-            { value: 26, parentId: 'e', text: "Ukraine", flag: "flag-ua" }
+            { value: 26, parentId: 'e', text: "Ukraine", flag: "flag-ukraine" }
         ];
 
         // Sets the cascadeTo API value during initialization 

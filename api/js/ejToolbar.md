@@ -218,7 +218,7 @@ Specifies dataSource value for the Toolbar control during initialization.
         items = [{ id: "1", spriteCssClass: "editTools cursor", text: "Cursor" },
 { id: "2", spriteCssClass: "editTools select", text: "Select" },
 { id: "3", spriteCssClass: "editTools move", text: "Move" },
-{ id: "4", spriteCssClass: "editTools rectselect", text: "Rectangle Select" }];
+{ id: "4", spriteCssClass: "editTools rectangle select", text: "Rectangle Select" }];
 $("#toolbar1").ejToolbar({ dataSource:  items}); 
 </script>{% endhighlight %}
 
@@ -585,7 +585,7 @@ Specifies the mapping fields for the data items of the Toolbar
         items = [{ id: "1", spriteCssClass: "editTools cursor", text: "Cursor" },
  { id: "2", spriteCssClass: "editTools select", text: "Select" },
  { id: "3", spriteCssClass: "editTools move", text: "Move" },
- { id: "4", spriteCssClass: "editTools rectselect", text: "Rectangle Select"
+ { id: "4", spriteCssClass: "editTools rectangle select", text: "Rectangle Select"
  }];
 $("#toolbar1").ejToolbar(
                 {
@@ -822,7 +822,7 @@ Specifies the list of HTML attributes to be added to toolbar control.
 </ul>
 </div>
 <script>
-//To set htmlattributes API value during initialization  
+//To set htmlAttributes API value during initialization  
         $("#toolbar1").ejToolbar({ htmlAttributes: { title: "Demo" } });                                        
 </script>
 {% endhighlight %}
@@ -997,8 +997,8 @@ Specifies the items of  Toolbar
                             { id: "button1", text: "Button1" ,group:"group1", tooltipText:"button1" , height:"20px", spriteCssClass: "editTools cursor",htmlAttributes: {class:"e-item "} },
 							{ id: "button2",group:"group1",text:"Button2",spriteCssClass: "editTools select",tooltipText:"button2"},
 							{ id: "button3", group:"group1",template:"<input type='text' id='dropdown1' />"},
-							{ id: "button4", text: "Button4" ,group:"group2",spriteCssClass: "editTools rectselect",tooltipText:"button4"},
-                            { id: "button5", text: "Button5",group:"group2",spriteCssClass: "editTools roundselect",tooltipText:"button5",imageUrl:"content/images/toolbar/Check.png",imageAttributes:{width: 20, height: 20}}],
+							{ id: "button4", text: "Button4" ,group:"group2",spriteCssClass: "editTools rectangle select",tooltipText:"button4"},
+                            { id: "button5", text: "Button5",group:"group2",spriteCssClass: "editTools round select",tooltipText:"button5",imageUrl:"content/images/toolbar/Check.png",imageAttributes:{width: 20, height: 20}}],
 
                
            });

@@ -3228,7 +3228,7 @@ Binds appointmentClass field name in the dataSource. It applies custom CSS class
                     },
                     {
                         Id: 101,
-                        Subject: "Discovery of Exo-planets",
+                        Subject: "Discovery of exoplanets",
                         StartTime: new Date(2014, 04, 07, 6, 00),
                         EndTime: new Date(2014, 04, 07, 9, 30),
                         ownerId: 1

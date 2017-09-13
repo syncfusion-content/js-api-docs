@@ -66,7 +66,7 @@ var dataManager = new ej.DataManager(datasource, query, adaptor)
         for(var i=0;i<5;i++)
         { 
             row="dataManger.dataSource.json[0];;" 
-            tableBody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td></tr>"," row.orderid,="" row.customerid,="" row.employeeid,="" row.shipcity,="" row.freight);
+            tableBody="" +="String.format("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td><td>{4}</td></tr>"," row.OrderID,="" row.CustomerID,="" row.EmployeeID,="" row.ShipCity,="" row.freight);
             $(".table="" tbody").html(tableBody);
         }
     </script>
