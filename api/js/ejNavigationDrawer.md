@@ -1154,8 +1154,8 @@ To load AJAX content into NavigationDrawer container.
       $("#basicAccordion").ejAccordion({width:"100%",height:"100%"});
       $("#navigationPane").ejNavigationDrawer({ targetId: "buttonDrawer", contentId: "content_container", type: "overlay", direction: "left", position: "normal" });
       $(".selectedAccordion").click(function(e){
-          var navObj = $("#navigationPane").ejNavigationDrawer("instance");
-          navObj.loadContent($("#content_container") ,"/Content/NavigationDrawer/"+$(e.currentTarget).attr("data-url").replace("#","")+".html");
+          var navigationObj = $("#navigationPane").ejNavigationDrawer("instance");
+          navigationObj.loadContent($("#content_container") ,"/Content/NavigationDrawer/"+$(e.currentTarget).attr("data-url").replace("#","")+".html");
         });
     });
     </script >
