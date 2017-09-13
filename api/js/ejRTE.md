@@ -2803,7 +2803,7 @@ Specifies the name for customUnorderedList item.
                         customUnorderedList: [{
                         name: "UnorderedInsert",
                         tooltip: "Custom UnorderedList",
-                        css: "e-rte-toolbar-icon e-rte-unlistitems customuUnordered",
+                        css: "e-rte-toolbar-icon e-rte-unlistitems customUnordered",
 	                    text: "Smiley",
                         listImage:"url('../content/images/rte/Smiley-GIF.gif')"                   
             }]    

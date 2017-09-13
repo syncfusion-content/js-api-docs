@@ -706,7 +706,7 @@ Example
 
             $('#selectExperts').ejListBox({
 
-                template: '&lt;div class="ename"&gt; ${text} &lt;/div&gt;&lt;div class="design"&gt; ${design} &lt;/div&gt;&lt;div class="cont"&gt; ${country} &lt;/div&gt;'
+                template: '&lt;div class="bikename"&gt; ${text} &lt;/div&gt;&lt;div class="design"&gt; ${design} &lt;/div&gt;&lt;div class="cont"&gt; ${country} &lt;/div&gt;'
 
             });
         
