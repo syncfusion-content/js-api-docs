@@ -166,7 +166,7 @@ Specifies whether the URL of an external stylesheet can be included to customize
 ### docType `string`
 {:#members:doctype}
 
-Prepend a doctype to the document frame.
+Prepend a docType to the document frame.
 
 #### Default Value:
 
