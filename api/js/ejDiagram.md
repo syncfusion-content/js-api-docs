@@ -352,6 +352,10 @@ $("#diagramcontent").ejDiagram( {
 });
 </script>
 
+#### Returns:
+
+boolean 
+
 {% endhighlight %}
 
 ### commandManager.commands.execute `function`
@@ -5181,6 +5185,10 @@ if(diagram.model.historyManager.canPop(entry))
 	diagram.model.historyManager.pop();
 	
 </script>
+
+#### Returns:
+
+boolean 
 
 {% endhighlight %}
 
