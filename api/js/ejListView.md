@@ -687,6 +687,70 @@ $("#lb").ejListView ("option", "fieldSettings");
 $("#lb").ejListView ("option", "fieldSettings", true); 
 </script> {% endhighlight %}
 
+### fieldSettings.checked `boolean`
+{:#members:fieldsettings-checked}
+
+Defines the specific field name which contains Boolean values to specify whether the list items to be checked by default or not.
+
+### fieldSettings.navigateUrl `string`
+{:#members:fieldsettings-navigateurl}
+
+Defines the URL to be navigated while clicking the list item. 
+
+### fieldSettings.attributes `Object`
+{:#members:fieldsettings-attributes}
+
+Defines the HTML attributes such as id, class, styles for the specific list item.
+
+### fieldSettings.id `string`
+{:#members:fieldsettings-id}
+
+Defines the specific field name which contains id values for the list items.
+
+### fieldSettings.imageUrl `string`
+{:#members:fieldsettings-imageurl}
+
+Defines the URL for the image to be displayed in the list item.
+
+### fieldSettings.imageClass `string`
+{:#members:fieldsettings-imageclass}
+
+Defines the class name for image in that specific list items.
+
+### fieldSettings.preventSelection `boolean`
+{:#members:fieldsettings-preventselection}
+
+Specifies whether to prevent the selection of the list item.
+
+### fieldSettings.persistSelection `boolean`
+{:#members:fieldsettings-persistselection}
+
+Specifies whether to retain the selection of the list item.
+
+### fieldSettings.primaryKey `string`
+{:#members:fieldsettings-primarykey}
+
+To define the first level of list items.
+
+### fieldSettings.parentPrimaryKey `string`
+{:#members:fieldsettings-parentprimarykey}
+
+To define the child level of list items inside the parent items.
+
+### fieldSettings.text `string`
+{:#members:fields-text}
+
+Defines the specific field name in the data source to load the list with data.
+
+### fieldSettings.mouseUP `string`
+{:#members:fields-mouseup}
+
+To trigger the mouseup event for specific list items.
+
+### fieldSettings.mouseDown `string`
+{:#members:fields-mousedown}
+
+To trigger the mousedown event for specific list items.
 
 ### items `Array`
 {:#members:items}
