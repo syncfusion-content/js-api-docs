@@ -5335,6 +5335,86 @@ schObj.exportSchedule("ActionName","ExportToICS", 101); // To Export a single ap
 
 {% endhighlight %}
 
+### saveAsExcel(action, serverEvent, type)
+{:#methods:saveasexcel}
+
+Exports the appointments from the Schedule control.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">action</td>
+            <td class="type">string</td>
+            <td class="description">It refers the controller action name to redirect. (For MVC)</td>
+        </tr>
+        <tr>
+            <td class="name">serverEvent</td>
+            <td class="type">string</td>
+            <td class="description">It refers the server event name.(For ASP)</td>
+        </tr>
+        <tr>
+            <td class="name">type</td>
+            <td class="type">boolean</td>
+            <td class="description">To export all appointments including individual occurrences or excluding the individual occurrences of recurrence appointments. </td>
+        </tr>
+    </tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+void
+
+#### Example
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script>
+$('#Schedule').ejSchedule({
+    appointmentSettings: {
+        dataSource: [
+            {
+                Id: 101,
+                Subject: "Talk with Nature",
+                StartTime: new Date(2014, 4, 5, 10, 00),
+                EndTime: new Date(2014, 4, 5, 12, 00),
+                StartTimeZone: "UTC +00:00",
+                EndTimeZone: "UTC +00:00"
+            }, {
+                Id: 102,
+                Subject: "Play with pets",
+                StartTime: new Date(2014, 4, 5, 05, 00),
+                EndTime: new Date(2014, 4, 5, 07, 00),
+                Recurrence: true,
+                RecurrenceRule: "FREQ=DAILY;INTERVAL=2;COUNT=10",
+                StartTimeZone: "UTC +00:00",
+                EndTimeZone: "UTC +00:00"
+            }
+        ],
+        id: "Id",
+        startTime: "StartTime",
+        endTime: "EndTime",
+        subject: "Subject",
+        startTimeZone: "StartTimeZone",
+        endTimeZone: "EndTimeZone"
+    }
+});
+var schObj = $("#Schedule").data("ejSchedule");
+schObj.saveAsExcel("ActionName", null, true); // To Export all the Appointments including ocurrences
+schObj.saveAsExcel("ActionName", null, false); // To Export all the Appointments excluding ocurrences
+</script>
+
+{% endhighlight %}
+
 ### filterAppointments(filterConditions)
 {:#methods:filterappointments}
 
