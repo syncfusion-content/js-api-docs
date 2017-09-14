@@ -695,7 +695,7 @@ Defines the specific field name which contains Boolean values to specify whether
 ### fieldSettings.navigateUrl `string`
 {:#members:fieldsettings-navigateurl}
 
-To navigate the another page while clicking the list items by using this field. 
+Defines the URL to be navigated while clicking the list item. 
 
 ### fieldSettings.attributes `Object`
 {:#members:fieldsettings-attributes}
@@ -710,12 +710,12 @@ Defines the specific field name which contains id values for the list items.
 ### fieldSettings.imageUrl `string`
 {:#members:fieldsettings-imageurl}
 
-Defines the imageURL for the image to be displayed in the list item.
+Defines the URL for the image to be displayed in the list item.
 
 ### fieldSettings.imageClass `string`
 {:#members:fieldsettings-imageclass}
 
-Defines the class name for specific list items.
+Defines the class name for image in that specific list items.
 
 ### fieldSettings.preventSelection `boolean`
 {:#members:fieldsettings-preventselection}
