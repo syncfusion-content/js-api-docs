@@ -1806,7 +1806,7 @@ $("#Grid").ejGrid({
 ### contextMenuSettings.subContextMenu.template `string`
 {:#members:contextmenusettings-subcontextmenu-template}
 
-Used to get or set the sub menu items to the custom context menu item using jsrender template.
+Used to get or set the sub menu items to the custom context menu item using JsRender template.
 
 #### Default Value:
 {:.param}
