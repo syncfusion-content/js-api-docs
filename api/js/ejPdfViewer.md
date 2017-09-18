@@ -3078,7 +3078,7 @@ Returns the page number in which the signature is added.
 {% highlight html %}
 <script type="text/javascript">
         $(function () {
-            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', signatureAdd: "signatureadd" });
+            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', signatureAdd: "signatureAdd" });
         });
         function signatureAdd(args) {
             alert("The signature is added to the PDF document successfully");
@@ -3186,7 +3186,7 @@ Returns the page number in which the signature is removed.
 {% highlight html %}
 <script type="text/javascript">
         $(function () {
-            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', signatureDelete: "signaturedelete" });
+            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', signatureDelete: "signatureDelete" });
         });
         function signatureDelete(args) {
             alert("The signature is removed from the page of the PDF document successfully");
@@ -3360,7 +3360,7 @@ Returns the current opacity of the signature.
 {% highlight html %}
 <script type="text/javascript">
         $(function () {
-            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', signaturePropertiesChange: "signaturepropertieschange" });
+            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', signaturePropertiesChange: "signaturePropertiesChange" });
         });
         function signaturePropertiesChange(args) {
             alert("The signature properties is changed from the page of the PDF document successfully");
@@ -3501,7 +3501,7 @@ Returns the previous bounds of the signature resized in the page of the PDF docu
 {% highlight html %}
 <script type="text/javascript">
         $(function () {
-            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', signatureResize: "signatureresize" });
+            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', signatureResize: "signatureResize" });
         });
         function signatureResize(args) {
             alert("The signature is resized to the PDF document successfully");
