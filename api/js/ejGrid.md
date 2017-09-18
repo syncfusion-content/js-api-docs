@@ -1803,6 +1803,30 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
+### contextMenuSettings.subContextMenu.template `string`
+{:#members:contextmenusettings-subcontextmenu-template}
+
+Used to get or set the sub menu items to the custom context menu item using JsRender template.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
+   contextMenuSettings: { enableContextMenu: true, customContextMenuItems: ["Hide Column"],
+   subContextMenu: [{ contextMenuItem: "Hide Column", template: "<ul><li><a>OrderID</a></li></ul>" }] 
+  },          
+});
+</script>
+{% endhighlight %}
+
 
 ### contextMenuSettings.disableDefaultItems `boolean`
 {:#members:contextmenusettings-disabledefaultitems}
