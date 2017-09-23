@@ -106,7 +106,7 @@ Sets the root class for RadialSlider theme. This cssClass API helps to use custo
     <script>
     $(function()
     {
-    $("#radialSlider").ejRadialSlider({cssClass:"customclass"});
+    $("#radialSlider").ejRadialSlider({cssClass:"custom-class"});
     });
     </script>
 
