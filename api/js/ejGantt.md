@@ -7347,7 +7347,7 @@ Triggered when taskbar item is clicked in Gantt.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
@@ -7419,7 +7419,7 @@ Triggered when toolbar item is clicked in Gantt.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
