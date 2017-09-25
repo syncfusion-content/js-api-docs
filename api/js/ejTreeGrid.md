@@ -804,7 +804,6 @@ Controls the visibility of the column.
 {% endhighlight %}
 
 ### columns.width `number`
-
 {:#members:columns-width}
 
 Gets or sets a value for treegrid column width
@@ -821,7 +820,6 @@ Gets or sets a value for treegrid column width
 
 
 ### columns.headerTemplateID `string`
-
 {:#members:columns-headertemplateid}
 
 Specifies the header template value for the column header
@@ -859,7 +857,6 @@ Specifies the display format of a column
 
 
 ### columns.isTemplateColumn `boolean`
-
 {:#members:columns-istemplatecolumn}
 
 Specifies whether the column is a template column
@@ -986,7 +983,6 @@ Specifies the text alignment for the column
 {% endhighlight %}
 
 ### columns.allowEditing `boolean`
-
 {:#members:columns-allowediting}
 
 Enables or disables the ability to edit a row or cell.
@@ -1097,7 +1093,6 @@ $("#TreeGrid").ejTreeGrid({
 {% endhighlight %}
 
 ### columns.showInColumnChooser `boolean`
-
 {:#members:columns-showincolumnchooser}
 
 We can include or exclude particular column from column visibility list in column menu.
@@ -1155,7 +1150,6 @@ Sets the clip mode for TreeGrid cell as ellipsis or clipped content(both header 
 {% endhighlight %}
 
 ### columns.tooltip  `string`
-
 {:#members:columns-tooltip}
 
 Sets the tooltip template for the specific column.
@@ -1173,7 +1167,6 @@ Sets the tooltip template for the specific column.
 {% endhighlight %}
 
 ### columns.headerTooltip   `string`
-
 {:#members:columns-headertooltip}
 
 Sets the tooltip template for the column header
@@ -1262,7 +1255,6 @@ To Specify the column fields to be displayed in the dialog while inserting a col
 {% endhighlight %}
 
 ### columns.allowFreezing `boolean`
-
 {:#members:columns-allowfreezing}
 
 Enables or disables the ability to freeze/unfreeze the columns
@@ -5079,6 +5071,7 @@ Triggered after a column resized
 </tr>
 </tbody>
 </table>
+
 #### Example
 
 {% highlight html %}
@@ -5159,6 +5152,7 @@ Triggered while start to resize a column
 </tr>
 </tbody>
 </table>
+
 #### Example
 
 {% highlight html %}
@@ -5249,6 +5243,7 @@ Triggered when a column has been resized
 </tr>
 </tbody>
 </table>
+
 #### Example
 
 {% highlight html %}
@@ -6763,7 +6758,7 @@ Triggered when toolbar item is clicked in TreeGrid.
 </tbody>
 </table>
 
-####Example
+#### Example
 {:.example}
 
 {% highlight html %}
