@@ -661,6 +661,35 @@ When set to true, allows sending Asynchronous ajax request for checking the spel
 </script>
 
 {% endhighlight %}
+
+### ajaxDataType `string`
+{:#members:ajaxdatatype}
+
+Sets the ajax data type within the SpellCheck control.
+
+#### Default Value
+
+* "jsonp"
+
+#### Example – To check the spelling of the target element by passing the json type data
+
+{% highlight html %}
+
+<div id="SpellCheck"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#SpellCheck").ejSpellCheck({
+                dictionarySettings: {
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",	
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+                },                
+				ajaxDataType:"json"
+            });
+        });
+</script>
+
+{% endhighlight %}
  
 ## Methods
 
