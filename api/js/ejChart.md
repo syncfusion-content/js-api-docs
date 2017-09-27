@@ -12701,7 +12701,7 @@ $("#container").ejChart({
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0vka45gc)
 
-### Margin `object`
+### margin `object`
 {:#members:margin}
 
 
