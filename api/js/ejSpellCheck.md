@@ -665,7 +665,7 @@ When set to true, allows sending Asynchronous ajax request for checking the spel
 ### ajaxDataType `string`
 {:#members:ajaxdatatype}
 
-Sets the ajax data type within the SpellCheck control.
+Sets the data type for the ajax call used within the SpellCheck control, denoting the type of data that are expected to be retrieved from the server. The applicable values are `json` and `jsonp`.
 
 #### Default Value
 
