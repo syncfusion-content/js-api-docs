@@ -4152,7 +4152,7 @@ Demo [Link](http://jsplayground.syncfusion.com/i0ilxy1m)
 ### scrollOffset(left, top)
 {:#methods:scrolloffset}
 
-Set left, top position of horizontal and vertical scroll bar in TreeGrid
+Sets the scroll left and scroll top offsets of TreeGrid.
 
 <table class="params">
 <thead>
@@ -4176,7 +4176,7 @@ Set left, top position of horizontal and vertical scroll bar in TreeGrid
 </tbody>
 </table>
 
-Usage: we can able to change the left&top position of horizontal and vertical scroll bar dynamically.
+Usage: we can able to change the left and top position of horizontal and vertical scroll bar dynamically.
 
 #### Example
 
@@ -4199,7 +4199,7 @@ Demo [Link](http://jsplayground.syncfusion.com/ukm0behc)
 ### getScrollTopOffset()
 {:#methods:getscrolltopoffset}
 
-Get vertical scroll bar top value. 
+Gets the scroll top offset of TreeGrid. 
 
 
 #### Returns:
@@ -4207,7 +4207,7 @@ Get vertical scroll bar top value.
 
 number
 
-Usage: we can able to get vertical scroll top value of TreeGrid dynamically.
+Usage: we can able to get scroll top offset of TreeGrid dynamically.
 
 #### Example
 
@@ -4228,14 +4228,14 @@ Demo [Link](http://jsplayground.syncfusion.com/t44osvai)
 ### getScrollLeftOffset()
 {:#methods:getscrollleftoffset}
 
-Get horizontal scroll bar left value. 
+Gets the scroll left offset of TreeGrid. 
 
 #### Returns:
 {:#methods:returns:}
 
 number
 
-Usage: we can able to get Horizontal scroll left value of TreeGrid dynamically.
+Usage: we can able to get scroll left offset of TreeGrid dynamically.
 
 #### Example
 
@@ -4257,9 +4257,9 @@ Demo [Link](http://jsplayground.syncfusion.com/at3xgdb3)
 ### scrollToTop()
 {:#methods:scrolltotop}
 
-Move vertical scroll bar to top(origin). 
+Sets the scroll top offset of TreeGrid to `0`.
 
-Usage: we can able to move vertical scroll bar to top(zero) dynamically.
+Usage: we can able to scroll the TreeGrid's content to `0` offset vertically.
 
 #### Example
 
@@ -4272,7 +4272,7 @@ Usage: we can able to move vertical scroll bar to top(zero) dynamically.
 // Create TreeGrid object.
 var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
 //Set Vertical scroll bar to zeroth position.
-treeObject. scrollToTop();
+treeObject.scrollToTop();
 </script>
 {% endhighlight %}
 
@@ -4281,9 +4281,9 @@ Demo [Link](http://jsplayground.syncfusion.com/j4cxwi1h)
 ### scrollToBottom()
 {:#methods:scrolltobottom}
 
-Move vertical scroll bar to bottom(end). 
+Sets the scroll top offset of TreeGrid to maximum value. 
 
-Usage: we can able to move vertical scroll bar to end position dynamically.
+Usage:we can able to scroll the TreeGrid's content to the maximum offset vertically.
 
 #### Example
 
@@ -4347,7 +4347,7 @@ Demo [Link](http://jsplayground.syncfusion.com/upojiocv)
 ### expandAll()
 {:#methods:expandall}
 
-Expand all the parent item’s in TreeGrid.
+To expand all the root level nodes in TreeGrid.
 
 Usage: we can able to expand all the parents records in TreeGrid control dynamically.
 
@@ -4371,7 +4371,7 @@ Demo [Link](http://jsplayground.syncfusion.com/uhhuxbm3)
 ### showHideDetailsRow(rowIndex)
 {:#methods:showhidedetailsrow}
 
-Show/Hide the detail row of specific record.
+Show/Hide the detail row of a specific record.
 
 <table class="params">
 <thead>
@@ -4390,7 +4390,7 @@ Show/Hide the detail row of specific record.
 </tbody>
 </table>
 
-Usage: we can able to dynamically show/hide the detail row of any record by passing its index as an argument.
+Usage: we can able to dynamically show/hide the detail row of any record by passing its index as parameter.
 
 #### Example
 
@@ -4413,7 +4413,7 @@ Demo [Link](http://jsplayground.syncfusion.com/jdi5qebc)
 ### filterColumn(fieldName, filterOperator, filterValue, predicate, matchcase, actualFilterValue)
 {:#methods:filtercolumn}
 
-Send a filtering request to filter one column in TreeGrid.
+Sends filtering request to filter a column in TreeGrid.
 
 <table class="params">
 <thead>
@@ -4480,7 +4480,7 @@ Demo [Link](http://jsplayground.syncfusion.com/1u5o3ncv)
 ### columnIndex(index)
 {:#methods:columnindex}
 
-To change the treeColumnIndex value.
+To change the index of the tree column in TreeGrid.
 
 <table class="params">
 <thead>
@@ -4499,7 +4499,7 @@ To change the treeColumnIndex value.
 </tbody>
 </table>
 
-Usage: we can able to change any column as treeColumn dynamically. 
+Usage: we can able to change any column as tree column dynamically. 
 
 #### Example
 
@@ -4544,7 +4544,7 @@ Demo [Link](http://jsplayground.syncfusion.com/nwig1elj)
 ### getColumnIndexByField(fieldName)
 {:#methods:getcolumnindexbyfield}
 
-get column index of specific column.
+Gets the column index of specific column with data source field.
 
 #### Returns:
 {:#methods:returns:}
@@ -4568,7 +4568,7 @@ number
 </tbody>
 </table>
 
-Usage: we can able to get the index of any column by passing its field name as an argument.
+Usage: we can able to get the index of any column by passing its field name as paramter.
 
 #### Example
 
@@ -4591,7 +4591,7 @@ Demo [Link](http://jsplayground.syncfusion.com/1spkbqua)
 ### getFieldNameByHeaderText(headerText)
 {:#methods:getfieldnamebyheadertext}
 
-get field name of specific column.
+Gets the column field name using column header text.
 
 #### Returns:
 {:#methods:returns:}
@@ -4615,7 +4615,7 @@ string
 </tbody>
 </table>
 
-Usage: we can able to get the field name of any column by passing its header text as an argument.
+Usage: we can able to get the field name of any column by passing its header text as parameter.
 
 #### Example
 
@@ -4638,7 +4638,7 @@ Demo [Link](http://jsplayground.syncfusion.com/1spkbqua)
 ### getColumnByHeaderText(headerText)
 {:#methods:getcolumnbyheadertext}
 
-Get detail collection of specific column.
+Gets the column object of specific column.
 
 #### Returns:
 {:#methods:returns:}
@@ -4662,7 +4662,7 @@ object
 </tbody>
 </table>
 
-Usage: we can able to get the detail collection of any column by passing its header text as an argument.
+Usage: we can able to get the object of any column by passing its header text as parameter.
 
 #### Example
 
@@ -4685,7 +4685,7 @@ Demo [Link](http://jsplayground.syncfusion.com/jsc43oni)
 ### clearFilter(fieldName)
 {:#methods:clearfilter}
 
-It is used to clear the filtering done in a specific column.
+Clears the filter appplied to a specific column.
 
 <table class="params">
 <thead>
@@ -4704,7 +4704,7 @@ It is used to clear the filtering done in a specific column.
 </tbody>
 </table>
 
-Usage: we can able to clear the filtering done in any specific column dynamically by passing its field name as an argument.
+Usage: we can able to clear the filtering done in any specific column dynamically by passing its field name as parameter.
 
 #### Example
 
@@ -4727,7 +4727,7 @@ Demo [Link](http://jsplayground.syncfusion.com/1j2h0ylb)
 ### getColumnByField(fieldName)
 {:#methods:getcolumnbyfield}
 
-Get detail collection of specific column.
+Gets the column object of specific column.
 
 #### Returns:
 {:#methods:returns:}
@@ -4751,7 +4751,7 @@ object
 </tbody>
 </table>
 
-Usage: we can able to get the detail collection of any column by passing its field name as an argument.
+Usage: we can able to get the detail collection of any column by passing its field name as parameter.
 
 #### Example
 
