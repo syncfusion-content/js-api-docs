@@ -3902,14 +3902,14 @@ treegridObj.reorderColumn("startDate", 4); // To sort the data
 ### getUpdatedRecords()
 {:#methods:getupdatedrecords}
 
-Get the updated data source collection of TreeGrid.
+To get the updated data source of TreeGrid.
 
 #### Returns:
 {:#methods:returns:}
 
 array
 
-Usage: We can able to get detail collection of updated records by using this method.
+Usage: We can able to get the updated record collection by using this method.
 
 #### Example
 
@@ -3930,7 +3930,7 @@ Demo [Link](http://jsplayground.syncfusion.com/cxcfhp5i)
 ### gotoPage(pageIndex)
 {:#methods:gotopage}
 
-Send a paging request to specified page in TreeGrid.
+To send paging request to specified page in TreeGrid.
 
 <table class="params">
 <thead>
@@ -3949,7 +3949,7 @@ Send a paging request to specified page in TreeGrid.
 </tbody>
 </table>
 
-Usage: we can able to change the page dynamically.
+Usage: we can able to change the active page at run time.
 
 #### Example
 
@@ -3972,7 +3972,7 @@ Demo [Link](http://jsplayground.syncfusion.com/we1l1qkr)
 ### updateCheckboxColumn(fieldName)
 {:#methods:updatecheckboxcolumn}
 
-Change the selection checkbox to any column. 
+To change the checkbox selection to any column. 
 
 <table class="params">
 <thead>
@@ -4014,7 +4014,7 @@ Demo [Link](http://jsplayground.syncfusion.com/2b0p5ytm)
 ### getSelectedCells()
 {:#methods:getselectedcells}
 
-Get the selected cell(single/multiple) element details in TreeGrid. 
+Gets the selected cell(s) element details in TreeGrid. 
 
 #### Returns:
 {:#methods:returns:}
@@ -4043,7 +4043,7 @@ Demo [Link](http://jsplayground.syncfusion.com/aovokclp)
 ### updateResponsiveMinWidth(width)
 {:#methods:updateresponsiveminwidth}
 
-Set the minimum width, below were the TreeGrid in responsive mode when isResponsive property is “true”.
+Sets the minimum reponsive width for TreeGrid.
 
 <table class="params">
 <thead>
@@ -4057,12 +4057,12 @@ Set the minimum width, below were the TreeGrid in responsive mode when isRespons
 <tr>
 <td class="name">width</td>
 <td class="type">String (>150px)</td>
-<td class="description">Pass the minimum width, below were the TreeGrid needs to work in responsive mode.</td>
+<td class="description">Pass the minimum responsive width, above which the TreeGrid needs to work in responsive mode.</td>
 </tr>
 </tbody>
 </table>
 
-Usage: we can able to change the minimum width of responsive mode in TreeGrid dynamically.
+Usage: we can able to change the minimum responsive width of TreeGrid dynamically.
 
 #### Example
 
@@ -4074,7 +4074,7 @@ Usage: we can able to change the minimum width of responsive mode in TreeGrid dy
 <script>
 // Create TreeGrid object.
 var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
-// Sends the minimum width in pixel to make the TreeGrid to behave as responsive below this width.
+// Sends the minimum width in pixel to make the TreeGrid to behave as responsive above this width.
 treeObject.updateResponsiveMinWidth("200px");
 </script>
 
@@ -4085,9 +4085,9 @@ Demo [Link](http://jsplayground.syncfusion.com/edphz55n)
 ### showAddDialog()
 {:#methods:showadddialog}
 
-To show the dialog to add new task to the TreeGrid.
+To open the dialog to add new record/row in TreeGrid.
 
-Usage: we can able to open add dialog box dynamically.
+Usage: we can able to open add dialog dynamically.
 
 #### Example
 
@@ -4110,7 +4110,7 @@ Demo [Link](http://jsplayground.syncfusion.com/4nwaeooa)
 ### showEditDialog(index)
 {:#methods:showeditdialog}
 
-To show the dialog to edit the task in the TreeGrid.
+To open the dialog to edit a row/record in TreeGrid.
 
 <table class="params">
 <thead>
@@ -4129,7 +4129,7 @@ To show the dialog to edit the task in the TreeGrid.
 </tbody>
 </table>
 
-Usage: we can able to edit any row dynamically through edit dialog. If the index value is not passes as an argument then the selected row gets edited. It’s necessary to select a row before open edit dialog when you didn’t pass any index as an argument.
+Usage: we can able to edit any row dynamically through edit dialog. If the index value is not passed as parameter then the selected row gets edited. It’s necessary to select a row before opening edit dialog when you are not passing any index as paramter.
 
 #### Example
 
