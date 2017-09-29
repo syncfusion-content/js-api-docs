@@ -3930,7 +3930,7 @@ Demo [Link](http://jsplayground.syncfusion.com/cxcfhp5i)
 ### gotoPage(pageIndex)
 {:#methods:gotopage}
 
-To send paging request to specified page in TreeGrid.
+Sends request to navigate to a specific page in TreeGrid.
 
 <table class="params">
 <thead>
