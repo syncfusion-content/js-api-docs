@@ -3891,6 +3891,877 @@ treegridObj.reorderColumn("startDate", 4); // To sort the data
 </script>
 {% endhighlight %}
 
+### getUpdatedRecords()
+{:#methods:getupdatedrecords}
+
+To get the updated data source of TreeGrid.
+
+#### Returns:
+{:#methods:returns:}
+
+array
+
+Usage: We can able to get the updated record collection by using this method.
+
+#### Example
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+// Gets the updated data source collection of TreeGrid
+treeObject.getUpdatedRecords();
+</script>
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/cxcfhp5i)
+
+### gotoPage(pageIndex)
+{:#methods:gotopage}
+
+Sends request to navigate to a specific page in TreeGrid.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">PageIndex</td>
+<td class="type">number</td>
+<td class="description">Pass the page index to perform paging at specified page index.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to change the active page at run time.
+
+#### Example
+
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+// Sends a paging request to the TreeGrid with specified page index
+treeObject.gotoPage(3);
+</script>
+
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/we1l1qkr)
+
+### updateCheckboxColumn(fieldName)
+{:#methods:updatecheckboxcolumn}
+
+To change the checkbox selection to any column. 
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fieldName</td>
+<td class="type">string</td>
+<td class="description">Pass the column field name to check box selection to that column.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to change the selection checkbox column dynamically.
+
+#### Example
+
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+// Sends a column fieldname to change the checkbox selection to that column.
+treeObject.updateCheckboxColumn('taskName');
+</script>
+
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/2b0p5ytm)
+
+### getSelectedCells()
+{:#methods:getselectedcells}
+
+Gets the selected cell(s) element details in TreeGrid. 
+
+#### Returns:
+{:#methods:returns:}
+
+array
+
+Usage: we can able to get cell elements of selected cells for further processing.
+
+#### Example
+
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+// Gets the selected cell element list
+treeObject.getSelectedCells();
+</script>
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/aovokclp)
+
+### updateResponsiveMinWidth(width)
+{:#methods:updateresponsiveminwidth}
+
+Sets the minimum reponsive width for TreeGrid.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">width</td>
+<td class="type">String (>150px)</td>
+<td class="description">Pass the minimum responsive width, above which the TreeGrid needs to work in responsive mode.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to change the minimum responsive width of TreeGrid dynamically.
+
+#### Example
+
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+// Sends the minimum width in pixel to make the TreeGrid to behave as responsive above this width.
+treeObject.updateResponsiveMinWidth("200px");
+</script>
+
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/edphz55n)
+
+### showAddDialog()
+{:#methods:showadddialog}
+
+To open the dialog to add new record/row in TreeGrid.
+
+Usage: we can able to open add dialog dynamically.
+
+#### Example
+
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+// Show Add dialog box to add new record.
+treeObject.showAddDialog();
+</script>
+
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/4nwaeooa)
+
+### showEditDialog(index)
+{:#methods:showeditdialog}
+
+To open the dialog to edit a row/record in TreeGrid.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Index</td>
+<td class="type">number</td>
+<td class="description">Pass the index of row to be edit.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to edit any row dynamically through edit dialog. If the index value is not passed as parameter then the selected row gets edited. It’s necessary to select a row before opening edit dialog when you are not passing any index as paramter.
+
+#### Example
+
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+// Show edit dialog box to edit the row at index ‘3’.
+treeObject.showEditDialog(3);
+</script>
+
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/i0ilxy1m)
+
+### scrollOffset(left, top)
+{:#methods:scrolloffset}
+
+Sets the scroll left and scroll top offsets of TreeGrid.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Left</td>
+<td class="type">number/String (in pixel)</td>
+<td class="description">Pass a value to set left position of horizontal scroll bar.</td>
+</tr>
+<tr>
+<td class="name">Top</td>
+<td class="type">number/String (in pixel)</td>
+<td class="description">Pass a value to set top position of vertical scroll bar.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to change the left and top position of horizontal and vertical scroll bar dynamically.
+
+#### Example
+
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+// Set horizontal scroll bar left value and vertical scroll bar top value.
+treeObject.scrollOffset(50,50);
+</script>
+
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/ukm0behc)
+
+### getScrollTopOffset()
+{:#methods:getscrolltopoffset}
+
+Gets the scroll top offset of TreeGrid. 
+
+
+#### Returns:
+{:#methods:returns:}
+
+number
+
+Usage: we can able to get scroll top offset of TreeGrid dynamically.
+
+#### Example
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+//Get vertical scroll bar top value.
+treeObject.getScrollTopOffset();
+</script>
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/t44osvai)
+
+### getScrollLeftOffset()
+{:#methods:getscrollleftoffset}
+
+Gets the scroll left offset of TreeGrid. 
+
+#### Returns:
+{:#methods:returns:}
+
+number
+
+Usage: we can able to get scroll left offset of TreeGrid dynamically.
+
+#### Example
+
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+//Get horizontal scroll bar left value.
+treeObject. getScrollLeftOffset()
+</script>
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/at3xgdb3)
+
+### scrollToTop()
+{:#methods:scrolltotop}
+
+Sets the scroll top offset of TreeGrid to `0`.
+
+Usage: we can able to scroll the TreeGrid's content to `0` offset vertically.
+
+#### Example
+
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+//Set Vertical scroll bar to zeroth position.
+treeObject.scrollToTop();
+</script>
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/j4cxwi1h)
+
+### scrollToBottom()
+{:#methods:scrolltobottom}
+
+Sets the scroll top offset of TreeGrid to maximum value. 
+
+Usage:we can able to scroll the TreeGrid's content to the maximum offset vertically.
+
+#### Example
+
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+//Set Vertical scroll bar to end position.
+treeObject. scrollToBottom()
+</script>
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/wmqgjqt0)
+
+### expandCollapseRow(index)
+{:#methods:expandcollapserow}
+
+To expand and collapse an item in TreeGrid using item’s index.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Index</td>
+<td class="type">number</td>
+<td class="description">Pass the row index of row to expand/collapse.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to expand/collapse any specific parent record dynamically by passing its row index.
+
+#### Example
+
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+// Show expand/collapse the parent record at index ‘5’.
+treeObject.expandCollapseRow(5);
+</script>
+
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/upojiocv)
+
+### expandAll()
+{:#methods:expandall}
+
+To expand all the root level nodes in TreeGrid.
+
+Usage: we can able to expand all the parents records in TreeGrid control dynamically.
+
+#### Example
+
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+// To expand all the parent records.
+treeObject.expandAll();
+</script>
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/uhhuxbm3)
+
+### showHideDetailsRow(rowIndex)
+{:#methods:showhidedetailsrow}
+
+Show/Hide the detail row of a specific record.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type">number</td>
+<td class="description">Pass the row index of record to show/hide the detail row.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to dynamically show/hide the detail row of any record by passing its index as parameter.
+
+#### Example
+
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+// Show the detail row of record at index ‘3’.
+treeObject.showHideDetailsRow(3);
+</script>
+
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/jdi5qebc)
+
+### filterColumn(fieldName, filterOperator, filterValue, predicate, matchcase, actualFilterValue)
+{:#methods:filtercolumn}
+
+Sends filtering request to filter a column in TreeGrid.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fieldName</td>
+<td class="type">string</td>
+<td class="description">Pass the field name of the column.</td>
+</tr>
+<tr>
+<td class="name">filterOperator</td>
+<td class="type">string</td>
+<td class="description">string/integer/dateTime operator.</td>
+</tr>
+<tr>
+<td class="name">filterValue</td>
+<td class="type">string</td>
+<td class="description">Pass the value to be filtered in a column.</td>
+</tr>
+<tr>
+<td class="name">predicate</td>
+<td class="type">string</td>
+<td class="description">Pass the predicate as and/or.</td>
+</tr>
+<tr>
+<td class="name">matchcase</td>
+<td class="type">boolean</td>
+<td class="description">Optional pass the match case value as true/false.</td>
+</tr>
+<tr>
+<td class="name">actualFilterValue</td>
+<td class="type">object</td>
+<td class="description">Optional actualFilterValue denote the filter object of current filtered columns. </td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to perform filter operation dynamically.
+
+#### Example
+
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+// To filter taskName column with text startwith “plan”.
+treeObject.filterColumn("taskName", "startswith", "plan", "and");
+</script>
+
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/1u5o3ncv)
+
+### columnIndex(index)
+{:#methods:columnindex}
+
+To change the index of the tree column in TreeGrid.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Index</td>
+<td class="type">number</td>
+<td class="description">Pass the column index to make the column as treeColumnIndex.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to change any column as tree column dynamically. 
+
+#### Example
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+//Change second column as treeColumn.
+treeObject.columnIndex(2);
+</script>
+
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/vvxsymxn)
+
+### clearSorting()
+{:#methods:clearsorting}
+
+To clear the sorting from sorted columns in TreeGrid.
+
+#### Example
+
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+//Clear sorting from sorted column.
+treeObject.clearSorting();
+</script>
+
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/nwig1elj)
+
+### getColumnIndexByField(fieldName)
+{:#methods:getcolumnindexbyfield}
+
+Gets the column index of specific column with data source field.
+
+#### Returns:
+{:#methods:returns:}
+
+number
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fieldName</td>
+<td class="type">string</td>
+<td class="description">Pass the column field name to get its index.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to get the index of any column by passing its field name as paramter.
+
+#### Example
+
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+//get index of “taskName” column.
+treeObject.getColumnIndexByField("taskName");
+</script>
+
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/1spkbqua)
+
+### getFieldNameByHeaderText(headerText)
+{:#methods:getfieldnamebyheadertext}
+
+Gets the column field name using column header text.
+
+#### Returns:
+{:#methods:returns:}
+
+string
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">headerText</td>
+<td class="type">string</td>
+<td class="description">Pass the column header text to get its field name.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to get the field name of any column by passing its header text as parameter.
+
+#### Example
+
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+//get the field name of column having header text as “Task Name”.
+treeObject.getFieldNameByHeaderText("Task Name");
+</script>
+
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/1spkbqua)
+
+### getColumnByHeaderText(headerText)
+{:#methods:getcolumnbyheadertext}
+
+Gets the column object of specific column.
+
+#### Returns:
+{:#methods:returns:}
+
+object
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">headerText</td>
+<td class="type">string</td>
+<td class="description">Pass the column header text to get details of that column.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to get the object of any column by passing its header text as parameter.
+
+#### Example
+
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+ //get the details of column having header text as “Task Name”.
+treeObject.getColumnByHeaderText("Task Name");
+</script>
+
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/jsc43oni)
+
+### clearFilter(fieldName)
+{:#methods:clearfilter}
+
+Clears the filter appplied to a specific column.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fieldName</td>
+<td class="type">string</td>
+<td class="description">Pass the column field name to clear filtering done in that column.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to clear the filtering done in any specific column dynamically by passing its field name as parameter.
+
+#### Example
+
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+//clear the filtering done in the “taskName” column
+treeObject.clearFilter("taskName");
+</script>
+
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/1j2h0ylb)
+
+### getColumnByField(fieldName)
+{:#methods:getcolumnbyfield}
+
+Gets the column object of specific column.
+
+#### Returns:
+{:#methods:returns:}
+
+object
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fieldName</td>
+<td class="type">string</td>
+<td class="description">Pass the column field name to get details of that column.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to get the detail collection of any column by passing its field name as parameter.
+
+#### Example
+
+
+{% highlight html %}
+  
+<div id="TreeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+//get the details of column having fieldName as “taskName”.
+treeObject. getColumnByField("taskName");
+</script>
+
+{% endhighlight %}
+
+Demo [Link](http://jsplayground.syncfusion.com/g3lrtszu)
 
 ## Events
 
