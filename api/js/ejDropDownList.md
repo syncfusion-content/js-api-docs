@@ -450,6 +450,32 @@ This property selects the item in the DropDownList when the item is entered in t
     
 {% endhighlight %}
 
+### enableServerFiltering  `boolean`
+{:#members:enableServerFiltering}
+
+The serverfiltering is to perform filter action when text is typed in the search box and filtering will be done based on the collection which contains the matched item from entire datasource. Serverfiltering will be done based on the entire items in DataSource. 
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+ 
+    <input type="text" id="CompanyNames" />
+    var dataManagerObj = ej.DataManager({ url: "http://js.syncfusion.com/ejServices/Wcf/Northwind.svc/" });
+    $('#CompanyNames').ejDropDownList({
+        "dataSource": dataManagerObj,
+        "fields": { text: "CompanyName", value: 'ContactName' },
+        "width": 260,
+        "itemsCount": 10,
+        "enableFilterSearch": true,
+        "enableServerFiltering": true
+    });
+    
+{% endhighlight %}
+
 ### enablePersistence `boolean`
 {:#members:enablepersistence}
 
