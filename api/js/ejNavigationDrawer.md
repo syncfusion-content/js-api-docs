@@ -1289,52 +1289,37 @@ $(function(){
 
 Event triggers after the AJAX content loaded completely.
 
-<table class="params">
-<thead>
+<table>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from NavigationDrawer.
-<table class="params">
-<thead>
+<td>
+cancel</td><td>
+boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
+<td>
+model</td><td><ts ref="ej.NavigationDrawer.Model"/>
+Object</td><td>
+Instance of the navigation drawer model object.</td></tr>
 <tr>
-<td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">returns true if the event should be canceled; otherwise, false.</td>
-</tr>
+<td>
+type</td><td>
+string</td><td>
+Name of the event.</td></tr>
 <tr>
-<td class="name">
-type</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the name of the event.</td>
-</tr>
+<td>
+URL</td><td>
+string</td><td>
+URL of the content.</td></tr>
 <tr>
-<td class="name">
-model</td>
-<td class="type"><ts ref="ej.NavigationDrawer.Model"/><span class="param-type">Object</span></td>
-<td class="description">returns the model value of the control.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
+<td>
+data</td><td>
+string</td><td>
+Response content.</td></tr>
 </table>
 
 
@@ -1385,64 +1370,65 @@ model</td>
 
 Event triggers when the AJAX request failed.
 
-<table class="params">
-<thead>
+<table>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from NavigationDrawer.
-<table class="params">
-<thead>
+<td>
+cancel</td><td>
+boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
+<td>
+model</td><td><ts ref="ej.NavigationDrawer.Model"/>
+Object</td><td>
+Instance of the navigation drawer model object.</td></tr>
 <tr>
-<td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">returns true if the event should be canceled; otherwise, false.</td>
-</tr>
+<td>
+type</td><td>
+string</td><td>
+Name of the event.</td></tr>
 <tr>
-<td class="name">
-type</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the name of the event.</td>
-</tr>
+<td>
+URL</td><td>
+string</td><td>
+URL of the content.</td></tr>
 <tr>
-<td class="name">
-model</td>
+<td class="name">data</td>
 <td class="type"><ts ref="ej.NavigationDrawer.Model"/><span class="param-type">Object</span></td>
-<td class="description">returns the model value of the control.</td>
+<td class="description last">
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">responseText</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Error page content.</td>
 </tr>
 <tr>
-<td class="name">
-errorThrown</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">returns the error thrown in the AJAX post.</td>
+<td class="name">status</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">Error code.</td>
 </tr>
 <tr>
-<td class="name">
-textStatus</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">returns the status.</td>
+<td class="name">statusText</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">The corresponding error description.</td>
 </tr>
 </tbody>
 </table>
 </td>
+</td>
 </tr>
-</tbody>
 </table>
 
 
@@ -1492,64 +1478,37 @@ textStatus</td>
 
 Event triggers after the AJAX content loaded successfully.
 
-<table class="params">
-<thead>
+<table>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
+<th>
+Name</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
-<td class="name">
-argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description">Event parameters from ListView.
-<table class="params">
-<thead>
+<td>
+cancel</td><td>
+boolean</td><td>
+Set this option to true to cancel the event.</td></tr>
 <tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
+<td>
+model</td><td><ts ref="ej.NavigationDrawer.Model"/>
+Object</td><td>
+Instance of the navigation drawer model object.</td></tr>
 <tr>
-<td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">returns true if the event should be canceled; otherwise, false.</td>
-</tr>
+<td>
+type</td><td>
+string</td><td>
+Name of the event.</td></tr>
 <tr>
-<td class="name">
-type</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the name of the event.</td>
-</tr>
+<td>
+URL</td><td>
+string</td><td>
+URL of the content.</td></tr>
 <tr>
-<td class="name">
-model</td>
-<td class="type"><ts ref="ej.NavigationDrawer.Model"/><span class="param-type">Object</span></td>
-<td class="description">returns the model value of the control.</td>
-</tr>
-<tr>
-<td class="name">
-content</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the AJAX current content.</td>
-</tr>
-<tr>
-<td class="name">
-URL</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description">returns the current URL of the AJAX post.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
+<td>
+data</td><td>
+string</td><td>
+Response content.</td></tr>
 </table>
 
 
