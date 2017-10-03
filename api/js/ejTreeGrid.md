@@ -4054,7 +4054,14 @@ Sets the minimum reponsive width for TreeGrid.
 </tbody>
 </table>
 
+
 Usage: we can able to change the minimum responsive width of TreeGrid dynamically.
+
+#### Returns
+
+{:#methods:returns:}
+
+void
 
 #### Example
 
