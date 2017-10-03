@@ -4048,7 +4048,7 @@ Sets the minimum reponsive width for TreeGrid.
 <tbody>
 <tr>
 <td class="name">width</td>
-<td class="type">String (>150px)</td>
+<td class="type">String</td>
 <td class="description">Pass the minimum responsive width, above which the TreeGrid needs to work in responsive mode.</td>
 </tr>
 </tbody>
@@ -4164,12 +4164,12 @@ Sets the scroll left and scroll top offsets of TreeGrid.
 <tbody>
 <tr>
 <td class="name">Left</td>
-<td class="type">number/String (in pixel)</td>
+<td class="type">String</td>
 <td class="description">Pass a value to set left position of horizontal scroll bar.</td>
 </tr>
 <tr>
 <td class="name">Top</td>
-<td class="type">number/String (in pixel)</td>
+<td class="type">String</td>
 <td class="description">Pass a value to set top position of vertical scroll bar.</td>
 </tr>
 </tbody>
