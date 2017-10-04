@@ -4983,7 +4983,7 @@ Binds the name of `resourceId` field in dataSource. Specifies the id of the reso
 {% endhighlight %}
 
 ### blockoutSettings.groupId `string`
-{:#members:blockoutsettings-resourceid}
+{:#members:blockoutsettings-groupid}
 
 Binds the name of `groupId` field in dataSource. Specifies the id of the resource group, to which the time intervals are needed to be blocked.
 
@@ -5716,7 +5716,7 @@ Object
 <script>
 $('#Schedule').ejSchedule();
 
-  var obj = $("#Schedule1").data("ejSchedule");
+  var obj = $("#Schedule").data("ejSchedule");
   var $td = $(".e-draggableworkarea table tr td").first();
   var slotDetails = obj.getSlotByElement($td);
 
@@ -5886,7 +5886,7 @@ void
 $(function () {
 	window.signalR = $.signalR.scheduleHub;
 	window.signalR.client.modify = function (action, data) {
-		$("#Schedule1").ejSchedule('instance').notifyChanges(action, data);
+		$("#Schedule").ejSchedule('instance').notifyChanges(action, data);
 	};
 	$.signalR.hub.start({ jsonp: true }).done(function () {
 		window.actionComplete = function (args) {
