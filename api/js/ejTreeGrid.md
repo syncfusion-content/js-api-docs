@@ -4035,7 +4035,7 @@ Demo [Link](http://jsplayground.syncfusion.com/aovokclp)
 ### updateResponsiveMinWidth(width)
 {:#methods:updateresponsiveminwidth}
 
-Sets the minimum reponsive width for TreeGrid.
+Sets the minimum responsive width for TreeGrid.
 
 <table class="params">
 <thead>
@@ -4128,7 +4128,7 @@ To open the dialog to edit a row/record in TreeGrid.
 </tbody>
 </table>
 
-Usage: we can able to edit any row dynamically through edit dialog. If the index value is not passed as parameter then the selected row gets edited. It’s necessary to select a row before opening edit dialog when you are not passing any index as paramter.
+Usage: we can able to edit any row dynamically through edit dialog. If the index value is not passed as parameter then the selected row gets edited. It’s necessary to select a row before opening edit dialog when you are not passing any index as parameter.
 
 #### Example
 
@@ -4409,7 +4409,7 @@ treeObject.showHideDetailsRow(3);
 
 Demo [Link](http://jsplayground.syncfusion.com/jdi5qebc)
 
-### filterColumn(fieldName, filterOperator, filterValue, predicate, matchcase, actualFilterValue)
+### filterColumn(fieldName, filterOperator, filterValue, predicate, match case, actualFilterValue)
 {:#methods:filtercolumn}
 
 Sends filtering request to filter a column in TreeGrid.
@@ -4444,7 +4444,7 @@ Sends filtering request to filter a column in TreeGrid.
 <td class="description">Pass the predicate as and/or.</td>
 </tr>
 <tr>
-<td class="name">matchcase</td>
+<td class="name">match case</td>
 <td class="type">boolean</td>
 <td class="description">Optional pass the match case value as true/false.</td>
 </tr>
@@ -4468,7 +4468,7 @@ Usage: we can able to perform filter operation dynamically.
 <script>
 // Create TreeGrid object.
 var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
-// To filter taskName column with text startwith “plan”.
+// To filter taskName column with text starts with "plan".
 treeObject.filterColumn("taskName", "startswith", "plan", "and");
 </script>
 
@@ -4567,7 +4567,7 @@ number
 </tbody>
 </table>
 
-Usage: we can able to get the index of any column by passing its field name as paramter.
+Usage: we can able to get the index of any column by passing its field name as parameter.
 
 #### Example
 
@@ -4684,7 +4684,7 @@ Demo [Link](http://jsplayground.syncfusion.com/jsc43oni)
 ### clearFilter(fieldName)
 {:#methods:clearfilter}
 
-Clears the filter appplied to a specific column.
+Clears the filter applied to a specific column.
 
 <table class="params">
 <thead>
