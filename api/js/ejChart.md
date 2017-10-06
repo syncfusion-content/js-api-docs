@@ -27801,7 +27801,7 @@ series :[{marker :{dataLabel :{enableContrastColor : true}}]
 ### series.marker.dataLabel.showOutsideLabels `boolean`
 {:#members:series-marker-datalabel-showoutsidelabels}
 
-Displays the partially visible datalabels inside the chart Area.
+Displays the partially visible data labels inside the chart Area.
 
 #### Default Value
 
