@@ -865,6 +865,54 @@ Specifies the readOnly of the slider.
 
 
 
+### showButtons `boolean`
+{:#members:showbuttons}
+
+
+
+
+
+
+
+
+Shows/Hide the buttons of the slider.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+
+<div id="slider"> </div> 
+<script>
+//To set showButtons API value during initialization
+        $("#slider").ejSlider({ showButtons: true});
+</script>{% endhighlight %}
+
+
+
+
+
 
 
 ### showRoundedCorner `boolean`
