@@ -6557,7 +6557,7 @@ $("#butbulletGraph1ton1").ejButton("redraw");
 
 
 
-### setComparativeMeasureSymbol()
+### setComparativeMeasureSymbol(index, measure)
 {:#methods:setcomparativemeasuresymbol}
 
 
@@ -6580,13 +6580,13 @@ To set the value for comparative measure in bullet graph.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.Index{% endhighlight %}</td>
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the graph</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.Measure{% endhighlight %}</td>
+measure{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the graph</td>
 </tr>
@@ -6627,7 +6627,7 @@ $("#bulletGraph1").ejBulletGraph("setComparativeMeasureSymbol(1,7)");
 
 
 
-### setFeatureMeasureBarValue()
+### setFeatureMeasureBarValue(index, measure)
 {:#methods:setfeaturemeasurebarvalue}
 
 
@@ -6650,13 +6650,13 @@ To set the value for feature measure bar.
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.Index{% endhighlight %}</td>
+index{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the graph</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.Measure{% endhighlight %}</td>
+measure{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the graph</td>
 </tr>

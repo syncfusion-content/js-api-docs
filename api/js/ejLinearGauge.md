@@ -8086,7 +8086,7 @@ linearGaugeObj.destroy();
 
 
 
-### exportImage()
+### exportImage(fileName, fileType)
 {:#methods:exportimage}
 
 
@@ -8109,13 +8109,13 @@ To export Image
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.fileName{% endhighlight %}</td>
+fileName{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">for the Image</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.fileType{% endhighlight %}</td>
+fileType{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">for the Image</td>
 </tr>
@@ -8144,7 +8144,7 @@ LinearGaugeObj.exportImage("myImage","jpeg");
 
 
 
-### getBarDistanceFromScale()
+### getBarDistanceFromScale(scaleImdex, pointerIndex)
 {:#methods:getbardistancefromscale}
 
 
@@ -8167,13 +8167,13 @@ To get Bar Distance From Scale in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -8202,7 +8202,7 @@ LinearGaugeObj.getBarDistanceFromScale(0,0);
 
 
 
-### getBarPointerValue()
+### getBarPointerValue(scaleIndex, pointerIndex)
 {:#methods:getbarpointervalue}
 
 
@@ -8225,13 +8225,13 @@ To get Bar Pointer Value in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -8260,7 +8260,7 @@ LinearGaugeObj.getBarPointerValue(0,0);
 
 
 
-### getBarWidth()
+### getBarWidth(scaleIndex, pointerIndex)
 {:#methods:getbarwidth}
 
 
@@ -8283,13 +8283,13 @@ To get Bar Width in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -8320,7 +8320,7 @@ LinearGaugeObj.getBarWidth(0,0);
 
 
 
-### getCustomLabelAngle()
+### getCustomLabelAngle(scaleIndex, customLabelIndex)
 {:#methods:getcustomlabelangle}
 
 
@@ -8343,13 +8343,13 @@ To get CustomLabel Angle in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.customLabelIndex{% endhighlight %}</td>
+customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">customLabelIndex value for the Gauge</td>
 </tr>
@@ -8378,7 +8378,7 @@ LinearGaugeObj.getCustomLabelAngle(0,0);
 
 
 
-### getCustomLabelValue()
+### getCustomLabelValue(scaleIndex, customLabelIndex)
 {:#methods:getcustomlabelvalue}
 
 
@@ -8401,13 +8401,13 @@ To get CustomLabel Value in string
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.customLabelIndex{% endhighlight %}</td>
+customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">customLabelIndex value for the Gauge</td>
 </tr>
@@ -8436,7 +8436,7 @@ LinearGaugeObj.getCustomLabelValue(0,0);
 
 
 
-### getLabelAngle()
+### getLabelAngle(scaleIndex, labelIndex)
 {:#methods:getlabelangle}
 
 
@@ -8459,13 +8459,13 @@ To get Label Angle in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.labelIndex{% endhighlight %}</td>
+labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -8494,7 +8494,7 @@ LinearGaugeObj.getLabelAngle(0,0);
 
 
 
-### getLabelPlacement()
+### getLabelPlacement(scaleIndex, labelIndex)
 {:#methods:getlabelplacement}
 
 
@@ -8517,13 +8517,13 @@ To get LabelPlacement in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.labelIndex{% endhighlight %}</td>
+labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -8552,7 +8552,7 @@ LinearGaugeObj.getLabelPlacement(0,0);
 
 
 
-### getLabelStyle()
+### getLabelStyle(scaleIndex, labelIndex)
 {:#methods:getlabelstyle}
 
 
@@ -8610,7 +8610,7 @@ LinearGaugeObj.getLabelStyle(0,0);
 
 
 
-### getLabelXDistanceFromScale()
+### getLabelXDistanceFromScale(scaleIndex, labelIndex)
 {:#methods:getlabelxdistancefromscale}
 
 
@@ -8633,13 +8633,13 @@ To get Label XDistance From Scale in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.labelIndex{% endhighlight %}</td>
+labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -8668,7 +8668,7 @@ LinearGaugeObj.getLabelXDistanceFromScale(0,0);
 
 
 
-### getLabelYDistanceFromScale()
+### getLabelYDistanceFromScale(scaleIndex, labelIndex)
 {:#methods:getlabelydistancefromscale}
 
 
@@ -8691,13 +8691,13 @@ To get PointerValue in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.labelIndex{% endhighlight %}</td>
+labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -8726,7 +8726,7 @@ LinearGaugeObj.getLabelYDistanceFromScale(0,0);
 
 
 
-### getMajorIntervalValue()
+### getMajorIntervalValue(scaleIndex)
 {:#methods:getmajorintervalvalue}
 
 
@@ -8749,7 +8749,7 @@ To get Major Interval Value in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -8778,7 +8778,7 @@ LinearGaugeObj.getMajorIntervalValue(0);
 
 
 
-### getMarkerStyle()
+### getMarkerStyle(scaleIndex, pointerIndex)
 {:#methods:getmarkerstyle}
 
 
@@ -8801,13 +8801,13 @@ To get MarkerStyle in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -8836,7 +8836,7 @@ LinearGaugeObj.getMarkerStyle(0,0);
 
 
 
-### getMaximumValue()
+### getMaximumValue(scaleIndex)
 {:#methods:getmaximumvalue}
 
 
@@ -8859,7 +8859,7 @@ To get Maximum Value in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -8888,7 +8888,7 @@ LinearGaugeObj.getMaximumValue(0);
 
 
 
-### getMinimumValue()
+### getMinimumValue(scaleIndex, pointerIndex)
 {:#methods:getminimumvalue}
 
 
@@ -8911,13 +8911,13 @@ To get PointerValue in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -8946,7 +8946,7 @@ LinearGaugeObj.getMinimumValue(0,0);
 
 
 
-### getMinorIntervalValue()
+### getMinorIntervalValue(scaleIndex)
 {:#methods:getminorintervalvalue}
 
 
@@ -8969,7 +8969,7 @@ To get Minor Interval Value in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -8999,7 +8999,7 @@ LinearGaugeObj.getMinorIntervalValue(0);
 
 
 
-### getPointerDistanceFromScale()
+### getPointerDistanceFromScale(scaleIndex, pointerIndex)
 {:#methods:getpointerdistancefromscale}
 
 
@@ -9022,13 +9022,13 @@ To get Pointer Distance From Scale in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -9058,7 +9058,7 @@ LinearGaugeObj.getPointerDistanceFromScale(0,0);
 
 
 
-### getPointerHeight()
+### getPointerHeight(scaleIndex, pointerIndex)
 {:#methods:getpointerheight}
 
 
@@ -9081,13 +9081,13 @@ To get PointerHeight in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -9117,7 +9117,7 @@ LinearGaugeObj.getPointerHeight(0,0);
 
 
 
-### getPointerPlacement()
+### getPointerPlacement(scaleIndex, pointerIndex)
 {:#methods:getpointerplacement}
 
 
@@ -9140,13 +9140,13 @@ To get Pointer Placement in String
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -9176,7 +9176,7 @@ LinearGaugeObj.getPointerPlacement(0,0);
 
 
 
-### getPointerValue()
+### getPointerValue(scaleIndex, pointerIndex)
 {:#methods:getpointervalue}
 
 
@@ -9199,13 +9199,13 @@ To get PointerValue in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -9235,7 +9235,7 @@ LinearGaugeObj.getPointerValue(0,0);
 
 
 
-### getPointerWidth()
+### getPointerWidth(scaleIndex, pointerIndex)
 {:#methods:getpointerwidth}
 
 
@@ -9258,13 +9258,13 @@ To get PointerWidth in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -9294,7 +9294,7 @@ LinearGaugeObj.getPointerWidth(0,0);
 
 
 
-### getRangeBorderWidth()
+### getRangeBorderWidth(scaleIndex, rangeIndex)
 {:#methods:getrangeborderwidth}
 
 
@@ -9317,13 +9317,13 @@ To get Range Border Width in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -9353,7 +9353,7 @@ LinearGaugeObj.getRangeBorderWidth(0,0);
 
 
 
-### getRangeDistanceFromScale()
+### getRangeDistanceFromScale(scaleIndex, rangeIndex)
 {:#methods:getrangedistancefromscale}
 
 
@@ -9376,13 +9376,13 @@ To get Range Distance From Scale in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -9412,7 +9412,7 @@ LinearGaugeObj.getRangeDistanceFromScale(0,0);
 
 
 
-### getRangeEndValue()
+### getRangeEndValue(scaleIndex, rangeIndex)
 {:#methods:getrangeendvalue}
 
 
@@ -9435,13 +9435,13 @@ To get Range End Value in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -9471,7 +9471,7 @@ LinearGaugeObj.getRangeEndValue(0,0);
 
 
 
-### getRangeEndWidth()
+### getRangeEndWidth(scaleIndex, rangeIndex)
 {:#methods:getrangeendwidth}
 
 
@@ -9494,13 +9494,13 @@ To get Range End Width in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -9530,7 +9530,7 @@ LinearGaugeObj.getRangeEndWidth(0,0);
 
 
 
-### getRangePosition()
+### getRangePosition(scaleIndex, rangeIndex)
 {:#methods:getrangeposition}
 
 
@@ -9553,13 +9553,13 @@ To get Range Position in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -9589,7 +9589,7 @@ LinearGaugeObj.getRangePosition(0,0);
 
 
 
-### getRangeStartValue()
+### getRangeStartValue(scaleIndex, rangeIndex)
 {:#methods:getrangestartvalue}
 
 
@@ -9612,13 +9612,13 @@ To get Range Start Value in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -9648,7 +9648,7 @@ LinearGaugeObj.getRangeStartValue(0,0);
 
 
 
-### getRangeStartWidth()
+### getRangeStartWidth(scaleIndex, rangeIndex)
 {:#methods:getrangestartwidth}
 
 
@@ -9671,13 +9671,13 @@ To get Range Start Width in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -9707,7 +9707,7 @@ LinearGaugeObj.getRangeStartWidth(0,0);
 
 
 
-### getScaleBarLength()
+### getScaleBarLength(scaleIndex)
 {:#methods:getscalebarlength}
 
 
@@ -9730,7 +9730,7 @@ To get ScaleBarLength in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -9760,7 +9760,7 @@ LinearGaugeObj.getScaleBarLength(0);
 
 
 
-### getScaleBarSize()
+### getScaleBarSize(scaleIndex, pointerIndex)
 {:#methods:getscalebarsize}
 
 
@@ -9783,13 +9783,13 @@ To get Scale Bar Size in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -9819,7 +9819,7 @@ LinearGaugeObj.getScaleBarSize(0,0);
 
 
 
-### getScaleBorderWidth()
+### getScaleBorderWidth(scaleIndex)
 {:#methods:getscaleborderwidth}
 
 
@@ -9842,7 +9842,7 @@ To get Scale Border Width in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -9872,7 +9872,7 @@ LinearGaugeObj.getScaleBorderWidth(0);
 
 
 
-### getScaleDirection()
+### getScaleDirection(scaleIndex)
 {:#methods:getscaledirection}
 
 
@@ -9895,7 +9895,7 @@ To get Scale Direction in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -9925,7 +9925,7 @@ LinearGaugeObj.getScaleDirection(0,0);
 
 
 
-### getScaleLocation()
+### getScaleLocation(scaleIndex)
 {:#methods:getscalelocation}
 
 
@@ -9948,7 +9948,7 @@ To get Scale Location in object
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -9978,7 +9978,7 @@ LinearGaugeObj.getScaleLocation(0);
 
 
 
-### getScaleStyle()
+### getScaleStyle(scaleIndex)
 {:#methods:getscalestyle}
 
 
@@ -10001,7 +10001,7 @@ To get Scale Style in string
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -10031,7 +10031,7 @@ LinearGaugeObj.getScaleStyle(0);
 
 
 
-### getTickAngle()
+### getTickAngle(scaleIndex, tickIndex)
 {:#methods:gettickangle}
 
 
@@ -10054,13 +10054,13 @@ To get Tick Angle in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.TickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -10090,7 +10090,7 @@ LinearGaugeObj.getTickAngle(0,0);
 
 
 
-### getTickHeight()
+### getTickHeight(scaleIndex, tickIndex)
 {:#methods:gettickheight}
 
 
@@ -10113,13 +10113,13 @@ To get Tick Height in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.TickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -10149,7 +10149,7 @@ LinearGaugeObj.getTickHeight(0,0);
 
 
 
-### getTickPlacement()
+### getTickPlacement(scaleIndex, tickIndex)
 {:#methods:gettickplacement}
 
 
@@ -10172,13 +10172,13 @@ To get getTickPlacement in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.TickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -10208,7 +10208,7 @@ LinearGaugeObj.getTickPlacement(0,0);
 
 
 
-### getTickStyle()
+### getTickStyle(scaleIndex, tickIndex)
 {:#methods:gettickstyle}
 
 
@@ -10231,13 +10231,13 @@ To get Tick Style in string
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.TickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -10267,7 +10267,7 @@ LinearGaugeObj.getTickStyle(0,0);
 
 
 
-### getTickWidth()
+### getTickWidth(scaleIndex, tickIndex)
 {:#methods:gettickwidth}
 
 
@@ -10290,13 +10290,13 @@ To get Tick Width in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.TickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -10326,7 +10326,7 @@ LinearGaugeObj.getTickWidth(0,0);
 
 
 
-### getTickXDistanceFromScale()
+### getTickXDistanceFromScale(scaleIndex, tickIndex)
 {:#methods:gettickxdistancefromscale}
 
 
@@ -10349,13 +10349,13 @@ To get get Tick XDistance From Scale in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.TickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -10385,7 +10385,7 @@ LinearGaugeObj.getTickXDistanceFromScale(0,0);
 
 
 
-### getTickYDistanceFromScale()
+### getTickYDistanceFromScale(scaleIndex, tickIndex)
 {:#methods:gettickydistancefromscale}
 
 
@@ -10408,13 +10408,13 @@ To get Tick YDistance From Scale in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.TickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
@@ -10494,7 +10494,7 @@ Specifies the scales.
 
 
 
-### setBarDistanceFromScale()
+### setBarDistanceFromScale(scaleIndex, pointerIndex, value)
 {:#methods:setbardistancefromscale}
 
 
@@ -10517,19 +10517,19 @@ To set setBarDistanceFromScale
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex,value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Bar DistanceFromScale value for Gauge</td>
 </tr>
@@ -10559,7 +10559,7 @@ LinearGaugeObj.setBarDistanceFromScale(0,0,30);
 
 
 
-### setBarPointerValue()
+### setBarPointerValue(scaleIndex, pointerIndex, value)
 {:#methods:setbarpointervalue}
 
 
@@ -10582,19 +10582,19 @@ To set setBarPointerValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Bar Pointer Value for Gauge</td>
 </tr>
@@ -10624,7 +10624,7 @@ LinearGaugeObj.setBarPointerValue(0,0,30);
 
 
 
-### setBarWidth()
+### setBarWidth(scaleIndex, pointerIndex, value)
 {:#methods:setbarwidth}
 
 
@@ -10647,19 +10647,19 @@ To set setBarWidth
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Bar Width for Gauge</td>
 </tr>
@@ -10689,7 +10689,7 @@ LinearGaugeObj.setBarWidth(0,0,30);
 
 
 
-### setCustomLabelAngle()
+### setCustomLabelAngle(scaleIndex, customLabelIndex, value)
 {:#methods:setcustomlabelangle}
 
 
@@ -10712,19 +10712,19 @@ To set setCustomLabelAngle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.customLabelIndex{% endhighlight %}</td>
+customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">customLabelIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Custom Label Angle for Gauge</td>
 </tr>
@@ -10754,7 +10754,7 @@ LinearGaugeObj.setCustomLabelAngle(0,0,30);
 
 
 
-### setCustomLabelValue()
+### setCustomLabelValue(scaleIndex, customLabelIndex, value)
 {:#methods:setcustomlabelvalue}
 
 
@@ -10777,19 +10777,19 @@ To set setCustomLabelValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.customLabelIndex{% endhighlight %}</td>
+customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">customLabelIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">CustomLabel value for Gauge</td>
 </tr>
@@ -10819,7 +10819,7 @@ LinearGaugeObj.setCustomLabelValue(0,0,"text");
 
 
 
-### setLabelAngle()
+### setLabelAngle(scaleIndex, labelIndex, angle)
 {:#methods:setlabelangle}
 
 
@@ -10842,19 +10842,19 @@ To set setLabelAngle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.labelIndex{% endhighlight %}</td>
+labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.angle{% endhighlight %}</td>
+angle{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Label Angle for Gauge</td>
 </tr>
@@ -10884,7 +10884,7 @@ LinearGaugeObj.setLabelAngle(0,0,20);
 
 
 
-### setLabelPlacement()
+### setLabelPlacement(scaleIndex, labelIndex, value)
 {:#methods:setlabelplacement}
 
 
@@ -10907,19 +10907,19 @@ To set setLabelPlacement
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.labelIndex{% endhighlight %}</td>
+labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Label Placement for Gauge</td>
 </tr>
@@ -10949,7 +10949,7 @@ LinearGaugeObj.setLabelPlacement(0,0,"far");
 
 
 
-### setLabelStyle()
+### setLabelStyle(scaleIndex, labelIndex, value)
 {:#methods:setlabelstyle}
 
 
@@ -10972,19 +10972,19 @@ To set setLabelStyle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.labelIndex{% endhighlight %}</td>
+labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Label Style for Gauge</td>
 </tr>
@@ -11014,7 +11014,7 @@ LinearGaugeObj.setLabelStyle(0,0,"major");
 
 
 
-### setLabelXDistanceFromScale()
+### setLabelXDistanceFromScale(scaleIndex, labelIndex, value)
 {:#methods:setlabelxdistancefromscale}
 
 
@@ -11037,19 +11037,19 @@ To set setLabelXDistanceFromScale
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.labelIndex{% endhighlight %}</td>
+labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Label XDistance From Scale for Gauge</td>
 </tr>
@@ -11079,7 +11079,7 @@ LinearGaugeObj.setLabelXDistanceFromScale(0,0,20);
 
 
 
-### setLabelYDistanceFromScale()
+### setLabelYDistanceFromScale(scaleIndex, labelIndex, value)
 {:#methods:setlabelydistancefromscale}
 
 
@@ -11102,19 +11102,19 @@ To set setLabelYDistanceFromScale
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.labelIndex{% endhighlight %}</td>
+labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Label YDistance From Scale for Gauge</td>
 </tr>
@@ -11144,7 +11144,7 @@ LinearGaugeObj.setLabelYDistanceFromScale(0,0,20);
 
 
 
-### setMajorIntervalValue()
+### setMajorIntervalValue(scaleIndex, value)
 {:#methods:setmajorintervalvalue}
 
 
@@ -11167,13 +11167,13 @@ To set setMajorIntervalValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Major Interval Value for Gauge</td>
 </tr>
@@ -11203,7 +11203,7 @@ LinearGaugeObj.setMajorIntervalValue(0,5);
 
 
 
-### setMarkerStyle()
+### setMarkerStyle(scaleIndex, pointerIndex, value)
 {:#methods:setmarkerstyle}
 
 
@@ -11226,19 +11226,19 @@ To set setMarkerStyle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">marker Style for Gauge</td>
 </tr>
@@ -11268,7 +11268,7 @@ LinearGaugeObj.setMarkerStyle(0,0,"triangle");
 
 
 
-### setMaximumValue()
+### setMaximumValue(scaleIndex, value)
 {:#methods:setmaximumvalue}
 
 
@@ -11291,13 +11291,13 @@ To set setMaximumValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">MaximumValue for Gauge</td>
 </tr>
@@ -11327,7 +11327,7 @@ LinearGaugeObj.setMaximumValue(0,20);
 
 
 
-### setMinimumValue()
+### setMinimumValue(scaleIndex, value)
 {:#methods:setminimumvalue}
 
 
@@ -11350,13 +11350,13 @@ To set setMinimumValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">MinimumValue for Gauge</td>
 </tr>
@@ -11386,7 +11386,7 @@ LinearGaugeObj.setMinimumValue(0,20);
 
 
 
-### setMinorIntervalValue()
+### setMinorIntervalValue(scaleIndex, value)
 {:#methods:setminorintervalvalue}
 
 
@@ -11409,13 +11409,13 @@ To set setMinorIntervalValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Minor Interval Value for Gauge</td>
 </tr>
@@ -11445,7 +11445,7 @@ LinearGaugeObj.setMinorIntervalValue(0,2);
 
 
 
-### setPointerDistanceFromScale()
+### setPointerDistanceFromScale(scaleIndex, pointerIndex, value)
 {:#methods:setpointerdistancefromscale}
 
 
@@ -11468,19 +11468,19 @@ To set setPointerDistanceFromScale
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">for Gauge</td>
 </tr>
@@ -11511,7 +11511,7 @@ LinearGaugeObj.setPointerDistanceFromScale(0,0,30);
 
 
 
-### setPointerHeight()
+### setPointerHeight(scaleIndex, pointerIndex, height)
 {:#methods:setpointerheight}
 
 
@@ -11534,19 +11534,19 @@ To set PointerHeight
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.height{% endhighlight %}</td>
+height{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">for Gauge</td>
 </tr>
@@ -11576,7 +11576,7 @@ LinearGaugeObj.setPointerHeight(0,0,30);
 
 
 
-### setPointerPlacement()
+### setPointerPlacement(scaleIndex, pointerIndex, value)
 {:#methods:setpointerplacement}
 
 
@@ -11599,19 +11599,19 @@ To set setPointerPlacement
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointer placement for Gauge</td>
 </tr>
@@ -11641,7 +11641,7 @@ LinearGaugeObj.setPointerPlacement(0,0,"far");
 
 
 
-### setPointerValue()
+### setPointerValue(scaleIndex, pointerIndex, value)
 {:#methods:setpointervalue}
 
 
@@ -11664,19 +11664,19 @@ To set PointerValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pointer value for Gauge</td>
 </tr>
@@ -11706,7 +11706,7 @@ LinearGaugeObj.setPointerValue(0,0,30);
 
 
 
-### setPointerWidth()
+### setPointerWidth(scaleIndex, pointerIndex, width)
 {:#methods:setpointerwidth}
 
 
@@ -11729,19 +11729,19 @@ To set PointerWidth
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.width{% endhighlight %}</td>
+width{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Pointer width for Gauge</td>
 </tr>
@@ -11771,7 +11771,7 @@ LinearGaugeObj.setPointerWidth(0,0,30);
 
 
 
-### setRangeBorderWidth()
+### setRangeBorderWidth(scaleIndex, rangeIndex, value)
 {:#methods:setrangeborderwidth}
 
 
@@ -11794,19 +11794,19 @@ To set setRangeBorderWidth
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Range Border Width for Gauge</td>
 </tr>
@@ -11836,7 +11836,7 @@ LinearGaugeObj.setRangeBorderWidth(0,0,2);
 
 
 
-### setRangeDistanceFromScale()
+### setRangeDistanceFromScale(scaleIndex, rangeIndex, value)
 {:#methods:setrangedistancefromscale}
 
 
@@ -11859,19 +11859,19 @@ To set setRangeDistanceFromScale
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Range Distance FromScale for Gauge</td>
 </tr>
@@ -11901,7 +11901,7 @@ LinearGaugeObj.setRangeDistanceFromScale(0,0,20);
 
 
 
-### setRangeEndValue()
+### setRangeEndValue(scaleIndex, rangeIndex, value)
 {:#methods:setrangeendvalue}
 
 
@@ -11924,19 +11924,19 @@ To set setRangeEndValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Range end value for Gauge</td>
 </tr>
@@ -11966,7 +11966,7 @@ LinearGaugeObj.setRangeEndValue(0,0,20);
 
 
 
-### setRangeEndWidth()
+### setRangeEndWidth(scaleIndex, rangeIndex, value)
 {:#methods:setrangeendwidth}
 
 
@@ -11989,19 +11989,19 @@ To set setRangeEndWidth
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Range End Width for Gauge</td>
 </tr>
@@ -12031,7 +12031,7 @@ LinearGaugeObj.setRangeEndWidth(0,0,20);
 
 
 
-### setRangePosition()
+### setRangePosition(scaleIndex, rangeIndex, value)
 {:#methods:setrangeposition}
 
 
@@ -12054,19 +12054,19 @@ To set setRangePosition
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Range Position for Gauge</td>
 </tr>
@@ -12096,7 +12096,7 @@ LinearGaugeObj.setRangePosition(0,0,20);
 
 
 
-### setRangeStartValue()
+### setRangeStartValue(scaleIndex, rangeIndex, value)
 {:#methods:setrangestartvalue}
 
 
@@ -12119,19 +12119,19 @@ To set setRangeStartValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">range start value for Gauge</td>
 </tr>
@@ -12161,7 +12161,7 @@ LinearGaugeObj.setRangeStartValue(0,0,20);
 
 
 
-### setRangeStartWidth()
+### setRangeStartWidth(scaleIndex, rangeIndex, value)
 {:#methods:setrangestartwidth}
 
 
@@ -12184,19 +12184,19 @@ To set setRangeStartWidth
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Range Start Width for Gauge</td>
 </tr>
@@ -12226,7 +12226,7 @@ LinearGaugeObj.setRangeStartWidth(0,0,20);
 
 
 
-### setScaleBarLength()
+### setScaleBarLength(scaleIndex, value)
 {:#methods:setscalebarlength}
 
 
@@ -12249,13 +12249,13 @@ To set setScaleBarLength
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Scale Bar Length for Gauge</td>
 </tr>
@@ -12285,7 +12285,7 @@ LinearGaugeObj.setScaleBarLength(0,150);
 
 
 
-### setScaleBarSize()
+### setScaleBarSize(scaleIndex, value)
 {:#methods:setscalebarsize}
 
 
@@ -12308,13 +12308,13 @@ To set setScaleBarSize
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">ScaleBarSize for Gauge</td>
 </tr>
@@ -12344,7 +12344,7 @@ LinearGaugeObj.setScaleBarSize(0,20);
 
 
 
-### setScaleBorderWidth()
+### setScaleBorderWidth(scaleIndex, value)
 {:#methods:setscaleborderwidth}
 
 
@@ -12367,13 +12367,13 @@ To set setScaleBorderWidth
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Scale Border Width for Gauge</td>
 </tr>
@@ -12403,7 +12403,7 @@ LinearGaugeObj.setScaleBorderWidth(0,10);
 
 
 
-### setScaleDirection()
+### setScaleDirection(scaleIndex, value)
 {:#methods:setscaledirection}
 
 
@@ -12426,13 +12426,13 @@ To set setScaleDirection
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Scale Direction for Gauge</td>
 </tr>
@@ -12462,7 +12462,7 @@ LinearGaugeObj.setScaleDirection(0,"counterclockwise");
 
 
 
-### setScaleLocation()
+### setScaleLocation(scaleIndex, value)
 {:#methods:setscalelocation}
 
 
@@ -12485,13 +12485,13 @@ To set setScaleLocation
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Scale position for Gauge</td>
 </tr>
@@ -12521,7 +12521,7 @@ LinearGaugeObj.setScaleLocation(0,{x:20,y:20});
 
 
 
-### setScaleStyle()
+### setScaleStyle(scaleIndex, value)
 {:#methods:setscalestyle}
 
 
@@ -12544,13 +12544,13 @@ To set setScaleStyle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">for Gauge</td>
 </tr>
@@ -12580,7 +12580,7 @@ LinearGaugeObj.setScaleStyle(0,"thermometer");
 
 
 
-### setTickAngle()
+### setTickAngle(scaleIndex, tickIndex, angle)
 {:#methods:settickangle}
 
 
@@ -12603,19 +12603,19 @@ To set setTickAngle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.TickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.angle{% endhighlight %}</td>
+angle{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Tick Angle for Gauge</td>
 </tr>
@@ -12645,7 +12645,7 @@ LinearGaugeObj.setTickAngle(0,0,20);
 
 
 
-### setTickHeight()
+### setTickHeight(scaleIndex, tickIndex, value)
 {:#methods:settickheight}
 
 
@@ -12668,19 +12668,19 @@ To set setTickHeight
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.TickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Tick Height for Gauge</td>
 </tr>
@@ -12710,7 +12710,7 @@ LinearGaugeObj.setTickHeight(0,0,10);
 
 
 
-### setTickPlacement()
+### setTickPlacement(scaleIndex, tickIndex, value)
 {:#methods:settickplacement}
 
 
@@ -12733,19 +12733,19 @@ To set setTickPlacement
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.TickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Tick Placement for Gauge</td>
 </tr>
@@ -12775,7 +12775,7 @@ LinearGaugeObj.setTickPlacement(0,0,"far");
 
 
 
-### setTickStyle()
+### setTickStyle(scaleIndex, tickIndex, value)
 {:#methods:settickstyle}
 
 
@@ -12798,19 +12798,19 @@ To set setTickStyle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.TickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Tick Style for Gauge</td>
 </tr>
@@ -12840,7 +12840,7 @@ LinearGaugeObj.setTickStyle(0,0,"major");
 
 
 
-### setTickWidth()
+### setTickWidth(scaleIndex, tickIndex, value)
 {:#methods:settickwidth}
 
 
@@ -12863,19 +12863,19 @@ To set setTickWidth
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.TickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Tick Width for Gauge</td>
 </tr>
@@ -12905,7 +12905,7 @@ LinearGaugeObj.setTickWidth(0,0,5);
 
 
 
-### setTickXDistanceFromScale()
+### setTickXDistanceFromScale(scaleIndex, tickIndex, value)
 {:#methods:settickxdistancefromscale}
 
 
@@ -12928,19 +12928,19 @@ To set setTickXDistanceFromScale
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.TickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Tick XDistance From Scale for Gauge</td>
 </tr>
@@ -12970,7 +12970,7 @@ LinearGaugeObj.setTickXDistanceFromScale(0,0,20);
 
 
 
-### setTickYDistanceFromScale()
+### setTickYDistanceFromScale(scaleIndex, tickIndex, value)
 {:#methods:settickydistancefromscale}
 
 
@@ -12993,19 +12993,19 @@ To set setTickYDistanceFromScale
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.TickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-arguemnt.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">Tick YDistance From Scale for Gauge</td>
 </tr>
