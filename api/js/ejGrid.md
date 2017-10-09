@@ -6757,7 +6757,7 @@ Send a filtering request to filter one column in grid.
 <tbody>
 <tr>
 <td class="name">fieldName</td>
-<td class="type"><span class="param-type">array</span></td>
+<td class="type"><span class="param-type">array/string</span></td>
 <td class="description last">Pass the field name of the column</td>
 </tr>
 <tr>
