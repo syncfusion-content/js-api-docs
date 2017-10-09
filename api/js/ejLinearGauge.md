@@ -8575,13 +8575,13 @@ To get LabelStyle in number
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.labelIndex{% endhighlight %}</td>
+labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the Gauge</td>
 </tr>
