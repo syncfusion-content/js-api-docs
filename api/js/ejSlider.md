@@ -875,7 +875,7 @@ Specifies the readOnly of the slider.
 
 
 
-Shows/Hide the buttons of the slider.
+Shows/Hides the increment or decrement buttons of slider.
 
 
 
