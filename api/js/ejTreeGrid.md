@@ -2757,6 +2757,7 @@ Gets or sets a value that indicates stacked header should be shown on TreeGrid l
 #### Example
 {:.example}
 {% highlight html %}  
+
 <div id="treeGrid"></div> 
 <script>
 $("#treeGrid").ejTreeGrid({
@@ -2778,6 +2779,7 @@ $("#treeGrid").ejTreeGrid({
       ]
 });
 </script> 
+
 {% endhighlight %}
 
 ### stackedHeaderRows `array`
