@@ -1002,6 +1002,7 @@ Specifies the predicate(and/or) value to perform filtering.
 Specifies the filter condition to filtered column. See <a href="global.html#enum:filteroperator">operator</a>
 
 #### Default Value
+
 * -
 
 #### Example
