@@ -970,7 +970,6 @@ Options for filtering and customizing filter actions.
 Specifies the column collection for filtering the Gantt content on initial load
 
 #### Default Value
-
 * []
 
 ### filterSettings.filteredColumns.value `string`
@@ -979,7 +978,6 @@ Specifies the column collection for filtering the Gantt content on initial load
 Specifies the value to be filtered in Gantt.
 
 #### Default Value
-
 * -
 
 ### filterSettings.filteredColumns.field `string`
@@ -988,7 +986,6 @@ Specifies the value to be filtered in Gantt.
 Specifies the field where filtering has to be performed.
 
 #### Default Value
-
 * -
 
 ### filterSettings.filteredColumns.predicate `string`
@@ -997,7 +994,6 @@ Specifies the field where filtering has to be performed.
 Specifies the predicate(and/or) value to perform filtering.
 
 #### Default Value
-
 * -
 
 ### filterSettings.filteredColumns.operator `string`
@@ -1006,7 +1002,6 @@ Specifies the predicate(and/or) value to perform filtering.
 Specifies the filter condition to filtered column. See <a href="global.html#enum:filteroperator">operator</a>
 
 #### Default Value
-
 * -
 
 #### Example
