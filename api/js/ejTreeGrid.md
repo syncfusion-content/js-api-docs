@@ -2745,6 +2745,247 @@ $("#treegrid").ejTreeGrid({
 
 {% endhighlight %}
 
+### showStackedHeader `boolean`
+{:#members:showstackedheader}
+
+Gets or sets a value that indicates stacked header should be shown on TreeGrid layout when the property &ldquo;stackedHeaderRows&rdquo; is set.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}  
+<div id="treeGrid"></div> 
+<script>
+$("#treeGrid").ejTreeGrid({
+   showStackedHeader:true,
+   stackedHeaderRows:
+   [{
+          stackedHeaderColumns: [
+                  { column: "ID,Name,category,units", headerText: "Shipment details", cssClass: "temp" },
+                  { column: "unitPrice,price", headerText: "Price details" }
+           ]    
+   ]},          
+   columns: [
+       { field: "ID", headerText: "S.No", width: columnWidth },
+                    { field: "Name", headerText: "Shipment Name", isFrozen:true },
+                    { field: "category", headerText: "Category" },
+                    { field: "units", headerText: "Units" },
+                    { field: "unitPrice", headerText: "Unit Price($)" },
+                    { field: "price", headerText: "Price($)" }
+      ]
+});
+</script> 
+{% endhighlight %}
+
+### stackedHeaderRows `array`
+{:#members:stackedheaderrows}
+
+Gets or sets an object that indicates to managing the collection of stacked header rows for the treegrid.
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}  
+<div id="treeGrid"></div> 
+<script>
+$("#treeGrid").ejTreeGrid({
+   showStackedHeader:true,
+   stackedHeaderRows:
+   [{
+          stackedHeaderColumns: [
+                  { column: "ID,Name,category,units", headerText: "Shipment details", cssClass: "temp" },
+                  { column: "unitPrice,price", headerText: "Price details" }
+           ]    
+   ]},          
+   columns: [
+       { field: "ID", headerText: "S.No", width: columnWidth },
+                    { field: "Name", headerText: "Shipment Name", isFrozen:true },
+                    { field: "category", headerText: "Category" },
+                    { field: "units", headerText: "Units" },
+                    { field: "unitPrice", headerText: "Unit Price($)" },
+                    { field: "price", headerText: "Price($)" }
+      ]
+});
+</script> 
+{% endhighlight %}
+
+### stackedHeaderRows.stackedHeaderColumns `array`
+{:#members:stackedheaderrows-stackedheadercolumns}
+
+Gets or sets a value that indicates whether to add stacked header columns into the stacked header rows
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}  
+<div id="treeGrid"></div> 
+<script>
+$("#treeGrid").ejTreeGrid({
+   showStackedHeader:true,
+   stackedHeaderRows:
+   [{
+          stackedHeaderColumns: [
+                  { column: "ID,Name,category,units", headerText: "Shipment details", cssClass: "temp" },
+                  { column: "unitPrice,price", headerText: "Price details" }
+           ]    
+   ]},       
+});
+</script> 
+{% endhighlight %}
+
+### stackedHeaderRows.stackedHeaderColumns.column `object`
+{:#members:stackedheaderrows-stackedheadercolumns-column}
+
+Gets or sets a value that indicates the header text for the particular stacked header column.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}  
+<div id="treeGrid"></div> 
+<script>
+$("#treeGrid").ejTreeGrid({
+   showStackedHeader:true,
+   stackedHeaderRows:
+   [{
+          stackedHeaderColumns: [
+                  { column: "ID,Name,category,units", headerText: "Shipment details", cssClass: "temp" },
+                  { column: "unitPrice,price", headerText: "Price details" }
+           ] 
+   ]},       
+});
+</script> 
+{% endhighlight %}
+
+### stackedHeaderRows.stackedHeaderColumns.cssClass `string`
+{:#members:stackedheaderrows-stackedheadercolumns-cssclass}
+
+Gets or sets a value that indicates class to the corresponding stackedHeaderColumn.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}  
+<div id="treeGrid"></div> 
+<script>
+$("#treeGrid").ejTreeGrid({
+   showStackedHeader:true,
+   stackedHeaderRows:
+   [{
+          stackedHeaderColumns: [
+                  { column: "ID,Name,category,units", headerText: "Shipment details", cssClass: "temp" },
+                  { column: "unitPrice,price", headerText: "Price details" }
+           ]   
+   ]},       
+});
+</script> 
+
+{% endhighlight %}
+
+### stackedHeaderRows.stackedHeaderColumns.headerText `string`
+{:#members:stackedheaderrows-stackedheadercolumns-headertext}
+
+Gets or sets a value that indicates the header text for the particular stacked header column.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}  
+<div id="treeGrid"></div> 
+<script>
+$("#treeGrid").ejTreeGrid({
+   showStackedHeader:true,
+   stackedHeaderRows:
+   [{
+           stackedHeaderColumns: [
+                  { column: "ID,Name,category,units", headerText: "Shipment details" },
+                  { column: "unitPrice,price", headerText: "Price details" }
+           ]  
+   ]},       
+});
+</script> 
+{% endhighlight %}
+
+### stackedHeaderRows.stackedHeaderColumns.textAlign `string`
+{:#members:stackedheaderrows-stackedheadercolumns-textalign}
+
+Gets or sets a value that indicates the text alignment of the corresponding headerText.
+
+#### Default Value:
+{:.param}
+* ej.TextAlign.Left
+
+#### Example
+{:.example}
+{% highlight html %}  
+
+<div id="treeGrid"></div> 
+<script>
+$("#treeGrid").ejTreeGrid({
+   showStackedHeader:true,
+   stackedHeaderRows:
+   [{
+           stackedHeaderColumns: [
+                  { column: "ID,Name,category,units", headerText: "Shipment details", textAlign: ej.TextAlign.Right },
+                  { column: "unitPrice,price", headerText: "Price details" }
+           ]  
+   ]},       
+});
+</script> 
+
+{% endhighlight %}
+
+### stackedHeaderRows.stackedHeaderColumns.tooltip `string`
+{:#members:stackedheaderrows-stackedheadercolumns-tooltip}
+
+Sets the template for tooltip for the Grid stackedHeaderColumns.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}  
+
+<script type="text/template" id="colTip">
+  {{:value }}
+</script>
+
+<div id="treeGrid"></div> 
+<script>
+$("#treeGrid").ejTreeGrid({
+   showStackedHeader:true,
+   stackedHeaderRows:
+   [{
+           stackedHeaderColumns: [
+                  { column: "ID,Name,category,units", headerText: "Shipment details", tooltip:"#colTip" },
+                  { column: "unitPrice,price", headerText: "Price details" }
+           ] 
+   ]},       
+});
+</script> 
+
+{% endhighlight %}
+
 ### showSummaryRow `boolean`
 {:#members:showsummaryrow}
 

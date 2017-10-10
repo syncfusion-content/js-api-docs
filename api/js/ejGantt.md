@@ -959,6 +959,73 @@ Specifies editType of fields to be included in the edit dialog in Gantt
 </script>
 {% endhighlight %}
 
+### filterSettings `object`
+{:#members:filtersettings}
+
+Options for filtering and customizing filter actions.
+
+### filterSettings.filteredColumns `array`
+{:#members:filtersettings-filteredcolumns}
+
+Specifies the column collection for filtering the Gantt content on initial load
+
+#### Default Value
+
+* []
+
+### filterSettings.filteredColumns.value `string`
+{:#members:filtersettings-filteredcolumns-value}
+
+Specifies the value to be filtered in Gantt.
+
+#### Default Value
+
+* -
+
+### filterSettings.filteredColumns.field `string`
+{:#members:filtersettings-filteredcolumns-field}
+
+Specifies the field where filtering has to be performed.
+
+#### Default Value
+
+* -
+
+### filterSettings.filteredColumns.predicate `string`
+{:#members:filtersettings-filteredcolumns-predicate}
+
+Specifies the predicate(and/or) value to perform filtering.
+
+#### Default Value
+
+* -
+
+### filterSettings.filteredColumns.operator `string`
+{:#members:filtersettings-filteredcolumns-operator}
+
+Specifies the filter condition to filtered column. See <a href="global.html#enum:filteroperator">operator</a>
+
+#### Default Value
+
+* -
+
+#### Example
+
+{% highlight html %}
+
+$("#gantt").ejGantt({
+    filterSettings: {
+        filteredColumns: [{
+            value: "plan",
+            field: "taskName",
+            predicate: "and",
+            operator: "startswith"
+        }]
+    },
+});                   
+
+{% endhighlight %}
+
 ### isResponsive `boolean`
 {:#members:isresponsive}
 
