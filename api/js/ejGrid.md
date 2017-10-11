@@ -1803,6 +1803,30 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
+### contextMenuSettings.subContextMenu.template `string`
+{:#members:contextmenusettings-subcontextmenu-template}
+
+Used to get or set the sub menu items to the custom context menu item using JsRender template.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true },
+   contextMenuSettings: { enableContextMenu: true, customContextMenuItems: ["Hide Column"],
+   subContextMenu: [{ contextMenuItem: "Hide Column", template: "<ul><li><a>OrderID</a></li></ul>" }] 
+  },          
+});
+</script>
+{% endhighlight %}
+
 
 ### contextMenuSettings.disableDefaultItems `boolean`
 {:#members:contextmenusettings-disabledefaultitems}
@@ -5696,7 +5720,7 @@ number
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 // returns the page size based on the container height
-grid.calculatePageSizeByParentHeight(400)
+gridObj.calculatePageSizeByParentHeight(400)
 </script>
 {% endhighlight %}
 
@@ -5706,6 +5730,59 @@ grid.calculatePageSizeByParentHeight(400)
 <script>
 // returns the page size based on the container height
 $("#Grid").ejGrid("calculatePageSizeByParentHeight",400)
+</script>
+{% endhighlight %}
+
+
+
+
+### changePageSize(pageSize)
+{:#methods:changepagesize}
+
+It is used to change the number of records displayed per page in grid based on the given page size.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">pageSize</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">When passing the page size, it will change the number of records displayed per page in grid. </td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+void
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+// changes the number of records displayed per page based on the provided page size
+gridObj.changePageSize(7)
+</script>
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<script>
+// changes the number of records displayed per page based on the provided page size
+$("#Grid").ejGrid("changePageSize",7)
 </script>
 {% endhighlight %}
 
@@ -6680,7 +6757,7 @@ Send a filtering request to filter one column in grid.
 <tbody>
 <tr>
 <td class="name">fieldName</td>
-<td class="type"><span class="param-type">array</span></td>
+<td class="type"><span class="param-type">array/string</span></td>
 <td class="description last">Pass the field name of the column</td>
 </tr>
 <tr>

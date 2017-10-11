@@ -3596,6 +3596,26 @@ commonSeriesOptions :{marker :{dataLabel :{enableContrastColor : false}}}
 });
  {% endhighlight %}
 
+
+### commonSeriesOptions.marker.dataLabel.showOutsideLabels `boolean`
+{:#members:commonseriesoptions-marker-datalabel-showoutisdelabels}
+
+Displays the partially visible labels inside the chart Area 
+
+#### Default Value
+
+ * false
+
+#### Example
+
+{% highlight js %}
+$("#container").ejChart({
+commonSeriesOptions :{marker :{dataLabel :{showOutsideLabels : false}}}                  
+});
+ {% endhighlight %}
+
+
+
 ### commonSeriesOptions.marker.dataLabel.border `object`
 {:#members:commonseriesoptions-marker-datalabel-border}
 
@@ -12701,7 +12721,7 @@ $("#container").ejChart({
 
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/0vka45gc)
 
-### Margin `object`
+### margin `object`
 {:#members:margin}
 
 
@@ -27776,6 +27796,25 @@ $("#container").ejChart({
 series :[{marker :{dataLabel :{enableContrastColor : true}}]            
 });
  {% endhighlight %}
+
+
+### series.marker.dataLabel.showOutsideLabels `boolean`
+{:#members:series-marker-datalabel-showoutsidelabels}
+
+Displays the partially visible data labels inside the chart Area.
+
+#### Default Value
+
+ * false
+
+#### Example
+
+{% highlight js %}
+$("#container").ejChart({
+series :[{marker :{dataLabel :{showOutsideLabels : true}}]            
+});
+ {% endhighlight %}
+
 
 ### series.marker.dataLabel.border `object`
 {:#members:series-marker-datalabel-border}

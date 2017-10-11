@@ -4983,7 +4983,7 @@ Binds the name of `resourceId` field in dataSource. Specifies the id of the reso
 {% endhighlight %}
 
 ### blockoutSettings.groupId `string`
-{:#members:blockoutsettings-resourceid}
+{:#members:blockoutsettings-groupid}
 
 Binds the name of `groupId` field in dataSource. Specifies the id of the resource group, to which the time intervals are needed to be blocked.
 
@@ -5310,7 +5310,7 @@ $('#Schedule').ejSchedule({
                         StartTime: new Date(2014, 4, 5, 10, 00),
                         EndTime: new Date(2014, 4, 5, 12, 00),
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     },
                     {
                         Id: 102,
@@ -5318,7 +5318,7 @@ $('#Schedule').ejSchedule({
                         StartTime: new Date(2014, 4, 5, 05, 00),
                         EndTime: new Date(2014, 4, 5, 07, 00),
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     }]
                     id: "Id",
                     startTime: "StartTime",
@@ -5458,7 +5458,7 @@ $('#Schedule').ejSchedule({
                         StartTime: new Date(2014, 4, 5, 10, 00),
                         EndTime: new Date(2014, 4, 5, 12, 00),
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     },
                     {
                         Id: 102,
@@ -5466,7 +5466,7 @@ $('#Schedule').ejSchedule({
                         StartTime: new Date(2014, 4, 5, 05, 00),
                         EndTime: new Date(2014, 4, 5, 07, 00),
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     },
                     {
                         Id: 103,
@@ -5474,7 +5474,7 @@ $('#Schedule').ejSchedule({
                         StartTime: new Date(2014, 4, 5, 08, 00),
                         EndTime: new Date(2014, 4, 5, 09, 00),
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     }]
                     id: "Id",
                     startTime: "StartTime",
@@ -5521,7 +5521,7 @@ $('#Schedule').ejSchedule({
                         StartTime: new Date(2014, 4, 5, 10, 00),
                         EndTime: new Date(2014, 4, 5, 12, 00),
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     },
                     {
                         Id: 102,
@@ -5529,7 +5529,7 @@ $('#Schedule').ejSchedule({
                         StartTime: new Date(2014, 4, 5, 05, 00),
                         EndTime: new Date(2014, 4, 5, 07, 00),
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     },
                     {
                         Id: 103,
@@ -5537,7 +5537,7 @@ $('#Schedule').ejSchedule({
                         StartTime: new Date(2014, 4, 5, 08, 00),
                         EndTime: new Date(2014, 4, 5, 09, 00),
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     }]
                     id: "Id",
                     startTime: "StartTime",
@@ -5597,7 +5597,7 @@ $('#Schedule').ejSchedule({
                         Recurrence:false,
                         RecurrenceRule:null,
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     },
                     {
                         Id: 102,
@@ -5607,7 +5607,7 @@ $('#Schedule').ejSchedule({
                         Recurrence:true,
                         RecurrenceRule:"FREQ=DAILY;INTERVAL=1;COUNT=10",
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     }]
                     id: "Id",
                     startTime: "StartTime",
@@ -5705,7 +5705,7 @@ $('#Schedule').ejSchedule({
                         Recurrence:false,
                         RecurrenceRule:null,
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     }]
                     id: "Id",
                     startTime: "StartTime",
@@ -5727,7 +5727,7 @@ $('#Schedule').ejSchedule({
               Recurrence:false,
               RecurrenceRule:null,
               StartTimeZone: "UTC +00:00",
-              EndTimeZone: "UTC +00:00
+              EndTimeZone: "UTC +00:00"
             };
   var schObj = $("#Schedule").data("ejSchedule");
   schObj.saveAppointment(obj); //obj contains collection of appointment. 
@@ -5796,7 +5796,7 @@ Object
 <script>
 $('#Schedule').ejSchedule();
 
-  var obj = $("#Schedule1").data("ejSchedule");
+  var obj = $("#Schedule").data("ejSchedule");
   var $td = $(".e-draggableworkarea table tr td").first();
   var slotDetails = obj.getSlotByElement($td);
 
@@ -5866,7 +5866,7 @@ $('#Schedule').ejSchedule({
                         StartTime: new Date(2014, 4, 5, 10, 00),
                         EndTime: new Date(2014, 4, 5, 12, 00),
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     },
                     {
                         Id: 102,
@@ -5874,7 +5874,7 @@ $('#Schedule').ejSchedule({
                         StartTime: new Date(2014, 4, 5, 05, 00),
                         EndTime: new Date(2014, 4, 5, 07, 00),
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     },
                     {
                         Id: 103,
@@ -5882,7 +5882,7 @@ $('#Schedule').ejSchedule({
                         StartTime: new Date(2014, 4, 5, 08, 00),
                         EndTime: new Date(2014, 4, 5, 09, 00),
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     }]
                     id: "Id",
                     startTime: "StartTime",
@@ -5966,7 +5966,7 @@ void
 $(function () {
 	window.signalR = $.signalR.scheduleHub;
 	window.signalR.client.modify = function (action, data) {
-		$("#Schedule1").ejSchedule('instance').notifyChanges(action, data);
+		$("#Schedule").ejSchedule('instance').notifyChanges(action, data);
 	};
 	$.signalR.hub.start({ jsonp: true }).done(function () {
 		window.actionComplete = function (args) {
@@ -6010,20 +6010,15 @@ Triggers on the beginning of every action that starts within the Schedule.
                     </thead>
                 <tbody>
                     <tr>
-                        <td class="name">currentDate</td>
-                        <td class="type">Object</td>
-                        <td class="description">Returns the current date value.</td>
-                    </tr>
-                    <tr>
                         <td class="name">cancel</td>
                         <td class="type">boolean</td>
                         <td class="description">Returns the cancel option value.</td>
                     </tr>
                     <tr>
-                        <td class="name">currentView</td>
-                        <td class="type">string</td>
-                        <td class="description">Returns the current view value.</td>
-                    </tr>
+                        <td class="name">data</td>
+                        <td class="type">Object</td>
+                        <td class="description">Returns the data about the view change action.</td>
+                   </tr>
                     <tr>
                         <td class="name">model</td>
                         <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">Object</span></td>
@@ -6033,11 +6028,6 @@ Triggers on the beginning of every action that starts within the Schedule.
                         <td class="name">requestType</td>
                         <td class="type">string</td>
                         <td class="description">Returns the action begin request type.</td>
-                    </tr>
-                    <tr>
-                        <td class="name">target</td>
-                        <td class="type">Object</td>
-                        <td class="description">Returns the target of the click.</td>
                     </tr>
                     <tr>
                         <td class="name">type</td>
@@ -6067,10 +6057,10 @@ Triggers on the beginning of every action that starts within the Schedule.
                         <td class="description">Returns the cancel option value.</td>      
                     </tr>
                     <tr>
-                        <td class="name">currentDate</td>
-                        <td class="type">Object</td>
-                        <td class="description">Returns the current date value.</td>
-                    </tr>
+                    <td class="name">data</td>
+                    <td class="type">Object</td>
+                    <td class="description">Returns the data about the date navigate action.</td>
+                </tr>
                     <tr>
                         <td class="name">model</td>
                         <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">Object</span></td>
@@ -6080,11 +6070,6 @@ Triggers on the beginning of every action that starts within the Schedule.
                         <td class="name">requestType</td>
                         <td class="type">string</td>
                         <td class="description">Returns the action begin request type.</td>
-                    </tr>
-                    <tr>
-                        <td class="name">target</td>
-                        <td class="type">Object</td>
-                        <td class="description">Returns the target of the click.</td>
                     </tr>
                     <tr>
                         <td class="name">type</td>
@@ -6114,9 +6099,9 @@ Triggers on the beginning of every action that starts within the Schedule.
                         <td class="description">Returns the cancel option value.</td>
                     </tr>
                     <tr>
-                        <td class="name">currentDate</td>
+                        <td class="name">data</td>
                         <td class="type">Object</td>
-                        <td class="description">Returns the current date value.</td>
+                        <td class="description">Returns the data about the date changed through Scheduler calendar action.</td>
                     </tr>
                     <tr>
                         <td class="name">model</td>
@@ -6127,11 +6112,6 @@ Triggers on the beginning of every action that starts within the Schedule.
                         <td class="name">requestType</td>
                         <td class="type">string</td>
                         <td class="description">Returns the action begin request type.</td>
-                    </tr>
-                    <tr>
-                        <td class="name">target</td>
-                        <td class="type">Object</td>
-                        <td class="description">Returns the target of the click.</td>
                     </tr>
                     <tr>
                         <td class="name">type</td>
@@ -6201,6 +6181,11 @@ Triggers on the beginning of every action that starts within the Schedule.
                         <td class="description">Returns the cancel option value.</td>
                     </tr>
                     <tr>
+                        <td class="name">currentAction</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the name of the CRUD action performed.</td>
+                    </tr>
+                    <tr>
                         <td class="name">data</td>
                         <td class="type">Object</td>
                         <td class="description">Returns the edit appointment value.</td>
@@ -6243,9 +6228,14 @@ Triggers on the beginning of every action that starts within the Schedule.
                         <td class="description">Returns the cancel option value.</td>
                     </tr>
                     <tr>
+                        <td class="name">currentAction</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the name of the CRUD action performed.</td>
+                    </tr>
+                    <tr>
                         <td class="name">id</td>
-                        <td class="type">number</td>
-                        <td class="description">Returns the id of delete appointment.</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the GUid of appointment.</td>
                     </tr>
                     <tr>
                         <td class="name">model</td>
@@ -6531,7 +6521,7 @@ Triggers after the completion of every action within the Schedule.
                 </tr>
                 <tr>
                     <td class="name">data</td>
-                    <td class="type">Object</td>
+                    <td class="type">Array</td>
                     <td class="description">Returns the data about appointment saved value.</td>
                 </tr>
                 <tr>
@@ -6572,8 +6562,13 @@ Triggers after the completion of every action within the Schedule.
                     <td class="description">Returns the cancel option value.</td>
                 </tr>
                 <tr>
+                    <td class="name">currentAction</td>
+                    <td class="type">string</td>
+                    <td class="description">Returns the name of the CRUD action performed.</td>
+                </tr>
+                <tr>
                     <td class="name">data</td>
-                    <td class="type">Object</td>
+                    <td class="type">Array</td>
                     <td class="description">Returns the data about appointment edited value.</td>
                 </tr>
                 <tr>
@@ -6612,6 +6607,11 @@ Triggers after the completion of every action within the Schedule.
                     <td class="name">cancel</td>
                     <td class="type">boolean</td>
                     <td class="description">Returns the cancel option value.</td>
+                </tr>
+                <tr>
+                    <td class="name">currentAction</td>
+                    <td class="type">string</td>
+                    <td class="description">Returns the name of the CRUD action performed.</td>
                 </tr>
                 <tr>
                     <td class="name">data</td>
@@ -6807,7 +6807,7 @@ $("#Schedule").ejSchedule({
                         Recurrence:false,
                         RecurrenceRule:null,
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     }]
                     id: "Id",
                     startTime: "StartTime",
@@ -6841,15 +6841,20 @@ Triggers before the appointment is being removed from the Scheduler.
     </thead>
     <tbody>
         <tr>
+            <td class="name">appointment</td>
+            <td class="type">Object</td>
+            <td class="description">Returns the deleted appointment object.</td>
+        </tr>
+        <tr>
             <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
-            <td class="name">appointment</td>
-            <td class="type">Object</td>
-            <td class="description">Returns the deleted appointment object.</td>
-        </tr>
+            <td class="name">currentAction</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the CRUD action performed.</td>
+        </tr>        
         <tr>
             <td class="name">model</td>
             <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">Object</span></td>
@@ -6885,7 +6890,7 @@ $("#Schedule").ejSchedule({
                         Recurrence:false,
                         RecurrenceRule:null,
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     },
                     {
                         Id: 102,
@@ -6896,7 +6901,7 @@ $("#Schedule").ejSchedule({
                         Recurrence:false,
                         RecurrenceRule:null,
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     }]
                     id: "Id",
                     startTime: "StartTime",
@@ -6941,9 +6946,19 @@ Triggers before the edited appointment is being saved.
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
+            <td class="name">currentAction</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the CRUD action performed.</td>
+        </tr>
+        <tr>
             <td class="name">model</td>
             <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">Object</span></td>
             <td class="description">Returns the Schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">requestType</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the Scheduler event.</td>
         </tr>
         <tr>
             <td class="name">type</td>
@@ -6974,7 +6989,7 @@ $("#Schedule").ejSchedule({
                         Recurrence:false,
                         RecurrenceRule:null,
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     },
                     {
                         Id: 102,
@@ -6985,7 +7000,7 @@ $("#Schedule").ejSchedule({
                         Recurrence:false,
                         RecurrenceRule:null,
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     }]
                     id: "Id",
                     startTime: "StartTime",
@@ -7068,7 +7083,7 @@ $("#Schedule").ejSchedule({
                         Recurrence:false,
                         RecurrenceRule:null,
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     }]
                     id: "Id",
                     startTime: "StartTime",
@@ -7321,17 +7336,17 @@ Triggers after the cell is clicked.
             <th>Description</th>
         </tr>
     </thead>
-    <tbody>
-        <tr>
-            <td class="name">object</td>
-            <td class="type">Object</td>
-            <td class="description">Returns the object of cellClick event.</td>
-        </tr>
+    <tbody>        
         <tr>
             <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
+         <tr>
+            <td class="name">cellIndex</td>
+            <td class="type">number</td>
+            <td class="description">Returns the index of the cell.</td>
+        </tr>        
         <tr>
             <td class="name">endTime</td>
             <td class="type">Object</td>
@@ -7341,6 +7356,16 @@ Triggers after the cell is clicked.
             <td class="name">model</td>
             <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">Object</span></td>
             <td class="description">Returns the Schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">quickString</td>
+            <td class="type">string</td>
+            <td class="description">Returns day, date and time information.</td>
+        </tr>
+        <tr>
+            <td class="name">resources</td>
+            <td class="type">Object</td>
+            <td class="description">Returns the object of the resource.</td>
         </tr>
         <tr>
             <td class="name">startTime</td>
@@ -7395,11 +7420,6 @@ Triggers after the cell is clicked twice.
     </thead>
     <tbody>
         <tr>
-            <td class="name">object</td>
-            <td class="type">Object</td>
-            <td class="description">Returns the object of cellDoubleClick event.</td>
-        </tr>
-        <tr>
             <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
@@ -7413,6 +7433,11 @@ Triggers after the cell is clicked twice.
             <td class="name">model</td>
             <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">Object</span></td>
             <td class="description">Returns the Schedule model.</td>
+        </tr>        
+        <tr>
+            <td class="name">resources</td>
+            <td class="type">Object</td>
+            <td class="description">Returns the object of the resource.</td>
         </tr>
         <tr>
             <td class="name">startTime</td>
@@ -7465,29 +7490,34 @@ Triggers on hovering the mouse overs the cells.
     </thead>
     <tbody>
         <tr>
-            <td class="name">object</td>
-            <td class="type">Object</td>
-            <td class="description">Returns the object of cellHover event.</td>
-        </tr>   
-        <tr>
             <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
         <tr>
             <td class="name">cellIndex</td>
-            <td class="type">Object</td>
+            <td class="type">number</td>
             <td class="description">Returns the index of the hovered cell.</td>
         </tr>
         <tr>
-            <td class="name">currentDate</td>
+            <td class="name">endTime</td>
             <td class="type">Object</td>
-            <td class="description">Returns the current date of the hovered cell.</td>
+            <td class="description">Returns the end time of the clicked cell.</td>
         </tr>
         <tr>
             <td class="name">model</td>
             <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">Object</span></td>
             <td class="description">Returns the Schedule model.</td>
+        </tr>
+         <tr>
+            <td class="name">resources</td>
+            <td class="type">Object</td>
+            <td class="description">Returns the object of the resource.</td>
+        </tr>
+        <tr>
+            <td class="name">startTime</td>
+            <td class="type">Object</td>
+            <td class="description">Returns the start time of the clicked cell.</td>
         </tr>
         <tr>
             <td class="name">target</td>
@@ -7629,11 +7659,6 @@ Triggers while the appointment is being dragged over the work cells.
     </thead>
     <tbody>
         <tr>
-            <td class="name">object</td>
-            <td class="type">Object</td>
-            <td class="description">Returns the object of dragOver event.</td>
-        </tr>
-        <tr>
             <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
@@ -7652,6 +7677,11 @@ Triggers while the appointment is being dragged over the work cells.
             <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the event.</td>
+        </tr>        
+        <tr>
+            <td class="name">interval</td>
+            <td class="type">number</td>
+            <td class="description">Returns the default dragging interval range in minutes</td>
         </tr>
     </tbody>
 </table>
@@ -7678,7 +7708,7 @@ $("#Schedule").ejSchedule({
                         Recurrence:false,
                         RecurrenceRule:null,
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     }]
                     id: "Id",
                     startTime: "StartTime",
@@ -7711,9 +7741,9 @@ Triggers when the appointment dragging begins.
     </thead>
     <tbody>
         <tr>
-            <td class="name">object</td>
+            <td class="name">appointment</td>
             <td class="type">Object</td>
-            <td class="description">Returns the object of dragStart event.</td>
+            <td class="description">Returns the dragged appointment.</td>
         </tr>
         <tr>
             <td class="name">cancel</td>
@@ -7761,7 +7791,7 @@ $("#Schedule").ejSchedule({
                         Recurrence:false,
                         RecurrenceRule:null,
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     }]
                     id: "Id",
                     startTime: "StartTime",
@@ -7793,11 +7823,6 @@ Triggers when the appointment is dropped.
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td class="name">object</td>
-            <td class="type">Object</td>
-            <td class="description">Returns the object of dragDrop event.</td>
-        </tr>
         <tr>
             <td class="name">appointment</td>
             <td class="type">Object</td>
@@ -7843,7 +7868,7 @@ $("#Schedule").ejSchedule({
                         Recurrence:false,
                         RecurrenceRule:null,
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     },
                     {
                         Id: 102,
@@ -7854,7 +7879,7 @@ $("#Schedule").ejSchedule({
                         Recurrence:false,
                         RecurrenceRule:null,
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     }]
                     id: "Id",
                     startTime: "StartTime",
@@ -7889,11 +7914,6 @@ Triggers after the menu/sub-menu items within the context menu is clicked.
     </thead>
     <tbody>
         <tr>
-            <td class="name">object</td>
-            <td class="type">Object</td>
-            <td class="description">Returns the object of menuItemClick event.</td>
-        </tr>
-        <tr>
             <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
@@ -7907,6 +7927,11 @@ Triggers after the menu/sub-menu items within the context menu is clicked.
             <td class="name">model</td>
             <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">Object</span></td>
             <td class="description">Returns the Schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">targetInfo</td>
+            <td class="type">Object</td>
+            <td class="description">Returns the right clicked cell details.</td>
         </tr>
         <tr>
             <td class="name">type</td>
@@ -7991,6 +8016,11 @@ Triggers after the Schedule view or date is navigated.
                         <td class="name">target</td>
                         <td class="type">Object</td>
                         <td class="description">Returns the target of the action.</td>
+                    </tr>
+                    <tr>
+                        <td class="name">requestType</td>
+                        <td class="type">string</td>
+                        <td class="description">Returns the name of the Scheduler event.</td>
                     </tr>
                     <tr>
                         <td class="name">type</td>
@@ -8272,11 +8302,6 @@ Triggers while resizing the appointment.
     </thead>
     <tbody>
         <tr>
-            <td class="name">object</td>
-            <td class="type">Object</td>
-            <td class="description">Returns the object of resizing event.</td>
-        </tr>
-        <tr>
             <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
@@ -8285,6 +8310,11 @@ Triggers while resizing the appointment.
             <td class="name">element</td>
             <td class="type">Object</td>
             <td class="description">Returns the resize element value.</td>
+        </tr>
+         <tr>
+            <td class="name">interval</td>
+            <td class="type">number</td>
+            <td class="description">Returns the default appointment resizing range .</td>
         </tr>
         <tr>
             <td class="name">model</td>
@@ -8320,7 +8350,7 @@ $("#Schedule").ejSchedule({
                         Recurrence:false,
                         RecurrenceRule:null,
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     }]
                     id: "Id",
                     startTime: "StartTime",
@@ -8353,9 +8383,9 @@ Triggers when the appointment resizing begins.
     </thead>
     <tbody>
         <tr>
-            <td class="name">object</td>
+            <td class="name">appointment</td>
             <td class="type">Object</td>
-            <td class="description">Returns the object of resizeStart event.</td>
+            <td class="description">Returns the object of the resized appointment.</td>
         </tr>
         <tr>
             <td class="name">cancel</td>
@@ -8401,7 +8431,7 @@ $("#Schedule").ejSchedule({
                         Recurrence:false,
                         RecurrenceRule:null,
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     }]
                     id: "Id",
                     startTime: "StartTime",
@@ -8433,11 +8463,6 @@ Triggers when an appointment resizing stops.
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td class="name">object</td>
-            <td class="type">Object</td>
-            <td class="description">Returns the object of resizeStop event.</td>
-        </tr>
         <tr>
             <td class="name">appointment</td>
             <td class="type">Object</td>
@@ -8487,7 +8512,7 @@ $("#Schedule").ejSchedule({
                         Recurrence:false,
                         RecurrenceRule:null,
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     }]
                     id: "Id",
                     startTime: "StartTime",
@@ -8521,14 +8546,14 @@ Triggers when the overflow button is clicked.
     </thead>
     <tbody>
         <tr>
-            <td class="name">object</td>
-            <td class="type">Object</td>
-            <td class="description">Returns the object consisting of start time, end time and resource value of the underlying cell on which the clicked overflow button is present.  </td>
-        </tr>
-        <tr>
             <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
+        </tr>
+         <tr>
+            <td class="name">Datas</td>
+            <td class="type">Object</td>
+            <td class="description">Returns the icon rendered cell information.</td>
         </tr>
         <tr>
             <td class="name">events</td>
@@ -8578,17 +8603,17 @@ Triggers while mouse hovering on the overflow button.
     </thead>
     <tbody>
         <tr>
-            <td class="name">object</td>
-            <td class="type">Object</td>
-            <td class="description">Returns the object consisting of start time, end time and resource value of the underlying cell on which the overflow button is currently hovered.  </td>
-        </tr>
-        <tr>
             <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
         </tr>
+         <tr>
+            <td class="name">datas</td>
+            <td class="type">Object</td>
+            <td class="description">Returns the icon rendered cell information.</td>
+        </tr>
         <tr>
-            <td class="name">events</td>
+            <td class="name">event</td>
             <td class="type">Object</td>
             <td class="description">Returns the object of menu item event.</td>
         </tr>
@@ -8706,6 +8731,11 @@ Triggers after the new appointment is saved.
             <td class="description">Returns the Schedule model.</td>
         </tr>
         <tr>
+            <td class="name">requestType</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the Scheduler event.</td>
+        </tr>
+        <tr>
             <td class="name">type</td>
             <td class="type">string</td>
             <td class="description">Returns the name of the Scheduler event.</td>
@@ -8754,11 +8784,21 @@ Triggers after an existing appointment is edited.
             <td class="name">cancel</td>
             <td class="type">boolean</td>
             <td class="description">Returns the cancel option value.</td>
+        </tr>        
+        <tr>
+            <td class="name">currentAction</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the CRUD action performed.</td>
         </tr>
         <tr>
             <td class="name">model</td>
             <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">Object</span></td>
             <td class="description">Returns the Schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">requestType</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the Scheduler event.</td>
         </tr>
         <tr>
             <td class="name">type</td>
@@ -8789,7 +8829,7 @@ $("#Schedule").ejSchedule({
                         Recurrence:false,
                         RecurrenceRule:null,
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     },
                     {
                         Id: 102,
@@ -8800,7 +8840,7 @@ $("#Schedule").ejSchedule({
                         Recurrence:false,
                         RecurrenceRule:null,
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     }]
                     id: "Id",
                     startTime: "StartTime",
@@ -8844,9 +8884,19 @@ Triggers after the appointment is deleted.
             <td class="description">Returns the deleted appointment object.</td>
         </tr>
         <tr>
+            <td class="name">currentAction</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the CRDU action performed.</td>
+        </tr>
+        <tr>
             <td class="name">model</td>
             <td class="type"><ts ref="ej.Schedule.Model"/><span class="param-type">Object</span></td>
             <td class="description">Returns the Schedule model.</td>
+        </tr>
+        <tr>
+            <td class="name">requestType</td>
+            <td class="type">string</td>
+            <td class="description">Returns the name of the Scheduler event.</td>
         </tr>
         <tr>
             <td class="name">type</td>
@@ -8877,7 +8927,7 @@ $("#Schedule").ejSchedule({
                         Recurrence:false,
                         RecurrenceRule:null,
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     },
                     {
                         Id: 102,
@@ -8888,7 +8938,7 @@ $("#Schedule").ejSchedule({
                         Recurrence:false,
                         RecurrenceRule:null,
                         StartTimeZone: "UTC +00:00",
-                        EndTimeZone: "UTC +00:00
+                        EndTimeZone: "UTC +00:00"
                     }]
                     id: "Id",
                     startTime: "StartTime",

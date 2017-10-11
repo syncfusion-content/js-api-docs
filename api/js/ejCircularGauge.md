@@ -6960,7 +6960,7 @@ circulargaugeObj.destroy();
 
 
 
-### exportImage()
+### exportImage(fileName, fileType)
 {:#methods:exportimage}
 
 
@@ -6979,13 +6979,13 @@ To export Image
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.fileName{% endhighlight %}</td>
+fileName{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">fileName for the Image</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.fileType{% endhighlight %}</td>
+fileType{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">fileType for the Image</td>
 </tr>
@@ -7011,7 +7011,7 @@ circulargaugeObj.exportImage("myImage","jpeg");
 
 
 
-### getBackNeedleLength()
+### getBackNeedleLength(scaleIndex, pointerIndex)
 {:#methods:getbackneedlelength}
 
 
@@ -7030,13 +7030,13 @@ To get BackNeedleLength
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -7062,7 +7062,7 @@ circulargaugeObj.getBackNeedleLength(0, 0);
 
 
 
-### getCustomLabelAngle()
+### getCustomLabelAngle(scaleIndex, customLabelIndex)
 {:#methods:getcustomlabelangle}
 
 
@@ -7081,13 +7081,13 @@ To get CustomLabelAngle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.customLabelIndex{% endhighlight %}</td>
+customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">customLabelIndex value for the Gauge</td>
 </tr>
@@ -7113,7 +7113,7 @@ circulargaugeObj.getCustomLabelAngle(0, 0);
 
 
 
-### getCustomLabelValue()
+### getCustomLabelValue(scaleIndex, customLabelIndex)
 {:#methods:getcustomlabelvalue}
 
 
@@ -7132,13 +7132,13 @@ To get CustomLabelValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.customLabelIndex{% endhighlight %}</td>
+customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">customLabelIndex value for the Gauge</td>
 </tr>
@@ -7164,7 +7164,7 @@ circulargaugeObj.getCustomLabelValue(0, 0);
 
 
 
-### getLabelAngle()
+### getLabelAngle(scaleIndex, labelIndex)
 {:#methods:getlabelangle}
 
 
@@ -7183,13 +7183,13 @@ To get LabelAngle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.labelIndex{% endhighlight %}</td>
+labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the Gauge</td>
 </tr>
@@ -7215,7 +7215,7 @@ circulargaugeObj.getLabelAngle(0, 0);
 
 
 
-### getLabelDistanceFromScale()
+### getLabelDistanceFromScale(scaleIndex, labelIndex)
 {:#methods:getlabeldistancefromscale}
 
 
@@ -7234,13 +7234,13 @@ To get LabelDistanceFromScale
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.labelIndex{% endhighlight %}</td>
+labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the Gauge</td>
 </tr>
@@ -7266,7 +7266,7 @@ circulargaugeObj.getLabelDistanceFromScale(0, 0);
 
 
 
-### getLabelPlacement()
+### getLabelPlacement(scaleIndex, labelIndex)
 {:#methods:getlabelplacement}
 
 
@@ -7285,13 +7285,13 @@ To get LabelPlacement
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.labelIndex{% endhighlight %}</td>
+labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the Gauge</td>
 </tr>
@@ -7317,7 +7317,7 @@ circulargaugeObj.getLabelPlacement(0, 0);
 
 
 
-### getLabelStyle()
+### getLabelStyle(scaleIndex, labelIndex)
 {:#methods:getlabelstyle}
 
 
@@ -7336,13 +7336,13 @@ To get LabelStyle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.labelIndex{% endhighlight %}</td>
+labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the Gauge</td>
 </tr>
@@ -7368,7 +7368,7 @@ circulargaugeObj.getLabelStyle(0, 0);
 
 
 
-### getMajorIntervalValue()
+### getMajorIntervalValue(scaleIndex)
 {:#methods:getmajorintervalvalue}
 
 
@@ -7387,7 +7387,7 @@ To get MajorIntervalValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -7413,7 +7413,7 @@ circulargaugeObj.getMajorIntervalValue(0);
 
 
 
-### getMarkerDistanceFromScale()
+### getMarkerDistanceFromScale(scaleIndex, pointerIndex)
 {:#methods:getmarkerdistancefromscale}
 
 
@@ -7432,13 +7432,13 @@ To get MarkerDistanceFromScale
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -7464,7 +7464,7 @@ circulargaugeObj.getMarkerDistanceFromScale(0, 0);
 
 
 
-### getMarkerStyle()
+### getMarkerStyle(scaleIndex, pointerIndex)
 {:#methods:getmarkerstyle}
 
 
@@ -7483,13 +7483,13 @@ To get MarkerStyle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -7515,7 +7515,7 @@ circulargaugeObj.getMarkerStyle(0, 0);
 
 
 
-### getMaximumValue()
+### getMaximumValue(scaleIndex)
 {:#methods:getmaximumvalue}
 
 
@@ -7534,7 +7534,7 @@ To get MaximumValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -7560,7 +7560,7 @@ circulargaugeObj.getMaximumValue(0);
 
 
 
-### getMinimumValue()
+### getMinimumValue(scaleIndex)
 {:#methods:getminimumvalue}
 
 
@@ -7579,7 +7579,7 @@ To get MinimumValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -7605,7 +7605,7 @@ circulargaugeObj.getMinimumValue(0);
 
 
 
-### getMinorIntervalValue()
+### getMinorIntervalValue(scaleIndex)
 {:#methods:getminorintervalvalue}
 
 
@@ -7624,7 +7624,7 @@ To get MinorIntervalValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -7650,7 +7650,7 @@ circulargaugeObj.getMinorIntervalValue(0);
 
 
 
-### getNeedleStyle()
+### getNeedleStyle(scaleIndex, pointerIndex)
 {:#methods:getneedlestyle}
 
 
@@ -7669,13 +7669,13 @@ To get NeedleStyle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -7701,7 +7701,7 @@ circulargaugeObj.getNeedleStyle(0, 0);
 
 
 
-### getPointerCapBorderWidth()
+### getPointerCapBorderWidth(scaleIndex)
 {:#methods:getpointercapborderwidth}
 
 
@@ -7720,7 +7720,7 @@ To get PointerCapBorderWidth
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -7746,7 +7746,7 @@ circulargaugeObj.getPointerCapBorderWidth(0);
 
 
 
-### getPointerCapRadius()
+### getPointerCapRadius(scaleIndex)
 {:#methods:getpointercapradius}
 
 
@@ -7765,7 +7765,7 @@ To get PointerCapRadius
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -7791,7 +7791,7 @@ circulargaugeObj.getPointerCapRadius(0);
 
 
 
-### getPointerLength()
+### getPointerLength(scaleIndex, pointerIndex)
 {:#methods:getpointerlength}
 
 
@@ -7810,13 +7810,13 @@ To get PointerLength
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -7842,7 +7842,7 @@ circulargaugeObj.getPointerLength(0, 0);
 
 
 
-### getPointerNeedleType()
+### getPointerNeedleType(scaleIndex, pointerIndex)
 {:#methods:getpointerneedletype}
 
 
@@ -7861,13 +7861,13 @@ To get PointerNeedleType
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -7892,7 +7892,7 @@ circulargaugeObj.getPointerNeedleType(0, 0);
 
 
 
-### getPointerPlacement()
+### getPointerPlacement(scaleIndex, pointerIndex)
 {:#methods:getpointerplacement}
 
 
@@ -7911,13 +7911,13 @@ To get PointerPlacement
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -7943,7 +7943,7 @@ circulargaugeObj.getPointerPlacement(0, 0);
 
 
 
-### getPointerValue()
+### getPointerValue(scaleIndex, pointerIndex)
 {:#methods:getpointervalue}
 
 
@@ -7962,13 +7962,13 @@ To get PointerValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -7996,7 +7996,7 @@ circulargaugeObj.getPointerValue(0, 0);
 
 
 
-### getPointerWidth()
+### getPointerWidth(scaleIndex, pointerIndex)
 {:#methods:getpointerwidth}
 
 
@@ -8015,13 +8015,13 @@ To get PointerWidth
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the Gauge</td>
 </tr>
@@ -8048,7 +8048,7 @@ circulargaugeObj.getPointerWidth(0, 0);
 
 
 
-### getRangeBorderWidth()
+### getRangeBorderWidth(scaleIndex, rangeIndex)
 {:#methods:getrangeborderwidth}
 
 
@@ -8067,13 +8067,13 @@ To get RangeBorderWidth
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -8101,7 +8101,7 @@ circulargaugeObj.getRangeBorderWidth(0, 0);
 
 
 
-### getRangeDistanceFromScale()
+### getRangeDistanceFromScale(scaleIndex, rangeIndex)
 {:#methods:getrangedistancefromscale}
 
 
@@ -8120,13 +8120,13 @@ To get RangeDistanceFromScale
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -8153,7 +8153,7 @@ circulargaugeObj.getRangeDistanceFromScale(0, 0);
 
 
 
-### getRangeEndValue()
+### getRangeEndValue(scaleIndex, rangeIndex)
 {:#methods:getrangeendvalue}
 
 
@@ -8172,13 +8172,13 @@ To get RangeEndValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -8205,7 +8205,7 @@ circulargaugeObj.getRangeEndValue(0, 0);
 
 
 
-### getRangePosition()
+### getRangePosition(scaleIndex, rangeIndex)
 {:#methods:getrangeposition}
 
 
@@ -8224,13 +8224,13 @@ To get RangePosition
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -8257,7 +8257,7 @@ circulargaugeObj.getRangePosition(0, 0);
 
 
 
-### getRangeSize()
+### getRangeSize(scaleIndex, rangeIndex)
 {:#methods:getrangesize}
 
 
@@ -8276,13 +8276,13 @@ To get RangeSize
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -8310,7 +8310,7 @@ circulargaugeObj.getRangeSize(0, 0);
 
 
 
-### getRangeStartValue()
+### getRangeStartValue(scaleIndex, rangeIndex)
 {:#methods:getrangestartvalue}
 
 
@@ -8329,13 +8329,13 @@ To get RangeStartValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the Gauge</td>
 </tr>
@@ -8361,7 +8361,7 @@ circulargaugeObj.getRangeStartValue(0, 0);
 
 
 
-### getScaleBarSize()
+### getScaleBarSize(scaleIndex)
 {:#methods:getscalebarsize}
 
 
@@ -8380,7 +8380,7 @@ To get ScaleBarSize
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -8407,7 +8407,7 @@ circulargaugeObj.getScaleBarSize(0);
 
 
 
-### getScaleBorderWidth()
+### getScaleBorderWidth(scaleIndex)
 {:#methods:getscaleborderwidth}
 
 
@@ -8426,7 +8426,7 @@ To get ScaleBorderWidth
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -8453,7 +8453,7 @@ circulargaugeObj.getScaleBorderWidth(0);
 
 
 
-### getScaleDirection()
+### getScaleDirection(scaleIndex)
 {:#methods:getscaledirection}
 
 
@@ -8472,7 +8472,7 @@ To get ScaleDirection
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -8498,7 +8498,7 @@ circulargaugeObj.getScaleDirection(0);
 
 
 
-### getScaleRadius()
+### getScaleRadius(scaleIndex)
 {:#methods:getscaleradius}
 
 
@@ -8517,7 +8517,7 @@ To get ScaleRadius
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -8544,7 +8544,7 @@ circulargaugeObj.getScaleRadius(0);
 
 
 
-### getStartAngle()
+### getStartAngle(scaleIndex)
 {:#methods:getstartangle}
 
 
@@ -8563,7 +8563,7 @@ To get StartAngle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -8589,7 +8589,7 @@ circulargaugeObj.getStartAngle(0);
 
 
 
-### getSubGaugeLocation()
+### getSubGaugeLocation(scaleIndex, GaugeIndex)
 {:#methods:getsubgaugelocation}
 
 
@@ -8608,13 +8608,13 @@ To get SubGaugeLocation
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.GaugeIndex{% endhighlight %}</td>
+GaugeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">GaugeIndex value for the Gauge</td>
 </tr>
@@ -8643,7 +8643,7 @@ circulargaugeObj.getSubGaugeLocation(0, 0);
 
 
 
-### getSweepAngle()
+### getSweepAngle(scaleIndex)
 {:#methods:getsweepangle}
 
 
@@ -8662,7 +8662,7 @@ To get SweepAngle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
@@ -8689,7 +8689,7 @@ circulargaugeObj.getSweepAngle(0);
 
 
 
-### getTickAngle()
+### getTickAngle(scaleIndex, tickIndex)
 {:#methods:gettickangle}
 
 
@@ -8708,13 +8708,13 @@ To get TickAngle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.tickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the Gauge</td>
 </tr>
@@ -8740,7 +8740,7 @@ circulargaugeObj.getTickAngle(0, 0);
 
 
 
-### getTickDistanceFromScale()
+### getTickDistanceFromScale(scaleIndex, tickIndex)
 {:#methods:gettickdistancefromscale}
 
 
@@ -8759,13 +8759,13 @@ To get TickDistanceFromScale
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.tickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the Gauge</td>
 </tr>
@@ -8791,7 +8791,7 @@ circulargaugeObj.getTickDistanceFromScale(0, 0);
 
 
 
-### getTickHeight()
+### getTickHeight(scaleIndex, labelIndex)
 {:#methods:gettickheight}
 
 
@@ -8810,13 +8810,13 @@ To get TickHeight
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.labelIndex{% endhighlight %}</td>
+labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the Gauge</td>
 </tr>
@@ -8842,7 +8842,7 @@ circulargaugeObj.getTickHeight(0, 0);
 
 
 
-### getTickPlacement()
+### getTickPlacement(scaleIndex, tickIndex)
 {:#methods:gettickplacement}
 
 
@@ -8861,13 +8861,13 @@ To get TickPlacement
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.tickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the Gauge</td>
 </tr>
@@ -8893,7 +8893,7 @@ circulargaugeObj.getTickPlacement(0, 0);
 
 
 
-### getTickStyle()
+### getTickStyle(scaleIndex, tickIndex)
 {:#methods:gettickstyle}
 
 
@@ -8912,13 +8912,13 @@ To get TickStyle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.tickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the Gauge</td>
 </tr>
@@ -8944,7 +8944,7 @@ circulargaugeObj.getTickStyle(0, 0);
 
 
 
-### getTickWidth()
+### getTickWidth(scaleIndex, tickIndex)
 {:#methods:gettickwidth}
 
 
@@ -8963,13 +8963,13 @@ To get TickWidth
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the Gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.tickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the Gauge</td>
 </tr>
@@ -8996,7 +8996,7 @@ circulargaugeObj.getTickWidth(0, 0);
 
 
 
-### includeFirstValue()
+### includeFirstValue(scaleIndex, labelIndex, value)
 {:#methods:includefirstvalue}
 
 
@@ -9015,19 +9015,19 @@ To set includeFirstValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.labelIndex{% endhighlight %}</td>
+labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9052,7 +9052,7 @@ circulargaugeObj.includeFirstValue(0, 0, false);
 
 
 
-### redraw()
+### redraw(value)
 {:#methods:redraw}
 
 
@@ -9071,7 +9071,7 @@ Switching the redraw option for the gauge
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">redraw value for the gauge</td>
 </tr>
@@ -9097,7 +9097,7 @@ circulargaugeObj.redraw("scale");
 
 
 
-### setBackNeedleLength()
+### setBackNeedleLength(scaleIndex, pointerIndex, value)
 {:#methods:setbackneedlelength}
 
 
@@ -9116,19 +9116,19 @@ To set BackNeedleLength
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9153,7 +9153,7 @@ circulargaugeObj.setBackNeedleLength(0, 0, 10);
 
 
 
-### setCustomLabelAngle()
+### setCustomLabelAngle(scaleIndex, customLabelIndex, value)
 {:#methods:setcustomlabelangle}
 
 
@@ -9172,19 +9172,19 @@ To set CustomLabelAngle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.customLabelIndex{% endhighlight %}</td>
+customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">customLabelIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9210,7 +9210,7 @@ circulargaugeObj.setCustomLabelAngle(0, 0, 10);
 
 
 
-### setCustomLabelValue()
+### setCustomLabelValue(scaleIndex, customLabelIndex, value)
 {:#methods:setcustomlabelvalue}
 
 
@@ -9229,19 +9229,19 @@ To set CustomLabelValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.customLabelIndex{% endhighlight %}</td>
+customLabelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">customLabelIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9268,7 +9268,7 @@ circulargaugeObj.setCustomLabelValue(0, 0, "CircularGauge");
 
 
 
-### setLabelAngle()
+### setLabelAngle(scaleIndex, labelIndex, angle)
 {:#methods:setlabelangle}
 
 
@@ -9287,19 +9287,19 @@ To set LabelAngle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.labelIndex{% endhighlight %}</td>
+labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.angle{% endhighlight %}</td>
+angle{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">angle value for the gauge</td>
 </tr>
@@ -9326,7 +9326,7 @@ circulargaugeObj.setLabelAngle(0, 0, 10);
 
 
 
-### setLabelDistanceFromScale()
+### setLabelDistanceFromScale(scaleIndex, labelIndex, value)
 {:#methods:setlabeldistancefromscale}
 
 
@@ -9345,19 +9345,19 @@ To set LabelDistanceFromScale
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.labelIndex{% endhighlight %}</td>
+labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9384,7 +9384,7 @@ circulargaugeObj.setLabelDistanceFromScale(0, 0, 10);
 
 
 
-### setLabelPlacement()
+### setLabelPlacement(scaleIndex, labelIndex, value)
 {:#methods:setlabelplacement}
 
 
@@ -9403,19 +9403,19 @@ To set LabelPlacement
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.labelIndex{% endhighlight %}</td>
+labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9442,7 +9442,7 @@ circulargaugeObj.setLabelPlacement(0, 0, "far");
 
 
 
-### setLabelStyle()
+### setLabelStyle(scaleIndex, labelIndex, value)
 {:#methods:setlabelstyle}
 
 
@@ -9461,19 +9461,19 @@ To set LabelStyle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.labelIndex{% endhighlight %}</td>
+labelIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">labelIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9500,7 +9500,7 @@ circulargaugeObj.setLabelStyle(0, 0, "major");
 
 
 
-### setMajorIntervalValue()
+### setMajorIntervalValue(scaleIndex, value)
 {:#methods:setmajorintervalvalue}
 
 
@@ -9519,13 +9519,13 @@ To set MajorIntervalValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9551,7 +9551,7 @@ circulargaugeObj.setMajorIntervalValue(0, 10);
 
 
 
-### setMarkerDistanceFromScale()
+### setMarkerDistanceFromScale(scaleIndex, pointerIndex, value)
 {:#methods:setmarkerdistancefromscale}
 
 
@@ -9570,19 +9570,19 @@ To set MarkerDistanceFromScale
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9608,7 +9608,7 @@ circulargaugeObj.setMarkerDistanceFromScale(0, 0, 10);
 
 
 
-### setMarkerStyle()
+### setMarkerStyle(scaleIndex, pointerIndex, value)
 {:#methods:setmarkerstyle}
 
 
@@ -9627,19 +9627,19 @@ To set MarkerStyle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9667,7 +9667,7 @@ circulargaugeObj.setMarkerStyle(0, 0, "rectangle");
 
 
 
-### setMaximumValue()
+### setMaximumValue(scaleIndex, value)
 {:#methods:setmaximumvalue}
 
 
@@ -9686,13 +9686,13 @@ To set MaximumValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9719,7 +9719,7 @@ circulargaugeObj.setMaximumValue(0, 130);
 
 
 
-### setMinimumValue()
+### setMinimumValue(scaleIndex, value)
 {:#methods:setminimumvalue}
 
 
@@ -9738,13 +9738,13 @@ To set MinimumValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9770,7 +9770,7 @@ circulargaugeObj.setMinimumValue(0, 10);
 
 
 
-### setMinorIntervalValue()
+### setMinorIntervalValue(scaleIndex, value)
 {:#methods:setminorintervalvalue}
 
 
@@ -9789,13 +9789,13 @@ To set MinorIntervalValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9822,7 +9822,7 @@ circulargaugeObj.setMinorIntervalValue(0, 2);
 
 
 
-### setNeedleStyle()
+### setNeedleStyle(scaleIndex, pointerIndex, value)
 {:#methods:setneedlestyle}
 
 
@@ -9841,19 +9841,19 @@ To set NeedleStyle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9880,7 +9880,7 @@ circulargaugeObj.setNeedleStyle(0, 0, "arrow");
 
 
 
-### setPointerCapBorderWidth()
+### setPointerCapBorderWidth(scaleIndex, value)
 {:#methods:setpointercapborderwidth}
 
 
@@ -9899,13 +9899,13 @@ To set PointerCapBorderWidth
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9932,7 +9932,7 @@ circulargaugeObj.setPointerCapBorderWidth(0, 5);
 
 
 
-### setPointerCapRadius()
+### setPointerCapRadius(scaleIndex, value)
 {:#methods:setpointercapradius}
 
 
@@ -9951,13 +9951,13 @@ To set PointerCapRadius
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -9983,7 +9983,7 @@ circulargaugeObj.setPointerCapRadius(0, 10);
 
 
 
-### setPointerLength()
+### setPointerLength(scaleIndex, pointerIndex, value)
 {:#methods:setpointerlength}
 
 
@@ -10002,19 +10002,19 @@ To set PointerLength
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -10040,7 +10040,7 @@ circulargaugeObj.setPointerLength(0, 0, 90);
 
 
 
-### setPointerNeedleType()
+### setPointerNeedleType(scaleIndex, pointerIndex, value)
 {:#methods:setpointerneedletype}
 
 
@@ -10059,19 +10059,19 @@ To set PointerNeedleType
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -10097,7 +10097,7 @@ circulargaugeObj.setPointerNeedleType(0, 0, "triangle");
 
 
 
-### setPointerPlacement()
+### setPointerPlacement(scaleIndex, pointerIndex, value)
 {:#methods:setpointerplacement}
 
 
@@ -10116,19 +10116,19 @@ To set PointerPlacement
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -10154,7 +10154,7 @@ circulargaugeObj.setPointerPlacement(0, 0,"near");
 
 
 
-### setPointerValue()
+### setPointerValue(scaleIndex, pointerIndex, value)
 {:#methods:setpointervalue}
 
 
@@ -10173,19 +10173,19 @@ To set PointerValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -10211,7 +10211,7 @@ circulargaugeObj.setPointerValue(0, 0, 10);
 
 
 
-### setPointerWidth()
+### setPointerWidth(scaleIndex, pointerIndex, value)
 {:#methods:setpointerwidth}
 
 
@@ -10230,19 +10230,19 @@ To set PointerWidth
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.pointerIndex{% endhighlight %}</td>
+pointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">pointerIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -10268,7 +10268,7 @@ circulargaugeObj.setPointerWidth(0, 0, 10);
 
 
 
-### setRangeBorderWidth()
+### setRangeBorderWidth(scaleIndex, rangeIndex, value)
 {:#methods:setrangeborderwidth}
 
 
@@ -10287,19 +10287,19 @@ To set RangeBorderWidth
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -10327,7 +10327,7 @@ circulargaugeObj.setRangeBorderWidth(0, 0, 5);
 
 
 
-### setRangeDistanceFromScale()
+### setRangeDistanceFromScale(scaleIndex, rangeIndex, value)
 {:#methods:setrangedistancefromscale}
 
 
@@ -10346,19 +10346,19 @@ To set RangeDistanceFromScale
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -10384,7 +10384,7 @@ circulargaugeObj.setRangeDistanceFromScale(0, 0, 10);
 
 
 
-### setRangeEndValue()
+### setRangeEndValue(scaleIndex, rangeIndex, value)
 {:#methods:setrangeendvalue}
 
 
@@ -10403,19 +10403,19 @@ To set RangeEndValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -10442,7 +10442,7 @@ circulargaugeObj.setRangeEndValue(0, 0, 70);
 
 
 
-### setRangePosition()
+### setRangePosition(scaleIndex, rangeIndex, value)
 {:#methods:setrangeposition}
 
 
@@ -10461,19 +10461,19 @@ To set RangePosition
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -10499,7 +10499,7 @@ circulargaugeObj.setRangePosition(0, 0, "far");
 
 
 
-### setRangeSize()
+### setRangeSize(scaleIndex, rangeIndex, value)
 {:#methods:setrangesize}
 
 
@@ -10518,19 +10518,19 @@ To set RangeSize
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -10556,7 +10556,7 @@ circulargaugeObj.setRangeSize(0, 0, 10);
 
 
 
-### setRangeStartValue()
+### setRangeStartValue(scaleIndex, rangeIndex, value)
 {:#methods:setrangestartvalue}
 
 
@@ -10575,19 +10575,19 @@ To set RangeStartValue
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.rangeIndex{% endhighlight %}</td>
+rangeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">rangeIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -10613,7 +10613,7 @@ circulargaugeObj.setRangeStartValue(0, 0, 10);
 
 
 
-### setScaleBarSize()
+### setScaleBarSize(scaleIndex, value)
 {:#methods:setscalebarsize}
 
 
@@ -10632,13 +10632,13 @@ To set ScaleBarSize
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -10664,7 +10664,7 @@ circulargaugeObj.setScaleBarSize(0, 160);
 
 
 
-### setScaleBorderWidth()
+### setScaleBorderWidth(scaleIndex, value)
 {:#methods:setscaleborderwidth}
 
 
@@ -10683,13 +10683,13 @@ To set ScaleBorderWidth
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -10716,7 +10716,7 @@ circulargaugeObj.setScaleBorderWidth(0, 3);
 
 
 
-### setScaleDirection()
+### setScaleDirection(scaleIndex, value)
 {:#methods:setscaledirection}
 
 
@@ -10735,13 +10735,13 @@ To set ScaleDirection
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -10767,7 +10767,7 @@ circulargaugeObj.setScaleDirection(0, "clockwise");
 
 
 
-### setScaleRadius()
+### setScaleRadius(scaleIndex, value)
 {:#methods:setscaleradius}
 
 
@@ -10786,13 +10786,13 @@ To set ScaleRadius
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -10818,7 +10818,7 @@ circulargaugeObj.setScaleRadius(0, 140);
 
 
 
-### setStartAngle()
+### setStartAngle(scaleIndex, value)
 {:#methods:setstartangle}
 
 
@@ -10837,13 +10837,13 @@ To set StartAngle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -10869,7 +10869,7 @@ circulargaugeObj.setStartAngle(0, 10);
 
 
 
-### setSubGaugeLocation()
+### setSubGaugeLocation(scaleIndex, GaugeIndex, value)
 {:#methods:setsubgaugelocation}
 
 
@@ -10888,19 +10888,19 @@ To set SubGaugeLocation
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.GaugeIndex{% endhighlight %}</td>
+GaugeIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">GaugeIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -10929,7 +10929,7 @@ circulargaugeObj.setSubGaugeLocation(0, 0, {x:50,y:100});
 
 
 
-### setSweepAngle()
+### setSweepAngle(scaleIndex, value)
 {:#methods:setsweepangle}
 
 
@@ -10948,13 +10948,13 @@ To set SweepAngle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -10980,7 +10980,7 @@ circulargaugeObj.setSweepAngle(0, 220);
 
 
 
-### setTickAngle()
+### setTickAngle(scaleIndex, tickIndex, value)
 {:#methods:settickangle}
 
 
@@ -10999,19 +10999,19 @@ To set TickAngle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.tickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -11037,7 +11037,7 @@ circulargaugeObj.setTickAngle(0, 0, 10);
 
 
 
-### setTickDistanceFromScale()
+### setTickDistanceFromScale(scaleIndex, tickIndex, value)
 {:#methods:settickdistancefromscale}
 
 
@@ -11056,19 +11056,19 @@ To set TickDistanceFromScale
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.tickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -11094,7 +11094,7 @@ circulargaugeObj.setTickDistanceFromScale(0, 0, 15);
 
 
 
-### setTickHeight()
+### setTickHeight(scaleIndex, tickIndex, value)
 {:#methods:settickheight}
 
 
@@ -11113,19 +11113,19 @@ To set TickHeight
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.tickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -11151,7 +11151,7 @@ circulargaugeObj.setTickHeight(0, 0, 10);
 
 
 
-### setTickPlacement()
+### setTickPlacement(scaleIndex, tickIndex, value)
 {:#methods:settickplacement}
 
 
@@ -11170,19 +11170,19 @@ To set TickPlacement
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.tickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -11208,7 +11208,7 @@ circulargaugeObj.setTickPlacement(0, 0, "near");
 
 
 
-### setTickStyle()
+### setTickStyle(scaleIndex, tickIndex, value)
 {:#methods:settickstyle}
 
 
@@ -11227,19 +11227,19 @@ To set TickStyle
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.tickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
@@ -11265,7 +11265,7 @@ circulargaugeObj.setTickStyle(0, 0, "minor");
 
 
 
-### setTickWidth()
+### setTickWidth(scaleIndex, tickIndex, value)
 {:#methods:settickwidth}
 
 
@@ -11284,19 +11284,19 @@ To set TickWidth
 <tbody>
 <tr>
 <td class="name">{% highlight html %}
-argument.scaleIndex{% endhighlight %}</td>
+scaleIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">scaleIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.tickIndex{% endhighlight %}</td>
+tickIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">tickIndex value for the gauge</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-argument.value{% endhighlight %}</td>
+value{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">value for the gauge</td>
 </tr>
