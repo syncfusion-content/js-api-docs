@@ -3150,6 +3150,34 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
+### connectors.sourceDecorator.cssClass `string`
+{:#members:connectors-sourcedecorator-cssclass}
+
+Configures the styles for sourceDecorator
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<style>
+    .hoverDecorator:hover {
+         fill:blue;
+    }
+</style>
+
+<div id="diagramcontent"></div>
+<script>
+var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, lineColor:"red",
+                  sourceDecorator : { shape:"circle" , cssClass:"hoverDecorator"} }; 
+$("#diagramcontent").ejDiagram({connectors : [connector]});
+</script>
+
+{% endhighlight %}
+
 ### connectors.sourceDecorator.fillColor `string`
 {:#members:connectors-sourcedecorator-fillcolor}
 
@@ -3476,6 +3504,34 @@ Sets the border color of the decorator
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, lineColor:"red",
                   sourceDecorator : { shape:"openarrow" , borderColor:"red"} }; 
+$("#diagramcontent").ejDiagram({connectors : [connector]});
+</script>
+
+{% endhighlight %}
+
+### connectors.targetDecorator.cssClass `string`
+{:#members:connectors-targetdecorator-cssclass}
+
+Configures the styles for targetDecorator
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<style>
+    .hoverDecorator:hover {
+         fill:blue;
+    }
+</style>
+
+<div id="diagramcontent"></div>
+<script>
+var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, lineColor:"red",
+                  targetDecorator : { shape:"circle" , cssClass:"hoverDecorator"} }; 
 $("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
@@ -8856,6 +8912,36 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
+### nodes.labels.cssClass `string`
+{:#members:nodes-labels-cssclass}
+
+Configures the styles for labels
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<style>
+    .hoverText:hover {
+        font-weight: bold;
+    }
+</style>
+
+<div id="diagramcontent"></div>
+<script>
+var node = { name: "node", width:50,height:50,offsetX:50,offsetY:50,
+	         labels:[{text:"label",cssClass:"hoverText"}] };
+			 
+$("#diagramcontent").ejDiagram({ nodes:[node] });
+</script>
+
+{% endhighlight %}
+
+
 ### nodes.labels.fillColor `string`
 {:#members:nodes-labels-fillcolor}
 
@@ -10992,6 +11078,36 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
+
+### nodes.ports.cssClass `string`
+{:#members:nodes-ports-cssclass}
+
+Configures the styles for ports
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<style>
+    .hoverPort:hover {
+         fill:blue;
+    }
+</style>
+
+<div id="diagramcontent"></div>
+<script>
+var node = { name: "node", width:50,height:50,offsetX:50,offsetY:50
+	         ports:[{name:"port1", offset:{ x:0.5, y:0.5 }, cssClass:"hoverPort" }] }];
+			 
+$("#diagramcontent").ejDiagram({ nodes:[node] });
+</script>
+
+{% endhighlight %}
+
 
 ### nodes.ports.fillColor `string`
 {:#members:nodes-ports-fillcolor}
