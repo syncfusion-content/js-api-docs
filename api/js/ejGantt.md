@@ -367,7 +367,7 @@ Enable or disable predecessor validation. When it is true, all the task's start 
 ### enableSerialNumber `boolean`
 {:#members:enableSerialNumber}
 
-Enable or disable Serial number column for Gantt. When it is true, all the tasks will be denoted in sequence format.
+Enables or disables serial number column for Gantt. When enabled, the records will be number sequenced.
 
 #### Default Value
 {:.param}
