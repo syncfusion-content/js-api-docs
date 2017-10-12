@@ -9670,6 +9670,35 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 
 {% endhighlight %}
 
+### nodes.lanes.cssClass `string`
+{:#members:nodes-lanes-cssclass}
+
+Configures the styles for lanes
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<style>
+    .hoverLane:hover {
+         fill:red; 
+    }
+</style>
+
+<div id="diagramcontent"></div>
+<script>
+var addInfo = { Description:"Describe the functionality" };
+var swimlane = {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
+lanes:[{ name:"lane1", cssClass:"hoverLane", addInfo: addInfo }] };
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
+</script>
+
+{% endhighlight %}
+
 ### nodes.lanes.width `number`
 {:#members:nodes-lanes-width}
 
