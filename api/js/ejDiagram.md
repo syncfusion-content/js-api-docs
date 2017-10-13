@@ -928,7 +928,7 @@ $("#diagramcontent").ejDiagram({ connectors:[connector] });
 ### connectors.cssClass `string`
 {:#members:connectors-cssclass}
 
-Configures the styles of shapes
+This property allows you to customize connectors appearance using user-defined CSS.
 
 #### Default Value:
 
@@ -3150,6 +3150,34 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
+### connectors.sourceDecorator.cssClass `string`
+{:#members:connectors-sourcedecorator-cssclass}
+
+This property allows you to customize sourceDecorator appearance using user-defined CSS.
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<style>
+    .hoverDecorator:hover {
+         fill:blue;
+    }
+</style>
+
+<div id="diagramcontent"></div>
+<script>
+var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, lineColor:"red",
+                  sourceDecorator : { shape:"circle" , cssClass:"hoverDecorator"} }; 
+$("#diagramcontent").ejDiagram({connectors : [connector]});
+</script>
+
+{% endhighlight %}
+
 ### connectors.sourceDecorator.fillColor `string`
 {:#members:connectors-sourcedecorator-fillcolor}
 
@@ -3476,6 +3504,34 @@ Sets the border color of the decorator
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, lineColor:"red",
                   sourceDecorator : { shape:"openarrow" , borderColor:"red"} }; 
+$("#diagramcontent").ejDiagram({connectors : [connector]});
+</script>
+
+{% endhighlight %}
+
+### connectors.targetDecorator.cssClass `string`
+{:#members:connectors-targetdecorator-cssclass}
+
+This property allows you to customize targetDecorator appearance using user-defined CSS.
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<style>
+    .hoverDecorator:hover {
+         fill:blue;
+    }
+</style>
+
+<div id="diagramcontent"></div>
+<script>
+var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, lineColor:"red",
+                  targetDecorator : { shape:"circle" , cssClass:"hoverDecorator"} }; 
 $("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
@@ -7199,7 +7255,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.cssClass `string`
 {:#members:nodes-cssclass}
 
-Configures the styles of shapes
+This property allows you to customize nodes appearance using user-defined CSS.
 
 #### Default Value:
 
@@ -8856,6 +8912,36 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
+### nodes.labels.cssClass `string`
+{:#members:nodes-labels-cssclass}
+
+This property allows you to customize labels appearance using user-defined CSS.
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<style>
+    .hoverText:hover {
+        font-weight: bold;
+    }
+</style>
+
+<div id="diagramcontent"></div>
+<script>
+var node = { name: "node", width:50,height:50,offsetX:50,offsetY:50,
+	         labels:[{text:"label",cssClass:"hoverText"}] };
+			 
+$("#diagramcontent").ejDiagram({ nodes:[node] });
+</script>
+
+{% endhighlight %}
+
+
 ### nodes.labels.fillColor `string`
 {:#members:nodes-labels-fillcolor}
 
@@ -9579,6 +9665,35 @@ var swimlane = { type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
 //Define the collection of lanes
 				 lanes:[{name:"lane1", width:200 },
 				 {name:"lane2", width:100}] };
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
+</script>
+
+{% endhighlight %}
+
+### nodes.lanes.cssClass `string`
+{:#members:nodes-lanes-cssclass}
+
+This property allows you to customize lanes appearance using user-defined CSS.
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<style>
+    .hoverLane:hover {
+         fill:red; 
+    }
+</style>
+
+<div id="diagramcontent"></div>
+<script>
+var addInfo = { Description:"Describe the functionality" };
+var swimlane = {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
+lanes:[{ name:"lane1", cssClass:"hoverLane", addInfo: addInfo }] };
 $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
@@ -10992,6 +11107,36 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
+
+### nodes.ports.cssClass `string`
+{:#members:nodes-ports-cssclass}
+
+This property allows you to customize ports appearance using user-defined CSS.
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<style>
+    .hoverPort:hover {
+         fill:blue;
+    }
+</style>
+
+<div id="diagramcontent"></div>
+<script>
+var node = { name: "node", width:50,height:50,offsetX:50,offsetY:50
+	         ports:[{name:"port1", offset:{ x:0.5, y:0.5 }, cssClass:"hoverPort" }] }];
+			 
+$("#diagramcontent").ejDiagram({ nodes:[node] });
+</script>
+
+{% endhighlight %}
+
 
 ### nodes.ports.fillColor `string`
 {:#members:nodes-ports-fillcolor}
