@@ -928,7 +928,7 @@ $("#diagramcontent").ejDiagram({ connectors:[connector] });
 ### connectors.cssClass `string`
 {:#members:connectors-cssclass}
 
-Configures the styles of shapes
+This property allows you to customize connectors appearance using user-defined CSS.
 
 #### Default Value:
 
@@ -3153,7 +3153,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.sourceDecorator.cssClass `string`
 {:#members:connectors-sourcedecorator-cssclass}
 
-Configures the styles for sourceDecorator
+This property allows you to customize sourceDecorator appearance using user-defined CSS.
 
 #### Default Value:
 
@@ -3512,7 +3512,7 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 ### connectors.targetDecorator.cssClass `string`
 {:#members:connectors-targetdecorator-cssclass}
 
-Configures the styles for targetDecorator
+This property allows you to customize targetDecorator appearance using user-defined CSS.
 
 #### Default Value:
 
@@ -7255,7 +7255,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.cssClass `string`
 {:#members:nodes-cssclass}
 
-Configures the styles of shapes
+This property allows you to customize nodes appearance using user-defined CSS.
 
 #### Default Value:
 
@@ -8915,7 +8915,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.labels.cssClass `string`
 {:#members:nodes-labels-cssclass}
 
-Configures the styles for labels
+This property allows you to customize labels appearance using user-defined CSS.
 
 #### Default Value:
 
@@ -9673,7 +9673,7 @@ $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 ### nodes.lanes.cssClass `string`
 {:#members:nodes-lanes-cssclass}
 
-Configures the styles for lanes
+This property allows you to customize lanes appearance using user-defined CSS.
 
 #### Default Value:
 
@@ -11111,7 +11111,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.ports.cssClass `string`
 {:#members:nodes-ports-cssclass}
 
-Configures the styles for ports
+This property allows you to customize ports appearance using user-defined CSS.
 
 #### Default Value:
 
