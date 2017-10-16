@@ -8144,7 +8144,7 @@ LinearGaugeObj.exportImage("myImage","jpeg");
 
 
 
-### getBarDistanceFromScale(scaleImdex, pointerIndex)
+### getBarDistanceFromScale(scaleIndex, pointerIndex)
 {:#methods:getbardistancefromscale}
 
 
