@@ -3248,6 +3248,62 @@ type</td>
 
 {% endhighlight %}
 
+### beforeUploadDialogOpen
+{:#events:beforeuploaddialogopen}
+
+
+
+
+
+
+
+
+Fires before opening the upload dialog.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">files</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns Selected FileList objects</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the FileExplorer model</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+{% highlight html %}
+ 
+        <div id="fileExplorer" ></div> 
+        
+        <script>
+        // beforeUploadboxOpen event for FileExplorer
+        $('#fileExplorer').ejFileExplorer({            
+        path: "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",         
+        ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations",      
+        beforeUploadDialogOpen: function (args) {}
+        });
+        </script>
+
+{% endhighlight %}
 
 
 ### create

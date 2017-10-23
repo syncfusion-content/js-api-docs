@@ -3597,8 +3597,8 @@ commonSeriesOptions :{marker :{dataLabel :{enableContrastColor : false}}}
  {% endhighlight %}
 
 
-### commonSeriesOptions.marker.dataLabel.showOutsideLabels `boolean`
-{:#members:commonseriesoptions-marker-datalabel-showoutisdelabels}
+### commonSeriesOptions.marker.dataLabel.showEdgeLabels `boolean`
+{:#members:commonseriesoptions-marker-datalabel-showedgelabels}
 
 Displays the partially visible labels inside the chart Area 
 
@@ -3610,7 +3610,7 @@ Displays the partially visible labels inside the chart Area
 
 {% highlight js %}
 $("#container").ejChart({
-commonSeriesOptions :{marker :{dataLabel :{showOutsideLabels : false}}}                  
+commonSeriesOptions :{marker :{dataLabel :{showEdgeLabels : false}}}                  
 });
  {% endhighlight %}
 
@@ -27798,8 +27798,8 @@ series :[{marker :{dataLabel :{enableContrastColor : true}}]
  {% endhighlight %}
 
 
-### series.marker.dataLabel.showOutsideLabels `boolean`
-{:#members:series-marker-datalabel-showoutsidelabels}
+### series.marker.dataLabel.showEdgeLabels `boolean`
+{:#members:series-marker-datalabel-showedgelabels}
 
 Displays the partially visible data labels inside the chart Area.
 
@@ -27811,7 +27811,7 @@ Displays the partially visible data labels inside the chart Area.
 
 {% highlight js %}
 $("#container").ejChart({
-series :[{marker :{dataLabel :{showOutsideLabels : true}}]            
+series :[{marker :{dataLabel :{showEdgeLabels : true}}]            
 });
  {% endhighlight %}
 
