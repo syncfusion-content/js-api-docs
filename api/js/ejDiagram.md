@@ -7109,7 +7109,7 @@ Enables or disables the default behaviors of the node.
        </tr>
         <tr>
             <td class="name">Default</td>
-            <td class="description last">Enables all node constraints</td>
+            <td class="description last">Enables default node interactions such as select,delete,drag,rotate,resize,connect,inheritCrispEdges and inheritTooltip</td>
        </tr>
    </tbody>
 </table>
@@ -9343,6 +9343,40 @@ nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
          labels:[{ text:"label", rotateAngle: 90}]
       }];
 $("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.labels.templateId `string`
+{:#members:nodes-labels-templateid}
+
+Sets the id of svg/html templates. Applicable, if the node's label is HTML or native.
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+
+<script id="SvgEllipse" type="text/x-jsrender">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+            <circle cx="10" cy="6" r="5" 
+                     style="stroke:#006600; fill:#00cc00" />
+        </svg>
+    </script>
+	
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
+         labels:[{ templateId:"SvgEllipse"}]
+      }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+
 </script>
 
 {% endhighlight %}
