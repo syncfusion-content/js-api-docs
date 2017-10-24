@@ -364,6 +364,30 @@ Enable or disable predecessor validation. When it is true, all the task's start 
 {% endhighlight %}
 
 
+### enableSerialNumber `boolean`
+{:#members:enableSerialNumber}
+
+Enables or disables serial number column for Gantt. When enabled, the records will be number sequenced.
+
+#### Default Value
+{:.param}
+
+* false
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>        
+        $("#gantt").ejGantt({ enableSerialNumber:  true });            
+</script>
+
+{% endhighlight %}
+
+
 ### baselineColor `string`
 {:#members:baselinecolor}
 
