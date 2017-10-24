@@ -13908,6 +13908,8 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 
 To set the margin of the user handle
 
+<ts ref = "ej.datavisualization.Diagram.ConnectorsLabelsMargin"/>
+
 #### Default Value:
 
 * ej.datavisualization.Diagram.Margin()
