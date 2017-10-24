@@ -9344,6 +9344,23 @@ This method is used to set format style and values in a cell or range of cells.
 var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Sends a format request to the Spreadsheet.
 excelObj.XLFormat.format({style:{ "background-color": "#C0C0C0"}}, "A1:C10");
+//Default Number format - decimal places is 2.
+excelObj.XLFormat.format({ "type": "number" }, "B1");
+//Number format with 3 decimal places by default thousandseparator as true.
+excelObj.XLFormat.format({ "type": "number", "decimalPlaces": 3, "thousandSeparator": false }, "B3");
+//Currency format with formatStr property.
+excelObj.XLFormat.format({ "type": "currency", "formatStr":"{0:C3}" }, "B1");
+//Accounting format with formatStr property.
+excelObj.XLFormat.format({ "type": "accounting", "formatStr":"{0:C2}" }, "A1");
+//Percentage format with formatStr property.
+excelObjthis.XLFormat.format({ "type": "percentage", "formatStr":"{0:P2}" }, "B1");
+//Short date format with formatStr property.
+excelObj.XLFormat.format({ "type": "shortdate", "formatStr":"{0:MM/dd/yyyy}" }, "C1");
+excelObj.XLFormat.format({ "type": "longdate" }, "D1");
+//Time format with formatStr property.
+excelObj.XLFormat.format({ "type": "time", "formatStr":"{0:hh:mm:ss tt}" }, "E1");
+excelObj.XLFormat.format({ "type": "scientific" }, "F1");
+excelObj.XLFormat.format({ "type": "fraction" }, "G1");
 </script>
 
 {% endhighlight %}
