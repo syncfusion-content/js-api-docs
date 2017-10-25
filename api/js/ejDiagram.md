@@ -1341,6 +1341,31 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
+### connectors.labels.height `number`
+{:#members:connectors-labels-height}
+
+Sets the height of the label(the maximum value of label height and the connector height will be considered as label height)
+
+#### Default Value:
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
+         labels:[{ text:"Label", height: 100}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+
 ### connectors.labels.horizontalAlignment `enum`
 {:#members:connectors-labels-horizontalalignment}
 
@@ -14336,6 +14361,28 @@ $("#diagramcontent").ejDiagram({showTooltip: true});
 {% endhighlight %}
 
 
+### serializationSettings `object`
+{:#members:serializationsettings}
+
+Defines diagram serialization properties that would defines how the serialization content would be. 
+
+### serializationSettings.preventDefaultValues `Boolean`
+{:#members:serializationsettings-preventdefaultvalues}
+
+defines whether the default diagram properties can be serialized or not.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({ serializationSettings:{ preventDefaultValues: true } });
+
+{% endhighlight %}
+
 ### rulerSettings `object`
 {:#members:rulersettings}
 
@@ -16880,43 +16927,10 @@ diagram.sameWidth();
 
 {% endhighlight %}
 
-### save(\[options\])
+ ### save()
 {:#methods:save}
 
 Returns the diagram as serialized JSON
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">[options]</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">options to export the desired region of diagram to the desired formats.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">preventDefaultValues</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">used to specify whether to reduce the default values on serialization.</td>
-</tr> 
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
 
 #### Returns:
 
@@ -16926,12 +16940,11 @@ Returns the diagram as serialized JSON
 
 {% highlight html %}
 
-        <div id="diagramcontent"></div>
-        <script>
-        var diagram=$("#diagramcontent").ejDiagram("instance");
-        //save return optimized content if we pass the boolean as true.
-        var savedDiagram = diagram.save({preventDefaultValues:true});
-        </script>
+<div id="diagramcontent"></div>
+<script>
+var diagram=$("#diagramcontent").ejDiagram("instance");
+var savedDiagram = diagram.save();
+</script>
 
 {% endhighlight %}
 
