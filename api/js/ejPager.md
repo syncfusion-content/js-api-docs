@@ -363,7 +363,7 @@ Indicates the pageSizeMessage to be displayed in Pager when pageSizeList API is 
 <div id="pager"></div> 
 
 <script>
-// Set pageSizeList and pageSizList message value during initialization.
+// Set pageSizeList and pageSizeList message value during initialization.
 $("#pager").ejPager({
     pageSizeList: [1,2,3],
     pageSizeListMessage:"page size list message in pager"
