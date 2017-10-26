@@ -3181,6 +3181,9 @@
 							<li id="toc-members:layout-type"><a href="/api/js/ejdiagram#members:layout-type">type</a></li>
 							<li id="toc-members:layout-root"><a href="/api/js/ejdiagram#members:layout-root">root</a></li>
 							<li id="toc-members:layout-verticalspacing"><a href="/api/js/ejdiagram#members:layout-verticalspacing">verticalSpacing</a></li>
+							<li id="toc-members:layout-springlength"><a href="/api/js/ejdiagram#members:layout-springlength">springLength</a></li>
+							<li id="toc-members:layout-springfactor"><a href="/api/js/ejdiagram#members:layout-springfactor">springFactor</a></li>
+							<li id="toc-members:layout-maxiteration"><a href="/api/js/ejdiagram#members:layout-maxiteration">maxIteration</a></li>
 						</ul>
 					</li>
 					<li id="toc-members:locale"><a href="/api/js/ejdiagram#members:locale">locale</a></li>
@@ -3304,6 +3307,8 @@
 									<li id="toc-members:nodes-labels-visible"><a href="/api/js/ejdiagram#members:nodes-labels-visible">visible</a></li>
 									<li id="toc-members:nodes-labels-width"><a href="/api/js/ejdiagram#members:nodes-labels-width">width</a></li>
 									<li id="toc-members:nodes-labels-wrapping"><a href="/api/js/ejdiagram#members:nodes-labels-wrapping">wrapping</a></li>
+									<li id="toc-members:nodes-labels-constraints"><a href="/api/js/ejdiagram#members:nodes-labels-constraints">constraints</a></li>
+									<li id="toc-members:nodes-labels-height"><a href="/api/js/ejdiagram#members:nodes-labels-height">height</a></li>
 								</ul>
 							</li>
 							<li id="toc-members:nodes-lanes">
@@ -3379,6 +3384,7 @@
 									<li id="toc-members:nodes-ports-shape"><a href="/api/js/ejdiagram#members:nodes-ports-shape">shape</a></li>
 									<li id="toc-members:nodes-ports-size"><a href="/api/js/ejdiagram#members:nodes-ports-size">size</a></li>
 									<li id="toc-members:nodes-ports-visibility"><a href="/api/js/ejdiagram#members:nodes-ports-visibility">visibility</a></li>
+									<li id="toc-members:nodes-ports-parent"><a href="/api/js/ejdiagram#members:nodes-ports-parent">visibility</a></li>
 								</ul>
 							</li>
 							<li id="toc-members:nodes-rotateangle"><a href="/api/js/ejdiagram#members:nodes-rotateangle">rotateAngle</a></li>
@@ -3400,6 +3406,17 @@
 									<li id="toc-members:nodes-subprocess-compensation"><a href="/api/js/ejdiagram#members:nodes-subprocess-compensation">compensation</a></li>
 									<li id="toc-members:nodes-subprocess-loop"><a href="/api/js/ejdiagram#members:nodes-subprocess-loop">loop</a></li>
 									<li id="toc-members:nodes-subprocess-processes"><a href="/api/js/ejdiagram#members:nodes-subprocess-processes">processes</a></li>
+									<li id="toc-members:nodes-subprocess-events">
+										<a href="/api/js/ejdiagram#members:nodes-subprocess-events">events</a>
+										<ul>
+											<li id="toc-members:nodes-subprocess-events-event"><a href="/api/js/ejdiagram#members:nodes-subprocess-events-event">event</a></li>
+											<li id="toc-members:nodes-subprocess-events-offset"><a href="/api/js/ejdiagram#members:nodes-subprocess-events-offset">offset</a></li>
+											<li id="toc-members:nodes-subprocess-events-name"><a href="/api/js/ejdiagram#members:nodes-subprocess-events-name">name</a></li>
+											<li id="toc-members:nodes-subprocess-events-trigger"><a href="/api/js/ejdiagram#members:nodes-subprocess-events-trigger">trigger</a></li>
+											<li id="toc-members:nodes-subprocess-events-ports"><a href="/api/js/ejdiagram#members:nodes-subprocess-events-ports">ports</a></li>
+											<li id="toc-members:nodes-subprocess-events-labels"><a href="/api/js/ejdiagram#members:nodes-subprocess-events-labels">labels</a></li>
+										</ul>
+									</li>
 								</ul>
 							</li>
 							<li id="toc-members:nodes-task">
@@ -3409,6 +3426,7 @@
 									<li id="toc-members:nodes-tasks-compensation"><a href="/api/js/ejdiagram#members:nodes-tasks-compensation">compensation</a></li>
 									<li id="toc-members:nodes-tasks-loop"><a href="/api/js/ejdiagram#members:nodes-tasks-loop">loop</a></li>
 									<li id="toc-members:nodes-tasks-type"><a href="/api/js/ejdiagram#members:nodes-tasks-type">type</a></li>
+									<li id="toc-members:nodes-tasks-events"><a href="/api/js/ejdiagram#members:nodes-tasks-events">events</a></li>
 								</ul>
 							</li>
 							<li id="toc-members:nodes-templateid"><a href="/api/js/ejdiagram#members:nodes-templateid">templateId</a></li>
@@ -3529,8 +3547,11 @@
 					<li id="toc-methods:copy"><a href="/api/js/ejdiagram#methods:copy">copy</a></li>
 					<li id="toc-methods:cut"><a href="/api/js/ejdiagram#methods:cut">cut</a></li>
 					<li id="toc-methods:exportdiagram"><a href="/api/js/ejdiagram#methods:exportdiagram">exportDiagram</a></li>
+					<li id="toc-methods:exportImage"><a href="/api/js/ejdiagram#methods:exportImage">exportImage</a></li>
 					<li id="toc-methods:findnode"><a href="/api/js/ejdiagram#methods:findnode">findNode</a></li>
 					<li id="toc-methods:fittopage"><a href="/api/js/ejdiagram#methods:fittopage">fitToPage</a></li>
+					<li id="toc-methods:getDiagramContent"><a href="/api/js/ejdiagram#methods:getDiagramContent">getDiagramContent</a></li>
+					<li id="toc-methods:getDiagramBounds"><a href="/api/js/ejdiagram#methods:getDiagramBounds">getDiagramBounds</a></li>
 					<li id="toc-methods:group"><a href="/api/js/ejdiagram#methods:group">group</a></li>
 					<li id="toc-methods:insertlabel"><a href="/api/js/ejdiagram#methods:inserlabel">insertLabel</a></li>
 					<li id="toc-methods:layout"><a href="/api/js/ejdiagram#methods:layout">layout</a></li>
@@ -3539,6 +3560,7 @@
 					<li id="toc-methods:nudge"><a href="/api/js/ejdiagram#methods:nudge">nudge</a></li>
 					<li id="toc-methods:paste"><a href="/api/js/ejdiagram#methods:paste">paste</a></li>
 					<li id="toc-methods:print"><a href="/api/js/ejdiagram#methods:print">print</a></li>
+					<li id="toc-methods:printImage"><a href="/api/js/ejdiagram#methods:printImage">printImage</a></li>
 					<li id="toc-methods:redo"><a href="/api/js/ejdiagram#methods:redo">redo</a></li>
 					<li id="toc-methods:refresh"><a href="/api/js/ejdiagram#methods:refresh">refresh</a></li>
 					<li id="toc-methods:remove"><a href="/api/js/ejdiagram#methods:remove">remove</a></li>
