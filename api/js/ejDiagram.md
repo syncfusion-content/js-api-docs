@@ -19400,7 +19400,7 @@ used to Activate the setTool method
             <td>Activate the port tool to drag when the mouse is moved over the port</td>
         </tr>
          <tr>
-            <td>Drag</td>
+            <td>Draw</td>
             <td>Activate the draw tool to draw when the mouse is moved over the port</td>
         </tr>
     </tbody>
