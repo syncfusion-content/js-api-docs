@@ -14366,7 +14366,7 @@ $("#diagramcontent").ejDiagram({showTooltip: true});
 
 Defines diagram serialization properties that would defines how the serialization content would be. 
 
-### serializationSettings.preventDefaultValues `Boolean`
+### serializationSettings.preventDefaultValues `boolean`
 {:#members:serializationsettings-preventdefaultvalues}
 
 defines whether the default diagram properties can be serialized or not.
