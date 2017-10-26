@@ -4474,7 +4474,7 @@ $("#gantt").ejGantt(
 
 <ts name = "ej.Gantt.ViewType"/>
 
-Specifies the type of view in Gantt control
+Specifies the view type for a project in the Gantt.
 
 <table class="params">
 <thead>
@@ -4486,11 +4486,11 @@ Specifies the type of view in Gantt control
 <tbody>
 <tr>
 <td class="name">ProjectView</td>
-<td class="description">Shows the Gantt control in project tasks based view.</td>
+<td class="description">Displays the project in task view in Gantt.</td>
 </tr>
 <tr>
 <td class="name">ResourceView</td>
-<td class="description">Shows the Gantt control in resource based view.</td>
+<td class="description">Displays the project in resource allocation view in Gantt.</td>
 </tr>
 </tbody>
 </table>
@@ -4518,7 +4518,7 @@ Specifies the type of view in Gantt control
 ### groupCollection `array`
 {:#members:groupcollection}
 
-Collection of data regarding groups available in Gantt
+Specifies the data collection for grouping the resources in resource allocation view in Gantt.
 
 #### Default Value
 {:.param}
@@ -4542,7 +4542,7 @@ Collection of data regarding groups available in Gantt
 
 ### resourceCollectionMapping `string`
 {:#members:resourcecollectionmapping}
-Specifies the mapping property path for resource collection of group in datasource.
+Specifies the mapping property path for resource collection in datasource in resource allocation view type.
 
 #### Default Value
 {:.param}
@@ -4563,7 +4563,7 @@ Specifies the mapping property path for resource collection of group in datasour
 
 ### taskCollectionMapping `string`
 {:#members:taskcollectionmapping}
-Specifies the mapping property path for task collection of resources in datasource.
+Specifies the mapping property path for assigned task collection for resources in datasource in resource allocation view type.
 
 #### Default Value
 {:.param}
@@ -4584,7 +4584,7 @@ Specifies the mapping property path for task collection of resources in datasour
 
 ### groupIdMapping `string`
 {:#members:groupidmapping}
-Specifies the mapping property path for id of group in datasource
+Specifies the mapping property path for group ID in datasource in resource allocation view type.
 
 #### Default Value
 {:.param}
@@ -4606,7 +4606,7 @@ Specifies the mapping property path for id of group in datasource
 
 ### groupNameMapping `string`
 {:#members:groupnamemapping}
-Specifies the mapping property path for name of group in datasource
+Specifies the mapping property path for group name in datasource in resource allocation view type.
 
 #### Default Value
 {:.param}
