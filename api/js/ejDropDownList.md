@@ -80,6 +80,8 @@ $('#dropdown').ejDropDownList();
 
 * module:ej.draggable.js
 
+* module:ej.globalize.js
+
 * module:ej.dropdownlist.js
 
 * module:ej.checkbox.js
