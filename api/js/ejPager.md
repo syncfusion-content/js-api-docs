@@ -91,6 +91,58 @@ $("#pager").ejPager({currentPage: 1 })
 {% endhighlight %}
 
 
+### cssClass `string`
+{:#members:cssClass}
+
+Sets the root CSS class, which can be used for customization of pager control.
+
+#### Default Value
+{:.param}
+
+* ""
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="pager"></div> 
+
+<script>
+//To set cssClass API during initialization  
+        $("#pager").ejPager({ cssClass: "gradient-lime" });
+</script>
+
+{% endhighlight %}
+
+
+### enabled `boolean`
+{:#members:enabled}
+
+Enable or disable the Pager control.
+
+#### Default Value
+{:.param}
+
+* true
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="pager"></div> 
+
+<script>
+//To set enabled API during initialization  
+$("#pager").ejPager({
+    enabled: false 
+});
+
+</script>
+{% endhighlight %}
+
+
 ### enableExternalMessage `boolean`
 {:#members:enableExternalMessage}
 
@@ -175,6 +227,32 @@ $("#pager").ejPager({enableExternalMessage: true, externalMessage:"external mess
 {% endhighlight %}
 
 N> `enableExternalMessage` default value as false. so We must enable `enableExternalMessage` set as true when enable externalMessage.
+
+
+### isResponsive `boolean`
+{:#members:isResponsive}
+
+Enables or disables responsive support for the Pager control items on window resize.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+
+{% highlight html %} 
+
+<div id="pager"></div> 
+
+<script>
+//To set isResponsive API during initialization  
+$("#pager").ejPager({
+    isResponsive: true
+});
+
+</script>
+{% endhighlight %}
 
 
 ### locale `string`
@@ -264,6 +342,56 @@ $("#pager").ejPager({pageSizeList: [1,2,3] })
 
 </script>
 
+{% endhighlight %}
+
+
+### pageSizeMessage `String`
+
+{:#members:pageSizeMessage}
+
+Indicates the pageSizeMessage to be displayed in Pager when pageSizeList API is defined.
+
+#### Default Value
+{:.param}
+* ""
+
+#### Example
+
+{:.example}
+{% highlight html %}
+
+<div id="pager"></div> 
+
+<script>
+// Set pageSizeList and pageSizList message value during initialization.
+$("#pager").ejPager({
+    pageSizeList: [1,2,3],
+    pageSizeListMessage:"page size list message in pager"
+});
+
+</script>
+
+{% endhighlight %}
+
+
+### template `string`
+{:#members:template}
+
+Template option allows to customize UI appearance of the **ejPager** by defining their own page layout.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="pager"></div> 
+<script>
+$("#pager").ejPager({
+    template: "#template" });
+});
+</script>
 {% endhighlight %}
 
 
@@ -406,6 +534,84 @@ Send a paging request to specified page through the pager control.
 
 {% endhighlight %}
 
+### goToFirstPage()
+{:#methods:gotofirstpage}
+
+`goToFirstPage()` helps to navigate to the first page of the pager.
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="pager"></div> 
+ 
+<script>
+$('#pager').ejPager();
+var pgObj = $("#pager").data("ejPager");
+pgObj.goToFirstPage(); 
+</script>
+
+{% endhighlight %}
+
+
+### goToNextPage()
+{:#methods:gotonextpage}
+
+`goToNextPage()` helps to navigate to the next page to the current page of the pager.
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="pager"></div> 
+ 
+<script>
+$('#pager').ejPager();
+var pgObj = $("#pager").data("ejPager");
+pgObj.goToNextPage(); 
+</script>
+
+{% endhighlight %}
+
+
+### goToLastPage()
+{:#methods:gotolastpage}
+
+`goToLastPage()` helps to navigate to the Last page of the pager.
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="pager"></div> 
+ 
+<script>
+$('#pager').ejPager();
+var pgObj = $("#pager").data("ejPager");
+pgObj.goToLastPage(); 
+</script>
+
+{% endhighlight %}
+
+
+### goToPrevPage()
+{:#methods:gotoprevpage}
+
+`goToPrevPage()` helps to navigate to the previous page to the current page of the pager.
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="pager"></div> 
+ 
+<script>
+$('#pager').ejPager();
+var pgObj = $("#pager").data("ejPager");
+pgObj.goToPrevPage(); 
+</script>
+
+{% endhighlight %}
 
 ### refreshPager()
 {:#methods:refreshpager}
@@ -482,6 +688,211 @@ Triggered when pager numeric item is clicked in pager control.
 $("#pager").ejPager({
    click: function (args) {}
 });
+</script>
+
+{% endhighlight %}
+
+
+### change
+{:#events:change}
+
+Triggers when the current page value of the Pager control is changed.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">currentPage</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the current page index.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the pager model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of event</td>
+</tr>
+<tr>
+<td class="name">event</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns current action event type and its target.</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+
+<div id="pager"></div> 
+
+<script>
+
+$("#pager").ejPager({
+   change: function (args) {}
+});
+
+</script>
+
+{% endhighlight %}
+
+
+### create
+{:#events:create}
+
+Triggered when Pager control is successfully created.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the pager model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of event</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+
+<div id="pager"></div> 
+
+<script>
+
+$("#pager").ejPager({
+   create: function (args) {}
+});
+
+</script>
+
+{% endhighlight %}
+
+
+### destroy
+{:#events:destroy}
+
+Triggered when Pager control is successfully destroyed.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the pager model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of event</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+
+<div id="pager"></div> 
+
+<script>
+
+$("#pager").ejPager({
+   destroy: function (args) {}
+});
+
+</script>
+
+{% endhighlight %}
+
+
+### pageSizeSelected
+{:#events:pagesizeselected}
+
+Triggered when a value is selected in the pageSizeList dropdown.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the pager model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of event</td>
+</tr>
+</tbody>
+</table>
+
+####Example
+{:.example}
+
+{% highlight html %}
+
+<div id="pager"></div> 
+<script>
+
+$("#pager").ejPager({
+   pageSizeList:[1,2,3],
+   pageSizeSelected: function (args) {}
+});
+
 </script>
 
 {% endhighlight %}
