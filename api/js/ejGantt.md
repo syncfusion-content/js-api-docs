@@ -4556,6 +4556,161 @@ $("#gantt").ejGantt(
 
 {% endhighlight %}
 
+### viewType `enum`
+{:#members:viewtype}
+
+<ts name = "ej.Gantt.ViewType"/>
+
+Specifies the view type for a project in the Gantt.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">ProjectView</td>
+<td class="description">Displays the project in task view in Gantt.</td>
+</tr>
+<tr>
+<td class="name">ResourceView</td>
+<td class="description">Displays the project in resource allocation view in Gantt.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+{:.param}
+
+* ej.Gantt.ViewType.ProjectView
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  
+                        viewType : ej.Gantt.ViewType.ResourceView });
+</script>
+
+{% endhighlight %}
+
+### groupCollection `array`
+{:#members:groupcollection}
+
+Specifies the data collection for grouping the resources in resource allocation view in Gantt.
+
+#### Default Value
+{:.param}
+
+* []
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+   groupCollection:[{id:1; name:"Team A" }]     
+ });            
+</script>
+
+{% endhighlight %}
+
+### resourceCollectionMapping `string`
+{:#members:resourcecollectionmapping}
+Specifies the mapping property path for resource collection in datasource in resource allocation view type.
+
+#### Default Value
+{:.param}
+
+* ""
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  resourceCollectionMapping : "resources" });    
+</script>
+
+{% endhighlight %}
+
+### taskCollectionMapping `string`
+{:#members:taskcollectionmapping}
+Specifies the mapping property path for assigned task collection for resources in datasource in resource allocation view type.
+
+#### Default Value
+{:.param}
+
+* ""
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  taskCollectionMapping : "tasks" });    
+</script>
+
+{% endhighlight %}
+
+### groupIdMapping `string`
+{:#members:groupidmapping}
+Specifies the mapping property path for group ID in datasource in resource allocation view type.
+
+#### Default Value
+{:.param}
+
+* ""
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  groupIdMapping : "groupId" });    
+</script>
+
+{% endhighlight %}
+
+
+### groupNameMapping `string`
+{:#members:groupnamemapping}
+Specifies the mapping property path for group name in datasource in resource allocation view type.
+
+#### Default Value
+{:.param}
+
+* ""
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  groupNameMapping : "groupName" });    
+</script>
+
+{% endhighlight %}
 
 ## Methods
 
