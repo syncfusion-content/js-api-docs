@@ -9353,7 +9353,7 @@ excelObj.XLFormat.format({ "type": "currency", "formatStr":"{0:C3}" }, "B1");
 //Accounting format with formatStr property.
 excelObj.XLFormat.format({ "type": "accounting", "formatStr":"{0:C2}" }, "A1");
 //Percentage format with formatStr property.
-excelObjthis.XLFormat.format({ "type": "percentage", "formatStr":"{0:P2}" }, "B1");
+excelObj.XLFormat.format({ "type": "percentage", "formatStr":"{0:P2}" }, "B1");
 //Short date format with formatStr property.
 excelObj.XLFormat.format({ "type": "shortdate", "formatStr":"{0:MM/dd/yyyy}" }, "C1");
 excelObj.XLFormat.format({ "type": "longdate" }, "D1");
