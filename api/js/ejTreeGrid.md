@@ -5796,95 +5796,6 @@ $("#TreeGrid").ejTreeGrid({
 </script>
 {% endhighlight %}
 
-
-
-### recordClick
-{:#events:recordclick}
-
-Triggered while clicking a row, even when allowSelection property is disabled.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description">Arguments when recordClick event is triggered.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">cell</td>
-<td class="type">object</td>
-<td class="description">Returns the element of clicked cell.</td>
-</tr>
-<tr>
-<td class="name">cellIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the index of the clicked cell.</td>
-</tr>
-<tr>
-<td class="name">cellValue</td>
-<td class="type">object</td>
-<td class="description">Returns the data of clicked cell.</td>
-</tr>
-<tr>
-<td class="name">row</td>
-<td class="type">object</td>
-<td class="description">Returns the element of the clicked row.</td>
-</tr>
-<tr>
-<td class="name">rowIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the index of the clicked row.</td>
-</tr>
-<tr>
-<td class="name">columnName</td>
-<td class="type">string</td>
-<td class="description">Returns the column name of the clicked cell.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-#### Example
-
-
-
-{% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>
-$("#treegrid").ejTreeGrid({
-   recordClick: function (args) {}
-});
-</script>
-{% endhighlight %}
-
-
 ### columnDragStart
 {:#events:columndragstart}
 
@@ -7237,6 +7148,11 @@ Triggered while dragging a row in TreeGrid control
 <td class="description">Returns the row index which we start to drag.</td>
 </tr>
 <tr>
+<td class="name">dropPosition</td>
+<td class="type">string</td>
+<td class="description">Returns the drop position details such as insertAbove,insertBelow,insertAsChild and invalidPosition</td>
+</tr>
+<tr>
 <td class="name">targetRow</td>
 <td class="type">object</td>
 <td class="description">Returns the row on which we are dragging.</td>
@@ -7818,7 +7734,177 @@ $("#treegrid").ejTreeGrid({
 </script>
 {% endhighlight %}
 
+### recordClick
+{:#events:recordclick}
 
+Triggered while clicking a row, even when allowSelection property is disabled.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when recordClick event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">cell</td>
+<td class="type">object</td>
+<td class="description">Returns the element of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the clicked cell.</td>
+</tr>
+<tr>
+<td class="name">cellValue</td>
+<td class="type">object</td>
+<td class="description">Returns the data of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">row</td>
+<td class="type">object</td>
+<td class="description">Returns the element of the clicked row.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the clicked row.</td>
+</tr>
+<tr>
+<td class="name">columnName</td>
+<td class="type">string</td>
+<td class="description">Returns the column name of the clicked cell.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
+$("#treegrid").ejTreeGrid({
+   recordClick: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+### recordDoubleClick
+{:#events:recorddoubleclick}
+
+Triggered during record double click action, even when allowSelection property is disabled.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when recordDoubleClick event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">cell</td>
+<td class="type">object</td>
+<td class="description">Returns the element of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the clicked cell.</td>
+</tr>
+<tr>
+<td class="name">cellValue</td>
+<td class="type">object</td>
+<td class="description">Returns the data of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">row</td>
+<td class="type">object</td>
+<td class="description">Returns the element of the clicked row.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the clicked row.</td>
+</tr>
+<tr>
+<td class="name">columnName</td>
+<td class="type">string</td>
+<td class="description">Returns the column name of the clicked cell.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
+$("#treegrid").ejTreeGrid({
+   recordDoubleClick: function (args) {}
+});
+</script>
+{% endhighlight %}
 
 ### toolbarClick
 {:#events:toolbarclick}
