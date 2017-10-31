@@ -214,7 +214,7 @@ Enables or disables the ability to sort the rows based on a single field/column 
 ### allowSearching `boolean`
 {:#members:allowsearching}
 
-Enables or disables the ability to search the tree grid content.
+Enables or disables the toolbar searching action in TreeGrid toolbar.
 
 
 #### Default Value
