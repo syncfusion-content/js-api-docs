@@ -1702,6 +1702,21 @@ Specifies the template ID for the custom dialog.
 
 {% endhighlight %}
 
+### editSettings.showDeleteConfirmDialog `boolean`
+
+{:#members:editsettings-showdeleteconfirmdialog }
+
+Enable or disable the confirmation dialog while deleting the record.
+
+#### Default Value
+
+* false
+
+#### Example
+{% highlight html %}
+        $("#treegrid").ejTreeGrid({  editSettings:{showDeleteConfirmDialog  : true} });     
+{% endhighlight %}
+
 ### enableAltRow `boolean`
 {:#members:enablealtrow}
 

@@ -1371,6 +1371,19 @@ Specifies the position where the new row has to be added.
 
 {% endhighlight %}
 
+### editSettings.showDeleteConfirmDialog `boolean`
+
+{:#members:editsettings-showdeleteconfirmdialog }
+
+Enable or disable the confirmation dialog while deleting the record.
+
+#### Default Value
+* false
+
+#### Example
+{% highlight html %}
+        $("#gantt ").ejGantt ({  editSettings:{showDeleteConfirmDialog  : true} });     
+{% endhighlight %}
 
 ### enableAltRow `boolean`
 {:#members:enablealtrow}
