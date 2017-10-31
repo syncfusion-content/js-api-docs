@@ -5334,6 +5334,49 @@ ganttObj.showColumn("Task Name");
 {% endhighlight %}
 
 
+### updateTaskId(currentId, newId)
+{:#methods:updateTaskId}
+
+To change an existing Gantt ID by new ID value dynamically
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">currentId</td>
+<td class="type">number</td>
+<td class="description">you can pass an existing ID value to be change</td>
+</tr>
+<tr>
+<td class="name">newId</td>
+<td class="type">number</td>
+<td class="description">you can pass a new ID value to be change</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<gantt id="gantt">Gantt</gantt> 
+ 
+<script>
+// Create Gantt
+var ganttObj = $("#gantt").data("ejGantt");
+ganttObj.updateTaskId(5, 15);
+</script>
+{% endhighlight %}
+
+
 ## Events
 
 
