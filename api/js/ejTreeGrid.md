@@ -214,7 +214,7 @@ Enables or disables the ability to sort the rows based on a single field/column 
 ### allowSearching `boolean`
 {:#members:allowsearching}
 
-Enables or disables the toolbar searching action in TreeGrid toolbar.
+Enables or disables the toolbar searching in TreeGrid.
 
 
 #### Default Value
@@ -751,7 +751,7 @@ Specifies the type of the editor control to be used to filter the rows.
 
 <ts name="ej.TreeGrid.FilterType"/>
 
-Gets or sets a value that indicates to render the excel or menu filter dialog to the treegrid grid columns
+Gets or sets a value to render either excel or menu fitlering in TreeGrid column filtering.
 
 <table class="params">
 <thead>
