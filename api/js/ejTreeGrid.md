@@ -2108,7 +2108,7 @@ $("#treegrid").ejTreeGrid({
 ### filterSettings.enableComplexBlankFilter `boolean`
 {:#members:filtersettings-enablecomplexblankfilter}
 
-Gets or sets the value that indicates whether to enable the enableComplexBlankFilter to perform the filter operation with empty, null and undefined values.
+Enables or disables the ability to filter the columns with empty, null and undefined values.
 
 #### Default Value
 
@@ -3112,7 +3112,7 @@ $("#treeGrid").ejTreeGrid({
 ### searchSettings `object`
 {:#members:searchsettings}
 
-Options for searching and customizing searching actions.
+Specifies the toolbar searching customizations.
 
 ### searchSettings.fields `array`
 {:#members:searchsettings-fields}
@@ -3135,7 +3135,7 @@ $("#treegrid").ejTreeGrid({
 
 ### searchSettings.key `string`
 {:#members:searchsettings-key}
-Gets or Sets a search key word for searching the tree grid content
+Gets or Sets a key word for searching the tree grid content.
 
 #### Default Value
 
@@ -3155,7 +3155,7 @@ $("#treegrid").ejTreeGrid({
 ### searchSettings.operator `string`
 {:#members:searchsettings-operator}
 
-Specifies the search operator how to perform the searching.
+Specifies the operator for the search key words in toolbar searching.
 
 **List of enum type operators**
 
@@ -3182,7 +3182,7 @@ $("#treegrid").ejTreeGrid({
 
 ### searchSettings.ignoreCase `boolean`
 {:#members:searchsettings-ignorecase}
-It enables or disables case-sensitivity while searching the search key in tree grid.
+Enables or disables the case sensitivity while searching.
 
 #### Default Value
 
