@@ -211,6 +211,26 @@ Enables or disables the ability to sort the rows based on a single field/column 
         
 {% endhighlight %}
 
+### allowSearching `boolean`
+{:#members:allowsearching}
+
+Enables or disables the toolbar searching in TreeGrid.
+
+
+#### Default Value
+
+* false
+
+
+#### Example
+
+
+{% highlight html %}
+
+        $("#treegrid").ejTreeGrid({ allowSearching : true });
+        
+{% endhighlight %}
+
 ### allowPaging `boolean`
 {:#members:allowpaging}
 
@@ -726,6 +746,44 @@ Specifies the type of the editor control to be used to filter the rows.
 
 {% endhighlight %}
 
+### columns.filterType `enum`
+{:#members:columns-filtertype}
+
+<ts name="ej.TreeGrid.FilterType"/>
+
+Gets or sets a value to render either excel or menu fitlering in TreeGrid column filtering.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Menu</td>
+<td class="description">Specifies the filter type as menu.</td>
+</tr>
+<tr>
+<td class="name">Excel</td>
+<td class="description">Specifies the filter type as excel.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* null
+
+#### Example
+
+
+{% highlight html %}
+         
+        $("#treegrid").ejTreeGrid({columns: [{ headerText: "TaskName",filterType:"excel"}]});
+
+{% endhighlight %}
 
 ### columns.headerText `string`
 {:#members:columns-headertext}
@@ -2020,6 +2078,69 @@ $("#treegrid").ejTreeGrid({
 
 {% endhighlight %}
 
+### filterSettings.maxFilterChoice `number`
+{:#members:filtersettings-maxfilterchoice}
+
+Gets or sets a value that indicates the maximum number of filter choices that can be showed in the excel styled filter menu.
+
+#### Default Value
+
+* 1000
+
+#### Example
+
+{% highlight html %}
+   
+$("#treegrid").ejTreeGrid({
+    filterSettings: {
+        maxFilterChoice:500,
+    },
+});                   
+
+{% endhighlight %}
+
+### filterSettings.enableCaseSensitivity `boolean`
+{:#members:filtersettings-enablecasesensitivity}
+
+Gets or sets a value that indicates to perform the filter operation with case sensitive in excel styled filter menu mode.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+   
+$("#treegrid").ejTreeGrid({
+    filterSettings: {
+        enableCaseSensitivity:true,
+    },
+});                   
+
+{% endhighlight %}
+
+### filterSettings.enableComplexBlankFilter `boolean`
+{:#members:filtersettings-enablecomplexblankfilter}
+
+Enables or disables the ability to filter the columns with empty, null and undefined values.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+   
+$("#treegrid").ejTreeGrid({
+    filterSettings: {
+        enableComplexBlankFilter:false,
+    },
+});                   
+
+{% endhighlight %}
+
 ### locale `string`
 {:#members:locale}
 
@@ -3001,6 +3122,96 @@ $("#treeGrid").ejTreeGrid({
 });
 </script> 
 
+{% endhighlight %}
+
+### searchSettings `object`
+{:#members:searchsettings}
+
+Specifies the toolbar searching customizations.
+
+### searchSettings.fields `array`
+{:#members:searchsettings-fields}
+Gets or Sets a specific column for searching the tree grid content.
+
+#### Default Value
+
+* []
+
+#### Example
+
+{% highlight html %}
+                 
+$("#treegrid").ejTreeGrid({
+    searchSettings: {
+            fields:["TaskId","TaskName"],
+    }
+});
+{% endhighlight %}
+
+### searchSettings.key `string`
+{:#members:searchsettings-key}
+Gets or Sets a key word for searching the tree grid content.
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% highlight html %}
+                 
+$("#treegrid").ejTreeGrid({
+    searchSettings: {
+            key:"task 1",
+    }
+});
+{% endhighlight %}
+
+### searchSettings.operator `string`
+{:#members:searchsettings-operator}
+
+Specifies the operator for the search key words in toolbar searching.
+
+**List of enum type operators**
+
+1. ej.FilterOperators.contain
+2. ej.FilterOperators.equal
+3. ej.FilterOperators.notEqual
+4. ej.FilterOperators.startsWith
+5. ej.FilterOperators.endsWith
+
+#### Default Value
+
+* "contains"
+
+#### Example
+
+{% highlight html %}
+                 
+$("#treegrid").ejTreeGrid({
+    searchSettings: {
+            operator:"startsWith",
+    }
+});
+{% endhighlight %}
+
+### searchSettings.ignoreCase `boolean`
+{:#members:searchsettings-ignorecase}
+Enables or disables the case sensitivity while searching.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+                 
+$("#treegrid").ejTreeGrid({
+    searchSettings: {
+            ignoreCase:false,
+    }
+});
 {% endhighlight %}
 
 ### showSummaryRow `boolean`
