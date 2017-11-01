@@ -5579,6 +5579,61 @@ Gets or sets a value that indicates whether to customizing the user interface (U
   
 {% endhighlight %}
 
+### showColumnWhenEmpty `boolean`
+{:#members:showcolumnwhenempty}
+
+Gets or sets a value that indicates whether to render kanban columns using without data source.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanban = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+	var data = ej.DataManager(window.kanban).executeLocal(ej.Query().take(0));
+    $(function () {
+        var data = ej.DataManager(window.kanban);
+        $("#Kanban").ejKanban({
+            dataSource: data,
+            showColumnWhenEmpty: true,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+                content: "Summary",
+            },
+			editSettings: {
+                editItems: [
+                    { field: "Id", editType: ej.Kanban.EditingType.Text,validationRules: { required: true, number: true }},
+                    { field: "Status", editType: ej.Kanban.EditingType.Text },
+                    { field: "Assignee", editType: ej.Kanban.EditingType.Text },
+                    { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 },validationRules: {range: [0, 1000]}},
+                    { field: "Summary", editType: ej.Kanban.EditingType.TextArea,validationRules: { required: true}}
+					],
+                    allowEditing: true,
+                    allowAdding: true
+                }
+        });
+    });
+    </script>
+
+{% endhighlight %}
+
 ## Methods
 
 ### columns(column,key,\[action\])
