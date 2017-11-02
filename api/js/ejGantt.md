@@ -1382,7 +1382,7 @@ Enable or disable the confirmation dialog while deleting the record.
 
 #### Example
 {% highlight html %}
-        $("#gantt ").ejGantt ({  editSettings:{showDeleteConfirmDialog  : true} });     
+        $("#gantt").ejGantt ({  editSettings:{showDeleteConfirmDialog  : true} });     
 {% endhighlight %}
 
 ### enableAltRow `boolean`
