@@ -4770,51 +4770,6 @@ ganttObj.addRecord(data, ej.Gantt.AddRowPosition.Child); // To add a task
 </script>
 {% endhighlight %}
 
-
-### selectCells(Indexes,preservePreviousSelectedCell)
-{:#methods:selectcells}
-
-To select cell based on the cell and row index dynamically.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">Indexes</td>
-<td class="type">array</td>
-<td class="description">array of cell indexes to be select</td>
-</tr>
-<tr>
-<td class="name">preservePreviousSelectedCell</td>
-<td class="type">boolean</td>
-<td class="description">Defines that we need to preserve the previously selected cells of not</td>
-</tr>
-</tbody>
-</table>
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
- 
-<script>
-// Create Gantt
-var ganttObj = $("#gantt").data("ejGantt");
-var indexes = [{rowIndex:4, cellIndex: 4}, {rowIndex: 3, cellIndex: 3}];
-ganttObj.selectCells(indexes, true); // To add a task
-</script>
-{% endhighlight %}
-
-
 ### setSplitterIndex(index)
 {:#methods:setsplitterindex}
 
@@ -5229,6 +5184,87 @@ To save the edited state of an item in Gantt
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 ganttObj.saveEdit(); // To save edited state of an item
+</script>
+{% endhighlight %}
+
+### selectCells(Indexes,preservePreviousSelectedCell)
+{:#methods:selectcells}
+
+To select cell based on the cell and row index dynamically.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Indexes</td>
+<td class="type">array</td>
+<td class="description">array of cell indexes to be select</td>
+</tr>
+<tr>
+<td class="name">preservePreviousSelectedCell</td>
+<td class="type">boolean</td>
+<td class="description">Defines that we need to preserve the previously selected cells of not</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+ 
+<script>
+// Create Gantt
+var ganttObj = $("#gantt").data("ejGantt");
+var indexes = [{rowIndex:4, cellIndex: 4}, {rowIndex: 3, cellIndex: 3}];
+ganttObj.selectCells(indexes, true); // To add a task
+</script>
+{% endhighlight %}
+
+### selectMultipleRows(rowIndexes)
+{:#methods:selectmultiplerows}
+
+To select multiple rows dynamically.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">rowIndexes</td>
+<td class="type">array</td>
+<td class="description">array of row indexes to select</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+ 
+<script>
+// Create Gantt
+ var ganttObj = $("#gantt").data("ejGantt"),
+     rowIndexes = [12,0,4,7];
+ ganttObj.selectMultipleRows(rowIndexes);
 </script>
 {% endhighlight %}
 
