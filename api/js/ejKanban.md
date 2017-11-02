@@ -2264,7 +2264,7 @@ This specifies the Kanban card to drop into particular target element.
     ];
     window.droppedKanban=[
                  { Status: "Open", Id: "8", Summary: "Fix the issues reported in safari browser."},
-                 { Status: "InProgress", Id: "10", Summary: "Arranage a web meeting with the customer to get the login page requirements." },
+                 { Status: "InProgress", Id: "10", Summary: "Arrange a web meeting with the customer to get the login page requirements." },
                  { Status: "Close", Id: "11", Summary: "Login page validation."},
         ];
     $(function () {
