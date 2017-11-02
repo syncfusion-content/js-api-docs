@@ -14902,7 +14902,7 @@ Triggered every time a request is made to access particular header cell informat
 </thead>
 <tbody>
 <tr>
-<td class="name">headerCellMerge</td>
+<td class="name">headerCellMerge(startIndex:number, count:number)</td>
 <td class="type"><span class="param-type">void</span></td>
 <td class="description last">Method to merge the header cells.</td>
 </tr>
