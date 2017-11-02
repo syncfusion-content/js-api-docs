@@ -751,7 +751,7 @@ Specifies the type of the editor control to be used to filter the rows.
 
 <ts name="ej.TreeGrid.FilterType"/>
 
-Gets or sets a value to render either excel or menu fitlering in TreeGrid column filtering.
+Gets or sets a value to render either excel or menu filtering in TreeGrid column filtering.
 
 <table class="params">
 <thead>
