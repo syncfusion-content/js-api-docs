@@ -5607,7 +5607,7 @@ Defines the type of the rendering mode of label.
     <tbody>
         <tr>
             <td class="name">HTML</td>
-            <td class="description last">Sets the labelRenderingMode as HTMl</td>
+            <td class="description last">Sets the labelRenderingMode as HTML</td>
         </tr>
         <tr>
             <td class="name">SVG</td>
