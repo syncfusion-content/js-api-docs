@@ -5606,19 +5606,19 @@ Defines the type of the rendering mode of label.
     </thead>
     <tbody>
         <tr>
-            <td class="name">Html</td>
-            <td class="description last">Sets the labelRenderingMode as Html</td>
+            <td class="name">HTML</td>
+            <td class="description last">Sets the labelRenderingMode as HTMl</td>
         </tr>
         <tr>
-            <td class="name">Svg</td>
-            <td class="description last">Sets the labelRenderingMode as Svg</td>
+            <td class="name">SVG</td>
+            <td class="description last">Sets the labelRenderingMode as SVG</td>
         </tr>
     </tbody>
 </table>
 
 #### Default Value:
 
-* Html
+* HTML
 
 #### Example
 
@@ -13116,8 +13116,8 @@ Defines the type of the node.
             <td class="description last">Used to specify node type as Image</td>
        </tr>
         <tr>
-            <td class="name">Html</td>
-            <td class="description last">Used to specify node type as Html</td>
+            <td class="name">HTML</td>
+            <td class="description last">Used to specify node type as HTML</td>
        </tr>
         <tr>
             <td class="name">Native</td>
