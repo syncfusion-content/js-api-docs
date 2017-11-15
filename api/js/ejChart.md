@@ -3596,6 +3596,26 @@ commonSeriesOptions :{marker :{dataLabel :{enableContrastColor : false}}}
 });
  {% endhighlight %}
 
+
+### commonSeriesOptions.marker.dataLabel.showEdgeLabels `boolean`
+{:#members:commonseriesoptions-marker-datalabel-showedgelabels}
+
+Displays the partially visible labels inside the chart Area 
+
+#### Default Value
+
+ * false
+
+#### Example
+
+{% highlight js %}
+$("#container").ejChart({
+commonSeriesOptions :{marker :{dataLabel :{showEdgeLabels : false}}}                  
+});
+ {% endhighlight %}
+
+
+
 ### commonSeriesOptions.marker.dataLabel.border `object`
 {:#members:commonseriesoptions-marker-datalabel-border}
 
@@ -27776,6 +27796,25 @@ $("#container").ejChart({
 series :[{marker :{dataLabel :{enableContrastColor : true}}]            
 });
  {% endhighlight %}
+
+
+### series.marker.dataLabel.showEdgeLabels `boolean`
+{:#members:series-marker-datalabel-showedgelabels}
+
+Displays the partially visible data labels inside the chart Area.
+
+#### Default Value
+
+ * false
+
+#### Example
+
+{% highlight js %}
+$("#container").ejChart({
+series :[{marker :{dataLabel :{showEdgeLabels : true}}]            
+});
+ {% endhighlight %}
+
 
 ### series.marker.dataLabel.border `object`
 {:#members:series-marker-datalabel-border}

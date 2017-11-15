@@ -364,6 +364,30 @@ Enable or disable predecessor validation. When it is true, all the task's start 
 {% endhighlight %}
 
 
+### enableSerialNumber `boolean`
+{:#members:enableSerialNumber}
+
+Enables or disables serial number column for Gantt. When enabled, the records will be number sequenced.
+
+#### Default Value
+{:.param}
+
+* false
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>        
+        $("#gantt").ejGantt({ enableSerialNumber:  true });            
+</script>
+
+{% endhighlight %}
+
+
 ### baselineColor `string`
 {:#members:baselinecolor}
 
@@ -959,6 +983,69 @@ Specifies editType of fields to be included in the edit dialog in Gantt
 </script>
 {% endhighlight %}
 
+### filterSettings `object`
+{:#members:filtersettings}
+
+Options for filtering and customizing filter actions.
+
+### filterSettings.filteredColumns `array`
+{:#members:filtersettings-filteredcolumns}
+
+Specifies the column collection for filtering the Gantt content on initial load
+
+#### Default Value
+* []
+
+### filterSettings.filteredColumns.value `string`
+{:#members:filtersettings-filteredcolumns-value}
+
+Specifies the value to be filtered in Gantt.
+
+#### Default Value
+* -
+
+### filterSettings.filteredColumns.field `string`
+{:#members:filtersettings-filteredcolumns-field}
+
+Specifies the field where filtering has to be performed.
+
+#### Default Value
+* -
+
+### filterSettings.filteredColumns.predicate `string`
+{:#members:filtersettings-filteredcolumns-predicate}
+
+Specifies the predicate(and/or) value to perform filtering.
+
+#### Default Value
+* -
+
+### filterSettings.filteredColumns.operator `string`
+{:#members:filtersettings-filteredcolumns-operator}
+
+Specifies the filter condition to filtered column. See <a href="global.html#enum:filteroperator">operator</a>
+
+#### Default Value
+
+* -
+
+#### Example
+
+{% highlight html %}
+
+$("#gantt").ejGantt({
+    filterSettings: {
+        filteredColumns: [{
+            value: "plan",
+            field: "taskName",
+            predicate: "and",
+            operator: "startswith"
+        }]
+    },
+});                   
+
+{% endhighlight %}
+
 ### isResponsive `boolean`
 {:#members:isresponsive}
 
@@ -1284,6 +1371,19 @@ Specifies the position where the new row has to be added.
 
 {% endhighlight %}
 
+### editSettings.showDeleteConfirmDialog `boolean`
+
+{:#members:editsettings-showdeleteconfirmdialog }
+
+Enable or disable the confirmation dialog while deleting the record.
+
+#### Default Value
+* false
+
+#### Example
+{% highlight html %}
+        $("#gantt").ejGantt ({  editSettings:{showDeleteConfirmDialog  : true} });     
+{% endhighlight %}
 
 ### enableAltRow `boolean`
 {:#members:enablealtrow}
@@ -4469,6 +4569,161 @@ $("#gantt").ejGantt(
 
 {% endhighlight %}
 
+### viewType `enum`
+{:#members:viewtype}
+
+<ts name = "ej.Gantt.ViewType"/>
+
+Specifies the view type for a project in the Gantt.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">ProjectView</td>
+<td class="description">Displays the project in task view in Gantt.</td>
+</tr>
+<tr>
+<td class="name">ResourceView</td>
+<td class="description">Displays the project in resource allocation view in Gantt.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+{:.param}
+
+* ej.Gantt.ViewType.ProjectView
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  
+                        viewType : ej.Gantt.ViewType.ResourceView });
+</script>
+
+{% endhighlight %}
+
+### groupCollection `array`
+{:#members:groupcollection}
+
+Specifies the data collection for grouping the resources in resource allocation view in Gantt.
+
+#### Default Value
+{:.param}
+
+* []
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+   groupCollection:[{id:1; name:"Team A" }]     
+ });            
+</script>
+
+{% endhighlight %}
+
+### resourceCollectionMapping `string`
+{:#members:resourcecollectionmapping}
+Specifies the mapping property path for resource collection in datasource in resource allocation view type.
+
+#### Default Value
+{:.param}
+
+* ""
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  resourceCollectionMapping : "resources" });    
+</script>
+
+{% endhighlight %}
+
+### taskCollectionMapping `string`
+{:#members:taskcollectionmapping}
+Specifies the mapping property path for assigned task collection for resources in datasource in resource allocation view type.
+
+#### Default Value
+{:.param}
+
+* ""
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  taskCollectionMapping : "tasks" });    
+</script>
+
+{% endhighlight %}
+
+### groupIdMapping `string`
+{:#members:groupidmapping}
+Specifies the mapping property path for group ID in datasource in resource allocation view type.
+
+#### Default Value
+{:.param}
+
+* ""
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  groupIdMapping : "groupId" });    
+</script>
+
+{% endhighlight %}
+
+
+### groupNameMapping `string`
+{:#members:groupnamemapping}
+Specifies the mapping property path for group name in datasource in resource allocation view type.
+
+#### Default Value
+{:.param}
+
+* ""
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  groupNameMapping : "groupName" });    
+</script>
+
+{% endhighlight %}
 
 ## Methods
 
@@ -4514,51 +4769,6 @@ var data = {taskId:"40",taskName:"New Task 40",startDate:"2/20/2014",startDate:"
 ganttObj.addRecord(data, ej.Gantt.AddRowPosition.Child); // To add a task
 </script>
 {% endhighlight %}
-
-
-### selectCells(Indexes,preservePreviousSelectedCell)
-{:#methods:selectcells}
-
-To select cell based on the cell and row index dynamically.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">Indexes</td>
-<td class="type">array</td>
-<td class="description">array of cell indexes to be select</td>
-</tr>
-<tr>
-<td class="name">preservePreviousSelectedCell</td>
-<td class="type">boolean</td>
-<td class="description">Defines that we need to preserve the previously selected cells of not</td>
-</tr>
-</tbody>
-</table>
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
- 
-<script>
-// Create Gantt
-var ganttObj = $("#gantt").data("ejGantt");
-var indexes = [{rowIndex:4, cellIndex: 4}, {rowIndex: 3, cellIndex: 3}];
-ganttObj.selectCells(indexes, true); // To add a task
-</script>
-{% endhighlight %}
-
 
 ### setSplitterIndex(index)
 {:#methods:setsplitterindex}
@@ -4977,6 +5187,87 @@ ganttObj.saveEdit(); // To save edited state of an item
 </script>
 {% endhighlight %}
 
+### selectCells(Indexes,preservePreviousSelectedCell)
+{:#methods:selectcells}
+
+To select cell based on the cell and row index dynamically.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Indexes</td>
+<td class="type">array</td>
+<td class="description">array of cell indexes to be select</td>
+</tr>
+<tr>
+<td class="name">preservePreviousSelectedCell</td>
+<td class="type">boolean</td>
+<td class="description">Defines that we need to preserve the previously selected cells of not</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+ 
+<script>
+// Create Gantt
+var ganttObj = $("#gantt").data("ejGantt");
+var indexes = [{rowIndex:4, cellIndex: 4}, {rowIndex: 3, cellIndex: 3}];
+ganttObj.selectCells(indexes, true); // To add a task
+</script>
+{% endhighlight %}
+
+### selectMultipleRows(rowIndexes)
+{:#methods:selectmultiplerows}
+
+To select multiple rows dynamically.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">rowIndexes</td>
+<td class="type">array</td>
+<td class="description">array of row indexes to select</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+ 
+<script>
+// Create Gantt
+ var ganttObj = $("#gantt").data("ejGantt"),
+     rowIndexes = [12,0,4,7];
+ ganttObj.selectMultipleRows(rowIndexes);
+</script>
+{% endhighlight %}
+
 
 ### searchItem(searchString)
 {:#methods:searchitem}
@@ -5088,6 +5379,49 @@ To show the column by using header text
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 ganttObj.showColumn("Task Name");
+</script>
+{% endhighlight %}
+
+
+### updateTaskId(currentId, newId)
+{:#methods:updateTaskId}
+
+To change an existing Gantt ID by new ID value dynamically
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">currentId</td>
+<td class="type">number</td>
+<td class="description">you can pass an existing ID value to be change</td>
+</tr>
+<tr>
+<td class="name">newId</td>
+<td class="type">number</td>
+<td class="description">you can pass a new ID value to be change</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<gantt id="gantt">Gantt</gantt> 
+ 
+<script>
+// Create Gantt
+var ganttObj = $("#gantt").data("ejGantt");
+ganttObj.updateTaskId(5, 15);
 </script>
 {% endhighlight %}
 

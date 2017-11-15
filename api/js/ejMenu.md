@@ -2514,10 +2514,28 @@ Hides the Context Menu control.
 {% endhighlight %}
 
 
-### hideItems([itemID])
+### hideItems(itemID)
 {:#methods:hideItems}
 
 Hides the specific items in Menu control.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+itemID</td>
+<td class="type"><span class="param-type">string|array</span></td>
+<td class="description">ItemID of the Menu item to be hidden</td>
+</tr>
+</tbody>
+</table>
 
 #### Example
 
@@ -3312,10 +3330,28 @@ event</td>
 
 {% endhighlight %}
 
-### showItems([itemID])
+### showItems(itemID)
 {:#methods:showItems}
 
 Show the specific items in Menu control.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+itemID</td>
+<td class="type"><span class="param-type">string|array</span></td>
+<td class="description">ItemID of the Menu item to be shown</td>
+</tr>
+</tbody>
+</table>
 
 #### Example
 

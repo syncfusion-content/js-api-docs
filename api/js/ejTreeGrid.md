@@ -211,6 +211,26 @@ Enables or disables the ability to sort the rows based on a single field/column 
         
 {% endhighlight %}
 
+### allowSearching `boolean`
+{:#members:allowsearching}
+
+Enables or disables the toolbar searching in TreeGrid.
+
+
+#### Default Value
+
+* false
+
+
+#### Example
+
+
+{% highlight html %}
+
+        $("#treegrid").ejTreeGrid({ allowSearching : true });
+        
+{% endhighlight %}
+
 ### allowPaging `boolean`
 {:#members:allowpaging}
 
@@ -726,6 +746,44 @@ Specifies the type of the editor control to be used to filter the rows.
 
 {% endhighlight %}
 
+### columns.filterType `enum`
+{:#members:columns-filtertype}
+
+<ts name="ej.TreeGrid.FilterType"/>
+
+Gets or sets a value to render either excel or menu filtering in TreeGrid column filtering.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Menu</td>
+<td class="description">Specifies the filter type as menu.</td>
+</tr>
+<tr>
+<td class="name">Excel</td>
+<td class="description">Specifies the filter type as excel.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* null
+
+#### Example
+
+
+{% highlight html %}
+         
+        $("#treegrid").ejTreeGrid({columns: [{ headerText: "TaskName",filterType:"excel"}]});
+
+{% endhighlight %}
 
 ### columns.headerText `string`
 {:#members:columns-headertext}
@@ -1702,6 +1760,21 @@ Specifies the template ID for the custom dialog.
 
 {% endhighlight %}
 
+### editSettings.showDeleteConfirmDialog `boolean`
+
+{:#members:editsettings-showdeleteconfirmdialog }
+
+Enable or disable the confirmation dialog while deleting the record.
+
+#### Default Value
+
+* false
+
+#### Example
+{% highlight html %}
+        $("#treegrid").ejTreeGrid({  editSettings:{showDeleteConfirmDialog  : true} });     
+{% endhighlight %}
+
 ### enableAltRow `boolean`
 {:#members:enablealtrow}
 
@@ -2000,6 +2073,69 @@ $("#treegrid").ejTreeGrid({
             predicate: "and",
             operator: "startswith"
         }]
+    },
+});                   
+
+{% endhighlight %}
+
+### filterSettings.maxFilterChoice `number`
+{:#members:filtersettings-maxfilterchoice}
+
+Gets or sets a value that indicates the maximum number of filter choices that can be showed in the excel styled filter menu.
+
+#### Default Value
+
+* 1000
+
+#### Example
+
+{% highlight html %}
+   
+$("#treegrid").ejTreeGrid({
+    filterSettings: {
+        maxFilterChoice:500,
+    },
+});                   
+
+{% endhighlight %}
+
+### filterSettings.enableCaseSensitivity `boolean`
+{:#members:filtersettings-enablecasesensitivity}
+
+Gets or sets a value that indicates to perform the filter operation with case sensitive in excel styled filter menu mode.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+   
+$("#treegrid").ejTreeGrid({
+    filterSettings: {
+        enableCaseSensitivity:true,
+    },
+});                   
+
+{% endhighlight %}
+
+### filterSettings.enableComplexBlankFilter `boolean`
+{:#members:filtersettings-enablecomplexblankfilter}
+
+Enables or disables the ability to filter the columns with empty, null and undefined values.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+   
+$("#treegrid").ejTreeGrid({
+    filterSettings: {
+        enableComplexBlankFilter:false,
     },
 });                   
 
@@ -2743,6 +2879,339 @@ $("#treegrid").ejTreeGrid({
     detailsRowHeight: "150",
 });
 
+{% endhighlight %}
+
+### showStackedHeader `boolean`
+{:#members:showstackedheader}
+
+Gets or sets a value that indicates stacked header should be shown on TreeGrid layout when the property &ldquo;stackedHeaderRows&rdquo; is set.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}  
+
+<div id="treeGrid"></div> 
+<script>
+$("#treeGrid").ejTreeGrid({
+   showStackedHeader:true,
+   stackedHeaderRows:
+   [{
+          stackedHeaderColumns: [
+                  { column: "ID,Name,category,units", headerText: "Shipment details", cssClass: "temp" },
+                  { column: "unitPrice,price", headerText: "Price details" }
+           ]    
+   ]},          
+   columns: [
+       { field: "ID", headerText: "S.No", width: columnWidth },
+                    { field: "Name", headerText: "Shipment Name", isFrozen:true },
+                    { field: "category", headerText: "Category" },
+                    { field: "units", headerText: "Units" },
+                    { field: "unitPrice", headerText: "Unit Price($)" },
+                    { field: "price", headerText: "Price($)" }
+      ]
+});
+</script> 
+
+{% endhighlight %}
+
+### stackedHeaderRows `array`
+{:#members:stackedheaderrows}
+
+Gets or sets an object that indicates to managing the collection of stacked header rows for the treegrid.
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}  
+<div id="treeGrid"></div> 
+<script>
+$("#treeGrid").ejTreeGrid({
+   showStackedHeader:true,
+   stackedHeaderRows:
+   [{
+          stackedHeaderColumns: [
+                  { column: "ID,Name,category,units", headerText: "Shipment details", cssClass: "temp" },
+                  { column: "unitPrice,price", headerText: "Price details" }
+           ]    
+   ]},          
+   columns: [
+       { field: "ID", headerText: "S.No", width: columnWidth },
+                    { field: "Name", headerText: "Shipment Name", isFrozen:true },
+                    { field: "category", headerText: "Category" },
+                    { field: "units", headerText: "Units" },
+                    { field: "unitPrice", headerText: "Unit Price($)" },
+                    { field: "price", headerText: "Price($)" }
+      ]
+});
+</script> 
+{% endhighlight %}
+
+### stackedHeaderRows.stackedHeaderColumns `array`
+{:#members:stackedheaderrows-stackedheadercolumns}
+
+Gets or sets a value that indicates whether to add stacked header columns into the stacked header rows
+
+#### Default Value:
+{:.param}
+* []
+
+#### Example
+{:.example}
+{% highlight html %}  
+<div id="treeGrid"></div> 
+<script>
+$("#treeGrid").ejTreeGrid({
+   showStackedHeader:true,
+   stackedHeaderRows:
+   [{
+          stackedHeaderColumns: [
+                  { column: "ID,Name,category,units", headerText: "Shipment details", cssClass: "temp" },
+                  { column: "unitPrice,price", headerText: "Price details" }
+           ]    
+   ]},       
+});
+</script> 
+{% endhighlight %}
+
+### stackedHeaderRows.stackedHeaderColumns.column `object`
+{:#members:stackedheaderrows-stackedheadercolumns-column}
+
+Gets or sets a value that indicates the header text for the particular stacked header column.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}  
+<div id="treeGrid"></div> 
+<script>
+$("#treeGrid").ejTreeGrid({
+   showStackedHeader:true,
+   stackedHeaderRows:
+   [{
+          stackedHeaderColumns: [
+                  { column: "ID,Name,category,units", headerText: "Shipment details", cssClass: "temp" },
+                  { column: "unitPrice,price", headerText: "Price details" }
+           ] 
+   ]},       
+});
+</script> 
+{% endhighlight %}
+
+### stackedHeaderRows.stackedHeaderColumns.cssClass `string`
+{:#members:stackedheaderrows-stackedheadercolumns-cssclass}
+
+Gets or sets a value that indicates class to the corresponding stackedHeaderColumn.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}  
+<div id="treeGrid"></div> 
+<script>
+$("#treeGrid").ejTreeGrid({
+   showStackedHeader:true,
+   stackedHeaderRows:
+   [{
+          stackedHeaderColumns: [
+                  { column: "ID,Name,category,units", headerText: "Shipment details", cssClass: "temp" },
+                  { column: "unitPrice,price", headerText: "Price details" }
+           ]   
+   ]},       
+});
+</script> 
+
+{% endhighlight %}
+
+### stackedHeaderRows.stackedHeaderColumns.headerText `string`
+{:#members:stackedheaderrows-stackedheadercolumns-headertext}
+
+Gets or sets a value that indicates the header text for the particular stacked header column.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}  
+<div id="treeGrid"></div> 
+<script>
+$("#treeGrid").ejTreeGrid({
+   showStackedHeader:true,
+   stackedHeaderRows:
+   [{
+           stackedHeaderColumns: [
+                  { column: "ID,Name,category,units", headerText: "Shipment details" },
+                  { column: "unitPrice,price", headerText: "Price details" }
+           ]  
+   ]},       
+});
+</script> 
+{% endhighlight %}
+
+### stackedHeaderRows.stackedHeaderColumns.textAlign `string`
+{:#members:stackedheaderrows-stackedheadercolumns-textalign}
+
+Gets or sets a value that indicates the text alignment of the corresponding headerText.
+
+#### Default Value:
+{:.param}
+* ej.TextAlign.Left
+
+#### Example
+{:.example}
+{% highlight html %}  
+
+<div id="treeGrid"></div> 
+<script>
+$("#treeGrid").ejTreeGrid({
+   showStackedHeader:true,
+   stackedHeaderRows:
+   [{
+           stackedHeaderColumns: [
+                  { column: "ID,Name,category,units", headerText: "Shipment details", textAlign: ej.TextAlign.Right },
+                  { column: "unitPrice,price", headerText: "Price details" }
+           ]  
+   ]},       
+});
+</script> 
+
+{% endhighlight %}
+
+### stackedHeaderRows.stackedHeaderColumns.tooltip `string`
+{:#members:stackedheaderrows-stackedheadercolumns-tooltip}
+
+Sets the template for tooltip for the Grid stackedHeaderColumns.
+
+#### Default Value:
+{:.param}
+* null
+
+#### Example
+{:.example}
+{% highlight html %}  
+
+<script type="text/template" id="colTip">
+  {{:value }}
+</script>
+
+<div id="treeGrid"></div> 
+<script>
+$("#treeGrid").ejTreeGrid({
+   showStackedHeader:true,
+   stackedHeaderRows:
+   [{
+           stackedHeaderColumns: [
+                  { column: "ID,Name,category,units", headerText: "Shipment details", tooltip:"#colTip" },
+                  { column: "unitPrice,price", headerText: "Price details" }
+           ] 
+   ]},       
+});
+</script> 
+
+{% endhighlight %}
+
+### searchSettings `object`
+{:#members:searchsettings}
+
+Specifies the toolbar searching customizations.
+
+### searchSettings.fields `array`
+{:#members:searchsettings-fields}
+Gets or Sets a specific column for searching the tree grid content.
+
+#### Default Value
+
+* []
+
+#### Example
+
+{% highlight html %}
+                 
+$("#treegrid").ejTreeGrid({
+    searchSettings: {
+            fields:["TaskId","TaskName"],
+    }
+});
+{% endhighlight %}
+
+### searchSettings.key `string`
+{:#members:searchsettings-key}
+Gets or Sets a key word for searching the tree grid content.
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% highlight html %}
+                 
+$("#treegrid").ejTreeGrid({
+    searchSettings: {
+            key:"task 1",
+    }
+});
+{% endhighlight %}
+
+### searchSettings.operator `string`
+{:#members:searchsettings-operator}
+
+Specifies the operator for the search key words in toolbar searching.
+
+**List of enum type operators**
+
+1. ej.FilterOperators.contain
+2. ej.FilterOperators.equal
+3. ej.FilterOperators.notEqual
+4. ej.FilterOperators.startsWith
+5. ej.FilterOperators.endsWith
+
+#### Default Value
+
+* "contains"
+
+#### Example
+
+{% highlight html %}
+                 
+$("#treegrid").ejTreeGrid({
+    searchSettings: {
+            operator:"startsWith",
+    }
+});
+{% endhighlight %}
+
+### searchSettings.ignoreCase `boolean`
+{:#members:searchsettings-ignorecase}
+Enables or disables the case sensitivity while searching.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+                 
+$("#treegrid").ejTreeGrid({
+    searchSettings: {
+            ignoreCase:false,
+    }
+});
 {% endhighlight %}
 
 ### showSummaryRow `boolean`
@@ -4035,7 +4504,7 @@ Demo [Link](http://jsplayground.syncfusion.com/aovokclp)
 ### updateResponsiveMinWidth(width)
 {:#methods:updateresponsiveminwidth}
 
-Sets the minimum reponsive width for TreeGrid.
+Sets the minimum responsive width for TreeGrid.
 
 <table class="params">
 <thead>
@@ -4048,13 +4517,20 @@ Sets the minimum reponsive width for TreeGrid.
 <tbody>
 <tr>
 <td class="name">width</td>
-<td class="type">String (>150px)</td>
+<td class="type">String</td>
 <td class="description">Pass the minimum responsive width, above which the TreeGrid needs to work in responsive mode.</td>
 </tr>
 </tbody>
 </table>
 
+
 Usage: we can able to change the minimum responsive width of TreeGrid dynamically.
+
+#### Returns
+
+{:#methods:returns:}
+
+void
 
 #### Example
 
@@ -4121,7 +4597,7 @@ To open the dialog to edit a row/record in TreeGrid.
 </tbody>
 </table>
 
-Usage: we can able to edit any row dynamically through edit dialog. If the index value is not passed as parameter then the selected row gets edited. It’s necessary to select a row before opening edit dialog when you are not passing any index as paramter.
+Usage: we can able to edit any row dynamically through edit dialog. If the index value is not passed as parameter then the selected row gets edited. It’s necessary to select a row before opening edit dialog when you are not passing any index as parameter.
 
 #### Example
 
@@ -4157,12 +4633,12 @@ Sets the scroll left and scroll top offsets of TreeGrid.
 <tbody>
 <tr>
 <td class="name">Left</td>
-<td class="type">number/String (in pixel)</td>
+<td class="type">String</td>
 <td class="description">Pass a value to set left position of horizontal scroll bar.</td>
 </tr>
 <tr>
 <td class="name">Top</td>
-<td class="type">number/String (in pixel)</td>
+<td class="type">String</td>
 <td class="description">Pass a value to set top position of vertical scroll bar.</td>
 </tr>
 </tbody>
@@ -4402,7 +4878,7 @@ treeObject.showHideDetailsRow(3);
 
 Demo [Link](http://jsplayground.syncfusion.com/jdi5qebc)
 
-### filterColumn(fieldName, filterOperator, filterValue, predicate, matchcase, actualFilterValue)
+### filterColumn(fieldName, filterOperator, filterValue, predicate, match case, actualFilterValue)
 {:#methods:filtercolumn}
 
 Sends filtering request to filter a column in TreeGrid.
@@ -4437,7 +4913,7 @@ Sends filtering request to filter a column in TreeGrid.
 <td class="description">Pass the predicate as and/or.</td>
 </tr>
 <tr>
-<td class="name">matchcase</td>
+<td class="name">match case</td>
 <td class="type">boolean</td>
 <td class="description">Optional pass the match case value as true/false.</td>
 </tr>
@@ -4461,7 +4937,7 @@ Usage: we can able to perform filter operation dynamically.
 <script>
 // Create TreeGrid object.
 var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
-// To filter taskName column with text startwith “plan”.
+// To filter taskName column with text starts with "plan".
 treeObject.filterColumn("taskName", "startswith", "plan", "and");
 </script>
 
@@ -4560,7 +5036,7 @@ number
 </tbody>
 </table>
 
-Usage: we can able to get the index of any column by passing its field name as paramter.
+Usage: we can able to get the index of any column by passing its field name as parameter.
 
 #### Example
 
@@ -4677,7 +5153,7 @@ Demo [Link](http://jsplayground.syncfusion.com/jsc43oni)
 ### clearFilter(fieldName)
 {:#methods:clearfilter}
 
-Clears the filter appplied to a specific column.
+Clears the filter applied to a specific column.
 
 <table class="params">
 <thead>
@@ -5545,95 +6021,6 @@ $("#TreeGrid").ejTreeGrid({
 });
 </script>
 {% endhighlight %}
-
-
-
-### recordClick
-{:#events:recordclick}
-
-Triggered while clicking a row, even when allowSelection property is disabled.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description">Arguments when recordClick event is triggered.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">cell</td>
-<td class="type">object</td>
-<td class="description">Returns the element of clicked cell.</td>
-</tr>
-<tr>
-<td class="name">cellIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the index of the clicked cell.</td>
-</tr>
-<tr>
-<td class="name">cellValue</td>
-<td class="type">object</td>
-<td class="description">Returns the data of clicked cell.</td>
-</tr>
-<tr>
-<td class="name">row</td>
-<td class="type">object</td>
-<td class="description">Returns the element of the clicked row.</td>
-</tr>
-<tr>
-<td class="name">rowIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the index of the clicked row.</td>
-</tr>
-<tr>
-<td class="name">columnName</td>
-<td class="type">string</td>
-<td class="description">Returns the column name of the clicked cell.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-#### Example
-
-
-
-{% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>
-$("#treegrid").ejTreeGrid({
-   recordClick: function (args) {}
-});
-</script>
-{% endhighlight %}
-
 
 ### columnDragStart
 {:#events:columndragstart}
@@ -6987,6 +7374,11 @@ Triggered while dragging a row in TreeGrid control
 <td class="description">Returns the row index which we start to drag.</td>
 </tr>
 <tr>
+<td class="name">dropPosition</td>
+<td class="type">string</td>
+<td class="description">Returns the drop position details such as insertAbove,insertBelow,insertAsChild and invalidPosition</td>
+</tr>
+<tr>
 <td class="name">targetRow</td>
 <td class="type">object</td>
 <td class="description">Returns the row on which we are dragging.</td>
@@ -7568,7 +7960,177 @@ $("#treegrid").ejTreeGrid({
 </script>
 {% endhighlight %}
 
+### recordClick
+{:#events:recordclick}
 
+Triggered while clicking a row, even when allowSelection property is disabled.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when recordClick event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">cell</td>
+<td class="type">object</td>
+<td class="description">Returns the element of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the clicked cell.</td>
+</tr>
+<tr>
+<td class="name">cellValue</td>
+<td class="type">object</td>
+<td class="description">Returns the data of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">row</td>
+<td class="type">object</td>
+<td class="description">Returns the element of the clicked row.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the clicked row.</td>
+</tr>
+<tr>
+<td class="name">columnName</td>
+<td class="type">string</td>
+<td class="description">Returns the column name of the clicked cell.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
+$("#treegrid").ejTreeGrid({
+   recordClick: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+### recordDoubleClick
+{:#events:recorddoubleclick}
+
+Triggered during record double click action, even when allowSelection property is disabled.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when recordDoubleClick event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">cell</td>
+<td class="type">object</td>
+<td class="description">Returns the element of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the clicked cell.</td>
+</tr>
+<tr>
+<td class="name">cellValue</td>
+<td class="type">object</td>
+<td class="description">Returns the data of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">row</td>
+<td class="type">object</td>
+<td class="description">Returns the element of the clicked row.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the clicked row.</td>
+</tr>
+<tr>
+<td class="name">columnName</td>
+<td class="type">string</td>
+<td class="description">Returns the column name of the clicked cell.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
+$("#treegrid").ejTreeGrid({
+   recordDoubleClick: function (args) {}
+});
+</script>
+{% endhighlight %}
 
 ### toolbarClick
 {:#events:toolbarclick}
