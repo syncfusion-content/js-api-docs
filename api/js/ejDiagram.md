@@ -16120,7 +16120,7 @@ The `exportImage` method is used to export the image passed through argument wit
 
 #### Returns:
 
-* String
+* string
 
 #### Example
 
@@ -16673,7 +16673,7 @@ The `printImage` method is used to print the image passed through argument with 
 
 #### Returns:
 
-* String
+* string
 
 #### Example
 
