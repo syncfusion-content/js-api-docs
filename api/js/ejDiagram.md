@@ -873,6 +873,10 @@ Enables or disables the behaviors of connectors.
             <td class="description last">Enables the contrast between clean edges of connector over rendering speed and geometric precision</td>
        </tr>
        <tr>
+            <td class="name">BridgeObstacle</td>
+            <td class="description last">Enables or disables bridging over a connector, if bridging constraints disabled..</td>
+       </tr>       
+       <tr>
             <td class="name">Interaction</td>
             <td class="description last">Enables connector to be selected and dragged.</td>
        </tr>
@@ -1177,6 +1181,68 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 
 {% endhighlight %}
 
+### connectors.labels.constraints `enum`
+{:#members:connectors-labels-constraints}
+
+<ts name = "ej.datavisualization.Diagram.LabelConstraints"/>
+
+Enables or disables the default behaviors of the label.
+
+<table class="props">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+       </tr>
+   </thead>
+    <tbody>
+        <tr>
+            <td class="name">None</td>
+            <td class="description last">Disable all label Constraints</td>
+       </tr>
+       <tr>
+            <td class="name">Selectable</td>
+            <td class="description last">Enables label to be selected</td>
+       </tr>
+        <tr>
+            <td class="name">Draggable</td>
+            <td class="description last">Enables label to be Dragged</td>
+       </tr>
+        <tr>
+            <td class="name">Resizable</td>
+            <td class="description last">Enables label to be Resized</td>
+       </tr>
+       <tr>
+            <td class="name">Rotatable</td>
+            <td class="description last">Enables label to be Rotated</td>
+       </tr>
+        <tr>
+            <td class="name">All</td>
+            <td class="description last">Enables all label constraints</td>
+       </tr>
+   </tbody>
+</table>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.LabelConstraints.None
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var LabelConstraints = ej.datavisualization.Diagram.LabelConstraints;
+//Disable resize
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
+         labels:[{ text:"Enter Your Text", constraints: LabelConstraints.All & ~LabelConstraints.Resizable}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
 
 ### connectors.labels.fillColor `string`
 {:#members:connectors-labels-fillcolor}
@@ -1274,6 +1340,31 @@ $("#diagramcontent").ejDiagram({connectors:connectors});
 </script>
 
 {% endhighlight %}
+
+### connectors.labels.height `number`
+{:#members:connectors-labels-height}
+
+Sets the height of the label(the maximum value of label height and the connector height will be considered as label height)
+
+#### Default Value:
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, 
+         labels:[{ text:"Label", height: 100}]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
 
 ### connectors.labels.horizontalAlignment `enum`
 {:#members:connectors-labels-horizontalalignment}
@@ -5515,19 +5606,19 @@ Defines the type of the rendering mode of label.
     </thead>
     <tbody>
         <tr>
-            <td class="name">Html</td>
-            <td class="description last">Sets the labelRenderingMode as Html</td>
+            <td class="name">HTML</td>
+            <td class="description last">Sets the labelRenderingMode as HTML</td>
         </tr>
         <tr>
-            <td class="name">Svg</td>
-            <td class="description last">Sets the labelRenderingMode as Svg</td>
+            <td class="name">SVG</td>
+            <td class="description last">Sets the labelRenderingMode as SVG</td>
         </tr>
     </tbody>
 </table>
 
 #### Default Value:
 
-* Html
+* HTML
 
 #### Example
 
@@ -5897,6 +5988,69 @@ Sets the value is used to define the root node of the layout.
     $("#diagramcontent").ejDiagram({layout: { root: 'rootNode' }});
 </script>
 {% endhighlight %}
+
+### layout.springLength `number`
+{:#members:layout-springlength}
+
+Defines how long edges should be, ideally. This will be the resting length for the springs.
+
+#### Default Value:
+
+* 100
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+    //verticalSpacing of the layout
+    $("#diagramcontent").ejDiagram({layout: { springLength: 100 }});
+</script>
+{% endhighlight %}
+
+### layout.springFactor `number`
+{:#members:layout-springfactor}
+
+Defines how long edges should be, ideally. This will be the resting length for the springs.
+
+#### Default Value:
+
+* 0.442
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+    //verticalSpacing of the layout
+    $("#diagramcontent").ejDiagram({layout: { springFactor: 0.442 }});
+</script>
+{% endhighlight %}
+
+### layout.maxIteration `number`
+{:#members:layout-maxiteration}
+
+Defines how long edges should be, ideally. This will be the resting length for the springs.
+
+#### Default Value:
+
+* 1000
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+    //verticalSpacing of the layout
+    $("#diagramcontent").ejDiagram({layout: { maxIteration: 1000 }});
+</script>
+{% endhighlight %}  
+
+
+
 
 ### locale `string`
 {:#members:locale}
@@ -6511,7 +6665,7 @@ Defines the collection of methods of a Class.
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
@@ -6535,7 +6689,7 @@ Sets the name of the method.
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
@@ -6559,7 +6713,7 @@ Defines the arguments of the method.
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
@@ -6583,7 +6737,7 @@ Sets the name of the argument
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
@@ -6607,7 +6761,7 @@ Sets the type of the argument
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
@@ -6631,7 +6785,7 @@ Sets the return type of the method
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
@@ -8608,7 +8762,7 @@ Defines the collection of public methods of an interface
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
@@ -8632,7 +8786,7 @@ Sets the name of the method.
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
@@ -8656,7 +8810,7 @@ Defines the collection of arguments of a method
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
@@ -8681,7 +8835,7 @@ Sets the name of the argument
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
@@ -8705,7 +8859,7 @@ Sets the type of the argument
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
@@ -8729,7 +8883,7 @@ Sets the return type of the method
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
@@ -8921,6 +9075,18 @@ This property allows you to customize labels appearance using user-defined CSS.
 
 * ""
 
+### nodes.labels.constraints `enum`
+{:#members:nodes-labels-constraints}
+
+<ts ref = "ej.datavisualization.Diagram.LabelConstraints"/>
+
+Enables or disables the default behaviors of the label.
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.LabelConstraints.None
+
+
 #### Example
 
 {% highlight html %}
@@ -8937,10 +9103,20 @@ var node = { name: "node", width:50,height:50,offsetX:50,offsetY:50,
 	         labels:[{text:"label",cssClass:"hoverText"}] };
 			 
 $("#diagramcontent").ejDiagram({ nodes:[node] });
+
+<div id="diagramcontent"></div>
+<script>
+var LabelConstraints = ej.datavisualization.Diagram.LabelConstraints;
+//Disable resize
+var nodes;
+nodes=[{ name:"node1", width: 50, height:50, offsetX:50, offsetY:50, 
+         labels:[{ text:"Enter Your Text", constraints: LabelConstraints.All & ~LabelConstraints.Resizable}]
+      }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+
 </script>
 
 {% endhighlight %}
-
 
 ### nodes.labels.fillColor `string`
 {:#members:nodes-labels-fillcolor}
@@ -9035,6 +9211,30 @@ nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       }];
 $("#diagramcontent").ejDiagram({nodes:nodes});
 
+</script>
+
+{% endhighlight %}
+
+### nodes.labels.height `number`
+{:#members:nodes-labels-height}
+
+Sets the height of the label(the maximum value of label height and the node height will be considered as label height)
+
+#### Default Value:
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
+         labels:[{ text:"Label", height: 100}]
+      }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
@@ -11004,6 +11204,8 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 An array of objects where each object represents a port
 
+<ts name="ej.datavisualization.Diagram.NodePorts"/>
+
 #### Default Value:
 
 * []
@@ -11395,6 +11597,29 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
       ports:[{name:"port1", offset:{ x:0.5, y:0.5 }, 
       visibility:ej.datavisualization.Diagram.PortVisibility.Visible }] }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.ports.parent `string`
+{:#members:nodes-ports-parent}
+
+Sets the name of the node which contains this port.
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50,
+      ports:[{ name:"port1", offset:{ x:0.5, y:0.5 } }] }];
 $("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
@@ -12077,6 +12302,8 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 Defines the collection of events that need to be appended with BPMN Sub-Process
 
+<ts name = "ej.datavisualization.Diagram.NodesSubProcessEvents"/>
+
 #### Default Value:
 
 * ""
@@ -12095,6 +12322,192 @@ nodes = [{name: "node1", width: 100, height: 100, offsetX: 50, offsetY: 50,
         events: [
             { event: "intermediate", offset: { x: 0.25, y: 1 } },
             { event: "intermediate", trigger: "error", offset: { x: 0.75, y: 1 } }]}
+            }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.subProcess.events.event `enum`
+{:#members:nodes-subprocess-events-event}
+
+<ts ref = "ej.datavisualization.Diagram.BPMNEvents"/>
+
+Sets the type of the event by which the sub-process will be triggered
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.BPMNEvents.Start
+
+#### Example
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes = [{name: "node1", width: 100, height: 100, offsetX: 50, offsetY: 50,
+    type: "bpmn", shape: "activity", activity: "subprocess",
+    subProcess: {
+        type: "transaction",
+        events: [
+            { event: "intermediate",event: "start", offset: { x: 0.25, y: 1 } },
+            { event: "intermediate", event: "start",trigger: "error", offset: { x: 0.75, y: 1 } }]}
+            }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.subProcess.events.offset `object`
+{:#members:nodes-subprocess-events-offset}
+
+Sets the fraction/ratio(relative to parent) that defines the position of the event shape
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.Point(0.5, 0.5)
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes = [{name: "node1", width: 100, height: 100, offsetX: 50, offsetY: 50,
+    type: "bpmn", shape: "activity", activity: "subprocess",
+    subProcess: {
+        type: "transaction",
+        events: [
+            { event: "intermediate", offset: { x: 0.25, y: 1 } },
+            { event: "intermediate", trigger: "error", offset: { x: 0.75, y: 1 } }]}
+            }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+
+### nodes.subProcess.events.name `string`
+{:#members:nodes-subprocess-events-name}
+
+Sets the name of the BPMN event shape.
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes = [{name: "node1", width: 100, height: 100, offsetX: 50, offsetY: 50,
+    type: "bpmn", shape: "activity", activity: "subprocess",
+    subProcess: {
+        type: "transaction",
+        events: [
+            { name:"intermediate1", event: "intermediate", offset: { x: 0.25, y: 1 } },
+            { name:"intermediate1", event: "intermediate", trigger: "error", offset: { x: 0.75, y: 1 } }]}
+            }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}bers:nodes-subprocess-trigger}
+
+
+### nodes.subProcess.events.trigger `enum`
+{:#members:nodes-subprocess-events-trigger}
+
+<ts ref = "ej.datavisualization.Diagram.BPMNTriggers"/>
+
+Defines the type of the event trigger
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.BPMNTriggers.Message
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes = [{name: "node1", width: 100, height: 100, offsetX: 50, offsetY: 50,
+    type: "bpmn", shape: "activity", activity: "subprocess",
+    subProcess: {
+        type: "transaction",
+        events: [
+            { name:"intermediate1",trigger: "conditional", event: "intermediate", offset: { x: 0.25, y: 1 } },
+            { name:"intermediate1",trigger: "conditional", event: "intermediate", trigger: "error", offset: { x: 0.75, y: 1 } }]}
+            }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+
+### nodes.subProcess.events.ports `array`
+{:#members:nodes-subprocess-events-ports}
+
+An array of objects where each object represents a port
+
+<ts name="ej.datavisualization.Diagram.NodePorts"/>
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes = [{name: "node1", width: 100, height: 100, offsetX: 50, offsetY: 50,
+    type: "bpmn", shape: "activity", activity: "subprocess",
+    subProcess: {
+        type: "transaction",
+        events: [
+            { event: "intermediate", offset: { x: 0.25, y: 1 },
+            ports:[{name:"port1", offset:{ x:0.5, y:0 }}, 
+            {name:"port2", offset:{ x:0.5, y:1 }}] }]}
+            }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.subProcess.events.labels `array`
+{:#members:nodes-subprocess-events-labels}
+
+A collection of objects where each object represents a label
+
+<ts ref = "ej.datavisualization.Diagram.NodeLabel"/>
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var label = [];
+label = { "text": "Node1", "fontColor": "Red"};
+nodes = [{name: "node1", width: 100, height: 100, offsetX: 50, offsetY: 50,
+    type: "bpmn", shape: "activity", activity: "subprocess",
+    subProcess: {
+        type: "transaction",
+        events: [
+            { event: "intermediate", offset: { x: 0.25, y: 1 }, {labels:label}}
+            ]}
             }];
 $("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
@@ -12460,6 +12873,35 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
+### nodes.task.events `array`
+{:#members:nodes-tasks-events}
+ 
+Defines the collection of events that need to be appended with BPMN tasks
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes = [{name: "node1", width: 100, height: 100, offsetX: 50, offsetY: 50,
+    type: "bpmn", shape: "activity", activity: "task",
+    task: {
+        type: "send",
+        events: [
+            { event: "intermediate", offset: { x: 0.25, y: 1 }},
+            { event: "intermediate", trigger: "error", offset: { x: 0.75, y: 1 }] }]}
+            }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
 ### nodes.templateId `string`
 {:#members:nodes-templateid}
 
@@ -12674,8 +13116,8 @@ Defines the type of the node.
             <td class="description last">Used to specify node type as Image</td>
        </tr>
         <tr>
-            <td class="name">Html</td>
-            <td class="description last">Used to specify node type as Html</td>
+            <td class="name">HTML</td>
+            <td class="description last">Used to specify node type as HTML</td>
        </tr>
         <tr>
             <td class="name">Native</td>
@@ -13632,6 +14074,60 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 
 {% endhighlight %}
 
+### selectedItems.userHandles.horizontalAlignment `enum`
+{:#members:selecteditems-userhandles-horizontalalignment}
+
+<ts ref = "ej.datavisualization.Diagram.HorizontalAlignment"/>
+
+Sets the horizontal alignment of the user handle
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.HorizontalAlignment.Center
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var userHandle = [];
+        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+        cloneHandle.name = "cloneHandle";
+        cloneHandle.horizontalAlignment = ej.datavisualization.Diagram.HorizontalAlignment.Right;
+        userHandle.push(cloneHandle);
+$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+
+{% endhighlight %}
+
+### selectedItems.userHandles.margin `object`
+{:#members:selecteditems-userhandles-margin}
+
+To set the margin of the user handle
+
+<ts ref = "ej.datavisualization.Diagram.ConnectorsLabelsMargin"/>
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.Margin()
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+ var userHandle = [];
+        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+        cloneHandle.name = "cloneHandle";
+        cloneHandle.margin = { left: 5 };
+        userHandle.push(cloneHandle);
+$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+
+{% endhighlight %}
+
 ### selectedItems.userHandles.name `string`
 {:#members:selecteditems-userhandles-name}
 
@@ -13721,6 +14217,31 @@ Defines whether the user handle should be added, when more than one element is s
         var cloneHandle = ej.datavisualization.Diagram.UserHandle();
         cloneHandle.name = "cloneHandle";
         cloneHandle.enableMultiSelection = true;
+        userHandle.push(cloneHandle);
+$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+
+{% endhighlight %}
+
+### selectedItems.userHandles.offset `object`
+{:#members:selecteditems-userhandles-offset}
+
+Sets the fraction/ratio(relative to node) that defines the position of the user handle
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.point(0.5, 1)
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+ var userHandle = [];
+        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+        cloneHandle.name = "cloneHandle";
+        cloneHandle.offset = ej.datavisualization.Diagram.point(0, 0)
         userHandle.push(cloneHandle);
 $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 </script>
@@ -13915,6 +14436,34 @@ $("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
 
 {% endhighlight %}
 
+
+### selectedItems.userHandles.verticalAlignment `enum`
+{:#members:selecteditems-userhandles-verticalalignment}
+
+<ts ref = "ej.datavisualization.Diagram.VerticalAlignment"/>
+
+Sets the vertical alignment of the user handle
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.VerticalAlignment.Center
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var userHandle = [];
+        var cloneHandle = ej.datavisualization.Diagram.UserHandle();
+        cloneHandle.name = "cloneHandle";
+        cloneHandle.verticalAlignment = ej.datavisualization.Diagram.VerticalAlignment.Top;
+        userHandle.push(cloneHandle);
+$("#diagramcontent").ejDiagram({selectedItems:{userHandles:userHandle}});
+</script>
+
+{% endhighlight %}
+
 ### selectedItems.userHandles.visible `boolean`
 {:#members:selecteditems-userhandles-visible}
 
@@ -13984,6 +14533,28 @@ $("#diagramcontent").ejDiagram({showTooltip: true});
 
 {% endhighlight %}
 
+
+### serializationSettings `object`
+{:#members:serializationsettings}
+
+Defines diagram serialization properties that would defines how the serialization content would be. 
+
+### serializationSettings.preventDefaultValues `boolean`
+{:#members:serializationsettings-preventdefaultvalues}
+
+defines whether the default diagram properties can be serialized or not.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+$("#diagramcontent").ejDiagram({ serializationSettings:{ preventDefaultValues: true } });
+
+{% endhighlight %}
 
 ### rulerSettings `object`
 {:#members:rulersettings}
@@ -15469,6 +16040,26 @@ Export the diagram as downloadable files or as data
 <td class="type"><ts name="ej.datavisualization.Diagram.Stretch"/>enum</td>
 <td class="description last">to resize the diagram content to fill its allocated space.</td>
 </tr>
+<tr>
+<td class="name">multiplePage</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">to export the diagram into multiple pages</td>
+</tr>
+<tr>
+<td class="name">pageWidth</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">to set the page width of the diagram while exporting the diagram into multiple pages.</td>
+</tr>
+<tr>
+<td class="name">pageHeight</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">to set the page height of the diagram while exporting the diagram into multiple pages.</td>
+</tr>
+<tr>
+<td class="name">pageOrientation</td>
+<td class="type"><ts ref="ej.datavisualization.Diagram.PageOrientations"/>enum</td>
+<td class="description last">to sets the orientation of the page.</td>
+</tr>
 </tbody>
 </table>
 </td>
@@ -15616,6 +16207,115 @@ Used to resize the diagram content to fill its allocated space.
     </tbody>
 </table>
 
+### exportImage( image, \[options\])
+{:#methods:exportimage}
+
+The `exportImage` method is used to export the image passed through argument with different image format and exporting options as like `exportDiagram` method.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">image</td>
+<td class="type">string</td>
+<td class="description last">pass the base64String image to be exported.</td>
+</tr>
+<tr>
+<td class="name">[options]</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">options to export the desired region of diagram to the desired formats.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fileName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">name of the file to be downloaded.</td>
+</tr>
+<tr>
+<td class="name">format</td>
+<td class="type"><ts ref="ej.datavisualization.Diagram.FileFormats"/>enum</td>
+<td class="description last">format of the exported file/data.</td>
+</tr>
+<tr>
+<td class="name">region</td>
+<td class="type"><ts ref="ej.datavisualization.Diagram.Region"/>enum</td>
+<td class="description last">to set the region of the diagram to be exported.</td>
+</tr>
+<tr>
+<td class="name">bounds</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">to export any custom region of diagram.</td>
+</tr>
+<tr>
+<td class="name">margin</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">to set margin to the exported data.</td>
+</tr>
+<tr>
+<td class="name">multiplePage</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">to export the diagram into multiple pages</td>
+</tr>
+<tr>
+<td class="name">pageWidth</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">to set the page width of the diagram while exporting the diagram into multiple pages.</td>
+</tr>
+<tr>
+<td class="name">pageHeight</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">to set the page height of the diagram while exporting the diagram into multiple pages.</td>
+</tr>
+<tr>
+<td class="name">pageOrientation</td>
+<td class="type"><ts ref="ej.datavisualization.Diagram.PageOrientations"/>enum</td>
+<td class="description last">to sets the orientation of the page.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+
+* string
+
+#### Example
+
+{% highlight html %}
+<div id="diagramcontent"></div>
+<script>
+var diagram=$("#diagramcontent").ejDiagram("instance");
+//Export the image based on pageSettings region and PNG format.
+var options = {
+//set the region of the diagram to be exported
+region: "pageSettings",
+//name of the file to be downloaded
+fileName: "diagram",
+//Format of the exported file
+format: ej.datavisualization.Diagram.FileFormats.PNG
+};
+diagram.exportImage("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA....",options);
+</script>
+
+{% endhighlight %}
+
+
 ### findNode(name)
 {:#methods:findnode}
 
@@ -15724,6 +16424,57 @@ Used to fit the diagram content within the view port.
         </tr>
     </tbody>
 </table>
+
+### getDiagramContent(\[styleSheets\])
+{:#methods:getdiagramcontent}
+
+Get the diagram DOM element as a string along with dependent stylesheets.
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">styleSheets</td>
+			<td class="type">array</td>
+			<td class="description last">If its specified, will get the diagram DOM element along with specified stylesheet references. Please note that you have to define absolute path for local CSS file. If not specified, will get the diagram content along with all stylesheets loaded in the document.</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var diagram=$("#diagramcontent").ejDiagram("instance");
+diagram.getDiagramContent();
+</script>
+
+{% endhighlight %}
+
+### getDiagramBounds()
+{:#methods:getdiagrambounds}
+
+Get the bounds of the diagram.
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var diagram=$("#diagramcontent").ejDiagram("instance");
+diagram.getDiagramBounds();
+</script>
+
+{% endhighlight %}
 
 ### group()
 {:#methods:group}
@@ -15936,10 +16687,74 @@ diagram.paste(obj, true);
 
 {% endhighlight %}
 
-### print()
+ ### print(\[options\])
 {:#methods:print}
 
 Print the diagram as image
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">[options]</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">options to print the desired region of diagram and print the diagram in multiple pages.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">region</td>
+<td class="type"><ts ref="ej.datavisualization.Diagram.Region"/>enum</td>
+<td class="description last">to set the region of the diagram to be printed.</td>
+</tr>
+<tr>
+<td class="name">bounds</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">to print any custom region of diagram.</td>
+</tr>
+<tr>
+<td class="name">stretch</td>
+<td class="type"><ts ref="ej.datavisualization.Diagram.Stretch"/>enum</td>
+<td class="description last">to resize the diagram content to fill its allocated space and printed.</td>
+</tr>
+<tr>
+<td class="name">multiplePage</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">to print the diagram into multiple pages</td>
+</tr>
+<tr>
+<td class="name">pageWidth</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">to set the page width of the diagram while printing the diagram into multiple pages.</td>
+</tr>
+<tr>
+<td class="name">pageHeight</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">to set the page height of the diagram while printing the diagram into multiple pages.</td>
+</tr>
+<tr>
+<td class="name">pageOrientation</td>
+<td class="type"><ts ref="ej.datavisualization.Diagram.PageOrientations"/>enum</td>
+<td class="description last">to sets the orientation of the page.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
 
 #### Example
 
@@ -15948,7 +16763,105 @@ Print the diagram as image
 <div id="diagramcontent"></div>
 <script>
 var diagram=$("#diagramcontent").ejDiagram("instance");
+//print the diagram
 diagram.print();
+// print the diagram with certain region.
+var options = {
+//set the region of the diagram to be printed
+region: "pageSettings"
+};
+diagram.printImage(options);
+</script>
+
+{% endhighlight %}
+
+### printImage( image, \[options\])
+{:#methods:printimage}
+
+The `printImage` method is used to print the image passed through argument with desired region and multiple pages as like `print` method.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">image</td>
+<td class="type">string</td>
+<td class="description last">pass the base64String image to be printed.</td>
+</tr>
+<tr>
+<td class="name">[options]</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">options to export the desired region of diagram to the desired formats.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">region</td>
+<td class="type"><ts ref="ej.datavisualization.Diagram.Region"/>enum</td>
+<td class="description last">to set the region of the diagram to be printed.</td>
+</tr>
+<tr>
+<td class="name">bounds</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">to print any custom region of diagram.</td>
+</tr>
+<tr>
+<td class="name">multiplePage</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">to export the diagram into multiple pages</td>
+</tr>
+<tr>
+<td class="name">pageWidth</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">to set the page width of the diagram while printing the diagram into multiple pages.</td>
+</tr>
+<tr>
+<td class="name">pageHeight</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description last">to set the page height of the diagram while printing the diagram into multiple pages.</td>
+</tr>
+<tr>
+<td class="name">pageOrientation</td>
+<td class="type"><ts ref="ej.datavisualization.Diagram.PageOrientations"/>enum</td>
+<td class="description last">to sets the orientation of the page.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+
+* string
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+
+<script>
+var diagram=$("#diagramcontent").ejDiagram("instance");
+//print the image based on pageSettings region.
+var options = {
+//set the region of the diagram to be printed
+region: "pageSettings"
+};
+diagram.printImage("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA....",options);
 </script>
 
 {% endhighlight %}
@@ -16187,7 +17100,7 @@ diagram.sameWidth();
 
 {% endhighlight %}
 
-### save()
+ ### save()
 {:#methods:save}
 
 Returns the diagram as serialized JSON
@@ -18583,3 +19496,85 @@ Triggered when the diagram is rendered completely.
     });
 
 {% endhighlight %}
+
+### setTool  
+{:#events:settool}
+
+Used to decide on the action on Diagramming elements at runtime. 
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">source</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Returns the port when mouse move over on it</td>
+        </tr>
+            <tr>
+            <td class="name">action </td>
+            <td class="type"><ts name="ej.datavisualization.Diagram.ActiveTool"/>enum</td>
+            <td class="description last">Defines the tool to be activated.</td>
+        </tr> 
+    </tbody>
+</table>
+
+#### Example 
+
+{% highlight html %}
+
+        <div id="diagramcontent"></div>
+        <script>
+        var nodes= [{
+                    name: "node1",
+                    ports: [{  visibility: ej.datavisualization.Diagram.PortVisibility.Visible,constraints: ej.datavisualization.Diagram.PortConstraints.Connect | PortConstraints.ConnectOnDrag }],
+                    }];
+                    $("#diagramcontent").ejDiagram({
+                        height: "600px", width: "100%",
+                        nodes: nodes,
+                        //Defining the setTool Method
+                        setTool: function (args) {
+                            var value = document.getElementById("SetTool").value;
+                            if (value === "drag") {
+                                args.action = ej.datavisualization.Diagram.ActiveTool.Drag;
+                            }
+                            else if (value === "draw") {
+                            args.action = ej.datavisualization.Diagram.ActiveTool.Draw;
+                            }
+                        },
+                    });
+
+                    
+{% endhighlight %}
+
+#### ActiveTool
+
+used to Activate the setTool method
+
+<table class="props">
+     <thead>
+         <tr>
+         <th>Name</th>
+         <th>Description</th>
+         </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>None</td>
+            <td>Set the default Tool</td>
+        </tr>
+        <tr>
+            <td>Drag</td>
+            <td>Activate the port tool to drag when the mouse is moved over the port</td>
+        </tr>
+         <tr>
+            <td>Draw</td>
+            <td>Activate the draw tool to draw when the mouse is moved over the port</td>
+        </tr>
+    </tbody>
+</table>
