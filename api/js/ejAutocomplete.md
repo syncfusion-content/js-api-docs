@@ -668,6 +668,37 @@ N> stringFormat as “{0} ({1}) ({2})” means search based on 0, 1 and 2 column
 
 {% endhighlight %}
 
+### multiColumnSettings.searchColumnIndices `Array`
+{:#members:multicolumnsettings-searchColumnIndices}
+
+This property allows user to search text for any number of fields in the suggestion list without modifying the selected text format.
+
+N> searchColumnIndices as [0,1] means search based on 0 and 1 columns data.
+
+
+
+#### Example 
+
+{% highlight javascript %}
+
+	$("#autocomplete").ejAutocomplete({ 
+    multiColumnSettings: {
+    enable: true,
+    showHeader: true,
+    stringFormat: "{0}",
+	searchColumnIndices:[0,1],
+    columns: [{
+    field:"name", 
+    headerText: "Name"
+    },{
+    field: "id" ,
+    headerText:"ID"
+    }]
+    }
+	});
+
+{% endhighlight %}
+
 ### multiColumnSettings.columns `Array`
 {:#members:multicolumnsettings-columns}
 
