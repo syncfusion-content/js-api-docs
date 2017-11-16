@@ -681,7 +681,7 @@ Adds a new item to the popup list. By default, new item appends to the list as t
 
 {% highlight javascript %}
 
-	$("#combobox").ejComboBox("addItem",{ id: 'level11', sports: 'Kabadi' });
+	$("#combobox").ejComboBox("addItem",{ id: 'level11', sports: 'cricket' });
 
 {% endhighlight %}
 
@@ -1018,7 +1018,7 @@ Triggers when the popup is closed.
 <tr>
 <td>popup<br/></td>
 <td>object<br/></td>
-<td>Element of the combobox popuplist<br/></td>
+<td>Element of the combobox popup list<br/></td>
 </tr>
 </table>
 
@@ -1213,7 +1213,7 @@ Triggers after the suggestion list is opened.
 <tr>
 <td>popup<br/></td>
 <td>object<br/></td>
-<td>Element of the combobox popuplist<br/></td>
+<td>Element of the combobox popup list<br/></td>
 </tr>
 </table>
 
