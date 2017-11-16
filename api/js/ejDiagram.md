@@ -932,7 +932,7 @@ $("#diagramcontent").ejDiagram({ connectors:[connector] });
 ### connectors.cssClass `string`
 {:#members:connectors-cssclass}
 
-Configures the styles of shapes
+This property allows you to customize connectors appearance using user-defined CSS.
 
 #### Default Value:
 
@@ -3241,6 +3241,34 @@ $("#diagramcontent").ejDiagram({connectors : [connector]});
 
 {% endhighlight %}
 
+### connectors.sourceDecorator.cssClass `string`
+{:#members:connectors-sourcedecorator-cssclass}
+
+This property allows you to customize sourceDecorator appearance using user-defined CSS.
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<style>
+    .hoverDecorator:hover {
+         fill:blue;
+    }
+</style>
+
+<div id="diagramcontent"></div>
+<script>
+var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, lineColor:"red",
+                  sourceDecorator : { shape:"circle" , cssClass:"hoverDecorator"} }; 
+$("#diagramcontent").ejDiagram({connectors : [connector]});
+</script>
+
+{% endhighlight %}
+
 ### connectors.sourceDecorator.fillColor `string`
 {:#members:connectors-sourcedecorator-fillcolor}
 
@@ -3567,6 +3595,34 @@ Sets the border color of the decorator
 <script>
 var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, lineColor:"red",
                   sourceDecorator : { shape:"openarrow" , borderColor:"red"} }; 
+$("#diagramcontent").ejDiagram({connectors : [connector]});
+</script>
+
+{% endhighlight %}
+
+### connectors.targetDecorator.cssClass `string`
+{:#members:connectors-targetdecorator-cssclass}
+
+This property allows you to customize targetDecorator appearance using user-defined CSS.
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<style>
+    .hoverDecorator:hover {
+         fill:blue;
+    }
+</style>
+
+<div id="diagramcontent"></div>
+<script>
+var connector = { name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200}, lineColor:"red",
+                  targetDecorator : { shape:"circle" , cssClass:"hoverDecorator"} }; 
 $("#diagramcontent").ejDiagram({connectors : [connector]});
 </script>
 
@@ -5550,19 +5606,19 @@ Defines the type of the rendering mode of label.
     </thead>
     <tbody>
         <tr>
-            <td class="name">Html</td>
-            <td class="description last">Sets the labelRenderingMode as Html</td>
+            <td class="name">HTML</td>
+            <td class="description last">Sets the labelRenderingMode as HTML</td>
         </tr>
         <tr>
-            <td class="name">Svg</td>
-            <td class="description last">Sets the labelRenderingMode as Svg</td>
+            <td class="name">SVG</td>
+            <td class="description last">Sets the labelRenderingMode as SVG</td>
         </tr>
     </tbody>
 </table>
 
 #### Default Value:
 
-* Html
+* HTML
 
 #### Example
 
@@ -6609,7 +6665,7 @@ Defines the collection of methods of a Class.
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
@@ -6633,7 +6689,7 @@ Sets the name of the method.
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
@@ -6657,7 +6713,7 @@ Defines the arguments of the method.
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
@@ -6681,7 +6737,7 @@ Sets the name of the argument
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
@@ -6705,7 +6761,7 @@ Sets the type of the argument
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
@@ -6729,7 +6785,7 @@ Sets the return type of the method
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Patient",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Class,
@@ -7207,7 +7263,7 @@ Enables or disables the default behaviors of the node.
        </tr>
         <tr>
             <td class="name">Default</td>
-            <td class="description last">Enables all node constraints</td>
+            <td class="description last">Enables default node interactions such as select,delete,drag,rotate,resize,connect,inheritCrispEdges and inheritTooltip</td>
        </tr>
    </tbody>
 </table>
@@ -7353,7 +7409,7 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 ### nodes.cssClass `string`
 {:#members:nodes-cssclass}
 
-Configures the styles of shapes
+This property allows you to customize nodes appearance using user-defined CSS.
 
 #### Default Value:
 
@@ -8706,7 +8762,7 @@ Defines the collection of public methods of an interface
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
@@ -8730,7 +8786,7 @@ Sets the name of the method.
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
@@ -8754,7 +8810,7 @@ Defines the collection of arguments of a method
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
@@ -8779,7 +8835,7 @@ Sets the name of the argument
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
@@ -8803,7 +8859,7 @@ Sets the type of the argument
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
@@ -8827,7 +8883,7 @@ Sets the return type of the method
 
 {% highlight html %}
 
-<<div id="diagramcontent"></div>
+<div id="diagramcontent"></div>
 <script>
 var nodes = [];
 nodes=[{ name: "Bank",offsetX: 100,offsetY: 100,borderWidth: 2,borderColor: "black",type: "umlclassifier", classifier: ej.datavisualization.Diagram.ClassifierShapes.Interface,
@@ -9010,6 +9066,15 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
+### nodes.labels.cssClass `string`
+{:#members:nodes-labels-cssclass}
+
+This property allows you to customize labels appearance using user-defined CSS.
+
+#### Default Value:
+
+* ""
+
 ### nodes.labels.constraints `enum`
 {:#members:nodes-labels-constraints}
 
@@ -9021,9 +9086,23 @@ Enables or disables the default behaviors of the label.
 
 * ej.datavisualization.Diagram.LabelConstraints.None
 
+
 #### Example
 
 {% highlight html %}
+
+<style>
+    .hoverText:hover {
+        font-weight: bold;
+    }
+</style>
+
+<div id="diagramcontent"></div>
+<script>
+var node = { name: "node", width:50,height:50,offsetX:50,offsetY:50,
+	         labels:[{text:"label",cssClass:"hoverText"}] };
+			 
+$("#diagramcontent").ejDiagram({ nodes:[node] });
 
 <div id="diagramcontent"></div>
 <script>
@@ -9034,6 +9113,7 @@ nodes=[{ name:"node1", width: 50, height:50, offsetX:50, offsetY:50,
          labels:[{ text:"Enter Your Text", constraints: LabelConstraints.All & ~LabelConstraints.Resizable}]
       }];
 $("#diagramcontent").ejDiagram({nodes:nodes});
+
 </script>
 
 {% endhighlight %}
@@ -9467,6 +9547,40 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
+### nodes.labels.templateId `string`
+{:#members:nodes-labels-templateid}
+
+Sets the id of svg/html templates. Applicable, if the node's label is HTML or native.
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+
+<script id="SvgEllipse" type="text/x-jsrender">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+            <circle cx="10" cy="6" r="5" 
+                     style="stroke:#006600; fill:#00cc00" />
+        </svg>
+    </script>
+	
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
+         labels:[{ templateId:"SvgEllipse"}]
+      }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+
+</script>
+
+{% endhighlight %}
+
 ### nodes.labels.text `string`
 {:#members:nodes-labels-text}
 
@@ -9785,6 +9899,35 @@ var swimlane = { type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
 //Define the collection of lanes
 				 lanes:[{name:"lane1", width:200 },
 				 {name:"lane2", width:100}] };
+$("#diagramcontent").ejDiagram({nodes:[swimlane]});
+</script>
+
+{% endhighlight %}
+
+### nodes.lanes.cssClass `string`
+{:#members:nodes-lanes-cssclass}
+
+This property allows you to customize lanes appearance using user-defined CSS.
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<style>
+    .hoverLane:hover {
+         fill:red; 
+    }
+</style>
+
+<div id="diagramcontent"></div>
+<script>
+var addInfo = { Description:"Describe the functionality" };
+var swimlane = {type: "swimlane",name: "swimlane", offsetX:300, offsetY:200,
+lanes:[{ name:"lane1", cssClass:"hoverLane", addInfo: addInfo }] };
 $("#diagramcontent").ejDiagram({nodes:[swimlane]});
 </script>
 
@@ -11200,6 +11343,36 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
 {% endhighlight %}
+
+### nodes.ports.cssClass `string`
+{:#members:nodes-ports-cssclass}
+
+This property allows you to customize ports appearance using user-defined CSS.
+
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<style>
+    .hoverPort:hover {
+         fill:blue;
+    }
+</style>
+
+<div id="diagramcontent"></div>
+<script>
+var node = { name: "node", width:50,height:50,offsetX:50,offsetY:50
+	         ports:[{name:"port1", offset:{ x:0.5, y:0.5 }, cssClass:"hoverPort" }] }];
+			 
+$("#diagramcontent").ejDiagram({ nodes:[node] });
+</script>
+
+{% endhighlight %}
+
 
 ### nodes.ports.fillColor `string`
 {:#members:nodes-ports-fillcolor}
@@ -12943,8 +13116,8 @@ Defines the type of the node.
             <td class="description last">Used to specify node type as Image</td>
        </tr>
         <tr>
-            <td class="name">Html</td>
-            <td class="description last">Used to specify node type as Html</td>
+            <td class="name">HTML</td>
+            <td class="description last">Used to specify node type as HTML</td>
        </tr>
         <tr>
             <td class="name">Native</td>
@@ -16120,7 +16293,7 @@ The `exportImage` method is used to export the image passed through argument wit
 
 #### Returns:
 
-* String
+* string
 
 #### Example
 
@@ -16673,7 +16846,7 @@ The `printImage` method is used to print the image passed through argument with 
 
 #### Returns:
 
-* String
+* string
 
 #### Example
 

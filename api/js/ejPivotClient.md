@@ -107,7 +107,7 @@ Sets the mode for the PivotClient widget for binding either OLAP or Relational d
 
 <ts ref = "ej.PivotChart.ChartTypes"/>
 
-Allows the user to set the specific chart type for PivotChart inside PivotClient widget.
+Allows the user to set the specific Chart type for PivotChart inside PivotClient widget.
 
 #### Default Value: ej.PivotChart.ChartTypes.Column
 
@@ -477,9 +477,7 @@ Allows to set the format for the column headers.
 ### dataSource.columns.formatString `string`
 {:#members:datasource-columns-formatstring}
 
-This property sets type of display of date.
-
->**Note**: This is applicable only when the format is set as "date".
+This property is set to display the formatted values with format types in PivotGrid.
 
 #### Default Value: ""
 
@@ -823,9 +821,7 @@ Allows to set the format for the row headers.
 ### dataSource.rows.formatString `string`
 {:#members:datasource-rows-formatstring}
 
-This property sets type of display of date.
-
->**Note**: This is applicable only when the format is set as "date".
+This property is set to display the formatted values with format types in PivotGrid.
 
 #### Default Value: ""
 
@@ -1140,9 +1136,7 @@ Allows to set the format of the values.
 ### dataSource.values.formatString `string`
 {:#members:datasource-values-formatstring}
 
-This property sets type of display of date.
-
->**Note**: This is applicable only when the format is set as "date".
+This property is set to display the formatted values with format types in PivotGrid.
 
 #### Default Value: ""
 
@@ -1916,6 +1910,20 @@ Allows user to show unique name on pivot button.
     $("#PivotClient1").ejPivotClient({ showUniqueNameOnPivotButton: true });
 {% endhighlight %}
 
+### showReportCollection `boolean`
+{:#members:showreportcollection}
+
+Allows user to load the saved report collection from the database.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ showReportCollection: true });
+{% endhighlight %}
+
 ### enableSplitter `boolean`
 {:#members:enableSplitter}
 
@@ -1996,7 +2004,7 @@ Allows the user to enable paging for both the PivotChart and PivotGrid component
 ### enablePivotTreeMap `boolean`
 {:#members:enablepivottreemap}
 
-Allows the user to include the PivotTreeMap component as one of the chart types.
+Allows the user to include the PivotTreeMap component as one of the Chart types.
 
 > **Note**: This property is applicable for OLAP data bound from server-side alone.
 
@@ -2147,7 +2155,7 @@ Allows the user to hide PivotClient's Cube Browser and Axis Element Builder whil
 
 Allows the user to view the KPI elements in tree-view inside PivotClient's Cube Browser.
 
-> **Note**: This property is applicable for OLAP data bound from server-side alone.
+> **Note**: This property is applicable only for OLAP data.
 
 #### Default Value: false
 
@@ -3074,6 +3082,13 @@ Triggers before rendering the PivotSchemaDesigner.
 </thead>
 <tbody>
 <tr>
+<td class="name">action</td>
+<td class="type">string</td>
+<td class="description last">returns the current action of PivotSchemaDesigner control.</td>
+</tr>
+</thead>
+<tbody>
+<tr>
 <td class="name">element</td>
 <td class="type">object</td>
 <td class="description last">returns the HTML element of PivotSchemaDesigner control.</td>
@@ -3139,6 +3154,691 @@ Triggers before rendering the PivotTreeMap.
     });
 {% endhighlight %}
 
+## gridDrillSuccess
+{:#events:griddrillsuccess}
+
+Triggers on performing drill up/down on row/columns headers.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description last">returns the current action of PivotClient control.</td>
+</tr>
+<tr>
+<td class="name">axis</td>
+<td class="type">string</td>
+<td class="description last">returns the axis class name of the drilled cell in PivotGrid.</td>
+</tr>
+<tr>
+<td class="name">cellPosition</td>
+<td class="type">string</td>
+<td class="description last">returns the position of the drilled cell.</td>
+</tr>
+<tr>
+<td class="name">drillAction</td>
+<td class="type">string</td>
+<td class="description last">returns the drill action name.</td>
+</tr>
+<tr>
+<td class="name">drilledMember</td>
+<td class="type">string</td>
+<td class="description last">returns the drilled cell string.</td>
+</tr>
+<tr>
+<td class="name">fieldName</td>
+<td class="type">string</td>
+<td class="description last">returns the field/item name of the drilled cell.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description last">returns the model object bound with PivotClient control.</td>
+</tr>
+<tr>
+<td class="name">gridObj</td>
+<td class="type">object</td>
+<td class="description last">returns the object bound with PivotGrid control.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({
+        gridDrillSuccess: function (args) { }
+    });
+
+{% endhighlight %}
+
+## chartDrillSuccess
+{:#events:chartdrillsuccess}
+
+Triggers on performing drill operation on Chart series.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description last">returns the current action of PivotClient control.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotChart control.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description last">returns the model object bound with PivotClient control.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({
+        chartDrillSuccess: function (args) { }
+    });
+
+{% endhighlight %}
+
+## treeMapDrillSuccess
+{:#events:treemapdrillsuccess}
+
+Triggers on performing drill operation on TreeMap.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description last">returns the current action of PivotClient control.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotTreeMap control.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description last">returns the model object bound with PivotTreeMap control.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({
+        treeMapDrillSuccess: function (args) { }
+    });
+
+{% endhighlight %}
+
+### valueCellHyperlinkClick
+{:#events:valuecellhyperlinkclick}
+
+Triggers on clicking any value cell in PivotGrid.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description last">returns the current action of PivotClient control.</td>
+</tr>
+<tr>
+<td class="name">args</td>
+<td class="type">object</td>
+<td class="description last">returns the clicked cell information.</td>
+</tr>
+<tr>
+<td class="name">customerObject</td>
+<td class="type">object</td>
+<td class="description last">returns the custom object bounds with PivotClient control.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotGrid control.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description last">returns the model object bound with PivotClient control.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({
+        valueCellHyperlinkClick: function (args) { }
+    });
+
+{% endhighlight %}
+ 
+## rowHeaderHyperlinkClick
+{:#events:rowheaderhyperlinkclick}
+
+Triggers on clicking any row header cell in PivotGrid.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description last">returns the current action of PivotClient control.</td>
+</tr>
+<tr>
+<td class="name">args</td>
+<td class="type">object</td>
+<td class="description last">returns the clicked cell information.</td>
+</tr>
+<tr>
+<td class="name">customerObject</td>
+<td class="type">object</td>
+<td class="description last">returns the custom object bounds with PivotClient control.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotGrid control.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description last">returns the model object bound with PivotClient control.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({
+        rowHeaderHyperlinkClick: function (args) { }
+    });
+
+{% endhighlight %}
+ 
+## columnHeaderHyperlinkClick
+{:#events:columnheaderhyperlinkclick}
+
+Triggers on clicking any column header cell in PivotGrid.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description last">returns the current action of PivotClient control.</td>
+</tr>
+<tr>
+<td class="name">args</td>
+<td class="type">object</td>
+<td class="description last">returns the clicked cell information.</td>
+</tr>
+<tr>
+<td class="name">customerObject</td>
+<td class="type">object</td>
+<td class="description last">returns the custom object bounds with PivotClient control.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotGrid control.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description last">returns the model object bound with PivotClient control.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({
+        columnHeaderHyperlinkClick: function (args) { }
+    });
+
+{% endhighlight %}
+ 
+## summaryCellHyperlinkClick
+{:#events:summarycellhyperlinkclick}
+
+Triggers on clicking any summary cell in PivotGrid.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description last">returns the current action of PivotClient control.</td>
+</tr>
+<tr>
+<td class="name">args</td>
+<td class="type">object</td>
+<td class="description last">returns the clicked cell information.</td>
+</tr>
+<tr>
+<td class="name">customerObject</td>
+<td class="type">object</td>
+<td class="description last">returns the custom object bounds with PivotClient control.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotGrid control.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description last">returns the model object bound with PivotClient control.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({
+        summaryCellHyperlinkClick: function (args) { }
+    });
+
+{% endhighlight %}
+ 
+## cellContext
+{:#events:cellcontext}
+
+Triggers when right click on any cell in the PivotGrid.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description last">returns the current action of PivotClient control.</td>
+</tr>
+<tr>
+<td class="name">cellType</td>
+<td class="type">string</td>
+<td class="description last">returns the clicked cell type in PivotGrid.</td>
+</tr>
+<tr>
+<td class="name">cellPosition</td>
+<td class="type">string</td>
+<td class="description last">returns the position of the clicked cell.</td>
+</tr>
+<tr>
+<td class="name">cellValue</td>
+<td class="type">string</td>
+<td class="description last">returns the HTML string of the clicked cell.</td>
+</tr>
+<tr>
+<td class="name">rawdata</td>
+<td class="type">string</td>
+<td class="description last">returns the clicked cell string.</td>
+</tr>
+<tr>
+<td class="name">role</td>
+<td class="type">string</td>
+<td class="description last">returns the role of the clicked cell.</td>
+</tr>
+<tr>
+<td class="name">uniqueName</td>
+<td class="type">string</td>
+<td class="description last">returns the unique name of the clicked cell.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description last">returns the model object bound with PivotClient control.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({
+        cellContext: function (args) { }
+    });
+
+{% endhighlight %}
+ 
+## cellSelection
+{:#events:cellselection}
+
+Triggers when select/click any of the cell in the PivotGrid.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description last">returns the current action of PivotClient control.</td>
+</tr>
+<tr>
+<td class="name">JSONRecords</td>
+<td class="type">array</td>
+<td class="description last">returns the JSON information of the clicked cell.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description last">returns the model object bound with PivotClient control.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({
+        cellSelection: function (args) { }
+    });
+
+{% endhighlight %}
+ 
+## cellEdit
+{:#events:celledit}
+
+Triggers when any of the value cell edited in the PivotGrid.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description last">returns the current action of PivotClient control.</td>
+</tr>
+<tr>
+<td class="name">editCellsInfo</td>
+<td class="type">object</td>
+<td class="description last">returns the edited cell information.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description last">returns the model object bound with PivotClient control.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({
+        cellEdit: function (args) { }
+    });
+
+{% endhighlight %}
+ 
+## cellDoubleClick
+{:#events:celldoubleclick}
+
+Triggers double click on any of the cell in the PivotGrid.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description last">returns the current action of PivotClient control.</td>
+</tr>
+<tr>
+<td class="name">customerObject</td>
+<td class="type">object</td>
+<td class="description last">returns the custom object bounds with PivotClient control.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotGrid control.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description last">returns the model object bound with PivotClient control.</td>
+</tr>
+<tr>
+<td class="name">selectedData</td>
+<td class="type">array</td>
+<td class="description last">returns the array of selected data source object for the clicked cell.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({
+        cellDoubleClick: function (args) { }
+    });
+
+{% endhighlight %}
+ 
+### pointRegionClick
+{:#events:pointregionclick}
+
+Triggers when clicking on any Chart series points in the PivotChart.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description last">returns the current action of PivotClient control.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type">object</td>
+<td class="description last">returns the clicked Chart series points information.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description last">returns the model object bound with PivotClient control.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({
+        pointRegionClick: function (args) { }
+    });
+
+{% endhighlight %}
+  
+### axesLabelRendering
+{:#events:axeslabelrendering}
+
+Triggers before Chart label rendering in the PivotChart.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description last">returns the current action of PivotClient control.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type">object</td>
+<td class="description last">returns the Chart label information.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description last">returns the model object bound with PivotClient control.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({
+        axesLabelRendering: function (args) { }
+    });
+
+{% endhighlight %}
+ 
 ### drillThrough
 {:#events:drillthrough}
 
