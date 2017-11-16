@@ -2242,7 +2242,7 @@ To customize the card border color based on assigned task. Colors and correspond
 {% endhighlight %}
 
 ### cardSettings.externalDropTarget `string`
-{:#members:cardsettings-externalDropTarget}
+{:#members:cardsettings-externaldroptarget}
 
 This specifies the Kanban card to drop into particular target element.
 
