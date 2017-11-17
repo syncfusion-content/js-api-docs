@@ -389,7 +389,7 @@ Accepts the template design and assigns it to each list item present in the popu
 
 {% endhighlight %}
 
-### locale `strings`
+### locale `string`
 {:#members:locale}
 
 Overrides the global culture and localization value for this component. Default global culture is 'en-US'.
