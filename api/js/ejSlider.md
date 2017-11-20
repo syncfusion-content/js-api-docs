@@ -79,6 +79,9 @@ $('#slider').ejSlider();
 * module:ej.slider.js
 
 
+* module:ej.button.js
+
+
 
 
 ## Members
