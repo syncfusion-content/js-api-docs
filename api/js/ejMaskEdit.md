@@ -1360,7 +1360,7 @@ unmaskedValue</td>
 {% endhighlight %}
 
 
-### keydown
+### onKeyDown
 {:#events:keydown}
 
 
@@ -1439,7 +1439,7 @@ unmaskedValue</td>
         //keydown event for mask edit textbox control
         $("#mask").ejMaskEdit({
             maskFormat: "99-9999",
-            keydown: function (args) { }
+            onKeyDown: function (args) { }
         });
     </script>                  
 
@@ -1532,7 +1532,7 @@ unmaskedValue</td>
 {% endhighlight %}
 
 
-### keyup
+### keyUp
 {:#events:keyup}
 
 
@@ -1611,7 +1611,7 @@ unmaskedValue</td>
         //keyup event for mask edit textbox control
         $("#mask").ejMaskEdit({
             maskFormat: "99-99-9999",
-            keyup: function (args) { }
+            keyUp: function (args) { }
         });
     </script>
 
