@@ -16382,7 +16382,7 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
-###rowHover
+### rowHover
 {:#events:rowHover}
 
 Triggered while hover the grid row.
