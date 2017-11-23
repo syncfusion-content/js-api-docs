@@ -5335,10 +5335,10 @@ schObj.exportSchedule("ActionName","ExportToICS", 101); // To Export a single ap
 
 {% endhighlight %}
 
-### saveAsExcel(action, serverEvent, type)
-{:#methods:saveasexcel}
+### exportToExcel(action, serverEvent, type)
+{:#methods:exporttoexcel}
 
-Exports the appointments from the Schedule control.
+Exports the appointments from the Schedule control and saves it in a Excel file.
 
 <table class="params">
     <thead>
@@ -5362,7 +5362,7 @@ Exports the appointments from the Schedule control.
         <tr>
             <td class="name">type</td>
             <td class="type">boolean</td>
-            <td class="description">To export all appointments including individual occurrences or excluding the individual occurrences of recurrence appointments. </td>
+            <td class="description">Indicates whether to export all the appointments including or excluding the individual occurrences of the recurrence appointments. </td>
         </tr>
     </tbody>
 </table>
@@ -5409,8 +5409,8 @@ $('#Schedule').ejSchedule({
     }
 });
 var schObj = $("#Schedule").data("ejSchedule");
-schObj.saveAsExcel("ActionName", null, true); // To Export all the Appointments including ocurrences
-schObj.saveAsExcel("ActionName", null, false); // To Export all the Appointments excluding ocurrences
+schObj.exportToExcel("ActionName", null, true); // To Export all the appointments including occurrences by considering it as an individual objects.
+schObj.exportToExcel("ActionName", null, false); // To Export all the appointments with usual parent data for recurrence objects excluding the individual occurrences.
 </script>
 
 {% endhighlight %}
