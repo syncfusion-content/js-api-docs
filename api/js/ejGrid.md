@@ -141,7 +141,7 @@ $("#Grid").ejGrid({
 {% endhighlight %}
 
 ### allowFiltering `boolean`
-{:#members:allowfiltering}
+{:#members:allowFiltering}
 
 Gets or sets a value that indicates whether to enable dynamic filtering behavior on grid. Filtering can be used to limit the records displayed using required criteria and this can be further customized through &ldquo;filterSettings&rdquo; property
 
