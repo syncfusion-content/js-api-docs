@@ -884,7 +884,7 @@ Used to create visualized header for dropdown items
         });
     </script>
     <style type="text/css">
-        /* Sprite css for country flags and get the images from JS samples location */
+        /* Sprite CSS for country flags and get the images from JS samples location */
         .flag {
             background: url("images/autocomplete/flags.png") no-repeat;
             float: left;
@@ -1743,7 +1743,7 @@ By default, you can add any text or image to the DropDownList item. To customize
         });
     </script>
     <style type="text/css">
-        /* Sprite css for country flags and get the images from JS samples location */
+        /* Sprite CSS for country flags and get the images from JS samples location */
         .flag {
             background: url("images/autocomplete/flags.png") no-repeat;
             float: left;
