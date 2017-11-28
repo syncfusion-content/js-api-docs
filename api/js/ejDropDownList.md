@@ -630,6 +630,47 @@ This property is used to sort the Items in the DropDownList. By default, it sort
 
 {% endhighlight %}
 
+### loadOnDemand  `boolean`
+{:#members:loadOnDemand}
+
+This property is used to dropdownlist popup creation and list generation load on demand.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+ 
+    <input id="dropdown" type="text" /><div id="list">
+      <ul>
+            <li id="Art">Art</li>
+            <li id="Architecture">Architecture</li>
+            <li id="Biographies">Biographies</li>
+            <li id="ComputerIT">Computer IT</li>
+            <li id="Comics">Comics</li>
+            <li id="Cookery">Cookery</li>
+            <li id="Fiction">Fiction</li>
+            <li id="Health">Health</li>
+            <li id="Humanities">Humanities</li>
+            <li id="Environment">Environment</li>
+            <li id="Language">Language</li>
+            <li id="Business">Business</li>
+      </ul>
+    </div>
+    <script>
+        // Creates the DropDownList.
+        $('#dropdown').ejDropDownList(
+        { 
+            targetID: "list",  
+            loadOnDemand : true,   
+        });
+        
+    </script>
+
+{% endhighlight %}
+
 ### fields `object`
 {:#members:fields}
 
