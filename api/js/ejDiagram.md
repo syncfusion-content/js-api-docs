@@ -8143,6 +8143,33 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
+### nodes.gradient.LinearGradient.type `string`
+{:#members:nodes-gradient-lineargradient-type}
+
+Defines the type of gradient
+
+#### Default Value:
+
+* "linear"
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+// Apply the gradient from the left most position of node
+ var gradient = {
+     type: "linear", x1: 0, x2: 100, y1: 0, y2: 100, stops: [
+     { color: "white", offset: 0}, { color: "red", offset: 100 }]
+};
+var nodes = [{name: "node1", width: 100, height: 100, gradient : gradient}];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+
 ### nodes.gradient.LinearGradient.x1 `number`
 {:#members:nodes-gradient-lineargradient-x1}
 
@@ -8251,6 +8278,32 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 {:#members:nodes-gradient-radialgradient}
 
 Paints the node with radial color transitions. A focal point defines the beginning of the gradient, and a circle defines the end point of the gradient.
+
+### nodes.gradient.RadialGradient.type `string`
+{:#members:nodes-gradient-radialgradient-type}
+
+Defines the type of gradient
+
+#### Default Value:
+
+* "radial"
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var node = { name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
+             gradient:{ type:"radial", fx:50, fy:50, 
+		     cx:50, cy:50,
+             stops:[{color:"white", offset:0 }, {color:"red", offset:100}] } };
+
+$("#diagramcontent").ejDiagram({ nodes:[node] });
+</script>
+
+{% endhighlight %}
+
 
 ### nodes.gradient.RadialGradient.cx `number`
 {:#members:nodes-gradient-radialgradient-cx}
@@ -9075,18 +9128,6 @@ This property allows you to customize labels appearance using user-defined CSS.
 
 * ""
 
-### nodes.labels.constraints `enum`
-{:#members:nodes-labels-constraints}
-
-<ts ref = "ej.datavisualization.Diagram.LabelConstraints"/>
-
-Enables or disables the default behaviors of the label.
-
-#### Default Value:
-
-* ej.datavisualization.Diagram.LabelConstraints.None
-
-
 #### Example
 
 {% highlight html %}
@@ -9103,6 +9144,26 @@ var node = { name: "node", width:50,height:50,offsetX:50,offsetY:50,
 	         labels:[{text:"label",cssClass:"hoverText"}] };
 			 
 $("#diagramcontent").ejDiagram({ nodes:[node] });
+</script>
+
+{% endhighlight %}
+
+
+### nodes.labels.constraints `enum`
+{:#members:nodes-labels-constraints}
+
+<ts ref = "ej.datavisualization.Diagram.LabelConstraints"/>
+
+Enables or disables the default behaviors of the label.
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.LabelConstraints.None
+
+
+#### Example
+
+{% highlight html %}
 
 <div id="diagramcontent"></div>
 <script>
