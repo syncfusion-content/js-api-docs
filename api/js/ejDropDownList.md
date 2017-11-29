@@ -633,7 +633,7 @@ This property is used to sort the Items in the DropDownList. By default, it sort
 ### loadOnDemand  `boolean`
 {:#members:loadOnDemand}
 
-This property is used to dropdownlist popup creation and list generation load on demand.
+The property is used to determine whether the popup list is generated dynamically.
 
 #### Default Value
 
