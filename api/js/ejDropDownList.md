@@ -80,6 +80,8 @@ $('#dropdown').ejDropDownList();
 
 * module:ej.draggable.js
 
+* module:ej.globalize.js
+
 * module:ej.dropdownlist.js
 
 * module:ej.checkbox.js
@@ -628,6 +630,47 @@ This property is used to sort the Items in the DropDownList. By default, it sort
 
 {% endhighlight %}
 
+### loadOnDemand  `boolean`
+{:#members:loadOnDemand}
+
+The property is used to determine whether the popup list is generated dynamically.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+ 
+    <input id="dropdown" type="text" /><div id="list">
+      <ul>
+            <li id="Art">Art</li>
+            <li id="Architecture">Architecture</li>
+            <li id="Biographies">Biographies</li>
+            <li id="ComputerIT">Computer IT</li>
+            <li id="Comics">Comics</li>
+            <li id="Cookery">Cookery</li>
+            <li id="Fiction">Fiction</li>
+            <li id="Health">Health</li>
+            <li id="Humanities">Humanities</li>
+            <li id="Environment">Environment</li>
+            <li id="Language">Language</li>
+            <li id="Business">Business</li>
+      </ul>
+    </div>
+    <script>
+        // Creates the DropDownList.
+        $('#dropdown').ejDropDownList(
+        { 
+            targetID: "list",  
+            loadOnDemand : true,   
+        });
+        
+    </script>
+
+{% endhighlight %}
+
 ### fields `object`
 {:#members:fields}
 
@@ -841,7 +884,7 @@ Used to create visualized header for dropdown items
         });
     </script>
     <style type="text/css">
-        /* Sprite css for country flags and get the images from JS samples location */
+        /* Sprite CSS for country flags and get the images from JS samples location */
         .flag {
             background: url("images/autocomplete/flags.png") no-repeat;
             float: left;
@@ -1700,7 +1743,7 @@ By default, you can add any text or image to the DropDownList item. To customize
         });
     </script>
     <style type="text/css">
-        /* Sprite css for country flags and get the images from JS samples location */
+        /* Sprite CSS for country flags and get the images from JS samples location */
         .flag {
             background: url("images/autocomplete/flags.png") no-repeat;
             float: left;

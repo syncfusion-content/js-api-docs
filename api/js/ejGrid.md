@@ -141,7 +141,7 @@ $("#Grid").ejGrid({
 {% endhighlight %}
 
 ### allowFiltering `boolean`
-{:#members:allowFiltering}
+{:#members:allowfiltering}
 
 Gets or sets a value that indicates whether to enable dynamic filtering behavior on grid. Filtering can be used to limit the records displayed using required criteria and this can be further customized through &ldquo;filterSettings&rdquo; property
 
@@ -14902,7 +14902,7 @@ Triggered every time a request is made to access particular header cell informat
 </thead>
 <tbody>
 <tr>
-<td class="name">headerCellMerge</td>
+<td class="name">headerCellMerge(startIndex:number, count:number)</td>
 <td class="type"><span class="param-type">void</span></td>
 <td class="description last">Method to merge the header cells.</td>
 </tr>
@@ -16382,6 +16382,72 @@ $("#Grid").ejGrid({
 </script>
 {% endhighlight %}
 
+### rowHover
+{:#events:rowHover}
+
+Triggered while hover the grid row.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><ts name="ej.Grid.Model"/><span class="param-type">Object</span></td>
+<td class="description last">Arguments when rowHover event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">row</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the hovered row.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the hovered row index.</td>
+</tr>
+<tr>
+<td class="name">rowData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the hovered record details</td>
+</tr>
+<tr>
+<td class="name">cell</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Returns the hovered row cell</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+  
+
+####Example
+{:.example}
+
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   rowHover: function (args) {}
+});
+</script>
+{% endhighlight %}
 
 ### templateRefresh
 {:#events:templaterefresh}

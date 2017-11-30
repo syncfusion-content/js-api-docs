@@ -117,6 +117,49 @@ Gets or sets a value that indicates whether to enable allowDragAndDrop behavior 
 
 {% endhighlight %}
 
+### allowExternalDragAndDrop `boolean`
+{:#members:allowexternaldraganddrop}
+
+Gets or sets a value that indicates whether to enable drag and drop behavior between Kanban controls.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanban = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanban);
+        $("#Kanban").ejKanban({
+            dataSource: data,
+            allowExternalDragAndDrop: true,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+                content: "Summary",
+            },
+        });
+    });
+    </script>
+
+{% endhighlight %}
+
 ### allowTitle `boolean`
 {:#members:allowtitle}
 
@@ -2193,6 +2236,73 @@ To customize the card border color based on assigned task. Colors and correspond
                 },
 
             });
+    });
+    </script>
+  
+{% endhighlight %}
+
+### cardSettings.externalDropTarget `string`
+{:#members:cardsettings-externaldroptarget}
+
+This specifies the Kanban card to drop into particular target element.
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% highlight html %}
+ 
+    <div id="Kanban"></div>
+    <div id="DroppedKanban"></div>
+    <script type="text/javascript">
+    window.kanban = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy", Type: "UG" },
+        { Id: 2, Status: "Close", Summary: "Task 2", Assignee: "Andrew", Type: "Improvement" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+    ];
+    window.droppedKanban=[
+                 { Status: "Open", Id: "8", Summary: "Fix the issues reported in safari browser."},
+                 { Status: "InProgress", Id: "10", Summary: "Arrange a web meeting with the customer to get the login page requirements." },
+                 { Status: "Close", Id: "11", Summary: "Login page validation."},
+        ];
+    $(function () {
+        var data = ej.DataManager(window.kanban)
+        var droppedData = ej.DataManager(window.droppedKanban)
+        $("#Kanban").ejKanban(
+            {
+                dataSource: data,
+                columns: [
+                    { headerText: "Backlog", key: "Open" },
+                    { headerText: "In Progress", key: "InProgress" },
+                    { headerText: "Done", key: "Close" }
+                ],
+                keyField: "Status",
+                fields: {
+                    primaryKey: "Id",
+                    content: "Summary"
+                },
+                allowExternalDragAndDrop: true,
+			    cardSettings:{
+				    externalDropTarget: "#DroppedKanban"
+				},
+            });
+            $("#DroppedKanban").ejKanban(
+                {
+                    dataSource: droppedData,
+                    columns: [
+                        { headerText: "Backlog", key: "Open" },
+                        { headerText: "In Progress", key: "InProgress" },
+                        { headerText: "Done", key: "Close" }
+                    ],                                                           			
+                    keyField: "Status",
+					allowTitle: true,
+					fields: {
+					    content: "Summary",
+					    primaryKey: "Id"
+					},
+                });
     });
     </script>
   
@@ -5467,6 +5577,61 @@ Gets or sets a value that indicates whether to customizing the user interface (U
     });
     </script>
   
+{% endhighlight %}
+
+### showColumnWhenEmpty `boolean`
+{:#members:showcolumnwhenempty}
+
+Gets or sets a value that indicates whether to render kanban columns using without data source.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanban = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+	var data = ej.DataManager(window.kanban).executeLocal(ej.Query().take(0));
+    $(function () {
+        var data = ej.DataManager(window.kanban);
+        $("#Kanban").ejKanban({
+            dataSource: data,
+            showColumnWhenEmpty: true,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+                content: "Summary",
+            },
+			editSettings: {
+                editItems: [
+                    { field: "Id", editType: ej.Kanban.EditingType.Text,validationRules: { required: true, number: true }},
+                    { field: "Status", editType: ej.Kanban.EditingType.Text },
+                    { field: "Assignee", editType: ej.Kanban.EditingType.Text },
+                    { field: "Estimate", editType: ej.Kanban.EditingType.Numeric, editParams: { decimalPlaces: 2 },validationRules: {range: [0, 1000]}},
+                    { field: "Summary", editType: ej.Kanban.EditingType.TextArea,validationRules: { required: true}}
+					],
+                    allowEditing: true,
+                    allowAdding: true
+                }
+        });
+    });
+    </script>
+
 {% endhighlight %}
 
 ## Methods

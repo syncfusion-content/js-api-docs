@@ -323,9 +323,7 @@ Allows to set the format for the column headers.
 ### dataSource.columns.formatString `string`
 {:#members:datasource-columns-formatstring}
 
-This property sets type of display of date.
-
->**Note**: This is applicable only when the format is set as "date".
+This property is set to display the formatted values with format types in PivotGrid.
 
 #### Default Value: ""
 
@@ -685,9 +683,7 @@ Allows to set the format for the row headers.
 ### dataSource.rows.formatString `string`
 {:#members:datasource-rows-formatstring}
 
-This property sets type of display of date.
-
->**Note**: This is applicable only when the format is set as "date".
+This property is set to display the formatted values with format types in PivotGrid.
 
 #### Default Value: ""
 
@@ -1016,9 +1012,7 @@ Allows to set the format for the values.
 ### dataSource.values.formatString `string`
 {:#members:datasource-values-formatstring}
 
-This property sets type of display of date.
-
->**Note**: This is applicable only when the format is set as "date".
+This property is set to display the formatted values with format types in PivotGrid.
 
 #### Default Value: ""
 
@@ -1892,7 +1886,7 @@ Allows the user to adjust the width of the columns dynamically within given widg
 
 Allows the user to fit the width of the column based on its maximum text width.
 
-#### Default Value: false
+#### Default Value: true
 
 **Example:**
 

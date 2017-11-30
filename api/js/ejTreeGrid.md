@@ -211,6 +211,26 @@ Enables or disables the ability to sort the rows based on a single field/column 
         
 {% endhighlight %}
 
+### allowSearching `boolean`
+{:#members:allowsearching}
+
+Enables or disables the toolbar searching in TreeGrid.
+
+
+#### Default Value
+
+* false
+
+
+#### Example
+
+
+{% highlight html %}
+
+        $("#treegrid").ejTreeGrid({ allowSearching : true });
+        
+{% endhighlight %}
+
 ### allowPaging `boolean`
 {:#members:allowpaging}
 
@@ -726,6 +746,44 @@ Specifies the type of the editor control to be used to filter the rows.
 
 {% endhighlight %}
 
+### columns.filterType `enum`
+{:#members:columns-filtertype}
+
+<ts name="ej.TreeGrid.FilterType"/>
+
+Gets or sets a value to render either excel or menu filtering in TreeGrid column filtering.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Menu</td>
+<td class="description">Specifies the filter type as menu.</td>
+</tr>
+<tr>
+<td class="name">Excel</td>
+<td class="description">Specifies the filter type as excel.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* null
+
+#### Example
+
+
+{% highlight html %}
+         
+        $("#treegrid").ejTreeGrid({columns: [{ headerText: "TaskName",filterType:"excel"}]});
+
+{% endhighlight %}
 
 ### columns.headerText `string`
 {:#members:columns-headertext}
@@ -1702,6 +1760,21 @@ Specifies the template ID for the custom dialog.
 
 {% endhighlight %}
 
+### editSettings.showDeleteConfirmDialog `boolean`
+
+{:#members:editsettings-showdeleteconfirmdialog }
+
+Enable or disable the confirmation dialog while deleting the record.
+
+#### Default Value
+
+* false
+
+#### Example
+{% highlight html %}
+        $("#treegrid").ejTreeGrid({  editSettings:{showDeleteConfirmDialog  : true} });     
+{% endhighlight %}
+
 ### enableAltRow `boolean`
 {:#members:enablealtrow}
 
@@ -2000,6 +2073,69 @@ $("#treegrid").ejTreeGrid({
             predicate: "and",
             operator: "startswith"
         }]
+    },
+});                   
+
+{% endhighlight %}
+
+### filterSettings.maxFilterChoice `number`
+{:#members:filtersettings-maxfilterchoice}
+
+Gets or sets a value that indicates the maximum number of filter choices that can be showed in the excel styled filter menu.
+
+#### Default Value
+
+* 1000
+
+#### Example
+
+{% highlight html %}
+   
+$("#treegrid").ejTreeGrid({
+    filterSettings: {
+        maxFilterChoice:500,
+    },
+});                   
+
+{% endhighlight %}
+
+### filterSettings.enableCaseSensitivity `boolean`
+{:#members:filtersettings-enablecasesensitivity}
+
+Gets or sets a value that indicates to perform the filter operation with case sensitive in excel styled filter menu mode.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+   
+$("#treegrid").ejTreeGrid({
+    filterSettings: {
+        enableCaseSensitivity:true,
+    },
+});                   
+
+{% endhighlight %}
+
+### filterSettings.enableComplexBlankFilter `boolean`
+{:#members:filtersettings-enablecomplexblankfilter}
+
+Enables or disables the ability to filter the columns with empty, null and undefined values.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+   
+$("#treegrid").ejTreeGrid({
+    filterSettings: {
+        enableComplexBlankFilter:false,
     },
 });                   
 
@@ -2986,6 +3122,96 @@ $("#treeGrid").ejTreeGrid({
 });
 </script> 
 
+{% endhighlight %}
+
+### searchSettings `object`
+{:#members:searchsettings}
+
+Specifies the toolbar searching customizations.
+
+### searchSettings.fields `array`
+{:#members:searchsettings-fields}
+Gets or Sets a specific column for searching the tree grid content.
+
+#### Default Value
+
+* []
+
+#### Example
+
+{% highlight html %}
+                 
+$("#treegrid").ejTreeGrid({
+    searchSettings: {
+            fields:["TaskId","TaskName"],
+    }
+});
+{% endhighlight %}
+
+### searchSettings.key `string`
+{:#members:searchsettings-key}
+Gets or Sets a key word for searching the tree grid content.
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% highlight html %}
+                 
+$("#treegrid").ejTreeGrid({
+    searchSettings: {
+            key:"task 1",
+    }
+});
+{% endhighlight %}
+
+### searchSettings.operator `string`
+{:#members:searchsettings-operator}
+
+Specifies the operator for the search key words in toolbar searching.
+
+**List of enum type operators**
+
+1. ej.FilterOperators.contain
+2. ej.FilterOperators.equal
+3. ej.FilterOperators.notEqual
+4. ej.FilterOperators.startsWith
+5. ej.FilterOperators.endsWith
+
+#### Default Value
+
+* "contains"
+
+#### Example
+
+{% highlight html %}
+                 
+$("#treegrid").ejTreeGrid({
+    searchSettings: {
+            operator:"startsWith",
+    }
+});
+{% endhighlight %}
+
+### searchSettings.ignoreCase `boolean`
+{:#members:searchsettings-ignorecase}
+Enables or disables the case sensitivity while searching.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+                 
+$("#treegrid").ejTreeGrid({
+    searchSettings: {
+            ignoreCase:false,
+    }
+});
 {% endhighlight %}
 
 ### showSummaryRow `boolean`
@@ -5796,95 +6022,6 @@ $("#TreeGrid").ejTreeGrid({
 </script>
 {% endhighlight %}
 
-
-
-### recordClick
-{:#events:recordclick}
-
-Triggered while clicking a row, even when allowSelection property is disabled.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description">Arguments when recordClick event is triggered.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">cell</td>
-<td class="type">object</td>
-<td class="description">Returns the element of clicked cell.</td>
-</tr>
-<tr>
-<td class="name">cellIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the index of the clicked cell.</td>
-</tr>
-<tr>
-<td class="name">cellValue</td>
-<td class="type">object</td>
-<td class="description">Returns the data of clicked cell.</td>
-</tr>
-<tr>
-<td class="name">row</td>
-<td class="type">object</td>
-<td class="description">Returns the element of the clicked row.</td>
-</tr>
-<tr>
-<td class="name">rowIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the index of the clicked row.</td>
-</tr>
-<tr>
-<td class="name">columnName</td>
-<td class="type">string</td>
-<td class="description">Returns the column name of the clicked cell.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-#### Example
-
-
-
-{% highlight html %}
- 
-<div id="treegrid"></div> 
-<script>
-$("#treegrid").ejTreeGrid({
-   recordClick: function (args) {}
-});
-</script>
-{% endhighlight %}
-
-
 ### columnDragStart
 {:#events:columndragstart}
 
@@ -7237,6 +7374,11 @@ Triggered while dragging a row in TreeGrid control
 <td class="description">Returns the row index which we start to drag.</td>
 </tr>
 <tr>
+<td class="name">dropPosition</td>
+<td class="type">string</td>
+<td class="description">Returns the drop position details such as insertAbove,insertBelow,insertAsChild and invalidPosition</td>
+</tr>
+<tr>
 <td class="name">targetRow</td>
 <td class="type">object</td>
 <td class="description">Returns the row on which we are dragging.</td>
@@ -7818,7 +7960,177 @@ $("#treegrid").ejTreeGrid({
 </script>
 {% endhighlight %}
 
+### recordClick
+{:#events:recordclick}
 
+Triggered while clicking a row, even when allowSelection property is disabled.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when recordClick event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">cell</td>
+<td class="type">object</td>
+<td class="description">Returns the element of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the clicked cell.</td>
+</tr>
+<tr>
+<td class="name">cellValue</td>
+<td class="type">object</td>
+<td class="description">Returns the data of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">row</td>
+<td class="type">object</td>
+<td class="description">Returns the element of the clicked row.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the clicked row.</td>
+</tr>
+<tr>
+<td class="name">columnName</td>
+<td class="type">string</td>
+<td class="description">Returns the column name of the clicked cell.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
+$("#treegrid").ejTreeGrid({
+   recordClick: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+### recordDoubleClick
+{:#events:recorddoubleclick}
+
+Triggered during record double click action, even when allowSelection property is disabled.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when recordDoubleClick event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">cell</td>
+<td class="type">object</td>
+<td class="description">Returns the element of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">cellIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the clicked cell.</td>
+</tr>
+<tr>
+<td class="name">cellValue</td>
+<td class="type">object</td>
+<td class="description">Returns the data of clicked cell.</td>
+</tr>
+<tr>
+<td class="name">row</td>
+<td class="type">object</td>
+<td class="description">Returns the element of the clicked row.</td>
+</tr>
+<tr>
+<td class="name">rowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the index of the clicked row.</td>
+</tr>
+<tr>
+<td class="name">columnName</td>
+<td class="type">string</td>
+<td class="description">Returns the column name of the clicked cell.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
+$("#treegrid").ejTreeGrid({
+   recordDoubleClick: function (args) {}
+});
+</script>
+{% endhighlight %}
 
 ### toolbarClick
 {:#events:toolbarclick}
