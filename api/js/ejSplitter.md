@@ -1333,7 +1333,7 @@ type</td>
 <tr>
 <td class="name">
 targetElement</td>
-<td class="type"><span class="param-type">data</span></td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description">returns the target element from which click action is triggered.</td>
 </tr>
 </tbody>
