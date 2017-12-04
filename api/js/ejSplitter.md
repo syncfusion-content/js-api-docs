@@ -1289,6 +1289,8 @@ $("#innerSplitter").ejSplitter({
 ### clickOnExpander
 {:#events:clickonexpander}
 
+Triggered when we click on the template icon. (Note: This will work only when expanderTemplate is defined.)
+
 <table class="params">
 <thead>
 <tr>
