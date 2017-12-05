@@ -7544,8 +7544,14 @@ This method is used to set a cell type from the specified range of cells in the 
 <script>
 // Initialize the Spreadsheet object.
 var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
-// To add cell types in Spreadsheet.
+// To add button cell type in Spreadsheet.
 excelObj.XLCellType.addCellTypes("A1:B3", {"type" : ej.Spreadsheet.CustomCellType.Button, "text" : "Button1", "background-color" : "green" },  1);
+// To add dropdownlist cell type in spreadsheet.
+excelObj.XLCellType.addCellTypes("A1:B3", { 'type': ej.Spreadsheet.CustomCellType.DropDownList, 'dataSourceRange': 'A2:A23', 'dataSourceSheetIndex': 1 }, 2);
+//To add checkbox cell type in spreadsheet.
+excelObj.XLCellType.addCellTypes("A1:B3", { 'type': ej.Spreadsheet.CustomCellType.CheckBox, isChecked:true});
+//To add date picker cell type in spreadsheet.
+xlObj.XLCellType.addCellTypes("B1", { 'type': ej.Spreadsheet.CustomCellType.DatePicker, 'value': '2/12/2016'});
 </script>
 
 {% endhighlight %}
@@ -9361,6 +9367,40 @@ excelObj.XLFormat.format({ "type": "longdate" }, "D1");
 excelObj.XLFormat.format({ "type": "time", "formatStr":"{0:hh:mm:ss tt}" }, "E1");
 excelObj.XLFormat.format({ "type": "scientific" }, "F1");
 excelObj.XLFormat.format({ "type": "fraction" }, "G1");
+</script>
+
+{% endhighlight %}
+
+### XLFormat.getFormatHashCode(style)
+{:#methods:xlformat-getformathashcode}
+
+This method is used to get the hashcode from the given style object in spreadsheet.  
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">style</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Pass the style object that you want to get the hashcode.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLFormat.getFormatHashCode({"font-family": "Arial Black", "font-weight": "normal", "font-style": "Italic", "font-size": "9pt", "text-decoration": "line-through",color:"#FFFF00"}); // To get the hashcode from the given style object
 </script>
 
 {% endhighlight %}
