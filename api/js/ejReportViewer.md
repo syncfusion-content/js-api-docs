@@ -1936,12 +1936,43 @@ Fires when click the View Report Button.
 {% endhighlight %}
 
 
+### serviceAuthorizationToken `string`
+{:#members:serviceAuthorizationToken}
 
+Specifies the token for authorizing reporting service url to process the reports.
 
+#### Default Value
 
+* empty
 
+#### Example
 
+{% highlight html %}
 
+<div id="reportviewer"></div> 
+<script>
+      $(function () {
+            var dataValue = "";
+            var apiRequest = new Object();
+            apiRequest.password = "demo";
+            apiRequest.userid = "guest";
+            $.ajax({
+                type: "POST",
+                url: "http://reportserver.syncfusion.com/api/get-user-key",
+                data: apiRequest,
+                success: function (data) {
+                    dataValue = data.Token;
+                    var token = JSON.parse(dataValue);
+                    $("#reportviewer").ejReportViewer(
+                        {
+                            reportServiceUrl: "http://reportserver.syncfusion.com/ReportService/api/Viewer",
+                            serviceAuthorizationToken: token["token_type"] + " " + token["access_token"],
+                            reportPath: '/Sample Reports/Company Sales'
+                        });
+                }
+            });
+        });            
+</script>
 
-
+{% endhighlight %}
 
