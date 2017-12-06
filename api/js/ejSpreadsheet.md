@@ -9083,7 +9083,7 @@ This method is used to get the column index with specified field value in Spread
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object.
-var spreadsheetObj = $("#Spreadsheet").data("ejSpreadsheet");
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To get the column index
 excelObj.XLEdit.getColumnIndexByField("D");
 </script>
@@ -9847,7 +9847,7 @@ excelObj.XLFormat.getFormatClass(excelObj.getCell(1,1)[0].className);// to get t
 
 {% endhighlight %}
 
-### XLFormat.getFormatFromHashCode(code)
+### XLFormat.getFormatFromHashCode(hashCode)
 {:#methods:xlformat-getformatfromhashcode}
 
 This method is used to get the format from the given hashcode in spreadsheet.  
@@ -9862,7 +9862,7 @@ This method is used to get the format from the given hashcode in spreadsheet.
 </thead>
 <tbody>
 <tr>
-<td class="name">code</td>
+<td class="name">hashCode</td>
 <td class="type"><span class="param-type">String</span></td>
 <td class="description">Pass the hashcode.</td>
 </tr>
