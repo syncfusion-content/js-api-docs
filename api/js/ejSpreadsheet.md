@@ -4023,6 +4023,22 @@ $("#Spreadsheet").ejSpreadsheet("addNewSheet");
 
 {% endhighlight %}
 
+### blankWorkbook()
+{:#methods:blankworkbook}
+
+This method is used to blank the workbook in Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+//To blank the workbook in Spreadsheet
+excelObj.blankWorkbook();
+</script>
+
+{% endhighlight %}
 
 ### clearAll(\[range\])
 {:#methods:clearall}
@@ -4845,6 +4861,58 @@ $("#Spreadsheet").ejSpreadsheet("getAutoFillElem");
 
 {% endhighlight %}
 
+### getAlphaRange(sRIndex, sCIndex, eRIndex, eCIndex)
+{:#methods:getalpharange}
+
+This method is used to get the alpha range of the given index in Spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">sRIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the start row index.</td>
+</tr>
+<tr>
+<td class="name">sCIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the start column index.</td>
+</tr>
+<tr>
+<td class="name">eRIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the end row index.</td>
+</tr>
+<tr>
+<td class="name">eCIndex</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass the end column index.</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+String
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize Spreadsheet object.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.getAlphaRange(2,3,4,5); // Get the alpha range for the given index
+</script>
+
+{% endhighlight %}
+
 ### getCell(rowIdx, colIdx, \[sheetIdx\])
 {:#methods:getcell}
 
@@ -5075,6 +5143,41 @@ $("#Spreadsheet").ejSpreadsheet("getHyperlink", excelObj.getCell(1, 1, 1));
 
 {% endhighlight %}
 
+### getObjectKeys(obj)
+{:#methods:getobjectkeys}
+
+This method is used to get the keys from the given object in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">obj</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Pass the Object</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+Array
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize Spreadsheet object.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.getObjectKeys({"font-family": "Arial Black", "font-weight": "normal", "font-style": "Italic", "font-size": "9pt", "text-decoration": "line-through",color:"#FFFF00"}); // To get the keys from the given object.
+</script>
+
+{% endhighlight %}
+
 ### getRange(range, sheetIdx, \[skipHiddenRow\])
 {:#methods:getrange}
 
@@ -5169,6 +5272,103 @@ excelObj.getRangeData({range: [2, 6, 2, 6], property: ["value", "value2", "forma
 <script>
 // To get the cells data of specified range
 $("#Spreadsheet").ejSpreadsheet("getRangeData", {range: [2, 6, 2, 6], property: ["value", "value2", "format"], sheetIdx: 1});        
+</script>
+
+{% endhighlight %}
+
+### getRangeDataAsJSON(startcell, endcell, \[skipHiddenRow\], sheetIdx)
+{:#methods:getrangedataasjson}
+
+This method is used to get the data as JSON object from the specified range.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">startcell</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass the start cell.</td>
+</tr>
+<tr>
+<td class="name">endcell</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass the end cell.</td>
+</tr>
+<tr>
+<td class="name">skipHiddenRow</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description"><span class="optional">Optional.</span> Pass {{'`true`' | markdownify}}, if you want to skip the hidden rows.</td>
+</tr>
+<tr>
+<td class="name">sheetIdx</td>
+<td class="type"><span class="param-type">Number</span></td>
+<td class="description">Pass the sheetIndex.</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+Object
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize Spreadsheet object.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.getRangeDataAsJSON({ rowIndex:2,colIndex:2 },{ rowIndex:4,colIndex:4 }, true, 1); // To get the data as JSON for a given range of cells.
+</script>
+
+{% endhighlight %}
+
+### getRangeDataAsObject(startcell, endcell, \[skipHiddenRow\])
+{:#methods:getrangedataasobject}
+
+This method is used to get the data as object in the specified range.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">startcell</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass the start cell.</td>
+</tr>
+<tr>
+<td class="name">endcell</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Pass the end cell.</td>
+</tr>
+<tr>
+<td class="name">skipHiddenRow</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description"><span class="optional">Optional.</span> Pass {{'`true`' | markdownify}}, if you want to skip the hidden rows.</td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+Object
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// Initialize Spreadsheet object.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.getRangeDataAsObject({ rowIndex:2,colIndex:2 },{ rowIndex:4,colIndex:4 }, true, 1); // To get the data as object from the given cell
 </script>
 
 {% endhighlight %}
@@ -8857,6 +9057,39 @@ $("#Spreadsheet").ejSpreadsheet("XLEdit").editCell(1, 1, true);
 
 {% endhighlight %}
 
+### XLEdit.getColumnIndexByField(field)
+{:#methods:xledit-getcolumnindexbyfield}
+
+This method is used to get the column index with specified field value in Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">field</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the column field value</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object.
+var spreadsheetObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To get the column index
+excelObj.XLEdit.getColumnIndexByField("D");
+</script>
+
+{% endhighlight %}
+
 ### XLEdit.getPropertyValue(rowIdx, colIdx, \[prop\], \[sheetIdx\])
 {:#methods:xledit-getpropertyvalue}
 
@@ -9061,6 +9294,55 @@ excelObj.XLEdit.updateCellValue({rowIndex: 1, colIndex: 1}, "product", className
 
 {% endhighlight %}
 
+### XLEdit.updateValue(aRange, val, formatClass, sheetIdx)
+{:#methods:xledit-updatevalue}
+
+This method is used to update a particular cell value and its format in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">aRange</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the range.</td>
+</tr>
+<tr>
+<td class="name">val</td>
+<td class="type"><span class="param-type">string|number</span></td>
+<td class="description">Pass the cell value.</td>
+</tr>
+<tr>
+<td class="name">formatClass</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the class name to update format. </td>
+</tr>
+<tr>
+<td class="name">sheetIdx</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Pass sheet index.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet"), className;
+className = excelObj.XLFormat.getFormatHashCode({ color: "#FF0000" });
+// To update the specified values in a particular cell.
+excelObj.XLEdit.updateValue("A1:B3", "product", className, 1);
+</script>
+
+{% endhighlight %}
+
 ### XLExport
 {:#methods:xlexport}
 
@@ -9239,6 +9521,86 @@ excelObj.XLFormat.addFontFamily("Gisha"); // To add the font name into font fami
 
 {% endhighlight %}
 
+### XLFormat.addNewCustomStyle(styleName, options)
+{:#methods:xlformat-addnewcustomstyle}
+
+This method is used to add the new custom cell style in spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">styleName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the style name.</td>
+</tr>
+<tr>
+<td class="name">options</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Pass the format object.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To add the new custom cell style
+excelObj.XLFormat.addNewCustomStyle("StyleName",{NumFormat:{type: "currency", decimalPlaces: 4, thousandSeparator: false, formatStr: "{0:C4}"},style:{"background-color": "#cccbcb", color: "#f16667", "font-family": "Arial", "font-size": "16pt", "font-style": "normal", "font-weight": "Bold","text-decoration": "line-through"}})
+</script>
+
+{% endhighlight %}
+
+### XLFormat.applyCustomCellStyle(styleName, range)
+{:#methods:xlformat-applycustomcellstyle}
+
+This method is used to apply the custom cell style in the specified range.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">styleName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the style name.</td>
+</tr>
+<tr>
+<td class="name">range</td>
+<td class="type"><span class="param-type">String</span></td>
+<td class="description">Pass the range to applied.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To apply the custom cell style to specified range
+excelObj.XLFormat.applyCustomCellStyle("StyleName","A1:B4");
+</script>
+
+{% endhighlight %}
+
 ### XLFormat.convertToRange(options)
 {:#methods:xlformat-converttorange}
 
@@ -9315,6 +9677,40 @@ excelObj.XLFormat.createTable(tableObj, "A1:C6");
 
 {% endhighlight %}
 
+### XLFormat.deleteCustomStyle(styleName)
+{:#methods:xlformat-deletecustomstyle}
+
+This method is used to delete the added custom cell style in spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">styleName</td>
+<td class="type"><span class="param-type">String</span></td>
+<td class="description">Pass the cell style name</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLFormat.deleteCustomStyle("StyleName") // To delete the custom cell style.
+</script>
+
+{% endhighlight %}
+
 ### XLFormat.format(formatObj, range)
 {:#methods:xlformat-format}
 
@@ -9371,6 +9767,120 @@ excelObj.XLFormat.format({ "type": "fraction" }, "G1");
 
 {% endhighlight %}
 
+### XLFormat.getBorderFromHashCode(code, isComplete)
+{:#methods:xlformat-getborderfromhashcode}
+
+This method is used to get the border from hashcode in the Spreadsheet.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">code</td>
+<td class="type"><span class="param-type">String</span></td>
+<td class="description">Pass the border hashcode.</td>
+</tr>
+<tr>
+<td class="name">isComplete</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description"><span class="optional">Optional.</span> pass `true` to get the complete border object </td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+Object
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To get the border object from the Spreadsheet
+excelObj.XLFormat.getBorderFromHashCode("e-border1N1N6N1N1N6N210000001N1N6N",true);
+</script>
+
+{% endhighlight %}
+
+### XLFormat.getFormatClass(classname, isborder)
+{:#methods:xlformat-getformatclass}
+
+This method is used to get the format class in spreadsheet.  
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">classname</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the style name.</td>
+</tr>
+<tr>
+<td class="name">isborder</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description"><span class="optional">Optional.</span> Pass true to get the border class.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLFormat.getFormatClass(excelObj.getCell(1,1)[0].className);// to get the format class
+</script>
+
+{% endhighlight %}
+
+### XLFormat.getFormatFromHashCode(code)
+{:#methods:xlformat-getformatfromhashcode}
+
+This method is used to get the format from the given hashcode in spreadsheet.  
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">code</td>
+<td class="type"><span class="param-type">String</span></td>
+<td class="description">Pass the hashcode.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLFormat.getFormatFromHashCode(excelObj.XLFormat.getFormatClass(excelObj.getCell(1,1)[0].className)); // To get the format from the given hashcode
+</script>
+
+{% endhighlight %}
+
 ### XLFormat.getFormatHashCode(style)
 {:#methods:xlformat-getformathashcode}
 
@@ -9401,6 +9911,84 @@ This method is used to get the hashcode from the given style object in spreadshe
 // Initialize the Spreadsheet object.
 var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 excelObj.XLFormat.getFormatHashCode({"font-family": "Arial Black", "font-weight": "normal", "font-style": "Italic", "font-size": "9pt", "text-decoration": "line-through",color:"#FFFF00"}); // To get the hashcode from the given style object
+</script>
+
+{% endhighlight %}
+
+### XLFormat.getHashCodeClassAsArray(range)
+{:#methods:xlformat-gethashcodeclassasarray}
+
+This method is used to get the format as array from the given specified range in spreadsheet.  
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">range</td>
+<td class="type"><span class="param-type">String</span></td>
+<td class="description">Pass the range.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLFormat.getHashCodeClassAsArray("A1:B4"); // To get the format as an array from the given range.
+</script>
+
+{% endhighlight %}
+
+### XLFormat.modifyCustomStyle(oldStyleName, options, newStyleName)
+{:#methods:xlformat-modifycustomstyle}
+
+This method is used to modify the added custom cell style in spreadsheet. 
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">oldStyleName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">pass the old style name</td>
+</tr>
+<tr>
+<td class="name">options</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">pass the format object to be modified</td>
+</tr>
+<tr>
+<td class="name">newStyleName</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">pass the new style name</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLFormat.modifyCustomStyle("NewStyle",{ NumFormat: {type: "currency", decimalPlaces: 4, thousandSeparator: false, formatStr: "{0:C4}"},style:{color: "#f16667", "font-family": "Arial", "font-size": "16pt", "font-weight": "Bold"}},"StyleName")); // To modify the custom cell style.
 </script>
 
 {% endhighlight %}
