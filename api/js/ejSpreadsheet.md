@@ -5276,57 +5276,6 @@ $("#Spreadsheet").ejSpreadsheet("getRangeData", {range: [2, 6, 2, 6], property: 
 
 {% endhighlight %}
 
-### getRangeDataAsJSON(startcell, endcell, \[skipHiddenRow\], sheetIdx)
-{:#methods:getrangedataasjson}
-
-This method is used to get the data as JSON object from the specified range.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">startcell</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">Pass the start cell.</td>
-</tr>
-<tr>
-<td class="name">endcell</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">Pass the end cell.</td>
-</tr>
-<tr>
-<td class="name">skipHiddenRow</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description"><span class="optional">Optional.</span> Pass {{'`true`' | markdownify}}, if you want to skip the hidden rows.</td>
-</tr>
-<tr>
-<td class="name">sheetIdx</td>
-<td class="type"><span class="param-type">Number</span></td>
-<td class="description">Pass the sheetIndex.</td>
-</tr>
-</tbody>
-</table>
-
-#### Returns:
-Object
-
-#### Example
-
-{% highlight html %}
-<div id="Spreadsheet"></div> 
-<script>
-// Initialize Spreadsheet object.
-var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
-excelObj.getRangeDataAsJSON({ rowIndex:2,colIndex:2 },{ rowIndex:4,colIndex:4 }, true, 1); // To get the data as JSON for a given range of cells.
-</script>
-
-{% endhighlight %}
-
 ### getRangeDataAsObject(startcell, endcell, \[skipHiddenRow\])
 {:#methods:getrangedataasobject}
 
