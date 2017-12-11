@@ -13668,7 +13668,7 @@ Triggered when save the edited cell.
 <td class="description">Returns the Spreadsheet model.</td>
 </tr>
 <tr>
-<td class="name">pValue</td>
+<td class="name">prevValue</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Returns the cell previous value.</td>
 </tr>
