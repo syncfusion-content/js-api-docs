@@ -159,7 +159,7 @@ Sets the root CSS class for Editors which allow us to customize the appearance.
 
 
 
-Specifies the number of digits that should be allowed after the decimal point.
+Specifies the number of digits that is allowed after the decimal point. When the decimalPlaces is set to “-1”, it allows the decimals without any limit in the Textboxes.
 
 
 #### Default Value
