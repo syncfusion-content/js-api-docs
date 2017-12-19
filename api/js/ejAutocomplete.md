@@ -1589,6 +1589,21 @@ N> This method does not accept any arguments.
 
 {% endhighlight %}
 
+### hide()
+{:#methods:hide}
+
+Hides the Autocomplete suggestion list.
+
+N> This method does not accept any arguments.
+
+
+#### Example  
+
+{% highlight javascript %}
+
+	$("#autocomplete").ejAutocomplete("hide");
+
+{% endhighlight %}
 
 ### search()
 {:#methods:search}
