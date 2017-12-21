@@ -371,6 +371,21 @@ N> This method does not accept any arguments.
 
 {% endhighlight %}
 
+### refresh()
+{:#methods:refresh}
+
+Refreshes the Signature widget
+
+N> This method does not accept any arguments.
+
+#### Example  
+
+{% highlight javascript %}
+
+	$("#signature").ejSignature("refresh");
+
+{% endhighlight %}
+
 ### save(filename)
 {:#methods:save}
 
