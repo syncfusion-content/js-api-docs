@@ -3783,7 +3783,7 @@ $("#Grid").ejGrid({
 ### selectedRecords `array`
 {:#members:selectedrecords}
 
-Gets a value that indicates whether the grid model to hold multiple selected records . selectedRecords can be used to displayed hold the single or multiple selected records using &ldquo;selectedRecords&rdquo; property
+Gets a value that display the array of selected records in the Grid.
 
 #### Default Value:
 {:.param}
