@@ -583,6 +583,52 @@ Change the DateRangePicker calendar and date format based on given culture.
 {% endhighlight %}
 
 
+### maxDate `string | date`
+{:#members:maxdate}
+
+
+Specifies the maximum date in the calendar that the user can select as a startDate or endDate.
+
+
+#### Default Value
+
+* new Date(2099, 11, 31)
+
+#### Example
+
+{% highlight html %}
+ 
+<input type="text" id="daterangepicker" />
+<script>
+//To set maxDate value during initialization  
+        $("#daterangepicker").ejDateRangePicker({  maxDate : new Date("1/1/2018") });
+</script>
+
+{% endhighlight %}
+
+### minDate `string | date`
+{:#members:mindate}
+
+
+Specifies the minimum date in the calendar that the user can select as a startDate or endDate.
+
+
+#### Default Value
+
+* new Date(1900, 00, 01)
+
+#### Example
+
+{% highlight html %}
+ 
+<input type="text" id="daterangepicker" />
+<script>
+//To set minDate value during initialization  
+        $("#daterangepicker").ejDateRangePicker({  minDate: new Date("1/1/2017") });
+</script>
+
+{% endhighlight %}
+
 
 ### ranges `object`
 {:#members:ranges}

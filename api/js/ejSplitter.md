@@ -382,7 +382,35 @@ Specifies the splitter control to be displayed in right to left direction.
 
 
 
+### expanderTemplate `string`
+{:#members:expandertemplate}
 
+Specifies HTML element string to replace the existing expand/collapse icons.
+
+
+#### Default Value
+
+* null
+
+
+#### Example
+
+{% highlight html %}
+ 
+        <div id="innerSplitter">
+        <div>
+        <div class="cont">Pane 1 </div>
+        </div>
+        <div>
+        <div class="cont">Pane 2 </div>
+        </div>
+        </div> 
+        <script>
+        //To set expanderTemplate API value during initialization
+                $("#innerSplitter").ejSplitter({ expanderTemplate: '<img class="eimg" src="expander.png" alt="employee"/>', });
+        </script>
+
+{% endhighlight %}
 
 
 
@@ -1258,6 +1286,91 @@ $("#innerSplitter").ejSplitter({
 
 
 
+### clickOnExpander
+{:#events:clickonexpander}
+
+Triggered when we click on the template icon. (Note: This will work only when expanderTemplate is defined.)
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Event parameters from splitter control
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">
+model</td>
+<td class="type"><ts ref="ej.Splitter.Model"/><span class="param-type">Object</span></td>
+<td class="description">returns the splitter model.</td>
+</tr>
+<tr>
+<td class="name">
+type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">
+targetElement</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">returns the target element from which click action is triggered.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+
+        <div id="innerSplitter">
+        <div>
+        <div class="cont">Pane 1 </div>
+        </div>
+        <div>
+        <div class="cont">Pane 2 </div>
+        </div>
+        </div> 
+        <script>
+        //create event for splitter control
+        $("#innerSplitter").ejSplitter({
+                expanderTemplate: '<img class="eimg" src="expander.png" alt="employee"/>',
+                clickOnExpander: function(args)
+                { });
+        </script>
+
+{% endhighlight %}
 
 
 
