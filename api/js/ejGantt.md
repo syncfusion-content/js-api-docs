@@ -4020,7 +4020,7 @@ Specifies the template for tooltip on mouse action on taskbars
 ### predecessorTooltipTemplate `string`
 {:#members:predecessortooltiptemplate}
 
-Specifies the JS render template id or template script for predecessor tooltip on mouse action.
+Specifies the JsRender template id or template script for predecessor tooltip on mouse action.
 
 
 #### Default Value
@@ -5211,7 +5211,7 @@ To delete the predecessor linked between the two tasks.
 <tr>
 <td class="name">fromTaskId</td>
 <td class="type">number</td>
-<td class="description">Orgin record taskID of predecessor line</td>
+<td class="description">Origin record taskID of predecessor line</td>
 </tr>
 <tr>
 <td class="name">toTaskId</td>
@@ -5470,7 +5470,7 @@ To update the predecessor type and offset value for existing predecessor.
 <tr>
 <td class="name">fromTaskId</td>
 <td class="type">number</td>
-<td class="description">Orgin record taskID of predecessor line</td>
+<td class="description">Origin record taskID of predecessor line</td>
 </tr>
 <tr>
 <td class="name">toTaskId</td>
