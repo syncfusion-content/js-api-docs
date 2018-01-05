@@ -5194,10 +5194,10 @@ ganttObj.outdentItem(); // To outdent a selected item in Gantt
 </script>
 {% endhighlight %}
 
-### removePredecessor(fromTaskId,toTaskId)
-{:#methods:removepredecessor}
+### deletePredecessor(fromTaskId,toTaskId)
+{:#methods:deletepredecessor}
 
-To remove the predecessor linked between the two tasks.
+To delete the predecessor linked between the two tasks.
 
 <table class="params">
 <thead>
@@ -5232,7 +5232,7 @@ To remove the predecessor linked between the two tasks.
 <script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
-ganttObj.removePredecessor(3, 6); // To remove predecessor linked between two tasks.
+ganttObj.deletePredecessor(3, 6); // To delete predecessor linked between two tasks.
 </script>
 {% endhighlight %}
 
