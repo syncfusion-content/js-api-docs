@@ -4017,6 +4017,34 @@ Specifies the template for tooltip on mouse action on taskbars
 
 {% endhighlight %}
 
+### predecessorTooltipTemplate `string`
+{:#members:predecessortooltiptemplate}
+
+Specifies the JS render template id or template script for predecessor tooltip on mouse action.
+
+
+#### Default Value
+{:.param}
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    predecessorTooltipTemplate: "PredecessorTooltipTemplate"
+ });            
+</script>
+
+{% endhighlight %}
+
 ### taskbarTemplate `string`
 {:#members:taskbartemplate}
 
@@ -5166,6 +5194,48 @@ ganttObj.outdentItem(); // To outdent a selected item in Gantt
 </script>
 {% endhighlight %}
 
+### removePredecessor(fromTaskId,toTaskId)
+{:#methods:removepredecessor}
+
+To remove the predecessor linked between the two tasks.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fromTaskId</td>
+<td class="type">number</td>
+<td class="description">Orgin record taskID of predecessor line</td>
+</tr>
+<tr>
+<td class="name">toTaskId</td>
+<td class="type">number</td>
+<td class="description">Destination record taskID of predecessor line</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+ 
+<script>
+// Create Gantt
+var ganttObj = $("#gantt").data("ejGantt");
+ganttObj.removePredecessor(3, 6); // To remove predecessor linked between two tasks.
+</script>
+{% endhighlight %}
+
 
 ### saveEdit()
 {:#methods:saveedit}
@@ -5383,8 +5453,61 @@ ganttObj.showColumn("Task Name");
 {% endhighlight %}
 
 
+### updatePredecessor(fromTaskId,toTaskId, predecessorType, offset)
+{:#methods:updatepredecessor}
+
+To update the predecessor type and offset value for existing predecessor.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fromTaskId</td>
+<td class="type">number</td>
+<td class="description">Orgin record taskID of predecessor line</td>
+</tr>
+<tr>
+<td class="name">toTaskId</td>
+<td class="type">number</td>
+<td class="description">Destination record taskID of predecessor line</td>
+</tr>
+<tr>
+<td class="name">predecessorType</td>
+<td class="type">string</td>
+<td class="description">Type of predecessor linked between two tasks.</td>
+</tr>
+<tr>
+<td class="name">offset</td>
+<td class="type">number</td>
+<td class="description">Offset value to the predecessor task.</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+ 
+<script>
+// Create Gantt
+var ganttObj = $("#gantt").data("ejGantt");
+ganttObj.updatePredecessor(3, 6, "SS", 3); // To update predecessor type and offset value.
+</script>
+{% endhighlight %}
+
+
 ### updateTaskId(currentId, newId)
-{:#methods:updateTaskId}
+{:#methods:updatetaskid}
 
 To change an existing Gantt ID by new ID value dynamically
 
@@ -5675,6 +5798,75 @@ Triggered for every Gantt action before its starts.
 <td class="name">requestType</td>
 <td class="type">string</td>
 <td class="description">Returns request type.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Event parameters before opening of edit task dependency dialog:
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">predecessorData</td>
+<td class="type">object</td>
+<td class="description">Returns the predecessorData.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type">string</td>
+<td class="description">Returns request type as "beforePredecessorEditDialogOpen".</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Event parameters after opening of edit task dependency dialog:
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">predecessorData</td>
+<td class="type">object</td>
+<td class="description">Returns the predecessorData.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type">string</td>
+<td class="description">Returns the edit dialog element.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type">string</td>
+<td class="description">Returns request type as "afterPredecessorEditDialogOpen".</td>
 </tr>
 </tbody>
 </table>
