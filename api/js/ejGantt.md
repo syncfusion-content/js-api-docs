@@ -6497,6 +6497,11 @@ Triggered while dragging a row in Gantt control
 <td class="type">string</td>
 <td class="description">Returns the name of the event.</td>
 </tr>
+<tr>
+<td class="name">roundOffDuration</td>
+<td class="type">boolean</td>
+<td class="description">Duration is rounded off when it is set true.</td>
+</tr>
 </tbody>
 </table>
 </td>
