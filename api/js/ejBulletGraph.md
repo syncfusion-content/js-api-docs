@@ -3292,7 +3292,7 @@ enableAnimation : false
 
 
 ### enableResizing `boolean`
-{:#members:enableResizing}
+{:#members:enableresizing}
 
 
 
