@@ -361,7 +361,7 @@ $("#CoreCircularGauge").ejCircularGauge({ frame:{frameType:ej.datavisualization.
 
 
 ### frame.backgroundImageUrl `string`
-{:#members:frame.backgroundimageurl}
+{:#members:frame-backgroundimageurl}
 
 
 
@@ -450,7 +450,7 @@ $("#CoreCircularGauge").ejCircularGauge({  frame:{frameType : "halfcircle"} });
 
 
 ### frame.halfCircleFrameEndAngle `number`
-{:#members:frame.halfcircleframeendangle}
+{:#members:frame-halfcircleframeendangle}
 
 
 
@@ -483,7 +483,7 @@ $("#CoreCircularGauge").ejCircularGauge({ frame:{frameType : "halfCircle",halfCi
 
 
 ### frame.halfCircleFrameStartAngle `number`
-{:#members:frame.halfcircleframestartangle}
+{:#members:frame-halfcircleframestartangle}
 
 
 
@@ -1010,7 +1010,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{showScaleBar: true, size: 6,
 
 
 ### scales.backgroundColor `string`
-{:#members:scales.backgroundcolor}
+{:#members:scales-backgroundcolor}
 
 
 
@@ -1043,7 +1043,7 @@ Specify backgroundColor for the scale of circular gauge
 
 
 ### scales.border `object`
-{:#members:scales.border}
+{:#members:scales-border}
 
 
 
@@ -1076,7 +1076,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ border:{color:null, width:1
 
 
 ### scales.border.color `string`
-{:#members:scales.border.color}
+{:#members:scales-border-color}
 
 
 
@@ -1109,7 +1109,7 @@ Specify border color for scales of circular gauge
 
 
 ### scales.border.width `number`
-{:#members:scales.border.width}
+{:#members:scales-border-width}
 
 
 
@@ -1198,7 +1198,7 @@ CounterClockwise</td>
 
 
 ### scales.customLabels `Array`
-{:#members:scales.customlabels}
+{:#members:scales-customlabels}
 
 
 
@@ -1233,7 +1233,7 @@ Specify the custom labels for the scales.
 
 
 ### scales.customLabels.value `string`
-{:#members:scales.customlabels.value}
+{:#members:scales-customlabels-value}
 
 
 
@@ -1267,7 +1267,7 @@ Value of the custom labels.
 
 
 ### scales.customLabels.color `string`
-{:#members:scales.customlabels.color}
+{:#members:scales-customlabels-color}
 
 
 
@@ -1304,7 +1304,7 @@ Color of the custom labels.
 
 
 ### scales.customLabels.position `object`
-{:#members:scales.customlabels.position}
+{:#members:scales-customlabels-position}
 
 
 
@@ -1341,7 +1341,7 @@ Specify position of custom labels
 
 
 ### scales.customLabels.position.x `number`
-{:#members:scales.customlabels.position.x}
+{:#members:scales-customlabels-position-x}
 
 
 
@@ -1378,7 +1378,7 @@ Specify x-axis position of label
 
 
 ### scales.customLabels.position.y `number`
-{:#members:scales.customlabels.position.y}
+{:#members:scales-customlabels-position-y}
 
 
 
@@ -1413,7 +1413,7 @@ Specify y-axis  position of labels.
 
 
 ### scales.customLabels.textAngle `number`
-{:#members:scales.customlabels.textangle}
+{:#members:scales-customlabels-textangle}
 
 
 
@@ -1449,7 +1449,7 @@ Specify angle for the rotation of the custom labels in degrees.
 </script>{% endhighlight %}
 
 ### scales.customLabels.font `object`
-{:#members:scales.customlabels.font}
+{:#members:scales-customlabels-font}
 
 
 
@@ -1482,7 +1482,7 @@ Specify font for custom labels
 
 
 ### scales.customLabels.font.fontFamily `string`
-{:#members:scales.customlabels.font.fontfamily}
+{:#members:scales-customlabels-font-fontfamily}
 
 
 
@@ -1515,7 +1515,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ customLabels: [{ font: { fo
 
 
 ### scales.customLabels.font.fontStyle `string`
-{:#members:scales.customlabels.font.fontstyle}
+{:#members:scales-customlabels-font-fontstyle}
 
 
 
@@ -1548,7 +1548,7 @@ $("#CoreCircularGauge").ejCircularGauge({
  
  
 ### scales.customLabels.font.size `string`
-{:#members:scales.customlabels.font.size}
+{:#members:scales-customlabels-font-size}
 
 
 
@@ -1643,7 +1643,7 @@ Outer</td>
 
 
 ### scales.indicators `Array`
-{:#members:scales.indicators}
+{:#members:scales-indicators}
 
 
 
@@ -1679,7 +1679,7 @@ Specify representing state of circular gauge
 
 
 ### scales.indicators.height `number`
-{:#members:scales.indicators.height}
+{:#members:scales-indicators-height}
 
 
 
@@ -1715,7 +1715,7 @@ Specify indicator height of circular gauge
 
 
 ### scales.indicators.imageUrl `string`
-{:#members:scales.indicators.imageurl}
+{:#members:scales-indicators-imageurl}
 
 
 
@@ -1751,7 +1751,7 @@ Specify imageUrl of circular gauge
 
 
 ### scales.indicators.position `object`
-{:#members:scales.indicators.position}
+{:#members:scales-indicators-position}
 
 
 
@@ -1787,7 +1787,7 @@ Specify position of circular gauge
 
 
 ### scales.indicators.position.x `number`
-{:#members:scales.indicators.position.x}
+{:#members:scales-indicators-position-x}
 
 
 
@@ -1823,7 +1823,7 @@ Specify x-axis of position of circular gauge
 
 
 ### scales.indicators.position.y `number`
-{:#members:scales.indicators.position.y}
+{:#members:scales-indicators-position-y}
 
 
 
@@ -1859,7 +1859,7 @@ Specify y-axis of position of circular gauge
 
 
 ### scales.indicators.stateRanges `Array`
-{:#members:scales.indicators.stateranges}
+{:#members:scales-indicators-stateranges}
 
 
 
@@ -1895,7 +1895,7 @@ Specify the various states of circular gauge
 
 
 ### scales.indicators.stateRanges.backgroundColor `string`
-{:#members:scales.indicators.stateranges.backgroundcolor}
+{:#members:scales-indicators-stateranges-backgroundcolor}
 
 
 
@@ -1931,7 +1931,7 @@ Specify backgroundColor for indicator of circular gauge
 
 
 ### scales.indicators.stateRanges.borderColor `string`
-{:#members:scales.indicators.stateranges.bordercolor}
+{:#members:scales-indicators-stateranges-bordercolor}
 
 
 
@@ -1967,7 +1967,7 @@ Specify borderColor for indicator of circular gauge
 
 
 ### scales.indicators.stateRanges.endValue `number`
-{:#members:scales.indicators.stateranges.endvalue}
+{:#members:scales-indicators-stateranges-endvalue}
 
 
 
@@ -2003,7 +2003,7 @@ Specify end value for each specified state of circular gauge
 
 
 ### scales.indicators.stateRanges.font `object`
-{:#members:scales.indicators.stateranges.font}
+{:#members:scales-indicators-stateranges-font}
 
 
 
@@ -2040,7 +2040,7 @@ stateRanges: [{ endValue: 70, startValue: 0, text: "staterange1" },
 
 
 ### scales.indicators.stateRanges.startValue `number`
-{:#members:scales.indicators.stateranges.startvalue}
+{:#members:scales-indicators-stateranges-startvalue}
 
 
 
@@ -2076,7 +2076,7 @@ Specify start value for each specified state of circular gauge
 
 
 ### scales.indicators.stateRanges.text `string`
-{:#members:scales.indicators.stateranges.text}
+{:#members:scales-indicators-stateranges-text}
 
 
 
@@ -2113,7 +2113,7 @@ stateRanges: [{ endValue: 70, startValue: 0, text: "staterange1" },
 
 
 ### scales.indicators.stateRanges.textColor `string`
-{:#members:scales.indicators.stateranges.textcolor}
+{:#members:scales-indicators-stateranges-textcolor}
 
 
 
@@ -2228,7 +2228,7 @@ Image</td>
 
 
 ### scales.indicators.width `number`
-{:#members:scales.indicators.width}
+{:#members:scales-indicators-width}
 
 
 
@@ -2264,7 +2264,7 @@ Specify indicator width of circular gauge
 
 
 ### scales.labels `Array`
-{:#members:scales.labels}
+{:#members:scales-labels}
 
 
 
@@ -2297,7 +2297,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ angle: 10, opaci
 
 
 ### scales.labels.angle `number`
-{:#members:scales.labels.angle}
+{:#members:scales-labels-angle}
 
 
 
@@ -2330,7 +2330,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ angle: 10 }] }] 
 
 
 ### scales.labels.autoAngle `boolean`
-{:#members:scales.labels.autoangle}
+{:#members:scales-labels-autoangle}
 
 
 
@@ -2363,7 +2363,7 @@ Specify labels autoAngle value of circular gauge
 
 
 ### scales.labels.color `string`
-{:#members:scales.labels.color}
+{:#members:scales-labels-color}
 
 
 
@@ -2396,7 +2396,7 @@ Specify label color of circular gauge
 
 
 ### scales.labels.distanceFromScale `number`
-{:#members:scales.labels.distancefromscale}
+{:#members:scales-labels-distancefromscale}
 
 
 
@@ -2429,7 +2429,7 @@ Specify distanceFromScale value for labels of circular gauge
 
 
 ### scales.labels.font `object`
-{:#members:scales.labels.font}
+{:#members:scales-labels-font}
 
 
 
@@ -2462,7 +2462,7 @@ Specify font for labels of circular gauge
 
 
 ### scales.labels.font.fontFamily `string`
-{:#members:scales.labels.font.fontfamily}
+{:#members:scales-labels-font-fontfamily}
 
 
 
@@ -2495,7 +2495,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ font: { fontFami
 
 
 ### scales.labels.font.fontStyle `string`
-{:#members:scales.labels.font.fontstyle}
+{:#members:scales-labels-font-fontstyle}
 
 
 
@@ -2528,7 +2528,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ font: { fontStyl
 
 
 ### scales.labels.font.size `string`
-{:#members:scales.labels.font.size}
+{:#members:scales-labels-font-size}
 
 
 
@@ -2561,7 +2561,7 @@ Specify font size for labels of circular gauge
 
 
 ### scales.labels.includeFirstValue `boolean`
-{:#members:scales.labels.includefirstvalue}
+{:#members:scales-labels-includefirstvalue}
 
 
 
@@ -2594,7 +2594,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ labels: [{ includeFirstValu
 
 
 ### scales.labels.opacity `number`
-{:#members:scales.labels.opacity}
+{:#members:scales-labels-opacity}
 
 
 
@@ -2743,7 +2743,7 @@ Minor</td>
 
 
 ### scales.labels.unitText `string`
-{:#members:scales.labels.unittext}
+{:#members:scales-labels-unittext}
 
 
 
@@ -2832,7 +2832,7 @@ Front</td>
 
 
 ### scales.majorIntervalValue `number`
-{:#members:scales.majorintervalvalue}
+{:#members:scales-majorintervalvalue}
 
 
 
@@ -2865,7 +2865,7 @@ Specify majorIntervalValue of circular gauge
 
 
 ### scales.maximum `number`
-{:#members:scales.maximum}
+{:#members:scales-maximum}
 
 
 
@@ -2898,7 +2898,7 @@ Specify maximum scale value of circular gauge
 
 
 ### scales.minimum `number`
-{:#members:scales.minimum}
+{:#members:scales-minimum}
 
 
 
@@ -2931,7 +2931,7 @@ Specify minimum scale value of circular gauge
 
 
 ### scales.minorIntervalValue `number`
-{:#members:scales.minorintervalvalue}
+{:#members:scales-minorintervalvalue}
 
 
 
@@ -2964,7 +2964,7 @@ Specify minorIntervalValue of circular gauge
 
 
 ### scales.opacity `number`
-{:#members:scales.opacity}
+{:#members:scales-opacity}
 
 
 
@@ -2997,7 +2997,7 @@ Specify opacity value of circular gauge
 
 
 ### scales.pointerCap `object`
-{:#members:scales.pointercap}
+{:#members:scales-pointercap}
 
 
 
@@ -3030,7 +3030,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointerCap:{radius: 7, bord
 
 
 ### scales.pointerCap.backgroundColor `string`
-{:#members:scales.pointercap.backgroundcolor}
+{:#members:scales-pointercap-backgroundcolor}
 
 
 
@@ -3063,7 +3063,7 @@ Specify cap backgroundColor of circular gauge
 
 
 ### scales.pointerCap.borderColor `string`
-{:#members:scales.pointercap.bordercolor}
+{:#members:scales-pointercap-bordercolor}
 
 
 
@@ -3096,7 +3096,7 @@ Specify cap borderColor of circular gauge
 
 
 ### scales.pointerCap.borderWidth `number`
-{:#members:scales.pointercap.borderwidth}
+{:#members:scales-pointercap-borderwidth}
 
 
 
@@ -3129,7 +3129,7 @@ Specify pointerCap borderWidth value of circular gauge
 
 
 ### scales.pointerCap.interiorGradient `object`
-{:#members:scales.pointercap.interiorgradient}
+{:#members:scales-pointercap-interiorgradient}
 
 
 
@@ -3162,7 +3162,7 @@ Specify cap interiorGradient value of circular gauge
 
 
 ### scales.pointerCap.radius `number`
-{:#members:scales.pointercap.radius}
+{:#members:scales-pointercap-radius}
 
 
 
@@ -3195,7 +3195,7 @@ Specify pointerCap Radius value of circular gauge
 
 
 ### scales.pointers `Array`
-{:#members:scales.pointers}
+{:#members:scales-pointers}
 
 
 
@@ -3228,7 +3228,7 @@ Specify pointers value of circular gauge
 
 
 ### scales.pointers.backgroundColor `string`
-{:#members:scales.pointers.backgroundcolor}
+{:#members:scales-pointers-backgroundcolor}
 
 
 
@@ -3261,7 +3261,7 @@ Specify backgroundColor for the pointer of circular gauge
 
 
 ### scales.pointers.backNeedleLength `number`
-{:#members:scales.pointers.backneedlelength}
+{:#members:scales-pointers-backneedlelength}
 
 
 
@@ -3294,7 +3294,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ showBackNeedle
 
 
 ### scales.pointers.border `object`
-{:#members:scales.pointers.border}
+{:#members:scales-pointers-border}
 
 
 
@@ -3327,7 +3327,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers:[{border:{color:nu
 
 
 ### scales.pointers.border.color `string`
-{:#members:scales.pointers.border.color}
+{:#members:scales-pointers-border-color}
 
 
 
@@ -3360,7 +3360,7 @@ Specify border color for pointer of circular gauge
 
 
 ### scales.pointers.border.width `number`
-{:#members:scales.pointers.border.width}
+{:#members:scales-pointers-border-width}
 
 
 
@@ -3393,7 +3393,7 @@ Specify border width for pointers of circular gauge
 
 
 ### scales.pointers.distanceFromScale `number`
-{:#members:scales.pointers.distancefromscale}
+{:#members:scales-pointers-distancefromscale}
 
 
 
@@ -3426,7 +3426,7 @@ Specify distanceFromScale value for pointers of circular gauge
 
 
 ### scales.pointers.gradients `object`
-{:#members:scales.pointers.gradients}
+{:#members:scales-pointers-gradients}
 
 
 
@@ -3459,7 +3459,7 @@ Specify pointer gradients of circular gauge
 
 
 ### scales.pointers.imageUrl `string`
-{:#members:scales.pointers.imageurl}
+{:#members:scales-pointers-imageurl}
 
 
 
@@ -3492,7 +3492,7 @@ Specify pointer image of circular gauge.It is applicable for both marker as well
 
 
 ### scales.pointers.length `number`
-{:#members:scales.pointers.length}
+{:#members:scales-pointers-length}
 
 
 
@@ -3715,7 +3715,7 @@ Trapezoid</td>
 
 
 ### scales.pointers.opacity `number`
-{:#members:scales.pointers.opacity}
+{:#members:scales-pointers-opacity}
 
 
 
@@ -3746,7 +3746,7 @@ Specify opacity value for pointer of circular gauge
 
 
 ### scales.pointers.radius `number`
-{:#members:scales.pointers.radius}
+{:#members:scales-pointers-radius}
 
 
 
@@ -3776,7 +3776,7 @@ Specify radius value for pointer of circular gauge
 </script>{% endhighlight %}
 
 ### scales.pointers.placement `enum`
-{:#members:scales.pointers.placement}
+{:#members:scales-pointers-placement}
 
 
 <ts ref="ej.datavisualization.CircularGauge.Placement"/>
@@ -3809,7 +3809,7 @@ Specify pointer Placement value of circular gauge. See <a href="ejcirculargauge.
 
 
 ### scales.pointers.pointerValueText `object`
-{:#members:scales.pointers.pointervaluetext}
+{:#members:scales-pointers-pointervaluetext}
 
 
 
@@ -3842,7 +3842,7 @@ Specify pointer value text of circular gauge.
 
 
 ### scales.pointers.pointerValueText.angle `number`
-{:#members:scales.pointers.pointervaluetext.angle}
+{:#members:scales-pointers-pointervaluetext-angle}
 
 
 
@@ -3875,7 +3875,7 @@ Specify pointer text angle of circular gauge.
 
 
 ### scales.pointers.pointerValueText.autoAngle `boolean`
-{:#members:scales.pointers.pointervaluetext.autoangle}
+{:#members:scales-pointers-pointervaluetext-autoangle}
 
 
 
@@ -3908,7 +3908,7 @@ Specify pointer text auto angle of circular gauge.
 
 
 ### scales.pointers.pointerValueText.color `string`
-{:#members:scales.pointers.pointervaluetext.color}
+{:#members:scales-pointers-pointervaluetext-color}
 
 
 
@@ -3941,7 +3941,7 @@ Specify pointer value text color of circular gauge.
 
 
 ### scales.pointers.pointerValueText.distance `number`
-{:#members:scales.pointers.pointervaluetext.distance}
+{:#members:scales-pointers-pointervaluetext-distance}
 
 
 
@@ -3974,7 +3974,7 @@ Specify pointer value text distance from pointer of circular gauge.
 
 
 ### scales.pointers.pointerValueText.font `object`
-{:#members:scales.pointers.pointervaluetext.font}
+{:#members:scales-pointers-pointervaluetext-font}
 
 
 
@@ -4007,7 +4007,7 @@ Specify pointer value text font option of circular gauge.
 
 
 ### scales.pointers.pointerValueText.font.fontFamily `string`
-{:#members:scales.pointers.pointervaluetext.font.fontfamily}
+{:#members:scales-pointers-pointervaluetext-font-fontfamily}
 
 
 
@@ -4040,7 +4040,7 @@ Specify pointer value text font family of circular gauge.
 
 
 ### scales.pointers.pointerValueText.font.fontStyle `string`
-{:#members:scales.pointers.pointervaluetext.font.fontstyle}
+{:#members:scales-pointers-pointervaluetext-font-fontstyle}
 
 
 
@@ -4073,7 +4073,7 @@ Specify pointer value text font style of circular gauge.
 
 
 ### scales.pointers.pointerValueText.font.size `string`
-{:#members:scales.pointers.pointervaluetext.font.size}
+{:#members:scales-pointers-pointervaluetext-font-size}
 
 
 
@@ -4106,7 +4106,7 @@ Specify pointer value text size of circular gauge.
 
 
 ### scales.pointers.pointerValueText.opacity `number`
-{:#members:scales.pointers.pointervaluetext.opacity}
+{:#members:scales-pointers-pointervaluetext-opacity}
 
 
 
@@ -4139,7 +4139,7 @@ Specify pointer value text opacity of circular gauge.
 
 
 ### scales.pointers.pointerValueText.showValue `boolean`
-{:#members:scales.pointers.pointervaluetext.showvalue}
+{:#members:scales-pointers-pointervaluetext-showvalue}
 
 
 
@@ -4172,7 +4172,7 @@ enable pointer value text visibility of circular gauge.
 
 
 ### scales.pointers.showBackNeedle `boolean`
-{:#members:scales.pointers.showbackneedle}
+{:#members:scales-pointers-showbackneedle}
 
 
 
@@ -4205,7 +4205,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ showBackNeedle
 
 
 ### scales.pointers.type `enum`
-{:#members:scales.pointers.type}
+{:#members:scales-pointers-type}
 
 <ts name="ej.datavisualization.CircularGauge.PointerType"/>
 Specify pointer type value of circular gauge. See <a href="ejcirculargauge.html#members:scales-pointers-type">PointerType</a>
@@ -4262,7 +4262,7 @@ Marker</td>
 
 
 ### scales.pointers.value `number`
-{:#members:scales.pointers.value}
+{:#members:scales-pointers-value}
 
 
 
@@ -4295,7 +4295,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ pointers: [{ value: 50 }] }
 
 
 ### scales.pointers.width `number`
-{:#members:scales.pointers.width}
+{:#members:scales-pointers-width}
 
 
 
@@ -4361,7 +4361,7 @@ Specify scale radius of circular gauge
 
 
 ### scales.ranges `Array`
-{:#members:scales.ranges}
+{:#members:scales-ranges}
 
 
 
@@ -4394,7 +4394,7 @@ Specify ranges value of circular gauge
 
 
 ### scales.ranges.backgroundColor `string`
-{:#members:scales.ranges.backgroundcolor}
+{:#members:scales-ranges-backgroundcolor}
 
 
 
@@ -4425,7 +4425,7 @@ Specify backgroundColor for the ranges of circular gauge
 
 
 ### scales.ranges.legendText `string`
-{:#members:scales.ranges.legendtext}
+{:#members:scales-ranges-legendtext}
 
 
 Specify text for the ranges of circular gauge
@@ -4452,7 +4452,7 @@ Specify text for the ranges of circular gauge
 
 
 ### scales.ranges.border `object`
-{:#members:scales.ranges.border}
+{:#members:scales-ranges-border}
 
 
 
@@ -4485,7 +4485,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ ranges:[{border:{color:null
 
 
 ### scales.ranges.border.color `string`
-{:#members:scales.ranges.border.color}
+{:#members:scales-ranges-border-color}
 
 
 
@@ -4518,7 +4518,7 @@ Specify border color for ranges of circular gauge
 
 
 ### scales.ranges.border.width `number`
-{:#members:scales.ranges.border.width}
+{:#members:scales-ranges-border-width}
 
 
 
@@ -4551,7 +4551,7 @@ Specify border width for ranges of circular gauge
 
 
 ### scales.ranges.distanceFromScale `number`
-{:#members:scales.ranges.distancefromscale}
+{:#members:scales-ranges-distancefromscale}
 
 
 
@@ -4584,7 +4584,7 @@ $("#CoreCircularGauge").ejCircularGauge({scales: [{showRanges: true,ranges: [{di
 
 
 ### scales.ranges.endValue `number`
-{:#members:scales.ranges.endvalue}
+{:#members:scales-ranges-endvalue}
 
 
 
@@ -4617,7 +4617,7 @@ Specify endValue for ranges of circular gauge
 
 
 ### scales.ranges.endWidth `number`
-{:#members:scales.ranges.endwidth}
+{:#members:scales-ranges-endwidth}
 
 
 
@@ -4650,7 +4650,7 @@ Specify endWidth for ranges of circular gauge
 
 
 ### scales.ranges.gradients `object`
-{:#members:scales.ranges.gradients}
+{:#members:scales-ranges-gradients}
 
 
 
@@ -4683,7 +4683,7 @@ Specify range gradients of circular gauge
 
 
 ### scales.ranges.opacity `number`
-{:#members:scales.ranges.opacity}
+{:#members:scales-ranges-opacity}
 
 
 
@@ -4716,7 +4716,7 @@ Specify opacity value for ranges of circular gauge
 
 
 ### scales.ranges.placement `enum`
-{:#members:scales.ranges.placement}
+{:#members:scales-ranges-placement}
 
 <ts ref="ej.datavisualization.CircularGauge.Placement"/>
 
@@ -4749,7 +4749,7 @@ Specify placement of circular gauge. See <a href="ejcirculargauge.html#members:s
 
 
 ### scales.ranges.size `number`
-{:#members:scales.ranges.size}
+{:#members:scales-ranges-size}
 
 
 
@@ -4782,7 +4782,7 @@ Specify size of the range value of circular gauge
 
 
 ### scales.ranges.startValue `number`
-{:#members:scales.ranges.startvalue}
+{:#members:scales-ranges-startvalue}
 
 
 
@@ -4815,7 +4815,7 @@ Specify startValue for ranges of circular gauge
 
 
 ### scales.ranges.startWidth `number`
-{:#members:scales.ranges.startwidth}
+{:#members:scales-ranges-startwidth}
 
 
 
@@ -4848,7 +4848,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{showRanges:true , ranges: [{
 
 
 ### scales.shadowOffset `number`
-{:#members:scales.shadowoffset}
+{:#members:scales-shadowoffset}
 
 
 
@@ -4881,7 +4881,7 @@ Specify shadowOffset value of circular gauge
 
 
 ### scales.showIndicators `boolean`
-{:#members:scales.showindicators}
+{:#members:scales-showindicators}
 
 
 
@@ -4914,7 +4914,7 @@ Specify showIndicators of circular gauge
 
 
 ### scales.showLabels `boolean`
-{:#members:scales.showlabels}
+{:#members:scales-showlabels}
 
 
 
@@ -4947,7 +4947,7 @@ Specify showLabels of circular gauge
 
 
 ### scales.showPointers `boolean`
-{:#members:scales.showpointers}
+{:#members:scales-showpointers}
 
 
 
@@ -4980,7 +4980,7 @@ Specify showPointers of circular gauge
 
 
 ### scales.showRanges `boolean`
-{:#members:scales.showranges}
+{:#members:scales-showranges}
 
 
 
@@ -5013,7 +5013,7 @@ Specify showRanges of circular gauge
 
 
 ### scales.showScaleBar `boolean`
-{:#members:scales.showscalebar}
+{:#members:scales-showscalebar}
 
 
 
@@ -5046,7 +5046,7 @@ Specify showScaleBar of circular gauge
 
 
 ### scales.showTicks `boolean`
-{:#members:scales.showticks}
+{:#members:scales-showticks}
 
 
 
@@ -5079,7 +5079,7 @@ Specify showTicks of circular gauge
 
 
 ### scales.size `number`
-{:#members:scales.size}
+{:#members:scales-size}
 
 
 
@@ -5112,7 +5112,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ showScaleBar: true, size: 6
 
 
 ### scales.startAngle `number`
-{:#members:scales.startangle}
+{:#members:scales-startangle}
 
 
 
@@ -5145,7 +5145,7 @@ Specify startAngle of circular gauge
 
 
 ### scales.subGauges `Array`
-{:#members:scales.subgauges}
+{:#members:scales-subgauges}
 
 
 
@@ -5182,7 +5182,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 
 
 ### scales.subGauges.height `number`
-{:#members:scales.subgauges.height}
+{:#members:scales-subgauges-height}
 
 
 
@@ -5219,7 +5219,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 
 
 ### scales.subGauges.position `object`
-{:#members:scales.subgauges.position}
+{:#members:scales-subgauges-position}
 
 
 
@@ -5256,7 +5256,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 
 
 ### scales.subGauges.position.x `number`
-{:#members:scales.subgauges.position.x}
+{:#members:scales-subgauges-position-x}
 
 
 
@@ -5293,7 +5293,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 
 
 ### scales.subGauges.position.y `number`
-{:#members:scales.subgauges.position.y}
+{:#members:scales-subgauges-position-y}
 
 
 
@@ -5330,7 +5330,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 
 
 ### scales.subGauges.width `number`
-{:#members:scales.subgauges.width}
+{:#members:scales-subgauges-width}
 
 
 
@@ -5367,7 +5367,7 @@ $("#CoreCircularGauge").ejCircularGauge({height: 500,width: 500,scales: [{radius
 
 
 ### scales.sweepAngle `number`
-{:#members:scales.sweepangle}
+{:#members:scales-sweepangle}
 
 
 
@@ -5400,7 +5400,7 @@ Specify sweepAngle of circular gauge
 
 
 ### scales.ticks `Array`
-{:#members:scales.ticks}
+{:#members:scales-ticks}
 
 
 
@@ -5433,7 +5433,7 @@ $("#CoreCircularGauge").ejCircularGauge({ scales: [{ ticks: [{ angle: 10, distan
 
 
 ### scales.ticks.angle `number`
-{:#members:scales.ticks.angle}
+{:#members:scales-ticks-angle}
 
 
 
@@ -5466,7 +5466,7 @@ Specify the angle for the ticks of circular gauge
 
 
 ### scales.ticks.color `string`
-{:#members:scales.ticks.color}
+{:#members:scales-ticks-color}
 
 
 
@@ -5499,7 +5499,7 @@ Specify tick color of circular gauge
 
 
 ### scales.ticks.distanceFromScale `number`
-{:#members:scales.ticks.distancefromscale}
+{:#members:scales-ticks-distancefromscale}
 
 
 
@@ -5532,7 +5532,7 @@ Specify distanceFromScale value for ticks of circular gauge
 
 
 ### scales.ticks.height `number`
-{:#members:scales.ticks.height}
+{:#members:scales-ticks-height}
 
 
 
@@ -5565,7 +5565,7 @@ Specify tick height of circular gauge
 
 
 ### scales.ticks.placement `enum`
-{:#members:scales.ticks.placement}
+{:#members:scales-ticks-placement}
 
 <ts ref="ej.datavisualization.CircularGauge.Placement"/>
 
@@ -5598,7 +5598,7 @@ Specify tick placement of circular gauge. See <a href="ejcirculargauge.html#memb
 
 
 ### scales.ticks.type `enum`
-{:#members:scales.ticks.type}
+{:#members:scales-ticks-type}
 
 <ts ref="ej.datavisualization.CircularGauge.LabelType"/>
 
@@ -5631,7 +5631,7 @@ Specify tick Style of circular gauge. See <a href="ejcirculargauge.html#members:
 
 
 ### scales.ticks.width `number`
-{:#members:scales.ticks.width}
+{:#members:scales-ticks-width}
 
 
 
@@ -6764,7 +6764,7 @@ $("#CoreCircularGauge").ejCircularGauge({  tooltip:{showLabelTooltip: true,showC
 
 
 ### tooltip.showCustomLabelTooltip `boolean`
-{:#members:tooltip.showcustomlabeltooltip}
+{:#members:tooltip-showcustomlabeltooltip}
 
 
 
@@ -6797,7 +6797,7 @@ $("#CoreCircularGauge").ejCircularGauge({  tooltip:{showCustomLabelTooltip: true
 
 
 ### tooltip.showLabelTooltip `boolean`
-{:#members:tooltip.showlabeltooltip}
+{:#members:tooltip-showlabeltooltip}
 
 
 
@@ -6830,7 +6830,7 @@ $("#CoreCircularGauge").ejCircularGauge({  tooltip:{showLabelTooltip: true} });
 
 
 ### tooltip.templateID `string`
-{:#members:tooltip.templateid}
+{:#members:tooltip-templateid}
 
 
 
