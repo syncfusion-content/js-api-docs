@@ -327,7 +327,7 @@ Determines whether map need to resize when container is resized
 
 
 ### isResponsive `boolean`
-{:#members:isResponsive}
+{:#members:isresponsive}
 
 Determines whether map need to resize when container is resized
 
