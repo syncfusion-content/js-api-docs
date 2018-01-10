@@ -1417,7 +1417,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdfd1sai)
 
 
 ### columnDefinitions.unit `enum`
-{:#members:columnDefinitions-unit}
+{:#members:columndefinitions-unit}
 
 <ts name="ej.datavisualization.Chart.Unit"/>
 Specifies the unit to measure the width of the column in plotting area.
@@ -1472,7 +1472,7 @@ $("#container").ejChart({
 
 
 ### columnDefinitions.columnWidth `number`
-{:#members:columnDefinitions-columnWidth}
+{:#members:columndefinitions-columnWidth}
 
 
 
@@ -1504,7 +1504,7 @@ $("#container").ejChart({
 
 
 ### columnDefinitions.lineColor `string`
-{:#members:columnDefinitions.lineColor}
+{:#members:columndefinitions-lineColor}
 
 
 
@@ -1536,7 +1536,7 @@ $("#container").ejChart({
 
 
 ### columnDefinitions.lineWidth `number`
-{:#members:columnDefinitions.lineWidth}
+{:#members:columndefinitions-lineWidth}
 
 
 
@@ -25906,7 +25906,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jydjcqbo)
 
 
 ### rowDefinitions.unit `enum`
-{:#members:rowDefinitions.unit}
+{:#members:rowdefinitions-unit}
 
 <ts name="ej.datavisualization.Chart.Unit"/>
 Specifies the unit to measure the height of the row in plotting area.
@@ -25964,7 +25964,7 @@ $("#container").ejChart({
 
 
 ### rowDefinitions.rowHeight `number`
-{:#members:rowDefinitions.rowHeight}
+{:#members:rowdefinitions-rowHeight}
 
 
 
@@ -25996,7 +25996,7 @@ $("#container").ejChart({
 
 
 ### rowDefinitions.lineColor `string`
-{:#members:rowDefinitions.lineColor}
+{:#members:rowdefinitions-lineColor}
 
 
 
@@ -26028,7 +26028,7 @@ $("#container").ejChart({
 
 
 ### rowDefinitions.lineWidth `number`
-{:#members:rowDefinitions.lineWidth}
+{:#members:rowdefinitions-lineWidth}
 
 
 
