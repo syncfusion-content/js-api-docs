@@ -73,7 +73,7 @@ Sets the mode for the pivot chart widget to bind either the OLAP or relational d
             <td class="description">To bind Relational datasource to PivotChart widget</td>
         </tr>
         <tr>
-            <td class="name">Olap</td>
+            <td class="name">OLAP</td>
             <td class="description">To bind OLAP datasource to PivotChart widget</td>
         </tr>
     </tbody>
@@ -840,7 +840,7 @@ Applies filter to field members.
 
 Sets the type of filter whether to include/exclude the mentioned values.
 
->**Note**: This is applicable onnly for the relational datasource.
+>**Note**: This is applicable only for the relational datasource.
 
 #### Default Value: ej.PivotAnalysis.FilterType.Exclude
 
@@ -1671,7 +1671,7 @@ Triggers when the pivot chart widget completes all operations at client-side aft
 ### renderFailure
 {:#events:renderfailure}
 
-Triggers when the error occurrs on the AJAX request.
+Triggers when the error occurs on the AJAX request.
 
 <table class="params">
 <thead>
