@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Properties, Methods and Events of ejPivotChart Widget
 documentation: API
@@ -10,7 +10,7 @@ metacontent:
 
 # ejPivotChart
 
-The PivotChart is a lightweight control that reads OLAP and Relational information and visualizes it in graphical format with the ability to drill up and down.
+The pivot chart is a lightweight control that reads OLAP and relational information and visualizes it in a graphical format with the ability to drill up and down.
 
 #### Syntax
 
@@ -56,7 +56,7 @@ The PivotChart is a lightweight control that reads OLAP and Relational informati
 
 <ts ref = "ej.Pivot.AnalysisMode"/>
 
-Sets the mode for the PivotChart widget for binding either OLAP or Relational data source.
+Sets the mode for the pivot chart widget to bind either the OLAP or relational datasource.
 
 #### Default Value: ej.Pivot.AnalysisMode.Pivot
 
@@ -90,7 +90,7 @@ Sets the mode for the PivotChart widget for binding either OLAP or Relational da
 ### cssClass `string`
 {:#members:cssclass}
 
-Specifies the CSS class to PivotChart to achieve custom theme.
+Specifies the CSS class to the pivot chart for achieving the custom theme.
 
 #### Default Value: “”
 
@@ -104,7 +104,7 @@ Specifies the CSS class to PivotChart to achieve custom theme.
 ### zooming `object`
 {:#members:zooming}
 
-Options for enabling zooming feature of PivotChart.
+Options for enabling the zooming feature of the pivot chart.
 
 #### Default Value: {}
 
@@ -118,7 +118,7 @@ Options for enabling zooming feature of PivotChart.
 ### zooming.enableScrollbar `boolean`
 {:#members:zooming-enablescrollbar}
 
-Enables or disables horizontal scrollbar.
+Enables or disables the horizontal scrollbar.
 
 #### Default Value: false
 
@@ -132,7 +132,7 @@ Enables or disables horizontal scrollbar.
 ### commonSeriesOptions `object`
 {:#members:commonseriesoptions}
 
-Options available to configure the properties of entire series. You can also override the options for specific series by using series collection.
+Options available to configure the properties of entire series. You can also override the options for specific series by using the series collection.
 
 #### Default Value: {}
 
@@ -148,7 +148,7 @@ Options available to configure the properties of entire series. You can also ove
 
 <ts name = "ej.PivotChart.ChartTypes"/>
 
-Allows the user to set the specific chart type for PivotChart widget.
+Allows you to set the specific chart type for the pivot chart widget.
 
 #### Default Value: ej.PivotChart.ChartTypes.Column
 
@@ -242,7 +242,7 @@ Allows the user to set the specific chart type for PivotChart widget.
 ### dataSource `object`
 {:#members:datasource}
 
-Initializes the data source for the PivotChart widget, when it functions completely on client-side.
+Initializes the datasource for the pivot chart widget, when it functions completely on the client-side.
 
 #### Default Value: {}
 
@@ -256,7 +256,7 @@ Initializes the data source for the PivotChart widget, when it functions complet
 ### dataSource.cube `string`
 {:#members:datasource-cube}
 
-Contains the respective cube name from OLAP database as string type.
+Contains the respective cube name from the OLAP database as string type.
 
 #### Default Value: “”
 
@@ -270,9 +270,9 @@ Contains the respective cube name from OLAP database as string type.
 ### dataSource.sourceInfo `string`
 {:#members:datasource-sourceinfo}
 
-To set the data source name to fetch data from that. 
+To set the datasource name to fetch the data from that.
 
->**Note**: This is applicable only for Mondrian connection.
+>**Note**: This is applicable only for the Mondrian connection.
 
 #### Default Value: “”
 
@@ -286,9 +286,9 @@ To set the data source name to fetch data from that.
 ### dataSource.providerName `string`
 {:#members:datasource-providername}
 
-Set the provider name for PivotChart to identify whether the provider is SSAS or Mondrian. 
+Sets the provider name for the pivot chart to identify whether the provider is SSAS or Mondrian. 
 
->**Note**: This is applicable only for client side OLAP data.
+>**Note**: This is applicable only for the client side OLAP data.
 
 #### Default Value: "ssas"
 
@@ -302,11 +302,11 @@ Set the provider name for PivotChart to identify whether the provider is SSAS or
     <tbody>
         <tr>
             <td class="name">ssas</td>
-            <td class="description">To bind an OLAP data source to PivotChart through SSAS provider.</td>
+            <td class="description">To bind an OLAP datasource to PivotChart through SSAS provider.</td>
         </tr>
         <tr>
             <td class="name">mondrian</td>
-            <td class="description">To bind a relational data source to PivotChart through Mondrian provider.</td>
+            <td class="description">To bind a relational datasource to PivotChart through Mondrian provider.</td>
         </tr>
     </tbody>
 </table>
@@ -321,7 +321,7 @@ Set the provider name for PivotChart to identify whether the provider is SSAS or
 ### dataSource.data `object`
 {:#members:datasource-data}
 
-Provides the raw data source for the PivotChart.
+Provides the raw datasource for the pivot chart.
 
 #### Default Value: null
 
@@ -335,7 +335,7 @@ Provides the raw data source for the PivotChart.
 ### dataSource.catalog `string`
 {:#members:datasource-catalog}
 
-In connection with an OLAP database, this property contains the database name as string to fetch the data from the given connection string.
+In connection with the OLAP database, this property contains the database name as string to fetch the data from the given connection string.
 
 #### Default Value: “”
 
@@ -349,7 +349,7 @@ In connection with an OLAP database, this property contains the database name as
 ### dataSource.columns `array`
 {:#members:datasource-columns}
 
-Lists out the items to be displayed as series of PivotChart.
+Lists out the items to be displayed as series of the pivot chart.
 
 #### Default Value: []
 
@@ -364,7 +364,7 @@ Lists out the items to be displayed as series of PivotChart.
 ### dataSource.columns.fieldName `string`
 {:#members:datasource-columns-fieldname}
 
-Allows the user to bind the item by using its unique name as field name.
+Allows you to bind the item by using its unique name as field name.
 
 #### Default Value: ""
 
@@ -378,7 +378,7 @@ Allows the user to bind the item by using its unique name as field name.
 ### dataSource.columns.fieldCaption `string`
 {:#members:datasource-columns-fieldcaption}
 
-Allows the user to set the display caption for an item.
+Allows you to set the display caption for the item.
 
 #### Default Value: ""
 
@@ -392,9 +392,9 @@ Allows the user to set the display caption for an item.
 ### dataSource.columns.isNamedSets `boolean`
 {:#members:datasource-columns-isnamedsets}
 
-Allows the user to indicate whether the added item is a named set or not. 
+Allows you to indicate whether the added item is a named set or not. 
 
-> **Note**: This is only applicable for OLAP datasource.
+> **Note**: This is applicable only for the OLAP datasource.
 
 #### Default Value: false
 
@@ -410,9 +410,9 @@ Allows the user to indicate whether the added item is a named set or not.
 
 <ts ref = "ej.PivotAnalysis.SortOrder"/>
 
-Allows the user to set the sorting order of the members of the field.
+Allows you to set the sorting order of field members.
 
->**Note**: This is applicable for Relational datasource only.
+>**Note**: This is applicable only for the relational datasource.
 
 #### Default Value: ej.PivotAnalysis.SortOrder.Ascending
 
@@ -449,7 +449,7 @@ Allows the user to set the sorting order of the members of the field.
 ### dataSource.columns.filterItems `object`
 {:#members:datasource-columns-filteritems}
 
-Applies filter to the field members.
+Applies filter to field members.
 
 #### Default Value: null
 
@@ -467,7 +467,7 @@ Applies filter to the field members.
 
 Sets the type of filter whether to include/exclude the mentioned values.
 
->**Note**: This is applicable for Relational datasource only.
+>**Note**: This is applicable only for the relational datasource.
 
 #### Default Value: ej.PivotAnalysis.FilterType.Exclude
 
@@ -514,7 +514,7 @@ Contains the collection of items to be included/excluded among the field members
 ### dataSource.rows `array`
 {:#members:datasource-rows}
 
-Lists out the items to be displayed as segments of PivotChart.
+Lists out the items to be displayed as segments of the pivot chart.
 
 #### Default Value: []
 
@@ -529,7 +529,7 @@ Lists out the items to be displayed as segments of PivotChart.
 ### dataSource.rows.fieldName `string`
 {:#members:datasource-rows-fieldname}
 
-Allows the user to bind the item by using its unique name as field name.
+Allows you to bind the item by using its unique name as field name.
 
 #### Default Value: ""
 
@@ -543,7 +543,7 @@ Allows the user to bind the item by using its unique name as field name.
 ### dataSource.rows.fieldCaption `string`
 {:#members:datasource-rows-fieldcaption}
 
-Allows the user to set the display caption for an item.
+Allows you to set the display caption for the item.
 
 #### Default Value: ""
 
@@ -557,9 +557,9 @@ Allows the user to set the display caption for an item.
 ### dataSource.rows.isNamedSets `boolean`
 {:#members:datasource-rows-isnamedsets}
 
-Allows the user to indicate whether the added item is a named set or not. 
+Allows you to indicate whether the added item is a named set or not.
 
-> **Note**: This is only applicable for OLAP datasource.
+> **Note**: This is applicable only for the OLAP datasource.
 
 #### Default Value: false
 
@@ -575,9 +575,9 @@ Allows the user to indicate whether the added item is a named set or not.
 
 <ts ref = "ej.PivotAnalysis.SortOrder"/>
 
-Allows the user to set the sorting order of the members of the field.
+Allows you to set the sorting order of field members.
 
->**Note**: This is applicable for Relational datasource only.
+>**Note**: This is applicable only for the relational datasource.
 
 #### Default Value: ej.PivotAnalysis.SortOrder.Ascending
 
@@ -614,7 +614,7 @@ Allows the user to set the sorting order of the members of the field.
 ### dataSource.rows.filterItems `object`
 {:#members:datasource-rows-filteritems}
 
-Applies filter to the field members.
+Applies filter to field members.
 
 #### Default Value: null
 
@@ -632,7 +632,7 @@ Applies filter to the field members.
 
 Sets the type of filter whether to include/exclude the mentioned values.
 
->**Note**: This is applicable for Relational datasource only.
+>**Note**: This is applicable only for the relational datasource.
 
 #### Default Value: ej.PivotAnalysis.FilterType.Exclude
 
@@ -679,7 +679,7 @@ Contains the collection of items to be included/excluded among the field members
 ### dataSource.values `array`
 {:#members:datasource-values}
 
-Lists out the items supports calculation in PivotChart.
+Lists out the items support calculation in the pivot chart.
 
 #### Default Value: []
 
@@ -693,7 +693,7 @@ Lists out the items supports calculation in PivotChart.
 ### dataSource.values.fieldName `string`
 {:#members:datasource-values-fieldname}
 
-Allows the user to bind the item by using its unique name as field name for Relational datasource.
+Allows you to bind the item by using its unique name as field name for the relational datasource.
 
 #### Default Value: ""
 
@@ -707,7 +707,7 @@ Allows the user to bind the item by using its unique name as field name for Rela
 ### dataSource.values.fieldCaption `string`
 {:#members:datasource-values-fieldcaption}
 
-Allows the user to set the display caption for an item for Relational datasource.
+Allows you to set the display caption for the item of the relational datasource.
 
 #### Default Value: ""
 
@@ -721,7 +721,7 @@ Allows the user to set the display caption for an item for Relational datasource
 ### dataSource.values.measures `array`
 {:#members:datasource-values-measures}
 
-This holds the list of unique names of measures to bind them from the OLAP cube.
+Holds the list of unique names of measures to bind them from the OLAP cube.
 
 #### Default Value: []
 
@@ -735,7 +735,7 @@ This holds the list of unique names of measures to bind them from the OLAP cube.
 ### dataSource.values.measures.fieldName `string`
 {:#members:datasource-values-measures-fieldName}
 
-Allows the user to bind the measure from OLAP datasource by using its unique name as field name.
+Allows you to bind the measure from the OLAP datasource by using its unique name as field name.
 
 #### Default Value: ""
 
@@ -749,9 +749,9 @@ Allows the user to bind the measure from OLAP datasource by using its unique nam
 ### dataSource.values.axis `string`
 {:#members:datasource-values-axis}
 
-Allows to set the axis name to place the measures items.
+Allows you to set the axis name to place the measures items.
 
->**Note**: This is applicable for OLAP datasource only.
+>**Note**: This is applicable only for the OLAP datasource.
 
 #### Default Value: "rows"
 
@@ -765,7 +765,7 @@ Allows to set the axis name to place the measures items.
 ### dataSource.values.isCalculatedField `boolean`
 {:#members:datasource-values-iscalculatedfield}
 
-Indicates whether the field is a calculated field or not with Relational datasource.
+Indicates whether the field is a calculated field with the relational datasource or not.
 
 #### Default Value: false
 
@@ -779,7 +779,7 @@ Indicates whether the field is a calculated field or not with Relational datasou
 ### dataSource.values.formula `string`
 {:#members:datasource-values-formula}
 
-Allows to set the formula for calculation of values for calculated members in Relational datasource.
+Allows you to set the formula to calculate the values for calculated members in the relational datasource.
 
 #### Default Value: ""
 
@@ -793,7 +793,7 @@ Allows to set the formula for calculation of values for calculated members in Re
 ### dataSource.filters `array`
 {:#members:datasource-filters}
 
-Lists out the items which supports filtering of values without displaying the members in UI in PivotChart.
+Lists out the items that supports filtering of values without displaying the members in UI of the pivot chart.
 
 #### Default Value: []
 
@@ -808,7 +808,7 @@ Lists out the items which supports filtering of values without displaying the me
 ### dataSource.filters.fieldName `string`
 {:#members:datasource-filters-fieldname}
 
-Allows the user to bind the item by using its unique name as field name.
+Allows you to bind the item by using its unique name as field name.
 
 #### Default Value: ""
 
@@ -822,7 +822,7 @@ Allows the user to bind the item by using its unique name as field name.
 ### dataSource.filters.filterItems `object`
 {:#members:datasource-filters-filteritems}
 
-Applies filter to the field members.
+Applies filter to field members.
 
 #### Default Value: null
 
@@ -840,7 +840,7 @@ Applies filter to the field members.
 
 Sets the type of filter whether to include/exclude the mentioned values.
 
->**Note**: This is applicable for Relational datasource only.
+>**Note**: This is applicable onnly for the relational datasource.
 
 #### Default Value: ej.PivotAnalysis.FilterType.Exclude
 
@@ -887,7 +887,7 @@ Contains the collection of items to be included/excluded among the field members
 ### customObject `object`
 {:#members:customobject}
 
-Object utilized to pass additional information between client-end and service-end on operating the control in server mode.
+Object is utilized to pass additional information between the client-end and the service-end while operating the control in the server mode.
 
 #### Default Value: {}
 
@@ -901,7 +901,7 @@ Object utilized to pass additional information between client-end and service-en
 ### enable3D `boolean`
 {:#members:enable3d}
 
-Allows the user to enable 3D view of PivotChart.
+Allows you to enable the 3D view of the pivot chart.
 
 #### Default Value: false
 
@@ -915,7 +915,7 @@ Allows the user to enable 3D view of PivotChart.
 ### enableRTL `boolean`
 {:#members:enablertl}
 
-Allows the user to view PivotChart from right to left.
+Allows you to view the pivot chart from right to left.
 
 #### Default Value: false
 
@@ -929,7 +929,7 @@ Allows the user to view PivotChart from right to left.
 ### enableMultiLevelLabels `boolean`
 {:#members:enablemultilevellabels}
 
-Allows user to render complete PivotChart on drill operation, that is, when expanding and collapsing members which are shown in multi-level labels.
+Allows you to render the complete pivot chart on drill operation, when expanding and collapsing members are shown in multi-level labels.
 
 #### Default Value: false
 
@@ -943,7 +943,7 @@ Allows user to render complete PivotChart on drill operation, that is, when expa
 ### isResponsive `boolean`
 {:#members:isresponsive}
 
-Allows the user to enable PivotChart’s responsiveness in the browser layout.
+Allows you to enable the responsiveness of pivot chart in the browser layout.
 
 #### Default Value: false
 
@@ -957,7 +957,7 @@ Allows the user to enable PivotChart’s responsiveness in the browser layout.
 ### legend `object`
 {:#members:legend}
 
-Lets the user to customize the legend items and their labels.
+You can customize the legend items and their labels.
 
 #### Default Value: {}
 
@@ -971,7 +971,7 @@ Lets the user to customize the legend items and their labels.
 ### locale `string`
 {:#members:locale}
 
-Allows the user to set the localized language for the widget.
+Allows you to set the localized language for the widget.
 
 #### Default Value: "en-US"
 
@@ -987,7 +987,7 @@ Allows the user to set the localized language for the widget.
 
 <ts ref = "ej.Pivot.OperationalMode"/>
 
-Sets the mode for the PivotChart widget for binding data source either in server-side or client-side.
+Sets the mode for the pivot chart widget to bind the data source either in the server-side or client-side.
 
 <table class="params">
     <thead>
@@ -999,11 +999,11 @@ Sets the mode for the PivotChart widget for binding data source either in server
     <tbody>
         <tr>
             <td class="name">ClientMode</td>
-            <td class="description">To bind data source completely from client-side.</td>
+            <td class="description">To bind datasource completely from client-side.</td>
         </tr>
         <tr>
             <td class="name">ServerMode</td>
-            <td class="description">To bind data source completely from server-side.</td>
+            <td class="description">To bind datasource completely from server-side.</td>
         </tr>
     </tbody>
 </table>
@@ -1020,7 +1020,7 @@ Sets the mode for the PivotChart widget for binding data source either in server
 ### primaryXAxis `object`
 {:#members:primaryxaxis}
 
-This is a horizontal axis that contains options to configure axis and it is the primary x axis for all the series in series array. To override x axis for particular series, create an axis object by providing unique name by using name property and add it to axes array. Then, assign the name to the series&rsquo;s xAxisName property to link both axis and series.
+This is a horizontal axis that contains options to configure the axis and it is the primary x-axis for all series in the series array. To override x-axis for particular series, create an axis object by providing a unique name by using the name property and add it to the axes array. Then, assign the name to the series&rsquo;s xAxisName property to link both the axis and the series.
 
 #### Default Value: {}
 
@@ -1034,7 +1034,7 @@ This is a horizontal axis that contains options to configure axis and it is the 
 ### primaryYAxis `object`
 {:#members:primaryyaxis}
 
-This is a vertical axis that contains options to configure axis. This is the primary y axis for all the series in series array. To override y axis for particular series, create an axis object by providing unique name by using name property and add it to axes array. Then, assign the name to the series&rsquo;s yAxisName property to link both axis and series.
+This is a vertical axis that contains options to configure the axis. This is the primary y-axis for all the series in the series array. To override y-axis for particular series, create an axis object by providing a unique name by using the name property and add it to the axes array. Then, assign the name to the series&rsquo;s yAxisName property to link both the axis and the series.
 
 #### Default Value: {}
 
@@ -1048,7 +1048,7 @@ This is a vertical axis that contains options to configure axis. This is the pri
 ### rotation `number`
 {:#members:rotation}
 
-Allows the user to rotate the angle of PivotChart in 3D view.
+Allows you to rotate the angle of pivot chart in 3D view.
 
 #### Default Value: 0
 
@@ -1062,7 +1062,7 @@ Allows the user to rotate the angle of PivotChart in 3D view.
 ### enableContextMenu `boolean`
 {:#members:enablecontextmenu}
 
-Allows the user to enable/disable the context menu options in the PivotChart.
+Allows you to enable/disable context menu options in the pivot chart.
 
 #### Default Value: false
 
@@ -1076,9 +1076,9 @@ Allows the user to enable/disable the context menu options in the PivotChart.
 ### serviceMethodSettings `object`
 {:#members:servicemethodsettings}
 
-Allows the user to set custom name for the methods at service-end, communicated on AJAX post.
+Allows you to set the custom name for methods at service-end, when you are communicating on AJAX post.
 
->**Note**: This is applicable only on operating the control in server mode.
+>**Note**: This is applicable only when operating the control in the server mode.
 
 #### Default Value: {}
 
@@ -1092,7 +1092,7 @@ Allows the user to set custom name for the methods at service-end, communicated 
 ### serviceMethodSettings.drillDown `string`
 {:#members:servicemethodsettings-drilldown}
 
-Allows the user to set the custom name for the service method responsible for drilling up/down operation in PivotChart.
+Allows you to set the custom name for the service method that is responsible for drilling up/down in the pivot chart.
 
 #### Default Value: "DrillChart"
 
@@ -1106,7 +1106,7 @@ Allows the user to set the custom name for the service method responsible for dr
 ### serviceMethodSettings.exportPivotChart `string`
 {:#members:servicemethodsettings-exportpivotchart}
 
-Allows the user to set the custom name for the service method responsible for exporting.
+Allows you to set the custom name for the service method which is responsible for exporting the pivot chart.
 
 #### Default Value: "Export"
 
@@ -1120,7 +1120,7 @@ Allows the user to set the custom name for the service method responsible for ex
 ### serviceMethodSettings.initialize `string`
 {:#members:servicemethodsettings-initialize}
 
-Allows the user to set the custom name for the service method responsible for initializing PivotChart.
+Allows you to set the custom name for the service method which is responsible for initializing the pivot chart.
 
 #### Default Value: "InitializeChart"
 
@@ -1134,7 +1134,7 @@ Allows the user to set the custom name for the service method responsible for in
 ### serviceMethodSettings.paging `string`
 {:#members:servicemethodsettings-paging}
 
-Allows the user to set the custom name for the service method responsible for navigating between pages in paged PivotChart.
+Allows you to set the custom name for the service method which is responsible for navigating between pages in the paged pivot chart.
 
 #### Default Value: "Paging"
 
@@ -1149,7 +1149,7 @@ Allows the user to set the custom name for the service method responsible for na
 ### size `object`
 {:#members:size}
 
-Options to customize the size of the PivotChart control.
+Options to customize the size of the pivot chart control.
 
 #### Default Value: {}
 
@@ -1163,7 +1163,7 @@ Options to customize the size of the PivotChart control.
 ###  url `string`
 {:#members:url}
 
-Connects the service using the specified URL for any server updates on operating the control in server mode.
+Connects the service by using the specified URL for any server updates while operating the control in the server mode.
 
 #### Default Value: “”
 
@@ -1179,7 +1179,7 @@ Connects the service using the specified URL for any server updates on operating
 ### doAjaxPost()
 {:#methods:doajaxpost}
 
-Performs an asynchronous HTTP (AJAX) request.
+Posts an asynchronous HTTP (AJAX) request.
 
 **Example:**
 
@@ -1192,7 +1192,7 @@ Performs an asynchronous HTTP (AJAX) request.
 ### doPostBack()
 {:#methods:dopostback}
 
-Perform an asynchronous HTTP (FullPost) submit.
+Performs an asynchronous HTTP (FullPost) submit.
 
 **Example:**
 
@@ -1205,7 +1205,7 @@ Perform an asynchronous HTTP (FullPost) submit.
 ### exportPivotChart()
 {:#methods:exportpivotchart}
 
-Exports the PivotChart to the format specified in the parameter.
+Exports the pivot chart to the format that is specified in the parameter.
   
 **Example:**
 
@@ -1219,7 +1219,7 @@ Exports the PivotChart to the format specified in the parameter.
 ### renderChartFromJSON()
 {:#methods:renderchartfromjson}
 
-This function renders the PivotChart control with the JSON formatted datasource.
+This function renders the pivot chart control with the JSON formatted data source.
 
 **Example:**
 
@@ -1232,7 +1232,7 @@ This function renders the PivotChart control with the JSON formatted datasource.
 ### renderControlSuccess()
 {:#methods:rendercontrolsuccess}
 
-This function receives the update from service-end, which would be utilized for rendering the widget.
+This function receives the update from the service-end, which will be utilized for rendering the widget.
 
 **Example:**
 
@@ -1245,13 +1245,13 @@ This function receives the update from service-end, which would be utilized for 
 ### getOlapReport()
 {:#methods:getolapreport}
 
-Returns the OlapReport string maintained along with the axis elements information.
+Returns the OlapReport string that is maintained along with the axis elements information.
 
 #### Returns:
 
 string
 
->**Note**: This method is applicable only on operating the control in server mode.
+>**Note**: This method is applicable only when operating the control in the server mode.
 
 **Example:**
 
@@ -1266,7 +1266,7 @@ string
 
 Sets the OlapReport string along with the axis information and maintains it in a property.
 
->**Note**: This method is applicable only on operating the control in server mode.
+>**Note**: This method is applicable only when operating the control in the server mode.
 
 **Example:**
 
@@ -1279,7 +1279,7 @@ Sets the OlapReport string along with the axis information and maintains it in a
 ### getJSONRecords()
 {:#methods:getjsonrecords}
 
-Returns the JSON records formed to render the control.
+Returns the JSON records that are formed to render the control.
 
 #### Returns
 
@@ -1309,7 +1309,7 @@ Sets the JSON records to render the control.
 ### getPivotEngine()
 {:#methods:getpivotengine}
 
-Returns the PivotEngine formed to render the control.
+Returns the PivotEngine that is formed to render the control.
 
 #### Returns:
 
@@ -1326,7 +1326,7 @@ array
 ### setPivotEngine()
 {:#methods:setpivotengine}
 
-Sets the PivotEngine required to render the control.
+Sets the PivotEngine that is required to render the control.
 
 **Example:**
 
@@ -1339,9 +1339,9 @@ Sets the PivotEngine required to render the control.
 ### refreshControl()
 {:#methods:refreshcontrol}
 
-Re-renders the control with the data source at the instant.
+Re-renders the control with the datasource at instant.
 
->**Note**: This is only applicable on operating in client mode.
+>**Note**: This is applicable only when operating in the client mode.
 
 **Example:**
 
@@ -1355,7 +1355,7 @@ Re-renders the control with the data source at the instant.
 ### destroy()
 {:#methods:destroy}
 
-This function Destroy the PivotChart widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+This function destroys the pivot chart widget associated events that are bound using "this._on" and brings the control to pre-init state.
 
 **Example:**
 
@@ -1368,7 +1368,7 @@ This function Destroy the PivotChart widget all events bound using this._on will
 ### generateJSON()
 {:#methods:generatejson}
 
-Renders the control with the pivot engine obtained from olap cube.
+Renders the control with the pivot engine that is obtained from the OLAP cube.
 
 **Example:**
 
@@ -1381,7 +1381,7 @@ Renders the control with the pivot engine obtained from olap cube.
 ### refreshPagedPivotChart()
 {:#methods:refreshpagedpivotchart}
 
-Navigates to the specified page number in specified axis.
+Navigates to the specified page number in the specified axis.
 
 **Example:**
 
@@ -1397,7 +1397,7 @@ Navigates to the specified page number in specified axis.
 ### load
 {:#events:load}
 
-Triggers when PivotChart starts to render.
+Triggers when the pivot chart starts to render.
 
 <table class="params">
 <thead>
@@ -1444,7 +1444,7 @@ Triggers when PivotChart starts to render.
 ### afterServiceInvoke
 {:#events:afterserviceinvoke}
 
-Triggers when it reaches client-side after any AJAX request.
+Triggers when it reaches the client-side after any AJAX request.
 
 <table class="params">
 <thead>
@@ -1490,7 +1490,7 @@ Triggers when it reaches client-side after any AJAX request.
 ### beforeServiceInvoke
 {:#events:beforeserviceinvoke}
 
-Triggers before any AJAX request is passed from PivotChart to service methods.
+Triggers before any AJAX request is passed from the pivot chart to service methods.
 
 <table class="params">
 <thead>
@@ -1536,7 +1536,7 @@ Triggers before any AJAX request is passed from PivotChart to service methods.
 ### beforePivotEnginePopulate
 {:#events:beforepivotenginepopulate}
 
-Triggers before Pivot Engine starts to populate.
+Triggers before the pivot engine starts to populate.
 
 <table class="params">
 <thead>
@@ -1571,7 +1571,7 @@ Triggers before Pivot Engine starts to populate.
 ### drillSuccess
 {:#events:drillsuccess}
 
-Triggers on performing drill up/down in PivotChart control.
+Triggers when performing drill up/down operation in the pivot chart control.
 
 <table class="params">
 <thead>
@@ -1622,7 +1622,7 @@ Triggers on performing drill up/down in PivotChart control.
 ### renderComplete
 {:#events:rendercomplete}
 
-Triggers when PivotChart widget completes all operations at client-side after any AJAX request.
+Triggers when the pivot chart widget completes all operations at client-side after the AJAX request.
 
 <table class="params">
 <thead>
@@ -1671,7 +1671,7 @@ Triggers when PivotChart widget completes all operations at client-side after an
 ### renderFailure
 {:#events:renderfailure}
 
-Triggers when any error occurred during AJAX request.
+Triggers when the error occurrs on the AJAX request.
 
 <table class="params">
 <thead>
@@ -1722,7 +1722,7 @@ Triggers when any error occurred during AJAX request.
 ### renderSuccess
 {:#events:rendersuccess}
 
-Triggers when PivotChart successfully reaches client-side after any AJAX request.
+Triggers when the pivot chart successfully reaches the client-side after the AJAX request.
 
 <table class="params">
 <thead>
@@ -1758,7 +1758,7 @@ Triggers when PivotChart successfully reaches client-side after any AJAX request
 ### beforeExport
 {:#events:beforeexport}
 
-Triggers before performing exporting in pivot chart.
+Triggers before performing export operation in the pivot chart.
 
 <table class="params">
 <thead>
