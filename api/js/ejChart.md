@@ -33715,7 +33715,7 @@ series :[{ trendlines:[{ intercept : 10 }]}]
 
 
 ### series.highlightSettings `object`
-{:#members:series.highlightsettings}
+{:#members:series-highlightsettings}
 
 
 
@@ -34751,7 +34751,7 @@ $("#container").ejChart({
 
 
 ### title.border.cornerRadius `number`
-{:#members:title-border-cornerRadius}
+{:#members:title-border-cornerradius}
 
 
 
@@ -35021,7 +35021,7 @@ $("#container").ejChart({
 
 
 ### title.maximumWidth `string`
-{:#members:title-maximumWidth}
+{:#members:title-maximumwidth}
 
 
 Maximum width of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true. 
@@ -35050,7 +35050,7 @@ $("#container").ejChart({
 
 
 ### title.textOverflow `enum`
-{:#members:title-textOverflow}
+{:#members:title-textoverflow}
 
 <ts ref="ej.datavisualization.Chart.TextOverflow"/>
 
@@ -35261,7 +35261,7 @@ $("#container").ejChart({
 
 
 ### title.subTitle.background `string`
-{:#members:title.subtitle.background}
+{:#members:title-subtitle-background}
 
 
 
@@ -35566,7 +35566,7 @@ $("#container").ejChart({
 
 
 ### title.subTitle.maximumWidth `string`
-{:#members:title-subtitle-maximumWidth}
+{:#members:title-subtitle-maximumwidth}
 
 
 Maximum width of the Subtitle, when the Subtitle exceeds this width, the Subtitle gets trimmed, when enableTrim is true. 
@@ -35595,7 +35595,7 @@ $("#container").ejChart({
 
 
 ### title.subTitle.textOverflow `enum`
-{:#members:title-subTitle-textOverflow}
+{:#members:title-subtitle-textoverflow}
 
 <ts ref="ej.datavisualization.Chart.TextOverflow"/>
 
@@ -35907,7 +35907,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hqmmhpgk)
 
 
 ### zooming.enableScrollbar `boolean`
-{:#members:zooming-enableScrollbar}
+{:#members:zooming-enablescrollbar}
 
 
 
@@ -35938,7 +35938,7 @@ $("#container").ejChart({
 
 
 ### zooming.toolbarItems `array`
-{:#members:zooming-toolbarItems}
+{:#members:zooming-toolbaritems}
 
 
 
