@@ -27500,7 +27500,7 @@ series : [ { bubbleOptions: { maxRadius: 7 }} ]
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdnbwech)
 
 ### series.splineType `enum`
-{:#members:series-splineType}
+{:#members:series-splinetype}
 
 <ts ref="ej.datavisualization.Chart.SplineType"/>
 
