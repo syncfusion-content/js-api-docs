@@ -7,7 +7,7 @@ platform: js-api
 keywords: ejGantt, API, Essential JS Gantt
 ---
 
-# ejGantt.
+# ejGantt
 
 The Essential JavaScript Gantt control is designed to visualize and edit the project schedule, and track the project progress. 
 
@@ -129,6 +129,30 @@ Specifies editType of fields to be included in the add dialog in Gantt
 </script>
 {% endhighlight %}
 
+### addDialogFields.displayInGeneralTab `boolean`
+{:#members:adddialogfields-displayingeneraltab}
+
+Specifies the custom column field was displayed in General tab of add dialog or not.
+
+#### Default Value
+{:.param}
+
+* false
+
+#### Example
+{:.example}
+
+{% highlight html %}
+
+<div id="gantt"></div> 
+<script>                  
+$("#gantt").ejGantt(
+{
+     addDialogFields: [{ field:"customColumn", displayInGeneralTab: true }]
+});
+</script>
+
+{% endhighlight %}
 
 ### allowColumnResize `boolean`
 {:#members:allowcolumnresize}
@@ -983,6 +1007,31 @@ Specifies editType of fields to be included in the edit dialog in Gantt
 </script>
 {% endhighlight %}
 
+### editDialogFields.displayInGeneralTab `boolean`
+{:#members:editdialogfields-displayingeneraltab}
+
+Specifies the custom column field was displayed in General tab of edit dialog or not.
+
+#### Default Value
+{:.param}
+
+* false
+
+#### Example
+{:.example}
+
+{% highlight html %}
+
+<div id="gantt"></div> 
+<script>                  
+$("#gantt").ejGantt(
+{
+     editDialogFields: [{ field:"customColumn", displayInGeneralTab: true }]
+});
+</script>
+
+{% endhighlight %}
+
 ### filterSettings `object`
 {:#members:filtersettings}
 
@@ -1224,30 +1273,6 @@ Specifies the option for enabling or disabling indent action in Gantt.
 <div id="gantt"></div> 
 <script>                  
         $("#gantt").ejGantt({  editSettings:{allowIndent : true} });   
-</script>
-
-{% endhighlight %}
-
-### editSettings.allowOutdent `boolean`
-{:#members:editsettings-allowoutdent}
-
-Specifies the option for enabling or disabling outdent action in Gantt
-
-#### Default Value
-{:.param}
-
-* false
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                  
-        $("#gantt").ejGantt({  editSettings:{allowOutdent : true} });   
 </script>
 
 {% endhighlight %}
