@@ -5130,6 +5130,106 @@ Binds the name of `customStyle` field in dataSource. It applies the custom CSS t
 
 ## Methods
 
+
+### addResource(resourceObject,name,index)
+{:#methods:addResource}
+
+It is used to add the resources dynamically in the scheduler. It renders the resource based on the index if it is available or else it renders this resource at end of all resources.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">resourceObject</td>
+            <td class="type">Object</td>
+            <td class="description">Resource object which can be defined with all the available options of resources.</td>
+        </tr>
+        <tr>
+            <td class="name">name</td>
+            <td class="type">string</td>
+            <td class="description">Defines the name of the resource collection to which this object needs to be added.</td>
+        </tr>
+        <tr>
+            <td class="name">index</td>
+            <td class="type">number</td>
+            <td class="description">It is optional. If it is available, this render the resource at the given specified index location. Else render at end of the all resources.</td>
+        </tr>
+        </tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+#### Example
+
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<script type="text/javascript">
+$(function() {
+    $("#Schedule1").ejSchedule({
+        width: "100%",
+        currentDate: new Date(2015, 04, 05),
+        group: {
+            resources: ["Owners"]
+        },
+        resources: [{
+            field: "ownerId",
+            title: "Owner",
+            name: "Owners",
+            resourceSettings: {
+                dataSource: [{
+                    text: "Nancy",
+                    id: 1,
+                    color: "#f8a398"
+                }, {
+                    text: "Steven",
+                    id: 2,
+                    color: "#56ca85"
+                }],
+                text: "text",
+                id: "id",
+                color: "color"
+            }
+        }],
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Research on Sky Miracles",
+                StartTime: new Date(2015, 04, 05, 9, 00),
+                EndTime: new Date(2015, 04, 05, 10, 30),
+                ownerId: 2
+            }, {
+                Id: 101,
+                Subject: "Discovery of Exoplanets",
+                StartTime: new Date(2015, 04, 07, 6, 00),
+                EndTime: new Date(2015, 04, 07, 9, 30),
+                ownerId: 1
+            }],
+            resourceFields: "ownerId"
+        }
+    });
+    var Obj = {text: "Adams", id: 10, groupId: 3, color: "#51a0ed"};
+    var schObj = $("#Schedule1").data("ejSchedule");
+    schObj.addResource(Obj ,"Owners",2); // with index
+    schObj.addResource(Obj ,"Owners"); // without index
+});	
+</script>
+
+{% endhighlight %}
+
+
 ### deleteAppointment(data)
 {:#methods:deleteappointment}
 
@@ -5654,6 +5754,98 @@ void
 $('#Schedule').ejSchedule();
 var schObj = $("#Schedule").data("ejSchedule");
 schObj.refreshScroller(); // To refresh scroller while using Schedule control in some other control
+</script>
+
+{% endhighlight %}
+
+
+### removeResource(resourceId,name)
+{:#methods:removeResource}
+
+It is used to remove the resources dynamically from the scheduler. It removed the resource based on the resource id with the given resource collection name.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">resourceId</td>
+            <td class="type">String|number</td>
+            <td class="description">Defines the Id of the resource.</td>
+        </tr>
+        <tr>
+            <td class="name">name</td>
+            <td class="type">string</td>
+            <td class="description">Defines the name of the resource collection which this resource id belongs.</td>
+        </tr>
+       </tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+Void
+
+#### Example
+
+
+{% highlight html %}
+
+<!--Container for ejScheduler widget-->
+<div id="Schedule1"></div>
+
+<script type="text/javascript">
+$(function() {
+    $("#Schedule1").ejSchedule({
+        width: "100%",
+        currentDate: new Date(2015, 04, 05),
+        group: {
+            resources: ["Owners"]
+        },
+        resources: [{
+            field: "ownerId",
+            title: "Owner",
+            name: "Owners",
+            resourceSettings: {
+                dataSource: [{
+                    text: "Nancy",
+                    id: 1,
+                    color: "#f8a398"
+                }, {
+                    text: "Steven",
+                    id: 2,
+                    color: "#56ca85"
+                }],
+                text: "text",
+                id: "id",
+                color: "color"
+            }
+        }],
+        appointmentSettings: {
+            dataSource: [{
+                Id: 100,
+                Subject: "Research on Sky Miracles",
+                StartTime: new Date(2015, 04, 05, 9, 00),
+                EndTime: new Date(2015, 04, 05, 10, 30),
+                ownerId: 2
+            }, {
+                Id: 101,
+                Subject: "Discovery of Exoplanets",
+                StartTime: new Date(2015, 04, 07, 6, 00),
+                EndTime: new Date(2015, 04, 07, 9, 30),
+                ownerId: 1
+            }],
+            resourceFields: "ownerId"
+        }
+    });
+    var schObj = $("#Schedule1").data("ejSchedule");
+    schObj.removeResource(2,"Owners"); 
+});	
 </script>
 
 {% endhighlight %}
