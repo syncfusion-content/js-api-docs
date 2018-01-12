@@ -4328,7 +4328,7 @@ Specify pointer width of circular gauge
 
 
 ### scales.radius `number`
-{:#members:scales.radius}
+{:#members:scales-radius}
 
 
 

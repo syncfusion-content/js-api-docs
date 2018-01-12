@@ -28959,7 +28959,7 @@ series :[{marker :{ visible : true}}]
 
 
 ### series.name `string`
-{:#members:series.name}
+{:#members:series-name}
 
 
 
@@ -29241,7 +29241,7 @@ series : [{pieOfPieCoefficient : 0.8 }]
 });
  {% endhighlight %}
 
- ### series.splitValue `string`
+### series.splitValue `string`
 {:#members:series-splitvalue}
 
 
@@ -29297,7 +29297,7 @@ series : [{gapWidth : 300 }]
  {% endhighlight %}
 
 ### series.emptyPointSettings `object`
-{:#members:series-emptyPointSettings}
+{:#members:series-emptypointsettings}
 
 
 
@@ -30265,7 +30265,7 @@ $("#container").ejChart({
   
 
 ### series.points `array`
-{:#members:series.points}
+{:#members:series-points}
 
 
 
@@ -31875,7 +31875,7 @@ series :[{ points:[{ y : 20 }] }]
 
 
 ### series.pyramidMode `enum`
-{:#members:series.pyramidmode}
+{:#members:series-pyramidmode}
 
 <ts ref="ej.datavisualization.Chart.PyramidMode"/>
 
@@ -31909,7 +31909,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xlnaeyog)
 
 
 ### series.query `object`
-{:#members:series.query}
+{:#members:series-query}
 
 
 
@@ -31945,7 +31945,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5ffbprmm)
 
 
 ### series.startAngle `number`
-{:#members:series.startangle}
+{:#members:series-startangle}
 
 
 
@@ -32004,7 +32004,7 @@ series : [{
 
 
 ### series.cornerRadius.topLeft `number`
-{:#members:series.cornerradius.topleft}
+{:#members:series-cornerradius-topleft}
 
 
 
@@ -32037,7 +32037,7 @@ series : [{
 
 
 ### series.cornerRadius.topRight `number`
-{:#members:series.cornerradius.topright}
+{:#members:series-cornerradius-topright}
 
 
 
@@ -32071,7 +32071,7 @@ series : [{
 
 
 ### series.cornerRadius.bottomLeft `number`
-{:#members:series.cornerradius.bottomleft}
+{:#members:series-cornerradius-bottomleft}
 
 
 
@@ -32104,7 +32104,7 @@ series : [{
 
 
 ### series.cornerRadius.bottomRight `number`
-{:#members:series.cornerradius.bottomright}
+{:#members:series-cornerradius-bottomright}
 
 
 
@@ -32138,7 +32138,7 @@ series : [{
 
 
 ### series.tooltip `object`
-{:#members:series.tooltip}
+{:#members:series-tooltip}
 
 
 
@@ -32533,7 +32533,7 @@ series : [{tooltip : {visible : true} }]
 
 
 ### series.type `enum`
-{:#members:series.type}
+{:#members:series-type}
 
 
 <ts ref="ej.datavisualization.Chart.Type"/>
@@ -32565,7 +32565,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xab3pr0x)
 
 
 ### series.visibility `string`
-{:#members:series.visibility}
+{:#members:series-visibility}
 
 
 
@@ -32632,7 +32632,7 @@ series : [{visibleOnLegend: "hidden" }]
 
 
 ### series.xAxisName `string`
-{:#members:series.xaxisname}
+{:#members:series-xaxisname}
 
 
 
@@ -32665,7 +32665,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hz4rz01v)
 
 
 ### series.xName `string`
-{:#members:series.xname}
+{:#members:series-xname}
 
 
 
@@ -32698,7 +32698,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/5ffbprmm)
 
 
 ### series.yAxisName `string`
-{:#members:series.yaxisname}
+{:#members:series-yaxisname}
 
 
 
@@ -32732,7 +32732,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xn2uktf2)
 
 
 ### series.yName `string`
-{:#members:series.yname}
+{:#members:series-yname}
 
 
 
@@ -32764,7 +32764,7 @@ series : [{yName: "YValue" }]
 
 
 ### series.high `string`
-{:#members:series.high}
+{:#members:series-high}
 
 
 
@@ -32796,7 +32796,7 @@ series : [{high: "high" }]
 
 
 ### series.low `string`
-{:#members:series.low}
+{:#members:series-low}
 
 
 
@@ -32830,7 +32830,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/pqshst44)
 
 
 ### series.open `string`
-{:#members:series.open}
+{:#members:series-open}
 
 
 
@@ -32861,7 +32861,7 @@ series : [{open: "oepn" }]
 
 
 ### series.close `string`
-{:#members:series.close}
+{:#members:series-close}
 
 
 Name of the property in the datasource that contains close value for the series.
@@ -32989,7 +32989,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/xsmhbrfn)
 
 
 ### series.trendlines `array`
-{:#members:series.trendlines}
+{:#members:series-trendlines}
 
 
 
@@ -33981,7 +33981,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zmumutbx)
 
 
 ### series.selectionSettings `object`
-{:#members:series.selectionsettings}
+{:#members:series-selectionsettings}
 
 
 
