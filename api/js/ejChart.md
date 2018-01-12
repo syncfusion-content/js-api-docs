@@ -1417,7 +1417,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/zdfd1sai)
 
 
 ### columnDefinitions.unit `enum`
-{:#members:columnDefinitions-unit}
+{:#members:columndefinitions-unit}
 
 <ts name="ej.datavisualization.Chart.Unit"/>
 Specifies the unit to measure the width of the column in plotting area.
@@ -1472,7 +1472,7 @@ $("#container").ejChart({
 
 
 ### columnDefinitions.columnWidth `number`
-{:#members:columnDefinitions-columnWidth}
+{:#members:columndefinitions-columnWidth}
 
 
 
@@ -1504,7 +1504,7 @@ $("#container").ejChart({
 
 
 ### columnDefinitions.lineColor `string`
-{:#members:columnDefinitions.lineColor}
+{:#members:columndefinitions-lineColor}
 
 
 
@@ -1536,7 +1536,7 @@ $("#container").ejChart({
 
 
 ### columnDefinitions.lineWidth `number`
-{:#members:columnDefinitions.lineWidth}
+{:#members:columndefinitions-lineWidth}
 
 
 
@@ -25906,7 +25906,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/jydjcqbo)
 
 
 ### rowDefinitions.unit `enum`
-{:#members:rowDefinitions.unit}
+{:#members:rowdefinitions-unit}
 
 <ts name="ej.datavisualization.Chart.Unit"/>
 Specifies the unit to measure the height of the row in plotting area.
@@ -25964,7 +25964,7 @@ $("#container").ejChart({
 
 
 ### rowDefinitions.rowHeight `number`
-{:#members:rowDefinitions.rowHeight}
+{:#members:rowdefinitions-rowHeight}
 
 
 
@@ -25996,7 +25996,7 @@ $("#container").ejChart({
 
 
 ### rowDefinitions.lineColor `string`
-{:#members:rowDefinitions.lineColor}
+{:#members:rowdefinitions-lineColor}
 
 
 
@@ -26028,7 +26028,7 @@ $("#container").ejChart({
 
 
 ### rowDefinitions.lineWidth `number`
-{:#members:rowDefinitions.lineWidth}
+{:#members:rowdefinitions-lineWidth}
 
 
 
@@ -34751,7 +34751,7 @@ $("#container").ejChart({
 
 
 ### title.border.cornerRadius `number`
-{:#members:title-border-cornerRadius}
+{:#members:title-border-cornerradius}
 
 
 
@@ -35021,7 +35021,7 @@ $("#container").ejChart({
 
 
 ### title.maximumWidth `string`
-{:#members:title-maximumWidth}
+{:#members:title-maximumwidth}
 
 
 Maximum width of the title, when the title exceeds this width, the title gets trimmed, when enableTrim is true. 
@@ -35050,7 +35050,7 @@ $("#container").ejChart({
 
 
 ### title.textOverflow `enum`
-{:#members:title-textOverflow}
+{:#members:title-textoverflow}
 
 <ts ref="ej.datavisualization.Chart.TextOverflow"/>
 
@@ -35261,7 +35261,7 @@ $("#container").ejChart({
 
 
 ### title.subTitle.background `string`
-{:#members:title.subtitle.background}
+{:#members:title-subtitle-background}
 
 
 
@@ -35566,7 +35566,7 @@ $("#container").ejChart({
 
 
 ### title.subTitle.maximumWidth `string`
-{:#members:title-subtitle-maximumWidth}
+{:#members:title-subtitle-maximumwidth}
 
 
 Maximum width of the Subtitle, when the Subtitle exceeds this width, the Subtitle gets trimmed, when enableTrim is true. 
@@ -35595,7 +35595,7 @@ $("#container").ejChart({
 
 
 ### title.subTitle.textOverflow `enum`
-{:#members:title-subTitle-textOverflow}
+{:#members:title-subtitle-textoverflow}
 
 <ts ref="ej.datavisualization.Chart.TextOverflow"/>
 
@@ -35907,7 +35907,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/hqmmhpgk)
 
 
 ### zooming.enableScrollbar `boolean`
-{:#members:zooming-enableScrollbar}
+{:#members:zooming-enablescrollbar}
 
 
 
@@ -35938,7 +35938,7 @@ $("#container").ejChart({
 
 
 ### zooming.toolbarItems `array`
-{:#members:zooming-toolbarItems}
+{:#members:zooming-toolbaritems}
 
 
 
