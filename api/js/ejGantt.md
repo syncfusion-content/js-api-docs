@@ -5194,10 +5194,10 @@ ganttObj.outdentItem(); // To outdent a selected item in Gantt
 </script>
 {% endhighlight %}
 
-### deletePredecessor(fromTaskId,toTaskId)
-{:#methods:deletepredecessor}
+### deleteDependency(fromTaskId,toTaskId)
+{:#methods:deletedependency}
 
-To delete the predecessor linked between the two tasks.
+To delete the dependency between the two tasks.
 
 <table class="params">
 <thead>
@@ -5211,12 +5211,12 @@ To delete the predecessor linked between the two tasks.
 <tr>
 <td class="name">fromTaskId</td>
 <td class="type">number</td>
-<td class="description">Origin record taskID of predecessor line</td>
+<td class="description">taskID of predecessor task</td>
 </tr>
 <tr>
 <td class="name">toTaskId</td>
 <td class="type">number</td>
-<td class="description">Destination record taskID of predecessor line</td>
+<td class="description">taskID of successor task</td>
 </tr>
 </tbody>
 </table>
@@ -5232,7 +5232,7 @@ To delete the predecessor linked between the two tasks.
 <script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
-ganttObj.deletePredecessor(3, 6); // To delete predecessor linked between two tasks.
+ganttObj.deleteDependency(3, 6); // To delete dependency between two tasks.
 </script>
 {% endhighlight %}
 
@@ -5453,10 +5453,10 @@ ganttObj.showColumn("Task Name");
 {% endhighlight %}
 
 
-### updatePredecessor(fromTaskId,toTaskId, predecessorType, offset)
-{:#methods:updatepredecessor}
+### updateDependency(fromTaskId,toTaskId, predecessorType, offset)
+{:#methods:updatedependency}
 
-To update the predecessor type and offset value for existing predecessor.
+To update the predecessor type and offset value for existing task dependency.
 
 <table class="params">
 <thead>
@@ -5470,22 +5470,22 @@ To update the predecessor type and offset value for existing predecessor.
 <tr>
 <td class="name">fromTaskId</td>
 <td class="type">number</td>
-<td class="description">Origin record taskID of predecessor line</td>
+<td class="description">taskID of predecessor task</td>
 </tr>
 <tr>
 <td class="name">toTaskId</td>
 <td class="type">number</td>
-<td class="description">Destination record taskID of predecessor line</td>
+<td class="description">taskID of successor task</td>
 </tr>
 <tr>
 <td class="name">predecessorType</td>
 <td class="type">string</td>
-<td class="description">Type of predecessor linked between two tasks.</td>
+<td class="description">Type of dependency task.</td>
 </tr>
 <tr>
 <td class="name">offset</td>
 <td class="type">number</td>
-<td class="description">Offset value to the predecessor task.</td>
+<td class="description">Offset value of dependency task.</td>
 </tr>
 </tbody>
 </table>
@@ -5501,7 +5501,7 @@ To update the predecessor type and offset value for existing predecessor.
 <script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
-ganttObj.updatePredecessor(3, 6, "SS", 3); // To update predecessor type and offset value.
+ganttObj.updateDependency(3, 6, "SS", 3); // To update predecessor type and offset value.
 </script>
 {% endhighlight %}
 
@@ -5806,7 +5806,7 @@ Triggered for every Gantt action before its starts.
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Event parameters before opening of edit task dependency dialog:
+<td class="description">Event parameters before opening of task dependency edit dialog:
 <table class="params">
 <thead>
 <tr>
@@ -5822,14 +5822,14 @@ Triggered for every Gantt action before its starts.
 <td class="description">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">predecessorData</td>
+<td class="name">data</td>
 <td class="type">object</td>
-<td class="description">Returns the predecessorData.</td>
+<td class="description">Returns the task dependency data.</td>
 </tr>
 <tr>
 <td class="name">requestType</td>
 <td class="type">string</td>
-<td class="description">Returns request type as "beforePredecessorEditDialogOpen".</td>
+<td class="description">Returns request type as "beforeDependencyEditDialogOpen".</td>
 </tr>
 </tbody>
 </table>
@@ -5854,9 +5854,9 @@ Triggered for every Gantt action before its starts.
 <td class="description">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">predecessorData</td>
+<td class="name">data</td>
 <td class="type">object</td>
-<td class="description">Returns the predecessorData.</td>
+<td class="description">Returns the task dependency data.</td>
 </tr>
 <tr>
 <td class="name">element</td>
@@ -5866,7 +5866,7 @@ Triggered for every Gantt action before its starts.
 <tr>
 <td class="name">requestType</td>
 <td class="type">string</td>
-<td class="description">Returns request type as "afterPredecessorEditDialogOpen".</td>
+<td class="description">Returns request type as "afterDependencyEditDialogOpen".</td>
 </tr>
 </tbody>
 </table>
