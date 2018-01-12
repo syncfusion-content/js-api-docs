@@ -974,7 +974,7 @@ Sets the mode for the PivotGauge widget for binding either OLAP or Relational da
             <td class="description">To bind Relational datasource to PivotGauge widget</td>
         </tr>
         <tr>
-            <td class="name">Olap</td>
+            <td class="name">OLAP</td>
             <td class="description">To bind OLAP datasource to PivotGauge widget</td>
         </tr>
     </tbody>
