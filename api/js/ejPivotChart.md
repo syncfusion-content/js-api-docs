@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Properties, Methods and Events of ejPivotChart Widget
 documentation: API
