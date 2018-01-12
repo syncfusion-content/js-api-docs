@@ -236,7 +236,7 @@ $("#container").ejSunburstChart({
 {% endhighlight %}
 
 ### parentNode `string`
-{:#members:parentNode}
+{:#members:parentnode}
 
 Parent node of the data points.
 
