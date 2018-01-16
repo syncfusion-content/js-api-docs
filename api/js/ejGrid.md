@@ -3684,6 +3684,7 @@ $("#Grid").ejGrid({
 Gets or sets a value that indicates whether move or copy a record from one grid to another or within the grid
 
 #### Default Value:
+{:.param}
 * ej.Grid.DragBehavior.Move
 
 <table>
