@@ -1160,6 +1160,32 @@ Options to customize the size of the pivot chart control.
     $("#PivotChart1").ejPivotChart({ size: { height: "450px", width: "95%" } });
 {% endhighlight %}
 
+### title `object`
+{:#members:title}
+
+Options for customizing the title of PivotChart.
+
+### title.text `string`
+{:#members:title-text}
+
+Text to be displayed in PivotChart title.
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% highlight javascript %}
+ 
+$("#PivotChart1").ejPivotChart({
+
+   title : { text : "PivotChart"}                     
+
+});
+
+{% endhighlight %}
+
 ###  url `string`
 {:#members:url}
 

@@ -633,6 +633,94 @@ Allows the user to view PivotGauge from right to left.
     $("#PivotGauge1").ejPivotGauge({ enableRTL: true });
 {% endhighlight %}
 
+### frame `object`
+{:#members:frame}
+
+Specify the frame details of PivotGauge here.
+
+#### Default Value
+
+* Object
+
+#### Example
+
+{% highlight javascript %}
+       
+$("#PivotGauge1").ejPivotGauge({ frame:{frameType:"halfcircle", halfCircleFrameStartAngle:180, halfCircleFrameEndAngle:360} });
+{% endhighlight %}
+
+### frame.frameType `string`
+{:#members:frame-frametype}
+
+Specifies the frame type of PivotGauge.
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+FullCircle</td>
+<td class="type">string</td> 
+<td class="description">Specify the full circle frame</td>
+</tr>
+<tr>
+<td class="name">
+HalfCircle</td>
+<td class="type">string</td>
+<td class="description">Specify the half circle frame</td>
+</tr> 
+</tbody>
+</table>
+
+
+#### Default Value
+
+* "fullcircle"
+
+#### Example
+
+{% highlight javascript %}
+
+$("#PivotGauge1").ejPivotGauge({  frame:{frameType : "halfcircle"} });
+{% endhighlight %}
+
+### frame.halfCircleFrameEndAngle `number`
+{:#members:frame.halfcircleframeendangle}
+
+Specifies the end angle for the half circular frame.
+
+#### Default Value
+
+* 360
+
+#### Example
+
+{% highlight javascript %}
+  
+$("#PivotGauge1").ejPivotGauge({ frame:{frameType : "halfcircle",halfCircleFrameEndAngle: 270}});
+{% endhighlight %}
+
+### frame.halfCircleFrameStartAngle `number`
+{:#members:frame.halfcircleframestartangle}
+
+Specifies the start angle for the half circular frame.
+
+#### Default Value
+
+* 180
+
+#### Example
+
+{% highlight javascript %}
+ 
+$("#PivotGauge1").ejPivotGauge({ frame:{frameType : "halfcircle",halfCircleFrameStartAngle: 0} });
+{% endhighlight %}
 
 ### isResponsive `boolean`
 {:#members:isresponsive}
@@ -886,7 +974,7 @@ Sets the mode for the PivotGauge widget for binding either OLAP or Relational da
             <td class="description">To bind Relational datasource to PivotGauge widget</td>
         </tr>
         <tr>
-            <td class="name">Olap</td>
+            <td class="name">OLAP</td>
             <td class="description">To bind OLAP datasource to PivotGauge widget</td>
         </tr>
     </tbody>
