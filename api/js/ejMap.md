@@ -7097,6 +7097,139 @@ Example
 {% endhighlight %}
 
 
+### Click
+{:#events:click}
+
+
+
+
+Fires, on clicking the map.
+
+
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Returns clicked shape object.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+
+{% highlight js %}
+ 
+//Click event for map
+
+$("#container").ejMap({
+
+    click: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+
+### doubleClick
+{:#events:doubleclick}
+
+
+
+
+Fires, on double clicking the map.
+
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Returns double clicked shape object.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+
+{% highlight js %}
+ 
+//DoubleClick event for map.
+
+$("#container").ejMap({
+
+    doubleClick: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+
+
+### rightClick
+{:#events:rightclick}
+
+
+
+
+Fires, on right clicking the map.
+
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Returns right clicked shape object.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+
+{% highlight js %}
+ 
+//RightClick event for map
+
+$("#container").ejMap({
+    rightClick: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+
 <a class="" href="http://www.syncfusion.com/copyright" target="_blank">Copyright &copy; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a>
 
 
