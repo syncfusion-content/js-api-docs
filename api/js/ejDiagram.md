@@ -16054,7 +16054,7 @@ Export the diagram as downloadable files or as data
 </thead>
 <tbody>
 <tr>
-<td class="name">[options]</td>
+<td class="name">[exportSettings]</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">options to export the desired region of diagram to the desired formats.
 <table class="params">
@@ -16288,7 +16288,7 @@ The `exportImage` method is used to export the image passed through argument wit
 <td class="description last">pass the base64String image to be exported.</td>
 </tr>
 <tr>
-<td class="name">[options]</td>
+<td class="name">[exportImageSettings]</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">options to export the desired region of diagram to the desired formats.
 <table class="params">
@@ -16763,7 +16763,7 @@ Print the diagram as image
 </thead>
 <tbody>
 <tr>
-<td class="name">[options]</td>
+<td class="name">[printSettings]</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">options to print the desired region of diagram and print the diagram in multiple pages.
 <table class="params">
@@ -16856,7 +16856,7 @@ The `printImage` method is used to print the image passed through argument with 
 <td class="description last">pass the base64String image to be printed.</td>
 </tr>
 <tr>
-<td class="name">[options]</td>
+<td class="name">[printImageSettings]</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">options to export the desired region of diagram to the desired formats.
 <table class="params">
