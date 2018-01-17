@@ -14520,4 +14520,140 @@ $("#LinearGauge1").ejLinearGauge({
 </script> {% endhighlight %}
 
 
+### doubleClick
+{:#events:doubleclick}
+
+
+
+
+Fires, on double clicking the gauge.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event    </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Instance of the gauge model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last"><ul><li>location - X and Y co-ordinate of the points with respect to gauge area.</li>
+<li>id - ID of the target element.</li>
+    <li>size - Width and height of the gauge.</li>
+    <li>pageX - x-coordinate of the pointer, relative to the page</li>
+    <li>pageY - y-coordinate of the pointer, relative to the page</li>
+</ul>  </td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+
+{% highlight js %}
+ 
+//DoubleClick event for linear gauge.
+
+$("#LinearGauge1").ejLinearGauge({
+
+    doubleClick: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+
+
+### rightClick
+{:#events:rightclick}
+
+
+
+
+Fires, on right clicking the gauge.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event    </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Instance of the gauge model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last"><ul><li>location - X and Y co-ordinate of the points with respect to gauge area.</li>
+<li>id - ID of the target element.</li>
+    <li>size - Width and height of the gauge.</li>
+    <li>pageX - x-coordinate of the pointer, relative to the page</li>
+    <li>pageY - y-coordinate of the pointer, relative to the page</li>
+</ul>  </td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+
+{% highlight js %}
+ 
+//RightClick event for linear gauge
+
+$("#LinearGauge1").ejLinearGauge({
+    rightClick: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+
 
