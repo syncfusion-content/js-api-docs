@@ -3676,7 +3676,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### rowDropSettings-dragBehavior `enum`
+### rowDropSettings.dragBehavior `enum`
 {:#members:rowDropSettings-dragBehavior}
 
 <ts name="ej.Grid.DragBehavior"/>
