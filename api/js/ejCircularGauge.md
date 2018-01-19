@@ -175,7 +175,7 @@ $("#CoreCircularGauge").ejCircularGauge({  gaugePosition:"center", distanceFromC
 {:#members:rangezorder}
 
 <ts name="ej.datavisualization.CircularGauge.RangeZOrderPlacement"/>
-Specify range ZOrder placement of circular gauge.
+Specify range Z-order placement of circular gauge.
 
 <table class="props">
 <thead>
