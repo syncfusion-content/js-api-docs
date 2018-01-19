@@ -4481,7 +4481,7 @@ Specifies the dataSource for the bullet graph.
 
 {% highlight html %}
  
-// To initialize with local Json data to the dataSource
+// To initialize with local JSON data to the dataSource
 $("#SampleBullet").ejBulletGraph({
 fields: {
 dataSource: localData,
@@ -4490,7 +4490,7 @@ featureMeasures: &ldquo;FeatureValue&rdquo;,
 comparativeMeasure: &ldquo;ComparativeValue&rdquo;
 }
 });
-// where local Json data assigned to the dataSource is as the below one
+// where local JSON data assigned to the dataSource is as the below one
 var localData = [{
                    FeatureValue: 8, ComparativeValue: 7.5,
                    Category: 1
