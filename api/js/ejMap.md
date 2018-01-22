@@ -467,6 +467,39 @@ Enables or Disables the zoom on selecting the map shape
 
 {% endhighlight %}
 
+### zoomSettings.enableMouseWheelZoom `boolean`
+{:#members:zoomsettings-enablemousewheelzoom}
+
+Enables or Disables the zoom on mouse wheel the map.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight js %}
+ 
+//To set enableMouseWheelZoom API value during initialization 
+   $("#container").ejMap({zoomSettings:{enableMouseWheelZoom:true}});
+             
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the enableMouseWheelZoom API, after initialization:
+
+   //Gets the enableMouseWheelZoom value
+    
+   var property = $("#container").data("ejMap").model.zoomSettings.enableMouseWheelZoom;
+              
+   //Sets the enableMouseWheelZoom value
+    
+   $("#container").data("ejMap").model.zoomSettings.enableMouseWheelZoom=true }); 
+
+{% endhighlight %}
+
 
 ### zoomSettings.factor `number`
 {:#members:zoomsettings-factor}
@@ -7225,6 +7258,53 @@ $("#container").ejMap({
     }
    
 });
+
+{% endhighlight %}
+
+
+### onLoad
+{:#events:onload}
+
+Fires before loading the map.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Instance of the map model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight js %}
+ 
+//mouseover  event for map
+  $("#container").ejMap({
+   onLoad : function (event) {}
+  });
 
 {% endhighlight %}
 
