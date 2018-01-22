@@ -467,6 +467,39 @@ Enables or Disables the zoom on selecting the map shape
 
 {% endhighlight %}
 
+### zoomSettings.enableMouseWheelZoom `boolean`
+{:#members:zoomsettings-enablemousewheelzoom}
+
+Enables or Disables the zoom on mouse wheel the map.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight js %}
+ 
+//To set enableMouseWheelZoom API value during initialization 
+   $("#container").ejMap({zoomSettings:{enableMouseWheelZoom:true}});
+             
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the enableMouseWheelZoom API, after initialization:
+
+   //Gets the enableMouseWheelZoom value
+    
+   var property = $("#container").data("ejMap").model.zoomSettings.enableMouseWheelZoom;
+              
+   //Sets the enableMouseWheelZoom value
+    
+   $("#container").data("ejMap").model.zoomSettings.enableMouseWheelZoom=true }); 
+
+{% endhighlight %}
+
 
 ### zoomSettings.factor `number`
 {:#members:zoomsettings-factor}
