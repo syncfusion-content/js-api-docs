@@ -89,7 +89,7 @@ Sets the mode for the pivot client widget for binding the OLAP or relational dat
             <td class="description">To bind Relational datasource to PivotClient widget</td>
         </tr>
         <tr>
-            <td class="name">Olap</td>
+            <td class="name">OLAP</td>
             <td class="description">To bind OLAP datasource to PivotClient widget</td>
         </tr>
     </tbody>
@@ -1381,7 +1381,7 @@ In connection with an OLAP database, this property contains the database name as
 ### dataSource.enableAdvancedFilter `boolean`
 {:#members:datasource-enableadvancedfilter}
 
-Allows you to filter the members (by its name and values) through the advanced filtering (e.g., Microsoft excel) option in the client-mode.
+Allows you to filter the members (by its name and values) through the advanced filtering (e.g., Microsoft Excel) option in the client-mode.
 
 #### Default Value: false
 
@@ -1990,7 +1990,7 @@ Allows to save and load the reports in a customized way with the help of events.
 
 Allows you to enable the paging for both the pivot chart and the pivot grid components for viewing the large data.
 
-> **Note**: This property is applicable only for the OLAP data bound from tha client-side.
+> **Note**: This property is applicable only for the OLAP data bound from the client-side.
 
 #### Default Value: false
 
@@ -3273,7 +3273,6 @@ Triggers when performing the drill operation on the chart series.
 {:#events:treemapdrillsuccess}
 
 Triggers when performing the drill operation on the tree map.
-
 <table class="params">
 <thead>
 <tr>
