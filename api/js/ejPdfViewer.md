@@ -1872,7 +1872,7 @@ Returns the current page number in view.
 
 {:#events:ajaxrequestfailure}
 
-Triggers when the ajax request is failed.
+Triggers when the AJAX request is failed.
 <table>
 <thead>
 <tr>
