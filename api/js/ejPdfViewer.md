@@ -1604,7 +1604,7 @@ cancel
 boolean
 </td>
 <td class="description">
-true, if the event should be canceled; otherwise, false.
+Returns the cancel option value.
 </td>
 </tr>
 <tr>
@@ -1713,7 +1713,7 @@ cancel
 boolean
 </td>
 <td class="description">
-true, if the event should be canceled; otherwise, false.
+Returns the cancel option value.
 </td>
 </tr>
 <tr>
@@ -1811,7 +1811,7 @@ cancel
 boolean
 </td>
 <td class="description">
-true, if the event should be canceled; otherwise, false.
+Returns the cancel option value.
 </td>
 </tr>
 <tr>
@@ -1920,7 +1920,7 @@ cancel
 boolean
 </td>
 <td class="description">
-true, if the event should be canceled; otherwise, false.
+Returns the cancel option value.
 </td>
 </tr>
 <tr>
@@ -2029,7 +2029,7 @@ cancel
 boolean
 </td>
 <td class="description">
-true, if the event should be canceled; otherwise, false.
+Returns the cancel option value.
 </td>
 </tr>
 <tr>
@@ -2149,7 +2149,7 @@ cancel
 boolean
 </td>
 <td class="description">
-true, if the event should be canceled; otherwise, false.
+Returns the cancel option value.
 </td>
 </tr>
 <tr>
@@ -2258,7 +2258,7 @@ cancel
 boolean
 </td>
 <td class="description">
-true, if the event should be canceled; otherwise, false.
+Returns the cancel option value.
 </td>
 </tr>
 <tr>
@@ -2357,7 +2357,7 @@ cancel
 boolean
 </td>
 <td class="description">
-true, if the event should be canceled; otherwise, false.
+Returns the cancel option value.
 </td>
 </tr>
 <tr>
@@ -2455,7 +2455,7 @@ cancel
 boolean
 </td>
 <td class="description">
-true, if the event should be canceled; otherwise, false.
+Returns the cancel option value.
 </td>
 </tr>
 <tr>
@@ -2574,7 +2574,7 @@ cancel
 boolean
 </td>
 <td class="description">
-true, if the event should be canceled; otherwise, false.
+Returns the cancel option value.
 </td>
 </tr>
 <tr>
@@ -2726,7 +2726,7 @@ cancel
 boolean
 </td>
 <td class="description">
-true, if the event should be canceled; otherwise, false.
+Returns the cancel option value.
 </td>
 </tr>
 <tr>
@@ -2856,7 +2856,7 @@ cancel
 boolean
 </td>
 <td class="description">
-true, if the event should be canceled; otherwise, false.
+Returns the cancel option value.
 </td>
 </tr>
 <tr>
@@ -3008,7 +3008,7 @@ cancel
 boolean
 </td>
 <td class="description">
-true, if the event should be canceled; otherwise, false.
+Returns the cancel option value.
 </td>
 </tr>
 <tr>
@@ -3138,7 +3138,7 @@ cancel
 boolean
 </td>
 <td class="description">
-true, if the event should be canceled; otherwise, false.
+Returns the cancel option value.
 </td>
 </tr>
 <tr>
@@ -3246,7 +3246,7 @@ cancel
 boolean
 </td>
 <td class="description">
-true, if the event should be canceled; otherwise, false.
+Returns the cancel option value.
 </td>
 </tr>
 <tr>
@@ -3420,7 +3420,7 @@ cancel
 boolean
 </td>
 <td class="description">
-true, if the event should be canceled; otherwise, false.
+Returns the cancel option value.
 </td>
 </tr>
 <tr>
@@ -3561,7 +3561,7 @@ cancel
 boolean
 </td>
 <td class="description">
-true, if the event should be canceled; otherwise, false.
+Returns the cancel option value.
 </td>
 </tr>
 <tr>
@@ -3669,7 +3669,7 @@ cancel
 boolean
 </td>
 <td class="description">
-true, if the event should be canceled; otherwise, false.
+Returns the cancel option value.
 </td>
 </tr>
 <tr>
@@ -3777,7 +3777,7 @@ cancel
 boolean
 </td>
 <td class="description">
-true, if the event should be canceled; otherwise, false.
+Returns the cancel option value.
 </td>
 </tr>
 <tr>
