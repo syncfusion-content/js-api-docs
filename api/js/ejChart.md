@@ -1472,7 +1472,7 @@ $("#container").ejChart({
 
 
 ### columnDefinitions.columnWidth `number`
-{:#members:columndefinitions-columnWidth}
+{:#members:columndefinitions-columnwidth}
 
 
 
@@ -1504,7 +1504,7 @@ $("#container").ejChart({
 
 
 ### columnDefinitions.lineColor `string`
-{:#members:columndefinitions-lineColor}
+{:#members:columndefinitions-linecolor}
 
 
 
@@ -1536,7 +1536,7 @@ $("#container").ejChart({
 
 
 ### columnDefinitions.lineWidth `number`
-{:#members:columndefinitions-lineWidth}
+{:#members:columndefinitions-linewidth}
 
 
 
@@ -11493,7 +11493,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/g3p1ocgh)
 
 
 ### legend.enableScrollbar `boolean`
-{:#members:legend-enableScrollbar}
+{:#members:legend-enablescrollbar}
 
 
 
@@ -25964,7 +25964,7 @@ $("#container").ejChart({
 
 
 ### rowDefinitions.rowHeight `number`
-{:#members:rowdefinitions-rowHeight}
+{:#members:rowdefinitions-rowheight}
 
 
 
@@ -25996,7 +25996,7 @@ $("#container").ejChart({
 
 
 ### rowDefinitions.lineColor `string`
-{:#members:rowdefinitions-lineColor}
+{:#members:rowdefinitions-linecolor}
 
 
 
@@ -26028,7 +26028,7 @@ $("#container").ejChart({
 
 
 ### rowDefinitions.lineWidth `number`
-{:#members:rowdefinitions-lineWidth}
+{:#members:rowdefinitions-linewidth}
 
 
 
@@ -27441,7 +27441,7 @@ series : [{ bubbleOptions: { radiusMode: "minMax" }}]
  {% endhighlight %}
  
 ### series.bubbleOptions.minRadius `number`
-{:#members:series-bubbleoptions-minRadius}
+{:#members:series-bubbleoptions-minradius}
 
 
 
@@ -27470,7 +27470,7 @@ series : [ { bubbleOptions: { minRadius: 3 }} ]
 
 
 ### series.bubbleOptions.maxRadius `number`
-{:#members:series-bubbleoptions-maxRadius}
+{:#members:series-bubbleoptions-maxradius}
 
 
 
@@ -29474,7 +29474,7 @@ series : [{
  
 
 ### series.emptyPointSettings.style.border.width `number`
-{:#members:series-emptypointsettings-style-border-color}
+{:#members:series-emptypointsettings-style-border-width}
 
 
 
@@ -29557,7 +29557,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
 
 ### series.connectorLine.width `number`
-{:#members:series.connectorline.width}
+{:#members:series-connectorline-width}
 
 
 
@@ -29590,7 +29590,7 @@ series : [{
  
 
 ### series.connectorLine.color `string`
-{:#members:series.connectorline.color}
+{:#members:series-connectorline-color}
 
 
 
@@ -29624,7 +29624,7 @@ $("#container").ejChart({
  
 
 ### series.connectorLine.dashArray `string`
-{:#members:series.connectorline.dasharray}
+{:#members:series-connectorline-dasharray}
 
 
 
@@ -29659,7 +29659,7 @@ $("#container").ejChart({
 
 
 ### series.connectorLine.opacity `number`
-{:#members:series.connectorline.opacity}
+{:#members:series-connectorline-opacity}
 
 
 
@@ -29693,12 +29693,12 @@ $("#container").ejChart({
 
  
 ### series.dragSettings `object`
-{:#members:series.dragsettings}
+{:#members:series-dragsettings}
 
 Options to customize the drag and drop in series.
 
 ### series.dragSettings.enable `boolean`
-{:#members:series.dragsettings.enable}
+{:#members:series-dragsettings-enable}
 
 drag/drop the series
 
@@ -29721,7 +29721,7 @@ $("#container").ejChart({
  {% endhighlight %} 
 
 ### series.dragSettings.type `string`
-{:#members:series.dragsettings.type}
+{:#members:series-dragsettings-type}
 
 
 Specifies the type of drag settings.
@@ -29747,7 +29747,7 @@ $("#container").ejChart({
  
 
 ### series.errorBar `object`
-{:#members:series.errorbar}
+{:#members:series-errorbar}
 
 
 Options to customize the error bar in series.
@@ -29755,7 +29755,7 @@ Options to customize the error bar in series.
 
 
 ### series.errorBar.visibility `boolean`
-{:#members:series.errorbar.visibility}
+{:#members:series-errorbar-visibility}
 
 
 Show/hides the error bar
@@ -29786,7 +29786,7 @@ $("#container").ejChart({
  Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
    
 ### series.errorBar.type `enum`
-{:#members:series.errorbar.type}
+{:#members:series-errorbar-type}
 
 <ts ref="ej.datavisualization.Chart.ErrorBarType"/>
 
@@ -29817,7 +29817,7 @@ $("#container").ejChart({
  Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
  
 ### series.errorBar.mode `enum`
-{:#members:series.errorbar.mode}
+{:#members:series-errorbar-mode}
 
 <ts ref="ej.datavisualization.Chart.ErrorBarMode"/>
 Specifies the mode of error bar.
@@ -29848,7 +29848,7 @@ $("#container").ejChart({
  
 
 ### series.errorBar.direction `enum`
-{:#members:series.errorbar.direction}
+{:#members:series-errorbar-direction}
 
 <ts ref="ej.datavisualization.Chart.ErrorBarDirection"/>
 
@@ -29880,7 +29880,7 @@ $("#container").ejChart({
  
 
 ### series.errorBar.verticalErrorValue `number`
-{:#members:series.errorbar.verticalerrorvalue}
+{:#members:series-errorbar-verticalerrorvalue}
 
 
 Value of vertical error bar.
@@ -29910,7 +29910,7 @@ $("#container").ejChart({
 Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0) 
 
 ### series.errorBar.horizontalErrorValue `number`
-{:#members:series.errorbar.horizontalerrorvalue}
+{:#members:series-errorbar-horizontalerrorvalue}
 
 
 Value of horizontal  error bar.
@@ -29941,7 +29941,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
 
 ### series.errorBar.horizontalPositiveErrorValue `number`
-{:#members:series.errorbar.horizontalpositiveerrorvalue}
+{:#members:series-errorbar-horizontalpositiveerrorvalue}
 
 
 Value of positive horizontal error bar.
@@ -29973,7 +29973,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
 
 ### series.errorBar.horizontalNegativeErrorValue `number`
-{:#members:series.errorbar.horizontalnegativeerrorvalue}
+{:#members:series-errorbar-horizontalnegativeerrorvalue}
 
 
 Value of negative horizontal error bar.
@@ -30004,7 +30004,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
 
 ### series.errorBar.verticalPositiveErrorValue `number`
-{:#members:series.errorbar.verticalpositiveerrorvalue}
+{:#members:series-errorbar-verticalpositiveerrorvalue}
 
 
 Value of positive vertical error bar.
@@ -30036,7 +30036,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
 
 ### series.errorBar.verticalNegativeErrorValue `number`
-{:#members:series.errorbar.verticalnegativeerrorvalue}
+{:#members:series-errorbar-verticalnegativeerrorvalue}
 
 
 Value of negative vertical error bar.
@@ -30067,7 +30067,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
 
 ### series.errorBar.fill `string`
-{:#members:series.errorbar.fill}
+{:#members:series-errorbar-fill}
 
 
 Fill color of the error bar.
@@ -30101,7 +30101,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
     
 
 ### series.errorBar.width `number`
-{:#members:series.errorbar.width}
+{:#members:series-errorbar-width}
 
 
 Width of the error bar.
@@ -30134,7 +30134,7 @@ $("#container").ejChart({
 
 
 ### series.errorBar.cap `object`
-{:#members:series.errorbar.cap}
+{:#members:series-errorbar-cap}
 
 
 Options for customizing the error bar cap.
@@ -30143,7 +30143,7 @@ Try it: [JS Playground Sample](http://jsplayground.syncfusion.com/t5dhe5d0)
 
 
 ### series.errorBar.cap.visible `boolean`
-{:#members:series.errorbar.cap.visible}
+{:#members:series-errorbar-cap-visible}
 
 Show/Hides the error bar cap.
 
@@ -30173,7 +30173,7 @@ $("#container").ejChart({
  
 
 ### series.errorBar.cap.width `number`
-{:#members:series.errorbar.cap.width}
+{:#members:series-errorbar-cap-width}
 
 Width of the error bar cap.
 
@@ -30204,7 +30204,7 @@ $("#container").ejChart({
  
  
 ### series.errorBar.cap.length `number`
-{:#members:series.errorbar.cap.length}
+{:#members:series-errorbar-cap-length}
 
 Length of the error bar cap.
 
@@ -30234,7 +30234,7 @@ $("#container").ejChart({
  
 
 ### series.errorBar.cap.fill `string`
-{:#members:series.errorbar.cap.fill}
+{:#members:series-errorbar-cap-fill}
 
 Color of the error bar cap.
 
@@ -32956,7 +32956,7 @@ series :[{zOrder : 1}]
 
 
 ### series.size `string`
-{:#members:series.size}
+{:#members:series-size}
 
 
 
@@ -34022,7 +34022,7 @@ series :[{selectionSettings:{enable:true}}]
 
 
 ### series.selectionSettings.mode `enum`
-{:#members:series-selectionSettings-mode}
+{:#members:series-selectionsettings-mode}
 
 <ts ref="ej.datavisualization.Chart.Mode"/>
 
@@ -34089,7 +34089,7 @@ $("#container").ejChart({
 
 
 ### series.selectionSettings.rangeType `enum`
-{:#members:series-selectionSettings-rangetype}
+{:#members:series-selectionsettings-rangetype}
 
 <ts ref="ej.datavisualization.Chart.RangeType"/>
 

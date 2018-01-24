@@ -16268,7 +16268,7 @@ Used to resize the diagram content to fill its allocated space.
     </tbody>
 </table>
 
-### exportImage( image, \[options\])
+### exportImage( image, \[exportImageSettings\])
 {:#methods:exportimage}
 
 The `exportImage` method is used to export the image passed through argument with different image format and exporting options as like `exportDiagram` method.
@@ -16748,7 +16748,7 @@ diagram.paste(obj, true);
 
 {% endhighlight %}
 
- ### print(\[options\])
+ ### print(\[printSettings\])
 {:#methods:print}
 
 Print the diagram as image
@@ -16836,7 +16836,7 @@ diagram.printImage(options);
 
 {% endhighlight %}
 
-### printImage( image, \[options\])
+### printImage( image, \[printImageSettings\])
 {:#methods:printimage}
 
 The `printImage` method is used to print the image passed through argument with desired region and multiple pages as like `print` method.
