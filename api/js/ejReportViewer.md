@@ -131,8 +131,8 @@ Gets or sets the name of the data source.
 
 {% endhighlight %}
 
-### dataSources.values `array`
-{:#members:datasources-values}
+### dataSources.value `array`
+{:#members:datasources-value}
 
 Gets or sets the values of data source.
 
@@ -147,7 +147,7 @@ Gets or sets the values of data source.
 <div id="reportviewer"></div> 
 <script>
     $("#reportviewer").ejReportViewer({ dataSources: [name:"Menu Items",
-    values:[{ OrderId: "21D60", FoodName: "Burger", Price: 20, Category: "Veg" },
+    value:[{ OrderId: "21D60", FoodName: "Burger", Price: 20, Category: "Veg" },
             { OrderId: "21D61", FoodName: "Pizza", Price: 25, Category: "Non-Veg" },
             { OrderId: "21D63", FoodName: "Sandwiches", Price: 30, Category: "Non-Veg" },
             { OrderId: "21D65", FoodName: "Chicken Drum Sticks", Price: 23, Category: "Non-Veg" },

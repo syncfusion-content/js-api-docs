@@ -8,9 +8,9 @@ metaname:
 metacontent: 
 ---
 
-# PivotClient
+# Pivot client
 
-PivotClient is an ad hoc analysis tool that can be easily bound to any OLAP and Relational datasource to provide a visual presentation of the information retrieved from the database.
+The pivot client is an ad hoc analysis tool that can be easily bound to any OLAP and relational datasources to provide a visual presentation of the information retrieved from the database.
 
 #### Syntax
 
@@ -72,7 +72,7 @@ PivotClient is an ad hoc analysis tool that can be easily bound to any OLAP and 
 
 <ts ref = "ej.Pivot.AnalysisMode"/>
 
-Sets the mode for the PivotClient widget for binding either OLAP or Relational data source.
+Sets the mode for the pivot client widget for binding the OLAP or relational data sources.
 
 #### Default Value: ej.Pivot.AnalysisMode.Pivot
 
@@ -89,7 +89,7 @@ Sets the mode for the PivotClient widget for binding either OLAP or Relational d
             <td class="description">To bind Relational datasource to PivotClient widget</td>
         </tr>
         <tr>
-            <td class="name">Olap</td>
+            <td class="name">OLAP</td>
             <td class="description">To bind OLAP datasource to PivotClient widget</td>
         </tr>
     </tbody>
@@ -107,7 +107,7 @@ Sets the mode for the PivotClient widget for binding either OLAP or Relational d
 
 <ts ref = "ej.PivotChart.ChartTypes"/>
 
-Allows the user to set the specific Chart type for PivotChart inside PivotClient widget.
+Allows you to set the specific chart type for the pivot chart in the pivot client widget.
 
 #### Default Value: ej.PivotChart.ChartTypes.Column
 
@@ -203,7 +203,7 @@ Allows the user to set the specific Chart type for PivotChart inside PivotClient
 
 <ts name = "ej.PivotClient.ClientExportMode"/>
 
-Allows the user to set the content on exporting the PivotClient widget.
+Allows you to set the content for exporting the pivot client widget.
 
 #### Default Value: ej.PivotClient.ClientExportMode.ChartAndGrid
 
@@ -241,7 +241,7 @@ Allows the user to set the content on exporting the PivotClient widget.
 ### cssClass `string`
 {:#members:cssclass}
 
-Specifies the CSS class to PivotClient to achieve custom theme.
+Specifies the CSS class to the pivot client for achieving the custom theme.
 
 #### Default Value: “”
 
@@ -255,7 +255,7 @@ Specifies the CSS class to PivotClient to achieve custom theme.
 ### customObject `object`
 {:#members:customobject}
 
-Object utilized to pass additional information between client-end and service-end when the control functions in server-mode.
+An object is utilized to pass the additional information between the client-end and the service-end when the control functions are present in the server-mode.
 
 #### Default Value: {}
 
@@ -269,7 +269,7 @@ Object utilized to pass additional information between client-end and service-en
 ### dataSource `object`
 {:#members:datasource}
 
-Initializes the data source for the PivotClient widget, when it functions completely on client-side.
+Initializes the data source for the pivot client widget, when it functions completely on the client-side.
 
 #### Default Value: {}
 
@@ -283,7 +283,7 @@ Initializes the data source for the PivotClient widget, when it functions comple
 ### dataSource.columns `array`
 {:#members:datasource-columns}
 
-Lists out the items to be arranged in columns section of PivotClient.
+Lists out the items to be arranged in the columns section of the pivot client.
 
 #### Default Value: []
 
@@ -298,7 +298,7 @@ Lists out the items to be arranged in columns section of PivotClient.
 ### dataSource.columns.fieldName `string`
 {:#members:datasource-columns-fieldname}
 
-Allows the user to bind the item by using its unique name as field name.
+Allows you to bind the item by using its unique name as field name.
 
 #### Default Value: ""
 
@@ -312,7 +312,7 @@ Allows the user to bind the item by using its unique name as field name.
 ### dataSource.columns.fieldCaption `string`
 {:#members:datasource-columns-fieldcaption}
 
-Allows the user to set the display caption for an item.
+Allows you to set the display caption for an item.
 
 #### Default Value: ""
 
@@ -326,7 +326,7 @@ Allows the user to set the display caption for an item.
 ### dataSource.columns.advancedFilter `array`
 {:#members:datasource-columns-advancedfilter}
 
-Allows the user to filter the report by default using advanced filtering (excel-like) option for OLAP data source in client-mode.
+Allows you to filter the report by default using the advanced filtering (e.g., Microsoft Excel) option for the OLAP data source in the client-mode.
 
 #### Default Value: []
 
@@ -340,7 +340,7 @@ Allows the user to filter the report by default using advanced filtering (excel-
 ### dataSource.columns.advancedFilter.name `string`
 {:#members:datasource-columns-advancedfilter-name}
 
-Allows the user to provide level unique name to perform advanced filtering.
+Allows you to provide a level unique name to perform the advanced filtering.
 
 #### Default Value: ""
 
@@ -354,7 +354,7 @@ Allows the user to provide level unique name to perform advanced filtering.
 ### dataSource.columns.advancedFilter.labelFilterOperator `string`
 {:#members:datasource-columns-advancedfilter-labelfilteroperator}
 
-Allows the user to set the operator to perform Label Filtering.
+Allows you to set the operator to perform label filtering.
 
 #### Default Value: "none"
 
@@ -368,7 +368,7 @@ Allows the user to set the operator to perform Label Filtering.
 ### dataSource.columns.advancedFilter.valueFilterOperator `string`
 {:#members:datasource-columns-advancedfilter-valuefilteroperator}
 
-Allows the user to set the operator to perform Value Filtering.
+Allows you to set the operator to perform value filtering.
 
 #### Default Value: "none"
 
@@ -382,7 +382,7 @@ Allows the user to set the operator to perform Value Filtering.
 ### dataSource.columns.advancedFilter.advancedFilterType `string`
 {:#members:datasource-columns-advancedfilter-advancedfiltertype}
 
-Allows the user to set the filtering type while performing advanced filtering.
+Allows you to set the filtering type while performing the advanced filtering.
 
 #### Default Value: ""
 
@@ -396,7 +396,7 @@ Allows the user to set the filtering type while performing advanced filtering.
 ### dataSource.columns.advancedFilter.measure `string`
 {:#members:datasource-columns-advancedfilter-measure}
 
-In case of value filtering, this property contains the measure name to which the filter is applied.
+In value filtering, this property contains the measure name to which the filter is applied.
 
 #### Default Value: ""
 
@@ -410,7 +410,7 @@ In case of value filtering, this property contains the measure name to which the
 ### dataSource.columns.advancedFilter.values `array`
 {:#members:datasource-columns-advancedfilter-values}
 
-Allows the user to hold the filter operand values in advanced filtering.
+Allows you to hold the filter operand values in the advanced filtering.
 
 #### Default Value: ""
 
@@ -429,9 +429,9 @@ Allows the user to hold the filter operand values in advanced filtering.
 ### dataSource.columns.isNamedSets `boolean`
 {:#members:datasource-columns-isnamedsets}
 
-Allows the user to indicate whether the added item is a named set or not. 
+Allows you to indicate whether the added item is a named set or not.
 
-> **Note**: This is only applicable for OLAP datasource.
+> **Note**: This is applicable only for the OLAP data source.
 
 #### Default Value: false
 
@@ -445,9 +445,9 @@ Allows the user to indicate whether the added item is a named set or not.
 ### dataSource.columns.showSubTotal `boolean`
 {:#members:datasource-columns-showsubtotal}
 
-Shows/Hides the sub-total of the field in PivotGrid.
+Shows/hides the sub-total of the field in the pivot grid.
 
->**Note**: This is applicable only for Relational datasource.
+>**Note**: This is applicable only for the relational data source.
 
 #### Default Value: true
 
@@ -463,7 +463,7 @@ Shows/Hides the sub-total of the field in PivotGrid.
 
 Allows to set the format for the column headers.
 
->**Note**: This is applicable only for Relational datasource.
+>**Note**: This is applicable only for the relational data source.
 
 #### Default Value: ""
 
@@ -477,7 +477,7 @@ Allows to set the format for the column headers.
 ### dataSource.columns.formatString `string`
 {:#members:datasource-columns-formatstring}
 
-This property is set to display the formatted values with format types in PivotGrid.
+This property is set to display the formatted values with format types in the pivot grid.
 
 #### Default Value: ""
 
@@ -491,9 +491,9 @@ This property is set to display the formatted values with format types in PivotG
 ### dataSource.columns.cssClass `string`
 {:#members:datasource-columns-cssclass}
 
-Allows to set the custom theme for the column headers.
+Allows you to set the custom theme for the column headers.
 
->**Note**: This is applicable only for Relational datasource.
+>**Note**: This is applicable only for the relational data source.
 
 #### Default Value: ""
 
@@ -509,9 +509,9 @@ Allows to set the custom theme for the column headers.
 
 <ts ref = "ej.PivotAnalysis.SortOrder"/>
 
-Allows the user to set the sorting order of the members of the field.
+Allows you to set the sorting order of members of the field.
 
->**Note**: This is applicable for Relational datasource only.
+>**Note**: This is applicable only for the relational data source.
 
 #### Default Value: ej.PivotAnalysis.SortOrder.Ascending
 
@@ -562,7 +562,7 @@ Contains the list of members need to be drilled down by default in the field.
 ### dataSource.columns.filterItems `object`
 {:#members:datasource-columns-filteritems}
 
-Applies filter to the field members.
+Applies the filter to field members.
 
 #### Default Value: null
 
@@ -580,7 +580,7 @@ Applies filter to the field members.
 
 Sets the type of filter whether to include/exclude the mentioned values.
 
->**Note**: This is applicable for Relational datasource only.
+>**Note**: This is applicable only for the relational data source.
 
 #### Default Value: ej.PivotAnalysis.FilterType.Exclude
 
@@ -627,7 +627,7 @@ Contains the collection of items to be included/excluded among the field members
 ### dataSource.rows `array`
 {:#members:datasource-rows}
 
-Lists out the items to be arranged in rows section of PivotClient.
+Lists out the items to be arranged in the rows section of the pivot client.
 
 #### Default Value: []
 
@@ -642,7 +642,7 @@ Lists out the items to be arranged in rows section of PivotClient.
 ### dataSource.rows.fieldName `string`
 {:#members:datasource-rows-fieldname}
 
-Allows the user to bind the item by using its unique name as field name.
+Allows you to bind the item by using its unique name as field name.
 
 #### Default Value: ""
 
@@ -656,7 +656,7 @@ Allows the user to bind the item by using its unique name as field name.
 ### dataSource.rows.fieldCaption `string`
 {:#members:datasource-rows-fieldcaption}
 
-Allows the user to set the display caption for an item.
+Allows you to set the display caption for an item.
 
 #### Default Value: ""
 
@@ -670,7 +670,7 @@ Allows the user to set the display caption for an item.
 ### dataSource.rows.advancedFilter `array`
 {:#members:datasource-rows-advancedfilter}
 
-Allows the user to filter the report by default using advanced filtering (excel-like) option for OLAP data source in client-mode.
+Allows you to filter the report by using the advanced filtering (e.g., Microsoft Excel) option for the OLAP data source in the client-mode.
 
 #### Default Value: []
 
@@ -684,7 +684,7 @@ Allows the user to filter the report by default using advanced filtering (excel-
 ### dataSource.rows.advancedFilter.name `string`
 {:#members:datasource-rows-advancedfilter-name}
 
-Allows the user to provide level unique name to perform advanced filtering.
+Allows you to provide a level unique name to perform the advanced filtering.
 
 #### Default Value: ""
 
@@ -698,7 +698,7 @@ Allows the user to provide level unique name to perform advanced filtering.
 ### dataSource.rows.advancedFilter.labelFilterOperator `string`
 {:#members:datasource-rows-advancedfilter-labelfilteroperator}
 
-Allows the user to set the operator to perform Label Filtering.
+Allows you to set the operator to perform the label filtering.
 
 #### Default Value: "none"
 
@@ -712,7 +712,7 @@ Allows the user to set the operator to perform Label Filtering.
 ### dataSource.rows.advancedFilter.valueFilterOperator `string`
 {:#members:datasource-rows-advancedfilter-valuefilteroperator}
 
-Allows the user to set the operator to perform Value Filtering.
+Allows you to set the operator to perform the value filtering.
 
 #### Default Value: "none"
 
@@ -726,7 +726,7 @@ Allows the user to set the operator to perform Value Filtering.
 ### dataSource.rows.advancedFilter.advancedFilterType `string`
 {:#members:datasource-rows-advancedfilter-advancedfiltertype}
 
-Allows the user to set the filtering type while performing advanced filtering.
+Allows you to set the filtering type while performing the advanced filtering.
 
 #### Default Value: ""
 
@@ -740,7 +740,7 @@ Allows the user to set the filtering type while performing advanced filtering.
 ### dataSource.rows.advancedFilter.measure `string`
 {:#members:datasource-rows-advancedfilter-measure}
 
-In case of value filtering, this property contains the measure name to which the filter is applied.
+In value filtering, this property contains the measure name to which the filter is applied.
 
 #### Default Value: ""
 
@@ -754,7 +754,7 @@ In case of value filtering, this property contains the measure name to which the
 ### dataSource.rows.advancedFilter.values `array`
 {:#members:datasource-rows-advancedfilter-values}
 
-Allows the user to hold the filter operand values in advanced filtering.
+Allows you to hold the filter operand values in the advanced filtering.
 
 #### Default Value: ""
 
@@ -773,9 +773,9 @@ Allows the user to hold the filter operand values in advanced filtering.
 ### dataSource.rows.isNamedSets `boolean`
 {:#members:datasource-rows-isnamedsets}
 
-Allows the user to indicate whether the added item is a named set or not. 
+Allows you to indicate whether the added item is a named set or not. 
 
-> **Note**: This is only applicable for OLAP datasource.
+> **Note**: This is applicable only for the OLAP data source.
 
 #### Default Value: false
 
@@ -789,9 +789,9 @@ Allows the user to indicate whether the added item is a named set or not.
 ### dataSource.rows.showSubTotal `boolean`
 {:#members:datasource-rows-showsubtotal}
 
-Shows/Hides the sub-total of the field. 
+Shows/hides the sub-total of the field.
 
->**Note**: This is applicable only for Relational datasource.
+>**Note**: This is applicable only for the relational data source.
 
 #### Default Value: true
 
@@ -805,9 +805,9 @@ Shows/Hides the sub-total of the field.
 ### dataSource.rows.format `string`
 {:#members:datasource-rows-format}
 
-Allows to set the format for the row headers.
+Allows to set the format for row headers.
 
->**Note**: This is applicable only for Relational datasource.
+>**Note**: This is applicable only for the relational data source.
 
 #### Default Value: ""
 
@@ -821,7 +821,7 @@ Allows to set the format for the row headers.
 ### dataSource.rows.formatString `string`
 {:#members:datasource-rows-formatstring}
 
-This property is set to display the formatted values with format types in PivotGrid.
+This property is set to display the formatted values with format types in the pivot grid.
 
 #### Default Value: ""
 
@@ -835,9 +835,9 @@ This property is set to display the formatted values with format types in PivotG
 ### dataSource.rows.cssClass `string`
 {:#members:datasource-rows-cssclass}
 
-Allows to set the custom theme for the row headers.
+Allows to set the custom theme for row headers.
 
->**Note**: This is applicable only for Relational datasource.
+>**Note**: This is applicable only for the relational data source.
 
 #### Default Value: ""
 
@@ -853,9 +853,9 @@ Allows to set the custom theme for the row headers.
 
 <ts ref = "ej.PivotAnalysis.SortOrder"/>
 
-Allows the user to set the sorting order of the members of the field.
+Allows you to set the sorting order for the field members.
 
->**Note**: This is applicable for Relational datasource only.
+>**Note**: This is applicable only for the relational data source.
 
 #### Default Value: ej.PivotAnalysis.SortOrder.Ascending
 
@@ -906,7 +906,7 @@ Contains the list of members need to be drilled down by default in the field.
 ### dataSource.rows.filterItems `object`
 {:#members:datasource-rows-filteritems}
 
-Applies filter to the field members.
+Applies the filter to the field members.
 
 #### Default Value: null
 
@@ -924,7 +924,7 @@ Applies filter to the field members.
 
 Sets the type of filter whether to include/exclude the mentioned values.
 
->**Note**: This is applicable for Relational datasource only.
+>**Note**: This is applicable only for the relational data source.
 
 #### Default Value: ej.PivotAnalysis.FilterType.Exclude
 
@@ -971,7 +971,7 @@ Contains the collection of items to be included/excluded among the field members
 ### dataSource.values `array`
 {:#members:datasource-values}
 
-Lists out the items which supports calculation in PivotClient.
+Lists out the items which supports calculation in the pivot client.
 
 #### Default Value: []
 
@@ -985,9 +985,9 @@ Lists out the items which supports calculation in PivotClient.
 ### dataSource.values.fieldName `string`
 {:#members:datasource-values-fieldname}
 
-Allows the user to bind the item by using its unique name as field name for Relational datasource.
+Allows you to bind the item by using its unique name as field name for the relational data source.
 
->**Note**: This is applicable only for Relational datasource.
+>**Note**: This is applicable only for the relational data source.
 
 #### Default Value: ""
 
@@ -1001,9 +1001,9 @@ Allows the user to bind the item by using its unique name as field name for Rela
 ### dataSource.values.fieldCaption `string`
 {:#members:datasource-values-fieldcaption}
 
-Allows the user to set the display caption for an item for Relational datasource.
+Allows you to set the display caption for an item for the relational data source.
 
->**Note**: This is applicable only for Relational datasource.
+>**Note**: This is applicable only for the relational data source.
 
 #### Default Value: ""
 
@@ -1031,7 +1031,7 @@ This holds the list of unique names of measures to bind them from the OLAP cube.
 ### dataSource.values.measures.fieldName `string`
 {:#members:datasource-values-measures-fieldName}
 
-Allows the user to bind the measure from OLAP datasource by using its unique name as field name.
+Allows you to bind the measure from the OLAP data source by using its unique name as field name.
 
 #### Default Value: ""
 
@@ -1047,7 +1047,7 @@ Allows the user to bind the measure from OLAP datasource by using its unique nam
 
 Allows to set the axis name to place the measures items.
 
->**Note**: This is applicable for OLAP datasource only.
+>**Note**: This is applicable only for the OLAP data source.
 
 #### Default Value: "rows"
 
@@ -1061,7 +1061,7 @@ Allows to set the axis name to place the measures items.
 ### dataSource.values.isCalculatedField `boolean`
 {:#members:datasource-values-iscalculatedfield}
 
-Indicates whether the field is a calculated field or not with Relational datasource.
+Indicates whether the field is a calculated field or not with the relational data source.
 
 #### Default Value: false
 
@@ -1077,7 +1077,7 @@ Indicates whether the field is a calculated field or not with Relational datasou
 
 <ts ref = "ej.PivotAnalysis.SummaryType"/>
 
-Allows to set the type of PivotGrid summary calculation for the value field with Relational datasource.
+Allows to set the type of the pivot grid summary calculation for the value field with the relational data source.
 
 #### Default Value: ej.PivotAnalysis.SummaryType.Sum
 
@@ -1136,7 +1136,7 @@ Allows to set the format of the values.
 ### dataSource.values.formatString `string`
 {:#members:datasource-values-formatstring}
 
-This property is set to display the formatted values with format types in PivotGrid.
+This property is set to display the formatted values with format types in the pivot grid.
 
 #### Default Value: ""
 
@@ -1152,7 +1152,7 @@ This property is set to display the formatted values with format types in PivotG
 
 Allows to set the custom theme for the values.
 
->**Note**: This is applicable only for Relational datasource.
+>**Note**: This is applicable only for the relational data source.
 
 #### Default Value: ""
 
@@ -1166,7 +1166,7 @@ Allows to set the custom theme for the values.
 ### dataSource.values.formula `string`
 {:#members:datasource-values-formula}
 
-Allows to set the formula for calculation of values for calculated members in Relational datasource.
+Allows to set the formula for calculation of members values in the relational data source.
 
 #### Default Value: ""
 
@@ -1180,7 +1180,7 @@ Allows to set the formula for calculation of values for calculated members in Re
 ### dataSource.filters `array`
 {:#members:datasource-filters}
 
-Lists out the items which supports filtering of values without displaying the members in UI in PivotClient.
+Lists out the items which supports filtering of values without displaying the members in UI of the pivot client.
 
 #### Default Value: []
 
@@ -1195,7 +1195,7 @@ Lists out the items which supports filtering of values without displaying the me
 ### dataSource.filters.fieldName `string`
 {:#members:datasource-filters-fieldname}
 
-Allows the user to bind the item by using its unique name as field name.
+Allows you to bind the item by using its unique name as field name.
 
 #### Default Value: ""
 
@@ -1209,7 +1209,7 @@ Allows the user to bind the item by using its unique name as field name.
 ### dataSource.filters.fieldCaption `string`
 {:#members:datasource-filters-fieldcaption}
 
-Allows the user to set the display name for an item.
+Allows you to set the display name for an item.
 
 #### Default Value: ""
 
@@ -1241,7 +1241,7 @@ Applies filter to the field members.
 
 Sets the type of filter whether to include/exclude the mentioned values.
 
->**Note**: This is applicable for Relational datasource only.
+>**Note**: This is applicable only for the relational data source.
 
 #### Default Value: ej.PivotAnalysis.FilterType.Exclude
 
@@ -1288,7 +1288,7 @@ Contains the collection of items to be included/excluded among the field members
 ### dataSource.cube `string`
 {:#members:datasource-cube}
 
-Contains the respective cube name from OLAP database as string type.
+Contains the respective cube name from the OLAP database as string type.
 
 #### Default Value: “”
 
@@ -1302,9 +1302,9 @@ Contains the respective cube name from OLAP database as string type.
 ### dataSource.sourceInfo `string`
 {:#members:datasource-sourceinfo}
 
-To set the data source name to fetch data from that. 
+Allows to set the data source name to fetch the data from that.
 
->**Note**: This is applicable only for Mondrian connection.
+>**Note**: This is applicable only for the Mondrian connection.
 
 #### Default Value: “”
 
@@ -1318,9 +1318,9 @@ To set the data source name to fetch data from that.
 ### dataSource.providerName `string`
 {:#members:datasource-providername}
 
-Set the provider name for PivotClient to identify whether the provider is SSAS or Mondrian. 
+Sets the provider name for the pivot client to identify whether the provider is SSAS or Mondrian.
 
->**Note**: This is applicable only for client side OLAP data.
+>**Note**: This is applicable only for the client side OLAP data.
 
 #### Default Value: "ssas"
 
@@ -1353,7 +1353,7 @@ Set the provider name for PivotClient to identify whether the provider is SSAS o
 ### dataSource.data `object`
 {:#members:datasource-data}
 
-Provides the raw data source for the PivotClient.
+Provides the raw data source for the pivot client.
 
 #### Default Value: null
 
@@ -1381,7 +1381,7 @@ In connection with an OLAP database, this property contains the database name as
 ### dataSource.enableAdvancedFilter `boolean`
 {:#members:datasource-enableadvancedfilter}
 
-Allows user to filter the members (by its name and values) through advanced filtering (excel-like) option in client-mode.
+Allows you to filter the members (by its name and values) through the advanced filtering (e.g., Microsoft Excel) option in the client-mode.
 
 #### Default Value: false
 
@@ -1409,9 +1409,9 @@ Sets a name to the report bound to the control.
 ### dataSource.pagerOptions `object`
 {:#members:datasource-pageroptions}
 
-Allows to set the page size and current page number for each axis on applying paging.
+Allows to set the page size and current page number for each axis on applying the paging.
 
-> **Note**: This is applicable only for binding OLAP data from client-side.
+> **Note**: This is applicable only for binding the OLAP data from the client-side.
 
 #### Default Value: {}
 
@@ -1425,7 +1425,7 @@ Allows to set the page size and current page number for each axis on applying pa
 ### dataSource.pagerOptions.categoricalPageSize `number`
 {:#members:datasource-pageroptions-categoricalpagesize}
 
-Allows to set the number of categorical columns to be displayed in each page on applying paging.
+Allows to set the number of categorical columns to be displayed in each page on applying the paging.
 
 #### Default Value: 0
 
@@ -1439,7 +1439,7 @@ Allows to set the number of categorical columns to be displayed in each page on 
 ### dataSource.pagerOptions.seriesPageSize `number`
 {:#members:datasource-pageroptions-seriespagesize}
 
-Allows to set the number of series rows to be displayed in each page on applying paging.
+Allows to set the number of series rows to be displayed in each page on applying the paging.
 
 #### Default Value: 0
 
@@ -1453,9 +1453,9 @@ Allows to set the number of series rows to be displayed in each page on applying
 ### dataSource.pagerOptions.categoricalCurrentPage `number`
 {:#members:datasource-pageroptions-categoricalcurrentpage}
 
-Allows to set the page number in categorical axis to be loaded by default.
+Allows to set the page number in the categorical axis to be loaded by default.
 
-> **Note**: This is applicable only for binding OLAP data from client-side.
+> **Note**: This is applicable only for binding the OLAP data from the client-side.
 
 #### Default Value: 1
 
@@ -1469,7 +1469,7 @@ Allows to set the page number in categorical axis to be loaded by default.
 ### dataSource.pagerOptions.seriesCurrentPage `number`
 {:#members:datasource-pageroptions-seriescurrentpage}
 
-Allows to set the page number in series axis to be loaded by default.
+Allows to set the page number in the series axis to be loaded by default.
 
 #### Default Value: 1
 
@@ -1483,7 +1483,7 @@ Allows to set the page number in series axis to be loaded by default.
 ### enableDrillThrough `boolean`
 {:#members:enabledrillthrough}
 
-Enables the Drill-Through feature which retrieves the raw items that are used to create the specific cell in PivotGrid.
+Enables the drill-through feature which retrieves the raw items that are used to create a specific cell in the pivot grid.
 
 #### Default Value: false
 
@@ -1497,7 +1497,7 @@ Enables the Drill-Through feature which retrieves the raw items that are used to
 ### displaySettings `object`
 {:#members:displaysettings}
 
-Allows the user to customize the widget's layout and appearance.
+Allows you to customize the layout and appearance of the widget.
 
 #### Default Value: {}
 
@@ -1513,7 +1513,7 @@ Allows the user to customize the widget's layout and appearance.
 
 <ts name = "ej.PivotClient.ControlPlacement"/>
 
-Lets the user to customize the display of PivotChart and PivotGrid widgets, either in tabs or tiles.
+Allows you to customize the display of the pivot chart and pivot grid widgets in the tabs or tiles.
 
 #### Default Value: ej.PivotClient.ControlPlacement.Tab
 
@@ -1549,7 +1549,7 @@ Lets the user to customize the display of PivotChart and PivotGrid widgets, eith
 
 <ts name = "ej.PivotClient.DefaultView"/>
 
-Lets the user to set either Chart or Grid as the start-up widget.
+Allows you to set either the chart or grid as the start-up widget.
 
 #### Default Value: ej.PivotClient.DefaultView.Grid
 
@@ -1583,7 +1583,7 @@ Lets the user to set either Chart or Grid as the start-up widget.
 ### displaySettings.enableFullScreen `boolean`
 {:#members:displaysettings-enablefullscreen}
 
-Lets the user to have an option for switching to full screen view of PivotChart and PivotGrid from default view in PivotClient.
+Allows you to switch to full screen view of the pivot chart and the pivot grid from default view in the pivot client.
 
 #### Default Value: false
 
@@ -1597,7 +1597,7 @@ Lets the user to have an option for switching to full screen view of PivotChart 
 ### displaySettings.enableTogglePanel `boolean`
 {:#members:displaysettings-enabletogglepanel}
 
-Enables an option to enhance the space for PivotGrid and PivotChart by hiding Cube Browser and Axis Element Builder.
+Enables an option to enhance the space for the pivot grid and pivot chart by hiding the cube browser and the axis element builder.
 
 #### Default Value: false
 
@@ -1613,7 +1613,7 @@ Enables an option to enhance the space for PivotGrid and PivotChart by hiding Cu
 
 <ts name = "ej.PivotClient.DisplayMode"/>
 
-Sets the display mode (Only Chart/Only Grid/Both) in PivotClient.
+Sets the display mode (only chart/only grid/both) in the pivot client.
 
 #### Default Value: ej.PivotClient.DisplayMode.ChartAndGrid
 
@@ -1651,7 +1651,7 @@ Sets the display mode (Only Chart/Only Grid/Both) in PivotClient.
 ### toolbarIconSettings `object`
 {:#members:toolbariconsettings}
 
-Allows user to set visibility of icons in toolbar panel.
+Allows you to set the visibility of icons in the toolbar panel.
 
 #### Default Value: {}
 
@@ -1665,7 +1665,7 @@ Allows user to set visibility of icons in toolbar panel.
 ### toolbarIconSettings.enableAddReport `boolean`
 {:#members:toolbariconsettings-enableaddreport}
 
-Allows user to set the visibility of `Add Report` icon in toolbar panel.
+Allows you to set the visibility of `Add Report` icon in the toolbar panel.
 
 #### Default Value: true
 
@@ -1679,7 +1679,7 @@ Allows user to set the visibility of `Add Report` icon in toolbar panel.
 ### toolbarIconSettings.enableNewReport `boolean`
 {:#members:toolbariconsettings-enablenewreport}
 
-Allows user to set the visibility of `New Report` icon in toolbar panel.
+Allows you to set the visibility of `New Report` icon in the toolbar panel.
 
 #### Default Value: true
 
@@ -1693,7 +1693,7 @@ Allows user to set the visibility of `New Report` icon in toolbar panel.
 ### toolbarIconSettings.enableRenameReport `boolean`
 {:#members:toolbariconsettings-enablerenamereport}
 
-Allows user to set the visibility of `Rename Report` icon in toolbar panel.
+Allows you to set the visibility of `Rename Report` icon in the toolbar panel.
 
 #### Default Value: true
 
@@ -1707,7 +1707,7 @@ Allows user to set the visibility of `Rename Report` icon in toolbar panel.
 ### toolbarIconSettings.enableDBManipulation `boolean`
 {:#members:toolbariconsettings-enabledbmanipulation}
 
-Allows user to set the visibility of `DB Manipulation` icon in toolbar panel.
+Allows you to set the visibility of `DB Manipulation` icon in the toolbar panel.
 
 #### Default Value: true
 
@@ -1721,7 +1721,7 @@ Allows user to set the visibility of `DB Manipulation` icon in toolbar panel.
 ### toolbarIconSettings.enableWordExport `boolean`
 {:#members:toolbariconsettings-enablewordexport}
 
-Allows user to set the visibility of `Word Export` icon in toolbar panel.
+Allows you to set the visibility of `Word Export` icon in the toolbar panel.
 
 #### Default Value: true
 
@@ -1735,7 +1735,7 @@ Allows user to set the visibility of `Word Export` icon in toolbar panel.
 ### toolbarIconSettings.enableExcelExport `boolean`
 {:#members:toolbariconsettings-enableexcelexport}
 
-Allows user to set the visibility of `Excel Export` icon in toolbar panel.
+Allows you to set the visibility of `Excel Export` icon in the toolbar panel.
 
 #### Default Value: true
 
@@ -1749,7 +1749,7 @@ Allows user to set the visibility of `Excel Export` icon in toolbar panel.
 ### toolbarIconSettings.enablePdfExport `boolean`
 {:#members:toolbariconsettings-enablepdfexport}
 
-Allows user to set the visibility of `PDF Export` icon in toolbar panel.
+Allows you to set the visibility of `PDF Export` icon in the toolbar panel.
 
 #### Default Value: true
 
@@ -1763,9 +1763,9 @@ Allows user to set the visibility of `PDF Export` icon in toolbar panel.
 ### toolbarIconSettings.enableMDXQuery `boolean`
 {:#members:toolbariconsettings-enablemdxquery}
 
-Allows user to set the visibility of `MDX Query` icon in toolbar panel.
+Allows you to set the visibility of `MDX Query` icon in the toolbar panel.
 
->**Note**: This is not applicable for Relational data source.
+>**Note**: This is not applicable for the relational data source.
 
 #### Default Value: true
 
@@ -1779,7 +1779,7 @@ Allows user to set the visibility of `MDX Query` icon in toolbar panel.
 ### toolbarIconSettings.enableDeferUpdate `boolean`
 {:#members:toolbariconsettings-enabledeferupdate}
 
-Allows user to set the visibility of `Defer Update` icon in toolbar panel.
+Allows to set the visibility of `Defer Update` icon in the toolbar panel.
 
 #### Default Value: false
 
@@ -1793,7 +1793,7 @@ Allows user to set the visibility of `Defer Update` icon in toolbar panel.
 ### toolbarIconSettings.enableFullScreen `boolean`
 {:#members:toolbariconsettings-enablefullscreen}
 
-Allows user to set the visibility of `Full Screen` icon in toolbar panel.
+Allows to set the visibility of `Full Screen` icon in the toolbar panel.
 
 #### Default Value: false
 
@@ -1807,9 +1807,9 @@ Allows user to set the visibility of `Full Screen` icon in toolbar panel.
 ### toolbarIconSettings.enableSortOrFilterColumn `boolean`
 {:#members:toolbariconsettings-enablesortorfiltercolumn}
 
-Allows user to set the visibility of `Sort/Filter Column` icon in toolbar panel.
+Allows you to set the visibility of `Sort/Filter Column` icon in the toolbar panel.
 
->**Note**: This is only applicable for OLAP data bound from server-side.
+>**Note**: This is only applicable for the OLAP data bound from the server-side.
 
 #### Default Value: true
 
@@ -1823,9 +1823,9 @@ Allows user to set the visibility of `Sort/Filter Column` icon in toolbar panel.
 ### toolbarIconSettings.enableSortOrFilterRow `boolean`
 {:#members:toolbariconsettings-enablesortorfilterrow}
 
-Allows user to set the visibility of `Sort/Filter Row` icon in toolbar panel.
+Allows you to set the visibility of `Sort/Filter Row` icon in the toolbar panel.
 
->**Note**: This is only applicable for OLAP data bound from server-side.
+>**Note**: This is only applicable for the OLAP data bound from the server-side.
 
 #### Default Value: true
 
@@ -1839,7 +1839,7 @@ Allows user to set the visibility of `Sort/Filter Row` icon in toolbar panel.
 ### toolbarIconSettings.enableToggleAxis `boolean`
 {:#members:toolbariconsettings-enabletoggleaxis}
 
-Allows user to set the visibility of `Toggle Axis` icon in toolbar panel.
+Allows you to set the visibility of `Toggle Axis` icon in the toolbar panel.
 
 #### Default Value: true
 
@@ -1853,7 +1853,7 @@ Allows user to set the visibility of `Toggle Axis` icon in toolbar panel.
 ### toolbarIconSettings.enableChartTypes `boolean`
 {:#members:toolbariconsettings-enablecharttypes}
 
-Allows user to set the visibility of `Chart Types` icon in toolbar panel.
+Allows you to set the visibility of `Chart Types` icon in the toolbar panel.
 
 #### Default Value: true
 
@@ -1867,7 +1867,7 @@ Allows user to set the visibility of `Chart Types` icon in toolbar panel.
 ### toolbarIconSettings.enableRemoveReport `boolean`
 {:#members:toolbariconsettings-enableremovereport}
 
-Allows user to set the visibility of `Remove Report` icon in toolbar panel.
+Allows you to set the visibility of `Remove Report` icon in the toolbar panel.
 
 #### Default Value: true
 
@@ -1881,9 +1881,9 @@ Allows user to set the visibility of `Remove Report` icon in toolbar panel.
 ### toolbarIconSettings.enableCalculatedMember `boolean`
 {:#members:toolbariconsettings-enablecalculatedmember}
 
-Allows user to set the visibility of `Calculated Member` icon in toolbar panel.
+Allows you to set the visibility of `Calculated Member` icon in the toolbar panel.
 
->**Note**: This is only applicable for OLAP data bound from server-side.
+>**Note**: This is applicable only for the OLAP data bound from the server-side.
 
 #### Default Value: false
 
@@ -1897,9 +1897,9 @@ Allows user to set the visibility of `Calculated Member` icon in toolbar panel.
 ### showUniqueNameOnPivotButton `boolean`
 {:#members:showuniquenameonpivotbutton}
 
-Allows user to show unique name on pivot button.
+Allows you to show a unique name on the pivot button.
 
->**Note**: This is only applicable for OLAP data source.
+>**Note**: This is only applicable for the OLAP data source.
 
 #### Default Value: false
 
@@ -1913,7 +1913,7 @@ Allows user to show unique name on pivot button.
 ### showReportCollection `boolean`
 {:#members:showreportcollection}
 
-Allows user to load the saved report collection from the database.
+Allows you to load the saved report collection from the database.
 
 #### Default Value: false
 
@@ -1927,9 +1927,9 @@ Allows user to load the saved report collection from the database.
 ### enableSplitter `boolean`
 {:#members:enableSplitter}
 
-Enables the splitter option for resizing the elements inside the control. 
+Enables the splitter option for resizing the elements in the control.
 
->**Note**: This is not applicable for OLAP data bound from server-side.
+>**Note**: This is not applicable for the OLAP data bound from the server-side.
 
 #### Default Value: false
 
@@ -1944,7 +1944,7 @@ Enables the splitter option for resizing the elements inside the control.
 ### enableAdvancedFilter `boolean`
 {:#members:enableadvancedfilter}
 
-Enables the advanced filtering options Value Filtering, Label Filtering and Sorting for each dimensions on binding OLAP data in server mode.
+Enables the advanced filtering options such as value filtering, label filtering, and sorting for each dimensions when binding the OLAP data in the server mode.
 
 #### Default Value: false
 
@@ -1958,9 +1958,9 @@ Enables the advanced filtering options Value Filtering, Label Filtering and Sort
 ### enableDeferUpdate `boolean`
 {:#members:enabledeferupdate}
 
-Allows the user to refresh the control on-demand and not during every UI operation. 
+Allows you to refresh the control on-demand and not during the every UI operation.
 
-> **Note**: This property is applicable for OLAP data bound from server-side alone.
+> **Note**: This property is applicable for OLAP data bound from the server-side alone.
 
 #### Default Value: false
 
@@ -1974,7 +1974,7 @@ Allows the user to refresh the control on-demand and not during every UI operati
 ### enableLocalStorage `boolean`
 {:#members:enablelocalstorage}
 
-Lets the user to save and load reports in a customized way with the help of events. 
+Allows to save and load the reports in a customized way with the help of events. 
 
 #### Default Value: false
 
@@ -1988,9 +1988,9 @@ Lets the user to save and load reports in a customized way with the help of even
 ### enablePaging `boolean`
 {:#members:enablepaging}
 
-Allows the user to enable paging for both the PivotChart and PivotGrid components for the ease of viewing large data.
+Allows you to enable the paging for both the pivot chart and the pivot grid components for viewing the large data.
 
-> **Note**: This property is applicable for OLAP data bound from client-side alone.
+> **Note**: This property is applicable only for the OLAP data bound from the client-side.
 
 #### Default Value: false
 
@@ -2004,9 +2004,9 @@ Allows the user to enable paging for both the PivotChart and PivotGrid component
 ### enablePivotTreeMap `boolean`
 {:#members:enablepivottreemap}
 
-Allows the user to include the PivotTreeMap component as one of the Chart types.
+Allows you to include the pivot tree map component as one of the chart types.
 
-> **Note**: This property is applicable for OLAP data bound from server-side alone.
+> **Note**: This property is applicable only for the OLAP data bound from the server-side.
 
 #### Default Value: false
 
@@ -2020,7 +2020,7 @@ Allows the user to include the PivotTreeMap component as one of the Chart types.
 ### enableRTL `boolean`
 {:#members:enablertl}
 
-Allows the user to view the layout of PivotClient from right to left.
+Allows you to view the layout of the pivot client from right to left.
 
 #### Default Value: false
 
@@ -2034,9 +2034,9 @@ Allows the user to view the layout of PivotClient from right to left.
 ### enableMeasureGroups `boolean`
 {:#members:enablemeasuregroups}
 
-Enables/disables the visibility of measure group selector drop-down in Cube Browser.
+Enables/disables the visibility of measure group selector drop-down in the cube browser.
 
-> **Note**: This property is applicable only for OLAP data source bound from server-side.
+> **Note**: This property is applicable only for the OLAP data source bound from the server-side.
 
 #### Default Value: false
 
@@ -2050,9 +2050,9 @@ Enables/disables the visibility of measure group selector drop-down in Cube Brow
 ### enableVirtualScrolling `boolean`
 {:#members:enablevirtualscrolling}
 
-Allows the user to enable virtual scrolling for both the PivotChart and PivotGrid components for the ease of viewing large data. 
+Allows you to enable the virtual scrolling for both the pivot chart and pivot grid components for viewing the large data.
 
-> **Note**: This is applicable only for OLAP data.
+> **Note**: This is applicable only for the OLAP data.
 
 #### Default Value: false
 
@@ -2066,7 +2066,7 @@ Allows the user to enable virtual scrolling for both the PivotChart and PivotGri
 ### enableMemberEditorPaging `boolean`
 {:#members:enablemembereditorpaging}
 
-Enables/Disables paging in Member Editor for viewing the large count of members in pages. 
+Enables/disables paging in the member editor for viewing the large count of members in the pages.
 
 #### Default Value: false
 
@@ -2080,7 +2080,7 @@ Enables/Disables paging in Member Editor for viewing the large count of members 
 ### memberEditorPageSize `number`
 {:#members:membereditorpagesize}
 
-Allows the user to set the number of members to be displayed in each page of Member Editor on applying paging in it. 
+Allows you to set the number of members to be displayed in each page of the member editor on applying the paging in it.
 
 #### Default Value: 100
 
@@ -2096,9 +2096,9 @@ Allows the user to set the number of members to be displayed in each page of Mem
 
 <ts ref = "ej.PivotGrid.Layout"/>
 
-Sets the summary layout for PivotGrid. Following are the ways in which summary can be positioned: normal summary (bottom), top summary, no summary and excel-like summary.
+Sets the summary layout for the pivot grid. Following are the ways in which the summary can be positioned: normal summary (bottom), top summary, no summary, and Microsoft Excel summary.
 
-> **Note**: This property is applicable only for OLAP data bound from server-side.
+> **Note**: This property is applicable only for the OLAP data bound from the server-side.
 
 #### Default Value: ej.PivotGrid.Layout.Normal
 
@@ -2139,7 +2139,7 @@ Sets the summary layout for PivotGrid. Following are the ways in which summary c
 ### collapseCubeBrowserByDefault `boolean`
 {:#members:collapsecubebrowserbydefault}
 
-Allows the user to hide PivotClient's Cube Browser and Axis Element Builder while initiate the widget.
+Allows you to hide the cube browser and the axis element builder of the pivot client while initiating the widget.
 
 #### Default Value: false
 
@@ -2153,9 +2153,9 @@ Allows the user to hide PivotClient's Cube Browser and Axis Element Builder whil
 ### enableKPI `boolean`
 {:#members:enablekpi}
 
-Allows the user to view the KPI elements in tree-view inside PivotClient's Cube Browser.
+Allows you to view the KPI elements in tree-view of the pivot client's cube browser.
 
-> **Note**: This property is applicable only for OLAP data.
+> **Note**: This property is applicable only for the OLAP data.
 
 #### Default Value: false
 
@@ -2169,7 +2169,7 @@ Allows the user to view the KPI elements in tree-view inside PivotClient's Cube 
 ### isResponsive `boolean`
 {:#members:isresponsive}
 
-Allows the user to enable PivotClient’s responsiveness in the browser layout.
+Allows you to enable the pivot client’s responsiveness in the browser layout.
 
 #### Default Value: false
 
@@ -2183,7 +2183,7 @@ Allows the user to enable PivotClient’s responsiveness in the browser layout.
 ### size `object`
 {:#members:size}
 
-Options to customize the size of the PivotClient control.
+Options to customize the size of the pivot client control.
 
 #### Default Value: { height: "685px", width: "1000px" }
 
@@ -2197,7 +2197,7 @@ Options to customize the size of the PivotClient control.
 ### locale `string`
 {:#members:locale}
 
-Allows the user to set the localized language for the widget.
+Allows you to set the localized language for the widget.
 
 #### Default Value: "en-US"
 
@@ -2213,7 +2213,7 @@ Allows the user to set the localized language for the widget.
 
 <ts ref = "ej.Pivot.OperationalMode"/>
 
-Sets the mode for the PivotClient widget for binding data source either in server-side or client-side.
+Sets the mode for the pivot client widget to bind the data source in the server-side or the client-side.
 
 <table class="params">
     <thead>
@@ -2246,9 +2246,9 @@ Sets the mode for the PivotClient widget for binding data source either in serve
 ### serviceMethodSettings `object`
 {:#members:servicemethodsettings}
 
-Allows the user to set custom name for the methods at service-end, communicated during AJAX post.
+Allows you to set the custom name for methods at service-end, and it is communicated during the AJAX post.
 
-> **Note**: This property is applicable only on operating the control from server-side.
+> **Note**: This property is applicable only for operating the control from the server-side.
 
 #### Default Value: {}
 
@@ -2262,7 +2262,7 @@ Allows the user to set custom name for the methods at service-end, communicated 
 ### serviceMethodSettings.cubeChanged `string`
 {:#members:servicemethodsettings-cubechanged}
 
-Allows the user to set the custom name for the service method responsible for updating the entire report and widget, while changing the Cube.
+Allows you to set the custom name for the service method that is responsible for updating the entire report and widget, while changing the cube.
 
 #### Default Value: "CubeChanged"
 
@@ -2276,7 +2276,7 @@ Allows the user to set the custom name for the service method responsible for up
 ### serviceMethodSettings.exportPivotClient `string`
 {:#members:servicemethodsettings-exportpivotclient}
 
-Allows the user to set the custom name for the service method responsible for exporting.
+Allows to set the custom name for the service method responsible for exporting.
 
 #### Default Value: "Export"
 
@@ -2290,7 +2290,7 @@ Allows the user to set the custom name for the service method responsible for ex
 ### serviceMethodSettings.fetchMemberTreeNodes `string`
 {:#members:servicemethodsettings-fetchmembertreenodes}
 
-Allows the user to set the custom name for the service method responsible to get the members for the tree-view, inside member-editor dialog.
+Allows you to set the custom name for the service method that is responsible to get the members for tree-view in the member-editor dialog.
 
 #### Default Value: "FetchMemberTreeNodes"
 
@@ -2304,7 +2304,7 @@ Allows the user to set the custom name for the service method responsible to get
 ### serviceMethodSettings.fetchReportList `string`
 {:#members:servicemethodsettings-fetchreportlist}
 
-Allows the user to set the custom name for the service method responsible for fetching the report names from the database.
+Allows you to set the custom name for the service method that is responsible for fetching the report names from the database.
 
 #### Default Value: "FetchReportListFromDB"
 
@@ -2318,7 +2318,7 @@ Allows the user to set the custom name for the service method responsible for fe
 ### serviceMethodSettings.filterElement `string`
 {:#members:servicemethodsettings-filterelement}
 
-Allows the user to set the custom name for the service method responsible for updating report while filtering members.
+Allows you to set the custom name for the service method that is responsible for updating the report while filtering the members.
 
 #### Default Value: "FilterElement"
 
@@ -2332,7 +2332,7 @@ Allows the user to set the custom name for the service method responsible for up
 ### serviceMethodSettings.initialize `string`
 {:#members:servicemethodsettings-initialize}
 
-Allows the user to set the custom name for the service method responsible for initializing PivotClient.
+Allows you to set the custom name for the service method that is responsible for initializing the pivot client.
 
 #### Default Value: "InitializeClient"
 
@@ -2346,7 +2346,7 @@ Allows the user to set the custom name for the service method responsible for in
 ### serviceMethodSettings.loadReport `string`
 {:#members:servicemethodsettings-loadreport}
 
-Allows the user to set the custom name for the service method responsible for loading a report collection from the database.
+Allows you to set the custom name for the service method that is responsible for loading a report collection from the database.
 
 #### Default Value: "LoadReportFromDB"
 
@@ -2360,7 +2360,7 @@ Allows the user to set the custom name for the service method responsible for lo
 ### serviceMethodSettings.removeDBReport `string`
 {:#members:servicemethodsettings-removedbreport}
 
-Allows the user to set the custom name for the service method responsible for remove a report collection from the database.
+Allows you to set the custom name for the service method that is responsible to remove a report collection from the database.
 
 #### Default Value: "RemoveReportFromDB"
 
@@ -2374,7 +2374,7 @@ Allows the user to set the custom name for the service method responsible for re
 ### serviceMethodSettings.renameDBReport `string`
 {:#members:servicemethodsettings-renamedbreport}
 
-Allows the user to set the custom name for the service method responsible for rename the report collection in the database.
+Allows you to set the custom name for the service method that is responsible for renaming the report collection in the database.
 
 #### Default Value: "RenameReportInDB"
 
@@ -2388,9 +2388,9 @@ Allows the user to set the custom name for the service method responsible for re
 ### serviceMethodSettings.mdxQuery `string`
 {:#members:servicemethodsettings-mdxquery}
 
-Allows the user to set the custom name for the service method responsible for retrieving the MDX query for the current report.
+Allows you to set the custom name for the service method that is responsible for retrieving the MDX query for the current report.
 
->**Note**: This is applicable only with OLAP data bound.
+>**Note**: This is applicable only with the bounded OLAP data.
 
 #### Default Value: "GetMDXQuery"
 
@@ -2404,7 +2404,7 @@ Allows the user to set the custom name for the service method responsible for re
 ### serviceMethodSettings.measureGroupChanged `string`
 {:#members:servicemethodsettings-measuregroupchanged}
 
-Allows the user to set the custom name for the service method responsible for updating the tree-view inside Cube Browser, while changing the measure group.
+Allows you to set the custom name for the service method that is responsible for updating the tree-view in the cube browser, while changing the measure group.
 
 #### Default Value: "MeasureGroupChanged"
 
@@ -2418,7 +2418,7 @@ Allows the user to set the custom name for the service method responsible for up
 ### serviceMethodSettings.memberExpand `string`
 {:#members:servicemethodsettings-memberexpand}
 
-Allows the user to set the custom name for the service method responsible to get the child members, on tree-view node expansion.
+Allows you to set the custom name for the service method that is responsible to get the child members, on tree-view node expansion.
 
 #### Default Value: "MemberExpanded"
 
@@ -2432,7 +2432,7 @@ Allows the user to set the custom name for the service method responsible to get
 ### serviceMethodSettings.nodeDropped `string`
 {:#members:servicemethodsettings-nodedropped}
 
-Allows the user to set the custom name for the service method responsible for updating report while dropping a node/SplitButton inside Axis Element Builder.
+Allows you to set the custom name for the service method that is responsible for updating the report while dropping a node/split button in the axis element builder.
 
 #### Default Value: "NodeDropped"
 
@@ -2446,7 +2446,7 @@ Allows the user to set the custom name for the service method responsible for up
 ### serviceMethodSettings.removeSplitButton `string`
 {:#members:servicemethodsettings-removesplitbutton}
 
-Allows the user to set the custom name for the service method responsible for updating report while removing SplitButton from Axis Element Builder.
+Allows you to set the custom name for the service method that is responsible to update the report while removing the split button from the axis element builder.
 
 #### Default Value: "RemoveSplitButton"
 
@@ -2460,7 +2460,7 @@ Allows the user to set the custom name for the service method responsible for up
 ### serviceMethodSettings.saveReport `string`
 {:#members:servicemethodsettings-savereport}
 
-Allows the user to set the custom name for the service method responsible for saving the report collection to database.
+Allows you to set the custom name for the service method that is responsible for saving the report collection in the database.
 
 #### Default Value: "SaveReportToDB"
 
@@ -2474,7 +2474,7 @@ Allows the user to set the custom name for the service method responsible for sa
 ### serviceMethodSettings.toggleAxis `string`
 {:#members:servicemethodsettings-toggleaxis}
 
-Allows the user to set the custom name for the service method responsible for toggling the elements in row and column axes.
+Allows you to set the custom name for the service method that is responsible for toggling the elements in the row and column axes.
 
 #### Default Value: "ToggleAxis"
 
@@ -2488,7 +2488,7 @@ Allows the user to set the custom name for the service method responsible for to
 ### serviceMethodSettings.toolbarServices `string`
 {:#members:servicemethodsettings-toolbarservices}
 
-Allows the user to set the custom name for the service method responsible for all the toolbar operations.
+Allows you to set the custom name for the service method that is responsible for all the toolbar operations.
 
 #### Default Value: "ToolbarOperations"
 
@@ -2502,7 +2502,7 @@ Allows the user to set the custom name for the service method responsible for al
 ### serviceMethodSettings.updateReport `string`
 {:#members:servicemethodsettings-updatereport}
 
-Allows the user to set the custom name for the service method responsible for updating report collection.
+Allows you to set the custom name for the service method that is responsible for updating the report collection.
 
 #### Default Value: "UpdateReport"
 
@@ -2516,7 +2516,7 @@ Allows the user to set the custom name for the service method responsible for up
 ### serviceMethodSettings.paging `string`
 {:#members:servicemethodsettings-paging}
 
-Allows the user to set the custom name for the service method responsible on navigating between pages in paged PivotClient.
+Allows you to set the custom name for the service method while navigating between the pages in the paged pivot client.
 
 #### Default Value: "Paging"
 
@@ -2530,7 +2530,7 @@ Allows the user to set the custom name for the service method responsible on nav
 ### serviceMethodSettings.calculatedMember `string`
 {:#members:servicemethodsettings-calculatedmember}
 
-Allows the user to set the custom name for the service method responsible for updating report with calculated member.
+Allows you to set the custom name for the service method that is responsible for updating the report with the calculated member.
 
 #### Default Value: "CalculatedMember"
 
@@ -2544,7 +2544,7 @@ Allows the user to set the custom name for the service method responsible for up
 ### serviceMethodSettings.drillThroughHierarchies `string`
 {:#members:servicemethodsettings-drillthroughhierarchies}
 
-Allows the user to set the custom name for the service method responsible for performing drill through operation.
+Allows you to set the custom name for the service method that is responsible for performing the drill through operation.
 
 #### Default Value: "DrillThroughHierarchies"
 
@@ -2558,7 +2558,7 @@ Allows the user to set the custom name for the service method responsible for pe
 ### serviceMethodSettings.drillThroughDataTable `string`
 {:#members:servicemethodsettings-drillthroughdatatable}
 
-Allows the user to set the custom name for the service method responsible for performing drill through operation in data table.
+Allows you to set the custom name for the service method that is responsible for performing the drill through operation in the data table.
 
 #### Default Value: "DrillThroughDataTable"
 
@@ -2572,7 +2572,7 @@ Allows the user to set the custom name for the service method responsible for pe
 ### title `string`
 {:#members:title}
 
-Sets the title for PivotClient widget.
+Sets the title for the pivot client widget.
 
 #### Default Value: ""
 
@@ -2615,7 +2615,7 @@ Performs an asynchronous HTTP (AJAX) request.
 ### doPostBack()
 {:#methods:dopostback}
 
-Performs an asynchronous HTTP (FullPost) submit.
+Performs an asynchronous HTTP (full post) submit.
 
 **Example:**
 
@@ -2628,7 +2628,7 @@ Performs an asynchronous HTTP (FullPost) submit.
 ### refreshPagedPivotClient()
 {:#methods:refreshpagedpivotclient}
 
-Navigates to the specified page in specified axis.
+Navigates to a specified page in the specified axis.
 
 **Example:**
 
@@ -2641,7 +2641,7 @@ Navigates to the specified page in specified axis.
 ### refreshPagedPivotClientSuccess()
 {:#methods:refreshpagedpivotclientsuccess}
 
-Updates the PivotClient component with the JSON data fetched from the service on navigating between pages.
+Updates the pivot client component with the JSON data that is fetched from the service while navigating between the pages.
 
 **Example:**
 
@@ -2654,7 +2654,7 @@ Updates the PivotClient component with the JSON data fetched from the service on
 ### generateJSON()
 {:#methods:generatejson}
 
-Renders the PivotChart and PivotGrid with the JSON data provided.
+Renders the pivot chart and the pivot grid with the provided JSON data.
 
 **Example:**
 
@@ -2669,7 +2669,7 @@ Renders the PivotChart and PivotGrid with the JSON data provided.
 
 Re-renders the control with the report at that instant.
 
-> **Note**: This method could be used only for client-side operation.
+> **Note**: This method can be used only for the client-side operation.
 
 **Example:**
 
@@ -2682,7 +2682,7 @@ Re-renders the control with the report at that instant.
 ### getActiveTab()
 {:#methods:getactivetab}
 
-Returns the control tab string that displays currently in PivotClient.
+Returns the control tab string that displays currently in the pivot client.
 
 **Example:**
 
@@ -2695,7 +2695,7 @@ Returns the control tab string that displays currently in PivotClient.
 ### destroy()
 {:#methods:destroy}
 
-This function Destroy the PivotClient widget all events bound using this._on will be unbind automatically and bring the control to pre-init state.
+This function destroys all events of the pivot client widget bound using "this._on" and bring the control to pre-init state.
 
 **Example:**
 
@@ -2708,7 +2708,7 @@ This function Destroy the PivotClient widget all events bound using this._on wil
 ### getOlapReport()
 {:#methods:getolapreport}
 
-Returns the OlapReport string maintained along with the axis elements information.
+Returns the OLAP report string that is maintained along with the axis elements information.
 
 #### Returns:
 
@@ -2725,7 +2725,7 @@ string
 ### setOlapReport()
 {:#methods:setolapreport}
 
-Sets the OlapReport string along with the axis information and maintains it in a property.
+Sets the OLAP report string along with the axis information and maintains it in a property.
 
 **Example:**
 
@@ -2738,7 +2738,7 @@ Sets the OlapReport string along with the axis information and maintains it in a
 ### getJSONRecords()
 {:#methods:getjsonrecords}
 
-Returns the JSON records formed to render the control.
+Returns the formed JSON records to render the control.
 
 #### Returns:
 
@@ -2755,7 +2755,7 @@ array
 ### setJSONRecords()
 {:#methods:setjsonrecords}
 
-Sets the JSON records formed to render the control to a property.
+Sets the formed JSON records to render the control to a property.
 
 **Example:**
 
@@ -2770,7 +2770,7 @@ Sets the JSON records formed to render the control to a property.
 ### afterServiceInvoke
 {:#events:afterserviceinvoke}
 
-Triggers when it reaches client-side after any AJAX request.
+Triggers when it reaches the client-side after any AJAX request.
 
 <table class="params">
 <thead>
@@ -2816,7 +2816,7 @@ Triggers when it reaches client-side after any AJAX request.
 ### beforeServiceInvoke
 {:#events:beforeserviceinvoke}
 
-Triggers before any AJAX request is passed from client-side to service methods.
+Triggers before any AJAX request is passed from the client-side to the service methods.
 
 <table class="params">
 <thead>
@@ -2899,7 +2899,7 @@ Triggers before saving the current collection of reports.
 ### loadReport
 {:#events:loadreport}
 
-Triggers before loading a saved collection of reports.
+Triggers before loading the saved collection of reports.
 
 <table class="params">
 <thead>
@@ -2939,7 +2939,7 @@ Triggers before loading a saved collection of reports.
 ### fetchReport
 {:#events:fetchreport}
 
-Triggers before fetching the report collection from storage.
+Triggers before fetching the report collection from the storage.
 
 <table class="params">
 <thead>
@@ -3018,7 +3018,7 @@ Triggers before exporting the control.
 ### chartLoad
 {:#events:chartload}
 
-Triggers before rendering the PivotChart.
+Triggers before rendering the pivot chart.
 
 <table class="params">
 <thead>
@@ -3067,7 +3067,7 @@ Triggers before rendering the PivotChart.
 ### schemaLoad
 {:#events:schemaload}
 
-Triggers before rendering the PivotSchemaDesigner.
+Triggers before rendering the pivot schema designer.
 
 <table class="params">
 <thead>
@@ -3113,7 +3113,7 @@ Triggers before rendering the PivotSchemaDesigner.
 ### treeMapLoad
 {:#events:treemapload}
 
-Triggers before rendering the PivotTreeMap.
+Triggers before rendering the pivot tree map.
 
 <table class="params">
 <thead>
@@ -3157,7 +3157,7 @@ Triggers before rendering the PivotTreeMap.
 ## gridDrillSuccess
 {:#events:griddrillsuccess}
 
-Triggers on performing drill up/down on row/columns headers.
+Triggers when performing the drill up/down operation on the row/columns headers.
 
 <table class="params">
 <thead>
@@ -3227,7 +3227,7 @@ Triggers on performing drill up/down on row/columns headers.
 ## chartDrillSuccess
 {:#events:chartdrillsuccess}
 
-Triggers on performing drill operation on Chart series.
+Triggers when performing the drill operation on the chart series.
 
 <table class="params">
 <thead>
@@ -3272,8 +3272,7 @@ Triggers on performing drill operation on Chart series.
 ## treeMapDrillSuccess
 {:#events:treemapdrillsuccess}
 
-Triggers on performing drill operation on TreeMap.
-
+Triggers when performing the drill operation on the tree map.
 <table class="params">
 <thead>
 <tr>
@@ -3317,7 +3316,7 @@ Triggers on performing drill operation on TreeMap.
 ### valueCellHyperlinkClick
 {:#events:valuecellhyperlinkclick}
 
-Triggers on clicking any value cell in PivotGrid.
+Triggers when clicking any value cell in the pivot grid.
 
 <table class="params">
 <thead>
@@ -3372,7 +3371,7 @@ Triggers on clicking any value cell in PivotGrid.
 ## rowHeaderHyperlinkClick
 {:#events:rowheaderhyperlinkclick}
 
-Triggers on clicking any row header cell in PivotGrid.
+Triggers when clicking any row header cell in the pivot grid.
 
 <table class="params">
 <thead>
@@ -3427,7 +3426,7 @@ Triggers on clicking any row header cell in PivotGrid.
 ## columnHeaderHyperlinkClick
 {:#events:columnheaderhyperlinkclick}
 
-Triggers on clicking any column header cell in PivotGrid.
+Triggers when clicking any column header cell in the pivot grid.
 
 <table class="params">
 <thead>
@@ -3482,7 +3481,7 @@ Triggers on clicking any column header cell in PivotGrid.
 ## summaryCellHyperlinkClick
 {:#events:summarycellhyperlinkclick}
 
-Triggers on clicking any summary cell in PivotGrid.
+Triggers when clicking any summary cell in the pivot grid.
 
 <table class="params">
 <thead>
@@ -3537,7 +3536,7 @@ Triggers on clicking any summary cell in PivotGrid.
 ## cellContext
 {:#events:cellcontext}
 
-Triggers when right click on any cell in the PivotGrid.
+Triggers when right-clicking a cell in the pivot grid.
 
 <table class="params">
 <thead>
@@ -3607,7 +3606,7 @@ Triggers when right click on any cell in the PivotGrid.
 ## cellSelection
 {:#events:cellselection}
 
-Triggers when select/click any of the cell in the PivotGrid.
+Triggers when select/click any of the cell in the pivot grid.
 
 <table class="params">
 <thead>
@@ -3652,7 +3651,7 @@ Triggers when select/click any of the cell in the PivotGrid.
 ## cellEdit
 {:#events:celledit}
 
-Triggers when any of the value cell edited in the PivotGrid.
+Triggers when any of the value cell is edited in the pivot grid.
 
 <table class="params">
 <thead>
@@ -3697,7 +3696,7 @@ Triggers when any of the value cell edited in the PivotGrid.
 ## cellDoubleClick
 {:#events:celldoubleclick}
 
-Triggers double click on any of the cell in the PivotGrid.
+Triggers when double-click on any of the cell in the pivot grid.
 
 <table class="params">
 <thead>
@@ -3752,7 +3751,7 @@ Triggers double click on any of the cell in the PivotGrid.
 ### pointRegionClick
 {:#events:pointregionclick}
 
-Triggers when clicking on any Chart series points in the PivotChart.
+Triggers when clicking on any chart series points in the pivot chart.
 
 <table class="params">
 <thead>
@@ -3797,7 +3796,7 @@ Triggers when clicking on any Chart series points in the PivotChart.
 ### axesLabelRendering
 {:#events:axeslabelrendering}
 
-Triggers before Chart label rendering in the PivotChart.
+Triggers before the chart label is rendered in the pivot chart.
 
 <table class="params">
 <thead>
@@ -3842,7 +3841,7 @@ Triggers before Chart label rendering in the PivotChart.
 ### drillThrough
 {:#events:drillthrough}
 
-Triggers while clicking value cells in PivotGrid. 
+Triggers while clicking the value cells in the pivot grid.
 
 <table class="params">
 <thead>
@@ -3881,7 +3880,7 @@ Triggers while clicking value cells in PivotGrid.
 ### load
 {:#events:load}
 
-Triggers while we initiate loading of the widget.
+Triggers while initiating the loading of the widget.
 
 <table class="params">
 <thead>
@@ -3921,7 +3920,7 @@ Triggers while we initiate loading of the widget.
 ### renderComplete
 {:#events:rendercomplete}
 
-Triggers when PivotClient widget completes all operations at client-end after any AJAX request. 
+Triggers when the pivot client widget completes all operations at client-end after any AJAX request.
 
 <table class="params">
 <thead>
@@ -3960,7 +3959,7 @@ Triggers when PivotClient widget completes all operations at client-end after an
 ### renderFailure
 {:#events:renderfailure}
 
-Triggers when any error occurred during AJAX request. 
+Triggers when any error is occurred during the AJAX request.
 
 <table class="params">
 <thead>
@@ -4005,7 +4004,7 @@ Triggers when any error occurred during AJAX request.
 ### renderSuccess
 {:#events:rendersuccess}
 
-Triggers when PivotClient successfully completes rendering.
+Triggers when the pivot client is completely rendered.
 
 <table class="params">
 <thead>
