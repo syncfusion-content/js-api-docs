@@ -5559,7 +5559,7 @@ To show/hide the critical tasks in current project.
 
 {% endhighlight %}
 
-### filterColumn(fieldName, filterOperator, filterValue, [predicate], [matchcase])
+### filterColumn(fieldName, filterOperator, filterValue, [predicate], [matchCase])
 {:#methods:filtercolumn}
 
 Sends filtering request to filter a column in Gantt dynamically.
@@ -5594,7 +5594,7 @@ Sends filtering request to filter a column in Gantt dynamically.
 <td class="description">Optional - Pass the predicate as and/or.</td>
 </tr>
 <tr>
-<td class="name">matchcase</td>
+<td class="name">matchCase</td>
 <td class="type">boolean</td>
 <td class="description">Optional - pass the match case value as true/false.</td>
 </tr>
