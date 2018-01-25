@@ -28,7 +28,7 @@ $(element).ejGantt<span class="signature">()</span>
 
 {% highlight html %}
  
-<gantt id="gantt">Gantt</gantt> 
+<div id="gantt">Gantt</div> 
  
 <script>
 // Create Gantt
@@ -5126,7 +5126,7 @@ To hide the column by using header text
 
 {% highlight html %}
  
-<gantt id="gantt">Gantt</gantt> 
+<div id="gantt">Gantt</div> 
  
 <script>
 // Create Gantt
@@ -5468,7 +5468,7 @@ To show the column by using header text
 
 {% highlight html %}
  
-<gantt id="gantt">Gantt</gantt> 
+<div id="gantt">Gantt</div> 
  
 <script>
 // Create Gantt
@@ -5477,6 +5477,228 @@ ganttObj.showColumn("Task Name");
 </script>
 {% endhighlight %}
 
+
+### updateTaskId(currentId, newId)
+{:#methods:updatetaskid}
+
+To change an existing Gantt ID by new ID value dynamically
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">currentId</td>
+<td class="type">number</td>
+<td class="description">you can pass an existing ID value to be change</td>
+</tr>
+<tr>
+<td class="name">newId</td>
+<td class="type">number</td>
+<td class="description">you can pass a new ID value to be change</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+ 
+<script>
+// Create Gantt
+var ganttObj = $("#gantt").data("ejGantt");
+ganttObj.updateTaskId(5, 15);
+</script>
+{% endhighlight %}
+
+### updateRecordByTaskId(data)
+{:#methods:updaterecordbytaskid}
+
+To update the value of Gantt record by using it's task id value.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">data</td>
+<td class="type">object</td>
+<td class="description">object with modified field values and current task id value</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="gantt"></div>  
+<script>
+        var ganttObj = $("#gantt").data("ejGantt");
+        var data = { taskID: 4, taskName: "updated value"};
+        ganttObj.updateRecordByTaskId(data);
+</script>
+
+{% endhighlight %}
+
+### updateRecordByIndex(index, data)
+{:#methods:updaterecordbyindex}
+
+To update the value of Gantt record by using row index.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">index</td>
+<td class="type">number</td>
+<td class="description">index of Gantt record to be updated</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type">object</td>
+<td class="description">object with modified field value</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="gantt"></div>  
+<script>
+        var ganttObj = $("#gantt").data("ejGantt");
+        var data = { taskName: "updated value"};
+        ganttObj.updateRecordByIndex(4, data);
+</script>
+
+{% endhighlight %}
+
+### showCriticalPath(isShown)
+{:#methods:showcriticalpath}
+
+To show/hide the critical tasks in current project.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">isShown</td>
+<td class="type">boolean</td>
+<td class="description">To show/hide the critical tasks</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="gantt"></div>  
+<script>
+        var ganttObj = $("#gantt").data("ejGantt");
+        ganttObj.showCriticalPath(true);
+</script>
+
+{% endhighlight %}
+
+### filterColumn(fieldName, filterOperator, filterValue, [predicate], [matchCase])
+{:#methods:filtercolumn}
+
+Sends filtering request to filter a column in Gantt dynamically.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fieldName</td>
+<td class="type">string</td>
+<td class="description">Pass the field name of the column.</td>
+</tr>
+<tr>
+<td class="name">filterOperator</td>
+<td class="type">string</td>
+<td class="description">string/integer/date operator.</td>
+</tr>
+<tr>
+<td class="name">filterValue</td>
+<td class="type">string</td>
+<td class="description">Pass the value to be filtered in a column.</td>
+</tr>
+<tr>
+<td class="name">predicate</td>
+<td class="type">string</td>
+<td class="description">Optional - Pass the predicate as and/or.</td>
+</tr>
+<tr>
+<td class="name">matchCase</td>
+<td class="type">boolean</td>
+<td class="description">Optional - pass the match case value as true/false.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="gantt"></div>  
+<script>
+        var obj = $("#gantt").ejGantt("instance");
+        obj.filterColumn("taskName", "startswith", "plan");
+</script>
+
+{% endhighlight %}
+
+### clearFilter()
+{:#methods:clearfilter}
+
+To clear all the filtered columns in Gantt.
+
+#### Example
+
+{% highlight html %}
+
+<div id="gantt"></div>  
+<script>
+        var ganttObj = $("#gantt").data("ejGantt");
+        ganttObj.clearFilter();
+</script>
+
+{% endhighlight %}
 
 ### updateDependency(fromTaskId,toTaskId, predecessorType, offset)
 {:#methods:updatedependency}
@@ -5527,49 +5749,6 @@ To update the predecessor type and offset value for existing task dependency.
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 ganttObj.updateDependency(3, 6, "SS", 3); // To update predecessor type and offset value.
-</script>
-{% endhighlight %}
-
-
-### updateTaskId(currentId, newId)
-{:#methods:updatetaskid}
-
-To change an existing Gantt ID by new ID value dynamically
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">currentId</td>
-<td class="type">number</td>
-<td class="description">you can pass an existing ID value to be change</td>
-</tr>
-<tr>
-<td class="name">newId</td>
-<td class="type">number</td>
-<td class="description">you can pass a new ID value to be change</td>
-</tr>
-</tbody>
-</table>
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<gantt id="gantt">Gantt</gantt> 
- 
-<script>
-// Create Gantt
-var ganttObj = $("#gantt").data("ejGantt");
-ganttObj.updateTaskId(5, 15);
 </script>
 {% endhighlight %}
 
