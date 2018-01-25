@@ -5700,6 +5700,56 @@ To clear all the filtered columns in Gantt.
 
 {% endhighlight %}
 
+### updateDependency(fromTaskId,toTaskId, predecessorType, offset)
+{:#methods:updatedependency}
+
+To update the predecessor type and offset value for existing task dependency.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fromTaskId</td>
+<td class="type">number</td>
+<td class="description">taskID of predecessor task</td>
+</tr>
+<tr>
+<td class="name">toTaskId</td>
+<td class="type">number</td>
+<td class="description">taskID of successor task</td>
+</tr>
+<tr>
+<td class="name">predecessorType</td>
+<td class="type">string</td>
+<td class="description">Type of dependency task.</td>
+</tr>
+<tr>
+<td class="name">offset</td>
+<td class="type">number</td>
+<td class="description">Offset value of dependency task.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+ 
+<script>
+// Create Gantt
+var ganttObj = $("#gantt").data("ejGantt");
+ganttObj.updateDependency(3, 6, "SS", 3); // To update predecessor type and offset value.
+</script>
+{% endhighlight %}
+
 ## Events
 
 
