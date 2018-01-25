@@ -13343,6 +13343,167 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
+### layers `array`
+{:#members:layers}
+
+A collection of JSON objects where each object represents a layer. Layer is a named category of diagram shapes.
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var layer = { name: "layer1", active: true, objects: ["textNode"] };
+$("#diagram").ejDiagram({
+    layers: [layer]
+});
+</script>
+
+{% endhighlight %}
+
+### layers.name `string`
+{:#members:layers-name}
+
+To specify the name of the diagram layer. Layer name should be unique.
+ 
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var layer = { name: "layer1", active: true, objects: ["textNode"] };
+$("#diagram").ejDiagram({
+    layers: [layer]
+});
+</script>
+
+{% endhighlight %} 
+
+### layers.active `boolean`
+{:#members:layers-active }
+
+Enable or disable diagram objects to be added to the specific layer.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var layer = { name: "layer1", active: true, objects: ["textNode"] };
+$("#diagram").ejDiagram({
+    layers: [layer]
+});
+</script>
+
+{% endhighlight %} 
+
+### layers.visible `boolean`
+{:#members:layers-visible}
+
+Enable or disable the specific layer objects to be visible.
+
+#### Default Value:
+
+* true
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var layer = { name: "layer1", visible: true, objects: ["textNode"] };
+$("#diagram").ejDiagram({
+    layers: [layer]
+});
+</script>
+
+{% endhighlight %} 
+
+### layers.print `boolean`
+{:#members:layers-print}
+
+Enable or disable the specific layer objects to be visible on printing or exporting.
+
+#### Default Value:
+
+* true
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var layer = { name: "layer1", print: true, objects: ["textNode"] };
+$("#diagram").ejDiagram({
+    layers: [layer]
+});
+</script>
+
+{% endhighlight %} 
+
+### layers.lock `boolean`
+{:#members:layers-lock}
+
+Enable or disable the interaction of the specific diagram objects.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var layer = { name: "layer1", lock: true, objects: ["textNode"] };
+$("#diagram").ejDiagram({
+    layers: [layer]
+});
+</script>
+
+{% endhighlight %} 
+
+### layers.objects `array`
+{:#members:layers-objects}
+
+To Specify the collection of the object names belongs to the layer.
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var layer = { name: "layer1", lock: true, objects: ["textNode"] };
+$("#diagram").ejDiagram({
+    layers: [layer]
+});
+</script>
+
+{% endhighlight %} 
+
 ### nodeTemplate `object`
 {:#members:nodetemplate}
 
