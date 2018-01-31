@@ -6265,6 +6265,23 @@ $("#Spreadsheet").ejSpreadsheet("protectSheet", false);
 
 {% endhighlight %}
 
+### redo()
+{:#methods:redo}
+
+This method is used to perform the redo action in Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To perform redo action in Spreadsheet
+excelObj.redo();
+</script>
+
+{% endhighlight %}
+
 ### refreshContent(sheetIdx)
 {:#methods:refreshcontent}
 This method is used to refresh the content in Spreadsheet.
@@ -7279,6 +7296,23 @@ excelObj.showWaitingPopUp();
 <script>
 // show waiting popup in the Spreadsheet
 $("#Spreadsheet").ejSpreadsheet("showWaitingPopUp");
+</script>
+
+{% endhighlight %}
+
+### undo()
+{:#methods:undo}
+
+This method is used to perform the undo action in Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<script>
+// Initialize the Spreadsheet object.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To perform undo action in Spreadsheet
+excelObj.undo();
 </script>
 
 {% endhighlight %}
@@ -8737,6 +8771,43 @@ excelObj.XLCMenu.enableItem(ej.Spreadsheet.ContextMenu.Cell, [1,2,3]); // To ena
 
 {% endhighlight %}
 
+### XLCMenu.hideItem(cMenuType, idxColl)
+{:#methods:xlcmenu-hideitem}
+
+This method is used to hide the items in the context menu.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cMenuType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Specifies the context menu type in which the item to be hides.</td>
+</tr>
+<tr>
+<td class="name">idxColl</td>
+<td class="type"><span class="param-type">Array</span></td>
+<td class="description">Specifies the Menu Item id collection to be hides</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Create Spreadsheet object.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLCMenu.hideItem(ej.Spreadsheet.ContextMenu.Cell, [1,2,3]); // To hide the item in the context menu.
+</script>
+
+{% endhighlight %}
+
 ### XLCMenu.removeItem(target, idxColl)
 {:#methods:xlcmenu-removeitem}
 
@@ -8770,6 +8841,43 @@ This method is used to remove the items in the context menu.
 // Create Spreadsheet object.
 var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 excelObj.XLCMenu.removeItem(ej.Spreadsheet.ContextMenu.Cell, [1,2,3]); // To remove the item in the context menu.
+</script>
+
+{% endhighlight %}
+
+### XLCMenu.showItem(cMenuType, idxColl)
+{:#methods:xlcmenu-showitem}
+
+This method is used to show the items in the context menu.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cMenuType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Specifies the context menu type in which the item to be shown.</td>
+</tr>
+<tr>
+<td class="name">idxColl</td>
+<td class="type"><span class="param-type">Array</span></td>
+<td class="description">Specifies the Menu Item id collection to be shown</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+// Create Spreadsheet object.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLCMenu.showItem(ej.Spreadsheet.ContextMenu.Cell, [1,2,3]); // To show the item in the context menu.
 </script>
 
 {% endhighlight %}
@@ -9287,7 +9395,7 @@ This method is used to update a particular cell value and its format in the Spre
 var excelObj = $("#Spreadsheet").data("ejSpreadsheet"), className;
 className = excelObj.XLFormat.getFormatHashCode({ color: "#FF0000" });
 // To update the specified values in a particular cell.
-excelObj.XLEdit.updateValue("A1:B3", "product", className, 1);
+excelObj.XLEdit.updateValue("A1", "product", className, 1);
 </script>
 
 {% endhighlight %}
@@ -10941,12 +11049,12 @@ This method is used to dynamically add the tab in the ribbon.
 <tbody>
 <tr>
 <td class="name">tabText</td>
-<td class="type"><span class="param-type">Array</span></td>
+<td class="type"><span class="param-type">string</span></td>
 <td class="description">Specifies the text to be displayed in the tab.</td>
 </tr>
 <tr>
 <td class="name">ribbonGroups</td>
-<td class="type"><span class="param-type">number</span></td>
+<td class="type"><span class="param-type">Array</span></td>
 <td class="description">pass the groups to be displayed in the ribbon tab.</td>
 </tr>
 <tr>
