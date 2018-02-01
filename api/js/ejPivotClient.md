@@ -2063,6 +2063,20 @@ Allows you to enable the virtual scrolling for both the pivot chart and pivot gr
     $("#PivotClient1").ejPivotClient({ enableVirtualScrolling: true });
 {% endhighlight %}
 
+### maxNodeLimitInMemberEditor `number`
+{:#members:maxNodeLimitInMemberEditor}
+
+Allows you to set the maximum counts of node to be displayed in the member editor.
+
+#### Default Value: 1000
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ maxNodeLimitInMemberEditor: 1500 });
+{% endhighlight %}
+
 ### enableMemberEditorPaging `boolean`
 {:#members:enablemembereditorpaging}
 
@@ -2541,6 +2555,20 @@ Allows you to set the custom name for the service method that is responsible for
     $("#PivotClient1").ejPivotClient({  serviceMethodSettings: { paging: "PagingMyMethod" } }); 
 {% endhighlight %}
 
+### serviceMethodSettings.valueSorting `string`
+{:#members:servicemethodsettings-valuesorting}
+
+Allows you to set the custom name for the service method that is responsible for performing value sorting operation in the PivotClient.
+
+#### Default Value: "ValueSorting"
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ serviceMethodSettings: { valueSorting: "MyValueSorting" } });
+{% endhighlight %}
+
 ### serviceMethodSettings.drillThroughHierarchies `string`
 {:#members:servicemethodsettings-drillthroughhierarchies}
 
@@ -2569,6 +2597,87 @@ Allows you to set the custom name for the service method that is responsible for
     $("#PivotClient1").ejPivotClient({ serviceMethodSettings: { drillThroughDataTable: "MyDrillThroughDataTableMethod" } });
 {% endhighlight %}
 
+### valueSortSettings `object`
+{:#members:valueSortSettings}
+
+Holds the necessary properties for value sorting.
+
+>**Note**: This is applicable only for the relational datasource.
+
+#### Default Value: {}
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ valueSortSettings: { } }); 
+{% endhighlight %}
+
+### valueSortSettings.headerText `string`
+{:#members:valueSortSettings-headerText}
+
+Contains the headers of the specific column to which value sorting is applied.
+
+>**Note**: This is applicable only for the relational datasource.
+
+#### Default Value: ""
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ valueSortSettings: { headerText: "Bike##Amount" } });
+{% endhighlight %}
+
+### valueSortSettings.headerDelimiters `string`
+{:#members:valueSortSettings-headerDelimiters}
+
+Allows you to set the string for separating column headers provided in the **headerText** property.
+
+>**Note**: This is applicable only for the relational datasource.
+
+#### Default Value: ""
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ valueSortSettings: { headerDelimiters: "##" } });
+{% endhighlight %}
+
+### valueSortSettings.sortOrder `enum`
+{:#members:valueSortSettings-sortOrder}
+
+<ts ref = "ej.PivotAnalysis.SortOrder"/>
+
+Allows you to set the sorting order of values of the field.
+
+>**Note**: This is applicable only for the relational datasource.
+
+#### Default Value: ej.PivotAnalysis.SortOrder.Ascending
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Ascending</td>
+            <td class="description">Sorts the members of the field in ascending order.</td>
+        </tr>
+        <tr>
+            <td class="name">Descending</td>
+            <td class="description">Sorts the members of the field in descending order.</td>
+        </tr>
+        <tr>
+            <td class="name">None</td>
+            <td class="description">Displays the members without sorting in any order.</td>
+        </tr>
+    </tbody>
+</table>
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ valueSortSettings: { sortOrder: ej.PivotAnalysis.SortOrder.Descending } });
+{% endhighlight %}
+
 ### title `string`
 {:#members:title}
 
@@ -2595,6 +2704,34 @@ Connects the service using the specified URL for any server updates.
 {% highlight javascript %}
  
     $("#PivotClient1").ejPivotClient({ url: "/wcf/OlapService" });
+{% endhighlight %}
+
+### enableCompleteDataExport `boolean`
+{:#members:enableCompleteDataExport}
+
+Allows you to export entire data instead of current page data while paging option is enabled.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ enableCompleteDataExport: true });
+{% endhighlight %}
+
+### enableXHRCredentials `boolean`
+{:#members:enableXHRCredentials}
+
+Allows to enable XMLHttpRequest's withCredentials property for CORS(Cross-Orgin Resource Sharing) request.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ enableXHRCredentials: true });
 {% endhighlight %}
 
 ## Methods

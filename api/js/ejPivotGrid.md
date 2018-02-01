@@ -1741,6 +1741,20 @@ Enables the display of GroupingBar allowing you to filter, sort, and remove fiel
     $("#PivotGrid1").ejPivotGrid({ enableGroupingBar: true });
 {% endhighlight %}
 
+### maxNodeLimitInMemberEditor `number`
+{:#members:maxNodeLimitInMemberEditor}
+
+Allows you to set the maximum counts of node to be displayed in the member editor.
+
+#### Default Value: 1000
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ maxNodeLimitInMemberEditor: 1500 });
+{% endhighlight %}
+
 ### enableMemberEditorPaging `boolean`
 {:#members:enablemembereditorpaging}
 
@@ -2435,6 +2449,34 @@ Connects the service using the specified URL for any server updates.
 {% highlight javascript %}
  
     $("#PivotGrid1").ejPivotGrid({ url: "/PivotService" });
+{% endhighlight %}
+
+### enableCompleteDataExport `boolean`
+{:#members:enableCompleteDataExport}
+
+Allows you to export entire data instead of current page data while paging option is enabled.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ enableCompleteDataExport: true });
+{% endhighlight %}
+
+### enableXHRCredentials `boolean`
+{:#members:enableXHRCredentials}
+
+Allows to enable XMLHttpRequest's withCredentials property for CORS(Cross-Orgin Resource Sharing) request.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid").ejPivotGrid({ enableXHRCredentials: true });
 {% endhighlight %}
 
 ## Methods

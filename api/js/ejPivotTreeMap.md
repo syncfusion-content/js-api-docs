@@ -561,6 +561,20 @@ Connects the service using the specified URL for any server updates.
     $("#PivotTreeMap1").ejPivotTreeMap({ url: "/PivotTreeMapService" });
 {% endhighlight %}
 
+### enableXHRCredentials `boolean`
+{:#members:enableXHRCredentials}
+
+Allows to enable XMLHttpRequest's withCredentials property for CORS(Cross-Orgin Resource Sharing) request.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotTreeMap").ejPivotTreeMap({ enableXHRCredentials: true });
+{% endhighlight %}
+
 ## Methods
 
 ### doAjaxPost()
