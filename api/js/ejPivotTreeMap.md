@@ -564,7 +564,7 @@ Connects the service using the specified URL for any server updates.
 ### enableXHRCredentials `boolean`
 {:#members:enableXHRCredentials}
 
-Allows to enable XMLHttpRequest's withCredentials property for CORS(Cross-Orgin Resource Sharing) request.
+Allows you to enable "withCredentials" property inside XMLHttpRequest object for CORS(Cross-Orgin Resource Sharing) request.
 
 #### Default Value: false
 

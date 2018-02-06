@@ -1025,7 +1025,7 @@ Sets the mode for the PivotGauge widget for binding data source either in server
 ### enableXHRCredentials `boolean`
 {:#members:enableXHRCredentials}
 
-Allows to enable XMLHttpRequest's withCredentials property for CORS(Cross-Orgin Resource Sharing) request.
+Allows you to enable "withCredentials" property inside XMLHttpRequest object for CORS(Cross-Orgin Resource Sharing) request.
 
 #### Default Value: false
 
