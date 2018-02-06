@@ -5930,6 +5930,14 @@ Sets the type of the layout based on which the elements will be arranged.
             <td class="name">OrganizationalChart</td>
             <td class="description last">Used to set layout type as organnizational chart</td>
        </tr>
+        <tr>
+            <td class="name">RadialTree</td>
+            <td class="description last">Used to set layout type as radial tree</td>
+       </tr>
+        <tr>
+            <td class="name">SymmetricLayout</td>
+            <td class="description last">Used to set layout type as symmetric layout</td>
+       </tr>
    </tbody>
 </table>
 
@@ -17306,12 +17314,12 @@ Remove the collection of nodes from the .
 		<tr>
 			<td class="name">layerName</td>
 			<td class="type">string</td>
-			<td class="description last">Specifis the layer name to the node will be removed.</td>
+			<td class="description last">Specifies the layer name to the node will be removed.</td>
 		</tr> 
 		<tr>
 			<td class="name">nodes</td>
 			<td class="type">array</td>
-			<td class="description last">collection of diagram elements name to be removed from specifc layer.</td>
+			<td class="description last">collection of diagram elements name to be removed from specific layer.</td>
 		</tr> 
 	</tbody>
 </table>
