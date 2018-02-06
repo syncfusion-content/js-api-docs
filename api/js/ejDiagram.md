@@ -17300,7 +17300,7 @@ Remove the collection of layers from the diagram layers.
 ### removeNodeToLayer(layerName, nodes)
 {:#methods:removeNodeToLayer}
 
-Remove the collection of nodes from the .
+Remove the collection of nodes from the specific layer.
 
 <table class="params">
 	<thead>
