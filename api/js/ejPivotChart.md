@@ -1200,6 +1200,20 @@ Connects the service by using the specified URL for any server updates while ope
     $("#PivotChart1").ejPivotChart({ url: "/PivotService" });
 {% endhighlight %}
 
+### enableXHRCredentials `boolean`
+{:#members:enableXHRCredentials}
+
+Allows you to enable "withCredentials" property inside XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart").ejPivotChart({ enableXHRCredentials: true });
+{% endhighlight %}
+
 ## Methods
 
 ### doAjaxPost()

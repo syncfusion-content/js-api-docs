@@ -395,7 +395,7 @@ Allows you to set the sorting order of members of the field.
         </tr>
         <tr>
             <td class="name">None</td>
-            <td class="description">Displays the members without sorting in any order.</td>
+            <td class="description">Displays the members without sorting in default order.</td>
         </tr>
     </tbody>
 </table>
@@ -1373,7 +1373,7 @@ Holds the necessary properties for value sorting.
 ### valueSortSettings.headerText `string`
 {:#members:valueSortSettings-headerText}
 
-Contains the headers of the specific column to which value sorting is applied.
+Contains the header of the specific column to which value sorting is applied.
 
 >**Note**: This is applicable only for the relational datasource.
 
@@ -1739,6 +1739,20 @@ Enables the display of GroupingBar allowing you to filter, sort, and remove fiel
 {% highlight javascript %}
  
     $("#PivotGrid1").ejPivotGrid({ enableGroupingBar: true });
+{% endhighlight %}
+
+### maxNodeLimitInMemberEditor `number`
+{:#members:maxNodeLimitInMemberEditor}
+
+Allows you to set the maximum number of nodes as well as child nodes to be displayed in the member editor.
+
+#### Default Value: 1000
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ maxNodeLimitInMemberEditor: 1500 });
 {% endhighlight %}
 
 ### enableMemberEditorPaging `boolean`
@@ -2435,6 +2449,34 @@ Connects the service using the specified URL for any server updates.
 {% highlight javascript %}
  
     $("#PivotGrid1").ejPivotGrid({ url: "/PivotService" });
+{% endhighlight %}
+
+### enableCompleteDataExport `boolean`
+{:#members:enableCompleteDataExport}
+
+Allows you to export entire data instead of current page data, while paging option is enabled.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ enableCompleteDataExport: true });
+{% endhighlight %}
+
+### enableXHRCredentials `boolean`
+{:#members:enableXHRCredentials}
+
+Allows you to enable "withCredentials" property inside XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid").ejPivotGrid({ enableXHRCredentials: true });
 {% endhighlight %}
 
 ## Methods

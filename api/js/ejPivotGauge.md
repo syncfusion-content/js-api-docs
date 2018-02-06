@@ -1022,6 +1022,20 @@ Sets the mode for the PivotGauge widget for binding data source either in server
     $("#PivotGauge1").ejPivotGauge({ operationalMode: ej.Pivot.OperationalMode.ServerMode });
 {% endhighlight %}
 
+### enableXHRCredentials `boolean`
+{:#members:enableXHRCredentials}
+
+Allows you to enable "withCredentials" property inside XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGauge").ejPivotGauge({ enableXHRCredentials: true });
+{% endhighlight %}
+
 ## Methods
 
 ### doAjaxPost()
