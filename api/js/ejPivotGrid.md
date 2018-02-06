@@ -2468,7 +2468,7 @@ Allows you to export entire data instead of current page data, while paging opti
 ### enableXHRCredentials `boolean`
 {:#members:enableXHRCredentials}
 
-Allows you to enable "withCredentials" property inside XMLHttpRequest object for CORS(Cross-Orgin Resource Sharing) request.
+Allows you to enable "withCredentials" property inside XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request.
 
 #### Default Value: false
 
