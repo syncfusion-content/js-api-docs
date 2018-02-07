@@ -2047,6 +2047,35 @@ Enables/disables the visibility of measure group selector drop-down in the cube 
     $("#PivotClient1").ejPivotClient({ enableMeasureGroups : true });
 {% endhighlight %}
 
+
+### enableCellClick `boolean`
+{:#members:enablecellclick}
+
+Allows you to get cell details in JSON format by clicking the value cell.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ enableCellClick: true });
+{% endhighlight %}
+
+### enableCellDoubleClick `boolean`
+{:#members:enablecelldoubleclick}
+
+Allows you to get cell details in JSON format by double-clicking the value cell.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ enableCellDoubleClick: true });
+{% endhighlight %}
+
 ### enableVirtualScrolling `boolean`
 {:#members:enablevirtualscrolling}
 
@@ -3829,11 +3858,55 @@ Triggers when any of the value cell is edited in the pivot grid.
     });
 
 {% endhighlight %}
+
+### cellClick
+{:#events:cellclick}
+
+Triggers when click action is performed over a grid value cell.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">selectedData</td>
+<td class="type">array</td>
+<td class="description last">returns the JSON details of the respective on cell.</td>
+</tr>
+<tr>
+<td class="name">customObject</td>
+<td class="type">object</td>
+<td class="description last">returns the custom object bound with PivotClient control.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotGrid control.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
  
+    $("#PivotClient1").ejPivotClient({
+        cellClick: function (args) {}
+    });
+{% endhighlight %}
+
 ## cellDoubleClick
 {:#events:celldoubleclick}
 
-Triggers when double-click on any of the cell in the pivot grid.
+Triggers when double-click on any of the value cell in the pivot grid.
 
 <table class="params">
 <thead>
@@ -3870,7 +3943,7 @@ Triggers when double-click on any of the cell in the pivot grid.
 <tr>
 <td class="name">selectedData</td>
 <td class="type">array</td>
-<td class="description last">returns the array of selected data source object for the clicked cell.</td>
+<td class="description last">returns the array of selected data source object for the clicked value cell.</td>
 </tr>
 </tbody>
 </table>

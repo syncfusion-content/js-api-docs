@@ -1626,10 +1626,24 @@ Enables the Drill-Through feature which retrieves raw items that are used to cre
     $("#PivotGrid1").ejPivotGrid({ enableDrillThrough: true });
 {% endhighlight %}
 
+### enableCellClick `boolean`
+{:#members:enablecellclick}
+
+Allows you to get cell details in JSON format by clicking the value cell.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ enableCellClick: true });
+{% endhighlight %}
+
 ### enableCellDoubleClick `boolean`
 {:#members:enablecelldoubleclick}
 
-Allows you to get cell details in JSON format by double-clicking the cell.
+Allows you to get cell details in JSON format by double-clicking the value cell.
 
 #### Default Value: false
 
@@ -2857,11 +2871,10 @@ Triggers before the pivot engine starts to populate.
     });
 {% endhighlight %}
 
+### cellClick
+{:#events:cellclick}
 
-### cellDoubleClick
-{:#events:celldoubleclick}
-
-Triggers when double-click action is performed over a cell.
+Triggers when click action is performed over a value cell.
 
 <table class="params">
 <thead>
@@ -2878,7 +2891,52 @@ Triggers when double-click action is performed over a cell.
 <tr>
 <td class="name">selectedData</td>
 <td class="type">array</td>
-<td class="description last">returns the JSON details of the double clicked cell.</td>
+<td class="description last">returns the JSON details of the respective on cell.</td>
+</tr>
+<tr>
+<td class="name">customObject</td>
+<td class="type">object</td>
+<td class="description last">returns the custom object bound with PivotGrid control.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotGrid control.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({
+        cellClick: function (args) {}
+    });
+{% endhighlight %}
+
+
+### cellDoubleClick
+{:#events:celldoubleclick}
+
+Triggers when double-click action is performed over a value cell.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">selectedData</td>
+<td class="type">array</td>
+<td class="description last">returns the JSON details of the double respective on cell.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
