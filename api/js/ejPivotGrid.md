@@ -1629,7 +1629,7 @@ Enables the Drill-Through feature which retrieves raw items that are used to cre
 ### enableCellClick `boolean`
 {:#members:enablecellclick}
 
-Allows you to get cell details in JSON format by clicking the cell.
+Allows you to get cell details in JSON format by clicking the value cell.
 
 #### Default Value: false
 
@@ -1643,7 +1643,7 @@ Allows you to get cell details in JSON format by clicking the cell.
 ### enableCellDoubleClick `boolean`
 {:#members:enablecelldoubleclick}
 
-Allows you to get cell details in JSON format by double-clicking the cell.
+Allows you to get cell details in JSON format by double-clicking the value cell.
 
 #### Default Value: false
 
@@ -2874,7 +2874,7 @@ Triggers before the pivot engine starts to populate.
 ### cellClick
 {:#events:cellclick}
 
-Triggers when click action is performed over a cell.
+Triggers when click action is performed over a value cell.
 
 <table class="params">
 <thead>
@@ -2891,7 +2891,7 @@ Triggers when click action is performed over a cell.
 <tr>
 <td class="name">selectedData</td>
 <td class="type">array</td>
-<td class="description last">returns the JSON details of the clicked cell.</td>
+<td class="description last">returns the JSON details of the respective on cell.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
@@ -2919,7 +2919,7 @@ Triggers when click action is performed over a cell.
 ### cellDoubleClick
 {:#events:celldoubleclick}
 
-Triggers when double-click action is performed over a cell.
+Triggers when double-click action is performed over a value cell.
 
 <table class="params">
 <thead>
@@ -2936,7 +2936,7 @@ Triggers when double-click action is performed over a cell.
 <tr>
 <td class="name">selectedData</td>
 <td class="type">array</td>
-<td class="description last">returns the JSON details of the double clicked cell.</td>
+<td class="description last">returns the JSON details of the double respective on cell.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>

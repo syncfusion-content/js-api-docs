@@ -2051,7 +2051,7 @@ Enables/disables the visibility of measure group selector drop-down in the cube 
 ### enableCellClick `boolean`
 {:#members:enablecellclick}
 
-Allows you to get cell details in JSON format by clicking the cell.
+Allows you to get cell details in JSON format by clicking the value cell.
 
 #### Default Value: false
 
@@ -2065,7 +2065,7 @@ Allows you to get cell details in JSON format by clicking the cell.
 ### enableCellDoubleClick `boolean`
 {:#members:enablecelldoubleclick}
 
-Allows you to get cell details in JSON format by double-clicking the cell.
+Allows you to get cell details in JSON format by double-clicking the value cell.
 
 #### Default Value: false
 
@@ -3862,7 +3862,7 @@ Triggers when any of the value cell is edited in the pivot grid.
 ### cellClick
 {:#events:cellclick}
 
-Triggers when click action is performed over a grid cell.
+Triggers when click action is performed over a grid value cell.
 
 <table class="params">
 <thead>
@@ -3879,7 +3879,7 @@ Triggers when click action is performed over a grid cell.
 <tr>
 <td class="name">selectedData</td>
 <td class="type">array</td>
-<td class="description last">returns the JSON details of the clicked cell.</td>
+<td class="description last">returns the JSON details of the respective on cell.</td>
 </tr>
 <tr>
 <td class="name">customObject</td>
@@ -3906,7 +3906,7 @@ Triggers when click action is performed over a grid cell.
 ## cellDoubleClick
 {:#events:celldoubleclick}
 
-Triggers when double-click on any of the cell in the pivot grid.
+Triggers when double-click on any of the value cell in the pivot grid.
 
 <table class="params">
 <thead>
@@ -3943,7 +3943,7 @@ Triggers when double-click on any of the cell in the pivot grid.
 <tr>
 <td class="name">selectedData</td>
 <td class="type">array</td>
-<td class="description last">returns the array of selected data source object for the clicked cell.</td>
+<td class="description last">returns the array of selected data source object for the clicked value cell.</td>
 </tr>
 </tbody>
 </table>
