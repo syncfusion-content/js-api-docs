@@ -2150,7 +2150,7 @@ $("#treegrid").ejTreeGrid({
 
 <ts name = "ej.TreeGrid.FilterHierarchyMode"/>
 
-Specifies the mode of filtering whether to filter with hierarchy.
+Specifies the mode of filtering to filter the record with or without hierarchy.
 
 <table class="params">
 <thead>
