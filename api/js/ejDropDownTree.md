@@ -1211,8 +1211,6 @@ Defines the width of the DropDownTree textbox.
 ### treeViewSettings `object`
 {:#members:treeViewSettings}
 
-[](https://help.syncfusion.com/api/js/ejtreeview)
-
 Defines the popup settings of the DropDownTree widget. You can use any property which are in [`treeview`](https://help.syncfusion.com/api/js/ejtreeview) using this property.
 
 N> The public method of treeview data is accessed by `[object of the dropdowntree].treeview.[methodname]`.
