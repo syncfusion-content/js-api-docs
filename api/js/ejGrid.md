@@ -3676,6 +3676,45 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
+### rowDropSettings.dragBehavior `enum`
+{:#members:rowDropSettings-dragBehavior}
+
+<ts name="ej.Grid.DragBehavior"/>
+
+Gets or sets a value that indicates whether move or copy a record from one grid to another or within the grid
+
+#### Default Value:
+{:.param}
+* ej.Grid.DragBehavior.Move
+
+<table>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td class="name">Move</td>
+<td class="description">Allows to move a record from one grid to another or within the grid.</td>
+</tr>
+<tr>
+<td class="name">Copy</td>
+<td class="description">Allows to copy a record from one grid to another or within the grid.</td>
+</tr>
+</table>
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+   dataSource:window.gridData,
+   allowRowDragAndDrop: true,
+   rowDropSettings: { dropTargetID: "#OrdersGrid", dropMapper: "Home/DragHandler", dragBehavior:ej.Grid.DragBehavior.Copy }
+});
+</script> 
+{% endhighlight %}
+
 ### searchSettings `object`
 {:#members:searchsettings}
 
@@ -3783,7 +3822,7 @@ $("#Grid").ejGrid({
 ### selectedRecords `array`
 {:#members:selectedrecords}
 
-Gets a value that indicates whether the grid model to hold multiple selected records . selectedRecords can be used to displayed hold the single or multiple selected records using &ldquo;selectedRecords&rdquo; property
+Gets a value that display the array of selected records in the Grid.
 
 #### Default Value:
 {:.param}
