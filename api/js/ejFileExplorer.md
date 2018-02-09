@@ -2545,6 +2545,61 @@ Specifies the file details which are to be displayed when selected for upload by
 
 
 
+### virtualItemCount `number`
+{:#members:virtualitemcount}
+
+
+
+
+
+
+
+
+Specifies the virtual item count for virtual support.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* 0
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer"></div> 
+        
+        <script>
+        // Initialize the FileExplorer with the virtualItemCount value specified.
+        $('#fileExplorer').ejFileExplorer({
+        virtualItemCount: 40,
+        path: "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",           
+        ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"                     
+        });
+        </script>
+
+{% endhighlight %}
+
+
+
+
+
 
 ### width `string | number`
 {:#members:width}
