@@ -1925,13 +1925,13 @@ Holds the array of resource names to be grouped on the Schedule.
 ### group.allowGroupEditing `boolean`
 {:#members:group-allowGroupEditing}
 
-When set to true, enables the group edit and delete the appointment of all resources simultaneously.
+When set to `true`, allows performing CRUD actions simultaneously on all the grouped appointments of multiple resources.
 
 #### Default Value
 
 * false
 
-#### Example - To set allowGroupEditing option for a group object.
+#### Example - To set allowGroupEditing option,
 
 {% highlight html %}
 
