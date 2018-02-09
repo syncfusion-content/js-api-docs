@@ -8530,28 +8530,6 @@ var node = { name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
 
 {% endhighlight %}
 
-### nodes.group `object`
-{:#members:nodes-group}
-
-Sets the type of the BPMN Shapes as group. Applicable, if the node is a BPMN.
-
-#### Default Value:
-
-* ej.datavisualization.Diagram.BPMNShapes
-
-#### Example
-
-{% highlight html %}
-
-<div id="diagramcontent"></div>
-<script>
-var nodes = [];
-nodes=[{type: "bpmn", shape: ej.datavisualization.Diagram.BPMNShapes.Group}];
-$("#diagramcontent").ejDiagram({nodes:nodes});
-</script>
-
-{% endhighlight %}
-
 ### nodes.header `object`
 {:#members:nodes-header}
 
@@ -8693,7 +8671,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ### nodes.interface.name `string`
-{:#members:nodes-interface.name}
+{:#members:nodes-interface-name}
 
 Sets the name of the interface
 
@@ -8716,7 +8694,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ### nodes.interface.attributes `array`
-{:#members:nodes-interface.attributes}
+{:#members:nodes-interface-attributes}
 
 Defines a collection of attributes of the interface
 
@@ -8740,7 +8718,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ### nodes.interface.attributes.name `string`
-{:#members:nodes-interface.attributes.name}
+{:#members:nodes-interface-attributes-name}
 
 Sets the name of the attribute
 
@@ -8764,7 +8742,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ### nodes.interface.attributes.type `string`
-{:#members:nodes-interface.attributes.type}
+{:#members:nodes-interface-attributes-type}
 
 Sets the type of the attribute
 
@@ -8788,7 +8766,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ### nodes.interface.attributes.scope `string`
-{:#members:nodes-interface.attributes.scope}
+{:#members:nodes-interface-attributes-scope}
 
 Sets the visibility of the attribute
 
@@ -8811,7 +8789,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ### nodes.interface.methods `array`
-{:#members:nodes-interface.methods}
+{:#members:nodes-interface-methods}
 
 Defines the collection of public methods of an interface
 
@@ -8835,7 +8813,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ## nodes.interfaces.methods.name `string`
-{:#members:nodes-interface.methods.name}
+{:#members:nodes-interface-methods-name}
 
 Sets the name of the method.
 
@@ -8859,7 +8837,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ## nodes.interface.methods.arguments `array`
-{:#members:nodes-interface.methods.arguments}
+{:#members:nodes-interface-methods-arguments}
 
 Defines the collection of arguments of a method
 
@@ -8884,7 +8862,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ## nodes.interface.methods.arguments.name `string`
-{:#members:nodes-interface.methods.arguments.name}
+{:#members:nodes-interface-methods-arguments-name}
 
 Sets the name of the argument
 
@@ -8908,7 +8886,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ## nodes.interface.methods.arguments.type `string`
-{:#members:nodes-interface.methods.arguments.type}
+{:#members:nodes-interface-methods-arguments-type}
 
 Sets the type of the argument
 
@@ -8932,7 +8910,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ## nodes.interface.methods.type `string`
-{:#members:interface-interface.methods.type}
+{:#members:nodes-interface-methods-type}
 
 Sets the return type of the method
 
@@ -8956,7 +8934,7 @@ $("#DiagramContent").ejDiagram({ nodes:nodes });
 {% endhighlight %}
 
 ### nodes.interface.methods.scope `string`
-{:#members:nodes-interface.attributes.scope}
+{:#members:nodes-interface-attributes-scope}
 
 Sets the visibility of the method
 
@@ -14951,12 +14929,12 @@ $("#diagramcontent").ejDiagram({rulerSettings: {horizontalRuler:{thickness: 50  
 {% endhighlight %}
 
 ### rulerSettings.verticalRuler `object`
-{:#members:rulersettings- verticalruler }
+{:#members:rulersettings-verticalruler }
 
 Defines the appearance of vertical ruler
 
 ### rulerSettings.verticalRuler.interval `number`
-{:#members:rulersettings- verticalruler -interval}
+{:#members:rulersettings-verticalruler-interval}
 
 Defines the number of intervals to be present on the each segment of the vertical ruler. 
 
@@ -14973,7 +14951,7 @@ $("#diagramcontent").ejDiagram({rulerSettings: { verticalRuler:{interval: 10  } 
 {% endhighlight %}
 
 ### rulerSettings.verticalRuler.segmentWidth `number`
-{:#members:rulersettings- verticalruler -segmentwidth}
+{:#members:rulersettings-verticalruler-segmentwidth}
 
 Defines the textual description of the ruler segment, and the appearance of the ruler ticks of the vertical ruler.
 
@@ -14990,7 +14968,7 @@ $("#diagramcontent").ejDiagram({rulerSettings: { verticalRuler:{segmentWidth: 50
 {% endhighlight %}
 
 ### rulerSettings.verticalRuler.arrangeTick `object`
-{:#members:rulersettings- verticalruler -arrangetick}
+{:#members:rulersettings-verticalruler-arrangetick}
 
 Defines the method which used to position and arrange the tick elements of the vertical ruler.
 
@@ -15007,7 +14985,7 @@ $("#diagramcontent").ejDiagram({rulerSettings: { verticalRuler:{arrangeTick: fun
 {% endhighlight %}
 
 ### rulerSettings. verticalRuler.tickAlignment`enum`
-{:#members:rulersettings- verticalruler -tickalignment}
+{:#members:rulersettings-verticalruler-tickalignment}
 
 <ts name = "ej.datavisualization.Diagram.TickAlignment"/>
 Defines and sets the tick alignment of the ruler scale.
@@ -15091,14 +15069,6 @@ Defines the width of the vertical ruler.
 $("#diagramcontent").ejDiagram({rulerSettings: { verticalRuler:{thickness: 50  } }});
 
 {% endhighlight %}
-
-
-
-
-
-
-
-
 
 
 ### snapSettings `object`
