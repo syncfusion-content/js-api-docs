@@ -1922,6 +1922,57 @@ Holds the array of resource names to be grouped on the Schedule.
   
 {% endhighlight %}
 
+### group.allowGroupEditing `boolean`
+{:#members:group-allowGroupEditing}
+
+When set to `true`, allows performing CRUD actions simultaneously on all the grouped appointments of multiple resources.
+
+#### Default Value
+
+* false
+
+#### Example - To set allowGroupEditing option,
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                currentDate: new Date(2014, 04, 05),
+                group: {
+                    resources: ["Owners"],
+                    allowGroupEditing: true
+                },
+                appointmentSettings: {
+                    resourceFields: "ResourceId",
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00),
+                        ResourceId: 3
+                    }]
+                },
+                resources: [
+                {
+                    field: "ResourceId",
+                    title: "Resource",
+                    name: "Owners", allowMultiple: true,
+                    resourceSettings: { dataSource: [
+                      { text: "Nancy", id: 1, groupId: 1, color: "#f8a398" },
+                      { text: "Steven", id: 3, groupId: 2, color: "#56ca85" },
+                      { text: "Michael", id: 5, groupId: 1, color: "#51a0ed" }],
+                    text: "text", id: "id", groupId: "groupId", color: "color"
+                    }
+                }]
+            });
+        });
+</script>
+  
+{% endhighlight %}
+
 ### height `string`
 {:#members:height}
 

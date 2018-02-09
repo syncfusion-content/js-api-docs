@@ -1996,10 +1996,6 @@ Specifies the type of column filtering.
 <td class="name">Menu</td>
 <td class="description">Enables the menu filtering</td>
 </tr>
-<tr>
-<td class="name">Excel</td>
-<td class="description">Enables the excel filtering</td>
-</tr>
 </tbody>
 </table>
 
@@ -2186,7 +2182,6 @@ Specifies the mode of filtering to filter the record with or without hierarchy.
 
 
 #### Example
-
 
 {% highlight html %}
  
