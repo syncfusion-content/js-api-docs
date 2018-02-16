@@ -2004,7 +2004,7 @@ Allows you to enable the paging for both the pivot chart and the pivot grid comp
 ### enableCompleteDataExport `boolean`
 {:#members:enableCompletedataexport}
 
-Allows you to export complete data when Paging option is enabled.
+Allows you to export complete data when paging is enabled.
 
 #### Default Value: false
 
