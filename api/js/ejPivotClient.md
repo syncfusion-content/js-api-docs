@@ -2001,6 +2001,21 @@ Allows you to enable the paging for both the pivot chart and the pivot grid comp
     $("#PivotClient1").ejPivotClient({ enablePaging: true });
 {% endhighlight %}
 
+### enableCompleteDataExport `boolean`
+{:#members:enablecompletedataexport}
+
+Allows you to export complete data when paging is enabled.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ enableCompleteDataExport: true });
+	
+{% endhighlight %}
+
 ### enablePivotTreeMap `boolean`
 {:#members:enablepivottreemap}
 
