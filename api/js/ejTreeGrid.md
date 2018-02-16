@@ -4365,6 +4365,54 @@ treegridObj.sortColumn("Start Date", ej.sortOrder.Descending); // To sort the da
 </script>
 {% endhighlight %}
 
+### moveRow(fromIndex, toIndex , position)
+{:#methods:moverow}
+
+To move the TreeGrid rows programmatically with from index ,to index and position.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fromIndex</td>
+<td class="type">number</td>
+<td class="description">you can pass drag Index of the row</td>
+</tr>
+<tr>
+<td class="name">toIndex</td>
+<td class="type">number</td>
+<td class="description">you can pass target Index of the row.</td>
+</tr>
+<tr>
+<td class="name">position</td>
+<td class="type">string</td>
+<td class="description">you can pass the drop position as above,below,child</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+ 
+<script>
+// Create Tree Grid object
+var treegridObj = $("#treegrid").data("ejTreeGrid");
+treegridObj.moveRow(4, 15, "child"); // To move the row
+</script>
+{% endhighlight %}
+
 ### reorderColumn(fieldName, targetIndex)
 {:#methods:reordercolumn}
 
@@ -7649,6 +7697,103 @@ Triggered while drop a row in TreeGrid control
 <script>
 $("#treegrid").ejTreeGrid({
    rowDragStop: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+### rowDropActionBegin
+{:#events:rowdropactionbegin}
+
+
+Triggered before row drop action begins.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when dragging a row.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">draggedRow</td>
+<td class="type">object</td>
+<td class="description">Returns the row which we start to drag.</td>
+</tr>
+<tr>
+<td class="name">draggedRowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the row index which we start to drag.</td>
+</tr>
+<tr>
+<td class="name">draggedRecords</td>
+<td class="type">array</td>
+<td class="description">Returns the multiple dragged row collection for multiple reorder</td>
+</tr>
+<tr>
+<td class="name">dropPosition</td>
+<td class="type">string</td>
+<td class="description">Returns the drop position.</td>
+</tr>
+<tr>
+<td class="name">targetRow</td>
+<td class="type">object</td>
+<td class="description">Returns the row which we are dropped to row.</td>
+</tr>
+<tr>
+<td class="name">targetRowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the row index which we are dropped to row.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the TreeGrid model.</td>
+</tr>
+
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+<script>
+$("#treegrid").ejTreeGrid({
+   rowDropActionBegin: function (args) {}
 });
 </script>
 {% endhighlight %}
