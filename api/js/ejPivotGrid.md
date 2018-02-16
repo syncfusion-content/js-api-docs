@@ -1937,6 +1937,21 @@ Allows you to view the large amount of data by applying paging.
     $("#PivotGrid1").ejPivotGrid({ enablePaging: true });
 {% endhighlight %}
 
+### enableCompleteDataExport `boolean`
+{:#members:enableCompletedataexport}
+
+Allows you to export complete data when paging is enabled.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotGrid1").ejPivotGrid({ enableCompleteDataExport: true });
+	
+{% endhighlight %}
+
 ### hyperlinkSettings `object`
 {:#members:hyperlinksettings}
 
