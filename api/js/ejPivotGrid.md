@@ -1938,7 +1938,7 @@ Allows you to view the large amount of data by applying paging.
 {% endhighlight %}
 
 ### enableCompleteDataExport `boolean`
-{:#members:enableCompletedataexport}
+{:#members:enablecompletedataexport}
 
 Allows you to export complete data when paging is enabled.
 
