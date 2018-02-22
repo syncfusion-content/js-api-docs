@@ -131,7 +131,7 @@ When set to true, allows the user to create/edit appointments inline - simply th
 
 {% endhighlight %}
 
-## allowDelete `boolean`
+### allowDelete `boolean`
 {:#members:allowdelete}
 
 When set to `false`, disables the appointment delete option on the Scheduler.
