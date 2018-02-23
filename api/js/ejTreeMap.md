@@ -410,6 +410,40 @@ Specifies the color value path of the treemap
 {% endhighlight %}
 
 
+### colorPath `string`
+{:#members:colorpath}
+
+Specifies the field name in the datasource that contains color values for treemap items.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+
+//To set colorPath API value during initialization
+  $("#container").ejTreeMap({colorPath:'fill'});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+
+//Get or set the colorPath API, after initialization:
+
+   //Gets the colorPath value
+
+   var property =$("#container").data("ejTreeMap").model.colorPath;
+
+   //Sets the colorPath value
+
+   $("#container").data("ejTreeMap").model.colorPath = 'fill';
+
+{% endhighlight %}
+
+
 ### dataSource `object`
 {:#members:datasource}
 
@@ -3127,6 +3161,72 @@ Triggers on treemap item selected.
 
 {% endhighlight %}
 
+### itemRendering
+{:#events:itemrendering}
+
+Triggers while rendering each treemap items.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Returns treemap leaf item</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+{% highlight js %}
+ 
+//treemap item selected event for treemap
+  $("#container").ejTreeMap({
+   itemRendering: function () {}
+  });
+
+{% endhighlight %}
+
+### legendItemRendering
+{:#events:legenditemrendering}
+
+Triggers while rendering each legend item
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Returns treemap legend item</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+{% highlight js %}
+ 
+//treemap item selected event for treemap
+  $("#container").ejTreeMap({
+   legendItemRendering: function () {}
+  });
+
+{% endhighlight %}
+
 ### drillStarted
 {:#events:drillstarted}
 
@@ -3293,6 +3393,138 @@ Triggers when the group selection is performed on treemap items.
   $("#container").ejTreeMap({
    treeMapGroupSelected: function () {}
   });
+
+{% endhighlight %}
+
+### Click
+{:#events:click}
+
+
+
+
+Fires, on clicking the tree map items.
+
+
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+           <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Returns the clicked group of treeMapItems as  object.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+
+{% highlight js %}
+ 
+//Click event for tree map
+
+ $("#container").ejTreeMap({
+
+    click: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+
+### doubleClick
+{:#events:doubleclick}
+
+
+
+
+Fires, on double clicking the tree map items.
+
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+           <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Returns the  double clicked group of treeMapItems as  object.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+
+{% highlight js %}
+ 
+//DoubleClick event for tree map
+
+ $("#container").ejTreeMap({
+
+    doubleClick: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+
+
+### rightClick
+{:#events:rightclick}
+
+
+
+
+Fires, on right clicking the tree map items.
+
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+           <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Returns the right clicked group of treeMapItems as  object.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+
+{% highlight js %}
+ 
+//RightClick event for tree map
+
+ $("#container").ejTreeMap({
+    rightClick: function (args) {
+              //Do something
+    }
+   
+});
 
 {% endhighlight %}
 

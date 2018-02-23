@@ -3676,7 +3676,7 @@ $("#Grid").ejGrid({
 </script> 
 {% endhighlight %}
 
-### rowDropSettings-dragBehavior `enum`
+### rowDropSettings.dragBehavior `enum`
 {:#members:rowDropSettings-dragBehavior}
 
 <ts name="ej.Grid.DragBehavior"/>
@@ -3948,6 +3948,29 @@ $("#Grid").ejGrid({
     dataSource:  window.gridData,
     allowSelection: true,   
     selectionSettings: {enableToggle: true }
+});
+</script>
+{% endhighlight %}
+
+### selectionSettings.allowDragSelection `boolean`
+{:#members:selectionsettings-allowdragselection}
+
+Gets or sets a value that indicates whether to select multiple rows or cells by performing dragging in Grid.
+
+#### Default Value:
+{:.param}
+* false
+
+#### Example
+{:.example}
+{% highlight html %}
+<div id="Grid"></div> 
+<script>
+$("#Grid").ejGrid({
+    dataSource:  window.gridData,
+    allowSelection: true,   
+    selectionType : "multiple",
+    selectionSettings: {selectionMode: ["cell"], allowDragSelection:true, cellSelectionMode: ej.Grid.CellSelectionMode.Flow }
 });
 </script>
 {% endhighlight %}

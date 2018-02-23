@@ -5930,6 +5930,14 @@ Sets the type of the layout based on which the elements will be arranged.
             <td class="name">OrganizationalChart</td>
             <td class="description last">Used to set layout type as organnizational chart</td>
        </tr>
+        <tr>
+            <td class="name">RadialTree</td>
+            <td class="description last">Used to set layout type as radial tree</td>
+       </tr>
+        <tr>
+            <td class="name">SymmetricLayout</td>
+            <td class="description last">Used to set layout type as symmetric layout</td>
+       </tr>
    </tbody>
 </table>
 
@@ -13321,6 +13329,167 @@ $("#diagramcontent").ejDiagram({nodes:nodes});
 
 {% endhighlight %}
 
+### layers `array`
+{:#members:layers}
+
+A collection of JSON objects where each object represents a layer. Layer is a named category of diagram shapes.
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var layer = { name: "layer1", active: true, objects: ["textNode"] };
+$("#diagram").ejDiagram({
+    layers: [layer]
+});
+</script>
+
+{% endhighlight %}
+
+### layers.name `string`
+{:#members:layers-name}
+
+To specify the name of the diagram layer. Layer name should be unique.
+ 
+#### Default Value:
+
+* ""
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var layer = { name: "layer1", active: true, objects: ["textNode"] };
+$("#diagram").ejDiagram({
+    layers: [layer]
+});
+</script>
+
+{% endhighlight %} 
+
+### layers.active `boolean`
+{:#members:layers-active }
+
+Enable or disable diagram objects to be added to the specific layer.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var layer = { name: "layer1", active: true, objects: ["textNode"] };
+$("#diagram").ejDiagram({
+    layers: [layer]
+});
+</script>
+
+{% endhighlight %} 
+
+### layers.visible `boolean`
+{:#members:layers-visible}
+
+Enable or disable the specific layer objects to be visible.
+
+#### Default Value:
+
+* true
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var layer = { name: "layer1", visible: true, objects: ["textNode"] };
+$("#diagram").ejDiagram({
+    layers: [layer]
+});
+</script>
+
+{% endhighlight %} 
+
+### layers.print `boolean`
+{:#members:layers-print}
+
+Enable or disable the specific layer objects to be visible on printing or exporting.
+
+#### Default Value:
+
+* true
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var layer = { name: "layer1", print: true, objects: ["textNode"] };
+$("#diagram").ejDiagram({
+    layers: [layer]
+});
+</script>
+
+{% endhighlight %} 
+
+### layers.lock `boolean`
+{:#members:layers-lock}
+
+Enable or disable the interaction of the specific diagram objects.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var layer = { name: "layer1", lock: true, objects: ["textNode"] };
+$("#diagram").ejDiagram({
+    layers: [layer]
+});
+</script>
+
+{% endhighlight %} 
+
+### layers.objects `array`
+{:#members:layers-objects}
+
+To Specify the collection of the object names belongs to the layer.
+
+#### Default Value:
+
+* []
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var layer = { name: "layer1", lock: true, objects: ["textNode"] };
+$("#diagram").ejDiagram({
+    layers: [layer]
+});
+</script>
+
+{% endhighlight %} 
+
 ### nodeTemplate `object`
 {:#members:nodetemplate}
 
@@ -15720,6 +15889,102 @@ diagram.addPhase("swimlane", { name: "CustomPhase", offset: 600, label: { text: 
 
 {% endhighlight %}
 
+
+### addLayers(layers)
+{:#methods:addLayers}
+
+Add a collection of layers can be added to the existing diagram layer at runtime.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">layers</td>
+            <td class="type">array</td>
+            <td class="description last">a collection of layers to be added to the existing diagram layers.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+    <div id="diagram"></div>
+    <script>
+            // creating the instance for the diagram
+            var diagram = $("#diagram").ejDiagram("instance");
+            // creating the layer collection
+            var layers = [{ name: "Layer1", visible: true, objects: ["Ellipse1", "Ellipse2"] }];
+            // add the layers to the existing diagram layer collection
+            diagram.addLayers(layers) 
+            
+    </script>
+
+{% endhighlight %}
+
+### addNodeToLayer(layerName,nodes)
+{:#methods:addNodeToLayer}
+
+Add a collection of diagram elements can be added to the specific diagram layer.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">layerName</td>
+            <td class="type">string</td>
+            <td class="description last">specifies the name of the layer to the nodes will be added.</td>
+        </tr>
+        <tr>
+            <td class="name">nodes</td>
+            <td class="type">array</td>
+            <td class="description last">collection of diagram elements to be added to the specific layer.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+    <div id="diagram"></div>
+    <script>
+    
+        // creating the nodes
+        var nodes = [
+            { name: "Ellipse1", width: 40, height: 40, offsetX: 100, offsetY: 100, shape: "ellipse" },
+            { name: "Ellipse2", width: 40, height: 40, offsetX: 200, offsetY: 100, shape: "ellipse" }
+        ];
+        $("#diagram").ejDiagram({
+            width: "100%",
+            height: "600px",
+            nodes: nodes,
+        });
+        // creating the instance for the diagram
+        var diagram = $("#diagram").ejDiagram("instance");
+
+        var node = diagram.findNode('Ellipse1')
+        // add the node to the specific layer.
+        diagram.addNodeToLayer('Layer1', [node])
+            
+    </script>
+
+{% endhighlight %}
+
+
 ### addPorts(name, ports)
 {:#methods:addports}
 
@@ -16965,10 +17230,101 @@ diagram.remove();
 
 {% endhighlight %}
 
+### removeLayers(layers)
+{:#methods:removeLayers}
+
+Remove the collection of layers from the diagram layers.
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">layers</td>
+			<td class="type">array</td>
+			<td class="description last">collection of layers to be removed from diagram layer.</td>
+		</tr> 
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+    <div id="diagram"></div>
+    <script>
+            // creating the instance for the diagram
+            var diagram = $("#diagram").ejDiagram("instance");
+            // remove the diagram layers from model 
+            diagram.removeLayers([diagram.model.layers[i]]);
+    </script>
+
+{% endhighlight %}
+
+
+### removeNodeToLayer(layerName, nodes)
+{:#methods:removeNodeToLayer}
+
+Remove the collection of nodes from the specific layer.
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">layerName</td>
+			<td class="type">string</td>
+			<td class="description last">Specifies the layer name to the node will be removed.</td>
+		</tr> 
+		<tr>
+			<td class="name">nodes</td>
+			<td class="type">array</td>
+			<td class="description last">collection of diagram elements name to be removed from specific layer.</td>
+		</tr> 
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+    <div id="diagram"></div>
+    <script>
+        // creating the nodes
+        var nodes = [
+            { name: "Ellipse1", width: 40, height: 40, offsetX: 100, offsetY: 100, shape: "ellipse" },
+            { name: "Ellipse2", width: 40, height: 40, offsetX: 200, offsetY: 100, shape: "ellipse" }
+        ];
+        $("#diagram").ejDiagram({
+            width: "100%",
+            height: "600px",
+            nodes: nodes,
+        });
+        // creating the instance for the diagram
+        var diagram = $("#diagram").ejDiagram("instance");
+
+        
+        // remove the node from the specific layer.
+        diagram.removeNodeToLayer('Layer1', ['Ellipse1'])
+    </script>
+
+{% endhighlight %}
+
+
 ### removePorts(name, ports)
 {:#methods:removeports}
 
-Add a collection of ports to the node specified by name
+Remove the collection of ports from the specified node.
 
 <table class="params">
 	<thead>
@@ -17471,6 +17827,50 @@ diagram.updateLabel(node.name,node.labels[0],label);
 </script>
 
 {% endhighlight %}
+
+
+### updateLayer(layerName, options)
+{:#methods:updateLayer}
+
+Update the given layer at run time.
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">layerName</td>
+			<td class="type">string</td>
+			<td class="description last">the name of layer to be updated</td>
+		</tr>
+		<tr>
+			<td class="name">options</td>
+			<td class="type">object</td>
+			<td class="description last">the layer object to be modified</td>
+		</tr> 
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagram"></div>
+<script>
+        // creating the instance for the diagram
+        var diagram = $("#diagram").ejDiagram("instance");
+        // update the layer objects will be hidden on printing.
+        diagram.updateLayer('Layer1', { print: false })
+</script>
+
+{% endhighlight %}
+
+
 
 ### updateNode(name, options)
 {:#methods:updatenode}

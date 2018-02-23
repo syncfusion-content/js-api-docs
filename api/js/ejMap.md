@@ -223,6 +223,40 @@ Enables or Disables the map animation
 {% endhighlight %}
 
 
+### enableRTL `boolean`
+{:#members:enablertl}
+
+Enables or Disables right to left(RTL) support for maps.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight js %}
+
+//To set enableRTL API value during initialization
+   $("#container").ejMap({enableRTL:false});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+
+//Get or set the enableRTL API, after initialization:
+
+   //Gets the enableRTL value 
+
+   var property = $("#container").data("ejMap").model.enableRTL;
+
+   //Sets the enableRTL value
+
+   $("#container").data("ejMap").model.enableRTL=true });
+
+{% endhighlight %}
+
+
 ### enableLayerChangeAnimation `boolean`
 {:#members:enablelayerchangeanimation}
 
@@ -430,6 +464,39 @@ Enables or Disables the zoom on selecting the map shape
    //Sets the enableZoomOnSelection value
     
    $("#container").data("ejMap").model.zoomSettings.enableZoomOnSelection=true }); 
+
+{% endhighlight %}
+
+### zoomSettings.enableMouseWheelZoom `boolean`
+{:#members:zoomsettings-enablemousewheelzoom}
+
+Enables or Disables the zoom on mouse wheel the map.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight js %}
+ 
+//To set enableMouseWheelZoom API value during initialization 
+   $("#container").ejMap({zoomSettings:{enableMouseWheelZoom:true}});
+             
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the enableMouseWheelZoom API, after initialization:
+
+   //Gets the enableMouseWheelZoom value
+    
+   var property = $("#container").data("ejMap").model.zoomSettings.enableMouseWheelZoom;
+              
+   //Sets the enableMouseWheelZoom value
+    
+   $("#container").data("ejMap").model.zoomSettings.enableMouseWheelZoom=true }); 
 
 {% endhighlight %}
 
@@ -2198,6 +2265,40 @@ to get leftLabel value for legend setting
 {% endhighlight %}
 
 
+### layers.legendSettings.textPath `string`
+{:#members:layers-legendsettings-textpath}
+
+To get the field name in the datasource for generating legend items.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set textPath value during initialization 
+   $("#container").ejMap({layers: [{legendSettings: {textPath:""} }]})           
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set textPath value after initialization:
+   
+   //Gets the textPath value value 
+   
+   var property = =$("#container").data("ejMap").model.layers[layerIndex].legendSettings.textPath;        
+   
+   //Sets the textPath value value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {textPath:""};
+
+{% endhighlight %}
+
+
 ### layers.legendSettings.mode `enum`
 {:#members:layers-legendsettings-mode}
 
@@ -3228,6 +3329,39 @@ Specifies the shape color valuePath of the shape layer in map
 {% endhighlight %}
 
 
+### layers.shapeSettings.colorPath `string`
+{:#members:layers-shapesettings-colorpath}
+
+Specifies the field name in the datasource that contains color values for each shapes.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set colorPath  API value during initialization 
+  $("#container").ejMap({layers: {shapeSettings: {colorPath :'fill'}}});
+
+{% endhighlight %}
+
+{% highlight js %}
+ 
+//Get or set the colorPath  API, after initialization:
+   
+   //Gets the colorPath  value 
+   
+   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].shapeSettings.colorPath ;
+  
+   //Sets the colorValuePath  value 
+   
+   $("#container").data("ejMap").model.layers[0].shapeSettings.colorPath ='fill'; 
+
+{% endhighlight %}
+
+
 ### layers.shapeSettings.enableGradient `boolean`
 {:#members:layers-shapesettings-enablegradient}
 
@@ -4000,6 +4134,38 @@ Specifies the bubble color valuePath of the shape layer in map
    //Sets the colorValuePath  value 
    
    $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].bubbleSettings.colorValuePath ='sales'; 
+
+{% endhighlight %}
+
+### layers.subLayers.bubbleSettings.colorPath `string`
+{:#members:layers-sublayers-bubblesettings-colorpath}
+
+Specifies the field name in the datasource that contains color values for each bubbles.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set colorPath  API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{bubbleSettings: {colorPath :'fill'}}]}]});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the colorPath  API, after initialization:
+   //Gets the colorPath  value 
+   
+   var bubbleProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].bubbleSettings.colorPath ;
+        
+   //Sets the colorPath  value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].bubbleSettings.colorPath ='fill'; 
 
 {% endhighlight %}
 
@@ -4933,6 +5099,40 @@ to get leftLabel value for legend setting
    //Sets the leftLabel value value 
    
    $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings  = {leftLabel:""};
+
+{% endhighlight %}
+
+
+### layers.subLayers.legendSettings.textPath `string`
+{:#members:layers-sublayers-legendsettings-textPath}
+
+To get the field name in the datasource for generating legend items.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set textPath value during initialization 
+   $("#container").ejMap({layers: [{ subLayers: [{legendSettings: {textPath:""} }]} ]});           
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set textPath value after initialization:
+   
+   //Gets the textPath value value 
+   
+   var property = =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings.textPath;        
+   
+   //Sets the textPath value value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].legendSettings  = {textPath:""};
 
 {% endhighlight %}
 
@@ -6576,6 +6776,111 @@ Triggered on selecting the map markers.
 {% endhighlight %}
 
 
+### legendItemRendering
+{:#events:legenditemrendering}
+
+Triggered while rendering the each legend in maps.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Returns the legend item.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+{% highlight js %}
+ 
+//legendItemRendering event for map
+  
+  $("#container").ejMap({
+   legendItemRendering: function (event) {}
+  });
+
+{% endhighlight %}
+
+
+### bubbleRendering
+{:#events:bubblerendering}
+
+Triggered while rendering the each bubbles in maps.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Returns the bubble values.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+{% highlight js %}
+ 
+//bubbleRendering event for map
+  
+  $("#container").ejMap({
+   bubbleRendering: function (event) {}
+  });
+
+{% endhighlight %}
+
+
+### shapeRendering
+{:#events:shaperendering}
+
+Triggered while rendering the each shapes in maps.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Returns the shape values.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+{% highlight js %}
+ 
+//shapeRendering event for map
+  
+  $("#container").ejMap({
+   shapeRendering: function (event) {}
+  });
+
+{% endhighlight %}
+
+
 ### mouseleave
 {:#events:mouseleave}
 
@@ -6820,6 +7125,185 @@ Example
 //zoomedOut event for map
   $("#container").ejMap({
    zoomedOut: function () {}
+  });
+
+{% endhighlight %}
+
+### Click
+{:#events:click}
+
+
+
+
+Fires, on clicking the map.
+
+
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Returns clicked shape object.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+
+{% highlight js %}
+ 
+//Click event for map
+
+$("#container").ejMap({
+
+    click: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+
+### doubleClick
+{:#events:doubleclick}
+
+
+
+
+Fires, on double clicking the map.
+
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Returns double clicked shape object.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+
+{% highlight js %}
+ 
+//DoubleClick event for map.
+
+$("#container").ejMap({
+
+    doubleClick: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+
+
+### rightClick
+{:#events:rightclick}
+
+
+
+
+Fires, on right clicking the map.
+
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Returns right clicked shape object.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+
+{% highlight js %}
+ 
+//RightClick event for map
+
+$("#container").ejMap({
+    rightClick: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+
+### onLoad
+{:#events:onload}
+
+Fires before loading the map.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Instance of the map model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight js %}
+ 
+//mouseover  event for map
+  $("#container").ejMap({
+   onLoad : function (event) {}
   });
 
 {% endhighlight %}

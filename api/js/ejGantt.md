@@ -57,7 +57,6 @@ Specifies the fields to be included in the add dialog in Gantt
 
 
 #### Default Value
-{:.param}
 
 * []
 
@@ -135,7 +134,6 @@ Specifies editType of fields to be included in the add dialog in Gantt
 Specifies the custom column field was displayed in General tab of add dialog or not.
 
 #### Default Value
-{:.param}
 
 * false
 
@@ -161,7 +159,6 @@ Enables or disables the ability to resize column.
 
 
 #### Default Value
-{:.param}
 
 * false
 
@@ -179,6 +176,29 @@ Enables or disables the ability to resize column.
 
 {% endhighlight %}
 
+### allowDragAndDrop `boolean`
+{:#members:allowdraganddrop}
+
+Enables or disables the ability to drag and drop the row interactively to reorder the rows
+
+
+#### Default Value
+
+* false
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>        
+        $("#gantt").ejGantt({ allowDragAndDrop:  true });
+</script>
+
+{% endhighlight %}
 
 ### allowGanttChartEditing `boolean`
 {:#members:allowganttchartediting}
@@ -187,7 +207,6 @@ Enables or Disables Gantt chart editing in Gantt
 
 
 #### Default Value
-{:.param}
 
 * true
 
@@ -216,7 +235,6 @@ Enables or Disables Keyboard navigation in Gantt
 
 
 #### Default Value
-{:.param}
 
 * true
 
@@ -242,7 +260,6 @@ Specifies enabling or disabling multiple sorting for Gantt columns
 
 
 #### Default Value
-{:.param}
 
 * false
 
@@ -267,7 +284,6 @@ Enables or disables the option for multiple exporting
 
 
 #### Default Value
-{:.param}
 
 * false
 
@@ -293,7 +309,6 @@ Enables or disables the interactive selection of a row.
 
 
 #### Default Value
-{:.param}
 
 * true
 
@@ -319,7 +334,6 @@ Enables or disables sorting. When enabled, we can sort the column by clicking on
 
 
 #### Default Value
-{:.param}
 
 * false
 
@@ -337,81 +351,6 @@ Enables or disables sorting. When enabled, we can sort the column by clicking on
 
 {% endhighlight %}
 
-
-### allowDragAndDrop `boolean`
-{:#members:allowdraganddrop}
-
-Enables or disables the ability to drag and drop the row interactively to reorder the rows
-
-
-#### Default Value
-{:.param}
-
-* false
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>        
-        $("#gantt").ejGantt({ allowDragAndDrop:  true });            
-</script>
-
-{% endhighlight %}
-
-
-### enablePredecessorValidation `boolean`
-{:#members:enablepredecessorvalidation}
-
-Enable or disable predecessor validation. When it is true, all the task's start and end dates are aligned based on its predecessors start and end dates.
-
-#### Default Value
-{:.param}
-
-* true
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>        
-        $("#gantt").ejGantt({ enablePredecessorValidation:  false });            
-</script>
-
-{% endhighlight %}
-
-
-### enableSerialNumber `boolean`
-{:#members:enableSerialNumber}
-
-Enables or disables serial number column for Gantt. When enabled, the records will be number sequenced.
-
-#### Default Value
-{:.param}
-
-* false
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>        
-        $("#gantt").ejGantt({ enableSerialNumber:  true });            
-</script>
-
-{% endhighlight %}
-
-
 ### baselineColor `string`
 {:#members:baselinecolor}
 
@@ -419,7 +358,6 @@ Specifies the baseline background color in Gantt
 
 
 #### Default Value
-{:.param}
 
 * "#fba41c"
 
@@ -440,56 +378,6 @@ Specifies the baseline background color in Gantt
 
 {% endhighlight %}
 
-### workMapping `string`
-{:#members:workmapping}
-
-Specifies the mapping property path for the work field of a task in the data source. When it is mapped the end date and duration for a task will be calculated automatically.
-
-
-#### Default Value
-{:.param}
-
-* ""
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                  
-        $("#gantt").ejGantt({  workMapping : "estimatedHours" });
-</script>
-
-{% endhighlight %}
-
-
-### expandStateMapping `string`
-{:#members:expandstatemapping}
-
-Specifies the mapping property path for the expand status of a record in data source.
-
-
-#### Default Value
-{:.param}
-
-* ""
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                  
-        $("#gantt").ejGantt({  expandStateMapping : "isExpanded" });
-</script>
-
-{% endhighlight %}
-
 ### baselineEndDateMapping `string`
 {:#members:baselineenddatemapping}
 
@@ -497,7 +385,6 @@ Specifies the mapping property path for baseline end date in datasource
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -515,7 +402,6 @@ Specifies the mapping property path for baseline end date in datasource
 
 {% endhighlight %}
 
-
 ### baselineStartDateMapping `string`
 {:#members:baselinestartdatemapping}
 
@@ -523,7 +409,6 @@ Specifies the mapping property path for baseline start date of a task in datasou
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -541,6 +426,24 @@ Specifies the mapping property path for baseline start date of a task in datasou
 
 {% endhighlight %}
 
+### cellTooltipTemplate `string`
+{:#members:celltooltiptemplate}
+
+Specifies the template for cell tooltip
+
+#### Default Value
+
+* null
+
+
+#### Example
+
+
+{% highlight html %}
+                  
+        $("#gantt").ejGantt({ cellTooltipTemplate : "CellTooltipTemplate"});        
+
+{% endhighlight %}
 
 ### childMapping `string`
 {:#members:childmapping}
@@ -549,7 +452,6 @@ Specifies the mapping property path for sub tasks in datasource
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -567,7 +469,6 @@ Specifies the mapping property path for sub tasks in datasource
 
 {% endhighlight %}
 
-
 ### columnDialogFields `array`
 {:#members:columndialogfields}
 
@@ -575,7 +476,6 @@ To Specify the column fields to be displayed in the dialog while inserting a col
 
 
 #### Default Value
-{:.param}
 
 * []
 
@@ -600,7 +500,6 @@ Specifies the background of connector lines in Gantt
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -627,7 +526,6 @@ Specifies the width of the connector lines in Gantt
 
 
 #### Default Value
-{:.param}
 
 * 1
 
@@ -654,7 +552,6 @@ Specify the CSS class for Gantt to achieve custom theme.
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -672,11 +569,11 @@ Specify the CSS class for Gantt to achieve custom theme.
 
 {% endhighlight %}
 
+### dataSource `array`
+{:#members:datasource}
 
-### cellTooltipTemplate `string`
-{:#members:celltooltiptemplate}
+Collection of data or hierarchical data to represent in Gantt
 
-Specifies the template for cell tooltip
 
 #### Default Value
 
@@ -684,11 +581,72 @@ Specifies the template for cell tooltip
 
 
 #### Example
+{:.example}
 
 
 {% highlight html %}
-                  
-        $("#gantt").ejGantt({ cellTooltipTemplate : "CellTooltipTemplate"});        
+ 
+<div id="gantt"></div> 
+<script>          
+        $("#gantt").ejGantt(
+ {
+    dataSource:[{Id:2,TaskName:"Testing",startDate:"12/1/2000",Duration:5 }]    
+ });            
+</script>
+
+{% endhighlight %}
+
+### dateFormat `string`
+{:#members:dateformat}
+
+Specifies the dateFormat for Gantt , given format is displayed in tooltip , Grid .
+
+
+#### Default Value
+
+* "MM/dd/yyyy"
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
+        $("#gantt").ejGantt(
+ {
+    dateFormat: "dd/MM/yyyy"
+ });            
+</script>
+
+{% endhighlight %}
+
+### dayWorkingTime `array`
+{:#members:dayworkingtime}
+
+Specifies the customized working time for tasks in Gantt 
+
+
+#### Default Value
+
+* [{ "from": "08:00 AM", "to": "12:00 PM" }, { "from": "01:00 PM", "to": "05:00 PM" }]
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
+        $("#gantt").ejGantt(
+ {
+    dayWorkingTime: [{ "from": "08:00 AM", "to": "12:00 PM" }, { "from": "01:00 PM", "to": "05:00 PM" }]
+ });            
+</script>
 
 {% endhighlight %}
 
@@ -766,90 +724,6 @@ Specifies the custom template for drag tooltip.
 </script>
 {% endhighlight %}
 
-### dataSource `array`
-{:#members:datasource}
-
-Collection of data or hierarchical data to represent in Gantt
-
-
-#### Default Value
-{:.param}
-
-* null
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>          
-        $("#gantt").ejGantt(
- {
-    dataSource:[{Id:2,TaskName:"Testing",startDate:"12/1/2000",Duration:5 }]    
- });            
-</script>
-
-{% endhighlight %}
-
-### dateFormat `string`
-{:#members:dateformat}
-
-Specifies the dateFormat for Gantt , given format is displayed in tooltip , Grid .
-
-
-#### Default Value
-{:.param}
-
-* "MM/dd/yyyy"
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>          
-        $("#gantt").ejGantt(
- {
-    dateFormat: "dd/MM/yyyy"
- });            
-</script>
-
-{% endhighlight %}
-
-### dayWorkingTime `array`
-{:#members:dayworkingtime}
-
-Specifies the customized working time for tasks in Gantt 
-
-
-#### Default Value
-{:.param}
-
-* [{ "from": "08:00 AM", "to": "12:00 PM" }, { "from": "01:00 PM", "to": "05:00 PM" }]
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>          
-        $("#gantt").ejGantt(
- {
-    dayWorkingTime: [{ "from": "08:00 AM", "to": "12:00 PM" }, { "from": "01:00 PM", "to": "05:00 PM" }]
- });            
-</script>
-
-{% endhighlight %}
-
 
 ### durationMapping `string`
 {:#members:durationmapping}
@@ -858,7 +732,6 @@ Specifies the mapping property path for duration of a task in datasource
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -908,7 +781,6 @@ Specifies the duration unit for each tasks whether days or hours or minutes
 </table>
 
 #### Default Value
-{:.param}
 
 * ej.Gantt.DurationUnit.Day
 
@@ -927,6 +799,29 @@ Specifies the duration unit for each tasks whether days or hours or minutes
 
 {% endhighlight %}
 
+### durationUnitMapping `string`
+{:#members:durationunitmapping }
+
+Specifies the mapping property path for task duration unit in datasource
+
+#### Default Value
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  
+                        durationUnitMapping : "durationUnit"});
+</script>
+
+{% endhighlight %}
 
 ### editDialogFields `array`
 {:#members:editdialogfields}
@@ -935,7 +830,6 @@ Specifies the fields to be included in the edit dialog in Gantt
 
 
 #### Default Value
-{:.param}
 
 * []
 
@@ -1013,7 +907,6 @@ Specifies editType of fields to be included in the edit dialog in Gantt
 Specifies the custom column field was displayed in General tab of edit dialog or not.
 
 #### Default Value
-{:.param}
 
 * false
 
@@ -1032,143 +925,6 @@ $("#gantt").ejGantt(
 
 {% endhighlight %}
 
-### filterSettings `object`
-{:#members:filtersettings}
-
-Options for filtering and customizing filter actions.
-
-### filterSettings.filteredColumns `array`
-{:#members:filtersettings-filteredcolumns}
-
-Specifies the column collection for filtering the Gantt content on initial load
-
-#### Default Value
-* []
-
-### filterSettings.filteredColumns.value `string`
-{:#members:filtersettings-filteredcolumns-value}
-
-Specifies the value to be filtered in Gantt.
-
-#### Default Value
-* -
-
-### filterSettings.filteredColumns.field `string`
-{:#members:filtersettings-filteredcolumns-field}
-
-Specifies the field where filtering has to be performed.
-
-#### Default Value
-* -
-
-### filterSettings.filteredColumns.predicate `string`
-{:#members:filtersettings-filteredcolumns-predicate}
-
-Specifies the predicate(and/or) value to perform filtering.
-
-#### Default Value
-* -
-
-### filterSettings.filteredColumns.operator `string`
-{:#members:filtersettings-filteredcolumns-operator}
-
-Specifies the filter condition to filtered column. See <a href="global.html#enum:filteroperator">operator</a>
-
-#### Default Value
-
-* -
-
-#### Example
-
-{% highlight html %}
-
-$("#gantt").ejGantt({
-    filterSettings: {
-        filteredColumns: [{
-            value: "plan",
-            field: "taskName",
-            predicate: "and",
-            operator: "startswith"
-        }]
-    },
-});                   
-
-{% endhighlight %}
-
-### isResponsive `boolean`
-{:#members:isresponsive}
-
-Enables or disables the responsiveness of Gantt
-
-#### Default Value
-
-* "false"
-
-
-#### Example
-
-
-{% highlight html %}
-                  
-        $("#gantt").ejGantt({  isResponsive : true });                   
-
-{% endhighlight %}
-
-### splitterSettings `object`
-{:#members:splittersettings}
-
-Option to configure the splitter position.
-
-
-### splitterSettings.position `string`
-{:#members:splittersettings-position}
-
-Specifies position of the splitter in Gantt , splitter can be placed either based on percentage values or pixel values.
-
-#### Default Value
-{:.param}
-
-* ""
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                  
-        $("#gantt").ejGantt({  splitterSettings:{position : "300px"} });
-</script>
-
-{% endhighlight %}
-
-
-### splitterSettings.index `string`
-{:#members:splittersettings-index}
-
-Specifies the position of splitter in Gantt, based on column index in Gantt.
-
-#### Default Value
-{:.param}
-
-* ""
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                  
-        $("#gantt").ejGantt({  splitterSettings:{index : "3"} });
-</script>
-
-{% endhighlight %}
-
-
-
 ### editSettings `object`
 {:#members:editsettings}
 
@@ -1182,7 +938,6 @@ Enables or disables add record icon in Gantt toolbar
 
 
 #### Default Value
-{:.param}
 
 * false
 
@@ -1208,7 +963,6 @@ Enables or disables delete icon in Gantt toolbar
 
 
 #### Default Value
-{:.param}
 
 * false
 
@@ -1234,7 +988,6 @@ Specifies the option for enabling or disabling editing in Gantt grid part
 
 
 #### Default Value
-{:.param}
 
 * false
 
@@ -1259,7 +1012,6 @@ Specifies the option for enabling or disabling indent action in Gantt.
 
 
 #### Default Value
-{:.param}
 
 * false
 
@@ -1324,7 +1076,6 @@ Specifies the edit mode in Gantt, "normal" is for dialog editing ,"cellEditing" 
 
 
 #### Default Value
-{:.param}
 
 * normal
 
@@ -1417,7 +1168,6 @@ Enables or Disables enableAltRow row effect in Gantt
 
 
 #### Default Value
-{:.param}
 
 * true
 
@@ -1434,55 +1184,6 @@ Enables or Disables enableAltRow row effect in Gantt
 
 {% endhighlight %}
 
-
-### enableWBS `boolean`
-{:#members:enablewbs}
-
-Enables/disables work breakdown structure column. 
-
-
-#### Default Value
-{:.param}
-
-* false
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                  
-        $("#gantt").ejGantt({ enableWBS : true});                    
-</script>
-
-{% endhighlight %}
-
-### enableWBSPredecessor `boolean`
-{:#members:enablewbspredecessor}
-
-Enables/disables WBS predecessor column. 
-
-
-#### Default Value
-{:.param}
-
-* false
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                  
-        $("#gantt").ejGantt({ enableWBSPredecessor : true});                    
-</script>
-
-{% endhighlight %}
-
 ### enableCollapseAll `boolean`
 {:#members:enablecollapseall}
 
@@ -1490,7 +1191,6 @@ Enables or disables the collapse all records when loading the Gantt.
 
 
 #### Default Value
-{:.param}
 
 * false
 
@@ -1511,120 +1211,6 @@ Enables or disables the collapse all records when loading the Gantt.
 
 {% endhighlight %}
 
-### leftTaskLabelMapping `string`
-{:#members:lefttasklabelmapping}
-
-Specifies the data source field name to be displayed as left task label
-
-#### Default Value
-{:.param}
-
-* ""
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                  
-        $("#gantt").ejGantt(
- {
-    leftTaskLabelMapping: "taskId",
- });            
-</script>
-
-{% endhighlight %}
-
-### rightTaskLabelMapping `string`
-{:#members:righttasklabelmapping}
-
-Specifies the data source field name to be displayed as right task label
-
-
-#### Default Value
-{:.param}
-
-* ""
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                  
-        $("#gantt").ejGantt(
- {
-    rightTaskLabelMapping: "taskName",
- });            
-</script>
-
-{% endhighlight %}
-
-
-
-
-### leftTaskLabelTemplate `string`
-{:#members:lefttasklabeltemplate}
-
-Specifies the template for left task label
-
-
-#### Default Value
-{:.param}
-
-* ""
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                  
-        $("#gantt").ejGantt(
- {
-    leftTaskLabelTemplate: "#customTaskLeftLabel",
- });            
-</script>
-
-{% endhighlight %}
-
-### rightTaskLabelTemplate `string`
-{:#members:righttasklabeltemplate}
-
-Specifies the template for right task label
-
-
-#### Default Value
-{:.param}
-
-* ""
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                  
-        $("#gantt").ejGantt(
- {
-    rightTaskLabelTemplate: "#customTaskRightLabel",
- });            
-</script>
-
-{% endhighlight %}
-
 ### enableContextMenu `boolean`
 {:#members:enablecontextmenu}
 
@@ -1632,7 +1218,6 @@ Enables or disables the contextmenu for Gantt , when enabled contextmenu appears
 
 
 #### Default Value
-{:.param}
 
 * false
 
@@ -1653,6 +1238,27 @@ Enables or disables the contextmenu for Gantt , when enabled contextmenu appears
 
 {% endhighlight %}
 
+### enablePredecessorValidation `boolean`
+{:#members:enablepredecessorvalidation}
+
+Enable or disable predecessor validation. When it is true, all the task's start and end dates are aligned based on its predecessors start and end dates.
+
+#### Default Value
+
+* true
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>        
+        $("#gantt").ejGantt({ enablePredecessorValidation:  false });            
+</script>
+
+{% endhighlight %}
 
 ### enableProgressBarResizing `boolean`
 {:#members:enableprogressbarresizing}
@@ -1661,7 +1267,6 @@ Indicates whether we can edit the progress of a task interactively in Gantt.
 
 
 #### Default Value
-{:.param}
 
 * true
 
@@ -1687,7 +1292,6 @@ Enables or disables the option for dynamically updating the Gantt size on window
 
 
 #### Default Value
-{:.param}
 
 * false
 
@@ -1708,6 +1312,27 @@ Enables or disables the option for dynamically updating the Gantt size on window
 
 {% endhighlight %}
 
+### enableSerialNumber `boolean`
+{:#members:enableSerialNumber}
+
+Enables or disables serial number column for Gantt. When enabled, the records will be number sequenced.
+
+#### Default Value
+
+* false
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>        
+        $("#gantt").ejGantt({ enableSerialNumber:  true });            
+</script>
+
+{% endhighlight %}
 
 ### enableTaskbarDragTooltip `boolean`
 {:#members:enabletaskbardragtooltip}
@@ -1716,7 +1341,6 @@ Enables or disables tooltip while editing (dragging/resizing) the taskbar.
 
 
 #### Default Value
-{:.param}
 
 * true
 
@@ -1743,7 +1367,6 @@ Enables or disables tooltip for taskbar.
 
 
 #### Default Value
-{:.param}
 
 * true
 
@@ -1769,7 +1392,6 @@ Enables/Disables virtualization for rendering Gantt items.
 
 
 #### Default Value
-{:.param}
 
 * false
 
@@ -1787,6 +1409,51 @@ Enables/Disables virtualization for rendering Gantt items.
 
 {% endhighlight %}
 
+### enableWBS `boolean`
+{:#members:enablewbs}
+
+Enables/disables work breakdown structure column. 
+
+
+#### Default Value
+
+* false
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({ enableWBS : true});                    
+</script>
+
+{% endhighlight %}
+
+### enableWBSPredecessor `boolean`
+{:#members:enablewbspredecessor}
+
+Enables/disables WBS predecessor column. 
+
+
+#### Default Value
+
+* false
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({ enableWBSPredecessor : true});                    
+</script>
+
+{% endhighlight %}
 
 ### endDateMapping `string`
 {:#members:enddatemapping}
@@ -1795,7 +1462,6 @@ Specifies the mapping property path for end Date of a task in datasource
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -1813,6 +1479,156 @@ Specifies the mapping property path for end Date of a task in datasource
 
 {% endhighlight %}
 
+### expandStateMapping `string`
+{:#members:expandstatemapping}
+
+Specifies the mapping property path for the expand status of a record in data source.
+
+
+#### Default Value
+
+* ""
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  expandStateMapping : "isExpanded" });
+</script>
+
+{% endhighlight %}
+
+### filterSettings `object`
+{:#members:filtersettings}
+
+Options for filtering and customizing filter actions.
+
+### filterSettings.filteredColumns `array`
+{:#members:filtersettings-filteredcolumns}
+
+Specifies the column collection for filtering the Gantt content on initial load
+
+#### Default Value
+* []
+
+### filterSettings.filteredColumns.value `string`
+{:#members:filtersettings-filteredcolumns-value}
+
+Specifies the value to be filtered in Gantt.
+
+#### Default Value
+* -
+
+### filterSettings.filteredColumns.field `string`
+{:#members:filtersettings-filteredcolumns-field}
+
+Specifies the field where filtering has to be performed.
+
+#### Default Value
+* -
+
+### filterSettings.filteredColumns.predicate `string`
+{:#members:filtersettings-filteredcolumns-predicate}
+
+Specifies the predicate(and/or) value to perform filtering.
+
+#### Default Value
+* -
+
+### filterSettings.filteredColumns.operator `string`
+{:#members:filtersettings-filteredcolumns-operator}
+
+Specifies the filter condition to filtered column. See <a href="global.html#enum:filteroperator">operator</a>
+
+#### Default Value
+
+* -
+
+#### Example
+
+{% highlight html %}
+
+$("#gantt").ejGantt({
+    filterSettings: {
+        filteredColumns: [{
+            value: "plan",
+            field: "taskName",
+            predicate: "and",
+            operator: "startswith"
+        }]
+    },
+});                   
+
+{% endhighlight %}
+
+### groupCollection `array`
+{:#members:groupcollection}
+
+Specifies the data collection for grouping the resources in resource allocation view in Gantt.
+
+#### Default Value
+
+* []
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+   groupCollection:[{id:1; name:"Team A" }]     
+ });            
+</script>
+
+{% endhighlight %}
+
+### groupIdMapping `string`
+{:#members:groupidmapping}
+Specifies the mapping property path for group ID in datasource in resource allocation view type.
+
+#### Default Value
+
+* ""
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  groupIdMapping : "groupId" });    
+</script>
+
+{% endhighlight %}
+
+
+### groupNameMapping `string`
+{:#members:groupnamemapping}
+Specifies the mapping property path for group name in datasource in resource allocation view type.
+
+#### Default Value
+
+* ""
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  groupNameMapping : "groupName" });    
+</script>
+
+{% endhighlight %}
 
 ### highlightWeekends `boolean`
 {:#members:highlightweekends}
@@ -1821,7 +1637,6 @@ Specifies whether to highlight the weekends in Gantt .
 
 
 #### Default Value
-{:.param}
 
 * true
 
@@ -1847,7 +1662,6 @@ Collection of holidays with date, background and label information to be display
 
 
 #### Default Value
-{:.param}
 
 * []
 
@@ -1951,7 +1765,6 @@ Specifies whether to include weekends while calculating the duration of a task.
 
 
 #### Default Value
-{:.param}
 
 * true
 
@@ -1969,6 +1782,77 @@ Specifies whether to include weekends while calculating the duration of a task.
 
 {% endhighlight %}
 
+### isResponsive `boolean`
+{:#members:isresponsive}
+
+Enables or disables the responsiveness of Gantt
+
+#### Default Value
+
+* "false"
+
+
+#### Example
+
+
+{% highlight html %}
+                  
+        $("#gantt").ejGantt({  isResponsive : true });                   
+
+{% endhighlight %}
+
+### leftTaskLabelMapping `string`
+{:#members:lefttasklabelmapping}
+
+Specifies the data source field name to be displayed as left task label
+
+#### Default Value
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    leftTaskLabelMapping: "taskId",
+ });            
+</script>
+
+{% endhighlight %}
+
+### leftTaskLabelTemplate `string`
+{:#members:lefttasklabeltemplate}
+
+Specifies the template for left task label
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    leftTaskLabelTemplate: "#customTaskLeftLabel",
+ });            
+</script>
+
+{% endhighlight %}
 
 ### locale `string`
 {:#members:locale}
@@ -1977,7 +1861,6 @@ Specify the locale for Gantt
 
 
 #### Default Value
-{:.param}
 
 * "en-US"
 
@@ -1995,7 +1878,6 @@ Specify the locale for Gantt
 
 {% endhighlight %}
 
-
 ### milestoneMapping `string`
 {:#members:milestonemapping}
 
@@ -2003,7 +1885,6 @@ Specifies the mapping property path for milestone in datasource
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -2021,15 +1902,16 @@ Specifies the mapping property path for milestone in datasource
 
 {% endhighlight %}
 
-### showColumnOptions `boolean`
-{:#members:showcolumnoptions}
+### milestoneTemplate `string`
+{:#members:milestonetemplate}
 
-Enables/disables the options for inserting , deleting and renaming  columns.       
+To Specify the JsRender script Id to customize the mile stone with our preference
+
 
 #### Default Value
-{:.param}
 
-* false
+* ""
+
 
 #### Example
 {:.example}
@@ -2038,8 +1920,109 @@ Enables/disables the options for inserting , deleting and renaming  columns.
 {% highlight html %}
  
 <div id="gantt"></div> 
-<script>   
-        $("#gantt").ejGantt({ showColumnOptions:  true });                      * 
+<script>          
+        $("#gantt").ejGantt(
+ {
+    milestoneTemplate: "MilestoneTemplate"
+ });            
+</script>
+
+{% endhighlight %}
+
+### notesMapping `string`
+{:#members:notesmapping }
+
+Specifies the mapping property path for the task description in datasource
+
+#### Default Value
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  
+                        notesMapping : "notes"});
+</script>
+
+{% endhighlight %}
+
+### parentProgressbarBackground `string`
+{:#members:parentprogressbarbackground}
+
+Specifies the background of parent progressbar in Gantt
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  
+        parentProgressbarBackground : "#F2F2F2"});
+</script>
+
+{% endhighlight %}
+
+### parentTaskIdMapping `string`
+{:#members:parenttaskidmapping}
+
+Specifies the mapping property path for parent task Id in self reference datasource
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  parentTaskIdMapping : "ID" });               
+</script>
+
+{% endhighlight %}
+
+### parentTaskbarBackground `string`
+{:#members:parenttaskbarbackground}
+
+Specifies the background of parent taskbar in Gantt
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  
+                        parentTaskbarBackground : "#F2F2F2"});
 </script>
 
 {% endhighlight %}
@@ -2051,7 +2034,6 @@ Specifies the template for parent taskbar
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -2072,389 +2054,6 @@ Specifies the template for parent taskbar
 
 {% endhighlight %}
 
-
-### taskType `enum`
-{:#members:tasktype}
-
-<ts name = "ej.Gantt.TaskType"/>
-
-Specifies the nature of a task for calculating the work,  and it can fixed duration, fixed work and fixed resource unit
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">FixedUnit</td>
-<td class="description">Resource unit remains constant while editing the work and duration values.</td>
-</tr>
-<tr>
-<td class="name">FixedWork</td>
-<td class="description">Work value of a task remains constant while editing duration and resource unit values.</td>
-</tr>
-<tr>
-<td class="name">FixedDuration</td>
-<td class="description">Duration value remains constant while editing work and resource unit values.</td>
-</tr>
-</tbody>
-</table>
-
-#### Default Value
-{:.param}
-
-*  ej.Gantt.TaskType.FixedUnit
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                          
-        $("#gantt").ejGantt({  
-                        taskType : ej.Gantt.TaskType.FixedWork });
-</script>
-
-{% endhighlight %}
-
-
-
-### workUnit `enum`
-{:#members:workunit}
-
-<ts name = "ej.Gantt.WorkUnit"/>
-
-Specifies the unit for the work involved in a task and it can be day, hour or minute
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">Day</td>
-<td class="description">Displays the work involved in a task in days.</td>
-</tr>
-<tr>
-<td class="name">Hour</td>
-<td class="description">Displays the work involved in a task in hours.</td>
-</tr>
-<tr>
-<td class="name">Minute</td>
-<td class="description">Displays the work involved in a task in minutes</td>
-</tr>
-</tbody>
-</table>
-
-#### Default Value
-{:.param}
-
-*  ej.Gantt.WorkUnit.Hour
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                          
-        $("#gantt").ejGantt({  
-                        workUnit : ej.Gantt.WorkUnit.Day });
-</script>
-
-{% endhighlight %}
-
-
-### taskSchedulingMode `enum`
-{:#members:taskschedulingmode}
-
-<ts name = "ej.Gantt.TaskSchedulingMode"/>
-
-Specifies the task scheduling mode for a project and this will be set to all the tasks available in the project
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">Auto</td>
-<td class="description">All the tasks in the project will be displayed in auto scheduled mode,
- where the tasks are scheduled automatically over non-working days and holidays.</td>
-</tr>
-<tr>
-<td class="name">Manual</td>
-<td class="description">All the tasks in the project will be displayed in manually scheduled mode.</td>
-</tr>
-<tr>
-<td class="name">Custom</td>
-<td class="description">Project consists of tasks with both auto and manually scheduled modes, based on the datasource values</td>
-</tr>
-</tbody>
-</table>
-
-#### Default Value
-{:.param}
-
-*  ej.Gantt.TaskSchedulingMode.Auto
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                          
-        $("#gantt").ejGantt({  
-                        taskSchedulingMode : ej.Gantt.TaskSchedulingMode.Auto });
-</script>
-
-{% endhighlight %}
-
-
-### selectionType `enum`
-{:#members:selectiontype}
-
-<ts name = "ej.Gantt.SelectionType"/>
-
-Specifies the row selection type.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">Single</td>
-<td class="description">you can select a single row.</td>
-</tr>
-<tr>
-<td class="name">Multiple</td>
-<td class="description">you can select a multiple row.</td>
-</tr>
-</tbody>
-</table>
-
-#### Default Value
-
-* ej.Gantt.SelectionType.Single
-
-
-#### Example
-
-
-{% highlight html %}
-          
-<div id="gantt"></div> 
-<script>   
-        $("#gantt").ejGantt({ selectionType:ej.Gantt.SelectionType.Multiple });                      * 
-</script>           
-
-{% endhighlight %}
-
-### parentProgressbarBackground `string`
-{:#members:parentprogressbarbackground}
-
-Specifies the background of parent progressbar in Gantt
-
-
-#### Default Value
-{:.param}
-
-* ""
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                  
-        $("#gantt").ejGantt({  
-                        parentProgressbarBackground : "#F2F2F2"});
-</script>
-
-{% endhighlight %}
-
-
-### resourceUnitMapping `string`
-{:#members:resourceunitmapping}
-
-Specifies the mapping property path for resource's percent effort involved in a task in datasource
-
-#### Default Value
-{:.param}
-
-* ""
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                  
-        $("#gantt").ejGantt({  
-                        resourceUnitMapping : "Unit"});
-</script>
-
-{% endhighlight %}
-
-
-### notesMapping `string`
-{:#members:notesmapping }
-
-Specifies the mapping property path for the task description in datasource
-
-#### Default Value
-{:.param}
-
-* ""
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                  
-        $("#gantt").ejGantt({  
-                        notesMapping : "notes"});
-</script>
-
-{% endhighlight %}
-
-
-### taskSchedulingModeMapping `string`
-{:#members:taskschedulingmodemapping }
-
-Specifies the mapping property path for the task scheduling mode for a task in datasource
-
-#### Default Value
-{:.param}
-
-* "auto"
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                  
-        $("#gantt").ejGantt({  
-                        taskSchedulingModeMapping : "taskMode"});
-</script>
-
-{% endhighlight %}
-
-
-### durationUnitMapping `string`
-{:#members:durationunitmapping }
-
-Specifies the mapping property path for task duration unit in datasource
-
-#### Default Value
-{:.param}
-
-* ""
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                  
-        $("#gantt").ejGantt({  
-                        durationUnitMapping : "durationUnit"});
-</script>
-
-{% endhighlight %}
-
-
-### parentTaskbarBackground `string`
-{:#members:parenttaskbarbackground}
-
-Specifies the background of parent taskbar in Gantt
-
-
-#### Default Value
-{:.param}
-
-* ""
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                  
-        $("#gantt").ejGantt({  
-                        parentTaskbarBackground : "#F2F2F2"});
-</script>
-
-{% endhighlight %}
-
-
-### parentTaskIdMapping `string`
-{:#members:parenttaskidmapping}
-
-Specifies the mapping property path for parent task Id in self reference datasource
-
-
-#### Default Value
-{:.param}
-
-* ""
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                  
-        $("#gantt").ejGantt({  parentTaskIdMapping : "ID" });               
-</script>
-
-{% endhighlight %}
-
-
 ### predecessorMapping `string`
 {:#members:predecessormapping}
 
@@ -2462,7 +2061,6 @@ Specifies the mapping property path for predecessors of a task in datasource
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -2480,6 +2078,56 @@ Specifies the mapping property path for predecessors of a task in datasource
 
 {% endhighlight %}
 
+### predecessorTooltipTemplate `string`
+{:#members:predecessortooltiptemplate}
+
+Specifies the JsRender template id or template script for predecessor tooltip on mouse action.
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    predecessorTooltipTemplate: "PredecessorTooltipTemplate"
+ });            
+</script>
+
+{% endhighlight %}
+
+### progressMapping `string`
+{:#members:progressmapping}
+
+Specifies the mapping property path for progress percentage of a task in datasource
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  progressMapping : "progress" });                 
+</script>
+
+{% endhighlight %}
 
 ### progressbarBackground `string`
 {:#members:progressbarbackground}
@@ -2488,7 +2136,6 @@ Specifies the background of progressbar in Gantt
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -2516,7 +2163,6 @@ Specified the height of the progressbar in taskbar
 
 
 #### Default Value
-{:.param}
 
 * 100
 
@@ -2543,7 +2189,6 @@ Specifies the template for tooltip on resizing progressbar
 
 
 #### Default Value
-{:.param}
 
 * null
 
@@ -2572,7 +2217,6 @@ Specifies the template ID for customized tooltip for progressbar editing in Gant
 
 
 #### Default Value
-{:.param}
 
 * null
 
@@ -2593,33 +2237,6 @@ Specifies the template ID for customized tooltip for progressbar editing in Gant
 
 {% endhighlight %}
 
-
-### progressMapping `string`
-{:#members:progressmapping}
-
-Specifies the mapping property path for progress percentage of a task in datasource
-
-
-#### Default Value
-{:.param}
-
-* ""
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                  
-        $("#gantt").ejGantt({  progressMapping : "progress" });                 
-</script>
-
-{% endhighlight %}
-
-
 ### query `object`
 {:#members:query}
 
@@ -2627,7 +2244,6 @@ It receives query to retrieve data from the table (query is same as SQL).
 
 
 #### Default Value
-{:.param}
 
 * null
 
@@ -2647,6 +2263,29 @@ It receives query to retrieve data from the table (query is same as SQL).
 
 {% endhighlight %}
 
+### readOnly `boolean`
+{:#members:readonly}
+
+Enables or disables Gantt to read-only mode
+
+#### Default Value
+
+* "false"
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
+        $("#gantt").ejGantt(
+ {
+    readOnly: "true"
+ });            
+</script>
+
+{% endhighlight %}
 
 ### renderBaseline `boolean`
 {:#members:renderbaseline}
@@ -2655,7 +2294,6 @@ Enables or Disables rendering baselines in Gantt , when enabled baseline is rend
 
 
 #### Default Value
-{:.param}
 
 * "false"
 
@@ -2676,6 +2314,25 @@ Enables or Disables rendering baselines in Gantt , when enabled baseline is rend
 
 {% endhighlight %}
 
+### resourceCollectionMapping `string`
+{:#members:resourcecollectionmapping}
+Specifies the mapping property path for resource collection in datasource in resource allocation view type.
+
+#### Default Value
+
+* ""
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  resourceCollectionMapping : "resources" });    
+</script>
+
+{% endhighlight %}
 
 ### resourceIdMapping `string`
 {:#members:resourceidmapping}
@@ -2684,7 +2341,6 @@ Specifies the mapping property name for resource ID in resource Collection in Ga
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -2713,7 +2369,6 @@ Specifies the mapping property path for resources of a task in datasource
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -2740,7 +2395,6 @@ Specifies the mapping property path for resource name of a task in Gantt
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -2761,6 +2415,29 @@ Specifies the mapping property path for resource name of a task in Gantt
 
 {% endhighlight %}
 
+### resourceUnitMapping `string`
+{:#members:resourceunitmapping}
+
+Specifies the mapping property path for resource's percent effort involved in a task in datasource
+
+#### Default Value
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  
+                        resourceUnitMapping : "Unit"});
+</script>
+
+{% endhighlight %}
 
 ### resources `array`
 {:#members:resources}
@@ -2769,7 +2446,6 @@ Collection of data regarding resources involved in entire project
 
 
 #### Default Value
-{:.param}
 
 * []
 
@@ -2791,6 +2467,60 @@ Collection of data regarding resources involved in entire project
 {% endhighlight %}
 
 
+### rightTaskLabelMapping `string`
+{:#members:righttasklabelmapping}
+
+Specifies the data source field name to be displayed as right task label
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    rightTaskLabelMapping: "taskName",
+ });            
+</script>
+
+{% endhighlight %}
+
+### rightTaskLabelTemplate `string`
+{:#members:righttasklabeltemplate}
+
+Specifies the template for right task label
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    rightTaskLabelTemplate: "#customTaskRightLabel",
+ });            
+</script>
+
+{% endhighlight %}
+
 ### roundOffDayworkingTime `boolean`
 {:#members:roundoffdayworkingtime}
 
@@ -2799,7 +2529,6 @@ Specifies whether rounding off the day working time edits
 
 
 #### Default Value
-{:.param}
 
 * true
 
@@ -2826,7 +2555,6 @@ Specifies the height of a single row in Gantt. Also, we need to set same height 
 
 
 #### Default Value
-{:.param}
 
 * 30
 
@@ -2846,8 +2574,6 @@ Specifies the height of a single row in Gantt. Also, we need to set same height 
 
 {% endhighlight %}
 
-
-
 ### scheduleEndDate `string`
 {:#members:scheduleenddate}
 
@@ -2856,7 +2582,6 @@ Specifies end date of the Gantt schedule. By default, end date will be rounded t
 
 
 #### Default Value
-{:.param}
 
 * null
 
@@ -2891,7 +2616,6 @@ Specified the format for day view in schedule header
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -2919,7 +2643,6 @@ Specified the format for Hour view in schedule header
 
 
 #### Default Value
-{:.param}
 
 * "HH"
 
@@ -2979,7 +2702,6 @@ Specifies the number of minutes per interval
 </table>
 
 #### Default Value
-{:.param}
 
 * ej.Gantt.minutesPerInterval.Auto
 
@@ -3006,7 +2728,6 @@ Specified the format for month view in schedule header
 
 
 #### Default Value
-{:.param}
 
 * "MMM"
 
@@ -3066,7 +2787,6 @@ Specifies the schedule mode
 </table>
 
 #### Default Value
-{:.param}
 
 * ej.Gantt.ScheduleHeaderType.Week
 
@@ -3121,7 +2841,6 @@ Specifies the round-off mode for the start date in schedule header.
 </table>
 
 #### Default Value
-{:.param}
 
 * ej.Gantt.TimescaleRoundMode.Auto
 
@@ -3148,7 +2867,6 @@ Specified the background for weekends in Gantt
 
 
 #### Default Value
-{:.param}
 
 * "#F2F2F2"
 
@@ -3175,7 +2893,6 @@ Specified the format for week view in schedule header
 
 
 #### Default Value
-{:.param}
 
 * "MMM dd , yyyy"
 
@@ -3203,7 +2920,6 @@ Specified the format for year view in schedule header
 
 
 #### Default Value
-{:.param}
 
 * "yyyy"
 
@@ -3231,7 +2947,6 @@ Specifies the size of the lowest time unit along the timescale, with minimum val
 
 
 #### Default Value
-{:.param}
 
 * "100%"
 
@@ -3259,7 +2974,6 @@ Specifies the start day of the week in week timescale mode
 
 
 #### Default Value
-{:.param}
 
 * 0
 
@@ -3286,7 +3000,7 @@ Specifies start date of the Gantt schedule. By default, start date will be round
 
 
 #### Default Value
-{:.param}
+
 
 * null
 
@@ -3307,6 +3021,47 @@ Specifies start date of the Gantt schedule. By default, start date will be round
 
 {% endhighlight %}
 
+### selectedCellIndexes `array`
+{:#members:selectedcellindexes}
+
+Specifies the selected cell information on rendering Gantt.
+
+### selectedCellIndexes.rowIndex `number`
+{:#members:selectedcellindexes-rowindex}
+
+
+Specifies the row index of the cell to be selected Gantt control
+
+
+#### Default Value
+
+* -1
+
+### selectedCellIndexes.cellIndex `number`
+{:#members:selectedcellindexes-cellindex}
+
+Specifies the cell index to be selected in the row.
+
+
+#### Default Value
+
+* -1
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt(
+ {
+    selectedCellIndexes:[{rowIndex: 2, cellIndex: 3}];
+ });            
+</script>
+
+{% endhighlight %}
 
 ### selectedRowIndex `number`
 {:#members:selectedrowindex}
@@ -3315,7 +3070,6 @@ Specifies the selected row Index in Gantt , the row with given index will highli
 
 
 #### Default Value
-{:.param}
 
 * -1
 
@@ -3336,6 +3090,91 @@ Specifies the selected row Index in Gantt , the row with given index will highli
 
 {% endhighlight %}
 
+### selectionType `enum`
+{:#members:selectiontype}
+
+<ts name = "ej.Gantt.SelectionType"/>
+
+Specifies the row selection type.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Single</td>
+<td class="description">you can select a single row.</td>
+</tr>
+<tr>
+<td class="name">Multiple</td>
+<td class="description">you can select a multiple row.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.Gantt.SelectionType.Single
+
+
+#### Example
+
+
+{% highlight html %}
+          
+<div id="gantt"></div> 
+<script>   
+        $("#gantt").ejGantt({ selectionType:ej.Gantt.SelectionType.Multiple });                      * 
+</script>           
+
+{% endhighlight %}
+
+### selectionMode `enum`
+{:#members:selectionmode}
+
+<ts name = "ej.Gantt.SelectionMode"/>
+
+Specifies the type of selection whether to select row or cell.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Row</td>
+<td class="description">you can select a row.</td>
+</tr>
+<tr>
+<td class="name">Cell</td>
+<td class="description">you can select a cell.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.Gantt.SelectionMode.Row
+
+
+#### Example
+
+
+{% highlight html %}
+          
+<div id="gantt"></div> 
+<script>   
+        $("#gantt").ejGantt({ selectionMode:ej.Gantt.SelectionMode.Row });                      * 
+</script>           
+
+{% endhighlight %}
 
 ### showColumnChooser `boolean`
 {:#members:showcolumnchooser}
@@ -3344,7 +3183,6 @@ Enables or disables the column chooser.
 
 
 #### Default Value
-{:.param}
 
 * false
 
@@ -3362,7 +3200,27 @@ Enables or disables the column chooser.
 
 {% endhighlight %}
 
+### showColumnOptions `boolean`
+{:#members:showcolumnoptions}
 
+Enables/disables the options for inserting , deleting and renaming  columns.       
+
+#### Default Value
+
+* false
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>   
+        $("#gantt").ejGantt({ showColumnOptions:  true });                      * 
+</script>
+
+{% endhighlight %}
 
 ### showGridCellTooltip `boolean`
 {:#members:showgridcelltooltip}
@@ -3370,7 +3228,6 @@ Enables or disables the column chooser.
 Specifies the template for cell tooltip
 
 #### Default Value
-{:.param}
 
 * true
 
@@ -3397,7 +3254,6 @@ Specifies whether to show grid cell tooltip over expander cell alone.
 
 
 #### Default Value
-{:.param}
 
 * true
 
@@ -3424,7 +3280,6 @@ Specifies whether display task progress inside taskbar.
 
 
 #### Default Value
-{:.param}
 
 * true
 
@@ -3451,7 +3306,6 @@ Specifies whether to display resource names for a task beside taskbar.
 
 
 #### Default Value
-{:.param}
 
 * true
 
@@ -3478,7 +3332,6 @@ Specifies whether to display task name beside task bar.
 
 
 #### Default Value
-{:.param}
 
 
 * true
@@ -3513,7 +3366,6 @@ Specifies the height of Gantt control
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -3542,7 +3394,6 @@ Specifies the width of Gantt control
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -3563,49 +3414,7 @@ Specifies the width of Gantt control
 
 {% endhighlight %}
 
-### selectedCellIndexes `array`
-{:#members:selectedcellindexes}
 
-Specifies the selected cell information on rendering Gantt.
-
-### selectedCellIndexes.rowIndex `number`
-{:#members:selectedcellindexes-rowIndex}
-
-
-Specifies the row index of the cell to be selected Gantt control
-
-
-#### Default Value
-{:.param}
-
-* ""
-
-### selectedCellIndexes.cellIndex `number`
-{:#members:selectedcellindexes-cellIndex}
-
-Specifies the cell index to be selected in the row.
-
-
-#### Default Value
-{:.param}
-
-* " "
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                  
-        $("#gantt").ejGantt(
- {
-    selectedCellIndexes:[{rowIndex: 2, cellIndex: 3}];
- });            
-</script>
-
-{% endhighlight %}
 
 ### sortSettings `object`
 {:#members:sortsettings}
@@ -3620,7 +3429,6 @@ Specifies the sorted columns for Gantt
 
 
 #### Default Value
-{:.param}
 
 * []
 
@@ -3645,7 +3453,6 @@ Specifies the field to be sorted in Gantt
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -3670,7 +3477,6 @@ Specifies the sort direction in Gantt
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -3695,7 +3501,6 @@ Specifies splitter position in Gantt.
 
 
 #### Default Value
-{:.param}
 
 * null
 
@@ -3713,6 +3518,56 @@ Specifies splitter position in Gantt.
 
 {% endhighlight %}
 
+### splitterSettings `object`
+{:#members:splittersettings}
+
+Option to configure the splitter position.
+
+
+### splitterSettings.position `string`
+{:#members:splittersettings-position}
+
+Specifies position of the splitter in Gantt , splitter can be placed either based on percentage values or pixel values.
+
+#### Default Value
+
+* ""
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  splitterSettings:{position : "300px"} });
+</script>
+
+{% endhighlight %}
+
+
+### splitterSettings.index `string`
+{:#members:splittersettings-index}
+
+Specifies the position of splitter in Gantt, based on column index in Gantt.
+
+#### Default Value
+
+* ""
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  splitterSettings:{index : "3"} });
+</script>
+
+{% endhighlight %}
 
 ### startDateMapping `string`
 {:#members:startdatemapping}
@@ -3722,7 +3577,6 @@ Specifies the mapping property path for start date of a task in datasource
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -3748,7 +3602,6 @@ Specifies the options for striplines
 
 
 #### Default Value
-{:.param}
 
 * []
 
@@ -3899,6 +3752,198 @@ Specifies the width of the stripline in Gantt
 </script>
 {% endhighlight %}
 
+### taskCollectionMapping `string`
+{:#members:taskcollectionmapping}
+Specifies the mapping property path for assigned task collection for resources in datasource in resource allocation view type.
+
+#### Default Value
+
+* ""
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  taskCollectionMapping : "tasks" });    
+</script>
+
+{% endhighlight %}
+
+### taskIdMapping `string`
+{:#members:taskidmapping}
+
+Specifies the mapping property path for task Id in datasource
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                                  
+        $("#gantt").ejGantt({  taskIdMapping : "ID" }); 
+</script>
+
+{% endhighlight %}
+
+
+### taskNameMapping `string`
+{:#members:tasknamemapping}
+
+Specifies the mapping property path for task name in datasource
+
+
+#### Default Value
+
+* ""
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>          
+        $("#gantt").ejGantt({  taskNameMapping : "Name" });     
+</script>
+
+{% endhighlight %}
+
+### taskSchedulingMode `enum`
+{:#members:taskschedulingmode}
+
+<ts name = "ej.Gantt.TaskSchedulingMode"/>
+
+Specifies the task scheduling mode for a project and this will be set to all the tasks available in the project
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Auto</td>
+<td class="description">All the tasks in the project will be displayed in auto scheduled mode,
+ where the tasks are scheduled automatically over non-working days and holidays.</td>
+</tr>
+<tr>
+<td class="name">Manual</td>
+<td class="description">All the tasks in the project will be displayed in manually scheduled mode.</td>
+</tr>
+<tr>
+<td class="name">Custom</td>
+<td class="description">Project consists of tasks with both auto and manually scheduled modes, based on the datasource values</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+*  ej.Gantt.TaskSchedulingMode.Auto
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  
+                        taskSchedulingMode : ej.Gantt.TaskSchedulingMode.Auto });
+</script>
+
+{% endhighlight %}
+
+### taskSchedulingModeMapping `string`
+{:#members:taskschedulingmodemapping }
+
+Specifies the mapping property path for the task scheduling mode for a task in datasource
+
+#### Default Value
+
+* "auto"
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                  
+        $("#gantt").ejGantt({  
+                        taskSchedulingModeMapping : "taskMode"});
+</script>
+
+{% endhighlight %}
+
+### taskType `enum`
+{:#members:tasktype}
+
+<ts name = "ej.Gantt.TaskType"/>
+
+Specifies the nature of a task for calculating the work,  and it can fixed duration, fixed work and fixed resource unit
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">FixedUnit</td>
+<td class="description">Resource unit remains constant while editing the work and duration values.</td>
+</tr>
+<tr>
+<td class="name">FixedWork</td>
+<td class="description">Work value of a task remains constant while editing duration and resource unit values.</td>
+</tr>
+<tr>
+<td class="name">FixedDuration</td>
+<td class="description">Duration value remains constant while editing work and resource unit values.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+*  ej.Gantt.TaskType.FixedUnit
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+        $("#gantt").ejGantt({  
+                        taskType : ej.Gantt.TaskType.FixedWork });
+</script>
+
+{% endhighlight %}
+
 ### taskbarBackground `string`
 {:#members:taskbarbackground}
 
@@ -3906,7 +3951,6 @@ Specifies the background of the taskbar in Gantt
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -3933,7 +3977,6 @@ Specifies the template script for customized tooltip for taskbar editing in Gant
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -3954,7 +3997,6 @@ Specifies the template script for customized tooltip for taskbar editing in Gant
 
 {% endhighlight %}
 
-
 ### taskbarEditingTooltipTemplateId `string`
 {:#members:taskbareditingtooltiptemplateid}
 
@@ -3963,7 +4005,6 @@ Specifies the template Id for customized tooltip for taskbar editing in Gantt
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -3984,7 +4025,6 @@ Specifies the template Id for customized tooltip for taskbar editing in Gantt
 
 {% endhighlight %}
 
-
 ### taskbarHeight `number`
 {:#members:taskbarheight}
 
@@ -3993,7 +4033,6 @@ Specifies the height of taskBar in Gantt.
 
 
 #### Default Value
-{:.param}
 
 * 20
 
@@ -4014,34 +4053,6 @@ Specifies the height of taskBar in Gantt.
 
 {% endhighlight %}
 
-### taskbarTooltipTemplate `string`
-{:#members:taskbartooltiptemplate}
-
-Specifies the template for tooltip on mouse action on taskbars
-
-
-#### Default Value
-{:.param}
-
-* ""
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                  
-        $("#gantt").ejGantt(
- {
-    taskbarTooltipTemplate: "TooltipTemplate"
- });            
-</script>
-
-{% endhighlight %}
-
 ### taskbarTemplate `string`
 {:#members:taskbartemplate}
 
@@ -4049,7 +4060,6 @@ To Specify the JsRender script Id to customize the task bar with our preference
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -4070,15 +4080,13 @@ To Specify the JsRender script Id to customize the task bar with our preference
 
 {% endhighlight %}
 
+### taskbarTooltipTemplate `string`
+{:#members:taskbartooltiptemplate}
 
-### milestoneTemplate `string`
-{:#members:milestonetemplate}
-
-To Specify the JsRender script Id to customize the mile stone with our preference
+Specifies the template for tooltip on mouse action on taskbars
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -4090,35 +4098,10 @@ To Specify the JsRender script Id to customize the mile stone with our preferenc
 {% highlight html %}
  
 <div id="gantt"></div> 
-<script>          
+<script>                  
         $("#gantt").ejGantt(
  {
-    milestoneTemplate: "MilestoneTemplate"
- });            
-</script>
-
-{% endhighlight %}
-
-### readOnly `boolean`
-{:#members:readonly}
-
-Enables or disables Gantt to read-only mode
-
-#### Default Value
-{:.param}
-
-* "false"
-
-#### Example
-{:.example}
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>          
-        $("#gantt").ejGantt(
- {
-    readOnly: "true"
+    taskbarTooltipTemplate: "TooltipTemplate"
  });            
 </script>
 
@@ -4131,7 +4114,6 @@ Specifies the template id for tooltip on mouse action on taskbars
 
 
 #### Default Value
-{:.param}
 
 * ""
 
@@ -4152,59 +4134,6 @@ Specifies the template id for tooltip on mouse action on taskbars
 
 {% endhighlight %}
 
-
-### taskIdMapping `string`
-{:#members:taskidmapping}
-
-Specifies the mapping property path for task Id in datasource
-
-
-#### Default Value
-{:.param}
-
-* ""
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                                  
-        $("#gantt").ejGantt({  taskIdMapping : "ID" }); 
-</script>
-
-{% endhighlight %}
-
-
-### taskNameMapping `string`
-{:#members:tasknamemapping}
-
-Specifies the mapping property path for task name in datasource
-
-
-#### Default Value
-{:.param}
-
-* ""
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>          
-        $("#gantt").ejGantt({  taskNameMapping : "Name" });     
-</script>
-
-{% endhighlight %}
-
-
 ### toolbarSettings `object`
 {:#members:toolbarsettings}
 
@@ -4218,7 +4147,6 @@ Specifies the state of enabling or disabling toolbar
 
 
 #### Default Value
-{:.param}
 
 * true
 
@@ -4306,7 +4234,6 @@ Specifies the list of toolbar items to be rendered in Gantt toolbar
 </table>
 
 #### Default Value
-{:.param}
 * []
 
 #### Example
@@ -4394,8 +4321,6 @@ Allows the user to display custom tooltip text for Gantt custom toolbar items.
 
 {% endhighlight %}
 
-
-
 ### treeColumnIndex `number`
 {:#members:treecolumnindex}
 
@@ -4403,7 +4328,6 @@ Specifies the tree expander column in Gantt
 
 
 #### Default Value
-{:.param}
 
 * 0
 
@@ -4424,56 +4348,12 @@ Specifies the tree expander column in Gantt
 
 {% endhighlight %}
 
-### selectionMode `enum`
-{:#members:selectionmode}
-
-<ts name = "ej.Gantt.SelectionMode"/>
-
-Specifies the type of selection whether to select row or cell.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">Row</td>
-<td class="description">you can select a row.</td>
-</tr>
-<tr>
-<td class="name">Cell</td>
-<td class="description">you can select a cell.</td>
-</tr>
-</tbody>
-</table>
-
-#### Default Value
-
-* ej.Gantt.SelectionMode.Row
-
-
-#### Example
-
-
-{% highlight html %}
-          
-<div id="gantt"></div> 
-<script>   
-        $("#gantt").ejGantt({ selectionMode:ej.Gantt.SelectionMode.Row });                      * 
-</script>           
-
-{% endhighlight %}
-
 ### validateManualTasksOnLinking `boolean`
 {:#members:validatemanualtasksonlinking}
 
 Enables or disables the schedule date validation while connecting a manually scheduled task with predecessor
 
 #### Default Value
-{:.param}
 
 * "false"
 
@@ -4490,106 +4370,6 @@ Enables or disables the schedule date validation while connecting a manually sch
  {
     validateManualTasksOnLinking: true
  });            
-</script>
-
-{% endhighlight %}
-
-### weekendBackground `string`
-{:#members:weekendbackground}
-
-Specifies the weekendBackground color in Gantt
-
-
-#### Default Value
-{:.param}
-
-* "#F2F2F2"
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>          
-        $("#gantt").ejGantt(
- {
-    weekendBackground: "blue"
- });            
-</script>
-
-{% endhighlight %}
-
-
-### workingTimeScale `enum`
-{:#members:workingtimescale}
-
-<ts name = "ej.Gantt.workingTimeScale"/>
-
-Specifies the working time schedule of day
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">TimeScale8Hours</td>
-<td class="description">Sets eight hour timescale.</td>
-</tr>
-<tr>
-<td class="name">TimeScale24Hours</td>
-<td class="description">Sets twenty four hour timescale.</td>
-</tr>
-</tbody>
-</table>
-
-#### Default Value
-{:.param}
-
-* ej.Gantt.workingTimeScale.TimeScale8Hours
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>                          
-        $("#gantt").ejGantt({  
-                        workingTimeScale : ej.Gantt.workingTimeScale.TimeScale24Hours
-            });
-</script>
-
-{% endhighlight %}
-
-### workWeek `array`
-{:#members:workweek}
-
-Gets or sets the working days of a week in a project.
-
-#### Default Value
-
-* ["Monday","Tuesday","Wednesday","Thursday","Friday"]
-
-#### Example
-
-{:.example}
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>          
-$("#gantt").ejGantt(
-{      
-        workweek:["Sunday","Monday","Tuesday","Wednesday","Thursday"],
-});            
 </script>
 
 {% endhighlight %}
@@ -4621,7 +4401,6 @@ Specifies the view type for a project in the Gantt.
 </table>
 
 #### Default Value
-{:.param}
 
 * ej.Gantt.ViewType.ProjectView
 
@@ -4640,112 +4419,172 @@ Specifies the view type for a project in the Gantt.
 
 {% endhighlight %}
 
-### groupCollection `array`
-{:#members:groupcollection}
+### weekendBackground `string`
+{:#members:weekendbackground}
 
-Specifies the data collection for grouping the resources in resource allocation view in Gantt.
+Specifies the weekendBackground color in Gantt
+
 
 #### Default Value
-{:.param}
 
-* []
+* "#F2F2F2"
+
 
 #### Example
 {:.example}
 
+
 {% highlight html %}
  
 <div id="gantt"></div> 
-<script>                  
+<script>          
         $("#gantt").ejGantt(
  {
-   groupCollection:[{id:1; name:"Team A" }]     
+    weekendBackground: "blue"
  });            
 </script>
 
 {% endhighlight %}
 
-### resourceCollectionMapping `string`
-{:#members:resourcecollectionmapping}
-Specifies the mapping property path for resource collection in datasource in resource allocation view type.
+### workMapping `string`
+{:#members:workmapping}
+
+Specifies the mapping property path for the work field of a task in the data source. When it is mapped the end date and duration for a task will be calculated automatically.
+
 
 #### Default Value
-{:.param}
 
 * ""
+
 
 #### Example
 {:.example}
 
+
 {% highlight html %}
  
 <div id="gantt"></div> 
-<script>                          
-        $("#gantt").ejGantt({  resourceCollectionMapping : "resources" });    
+<script>                  
+        $("#gantt").ejGantt({  workMapping : "estimatedHours" });
 </script>
 
 {% endhighlight %}
 
-### taskCollectionMapping `string`
-{:#members:taskcollectionmapping}
-Specifies the mapping property path for assigned task collection for resources in datasource in resource allocation view type.
+### workUnit `enum`
+{:#members:workunit}
+
+<ts name = "ej.Gantt.WorkUnit"/>
+
+Specifies the unit for the work involved in a task and it can be day, hour or minute
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Day</td>
+<td class="description">Displays the work involved in a task in days.</td>
+</tr>
+<tr>
+<td class="name">Hour</td>
+<td class="description">Displays the work involved in a task in hours.</td>
+</tr>
+<tr>
+<td class="name">Minute</td>
+<td class="description">Displays the work involved in a task in minutes</td>
+</tr>
+</tbody>
+</table>
 
 #### Default Value
-{:.param}
 
-* ""
+*  ej.Gantt.WorkUnit.Hour
+
 
 #### Example
 {:.example}
+
 
 {% highlight html %}
  
 <div id="gantt"></div> 
 <script>                          
-        $("#gantt").ejGantt({  taskCollectionMapping : "tasks" });    
+        $("#gantt").ejGantt({  
+                        workUnit : ej.Gantt.WorkUnit.Day });
 </script>
 
 {% endhighlight %}
 
-### groupIdMapping `string`
-{:#members:groupidmapping}
-Specifies the mapping property path for group ID in datasource in resource allocation view type.
+### workWeek `array`
+{:#members:workweek}
+
+Gets or sets the working days of a week in a project.
 
 #### Default Value
-{:.param}
 
-* ""
+* ["Monday","Tuesday","Wednesday","Thursday","Friday"]
 
 #### Example
-{:.example}
 
+{:.example}
 {% highlight html %}
  
 <div id="gantt"></div> 
-<script>                          
-        $("#gantt").ejGantt({  groupIdMapping : "groupId" });    
+<script>          
+$("#gantt").ejGantt(
+{      
+        workweek:["Sunday","Monday","Tuesday","Wednesday","Thursday"],
+});            
 </script>
 
 {% endhighlight %}
 
+### workingTimeScale `enum`
+{:#members:workingtimescale}
 
-### groupNameMapping `string`
-{:#members:groupnamemapping}
-Specifies the mapping property path for group name in datasource in resource allocation view type.
+<ts name = "ej.Gantt.workingTimeScale"/>
+
+Specifies the working time schedule of day
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">TimeScale8Hours</td>
+<td class="description">Sets eight hour timescale.</td>
+</tr>
+<tr>
+<td class="name">TimeScale24Hours</td>
+<td class="description">Sets twenty four hour timescale.</td>
+</tr>
+</tbody>
+</table>
 
 #### Default Value
-{:.param}
 
-* ""
+* ej.Gantt.workingTimeScale.TimeScale8Hours
+
 
 #### Example
 {:.example}
+
 
 {% highlight html %}
  
 <div id="gantt"></div> 
 <script>                          
-        $("#gantt").ejGantt({  groupNameMapping : "groupName" });    
+        $("#gantt").ejGantt({  
+                        workingTimeScale : ej.Gantt.workingTimeScale.TimeScale24Hours
+            });
 </script>
 
 {% endhighlight %}
@@ -4795,83 +4634,6 @@ ganttObj.addRecord(data, ej.Gantt.AddRowPosition.Child); // To add a task
 </script>
 {% endhighlight %}
 
-### setSplitterIndex(index)
-{:#methods:setsplitterindex}
-
-Positions the splitter by the specified column index.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">index</td>
-<td class="type">Number</td>
-<td class="description">Set the splitter position based on column index.</td>
-</tr>
-</tbody>
-</table>
-
-#### Example
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
- 
-<script>
-// Create Gantt object
-var ganttObj = $("#gantt").data("ejGantt");
-ganttObj.setSplitterIndex(3); // Set splitter position after column index 3
-</script>
-{% endhighlight %}
-
-### sortColumn(mappingName, columnSortDirection)
-{:#methods:sortcolumn}
-
-To sort the column in required direction
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">mappingName</td>
-<td class="type">string</td>
-<td class="description">Defines the column's mapping name in which sorting have to be performed</td>
-</tr>
-<tr>
-<td class="name">columnSortDirection</td>
-<td class="type">string</td>
-<td class="description">Defines the sort direction whether the column has to sorted in ascending/descending order. By default it is sorting in an ascending order</td>
-</tr>
-</tbody>
-</table>
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
- 
-<script>
-// Create Gantt
-var ganttObj = $("#gantt").data("ejGantt");
-ganttObj.sortColumn("startDate","ascending"); // To sort a column
-</script>
-{% endhighlight %}
-
 ### cancelEdit()
 {:#methods:canceledit}
 
@@ -4888,6 +4650,23 @@ To cancel the edited state of an item in Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 ganttObj.cancelEdit(); // To cancel edited
 </script>
+{% endhighlight %}
+
+### clearFilter()
+{:#methods:clearfilter}
+
+To clear all the filtered columns in Gantt.
+
+#### Example
+
+{% highlight html %}
+
+<div id="gantt"></div>  
+<script>
+        var ganttObj = $("#gantt").data("ejGantt");
+        ganttObj.clearFilter();
+</script>
+
 {% endhighlight %}
 
 ### collapseAllItems()
@@ -4907,6 +4686,48 @@ To collapse all the parent items in Gantt
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 ganttObj.collapseAllItems(); // To collapse all parent items in Gantt
+</script>
+{% endhighlight %}
+
+### deleteDependency(fromTaskId,toTaskId)
+{:#methods:deletedependency}
+
+To delete the dependency between the two tasks.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fromTaskId</td>
+<td class="type">number</td>
+<td class="description">taskID of predecessor task</td>
+</tr>
+<tr>
+<td class="name">toTaskId</td>
+<td class="type">number</td>
+<td class="description">taskID of successor task</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+ 
+<script>
+// Create Gantt
+var ganttObj = $("#gantt").data("ejGantt");
+ganttObj.deleteDependency(3, 6); // To delete dependency between two tasks.
 </script>
 {% endhighlight %}
 
@@ -4950,7 +4771,6 @@ var ganttObj = $("#gantt").data("ejGantt");
 ganttObj.destroy(); // destroy the Gantt
 </script>
 {% endhighlight %}
-
 
 ### expandAllItems()
 {:#methods:expandallitems}
@@ -5069,6 +4889,59 @@ $("#Gantt").ejGantt("export","/api/GanttExport/ExcelExport");
 </script>
 {% endhighlight %}
 
+### filterColumn(fieldName, filterOperator, filterValue, [predicate], [matchCase])
+{:#methods:filtercolumn}
+
+Sends filtering request to filter a column in Gantt dynamically.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fieldName</td>
+<td class="type">string</td>
+<td class="description">Pass the field name of the column.</td>
+</tr>
+<tr>
+<td class="name">filterOperator</td>
+<td class="type">string</td>
+<td class="description">string/integer/date operator.</td>
+</tr>
+<tr>
+<td class="name">filterValue</td>
+<td class="type">string</td>
+<td class="description">Pass the value to be filtered in a column.</td>
+</tr>
+<tr>
+<td class="name">predicate</td>
+<td class="type">string</td>
+<td class="description">Optional - Pass the predicate as and/or.</td>
+</tr>
+<tr>
+<td class="name">matchCase</td>
+<td class="type">boolean</td>
+<td class="description">Optional - pass the match case value as true/false.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="gantt"></div>  
+<script>
+        var obj = $("#gantt").ejGantt("instance");
+        obj.filterColumn("taskName", "startswith", "plan");
+</script>
+
+{% endhighlight %}
 
 ### hideColumn(headerText)
 {:#methods:hidecolumn}
@@ -5191,7 +5064,6 @@ ganttObj.outdentItem(); // To outdent a selected item in Gantt
 </script>
 {% endhighlight %}
 
-
 ### saveEdit()
 {:#methods:saveedit}
 
@@ -5209,6 +5081,43 @@ To save the edited state of an item in Gantt
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
 ganttObj.saveEdit(); // To save edited state of an item
+</script>
+{% endhighlight %}
+
+### searchItem(searchString)
+{:#methods:searchitem}
+
+To search an item with search string provided at the run time
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">searchString</td>
+<td class="type">string</td>
+<td class="description">you can pass a text to search in Gantt Control.</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+ 
+<script>
+// Create Gantt Object
+var ganttObj = $("#gantt").data("ejGantt");
+ganttObj.searchItem($("#text").val()); // To search a task
 </script>
 {% endhighlight %}
 
@@ -5293,11 +5202,10 @@ To select multiple rows dynamically.
 </script>
 {% endhighlight %}
 
+### setSplitterIndex(index)
+{:#methods:setsplitterindex}
 
-### searchItem(searchString)
-{:#methods:searchitem}
-
-To search an item with search string provided at the run time
+Positions the splitter by the specified column index.
 
 <table class="params">
 <thead>
@@ -5309,28 +5217,25 @@ To search an item with search string provided at the run time
 </thead>
 <tbody>
 <tr>
-<td class="name">searchString</td>
-<td class="type">string</td>
-<td class="description">you can pass a text to search in Gantt Control.</td>
+<td class="name">index</td>
+<td class="type">Number</td>
+<td class="description">Set the splitter position based on column index.</td>
 </tr>
 </tbody>
 </table>
 
-
 #### Example
-
 
 {% highlight html %}
  
 <div id="gantt"></div> 
  
 <script>
-// Create Gantt Object
+// Create Gantt object
 var ganttObj = $("#gantt").data("ejGantt");
-ganttObj.searchItem($("#text").val()); // To search a task
+ganttObj.setSplitterIndex(3); // Set splitter position after column index 3
 </script>
 {% endhighlight %}
-
 
 ### setSplitterPosition(width)
 {:#methods:setsplitterposition}
@@ -5369,7 +5274,6 @@ ganttObj.ejGantt("setSplitterPosition","40%");
 </script>
 {% endhighlight %}
 
-
 ### showColumn(headerText)
 {:#methods:showcolumn}
 
@@ -5407,11 +5311,10 @@ ganttObj.showColumn("Task Name");
 </script>
 {% endhighlight %}
 
+### showCriticalPath(isShown)
+{:#methods:showcriticalpath}
 
-### updateTaskId(currentId, newId)
-{:#methods:updatetaskid}
-
-To change an existing Gantt ID by new ID value dynamically
+To show/hide the critical tasks in current project.
 
 <table class="params">
 <thead>
@@ -5423,14 +5326,48 @@ To change an existing Gantt ID by new ID value dynamically
 </thead>
 <tbody>
 <tr>
-<td class="name">currentId</td>
-<td class="type">number</td>
-<td class="description">you can pass an existing ID value to be change</td>
+<td class="name">isShown</td>
+<td class="type">boolean</td>
+<td class="description">To show/hide the critical tasks</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="gantt"></div>  
+<script>
+        var ganttObj = $("#gantt").data("ejGantt");
+        ganttObj.showCriticalPath(true);
+</script>
+
+{% endhighlight %}
+
+### sortColumn(mappingName, columnSortDirection)
+{:#methods:sortcolumn}
+
+To sort the column in required direction
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">mappingName</td>
+<td class="type">string</td>
+<td class="description">Defines the column's mapping name in which sorting have to be performed</td>
 </tr>
 <tr>
-<td class="name">newId</td>
-<td class="type">number</td>
-<td class="description">you can pass a new ID value to be change</td>
+<td class="name">columnSortDirection</td>
+<td class="type">string</td>
+<td class="description">Defines the sort direction whether the column has to sorted in ascending/descending order. By default it is sorting in an ascending order</td>
 </tr>
 </tbody>
 </table>
@@ -5446,7 +5383,57 @@ To change an existing Gantt ID by new ID value dynamically
 <script>
 // Create Gantt
 var ganttObj = $("#gantt").data("ejGantt");
-ganttObj.updateTaskId(5, 15);
+ganttObj.sortColumn("startDate","ascending"); // To sort a column
+</script>
+{% endhighlight %}
+
+### updateDependency(fromTaskId,toTaskId, predecessorType, offset)
+{:#methods:updatedependency}
+
+To update the predecessor type and offset value for existing task dependency.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fromTaskId</td>
+<td class="type">number</td>
+<td class="description">taskID of predecessor task</td>
+</tr>
+<tr>
+<td class="name">toTaskId</td>
+<td class="type">number</td>
+<td class="description">taskID of successor task</td>
+</tr>
+<tr>
+<td class="name">predecessorType</td>
+<td class="type">string</td>
+<td class="description">Type of dependency task.</td>
+</tr>
+<tr>
+<td class="name">offset</td>
+<td class="type">number</td>
+<td class="description">Offset value of dependency task.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+ 
+<script>
+// Create Gantt
+var ganttObj = $("#gantt").data("ejGantt");
+ganttObj.updateDependency(3, 6, "SS", 3); // To update predecessor type and offset value.
 </script>
 {% endhighlight %}
 
@@ -5525,44 +5512,10 @@ To update the value of Gantt record by using row index.
 
 {% endhighlight %}
 
-### showCriticalPath(isShown)
-{:#methods:showcriticalpath}
+### updateTaskId(currentId, newId)
+{:#methods:updatetaskid}
 
-To show/hide the critical tasks in current project.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">isShown</td>
-<td class="type">boolean</td>
-<td class="description">To show/hide the critical tasks</td>
-</tr>
-</tbody>
-</table>
-
-#### Example
-
-{% highlight html %}
- 
-<div id="gantt"></div>  
-<script>
-        var ganttObj = $("#gantt").data("ejGantt");
-        ganttObj.showCriticalPath(true);
-</script>
-
-{% endhighlight %}
-
-### filterColumn(fieldName, filterOperator, filterValue, [predicate], [matchCase])
-{:#methods:filtercolumn}
-
-Sends filtering request to filter a column in Gantt dynamically.
+To change an existing Gantt ID by new ID value dynamically
 
 <table class="params">
 <thead>
@@ -5574,60 +5527,31 @@ Sends filtering request to filter a column in Gantt dynamically.
 </thead>
 <tbody>
 <tr>
-<td class="name">fieldName</td>
-<td class="type">string</td>
-<td class="description">Pass the field name of the column.</td>
+<td class="name">currentId</td>
+<td class="type">number</td>
+<td class="description">you can pass an existing ID value to be change</td>
 </tr>
 <tr>
-<td class="name">filterOperator</td>
-<td class="type">string</td>
-<td class="description">string/integer/date operator.</td>
-</tr>
-<tr>
-<td class="name">filterValue</td>
-<td class="type">string</td>
-<td class="description">Pass the value to be filtered in a column.</td>
-</tr>
-<tr>
-<td class="name">predicate</td>
-<td class="type">string</td>
-<td class="description">Optional - Pass the predicate as and/or.</td>
-</tr>
-<tr>
-<td class="name">matchCase</td>
-<td class="type">boolean</td>
-<td class="description">Optional - pass the match case value as true/false.</td>
+<td class="name">newId</td>
+<td class="type">number</td>
+<td class="description">you can pass a new ID value to be change</td>
 </tr>
 </tbody>
 </table>
 
+
 #### Example
+
 
 {% highlight html %}
  
-<div id="gantt"></div>  
+<div id="gantt"></div> 
+ 
 <script>
-        var obj = $("#gantt").ejGantt("instance");
-        obj.filterColumn("taskName", "startswith", "plan");
+// Create Gantt
+var ganttObj = $("#gantt").data("ejGantt");
+ganttObj.updateTaskId(5, 15);
 </script>
-
-{% endhighlight %}
-
-### clearFilter()
-{:#methods:clearfilter}
-
-To clear all the filtered columns in Gantt.
-
-#### Example
-
-{% highlight html %}
-
-<div id="gantt"></div>  
-<script>
-        var ganttObj = $("#gantt").data("ejGantt");
-        ganttObj.clearFilter();
-</script>
-
 {% endhighlight %}
 
 ## Events
@@ -5879,6 +5803,75 @@ Triggered for every Gantt action before its starts.
 <td class="name">requestType</td>
 <td class="type">string</td>
 <td class="description">Returns request type.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Event parameters before opening of task dependency edit dialog:
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type">object</td>
+<td class="description">Returns the task dependency data.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type">string</td>
+<td class="description">Returns request type as "beforeDependencyEditDialogOpen".</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Event parameters after opening of edit task dependency dialog:
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type">object</td>
+<td class="description">Returns the task dependency data.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type">string</td>
+<td class="description">Returns the edit dialog element.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type">string</td>
+<td class="description">Returns request type as "afterDependencyEditDialogOpen".</td>
 </tr>
 </tbody>
 </table>
@@ -6244,89 +6237,6 @@ $("#gantt").ejGantt({
 </script>
 {% endhighlight %}
 
-### cellSelecting
-{:#events:cellselecting}
-
-Triggered before selecting a cell
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description">Arguments when cellSelecting event is triggered.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">cellIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the cell index on the selection.</td>
-</tr>
-<tr>
-<td class="name">rowIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the row index on the selection</td>
-</tr>
-<tr>
-<td class="name">targetCell</td>
-<td class="type">object</td>
-<td class="description">Returns the selecting cell element</td>
-</tr>
-<tr>
-<td class="name">targetRow</td>
-<td class="type">object</td>
-<td class="description">Returns the selecting row element</td>
-</tr>
-<tr>
-<td class="name">data</td>
-<td class="type">object</td>
-<td class="description">Returns the selecting record object</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type">object</td>
-<td class="description">Returns the Gantt object Model</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>
-$("#gantt").ejGantt({
-   cellSelecting: function (args) {}
-});
-</script>
-{% endhighlight %}
-
 ### cellSelected
 {:#events:cellselected}
 
@@ -6435,12 +6345,10 @@ $("#gantt").ejGantt({
 </script>
 {% endhighlight %}
 
+### cellSelecting
+{:#events:cellselecting}
 
-### rowDrag
-{:#events:rowdrag}
-
-
-Triggered while dragging a row in Gantt control
+Triggered before selecting a cell
 
 <table class="params">
 <thead>
@@ -6454,7 +6362,7 @@ Triggered while dragging a row in Gantt control
 <tr>
 <td class="name">argument</td>
 <td class="type">Object</td>
-<td class="description">Arguments when dragging a row.
+<td class="description">Arguments when cellSelecting event is triggered.
 <table class="params">
 <thead>
 <tr>
@@ -6470,44 +6378,34 @@ Triggered while dragging a row in Gantt control
 <td class="description">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">draggedRow</td>
-<td class="type">object</td>
-<td class="description">Returns the row which we start to drag.</td>
+<td class="name">cellIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the cell index on the selection.</td>
 </tr>
 <tr>
-<td class="name">draggedRowIndex</td>
+<td class="name">rowIndex</td>
 <td class="type">number</td>
-<td class="description">Returns the row index which we start to drag.</td>
+<td class="description">Returns the row index on the selection</td>
+</tr>
+<tr>
+<td class="name">targetCell</td>
+<td class="type">object</td>
+<td class="description">Returns the selecting cell element</td>
 </tr>
 <tr>
 <td class="name">targetRow</td>
 <td class="type">object</td>
-<td class="description">Returns the row on which we are dragging.</td>
+<td class="description">Returns the selecting row element</td>
 </tr>
 <tr>
-<td class="name">targetRowIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the row index on which we are dragging.</td>
-</tr>
-<tr>
-<td class="name">canDrop</td>
-<td class="type">boolean</td>
-<td class="description">Returns that we can drop over that record or not.</td>
+<td class="name">data</td>
+<td class="type">object</td>
+<td class="description">Returns the selecting record object</td>
 </tr>
 <tr>
 <td class="name">model</td>
 <td class="type">object</td>
-<td class="description">Returns the Gantt model.</td>
-</tr>
-<tr>
-<td class="name">requestType</td>
-<td class="type">string</td>
-<td class="description">Returns request type.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description">Returns the name of the event.</td>
+<td class="description">Returns the Gantt object Model</td>
 </tr>
 </tbody>
 </table>
@@ -6515,8 +6413,6 @@ Triggered while dragging a row in Gantt control
 </tr>
 </tbody>
 </table>
-
-
 
 
 #### Example
@@ -6527,186 +6423,10 @@ Triggered while dragging a row in Gantt control
 <div id="gantt"></div> 
 <script>
 $("#gantt").ejGantt({
-   rowDrag: function (args) {}
+   cellSelecting: function (args) {}
 });
 </script>
 {% endhighlight %}
-
-
-### rowDragStart
-{:#events:rowdragstart}
-
-
-Triggered while start to drag row in Gantt control
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description">Arguments when drag starts.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">draggedRow</td>
-<td class="type">object</td>
-<td class="description">Returns the row which we start to drag.</td>
-</tr>
-<tr>
-<td class="name">draggedRowIndex</td>
-<td class="type">boolean</td>
-<td class="description">Returns the row index which we start to drag.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type">object</td>
-<td class="description">Returns the Gantt model.</td>
-</tr>
-<tr>
-<td class="name">requestType</td>
-<td class="type">string</td>
-<td class="description">Returns request type.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description">Returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>
-$("#gantt").ejGantt({
-   rowDragStart: function (args) {}
-});
-</script>
-{% endhighlight %}
-
-
-### rowDragStop
-{:#events:rowdragstop}
-
-
-Triggered while drop a row in Gantt control
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type">Object</td>
-<td class="description">Arguments when dragging a row.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">cancel</td>
-<td class="type">boolean</td>
-<td class="description">Returns the cancel option value.</td>
-</tr>
-<tr>
-<td class="name">draggedRow</td>
-<td class="type">object</td>
-<td class="description">Returns the row which we start to drag.</td>
-</tr>
-<tr>
-<td class="name">draggedRowIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the row index which we start to drag.</td>
-</tr>
-<tr>
-<td class="name">targetRow</td>
-<td class="type">object</td>
-<td class="description">Returns the row which we are dropped to row.</td>
-</tr>
-<tr>
-<td class="name">targetRowIndex</td>
-<td class="type">number</td>
-<td class="description">Returns the row index which we are dropped to row.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type">object</td>
-<td class="description">Returns the Gantt model.</td>
-</tr>
-<tr>
-<td class="name">requestType</td>
-<td class="type">string</td>
-<td class="description">Returns request type.</td>
-</tr>
-<tr>
-<td class="name">type</td>
-<td class="type">string</td>
-<td class="description">Returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-
-
-
-#### Example
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>
-$("#gantt").ejGantt({
-   rowDragStop: function (args) {}
-});
-</script>
-{% endhighlight %}
-
-
 
 ### collapsed
 {:#events:collapsed}
@@ -7489,6 +7209,281 @@ $("#gantt").ejGantt({
 </script>
 {% endhighlight %}
 
+### rowDrag
+{:#events:rowdrag}
+
+
+Triggered while dragging a row in Gantt control
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when dragging a row.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">draggedRow</td>
+<td class="type">object</td>
+<td class="description">Returns the row which we start to drag.</td>
+</tr>
+<tr>
+<td class="name">draggedRowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the row index which we start to drag.</td>
+</tr>
+<tr>
+<td class="name">targetRow</td>
+<td class="type">object</td>
+<td class="description">Returns the row on which we are dragging.</td>
+</tr>
+<tr>
+<td class="name">targetRowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the row index on which we are dragging.</td>
+</tr>
+<tr>
+<td class="name">canDrop</td>
+<td class="type">boolean</td>
+<td class="description">Returns that we can drop over that record or not.</td>
+</tr>
+<tr>
+<td class="name">dropPosition </td>
+<td class="type">string</td>
+<td class="description">Returns the drop position value on current target row.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the Gantt model.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type">string</td>
+<td class="description">Returns request type.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+<tr>
+<td class="name">roundOffDuration</td>
+<td class="type">boolean</td>
+<td class="description">Duration is rounded off when it is set true.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
+$("#gantt").ejGantt({
+   rowDrag: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+
+### rowDragStart
+{:#events:rowdragstart}
+
+
+Triggered while start to drag row in Gantt control
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when drag starts.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">draggedRow</td>
+<td class="type">object</td>
+<td class="description">Returns the row which we start to drag.</td>
+</tr>
+<tr>
+<td class="name">draggedRowIndex</td>
+<td class="type">boolean</td>
+<td class="description">Returns the row index which we start to drag.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the Gantt model.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type">string</td>
+<td class="description">Returns request type.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
+$("#gantt").ejGantt({
+   rowDragStart: function (args) {}
+});
+</script>
+{% endhighlight %}
+
+
+### rowDragStop
+{:#events:rowdragstop}
+
+
+Triggered while drop a row in Gantt control
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type">Object</td>
+<td class="description">Arguments when dragging a row.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type">boolean</td>
+<td class="description">Returns the cancel option value.</td>
+</tr>
+<tr>
+<td class="name">draggedRow</td>
+<td class="type">object</td>
+<td class="description">Returns the row which we start to drag.</td>
+</tr>
+<tr>
+<td class="name">draggedRowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the row index which we start to drag.</td>
+</tr>
+<tr>
+<td class="name">targetRow</td>
+<td class="type">object</td>
+<td class="description">Returns the row which we are dropped to row.</td>
+</tr>
+<tr>
+<td class="name">targetRowIndex</td>
+<td class="type">number</td>
+<td class="description">Returns the row index which we are dropped to row.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type">object</td>
+<td class="description">Returns the Gantt model.</td>
+</tr>
+<tr>
+<td class="name">requestType</td>
+<td class="type">string</td>
+<td class="description">Returns request type.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type">string</td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
+$("#gantt").ejGantt({
+   rowDragStop: function (args) {}
+});
+</script>
+{% endhighlight %}
 
 ### rowSelected
 {:#events:rowselected}
@@ -7652,6 +7647,82 @@ $("#gantt").ejGantt({
 </script>
 {% endhighlight %}
 
+### taskbarClick
+{:#events:taskbarclick}
+
+Triggered when taskbar item is clicked in Gantt.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Arguments when taskbarClick event is triggered.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns currently clicked row data</td>
+</tr>
+<tr>
+<td class="name">index</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the current item index.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the Gantt model.</td>
+</tr>
+<tr>
+<td class="name">taskbarElement</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the clicked row element</td>
+</tr>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Returns the target element.</td>
+</tr>
+<tr>        
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
+$("#gantt").ejGantt({
+   taskbarClick: function (args) {}
+});
+</script>
+{% endhighlight %}
 
 ### taskbarEdited
 {:#events:taskbaredited}
@@ -7799,6 +7870,11 @@ Triggered while editing the Gantt chart (dragging, resizing the taskbar )
 <td class="type">string</td>
 <td class="description">Returns the name of the event.</td>
 </tr>
+<tr>
+<td class="name">roundOffDuration</td>
+<td class="type">boolean</td>
+<td class="description">Returns duration value will be round-off or not.</td>
+</tr>
 </tbody>
 </table>
 </td>
@@ -7816,84 +7892,6 @@ Triggered while editing the Gantt chart (dragging, resizing the taskbar )
 <script>
 $("#gantt").ejGantt({
    taskbarEditing: function (args) {}
-});
-</script>
-{% endhighlight %}
-
-
-### taskbarClick
-{:#events:taskbarclick}
-
-Triggered when taskbar item is clicked in Gantt.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">argument</td>
-<td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Arguments when taskbarClick event is triggered.
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">data</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">Returns currently clicked row data</td>
-</tr>
-<tr>
-<td class="name">index</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description">Returns the current item index.</td>
-</tr>
-<tr>
-<td class="name">model</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">Returns the Gantt model.</td>
-</tr>
-<tr>
-<td class="name">taskbarElement</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">Returns the clicked row element</td>
-</tr>
-<tr>
-<td class="name">target</td>
-<td class="type"><span class="param-type">object</span></td>
-<td class="description">Returns the target element.</td>
-</tr>
-<tr>        
-<td class="name">type</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description">Returns the name of the event.</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-
-#### Example
-{:.example}
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>
-$("#gantt").ejGantt({
-   taskbarClick: function (args) {}
 });
 </script>
 {% endhighlight %}

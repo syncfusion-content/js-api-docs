@@ -175,7 +175,7 @@ $("#CoreCircularGauge").ejCircularGauge({  gaugePosition:"center", distanceFromC
 {:#members:rangezorder}
 
 <ts name="ej.datavisualization.CircularGauge.RangeZOrderPlacement"/>
-Specify range zOrder placement of circular gauge.
+Specify range Z-order placement of circular gauge.
 
 <table class="props">
 <thead>
@@ -321,6 +321,200 @@ Controls whether circular gauge has to be responsive while resizing.
 <script>                  
         $("#CoreCircularGauge").ejCircularGauge({  enableResize : true });
 </script>{% endhighlight %}
+
+
+### exportSettings `object`
+{:#members:exportsettings}
+
+This provides options for customizing export settings
+
+
+### exportSettings.filename `string`
+{:#members:exportsettings-filename}
+
+
+
+
+Specifies the downloading filename
+
+
+#### Default Value
+
+
+
+* "CircularGauge"
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
+        $("#CoreCircularGauge").ejCircularGauge({  
+                exportSettings: { 
+                     filename : "myGauge" 
+                } 
+        });
+</script>
+ 
+{% endhighlight %}
+
+
+### exportSettings.type `enum`
+{:#members:exportsettings-type}
+
+<ts name="ej.datavisualization.CircularGauge.ExportingType"/>
+Specifies the format of the file to export
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+PNG</td>
+<td class="type">string</td> 
+<td class="description last">The gauge will be exported in .png format</td>
+</tr>
+<tr>
+<td class="name">
+JPG</td>
+<td class="type">string</td>
+<td class="description last">The gauge will be exported in .jpg format</td>
+</tr> 
+</tbody>
+</table>
+
+#### Default Value
+
+
+
+* "png"
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
+        $("#CoreCircularGauge").ejCircularGauge({  
+                exportSettings: { 
+                     type : "jpg" 
+                } 
+        });
+</script>
+ 
+{% endhighlight %}
+
+
+### exportSettings.action `string`
+{:#members:exportsettings-action}
+
+
+
+Specifies the name of the action URL
+
+
+#### Default Value
+
+
+
+* ""
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
+        $("#CoreCircularGauge").ejCircularGauge({  
+                exportSettings: { 
+                    action : "http://js.syncfusion.com/ExportingServices/api/JSCircularGaugeExport/Export"
+                } 
+        });
+</script>
+ 
+{% endhighlight %}
+
+
+### exportSettings.mode `enum`
+{:#members:exportsettings-mode}
+
+<ts name="ej.datavisualization.CircularGauge.ExportingMode"/>
+Specifies the mode of exporting
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Server Side</td>
+<td class="type">string</td> 
+<td class="description last">The Gauge is exported at server side</td>
+</tr>
+<tr>
+<td class="name">
+Client Side</td>
+<td class="type">string</td>
+<td class="description last">The Gauge is exported at client side</td>
+</tr> 
+</tbody>
+</table>
+
+
+#### Default Value
+
+
+
+* "client"
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+
+<div id="CoreCircularGauge">
+</div> 
+ 
+<script>                  
+        $("#CoreCircularGauge").ejCircularGauge({  
+                exportSettings: { mode : "server"}
+        });
+</script>
+
+{% endhighlight %}
 
 
 
@@ -12671,4 +12865,138 @@ $("#CoreCircularGauge").ejCircularGauge({
    renderComplete: function (args) {}
 });
 </script>{% endhighlight %}
+
+
+### doubleClick
+{:#events:doubleclick}
+
+
+
+
+Fires, on double clicking the circular gauge.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event    </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Instance of the circular gauge model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last"><ul><li>location - X and Y co-ordinate of the points with respect to circular gauge area.</li>
+<li>id - ID of the target element.</li>
+    <li>size - Width and height of the circular gauge.</li>
+    <li>pageX - x-coordinate of the pointer, relative to the page</li>
+    <li>pageY - y-coordinate of the pointer, relative to the page</li>
+</ul>  </td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+
+{% highlight js %}
+ 
+//DoubleClick event for circular gauge
+
+$("#CoreCircularGauge").ejCircularGauge({
+
+    doubleClick: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+### rightClick
+{:#events:rightclick}
+
+
+
+
+Fires, on right clicking the circular gauge.
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event    </td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Instance of the circular gauge model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last"><ul><li>location - X and Y co-ordinate of the points with respect to circular gauge area.</li>
+<li>id - ID of the target element.</li>
+    <li>size - Width and height of the circular gauge.</li>
+    <li>pageX - x-coordinate of the pointer, relative to the page</li>
+    <li>pageY - y-coordinate of the pointer, relative to the page</li>
+</ul>  </td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+
+{% highlight js %}
+ 
+//RightClick event for circular gauge
+
+$("#CoreCircularGauge").ejCircularGauge({
+    rightClick: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
 

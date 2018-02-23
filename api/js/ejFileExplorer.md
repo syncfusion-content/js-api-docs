@@ -2216,7 +2216,221 @@ Gets or sets an object that indicates whether to customize the upload behavior i
 
 
 
+### uploadSettings.allowMultipleFile `boolean`
+{:#members:uploadsettings-allowmultiplefile}
 
+
+
+
+
+
+
+
+Enables or disables the multiple files upload. When it is enabled, you can upload multiple files at a time and when disabled, you can upload only one file at a time.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* true
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer"></div> 
+        
+        <script>
+        // Initialize the FileExplorer with the multipleFilesSelection value specified for uploadbox.
+        $('#fileExplorer').ejFileExplorer({ 
+        uploadSettings:{allowMultipleFile:false},
+        path: "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",           
+        ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"                
+        }); 
+        </script>
+
+{% endhighlight %}
+
+
+
+
+
+### uploadSettings.autoUpload `boolean`
+{:#members:uploadsettings-autoupload}
+
+
+
+
+
+
+
+
+Enables or disables the auto upload option while uploading files in FileExplorer control.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* false
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer"></div> 
+        
+        <script>
+        // Initialize the FileExplorer with auto upload option as true.
+        $('#fileExplorer').ejFileExplorer({ 
+        uploadSettings:{autoUpload:true},
+        path: "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",           
+        ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"                
+        }); 
+        </script>
+
+{% endhighlight %}
+
+
+
+
+
+### uploadSettings.dialogAction `object`
+{:#members:uploadsettings-dialogaction}
+
+
+
+
+
+
+
+
+Specifies the actions for upload dialog during initialization.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* { modal:false, closeOnComplete:false, content:null, drag:true }
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer"></div> 
+        
+        <script>
+        // Sets the  dialogAction API value
+        $('#fileExplorer').ejFileExplorer({ 
+        dialogAction:{ modal:false, closeOnComplete:false,resize: false, drag:true, content:"#controlId" },
+        path: "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",           
+        ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"                
+        }); 
+        </script>
+
+{% endhighlight %}
+
+
+
+
+
+### uploadSettings.dialogPosition `object`
+{:#members:uploadsettings-dialogposition}
+
+
+
+
+
+
+
+
+Specifies the position at which the upload dialog is displayed using X and Y values. X: Sets the left position value for dialog. Y: Sets the top position value for dialog.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* null
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer"></div> 
+        
+        <script>
+        // Sets the dialogPosition API value during initialization
+        $('#fileExplorer').ejFileExplorer({ 
+        dialogPosition: { X: 200, Y: 30 },
+        path: "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",           
+        ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"                
+        }); 
+        </script>
+
+{% endhighlight %}
 
 
 
@@ -2277,10 +2491,8 @@ Specifies the maximum file size allowed to upload. It accepts the value in bytes
 
 
 
-
-
-### uploadSettings.allowMultipleFile `boolean`
-{:#members:uploadsettings-allowmultiplefile}
+### uploadSettings.showFileDetails `boolean`
+{:#members:uploadsettings-showfiledetails}
 
 
 
@@ -2289,7 +2501,7 @@ Specifies the maximum file size allowed to upload. It accepts the value in bytes
 
 
 
-Enables or disables the multiple files upload. When it is enabled, you can upload multiple files at a time and when disabled, you can upload only one file at a time.
+Specifies the file details which are to be displayed when selected for upload by setting the `showFileDetails` to true.
 
 
 
@@ -2320,9 +2532,9 @@ Enables or disables the multiple files upload. When it is enabled, you can uploa
         <div id="fileExplorer"></div> 
         
         <script>
-        // Initialize the FileExplorer with the multipleFilesSelection value specified for uploadbox.
+        // Sets the showFileDetails API value during initialization
         $('#fileExplorer').ejFileExplorer({ 
-        uploadSettings:{allowMultipleFile:false},
+        showFileDetails: false,
         path: "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",           
         ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"                
         }); 
@@ -2330,8 +2542,11 @@ Enables or disables the multiple files upload. When it is enabled, you can uploa
 
 {% endhighlight %}
 
-### uploadSettings.autoUpload `boolean`
-{:#members:uploadsettings-autoupload}
+
+
+
+### virtualItemCount `number`
+{:#members:virtualitemcount}
 
 
 
@@ -2340,7 +2555,7 @@ Enables or disables the multiple files upload. When it is enabled, you can uploa
 
 
 
-Enables or disables the auto upload option while uploading files in FileExplorer control.
+Specifies the virtual item count for virtual support.
 
 
 
@@ -2353,7 +2568,7 @@ Enables or disables the auto upload option while uploading files in FileExplorer
 
 
 
-* false
+* 0
 
 
 
@@ -2371,16 +2586,15 @@ Enables or disables the auto upload option while uploading files in FileExplorer
         <div id="fileExplorer"></div> 
         
         <script>
-        // Initialize the FileExplorer with auto upload option as true.
-        $('#fileExplorer').ejFileExplorer({ 
-        uploadSettings:{autoUpload:true},
+        // Initialize the FileExplorer with the virtualItemCount value specified.
+        $('#fileExplorer').ejFileExplorer({
+        virtualItemCount: 40,
         path: "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",           
-        ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"                
-        }); 
+        ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations"                     
+        });
         </script>
 
 {% endhighlight %}
-
 
 
 
@@ -3300,6 +3514,73 @@ Fires before opening the upload dialog.
         path: "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",         
         ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations",      
         beforeUploadDialogOpen: function (args) {}
+        });
+        </script>
+
+{% endhighlight %}
+
+### beforeUploadSend
+{:#events:beforeuploadsend}
+
+
+
+
+
+
+
+
+Event is fired before the upload progress is started.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if the event is cancelled; otherwise, false</td>
+</tr>
+<tr>
+<td class="name">files</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">selected FileList Object</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the upload model</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">xhr</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">XHR-AJAX Object for reference</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+{% highlight html %}
+ 
+        <div id="fileExplorer" ></div> 
+        
+        <script>
+        // beforeUploadSend event for FileExplorer
+        $('#fileExplorer').ejFileExplorer({            
+        path: "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",         
+        ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations",      
+        beforeUploadSend: function (args) {}
         });
         </script>
 
@@ -5548,6 +5829,222 @@ Fires when the items from grid view or tile view or large icons view of FileExpl
         unselect: function (args) { }
     });
 </script>
+
+{% endhighlight %}
+
+
+### uploadComplete
+{:#events:uploadcomplete}
+
+
+
+Event is fired when the file upload progress gets completed.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">e</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">AJAX event argument for reference</td>
+</tr>
+<tr>
+<td class="name">error</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">details about the error information</td>
+</tr>
+<tr>
+<td class="name">files</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">uploaded file list</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the Upload model</td>
+</tr>
+<tr>
+<td class="name">responseText</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">response from the server</td>
+</tr>
+<tr>
+<td class="name">success</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">successfully uploaded files list</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">xhr</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">XHR-AJAX Object for reference</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer" ></div> 
+        
+        <script>
+        // uploadComplete event for FileExplorer
+        $('#fileExplorer').ejFileExplorer({            
+        path: "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",         
+        ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations",      
+        uploadComplete: function (args) {}
+        });
+        </script>
+
+{% endhighlight %}
+
+
+### uploadError
+{:#events:uploaderror}
+
+
+
+Event is fired when the file upload fails due to some error.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">action</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">error event action details</td>
+</tr>
+<tr>
+<td class="name">error</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">details about the error information</td>
+</tr>
+<tr>
+<td class="name">files</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the details of the uploaded files</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer" ></div> 
+        
+        <script>
+        // uploadError event for FileExplorer
+        $('#fileExplorer').ejFileExplorer({            
+        path: "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",         
+        ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations",      
+        uploadError: function (args) {}
+        });
+        </script>
+
+{% endhighlight %}
+
+
+### uploadSuccess
+{:#events:uploadsuccess}
+
+
+
+Event is fired when the file upload progress gets succeeded.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">e</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">AJAX event argument for reference</td>
+</tr>
+<tr>
+<td class="name">files</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">uploaded file list</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">returns the Upload model</td>
+</tr>
+<tr>
+<td class="name">responseText</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">response from the server</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">returns the name of the event</td>
+</tr>
+<tr>
+<td class="name">xhr</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">XHR-AJAX Object for reference</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+        <div id="fileExplorer" ></div> 
+        
+        <script>
+        // uploadSuccess event for FileExplorer
+        $('#fileExplorer').ejFileExplorer({            
+        path: "http://js.syncfusion.com/demos/ejServices/Content/FileBrowser/",         
+        ajaxAction: "http://js.syncfusion.com/demos/ejServices/api/FileExplorer/FileOperations",      
+        uploadSuccess: function (args) {}
+        });
+        </script>
 
 {% endhighlight %}
 

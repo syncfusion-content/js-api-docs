@@ -1160,6 +1160,32 @@ Options to customize the size of the pivot chart control.
     $("#PivotChart1").ejPivotChart({ size: { height: "450px", width: "95%" } });
 {% endhighlight %}
 
+### title `object`
+{:#members:title}
+
+Options for customizing the title of PivotChart.
+
+### title.text `string`
+{:#members:title-text}
+
+Text to be displayed in PivotChart title.
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% highlight javascript %}
+ 
+$("#PivotChart1").ejPivotChart({
+
+   title : { text : "PivotChart"}                     
+
+});
+
+{% endhighlight %}
+
 ###  url `string`
 {:#members:url}
 
@@ -1172,6 +1198,20 @@ Connects the service by using the specified URL for any server updates while ope
 {% highlight javascript %}
  
     $("#PivotChart1").ejPivotChart({ url: "/PivotService" });
+{% endhighlight %}
+
+### enableXHRCredentials `boolean`
+{:#members:enableXHRCredentials}
+
+Allows you to enable "withCredentials" property inside XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotChart").ejPivotChart({ enableXHRCredentials: true });
 {% endhighlight %}
 
 ## Methods

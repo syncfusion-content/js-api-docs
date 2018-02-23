@@ -2141,6 +2141,54 @@ $("#treegrid").ejTreeGrid({
 
 {% endhighlight %}
 
+### filterSettings.filterHierarchyMode `enum`
+{:#members:filtersettings-filterhierarchymode}
+
+<ts name = "ej.TreeGrid.FilterHierarchyMode"/>
+
+Specifies the mode of filtering to filter the record with or without hierarchy.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Parent</td>
+<td class="description">Shows the filtered record with parent record</td>
+</tr>
+<tr>
+<td class="name">Child</td>
+<td class="description">Shows the filtered record with child record</td>
+</tr>
+<tr>
+<td class="name">Both</td>
+<td class="description">shows the filtered record with both parent and child record</td>
+</tr>
+<tr>
+<td class="name">None</td>
+<td class="description">Shows only filtered record.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+{:.param}
+
+* ej.TreeGrid.FilterHierarchyMode.Parent
+
+
+#### Example
+
+{% highlight html %}
+ 
+        $("#treegrid").ejTreeGrid({  filterSettings: { filterHierarchyMode : ej.TreeGrid.FilterHierarchyMode.Child} });
+
+{% endhighlight %}
+
 ### locale `string`
 {:#members:locale}
 

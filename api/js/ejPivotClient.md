@@ -2047,6 +2047,35 @@ Enables/disables the visibility of measure group selector drop-down in the cube 
     $("#PivotClient1").ejPivotClient({ enableMeasureGroups : true });
 {% endhighlight %}
 
+
+### enableCellClick `boolean`
+{:#members:enablecellclick}
+
+Allows you to get cell details in JSON format by clicking the value cell.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ enableCellClick: true });
+{% endhighlight %}
+
+### enableCellDoubleClick `boolean`
+{:#members:enablecelldoubleclick}
+
+Allows you to get cell details in JSON format by double-clicking the value cell.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ enableCellDoubleClick: true });
+{% endhighlight %}
+
 ### enableVirtualScrolling `boolean`
 {:#members:enablevirtualscrolling}
 
@@ -2061,6 +2090,20 @@ Allows you to enable the virtual scrolling for both the pivot chart and pivot gr
 {% highlight javascript %}
  
     $("#PivotClient1").ejPivotClient({ enableVirtualScrolling: true });
+{% endhighlight %}
+
+### maxNodeLimitInMemberEditor `number`
+{:#members:maxNodeLimitInMemberEditor}
+
+Allows you to set the maximum number of nodes as well as child nodes to be displayed in the member editor.
+
+#### Default Value: 1000
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ maxNodeLimitInMemberEditor: 1500 });
 {% endhighlight %}
 
 ### enableMemberEditorPaging `boolean`
@@ -2541,6 +2584,20 @@ Allows you to set the custom name for the service method that is responsible for
     $("#PivotClient1").ejPivotClient({  serviceMethodSettings: { paging: "PagingMyMethod" } }); 
 {% endhighlight %}
 
+### serviceMethodSettings.valueSorting `string`
+{:#members:servicemethodsettings-valuesorting}
+
+Allows you to set the custom name for the service method that is responsible for performing value sorting operation in the PivotClient.
+
+#### Default Value: "ValueSorting"
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ serviceMethodSettings: { valueSorting: "MyValueSorting" } });
+{% endhighlight %}
+
 ### serviceMethodSettings.drillThroughHierarchies `string`
 {:#members:servicemethodsettings-drillthroughhierarchies}
 
@@ -2569,6 +2626,87 @@ Allows you to set the custom name for the service method that is responsible for
     $("#PivotClient1").ejPivotClient({ serviceMethodSettings: { drillThroughDataTable: "MyDrillThroughDataTableMethod" } });
 {% endhighlight %}
 
+### valueSortSettings `object`
+{:#members:valueSortSettings}
+
+Holds the necessary properties for value sorting.
+
+>**Note**: This is applicable only for the relational datasource.
+
+#### Default Value: {}
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ valueSortSettings: { } }); 
+{% endhighlight %}
+
+### valueSortSettings.headerText `string`
+{:#members:valueSortSettings-headerText}
+
+Contains the header of the specific column to which value sorting is applied.
+
+>**Note**: This is applicable only for the relational datasource.
+
+#### Default Value: ""
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ valueSortSettings: { headerText: "Bike##Amount" } });
+{% endhighlight %}
+
+### valueSortSettings.headerDelimiters `string`
+{:#members:valueSortSettings-headerDelimiters}
+
+Allows you to set the string for separating column headers provided in the **headerText** property.
+
+>**Note**: This is applicable only for the relational datasource.
+
+#### Default Value: ""
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ valueSortSettings: { headerDelimiters: "##" } });
+{% endhighlight %}
+
+### valueSortSettings.sortOrder `enum`
+{:#members:valueSortSettings-sortOrder}
+
+<ts ref = "ej.PivotAnalysis.SortOrder"/>
+
+Allows you to set the sorting order of values of the field.
+
+>**Note**: This is applicable only for the relational datasource.
+
+#### Default Value: ej.PivotAnalysis.SortOrder.Ascending
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">Ascending</td>
+            <td class="description">Sorts the members of the field in ascending order.</td>
+        </tr>
+        <tr>
+            <td class="name">Descending</td>
+            <td class="description">Sorts the members of the field in descending order.</td>
+        </tr>
+        <tr>
+            <td class="name">None</td>
+            <td class="description">Displays the members without sorting in default order.</td>
+        </tr>
+    </tbody>
+</table>
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ valueSortSettings: { sortOrder: ej.PivotAnalysis.SortOrder.Descending } });
+{% endhighlight %}
+
 ### title `string`
 {:#members:title}
 
@@ -2595,6 +2733,34 @@ Connects the service using the specified URL for any server updates.
 {% highlight javascript %}
  
     $("#PivotClient1").ejPivotClient({ url: "/wcf/OlapService" });
+{% endhighlight %}
+
+### enableCompleteDataExport `boolean`
+{:#members:enableCompleteDataExport}
+
+Allows you to export entire data instead of current page data, while paging option is enabled.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ enableCompleteDataExport: true });
+{% endhighlight %}
+
+### enableXHRCredentials `boolean`
+{:#members:enableXHRCredentials}
+
+Allows you to enable "withCredentials" property inside XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+ 
+    $("#PivotClient1").ejPivotClient({ enableXHRCredentials: true });
 {% endhighlight %}
 
 ## Methods
@@ -3692,11 +3858,55 @@ Triggers when any of the value cell is edited in the pivot grid.
     });
 
 {% endhighlight %}
+
+### cellClick
+{:#events:cellclick}
+
+Triggers when click action is performed over a grid value cell.
+
+<table class="params">
+<thead>
+<tr>
+<th colspan="3">Event Parameters</th>
+</tr>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">selectedData</td>
+<td class="type">array</td>
+<td class="description last">returns the JSON details of the respective on cell.</td>
+</tr>
+<tr>
+<td class="name">customObject</td>
+<td class="type">object</td>
+<td class="description last">returns the custom object bound with PivotClient control.</td>
+</tr>
+<tr>
+<td class="name">element</td>
+<td class="type">object</td>
+<td class="description last">returns the HTML element of PivotGrid control.</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
  
+    $("#PivotClient1").ejPivotClient({
+        cellClick: function (args) {}
+    });
+{% endhighlight %}
+
 ## cellDoubleClick
 {:#events:celldoubleclick}
 
-Triggers when double-click on any of the cell in the pivot grid.
+Triggers when double-click on any of the value cell in the pivot grid.
 
 <table class="params">
 <thead>
@@ -3733,7 +3943,7 @@ Triggers when double-click on any of the cell in the pivot grid.
 <tr>
 <td class="name">selectedData</td>
 <td class="type">array</td>
-<td class="description last">returns the array of selected data source object for the clicked cell.</td>
+<td class="description last">returns the array of selected data source object for the clicked value cell.</td>
 </tr>
 </tbody>
 </table>
