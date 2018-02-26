@@ -7,10 +7,10 @@ platform: js-api
 keywords: DropDownTree, ejDropDownTree, syncfusion, DropDownTree api
 ---
 
-# ejDropDownList
+# ejDropDownTree
 
 
-The DropDownList control provides a list of hierarchical data to choose an item from the list.
+The DropDownTree control provides a list of hierarchical data to choose an item from the list.
 It can including other HTML elements such as images, textboxes, check box, radio buttons, and so on.
 
 
@@ -25,42 +25,37 @@ $('#selectItem').ejDropDownTree();
 #### Example
 
 {% highlight html %}
- <input type="text" id="selectItem" />
+<input type="text" id="selectItem" />
 
-                        <div id="itemList">
-                            <ul id="treeView">
-                                <li class="expanded">
-                                    United States
-                                    <ul>
-                                        <li>California</li>
-                                        <li>Colorado</li>
-                                        <li>Georgia</li>
-                                    </ul>
-								</li>
-								<li>
-									United Kingdom
-									<ul>
-										<li>England</li>
-										<li>Scotland</li>
-										<li>Northern Ireland</li>
-									</ul>
-								</li>
-								<li>
-									Asia
-									<ul>
-										<li>Afghanistan</li>
-										<li>Kuwait</li>
-										<li>Russia</li>
-									</ul>
-								</li>
-							</ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div id="itemList">
+   <ul id="treeView">
+      <li class="expanded">
+         United States
+         <ul>
+            <li>California</li>
+            <li>Colorado</li>
+            <li>Georgia</li>
+         </ul>
+      </li>
+      <li>
+         United Kingdom
+         <ul>
+            <li>England</li>
+            <li>Scotland</li>
+            <li>Northern Ireland</li>
+         </ul>
+      </li>
+      <li>
+         Asia
+         <ul>
+            <li>Afghanistan</li>
+            <li>Kuwait</li>
+            <li>Russia</li>
+         </ul>
+      </li>
+   </ul>
+</div>
 
-        </div>
-    </div>
 <script type="text/javascript">
 $('#selectItem').ejDropDownTree({
                 showPopupOnLoad: true,
@@ -190,10 +185,7 @@ Sets the root CSS class for DropDownTree that allows customization of appearance
 ### delimiter `string`
 {:#members:delimiter}
 
-Sets the separator when the multiSelectMode with delimiter option or checkbox is enabled.
-When you enter the delimiter value, the text after the delimiter is considered as a separate
-word or query. The delimiter string is a single character and must be a symbol. Mostly,
-the delimiter symbol is used as comma (,), semi-colon (;), or any other special character.
+Sets the separator when the multiSelectMode with delimiter option or checkbox is enabled. When you enter the delimiter value, the text after the delimiter is considered as a separate word or query. The delimiter string is a single character and must be a symbol. Mostly, the delimiter symbol is used as comma (,), semi-colon (;), or any other special character.
 
 #### Default Value
 
@@ -784,7 +776,7 @@ Specifies that the DropDownTree textbox values should be read-only.
 ### showRoundedCorner `boolean`
 {:#members:showroundedcorner}
 
-The DropDownTree’s textbox is displayed with rounded corner style.
+The DropDownTree�s textbox is displayed with rounded corner style.
 
 #### Default Value
 
@@ -825,7 +817,7 @@ The DropDownTree’s textbox is displayed with rounded corner style.
 ### targetID `string`
 {:#members:targetid}
 
-Specifies the targetID for the DropDownTree’s items.
+Specifies the targetID for the DropDownTree�s items.
 
 #### Default Value
 
@@ -894,7 +886,7 @@ Specifies the delimiter between nodes (indicating their hierarchy).
 <td class="option">
 none</td>
 
-<td class="description last"> When TextMode property is set to none, only selected/checked node’s text is presented. </td>
+<td class="description last"> When TextMode property is set to none, only selected/checked node�s text is presented. </td>
 </tr>
 <tr>
 <td class="option">
@@ -992,7 +984,7 @@ Sets the jQuery validation error message in the DropDownTree.
          // any other default options and/or rules
      });
 $(function () {
-        $('#itemList”).ejDropDownTree({
+        $('#itemList�).ejDropDownTree({
             watermarkText: "Select a car",
             width: "50%",
             targetId: "carsList",
@@ -1054,7 +1046,7 @@ Sets the jQuery validation rules in the DropDownTree.
          // any other default options and/or rules
      });
 $(function () {
-        $('#itemList”).ejDropDownTree({
+        $('#itemList�).ejDropDownTree({
             watermarkText: "Select a car",
             width: "50%",
             targetId: "carsList",
@@ -1075,7 +1067,7 @@ $(function () {
 ### value `string`
 {:#members:value}
 
-Specifies the value (text content) for the DropDownTree control. For the single selection mode, the selected item’s value will be returned in its data type, and for MultiSelectMode, returns the selected items’ values separated by delimiter in string type.
+Specifies the value (text content) for the DropDownTree control. For the single selection mode, the selected item�s value will be returned in its data type, and for MultiSelectMode, returns the selected items� values separated by delimiter in string type.
 
 #### Default Value
 
@@ -1201,7 +1193,7 @@ Defines the width of the DropDownTree textbox.
                 treeViewSettings: {
                     fields: { id: "id", parentId: "pid", value: "id", text: "name", hasChild: "hasChild", dataSource: localData, expanded: "expanded" }
                 },
-                width: “150px”
+                width: �150px�
             });
         });
     </script>
@@ -1244,7 +1236,7 @@ N> The public method of treeview data is accessed by `[object of the dropdowntre
                 treeViewSettings: {
                     fields: { id: "id", parentId: "pid", value: "id", text: "name", hasChild: "hasChild", dataSource: localData, expanded: "expanded" }
                 },
-                width: “150px”
+                width: �150px�
             });
         });
     </script>
@@ -1831,7 +1823,7 @@ ddTreeObj.selectAll();
 {% highlight html %}
  
     <script>
-      $('#itemList').ejDropDownTree(‘selectAll’);
+      $('#itemList').ejDropDownTree(�selectAll�);
     </script>
 
 {% endhighlight %}
@@ -2063,7 +2055,7 @@ input type="text" id="itemList" />
 
 
     ddTreeObj = $('#itemList').data("ejDropDownTree");
-ddTreeObj.unCheckNode($(‘#1’));
+ddTreeObj.unCheckNode($(�#1�));
         });
     </script>
 
@@ -2123,7 +2115,7 @@ ddTreeObj.unselectAll ();
 {% highlight html %}
  
     <script>
-      $('#itemList').ejDropDownTree(‘unselectAll’);
+      $('#itemList').ejDropDownTree(�unselectAll�);
     </script>
 
 {% endhighlight %}
@@ -2277,7 +2269,7 @@ var localData = [
 ### change
 {:#events:change}
 
-Fires the action when the DropDownTree control’s value is changed.
+Fires the action when the DropDownTree control�s value is changed.
 
 <table class="params">
 <thead>
@@ -2306,17 +2298,17 @@ Fires the action when the DropDownTree control’s value is changed.
 <tr>
 <td class="name">selectedText</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Selected item’s text.</td>
+<td class="description">Selected item�s text.</td>
 </tr>
 <tr>
 <td class="name">text</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Selected item’s text.</td>
+<td class="description">Selected item�s text.</td>
 </tr>
 <tr>
 <td class="name">value</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Selected item’s value.</td>
+<td class="description">Selected item�s value.</td>
 </tr>
 <tr>
 <td class="name">itemId</td>
@@ -2400,17 +2392,17 @@ Fires the action when the list item checkbox value is changed.
 </tr>
 <td class="name">selectedText</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Selected item’s text.</td>
+<td class="description">Selected item�s text.</td>
 </tr>
 <tr>
 <td class="name">text</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Selected item’s text.</td>
+<td class="description">Selected item�s text.</td>
 </tr>
 <tr>
 <td class="name">value</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Selected item’s value.</td>
+<td class="description">Selected item�s value.</td>
 </tr>
 <tr>
 <td class="name">itemId</td>
@@ -2496,12 +2488,12 @@ Fires the action once the popup is closed.
 <tr>
 <td class="name">text</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Selected item’s text.</td>
+<td class="description">Selected item�s text.</td>
 </tr>
 <tr>
 <td class="name">value</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Selected item’s value.</td>
+<td class="description">Selected item�s value.</td>
 </tr>
 </tbody>
 </table>
@@ -2716,7 +2708,7 @@ When the enableFilterSearch is enabled, the filtering action is fired as soon as
 <tr>
 <td class="name">selectedText</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Selected item’s text.</td>
+<td class="description">Selected item�s text.</td>
 </tr>
 <tr>
 <td class="name">searchString</td>
@@ -2871,12 +2863,12 @@ Fires the action once the popup is opened.
 <tr>
 <td class="name">text</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Selected item’s text.</td>
+<td class="description">Selected item�s text.</td>
 </tr>
 <tr>
 <td class="name">value</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Selected item’s value.</td>
+<td class="description">Selected item�s value.</td>
 </tr>
 </tbody>
 </table>
@@ -2950,17 +2942,17 @@ Fires the action when the list of nodes in the DropDownTree is selected.
 </tr>
 <td class="name">selectedText</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Selected item’s text.</td>
+<td class="description">Selected item�s text.</td>
 </tr>
 <tr>
 <td class="name">text</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Selected item’s text.</td>
+<td class="description">Selected item�s text.</td>
 </tr>
 <tr>
 <td class="name">value</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Selected item’s value.</td>
+<td class="description">Selected item�s value.</td>
 </tr>
 <tr>
 <td class="name">itemId</td>
