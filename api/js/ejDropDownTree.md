@@ -91,7 +91,7 @@ $('#selectItem').ejDropDownTree({
 ## Members
 
 ### allowKeyboardNavigation  `boolean`
-{:#members:allowKeyboardNavigation }
+{:#members:allowkeyboardnavigation }
 
 Uses the keyboard for any action, including opening and closing the drop-down tree; navigating, expanding, and collapsing nodes of the dropdown tree; and more.
 
@@ -132,7 +132,7 @@ Uses the keyboard for any action, including opening and closing the drop-down tr
 {% endhighlight %}
 
 ### cssClass  `string`
-{:#members:cssClass}
+{:#members:cssclass}
 
 Sets the root CSS class for DropDownTree that allows customization of appearance.
 
@@ -273,7 +273,7 @@ Indicates whether the DropDownTree control responds to user interaction or not. 
 {% endhighlight %}
 
 ### enableAnimation  `boolean`
-{:#members:enableAnimation }
+{:#members:enableanimation }
 
 The enabled animation property uses the easeOutQuad animation to SlideDown and SlideUp the popup wrapper in 200 and 100 milliseconds, respectively.
 
@@ -315,7 +315,7 @@ The enabled animation property uses the easeOutQuad animation to SlideDown and S
 {% endhighlight %}
 
 ### enablePersistence  `boolean`
-{:#members:enablePersistence }
+{:#members:enablepersistence }
 
 Gets or sets a value that indicates whether to continue the DropDownTree model state in the page using applicable medium, i.e., HTML5 localStorage or cookies.
 
@@ -357,7 +357,7 @@ Gets or sets a value that indicates whether to continue the DropDownTree model s
 {% endhighlight %}
 
 ### enableRTL  `boolean`
-{:#members:enableRTL }
+{:#members:enablertl }
 
 Sets the DropDownTree textbox direction from right to left alignment.
 
@@ -399,7 +399,7 @@ Sets the DropDownTree textbox direction from right to left alignment.
 {% endhighlight %}
 
 ### footerTemplate `string`
-{:#members:footerTemplate }
+{:#members:footertemplate }
 
 Creates footer with text or HTML elements for the dropdown items.
 
@@ -443,7 +443,7 @@ Creates footer with text or HTML elements for the dropdown items.
 {% endhighlight %}
 
 ### fullPathDelimiter  `string`
-{:#members:fullPathDelimiter  }
+{:#members:fullpathdelimiter  }
 
 Serves as a patch of the entries comprising the path (that is set in the entry area) of the selected node.
 
@@ -491,7 +491,7 @@ Serves as a patch of the entries comprising the path (that is set in the entry a
 {% endhighlight %}
 
 ### headerTemplate `string`
-{:#members:headerTemplate}
+{:#members:headertemplate}
 
 Creates header with text or HTML elements for the dropdown items.
 
@@ -607,7 +607,7 @@ Allows you to set a particular country or regional language for the DropDownTree
 {% endhighlight %}
 
 ### popupSettings `object`
-{:#members:popupSettings}
+{:#members:popupsettings}
 
 Customizes the height and width of the popup wrapper.
 
@@ -616,7 +616,7 @@ Customizes the height and width of the popup wrapper.
 * {height: '152px',width: 'auto',showPopupOnLoad: false}
 
 ### popupSettings.height `string|number`
-{:#members:popupSettings-height}
+{:#members:popupsettings-height}
 
 Defines the height of the popup wrapper in the DropDownTree control.
 
@@ -654,7 +654,7 @@ Defines the height of the popup wrapper in the DropDownTree control.
 {% endhighlight %}
 
 ### popupSettings.width `string|number`
-{:#members:popupSettings-width}
+{:#members:popupsettings-width}
 
 Defines the width of the popup wrapper in the DropDownTree control.
 
@@ -694,7 +694,7 @@ Defines the width of the popup wrapper in the DropDownTree control.
 
 
 ### popupSettings.showPopupOnLoad `boolean`
-{:#members:popupSettings-showPopupOnLoad}
+{:#members:popupsettings-showpopuponload}
 
 The DropDownTree control is displayed with the popup.
 
@@ -868,7 +868,7 @@ Specifies the targetID for the DropDownTree's items.
 {% endhighlight %}
 
 ### textMode `enum` 
-{:#members:textMode}
+{:#members:textmode}
 
 <ts name="ej.Textmode"/>
 
@@ -1201,7 +1201,7 @@ Defines the width of the DropDownTree textbox.
 {% endhighlight %}
 
 ### treeViewSettings `object`
-{:#members:treeViewSettings}
+{:#members:treeviewsettings}
 
 Defines the popup settings of the DropDownTree widget. You can use any property which are in [`treeview`](https://help.syncfusion.com/api/js/ejtreeview) using this property.
 
@@ -1296,7 +1296,7 @@ ddTreeObj.checkAll();
 {% endhighlight %}
 
 ### checkNode(node)
-{:#methods:checkNode}
+{:#methods:checknode}
 
 Checks a node in the DropDownTree.
 
@@ -1367,7 +1367,7 @@ ddTreeObj.checkNode($("#1"));
 {% endhighlight %}
 
 ### clearText()
-{:#methods:clearText}
+{:#methods:cleartext}
 
 Clears the text in the DropDownTree.
 
@@ -1468,7 +1468,7 @@ ddTreeObj.destroy();
 {% endhighlight %}
 
 ### getValue()
-{:#methods:getValue}
+{:#methods:getvalue}
 
 Returns the selected value.
 
@@ -1519,7 +1519,7 @@ ddTreeObj.getValue();
 {% endhighlight %}
 
 ### hidePopup()
-{:#methods:hidePopup}
+{:#methods:hidepopup}
 
 Hides the popup in the DropDownTree.
 
@@ -1570,7 +1570,7 @@ ddTreeObj.hidePopup();
 {% endhighlight %}
 
 ### moveNode (sourceNode,destinationNode,index)
-{:#methods:moveNode}
+{:#methods:movenode}
 
 Moves the DropDownTree node within the same DropDownTree. The new position of the given DropDownTree node will be based on destination node and index position. 
 
@@ -1650,7 +1650,7 @@ obj.moveNode("#1", "#10")
 {% endhighlight %}
 
 ### removeAll()
-{:#methods:removeAll}
+{:#methods:removeall}
 
 Removes all the nodes in the DropDownTree.
 
@@ -1702,7 +1702,7 @@ ddTreeObj.removeAll();
 {% endhighlight %}
 
 ### removeNode(node)
-{:#methods:removeNode}
+{:#methods:removenode}
 
 Removes a node in the DropDownTree.
 
@@ -1778,7 +1778,7 @@ ddTreeObj. removeNode($("#3"));
 {% endhighlight %}
 
 ### selectAll()
-{:#methods:selectAll}
+{:#methods:selectall}
 
 Selects all the DropDownTree nodes when `allowMultiSelection` field is enabled in the treeViewSettings property.
 
@@ -1829,7 +1829,7 @@ ddTreeObj.selectAll();
 {% endhighlight %}
 
 ### selectNode(node)
-{:#methods:selectNode}
+{:#methods:selectnode}
 
 Selects a node in the DropDownTree control. To select the collection of nodes in the DropDownTree control, enable `allowMultiSelection` field of the treeViewSettings property.
 
@@ -1950,7 +1950,7 @@ ddTreeObj.showPopup();
 {% endhighlight %}
 
 ### unCheckAll()
-{:#methods:unCheckall}
+{:#methods:uncheckall}
 
 Unchecks all the nodes in the DropDownTree.
 
@@ -2000,7 +2000,7 @@ ddTreeObj.unCheckAll ();
 {% endhighlight %}
 
 ### unCheckNode(node)
-{:#methods:unCheckNode}
+{:#methods:unchecknode}
 
 Unchecks a node in the DropDownTree.
 
@@ -2071,7 +2071,7 @@ ddTreeObj.unCheckNode($('#1'));
 {% endhighlight %}
 
 ### unselectAll()
-{:#methods:unselectAll}
+{:#methods:unselectall}
 
 Unselects all the DropDownTree nodes when `allowMultiSelection` field of the treeViewSettings property is enabled.
 
@@ -2121,7 +2121,7 @@ ddTreeObj.unselectAll ();
 {% endhighlight %}
 
 ### unselectNode(node)
-{:#methods:unselectNode}
+{:#methods:unselectnode}
 
 Unselects a node in the DropDownTree control. To unselect the collection of nodes in the DropDownTree control, enable `allowMultiSelection` field of the treeViewSettings property.
 
@@ -2362,7 +2362,7 @@ var localData = [
   {% endhighlight %}
 
 ### checkChange
-{:#events:checkChange}
+{:#events:checkchange}
 
 Fires the action when the list item checkbox value is changed.
 
