@@ -1533,40 +1533,6 @@ Triggers before any AJAX request is passed from the pivot chart to service metho
 
 {% endhighlight %}
 
-### beforePivotEnginePopulate
-{:#events:beforepivotenginepopulate}
-
-Triggers before the pivot engine starts to populate.
-
-<table class="params">
-<thead>
-<tr>
-<th colspan="3">Event Parameters</th>
-</tr>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">chartObj</td>
-<td class="type">object</td>
-<td class="description last">returns the current instance of PivotChart.</td>
-</tr>
-</tbody>
-</table>
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotChart1").ejPivotChart({
-        beforePivotEnginePopulate: function (args) {}
-    });
-{% endhighlight %}
-
 
 ### drillSuccess
 {:#events:drillsuccess}

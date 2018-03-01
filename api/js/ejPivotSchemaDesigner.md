@@ -127,7 +127,7 @@ Allows the user to view the KPI elements in tree-view inside PivotTable Field Li
 
 {% highlight javascript %}
  
-    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ olap: { showKPI : true } });
+    $("#PivotSchemaDesigner1").ejPivotSchemaDesigner({ olap: { showKpi : true } });
 {% endhighlight %}
 
 
