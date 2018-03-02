@@ -2993,21 +2993,17 @@ Specifies the start day of the week in week timescale mode
 
 {% endhighlight %}
 
-
 ### scheduleHeaderSettings.updateTimescaleView `boolean`
 {:#members:scheduleheadersettings-updatetimescaleview}
 
 Enable or disable the automatic timescale update on cell editing, dialog editing and taskbar editing.
 
-
 #### Default Value
 
 * true
 
-
 #### Example
 {:.example}
-
 
 {% highlight html %}
  
@@ -3019,7 +3015,6 @@ Enable or disable the automatic timescale update on cell editing, dialog editing
 </script>               
 
 {% endhighlight %}
-
 
 ### scheduleStartDate `string`
 {:#members:schedulestartdate}
