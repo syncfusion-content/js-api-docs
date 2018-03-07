@@ -2993,6 +2993,29 @@ Specifies the start day of the week in week timescale mode
 
 {% endhighlight %}
 
+### scheduleHeaderSettings.updateTimescaleView `boolean`
+{:#members:scheduleheadersettings-updatetimescaleview}
+
+Enable or disable the automatic timescale update on cell editing, dialog editing and taskbar editing.
+
+#### Default Value
+
+* true
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+    $("#gantt").ejGantt({  
+       scheduleHeaderSettings:{updateTimescaleView : false }
+    });
+</script>               
+
+{% endhighlight %}
+
 ### scheduleStartDate `string`
 {:#members:schedulestartdate}
 
