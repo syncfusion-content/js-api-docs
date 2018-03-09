@@ -1263,37 +1263,14 @@ Sets a specified time value on the TimePicker.
 ### watermarkText `string`
 {:#members:watermarktext}
 
-
-
-
-
-
-
-
 Specifies the water mark text to be displayed in input text.
-
-
-
 
 #### Default Value
 
 
-
-
-
-
-
 * "Select time"
 
-
-
-
-
-
-
-
 #### Example
-
 
 
 {% highlight html %}
