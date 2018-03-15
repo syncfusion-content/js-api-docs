@@ -1260,6 +1260,28 @@ Sets a specified time value on the TimePicker.
 
 
 
+### watermarkText `string`
+{:#members:watermarktext}
+
+Specifies the water mark text to be displayed in input text.
+
+#### Default Value
+
+
+* "select a time"
+
+#### Example
+
+
+{% highlight html %}
+ 
+<input type="text" id="timepicker" />
+<script>
+//To set watermarkText during initialization  
+        $("#timepicker").ejTimePicker({  watermarkText: "Enter time" });
+</script>
+
+{% endhighlight %}
 
 
 ### width `string|number`
