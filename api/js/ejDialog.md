@@ -1545,7 +1545,7 @@ Name of the event</td></tr>
 <tr>
 <td>
 isInteraction</td><td>
-bollean</td><td>
+boolean</td><td>
 returns true when the Dialog activated by user interaction otherwise returns false</td></tr>
 </table>
 
@@ -1589,7 +1589,7 @@ Name of the event.</td></tr>
 <tr>
 <td>
 isInteraction</td><td>
-bollean</td><td>
+boolean</td><td>
 returns true when the Dialog activated by user interaction otherwise returns false</td></tr>
 </table>
 
@@ -1898,7 +1898,7 @@ Name of the event.</td></tr>
 <tr>
 <td>
 isInteraction</td><td>
-bollean</td><td>
+boolean</td><td>
 returns true when the Dialog activated by user interaction otherwise returns false</td></tr>
 </table>
 
