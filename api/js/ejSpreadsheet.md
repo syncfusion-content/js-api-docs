@@ -745,6 +745,26 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
+### allowSparkline `boolean`
+{:#members:allowsparkline}
+
+Gets or sets a value that indicates whether to enable the sparkline feature in the Spreadsheet. 
+
+#### Default Value
+* false
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+    allowSparkline: true
+});         
+</script>
+
+{% endhighlight %}
+
 ### allowUndoRedo `boolean`
 {:#members:allowundoredo}
 
@@ -12384,6 +12404,154 @@ var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 excelObj.XLSort.sortByRange("A1:D3", "B",  "ascending"); 
 </script>
 
+{% endhighlight %}
+
+### XLSparkline
+{:#methods:xlsparkline}
+
+### XLSparkline.createSparkline(dataRange, locationRange, type, options, \[sheetIndex\])
+{:#methods:xlsparkline-createsparkline}
+
+This method used for creating the sparkline chart for specified range in spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">dataRange</td>
+<td class="type"><span class="param-type">String</span></td>
+<td class="description">Pass the data range</td>
+</tr>
+<tr>
+<td class="name">locationRange</td>
+<td class="type"><span class="param-type">String</span></td>
+<td class="description">Pass the location range</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">String</span></td>
+<td class="description">Pass the sparkline chart type</td>
+</tr>
+<tr>
+<td class="name">options</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Pass the sparkline chart options</td>
+</tr>
+<tr>
+<td class="name">sheetIndex</td>
+<td class="type"><span class="param-type">Number</span></td>
+<td class="description">Pass the sheetIndex</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<script>
+
+// Initialize the Spreadsheet object.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To create the sparkline chart
+excelObj.XLSparkline.createSparkline("C3:C5", "F10",  "Line", {markerSettings:{visible:true},highPointColor: "red", negativePointColor: "black", startPointColor: "green"} ); // To create sparkline in Spreadsheet.
+
+</script>
+
+{% endhighlight %}
+
+### XLSparkline.changePointColor(sparklineId, option, \[sheetIdx\])
+{:#methods:xlsparkline-changepointcolor}
+
+This method used to change the sparkline color and marker point color in the spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">sparklineId</td>
+<td class="type"><span class="param-type">String</span></td>
+<td class="description">Pass the sparkline ID</td>
+</tr>
+<tr>
+<td class="name">option</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Pass the sparkline options</td>
+</tr>
+<tr>
+<td class="name">sheetIdx</td>
+<td class="type"><span class="param-type">Number</span></td>
+<td class="description"><span class="optional">Optional.</span> Pass the sheet index</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<script>
+// Initialize the Spreadsheet object.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To change the sparkline color and marker color 
+excelObj.XLSparkline.changePointColor("Spreadsheet_S1_Column_2_6", {highPointColor: "red"});
+</script>
+
+{% endhighlight %}
+
+### XLSparkline.changeType(sparklineId, type, \[sheetIdx\])
+{:#methods:xlsparkline-changetype}
+
+This method used to change the sparkline type in the spreadsheet.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">sparklineId</td>
+<td class="type"><span class="param-type">String</span></td>
+<td class="description">Pass the sparkline ID</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the sparkline type</td>
+</tr>
+<tr>
+<td class="name">sheetIdx</td>
+<td class="type"><span class="param-type">Number</span></td>
+<td class="description"><span class="optional">Optional.</span> Pass the sheet index</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<script>
+// Initialize the Spreadsheet object.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+// To change the sparkline chart type
+excelObj.XLSparkline.changeType("Spreadsheet_S1_Column_2_6", "Line");
+</script>
 {% endhighlight %}
 
 ### XLValidate
