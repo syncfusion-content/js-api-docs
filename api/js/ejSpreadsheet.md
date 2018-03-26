@@ -12465,7 +12465,7 @@ excelObj.XLSparkline.createSparkline("C3:C5", "F10",  "Line", {markerSettings:{v
 
 {% endhighlight %}
 
-### XLSparkline.changePointColor(sparklineId, option, \[sheetIdx\], isChecked)
+### XLSparkline.changePointColor(sparklineId, option, \[sheetIdx\])
 {:#methods:xlsparkline-changepointcolor}
 
 This method used to change the sparkline color and marker point color in the spreadsheet.
@@ -12493,11 +12493,6 @@ This method used to change the sparkline color and marker point color in the spr
 <td class="name">sheetIdx</td>
 <td class="type"><span class="param-type">Number</span></td>
 <td class="description"><span class="optional">Optional.</span> Pass the sheet index</td>
-</tr>
-<tr>
-<td class="name">isChecked</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description"> pass {{'`true`' | markdownify}}, if you want to set the sparkline color. 
 </tr>
 </tbody>
 </table>
