@@ -295,24 +295,6 @@ Example
 
 {% endhighlight %}
 
-### content `string`
-{:#members:content}
-
-If this property is set, the dialog will be displayed (positioned) based on its container.
-
-Default Value:
-{:.param}
-* null
-
-Example
-{:.example}
-
-{% highlight javascript %}
-
-    $("#dialog").ejDialog({content: ".cols-sample-area"}); 
-
-{% endhighlight %}
-
 ### contentType `string`
 {:#members:contenttype}
 
