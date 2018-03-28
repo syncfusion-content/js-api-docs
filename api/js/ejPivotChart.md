@@ -1017,6 +1017,20 @@ Sets the mode for the pivot chart widget to bind the data source either in the s
     $("#PivotChart1").ejPivotChart({ operationalMode: ej.Pivot.OperationalMode.ServerMode });
 {% endhighlight %}
 
+### axes `array`
+{:#members:axes}
+
+To override x axis for particular series, create an axis object by providing unique name by using name property and add it to axes array.
+
+#### Default Value: []
+
+**Example:**
+
+{% highlight javascript %}
+
+    $("#PivotChart1").ejPivotChart({ axes: [{ alternateGridBand: { even :{ fill : "green" } } }] });
+{% endhighlight %}
+
 ### primaryXAxis `object`
 {:#members:primaryxaxis}
 
