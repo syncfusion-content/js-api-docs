@@ -9589,7 +9589,7 @@ This method is used to add the custom Date & Time format and recognize it as a p
 <td class="description">Pass the custom format string.</td>
 </tr>
 <tr>
-<td class="name">name</td>
+<td class="name">type</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the type for custom format.</td>
 </tr>
