@@ -9564,6 +9564,50 @@ excelObj.XLFilter.filterByActiveCell();
 ### XLFormat
 {:#methods:xlformat}
 
+### XLFormat.addCustomFormatSpecifier(name, formatSpecifier, type)
+{:#methods:xlformat-addcustomformatspecifier}
+
+This method is used to add the custom Date & Time format and recognize it as a preferred pattern in spreadsheet. 
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">name</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the name for custom format.</td>
+</tr>
+<tr>
+<td class="name">formatSpecifier</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the custom format string.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Pass the type for custom format.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div>
+<script>
+// Initialize the Spreadsheet object.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.XLFormat.addCustomFormatSpecifier("formatStr","dd/MM/yyyy", ej.Spreadsheet.CellType.Date) // To add the custom date format in spreadsheet
+</script>
+
+{% endhighlight %}
+
 ### XLFormat.addFontFamily(fontName)
 {:#methods:xlformat-addfontfamily}
 
