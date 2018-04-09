@@ -1478,6 +1478,107 @@ var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.zoomTo(130);
 {% endhighlight %}
 
+### searchText(targetText)
+
+{:#methods:searchtext}
+
+Searches the target text in the PDF document and highlights the occurrences in the pages of the PDF document.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+targetText</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">text to be searched in the pages in the PDF Viewer</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight javascript %}
+var pdfviewerObj = $("#viewer").data("ejPdfViewer");
+pdfviewerObj.searchText("name");
+{% endhighlight %}
+
+### searchNext()
+
+{:#methods:searchnext}
+
+Searches the next occurrence of the searched text from the current occurrence in the PDF viewer control.
+
+#### Example:
+
+{% highlight javascript %}
+var pdfviewerObj = $("#viewer").data("ejPdfViewer");
+pdfviewerObj.searchNext();
+{% endhighlight %}
+
+### searchPrevious()
+
+{:#methods:searchprevious}
+
+Searches the previous occurrence of the searched text from the current occurrence in the PDF viewer control.
+
+#### Example:
+
+{% highlight javascript %}
+var pdfviewerObj = $("#viewer").data("ejPdfViewer");
+pdfviewerObj.searchPrevious();
+{% endhighlight %}
+
+### matchCase(enableMatchCase)
+
+{:#methods:matchcase}
+
+Searches the target text with its casing.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+enableMatchCase</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">specifies whether the text search must be performed with match case or not</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight javascript %}
+var pdfviewerObj = $("#viewer").data("ejPdfViewer");
+pdfviewerObj.matchCase(true);
+{% endhighlight %}
+
+### cancelSearchText()
+
+{:#methods:cancelsearchtext}
+
+Cancels the text search and removes the highlighted occurrences from the PDF viewer.
+
+#### Example:
+
+{% highlight javascript %}
+var pdfviewerObj = $("#viewer").data("ejPdfViewer");
+pdfviewerObj.cancelSearchText();
+{% endhighlight %}
+
 ### addAnnotation(annotationType)
 {:#methods:addannotation}
 
