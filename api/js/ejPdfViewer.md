@@ -1482,7 +1482,7 @@ pdfviewerObj.zoomTo(130);
 
 {:#methods:searchtext}
 
-Searches the target text in the PDF document and highlights the occurrences in the pages of the PDF document.
+Searches the target text in the PDF document and highlights the occurrences in the pages.
 
 <table class="params">
 <thead>
@@ -1497,7 +1497,7 @@ Searches the target text in the PDF document and highlights the occurrences in t
 <td class="name">
 targetText</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">text to be searched in the pages in the PDF Viewer</td>
+<td class="description">The text to be searched in the pages in the PDF viewer.</td>
 </tr>
 </tbody>
 </table>
@@ -1554,7 +1554,7 @@ Searches the target text with its casing.
 <td class="name">
 enableMatchCase</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">specifies whether the text search must be performed with match case or not</td>
+<td class="description">Specifies whether the text search must be performed with match case or not.</td>
 </tr>
 </tbody>
 </table>
