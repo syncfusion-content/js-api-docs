@@ -3301,7 +3301,7 @@ $("#treegrid").ejTreeGrid({
 ### collapsibleTotalSummary `boolean`
 {:#members:collapsibletotalsummary}
 
-Specifies the  visibility  of expander button in total summary row. By default, cells in the first column contain the expander button.
+Enables or disables the expandable/collapsible footer summary row. By default expander icon for footer summary will be rendered in first column of first summary row.
 
 #### Default Value
 {:.param}
@@ -3319,7 +3319,7 @@ $("#treegrid").ejTreeGrid({
 ### totalSummaryHeight `number`
 {:#members:totalsummaryheight}
 
-Specifies the custom summary height to the total summary row.
+Specifies the height of footer summary container.
 
 #### Default Value
 {:.param}
