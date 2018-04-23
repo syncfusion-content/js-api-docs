@@ -3298,6 +3298,42 @@ $("#treegrid").ejTreeGrid({
 });
 {% endhighlight %}
 
+### collapsibleTotalSummary `boolean`
+{:#members:collapsibletotalsummary}
+
+Specifies the  visibility  of expander button in total summary row. By default, cells in the first column contain the expander button.
+
+#### Default Value
+{:.param}
+* false
+
+#### Example
+
+{% highlight html %}
+                 
+$("#treegrid").ejTreeGrid({
+    collapsibleTotalSummary: true
+});
+{% endhighlight %}
+
+### totalSummaryHeight `number`
+{:#members:totalsummaryheight}
+
+Specifies the custom summary height to the total summary row.
+
+#### Default Value
+{:.param}
+* 90
+
+#### Example
+
+{% highlight html %}
+                 
+$("#treegrid").ejTreeGrid({
+    totalSummaryHeight: 120
+});
+{% endhighlight %}
+
 ### summaryRows `array`
 {:#members:summaryrows}
 
@@ -4025,6 +4061,43 @@ To collapse all the parent items in tree grid
 var treegridObj = $("#treegrid").data("ejTreeGrid");
 treegridObj.collapseAll(); // To collapse all parent items in tree grid
 </script>
+{% endhighlight %}
+
+### expandCollapseTotalSummary(expanded)
+{:#methods:expandcollapsetotalsummary}
+
+To expand collapse the total summary row. 
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">expanded</td>
+<td class="type">boolean</td>
+<td class="description">Decides to expand/collapse the total summary</td>
+</tr>
+</tbody>
+</table>
+
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="treegrid"></div> 
+ 
+<script>
+// Create Tree Grid object
+var treegridObj = $("#treegrid").data("ejTreeGrid");
+treegridObj.expandCollapseTotalSummary(true);
+</script> 
+
 {% endhighlight %}
 
 ### hideColumn(headerText)
