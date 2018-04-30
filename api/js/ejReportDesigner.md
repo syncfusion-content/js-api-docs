@@ -41,6 +41,10 @@ Report Designer allows to design the report that can be published in the Report 
 
 * module:codemirror.js
 
+* module:show-hint.js
+
+* module:sql.js
+
 * module:ej.core.js
 
 * module:ej.data.js
