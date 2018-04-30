@@ -9,7 +9,7 @@ metacontent:
 
 # ejReportDesigner
 
-Report Designer allows to design the report that can be published in the Report Server or downloaded in the local physical path.
+Report Designer allows to design the report that can be published in the Server or downloaded in the local physical path.
 
 #### Syntax
 
@@ -44,6 +44,8 @@ Report Designer allows to design the report that can be published in the Report 
 * module:show-hint.js
 
 * module:sql.js
+
+* module:sql-hint.js
 
 * module:ej.core.js
 
