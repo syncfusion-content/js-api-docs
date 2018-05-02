@@ -138,8 +138,7 @@ Specifies the locale for report designer.
  
 <div id="container"></div> 
 <script>          
-    $("#container").ejReportDesigner(
-        {
+    $("#container").ejReportDesigner({
             locale: "fr-FR"
         });             
 </script>
@@ -162,7 +161,7 @@ Gets or Sets the report path of server.
 <div id="container"></div>
 <script>
     $("#container").ejReportDesigner({
-        reportPath: "/Sample Reports/invoice.rdl"
+        reportPath: "/Sample Reports/invoice"
     });
 </script>
 
@@ -184,7 +183,7 @@ Gets or Sets the reports server URL.
 <div id="container"></div>
 <script>
     $("#container").ejReportDesigner({
-        reportServerUrl: "https://rsdev.syncfusion.com"
+        reportServerUrl: "https://reportserver.syncfusion.com/"
     });
 </script>
 
@@ -204,7 +203,7 @@ Gets or sets the serviceAuthorizationToken to access the Report Server API servi
 {% highlight js %}
 
 <div id="container"></div>
-<script type="text/javascript">
+<script>
    $("#container").ejReportDesigner({ 
      serviceAuthorizationToken: token['token_type'] + ' ' + token['access_token'] 
      });
@@ -375,8 +374,7 @@ Specifies the toolbar template ID.
  
 <div id="container"></div>
 <script>          
-   $("#container").ejReportDesigner(
-       {
+   $("#container").ejReportDesigner({
            toolbarSettings:{templateId: "customtoolbarId"}
        });         
 </script>
@@ -398,7 +396,7 @@ Determines whether a copy operation is possible.
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div>
+<div id="container"></div>
 <script>
     // Create ReportDesigner Instance
     $("#container").ejReportDesigner();
@@ -421,7 +419,7 @@ Determines whether a cut operation is possible.
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div>
+<div id="container"></div>
 <script>
     // Create ReportDesigner Instance
     $("#container").ejReportDesigner();
@@ -490,7 +488,7 @@ Returns the bool value indicating whether the user can redo the previous action 
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div>
+<div id="container"></div>
 <script>
     // Create ReportDesigner Instance
     $("#container").ejReportDesigner();
@@ -513,7 +511,7 @@ Returns a bool value indicating whether the user can undo the previous action in
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div>
+<div id="container"></div>
 <script>
     // Create ReportDesigner Instance
     $("#container").ejReportDesigner();
@@ -532,7 +530,7 @@ Copies the selected ReportItem from design panel to Report Designer internal cli
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div>
+<div id="container"></div>
 <script>
     // Create ReportDesigner Instance
     $("#container").ejReportDesigner();
@@ -551,7 +549,7 @@ Cuts the selected ReportItem from design panel to Report Designer internal clipb
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div>
+<div id="container"></div>
 <script>
     // Create ReportDesigner Instance
     $("#container").ejReportDesigner();
@@ -570,7 +568,7 @@ Deletes the selected item from the report.
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div>
+<div id="container"></div>
 <script>
     // Create ReportDesigner Instance
     $("#container").ejReportDesigner();
@@ -593,7 +591,7 @@ Returns the bool value that specifies whether the report has changes or not.
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div>
+<div id="container"></div>
 <script>
     // Create ReportDesigner Instance
     $("#container").ejReportDesigner();
@@ -616,7 +614,7 @@ Returns the bool value that specifies whether the currently processing report is
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div> 
+<div id="container"></div> 
 <script>
     // Create ReportDesigner Instance
     $("#container").ejReportDesigner();
@@ -639,7 +637,7 @@ Returns the bool value that specifies whether the currently processing report is
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div>
+<div id="container"></div>
 <script>
     // Create ReportDesigner Instance
     $("#container").ejReportDesigner();
@@ -662,7 +660,7 @@ Returns the bool value that specifies whether the currently processing report is
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div>
+<div id="container"></div>
 <script>
     // Create ReportDesigner Instance
     $("#container").ejReportDesigner();
@@ -703,7 +701,7 @@ To create a new report.
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div>
+<div id="container"></div>
 <script>
     // Create ReportDesigner Instance
     $("#container").ejReportDesigner();
@@ -744,7 +742,7 @@ To create a new report in the server.
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div>
+<div id="container"></div>
 <script>
    // Create ReportDesigner Instance
    $("#container").ejReportDesigner();
@@ -804,7 +802,7 @@ To open the report client browse dialog.
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div>
+<div id="container"></div>
 <script>
     // Create ReportDesigner Instance
     $("#container").ejReportDesigner();
@@ -823,7 +821,7 @@ To open the report open server browse dialog.
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div>
+<div id="container"></div>
 <script>
     // Create ReportDesigner Instance
     $("#container").ejReportDesigner();
@@ -842,7 +840,7 @@ Pastes the selected ReportItem from Report Designer internal clipboard to design
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div>
+<div id="container"></div>
 <script>
     // Create ReportDesigner Instance
     $("#container").ejReportDesigner();
@@ -861,7 +859,7 @@ Reverses the action of the last Undo command.
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div>
+<div id="container"></div>
 <script>
     // Create ReportDesigner Instance
     $("#container").ejReportDesigner();
@@ -916,7 +914,7 @@ To open the report save server browse dialog.
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div>
+<div id="container"></div>
 <script>
     // Create ReportDesigner Instance
     $("#container").ejReportDesigner();
@@ -935,7 +933,7 @@ To download the designed report.
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div>
+<div id="container"></div>
 <script>
     // Create ReportDesigner Instance
     $("#container").ejReportDesigner();
@@ -990,7 +988,7 @@ To open the new report dialog.
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div>
+<div id="container"></div>
 <script>
    // Create ReportDesigner Instance
    $("#container").ejReportDesigner();
@@ -1037,7 +1035,7 @@ To open the server browse dialog.
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div>
+<div id="container"></div>
 <script>
    // Create ReportDesigner Instance
    $("#container").ejReportDesigner();
@@ -1057,7 +1055,7 @@ To show the report preview.
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div>
+<div id="container"></div>
 <script>
     // Create ReportDesigner Instance
     $("#container").ejReportDesigner();
@@ -1076,7 +1074,7 @@ Reverses the last action that was performed.
 
 {% highlight html %}
 
-<div id="container">ReportDesigner</div>
+<div id="container"></div>
 <script>
     //Create ReportDesigner Instance
     $("#container").ejReportDesigner();
