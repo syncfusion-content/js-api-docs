@@ -399,6 +399,38 @@ Determines whether map need to resize when container is resized
 
 Enables or Disables the Zooming for map.
 
+### zoomSettings.animationDuration `string`
+{:#members:zoomsettings-animationduration}
+
+Specifies animation duration for map shapes while zooming.
+
+#### Default Value
+
+* 600
+
+#### Example
+
+{% highlight js %}
+ 
+//To set animationDuration API value during initialization 
+   $("#container").ejMap({zoomSettings:{animationDuration:true}});           
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the animationDuration API, after initialization:
+
+   //Gets the animationDuration value 
+   
+   var property = $("#container").data("ejMap").model.zoomSettings.animationDuration;
+         
+   //Sets the animationDuration value
+    
+   $("#container").data("ejMap").model.zoomSettings.animationDuration=true }); 
+
+{% endhighlight %}
 
 ### zoomSettings.enableZoom `boolean`
 {:#members:zoomsettings-enablezoom}
@@ -2606,6 +2638,40 @@ Enables or Disables the showLegend
    //Sets the showLegend value 
 
    $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {showLegend:false};
+  
+{% endhighlight %}
+
+
+### layers.legendSettings.toggleVisibility `boolean`
+{:#members:layers-legendsettings-togglevisibility}
+
+Toggle the visibility of the legend.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight js %}
+ 
+//To set toggleVisibility API value during initialization 
+   $("#container").ejMap({layers: [{legendSettings: {toggleVisibility:true} }]})
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the toggleVisibility API, after initialization:
+   
+   //Gets the toggleVisibility value 
+   
+   var property = =$("#container").data("ejMap").model.layers[layerIndex].legendSettings.toggleVisibility;       
+   
+   //Sets the toggleVisibility value 
+
+   $("#container").data("ejMap").model.layers[layerIndex].legendSettings  = {toggleVisibility:true};
   
 {% endhighlight %}
 
@@ -6738,6 +6804,44 @@ Method to perform map zooming.
 {% endhighlight %}
 
 
+### refreshLayer(layerIndex,sublayerIndex,markers)
+{:#methods:refreshlayer}
+
+Method to reload the shape marker with updated values.
+
+
+#### Returns: void
+
+
+#### Example
+
+{% highlight js %}
+ 
+//refresh layers method for map
+   $("#container").ejMap("refreshLayer",layerIndex,sublayerIndex,markers);
+
+{% endhighlight %}
+
+
+### addMarkers(layerIndex,sublayerIndex)
+{:#methods:addmarkers}
+
+Add markers dynamically based on layer and sublayer index value.
+
+
+#### Returns: void
+
+
+#### Example
+
+{% highlight js %}
+ 
+//addMarkers method for map
+   $("#container").ejMap("addMarkers",layerIndex,sublayerIndex);
+
+{% endhighlight %}
+
+
 
 ## Events
 
@@ -7166,6 +7270,74 @@ Fires, on clicking the map.
 $("#container").ejMap({
 
     click: function (args) {
+              //Do something
+    }
+   
+});
+
+{% endhighlight %}
+
+
+### legendItemClick
+{:#events:legenditemclick}
+
+
+
+
+Fires on clicking the legend item. 
+
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Instance of the map model object</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last"><ul><li>startX - X-coordinate of legend item in pixel</li>    
+    <li>LegendItem - Instance of the legend item object that is about to be rendered</li>
+    <li>style - Options to customize the legend item styles such as border, color, size, etc…,</li>    
+    <li>symbolShape - Name of the legend item shape. Use this option to customize legend item shape before rendering</li>
+    <li>map - Instance of the map object corresponding to the legend item</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+
+{% highlight js %}
+ 
+//legendItem Click event for map.
+
+$("#container").ejMap({
+
+    legendItemClick: function (args) {
               //Do something
     }
    
