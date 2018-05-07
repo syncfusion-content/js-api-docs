@@ -2993,6 +2993,29 @@ Specifies the start day of the week in week timescale mode
 
 {% endhighlight %}
 
+### scheduleHeaderSettings.updateTimescaleView `boolean`
+{:#members:scheduleheadersettings-updatetimescaleview}
+
+Enable or disable the automatic timescale update on cell editing, dialog editing and taskbar editing.
+
+#### Default Value
+
+* true
+
+#### Example
+{:.example}
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>                          
+    $("#gantt").ejGantt({  
+       scheduleHeaderSettings:{updateTimescaleView : false }
+    });
+</script>               
+
+{% endhighlight %}
+
 ### scheduleStartDate `string`
 {:#members:schedulestartdate}
 
@@ -4939,6 +4962,75 @@ Sends filtering request to filter a column in Gantt dynamically.
 <script>
         var obj = $("#gantt").ejGantt("instance");
         obj.filterColumn("taskName", "startswith", "plan");
+</script>
+
+{% endhighlight %}
+
+### filterContent(ejPredicate)
+{:#methods:filtercontent}
+
+To filter multiple columns with multiple conditions dynamically in Gantt.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">ejPredicate</td>
+<td class="type">object</td>
+<td class="description">Pass the filtering column details and conditions as ejPredicate instance. The ejPredicate object is defined as fieldName,filterOperator, filterValue and ignoreCase properties.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fieldName</td>
+<td class="type">string</td>
+<td class="description">Pass the field name of the column.</td>
+</tr>
+<tr>
+<td class="name">filterOperator</td>
+<td class="type">string</td>
+<td class="description">string/integer/date operator.</td>
+</tr>
+<tr>
+<td class="name">filterValue</td>
+<td class="type">string</td>
+<td class="description">Pass the value to be filtered in a column.</td>
+</tr>
+<tr>
+<td class="name">ignoreCase</td>
+<td class="type">boolean</td>
+<td class="description">Optional - pass the ignore case value as true/false.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="gantt"></div>  
+<script>
+        var obj = $("#gantt").ejGantt("instance");
+        var predicate = ej.Predicate("taskName", ej.FilterOperators.equal, "planning", false)
+                          .or("taskName", ej.FilterOperators.equal, "plan budget", false)
+                          .and("progress", ej.FilterOperators.equal, 100, true);
+        obj.filterContent(predicate);
 </script>
 
 {% endhighlight %}

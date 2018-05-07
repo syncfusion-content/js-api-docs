@@ -5041,6 +5041,75 @@ treeObject.filterColumn("taskName", "startswith", "plan", "and");
 
 Demo [Link](http://jsplayground.syncfusion.com/1u5o3ncv)
 
+### filterContent(ejPredicate)
+{:#methods:filtercontent}
+
+To filter multiple columns with multiple conditions dynamically in TreeGrid.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">ejPredicate</td>
+<td class="type">object</td>
+<td class="description">Pass the filtering column details and conditions as ejPredicate instance. ejPredicate object is defined as fieldName,filterOperator, filterValue and ignoreCase properties
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">fieldName</td>
+<td class="type">string</td>
+<td class="description">Pass the field name of the column.</td>
+</tr>
+<tr>
+<td class="name">filterOperator</td>
+<td class="type">string</td>
+<td class="description">string/integer/date operator.</td>
+</tr>
+<tr>
+<td class="name">filterValue</td>
+<td class="type">string</td>
+<td class="description">Pass the value to be filtered in a column.</td>
+</tr>
+<tr>
+<td class="name">ignoreCase</td>
+<td class="type">boolean</td>
+<td class="description">Optional - pass the ignore case value as true/false.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="TreeGridContainer"></div>  
+<script>
+        var treeObject = $("#TreeGridContainer").data("ejTreeGrid");
+        var predicate = ej.Predicate("taskName", ej.FilterOperators.equal, "planning", false)
+                          .or("taskName", ej.FilterOperators.equal, "plan budget", false)
+                          .and("progress", ej.FilterOperators.equal, 100, true);
+        treeObject.filterContent(predicate);
+</script>
+
+{% endhighlight %}
+
 ### columnIndex(index)
 {:#methods:columnindex}
 
