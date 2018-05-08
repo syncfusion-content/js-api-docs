@@ -238,91 +238,12 @@ Gets or Sets the URL of the  WebAPI service; it will be used for processing the 
 
 Specifies the toolbar settings.
 
-### toolbarSettings.ToolbarItems `enum`
+### toolbarSettings.items `number`
 {:#members:toolbarsettings-toolbaritems}
-
-Shows or hides the grouped items in the toolbar with the help of enum ej.ReportDesigner.ToolbarItems.
-
-<ts name = "ej.ReportDesigner.ToolbarItems"/>
-Specifies the toolbar items.
-<table class="params">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="name">New</td>
-      <td class="description">Creates a new, blank report.</td>
-    </tr>
-    <tr>
-      <td class="name">Open</td>
-      <td class="description">Displays the Open dialog box to retrieve an existing report.</td>
-    </tr>
-    <tr>
-      <td class="name">Save</td>
-      <td class="description">Saves the active report to a specified location.</td>
-    </tr>
-    <tr>
-      <td class="name">Cut</td>
-      <td class="description">Removes the selected item from the active report.</td>
-    </tr>
-    <tr>
-      <td class="name">Copy</td>
-      <td class="description">Copies selected text or object to the clipboard.</td>
-    </tr>
-    <tr>
-      <td class="name">Paste</td>
-      <td class="description">Pastes the item that cut or copied into (the position of the insertion point) the report from the clipboard.</td>
-    </tr>
-    <tr>
-      <td class="name">Delete</td>
-      <td class="description">Deletes the selected item or text from the report.</td>
-    </tr>
-    <tr>
-      <td class="name">Undo</td>
-      <td class="description">Reverses the last action or deletes the last entry that is typed.</td>
-    </tr>
-    <tr>
-      <td class="name">Redo</td>
-      <td class="description">Reverses the action of the last Undo command.</td>
-    </tr>
-    <tr>
-      <td class="name">Zoom</td>
-      <td class="description">Used to "zoom in" to get a close-up view of a report or "zoom out" to see more of the page at a reduced size.</td>
-    </tr>
-    <tr>
-      <td class="name">Preview</td>
-      <td class="description">Previews the active report in report viewer.</td>
-    </tr>
-    <tr>
-      <td class="name">GridLine</td>
-      <td class="description">Enables/Disables the gridline in active report.</td>
-    </tr>
-    <tr>
-      <td class="name">Header</td>
-      <td class="description">Enables header area in the report.</td>
-    </tr>
-    <tr>
-      <td class="name">Footer</td>
-      <td class="description">Enables footer area in the report.</td>
-    </tr>
-    <tr>
-      <td class="name">EditDesign</td>
-      <td class="description">Switches from preview to design view of the report.</td>
-    </tr>
-     <tr>
-      <td class="name">All</td>
-      <td class="description">Shows all the toolbar items.</td>
-    </tr>
-  </tbody>
-</table>
 
 #### Default value 
 
-<li>ej.ReportDesigner.ToolbarItems.All</li>
+<li>16384</li>
 
 #### Example
 
@@ -331,7 +252,7 @@ Specifies the toolbar items.
 <div id="container"></div>
 <script>
     $("#container").ejReportDesigner({
-        toolbarSettings: { items: ej.ReportDesigner.ToolbarItems.All }
+        toolbarSettings: { items: 16384 }
     });
 </script>
 
@@ -1114,7 +1035,7 @@ This event will be triggered before AJAX loads.
   <tbody>
     <tr>
       <td class='name'>{% highlight html %}headers{% endhighlight %}</td>
-      <td class='type'>object array</td>
+      <td class='type'>array</td>
       <td class='description'>AJAX headers, we can pass any custom header through this property.</td>
     </tr>
     <tr>
@@ -1241,7 +1162,7 @@ This event will be triggered while clicking open menu items.
     </tr>
     <tr>
       <td class='name'>{% highlight html %}select{% endhighlight %}</td>
-      <td class='type'>name</td>
+      <td class='type'>string</td>
       <td class='description'>Name of selected item.</td>
     </tr>
   </tbody>
@@ -1403,7 +1324,7 @@ This event will be triggered when the save menu items are clicked.
     </tr>
     <tr>
       <td class='name'>{% highlight html %}select{% endhighlight %}</td>
-      <td class='type'>name</td>
+      <td class='type'>string</td>
       <td class='description'>Name of selected item.</td>
     </tr>
   </tbody>
@@ -1444,7 +1365,7 @@ This event will be triggered while clicking the toolbar items.
     </tr>
     <tr>
       <td class='name'>{% highlight html %}click{% endhighlight %}</td>
-      <td class='type'>name</td>
+      <td class='type'>string</td>
       <td class='description'>Name of clicked item.</td>
     </tr>
   </tbody>
