@@ -140,7 +140,7 @@ Specifies the locale for report designer.
 <script>          
     $("#container").ejReportDesigner({
             locale: "fr-FR"
-        });             
+    });             
 </script>
 
 {% endhighlight %}
@@ -150,9 +150,9 @@ Specifies the locale for report designer.
 
 Gets or Sets the report path of server.
 
-#### Default value 
+#### Default Value 
 
-<li>null</li>
+* null
 
 #### Example 
 
@@ -172,9 +172,9 @@ Gets or Sets the report path of server.
 
 Gets or Sets the reports server URL.
 
-#### Default value 
+#### Default Value 
 
-<li>null</li>
+* null
 
 #### Example 
 
@@ -194,9 +194,9 @@ Gets or Sets the reports server URL.
 
 Gets or sets the serviceAuthorizationToken to access the Report Server API services.
 
-#### Default value 
+#### Default Value 
 
-<li>empty</li>
+* empty
 
 #### Example 
 
@@ -206,7 +206,7 @@ Gets or sets the serviceAuthorizationToken to access the Report Server API servi
 <script>
    $("#container").ejReportDesigner({ 
      serviceAuthorizationToken: token['token_type'] + ' ' + token['access_token'] 
-     });
+    });
 </script>
 
 {% endhighlight %}
@@ -216,7 +216,7 @@ Gets or sets the serviceAuthorizationToken to access the Report Server API servi
 
 Gets or Sets the URL of the  WebAPI service; it will be used for processing the report.
 
-#### Default value
+#### Default Value
 
 <li>null</li> 
 
@@ -238,12 +238,91 @@ Gets or Sets the URL of the  WebAPI service; it will be used for processing the 
 
 Specifies the toolbar settings.
 
-### toolbarSettings.items `number`
-{:#members:toolbarsettings-toolbaritems}
+### toolbarSettings.items `enum`
+{:#members:toolbarsettings-items}
 
-#### Default value 
+<ts name="ej.ReportDesigner.ToolbarItems"/>
 
-<li>16384</li>
+Shows or hides the grouped items in the toolbar with the help of enum ej.ReportDesigner.ToolbarItems.
+
+<table class="params">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="name">New</td>
+      <td class="description">Creates a new, blank report.</td>
+    </tr>
+    <tr>
+      <td class="name">Open</td>
+      <td class="description">Displays the Open dialog box to retrieve an existing report.</td>
+    </tr>
+    <tr>
+      <td class="name">Save</td>
+      <td class="description">Saves the active report to a specified location.</td>
+    </tr>
+    <tr>
+      <td class="name">Cut</td>
+      <td class="description">Removes the selected item from the active report.</td>
+    </tr>
+    <tr>
+      <td class="name">Copy</td>
+      <td class="description">Copies selected text or object to the clipboard.</td>
+    </tr>
+    <tr>
+      <td class="name">Paste</td>
+      <td class="description">Pastes the item that cut or copied into (the position of the insertion point) the report from the clipboard.</td>
+    </tr>
+    <tr>
+      <td class="name">Delete</td>
+      <td class="description">Deletes the selected item or text from the report.</td>
+    </tr>
+    <tr>
+      <td class="name">Undo</td>
+      <td class="description">Reverses the last action or deletes the last entry that is typed.</td>
+    </tr>
+    <tr>
+      <td class="name">Redo</td>
+      <td class="description">Reverses the action of the last Undo command.</td>
+    </tr>
+    <tr>
+      <td class="name">Zoom</td>
+      <td class="description">Used to "zoom in" to get a close-up view of a report or "zoom out" to see more of the page at a reduced size.</td>
+    </tr>
+    <tr>
+      <td class="name">Preview</td>
+      <td class="description">Previews the active report in report viewer.</td>
+    </tr>
+    <tr>
+      <td class="name">GridLine</td>
+      <td class="description">Enables/Disables the gridline in active report.</td>
+    </tr>
+    <tr>
+      <td class="name">Header</td>
+      <td class="description">Enables header area in the report.</td>
+    </tr>
+    <tr>
+      <td class="name">Footer</td>
+      <td class="description">Enables footer area in the report.</td>
+    </tr>
+    <tr>
+      <td class="name">EditDesign</td>
+      <td class="description">Switches from preview to design view of the report.</td>
+    </tr>
+     <tr>
+      <td class="name">All</td>
+      <td class="description">Shows all the toolbar items.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Default Value
+
+<li>ej.ReportDesigner.ToolbarItems.All</li>
 
 #### Example
 
@@ -252,7 +331,7 @@ Specifies the toolbar settings.
 <div id="container"></div>
 <script>
     $("#container").ejReportDesigner({
-        toolbarSettings: { items: 16384 }
+        toolbarSettings: { items: ej.ReportDesigner.ToolbarItems.All }
     });
 </script>
 
@@ -263,9 +342,9 @@ Specifies the toolbar settings.
 
 Shows or hides the toolbar.
 
-#### Default value 
+#### Default Value 
 
-<li>true</li>
+* true
 
 #### Example
 
@@ -285,7 +364,7 @@ Shows or hides the toolbar.
 
 Specifies the toolbar template ID.
 
-#### Default Value
+#### Default Value 
 
 * empty
 
@@ -297,7 +376,7 @@ Specifies the toolbar template ID.
 <script>          
    $("#container").ejReportDesigner({
            toolbarSettings:{templateId: "customtoolbarId"}
-       });         
+   });         
 </script>
 
 {% endhighlight %}
