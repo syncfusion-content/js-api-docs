@@ -716,8 +716,8 @@ Enable/Disable the drillDown for treemap
 {% endhighlight %}
 
 
-### drillDownDataValue `string`
-{:#members:drilldowndatavalue}
+### drillDownValue `string`
+{:#members:drilldownvalue}
 
 Specifies to drill the particular data of the treemap.
 
@@ -729,29 +729,29 @@ Specifies to drill the particular data of the treemap.
 
 {% highlight js %}
  
-//To set drillDownDataValue API value during initialization 
-  $("#container").ejTreeMap({drillDownDataValue:'Asia'});
+//To set drillDownValue API value during initialization 
+  $("#container").ejTreeMap({drillDownValue:'Asia'});
 
 {% endhighlight %}
 
 
 {% highlight js %}
  
-//Get or set the drillDownDataValue API, after initialization:
+//Get or set the drillDownValue API, after initialization:
    
-   //Gets the drillDownDataValue value 
+   //Gets the drillDownValue value 
    
-   var property =$("#container").data("ejTreeMap").model.drillDownDataValue;
+   var property =$("#container").data("ejTreeMap").model.drillDownValue;
  
-   //Sets the drillDownDataValue value 
+   //Sets the drillDownValue value 
    
-   $("#container").data("ejTreeMap").model.drillDownDataValue = 'Asia'; 
+   $("#container").data("ejTreeMap").model.drillDownValue = 'Asia'; 
 
 {% endhighlight %}
 
 
-### drilledStateLevel `number`
-{:#members:drilledstatelevel}
+### drillDownLevel `number`
+{:#members:drilldownlevel}
 
 Specifies to render particular level of the treemap.
 
@@ -763,23 +763,23 @@ Specifies to render particular level of the treemap.
 
 {% highlight js %}
  
-//To set drilledStateLevel API value during initialization 
-  $("#container").ejTreeMap({drilledStateLevel:1});
+//To set drillDownLevel API value during initialization 
+  $("#container").ejTreeMap({drillDownLevel:1});
 
 {% endhighlight %}
 
 
 {% highlight js %}
  
-//Get or set the drilledStateLevel API, after initialization:
+//Get or set the drillDownLevel API, after initialization:
  
-   //Gets the drilledStateLevel value 
+   //Gets the drillDownLevel value 
  
-   var property =$("#container").data("ejTreeMap").model.drilledStateLevel;
+   var property =$("#container").data("ejTreeMap").model.drillDownLevel;
  
-   //Sets the drilledStateLevel value 
+   //Sets the drillDownLevel value 
    
-   $("#container").data("ejTreeMap").model.drilledStateLevel = 5; 
+   $("#container").data("ejTreeMap").model.drillDownLevel = 5; 
 
 {% endhighlight %}
 
