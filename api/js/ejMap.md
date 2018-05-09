@@ -413,7 +413,7 @@ Specifies animation duration for map shapes while zooming.
 {% highlight js %}
  
 //To set animationDuration API value during initialization 
-   $("#container").ejMap({zoomSettings:{animationDuration:true}});           
+   $("#container").ejMap({zoomSettings:{animationDuration:1000}});           
 
 {% endhighlight %}
 
