@@ -140,7 +140,7 @@ Specifies the locale for report designer.
 <script>          
     $("#container").ejReportDesigner({
             locale: "fr-FR"
-        });             
+    });             
 </script>
 
 {% endhighlight %}
@@ -150,9 +150,9 @@ Specifies the locale for report designer.
 
 Gets or Sets the report path of server.
 
-#### Default value 
+#### Default Value 
 
-<li>null</li>
+* null
 
 #### Example 
 
@@ -172,9 +172,9 @@ Gets or Sets the report path of server.
 
 Gets or Sets the reports server URL.
 
-#### Default value 
+#### Default Value 
 
-<li>null</li>
+* null
 
 #### Example 
 
@@ -194,9 +194,9 @@ Gets or Sets the reports server URL.
 
 Gets or sets the serviceAuthorizationToken to access the Report Server API services.
 
-#### Default value 
+#### Default Value 
 
-<li>empty</li>
+* empty
 
 #### Example 
 
@@ -206,7 +206,7 @@ Gets or sets the serviceAuthorizationToken to access the Report Server API servi
 <script>
    $("#container").ejReportDesigner({ 
      serviceAuthorizationToken: token['token_type'] + ' ' + token['access_token'] 
-     });
+    });
 </script>
 
 {% endhighlight %}
@@ -216,7 +216,7 @@ Gets or sets the serviceAuthorizationToken to access the Report Server API servi
 
 Gets or Sets the URL of the  WebAPI service; it will be used for processing the report.
 
-#### Default value
+#### Default Value
 
 <li>null</li> 
 
@@ -238,13 +238,13 @@ Gets or Sets the URL of the  WebAPI service; it will be used for processing the 
 
 Specifies the toolbar settings.
 
-### toolbarSettings.ToolbarItems `enum`
-{:#members:toolbarsettings-toolbaritems}
+### toolbarSettings.items `enum`
+{:#members:toolbarsettings-items}
+
+<ts name="ej.ReportDesigner.ToolbarItems"/>
 
 Shows or hides the grouped items in the toolbar with the help of enum ej.ReportDesigner.ToolbarItems.
 
-<ts name = "ej.ReportDesigner.ToolbarItems"/>
-Specifies the toolbar items.
 <table class="params">
   <thead>
     <tr>
@@ -320,7 +320,7 @@ Specifies the toolbar items.
   </tbody>
 </table>
 
-#### Default value 
+#### Default Value
 
 <li>ej.ReportDesigner.ToolbarItems.All</li>
 
@@ -342,9 +342,9 @@ Specifies the toolbar items.
 
 Shows or hides the toolbar.
 
-#### Default value 
+#### Default Value 
 
-<li>true</li>
+* true
 
 #### Example
 
@@ -364,7 +364,7 @@ Shows or hides the toolbar.
 
 Specifies the toolbar template ID.
 
-#### Default Value
+#### Default Value 
 
 * empty
 
@@ -376,7 +376,7 @@ Specifies the toolbar template ID.
 <script>          
    $("#container").ejReportDesigner({
            toolbarSettings:{templateId: "customtoolbarId"}
-       });         
+   });         
 </script>
 
 {% endhighlight %}
@@ -1114,7 +1114,7 @@ This event will be triggered before AJAX loads.
   <tbody>
     <tr>
       <td class='name'>{% highlight html %}headers{% endhighlight %}</td>
-      <td class='type'>object array</td>
+      <td class='type'>array</td>
       <td class='description'>AJAX headers, we can pass any custom header through this property.</td>
     </tr>
     <tr>
@@ -1241,7 +1241,7 @@ This event will be triggered while clicking open menu items.
     </tr>
     <tr>
       <td class='name'>{% highlight html %}select{% endhighlight %}</td>
-      <td class='type'>name</td>
+      <td class='type'>string</td>
       <td class='description'>Name of selected item.</td>
     </tr>
   </tbody>
@@ -1403,7 +1403,7 @@ This event will be triggered when the save menu items are clicked.
     </tr>
     <tr>
       <td class='name'>{% highlight html %}select{% endhighlight %}</td>
-      <td class='type'>name</td>
+      <td class='type'>string</td>
       <td class='description'>Name of selected item.</td>
     </tr>
   </tbody>
@@ -1444,7 +1444,7 @@ This event will be triggered while clicking the toolbar items.
     </tr>
     <tr>
       <td class='name'>{% highlight html %}click{% endhighlight %}</td>
-      <td class='type'>name</td>
+      <td class='type'>string</td>
       <td class='description'>Name of clicked item.</td>
     </tr>
   </tbody>
