@@ -13337,6 +13337,11 @@ Triggered before the cell is going to be selected.
 <td class="description last">Returns whether the shift key is pressed while selecting cell</td>
 </tr>
 <tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
+</tr>
+<tr>
 <td class="name">model</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">Returns the grid model.</td>
