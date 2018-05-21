@@ -857,41 +857,6 @@ Triggers when PivotTreeMap starts to render.
     });
 {% endhighlight %}
 
-### beforePivotEnginePopulate
-{:#events:beforepivotenginepopulate}
-
-Triggers before populating the pivot engine from datasource.
-
-<table class="params">
-<thead>
-<tr>
-<th colspan="3">Event Parameters</th>
-</tr>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">treeMapObject</td>
-<td class="type">object</td>
-<td class="description last">returns the current instance of PivotTreeMap control.</td>
-</tr>
-</tbody>
-</table>
-
-
-**Example:**
-
-{% highlight javascript %}
- 
-    $("#PivotTreeMap1").ejPivotTreeMap({
-        beforePivotEnginePopulate: function (args) {}
-    });
-{% endhighlight %}
-
 ### drillSuccess
 {:#events:drillsuccess}
 

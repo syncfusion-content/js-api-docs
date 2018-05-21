@@ -1587,6 +1587,38 @@ Triggers before any AJAX request is passed from the pivot chart to service metho
 
 {% endhighlight %}
 
+### beforeSeriesRender
+{:#events:beforeseriesrender}
+
+Triggers before rendering multiple series with multiple axes.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last"><b>series</b> - Instance of the series which is about to get rendered</td>
+</tr>
+</tbody>
+</table>
+
+**Example:**
+
+{% highlight javascript %}
+
+    $("#PivotChart1").ejPivotChart({
+        beforeSeriesRender: function (args) {}
+    });
+
+{% endhighlight %}
 
 ### drillSuccess
 {:#events:drillsuccess}
