@@ -7572,6 +7572,39 @@ type{% endhighlight %}</td>
 
 {% endhighlight %}
 
+### refreshed
+{:#events:refreshed}
+
+Triggers after refreshing the map items.
+
+<table class="params">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th class="last">Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="name">{% highlight html %}originalEvent{% endhighlight %}</td>
+            <td class="type"><span class="param-type">object</span></td>
+            <td class="description last">Refresh and load the map.</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Example
+
+{% highlight js %}
+ 
+//refreshed  event for map
+  $("#container").ejMap({
+   refreshed : function (event) {}
+  });
+
+{% endhighlight %}
+
 
 <a class="" href="http://www.syncfusion.com/copyright" target="_blank">Copyright &copy; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a>
 
