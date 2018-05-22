@@ -429,8 +429,8 @@ Determines whether a cut operation is possible.
 
 {% endhighlight %}
 
-### canDelete()
-{:#methods:candelete}
+### canRemove()
+{:#methods:canremove}
 
 Determines whether a delete operation is possible.
 
@@ -447,7 +447,7 @@ Determines whether a delete operation is possible.
     // Create ReportDesigner Instance
     $("#container").ejReportDesigner();
     var designerObj = $("#container").data("ejReportDesigner");
-    designerObj.canDelete();
+    designerObj.canRemove();
 </script>
 
 {% endhighlight %}
@@ -559,8 +559,8 @@ Cuts the selected ReportItem from design panel to Report Designer internal clipb
 
 {% endhighlight %}
 
-### delete()
-{:#methods:delete}
+### remove()
+{:#methods:remove}
 
 Deletes the selected item from the report.
 
@@ -573,7 +573,7 @@ Deletes the selected item from the report.
     // Create ReportDesigner Instance
     $("#container").ejReportDesigner();
     var designerObj = $("#container").data("ejReportDesigner");
-    designerObj.delete();
+    designerObj.remove();
 </script>
 
 {% endhighlight %}
