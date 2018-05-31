@@ -1435,7 +1435,7 @@ var playerObj = $("#basicPlayer").data("ejMediaPlayer");
 {:#methods:unmute}
 
 
-Unmutes the media player.
+Allows unmuting the media player.
 
 
 #### Example
