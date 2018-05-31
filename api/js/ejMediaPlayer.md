@@ -674,10 +674,10 @@ Shows the play list panel.
 
 Consist of the following items.
 
-* URL: Specifies the URL link of the required file.
-* Title: Specifies the title of the required file.
-* Postural: Specifies the background image for the required file.
-* Author: Specifies the name of the author.
+* url: Specifies the URL link of the required file.
+* title: Specifies the title of the required file.
+* posterUrl: Specifies the background image for the required file.
+* author: Specifies the name of the author.
 
 
 
