@@ -716,6 +716,74 @@ Enable/Disable the drillDown for treemap
 {% endhighlight %}
 
 
+### drillDownValue `string`
+{:#members:drilldownvalue}
+
+Specifies to drill the particular data of the treemap.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set drillDownValue API value during initialization 
+  $("#container").ejTreeMap({drillDownValue:'Asia'});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the drillDownValue API, after initialization:
+   
+   //Gets the drillDownValue value 
+   
+   var property =$("#container").data("ejTreeMap").model.drillDownValue;
+ 
+   //Sets the drillDownValue value 
+   
+   $("#container").data("ejTreeMap").model.drillDownValue = 'Asia'; 
+
+{% endhighlight %}
+
+
+### drillDownLevel `number`
+{:#members:drilldownlevel}
+
+Specifies to render particular level of the treemap.
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight js %}
+ 
+//To set drillDownLevel API value during initialization 
+  $("#container").ejTreeMap({drillDownLevel:1});
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the drillDownLevel API, after initialization:
+ 
+   //Gets the drillDownLevel value 
+ 
+   var property =$("#container").data("ejTreeMap").model.drillDownLevel;
+ 
+   //Sets the drillDownLevel value 
+   
+   $("#container").data("ejTreeMap").model.drillDownLevel = 5; 
+
+{% endhighlight %}
+
+
 
 ### isResponsive `boolean`
 {:#members:isresponsive}
@@ -3124,6 +3192,24 @@ Method to reload treemap with updated values.
    
 {% endhighlight %}
 
+
+### drillDown()
+{:#methods:drilldown}
+
+Method to drilldown the treemap.
+
+
+#### Returns: void
+
+
+#### Example
+
+{% highlight js %}
+ 
+//refresh method for treemap
+   $("#container").ejTreeMap("drillDown");
+   
+{% endhighlight %}
 
 
 ## Events

@@ -822,17 +822,17 @@ This method is used to save the changes to the corresponding table. You can add 
 <tr>
 <td class="name">key</td>
 <td class="type"><span class="param-type">String</span></td>
-<td class="description last">KeyColumn to find the data,this is optional.</td>
+<td class="description last">KeyColumn to find the data</td>
 </tr>
 <tr>
 <td class="name">tableName </td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">Name of the source table,this is optional.</td>
+<td class="description last">Name of the source table</td>
 </tr>
 <tr>
 <td class="name">query</td>
 <td class="type"><span class="param-type">ej.Query</span></td>
-<td class="description last">Sets the default query for the data source,this is optional.</td>
+<td class="description last">Sets the default query for the data source.</td>
 </tr>
 </tbody>
 </table>

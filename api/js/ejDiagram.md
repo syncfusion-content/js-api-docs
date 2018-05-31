@@ -881,6 +881,14 @@ Enables or disables the behaviors of connectors.
             <td class="description last">Enables connector to be selected and dragged.</td>
        </tr>
         <tr>
+            <td class="name">Routing</td>
+            <td class="description last">Enables the Routing for an connector</td>
+       </tr>
+        <tr>
+            <td class="name">InheritRouting</td>
+            <td class="description last">Inherit the routing option defined in the diagram constraints.</td>
+       </tr>
+        <tr>
             <td class="name">Default</td>
             <td class="description last">Enables all constraints</td>
        </tr>
@@ -1635,6 +1643,31 @@ connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200,
          labels:[{ text:"label", offset:{ x:0 }, horizontalAlignment:"left", margin:{ bottom: 5 }}]
       }];
 $("#diagramcontent").ejDiagram({connectors:connectors});
+</script>
+
+{% endhighlight %}
+
+### connectors.labels.padding `object`
+{:#members:connectors-labels-padding}
+
+Sets the padding for connector label.
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.Point(0.5, 0.5)
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var connectors;
+connectors=[{ name:"connector1", sourcePoint:{x:100, y:100}, targetPoint:{x:200, y:200},
+         labels:[{ text:"label", offset:ej.datavisualization.Diagram.Point(0,0.5),padding:{ right: 5 } }]
+      }];
+$("#diagramcontent").ejDiagram({connectors:connectors});
+
 </script>
 
 {% endhighlight %}
@@ -4120,6 +4153,10 @@ Enables/Disables the default behaviors of the diagram.
        <tr>
             <td class="name">FloatElements</td>
             <td class="description last">Enables/Disables the drag and drop of element from one diagram to the other</td>
+       </tr>
+       <tr>
+            <td class="name">Routing</td>
+            <td class="description last">Enables the routing for an connector in diagram</td>
        </tr>
         <tr>
             <td class="name">Default</td>
@@ -9540,6 +9577,31 @@ var nodes;
 nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
          labels:[{ text:"label1",fontColor:"red",textOverflow:true,
          overflowType: ej.datavisualization.Diagram.OverflowType.Ellipsis}]
+      }];
+$("#diagramcontent").ejDiagram({nodes:nodes});
+</script>
+
+{% endhighlight %}
+
+### nodes.labels.padding `object`
+{:#members:nodes-labels-padding}
+
+To set the padding of the node label
+
+#### Default Value:
+
+* ej.datavisualization.Diagram.Padding()
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var nodes;
+nodes=[{ name: "node1", width: 50, height:50, offsetX:50, offsetY:50, 
+	     //Leaves 5px space between the left boundary of node and label
+         labels:[{ text:"label", offset:{ x:0 }, horizontalAlignment:"left", padding:{ left: 5 }}]
       }];
 $("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
