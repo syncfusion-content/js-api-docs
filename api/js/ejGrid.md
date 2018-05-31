@@ -7474,23 +7474,6 @@ $("#Grid").ejGrid("getCurrentViewData");
 
 Get the data of given row index in grid.
 
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th class="last">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">rowIndex</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description last">Pass the index of the row to get the corresponding data</td>
-</tr>
-</tbody>
-</table>
-
 N> It will work only for batch edit mode.
 
 #### Returns:
@@ -13352,6 +13335,11 @@ Triggered before the cell is going to be selected.
 <td class="name">isShiftKeyPressed</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">Returns whether the shift key is pressed while selecting cell</td>
+</tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Returns the cancel option value.</td>
 </tr>
 <tr>
 <td class="name">model</td>

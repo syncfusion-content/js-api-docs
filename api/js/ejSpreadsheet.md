@@ -6921,7 +6921,7 @@ $("#Spreadsheet").ejSpreadsheet("setSheetFocus");
 
 {% endhighlight %}
 
-### setWidthToColumns(widthColl)
+### setWidthToColumns(widthColl, \[sheetIndex\])
 {:#methods:setwidthtocolumns}
 
 This method is used to set the width for the columns in the Spreadsheet.
@@ -6939,6 +6939,11 @@ This method is used to set the width for the columns in the Spreadsheet.
 <td class="type"><span class="param-type">Array|Object</span></td>
 <td class="description">Pass the column index and width of the columns.</td>
 </tr>
+<tr>
+<td class="name">sheetIndex</td>
+<td  class="type"><span class="param-type">Number</span></td>
+<td  class="description">Optional. If sheetIdx is specified, it will set the width for columns to the specified sheet else it will use active sheet.</td>
+</tr>
 </tbody>
 </table>
 
@@ -6951,8 +6956,8 @@ var widthCollObj= [{colIndex: 2, width: 40}, {colIndex: 3, width: 50}], widthCol
 var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // Set width for specified columns in active sheet
 excelObj.setWidthToColumns(widthCollObj);
-// Set width for columns starting from the '0'th index in active sheet.
-excelObj.setWidthToColumns(widthCollArr);
+// Set width for columns starting from the '0'th index in second sheet.
+excelObj.setWidthToColumns(widthCollArr, 2);
 </script>
 
 {% endhighlight %}
@@ -6961,8 +6966,8 @@ excelObj.setWidthToColumns(widthCollArr);
 <script>
 // Set width for specified columns in active sheet.
 $("#Spreadsheet").ejSpreadsheet("setWidthToColumns", widthCollObj);
-// Set width for columns starting from the '0'th index in active sheet.
-$("#Spreadsheet").ejSpreadsheet("setWidthToColumns", widthCollArr);
+// Set width for columns starting from the '0'th index in second sheet.
+$("#Spreadsheet").ejSpreadsheet("setWidthToColumns", widthCollArr, 2);
 
 </script>
 

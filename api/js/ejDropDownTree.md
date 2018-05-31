@@ -592,7 +592,7 @@ Allows you to set a particular country or regional language for the DropDownTree
 
     $(function () {
         var data = ej.DataManager({ url: "http://mvc.syncfusion.com/services/Northwnd.svc/Customers" });
-        $('#company').ejDropDownList({
+        $('#company').ejDropDownTree({
             dataSource: data,
             fields: { text: "CompanyName", value: 'ContactName' },
             width: 260,
@@ -1513,7 +1513,7 @@ ddTreeObj.getValue();
  
 
     <script>
-        $('#selectItem').ejDropDownList("getValue");
+        $('#selectItem').ejDropDownTree("getValue");
     </script>
 
 {% endhighlight %}
@@ -1564,7 +1564,7 @@ ddTreeObj.hidePopup();
  
 
     <script>
-        $('#selectItem').ejDropDownList("hidePopup");
+        $('#selectItem').ejDropDownTree("hidePopup");
     </script>
     
 {% endhighlight %}
