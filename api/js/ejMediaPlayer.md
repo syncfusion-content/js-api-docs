@@ -9,7 +9,7 @@ keywords: mediaplayer, ejMediaPlayer, syncfusion, medaiplayer api
 
 # ejMediaPlayer
 
-Media player is a HTML5 component which is used to embed a media in a web page such as web videos, YouTube and audio files.
+Media player is a HTML5 component that is used to embed web videos, YouTube, and audio files in web pages.
 
 
 #### Syntax
@@ -49,7 +49,7 @@ $("#basicPlayer").ejMediaPlayer();
 {:#members:autoplay}
 
 
-It is used to enable/disable the player to automatically play.
+Enables/disables the player automatically.
 
 
 
@@ -91,7 +91,7 @@ It is used to enable/disable the player to automatically play.
 
 
 
-It is used to hide the toolbar and header content, when mouseout the content area. It's default value is true.
+Hides the toolbar and header content when mouseout of the content area. The default value is true.
 
 
 
@@ -131,7 +131,7 @@ It is used to hide the toolbar and header content, when mouseout the content are
 ### autoHideTime `number`
 {:#members:autohidetime}
 
-Specifies the time duration(seconds) when toolbar and content needs to hide.
+Specifies the duration (seconds) when toolbar and content need to be hidden.
 
 
 
@@ -173,7 +173,7 @@ Specifies the time duration(seconds) when toolbar and content needs to hide.
 {:#members:contenttype}
 
 
-It is used to set the content type of the player such as video or audio.
+Sets the content type of the player such as video or audio.
 
 
 
@@ -214,7 +214,7 @@ It is used to set the content type of the player such as video or audio.
 {:#members:cssclass}
 
 
-Sets the root CSS class for Media Player theme, which is used to customize.
+Sets the root CSS class for media player theme, which is used to customize alignment, color, and more.
 
 
 
@@ -255,7 +255,7 @@ Sets the root CSS class for Media Player theme, which is used to customize.
 {:#members:disablekeys}
 
 
-You can enable/disable keyboard short cuts by disableKeys property. It is false by default. 
+Enables/disables keyboard shortcuts using disableKeys property. It is false, by default.
 
 
 
@@ -296,7 +296,7 @@ You can enable/disable keyboard short cuts by disableKeys property. It is false 
 {:#members:forwardtime}
 
 
-It forwards the current audio/video source of the media player to the specified time (seconds) from the current time.
+Forwards the current audio/video source of the media player from the current time to the specified time (seconds).
 
 
 
@@ -337,7 +337,7 @@ It forwards the current audio/video source of the media player to the specified 
 {:#members:locale}
 
 
-You can set the language for Media Player control with locale property. 
+Sets the language for the media player control using locale property. 
 
 
 
@@ -379,7 +379,7 @@ You can set the language for Media Player control with locale property.
 {:#members:height}
 
 
-Specifies the height of the MediaPlayer.
+Specifies the height of the media player.
 
 
 
@@ -421,7 +421,7 @@ Specifies the height of the MediaPlayer.
 {:#members:mute}
 
 
-It mutes the media player.
+Mutes the media player.
 
 
 
@@ -462,7 +462,7 @@ It mutes the media player.
 {:#members:playspeed}
 
 
-It returns the speed of the audio/video player.
+Returns the speed of the audio/video player.
 
 
 
@@ -502,7 +502,7 @@ It returns the speed of the audio/video player.
 {:#members:repeat}
 
 
-It enables/disables repeat functionality of the play list
+Enables/disables repeat functionality of the play list.
 
 
 
@@ -544,7 +544,7 @@ It enables/disables repeat functionality of the play list
 {:#members:rendermode}
 
 
-There are three rendering layouts in Media Player such as Basic, Advanced and Mobile.
+The three rendering layouts in the media player are basic, advanced, and mobile.
 
 
 *ej.MediaPlayer.RenderMode.Basic
@@ -593,7 +593,7 @@ There are three rendering layouts in Media Player such as Basic, Advanced and Mo
 {:#members:rewindtime}
 
 
-It rewinds the current audio/video source of the media player to the specified time (seconds) from the current time.
+Rewinds the current audio/video source of the media player from the current time to the specified time (seconds).
 
 
 
@@ -632,7 +632,8 @@ It rewinds the current audio/video source of the media player to the specified t
 ### showPlaylist `boolean`
 {:#members:showplaylist}
 
-It shows the play list panel.
+
+Shows the play list panel.
 
 
 
@@ -671,12 +672,12 @@ It shows the play list panel.
 ### source `object|Array`
 {:#members:source}
 
-Its consist of below items.
+Consist of the following items.
 
-* url - Its specifies the url link of required file.
-* title - Its specifies to set the title for required file.
-* postUrl - Its specifies to set the background image for required file.
-* author - Its specifies the name of the author.
+* URL: Specifies the URL link of the required file.
+* Title: Specifies the title of the required file.
+* Postural: Specifies the background image for the required file.
+* Author: Specifies the name of the author.
 
 
 
@@ -724,7 +725,7 @@ Its consist of below items.
 ### playlistTitle `string`
 {:#members:playlisttitle}
 
-It shows the title of the play list panel.
+Shows the title of the play list panel.
 
 
 
@@ -764,7 +765,7 @@ It shows the title of the play list panel.
 {:#members:showposter}
 
 
-You can show/hide the poster by setting showPoster property, it is true by default.
+Shows/hides the poster by setting showPoster property. It is set to true, by default.
 
 
 
@@ -805,8 +806,7 @@ You can show/hide the poster by setting showPoster property, it is true by defau
 {:#members:showtitle}
 
 
-You can show/hide the title by setting showTitle property, it is true by default.
-
+Shows/hides the title by setting the showTitle property. It is set to true, by default.
 
 
 
@@ -845,7 +845,7 @@ You can show/hide the title by setting showTitle property, it is true by default
 {:#members:shuffle}
 
 
-It enables/disables shuffle functionality of the play list.
+Enables/disables the shuffle functionality of the play list.
 
 
 
@@ -885,7 +885,7 @@ It enables/disables shuffle functionality of the play list.
 {:#members:shuffle}
 
 
-Specifies the height of the Toolbar.
+Specifies the height of the toolbar.
 
 
 
@@ -924,7 +924,7 @@ Specifies the height of the Toolbar.
 ### volume `number`
 {:#members:volume}
 
-It defines the volume (0-100) of the player.
+Defines the volume (0-100) of the player.
 
 
 
@@ -964,8 +964,7 @@ It defines the volume (0-100) of the player.
 {:#members:width}
 
 
-Specifies the width of the MediaPlayer.
-
+Specifies the width of the media player.
 
 
 
@@ -1011,7 +1010,7 @@ $("#basicPlayer").ejMediaPlayer({width: "700px"});
 ### exitFullScreen()
 {:#methods:exitfullscreen}
 
-It used to exit from the full screen of the player.
+Used to exit the full screen of the player.
 
 #### Example
 
@@ -1040,7 +1039,7 @@ playerObj.exitFullScreen(); // exit full screen
 {:#methods:getcurrentmediaindex}
 
 
-It returns the current index of the play list.
+Returns the current index of the play list..
 
 
 #### Example
@@ -1068,7 +1067,7 @@ var playerObj = $("#basicPlayer").data("ejMediaPlayer");
 ### getCurrentTime()
 {:#methods:getcurrenttime}
 
-It returns the current playing time (seconds).
+Returns the current playing time (seconds).
 
 #### Example
 
@@ -1096,12 +1095,11 @@ var playerObj = $("#basicPlayer").data("ejMediaPlayer");
 {:#methods:getcurrentmediatype}
 
 
-It returns the below types of the current source.
+Returns the following types of current source.
 
 * ej.MediaPlayer.Types.Audio
 * ej.MediaPlayer.Types.Video
 * ej.MediaPlayer.Types.YouTube
-
 
 #### Example
 
@@ -1129,7 +1127,7 @@ var playerObj = $("#basicPlayer").data("ejMediaPlayer");
 ### getDuration()
 {:#methods:getduration}
 
-It returns the whole duration (seconds) time of the current source (video/audio).
+Returns the whole duration (seconds) of the current source (video/audio).
 
 #### Example
 
@@ -1158,7 +1156,7 @@ var playerObj = $("#basicPlayer").data("ejMediaPlayer");
 {:#methods:getmediaspeed}
 
 
-It returns the media speed.
+Returns the media speed.
 
 
 #### Example
@@ -1189,7 +1187,7 @@ playerObj.getMediaSpeed(); // returns speed of the media
 ### getVolume()
 {:#methods:getvolume}
 
-It returns the volume of the player.
+Returns the volume of the player.
 
 #### Example
 
@@ -1216,7 +1214,9 @@ var playerObj = $("#basicPlayer").data("ejMediaPlayer");
 ### hidePlaylist()
 {:#methods:hideplaylist}
 
-It hides the play list panel.
+
+Hides the play list panel.
+
 
 #### Example
 
@@ -1242,7 +1242,7 @@ playerObj.hidePlaylist(); // hides the play list
 ### makeFullScreen()
 {:#methods:makefullscreen}
 
-It enables full screen for the player
+Enables full screen mode for the player.
 
 #### Example
 
@@ -1269,7 +1269,7 @@ playerObj.makeFullScreen(); // make full screen
 {:#methods:mute}
 
 
-It allows to mute the media player.
+Allows muting the media player.
 
 
 #### Example
@@ -1297,7 +1297,7 @@ var playerObj = $("#basicPlayer").data("ejMediaPlayer");
 {:#methods:next}
 
 
-It allows to play the next audio/video source of the media player.
+Allows playing the next audio/video source of the media player.
 
 #### Example
 
@@ -1325,7 +1325,7 @@ var playerObj = $("#basicPlayer").data("ejMediaPlayer");
 
 {:#methods:pause}
 
-It allows to pause the current audio/video source of the media player.
+Allows pausing the current audio/video source of the media player.
 
 #### Example
 
@@ -1353,7 +1353,8 @@ var playerObj = $("#basicPlayer").data("ejMediaPlayer");
 
 
 
-It allows to play the previous audio/video source of the media player.
+Plays the previous audio/video source of the media player.
+
 
 #### Example
 
@@ -1380,7 +1381,7 @@ playerObj.previous();
 
 {:#methods:play}
 
-It allows to play the current audio/video source of the media player.
+Plays the current audio/video source of the media player.
 
 #### Example
 
@@ -1407,8 +1408,7 @@ var playerObj = $("#basicPlayer").data("ejMediaPlayer");
 {:#methods:stop}
 
 
-It allows to stop the current audio/video source of the media player.
-
+Stops the current audio/video source of the media player.
 
 #### Example
 
@@ -1435,7 +1435,7 @@ var playerObj = $("#basicPlayer").data("ejMediaPlayer");
 {:#methods:unmute}
 
 
-It allows to unmute the media player.
+Unmutes the media player.
 
 
 #### Example
@@ -1533,7 +1533,7 @@ $("#basicPlayer").ejMediaPlayer({
 
 
 
-Triggers when show/hide play list (through showPlaylist API).
+Triggers when showing/hiding the play list (through showPlaylist API).
 
 
 
@@ -1595,7 +1595,7 @@ $("#basicPlayer").ejMediaPlayer({
 
 
 
-Triggers on toggling repeat functionality. We can get the repeat value in the "isRepeat" parameter.
+Triggers on toggling repeat functionality. Get the enabled or disabled repeat status using  "isRepeat" parameter.
 
 
 
@@ -1625,7 +1625,7 @@ $("#basicPlayer").ejMediaPlayer({
 
 
 
-Triggers on toggling shuffle functionality. We can get the repeated value in the "isShuffle" parameter.
+Triggers on toggling shuffle functionality. Get the enabled or disabled shuffle status using isShuffle" parameter.
 
 
 
@@ -1657,7 +1657,7 @@ $("#basicPlayer").ejMediaPlayer({
 
 
 
-Triggers when player successfully reached the end of current media source.
+Triggers when the player successfully reaches the end of the current media source.
 
 
 
@@ -1678,7 +1678,3 @@ $("#basicPlayer").ejMediaPlayer({
             
 
 {% endhighlight %}
-
-
-
-
