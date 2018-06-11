@@ -4767,6 +4767,7 @@
 					<li id="toc-methods:addrecord"><a href="/api/js/ejgantt#methods:addrecord">addRecord</a></li>
 					<li id="toc-methods:canceledit"><a href="/api/js/ejgantt#methods:canceledit">cancelEdit</a></li>
 					<li id="toc-methods:clearfilter"><a href="/api/js/ejgantt#methods:clearfilter">clearFilter</a></li>
+					<li id="toc-methods:clearsorting"><a href="/api/js/ejgantt#methods:clearsorting ">clearSorting</a></li>
 					<li id="toc-methods:collapseallitems"><a href="/api/js/ejgantt#methods:collapseallitems">collapseAllItems</a></li>
 					<li id="toc-methods:deletedependency"><a href="/api/js/ejgantt#methods:deletedependency">deleteDependency</a></li>
 					<li id="toc-methods:deleteitem"><a href="/api/js/ejgantt#methods:deleteitem">deleteItem</a></li>
@@ -4776,6 +4777,8 @@
 					<li id="toc-methods:export"><a href="/api/js/ejgantt#methods:export">export</a></li>
 					<li id="toc-methods:filtercolumn"><a href="/api/js/ejgantt#methods:filtercolumn">filterColumn</a></li>
 					<li id="toc-methods:filtercontent"><a href="/api/js/ejgantt#methods:filtercontent">filterContent</a></li>
+					<li id="toc-methods:getcolumns"><a href="/api/js/ejgantt#methods:getcolumns">getColumns</a></li>
+					<li id="toc-methods:getresourcevieweditcolumns"><a href="/api/js/ejgantt#methods:getresourcevieweditcolumns">getResourceViewEditColumns</a></li>
 					<li id="toc-methods:hidecolumn"><a href="/api/js/ejgantt#methods:hidecolumn">hideColumn</a></li>
 					<li id="toc-methods:indentitem"><a href="/api/js/ejgantt#methods:indentitem">indentItem</a></li>
 					<li id="toc-methods:openadddialog"><a href="/api/js/ejgantt#methods:openadddialog">openAddDialog</a></li>
@@ -4785,6 +4788,7 @@
 					<li id="toc-methods:searchitem"><a href="/api/js/ejgantt#methods:searchitem">searchItem</a></li>
 					<li id="toc-methods:selectcells"><a href="/api/js/ejgantt#methods:selectcells">selectCells</a></li>
 					<li id="toc-methods:selectmultiplerows"><a href="/api/js/ejgantt#methods:selectmultiplerows">selectMultipleRows</a></li>
+					<li id="toc-methods:setscrolltop"><a href="/api/js/ejgantt#methods:setscrolltop">setScrollTop</a></li>
 					<li id="toc-methods:setsplitterindex"><a href="/api/js/ejgantt#methods:setsplitterindex">setSplitterIndex</a></li>
 					<li id="toc-methods:setsplitterposition"><a href="/api/js/ejgantt#methods:setsplitterposition">setSplitterPosition</a></li>
 					<li id="toc-methods:showcolumn"><a href="/api/js/ejgantt#methods:showcolumn">showColumn</a></li>
@@ -4793,6 +4797,7 @@
 					<li id="toc-methods:updatedependency"><a href="/api/js/ejgantt#methods:updatedependency">updateDependency</a></li>
 					<li id="toc-methods:updaterecordbytaskid"><a href="/api/js/ejgantt#methods:updaterecordbytaskid">updateRecordByTaskId</a></li>
 					<li id="toc-methods:updaterecordbyindex"><a href="/api/js/ejgantt#methods:updaterecordbyindex">updateRecordByIndex</a></li>
+					<li id="toc-methods:updatescheduledates"><a href="/api/js/ejgantt#methods:updatescheduledates">updateScheduleDates</a></li>
 					<li id="toc-methods:updatetaskid"><a href="/api/js/ejgantt#methods:updatetaskid">updateTaskId</a></li>
 				</ul>
 			</li>
@@ -12753,335 +12758,366 @@
 	</li>
 	<li><a href="/api/js/ejtreegrid">ejTreeGrid</a>
 		<ul>
-			<li><a href="/api/js/ejtreegrid#members">Members</a>
-				<ul>
-					<li id="toc-members:allowcolumnresize"><a href="/api/js/ejtreegrid#members:allowcolumnresize">allowColumnResize</a></li>
-					<li id="toc-members:allowcolumnreordering"><a href="/api/js/ejtreegrid#members:allowcolumnreordering">allowColumnReordering</a></li>
-					<li id="toc-members:allowdraganddrop"><a href="/api/js/ejtreegrid#members:allowdraganddrop">allowDragAndDrop</a></li>
-					<li id="toc-members:allowfiltering"><a href="/api/js/ejtreegrid#members:allowfiltering">allowFiltering</a></li>
-					<li id="toc-members:allowkeyboardnavigation"><a href="/api/js/ejtreegrid#members:allowkeyboardnavigation">allowKeyboardNavigation</a></li>
-					<li id="toc-members:allowmultisorting"><a href="/api/js/ejtreegrid#members:allowmultisorting">allowMultiSorting</a></li>
-                    <li id="toc-members:allowsearching"><a href="/api/js/ejtreegrid#members:allowsearching">allowSearching</a></li>
-					<li id="toc-members:allowselection"><a href="/api/js/ejtreegrid#members:allowselection">allowSelection</a></li>
-					<li id="toc-members:allowsorting"><a href="/api/js/ejtreegrid#members:allowsorting">allowSorting</a></li>
-					<li id="toc-members:allowpaging"><a href="/api/js/ejtreegrid#members:allowpaging">allowPaging</a></li>
-					<li id="toc-members:allowtextwrap"><a href="/api/js/ejtreegrid#members:allowtextwrap">allowTextWrap</a></li>
-					<li id="toc-members:altrowtemplateid"><a href="/api/js/ejtreegrid#members:altrowtemplateid">altRowTemplateID</a></li>
-					<li id="toc-members:headertextoverflow"><a href="/api/js/ejtreegrid#members:headertextoverflow">headerTextOverflow</a></li>
-					<li id="toc-members:celltooltiptemplate"><a href="/api/js/ejtreegrid#members:celltooltiptemplate">cellTooltipTemplate</a></li>
-					<li id="toc-members:columns"><a href="/api/js/ejtreegrid#members:columns">columns</a>
-						<ul>
-							<li id="toc-members:columns-allowcellselection"><a href="/api/js/ejtreegrid#members:columns-allowcellselection">allowCellSelection</a></li>
-							<li id="toc-members:columns-allowfiltering"><a href="/api/js/ejtreegrid#members:columns-allowfiltering">allowFiltering</a></li>
-							<li id="toc-members:columns-allowsorting"><a href="/api/js/ejtreegrid#members:columns-allowsorting">allowSorting</a></li>
-							<li id="toc-members:columns-allowfreezing"><a href="/api/js/ejtreegrid#members:columns-allowfreezing">allowFreezing</a></li>
-							<li id="toc-members:columns-allowfilteringblankcontent"><a href="/api/js/ejtreegrid#members:columns-allowfilteringblankcontent">allowFilteringBlankContent</a></li>
-							<li id="toc-members:columns-allowediting"><a href="/api/js/ejtreegrid#members:columns-allowediting">allowEditing</a></li>
-							<li id="toc-members:columns-commands">
-								<a href="/api/js/ejtreegrid#members:columns-commands">commands</a>
-								<ul>
-									<li id="toc-members:columns-commands-buttonoptions">
-										<a href="/api/js/ejtreegrid#members:columns-commands-buttonoptions">buttonOptions</a>
-									</li>
-									<li id="toc-members:columns-commands-type">
-										<a href="/api/js/ejtreegrid#members:columns-commands-type">type</a>
-									</li>
-								</ul>
-							</li>
-							<li id="toc-members:columns-dropdowndata"><a href="/api/js/ejtreegrid#members:columns-dropdowndata">dropdownData</a></li>
-							<li id="toc-members:columns-edittemplate"><a href="/api/js/ejtreegrid#members:columns-edittemplate">editTemplate</a></li>
-							<li id="toc-members:columns-edittype"><a href="/api/js/ejtreegrid#members:columns-edittype">editType</a></li>
-							<li id="toc-members:columns-editparams"><a href="/api/js/ejtreegrid#members:columns-editparams">editParams</a></li>
-							<li id="toc-members:columns-field"><a href="/api/js/ejtreegrid#members:columns-field">field</a></li>
-							<li id="toc-members:columns-filteredittype"><a href="/api/js/ejtreegrid#members:columns-filteredittype">filterEditType</a></li>
-                            <li id="toc-members:columns-filtertype"><a href="/api/js/ejtreegrid#members:columns-filtertype">filterType</a></li>
-							<li id="toc-members:columns-format"><a href="/api/js/ejtreegrid#members:columns-format">format</a></li>
-							<li id="toc-members:columns-headertext"><a href="/api/js/ejtreegrid#members:columns-headertext">headerText</a></li>
-							<li id="toc-members:columns-headertemplateid"><a href="/api/js/ejtreegrid#members:columns-headertemplateid">headerTemplateID</a></li>
-							<li id="toc-members:columns-headertextalign"><a href="/api/js/ejtreegrid#members:columns-headertextalign">headerTextAlign</a></li>
-							<li id="toc-members:columns-istemplatecolumn"><a href="/api/js/ejtreegrid#members:columns-istemplatecolumn">isTemplateColumn</a></li>
-							<li id="toc-members:columns-width"><a href="/api/js/ejtreegrid#members:columns-width">width</a></li>
-							<li id="toc-members:columns-isfrozen"><a href="/api/js/ejtreegrid#members:columns-isfrozen">isFrozen</a></li>
-							<li id="toc-members:columns-textalign"><a href="/api/js/ejtreegrid#members:columns-textalign">textAlign</a></li>
-							<li id="toc-members:columns-template"><a href="/api/js/ejtreegrid#members:columns-template">template</a></li>
-							<li id="toc-members:columns-templateid"><a href="/api/js/ejtreegrid#members:columns-templateid">templateID</a></li>
-							<li id="toc-members:columns-angulartemplate"><a href="/api/js/ejtreegrid#members:columns-angulartemplate">angularTemplate</a></li>
-							<li id="toc-members:columns-visible"><a href="/api/js/ejtreegrid#members:columns-visible">visible</a></li>
-							<li id="toc-members:columns-showincolumnchooser"><a href="/api/js/ejtreegrid#members:columns-showincolumnchooser">showInColumnChooser</a></li>
-                            <li id="toc-members:columns-clipmode"><a href="/api/js/ejtreegrid#members:columns-clipmode">clipmode</a></li>
-                            <li id="toc-members:columns-showcheckbox"><a href="/api/js/ejtreegrid#members:columns-showcheckbox">showCheckbox</a></li>
-							<li id="toc-members:columns-displayascheckbox"><a href="/api/js/ejtreegrid#members:columns-displayascheckbox">displayAsCheckbox</a></li>
-							<li id="toc-members:columns-tooltip"><a href="/api/js/ejtreegrid#members:columns-tooltip">tooltip</a></li>                           
-                            <li id="toc-members:columns-headertooltip"><a href="/api/js/ejtreegrid#members:columns-headertooltip">headerTooltip</a></li>
-							<li id="toc-members:columns-priority"><a href="/api/js/ejtreegrid#members:columns-priority">priority</a></li>
-						</ul>
-					</li>
-					<li id="toc-members:columndialogfields"><a href="/api/js/ejtreegrid#members:columndialogfields">columnDialogFields</a></li>
-					<li id="toc-members:contextmenusettings"><a href="/api/js/ejtreegrid#members:contextmenusettings">contextMenuSettings</a>
-						<ul>
-							<li id="toc-members:contextmenusettings-contextmenuitems"><a href="/api/js/ejtreegrid#members:contextmenusettings-contextmenuitems">contextMenuItems</a></li>
-							<li id="toc-members:contextmenusettings-showcontextmenu"><a href="/api/js/ejtreegrid#members:contextmenusettings-showcontextmenu">showContextMenu</a></li>
-						</ul>
-					</li>
-					<li id="toc-members:columnresizesettings"><a href="/api/js/ejtreegrid#members:columnresizesettings">columnResizeSettings</a>
-						<ul>
-							<li id="toc-members:columnresizesettings-columnresizemode"><a href="/api/js/ejtreegrid#members:columnresizesettings-columnresizemode">columnResizeMode</a></li>
-						</ul>
-					</li>
-					<li id="toc-members:commonwidth"><a href="/api/js/ejtreegrid#members:commonwidth">commonWidth</a></li>
-					<li id="toc-members:cssclass"><a href="/api/js/ejtreegrid#members:cssclass">cssClass</a></li>
-					<li id="toc-members:datasource"><a href="/api/js/ejtreegrid#members:datasource">dataSource</a></li>
-					<li id="toc-members:detailstemplate"><a href="/api/js/ejtreegrid#members:detailstemplate">detailsTemplate</a></li>
-					<li id="toc-members:detailsrowheight"><a href="/api/js/ejtreegrid#members:detailsrowheight">detailsRowHeight</a></li>
-					<li id="toc-members:dragtooltip"><a href="/api/js/ejtreegrid#members:dragtooltip">dragTooltip</a>
-						<ul>
-							<li id="toc-members:dragtooltip-showtooltip"><a href="/api/js/ejtreegrid#members:dragtooltip-showtooltip">showTooltip</a></li>
-							<li id="toc-members:dragtooltip-tooltipitems"><a href="/api/js/ejtreegrid#members:dragtooltip-tooltipitems">tooltipItems</a></li>
-							<li id="toc-members:dragtooltip-tooltiptemplate"><a href="/api/js/ejtreegrid#members:dragtooltip-tooltiptemplate">tooltipTemplate</a></li>
-						</ul>
-					</li>
-					<li id="toc-members:editsettings"><a href="/api/js/ejtreegrid#members:editsettings">editSettings</a>
-						<ul>
-							<li id="toc-members:editsettings-allowadding"><a href="/api/js/ejtreegrid#members:editsettings-allowadding">allowAdding</a></li>
-							<li id="toc-members:editsettings-allowdeleting"><a href="/api/js/ejtreegrid#members:editsettings-allowdeleting">allowDeleting</a></li>
-							<li id="toc-members:editsettings-allowediting"><a href="/api/js/ejtreegrid#members:editsettings-allowediting">allowEditing</a></li>
-							<li id="toc-members:editsettings-editmode"><a href="/api/js/ejtreegrid#members:editsettings-editmode">editMode</a></li>
-							<li id="toc-members:editsettings-rowposition"><a href="/api/js/ejtreegrid#members:editsettings-rowposition">rowPosition</a></li>
-							<li id="toc-members:editsettings-begineditaction"><a href="/api/js/ejtreegrid#members:editsettings-begineditaction">beginEditAction</a></li>
-                            <li id="toc-members:editsettings-dialogeditortemplateid"><a href="/api/js/ejtreegrid#members:editsettings-dialogeditortemplateid">dialogEditorTemplateID</a></li>
-                            <li id="toc-members:editsettings-showdeleteconfirmdialog"><a href="/api/js/ejtreegrid#members:editsettings-showdeleteconfirmdialog">showDeleteConfirmDialog</a></li>
-						</ul>
-					</li>
-					<li id="toc-members:enablealtrow"><a href="/api/js/ejtreegrid#members:enablealtrow">enableAltRow</a></li>
-					<li id="toc-members:enablecollapseall"><a href="/api/js/ejtreegrid#members:enablecollapseall">enableCollapseAll</a></li>
-					<li id="toc-members:enableresize"><a href="/api/js/ejtreegrid#members:enableresize">enableResize</a></li>
-					<li id="toc-members:enablevirtualization"><a href="/api/js/ejtreegrid#members:enablevirtualization">enableVirtualization</a></li>
-					<li id="toc-members:expandstatemapping"><a href="/api/js/ejtreegrid#members:expandstatemapping">expandStateMapping</a></li>
-					<li id="toc-members:filtersettings"><a href="/api/js/ejtreegrid#members:filtersettings">filterSettings</a>
-						<ul>
-							<li id="toc-members:filtersettings-filterbarmode"><a href="/api/js/ejtreegrid#members:filtersettings-filterbarmode">filterBarMode</a></li>
-							<li id="toc-members:filtersettings-filteredcolumns"><a href="/api/js/ejtreegrid#members:filtersettings-filteredcolumns">filteredColumns</a>
-							   <ul>
-							       <li id="toc-members:filtersettings-filteredcolumns-value"><a href="/api/js/ejtreegrid#members:filtersettings-filteredcolumns-value">value</a></li>
-								   <li id="toc-members:filtersettings-filteredcolumns-field"><a href="/api/js/ejtreegrid#members:filtersettings-filteredcolumns-field">field</a></li>
-								   <li id="toc-members:filtersettings-filteredcolumns-predicate"><a href="/api/js/ejtreegrid#members:filtersettings-filteredcolumns-predicate">predicate</a></li>
-								   <li id="toc-members:filtersettings-filteredcolumns-operator"><a href="/api/js/ejtreegrid#members:filtersettings-filteredcolumns-operator">operator</a></li>
-							   </ul>
-							</li>
-							<li id="toc-members:filtersettings-filtertype"><a href="/api/js/ejtreegrid#members:filtersettings-filtertype">filterType</a></li>
-                            <li id="toc-members:filtersettings-maxfilterchoice"><a href="/api/js/ejtreegrid#members:filtersettings-maxfilterchoice">maxFilterChoice</a></li>
-                            <li id="toc-members:filtersettings-enablecasesensitivity"><a href="/api/js/ejtreegrid#members:filtersettings-enablecasesensitivity">enableCaseSensitivity</a></li>
-                            <li id="toc-members:filtersettings-enablecomplexblankfilter"><a href="/api/js/ejtreegrid#members:filtersettings-enablecomplexblankfilter">enableComplexBlankFilter</a></li>
-                            <li id="toc-members:filtersettings-filterhierarchymode"><a href="/api/js/ejtreegrid#members:filtersettings-filterhierarchymode">filterHierarchyMode</a></li>
-						</ul>
-					</li>
-					<li id="toc-members:idmapping"><a href="/api/js/ejtreegrid#members:idmapping">idMapping</a></li>
-					<li id="toc-members:isresponsive"><a href="/api/js/ejtreegrid#members:isresponsive">isResponsive</a></li>
-					<li id="toc-members:locale"><a href="/api/js/ejtreegrid#members:locale">locale</a></li>
-					<li id="toc-members:pagesettings"><a href="/api/js/ejtreegrid#members:pagesettings">pageSettings</a>
-						<ul>
-							<li id="toc-members:pagesettings-pagecount"><a href="/api/js/ejtreegrid#members:pagesettings-pagecount">pageCount</a></li>
-							<li id="toc-members:pagesettings-pagesize"><a href="/api/js/ejtreegrid#members:pagesettings-pagesize">pageSize</a></li>
-							<li id="toc-members:pagesettings-totalrecordscount"><a href="/api/js/ejtreegrid#members:pagesettings-totalrecordscount">totalRecordsCount</a></li>
-							<li id="toc-members:pagesettings-currentpage"><a href="/api/js/ejtreegrid#members:pagesettings-currentpage">currentPage</a></li>
-							<li id="toc-members:pagesettings-pagesizemode"><a href="/api/js/ejtreegrid#members:pagesettings-pagesizemode">pageSizeMode</a></li>
-							<li id="toc-members:pagesettings-template"><a href="/api/js/ejtreegrid#members:pagesettings-template">template</a></li>
-						</ul>
-					</li>
-					<li id="toc-members:parentidmapping"><a href="/api/js/ejtreegrid#members:parentidmapping">parentIdMapping</a></li>
-					<li id="toc-members:parserowtemplate"><a href="/api/js/ejtreegrid#members:parserowtemplate">parseRowTemplate</a></li>
-					<li id="toc-members:query"><a href="/api/js/ejtreegrid#members:query">query</a></li>
-					<li id="toc-members:rowheight"><a href="/api/js/ejtreegrid#members:rowheight">rowHeight</a></li>
-					<li id="toc-members:rowtemplateid"><a href="/api/js/ejtreegrid#members:rowtemplateid">rowTemplateID</a></li>
-                    <li id="toc-members:searchsettings">
-                        <a href="/api/js/ejtreegrid#members:searchsettings">searchSettings</a>
-                        <ul>
-                            <li id="toc-members:searchsettings-fields"><a href="/api/js/ejtreegrid#members:searchsettings-fields">fields</a></li>
-                            <li id="toc-members:searchsettings-key"><a href="/api/js/ejtreegrid#members:searchsettings-key">key</a></li>
-                            <li id="toc-members:searchsettings-operator"><a href="/api/js/ejtreegrid#members:searchsettings-operator">operator</a></li>
-                            <li id="toc-members:searchsettings-ignorecase"><a href="/api/js/ejtreegrid#members:searchsettings-ignorecase">ignoreCase</a></li>
-                        </ul>
-                    </li>
-					<li id="toc-members:selectedrowindex"><a href="/api/js/ejtreegrid#members:selectedrowindex">selectedRowIndex</a></li>
-					<li id="toc-members:selectedcellindexes"><a href="/api/js/ejtreegrid#members:selectedcellindexes">selectedCellIndexes</a></li>
-					<li id="toc-members:selectionsettings"><a href="/api/js/ejtreegrid#members:selectionsettings">selectionSettings</a>
-						<ul>
-							<li id="toc-members:selectionsettings-selectionmode"><a href="/api/js/ejtreegrid#members:selectionsettings-selectionmode">selectionMode</a></li>
-							<li id="toc-members:selectionsettings-selectiontype"><a href="/api/js/ejtreegrid#members:selectionsettings-selectiontype">selectionType</a></li>
-							<li id="toc-members:selectionsettings-enablehierarchyselection"><a href="/api/js/ejtreegrid#members:selectionsettings-enablehierarchyselection">enableHierarchySelection</a></li>
-							<li id="toc-members:selectionsettings-enableselectall"><a href="/api/js/ejtreegrid#members:selectionsettings-enableselectall">enableSelectAll</a></li>
-						</ul>
-					</li>
-					<li id="toc-members:showcolumnchooser"><a href="/api/js/ejtreegrid#members:showcolumnchooser">showColumnChooser</a></li>
-					<li id="toc-members:showstackedheader">
-						<a href="/api/js/ejtreegrid#members:showstackedheader">showStackedHeader</a>
-					</li>
-					<li id="toc-members:stackedheaderrows">
-						<a href="/api/js/ejtreegrid#members:stackedheaderrows">stackedHeaderRows</a>
-						<ul>
-							<li id="toc-members:stackedheaderrows-stackedheadercolumns">
-								<a href="/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns">stackedHeaderColumns</a>
-								<ul>
-									<li id="toc-members:stackedheaderrows-stackedheadercolumns-column">
-										<a href="/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns-column">column</a>
-									</li>
-									<li id="toc-members:stackedheaderrows-stackedheadercolumns-cssclass">
-										<a href="/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns-cssclass">cssClass</a>
-									</li>
-									<li id="toc-members:stackedheaderrows-stackedheadercolumns-headertext">
-										<a href="/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns-headertext">headerText</a>
-									</li>
-									<li id="toc-members:stackedheaderrows-stackedheadercolumns-textalign">
-										<a href="/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns-textalign">textAlign</a>
-									</li>
-									<li id="toc-members:stackedheaderrows-stackedheadercolumns-tooltip">
-										<a href="/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns-tooltip">tooltip</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</li>
-					<li id="toc-members:showcolumnoptions"><a href="/api/js/ejtreegrid#members:showcolumnoptions">showColumnOptions</a></li>
-					<li id="toc-members:showdetailsrow"><a href="/api/js/ejtreegrid#members:showdetailsrow">showDetailsRow</a></li>
-					<li id="toc-members:showdetailsrowinfocolumn"><a href="/api/js/ejtreegrid#members:showdetailsrowinfocolumn">showDetailsRowInfoColumn</a></li>
-					<li id="toc-members:showgridcelltooltip"><a href="/api/js/ejtreegrid#members:showgridcelltooltip">showGridCellTooltip</a></li>
-					<li id="toc-members:showgridexpandcelltooltip"><a href="/api/js/ejtreegrid#members:showgridexpandcelltooltip">showGridExpandCellTooltip</a></li>
-					<li id="toc-members:totalsummaryheight"><a href="/api/js/ejtreegrid#members:totalsummaryheight">totalSummaryHeight</a></li>
-					<li id="toc-members:collapsibletotalsummary"><a href="/api/js/ejtreegrid#members:collapsibletotalsummary">collapsibleTotalSummary</a></li>
-					<li id="toc-members:showsummaryrow"><a href="/api/js/ejtreegrid#members:showsummaryrow">showSummaryRow</a></li>
-					<li id="toc-members:showtotalsummary"><a href="/api/js/ejtreegrid#members:showtotalsummary">showTotalSummary</a></li>
-					<li id="toc-members:summaryrows"><a href="/api/js/ejtreegrid#members:summaryrows">summaryRows</a>
+        <li><a href="/api/js/ejtreegrid#members">Members</a>
+            <ul>
+                <li id="toc-members:allowcolumnreordering"><a href="/api/js/ejtreegrid#members:allowcolumnreordering">allowColumnReordering</a></li>
+                <li id="toc-members:allowcolumnresize"><a href="/api/js/ejtreegrid#members:allowcolumnresize">allowColumnResize</a></li>
+                <li id="toc-members:allowdraganddrop"><a href="/api/js/ejtreegrid#members:allowdraganddrop">allowDragAndDrop</a></li>
+                <li id="toc-members:allowfiltering"><a href="/api/js/ejtreegrid#members:allowfiltering">allowFiltering</a></li>
+                <li id="toc-members:allowkeyboardnavigation"><a href="/api/js/ejtreegrid#members:allowkeyboardnavigation">allowKeyboardNavigation</a></li>
+                <li id="toc-members:allowmultisorting"><a href="/api/js/ejtreegrid#members:allowmultisorting">allowMultiSorting</a></li>
+                <li id="toc-members:allowpaging"><a href="/api/js/ejtreegrid#members:allowpaging">allowPaging</a></li>
+                <li id="toc-members:allowsearching"><a href="/api/js/ejtreegrid#members:allowsearching">allowSearching</a></li>
+                <li id="toc-members:allowselection"><a href="/api/js/ejtreegrid#members:allowselection">allowSelection</a></li>
+                <li id="toc-members:allowsorting"><a href="/api/js/ejtreegrid#members:allowsorting">allowSorting</a></li>
+                <li id="toc-members:allowtextwrap"><a href="/api/js/ejtreegrid#members:allowtextwrap">allowTextWrap</a></li>
+                <li id="toc-members:altrowtemplateid"><a href="/api/js/ejtreegrid#members:altrowtemplateid">altRowTemplateID</a></li>
+                <li id="toc-members:celltooltiptemplate"><a href="/api/js/ejtreegrid#members:celltooltiptemplate">cellTooltipTemplate</a></li>
+                <li id="toc-members:childmapping"><a href="/api/js/ejtreegrid#members:childmapping">childMapping</a></li>
+                <li id="toc-members:collapsibletotalsummary"><a href="/api/js/ejtreegrid#members:collapsibletotalsummary">collapsibleTotalSummary</a></li>
+                <li id="toc-members:columndialogfields"><a href="/api/js/ejtreegrid#members:columndialogfields">columnDialogFields</a></li>
+                <li id="toc-members:columnresizesettings">
+                    <a href="/api/js/ejtreegrid#members:columnresizesettings">columnResizeSettings</a>
+                    <ul>
+                        <li id="toc-members:columnresizesettings-columnresizemode"><a href="/api/js/ejtreegrid#members:columnresizesettings-columnresizemode">columnResizeMode</a></li>
+                    </ul>
+                </li>
+                <li id="toc-members:columns">
+                    <a href="/api/js/ejtreegrid#members:columns">columns</a>
+                    <ul>
+                        <li id="toc-members:columns-allowcellselection"><a href="/api/js/ejtreegrid#members:columns-allowcellselection">allowCellSelection</a></li>
+                        <li id="toc-members:columns-allowediting"><a href="/api/js/ejtreegrid#members:columns-allowediting">allowEditing</a></li>
+                        <li id="toc-members:columns-allowfiltering"><a href="/api/js/ejtreegrid#members:columns-allowfiltering">allowFiltering</a></li>
+                        <li id="toc-members:columns-allowfilteringblankcontent"><a href="/api/js/ejtreegrid#members:columns-allowfilteringblankcontent">allowFilteringBlankContent</a></li>
+                        <li id="toc-members:columns-allowfreezing"><a href="/api/js/ejtreegrid#members:columns-allowfreezing">allowFreezing</a></li>
+                        <li id="toc-members:columns-allowsorting"><a href="/api/js/ejtreegrid#members:columns-allowsorting">allowSorting</a></li>
+                        <li id="toc-members:columns-angulartemplate"><a href="/api/js/ejtreegrid#members:columns-angulartemplate">angularTemplate</a></li>
+                        <li id="toc-members:columns-clipmode"><a href="/api/js/ejtreegrid#members:columns-clipmode">clipmode</a></li>
+                        <li id="toc-members:columns-commands">
+                            <a href="/api/js/ejtreegrid#members:columns-commands">commands</a>
+                            <ul>
+                                <li id="toc-members:columns-commands-buttonoptions">
+                                    <a href="/api/js/ejtreegrid#members:columns-commands-buttonoptions">buttonOptions</a>
+                                </li>
+                                <li id="toc-members:columns-commands-type">
+                                    <a href="/api/js/ejtreegrid#members:columns-commands-type">type</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="toc-members:columns-displayascheckbox"><a href="/api/js/ejtreegrid#members:columns-displayascheckbox">displayAsCheckbox</a></li>
+                        <li id="toc-members:columns-dropdowndata"><a href="/api/js/ejtreegrid#members:columns-dropdowndata">dropdownData</a></li>
+                        <li id="toc-members:columns-editparams"><a href="/api/js/ejtreegrid#members:columns-editparams">editParams</a></li>
+                        <li id="toc-members:columns-edittemplate"><a href="/api/js/ejtreegrid#members:columns-edittemplate">editTemplate</a></li>
+                        <li id="toc-members:columns-edittype"><a href="/api/js/ejtreegrid#members:columns-edittype">editType</a></li>
+                        <li id="toc-members:columns-field"><a href="/api/js/ejtreegrid#members:columns-field">field</a></li>
+                        <li id="toc-members:columns-filteredittype"><a href="/api/js/ejtreegrid#members:columns-filteredittype">filterEditType</a></li>
+                        <li id="toc-members:columns-filtertype"><a href="/api/js/ejtreegrid#members:columns-filtertype">filterType</a></li>
+                        <li id="toc-members:columns-format"><a href="/api/js/ejtreegrid#members:columns-format">format</a></li>
+                        <li id="toc-members:columns-headertemplateid"><a href="/api/js/ejtreegrid#members:columns-headertemplateid">headerTemplateID</a></li>
+                        <li id="toc-members:columns-headertext"><a href="/api/js/ejtreegrid#members:columns-headertext">headerText</a></li>
+                        <li id="toc-members:columns-headertextalign"><a href="/api/js/ejtreegrid#members:columns-headertextalign">headerTextAlign</a></li>
+                        <li id="toc-members:columns-headertooltip"><a href="/api/js/ejtreegrid#members:columns-headertooltip">headerTooltip</a></li>
+                        <li id="toc-members:columns-isfrozen"><a href="/api/js/ejtreegrid#members:columns-isfrozen">isFrozen</a></li>
+                        <li id="toc-members:columns-istemplatecolumn"><a href="/api/js/ejtreegrid#members:columns-istemplatecolumn">isTemplateColumn</a></li>
+                        <li id="toc-members:columns-priority"><a href="/api/js/ejtreegrid#members:columns-priority">priority</a></li>
+                        <li id="toc-members:columns-showcheckbox"><a href="/api/js/ejtreegrid#members:columns-showcheckbox">showCheckbox</a></li>
+                        <li id="toc-members:columns-showincolumnchooser"><a href="/api/js/ejtreegrid#members:columns-showincolumnchooser">showInColumnChooser</a></li>
+                        <li id="toc-members:columns-template"><a href="/api/js/ejtreegrid#members:columns-template">template</a></li>
+                        <li id="toc-members:columns-templateid"><a href="/api/js/ejtreegrid#members:columns-templateid">templateID</a></li>
+                        <li id="toc-members:columns-textalign"><a href="/api/js/ejtreegrid#members:columns-textalign">textAlign</a></li>
+						<li id="toc-members:columns-tooltip"><a href="/api/js/ejtreegrid#members:columns-tooltip">tooltip</a></li>
+						<li id="toc-members:columns-validationrules"><a href="/api/js/ejtreegrid#members:columns-validationrules">validationRules</a></li>
+                        <li id="toc-members:columns-visible"><a href="/api/js/ejtreegrid#members:columns-visible">visible</a></li>
+                        <li id="toc-members:columns-width"><a href="/api/js/ejtreegrid#members:columns-width">width</a></li>
+                    </ul>
+                </li>
+                <li id="toc-members:commonwidth"><a href="/api/js/ejtreegrid#members:commonwidth">commonWidth</a></li>
+                <li id="toc-members:contextmenusettings">
+                    <a href="/api/js/ejtreegrid#members:contextmenusettings">contextMenuSettings</a>
+                    <ul>
+                        <li id="toc-members:contextmenusettings-contextmenuitems"><a href="/api/js/ejtreegrid#members:contextmenusettings-contextmenuitems">contextMenuItems</a></li>
+                        <li id="toc-members:contextmenusettings-showcontextmenu"><a href="/api/js/ejtreegrid#members:contextmenusettings-showcontextmenu">showContextMenu</a></li>
+                    </ul>
+                </li>
+                <li id="toc-members:cssclass"><a href="/api/js/ejtreegrid#members:cssclass">cssClass</a></li>
+                <li id="toc-members:datasource"><a href="/api/js/ejtreegrid#members:datasource">dataSource</a></li>
+                <li id="toc-members:detailstemplate"><a href="/api/js/ejtreegrid#members:detailstemplate">detailsTemplate</a></li>
+                <li id="toc-members:detailsrowheight"><a href="/api/js/ejtreegrid#members:detailsrowheight">detailsRowHeight</a></li>
+                <li id="toc-members:dragtooltip">
+                    <a href="/api/js/ejtreegrid#members:dragtooltip">dragTooltip</a>
+                    <ul>
+                        <li id="toc-members:dragtooltip-showtooltip"><a href="/api/js/ejtreegrid#members:dragtooltip-showtooltip">showTooltip</a></li>
+                        <li id="toc-members:dragtooltip-tooltipitems"><a href="/api/js/ejtreegrid#members:dragtooltip-tooltipitems">tooltipItems</a></li>
+                        <li id="toc-members:dragtooltip-tooltiptemplate"><a href="/api/js/ejtreegrid#members:dragtooltip-tooltiptemplate">tooltipTemplate</a></li>
+                    </ul>
+                </li>
+                <li id="toc-members:editsettings">
+                    <a href="/api/js/ejtreegrid#members:editsettings">editSettings</a>
+                    <ul>
+                        <li id="toc-members:editsettings-allowadding"><a href="/api/js/ejtreegrid#members:editsettings-allowadding">allowAdding</a></li>
+                        <li id="toc-members:editsettings-allowdeleting"><a href="/api/js/ejtreegrid#members:editsettings-allowdeleting">allowDeleting</a></li>
+                        <li id="toc-members:editsettings-allowediting"><a href="/api/js/ejtreegrid#members:editsettings-allowediting">allowEditing</a></li>
+                        <li id="toc-members:editsettings-begineditaction"><a href="/api/js/ejtreegrid#members:editsettings-begineditaction">beginEditAction</a></li>
+                        <li id="toc-members:editsettings-dialogeditortemplateid"><a href="/api/js/ejtreegrid#members:editsettings-dialogeditortemplateid">dialogEditorTemplateID</a></li>
+                        <li id="toc-members:editsettings-editmode"><a href="/api/js/ejtreegrid#members:editsettings-editmode">editMode</a></li>
+                        <li id="toc-members:editsettings-rowposition"><a href="/api/js/ejtreegrid#members:editsettings-rowposition">rowPosition</a></li>
+                        <li id="toc-members:editsettings-showdeleteconfirmdialog"><a href="/api/js/ejtreegrid#members:editsettings-showdeleteconfirmdialog">showDeleteConfirmDialog</a></li>
+                    </ul>
+                </li>
+                <li id="toc-members:enablealtrow"><a href="/api/js/ejtreegrid#members:enablealtrow">enableAltRow</a></li>
+				<li id="toc-members:enablecollapseall"><a href="/api/js/ejtreegrid#members:enablecollapseall">enableCollapseAll</a></li>
+				<li id="toc-members:enableloadondemand"><a href="/api/js/ejtreegrid#members:enableloadondemand">enableLoadOnDemand</a></li>
+                <li id="toc-members:enableresize"><a href="/api/js/ejtreegrid#members:enableresize">enableResize</a></li>
+                <li id="toc-members:enablevirtualization"><a href="/api/js/ejtreegrid#members:enablevirtualization">enableVirtualization</a></li>
+                <li id="toc-members:expandstatemapping"><a href="/api/js/ejtreegrid#members:expandstatemapping">expandStateMapping</a></li>
+                <li id="toc-members:filtersettings">
+                    <a href="/api/js/ejtreegrid#members:filtersettings">filterSettings</a>
+                    <ul>
+                        <li id="toc-members:filtersettings-enablecasesensitivity"><a href="/api/js/ejtreegrid#members:filtersettings-enablecasesensitivity">enableCaseSensitivity</a></li>
+                        <li id="toc-members:filtersettings-enablecomplexblankfilter"><a href="/api/js/ejtreegrid#members:filtersettings-enablecomplexblankfilter">enableComplexBlankFilter</a></li>
+                        <li id="toc-members:filtersettings-filterbarmode"><a href="/api/js/ejtreegrid#members:filtersettings-filterbarmode">filterBarMode</a></li>
+                        <li id="toc-members:filtersettings-filterhierarchymode"><a href="/api/js/ejtreegrid#members:filtersettings-filterhierarchymode">filterHierarchyMode</a></li>
+                        <li id="toc-members:filtersettings-filtertype"><a href="/api/js/ejtreegrid#members:filtersettings-filtertype">filterType</a></li>
+                        <li id="toc-members:filtersettings-filteredcolumns">
+                            <a href="/api/js/ejtreegrid#members:filtersettings-filteredcolumns">filteredColumns</a>
+                            <ul>
+								<li id="toc-members:filtersettings-filteredcolumns-field"><a href="/api/js/ejtreegrid#members:filtersettings-filteredcolumns-field">field</a></li>
+								<li id="toc-members:filtersettings-filteredcolumns-operator"><a href="/api/js/ejtreegrid#members:filtersettings-filteredcolumns-operator">operator</a></li>
+								<li id="toc-members:filtersettings-filteredcolumns-predicate"><a href="/api/js/ejtreegrid#members:filtersettings-filteredcolumns-predicate">predicate</a></li>
+								<li id="toc-members:filtersettings-filteredcolumns-value"><a href="/api/js/ejtreegrid#members:filtersettings-filteredcolumns-value">value</a></li>
+                            </ul>
+                        </li>
+                        <li id="toc-members:filtersettings-maxfilterchoice"><a href="/api/js/ejtreegrid#members:filtersettings-maxfilterchoice">maxFilterChoice</a></li>
+                    </ul>
+                </li>
+                <li id="toc-members:headertextoverflow"><a href="/api/js/ejtreegrid#members:headertextoverflow">headerTextOverflow</a></li>
+                <li id="toc-members:idmapping"><a href="/api/js/ejtreegrid#members:idmapping">idMapping</a></li>
+                <li id="toc-members:isresponsive"><a href="/api/js/ejtreegrid#members:isresponsive">isResponsive</a></li>
+                <li id="toc-members:locale"><a href="/api/js/ejtreegrid#members:locale">locale</a></li>
+                <li id="toc-members:pagesettings">
+                    <a href="/api/js/ejtreegrid#members:pagesettings">pageSettings</a>
+                    <ul>
+                        <li id="toc-members:pagesettings-currentpage"><a href="/api/js/ejtreegrid#members:pagesettings-currentpage">currentPage</a></li>
+                        <li id="toc-members:pagesettings-pagecount"><a href="/api/js/ejtreegrid#members:pagesettings-pagecount">pageCount</a></li>
+                        <li id="toc-members:pagesettings-pagesize"><a href="/api/js/ejtreegrid#members:pagesettings-pagesize">pageSize</a></li>
+						<li id="toc-members:pagesettings-pagesizemode"><a href="/api/js/ejtreegrid#members:pagesettings-pagesizemode">pageSizeMode</a></li>
+						<li id="toc-members:pagesettings-printmode"><a href="/api/js/ejtreegrid#members:pagesettings-printmode">printMode</a></li>
+                        <li id="toc-members:pagesettings-template"><a href="/api/js/ejtreegrid#members:pagesettings-template">template</a></li>
+                        <li id="toc-members:pagesettings-totalrecordscount"><a href="/api/js/ejtreegrid#members:pagesettings-totalrecordscount">totalRecordsCount</a></li>
+                    </ul>
+                </li>
+                <li id="toc-members:parentidmapping"><a href="/api/js/ejtreegrid#members:parentidmapping">parentIdMapping</a></li>
+                <li id="toc-members:parserowtemplate"><a href="/api/js/ejtreegrid#members:parserowtemplate">parseRowTemplate</a></li>
+                <li id="toc-members:query"><a href="/api/js/ejtreegrid#members:query">query</a></li>
+                <li id="toc-members:rowheight"><a href="/api/js/ejtreegrid#members:rowheight">rowHeight</a></li>
+                <li id="toc-members:rowtemplateid"><a href="/api/js/ejtreegrid#members:rowtemplateid">rowTemplateID</a></li>
+                <li id="toc-members:searchsettings">
+                    <a href="/api/js/ejtreegrid#members:searchsettings">searchSettings</a>
+                    <ul>
+                        <li id="toc-members:searchsettings-fields"><a href="/api/js/ejtreegrid#members:searchsettings-fields">fields</a></li>
+                        <li id="toc-members:searchsettings-ignorecase"><a href="/api/js/ejtreegrid#members:searchsettings-ignorecase">ignoreCase</a></li>
+                        <li id="toc-members:searchsettings-key"><a href="/api/js/ejtreegrid#members:searchsettings-key">key</a></li>
+                        <li id="toc-members:searchsettings-operator"><a href="/api/js/ejtreegrid#members:searchsettings-operator">operator</a></li>
+                    </ul>
+                </li>
+				<li id="toc-members:selectedcellindexes"><a href="/api/js/ejtreegrid#members:selectedcellindexes">selectedCellIndexes</a>
 					<ul>
-					    <li id="toc-members:summaryrows-title"><a href="/api/js/ejtreegrid#members:summaryrows-title">title</a></li>
-						<li id="toc-members:summaryrows-summarycolumns"><a href="/api/js/ejtreegrid#members:summaryrows-summarycolumns">summaryColumns</a>
-						<ul>
-						   <li id="toc-members:summaryrows-summarycolumns-summarytype"><a href="/api/js/ejtreegrid#members:summaryrows-summarycolumns-summarytype">summaryType</a></li>
-						   <li id="toc-members:summaryrows-summarycolumns-datamember"><a href="/api/js/ejtreegrid#members:summaryrows-summarycolumns-datamember">dataMember</a></li>
-						   <li id="toc-members:summaryrows-summarycolumns-displaycolumn"><a href="/api/js/ejtreegrid#members:summaryrows-summarycolumns-displaycolumn">displayColumn</a></li>
-						   <li id="toc-members:summaryrows-summarycolumns-prefix"><a href="/api/js/ejtreegrid#members:summaryrows-summarycolumns-prefix">prefix</a></li>
-						   <li id="toc-members:summaryrows-summarycolumns-suffix"><a href="/api/js/ejtreegrid#members:summaryrows-summarycolumns-suffix">suffix</a></li>
-						   <li id="toc-members:summaryrows-summarycolumns-format"><a href="/api/js/ejtreegrid#members:summaryrows-summarycolumns-format">format</a></li>
-						</ul>
+                        <li id="toc-members:selectedcellindexes-cellindex"><a href="/api/js/ejtreegrid#members:selectedcellindexes-cellindex">cellIndex</a></li>
+                        <li id="toc-members:selectedcellindexes-rowindex"><a href="/api/js/ejtreegrid#members:selectedcellindexes-rowindex">rowIndex</a></li>
+                    </ul>
+				</li>
+                <li id="toc-members:selectedrowindex"><a href="/api/js/ejtreegrid#members:selectedrowindex">selectedRowIndex</a></li>
+                <li id="toc-members:selectionsettings">
+                    <a href="/api/js/ejtreegrid#members:selectionsettings">selectionSettings</a>
+                    <ul>
+                        <li id="toc-members:selectionsettings-enablehierarchyselection"><a href="/api/js/ejtreegrid#members:selectionsettings-enablehierarchyselection">enableHierarchySelection</a></li>
+                        <li id="toc-members:selectionsettings-enableselectall"><a href="/api/js/ejtreegrid#members:selectionsettings-enableselectall">enableSelectAll</a></li>
+                        <li id="toc-members:selectionsettings-selectionmode"><a href="/api/js/ejtreegrid#members:selectionsettings-selectionmode">selectionMode</a></li>
+                        <li id="toc-members:selectionsettings-selectiontype"><a href="/api/js/ejtreegrid#members:selectionsettings-selectiontype">selectionType</a></li>
+                    </ul>
+                </li>
+                <li id="toc-members:showcolumnchooser"><a href="/api/js/ejtreegrid#members:showcolumnchooser">showColumnChooser</a></li>
+                <li id="toc-members:showcolumnoptions"><a href="/api/js/ejtreegrid#members:showcolumnoptions">showColumnOptions</a></li>
+                <li id="toc-members:showdetailsrow"><a href="/api/js/ejtreegrid#members:showdetailsrow">showDetailsRow</a></li>
+                <li id="toc-members:showdetailsrowinfocolumn"><a href="/api/js/ejtreegrid#members:showdetailsrowinfocolumn">showDetailsRowInfoColumn</a></li>
+                <li id="toc-members:showgridcelltooltip"><a href="/api/js/ejtreegrid#members:showgridcelltooltip">showGridCellTooltip</a></li>
+                <li id="toc-members:showgridexpandcelltooltip"><a href="/api/js/ejtreegrid#members:showgridexpandcelltooltip">showGridExpandCellTooltip</a></li>
+                <li id="toc-members:showstackedheader">
+                    <a href="/api/js/ejtreegrid#members:showstackedheader">showStackedHeader</a>
+                </li>
+                <li id="toc-members:showsummaryrow"><a href="/api/js/ejtreegrid#members:showsummaryrow">showSummaryRow</a></li>
+                <li id="toc-members:showtotalsummary"><a href="/api/js/ejtreegrid#members:showtotalsummary">showTotalSummary</a></li>
+                <li id="toc-members:sizesettings">
+                    <a href="/api/js/ejtreegrid#members:sizesettings">sizeSettings</a>
+                    <ul>
+                        <li id="toc-members:sizesettings-height"><a href="/api/js/ejtreegrid#members:sizesettings-height">height</a></li>
+                        <li id="toc-members:sizesettings-width"><a href="/api/js/ejtreegrid#members:sizesettings-width">width</a></li>
+                    </ul>
+                </li>
+                <li id="toc-members:sortsettings">
+                    <a href="/api/js/ejtreegrid#members:sortsettings">sortSettings</a>
+                    <ul>
+                        <li id="toc-members:sortsettings-sortedcolumns">
+                            <a href="/api/js/ejtreegrid#members:sortsettings-sortedcolumns">sortedColumns</a>
+                            <ul>
+                                <li id="toc-members:sortsettings-sortedcolumns-direction"><a href="/api/js/ejtreegrid#members:sortsettings-sortedcolumns-direction">direction</a></li>
+                                <li id="toc-members:sortsettings-sortedcolumns-field"><a href="/api/js/ejtreegrid#members:sortsettings-sortedcolumns-field">field</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li id="toc-members:stackedheaderrows">
+                    <a href="/api/js/ejtreegrid#members:stackedheaderrows">stackedHeaderRows</a>
+                    <ul>
+                        <li id="toc-members:stackedheaderrows-stackedheadercolumns">
+                            <a href="/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns">stackedHeaderColumns</a>
+                            <ul>
+                                <li id="toc-members:stackedheaderrows-stackedheadercolumns-column">
+                                    <a href="/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns-column">column</a>
+                                </li>
+                                <li id="toc-members:stackedheaderrows-stackedheadercolumns-cssclass">
+                                    <a href="/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns-cssclass">cssClass</a>
+                                </li>
+                                <li id="toc-members:stackedheaderrows-stackedheadercolumns-headertext">
+                                    <a href="/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns-headertext">headerText</a>
+                                </li>
+                                <li id="toc-members:stackedheaderrows-stackedheadercolumns-textalign">
+                                    <a href="/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns-textalign">textAlign</a>
+                                </li>
+                                <li id="toc-members:stackedheaderrows-stackedheadercolumns-tooltip">
+                                    <a href="/api/js/ejtreegrid#members:stackedheaderrows-stackedheadercolumns-tooltip">tooltip</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li id="toc-members:summaryrows">
+                    <a href="/api/js/ejtreegrid#members:summaryrows">summaryRows</a>
+                    <ul>
+                        <li id="toc-members:summaryrows-summarycolumns">
+                            <a href="/api/js/ejtreegrid#members:summaryrows-summarycolumns">summaryColumns</a>
+                            <ul>
+                                <li id="toc-members:summaryrows-summarycolumns-datamember"><a href="/api/js/ejtreegrid#members:summaryrows-summarycolumns-datamember">dataMember</a></li>
+                                <li id="toc-members:summaryrows-summarycolumns-displaycolumn"><a href="/api/js/ejtreegrid#members:summaryrows-summarycolumns-displaycolumn">displayColumn</a></li>
+                                <li id="toc-members:summaryrows-summarycolumns-format"><a href="/api/js/ejtreegrid#members:summaryrows-summarycolumns-format">format</a></li>
+                                <li id="toc-members:summaryrows-summarycolumns-prefix"><a href="/api/js/ejtreegrid#members:summaryrows-summarycolumns-prefix">prefix</a></li>
+                                <li id="toc-members:summaryrows-summarycolumns-suffix"><a href="/api/js/ejtreegrid#members:summaryrows-summarycolumns-suffix">suffix</a></li>
+                                <li id="toc-members:summaryrows-summarycolumns-summarytype"><a href="/api/js/ejtreegrid#members:summaryrows-summarycolumns-summarytype">summaryType</a></li>
+                            </ul>
 						</li>
-					</ul>
-					</li>
-					<li id="toc-members:sizesettings"><a href="/api/js/ejtreegrid#members:sizesettings">sizeSettings</a>
-						<ul>
-							<li id="toc-members:sizesettings-height"><a href="/api/js/ejtreegrid#members:sizesettings-height">height</a></li>
-							<li id="toc-members:sizesettings-width"><a href="/api/js/ejtreegrid#members:sizesettings-width">width</a></li>
-						</ul>
-					</li>
-					<li id="toc-members:sortsettings"><a href="/api/js/ejtreegrid#members:sortsettings">sortSettings</a>
-						<ul>
-							<li id="toc-members:sortsettings-sortedcolumns"><a href="/api/js/ejtreegrid#members:sortsettings-sortedcolumns">sortedColumns</a>
-							<ul>
-                               <li id="toc-members:sortsettings-sortedcolumns-field"><a href="/api/js/ejtreegrid#members:sortsettings-sortedcolumns-field">field</a></li>
-							   <li id="toc-members:sortsettings-sortedcolumns-direction"><a href="/api/js/ejtreegrid#members:sortsettings-sortedcolumns-direction">direction</a></li>
-							</ul>
-							</li>
-						</ul>
-					</li>
-					<li id="toc-members:toolbarsettings"><a href="/api/js/ejtreegrid#members:toolbarsettings">toolbarSettings</a>
-						<ul>
-							<li id="toc-members:toolbarsettings-showtoolbar"><a href="/api/js/ejtreegrid#members:toolbarsettings-showtoolbar">showToolBar</a></li>
-							<li id="toc-members:toolbarsettings-toolbaritems"><a href="/api/js/ejtreegrid#members:toolbarsettings-toolbaritems">toolbarItems</a></li>
-							<li id="toc-members:toolbarsettings-customtoolbaritems"><a href="/api/js/ejtreegrid#members:toolbarsettings-customtoolbaritems">customToolbarItems</a>
-							   <ul>
-							      <li id="toc-members:toolbarsettings-customtoolbaritems-text"><a href="/api/js/ejtreegrid#members:toolbarsettings-customtoolbaritems-text">text</a></li>
-								  <li id="toc-members:toolbarsettings-customtoolbaritems-templateid"><a href="/api/js/ejtreegrid#members:toolbarsettings-customtoolbaritems-templateid">templateID</a></li>
-								  <li id="toc-members:toolbarsettings-customtoolbaritems-tooltiptext"><a href="/api/js/ejtreegrid#members:toolbarsettings-customtoolbaritems-tooltiptext">tooltipText</a></li>
-							   </ul>							
-							</li>
-						</ul>
-					</li>
-					<li id="toc-members:treecolumnindex"><a href="/api/js/ejtreegrid#members:treecolumnindex">treeColumnIndex</a></li>
-				</ul>
-			</li>
-			<li><a href="/api/js/ejtreegrid#methods">Methods</a>
-				<ul>
-					<li id="toc-methods:addrow"><a href="/api/js/ejtreegrid#methods:addrow">addRow</a></li>
-					<li id="toc-methods:clearselection"><a href="/api/js/ejtreegrid#methods:clearselection">clearSelection</a></li>
-					<li id="toc-methods:collapseall"><a href="/api/js/ejtreegrid#methods:collapseall">collapseAll</a></li>
-					<li id="toc-methods:expandatlevel"><a href="/api/js/ejtreegrid#methods:expandatlevel">expandAtLevel</a></li>
-					<li id="toc-methods:collapseatlevel"><a href="/api/js/ejtreegrid#methods:collapseatlevel">collapseAtLevel</a></li>
-					<li id="toc-methods:expandcollapsetotalsummary"><a href="/api/js/ejtreegrid#methods:expandcollapsetotalsummary">expandCollapseTotalSummary</a></li>
-					<li id="toc-methods:hidecolumn"><a href="/api/js/ejtreegrid#methods:hidecolumn">hideColumn</a></li>
-					<li id="toc-methods:renamecolumn"><a href="/api/js/ejtreegrid#methods:renamecolumn">renameColumn</a></li>
-					<li id="toc-methods:deletecolumn"><a href="/api/js/ejtreegrid#methods:deletecolumn">deleteColumn</a></li>
-					<li id="toc-methods:refresh"><a href="/api/js/ejtreegrid#methods:refresh">refresh</a></li>
-					<li id="toc-methods:reordercolumn"><a href="/api/js/ejtreegrid#methods:reordercolumn">reorderColumn</a></li>
-                    <li id="toc-methods:moverow"><a href="/api/js/ejtreegrid#methods:moverow">moveRow</a></li>
-					<li id="toc-methods:savecell"><a href="/api/js/ejtreegrid#methods:savecell">saveCell</a></li>					
-					<li id="toc-methods:selectcells"><a href="/api/js/ejtreegrid#methods:selectcells">selectCells</a></li>
-					<li id="toc-methods:showcolumn"><a href="/api/js/ejtreegrid#methods:showcolumn">showColumn</a></li>
-					<li id="toc-methods:sortcolumn"><a href="/api/js/ejtreegrid#methods:sortcolumn">sortColumn</a></li>
-					<li id="toc-methods:freezeprecedingcolumns"><a href="/api/js/ejtreegrid#methods:freezeprecedingcolumns">freezePrecedingColumns</a></li>
-					<li id="toc-methods:freezecolumn"><a href="/api/js/ejtreegrid#methods:freezecolumn">freezeColumn</a></li>
-					<li id="toc-methods:getupdatedrecords"><a href="/api/js/ejtreegrid#methods:getupdatedrecords">getUpdatedRecords</a></li>
-					<li id="toc-methods:gotopage"><a href="/api/js/ejtreegrid#methods:gotopage">gotoPage</a></li>
-					<li id="toc-methods:updatecheckboxcolumn"><a href="/api/js/ejtreegrid#methods:updatecheckboxcolumn">updateCheckboxColumn</a></li>
-					<li id="toc-methods:getselectedcells"><a href="/api/js/ejtreegrid#methods:getselectedcells">getSelectedCells</a></li>
-					<li id="toc-methods:updateresponsiveminwidth"><a href="/api/js/ejtreegrid#methods:updateresponsiveminwidth">updateResponsiveMinWidth</a></li>
-					<li id="toc-methods:showadddialog"><a href="/api/js/ejtreegrid#methods:showadddialog">showAddDialog</a></li>
-					<li id="toc-methods:showeditdialog"><a href="/api/js/ejtreegrid#methods:showeditdialog">showEditDialog</a></li>
-					<li id="toc-methods:scrolloffset"><a href="/api/js/ejtreegrid#methods:scrolloffset">scrollOffset</a></li>
-					<li id="toc-methods:getscrolltopoffset"><a href="/api/js/ejtreegrid#methods:getscrolltopoffset">getScrollTopOffset</a></li>
-					<li id="toc-methods:getscrollleftoffset"><a href="/api/js/ejtreegrid#methods:getscrollleftoffset">getScrollLeftOffset</a></li>
-					<li id="toc-methods:scrolltotop"><a href="/api/js/ejtreegrid#methods:scrolltotop">scrollToTop</a></li>
-					<li id="toc-methods:scrolltobottom"><a href="/api/js/ejtreegrid#methods:scrolltobottom">scrollToBottom</a></li>
-					<li id="toc-methods:expandcollapserow"><a href="/api/js/ejtreegrid#methods:expandcollapserow">expandCollapseRow</a></li>
-					<li id="toc-methods:expandall"><a href="/api/js/ejtreegrid#methods:expandall">expandAll</a></li>
-					<li id="toc-methods:showhidedetailsrow"><a href="/api/js/ejtreegrid#methods:showhidedetailsrow">showHideDetailsRow</a></li>
-					<li id="toc-methods:filtercolumn"><a href="/api/js/ejtreegrid#methods:filtercolumn">filterColumn</a></li>
-					<li id="toc-methods:filtercontent"><a href="/api/js/ejtreegrid#methods:filtercontent">filterContent</a></li>
-					<li id="toc-methods:columnindex"><a href="/api/js/ejtreegrid#methods:columnindex">columnIndex</a></li>
-					<li id="toc-methods:clearsorting"><a href="/api/js/ejtreegrid#methods:clearsorting">clearSorting</a></li>
-					<li id="toc-methods:getcolumnindexbyfield"><a href="/api/js/ejtreegrid#methods:getcolumnindexbyfield">getColumnIndexByField</a></li>
-                    <li id="toc-methods:getfieldnamebyheadertext"><a href="/api/js/ejtreegrid#methods:getfieldnamebyheadertext">getFieldNameByHeaderText</a></li>
-					<li id="toc-methods:getcolumnbyheadertext"><a href="/api/js/ejtreegrid#methods:getcolumnbyheadertext">getColumnByHeaderText</a></li>
-					<li id="toc-methods:clearfilter"><a href="/api/js/ejtreegrid#methods:clearfilter">clearFilter</a></li>
-					<li id="toc-methods:getcolumnbyfield"><a href="/api/js/ejtreegrid#methods:getcolumnbyfield">getColumnByField</a></li>
-				</ul>
-			</li>
-			<li><a href="/api/js/ejtreegrid#events">Events</a>
-				<ul>
-					<li id="toc-events:actionbegin"><a href="/api/js/ejtreegrid#events:actionbegin">actionBegin</a></li>
-					<li id="toc-events:actioncomplete"><a href="/api/js/ejtreegrid#events:actioncomplete">actionComplete</a></li>
-					<li id="toc-events:beginedit"><a href="/api/js/ejtreegrid#events:beginedit">beginEdit</a></li>
-					<li id="toc-events:collapsed"><a href="/api/js/ejtreegrid#events:collapsed">collapsed</a></li>
-					<li id="toc-events:collapsing"><a href="/api/js/ejtreegrid#events:collapsing">collapsing</a></li>
-					<li id="toc-events:cellselecting"><a href="/api/js/ejtreegrid#events:cellselecting">cellSelecting</a></li>
-					<li id="toc-events:cellselected"><a href="/api/js/ejtreegrid#events:cellselected">cellSelected</a></li>
-					<li id="toc-events:columnresizestart"><a href="/api/js/ejtreegrid#events:columnresizestart">columnResizeStart</a></li>
-					<li id="toc-events:columnresizeend"><a href="/api/js/ejtreegrid#events:columnresizeend">columnResizeEnd</a></li>
-					<li id="toc-events:columnresized"><a href="/api/js/ejtreegrid#events:columnresized">columnResized</a></li>
-					<li id="toc-events:columndragstart"><a href="/api/js/ejtreegrid#events:columndragstart">columnDragStart</a></li>
-					<li id="toc-events:columndrag"><a href="/api/js/ejtreegrid#events:columndrag">columnDrag</a></li>
-					<li id="toc-events:columndrop"><a href="/api/js/ejtreegrid#events:columndrop">columnDrop</a></li>
-					<li id="toc-events:contextmenuopen"><a href="/api/js/ejtreegrid#events:contextmenuopen">contextMenuOpen</a></li>
-					<li id="toc-events:detailsdatabound"><a href="/api/js/ejtreegrid#events:detailsdatabound">detailsDataBound</a></li>
-					<li id="toc-events:detailsshown"><a href="/api/js/ejtreegrid#events:detailsshown">detailsShown</a></li>
-					<li id="toc-events:detailshidden"><a href="/api/js/ejtreegrid#events:detailshidden">detailsHidden</a></li>
-					<li id="toc-events:create"><a href="/api/js/ejtreegrid#events:create">create</a></li>
-					<li id="toc-events:endedit"><a href="/api/js/ejtreegrid#events:endedit">endEdit</a></li>
-					<li id="toc-events:expanded"><a href="/api/js/ejtreegrid#events:expanded">expanded</a></li>
-					<li id="toc-events:expanding"><a href="/api/js/ejtreegrid#events:expanding">expanding</a></li>
-					<li id="toc-events:load"><a href="/api/js/ejtreegrid#events:load">load</a></li>
-					<li id="toc-events:querycellinfo"><a href="/api/js/ejtreegrid#events:querycellinfo">queryCellInfo</a></li>
-					<li id="toc-events:rowdatabound"><a href="/api/js/ejtreegrid#events:rowdatabound">rowDataBound</a></li>
-					<li id="toc-events:rowdrag"><a href="/api/js/ejtreegrid#events:rowdrag">rowDrag</a></li>
-					<li id="toc-events:rowdragstart"><a href="/api/js/ejtreegrid#events:rowdragstart">rowDragStart</a></li>
-					<li id="toc-events:rowdragstop"><a href="/api/js/ejtreegrid#events:rowdragstop">rowDragStop</a></li>
-					<li id="toc-events:rowdropactionbegin"><a href="/api/js/ejtreegrid#events:rowdropactionbegin">rowDropActionBegin</a></li>
-					<li id="toc-events:rowselected"><a href="/api/js/ejtreegrid#events:rowselected">rowSelected</a></li>
-					<li id="toc-events:rowselecting"><a href="/api/js/ejtreegrid#events:rowselecting">rowSelecting</a></li>
-					<li id="toc-events:recordClick"><a href="/api/js/ejtreegrid#events:recordClick">recordClick</a></li>
-					<li id="toc-events:recordDoubleClick"><a href="/api/js/ejtreegrid#events:recorddoubleClick">recordDoubleClick</a></li>
-					<li id="toc-events:toolbarClick"><a href="/api/js/ejtreegrid#events:toolbarclick">toolbarClick</a></li>
-				</ul>
-			</li>
-		</ul>
-	</li>
+						<li id="toc-members:summaryrows-title"><a href="/api/js/ejtreegrid#members:summaryrows-title">title</a></li>
+                    </ul>
+                </li>
+                <li id="toc-members:toolbarsettings">
+                    <a href="/api/js/ejtreegrid#members:toolbarsettings">toolbarSettings</a>
+                    <ul>
+                        <li id="toc-members:toolbarsettings-customtoolbaritems">
+                            <a href="/api/js/ejtreegrid#members:toolbarsettings-customtoolbaritems">customToolbarItems</a>
+                            <ul>
+                                <li id="toc-members:toolbarsettings-customtoolbaritems-templateid"><a href="/api/js/ejtreegrid#members:toolbarsettings-customtoolbaritems-templateid">templateID</a></li>
+                                <li id="toc-members:toolbarsettings-customtoolbaritems-text"><a href="/api/js/ejtreegrid#members:toolbarsettings-customtoolbaritems-text">text</a></li>
+                                <li id="toc-members:toolbarsettings-customtoolbaritems-tooltiptext"><a href="/api/js/ejtreegrid#members:toolbarsettings-customtoolbaritems-tooltiptext">tooltipText</a></li>
+                            </ul>
+						</li>
+						<li id="toc-members:toolbarsettings-showtoolbar"><a href="/api/js/ejtreegrid#members:toolbarsettings-showtoolbar">showToolBar</a></li>
+                        <li id="toc-members:toolbarsettings-toolbaritems"><a href="/api/js/ejtreegrid#members:toolbarsettings-toolbaritems">toolbarItems</a></li>
+                    </ul>
+                </li>
+                <li id="toc-members:totalsummaryheight"><a href="/api/js/ejtreegrid#members:totalsummaryheight">totalSummaryHeight</a></li>
+                <li id="toc-members:treecolumnindex">
+                    <a href="/api/js/ejtreegrid#members:treecolumnindex">treeColumnIndex</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="/api/js/ejtreegrid#methods">Methods</a>
+            <ul>
+                <li id="toc-methods:addrow"><a href="/api/js/ejtreegrid#methods:addrow">addRow</a></li>
+                <li id="toc-methods:clearfilter"><a href="/api/js/ejtreegrid#methods:clearfilter">clearFilter</a></li>
+                <li id="toc-methods:clearselection"><a href="/api/js/ejtreegrid#methods:clearselection">clearSelection</a></li>
+                <li id="toc-methods:clearsorting"><a href="/api/js/ejtreegrid#methods:clearsorting">clearSorting</a></li>
+				<li id="toc-methods:collapseall"><a href="/api/js/ejtreegrid#methods:collapseall">collapseAll</a></li>
+				<li id="toc-methods:collapseatlevel"><a href="/api/js/ejtreegrid#methods:collapseatlevel">collapseAtLevel</a></li>
+                <li id="toc-methods:columnindex"><a href="/api/js/ejtreegrid#methods:columnindex">columnIndex</a></li>
+                <li id="toc-methods:deletecolumn"><a href="/api/js/ejtreegrid#methods:deletecolumn">deleteColumn</a></li>
+				<li id="toc-methods:expandall"><a href="/api/js/ejtreegrid#methods:expandall">expandAll</a></li>
+				<li id="toc-methods:expandatlevel"><a href="/api/js/ejtreegrid#methods:expandatlevel">expandAtLevel</a></li>
+                <li id="toc-methods:expandcollapserow"><a href="/api/js/ejtreegrid#methods:expandcollapserow">expandCollapseRow</a></li>
+                <li id="toc-methods:expandcollapsetotalsummary"><a href="/api/js/ejtreegrid#methods:expandcollapsetotalsummary">expandCollapseTotalSummary</a></li>
+                <li id="toc-methods:filtercolumn"><a href="/api/js/ejtreegrid#methods:filtercolumn">filterColumn</a></li>
+                <li id="toc-methods:filtercontent"><a href="/api/js/ejtreegrid#methods:filtercontent">filterContent</a></li>
+                <li id="toc-methods:freezecolumn"><a href="/api/js/ejtreegrid#methods:freezecolumn">freezeColumn</a></li>
+                <li id="toc-methods:freezeprecedingcolumns"><a href="/api/js/ejtreegrid#methods:freezeprecedingcolumns">freezePrecedingColumns</a></li>
+                <li id="toc-methods:getcolumnbyfield"><a href="/api/js/ejtreegrid#methods:getcolumnbyfield">getColumnByField</a></li>
+                <li id="toc-methods:getcolumnbyheadertext"><a href="/api/js/ejtreegrid#methods:getcolumnbyheadertext">getColumnByHeaderText</a></li>
+                <li id="toc-methods:getcolumnindexbyfield"><a href="/api/js/ejtreegrid#methods:getcolumnindexbyfield">getColumnIndexByField</a></li>
+                <li id="toc-methods:getfieldnamebyheadertext"><a href="/api/js/ejtreegrid#methods:getfieldnamebyheadertext">getFieldNameByHeaderText</a></li>
+                <li id="toc-methods:getscrollleftoffset"><a href="/api/js/ejtreegrid#methods:getscrollleftoffset">getScrollLeftOffset</a></li>
+                <li id="toc-methods:getscrolltopoffset"><a href="/api/js/ejtreegrid#methods:getscrolltopoffset">getScrollTopOffset</a></li>
+                <li id="toc-methods:getselectedcells"><a href="/api/js/ejtreegrid#methods:getselectedcells">getSelectedCells</a></li>
+                <li id="toc-methods:getupdatedrecords"><a href="/api/js/ejtreegrid#methods:getupdatedrecords">getUpdatedRecords</a></li>
+                <li id="toc-methods:gotopage"><a href="/api/js/ejtreegrid#methods:gotopage">gotoPage</a></li>
+                <li id="toc-methods:hidecolumn"><a href="/api/js/ejtreegrid#methods:hidecolumn">hideColumn</a></li>
+                <li id="toc-methods:moverow"><a href="/api/js/ejtreegrid#methods:moverow">moveRow</a></li>
+                <li id="toc-methods:refresh"><a href="/api/js/ejtreegrid#methods:refresh">refresh</a></li>
+                <li id="toc-methods:renamecolumn"><a href="/api/js/ejtreegrid#methods:renamecolumn">renameColumn</a></li>
+                <li id="toc-methods:reordercolumn"><a href="/api/js/ejtreegrid#methods:reordercolumn">reorderColumn</a></li>
+                <li id="toc-methods:savecell"><a href="/api/js/ejtreegrid#methods:savecell">saveCell</a></li>
+                <li id="toc-methods:scrolloffset"><a href="/api/js/ejtreegrid#methods:scrolloffset">scrollOffset</a></li>
+                <li id="toc-methods:scrolltobottom"><a href="/api/js/ejtreegrid#methods:scrolltobottom">scrollToBottom</a></li>
+                <li id="toc-methods:scrolltotop"><a href="/api/js/ejtreegrid#methods:scrolltotop">scrollToTop</a></li>
+                <li id="toc-methods:selectcells"><a href="/api/js/ejtreegrid#methods:selectcells">selectCells</a></li>
+                <li id="toc-methods:showadddialog"><a href="/api/js/ejtreegrid#methods:showadddialog">showAddDialog</a></li>
+                <li id="toc-methods:showcolumn"><a href="/api/js/ejtreegrid#methods:showcolumn">showColumn</a></li>
+                <li id="toc-methods:showeditdialog"><a href="/api/js/ejtreegrid#methods:showeditdialog">showEditDialog</a></li>
+                <li id="toc-methods:showhidedetailsrow"><a href="/api/js/ejtreegrid#methods:showhidedetailsrow">showHideDetailsRow</a></li>
+                <li id="toc-methods:sortcolumn"><a href="/api/js/ejtreegrid#methods:sortcolumn">sortColumn</a></li>
+				<li id="toc-methods:updatecheckboxcolumn"><a href="/api/js/ejtreegrid#methods:updatecheckboxcolumn">updateCheckboxColumn</a></li>
+				<li id="toc-methods:updaterecordbyindex"><a href="/api/js/ejtreegrid#methods:updaterecordbyindex ">updateRecordByIndex </a></li>
+                <li id="toc-methods:updateresponsiveminwidth"><a href="/api/js/ejtreegrid#methods:updateresponsiveminwidth">updateResponsiveMinWidth</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="/api/js/ejtreegrid#events">Events</a>
+            <ul>
+                <li id="toc-events:actionbegin"><a href="/api/js/ejtreegrid#events:actionbegin">actionBegin</a></li>
+				<li id="toc-events:actioncomplete"><a href="/api/js/ejtreegrid#events:actioncomplete">actionComplete</a></li>
+				<li id="toc-events:beforeprint"><a href="/api/js/ejtreegrid#events:beforeprint">beforePrint</a></li>
+                <li id="toc-events:beginedit"><a href="/api/js/ejtreegrid#events:beginedit">beginEdit</a></li>
+                <li id="toc-events:cellselected"><a href="/api/js/ejtreegrid#events:cellselected">cellSelected</a></li>
+                <li id="toc-events:cellselecting"><a href="/api/js/ejtreegrid#events:cellselecting">cellSelecting</a></li>
+                <li id="toc-events:collapsed"><a href="/api/js/ejtreegrid#events:collapsed">collapsed</a></li>
+                <li id="toc-events:collapsing"><a href="/api/js/ejtreegrid#events:collapsing">collapsing</a></li>
+                <li id="toc-events:columndrag"><a href="/api/js/ejtreegrid#events:columndrag">columnDrag</a></li>
+                <li id="toc-events:columndragstart"><a href="/api/js/ejtreegrid#events:columndragstart">columnDragStart</a></li>
+                <li id="toc-events:columndrop"><a href="/api/js/ejtreegrid#events:columndrop">columnDrop</a></li>
+                <li id="toc-events:columnresizeend"><a href="/api/js/ejtreegrid#events:columnresizeend">columnResizeEnd</a></li>
+                <li id="toc-events:columnresizestart"><a href="/api/js/ejtreegrid#events:columnresizestart">columnResizeStart</a></li>
+                <li id="toc-events:columnresized"><a href="/api/js/ejtreegrid#events:columnresized">columnResized</a></li>
+                <li id="toc-events:contextmenuopen"><a href="/api/js/ejtreegrid#events:contextmenuopen">contextMenuOpen</a></li>
+                <li id="toc-events:create"><a href="/api/js/ejtreegrid#events:create">create</a></li>
+                <li id="toc-events:detailsdatabound"><a href="/api/js/ejtreegrid#events:detailsdatabound">detailsDataBound</a></li>
+                <li id="toc-events:detailshidden"><a href="/api/js/ejtreegrid#events:detailshidden">detailsHidden</a></li>
+                <li id="toc-events:detailsshown"><a href="/api/js/ejtreegrid#events:detailsshown">detailsShown</a></li>
+                <li id="toc-events:endedit"><a href="/api/js/ejtreegrid#events:endedit">endEdit</a></li>
+                <li id="toc-events:expanded"><a href="/api/js/ejtreegrid#events:expanded">expanded</a></li>
+                <li id="toc-events:expanding"><a href="/api/js/ejtreegrid#events:expanding">expanding</a></li>
+                <li id="toc-events:load"><a href="/api/js/ejtreegrid#events:load">load</a></li>
+                <li id="toc-events:querycellinfo"><a href="/api/js/ejtreegrid#events:querycellinfo">queryCellInfo</a></li>
+                <li id="toc-events:recordClick"><a href="/api/js/ejtreegrid#events:recordClick">recordClick</a></li>
+                <li id="toc-events:recordDoubleClick"><a href="/api/js/ejtreegrid#events:recorddoubleClick">recordDoubleClick</a></li>
+                <li id="toc-events:rowdatabound"><a href="/api/js/ejtreegrid#events:rowdatabound">rowDataBound</a></li>
+                <li id="toc-events:rowdrag"><a href="/api/js/ejtreegrid#events:rowdrag">rowDrag</a></li>
+                <li id="toc-events:rowdragstart"><a href="/api/js/ejtreegrid#events:rowdragstart">rowDragStart</a></li>
+                <li id="toc-events:rowdragstop"><a href="/api/js/ejtreegrid#events:rowdragstop">rowDragStop</a></li>
+                <li id="toc-events:rowdropactionbegin"><a href="/api/js/ejtreegrid#events:rowdropactionbegin">rowDropActionBegin</a></li>
+                <li id="toc-events:rowselected"><a href="/api/js/ejtreegrid#events:rowselected">rowSelected</a></li>
+                <li id="toc-events:rowselecting"><a href="/api/js/ejtreegrid#events:rowselecting">rowSelecting</a></li>
+                <li id="toc-events:toolbarClick"><a href="/api/js/ejtreegrid#events:toolbarclick">toolbarClick</a></li>
+            </ul>
+        </li>
+    </ul>
+    </li>
 	<li><a href="/api/js/ejtreemap">ejTreeMap</a>
 		<ul>
 			<li><a href="/api/js/ejtreemap#members">Members</a>
