@@ -3241,6 +3241,60 @@ Specifies the summary columns in the summary rows.
 
 * -
 
+### summaryRows.summaryColumns.dataMember `string`
+{:#members:summaryrows-summarycolumns-datamember}
+
+Specifies summary column used to perform the summary calculation.
+
+#### Default Value
+
+* -
+
+### summaryRows.summaryColumns.displayColumn `string`
+{:#members:summaryrows-summarycolumns-displaycolumn}
+
+Specifies the required column to display the summary.
+
+#### Default Value
+
+* -
+
+### summaryRows.summaryColumns.format `string`
+{:#members:summaryrows-summarycolumns-format}
+
+Specifies the format to be applied on the summary column value.
+
+#### Default Value
+
+* -
+
+### summaryRows.summaryColumns.prefix `string`
+{:#members:summaryrows-summarycolumns-prefix}
+
+Specifies the text to be displayed before the summary column value.
+
+#### Default Value
+
+* -
+
+### summaryRows.summaryColumns.suffix `string`
+{:#members:summaryrows-summarycolumns-suffix}
+
+Specifies the text to be displayed after the summary column value.
+
+#### Default Value
+
+* -
+
+### summaryRows.title `string`
+{:#members:summaryrows-title}
+
+Specifies the title for summary row collection in TreeGrid
+
+#### Default Value
+
+* -
+
 ### summaryRows.summaryColumns.summaryType `enum`
 {:#members:summaryrows-summarycolumns-summarytype}
 
@@ -3294,60 +3348,6 @@ Specifies the summary type to perform calculations in a corresponding summary co
 </tr>
 </tbody>
 </table>
-
-#### Default Value
-
-* -
-
-### summaryRows.summaryColumns.dataMember `string`
-{:#members:summaryrows-summarycolumns-datamember}
-
-Specifies summary column used to perform the summary calculation.
-
-#### Default Value
-
-* -
-
-### summaryRows.summaryColumns.displayColumn `string`
-{:#members:summaryrows-summarycolumns-displaycolumn}
-
-Specifies the required column to display the summary.
-
-#### Default Value
-
-* -
-
-### summaryRows.summaryColumns.prefix `string`
-{:#members:summaryrows-summarycolumns-prefix}
-
-Specifies the text to be displayed before the summary column value.
-
-#### Default Value
-
-* -
-
-### summaryRows.summaryColumns.suffix `string`
-{:#members:summaryrows-summarycolumns-suffix}
-
-Specifies the text to be displayed after the summary column value.
-
-#### Default Value
-
-* -
-
-### summaryRows.summaryColumns.format `string`
-{:#members:summaryrows-summarycolumns-format}
-
-Specifies the format to be applied on the summary column value.
-
-#### Default Value
-
-* -
-
-### summaryRows.title `string`
-{:#members:summaryrows-title}
-
-Specifies the title for summary row collection in TreeGrid
 
 #### Default Value
 
