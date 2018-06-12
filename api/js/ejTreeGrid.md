@@ -3286,15 +3286,6 @@ Specifies the text to be displayed after the summary column value.
 
 * -
 
-### summaryRows.title `string`
-{:#members:summaryrows-title}
-
-Specifies the title for summary row collection in TreeGrid
-
-#### Default Value
-
-* -
-
 ### summaryRows.summaryColumns.summaryType `enum`
 {:#members:summaryrows-summarycolumns-summarytype}
 
@@ -3348,6 +3339,15 @@ Specifies the summary type to perform calculations in a corresponding summary co
 </tr>
 </tbody>
 </table>
+
+#### Default Value
+
+* -
+
+### summaryRows.title `string`
+{:#members:summaryrows-title}
+
+Specifies the title for summary row collection in TreeGrid
 
 #### Default Value
 
