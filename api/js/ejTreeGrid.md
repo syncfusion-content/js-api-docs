@@ -985,7 +985,7 @@ Header text of the column.
 ### columns.headerTextAlign `enum`
 {:#members:columns-headertextalign}
 
-<ts name = "ej.TextAlign"/>
+<ts ref="ej.TextAlign"/>
 
 Specifies the alignment of the column header text
 
@@ -1200,7 +1200,7 @@ $("#treeGridContainer").ejTreeGrid({
 ### columns.textAlign `enum`
 {:#members:columns-textalign}
 
-<ts name = "ej.TextAlign"/>
+<ts ref="ej.TextAlign"/>
 
 Specifies the text alignment for the column
 
@@ -3079,7 +3079,8 @@ $("#treeGridContainer").ejTreeGrid({
 
 {% endhighlight %}
 
-### stackedHeaderRows.stackedHeaderColumns.column `object`{:#members:stackedheaderrows-stackedheadercolumns-column}
+### stackedHeaderRows.stackedHeaderColumns.column `object`
+{:#members:stackedheaderrows-stackedheadercolumns-column}
 
 Gets or sets a value that indicates the header text for the particular stacked header column.
 
@@ -3107,7 +3108,8 @@ $("#treeGridContainer").ejTreeGrid({
 
 {% endhighlight %}
 
-### stackedHeaderRows.stackedHeaderColumns.cssClass `string`{:#members:stackedheaderrows-stackedheadercolumns-cssclass}
+### stackedHeaderRows.stackedHeaderColumns.cssClass `string`
+{:#members:stackedheaderrows-stackedheadercolumns-cssclass}
 
 Gets or sets a value that indicates class to the corresponding stackedHeaderColumn.
 
@@ -3135,7 +3137,8 @@ $("#treeGridContainer").ejTreeGrid({
 
 {% endhighlight %}
 
-### stackedHeaderRows.stackedHeaderColumns.headerText `string`{:#members:stackedheaderrows-stackedheadercolumns-headertext}
+### stackedHeaderRows.stackedHeaderColumns.headerText `string`
+{:#members:stackedheaderrows-stackedheadercolumns-headertext}
 
 Gets or sets a value that indicates the header text for the particular stacked header column.
 
@@ -3163,7 +3166,8 @@ $("#treeGridContainer").ejTreeGrid({
 
 {% endhighlight %}
 
-### stackedHeaderRows.stackedHeaderColumns.textAlign `string`{:#members:stackedheaderrows-stackedheadercolumns-textalign}
+### stackedHeaderRows.stackedHeaderColumns.textAlign `string`
+{:#members:stackedheaderrows-stackedheadercolumns-textalign}
 
 Gets or sets a value that indicates the text alignment of the corresponding headerText.
 
@@ -3191,7 +3195,8 @@ $("#treeGridContainer").ejTreeGrid({
 
 {% endhighlight %}
 
-### stackedHeaderRows.stackedHeaderColumns.tooltip `string`{:#members:stackedheaderrows-stackedheadercolumns-tooltip}
+### stackedHeaderRows.stackedHeaderColumns.tooltip `string`
+{:#members:stackedheaderrows-stackedheadercolumns-tooltip}
 
 Sets the template for tooltip for the Grid stackedHeaderColumns.
 
@@ -3405,7 +3410,8 @@ Allows the user to insert the custom icons in toolbar using CSS class name selec
 
 {% endhighlight %}
 
-### toolbarSettings.customToolbarItems.templateID `string`{:#members:toolbarsettings-customtoolbaritems-templateid}
+### toolbarSettings.customToolbarItems.templateID `string`
+{:#members:toolbarsettings-customtoolbaritems-templateid}
 
 Allows the user to insert the custom icons in toolbar using script templates. Using this property we can bind HTML elements and other EJ controls to TreeGrid toolbar.
 
@@ -3421,7 +3427,8 @@ Allows the user to insert the custom icons in toolbar using script templates. Us
 
 {% endhighlight %}
 
-### toolbarSettings.customToolbarItems.tooltipText `string`{:#members:toolbarsettings-customtoolbaritems-tooltiptext}
+### toolbarSettings.customToolbarItems.tooltipText `string`
+{:#members:toolbarsettings-customtoolbaritems-tooltiptext}
 
 Allows the user to display custom tooltip text for TreeGrid custom toolbar items.
 
