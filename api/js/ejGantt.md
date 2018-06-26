@@ -14,13 +14,24 @@ The Essential JavaScript Gantt control is designed to visualize and edit the pro
 
 #### Syntax
 
-{% highlight javascript %}
+$(element).ejGantt(options);
 
-$(element).ejGantt();
-
-{% endhighlight %}
-
-$(element).ejGantt<span class="signature">()</span>
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">options</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">settings for ejGantt</td>
+</tr>
+</tbody>
+</table>
 
 #### Example
 {:.example}
@@ -32,7 +43,9 @@ $(element).ejGantt<span class="signature">()</span>
  
 <script>
 // Create Gantt
-$('#gantt').ejGantt();  
+$('#gantt').ejGantt({
+    dataSource: projectData,
+}); 
 </script>
 
 {% endhighlight %}
@@ -4191,6 +4204,8 @@ Specifies the state of enabling or disabling toolbar
 ### toolbarSettings.toolbarItems `array`
 {:#members:toolbarsettings-toolbaritems}
 
+<ts name="ej.Gantt.ToolbarItems" />
+
 Specifies the list of toolbar items to be rendered in Gantt toolbar
 
 <table class="params">
@@ -4692,6 +4707,24 @@ To clear all the filtered columns in Gantt.
 
 {% endhighlight %}
 
+### clearSorting()
+{:#methods:clearsorting}
+
+To clear the sorted columns in Gantt.
+
+#### Example
+
+{% highlight html %}
+  
+<div id="gantt"></div> 
+ 
+<script>
+var ganttObject = $("#gantt").data("ejGantt");
+ganttObject.clearSorting();
+</script>
+
+{% endhighlight %}
+
 ### collapseAllItems()
 {:#methods:collapseallitems}
 
@@ -5035,6 +5068,40 @@ To filter multiple columns with multiple conditions dynamically in Gantt.
 
 {% endhighlight %}
 
+### getColumns()
+{:#methods:getcolumns}
+
+To get available column collection in Gantt.
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="gantt">Gantt</div> 
+ 
+<script>
+var ganttObject = $("#gantt").data("ejGantt"),
+    columns = ganttObject.getColumns();
+</script>
+{% endhighlight %}
+
+### getResourceViewEditColumns()
+{:#methods:getresourcevieweditcolumns}
+
+To get the column collection which are used to edit the task by using task add/edit dialog in resource view.
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="gantt">Gantt</div> 
+ 
+<script>
+var ganttObject = $("#gantt").data("ejGantt"),
+    columns = ganttObject.getResourceViewEditColumns();
+</script>
+{% endhighlight %}
+
 ### hideColumn(headerText)
 {:#methods:hidecolumn}
 
@@ -5292,6 +5359,42 @@ To select multiple rows dynamically.
      rowIndexes = [12,0,4,7];
  ganttObj.selectMultipleRows(rowIndexes);
 </script>
+{% endhighlight %}
+
+### setScrollTop(top)
+{:#methods:setscrolltop}
+
+Method to set scroll top value for Gantt control.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Top</td>
+<td class="type">number</td>
+<td class="description">Pass a value to set top position of vertical scroll bar.</td>
+</tr>
+</tbody>
+</table>
+
+Usage: we can able to change the top position of vertical scroll bar dynamically.
+
+#### Example
+
+{% highlight html %}
+  
+<div id="gantt"></div> 
+<script>
+var ganttObject = $("#gantt").data("ejGantt");
+ganttObject.setScrollTop(200);
+</script>
+
 {% endhighlight %}
 
 ### setSplitterIndex(index)
@@ -5600,6 +5703,45 @@ To update the value of Gantt record by using row index.
         var ganttObj = $("#gantt").data("ejGantt");
         var data = { taskName: "updated value"};
         ganttObj.updateRecordByIndex(4, data);
+</script>
+
+{% endhighlight %}
+
+### updateScheduleDates(startDate, endDate)
+{:#methods:updatescheduledates}
+
+To update the schedule start date and schedule end date of project.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">startDate</td>
+<td class="type">string</td>
+<td class="description">New schedule start date of project</td>
+</tr>
+<tr>
+<td class="name">endDate</td>
+<td class="type">string</td>
+<td class="description">New schedule end date of project</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
+var ganttObject = $("#gantt").data("ejGantt");
+ganttObject.updateScheduleDates("5/25/2017", "9/27/2017");
 </script>
 
 {% endhighlight %}
