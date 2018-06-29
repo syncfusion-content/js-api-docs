@@ -1723,7 +1723,7 @@ Specifies the position where the new row has to be added.
 
 #### Default Value
 
-* "top"
+* ej.TreeGrid.RowPosition.Top
 
 #### Example
 
@@ -1987,6 +1987,10 @@ Specifies the type of column filtering.
 <tr>
 <td class="name">Menu</td>
 <td class="description">Enables the menu filtering</td>
+</tr>
+<tr>
+<td class="name">Excel</td>
+<td class="description">Enables the excel filtering</td>
 </tr>
 </tbody>
 </table>
@@ -3517,6 +3521,10 @@ Specifies the list of toolbar items to be rendered in TreeGrid toolbar
 <tr>
 <td class="name">Print</td>
 <td class="description">Enables the printing icon in toolbar</td>
+</tr>
+<tr>
+<td class="name">Search</td>
+<td class="description">Enables the search textbox in toolbar</td>
 </tr>
 </tbody>
 </table>
