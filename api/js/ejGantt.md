@@ -1802,7 +1802,7 @@ Enables or disables the responsiveness of Gantt
 
 #### Default Value
 
-* "false"
+* false
 
 
 #### Example
@@ -2283,7 +2283,7 @@ Enables or disables Gantt to read-only mode
 
 #### Default Value
 
-* "false"
+* false
 
 #### Example
 {:.example}
@@ -2294,7 +2294,7 @@ Enables or disables Gantt to read-only mode
 <script>          
         $("#gantt").ejGantt(
  {
-    readOnly: "true"
+    readOnly: true
  });            
 </script>
 
@@ -2308,7 +2308,7 @@ Enables or Disables rendering baselines in Gantt , when enabled baseline is rend
 
 #### Default Value
 
-* "false"
+* false
 
 
 #### Example
@@ -3783,7 +3783,7 @@ Specifies the width of the stripline in Gantt
 <script>                  
         $("#gantt").ejGantt(
  {
-     $("#gantt").ejGantt(stripLines: [{ lineWidth : 2}]); 
+     $("#gantt").ejGantt(stripLines: [{ lineWidth : "2"}]); 
  });            
 </script>
 {% endhighlight %}
@@ -4265,8 +4265,16 @@ Specifies the list of toolbar items to be rendered in Gantt toolbar
 <td class="description">Enables the next time span icon in toolbar</td>
 </tr>
 <tr>
+<td class="name">CriticalPath</td>
+<td class="description">Enables the critical path icon in toolbar</td>
+</tr>
+<tr>
 <td class="name">ExcelExport</td>
 <td class="description">Enables the excel export toolbar icon</td>
+</tr>
+<tr>
+<td class="name">PdfExport</td>
+<td class="description">Enables the pdf export toolbar icon</td>
 </tr>
 </tbody>
 </table>
@@ -4393,7 +4401,7 @@ Enables or disables the schedule date validation while connecting a manually sch
 
 #### Default Value
 
-* "false"
+* false
 
 
 #### Example
