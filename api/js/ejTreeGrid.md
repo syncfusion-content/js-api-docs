@@ -3250,6 +3250,15 @@ Specifies the summary columns in the summary rows.
 
 * -
 
+### summaryRows.summaryColumns.customSummaryValue `string`
+{:#members:summaryrows-summarycolumns-customsummaryvalue}
+
+Specifies the custom summary calculate function or text.
+
+#### Default Value
+
+* -
+
 ### summaryRows.summaryColumns.dataMember `string`
 {:#members:summaryrows-summarycolumns-datamember}
 
@@ -3345,6 +3354,10 @@ Specifies the summary type to perform calculations in a corresponding summary co
 <tr>
 <td class="name">FalseCount</td>
 <td class="description">Displays the false count value for boolean summary columns</td>
+</tr>
+<tr>
+<td class="name">Custom</td>
+<td class="description">Displays the value from custom summary function</td>
 </tr>
 </tbody>
 </table>
