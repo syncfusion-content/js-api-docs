@@ -360,12 +360,12 @@ Specifies the mode for column resizing
 <td class="description">At load time column are rendered with given width value, while resizing the column only current column width is changed</td>
 </tr>
 <tr>
-<td class="name">Normal</td>
-<td class="description">At load time columns are stretched with control width,while resizing the column, current column width updated based on next column</td>
+<td class="name">NextColumn</td>
+<td class="description">At load time columns are stretched with control width, while resizing the column, current column width adjusted based on next column</td>
 </tr>
 <tr>
-<td class="name">NextColumn</td>
-<td class="description">In this mode columns are stretched with control width in load time and on resizing action.</td>
+<td class="name">Normal</td>
+<td class="description">In this mode columns are stretched with control width in load time and on resizing action current column width was adjusted with all columns.</td>
 </tr>
 </tbody>
 </table>
