@@ -86,7 +86,7 @@ $('#Spreadsheet').ejSpreadsheet();
 * ej.tab.js
 * ej.toolbar.js
 
-## Members
+# Members
 
 ### activeSheetIndex `number`
 {:#members:activesheetindex}

@@ -112,7 +112,7 @@ $("#rteSample").ejRTE();
 * module:ej.rte.js
 
 
-### Members
+# Members
 
 ### allowEditing `boolean`
 {:#members:allowediting}

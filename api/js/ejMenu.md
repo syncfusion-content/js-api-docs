@@ -86,7 +86,7 @@ $(element).ejMenu()
 * module:ej.checkbox.js
 
 
-## Members
+# Members
 
 ### animationType `enum`
 {:#members:animationtype}

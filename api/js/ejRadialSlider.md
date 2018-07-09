@@ -47,7 +47,7 @@ The RadialSlider provides an optimized interface for selecting a numeric value u
 * module:ej.radialslider
 
 
-## Members
+# Members
 
 ### autoOpen `boolean`
 {:#members:autoopen}

@@ -41,7 +41,7 @@ Document Editor JS is an editor component to view and print DOCX, DOC, RTF and T
 * Module: ej.documenteditor.js
 * Module: ej.scroller.js
 
-## Members
+# Members
 
 ### importExportSettings `Object`
 {:#members:importexportsettings}

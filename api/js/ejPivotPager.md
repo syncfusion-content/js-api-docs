@@ -43,7 +43,7 @@ PivotPager is a control used to render large amount of data without any performa
 * module:ej.pivotgrid
 
 
-## Members
+# Members
 
 
 ### categoricalCurrentPage `number`

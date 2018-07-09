@@ -47,7 +47,7 @@ The ComboBox component allows the user to type a value or choose an option from 
 * module:ej.combobox.js
 
 
-## Members
+# Members
 
 ### actionFailureTemplate `string`
 {:#members:actionfailuretemplate}
