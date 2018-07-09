@@ -87,7 +87,7 @@ Requires
 
 
 
-## Members
+# Members
 
 
 ### exportSettings `object`

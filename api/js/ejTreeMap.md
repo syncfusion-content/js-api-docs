@@ -48,7 +48,7 @@ $('#container').ejTreeMap();
 * module:properties
 
 
-## Members
+# Members
 
 
 ### borderBrush `string`

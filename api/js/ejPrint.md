@@ -38,7 +38,7 @@ keywords: ejPrint, API, Essential JS Print
 * module:ej.core
 * module:ej.print
 
-## Members
+# Members
 
 ### append  `string`
 {:#members:append}

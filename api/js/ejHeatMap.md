@@ -37,7 +37,7 @@ Essential HeatMap JS represents tabular data values as gradient colors instead o
 * module:ej.scroller.js  
 
 
-## Members
+# Members
 
 
 ### width `object`

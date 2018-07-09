@@ -69,7 +69,7 @@ Requires
 * module:excanvas.js
 
 
-## Members
+# Members
 
 
 

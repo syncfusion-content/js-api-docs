@@ -61,7 +61,7 @@ $('#gantt').ejGantt({
 * module:ej.web.all.js
 
 
-## Members
+# Members
 
 ### addDialogFields `array`
 {:#members:adddialogfields}

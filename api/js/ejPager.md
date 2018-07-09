@@ -47,7 +47,7 @@ $("#pager").ejPager(pagerModel);
 * module:ej.pager.js
 
 
-## Members
+# Members
 
 
 ### customText `string`

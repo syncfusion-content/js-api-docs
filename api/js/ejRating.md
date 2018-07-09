@@ -49,7 +49,7 @@ $(element).ejRating()
 * module:ej.rating.js
 
 
-## Members
+# Members
 
 ### allowReset `boolean`
 {:#members:allowreset}

@@ -51,7 +51,7 @@ The ribbon can be easily configured to the DOM element, such as div. You can cre
 * module:ej.togglebutton.js
 
 
-## Members
+# Members
 
 ### allowResizing `boolean`
 {:#members:allowresizing}
