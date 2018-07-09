@@ -60,7 +60,7 @@ $('#Schedule').ejSchedule();
 * module:ej.recurrenceeditor.js
 * module:ej.schedule.js
 
-## Members
+# Members
 
 ### allowDragAndDrop `boolean`
 {:#members:allowdraganddrop}

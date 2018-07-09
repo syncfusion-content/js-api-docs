@@ -74,7 +74,7 @@ $("#lb").ejListView();
 * module:ej.listview
 
 
-## Members
+# Members
 
 
 ### ajaxSettings  `Object`

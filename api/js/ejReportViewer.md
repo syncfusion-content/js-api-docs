@@ -77,7 +77,7 @@ $(element).ejReportViewer<span class="signature">()</span>
 * module:ej.reportviewer.js
 
 
-## Members
+# Members
 
 ### dataSources `array`
 {:#members:datasources}
