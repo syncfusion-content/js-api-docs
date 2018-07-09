@@ -84,7 +84,7 @@ $("#daterangepicker").ejDateRangePicker();
 
 
 
-## Members
+# Members
 
 
 ### allowEdit `boolean`
@@ -1102,7 +1102,7 @@ range</td>
 $("#daterangepicker").ejDateRangePicker();
 // Create DateRangePicker instance
 var dateObj = $("#daterangepicker").data("ejDateRangePicker");
-dateObj.dateObj.addRanges("new Range", [new Date("11/12/2019"),new Date("11/12/2021")] ); // clear  the DateRangePicker ranges selection
+dateObj.addRanges("new Range", [new Date("11/12/2019"),new Date("11/12/2021")] ); // Add the preset ranges to DateRangePicker
 </script>
 
 {% endhighlight %}
@@ -1130,7 +1130,7 @@ Clears the all ranges selections in DateRangePicker popup
 $("#daterangepicker").ejDateRangePicker();
 // create DateRangePicker instance
 var dateObj = $("#daterangepicker").data("ejDateRangePicker");
-dateObj.dateObj.clearRanges(); // clear  the DateRangePicker ranges selection
+dateObj.clearRanges(); // clear  the DateRangePicker ranges selection
 </script>
 
 {% endhighlight %}
@@ -1421,7 +1421,7 @@ label</td>
 $("#daterangepicker").ejDateRangePicker();
 // Create DateRangePicker instance
 var dateObj = $("#daterangepicker").data("ejDateRangePicker");
-dateObj.dateObj.setRange("new Range"); learn  the DateRangePicker ranges selection
+dateObj.setRange("new Range"); //set the preset ranges to DateRangePicker
 </script>
 
 {% endhighlight %}
@@ -1434,7 +1434,7 @@ dateObj.dateObj.setRange("new Range"); learn  the DateRangePicker ranges selecti
 $("#daterangepicker").ejDateRangePicker();
 // Create DateRangePicker instance
 var dateObj = $("#daterangepicker").data("ejDateRangePicker");
-dateObj.dateObj.setRange([new Date("11/12/2011"), new Date("11/12/2019")]); set the predefined set of range DateRangePicker
+dateObj.setRange([new Date("11/12/2011"), new Date("11/12/2019")]); //set the predefined set of range DateRangePicker
 </script>
 
 {% endhighlight %}

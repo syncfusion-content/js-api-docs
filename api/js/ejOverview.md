@@ -38,7 +38,7 @@ $("#overview").ejOverview();
 * module:jquery.validate.js
 * module:jquery.validate.unobtrusive.js
 
-## Members
+# Members
  
 ### sourceID `string`
 {:#members:sourceID}
