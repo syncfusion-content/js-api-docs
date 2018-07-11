@@ -52,7 +52,7 @@ $(element).ejPdfViewer({serviceUrl: ‘../api/PdfViewer’});
 * module:ej.menu.js
 * module:ej.slider.js
 
-# Members
+## Members
 
 ### locale `string`
 

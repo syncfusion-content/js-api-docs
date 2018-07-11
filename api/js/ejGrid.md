@@ -75,7 +75,7 @@ $('#Grid').ejGrid({
 * module:ej.excelfilter.js
 
 
-# Members
+## Members
 
 ### allowCellMerging `boolean`
 {:#members:allowcellmerging}

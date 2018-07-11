@@ -45,7 +45,7 @@ The AutoComplete control is a textbox control that provides a list of suggestion
 
 * module:ej.scroller.js
 
-# Members
+## Members
 
 ### addNewText `string`
 {:#members:addnewtext}

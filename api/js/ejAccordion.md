@@ -64,7 +64,7 @@ JavaScript (JS) is an interpreted computer programming language.
 * module:ej.accordion.js
 
 
-# Members
+## Members
 
 ### ajaxSettings  `object`
 {:#members:ajaxsettings}

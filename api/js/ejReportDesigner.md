@@ -121,7 +121,7 @@ Report Designer allows to design the report that can be published in the Server 
 
 * module:ej.bulletgraph.js
 
-# Members
+## Members
 
 ### locale `string`
 {:#members:locale}
