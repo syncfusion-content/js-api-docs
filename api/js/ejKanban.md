@@ -72,7 +72,7 @@ The Kanban can be easily configured to the DOM element, such as div. You can cre
 * module:ej.toolbar.min.js
 * module:ej.menu.min.js
 
-# Members
+## Members
 
 ### allowDragAndDrop `boolean`
 {:#members:allowdraganddrop}

@@ -45,7 +45,7 @@ The PivotGauge control is ideal for highlighting business critical Key Performan
 * module:ej.pivotgauge.js
 
 
-# Members
+## Members
 
 ### columnsCount `number`
 {:#members:columnscount}

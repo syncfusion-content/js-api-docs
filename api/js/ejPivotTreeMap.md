@@ -47,7 +47,7 @@ The PivotTreemap is a lightweight control that reads OLAP information and visual
 * module:ej.treemap.js
 * module:ej.pivottreemap.js
 
-# Members
+## Members
 
 ### cssClass `string`
 {:#members:cssclass}

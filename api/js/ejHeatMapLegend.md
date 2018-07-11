@@ -36,7 +36,7 @@ Legend is a control used to summarize the range of colors in HeatMap. This gives
 * module:ej.touch.js  
 * module:ej.scroller.js  
 
-# Members
+## Members
 
 ### width `object`
 {:#members:width}

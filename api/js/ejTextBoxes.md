@@ -76,7 +76,7 @@ $('#percentage').ejPercentageTextbox({value:100});
 * module:ej.editor.js
 
 
-# Members
+## Members
 
 
 ### currencySymbol `string`

@@ -59,7 +59,7 @@ Requires
 
 * module:ej.scroller.js
 
-# Members
+## Members
 
 
 ### allowDrag `boolean`

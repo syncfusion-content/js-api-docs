@@ -49,7 +49,7 @@ The pivot chart is a lightweight control that reads OLAP and relational informat
 * module:ej.pivotchart.js
 
 
-# Members
+## Members
 
 ### analysisMode `enum`
 {:#members:analysismode}

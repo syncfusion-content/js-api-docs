@@ -52,7 +52,7 @@ $('#container').ejMap();
 * module:properties.js
 
 
-# Members
+## Members
 
 ### background `string`
 {:#members:background}
