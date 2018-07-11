@@ -47,7 +47,7 @@ $('#container').ejSunburstChart();
 
 * module:ej.globalize.js
 
-# Members
+## Members
 
 ### background `string`
 {:#members:background}

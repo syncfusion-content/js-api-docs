@@ -46,7 +46,7 @@ The PivotGrid control is easily configurable, presentation-quality business cont
 * module:ej.pivotpager.js
 
 
-# Members
+## Members
 
 ### analysisMode `enum`
 {:#members:analysismode}

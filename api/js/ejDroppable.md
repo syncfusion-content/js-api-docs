@@ -54,7 +54,7 @@ $('#droppable').ejDroppable();
 
 * module:ej.droppable
 
-# Members
+## Members
 
 
 ### accept `object`

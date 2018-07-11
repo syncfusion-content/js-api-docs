@@ -42,7 +42,7 @@ PivotSchemaDesigner, also known as PivotTable Field List, is automatically popul
 * module:ej.pivot.common.js
 * module:ej.pivotschemadesigner.js
 
-# Members
+## Members
 
 ### cssClass `string`
 {:#members:cssclass}

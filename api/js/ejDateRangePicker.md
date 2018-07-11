@@ -84,7 +84,7 @@ $("#daterangepicker").ejDateRangePicker();
 
 
 
-# Members
+## Members
 
 
 ### allowEdit `boolean`

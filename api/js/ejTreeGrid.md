@@ -57,7 +57,7 @@ $('#treeGridContainer').ejTreeGrid({
 * module:ej.web.all.js
 
 
-# Members
+## Members
 
 ### allowColumnReordering `boolean`
 {:#members:allowcolumnreordering}

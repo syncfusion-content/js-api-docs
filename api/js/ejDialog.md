@@ -53,7 +53,7 @@ Requires
 * module:ej.button.js
 * module:ej.draggable.js
 
-# Members
+## Members
 
 
 ### actionButtons `string[]`
