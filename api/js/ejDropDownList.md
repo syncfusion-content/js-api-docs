@@ -89,7 +89,7 @@ $('#dropdown').ejDropDownList();
 * module:ej.scroller.js
 
 
-# Members
+## Members
 
 ### allowVirtualScrolling `boolean`
 {:#members:allowvirtualscrolling}

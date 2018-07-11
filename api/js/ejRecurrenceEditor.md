@@ -47,7 +47,7 @@ $('#RecurrenceEditor').ejRecurrenceEditor();
 * module:ej.checkbox.js
 * module:ej.datepicker.js
 
-# Members
+## Members
 
 ### frequencies `array`
 {:#members:frequencies}

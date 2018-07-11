@@ -55,7 +55,7 @@ $(element).ejTooltip(options);
 * module:jQuery.easing.1.3.js
 * module:ej.core.js
 
-# Members
+## Members
 
 ### allowKeyboardNavigation `boolean`
 {:#members:allowkeyboardnavigation}

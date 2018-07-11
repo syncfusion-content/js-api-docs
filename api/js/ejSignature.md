@@ -45,7 +45,7 @@ Using ejSignature we can customize the background, stroke width and stroke color
 * module:ej.touch.js
 
 
-# Members
+## Members
 
 ### backgroundColor `string`
 {:#members:backgroundcolor}

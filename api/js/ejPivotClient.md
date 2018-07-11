@@ -65,7 +65,7 @@ The pivot client is an ad hoc analysis tool that can be easily bound to any OLAP
 * module: ej.pivotschemadesigner.js
 * module: ej.pivotclient.js
 
-# Members
+## Members
 
 ### analysisMode `enum`
 {:#members:analysisMode}

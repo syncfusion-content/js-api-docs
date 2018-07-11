@@ -46,7 +46,7 @@ $(element).ejSpellCheck()
 * module:ej.menu.js
 * module:ej.spellcheck.js
 
-# Members
+## Members
 
 ### dictionarySettings `object`
 {:#members:dictionarysettings}

@@ -38,7 +38,7 @@ $("#symbolpalette").ejSymbolPalette();
 * module:jquery.validate.js
 * module:jquery.validate.unobtrusive.js
 
-# Members
+## Members
 
 ### allowDrag `boolean`
 {:#members:allowdrag}
