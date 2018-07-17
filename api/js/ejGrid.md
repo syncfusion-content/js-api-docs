@@ -8663,7 +8663,7 @@ N> It is applicable only for Grid with remoteSaveAdaptor.
 </thead>
 <tbody>
 <tr>
-<td class="name">param</td>
+<td class="name">additionalParameters</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last"><span class="optional">optional</span>Data to the server </td>
 </tr>
@@ -8684,11 +8684,6 @@ void
  
 <div id="Grid"></div> 
 <script>
-// Grid setup
-$("#Grid").ejGrid({
-dataSource: ej.DataManager({json: data, url:"Grid/GetData, adaptor: "remoteSaveAdaptor"})
-})
-
 // Create grid object.
 var gridObj = $("#Grid").data("ejGrid");
 gridObj.refreshData(); // Refreshes the grid contents with data from server
@@ -8702,11 +8697,6 @@ gridObj.refreshData("additionalParameter); // Refreshes the grid contents with d
  
 <div id="Grid"></div> 
 <script>
-// Grid setup
-$("#Grid").ejGrid({
-dataSource: ej.DataManager({json: data, url:"Grid/GetData, adaptor: "remoteSaveAdaptor"})
-})
-
 // Refreshes the grid contents with data from server
 $("#Grid").ejGrid("refreshData");        
 // Refreshes the grid contents with data from server by passing parameter to server
