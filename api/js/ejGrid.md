@@ -8645,6 +8645,66 @@ $("#Grid").ejGrid("refreshContent", true);
 {% endhighlight %}
 
 
+### refreshData(\[additionalParameters\])
+{:#methods:refreshData}
+
+
+Refresh the grid contents with updated server Data, using XMLHttpRequest. Url Path should be provided in Grid datasource otherwise it refreshes with local data without XMLHttpRequest.
+
+N> It is applicable only for Grid with remoteSaveAdaptor.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">additionalParameters</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last"><span class="optional">optional</span>Data to the server </td>
+</tr>
+</tbody>
+</table>
+
+#### Returns:
+{:#methods:returns:}
+
+void
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
+// Create grid object.
+var gridObj = $("#Grid").data("ejGrid");
+gridObj.refreshData(); // Refreshes the grid contents with data from server
+gridObj.refreshData("additionalParameter); // Refreshes the grid contents with data from server by passing parameter to server
+</script>
+
+{% endhighlight %}
+
+
+{% highlight html %}
+ 
+<div id="Grid"></div> 
+<script>
+// Refreshes the grid contents with data from server
+$("#Grid").ejGrid("refreshData");        
+// Refreshes the grid contents with data from server by passing parameter to server
+$("#Grid").ejGrid("refreshData", "additionalParameter");        
+</script>
+{% endhighlight %}
+
+
 ### refreshTemplate()
 {:#methods:refreshtemplate}
 
