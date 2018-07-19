@@ -2069,8 +2069,8 @@ $("#treeGridContainer").ejTreeGrid({
 
 {% endhighlight %}
 
-### filterSettings.maxFilterChoice `number`
-{:#members:filtersettings-maxfilterchoice}
+### filterSettings.maxFilterChoices `number`
+{:#members:filtersettings-maxfilterchoices}
 
 Gets or sets a value that indicates the maximum number of filter choices that can be showed in the excel styled filter menu.
 
@@ -2084,7 +2084,7 @@ Gets or sets a value that indicates the maximum number of filter choices that ca
    
 $("#treeGridContainer").ejTreeGrid({
     filterSettings: {
-        maxFilterChoice:500,
+        maxFilterChoices:500,
     },
 });                   
 
