@@ -6804,10 +6804,10 @@ Method to perform map zooming.
 {% endhighlight %}
 
 
-### refreshLayer(layerIndex,sublayerIndex,markers)
+### refreshLayer(layerIndex,sublayerIndex)
 {:#methods:refreshlayer}
 
-Method to reload the shape marker with updated values.
+Method to reload the specified layer based on layer and sublayer index value.
 
 
 #### Returns: void
@@ -6818,12 +6818,12 @@ Method to reload the shape marker with updated values.
 {% highlight js %}
  
 //refresh layers method for map
-   $("#container").ejMap("refreshLayer",layerIndex,sublayerIndex,markers);
+   $("#container").ejMap("refreshLayer", layerIndex, sublayerIndex);
 
 {% endhighlight %}
 
 
-### addMarkers(layerIndex,sublayerIndex)
+### addMarkers(layerIndex, sublayerIndex, markers)
 {:#methods:addmarkers}
 
 Add markers dynamically based on layer and sublayer index value.
@@ -6837,7 +6837,7 @@ Add markers dynamically based on layer and sublayer index value.
 {% highlight js %}
  
 //addMarkers method for map
-   $("#container").ejMap("addMarkers",layerIndex,sublayerIndex);
+   $("#container").ejMap("addMarkers", layerIndex, sublayerIndex, markers);
 
 {% endhighlight %}
 
