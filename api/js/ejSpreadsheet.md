@@ -8643,7 +8643,7 @@ excelObj.XLComment.showHideComment(excelObj.getCell(1, 5));
 ### XLCMenu
 {:#methods:xlcmenu}
 
-### XLCMenu.addItem(target, itemColl, operation)
+### XLCMenu.addItem(target, itemColl, operation, itemIdx)
 {:#methods:xlcmenu-additem}
 
 This method is used to dynamically add items in the context menu.
@@ -8671,6 +8671,11 @@ This method is used to dynamically add items in the context menu.
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Specifies the type of operation to be performed</td>
 </tr>
+<tr>
+<td class="name">itemIdx</td>
+<td class="type"><span class="param-type">Number</span></td>
+<td class="description">Specifies the item index</td>
+</tr>
 </tbody>
 </table>
 
@@ -8680,7 +8685,12 @@ This method is used to dynamically add items in the context menu.
 <script>
 // Create Spreadsheet object.
 var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
-excelObj.XLCMenu.addItem(ej.Spreadsheet.ContextMenu.Cell, [{"text":"Added item 1!!!", "url":"#", "id": "Added item1", "spriteCssClass": "e-icon e-ss-cut" }], 'insertbefore'); // To add a item in the context menu.
+// To add an item in the context menu at last position.
+excelObj.XLCMenu.addItem(ej.Spreadsheet.ContextMenu.Cell, [{"text":"Added item 1!!!", "url":"#", "id": "Added item1", "spriteCssClass": "e-icon e-ss-cut" }], 'insert'); 
+// To add an item in the context menu before the particular item index.
+excelObj.XLCMenu.addItem(ej.Spreadsheet.ContextMenu.Cell, [{"text":"Added item 2!!!", "url":"#", "id": "Added item2", "spriteCssClass": "e-icon e-ss-copy" }], 'insertbefore', 2);
+// To add an item in the context menu after the particular item index.
+excelObj.XLCMenu.addItem(ej.Spreadsheet.ContextMenu.Cell, [{"text":"Added item 3!!!", "url":"#", "id": "Added item3", "spriteCssClass": "e-icon e-ss-paste" }], 'insertafter', 2);
 </script>
 
 {% endhighlight %}
