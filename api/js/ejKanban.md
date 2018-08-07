@@ -342,6 +342,202 @@ To enable or disable DragAndDrop across swim lane.
 
 {% endhighlight %}
 
+### swimlaneSettings.showEmptySwimlane `boolean`
+{:#members:swimlanesettings-showemptyswimlane}
+
+To enable or disable empty swim lane on Kanban board.  It is used to shown empty swim lane when no data's present on headers key mapping value.
+
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+  
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanban = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanban);
+        $("#Kanban").ejKanban({
+            dataSource: data,
+            allowDragAndDrop: true,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+				swimlaneKey: "Assignee",
+                content: "Summary",
+            },
+			swimlaneSettings:{
+				showEmptySwimlane: true,
+                headers: [{ text: 'Andrew Fuller', key: 'Andrew' },
+						 { text: 'Janet', key: 'Janet' }]
+				},
+        });
+    });
+    </script>
+
+{% endhighlight %}
+
+### swimlaneSettings.headers `Array`
+{:#members:swimlanesettings-headers}
+
+Gets or sets an object that indicates to render the swim lane rows with specified swim lane headers.
+
+#### Default Value:
+
+* Array
+
+#### Example
+
+{% highlight html %}
+  
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanban = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanban);
+        $("#Kanban").ejKanban({
+            dataSource: data,
+            allowDragAndDrop: true,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+				swimlaneKey: "Assignee",
+                content: "Summary",
+            },
+			swimlaneSettings:{
+				showEmptySwimlane: true,
+                headers: [{ text: 'Andrew Fuller', key: 'Andrew' },
+						 { text: 'Janet', key: 'Janet' }]
+				},
+        });
+    });
+    </script>
+
+{% endhighlight %}
+
+### swimlaneSettings.headers.text `string`
+{:#members:swimlanesettings-headers-text}
+
+Gets or sets an object that indicates to render the Kanban with specified swim lane header text.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+  
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanban = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanban);
+        $("#Kanban").ejKanban({
+            dataSource: data,
+            allowDragAndDrop: true,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+				swimlaneKey: "Assignee",
+                content: "Summary",
+            },
+			swimlaneSettings:{
+				showEmptySwimlane: true,
+                headers: [{ text: 'Andrew Fuller', key: 'Andrew' },
+						 { text: 'Janet', key: 'Janet' }]
+				},
+        });
+    });
+    </script>
+
+{% endhighlight %}
+
+### swimlaneSettings.headers.key `string`
+{:#members:swimlanesettings-headers-key}
+
+Gets or sets an object that indicates to render the Kanban with specified swim lane header key.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+  
+    <div id="Kanban"></div>
+    <script type="text/javascript">
+    window.kanban = [
+        { Id: 1, Status: "Open", Summary: "Task 1", Assignee: "Nancy" },
+        { Id: 2, Status: "Open", Summary: "Task 2", Assignee: "Andrew" },
+        { Id: 3, Status: "InProgress", Summary: "Task 3", Assignee: "Andrew" },
+        { Id: 4, Status: "Testing", Summary: "Task4", Assignee: "Nancy" }
+    ];
+    $(function () {
+        var data = ej.DataManager(window.kanban);
+        $("#Kanban").ejKanban({
+            dataSource: data,
+            allowDragAndDrop: true,
+            columns: [
+                { headerText: "Backlog", key: "Open" },
+                { headerText: "In Progress", key: "InProgress" },
+                { headerText: "Testing", key: "Testing" },
+                { headerText: "Done", key: "Close" }
+            ],
+            keyField: "Status",
+            fields: {
+                primaryKey: "Id",
+				swimlaneKey: "Assignee",
+                content: "Summary",
+            },
+			swimlaneSettings:{
+				showEmptySwimlane: true,
+                headers: [{ text: 'Andrew Fuller', key: 'Andrew' },
+						 { text: 'Janet', key: 'Janet' }]
+				},
+        });
+    });
+    </script>
+
+{% endhighlight %}
+
 ### swimlaneSettings.unassignedGroup `Object`
 {:#members:swimlanesettings-unassignedgroup}
 
