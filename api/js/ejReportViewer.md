@@ -2045,3 +2045,19 @@ Specifies the token for authorizing reporting service url to process the reports
 
 {% endhighlight %}
 
+### toolbarRendering
+{:#events:toolbarrendering}
+
+This event will be triggered on rendering the Report Viewer toolbar.
+
+#### Example 
+
+{% highlight js %}
+
+    $("#reportviewer").ejReportViewer({
+        toolbarRendering: function(args) {
+            // Write your block of code 
+        }
+    });
+
+{% endhighlight %}
