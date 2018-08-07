@@ -345,7 +345,7 @@ To enable or disable DragAndDrop across swim lane.
 ### swimlaneSettings.showEmptySwimlane `boolean`
 {:#members:swimlanesettings-showemptyswimlane}
 
-To enable or disable empty swimlane on Kanban board.  It is used to shown empty swim lane when no data's present on headers key mapping value.
+To enable or disable empty swimlane on Kanban board.  It is used to shown empty swimlane when no data's present on headers key mapping value.
 
 #### Default Value:
 
@@ -394,11 +394,11 @@ To enable or disable empty swimlane on Kanban board.  It is used to shown empty 
 ### swimlaneSettings.headers `Array`
 {:#members:swimlanesettings-headers}
 
-Gets or sets an object that indicates to render the swim lane rows with specified swim lane headers.
+Gets or sets an object that indicates to render the swimlane rows with specified swimlane headers.
 
 #### Default Value:
 
-* Array
+* []
 
 #### Example
 
@@ -443,7 +443,7 @@ Gets or sets an object that indicates to render the swim lane rows with specifie
 ### swimlaneSettings.headers.text `string`
 {:#members:swimlanesettings-headers-text}
 
-Gets or sets an object that indicates to render the Kanban with specified swim lane header text.
+Gets or sets a value that indicates to render the Kanban with specified swimlane header text.
 
 #### Default Value:
 
@@ -492,7 +492,7 @@ Gets or sets an object that indicates to render the Kanban with specified swim l
 ### swimlaneSettings.headers.key `string`
 {:#members:swimlanesettings-headers-key}
 
-Gets or sets an object that indicates to render the Kanban with specified swim lane header key.
+Gets or sets a value that indicates to render the Kanban with specified swimlane header key.
 
 #### Default Value:
 
