@@ -345,7 +345,7 @@ To enable or disable DragAndDrop across swim lane.
 ### swimlaneSettings.showEmptySwimlane `boolean`
 {:#members:swimlanesettings-showemptyswimlane}
 
-To enable or disable empty swim lane on Kanban board.  It is used to shown empty swim lane when no data's present on headers key mapping value.
+To enable or disable empty swimlane on Kanban board.  It is used to shown empty swim lane when no data's present on headers key mapping value.
 
 #### Default Value:
 
