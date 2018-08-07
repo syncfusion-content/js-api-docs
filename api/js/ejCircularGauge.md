@@ -2427,9 +2427,9 @@ Star</td>
 </tr>
 <tr>
 <td class="name">
-Horizontalline</td>
+HorizontalLine</td>
 <td class="type">string</td>
-<td class="description">Style of the indicator will be horizontalline</td>
+<td class="description">Style of the indicator will be horizontalLine</td>
 </tr>
 <tr>
 <td class="name">
