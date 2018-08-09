@@ -1972,7 +1972,13 @@ Regular</td>
 Bold</td>
 <td class="type">string</td>
 <td class="description">Specifies the font weight as bold.</td>
-</tr> 
+</tr>
+<tr>
+<td class="name">
+Lighter</td>
+<td class="type">string</td>
+<td class="description">Specifies the font weight as lighter.</td>
+</tr>  
 </tbody>
 </table>
 
