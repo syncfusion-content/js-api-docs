@@ -1891,10 +1891,34 @@ $("#container").ejMap({
 ### layers.labelSettings.font.fontStyle `enum`
 {:#members:layers-labelsettings-font-fontstyle}
 
-<ts ref="ej.datavisualization.Map.FontStyle"/>
+<ts name="ej.datavisualization.Map.FontStyle"/>
 
 
-Font style of the data label.   
+Font style of the data label.  
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Normal</td>
+<td class="type">string</td> 
+<td class="description">Specifies the fontStyle as normal.</td>
+</tr>
+<tr>
+<td class="name">
+Italic</td>
+<td class="type">string</td>
+<td class="description">Specifies the fontStyle as italic.</td>
+</tr> 
+</tbody>
+</table>
 
 
 #### Default Value
@@ -1925,7 +1949,32 @@ $("#container").ejMap({
 {:#members:layers-labelsettings-font-fontweight}
 
 
-<ts ref="ej.datavisualization.Map.FontWeight"/>
+<ts name="ej.datavisualization.Map.FontWeight"/>
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Regular</td>
+<td class="type">string</td> 
+<td class="description">Specifies the font weight as regular.</td>
+</tr>
+<tr>
+<td class="name">
+Bold</td>
+<td class="type">string</td>
+<td class="description">Specifies the font weight as bold.</td>
+</tr> 
+</tbody>
+</table>
 
 
 Font weight of the data label.  
