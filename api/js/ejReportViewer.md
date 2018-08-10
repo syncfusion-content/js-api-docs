@@ -1869,7 +1869,7 @@ argument</td>
 ### showError
 {:#events:showError}
 
-Fires when user clicks a failed item in a rendered report before displaying error dialog. If you want to perform any action before viewing error details, you can make use of the showError event.
+Fires when user clicks on a failed report item in the rendered report, before displaying error details dialog. If you want to show custom error detail or perform any action before viewing error detail, you can make use of the showError event.
 
 <table class="params">
 <thead>
