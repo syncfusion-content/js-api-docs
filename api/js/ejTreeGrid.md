@@ -2548,6 +2548,33 @@ $("#treeGridContainer").ejTreeGrid({
 });
 {% endhighlight %}
 
+### searchSettings.searchHierarchyMode `string`
+{:#members:searchsettings-searchhierarchymode}
+
+Specifies the search mode of records filter in searching.
+
+**List of enum type search modes**
+
+1. ej.TreeGrid.SearchHierarchyMode.Parent
+2. ej.TreeGrid.SearchHierarchyMode.Child
+3. ej.TreeGrid.SearchHierarchyMode.Both
+4. ej.TreeGrid.SearchHierarchyMode.None
+
+#### Default Value
+
+* "parent"
+
+#### Example
+
+{% highlight html %}
+                 
+$("#treeGridContainer").ejTreeGrid({
+    searchSettings: {
+        searchHierarchyMode: "child"
+    },
+});
+{% endhighlight %}
+
 ### selectedCellIndexes `array`
 {:#members:selectedcellindexes}
 
