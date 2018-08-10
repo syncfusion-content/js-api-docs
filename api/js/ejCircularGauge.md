@@ -2389,6 +2389,90 @@ Image</td>
 <td class="type">string</td>
 <td class="description">Style of the indicator will be image</td>
 </tr> 
+<tr>
+<td class="name">
+Triangle</td>
+<td class="type">string</td>
+<td class="description">Style of the indicator will be triangle</td>
+</tr> 
+<tr>
+<td class="name">
+Diamond</td>
+<td class="type">string</td>
+<td class="description">Style of the indicator will be diamond</td>
+</tr> 
+<tr>
+<td class="name">
+Trapezoid</td>
+<td class="type">string</td>
+<td class="description">Style of the indicator will be trapezoid</td>
+</tr> 
+<tr>
+<td class="name">
+Pentagon</td>
+<td class="type">string</td>
+<td class="description">Style of the indicator will be pentagon</td>
+</tr> 
+<tr>
+<td class="name">
+Wedge</td>
+<td class="type">string</td>
+<td class="description">Style of the indicator will be wedge</td>
+</tr>
+<tr>
+<td class="name">
+Star</td>
+<td class="type">string</td>
+<td class="description">Style of the indicator will be star</td>
+</tr>
+<tr>
+<td class="name">
+HorizontalLine</td>
+<td class="type">string</td>
+<td class="description">Style of the indicator will be horizontalLine</td>
+</tr>
+<tr>
+<td class="name">
+Verticalline</td>
+<td class="type">string</td>
+<td class="description">Style of the indicator will be verticalline</td>
+</tr>
+<tr>
+<td class="name">
+Cross</td>
+<td class="type">string</td>
+<td class="description">Style of the indicator will be cross</td>
+</tr>
+<tr>
+<td class="name">
+Uparrow</td>
+<td class="type">string</td>
+<td class="description">Style of the indicator will be uparrow</td>
+</tr>
+<tr>
+<td class="name">
+Downarrow</td>
+<td class="type">string</td>
+<td class="description">Style of the indicator will be downarrow</td>
+</tr>
+<tr>
+<td class="name">
+Leftarrow</td>
+<td class="type">string</td>
+<td class="description">Style of the indicator will be leftarrow</td>
+</tr>
+<tr>
+<td class="name">
+Rightarrow</td>
+<td class="type">string</td>
+<td class="description">Style of the indicator will be rightarrow</td>
+</tr>
+<tr>
+<td class="name">
+InvertedTriangle</td>
+<td class="type">string</td>
+<td class="description">Style of the indicator will be invertedtriangle</td>
+</tr>
 </tbody>
 </table>
 
