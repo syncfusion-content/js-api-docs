@@ -8567,6 +8567,36 @@ var node = { name: "node", width: 50, height: 50, offsetX: 100, offsetY:100,
 
 {% endhighlight %}
 
+### nodes.borderGradient `object`
+{:#members:nodes-bordergradient}
+
+defines the node border with a smooth transition from one color to another color.
+
+#### Default Value:
+
+* null
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+var gradient = {
+    type: "linear", x1: 0, x2: 100, y1: 0, y2: 100,
+    stops: [
+        { color: "white", offset: 0}, 
+        { color: "red", offset: 100}
+    ]
+};
+var node = {
+    name: "node", width: 50, height: 50, offsetX: 100, offsetY: 100,
+    borderGradient: gradient, borderWidth: 2
+};
+</script>
+
+{% endhighlight %}
+
 ### nodes.header `object`
 {:#members:nodes-header}
 
@@ -13174,8 +13204,8 @@ Sets the type of BPMN Event Triggers.
             <td class="description last">Used to set Event Trigger as Conditional</td>
        </tr>
         <tr>
-            <td class="name">Termination</td>
-            <td class="description last">Used to set Event Trigger as Termination</td>
+            <td class="name">Terminate</td>
+            <td class="description last">Used to set Event Trigger as Terminate</td>
        </tr>
        <tr>
             <td class="name">Cancel</td>
