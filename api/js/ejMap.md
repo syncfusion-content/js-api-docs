@@ -4038,6 +4038,39 @@ Specifies the bubble Opacity value of bubbles for shape layer in map
 
 {% endhighlight %}
 
+### layers.subLayers.bubbleSettings.colorPath `string`
+{:#members:layers-sublayers-bubblesettings-colorpath}
+
+Specifies the field name in the datasource that contains color values for each bubble.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set colorPath API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{ bubbleSettings: {colorPath:"colorFieldValue"}}] } ]);
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the colorPath API, after initialization:
+
+   //Gets the bubble colorPath value 
+   
+   var bubbleProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].bubbleSettings.colorPath;
+  
+   //Sets the bubble colorPath value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].bubbleSettings.colorPath="colorFieldValue"; 
+
+{% endhighlight %}
+
 
 ### layers.subLayers.bubbleSettings.color `string`
 {:#members:layers-sublayers-bubblesettings-color}
@@ -5863,6 +5896,39 @@ Enables or Disables the auto fill colors for shape layer in map. When this prope
    
    $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayersIndex].shapeSettings.autoFill=false;
     
+{% endhighlight %}
+
+### layers.subLayers.shapeSettings.colorPath `string`
+{:#members:layers-sublayers-shapesettings-colorpath}
+
+Specifies the field name in the datasource that contains color values for each shapes.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight js %}
+ 
+//To set colorPath API value during initialization 
+  $("#container").ejMap({layers:[{ subLayers: [{ shapeSettings: {colorPath:"colorFieldValue"}}] } ]);
+
+{% endhighlight %}
+
+
+{% highlight js %}
+ 
+//Get or set the colorPath API, after initialization:
+
+   //Gets the shape colorPath value 
+   
+   var shapeProperty =$("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeSettings.colorPath;
+  
+   //Sets the shape colorPath value 
+   
+   $("#container").data("ejMap").model.layers[layerIndex].subLayers[subLayerIndex].shapeSettings.colorPath="colorFieldValue"; 
+
 {% endhighlight %}
 
 
