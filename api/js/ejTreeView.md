@@ -2200,7 +2200,7 @@ treeObj.addNode(obj, $("#book"));
 <script>
 var treeObj = $("#treeView").data("ejTreeView");
 var obj = { id: "temp", name: "New node" };
-treeObj.addNode(obj, $("#book"), true); // First argument is new node text and it will be appended as child of node, which node is having ID book. In last argument set boolean value is true prevented parent node auto expanding.
+treeObj.addNode(obj, $("#book"), true); // First argument is new node text and it will be appended as child of node, which node is having ID book. In last argument set boolean value is true and it prevent parent node from auto expanding.
 </script>{% endhighlight %}
 
 
@@ -2293,7 +2293,7 @@ treeObj.addNode(obj, $("#book"));
 <script>
 var treeObj = $("#treeView").data("ejTreeView");
 var obj = { id: "temp", name: "New node" }; // In this object, we can also use selected, isChecked, imageUrl, spriteCssClass properties.
-treeObj.addNode(obj, $("#book"), true); // In last argument set boolean value is true prevented parent node auto expanding while addNode method.
+treeObj.addNode(obj, $("#book"), true); // In last argument set boolean value is true and it prevent parent node from auto expanding.
 </script>{% endhighlight %}
 
 
@@ -7701,7 +7701,7 @@ Fires before the dragged node to be dropped.
 <td class="name">
  preventTargetExpand </td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the parent node will be prevented from auto expanding; otherwise, false</td> 
+<td class="description">if it is true, the parent node will be prevented from auto expanding; otherwise, it work's usually </td> 
 </tr>
 <tr>
 <td class="name">
