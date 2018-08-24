@@ -2120,7 +2120,7 @@ $("#treeView").ejTreeView({
 
 
 
-### addNode(newNodeText, target)
+### addNode(newNodeText, target, preventTargetExpand)
 {:#methods:addnode}
 
 
@@ -2213,7 +2213,7 @@ treeObj.addNode(obj, $("#book"), true); // First argument is new node text and i
 
 
 
-### addNodes(collection, target)
+### addNodes(collection, target, preventTargetExpand)
 {:#methods:addnodes}
 
 
