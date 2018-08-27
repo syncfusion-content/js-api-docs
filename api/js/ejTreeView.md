@@ -2153,6 +2153,7 @@ target</td>
 <td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
+
 </tbody>
 </table>
 
@@ -2232,6 +2233,7 @@ target </td>
 <td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
+
 </tbody>
 </table>
 
@@ -2264,7 +2266,6 @@ var treeObj = $("#treeView").data("ejTreeView");
 var obj = { id: "temp", name: "New node" }; // In this object, we can also use selected, isChecked, imageUrl, spriteCssClass properties.
 treeObj.addNode(obj, $("#book"));
 </script>{% endhighlight %}
-
 
 
 

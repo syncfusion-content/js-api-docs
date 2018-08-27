@@ -7965,6 +7965,7 @@ $("#gantt").ejGantt({
 </script>
 {% endhighlight %}
 
+
 ### taskbarClick
 {:#events:taskbarclick}
 
