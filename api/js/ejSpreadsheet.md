@@ -7752,10 +7752,13 @@ This method is used to set a cell type from the specified range of cells in the 
 <script>
 // Initialize the Spreadsheet object.
 var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+ var customList = [{ id: "1", text: "ALFKI" }, { id: "2", text: "ANATR" }, { id: "3", text: "ANTON" }, { id: "4", text: "AROUT" }, { id: "5", text: "BERGS" }, { id: "6", text: "BLAUS" }];
 // To add button cell type in Spreadsheet.
 excelObj.XLCellType.addCellTypes("A1:B3", {"type" : ej.Spreadsheet.CustomCellType.Button, "text" : "Button1", "background-color" : "green" },  1);
 // To add dropdownlist cell type in spreadsheet.
 excelObj.XLCellType.addCellTypes("A1:B3", { 'type': ej.Spreadsheet.CustomCellType.DropDownList, 'dataSourceRange': 'A2:A23', 'dataSourceSheetIndex': 1 }, 2);
+// To add the dropdownlist with custom datasource in Spreadsheet.
+ this.XLCellType.addCellTypes("A1:B3", { 'type': ej.Spreadsheet.CustomCellType.DropDownList, 'dataSource': customList, 'field': "text" });
 //To add checkbox cell type in spreadsheet.
 excelObj.XLCellType.addCellTypes("A1:B3", { 'type': ej.Spreadsheet.CustomCellType.CheckBox, isChecked:true});
 //To add date picker cell type in spreadsheet.
