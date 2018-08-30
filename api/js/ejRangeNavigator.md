@@ -6967,13 +6967,13 @@ data{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-dataoldRange{% endhighlight %}</td>
+dataOldRange{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the scrollbar position old start and end range value on changing scrollbar</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-datanewRange{% endhighlight %}</td>
+dataNewRange{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the scrollbar position new start and end range value on changing scrollbar</td>
 </tr>
@@ -7035,13 +7035,13 @@ data{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-datastartRange{% endhighlight %}</td>
+dataStartRange{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the scrollbar position starting range value on changing scrollbar</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-dataendRange{% endhighlight %}</td>
+dataEndRange{% endhighlight %}</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the scrollbar position end range value on changing scrollbar</td>
 </tr>
@@ -7220,13 +7220,13 @@ data{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-dataoldRange{% endhighlight %}</td>
+dataOldRange{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the scrollbar position old start and end range value on change end of scrollbar</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-datanewRange{% endhighlight %}</td>
+dataNewRange{% endhighlight %}</td>
 <td class="type"><span class="param-type">Object</span></td>
 <td class="description last">returns the scrollbar position new start and end range value on change end of scrollbar</td>
 </tr>
