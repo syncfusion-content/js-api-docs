@@ -1583,6 +1583,67 @@ Enables or disables the ability to edit a row or cell.
 
 {% endhighlight %}
 
+### editSettings.batchEditSettings `object`
+{:#members:editsettings-batcheditsettings}
+
+specifies the batch edit mode in TreeGrid.
+
+#### Default Value:
+* {}
+
+#### Example
+
+{% highlight html %}
+
+$("#treeGridContainer").ejTreeGrid({ editSettings:{batchEditSettings : { editMode:"cell"}} });
+
+ });
+
+{% endhighlight %}
+
+### editSettings.beginEditSettings.editMode `enum`
+{:#members:editsettings-batcheditsettings-editmode}
+
+<ts name = "ej.TreeGrid.BatchEditMode"/>
+
+Specifies the batch edit mode whether it is cell, row or dialog.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Cell</td>
+<td class="description">you can edit a cell</td>
+</tr>
+<tr>
+<td class="name">Row</td>
+<td class="description">you can edit a row</td>
+</tr>
+<tr>
+<td class="name">Dialog</td>
+<td class="description">you can edit a row in dialog form</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.TreeGrid.BatchEditMode.Cell
+
+#### Example
+
+{% highlight html %}
+                 
+        $("#treeGridContainer").ejTreeGrid({  editSettings:{beginEditSettings : {editMode: ej.TreeGrid.BatchEditMode.Row}} });
+
+{% endhighlight %}
+
+
 ### editSettings.beginEditAction `enum`
 {:#members:editsettings-begineditaction}
 
@@ -1667,6 +1728,10 @@ specifies the edit mode in TreeGrid , "cellEditing" is for cell type editing and
 <tr>
 <td class="name">DialogEditing</td>
 <td class="description">you can edit a row in dialog form.</td>
+</tr>
+<tr>
+<td class="name">BatchEditing</td>
+<td class="description">you can edit and save bulk of records</td>
 </tr>
 </tbody>
 </table>
@@ -2548,17 +2613,39 @@ $("#treeGridContainer").ejTreeGrid({
 });
 {% endhighlight %}
 
-### searchSettings.searchHierarchyMode `string`
+### searchSettings.searchHierarchyMode `enum`
 {:#members:searchsettings-searchhierarchymode}
 
-Specifies the search mode of records filter in searching.
+<ts name = "ej.TreeGrid.SearchHierarchyMode"/>
 
-**List of enum type search modes**
+Specifies the search mode of records in searching.
 
-1. ej.TreeGrid.SearchHierarchyMode.Parent
-2. ej.TreeGrid.SearchHierarchyMode.Child
-3. ej.TreeGrid.SearchHierarchyMode.Both
-4. ej.TreeGrid.SearchHierarchyMode.None
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">Parent</td>
+<td class="description">Parent level records will be included in searching</td>
+</tr>
+<tr>
+<td class="name">Child</td>
+<td class="description">Filtered child records will be displayed and parent records displayed along with its children.</td>
+</tr>
+<tr>
+<td class="name">Both</td>
+<td class="description">Filtered child records will be displayed with parents and parents will be displayed along with its children</td>
+</tr>
+<tr>
+<td class="name">None</td>
+<td class="description">Filtered records alone will be displayed without it parents or children</td>
+</tr>
+</tbody>
+</table>
 
 #### Default Value
 
