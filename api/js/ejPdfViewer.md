@@ -2615,10 +2615,10 @@ Returns the current Y position
 {% highlight html %}
 <script type="text/javascript">
         $(function () {
-            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', destroy: "destroy" });
+            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', pageClick: "onPageClicked" });
         });
-        function destroy(args) {
-            alert("The control is destroyed successfully");
+          function onPageClicked(args) {
+            alert("X-coordinate :" + args.XCoordinate + "  Y-coordinate :" + args.YCoordinate);
         }
 </script>
 {% endhighlight %}
