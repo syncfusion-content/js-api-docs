@@ -364,6 +364,30 @@ Enables or disables sorting. When enabled, we can sort the column by clicking on
 
 {% endhighlight %}
 
+### allowUnscheduledTask `boolean`
+{:#members:allowunscheduledtask}
+
+Enables or disables the rendering of unscheduled tasks.
+
+
+#### Default Value
+
+* false
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>        
+        $("#gantt").ejGantt({ allowUnscheduledTask:  true });            
+</script>
+
+{% endhighlight %}
+
 ### baselineColor `string`
 {:#members:baselinecolor}
 
