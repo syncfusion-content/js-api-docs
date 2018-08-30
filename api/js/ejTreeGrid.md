@@ -1588,20 +1588,8 @@ Enables or disables the ability to edit a row or cell.
 
 specifies the batch edit mode in TreeGrid.
 
-#### Default Value:
-* {}
 
-#### Example
-
-{% highlight html %}
-
-$("#treeGridContainer").ejTreeGrid({ editSettings:{batchEditSettings : { editMode:"cell"}} });
-
- });
-
-{% endhighlight %}
-
-### editSettings.beginEditSettings.editMode `enum`
+### editSettings.batchEditSettings.editMode `enum`
 {:#members:editsettings-batcheditsettings-editmode}
 
 <ts name = "ej.TreeGrid.BatchEditMode"/>
@@ -1639,7 +1627,7 @@ Specifies the batch edit mode whether it is cell, row or dialog.
 
 {% highlight html %}
                  
-        $("#treeGridContainer").ejTreeGrid({  editSettings:{beginEditSettings : {editMode: ej.TreeGrid.BatchEditMode.Row}} });
+        $("#treeGridContainer").ejTreeGrid({  editSettings:{batchEditSettings : {editMode: ej.TreeGrid.BatchEditMode.Row}} });
 
 {% endhighlight %}
 
