@@ -2637,7 +2637,7 @@ Specifies the search mode of records in searching.
 
 #### Default Value
 
-* "parent"
+* ej.TreeGrid.SearchHierarchyMode.Parent
 
 #### Example
 
@@ -2645,7 +2645,7 @@ Specifies the search mode of records in searching.
                  
 $("#treeGridContainer").ejTreeGrid({
     searchSettings: {
-        searchHierarchyMode: "child"
+        searchHierarchyMode: ej.TreeGrid.SearchHierarchyMode.Child
     },
 });
 {% endhighlight %}
