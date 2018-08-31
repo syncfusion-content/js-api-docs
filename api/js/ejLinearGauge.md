@@ -14325,7 +14325,7 @@ context{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-markerpointerindex{% endhighlight %}</td>
+markerPointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the pointer Index</td>
 </tr>
@@ -14444,7 +14444,7 @@ context{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-markerpointer{% endhighlight %}</td>
+markerPointer{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the context element
 <table class="params">
@@ -14577,23 +14577,23 @@ scaleIndex{% endhighlight %}</td>
 <td class="name">{% highlight html %}
 context{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
-<td class="description last">returns the context element* @param {Object} args.markerpointer returns the context element</td>
+<td class="description last">returns the context element* @param {Object} args.markerPointer returns the context element</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-markerpointerIndex{% endhighlight %}</td>
+markerPointerIndex{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the pointer Index</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-markerpointerElement{% endhighlight %}</td>
+markerPointerElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the pointer element.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-markerpointerValue{% endhighlight %}</td>
+markerPointerValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the value of the pointer.</td>
 </tr>
