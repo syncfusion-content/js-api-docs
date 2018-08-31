@@ -668,7 +668,7 @@ Specifies the customized working time for tasks in Gantt
 
 #### Default Value
 
-* [{ "from": "08:00 AM", "to": "12:00 PM" , background: ""  }, { "from": "01:00 PM", "to": "05:00 PM" , background: "" }]
+* [{ "from": "08:00 AM", "to": "12:00 PM" }, { "from": "01:00 PM", "to": "05:00 PM" }]
 
 
 #### Example
@@ -681,7 +681,7 @@ Specifies the customized working time for tasks in Gantt
 <script>          
         $("#gantt").ejGantt(
  {
-    dayWorkingTime: [{ "from": "08:00 AM", "to": "12:00 PM" , background: "#FF0000" }, { "from": "01:00 PM", "to": "05:00 PM" , background: "#0000FF" }]
+    dayWorkingTime: [{ "from": "08:00 AM", "to": "12:00 PM" }, { "from": "01:00 PM", "to": "05:00 PM" }]
  });            
 </script>
 
@@ -1686,31 +1686,7 @@ Specifies whether to highlight the weekends in Gantt .
  
 <div id="gantt"></div> 
 <script>  
-        $("#gantt").ejGantt({ highlightWeekends:  true });
-</script>
-
-{% endhighlight %}
-
-### highlightNonWorkingTime `boolean`
-{:#members:highlightnonworkingtime}
-
-Specifies whether to highlight the non working time in Gantt.
-
-
-#### Default Value
-
-* false
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>  
-        $("#gantt").ejGantt({ highlightNonWorkingTime:  true });
+        $("#gantt").ejGantt({ highlightWeekends:  true });                      * 
 </script>
 
 {% endhighlight %}
@@ -2013,34 +1989,6 @@ Specifies the mapping property path for the task description in datasource
 </script>
 
 {% endhighlight %}
-
-### nonWorkingBackground `string`
-{:#members:nonworkingbackground}
-
-Specifies the background color for non working time in Gantt.
-
-
-#### Default Value
-
-* "#fafafa"
-
-
-#### Example
-{:.example}
-
-
-{% highlight html %}
- 
-<div id="gantt"></div> 
-<script>          
-        $("#gantt").ejGantt(
- {
-    nonWorkingBackground: "#0000FF"
- });            
-</script>
-
-{% endhighlight %}
-
 
 ### parentProgressbarBackground `string`
 {:#members:parentprogressbarbackground}
@@ -2957,7 +2905,7 @@ Specified the background for weekends in Gantt
 
 #### Default Value
 
-* "#fcfcfc"
+* "#F2F2F2"
 
 
 #### Example
@@ -4519,10 +4467,6 @@ Specifies the view type for a project in the Gantt.
 <td class="name">ResourceView</td>
 <td class="description">Displays the project in resource allocation view in Gantt.</td>
 </tr>
-<tr>
-<td class="name">HistogramView</td>
-<td class="description">Displays the project in histogram view in Gantt</td>
-</tr>
 </tbody>
 </table>
 
@@ -4553,7 +4497,7 @@ Specifies the weekendBackground color in Gantt
 
 #### Default Value
 
-* "#fafafa"
+* "#F2F2F2"
 
 
 #### Example
