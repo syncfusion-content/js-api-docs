@@ -1987,11 +1987,6 @@ Fires before the ajax request process started.
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">Send the custom data.</td>
 </tr>
-<tr>
-<td class="name">inVokemethod</td>
-<td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the onSuccess method name.</td>
-</tr>
 </tbody>
 </table>
 </td>
