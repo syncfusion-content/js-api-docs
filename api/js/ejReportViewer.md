@@ -1952,7 +1952,7 @@ Fires before the ajax request process started.
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event ajaxbeforeload from reportviewer.
+<td class="description last">Event ajax process from reportviewer.
 <table class="params">
 <thead>
 <tr>
@@ -2031,7 +2031,7 @@ Fires when ajax post call succeed.
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event ajaxSuccess from reportviewer.
+<td class="description last">Event ajax process from reportviewer.
 <table class="params">
 <thead>
 <tr>
@@ -2084,7 +2084,7 @@ Fires when ajax request failed.
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event ajaxError from reportviewer.
+<td class="description last">Event ajax process from reportviewer.
 <table class="params">
 <thead>
 <tr>
