@@ -1935,6 +1935,191 @@ Fires when click the View Report Button.
 
 {% endhighlight %}
 
+### ajaxBeforeLoad
+{:#events:ajaxbeforeload}
+
+Fires before the ajax request process started.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event ajaxbeforeload from reportviewer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">reportViewerToken</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the reportViewerToken.</td>
+</tr>
+<tr>
+<td class="name">serviceAuthorizationToken</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the serviceAuthorizationToken.</td>
+</tr>
+<tr>
+<td class="name">headerReq</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Send the headerReq collection.</td>
+</tr>
+<tr>
+<td class="name">headers</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Send the headers collection.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Send the custom data.</td>
+</tr>
+<tr>
+<td class="name">inVokemethod</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the onSuccess method name.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({ 
+        ajaxBeforeLoad:  function (args) {
+            // Write a code block to perform any operation after destroy of reportviewer.
+        }
+    });           
+</script>
+
+{% endhighlight %}
+
+### ajaxSuccess
+{:#events:ajaxSuccess}
+
+Fires when ajax post call succeed.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event ajaxSuccess from reportviewer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the success data.</td>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({ 
+        ajaxSuccess:  function (args) {
+            // Write a code block to perform any operation after destroy of reportviewer.
+        }
+    });           
+</script>
+
+{% endhighlight %}
+
+### ajaxError
+{:#events:ajaxError}
+
+Fires when ajax request failed.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event ajaxError from reportviewer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">msg</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the error details</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({ 
+        ajaxError:  function (args) {
+            // Write a code block to perform any operation after destroy of reportviewer.
+        }
+    });           
+</script>
+
+{% endhighlight %}
 
 ### serviceAuthorizationToken `string`
 {:#members:serviceAuthorizationToken}
