@@ -4549,6 +4549,7 @@
 					<li id="toc-members:allowmultipleexporting"><a href="/api/js/ejgantt#members:allowmultipleexporting">allowMultipleExporting</a></li>
 					<li id="toc-members:allowselection"><a href="/api/js/ejgantt#members:allowselection">allowSelection</a></li>
 					<li id="toc-members:allowsorting"><a href="/api/js/ejgantt#members:allowsorting">allowSorting</a></li>
+					<li id="toc-members:allowunscheduledtask"><a href="/api/js/ejgantt#members:allowunscheduledtask">allowUnscheduledTask</a></li>
 					<li id="toc-members:baselinecolor"><a href="/api/js/ejgantt#members:baselinecolor">baselineColor</a></li>
 					<li id="toc-members:baselineenddatemapping"><a href="/api/js/ejgantt#members:baselineenddatemapping">baselineEndDateMapping</a></li>
 					<li id="toc-members:baselinestartdatemapping"><a href="/api/js/ejgantt#members:baselinestartdatemapping">baselineStartDateMapping</a></li>
@@ -4619,7 +4620,8 @@
 					<li id="toc-members:groupcollection"><a href="/api/js/ejgantt#members:groupcollection">groupCollection</a></li>
 					<li id="toc-members:groupidmapping"><a href="/api/js/ejgantt#members:groupidmapping">groupIdMapping</a></li>
 					<li id="toc-members:groupnamemapping"><a href="/api/js/ejgantt#members:groupnamemapping">groupNameMapping</a></li>
-					<li id="toc-members:highlightweekends"><a href="/api/js/ejgantt#members:highlightweekends">highlightWeekends</a></li>
+					<li id="toc-members:highlightnonworkingtime"><a href="/api/js/ejgantt#members:highlightnonworkingtime">highlightNonWorkingTime</a></li>
+					<li id="toc-members:highlightweekends"><a href="/api/js/ejgantt#members:highlightweekends">highlightWeekends</a></li>					
 					<li id="toc-members:holidays"><a href="/api/js/ejgantt#members:holidays">holidays</a>
 					 <ul>
 					     <li id="toc-members:holidays-day"><a href="/api/js/ejgantt#members:holidays-day">day</a></li>
@@ -4634,7 +4636,8 @@
 					<li id="toc-members:locale"><a href="/api/js/ejgantt#members:locale">locale</a></li>
 					<li id="toc-members:milestonemapping"><a href="/api/js/ejgantt#members:milestonemapping">milestoneMapping</a></li>
 					<li id="toc-members:milestonetemplate"><a href="/api/js/ejgantt#members:milestonetemplate">milestoneTemplate</a></li>
-					<li id="toc-members:notesmapping"><a href="/api/js/ejgantt#members:notesmapping">notesMapping</a></li>
+					<li id="toc-members:nonworkingbackground"><a href="/api/js/ejgantt#members:nonworkingbackground">nonWorkingBackground</a></li>
+					<li id="toc-members:notesmapping"><a href="/api/js/ejgantt#members:notesmapping">notesMapping</a></li>					
 					<li id="toc-members:parentprogressbarbackground"><a href="/api/js/ejgantt#members:parentprogressbarbackground">parentProgressbarBackground</a></li>
 					<li id="toc-members:parenttaskidmapping"><a href="/api/js/ejgantt#members:parenttaskidmapping">parentTaskIdMapping</a></li>
 					<li id="toc-members:parenttaskbarbackground"><a href="/api/js/ejgantt#members:parenttaskbarbackground">parentTaskbarBackground</a></li>
@@ -6316,6 +6319,13 @@
 						<ul>
 							<li id="toc-members:swimlanesettings-showcount"><a href="/api/js/ejkanban#members:swimlanesettings-showcount">showCount</a></li>
 							<li id="toc-members:swimlanesettings-allowdraganddrop"><a href="/api/js/ejkanban#members:swimlanesettings-allowdraganddrop">allowDragAndDrop</a></li>
+							<li id="toc-members:swimlanesettings-showemptyswimlane"><a href="/api/js/ejkanban#members:swimlanesettings-showemptyswimlane">showEmptySwimlane</a></li>
+							<li id="toc-members:swimlanesettings-headers"><a href="/api/js/ejkanban#members:swimlanesettings-headers">headers</a>
+								<ul>
+									<li id="toc-members:swimlanesettings-headers-key"><a href="/api/js/ejkanban#members:swimlanesettings-headers-key">key</a></li>
+									<li id="toc-members:swimlanesettings-headers-text"><a href="/api/js/ejkanban#members:swimlanesettings-headers-text">text</a></li>
+								</ul>
+							</li>
 							<li id="toc-members:swimlanesettings-unassignedgroup"><a href="/api/js/ejkanban#members:swimlanesettings-unassignedgroup">unassignedGroup</a>
 								<ul>
 									<li id="toc-members:swimlanesettings-unassignedgroup-enable"><a href="/api/js/ejkanban#members:swimlanesettings-unassignedgroup-enable">enable</a></li>
@@ -12890,6 +12900,11 @@
                         <li id="toc-members:editsettings-editmode"><a href="/api/js/ejtreegrid#members:editsettings-editmode">editMode</a></li>
                         <li id="toc-members:editsettings-rowposition"><a href="/api/js/ejtreegrid#members:editsettings-rowposition">rowPosition</a></li>
                         <li id="toc-members:editsettings-showdeleteconfirmdialog"><a href="/api/js/ejtreegrid#members:editsettings-showdeleteconfirmdialog">showDeleteConfirmDialog</a></li>
+                        <li id="toc-members:editsettings-batcheditsettings"><a href="/api/js/ejtreegrid#members:editsettings-batcheditsettings">batchEditSettings</a>
+						    <ul>
+								<li id="toc-members:editsettings-batcheditsettings-editmode"><a href="/api/js/ejtreegrid#members:editsettings-batcheditsettings-editmode">editMode</a></li>								
+							</ul>
+						</li>						
                     </ul>
                 </li>
                 <li id="toc-members:enablealtrow"><a href="/api/js/ejtreegrid#members:enablealtrow">enableAltRow</a></li>
@@ -12946,6 +12961,7 @@
                         <li id="toc-members:searchsettings-ignorecase"><a href="/api/js/ejtreegrid#members:searchsettings-ignorecase">ignoreCase</a></li>
                         <li id="toc-members:searchsettings-key"><a href="/api/js/ejtreegrid#members:searchsettings-key">key</a></li>
                         <li id="toc-members:searchsettings-operator"><a href="/api/js/ejtreegrid#members:searchsettings-operator">operator</a></li>
+                        <li id="toc-members:searchsettings-searchhierarchymode"><a href="/api/js/ejtreegrid#members:searchsettings-searchhierarchymode">searchHierarchyMode</a></li>						
                     </ul>
                 </li>
 				<li id="toc-members:selectedcellindexes"><a href="/api/js/ejtreegrid#members:selectedcellindexes">selectedCellIndexes</a>
