@@ -2153,6 +2153,12 @@ target</td>
 <td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
+<tr>
+<td class="name">
+preventTargetExpand</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Parent node will be prevented from auto expanding</td>
+</tr>
 
 </tbody>
 </table>
@@ -2188,6 +2194,14 @@ treeObj.addNode(obj, $("#book"));
 </script>{% endhighlight %}
 
 
+{% highlight html %}
+ 
+ 
+<script>
+var treeObj = $("#treeView").data("ejTreeView");
+var obj = { id: "temp", name: "New node" };
+treeObj.addNode(obj, $("#book"), true); // First argument is new node text and it will be appended as child of node, which node is having ID book. In last argument set boolean value is true and it prevent parent node from auto expanding.
+</script>{% endhighlight %}
 
 
 
@@ -2233,6 +2247,12 @@ target </td>
 <td class="type"><span class="param-type">string|object</span></td>
 <td class="description">ID of TreeView node/object of TreeView node</td>
 </tr>
+<tr>
+<td class="name">
+preventTargetExpand </td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Parent node will be prevented from auto expanding</td>
+</tr>
 
 </tbody>
 </table>
@@ -2268,6 +2288,14 @@ treeObj.addNode(obj, $("#book"));
 </script>{% endhighlight %}
 
 
+{% highlight html %}
+ 
+ 
+<script>
+var treeObj = $("#treeView").data("ejTreeView");
+var obj = { id: "temp", name: "New node" }; // In this object, we can also use selected, isChecked, imageUrl, spriteCssClass properties.
+treeObj.addNode(obj, $("#book"), true); // In last argument set boolean value is true and it prevent parent node from auto expanding.
+</script>{% endhighlight %}
 
 
 
@@ -7669,6 +7697,12 @@ Fires before the dragged node to be dropped.
  position </td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">returns the drop position such as before, after or over</td> 
+</tr>
+<tr>
+<td class="name">
+ preventTargetExpand </td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">if it is true, the parent node will be prevented from auto expanding; otherwise, it work's usually </td> 
 </tr>
 <tr>
 <td class="name">
