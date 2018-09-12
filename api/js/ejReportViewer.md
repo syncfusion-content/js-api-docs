@@ -1866,6 +1866,75 @@ argument</td>
 
 {% endhighlight %}
 
+### showError
+{:#events:showError}
+
+Fires when user clicks on a failed report item in the rendered report, before displaying error details dialog. If you want to show custom error detail or perform any action before viewing error detail, you can make use of the showError event.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from reportviewer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">true if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">errorCode</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the error code.</td>
+</tr>
+<tr>
+<td class="name">message</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the error message.</td>
+</tr>
+<tr>
+<td class="name">detail</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the detailed error information.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({
+        showError: function (args) {
+            // Write a code block to perform any operation when user clicks a failed item in a report.
+        }
+    });
+</script>
+
+{% endhighlight %}
+
 ### viewReportClick
 {:#events:viewreportclick}
 
