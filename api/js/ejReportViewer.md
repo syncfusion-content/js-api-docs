@@ -1904,12 +1904,12 @@ Fires when user clicks on a failed report item in the rendered report, before di
 <td class="description last">returns the error code.</td>
 </tr>
 <tr>
-<td class="name">errorMessage</td>
+<td class="name">message</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the error message.</td>
 </tr>
 <tr>
-<td class="name">errorDetail</td>
+<td class="name">detail</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description last">returns the detailed error information.</td>
 </tr>
