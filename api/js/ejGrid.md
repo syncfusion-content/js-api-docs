@@ -8646,7 +8646,7 @@ $("#Grid").ejGrid("refreshContent", true);
 
 
 ### refreshData(\[additionalParameters\])
-{:#methods:refreshData}
+{:#methods:refreshdata}
 
 
 Refresh the grid contents with updated server Data, using XMLHttpRequest. Url Path should be provided in Grid datasource otherwise it refreshes with local data without XMLHttpRequest.
