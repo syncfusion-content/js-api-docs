@@ -1797,6 +1797,20 @@ Allows you to set the number of members to be displayed in each page of member e
     $("#PivotGrid1").ejPivotGrid({ memberEditorPageSize: 50 });
 {% endhighlight %}
 
+### enableMemberEditorSorting `boolean`
+{:#members:enablemembereditorsorting}
+
+Enables/Disables sorting option in member editor dialog for the members of the respective field.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+
+    $("#PivotGrid1").ejPivotGrid({ enableMemberEditorSorting: true });
+{% endhighlight %}
+
 ### enableGrandTotal `boolean`
 {:#members:enablegrandtotal}
 
