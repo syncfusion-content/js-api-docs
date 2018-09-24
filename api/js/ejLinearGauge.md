@@ -14331,13 +14331,13 @@ markerPointerIndex{% endhighlight %}</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-markerpointerelement{% endhighlight %}</td>
+markerPointerElement{% endhighlight %}</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the pointer element.</td>
 </tr>
 <tr>
 <td class="name">{% highlight html %}
-markerpointervalue{% endhighlight %}</td>
+markerPointerValue{% endhighlight %}</td>
 <td class="type"><span class="param-type">number</span></td>
 <td class="description last">returns the value of the pointer.</td>
 </tr>
