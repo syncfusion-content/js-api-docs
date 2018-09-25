@@ -4001,10 +4001,28 @@ Row will be added based on the given cell element
 
 {% endhighlight %}
 
-### pasteContent()
+### pasteContent(html)
 {:#methods:pastecontent}
 
 This method helps to insert/paste the content at the current cursor (caret) position or the selected content to be replaced with our text by passing the value as parameter to the pasteContent method in the Editor.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+html</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">paste content</td>
+</tr>
+</tbody>
+</table>
 
 #### Example
 

@@ -158,6 +158,50 @@ Toggles the placement of slider exactly on the place it left or on the nearest i
 
 
 
+### allowNextValue `boolean`
+{:#members:allownextvalue}
+
+
+It allows to show the value between the particular periods (i.e) from 1st January to 31st February and so on. The default value is true. If we set the property as false, it allows to show the value between the particular periods.(i.e) from 1st January to 31st January and so on.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+* true
+
+
+
+
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
+        $("#container").ejRangeNavigator({
+   allowNextValue: false;
+   });
+</script> 
+
+ {% endhighlight %}
+
+
+
+
+
+
 ### border `object`
 {:#members:border}
 
@@ -1470,6 +1514,72 @@ Specifies the position of the labels to render either inside or outside of plot 
 </script>{% endhighlight %}
 
 
+### labelSettings.higherLevel.labelIntersectAction `enum`
+{:#members:labelsettings-higherlevel-labelintersectaction}
+
+<ts name="ej.datavisualization.RangeNavigator.LabelIntersectAction"/>
+Specifies to hide the labels when it intersects with each other.
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+None</td>
+<td class="type">string</td> 
+<td class="description last">The Labels are displayed as normal in the Range Navigator </td>
+</tr>
+<tr>
+<td class="name">
+Hide</td>
+<td class="type">string</td>
+<td class="description last">The Labels are hidden when it intersects.</td>
+</tr> 
+</tbody>
+</table>
+
+
+
+Specifies the position of the labels to render either inside or outside of plot area. See <a href="ejrangenavigator.html#labelsettings-higherlevel-labelintersectaction">LabelIntersectAction</a>
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+* "none"
+
+
+
+
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
+        $("#container").ejRangeNavigator({
+   labelSettings:{higherLevel:{ labelIntersectAction:"hide"}},
+   });
+</script>{% endhighlight %}
+
 
 
 
@@ -2430,6 +2540,73 @@ Specifies the position of the labels to render either inside or outside of plot 
 <script>
         $("#container").ejRangeNavigator({
    labelSettings:{lowerLevel:{ labelPlacement:"inside"}},
+   });
+</script>{% endhighlight %}
+
+
+### labelSettings.lowerLevel.labelIntersectAction `enum`
+{:#members:labelsettings-higherlevel-labelintersectaction}
+
+<ts name="ej.datavisualization.RangeNavigator.LabelIntersectAction"/>
+Specifies to hide the labels when it intersects with each other.
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+None</td>
+<td class="type">string</td> 
+<td class="description last">The Labels are displayed as normal in the Range Navigator </td>
+</tr>
+<tr>
+<td class="name">
+Hide</td>
+<td class="type">string</td>
+<td class="description last">The Labels are hidden when it intersects.</td>
+</tr> 
+</tbody>
+</table>
+
+
+
+Specifies the position of the labels to render either inside or outside of plot area. See <a href="ejrangenavigator.html#labelsettings-lowerlevel-labelintersectaction">LabelIntersectAction</a>
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+* "none"
+
+
+
+
+
+
+
+
+#### Example
+
+
+{% highlight html %}
+ 
+<div id="RangeNavigator"></div> 
+<script>
+        $("#container").ejRangeNavigator({
+   labelSettings:{lowerLevel:{ labelIntersectAction:"hide"}},
    });
 </script>{% endhighlight %}
 
