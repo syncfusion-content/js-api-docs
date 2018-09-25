@@ -1839,6 +1839,271 @@ set the smartLabelSize property
 {% endhighlight %}
 
 
+### layers.labelSettings.font `object`
+{:#members:layers-labelsettings-font}
+
+
+
+
+Options for customizing the data label font.
+
+
+
+
+
+
+### layers.labelSettings.font.fontFamily `string`
+{:#members:layers-labelsettings-font-fontfamily}
+
+
+
+
+Font family of the data label. 
+
+
+#### Default Value
+
+
+
+* "Segoe UI"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejMap({
+    layers : [{
+         labelSettings:{
+             font :{fontFamily : "Algerian"}
+         }    
+    }]
+});
+{% endhighlight %}
+
+
+
+
+### layers.labelSettings.font.fontStyle `enum`
+{:#members:layers-labelsettings-font-fontstyle}
+
+<ts name="ej.datavisualization.Map.FontStyle"/>
+
+
+Font style of the data label.  
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Normal</td>
+<td class="type">string</td> 
+<td class="description">Specifies the fontStyle as normal.</td>
+</tr>
+<tr>
+<td class="name">
+Italic</td>
+<td class="type">string</td>
+<td class="description">Specifies the fontStyle as italic.</td>
+</tr> 
+</tbody>
+</table>
+
+
+#### Default Value
+
+
+
+* "normal". 
+
+#### Example
+
+
+{% highlight js %}
+ 
+ 
+$("#container").ejMap({
+    layers : [{
+        labelSettings:{
+            font :{fontStyle : "italic"}
+        }    
+    }]                 
+});
+ {% endhighlight %}
+
+
+
+
+### layers.labelSettings.font.fontWeight `enum`
+{:#members:layers-labelsettings-font-fontweight}
+
+
+<ts name="ej.datavisualization.Map.FontWeight"/>
+
+
+<table class="props">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th> 
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Regular</td>
+<td class="type">string</td> 
+<td class="description">Specifies the font weight as regular.</td>
+</tr>
+<tr>
+<td class="name">
+Bold</td>
+<td class="type">string</td>
+<td class="description">Specifies the font weight as bold.</td>
+</tr>
+<tr>
+<td class="name">
+Lighter</td>
+<td class="type">string</td>
+<td class="description">Specifies the font weight as lighter.</td>
+</tr>  
+</tbody>
+</table>
+
+
+Font weight of the data label.  
+
+
+#### Default Value
+
+
+
+* "regular". See 
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejMap({
+    layers : [{
+        labelSettings:{
+            font :{fontWeight : "lighter"}
+        }    
+    }]                 
+});
+ 
+{% endhighlight %}
+
+
+
+
+### layers.labelSettings.font.opacity `number`
+{:#members:layers-labelsettings-font-opacity}
+
+
+
+
+Opacity of the text. 
+
+
+#### Default Value
+
+
+
+ * 1
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+$("#container").ejMap({
+    layers : [{
+        labelSettings:{
+            font :{opacity : 0.5}
+        }    
+    }]                 
+});
+
+{% endhighlight %}
+
+### layers.labelSettings.font.color `string`
+{:#members:layers-labelSettings-font-color}
+
+Font color of the data label text. 
+
+#### Default Value
+
+ * null
+
+#### Example
+
+{% highlight js %}
+
+$("#container").ejMap({
+    layers : [{
+        labelSettings:{
+            font :{color : "red"}
+        }    
+    }]                 
+});
+ 
+{% endhighlight %}
+
+
+### layers.labelSettings.font.size `string`
+{:#members:layers-labelSettings-font-size}
+
+
+
+
+Font size of the data label. 
+
+
+#### Default Value
+
+
+
+* "12px"
+
+
+
+
+#### Example
+
+
+{% highlight js %}
+
+$("#container").ejMap({
+    layers : [{
+        labelSettings:{
+            font :{size : "14px"}
+        }    
+    }]                 
+}); 
+
+{% endhighlight %}
+
+
+
 
 ### layers.geometryType `enum`
 {:#members:layers-geometrytype}
@@ -7604,6 +7869,72 @@ Triggers after refreshing the map items.
   });
 
 {% endhighlight %}
+
+### displayTextRendering
+{:#events:displaytextrendering}
+
+
+
+
+Fires before rendering the data labels. This event is triggered for each data label in the layers. You can use this event to add custom text in data labels.
+
+
+#### Example
+
+
+{% highlight js %}
+ 
+//displayTextRendering event for maps
+
+$("#container").ejMap({
+
+    displayTextRendering: function (args) {
+             //Do something
+    }
+	
+});
+
+{% endhighlight %}
+ 	
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">{% highlight js %}
+data{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last"><ul><li>text - Text displayed in data label. You can add custom text to the data label</li>
+    <li>locationX - X-coordinate of data label location</li>
+    <li>locationY - Y-coordinate of data label location</li>    
+</ul></td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+cancel{% endhighlight %}</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Set this option to true to cancel the event.</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+model{% endhighlight %}</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">Instance of the map model object.</td>
+</tr>
+<tr>
+<td class="name">{% highlight js %}
+type{% endhighlight %}</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Name of the event</td>
+</tr>
+</tbody>
+</table>
 
 
 <a class="" href="http://www.syncfusion.com/copyright" target="_blank">Copyright &copy; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a>

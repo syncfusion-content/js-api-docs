@@ -6094,8 +6094,25 @@ Defines how long edges should be, ideally. This will be the resting length for t
 </script>
 {% endhighlight %}  
 
+### layout.avoidSegmentOverlapping `boolean`
+{:#members:layout-avoidsegmentoverlapping}
 
+Enable or disable connector's segment overlapping with each other when executing the layout with multiple parents.
 
+#### Default Value:
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+<div id="diagramcontent"></div>
+<script>
+    //verticalSpacing of the layout
+    $("#diagramContent").ejDiagram({layout: { avoidSegmentOverlapping: true }});
+</script>
+{% endhighlight %}
 
 ### locale `string`
 {:#members:locale}

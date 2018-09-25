@@ -1866,6 +1866,75 @@ argument</td>
 
 {% endhighlight %}
 
+### showError
+{:#events:showError}
+
+Fires when user clicks on a failed report item in the rendered report, before displaying error details dialog. If you want to show custom error detail or perform any action before viewing error detail, you can make use of the showError event.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from reportviewer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">true if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">errorCode</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the error code.</td>
+</tr>
+<tr>
+<td class="name">message</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the error message.</td>
+</tr>
+<tr>
+<td class="name">detail</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the detailed error information.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({
+        showError: function (args) {
+            // Write a code block to perform any operation when user clicks a failed item in a report.
+        }
+    });
+</script>
+
+{% endhighlight %}
+
 ### viewReportClick
 {:#events:viewreportclick}
 
@@ -1935,6 +2004,186 @@ Fires when click the View Report Button.
 
 {% endhighlight %}
 
+### ajaxBeforeLoad
+{:#events:ajaxbeforeload}
+
+Fires before the ajax request process started.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event ajax process from reportviewer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">reportViewerToken</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the reportViewerToken.</td>
+</tr>
+<tr>
+<td class="name">serviceAuthorizationToken</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the serviceAuthorizationToken.</td>
+</tr>
+<tr>
+<td class="name">headerReq</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Send the headerReq collection.</td>
+</tr>
+<tr>
+<td class="name">headers</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Send the headers collection.</td>
+</tr>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Send the custom data.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({ 
+        ajaxBeforeLoad:  function (args) {
+            // Write a code block to perform any operation after destroy of reportviewer.
+        }
+    });           
+</script>
+
+{% endhighlight %}
+
+### ajaxSuccess
+{:#events:ajaxSuccess}
+
+Fires when ajax post call succeed.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event ajax process from reportviewer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">data</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the success data.</td>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({ 
+        ajaxSuccess:  function (args) {
+            // Write a code block to perform any operation after destroy of reportviewer.
+        }
+    });           
+</script>
+
+{% endhighlight %}
+
+### ajaxError
+{:#events:ajaxError}
+
+Fires when ajax request failed.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event ajax process from reportviewer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">msg</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the error details</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({ 
+        ajaxError:  function (args) {
+            // Write a code block to perform any operation after destroy of reportviewer.
+        }
+    });           
+</script>
+
+{% endhighlight %}
 
 ### serviceAuthorizationToken `string`
 {:#members:serviceAuthorizationToken}
@@ -1976,3 +2225,19 @@ Specifies the token for authorizing reporting service url to process the reports
 
 {% endhighlight %}
 
+### toolbarRendering
+{:#events:toolbarrendering}
+
+This event will be triggered on rendering the Report Viewer toolbar.
+
+#### Example 
+
+{% highlight js %}
+
+    $("#reportviewer").ejReportViewer({
+        toolbarRendering: function(args) {
+            // Write your block of code 
+        }
+    });
+
+{% endhighlight %}
