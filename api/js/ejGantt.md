@@ -364,6 +364,30 @@ Enables or disables sorting. When enabled, we can sort the column by clicking on
 
 {% endhighlight %}
 
+### allowUnscheduledTask `boolean`
+{:#members:allowunscheduledtask}
+
+Enables or disables the rendering of unscheduled tasks.
+
+
+#### Default Value
+
+* false
+
+
+#### Example
+{:.example}
+
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>        
+        $("#gantt").ejGantt({ allowUnscheduledTask:  true });            
+</script>
+
+{% endhighlight %}
+
 ### baselineColor `string`
 {:#members:baselinecolor}
 
@@ -644,7 +668,7 @@ Specifies the customized working time for tasks in Gantt
 
 #### Default Value
 
-* [{ "from": "08:00 AM", "to": "12:00 PM" }, { "from": "01:00 PM", "to": "05:00 PM" }]
+* [{ "from": "08:00 AM", "to": "12:00 PM" , background: ""  }, { "from": "01:00 PM", "to": "05:00 PM" , background: "" }]
 
 
 #### Example
@@ -657,7 +681,7 @@ Specifies the customized working time for tasks in Gantt
 <script>          
         $("#gantt").ejGantt(
  {
-    dayWorkingTime: [{ "from": "08:00 AM", "to": "12:00 PM" }, { "from": "01:00 PM", "to": "05:00 PM" }]
+    dayWorkingTime: [{ "from": "08:00 AM", "to": "12:00 PM" , background: "#FF0000" }, { "from": "01:00 PM", "to": "05:00 PM" , background: "#0000FF" }]
  });            
 </script>
 
@@ -1643,6 +1667,25 @@ Specifies the mapping property path for group name in datasource in resource all
 
 {% endhighlight %}
 
+### highlightNonWorkingTime `boolean`
+{:#members:highlightnonworkingtime}
+
+Specifies whether to highlight the non working time in Gantt.
+
+#### Default Value
+* false
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>  
+        $("#gantt").ejGantt({ highlightNonWorkingTime:  true });
+</script>
+
+{% endhighlight %}
+
 ### highlightWeekends `boolean`
 {:#members:highlightweekends}
 
@@ -1662,7 +1705,7 @@ Specifies whether to highlight the weekends in Gantt .
  
 <div id="gantt"></div> 
 <script>  
-        $("#gantt").ejGantt({ highlightWeekends:  true });                      * 
+        $("#gantt").ejGantt({ highlightWeekends:  true });
 </script>
 
 {% endhighlight %}
@@ -1938,6 +1981,26 @@ To Specify the JsRender script Id to customize the mile stone with our preferenc
  {
     milestoneTemplate: "MilestoneTemplate"
  });            
+</script>
+
+{% endhighlight %}
+
+### nonWorkingBackground `string`
+{:#members:nonworkingbackground}
+
+Specifies the background color for non working time in Gantt.
+
+#### Default Value
+
+* ""
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="gantt"></div> 
+<script>
+        $("#gantt").ejGantt({nonWorkingBackground: "#0000FF"});
 </script>
 
 {% endhighlight %}
@@ -4442,6 +4505,10 @@ Specifies the view type for a project in the Gantt.
 <tr>
 <td class="name">ResourceView</td>
 <td class="description">Displays the project in resource allocation view in Gantt.</td>
+</tr>
+<tr>
+<td class="name">HistogramView</td>
+<td class="description">Displays the project in histogram view in Gantt</td>
 </tr>
 </tbody>
 </table>

@@ -2134,6 +2134,20 @@ Allows you to set the number of members to be displayed in each page of the memb
     $("#PivotClient1").ejPivotClient({ memberEditorPageSize: 50 });
 {% endhighlight %}
 
+### enableMemberEditorSorting `boolean`
+{:#members:enablemembereditorsorting}
+
+Enables/Disables sorting option in member editor dialog for the members of the respective field.
+
+#### Default Value: false
+
+**Example:**
+
+{% highlight javascript %}
+
+    $("#PivotClient1").ejPivotClient({ enableMemberEditorSorting: true });
+{% endhighlight %}
+
 ### gridLayout `enum`
 {:#members:gridlayout}
 
