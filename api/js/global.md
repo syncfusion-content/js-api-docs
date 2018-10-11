@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Essential Studio JavaScript Global API reference
-description: Essential Studio JavaScript Global API reference
+description: Essential Studio JavaScript Global API reference for Syncfusion Essential JS widgets
 documentation: API
 platform: js-api
 ---
