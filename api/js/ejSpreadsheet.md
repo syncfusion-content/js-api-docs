@@ -1432,6 +1432,26 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
+### isImport `boolean`
+{:#members:isImport}
+
+Gets or sets a value that indicates the import behavior in the Spreadsheet. 
+
+#### Default Value
+* false
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+    isImport: false
+});         
+</script>
+
+{% endhighlight %}
+
 ### isReadOnly `boolean`
 {:#members:isreadonly}
 
