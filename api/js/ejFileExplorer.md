@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Properties, Methods and Events of ejFileExplorer Widget
-description: API reference for ejFileExplorer
+description: API reference for ejFileExplorer that provides a Windows Explorer-like functionality for any web application.
 documentation: API
 platform: js-api
 keywords: FileExplorer, ejFileExplorer, syncfusion, FileExplorer api
