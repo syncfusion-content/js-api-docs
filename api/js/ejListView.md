@@ -1556,7 +1556,7 @@ Specifies the maximum number of items to be fetched. Note: This will work only w
 
 
 
-* null
+* 5
 
 
 
@@ -2970,7 +2970,7 @@ To show item in the given index.
 <td class="name">
 index</td>
 <td class="type"><span class="param-type">number</span></td>
-<td class="description">Specifies the index value to show the hided item.</td>
+<td class="description">Specifies the index value to show the hidden item.</td>
 </tr>
 </tbody>
 </table>
