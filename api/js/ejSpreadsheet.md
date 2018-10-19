@@ -1435,7 +1435,7 @@ $('#Spreadsheet').ejSpreadsheet({
 ### isImport `boolean`
 {:#members:isImport}
 
-Gets a value that specifies whether importing or not while loading the sheets in Spreadsheet.
+Gets a value that indicates whether importing or not while loading the sheets in Spreadsheet.
 
 #### Default Value
 * false
