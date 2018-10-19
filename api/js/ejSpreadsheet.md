@@ -1446,8 +1446,12 @@ Gets a value that indicates whether importing or not while loading the sheets in
 <div id="Spreadsheet"></div> 
 <script>
 $('#Spreadsheet').ejSpreadsheet({ 
-    isImport: false
-});         
+   loadComplete: "loadComplete"
+});
+function loadComplete(args) {
+    if (!this.model.isImport)
+        this.setWidthToColumns([140, 128, 105, 100, 100, 110, 120, 120, 100]);
+}         
 </script>
 
 {% endhighlight %}
