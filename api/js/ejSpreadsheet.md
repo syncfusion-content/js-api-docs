@@ -1435,7 +1435,7 @@ $('#Spreadsheet').ejSpreadsheet({
 ### isImport `boolean`
 {:#members:isImport}
 
-Gets or sets a value that indicates whether to enable or disable import behavior in the Spreadsheet
+Gets or sets a value that specifies whether importing or not while loading the sheets in Spreadsheet.
 
 #### Default Value
 * false
