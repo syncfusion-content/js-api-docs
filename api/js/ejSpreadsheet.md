@@ -1432,6 +1432,30 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
+### isImport `boolean`
+{:#members:isImport}
+
+Gets a value that indicates whether importing or not while loading the sheets in Spreadsheet.
+
+#### Default Value
+* false
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({ 
+   loadComplete: "loadComplete"
+});
+function loadComplete(args) {
+    if (!this.model.isImport)
+        this.setWidthToColumns([140, 128, 105, 100, 100, 110, 120, 120, 100]);
+}         
+</script>
+
+{% endhighlight %}
+
 ### isReadOnly `boolean`
 {:#members:isreadonly}
 
