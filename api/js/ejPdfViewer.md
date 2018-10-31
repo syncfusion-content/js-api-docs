@@ -613,6 +613,116 @@ Gets/sets the opacity of the handwritten signature.
 </script>
 {% endhighlight %}
 
+### textSelectionContextMenu `object`
+
+{:#members:textselectioncontextmenu}
+
+Enables/ disables the text selection context menu.
+
+### textSelectionContextMenu.isEnable `boolean`
+
+{:#members:textselectioncontextmenu-isenable}
+
+Enables/ disables the text selection context menu.
+
+**Default Value**: true
+
+### textSelectionContextMenu.isCopyEnable `boolean`
+
+{:#members:textselectioncontextmenu-iscopyenable}
+
+Enables/disables the copy menu in the text selection context menu.
+
+**Default Value**: true
+
+### textSelectionContextMenu.isSearchEnable `boolean`
+
+{:#members:textselectioncontextmenu-issearchenable }
+
+Enables/disables the search menu in the text selection context menu.
+
+**Default Value**: true
+
+### textSelectionContextMenu.isHighlightEnable `boolean`
+
+{:#members:textselectioncontextmenu-ishighlightenable }
+
+Enables/disables the highlight annotation menu in the text selection context menu.
+
+**Default Value**: true
+
+### textSelectionContextMenu.isStrikeoutEnable `boolean`
+
+{:#members:textselectioncontextmenu-isstrikeoutenable }
+
+Enables/disables the strikeout annotation menu in the text selection context menu.
+
+**Default Value**: true
+
+#### Example:
+
+{% highlight html %}
+<div id="viewer"></div>
+<script type="text/javascript">
+        $(function () {
+            $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', textSelectionContextMenu: {
+				isSearchEnable : false , isHighlightEnable: false
+			} });
+        });
+</script>
+{% endhighlight %}
+
+### annotationContextMenu `object`
+
+{:#members:annotationcontextmenu}
+
+Enables/disables the annotation context menu.
+
+### annotationContextMenu.isEnable `boolean`
+
+{:#members:annotationcontextmenu-isenable}
+
+Enables/disables the annotation context menu.
+
+**Default Value**: true
+
+### annotationContextMenu.isPopupEnable  `boolean`
+
+{:#members:annotationcontextmenu-ispopupenable }
+
+Enables/disables the popup menu in the annotation context menu.
+
+**Default Value**: true
+
+### annotationContextMenu.isDeleteEnable  `boolean`
+
+{:#members:annotationcontextmenu-isdeleteenable  }
+
+Enables/disables the delete menu in the annotation context menu.
+
+**Default Value**: true
+
+### annotationContextMenu.isPropertiesEnable `boolean`
+
+{:#members:annotationcontextmenu-ispropertiesenable }
+
+Enables/disables the properties menu in the annotation context menu.
+
+**Default Value**: true
+
+#### Example:
+
+{% highlight html %}
+<div id="viewer"></div>
+<script type="text/javascript">
+        $(function () {
+            $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', annotationContextMenu: {
+				isPopupEnable  : false ,isDeleteEnable:false
+			} });
+        });
+</script>
+{% endhighlight %}
+
 ### annotationType `enum`
 
 {:#members:annotationtype}
@@ -812,6 +922,60 @@ The below code snippet shows to set the Panning mode to the PDF viewer control.
 </script>
 {% endhighlight %}
 
+### bufferingMode  `enum`
+
+{:#members:bufferingMode }
+
+<ts name="ej.PdfViewer.BufferingMode"/>
+
+Gets or sets the buffering mode of the PDF viewer control when allowClientBuffering is set to true. 
+
+<table class="params">
+<thead>
+<tr>
+<th>
+Name
+</th>
+<th>
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+Default 
+</td>
+<td class="description">
+Retrieves details to render first two pages in a request and rest of the pages in other request. 
+</td>
+</tr>
+<tr>
+<td class="name">
+Complete 
+</td>
+<td class="description">
+Retrieves complete details to render all the pages in a single request. 
+</td>
+</tr>
+</tbody>
+</table>
+
+**Default value:** ej.PdfViewer.BufferingMode.Default 
+
+#### Example:
+
+The below code snippet shows to set the Buffering mode to the PDF viewer control.
+
+
+{% highlight javascript %}
+<div id="viewer"></div>
+<script type="text/javascript">
+        $(function () {
+           $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', allowClientBuffering: true, bufferingMode: ej.PdfViewer.BufferingMode.Complete});
+        });
+</script>
+{% endhighlight %}
 
 ### hyperlinkOpenState `enum`
 
@@ -1076,6 +1240,17 @@ var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.abortPrint();
 {% endhighlight %}
 
+### abortDownload()
+{:#methods:abortDownload}
+
+Aborts the download operation.
+
+#### Example:
+
+{% highlight javascript %}
+var pdfviewerObj = $("#viewer").data("ejPdfViewer");
+pdfviewerObj.abortDownload();
+{% endhighlight %}
 
 ### showPrintTools(show)
 {:#methods:showprinttools}
@@ -1390,6 +1565,36 @@ var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.showMagnificationTools(false);
 {% endhighlight %}
 
+### showTextSearchTool(show)
+
+{:#methods:showtextsearchtool}
+
+Shows/hides the search tool in the toolbar.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+show</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">shows/hides search tool in the toolbar</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight javascript %}
+var pdfviewerObj = $("#viewer").data("ejPdfViewer");
+pdfviewerObj.showTextSearchTool(false);
+{% endhighlight %}
 
 ### fitToPage()
 
@@ -1446,6 +1651,18 @@ var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.zoomOut();
 {% endhighlight %}
 
+### updateViewerSize()
+
+{:#methods:updateviewersize}
+
+Resize the viewer based on the parent element height.
+
+#### Example:
+
+{% highlight javascript %}
+var pdfviewerObj = $("#viewer").data("ejPdfViewer");
+pdfviewerObj.updateViewerSize();
+{% endhighlight %}
 
 ### zoomTo(zoomValue)
 
@@ -1533,6 +1750,59 @@ Searches the previous occurrence of the searched text from the current occurrenc
 {% highlight javascript %}
 var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.searchPrevious();
+{% endhighlight %}
+
+### cancelSearchText()
+
+{:#methods:cancelSearchText }
+
+Aborts the search operation.
+
+#### Example:
+
+{% highlight javascript %}
+var pdfviewerObj = $("#viewer").data("ejPdfViewer");
+pdfviewerObj.cancelSearchText();
+{% endhighlight %}
+
+### setJSONData(jsonData)
+
+{:#methods:setjsondata}
+
+Set the JSON data that are formed for rendering the document content in PDF viewer. 
+
+N> The JSON data format should be formed as mentioned [here] (https://help.syncfusion.com/js/webapi/pdfviewer#response-information)
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+jsonData</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description">Set the JSON data that are formed for rendering the document content.</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight javascript %}
+<script type="text/javascript">
+        $(function () {
+            $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', ajaxRequestSuccess: "ajaxRequestSucceed" });
+        });
+         function ajaxRequestSucceed(args){           
+            var pdfviewerObj = $("#container").data("ejPdfViewer");            
+            pdfviewerObj.setJSONData(args.responseData);
+        }
+</script>
 {% endhighlight %}
 
 ### matchCase(enableMatchCase)
@@ -2077,6 +2347,113 @@ Returns the exception details.
 </script>
 {% endhighlight %}
 
+### ajaxRequestSuccess
+
+{:#events:ajaxrequestsuccess}
+
+Triggers when the ajax request is Success.
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Event parameters from PDF viewer
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel
+</td>
+<td class="type">
+boolean
+</td>
+<td class="description">
+true, if the event should be canceled; otherwise, false.
+</td>
+</tr>
+<tr>
+<td class="name">
+model
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Returns the PDF viewer model
+</td>
+</tr>
+<tr>
+<td class="name">
+type
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the name of the event
+</td>
+</tr>
+<tr>
+<td class="name">
+responseData
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the response data on ajax success.
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight html %}
+<script type="text/javascript">
+        $(function () {
+            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', ajaxRequestSuccess:"ajaxRequestSucceed" });
+        });
+        function ajaxRequestSucceed(args) {
+            alert("Please find the response data"+ args.responseData);
+        }
+</script>
+{% endhighlight %}
 
 ### zoomChange
 
@@ -3822,6 +4199,244 @@ Specifies the state of the buffering
         });
         function bufferEnd(args) {
             alert("The buffering process is ended");
+        }
+</script>
+{% endhighlight %}
+
+### downloadStart
+
+{:#events:downloadStart}
+
+Triggers when the download is started.
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Event parameters from PDF viewer
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel
+</td>
+<td class="type">
+boolean
+</td>
+<td class="description">
+true, if the event should be canceled; otherwise, false
+</td>
+</tr>
+<tr>
+<td class="name">
+model
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Returns the PDF viewer model
+</td>
+</tr>
+<tr>
+<td class="name">
+type
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the name of the event
+</td>
+</tr>
+<tr>
+<td class="name">
+fileName
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the name of the file being displayed in the PDF viewer.
+</td>
+</tr>
+<tr>
+<td class="name">
+status
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the status about the download is started.
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight html %}
+<script type="text/javascript">
+        $(function () {
+            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', downloadStart: "downloadStart" });
+        });
+        function downloadStart(args) {
+             alert(args.fileName + " file download process " + args.status);
+        }
+</script>
+{% endhighlight %}
+
+### downloadEnd
+
+{:#events:downloadEnd}
+
+Triggers when the download is completed or aborted.
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Event parameters from PDF viewer
+<table>
+<thead>
+<tr>
+<th>
+{{'**Name**'| markdownify }}
+</th>
+<th>
+{{'**Type**'| markdownify }}
+</th>
+<th>
+{{'**Description**'| markdownify }}
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+cancel
+</td>
+<td class="type">
+boolean
+</td>
+<td class="description">
+true, if the event should be canceled; otherwise, false
+</td>
+</tr>
+<tr>
+<td class="name">
+model
+</td>
+<td class="type">
+object
+</td>
+<td class="description">
+Returns the PDF viewer model
+</td>
+</tr>
+<tr>
+<td class="name">
+type
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the name of the event
+</td>
+</tr>
+<tr>
+<td class="name">
+fileName
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the name of the file being displayed in the PDF viewer.
+</td>
+</tr>
+<tr>
+<td class="name">
+status
+</td>
+<td class="type">
+string
+</td>
+<td class="description">
+Returns the status about the download is completed or aborted.
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example:
+
+{% highlight html %}
+<script type="text/javascript">
+        $(function () {
+            var obj = $("#viewer").ejPdfViewer({ serviceUrl: '../api/PdfViewer', downloadEnd: "downloadEnd" });
+        });
+        function downloadEnd(args) {
+             alert(args.fileName + " file download process " + args.status);
         }
 </script>
 {% endhighlight %}
