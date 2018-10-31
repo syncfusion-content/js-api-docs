@@ -691,7 +691,7 @@ $("#PivotGauge1").ejPivotGauge({  frame:{frameType : "halfcircle"} });
 {% endhighlight %}
 
 ### frame.halfCircleFrameEndAngle `number`
-{:#members:frame.halfcircleframeendangle}
+{:#members:frame-halfcircleframeendangle}
 
 Specifies the end angle for the half circular frame.
 
@@ -707,7 +707,7 @@ $("#PivotGauge1").ejPivotGauge({ frame:{frameType : "halfcircle",halfCircleFrame
 {% endhighlight %}
 
 ### frame.halfCircleFrameStartAngle `number`
-{:#members:frame.halfcircleframestartangle}
+{:#members:frame-halfcircleframestartangle}
 
 Specifies the start angle for the half circular frame.
 
