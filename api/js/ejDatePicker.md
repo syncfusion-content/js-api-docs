@@ -2368,7 +2368,7 @@ $("#datepicker").ejDatePicker("getValue");
 ### setValue()
 {:#methods:setvalue}
 
-set any date value as `string` or `date object` as current value for the DatePicker.
+sets the date value for the DatePicker.
 
 #### Returns:
 
