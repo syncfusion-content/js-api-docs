@@ -2365,10 +2365,28 @@ $("#datepicker").ejDatePicker("getValue");
 </script>{% endhighlight %}
 
 
+### setValue()
+{:#methods:setvalue}
 
+sets the date value for the DatePicker.
 
+#### Returns:
 
+string
 
+#### Example
+
+{% highlight html %}
+ 
+<input type="text" id="datepicker" />
+<script>
+$("#datepicker").ejDatePicker();
+// Create DatePicker instance
+var dateObj = $("#datepicker").data("ejDatePicker");
+dateObj.setValue(new Date()); // sets the date value
+</script>
+
+{% endhighlight %}
 
 ### hide()
 {:#methods:hide}
