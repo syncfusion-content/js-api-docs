@@ -6353,7 +6353,7 @@ This method is used to refresh the Spreadsheet based on the sheet model values.
 var excelObj = $("#Spreadsheet").data("ejSpreadsheet"), sheet = excelObj.getSheet(); 
     sheet.rowCount = 30; 
     sheet.colCount = 20; 
-    excelObj.refreshContent(1); // refresh the spreadsheet based on the rowcount and columncount in normal mode
+    excelObj.refreshContent(1); // refresh the spreadsheet based on the row count and column count in normal mode
 </script>
 {% endhighlight %}
 
