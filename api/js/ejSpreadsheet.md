@@ -6328,7 +6328,7 @@ excelObj.redo();
 
 ### refreshContent(sheetIdx)
 {:#methods:refreshcontent}
-This method is used to refresh the content in Spreadsheet.
+This method is used to refresh the Spreadsheet based on the sheet model values.
 <table class="params">
 <thead>
 <tr>
@@ -6349,9 +6349,11 @@ This method is used to refresh the content in Spreadsheet.
 #### Example
 {% highlight html %}
 <script>
-//initialize the Spreadsheet object
-var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
-excelObj.refreshContent(1);
+//initialize the Spreadsheet object.
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet"), sheet = excelObj.getSheet(); 
+    sheet.rowCount = 30; 
+    sheet.colCount = 20; 
+    excelObj.refreshContent(1); // refresh the spreadsheet based on the rowcount and columncount in normal mode
 </script>
 {% endhighlight %}
 
@@ -6364,7 +6366,7 @@ $("#Spreadsheet").ejSpreadsheet("refreshContent",1);
 
 ### refreshSpreadsheet()
 {:#methods:refreshspreadsheet}
-This method is used to refresh the Spreadsheet.
+This method is used to refresh the Spreadsheet element based on the page layout.
 
 #### Example
 {% highlight html %}
@@ -6378,6 +6380,25 @@ excelObj.refreshSpreadsheet();
 {% highlight html %}
 <script>
 $("#Spreadsheet").ejSpreadsheet("refreshSpreadsheet");
+</script>
+{% endhighlight %}
+
+### refresh()
+{:#methods:refresh}
+This method destroys and re-creates the entire Spreadsheet control.
+
+#### Example
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+excelObj.refresh();
+</script>
+{% endhighlight %}
+
+{% highlight html %}
+<script>
+$("#Spreadsheet").ejSpreadsheet("refresh");
 </script>
 {% endhighlight %}
 
