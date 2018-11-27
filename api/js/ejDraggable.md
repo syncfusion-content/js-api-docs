@@ -1,11 +1,10 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejDraggable Widget
+title: API reference of ejDraggable Widget | Syncfusion
 description: API reference for ejDraggable
-documentation: API
+documentation: UG
 platform: js-api
 keywords: Draggable, ejDraggable, syncfusion, Draggable api
- 
 ---
 
 # ejDraggable
@@ -375,6 +374,163 @@ Used to group sets of draggable and droppable items, in addition to droppable's 
         $("#draggable").ejDraggable('option', 'scope');
                      
  {% endhighlight %}
+
+
+ ### autoScroll `boolean`
+{:#members:autoScroll}
+
+
+
+
+Used to enable auto scroll while drag and drop the element.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* 'false'
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight javascript %}
+ 
+//To set autoScroll API value during initialization  
+        $("#draggable").ejDraggable({ autoScroll: true });                               
+        
+{% endhighlight %}
+
+
+{% highlight javascript %}
+ 
+//Get or set the autoScroll API, after initialization:
+        //Gets the autoScroll value  
+        $("#draggable").ejDraggable('option', 'autoScroll');
+                     
+ {% endhighlight %}
+
+
+
+
+
+
+
+ ### scrollSensitivity `number`
+{:#members:scrollSensitivity}
+
+
+
+
+Represents when to start the scrolling inside the scroll container on dragging
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* '20'
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight javascript %}
+ 
+//To set scrollSensitivity API value during initialization  
+        $("#draggable").ejDraggable({ scrollSensitivity: true });                               
+        
+{% endhighlight %}
+
+
+{% highlight javascript %}
+ 
+//Get or set the scrollSensitivity API, after initialization:
+        //Gets the scrollSensitivity value  
+        $("#draggable").ejDraggable('option', 'scrollSensitivity');
+                     
+ {% endhighlight %}
+
+
+
+
+
+
+ ### scrollSpeed `number`
+{:#members:scrollSpeed}
+
+
+
+
+Specifies how much distance of scroll should move on dragging once reached scroll sensitivity area. 
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* '20'
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight javascript %}
+ 
+//To set scrollSpeed API value during initialization  
+        $("#draggable").ejDraggable({ scrollSpeed: true });                               
+        
+{% endhighlight %}
+
+
+{% highlight javascript %}
+ 
+//Get or set the scrollSpeed API, after initialization:
+        //Gets the scrollSpeed value  
+        $("#draggable").ejDraggable('option', 'scrollSpeed');
+                     
+ {% endhighlight %}
+
 
 
 

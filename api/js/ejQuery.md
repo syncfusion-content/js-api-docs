@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ej.Query
-documentation: API
+title: ej.Query | Syncfusion
+documentation: UG
 platform: js-api
 metaname: 
 metacontent: 
@@ -494,7 +494,7 @@ var dataManagerObj =ej.DataManager(window.gridData).executeLocal(ej.Query().requ
 </script>{% endhighlight %}
 
 
-### search<span class="signature">(fieldName, operator, value, ignoreCase)</span>
+### search<span class="signature">(fieldName, operator, value, ignoreCase,ignoreAccent)</span>
 {:#methods:search}
 
 It is used to search the given search key value in JSON data
@@ -527,6 +527,11 @@ It is used to search the given search key value in JSON data
 <td class="name">ignoreCase</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">on/off case sensitive.</td>
+</tr>
+<tr>
+<td class="name">ignoreAccent</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Filter diacritics based on the boolean value.</td>
 </tr>
 </tbody>
 </table>
@@ -816,7 +821,7 @@ var tableBody = "";
 </script>{% endhighlight %}
  
  
-### where<span class="signature">(fieldName, operator, value, ignoreCase)</span>
+### where<span class="signature">(fieldName, operator, value, ignoreCase,ignoreAccent)</span>
 {:#methods:where}
 
 It is used to filter records based on the filter condition.
@@ -849,6 +854,11 @@ It is used to filter records based on the filter condition.
 <td class="name">ignoreCase</td>
 <td class="type"><span class="param-type">boolean</span></td>
 <td class="description last">on/off case sensitive.</td>
+</tr>
+<tr>
+<td class="name">ignoreAccent</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">Filter diacritics based on the boolean value.</td>
 </tr>
 </tbody>
 </table>
