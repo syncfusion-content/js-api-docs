@@ -924,7 +924,7 @@ The below code snippet shows to set the Panning mode to the PDF viewer control.
 
 ### bufferingMode  `enum`
 
-{:#members:bufferingMode }
+{:#members:bufferingmode }
 
 <ts name="ej.PdfViewer.BufferingMode"/>
 
@@ -1241,7 +1241,7 @@ pdfviewerObj.abortPrint();
 {% endhighlight %}
 
 ### abortDownload()
-{:#methods:abortDownload}
+{:#methods:abortdownload}
 
 Aborts the download operation.
 
@@ -1754,7 +1754,7 @@ pdfviewerObj.searchPrevious();
 
 ### cancelSearchText()
 
-{:#methods:cancelSearchText }
+{:#methods:cancelsearchtext }
 
 Aborts the search operation.
 
@@ -1771,7 +1771,7 @@ pdfviewerObj.cancelSearchText();
 
 Set the JSON data that are formed for rendering the document content in PDF viewer. 
 
-N> The JSON data format should be formed as mentioned [here] (https://help.syncfusion.com/js/webapi/pdfviewer#response-information)
+N> The JSON data format should be formed as mentioned [here](https://help.syncfusion.com/js/webapi/pdfviewer#response-information)
 
 <table class="params">
 <thead>
