@@ -376,7 +376,7 @@ Used to group sets of draggable and droppable items, in addition to droppable's 
  {% endhighlight %}
 
 
- ### autoScroll `boolean`
+### autoScroll `boolean`
 {:#members:autoScroll}
 
 
@@ -430,7 +430,7 @@ Used to enable auto scroll while drag and drop the element.
 
 
 
- ### scrollSensitivity `number`
+### scrollSensitivity `number`
 {:#members:scrollSensitivity}
 
 
@@ -483,7 +483,7 @@ Represents when to start the scrolling inside the scroll container on dragging
 
 
 
- ### scrollSpeed `number`
+### scrollSpeed `number`
 {:#members:scrollSpeed}
 
 
