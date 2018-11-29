@@ -1,9 +1,9 @@
 ---
 title: ejPdfViewer
-description: API reference for ejPdfViewer
+description: Properties, Methods and Events of Syncfusion ejPdfViewer Widget
 platform: js-api
 control: ejPdfViewer
-documentation: API
+documentation: UG
 keywords: pdfviewer, ejPdfViewer, pdfviewer api, syncfusion, pdf viewer
 ---
 
