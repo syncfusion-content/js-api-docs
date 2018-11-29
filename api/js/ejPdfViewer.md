@@ -1,6 +1,6 @@
 ---
-title: ejPdfViewer
-description: Properties, Methods and Events of Syncfusion ejPdfViewer Widget
+title: Properties, Methods and Events of Syncfusion ejPdfViewer Widget
+description: Methods,members and events available in ejPdfViewer
 platform: js-api
 control: ejPdfViewer
 documentation: UG
