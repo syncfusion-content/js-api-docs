@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Properties, Methods and Events of Syncfusion ejDiagram Widget
-description: API reference for ejDiagram
-documentation: API
+description:  Methods,members and events avaliable in ejDiagram
+documentation: UG
 platform: js-api
 keywords: diagram, ejDiagram, diagram api, syncfusion
 ---
