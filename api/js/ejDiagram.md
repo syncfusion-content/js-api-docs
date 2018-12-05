@@ -12571,7 +12571,7 @@ nodes = [{name: "node1", width: 100, height: 100, offsetX: 50, offsetY: 50,
 $("#diagramcontent").ejDiagram({nodes:nodes});
 </script>
 
-{% endhighlight %}bers:nodes-subprocess-trigger}
+{% endhighlight %}
 
 
 ### nodes.subProcess.events.trigger `enum`
