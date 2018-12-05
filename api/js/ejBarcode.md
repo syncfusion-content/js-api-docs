@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Properties, options, methods and events of Essential JS ejBarcode widget
-documentation: How to use Properties, options, methods and events of Essential JS ejBarcode widget
+title: Properties, options, methods and events of ejBarcode widget
+description: How to use Properties, options, methods and events of Essential JS ejBarcode widget
+documentation: API
 platform: js-api
 metaname: 
 metacontent: 
