@@ -1332,10 +1332,3 @@ $("#barcode").ejBarcode({
    load: function (args) {}
 });
 {% endhighlight %}
-
-
-{% highlight html %}
- 
-//Bind create event using jquery "on"
-$("#barcode").on("ejBarcodeload", function(e) {} );{% endhighlight %}
-
