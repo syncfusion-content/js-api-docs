@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Properties, options, methods and events of ejBarcode widget
+title: Properties, options, methods and events of Syncfusion ejBarcode widget
 description: How to use Properties, options, methods and events of Essential JS ejBarcode widget
-documentation: API
+documentation: UG
 platform: js-api
 metaname: 
 metacontent: 
