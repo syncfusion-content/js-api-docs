@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Properties,Methods and Events of Essential JS ejSignature Widget
+title: Properties,Methods and Events of Syncfusion ejSignature Widget
 description: Methods, members, events available in ejSignature
-documentation: API
+documentation: UG
 platform: js-api
 keywords: ejSignature, API, Essential JS Signature 
 ---
@@ -417,7 +417,7 @@ used to save the drawn image.
 ### show()
 {:#methods:show}
 
-Used to Show the signature widget, if it is already hided. 
+Used to Show the signature widget, if it is already hidden. 
 
 N> This method does not accept any arguments.
 
