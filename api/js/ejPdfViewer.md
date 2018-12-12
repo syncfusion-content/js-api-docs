@@ -1752,19 +1752,6 @@ var pdfviewerObj = $("#viewer").data("ejPdfViewer");
 pdfviewerObj.searchPrevious();
 {% endhighlight %}
 
-### cancelSearchText()
-
-{:#methods:cancelsearchtext }
-
-Aborts the search operation.
-
-#### Example:
-
-{% highlight javascript %}
-var pdfviewerObj = $("#viewer").data("ejPdfViewer");
-pdfviewerObj.cancelSearchText();
-{% endhighlight %}
-
 ### setJSONData(jsonData)
 
 {:#methods:setjsondata}
