@@ -1,8 +1,8 @@
 ---
 layout: post
-title: API reference for ejSpellCheck
+title: API reference for ejSpellCheck | Syncfusion
 description: What are the options, methods and events available in Essential JavaScript ejSpellCheck.
-documentation: API
+documentation: UG
 platform: js-api
 keywords: ejSpellCheck, API, Essential JS ejSpellCheck, SpellCheck
 ---
@@ -661,6 +661,40 @@ When set to true, allows sending Asynchronous ajax request for checking the spel
 </script>
 
 {% endhighlight %}
+
+
+### ajaxRequestType `string `
+{:#members:ajaxRequestType}
+
+To set either ‘Post’ or ‘Get’ for ajax request type which invokes when validate, get suggestion and dictionary action.Possible values are ‘POST’ or ‘GET’
+
+#### Default Value
+
+* GET
+
+#### Example – To check the spelling of the target element by sending POST request
+
+{% highlight html %}
+
+<div id="SpellCheck"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#SpellCheck").ejSpellCheck({
+                dictionarySettings: {
+                    dictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/CheckWords",	
+                    customDictionaryUrl: "http://js.syncfusion.com/demos/ejservices/api/SpellCheck/AddToDictionary"
+                },
+                enableValidateOnType: true,
+                enableAsync: false,
+                ajaxDataType: 'json',
+                ajaxRequestType: "POST"
+            });
+        });
+</script>
+
+{% endhighlight %}
+
 
 ### ajaxDataType `string`
 {:#members:ajaxdatatype}
