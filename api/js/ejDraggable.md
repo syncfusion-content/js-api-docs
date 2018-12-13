@@ -465,7 +465,7 @@ Represents when to start the scrolling inside the scroll container on dragging
 {% highlight javascript %}
  
 //To set scrollSensitivity API value during initialization  
-        $("#draggable").ejDraggable({ scrollSensitivity: true });                               
+        $("#draggable").ejDraggable({ scrollSensitivity: 22 });                               
         
 {% endhighlight %}
 
@@ -518,7 +518,7 @@ Specifies how much distance of scroll should move on dragging once reached scrol
 {% highlight javascript %}
  
 //To set scrollSpeed API value during initialization  
-        $("#draggable").ejDraggable({ scrollSpeed: true });                               
+        $("#draggable").ejDraggable({ scrollSpeed: 25 });                               
         
 {% endhighlight %}
 
