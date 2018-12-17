@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Properties, options, methods and events of Essential JS ejBarcode widget
-documentation: How to use Properties, options, methods and events of Essential JS ejBarcode widget
+title: Properties, options, methods and events of Syncfusion ejBarcode widget
+description: How to use Properties, options, methods and events of Essential JS ejBarcode widget
+documentation: UG
 platform: js-api
 metaname: 
 metacontent: 
@@ -1332,10 +1333,3 @@ $("#barcode").ejBarcode({
    load: function (args) {}
 });
 {% endhighlight %}
-
-
-{% highlight html %}
- 
-//Bind create event using jquery "on"
-$("#barcode").on("ejBarcodeload", function(e) {} );{% endhighlight %}
-
