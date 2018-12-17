@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Properties, Methods and Events of Syncfusion ejDiagram Widget
-description:  This page explains the list of API methods, members and events avaliable in Syncfusion ejDiagram control.
+description:  This page explains the list of API methods, members and events avaliable in Syncfusion ejDiagram widget.
 documentation: UG
 platform: js-api
 keywords: diagram, ejDiagram, diagram api, syncfusion
