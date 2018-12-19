@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejReportViewer Widget
-documentation: API
+title: Properties, Methods and Events of ejReportViewer Widget | Syncfusion
+documentation: UG
 platform: js-api
 metaname: 
 metacontent: 
