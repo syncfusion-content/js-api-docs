@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejReportViewer Widget
-documentation: API
+title: Properties, Methods and Events of ejReportViewer Widget | Syncfusion
+documentation: UG
 platform: js-api
 metaname: 
 metacontent: 
@@ -1058,7 +1058,7 @@ Specifies the toolbar items.
 <script>        
     $("#reportviewer").ejReportViewer(
         {
-            toolbarSettings:{ exportOptions: ej.ReportViewer.ToolbarItems.All }
+            toolbarSettings:{ items: ej.ReportViewer.ToolbarItems.All }
         });
 </script>
 
@@ -1081,7 +1081,7 @@ Shows or hides the toolbar.
 <script>          
     $("#reportviewer").ejReportViewer(
         {
-            toolbarSettings:{showToolbar: true}
+            toolbarSettings:{ showToolbar: true }
         });         
 </script>
 
@@ -1104,7 +1104,7 @@ Shows or hides the tooltip of toolbar items.
 <script>          
     $("#reportviewer").ejReportViewer(
         {
-            toolbarSettings:showTooltip: true}
+            toolbarSettings:{ showTooltip: true }
         });         
 </script>
 
@@ -1127,7 +1127,7 @@ Specifies the toolbar template ID.
 <script>          
     $("#reportviewer").ejReportViewer(
         {
-            toolbarSettings:{templateId: "customtoolbarId"}
+            toolbarSettings:{ templateId: "customtoolbarId" }
         });         
 </script>
 
