@@ -8812,7 +8812,7 @@ This method is used to disable the items in the context menu.
 <script>
 // Create Spreadsheet object.
 var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
-excelObj.XLCMenu.disableItem(ej.Spreadsheet.ContextMenu.Cell, [1,2,3]); // To disable the item in the context menu.
+excelObj.XLCMenu.disableItem(ej.Spreadsheet.ContextMenu.Cell, ["Cut", "Insert", "Copy"]); // To disable the item in the context menu.
 </script>
 
 {% endhighlight %}
@@ -8849,7 +8849,7 @@ This method is used to enable the items in the context menu.
 <script>
 // Create Spreadsheet object.
 var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
-excelObj.XLCMenu.enableItem(ej.Spreadsheet.ContextMenu.Cell, [1,2,3]); // To enable the item in the context menu.
+excelObj.XLCMenu.enableItem(ej.Spreadsheet.ContextMenu.Cell, ["Cut", "Insert", "Copy"]); // To enable the item in the context menu.
 </script>
 
 {% endhighlight %}
@@ -8886,7 +8886,7 @@ This method is used to hide the items in the context menu.
 <script>
 // Create Spreadsheet object.
 var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
-excelObj.XLCMenu.hideItem(ej.Spreadsheet.ContextMenu.Cell, [1,2,3]); // To hide the item in the context menu.
+excelObj.XLCMenu.hideItem(ej.Spreadsheet.ContextMenu.Cell, ["Cut", "Insert", "Copy"]); // To hide the item in the context menu.
 </script>
 
 {% endhighlight %}
@@ -8923,7 +8923,7 @@ This method is used to remove the items in the context menu.
 <script>
 // Create Spreadsheet object.
 var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
-excelObj.XLCMenu.removeItem(ej.Spreadsheet.ContextMenu.Cell, [1,2,3]); // To remove the item in the context menu.
+excelObj.XLCMenu.removeItem(ej.Spreadsheet.ContextMenu.Cell, ["Cut", "Insert", "Copy"]); // To remove the item in the context menu.
 </script>
 
 {% endhighlight %}
@@ -8960,7 +8960,7 @@ This method is used to show the items in the context menu.
 <script>
 // Create Spreadsheet object.
 var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
-excelObj.XLCMenu.showItem(ej.Spreadsheet.ContextMenu.Cell, [1,2,3]); // To show the item in the context menu.
+excelObj.XLCMenu.showItem(ej.Spreadsheet.ContextMenu.Cell, ["Cut", "Insert", "Copy"]); // To show the item in the context menu.
 </script>
 
 {% endhighlight %}
