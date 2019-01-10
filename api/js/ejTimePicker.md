@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejTimePicker Widget
+title: Properties, Methods and Events of ejTimePicker Widget | Syncfusion
 description: API reference for ejTimePicker
-documentation: API
+documentation: UG
 platform: js-api
 keywords: TimePicker, ejTimePicker, syncfusion, TimePicker api  
 ---
@@ -1201,6 +1201,121 @@ Defines the time format displayed in the TimePicker.
 // Set the timeFormat during initialization.                    
         $("#timepicker").ejTimePicker({  timeFormat : "h:mm:ss tt" });
 </script> 
+
+{% endhighlight %}
+
+
+
+
+
+
+
+### validationMessages `object`
+{:#members:validationmessages}
+
+
+
+
+
+
+
+
+Set the jQuery validation error message in TimePicker.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* null
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="timepicker" name="time" />
+<script>
+//To set validationMessage API during initialization  
+ $("#timepicker").ejTimePicker({  
+  validationRules:{                     
+           required:true
+   },
+        validationMessages: {
+           required: "Required Time value"
+        }
+});
+</script>
+
+{% endhighlight %}
+
+
+
+
+
+
+
+### validationRules `object`
+{:#members:validationrules}
+
+
+
+
+
+
+
+
+Set the jQuery validation rules in TimePicker.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* null
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="timepicker" name="time" />
+<script>
+//To set validationRules API during initialization  
+ $("#timepicker").ejTimePicker({  
+  validationRules:{                     
+          required:true
+        }
+});
+</script>
 
 {% endhighlight %}
 
