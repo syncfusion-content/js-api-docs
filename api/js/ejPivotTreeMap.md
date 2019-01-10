@@ -4,8 +4,8 @@ title: Properties, Methods and Events of ejPivotTreeMap Widget
 documentation: API
 platform: js-api
 keywords: ejPivotTreeMap, API, Essential JS PivotTreeMap
-metaname:
-metacontent:
+metaname: API reference for ejPivotTreeMap
+metacontent: ejPivotTreeMap, API, Essential JS PivotTreeMap
 ---
 
 # ejPivotTreeMap
