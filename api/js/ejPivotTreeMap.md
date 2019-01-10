@@ -4,8 +4,8 @@ title: Properties, Methods and Events of ejPivotTreeMap Widget
 documentation: API
 platform: js-api
 keywords: ejPivotTreeMap, API, Essential JS PivotTreeMap
-metaname: 
-metacontent: 
+metaname:
+metacontent:
 ---
 
 # ejPivotTreeMap
@@ -23,7 +23,7 @@ The PivotTreemap is a lightweight control that reads OLAP information and visual
 #### Example
 
 {% highlight html %}
- 
+
     <div id="PivotTreeMap1"></div>
 
     <script>
@@ -59,7 +59,7 @@ Specifies the CSS class to PivotTreeMap to achieve custom theme.
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({ cssClass : "gradient-lime" });
 {% endhighlight %}
 
@@ -73,7 +73,7 @@ Initializes the data source for the PivotTreeMap widget, when it functions compl
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap( { dataSource: { data: value } });
 {% endhighlight %}
 
@@ -87,7 +87,7 @@ Provides the raw data source for the PivotTreeMap.
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { data: value } });
 {% endhighlight %}
 
@@ -101,14 +101,14 @@ Contains the respective cube name from OLAP database as string type.
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { cube: "Adventure Works" } });
 {% endhighlight %}
 
 ### dataSource.sourceInfo `string`
 {:#members:datasource-sourceinfo}
 
-To set the data source name to fetch data from that. 
+To set the data source name to fetch data from that.
 
 >**Note**: This is applicable only for Mondrian connection.
 
@@ -117,14 +117,14 @@ To set the data source name to fetch data from that.
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap( { dataSource: { sourceInfo: "Provider Mondrian" } });
 {% endhighlight %}
 
 ### dataSource.providerName `string`
 {:#members:datasource-providername}
 
-Set the provider name for PivotTreeMap to identify whether the provider is SSAS or Mondrian. 
+Set the provider name for PivotTreeMap to identify whether the provider is SSAS or Mondrian.
 
 >**Note**: This is applicable only for client side OLAP data.
 
@@ -152,7 +152,7 @@ Set the provider name for PivotTreeMap to identify whether the provider is SSAS 
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap( { dataSource: { providerName: "mondrian" } });
 {% endhighlight %}
 
@@ -166,7 +166,7 @@ In connection with an OLAP database, this property contains the database name as
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap( { dataSource: { catalog: "databaseName" } } );
 {% endhighlight %}
 
@@ -180,7 +180,7 @@ Lists out the items to be displayed as series of PivotTreeMap.
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { columns: itemsArray } });
 {% endhighlight %}
 
@@ -195,21 +195,21 @@ Allows the user to bind the item by using its unique name as field name.
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { columns: [{ fieldName : "HierarchyUniqueName" }] } });
 {% endhighlight %}
 
 ### dataSource.columns.isNamedSets `boolean`
 {:#members:datasource-columns-isnamedsets}
 
-Allows the user to indicate whether the added item is a named set or not. 
+Allows the user to indicate whether the added item is a named set or not.
 
 #### Default Value: false
 
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { columns: [{ fieldName: "[Core Product Group]", isNamedSets : true }] } });
 {% endhighlight %}
 
@@ -223,8 +223,8 @@ Applies filter to the field members.
 **Example:**
 
 {% highlight javascript %}
- 
-    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { columns: [{ fieldName: "[Customer].[Customer Geography]", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { columns: [{ fieldName: "[Customer].[Customer Geography]", filterItems : { filterType: ej.PivotAnalysis.FilterType.Include, values: ["Canada", "France"] } }] } });
 {% endhighlight %}
 
 ### dataSource.columns.filterItems.values `array`
@@ -237,8 +237,8 @@ Contains the collection of items to be excluded among the field members.
 **Example:**
 
 {% highlight javascript %}
- 
-    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { columns: [{ fieldName: "[Customer].[Customer Geography]", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { columns: [{ fieldName: "[Customer].[Customer Geography]", filterItems : { filterType: ej.PivotAnalysis.FilterType.Include, values: ["Canada", "France"] } }] } });
 {% endhighlight %}
 
 ### dataSource.rows `array`
@@ -251,7 +251,7 @@ Lists out the items to be displayed as segments of PivotTreeMap.
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { rows: itemsArray } });
 {% endhighlight %}
 
@@ -266,21 +266,21 @@ Allows the user to bind the item by using its unique name as field name.
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { rows: [{ fieldName : "HierarchyUniqueName" }] } });
 {% endhighlight %}
 
 ### dataSource.rows.isNamedSets `boolean`
 {:#members:datasource-rows-isnamedsets}
 
-Allows the user to indicate whether the added item is a named set or not. 
+Allows the user to indicate whether the added item is a named set or not.
 
 #### Default Value: false
 
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { rows: [{ fieldName: "[Core Product Group]", isNamedSets : true }] } });
 {% endhighlight %}
 
@@ -294,8 +294,8 @@ Applies filter to the field members.
 **Example:**
 
 {% highlight javascript %}
- 
-    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { rows: [{ fieldName: "[Customer].[Customer Geography]", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { rows: [{ fieldName: "[Customer].[Customer Geography]", filterItems : { filterType: ej.PivotAnalysis.FilterType.Include, values: ["Canada", "France"] } }] } });
 {% endhighlight %}
 
 ### dataSource.rows.filterItems.values `array`
@@ -308,8 +308,8 @@ Contains the collection of items to be excluded among the field members.
 **Example:**
 
 {% highlight javascript %}
- 
-    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { rows: [{ fieldName: "[Customer].[Customer Geography]", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { rows: [{ fieldName: "[Customer].[Customer Geography]", filterItems : { filterType: ej.PivotAnalysis.FilterType.Include, values: ["Canada", "France"] } }] } });
 {% endhighlight %}
 
 ### dataSource.values `array`
@@ -322,7 +322,7 @@ Lists out the items supports calculation in PivotTreeMap.
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { values: itemsArray } });
 {% endhighlight %}
 
@@ -336,7 +336,7 @@ This holds the list of unique names of measures to bind them from the OLAP cube.
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { values: [{ measures : itemsArray }] } });
 {% endhighlight %}
 
@@ -350,7 +350,7 @@ Allows the user to bind the measure from OLAP datasource by using its unique nam
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { values: [{ measures : [{ fieldName: "MeasureUniqueName" }] }] } });
 {% endhighlight %}
 
@@ -364,7 +364,7 @@ Allows to set the axis name to place the measures items.
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { values: [{ axis : ej.olap.AxisName.Row }] } });
 {% endhighlight %}
 
@@ -378,7 +378,7 @@ Lists out the items which supports filtering of values without displaying the me
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { filters: itemsArray } });
 {% endhighlight %}
 
@@ -393,7 +393,7 @@ Allows the user to bind the item by using its unique name as field name.
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { filters: [{ fieldName : "HierarchyUniqueName" }] } });
 {% endhighlight %}
 
@@ -407,8 +407,8 @@ Applies filter to the field members.
 **Example:**
 
 {% highlight javascript %}
- 
-    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { filters: [{ fieldName: "[Customer].[Customer Geography]", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { filters: [{ fieldName: "[Customer].[Customer Geography]", filterItems : { filterType: ej.PivotAnalysis.FilterType.Include, values: ["Canada", "France"] } }] } });
 {% endhighlight %}
 
 ### dataSource.filters.filterItems.values `array`
@@ -421,8 +421,8 @@ Contains the collection of items to be excluded among the field members.
 **Example:**
 
 {% highlight javascript %}
- 
-    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { filters: [{ fieldName: "[Customer].[Customer Geography]", filterItems : { filterType: ej.PivotAnalysis.FilterType.Exclude, values: ["Canada", "France"] } }] } });
+
+    $("#PivotTreeMap1").ejPivotTreeMap({ dataSource: { filters: [{ fieldName: "[Customer].[Customer Geography]", filterItems : { filterType: ej.PivotAnalysis.FilterType.Include, values: ["Canada", "France"] } }] } });
 {% endhighlight %}
 
 ### customObject `object`
@@ -435,7 +435,7 @@ Object utilized to pass additional information between client-end and service-en
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({ customObject: { "key": "Hello World" } });
 {% endhighlight %}
 
@@ -449,7 +449,7 @@ Allows the user to enable PivotTreeMap’s responsiveness in the browser layout.
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({ isResponsive: true });
 {% endhighlight %}
 
@@ -464,8 +464,8 @@ Allows the user to set the localized language for the widget.
 **Example:**
 
 {% highlight javascript %}
- 
-    $("#PivotTreeMap1").ejPivotTreeMap({ locale: "fr-FR" }); 
+
+    $("#PivotTreeMap1").ejPivotTreeMap({ locale: "fr-FR" });
 {% endhighlight %}
 
 ### operationalMode `enum`
@@ -499,7 +499,7 @@ Sets the mode for the PivotTreeMap widget for binding data source either in serv
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({ operationalMode: ej.Pivot.OperationalMode.ServerMode });
 {% endhighlight %}
 
@@ -514,7 +514,7 @@ Allows the user to set custom name for the methods at service-end, communicated 
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({ serviceMethodSettings: values });
 {% endhighlight %}
 
@@ -528,7 +528,7 @@ Allows the user to set the custom name for the service method responsible for in
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({ serviceMethodSettings: { initialize: "InitializeTreeMapMyMethod" } });
 {% endhighlight %}
 
@@ -542,7 +542,7 @@ Allows the user to set the custom name for the service method responsible for dr
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({ serviceMethodSettings: { drillDown: "DrillTreeMapMyMethod" } });
 {% endhighlight %}
 
@@ -557,7 +557,7 @@ Connects the service using the specified URL for any server updates.
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({ url: "/PivotTreeMapService" });
 {% endhighlight %}
 
@@ -571,7 +571,7 @@ Allows you to enable "withCredentials" property inside XMLHttpRequest object for
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap").ejPivotTreeMap({ enableXHRCredentials: true });
 {% endhighlight %}
 
@@ -585,7 +585,7 @@ Performs an asynchronous HTTP (AJAX) request.
 **Example:**
 
 {% highlight javascript %}
- 
+
     var treemapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
     treemapObj.doAjaxPost("POST", "/PivotTreeMapService.svc/Initialize", { "key", "Hello World" }, successEvent, null);
 {% endhighlight %}
@@ -617,7 +617,7 @@ string
 **Example:**
 
 {% highlight javascript %}
- 
+
     var treeMapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
     var report = treeMapObj.getOlapReport();
 {% endhighlight %}
@@ -632,7 +632,7 @@ Sets the OlapReport string along with the axis information and maintains it in a
 **Example:**
 
 {% highlight javascript %}
- 
+
     var treeMapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
     treeMapObj.setOlapReport(olapReportObj);
 {% endhighlight %}
@@ -649,7 +649,7 @@ array
 **Example:**
 
 {% highlight javascript %}
- 
+
     var treeMapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
     var jsonRecords = treeMapObj.getJSONRecords();
 {% endhighlight %}
@@ -662,7 +662,7 @@ Sets the JSON records to render the control.
 **Example:**
 
 {% highlight javascript %}
- 
+
     var treeMapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
     treeMapObj.setJSONRecords(jsonRecords);
 {% endhighlight %}
@@ -675,7 +675,7 @@ Renders the control with the pivot engine obtained from OLAP cube.
 **Example:**
 
 {% highlight javascript %}
- 
+
     var treeMapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
     treeMapObj.generateJSON(baseObj, pivotEngineObj);
 {% endhighlight %}
@@ -688,7 +688,7 @@ This function receives the JSON formatted datasource to render the PivotTreeMap 
 **Example:**
 
 {% highlight javascript %}
- 
+
     var treeMapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
     treeMapObj.renderTreeMapFromJSON(this.getJSONRecords());
 {% endhighlight %}
@@ -701,7 +701,7 @@ This function receives the update from service-end, which would be utilized for 
 **Example:**
 
 {% highlight javascript %}
- 
+
     var treeMapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
     treeMapObj.renderControlSuccess({ "OlapReport": this.getOlapReport(), "JsonRecords": this.getJSONRecords() });
 {% endhighlight %}
@@ -714,7 +714,7 @@ This function Destroy the PivotTreemap widget all events bound using this._on wi
 **Example:**
 
 {% highlight javascript %}
- 
+
    var treemapObj = $("#PivotTreeMap1").data("ejPivotTreeMap");
     treemapObj.destroy();
 {% endhighlight %}
@@ -760,7 +760,7 @@ Triggers when it reaches client-side after any AJAX request.
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({
         afterServiceInvoke: function (args) {}
     });
@@ -806,7 +806,7 @@ Triggers before any AJAX request is passed from PivotTreeMap to service methods.
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({
         beforeServiceInvoke: function (args) {}
     });
@@ -851,7 +851,7 @@ Triggers when PivotTreeMap starts to render.
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({
         load: function (args) {}
     });
@@ -885,7 +885,7 @@ Triggers when drill up/down happens in PivotTreeMap control. And it returns the 
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({
         drillSuccess: function (args) {}
     });
@@ -931,7 +931,7 @@ Triggers when PivotTreeMap widget completes all operations at client-side after 
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({
         renderComplete: function (args) {}
     });
@@ -982,7 +982,7 @@ Triggers when any error occurred during AJAX request.
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({
         renderFailure: function (args) {}
     });
@@ -1028,7 +1028,7 @@ Triggers when PivotTreeMap successfully reaches client-side after any AJAX reque
 **Example:**
 
 {% highlight javascript %}
- 
+
     $("#PivotTreeMap1").ejPivotTreeMap({
         renderSuccess: function (args) {}
     });
