@@ -512,6 +512,25 @@ Number of items to be displayed in the suggestion list.
 
 {% endhighlight %}
 
+### ignoreAccent `boolean`
+{:#members:ignoreAccent}
+
+To enable or disable the diacritic characters of the Autocomplete suggestion list when filtering.
+
+#### Default Value:  
+
+* false
+
+#### Example  
+
+{% highlight javascript %}
+
+	$("#autocomplete").ejAutocomplete({ 
+		ignoreAccent: true 
+	});
+
+{% endhighlight %}
+
 ### locale `string`
 {:#members:locale}
 
