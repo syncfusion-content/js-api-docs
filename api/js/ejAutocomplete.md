@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Properties,Methods and Events of Essential JS ejAutocomplete Widget
+title: Properties,Methods and Events of Syncfusion Essential JS ejAutocomplete Widget
 description: Methods, members, events available in ejAutocomplete
-documentation: API
+documentation: UG
 platform: js-api
 keywords: ejAutocomplete, API, Essential JS Autocomplete 
 ---
