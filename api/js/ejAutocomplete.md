@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Properties,Methods and Events of Essential JS ejAutocomplete Widget
+title: Properties,Methods and Events of Syncfusion ejAutocomplete Widget
 description: Methods, members, events available in ejAutocomplete
-documentation: API
+documentation: UG
 platform: js-api
 keywords: ejAutocomplete, API, Essential JS Autocomplete 
 ---
@@ -508,6 +508,25 @@ Number of items to be displayed in the suggestion list.
 
 	$("#autocomplete").ejAutocomplete({ 
 		itemsCount: 2 
+	});
+
+{% endhighlight %}
+
+### ignoreAccent `boolean`
+{:#members:ignoreAccent}
+
+To enable or disable the diacritic characters of the Autocomplete suggestion list when filtering.
+
+#### Default Value:  
+
+* false
+
+#### Example  
+
+{% highlight javascript %}
+
+	$("#autocomplete").ejAutocomplete({ 
+		ignoreAccent: true 
 	});
 
 {% endhighlight %}
