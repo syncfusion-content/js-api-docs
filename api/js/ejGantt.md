@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejGantt Widget
+title: Properties, Methods and Events of Syncfusion ejGantt Widget
 description: Methods, members, events available in ejGantt
-documentation: API
+documentation: UG
 platform: js-api
 keywords: ejGantt, API, Essential JS Gantt
 ---
