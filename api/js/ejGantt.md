@@ -7431,27 +7431,27 @@ Triggered while rendering each taskbar in the Gantt
 <tr>
 <td class="name">taskbarTextColor</td>
 <td class="type">string</td>
-<td class="description">Returns taskbar text color of the current item.</td>
+<td class="description">Returns the taskbar text color of current item.</td>
 </tr>
 <tr>
 <td class="name">taskbarBorder</td>
 <td class="type">string</td>
-<td class="description">Returns taskbar border color of the current item.</td>
+<td class="description">Returns the taskbar border color of current item.</td>
 </tr>
 <tr>
 <td class="name">parentTaskbarBorder</td>
 <td class="type">string</td>
-<td class="description">Returns parent taskbar border color of the current item.</td>
+<td class="description">Returns the parent taskbar border color of current item.</td>
 </tr>
 <tr>
 <td class="name">progressbarBorder</td>
 <td class="type">string</td>
-<td class="description">Returns progressbar border color of the current item.</td>
+<td class="description">Returns the progressbar border color of current item.</td>
 </tr>
 <tr>
 <td class="name">parentProgressbarBorder</td>
 <td class="type">string</td>
-<td class="description">Returns parent progressbar border color of the current item. </td>
+<td class="description">Returns the parent progressbar border color of current item. </td>
 </tr>
 <tr>
 <td class="name">milestoneBackground</td>
