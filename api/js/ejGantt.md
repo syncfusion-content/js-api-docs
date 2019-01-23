@@ -7409,12 +7409,12 @@ Triggered while rendering each taskbar in the Gantt
 <td class="description">Returns the cancel option value.</td>
 </tr>
 <tr>
-<td class="name">TaskbarBackground</td>
+<td class="name">taskbarBackground</td>
 <td class="type">string</td>
 <td class="description">Returns the taskbar background of current item.</td>
 </tr>
 <tr>
-<td class="name">ProgressbarBackground</td>
+<td class="name">progressbarBackground</td>
 <td class="type">string</td>
 <td class="description">Returns the progressbar background of current item.</td>
 </tr>
