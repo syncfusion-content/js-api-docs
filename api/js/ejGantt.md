@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejGantt Widget
+title: Properties, Methods and Events of Syncfusion ejGantt Widget
 description: Methods, members, events available in ejGantt
-documentation: API
+documentation: UG
 platform: js-api
 keywords: ejGantt, API, Essential JS Gantt
 ---
@@ -7427,6 +7427,41 @@ Triggered while rendering each taskbar in the Gantt
 <td class="name">parentProgressbarBackground</td>
 <td class="type">string</td>
 <td class="description">Returns the parent progressbar background of current item.</td>
+</tr>
+<tr>
+<td class="name">taskbarTextColor</td>
+<td class="type">string</td>
+<td class="description">Returns the taskbar text color of current item.</td>
+</tr>
+<tr>
+<td class="name">taskbarBorder</td>
+<td class="type">string</td>
+<td class="description">Returns the taskbar border color of current item.</td>
+</tr>
+<tr>
+<td class="name">parentTaskbarBorder</td>
+<td class="type">string</td>
+<td class="description">Returns the parent taskbar border color of current item.</td>
+</tr>
+<tr>
+<td class="name">progressbarBorder</td>
+<td class="type">string</td>
+<td class="description">Returns the progressbar border color of current item.</td>
+</tr>
+<tr>
+<td class="name">parentProgressbarBorder</td>
+<td class="type">string</td>
+<td class="description">Returns the parent progressbar border color of current item. </td>
+</tr>
+<tr>
+<td class="name">milestoneBackground</td>
+<td class="type">string</td>
+<td class="description">Returns the milestone background of current item.  </td>
+</tr>
+<tr>
+<td class="name">baselineBackground</td>
+<td class="type">string</td>
+<td class="description">Returns the baseline background of current item.  </td>
 </tr>
 <tr>
 <td class="name">data</td>
