@@ -513,7 +513,7 @@ Number of items to be displayed in the suggestion list.
 {% endhighlight %}
 
 ### ignoreAccent `boolean`
-{:#members:ignoreAccent}
+{:#members:ignoreaccent}
 
 To enable or disable the diacritic characters of the Autocomplete suggestion list when filtering.
 
