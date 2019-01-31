@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Properties, Methods and Events of Syncfusion Essential JS TimePicker Widget
-description: API reference for ejTimePicker
+title: Syncfusion Essential JS TimePicker Widget
+description: Properties, Methods & Events reference for ejTimePicker
 documentation: ug
 platform: js-api
 keywords: TimePicker, ejTimePicker, syncfusion, TimePicker api  

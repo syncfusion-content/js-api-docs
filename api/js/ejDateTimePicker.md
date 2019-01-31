@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Properties, Methods and Events of Syncfusion Essential JS DateTimePicker Widget
-description: API reference for ejDateTimePicker
+title: Syncfusion Essential JS DateTimePicker Widget
+description: Properties, Methods & Events reference for ejDateTimePicker
 documentation: ug
 platform: js-api
 keywords: DateTimePicker, ejDateTimePicker, syncfusion, DateTimePicker api

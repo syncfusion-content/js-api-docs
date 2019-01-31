@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Properties,Methods and Events of Syncfusion Essential JS ColorPicker Widget
-description: API reference for ejColorPicker
+title: Syncfusion Essential JS ColorPicker Widget
+description: Properties, Methods & Events reference for ejColorPicker
 documentation: ug
 platform: js-api
 keywords: ColorPicker, ejColorPicker, syncfusion, ColorPicker api 
