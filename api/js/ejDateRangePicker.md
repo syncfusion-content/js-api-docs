@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejDateRangePicker Widget
+title: Properties, Methods and Events of Syncfusion Essential JS DateRangePicker Widget
 description: API reference for ejDateRangePicker
-documentation: API
+documentation: ug
 platform: js-api
 keywords: dateRangePicker, ejDateRangePicker, syncfusion, dateRangePicker api 
 ---
