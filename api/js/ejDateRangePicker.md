@@ -1595,12 +1595,6 @@ Fires when the DateRangePicker values get changed.
 <tbody>
 <tr>
 <td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be canceled, else false.</td>
-</tr>
-<tr>
-<td class="name">
 model</td>
 <td class="type"><ts ref="ej.DateRangePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the DateRangePicker model.</td>
@@ -1674,12 +1668,6 @@ Fires when DateRangePicker popup is closed.
 <tbody>
 <tr>
 <td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be canceled, else false.</td>
-</tr>
-<tr>
-<td class="name">
 date</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current date object.</td>
@@ -1745,12 +1733,6 @@ Fires when the DateRangePicker is created successfully.
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be canceled, else false.</td>
-</tr>
 <tr>
 <td class="name">
 model</td>
@@ -1859,12 +1841,6 @@ Fires when DateRangePicker popup is opened.
 <tbody>
 <tr>
 <td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be canceled, else false.</td>
-</tr>
-<tr>
-<td class="name">
 date</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current date object.</td>
@@ -1930,12 +1906,6 @@ Fires when a date ranges is selected from the DateRangePicker popup.
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be canceled, else false.</td>
-</tr>
 <tr>
 <td class="name">
 startDate</td>

@@ -2566,12 +2566,6 @@ Fires when each date is created in the DatePicker popup calendar.
 <tbody>
 <tr>
 <td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be canceled, else false.</td>
-</tr>
-<tr>
-<td class="name">
 model</td>
 <td class="type"><ts ref="ej.DatePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the DatePicker model.</td>
@@ -2711,12 +2705,6 @@ Fires when the DatePicker input value is changed.
 <tbody>
 <tr>
 <td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be canceled, else false.</td>
-</tr>
-<tr>
-<td class="name">
 model</td>
 <td class="type"><ts ref="ej.DatePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the DatePicker model.</td>
@@ -2782,12 +2770,6 @@ Fires when DatePicker popup is closed.
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be canceled, else false.</td>
-</tr>
 <tr>
 <td class="name">
 date</td>
@@ -2861,12 +2843,6 @@ Fires when the DatePicker is created successfully.
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be canceled, else false.</td>
-</tr>
 <tr>
 <td class="name">
 model</td>
@@ -2978,12 +2954,6 @@ Fires when DatePicker input gets focus.
 <tbody>
 <tr>
 <td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be canceled, else false.</td>
-</tr>
-<tr>
-<td class="name">
 model</td>
 <td class="type"><ts ref="ej.DatePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the DatePicker model.</td>
@@ -3043,12 +3013,6 @@ Fires when DatePicker input loses the focus.
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be canceled, else false.</td>
-</tr>
 <tr>
 <td class="name">
 model</td>
@@ -3114,12 +3078,6 @@ Fires when calender view navigates to month/year/decade/century.
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be canceled, else false.</td>
-</tr>
 <tr>
 <td class="name">
 date</td>
@@ -3199,12 +3157,6 @@ Fires when DatePicker popup is opened.
 <tbody>
 <tr>
 <td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be canceled, else false.</td>
-</tr>
-<tr>
-<td class="name">
 date</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description">returns the current date object.</td>
@@ -3276,12 +3228,6 @@ Fires when a date is selected from the DatePicker popup.
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">Set to true when the event has to be canceled, else false.</td>
-</tr>
 <tr>
 <td class="name">
 date</td>

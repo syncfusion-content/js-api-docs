@@ -2535,19 +2535,8 @@ $("#datetime").ejDateTimePicker({
 {% endhighlight %}
 
 
-
-
-
-
-
 ### beforeOpen
 {:#events:beforeopen}
-
-
-
-
-
-
 
 Fires before the datetime popup open in the DateTimePicker.
 
@@ -2642,12 +2631,6 @@ Fires when the datetime value changed in the DateTimePicker textbox.
 <tbody>
 <tr>
 <td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">
 model</td>
 <td class="type"><ts ref="ej.DateTimePicker.Model" /><span class="param-type">object</span></td>
 <td class="description">returns the TimePicker model</td>
@@ -2733,12 +2716,6 @@ Fires when DateTimePicker popup closes.
 <tbody>
 <tr>
 <td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">
 model</td>
 <td class="type"><ts ref="ej.DateTimePicker.Model" /><span class="param-type">object</span></td>
 <td class="description">returns the TimePicker model</td>
@@ -2810,12 +2787,6 @@ Fires after DateTimePicker control is created.
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
-</tr>
 <tr>
 <td class="name">
 model</td>
@@ -2946,12 +2917,6 @@ Fires when the focus-in happens in the DateTimePicker textbox.
 <tbody>
 <tr>
 <td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">
 model</td>
 <td class="type"><ts ref="ej.DateTimePicker.Model" /><span class="param-type">object</span></td>
 <td class="description">returns the TimePicker model</td>
@@ -3019,12 +2984,6 @@ Fires when the focus-out happens in the DateTimePicker textbox.
 <tbody>
 <tr>
 <td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">
 model</td>
 <td class="type"><ts ref="ej.DateTimePicker.Model" /><span class="param-type">object</span></td>
 <td class="description">returns the TimePicker model</td>
@@ -3090,12 +3049,6 @@ Fires when DateTimePicker popup opens.
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
-</tr>
 <tr>
 <td class="name">
 model</td>
