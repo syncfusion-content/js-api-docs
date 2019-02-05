@@ -1210,6 +1210,121 @@ Defines the time format displayed in the TimePicker.
 
 
 
+### validationMessages `object`
+{:#members:validationmessages}
+
+
+
+
+
+
+
+
+Set the jQuery validation error message in TimePicker.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* null
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="timepicker" name="time" />
+<script>
+//To set validationMessage API during initialization  
+ $("#timepicker").ejTimePicker({  
+  validationRules:{                     
+           required:true
+   },
+        validationMessages: {
+           required: "Required Time value"
+        }
+});
+</script>
+
+{% endhighlight %}
+
+
+
+
+
+
+
+### validationRules `object`
+{:#members:validationrules}
+
+
+
+
+
+
+
+
+Set the jQuery validation rules in TimePicker.
+
+
+
+
+#### Default Value
+
+
+
+
+
+
+
+* null
+
+
+
+
+
+
+
+
+#### Example
+
+
+
+{% highlight html %}
+ 
+<input type="text" id="timepicker" name="time" />
+<script>
+//To set validationRules API during initialization  
+ $("#timepicker").ejTimePicker({  
+  validationRules:{                     
+          required:true
+        }
+});
+</script>
+
+{% endhighlight %}
+
+
+
+
+
+
+
 ### value `string|Date`
 {:#members:value}
 
