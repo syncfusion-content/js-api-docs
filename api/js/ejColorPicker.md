@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Properties,Methods and Events of ejColorPicker Widget
-description: API reference for ejColorPicker
-documentation: API
+title: Syncfusion Essential JS ColorPicker Widget
+description: Properties, Methods & Events reference for ejColorPicker
+documentation: ug
 platform: js-api
 keywords: ColorPicker, ejColorPicker, syncfusion, ColorPicker api 
 ---
@@ -1532,13 +1532,6 @@ Fires after Color value has been changed successfully.If the user want to perfor
 <tbody>
 <tr>
 <td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<tr>
-<td class="name">
 changeFrom</td>
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">return the previous color value</td>
@@ -1605,12 +1598,6 @@ Fires after closing the color picker popup.
 <tbody>
 <tr>
 <td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">
 model</td>
 <td class="type"><ts ref="ej.ColorPicker.Model"/>
 <span class="param-type">object</span></td>
@@ -1664,12 +1651,6 @@ Fires after Color picker control is created. If the user want to perform any ope
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
-</tr>
 <tr>
 <td class="name"><ts ref="ej.ColorPicker.Model"/>
 
@@ -1783,12 +1764,6 @@ Fires after opening the color picker popup
 <tbody>
 <tr>
 <td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">
 model</td>
 <td class="type"><ts ref="ej.ColorPicker.Model"/>
 <span class="param-type">object</span></td>
@@ -1840,12 +1815,6 @@ Fires after Color value has been selected successfully. If the user want to perf
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
-</tr>
 <tr>
 <td class="name">
 model</td>

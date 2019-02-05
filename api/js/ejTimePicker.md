@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejTimePicker Widget
-description: API reference for ejTimePicker
-documentation: API
+title: Syncfusion Essential JS TimePicker Widget
+description: Properties, Methods & Events reference for ejTimePicker
+documentation: ug
 platform: js-api
 keywords: TimePicker, ejTimePicker, syncfusion, TimePicker api  
 ---
@@ -1662,12 +1662,7 @@ Fires when the time value changed in the TimePicker.
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
-</tr>
+
 <tr>
 <td class="name">
 model</td>
@@ -1823,12 +1818,6 @@ Fires when the time value changed in the TimePicker.
 <tbody>
 <tr>
 <td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">
 model</td>
 <td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TimePicker model</td>
@@ -1909,12 +1898,6 @@ Fires when the TimePicker popup closed.
 <tbody>
 <tr>
 <td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">
 model</td>
 <td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TimePicker model</td>
@@ -1986,12 +1969,6 @@ Fires when create TimePicker successfully.
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
-</tr>
 <tr>
 <td class="name">
 model</td>
@@ -2121,12 +2098,6 @@ Fires when the TimePicker control gets focus.
 <tbody>
 <tr>
 <td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">
 model</td>
 <td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TimePicker model</td>
@@ -2199,12 +2170,6 @@ Fires when the TimePicker control get lost focus.
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
-</tr>
 <tr>
 <td class="name">
 model</td>
@@ -2280,12 +2245,6 @@ Fires when the TimePicker popup opened.
 <tbody>
 <tr>
 <td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
-</tr>
-<tr>
-<td class="name">
 model</td>
 <td class="type"><ts ref="ej.TimePicker.Model"/><span class="param-type">object</span></td>
 <td class="description">returns the TimePicker model</td>
@@ -2351,12 +2310,6 @@ Fires when the value is selected from the TimePicker dropdown list.
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="name">
-cancel</td>
-<td class="type"><span class="param-type">boolean</span></td>
-<td class="description">if the event should be canceled; otherwise, false.</td>
-</tr>
 <tr>
 <td class="name">
 model</td>

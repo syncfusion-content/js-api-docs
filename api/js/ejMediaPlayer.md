@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejMediaPlayer Widget
+title:  Properties, Methods and Events of Syncfusion ejMediaPlayer Widget
 description: API reference for ejMediaPlayer
-documentation: API
+documentation: ug
 platform: js-api
 keywords: mediaplayer, ejMediaPlayer, syncfusion, medaiplayer api 
 ---
@@ -35,6 +35,36 @@ $("#basicPlayer").ejMediaPlayer();
 
 {% endhighlight %}
 
+#### Requires
+
+* module:jQuery
+
+* module:ej.globalize.js
+
+* module:ej.data.js
+
+* module:ej.scroller.js
+
+* module:ej.touch.js
+
+* module:ej.button.js
+
+* module:ej.checkbox.js
+
+* module:ej.togglebutton.js
+
+* module:ej.slider.js
+
+* module:ej.waitingpopup.js
+
+* module:ej.listview.js
+
+* module:ej.listbox.js
+
+* module:ej.mediaplayer.js
+
+
+N> jQuery.easing external dependency has been removed from version 14.3.0.49 onwards. Kindly include this jQuery.easing dependency for versions lesser than 14.3.0.49 in order to support animation effects.
 
 
 ## Members
