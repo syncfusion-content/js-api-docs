@@ -11113,7 +11113,7 @@ excelObj.XLRibbon.addMenuItem([{ id: "SignIn1", text: "AddMenuItem", parentId: "
 
 {% endhighlight %}
 
-### XLRibbon.addNamedRange(name, refersTo, \[comment\], \[sheetIdx\])
+### XLRibbon.addNamedRange(name, refersTo, \[comment\], \[sheetIdx\], \[scope\])
 {:#methods:xlribbon-addnamedrange}
 
 This method is used to add a new name in the Spreadsheet name manager.
@@ -11146,6 +11146,11 @@ This method is used to add a new name in the Spreadsheet name manager.
 <td class="type"><span class="param-type">number</span></td>
 <td class="description"><span class="optional">Optional.</span> Pass the sheet index.</td>
 </tr>
+<tr>
+<td class="name">scope</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description"><span class="optional">Optional.</span> Pass the scope of the name manager.</td>
+</tr>
 </tbody>
 </table>
 
@@ -11156,7 +11161,7 @@ This method is used to add a new name in the Spreadsheet name manager.
 // Initialize the Spreadsheet object.
 var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To define new name in the Spreadsheet.
-excelObj.XLRibbon.addNamedRange("PRICE_LIST", "=Sheet1!$A$2:$A$7", "Month_Wise");
+excelObj.XLRibbon.addNamedRange("PRICE_LIST", "=Sheet1!$A$2:$A$7", "Month_Wise", 1, "Sheet1");
 </script>
 
 {% endhighlight %}
@@ -11478,7 +11483,7 @@ excelObj.XLRibbon.removeMenuItem(2); // To remove the item in the file menu.
 
 {% endhighlight %}
 
-### XLRibbon.removeNamedRange(name)
+### XLRibbon.removeNamedRange(name, \[scope\])
 {:#methods:xlribbon-removenamedrange}
 
 This method is used to delete the defined name in the Spreadsheet name manager.
@@ -11496,6 +11501,11 @@ This method is used to delete the defined name in the Spreadsheet name manager.
 <td class="type"><span class="param-type">string</span></td>
 <td class="description">Pass the defined name that you want to remove from name manager.</td>
 </tr>
+<tr>
+<td class="name">scope</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description"><span class="optional">Optional.</span> Pass the scope of the name manager.</td>
+</tr>
 </tbody>
 </table>
 
@@ -11506,7 +11516,7 @@ This method is used to delete the defined name in the Spreadsheet name manager.
 //initialize the Spreadsheet object
 var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
 // To remove the define name in Spreadsheet name manager.
-excelObj.XLRibbon.removeNamedRange("PRICE_LIST");
+excelObj.XLRibbon.removeNamedRange("PRICE_LIST","Sheet1");
 </script>
 
 {% endhighlight %}
