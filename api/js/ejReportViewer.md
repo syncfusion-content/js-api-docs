@@ -2109,7 +2109,7 @@ Fires when you click the View Report button.
 ### ajaxBeforeLoad
 {:#events:ajaxbeforeload}
 
-Fires before the ajax request process started.
+Fires before starting the Ajax request process.
 
 <table class="params">
 <thead>
@@ -2123,7 +2123,7 @@ Fires before the ajax request process started.
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event ajax process from reportviewer.
+<td class="description last">Event Ajax process from reportviewer.
 <table class="params">
 <thead>
 <tr>
@@ -2183,7 +2183,7 @@ Fires before the ajax request process started.
 ### ajaxSuccess
 {:#events:ajaxSuccess}
 
-Fires when ajax post call succeed.
+Fires when the Ajax post call is succeeded.
 
 <table class="params">
 <thead>
@@ -2197,7 +2197,7 @@ Fires when ajax post call succeed.
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event ajax process from ReportViewer.
+<td class="description last">Event Ajax process from ReportViewer.
 <table class="params">
 <thead>
 <tr>
@@ -2237,7 +2237,7 @@ Fires when ajax post call succeed.
 ### ajaxError
 {:#events:ajaxError}
 
-Fires when ajax request failed.
+Fires when the Ajax request is failed.
 
 <table class="params">
 <thead>
@@ -2251,7 +2251,7 @@ Fires when ajax request failed.
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event ajax process from ReportViewer.
+<td class="description last">Event Ajax process from ReportViewer.
 <table class="params">
 <thead>
 <tr>
