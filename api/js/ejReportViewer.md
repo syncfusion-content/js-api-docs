@@ -410,6 +410,40 @@ Specifies the word export format.
 
 {% endhighlight %}
 
+### exportSettings.customItems `array`
+{:#members:exportSettings-customItems}
+
+Add the custom icon item in the export options.
+
+#### Default Value
+
+* empty
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
+    $("#reportviewer").ejReportViewer(
+        {
+            exportSettings: {
+                        customItems: [{
+                            index: 2,
+                            cssClass: '',
+                            value: 'exportCustom',
+                        },
+                        {
+                            index: 4,
+                            cssClass: '',
+                            value: 'exportCustom3',
+                        }]
+                    },
+        });         
+</script>
+
+{% endhighlight %}
+
 ### isResponsive `boolean`
 {:#members:isResponsive}
 
@@ -1133,6 +1167,74 @@ Specifies the toolbar template ID.
 
 {% endhighlight %}
 
+### toolbarSettings.customItems `array`
+{:#members:toolbarsettings-customItems}
+
+Add the custom icon item in the toolbar.
+
+#### Default Value
+
+* empty
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
+    $("#reportviewer").ejReportViewer(
+        {
+            toolbarSettings:{
+                 customItems: [{
+                            groupIndex: 1,
+                            index: 1,
+                            itemType: 'Default',
+                            cssClass: "e-icon e-mail e-reportviewer-icon CustomItem",
+                            tooltip: { header: 'CustomItem', content: 'toolbaritems', value: 'CustomItem' },
+                        }]
+             }
+        });         
+</script>
+
+{% endhighlight %}
+
+### toolbarSettings.customGroups `array`
+{:#members:toolbarsettings-customGroups}
+
+Add the custom icon groups in the toolbar.
+
+#### Default Value
+
+* empty
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
+    $("#reportviewer").ejReportViewer(
+        {
+            toolbarSettings:{
+                 customGroups: [{
+                            items: [{
+                                itemType: 'Default',
+                                cssClass: "e-icon e-mail e-reportviewer-icon CustomGroup",
+                                tooltip: { header: 'CustomGroup', content: 'toolbargroups', value: 'CustomGroup' },
+                            },
+                            {
+                                itemType: 'Default',
+                                cssClass: "e-icon e-mail e-reportviewer-icon subCustomGroup",
+                                tooltip: { header: 'subCustomGroup', content: 'subtoolbargroups', value: 'subCustomGroup' },
+                            }],
+                            groupIndex: 3
+                        }],
+             }
+        });         
+</script>
+
+{% endhighlight %}
+
 ### zoomFactor `number`
 {:#members:zoomfactor}
 
@@ -1494,7 +1596,7 @@ Fires during drill through action done in report.If you want to perform any oper
 <tr>
 <td class="name">actionInfo</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the actionInfo's parameters bookmarkLink, hyperLink, reportName, parameters.</td>
+<td class="description last">returns the actionInfo's parameters bookmarkLink, reportName, parameters.</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -2109,6 +2211,7 @@ Fires when ajax post call succeed.
 <td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the success data.</td>
+</tr>
 </tbody>
 </table>
 </td>
@@ -2239,5 +2342,528 @@ This event will be triggered on rendering the Report Viewer toolbar.
             // Write your block of code 
         }
     });
+
+{% endhighlight %}
+
+### enableParameterBlockScroller `boolean`
+{:#members:enableParameterBlockScroller}
+
+Enables and disables the Parameter block scroller.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
+    $("#reportviewer").ejReportViewer(
+        {
+            enableParameterBlockScroller: false
+        });             
+</script>
+
+### enableDatasourceBlockScroller `boolean`
+{:#members:enableDatasourceBlockScroller}
+
+Enables and disables the Datasource credential block scroller.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
+    $("#reportviewer").ejReportViewer(
+        {
+            enableDatasourceBlockScroller: false
+        });             
+</script>
+
+### autoRender `boolean`
+{:#members:autoRender}
+
+Enables and disables the rendering of Viewer when default values specified for the Parameters.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
+    $("#reportviewer").ejReportViewer(
+        {
+            autoRender: false
+        });             
+</script>
+
+### enableNotificationBar `boolean`
+{:#members:enableNotificationBar}
+
+Enables and disables the Error Notification bar.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
+    $("#reportviewer").ejReportViewer(
+        {
+            enableNotificationBar: false
+        });             
+</script>
+
+### enableDropDownSearch `boolean`
+{:#members:enableDropDownSearch}
+
+Enables and disables the dropdown parameter search.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
+    $("#reportviewer").ejReportViewer(
+        {
+            enableDropDownSearch: true
+        });             
+</script>
+
+### enablePageVirtualization `boolean`
+{:#members:enablePageVirtualization}
+
+Enables and disables the PageVirtualization.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
+    $("#reportviewer").ejReportViewer(
+        {
+            enablePageVirtualization: true
+        });             
+</script>
+
+### exportProgressChanged
+{:#events:exportProgressChanged}
+
+Fires when the Export progress is changed.If you want to perform any operation when a Export progress is changed, you can make use of the exportProgressChanged event.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from reportviewer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">format</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the export format</td>
+</tr>
+<tr>
+<td class="name">stage</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the stage of export processing.</td>
+</tr>
+<tr>
+<td class="name">handled</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">true if the event should be handled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">containerId</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns ReportViewer container Id.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({
+        exportProgressChanged : function(args) {
+            // Write a code block to perform any action when the export progress changed.
+        }
+    });             
+</script>
+
+{% endhighlight %}
+
+### printProgressChanged
+{:#events:printProgressChanged}
+
+Fires when the Print progress changed.If you want to perform any operation when a Print progress is changed, you can make use of the printProgressChanged event.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from reportviewer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">stage</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the stage of export processing.</td>
+</tr>
+<tr>
+<td class="name">currentPage</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the currentPage value</td>
+</tr>
+<tr>
+<td class="name">totalPages</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the totalPages value</td>
+</tr>
+<tr>
+<td class="name">handled</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">true if the event should be handled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">containerId</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns ReportViewer container Id.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({
+        printProgressChanged : function(args) {
+            // Write a code block to perform any action when the print progress changed.
+        }
+    });             
+</script>
+
+{% endhighlight %}
+
+### exportItemClick
+{:#events:exportItemClick}
+
+Fires when the Export items is clicked.If you want to perform any operation when a Export items clicked, you can make use of the exportItemClick event.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from reportviewer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">value</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the export format value.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({
+        exportItemClick : function(args) {
+            // Write a code block to perform any action when the export item clicked.
+        }
+    });             
+</script>
+
+{% endhighlight %}
+
+### toolBarItemClick
+{:#events:toolBarItemClick}
+
+Fires when the Toolbar items is clicked.If you want to perform any operation when a Toolbar items clicked, you can make use of the toolBarItemClick event.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from reportviewer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the toolbar clicked item name .</td>
+</tr>
+<tr>
+<td class="name">cssClass</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the CSS class name specified for the toolbar item</td>
+</tr>
+<tr>
+<td class="name">groupIndex</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the Toolbar item rendered group index</td>
+</tr>
+<tr>
+<td class="name">Index</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the Toolbar item rendered index</td>
+</tr>
+<tr>
+<td class="name">value</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the Toolbar item value.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({
+        toolBarItemClick : function(args) {
+            // Write a code block to perform any action when the toolbar item clicked.
+        }
+    });             
+</script>
+
+{% endhighlight %}
+
+### hyperlink
+{:#events:hyperlink}
+
+Fires during hyperlink action done in report.If you want to perform any operation when a hyperlink is performed, you can make use of the hyperlink event.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from reportviewer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">true if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">actionInfo</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">returns the actionInfo's hyperLink detail</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the report model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({ 
+        hyperlink: function (args) {
+            // Write a code block to perform any operation when hyperlink action occurs in report.
+        }
+    });                   
+</script>
+
+### reportPrint
+{:#events:reportPrint}
+
+Fires during report print action done in report.If you want to perform any operation when a report print action is performed, you can make use of the ReportPrint event.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from reportviewer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">isStyleLoad</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">true if we have to load the external style file; otherwise, false.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({
+        reportPrint : function(args) {
+            // Write a code block to perform any action when the export item clicked.
+        }
+    });             
+</script>
 
 {% endhighlight %}
