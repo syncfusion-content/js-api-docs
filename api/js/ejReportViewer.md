@@ -1971,7 +1971,7 @@ argument</td>
 ### showError
 {:#events:showError}
 
-Fires when user clicks a failed report item in the rendered report, before displaying error details dialog. To show custom error details or perform any action before viewing the error details, use the showError event.
+Fires when user clicks a failed report item in the rendered report, before displaying the error details dialog. To show custom error details or perform any action before viewing the error details, use the showError event.
 
 <table class="params">
 <thead>
@@ -2474,7 +2474,7 @@ Enables and disables the PageVirtualization.
 ### exportProgressChanged
 {:#events:exportProgressChanged}
 
-Fires when the Export progress is changed. To perform any operation when the Export progress is changed, use the exportProgressChanged event.
+Fires when the export progress is changed. To perform any operation when the export progress is changed, use the exportProgressChanged event.
 
 <table class="params">
 <thead>
@@ -2544,7 +2544,7 @@ argument</td>
 ### printProgressChanged
 {:#events:printProgressChanged}
 
-Fires when the Print progress is changed. To perform any operation when the Print progress is changed, use the printProgressChanged event.
+Fires when the print progress is changed. To perform any operation when the print progress is changed, use the printProgressChanged event.
 
 <table class="params">
 <thead>
@@ -2619,7 +2619,7 @@ argument</td>
 ### exportItemClick
 {:#events:exportItemClick}
 
-Fires when the export items are clicked. To perform any operation when export items are clicked, use the exportItemClick event.
+Fires when the export items are clicked. To perform any operation when the export items are clicked, use the exportItemClick event.
 
 <table class="params">
 <thead>
@@ -2844,7 +2844,7 @@ argument</td>
 <tr>
 <td class="name">isStyleLoad</td>
 <td class="type"><span class="param-type">boolean</span></td>
-<td class="description last">true if we have to load the external style file; otherwise, false.</td>
+<td class="description last">true if you have to load the external style file; otherwise, false.</td>
 </tr>
 </tbody>
 </table>
