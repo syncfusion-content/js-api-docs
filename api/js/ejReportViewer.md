@@ -413,7 +413,7 @@ Specifies the word export format.
 ### exportSettings.customItems `array`
 {:#members:exportSettings-customItems}
 
-Add the custom icon item in the export options.
+Add the custom icon item to the export options.
 
 #### Default Value
 
@@ -447,7 +447,7 @@ Add the custom icon item in the export options.
 ### isResponsive `boolean`
 {:#members:isResponsive}
 
-When set to true, adapts the report layout to fit the screen size of devices on which it renders.
+When set to true, it adapts the report layout to fit the screen size of devices on which it renders.
 
 #### Default Value
 
@@ -467,7 +467,7 @@ When set to true, adapts the report layout to fit the screen size of devices on 
 ### locale `string`
 {:#members:locale}
 
-Specifies the locale for report viewer.
+Specifies the locale for ReportViewer.
 
 #### Default Value
 
@@ -703,7 +703,7 @@ Gets or sets the name of the parameter.
 ### parameters.nullable `boolean`
 {:#members:parameters-nullable}
 
-Gets or sets whether the parameter allows nullable value or not.
+Gets or sets whether the parameter allows nullable value.
 
 #### Default Value
 
@@ -961,7 +961,7 @@ Gets or sets the path of the report file.
 ### reportServerUrl `string`
 {:#members:reportserverurl}
 
-Gets or sets the reports server URL.
+Gets or sets the Report Server URL.
 
 #### Default Value
 
@@ -1006,7 +1006,7 @@ Specifies the toolbar settings.
 ### toolbarSettings.click `string`
 {:#members:toolbarsettings-click}
 
-Fires when user click on toolbar item in the toolbar.
+Fires when users click the toolbar item.
 
 #### Default Value
 
@@ -1043,39 +1043,39 @@ Specifies the toolbar items.
 <tbody>
 <tr>
 <td class="name">Print</td>
-<td class="description">Specifies the Print as value in ToolbarItems to get specified item.</td>
+<td class="description">Specifies the Print as value in ToolbarItems to get the specified item.</td>
 </tr>
 <tr>
 <td class="name">Refresh</td>
-<td class="description">Specifies the Refresh as value in ToolbarItems to get specified item.</td>
+<td class="description">Specifies the Refresh as value in ToolbarItems to get the specified item.</td>
 </tr>
 <tr>
 <td class="name">Zoom</td>
-<td class="description">Specifies the Zoom as value in ToolbarItems to get specified item.</td>
+<td class="description">Specifies the Zoom as value in ToolbarItems to get the specified item.</td>
 </tr>
 <tr>
 <td class="name">FittoPage</td>
-<td class="description">Specifies the FittoPage as value in ToolbarItems to get specified item.</td>
+<td class="description">Specifies the FittoPage as value in ToolbarItems to get the specified item.</td>
 </tr>
 <tr>
 <td class="name">Export</td>
-<td class="description">Specifies the Export as value in ToolbarItems to get specified item.</td>
+<td class="description">Specifies the Export as value in ToolbarItems to get the specified item.</td>
 </tr>
 <tr>
 <td class="name">PageNavigation</td>
-<td class="description">Specifies the PageNavigation as value in ToolbarItems to get specified item.</td>
+<td class="description">Specifies the PageNavigation as value in ToolbarItems to get the specified item.</td>
 </tr>
 <tr>
 <td class="name">Parameters</td>
-<td class="description">Specifies the Parameters as value in ToolbarItems to get specified item.</td>
+<td class="description">Specifies the Parameters as value in ToolbarItems to get the specified item.</td>
 </tr>
 <tr>
 <td class="name">PrintLayout</td>
-<td class="description">Specifies the PrintLayout as value in ToolbarItems to get specified item.</td>
+<td class="description">Specifies the PrintLayout as value in ToolbarItems to get the specified item.</td>
 </tr>
 <tr>
 <td class="name">PageSetup</td>
-<td class="description">Specifies the PageSetup as value in ToolbarItems to get specified item.</td>
+<td class="description">Specifies the PageSetup as value in ToolbarItems to get the specified item.</td>
 </tr>
 </tbody>
 </table>
@@ -1170,7 +1170,7 @@ Specifies the toolbar template ID.
 ### toolbarSettings.customItems `array`
 {:#members:toolbarsettings-customItems}
 
-Add the custom icon item in the toolbar.
+Add the custom icon item to the toolbar.
 
 #### Default Value
 
@@ -1201,7 +1201,7 @@ Add the custom icon item in the toolbar.
 ### toolbarSettings.customGroups `array`
 {:#members:toolbarsettings-customGroups}
 
-Add the custom icon groups in the toolbar.
+Add the custom icon groups to the toolbar.
 
 #### Default Value
 
@@ -1238,7 +1238,7 @@ Add the custom icon groups in the toolbar.
 ### zoomFactor `number`
 {:#members:zoomfactor}
 
-Gets or sets the zoom factor for report viewer.
+Gets or sets the zoom factor for ReportViewer.
 
 #### Default Value
 
@@ -1328,7 +1328,7 @@ Fit the report page width to the container.
 ### getDataSetNames()
 {:#methods:getdatasetnames}
 
-Get the available datasets name of the rdlc report.
+Get the available datasets name of the RDLC report.
 
 #### Example
 
@@ -1362,7 +1362,7 @@ Get the available parameters of the report.
 ### gotoFirstPage()
 {:#methods:gotofirstpage}
 
-Navigate to first page of report.
+Navigate to first page of the report.
 
 #### Example
 
@@ -1500,7 +1500,7 @@ Refresh the report.
 ### destroy
 {:#events:destroy}
 
-Fires when the report viewer is destroyed successfully.If you want to perform any operation after destroying the reportviewer control,you can make use of the destroy event.
+Fires when the ReportViewer is destroyed successfully. To perform any operation after destroying the ReportViewer control, use the destroy event.
 
 <table class="params">
 <thead>
@@ -1564,7 +1564,7 @@ Fires when the report viewer is destroyed successfully.If you want to perform an
 ### drillThrough
 {:#events:drillthrough}
 
-Fires during drill through action done in report.If you want to perform any operation when a drill through action is performed, you can make use of the drillThrough event.
+Fires when the drill through action is performed in the report. To perform any operation during the drill through action, use the drillThrough event.
 
 <table class="params">
 <thead>
@@ -1633,7 +1633,7 @@ Fires during drill through action done in report.If you want to perform any oper
 ### renderingBegin
 {:#events:renderingbegin}
 
-Fires before report rendering is completed.If you want to perform any operation before the rendering of report,you can make use of the renderingBegin event.
+Fires before completing the report rendering process. To perform any operation before rendering the report, use the renderingBegin event.
 
 <table class="params">
 <thead>
@@ -1647,7 +1647,7 @@ Fires before report rendering is completed.If you want to perform any operation 
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer.
+<td class="description last">Event parameters from ReportViewer.
 <table class="params">
 <thead>
 <tr>
@@ -1698,7 +1698,7 @@ Fires before report rendering is completed.If you want to perform any operation 
 ### renderingComplete
 {:#events:renderingcomplete}
 
-Fires after report rendering completed.If you want to perform any operation after the rendering of report,you can make use of this renderingComplete event.
+Fires after completing the report rendering process. To perform any operation after rendering the report, use the renderingComplete event.
 
 <table class="params">
 <thead>
@@ -1773,7 +1773,7 @@ Fires after report rendering completed.If you want to perform any operation afte
 ### reportError
 {:#events:reporterror}
 
-Fires when any error occurred while rendering the report.If you want to perform any operation when an error occurs in the report, you can make use of the reportError event.
+Fires when any error is occurred while rendering the report. To perform any operation when an error occurs in the report, use the reportError event.
 
 <table class="params">
 <thead>
@@ -1842,7 +1842,7 @@ Fires when any error occurred while rendering the report.If you want to perform 
 ### reportExport
 {:#events:reportexport}
 
-Fires when the report is being exported.If you want to perform any operation before exporting of report, you can make use of the reportExport event.
+Fires when the report is being exported. To perform any operation before exporting the report, use the reportExport event.
 
 <table class="params">
 <thead>
@@ -1856,7 +1856,7 @@ Fires when the report is being exported.If you want to perform any operation bef
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer.
+<td class="description last">Event parameters from ReportViewer.
 <table class="params">
 <thead>
 <tr>
@@ -1906,7 +1906,7 @@ Fires when the report is being exported.If you want to perform any operation bef
 ### reportLoaded
 {:#events:reportloaded}
 
-Fires when the report is loaded.If you want to perform any operation after the successful loading of report, you can make use of the reportLoaded event.
+Fires when the report is loaded. To perform any operation after the successful loading of report, use the reportLoaded event.
 
 <table class="params">
 <thead>
@@ -1971,7 +1971,7 @@ argument</td>
 ### showError
 {:#events:showError}
 
-Fires when user clicks on a failed report item in the rendered report, before displaying error details dialog. If you want to show custom error detail or perform any action before viewing error detail, you can make use of the showError event.
+Fires when user clicks a failed report item in the rendered report, before displaying error details dialog. To show custom error details or perform any action before viewing the error details, use the showError event.
 
 <table class="params">
 <thead>
@@ -1985,7 +1985,7 @@ Fires when user clicks on a failed report item in the rendered report, before di
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer.
+<td class="description last">Event parameters from ReportViewer.
 <table class="params">
 <thead>
 <tr>
@@ -2040,7 +2040,7 @@ Fires when user clicks on a failed report item in the rendered report, before di
 ### viewReportClick
 {:#events:viewreportclick}
 
-Fires when click the View Report Button.
+Fires when you click the View Report button.
 
 <table class="params">
 <thead>
@@ -2054,7 +2054,7 @@ Fires when click the View Report Button.
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer.
+<td class="description last">Event parameters from ReportViewer.
 <table class="params">
 <thead>
 <tr>
@@ -2136,12 +2136,12 @@ Fires before the ajax request process started.
 <tr>
 <td class="name">reportViewerToken</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the reportViewerToken.</td>
+<td class="description last">Returns the reportViewerToken.</td>
 </tr>
 <tr>
 <td class="name">serviceAuthorizationToken</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the serviceAuthorizationToken.</td>
+<td class="description last">Returns the serviceAuthorizationToken.</td>
 </tr>
 <tr>
 <td class="name">headerReq</td>
@@ -2197,7 +2197,7 @@ Fires when ajax post call succeed.
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event ajax process from reportviewer.
+<td class="description last">Event ajax process from ReportViewer.
 <table class="params">
 <thead>
 <tr>
@@ -2251,7 +2251,7 @@ Fires when ajax request failed.
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event ajax process from reportviewer.
+<td class="description last">Event ajax process from ReportViewer.
 <table class="params">
 <thead>
 <tr>
@@ -2264,7 +2264,7 @@ Fires when ajax request failed.
 <tr>
 <td class="name">msg</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the error details</td>
+<td class="description last">Returns the error details.</td>
 </tr>
 </tbody>
 </table>
@@ -2291,7 +2291,7 @@ Fires when ajax request failed.
 ### serviceAuthorizationToken `string`
 {:#members:serviceAuthorizationToken}
 
-Specifies the token for authorizing reporting service url to process the reports.
+Specifies the token for authorizing reporting service URL to process the reports.
 
 #### Default Value
 
@@ -2331,7 +2331,7 @@ Specifies the token for authorizing reporting service url to process the reports
 ### toolbarRendering
 {:#events:toolbarrendering}
 
-This event will be triggered on rendering the Report Viewer toolbar.
+This event will be triggered on rendering the ReportViewer toolbar.
 
 #### Example 
 
@@ -2348,7 +2348,7 @@ This event will be triggered on rendering the Report Viewer toolbar.
 ### enableParameterBlockScroller `boolean`
 {:#members:enableParameterBlockScroller}
 
-Enables and disables the Parameter block scroller.
+Enables and disables the parameter block scroller.
 
 #### Default Value
 
@@ -2369,7 +2369,7 @@ Enables and disables the Parameter block scroller.
 ### enableDatasourceBlockScroller `boolean`
 {:#members:enableDatasourceBlockScroller}
 
-Enables and disables the Datasource credential block scroller.
+Enables and disables the data source credential block scroller.
 
 #### Default Value
 
@@ -2390,7 +2390,7 @@ Enables and disables the Datasource credential block scroller.
 ### autoRender `boolean`
 {:#members:autoRender}
 
-Enables and disables the rendering of Viewer when default values specified for the Parameters.
+Enables and disables the rendering of Viewer when default values are specified for the parameters.
 
 #### Default Value
 
@@ -2432,7 +2432,7 @@ Enables and disables the Error Notification bar.
 ### enableDropDownSearch `boolean`
 {:#members:enableDropDownSearch}
 
-Enables and disables the dropdown parameter search.
+Enables and disables the drop-down parameter search.
 
 #### Default Value
 
@@ -2474,7 +2474,7 @@ Enables and disables the PageVirtualization.
 ### exportProgressChanged
 {:#events:exportProgressChanged}
 
-Fires when the Export progress is changed.If you want to perform any operation when a Export progress is changed, you can make use of the exportProgressChanged event.
+Fires when the Export progress is changed. To perform any operation when the Export progress is changed, use the exportProgressChanged event.
 
 <table class="params">
 <thead>
@@ -2544,7 +2544,7 @@ argument</td>
 ### printProgressChanged
 {:#events:printProgressChanged}
 
-Fires when the Print progress changed.If you want to perform any operation when a Print progress is changed, you can make use of the printProgressChanged event.
+Fires when the Print progress is changed. To perform any operation when the Print progress is changed, use the printProgressChanged event.
 
 <table class="params">
 <thead>
@@ -2559,7 +2559,7 @@ Fires when the Print progress changed.If you want to perform any operation when 
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer.
+<td class="description last">Event parameters from ReportViewer.
 <table class="params">
 <thead>
 <tr>
@@ -2619,7 +2619,7 @@ argument</td>
 ### exportItemClick
 {:#events:exportItemClick}
 
-Fires when the Export items is clicked.If you want to perform any operation when a Export items clicked, you can make use of the exportItemClick event.
+Fires when the export items are clicked. To perform any operation when export items are clicked, use the exportItemClick event.
 
 <table class="params">
 <thead>
@@ -2634,7 +2634,7 @@ Fires when the Export items is clicked.If you want to perform any operation when
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer.
+<td class="description last">Event parameters from ReportViewer.
 <table class="params">
 <thead>
 <tr>
@@ -2674,7 +2674,7 @@ argument</td>
 ### toolBarItemClick
 {:#events:toolBarItemClick}
 
-Fires when the Toolbar items is clicked.If you want to perform any operation when a Toolbar items clicked, you can make use of the toolBarItemClick event.
+Fires when the toolbar items are clicked. To perform any operation when the toolbar items are clicked, use the toolBarItemClick event.
 
 <table class="params">
 <thead>
@@ -2689,7 +2689,7 @@ Fires when the Toolbar items is clicked.If you want to perform any operation whe
 <td class="name">
 argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer.
+<td class="description last">Event parameters from ReportViewer.
 <table class="params">
 <thead>
 <tr>
@@ -2749,7 +2749,7 @@ argument</td>
 ### hyperlink
 {:#events:hyperlink}
 
-Fires during hyperlink action done in report.If you want to perform any operation when a hyperlink is performed, you can make use of the hyperlink event.
+Fires when the hyperlink action is performed in the report. To perform any operation during the hyperlink action, use the hyperlink event.
 
 <table class="params">
 <thead>
@@ -2763,7 +2763,7 @@ Fires during hyperlink action done in report.If you want to perform any operatio
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer.
+<td class="description last">Event parameters from ReportViewer.
 <table class="params">
 <thead>
 <tr>
@@ -2816,7 +2816,7 @@ Fires during hyperlink action done in report.If you want to perform any operatio
 ### reportPrint
 {:#events:reportPrint}
 
-Fires during report print action done in report.If you want to perform any operation when a report print action is performed, you can make use of the ReportPrint event.
+Fires when the report print action is performed in the report. To perform any operation during the report print action, use the ReportPrint event.
 
 <table class="params">
 <thead>
