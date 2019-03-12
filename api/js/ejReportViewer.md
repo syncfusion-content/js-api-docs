@@ -158,7 +158,7 @@ Gets or sets the values of data source.
 {% endhighlight %}
 
 ### enablePageCache `boolean`
-{:#members:enablePageCache}
+{:#members:enablepagecache}
 
 Enables or disables the page cache of report.
 
@@ -411,7 +411,7 @@ Specifies the word export format.
 {% endhighlight %}
 
 ### exportSettings.customItems `array`
-{:#members:exportSettings-customItems}
+{:#members:exportSettings-customitems}
 
 Add the custom icon item to the export options.
 
@@ -445,7 +445,7 @@ Add the custom icon item to the export options.
 {% endhighlight %}
 
 ### isResponsive `boolean`
-{:#members:isResponsive}
+{:#members:isresponsive}
 
 When set to true, it adapts the report layout to fit the screen size of devices on which it renders.
 
@@ -808,7 +808,7 @@ Enables and disables the print mode.
 {% endhighlight %}
 
 ### printOptions `enum`
-{:#members:printOptions}
+{:#members:printoptions}
 
 <ts name = "ej.ReportViewer.PrintOptions"/>
 
@@ -1168,7 +1168,7 @@ Specifies the toolbar template ID.
 {% endhighlight %}
 
 ### toolbarSettings.customItems `array`
-{:#members:toolbarsettings-customItems}
+{:#members:toolbarsettings-customitems}
 
 Add the custom icon item to the toolbar.
 
@@ -1199,7 +1199,7 @@ Add the custom icon item to the toolbar.
 {% endhighlight %}
 
 ### toolbarSettings.customGroups `array`
-{:#members:toolbarsettings-customGroups}
+{:#members:toolbarsettings-customgroups}
 
 Add the custom icon groups to the toolbar.
 
@@ -1969,7 +1969,7 @@ argument</td>
 {% endhighlight %}
 
 ### showError
-{:#events:showError}
+{:#events:showerror}
 
 Fires when user clicks a failed report item in the rendered report, before displaying the error details dialog. To show custom error details or perform any action before viewing the error details, use the showError event.
 
@@ -2181,7 +2181,7 @@ Fires before starting the Ajax request process.
 {% endhighlight %}
 
 ### ajaxSuccess
-{:#events:ajaxSuccess}
+{:#events:ajaxsuccess}
 
 Fires when the Ajax post call is succeeded.
 
@@ -2235,7 +2235,7 @@ Fires when the Ajax post call is succeeded.
 {% endhighlight %}
 
 ### ajaxError
-{:#events:ajaxError}
+{:#events:ajaxerror}
 
 Fires when the Ajax request is failed.
 
@@ -2289,7 +2289,7 @@ Fires when the Ajax request is failed.
 {% endhighlight %}
 
 ### serviceAuthorizationToken `string`
-{:#members:serviceAuthorizationToken}
+{:#members:serviceauthorizationtoken}
 
 Specifies the token for authorizing reporting service URL to process the reports.
 
@@ -2346,7 +2346,7 @@ This event will be triggered on rendering the ReportViewer toolbar.
 {% endhighlight %}
 
 ### enableParameterBlockScroller `boolean`
-{:#members:enableParameterBlockScroller}
+{:#members:enableparameterblockscroller}
 
 Enables and disables the parameter block scroller.
 
@@ -2367,7 +2367,7 @@ Enables and disables the parameter block scroller.
 </script>
 
 ### enableDatasourceBlockScroller `boolean`
-{:#members:enableDatasourceBlockScroller}
+{:#members:enabledatasourceblockscroller}
 
 Enables and disables the data source credential block scroller.
 
@@ -2388,7 +2388,7 @@ Enables and disables the data source credential block scroller.
 </script>
 
 ### autoRender `boolean`
-{:#members:autoRender}
+{:#members:autorender}
 
 Enables and disables the rendering of Viewer when default values are specified for the parameters.
 
@@ -2409,7 +2409,7 @@ Enables and disables the rendering of Viewer when default values are specified f
 </script>
 
 ### enableNotificationBar `boolean`
-{:#members:enableNotificationBar}
+{:#members:enablenotificationbar}
 
 Enables and disables the Error Notification bar.
 
@@ -2430,7 +2430,7 @@ Enables and disables the Error Notification bar.
 </script>
 
 ### enableDropDownSearch `boolean`
-{:#members:enableDropDownSearch}
+{:#members:enabledropdownsearch}
 
 Enables and disables the drop-down parameter search.
 
@@ -2451,7 +2451,7 @@ Enables and disables the drop-down parameter search.
 </script>
 
 ### enablePageVirtualization `boolean`
-{:#members:enablePageVirtualization}
+{:#members:enablepagevirtualization}
 
 Enables and disables the PageVirtualization.
 
@@ -2472,7 +2472,7 @@ Enables and disables the PageVirtualization.
 </script>
 
 ### exportProgressChanged
-{:#events:exportProgressChanged}
+{:#events:exportprogresschanged}
 
 Fires when the export progress is changed. To perform any operation when the export progress is changed, use the exportProgressChanged event.
 
@@ -2542,7 +2542,7 @@ argument</td>
 {% endhighlight %}
 
 ### printProgressChanged
-{:#events:printProgressChanged}
+{:#events:printprogresschanged}
 
 Fires when the print progress is changed. To perform any operation when the print progress is changed, use the printProgressChanged event.
 
@@ -2617,7 +2617,7 @@ argument</td>
 {% endhighlight %}
 
 ### exportItemClick
-{:#events:exportItemClick}
+{:#events:exportitemclick}
 
 Fires when the export items are clicked. To perform any operation when the export items are clicked, use the exportItemClick event.
 
@@ -2672,7 +2672,7 @@ argument</td>
 {% endhighlight %}
 
 ### toolBarItemClick
-{:#events:toolBarItemClick}
+{:#events:toolbaritemclick}
 
 Fires when the toolbar items are clicked. To perform any operation when the toolbar items are clicked, use the toolBarItemClick event.
 
@@ -2814,7 +2814,7 @@ Fires when the hyperlink action is performed in the report. To perform any opera
 </script>
 
 ### reportPrint
-{:#events:reportPrint}
+{:#events:reportprint}
 
 Fires when the report print action is performed in the report. To perform any operation during the report print action, use the ReportPrint event.
 
