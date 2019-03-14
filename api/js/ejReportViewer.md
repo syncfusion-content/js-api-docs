@@ -158,7 +158,7 @@ Gets or sets the values of data source.
 {% endhighlight %}
 
 ### enablePageCache `boolean`
-{:#members:enablePageCache}
+{:#members:enablepagecache}
 
 Enables or disables the page cache of report.
 
@@ -410,10 +410,44 @@ Specifies the word export format.
 
 {% endhighlight %}
 
-### isResponsive `boolean`
-{:#members:isResponsive}
+### exportSettings.customItems `array`
+{:#members:exportSettings-customitems}
 
-When set to true, adapts the report layout to fit the screen size of devices on which it renders.
+Add the custom icon item to the export options.
+
+#### Default Value
+
+* empty
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
+    $("#reportviewer").ejReportViewer(
+        {
+            exportSettings: {
+                        customItems: [{
+                            index: 2,
+                            cssClass: '',
+                            value: 'exportCustom',
+                        },
+                        {
+                            index: 4,
+                            cssClass: '',
+                            value: 'exportCustom3',
+                        }]
+                    },
+        });         
+</script>
+
+{% endhighlight %}
+
+### isResponsive `boolean`
+{:#members:isresponsive}
+
+When set to true, it adapts the report layout to fit the screen size of devices on which it renders.
 
 #### Default Value
 
@@ -433,7 +467,7 @@ When set to true, adapts the report layout to fit the screen size of devices on 
 ### locale `string`
 {:#members:locale}
 
-Specifies the locale for report viewer.
+Specifies the locale for ReportViewer.
 
 #### Default Value
 
@@ -669,7 +703,7 @@ Gets or sets the name of the parameter.
 ### parameters.nullable `boolean`
 {:#members:parameters-nullable}
 
-Gets or sets whether the parameter allows nullable value or not.
+Gets or sets whether the parameter allows nullable value.
 
 #### Default Value
 
@@ -774,7 +808,7 @@ Enables and disables the print mode.
 {% endhighlight %}
 
 ### printOptions `enum`
-{:#members:printOptions}
+{:#members:printoptions}
 
 <ts name = "ej.ReportViewer.PrintOptions"/>
 
@@ -927,7 +961,7 @@ Gets or sets the path of the report file.
 ### reportServerUrl `string`
 {:#members:reportserverurl}
 
-Gets or sets the reports server URL.
+Gets or sets the Report Server URL.
 
 #### Default Value
 
@@ -972,7 +1006,7 @@ Specifies the toolbar settings.
 ### toolbarSettings.click `string`
 {:#members:toolbarsettings-click}
 
-Fires when user click on toolbar item in the toolbar.
+Fires when users click the toolbar item.
 
 #### Default Value
 
@@ -1009,39 +1043,39 @@ Specifies the toolbar items.
 <tbody>
 <tr>
 <td class="name">Print</td>
-<td class="description">Specifies the Print as value in ToolbarItems to get specified item.</td>
+<td class="description">Specifies the Print as value in ToolbarItems to get the specified item.</td>
 </tr>
 <tr>
 <td class="name">Refresh</td>
-<td class="description">Specifies the Refresh as value in ToolbarItems to get specified item.</td>
+<td class="description">Specifies the Refresh as value in ToolbarItems to get the specified item.</td>
 </tr>
 <tr>
 <td class="name">Zoom</td>
-<td class="description">Specifies the Zoom as value in ToolbarItems to get specified item.</td>
+<td class="description">Specifies the Zoom as value in ToolbarItems to get the specified item.</td>
 </tr>
 <tr>
 <td class="name">FittoPage</td>
-<td class="description">Specifies the FittoPage as value in ToolbarItems to get specified item.</td>
+<td class="description">Specifies the FittoPage as value in ToolbarItems to get the specified item.</td>
 </tr>
 <tr>
 <td class="name">Export</td>
-<td class="description">Specifies the Export as value in ToolbarItems to get specified item.</td>
+<td class="description">Specifies the Export as value in ToolbarItems to get the specified item.</td>
 </tr>
 <tr>
 <td class="name">PageNavigation</td>
-<td class="description">Specifies the PageNavigation as value in ToolbarItems to get specified item.</td>
+<td class="description">Specifies the PageNavigation as value in ToolbarItems to get the specified item.</td>
 </tr>
 <tr>
 <td class="name">Parameters</td>
-<td class="description">Specifies the Parameters as value in ToolbarItems to get specified item.</td>
+<td class="description">Specifies the Parameters as value in ToolbarItems to get the specified item.</td>
 </tr>
 <tr>
 <td class="name">PrintLayout</td>
-<td class="description">Specifies the PrintLayout as value in ToolbarItems to get specified item.</td>
+<td class="description">Specifies the PrintLayout as value in ToolbarItems to get the specified item.</td>
 </tr>
 <tr>
 <td class="name">PageSetup</td>
-<td class="description">Specifies the PageSetup as value in ToolbarItems to get specified item.</td>
+<td class="description">Specifies the PageSetup as value in ToolbarItems to get the specified item.</td>
 </tr>
 </tbody>
 </table>
@@ -1133,10 +1167,78 @@ Specifies the toolbar template ID.
 
 {% endhighlight %}
 
+### toolbarSettings.customItems `array`
+{:#members:toolbarsettings-customitems}
+
+Add the custom icon item to the toolbar.
+
+#### Default Value
+
+* empty
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
+    $("#reportviewer").ejReportViewer(
+        {
+            toolbarSettings:{
+                 customItems: [{
+                            groupIndex: 1,
+                            index: 1,
+                            itemType: 'Default',
+                            cssClass: "e-icon e-mail e-reportviewer-icon CustomItem",
+                            tooltip: { header: 'CustomItem', content: 'toolbaritems', value: 'CustomItem' },
+                        }]
+             }
+        });         
+</script>
+
+{% endhighlight %}
+
+### toolbarSettings.customGroups `array`
+{:#members:toolbarsettings-customgroups}
+
+Add the custom icon groups to the toolbar.
+
+#### Default Value
+
+* empty
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
+    $("#reportviewer").ejReportViewer(
+        {
+            toolbarSettings:{
+                 customGroups: [{
+                            items: [{
+                                itemType: 'Default',
+                                cssClass: "e-icon e-mail e-reportviewer-icon CustomGroup",
+                                tooltip: { header: 'CustomGroup', content: 'toolbargroups', value: 'CustomGroup' },
+                            },
+                            {
+                                itemType: 'Default',
+                                cssClass: "e-icon e-mail e-reportviewer-icon subCustomGroup",
+                                tooltip: { header: 'subCustomGroup', content: 'subtoolbargroups', value: 'subCustomGroup' },
+                            }],
+                            groupIndex: 3
+                        }],
+             }
+        });         
+</script>
+
+{% endhighlight %}
+
 ### zoomFactor `number`
 {:#members:zoomfactor}
 
-Gets or sets the zoom factor for report viewer.
+Gets or sets the zoom factor for ReportViewer.
 
 #### Default Value
 
@@ -1226,7 +1328,7 @@ Fit the report page width to the container.
 ### getDataSetNames()
 {:#methods:getdatasetnames}
 
-Get the available datasets name of the rdlc report.
+Get the available datasets name of the RDLC report.
 
 #### Example
 
@@ -1260,7 +1362,7 @@ Get the available parameters of the report.
 ### gotoFirstPage()
 {:#methods:gotofirstpage}
 
-Navigate to first page of report.
+Navigate to first page of the report.
 
 #### Example
 
@@ -1398,7 +1500,7 @@ Refresh the report.
 ### destroy
 {:#events:destroy}
 
-Fires when the report viewer is destroyed successfully.If you want to perform any operation after destroying the reportviewer control,you can make use of the destroy event.
+Fires when the ReportViewer is destroyed successfully. To perform any operation after destroying the ReportViewer control, use the destroy event.
 
 <table class="params">
 <thead>
@@ -1462,7 +1564,7 @@ Fires when the report viewer is destroyed successfully.If you want to perform an
 ### drillThrough
 {:#events:drillthrough}
 
-Fires during drill through action done in report.If you want to perform any operation when a drill through action is performed, you can make use of the drillThrough event.
+Fires when the drill through action is performed in the report. To perform any operation during the drill through action, use the drillThrough event.
 
 <table class="params">
 <thead>
@@ -1494,7 +1596,7 @@ Fires during drill through action done in report.If you want to perform any oper
 <tr>
 <td class="name">actionInfo</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">returns the actionInfo's parameters bookmarkLink, hyperLink, reportName, parameters.</td>
+<td class="description last">returns the actionInfo's parameters bookmarkLink, reportName, parameters.</td>
 </tr>
 <tr>
 <td class="name">model</td>
@@ -1531,7 +1633,7 @@ Fires during drill through action done in report.If you want to perform any oper
 ### renderingBegin
 {:#events:renderingbegin}
 
-Fires before report rendering is completed.If you want to perform any operation before the rendering of report,you can make use of the renderingBegin event.
+Fires before completing the report rendering process. To perform any operation before rendering the report, use the renderingBegin event.
 
 <table class="params">
 <thead>
@@ -1545,7 +1647,7 @@ Fires before report rendering is completed.If you want to perform any operation 
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer.
+<td class="description last">Event parameters from ReportViewer.
 <table class="params">
 <thead>
 <tr>
@@ -1596,7 +1698,7 @@ Fires before report rendering is completed.If you want to perform any operation 
 ### renderingComplete
 {:#events:renderingcomplete}
 
-Fires after report rendering completed.If you want to perform any operation after the rendering of report,you can make use of this renderingComplete event.
+Fires after completing the report rendering process. To perform any operation after rendering the report, use the renderingComplete event.
 
 <table class="params">
 <thead>
@@ -1671,7 +1773,7 @@ Fires after report rendering completed.If you want to perform any operation afte
 ### reportError
 {:#events:reporterror}
 
-Fires when any error occurred while rendering the report.If you want to perform any operation when an error occurs in the report, you can make use of the reportError event.
+Fires when any error is occurred while rendering the report. To perform any operation when an error occurs in the report, use the reportError event.
 
 <table class="params">
 <thead>
@@ -1740,7 +1842,7 @@ Fires when any error occurred while rendering the report.If you want to perform 
 ### reportExport
 {:#events:reportexport}
 
-Fires when the report is being exported.If you want to perform any operation before exporting of report, you can make use of the reportExport event.
+Fires when the report is being exported. To perform any operation before exporting the report, use the reportExport event.
 
 <table class="params">
 <thead>
@@ -1754,7 +1856,7 @@ Fires when the report is being exported.If you want to perform any operation bef
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer.
+<td class="description last">Event parameters from ReportViewer.
 <table class="params">
 <thead>
 <tr>
@@ -1804,7 +1906,7 @@ Fires when the report is being exported.If you want to perform any operation bef
 ### reportLoaded
 {:#events:reportloaded}
 
-Fires when the report is loaded.If you want to perform any operation after the successful loading of report, you can make use of the reportLoaded event.
+Fires when the report is loaded. To perform any operation after the successful loading of report, use the reportLoaded event.
 
 <table class="params">
 <thead>
@@ -1867,9 +1969,9 @@ argument</td>
 {% endhighlight %}
 
 ### showError
-{:#events:showError}
+{:#events:showerror}
 
-Fires when user clicks on a failed report item in the rendered report, before displaying error details dialog. If you want to show custom error detail or perform any action before viewing error detail, you can make use of the showError event.
+Fires when user clicks a failed report item in the rendered report, before displaying the error details dialog. To show custom error details or perform any action before viewing the error details, use the showError event.
 
 <table class="params">
 <thead>
@@ -1883,7 +1985,7 @@ Fires when user clicks on a failed report item in the rendered report, before di
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer.
+<td class="description last">Event parameters from ReportViewer.
 <table class="params">
 <thead>
 <tr>
@@ -1938,7 +2040,7 @@ Fires when user clicks on a failed report item in the rendered report, before di
 ### viewReportClick
 {:#events:viewreportclick}
 
-Fires when click the View Report Button.
+Fires when you click the View Report button.
 
 <table class="params">
 <thead>
@@ -1952,7 +2054,7 @@ Fires when click the View Report Button.
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event parameters from reportviewer.
+<td class="description last">Event parameters from ReportViewer.
 <table class="params">
 <thead>
 <tr>
@@ -2007,7 +2109,7 @@ Fires when click the View Report Button.
 ### ajaxBeforeLoad
 {:#events:ajaxbeforeload}
 
-Fires before the ajax request process started.
+Fires before starting the Ajax request process.
 
 <table class="params">
 <thead>
@@ -2021,7 +2123,7 @@ Fires before the ajax request process started.
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event ajax process from reportviewer.
+<td class="description last">Event Ajax process from reportviewer.
 <table class="params">
 <thead>
 <tr>
@@ -2034,12 +2136,12 @@ Fires before the ajax request process started.
 <tr>
 <td class="name">reportViewerToken</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the reportViewerToken.</td>
+<td class="description last">Returns the reportViewerToken.</td>
 </tr>
 <tr>
 <td class="name">serviceAuthorizationToken</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the serviceAuthorizationToken.</td>
+<td class="description last">Returns the serviceAuthorizationToken.</td>
 </tr>
 <tr>
 <td class="name">headerReq</td>
@@ -2079,9 +2181,9 @@ Fires before the ajax request process started.
 {% endhighlight %}
 
 ### ajaxSuccess
-{:#events:ajaxSuccess}
+{:#events:ajaxsuccess}
 
-Fires when ajax post call succeed.
+Fires when the Ajax post call is succeeded.
 
 <table class="params">
 <thead>
@@ -2095,7 +2197,7 @@ Fires when ajax post call succeed.
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event ajax process from reportviewer.
+<td class="description last">Event Ajax process from ReportViewer.
 <table class="params">
 <thead>
 <tr>
@@ -2109,6 +2211,7 @@ Fires when ajax post call succeed.
 <td class="name">data</td>
 <td class="type"><span class="param-type">object</span></td>
 <td class="description last">returns the success data.</td>
+</tr>
 </tbody>
 </table>
 </td>
@@ -2132,9 +2235,9 @@ Fires when ajax post call succeed.
 {% endhighlight %}
 
 ### ajaxError
-{:#events:ajaxError}
+{:#events:ajaxerror}
 
-Fires when ajax request failed.
+Fires when the Ajax request is failed.
 
 <table class="params">
 <thead>
@@ -2148,7 +2251,7 @@ Fires when ajax request failed.
 <tr>
 <td class="name">argument</td>
 <td class="type"><span class="param-type">Object</span></td>
-<td class="description last">Event ajax process from reportviewer.
+<td class="description last">Event Ajax process from ReportViewer.
 <table class="params">
 <thead>
 <tr>
@@ -2161,7 +2264,7 @@ Fires when ajax request failed.
 <tr>
 <td class="name">msg</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description last">returns the error details</td>
+<td class="description last">Returns the error details.</td>
 </tr>
 </tbody>
 </table>
@@ -2186,9 +2289,9 @@ Fires when ajax request failed.
 {% endhighlight %}
 
 ### serviceAuthorizationToken `string`
-{:#members:serviceAuthorizationToken}
+{:#members:serviceauthorizationtoken}
 
-Specifies the token for authorizing reporting service url to process the reports.
+Specifies the token for authorizing reporting service URL to process the reports.
 
 #### Default Value
 
@@ -2228,7 +2331,7 @@ Specifies the token for authorizing reporting service url to process the reports
 ### toolbarRendering
 {:#events:toolbarrendering}
 
-This event will be triggered on rendering the Report Viewer toolbar.
+This event will be triggered on rendering the ReportViewer toolbar.
 
 #### Example 
 
@@ -2239,5 +2342,528 @@ This event will be triggered on rendering the Report Viewer toolbar.
             // Write your block of code 
         }
     });
+
+{% endhighlight %}
+
+### enableParameterBlockScroller `boolean`
+{:#members:enableparameterblockscroller}
+
+Enables and disables the parameter block scroller.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
+    $("#reportviewer").ejReportViewer(
+        {
+            enableParameterBlockScroller: false
+        });             
+</script>
+
+### enableDatasourceBlockScroller `boolean`
+{:#members:enabledatasourceblockscroller}
+
+Enables and disables the data source credential block scroller.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
+    $("#reportviewer").ejReportViewer(
+        {
+            enableDatasourceBlockScroller: false
+        });             
+</script>
+
+### autoRender `boolean`
+{:#members:autorender}
+
+Enables and disables the rendering of Viewer when default values are specified for the parameters.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
+    $("#reportviewer").ejReportViewer(
+        {
+            autoRender: false
+        });             
+</script>
+
+### enableNotificationBar `boolean`
+{:#members:enablenotificationbar}
+
+Enables and disables the Error Notification bar.
+
+#### Default Value
+
+* true
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
+    $("#reportviewer").ejReportViewer(
+        {
+            enableNotificationBar: false
+        });             
+</script>
+
+### enableDropDownSearch `boolean`
+{:#members:enabledropdownsearch}
+
+Enables and disables the drop-down parameter search.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
+    $("#reportviewer").ejReportViewer(
+        {
+            enableDropDownSearch: true
+        });             
+</script>
+
+### enablePageVirtualization `boolean`
+{:#members:enablepagevirtualization}
+
+Enables and disables the PageVirtualization.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
+    $("#reportviewer").ejReportViewer(
+        {
+            enablePageVirtualization: true
+        });             
+</script>
+
+### exportProgressChanged
+{:#events:exportprogresschanged}
+
+Fires when the export progress is changed. To perform any operation when the export progress is changed, use the exportProgressChanged event.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from reportviewer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">format</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the export format</td>
+</tr>
+<tr>
+<td class="name">stage</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the stage of export processing.</td>
+</tr>
+<tr>
+<td class="name">handled</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">true if the event should be handled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">containerId</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns ReportViewer container Id.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({
+        exportProgressChanged : function(args) {
+            // Write a code block to perform any action when the export progress changed.
+        }
+    });             
+</script>
+
+{% endhighlight %}
+
+### printProgressChanged
+{:#events:printprogresschanged}
+
+Fires when the print progress is changed. To perform any operation when the print progress is changed, use the printProgressChanged event.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from ReportViewer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">stage</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the stage of export processing.</td>
+</tr>
+<tr>
+<td class="name">currentPage</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the currentPage value</td>
+</tr>
+<tr>
+<td class="name">totalPages</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the totalPages value</td>
+</tr>
+<tr>
+<td class="name">handled</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">true if the event should be handled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">containerId</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns ReportViewer container Id.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({
+        printProgressChanged : function(args) {
+            // Write a code block to perform any action when the print progress changed.
+        }
+    });             
+</script>
+
+{% endhighlight %}
+
+### exportItemClick
+{:#events:exportitemclick}
+
+Fires when the export items are clicked. To perform any operation when the export items are clicked, use the exportItemClick event.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from ReportViewer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">value</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the export format value.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({
+        exportItemClick : function(args) {
+            // Write a code block to perform any action when the export item clicked.
+        }
+    });             
+</script>
+
+{% endhighlight %}
+
+### toolBarItemClick
+{:#events:toolbaritemclick}
+
+Fires when the toolbar items are clicked. To perform any operation when the toolbar items are clicked, use the toolBarItemClick event.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from ReportViewer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">target</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the toolbar clicked item name .</td>
+</tr>
+<tr>
+<td class="name">cssClass</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the CSS class name specified for the toolbar item</td>
+</tr>
+<tr>
+<td class="name">groupIndex</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the Toolbar item rendered group index</td>
+</tr>
+<tr>
+<td class="name">Index</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the Toolbar item rendered index</td>
+</tr>
+<tr>
+<td class="name">value</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the Toolbar item value.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({
+        toolBarItemClick : function(args) {
+            // Write a code block to perform any action when the toolbar item clicked.
+        }
+    });             
+</script>
+
+{% endhighlight %}
+
+### hyperlink
+{:#events:hyperlink}
+
+Fires when the hyperlink action is performed in the report. To perform any operation during the hyperlink action, use the hyperlink event.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from ReportViewer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">true if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">actionInfo</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">returns the actionInfo's hyperLink detail</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the report model.</td>
+</tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">returns the name of the event.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({ 
+        hyperlink: function (args) {
+            // Write a code block to perform any operation when hyperlink action occurs in report.
+        }
+    });                   
+</script>
+
+### reportPrint
+{:#events:reportprint}
+
+Fires when the report print action is performed in the report. To perform any operation during the report print action, use the ReportPrint event.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from reportviewer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">isStyleLoad</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">true if you have to load the external style file; otherwise, false.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>        
+    $("#reportviewer").ejReportViewer({
+        reportPrint : function(args) {
+            // Write a code block to perform any action when the export item clicked.
+        }
+    });             
+</script>
 
 {% endhighlight %}
