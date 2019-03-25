@@ -323,7 +323,24 @@ Sets the text for the Today button inside the datetime popup.
 
 
 
+### blackoutDates `object`
+{:#members:blackoutdates}
 
+Disable the list of specified date value.
+
+### Default value
+
+* {}
+
+{% highlight html %}
+ 
+<input type="text" id="datetimepicker" />
+<script>
+//To set blackoutDates API during initialization  
+        $("#datetimepicker").ejDateTimePicker({blackoutDates: [new Date(2016, 4, 10), new Date(2016, 4, 15), new Date(2016, 4, 20), new Date(2016, 4, 22), new Date(2016, 5, 12), new Date(2016, 5, 24)] });
+</script>
+
+{% endhighlight %}
 
 
 
@@ -529,7 +546,28 @@ Specifies the navigation depth level in DatePicker calendar inside DateTimePicke
 {% endhighlight %}
 
 
+### disableTimeRanges `object`
+{:#members:disabletimeranges}
 
+Specifies the list of time range to be disabled.
+
+### Default value
+
+* {}
+
+#### Example
+
+{% highlight html %}
+ 
+<input type="text" id="datetimepicker" />
+<script>
+// Set the disableTimeRanges value during initialization.                  
+        $("#datetimepicker").ejDateTimePicker({  disableTimeRanges: [{ startTime: "3:00 AM", endTime: "6:00 AM" },
+                    { startTime: "1:00 PM", endTime: "3:00 PM" },
+                    { startTime: "8:00 PM", endTime: "10:00 PM" }] });
+</script> 
+
+{% endhighlight %}
 
 
 
@@ -1428,6 +1466,34 @@ Changes the sharped edges into rounded corner for the DateTimePicker textbox and
 {% endhighlight %}
 
 
+### specialDates `object`
+{:#members:specialdates}
+
+Specifies the special dates in DateTimePicker.
+
+#### Default Value
+
+* null
+
+#### Example
+
+{% highlight html %}
+ 
+<input type="text" id="datetimepicker" />
+<script>
+//To set specialDates API value during initialization
+var today = new Date(), year = today.getFullYear(), month = today.getMonth(),
+specialDays = [
+           { date: new Date(year, month, 8), tooltip: "In Australia", iconClass: "flags sprite-Australia" },
+           { date: new Date(year, month, 21), tooltip: "In France", iconClass: "flags sprite-France" },
+           { date: new Date(year, month, 17), tooltip: "In USA", iconClass: "flags sprite-USA" },
+           { date: new Date(year, month + 1, 15), tooltip: "In Germany", iconClass: "flags sprite-Germany" },
+           { date: new Date(year, month - 1, 22), tooltip: "In India", iconClass: "flags sprite-India" },
+]
+// declaration
+$("#datetimepicker").ejDateTimePicker({specialDates: specialDays});
+</script>
+{% endhighlight %}
 
 
 
