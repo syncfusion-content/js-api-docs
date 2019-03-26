@@ -336,7 +336,7 @@ Disable the list of specified date value.
  
 <input type="text" id="datetimepicker" />
 <script>
-//To set blackoutDates API during initialization  
+//To set blackoutDates API during initialization.  
         $("#datetimepicker").ejDateTimePicker({blackoutDates: [new Date(2016, 4, 10), new Date(2016, 4, 15), new Date(2016, 4, 20), new Date(2016, 4, 22), new Date(2016, 5, 12), new Date(2016, 5, 24)] });
 </script>
 
@@ -1481,7 +1481,7 @@ Specifies the special dates in DateTimePicker.
  
 <input type="text" id="datetimepicker" />
 <script>
-//To set specialDates API value during initialization
+//To set specialDates API value during initialization.
 var today = new Date(), year = today.getFullYear(), month = today.getMonth(),
 specialDays = [
            { date: new Date(year, month, 8), tooltip: "In Australia", iconClass: "flags sprite-Australia" },
