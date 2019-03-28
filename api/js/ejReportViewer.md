@@ -2366,6 +2366,8 @@ Enables and disables the parameter block scroller.
         });             
 </script>
 
+{% endhighlight %}
+
 ### enableDatasourceBlockScroller `boolean`
 {:#members:enabledatasourceblockscroller}
 
@@ -2386,6 +2388,7 @@ Enables and disables the data source credential block scroller.
             enableDatasourceBlockScroller: false
         });             
 </script>
+{% endhighlight %}
 
 ### autoRender `boolean`
 {:#members:autorender}
@@ -2407,6 +2410,7 @@ Enables and disables the rendering of Viewer when default values are specified f
             autoRender: false
         });             
 </script>
+{% endhighlight %}
 
 ### enableNotificationBar `boolean`
 {:#members:enablenotificationbar}
@@ -2428,6 +2432,7 @@ Enables and disables the Error Notification bar.
             enableNotificationBar: false
         });             
 </script>
+{% endhighlight %}
 
 ### enableDropDownSearch `boolean`
 {:#members:enabledropdownsearch}
@@ -2449,6 +2454,7 @@ Enables and disables the drop-down parameter search.
             enableDropDownSearch: true
         });             
 </script>
+{% endhighlight %}
 
 ### enablePageVirtualization `boolean`
 {:#members:enablepagevirtualization}
@@ -2470,6 +2476,7 @@ Enables and disables the PageVirtualization.
             enablePageVirtualization: true
         });             
 </script>
+{% endhighlight %}
 
 ### exportProgressChanged
 {:#events:exportprogresschanged}
