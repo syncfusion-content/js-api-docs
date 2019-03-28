@@ -2813,6 +2813,8 @@ Fires when the hyperlink action is performed in the report. To perform any opera
     });                   
 </script>
 
+{% endhighlight %}
+
 ### reportPrint
 {:#events:reportprint}
 
