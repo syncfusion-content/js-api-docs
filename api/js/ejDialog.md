@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejDialog Widget
+title: Properties, Methods and Events of ejDialog Widget | Syncfusion
 description: Methods, members, events available in ejDialog
-documentation: API
+documentation: UG
 platform: js-api
 keywords: ejDialog, API, Essential JS Dialog
 ---
@@ -872,16 +872,20 @@ Sets the z-index value for the Dialog widget.
 
 Default Value:
 {:.param} 
- 1000
+ 10000
 
 Example
 {:.example}
 
 {% highlight javascript %}
 
-    $("#dialog").ejDialog({zIndex: 500 }); 
+    $("#dialog").ejDialog({zIndex: 11000 }); 
 
 {% endhighlight %}
+
+#### Note
+
+The z-index values below `10000` can be set through model in the dialog created event.
 
 
 ### showFooter `boolean`
