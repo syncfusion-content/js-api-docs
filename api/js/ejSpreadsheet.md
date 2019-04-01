@@ -1147,6 +1147,31 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
+### exportSettings.enableFormulaCalculation `boolean`
+{:#members:exportsettings-enableFormulaCalculation}
+
+Gets or sets a value that indicates whether to enable or disable formula calculation in Spreadsheet. By enabling this feature, formula calculated while export the Spreadsheet in protected mode.
+
+#### Default Value
+* false
+
+#### Example
+{% highlight html %}
+
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    exportSettings:{
+        enableFormulaCalculation: true,
+        csvUrl: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/CsvExport", // It is used to set the url of the csv export.
+        excelUrl: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/ExcelExport", //It is used to set the url of the excel export.
+        pdfUrl: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/PdfExport", //It is used to set the url of the pdf export.
+    }
+});        
+</script>
+
+{% endhighlight %}
+
 ### exportSettings.csvUrl `string`
 {:#members:exportsettings-csvurl}
 
