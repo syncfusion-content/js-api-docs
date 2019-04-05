@@ -2393,7 +2393,7 @@ Enables and disables the data source credential block scroller.
 ### sizeToReportContent `boolean`
 {:#members:sizeToReportContent}
 
-Render the ReportViewer height based on container size..
+Render the ReportViewer height based on the report content size.
 
 #### Default Value
 
