@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejReportDesigner Widget
+title: Properties, Methods and Events of ejReportDesigner Widget , Syncfusion
 description: Public API, Events documentation for ejReportDesigner
 platform: js-api
 metaname: 
@@ -9,7 +9,7 @@ metacontent:
 
 # ejReportDesigner
 
-Report Designer allows to design the report that can be published in the Server or downloaded in the local physical path.
+Report Designer allows to design the report that can be published in the server or downloaded in the local physical path.
 
 #### Syntax
 
@@ -111,7 +111,7 @@ Report Designer allows to design the report that can be published in the Server 
 
 * module:ej.grid.js
 
-* module:ej.reportViewer.js
+* module:ej.reportviewer.js
 
 * module:ej.chart.js
 
@@ -122,6 +122,144 @@ Report Designer allows to design the report that can be published in the Server 
 * module:ej.bulletgraph.js
 
 ## Members
+
+### configurePaneSettings `object`
+{:#members:configurepanesettings}
+
+Shows or hides the items of configuration pane in ReportDesigner control.
+
+## configurePaneSettings.items `enum`
+{:#members:configurepanesettings-items}
+
+<ts name="ej.ReportDesigner.ConfigureItems"/>
+
+Shows or hides the grouped items in the configuration pane with the help of enum ej.ReportDesigner.ConfigureItems
+
+<table class="params">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="name">Property</td>
+      <td class="description">Shows or hides the properties panel in configuration pane.</td>
+    </tr>
+    <tr>
+      <td class="name">Data</td>
+      <td class="description">Shows or hides the data panel in configuration pane.</td>
+    </tr>
+    <tr>
+      <td class="name">Parameter</td>
+      <td class="description">Shows or hides the parameter panel in configuration pane.</td>
+    </tr>
+    <tr>
+      <td class="name">ImageManager</td>
+      <td class="description">Shows or hides the image manager panel in configuration pane.</td>
+    </tr>
+     <tr>
+      <td class="name">All</td>
+      <td class="description">Shows all the configuration pane items.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Default value 
+
+<li>ej.ReportDesigner.ConfigureItems.All</li>
+
+#### Example
+
+* Show all configure pane items.
+
+{% highlight html %}
+ 
+<div id="container"></div>
+<script>
+    $("#container").ejReportDesigner({
+        configurePaneSettings: { items: ej.ReportDesigner.ConfigureItems.All }
+    });
+</script>
+
+{% endhighlight %}
+
+* Hide all configure pane items.
+
+{% highlight html %}
+ 
+<div id="container"></div>
+<script>
+    $("#container").ejReportDesigner({
+        configurePaneSettings: { items: ~ej.ReportDesigner.ConfigureItems.All }
+    });
+</script>
+
+{% endhighlight %}
+
+* Hide **Properties** panel from configure pane items.
+
+{% highlight html %}
+ 
+<div id="container"></div>
+<script>
+    $("#container").ejReportDesigner({
+        configurePaneSettings: { items: ej.ReportDesigner.ConfigureItems.All & ~ej.ReportDesigner.ConfigureItems.Property}
+    });
+</script>
+
+{% endhighlight %}
+
+* Hide all items except **Data** panel from configure pane items.
+
+{% highlight html %}
+ 
+<div id="container"></div>
+<script>
+    $("#container").ejReportDesigner({
+        configurePaneSettings: { items: ej.ReportDesigner.ConfigureItems.All & ~ej.ReportDesigner.ConfigureItems.Property  & ~ej.ReportDesigner.ConfigureItems.Parameter  & ~ej.ReportDesigner.ConfigureItems.ImageManager}
+    });
+</script>
+
+{% endhighlight %}
+
+### configurePaneSettings.showConfigurePane `boolean`
+{:#members:configurepanesettings-showconfigurepane}
+
+Shows or hides the configuration pane in ReportDesigner control.
+
+#### Default value 
+
+<li>true</li>
+
+#### Example
+
+* Show configure pane.
+
+{% highlight html %}
+ 
+<div id="container"></div>
+<script>
+    $("#container").ejReportDesigner({
+        configurePaneSettings: { showConfigurePane: true }
+    });
+</script>
+
+{% endhighlight %}
+
+* Hide configure pane.
+
+{% highlight html %}
+ 
+<div id="container"></div>
+<script>
+    $("#container").ejReportDesigner({
+        configurePaneSettings: { showConfigurePane: false }
+    });
+</script>
+
+{% endhighlight %}
 
 ### locale `string`
 {:#members:locale}
@@ -145,10 +283,249 @@ Specifies the locale for report designer.
 
 {% endhighlight %}
 
+### reportDataExtensions `array`
+{:#members:reportdataextensions}
+
+Gets or sets the list of custom data extension items.
+
+#### Default Value
+
+* []
+
+### reportDataExtensions.name `string`
+{:#members:reportdataextensions-name}
+
+Gets or sets the name of the datasource type.
+
+#### Default Value
+
+* empty
+
+### reportDataExtensions.className `string`
+{:#members:reportdataextensions-classname}
+
+Gets or sets the class name of the data extension.
+
+#### Default Value
+
+* empty
+
+### reportDataExtensions.imageClass `string`
+{:#members:reportdataextensions-imageclass}
+
+Gets or sets the image class name to load image in data pane tile.
+
+#### Default Value
+
+* empty
+
+### reportDataExtensions.displayName `string`
+{:#members:reportdataextensions-displayname}
+
+Gets or sets the name for data extension item to display in the data pane tile.
+
+#### Default Value
+
+* empty
+
+#### Example
+
+* Add a custom data extension to report designer
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
+    $("#container").ejReportDesigner({
+       reportDataExtensions: [{
+        className: 'WebAPIDataSource',
+        name: 'WebAPI',
+        imageClass: 'e-reportdesigner-datasource-webapi',
+        displayName: 'WebAPI'
+    }]
+  });
+</script>
+
+{% endhighlight %}
+
+* Add multiple custom data extensions to report designer
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
+    $("#container").ejReportDesigner({
+       reportDataExtensions: [
+         {
+        className: 'WebAPIDataSource',
+        name: 'WebAPI',
+        imageClass: 'e-reportdesigner-datasource-webapi',
+        displayName: 'WebAPI'
+        },
+        {
+        className: 'PSQLDataSource',
+        name: 'PostgreSQL',
+        imageClass: 'e-reportdesigner-datasource-psql',
+        displayName: 'PostgreSQL'
+       }]
+  });
+</script>
+
+{% endhighlight %}
+
+### reportItemExtensions `array`
+{:#members:reportitemextensions}
+
+Gets or sets the list of custom report items.
+
+#### Default Value
+
+* []
+
+### reportItemExtensions.name `string`
+{:#members:reportitemextensions-name}
+
+Gets or sets the name for the report item.
+
+#### Default Value
+
+* empty
+
+### reportItemExtensions.className `string`
+{:#members:reportitemextensions-classname}
+
+Gets or sets the class name of the report item.
+
+#### Default Value
+
+* empty
+
+### reportItemExtensions.imageClass `string`
+{:#members:reportitemextensions-imageclass}
+
+Gets or sets the image class name to load image in widgets pane tile.
+
+#### Default Value
+
+* empty
+
+### reportItemExtensions.displayName `string`
+{:#members:reportitemextensions-displayname}
+
+Gets or sets the name for custom report item to display in the widgets pane tile.
+
+#### Default Value
+
+* empty
+
+### reportItemExtensions.category `string`
+{:#members:reportitemextensions-category}
+
+Gets or sets the category name for the report item.
+
+#### Default Value
+
+* empty
+
+### reportItemExtensions.toolTip `object`
+{:#members:reportitemextensions-tooltip}
+
+Gets information to provide content for custom report item tooltip.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">requirements</td>
+<td class="description">Gets or sets the minimum values required for the report item .</td>
+</tr>
+<tr>
+<td class="name">description</td>
+<td class="description">Gets or sets the description content for the report item.</td>
+</tr>
+<tr>
+<td class="name">title</td>
+<td class="description">Gets or sets the title for report item.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* null
+
+#### Example
+
+* Add a custom report item
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
+    $("#container").ejReportDesigner({ 
+      reportItemExtensions: [{
+        name: 'barcode',
+        className: 'EJBarcode',
+        imageClass: 'customitem-barcode',
+        displayName: 'Barcode',
+        category: 'Custom report item',
+        toolTip: {
+            requirements: 'Add a report item to the designer area.',
+            description: 'Display the barcode lines as report item.',
+            title: 'Barcode'
+        }
+    }]
+  });
+</script>
+
+{% endhighlight %}
+
+* Add multiple custom report items
+
+{% highlight html %}
+ 
+<div id="container"></div> 
+<script>
+    $("#container").ejReportDesigner({ 
+      reportItemExtensions: [
+        {
+        name: 'barcode',
+        className: 'EJBarcode',
+        imageClass: 'customitem-barcode',
+        displayName: 'Barcode',
+        category: 'Barcodes',
+        toolTip: {
+            requirements: 'Add a report item to the designer area.',
+            description: 'Display the barcode lines as report item.',
+            title: 'Barcode'
+          }
+        },
+       {
+        name: 'qrbarcode',
+        className: 'EJQRBarcode',
+        imageClass: 'customitem-qrbarcode',
+        displayName: 'QR Barcode',
+        category: 'Barcodes',
+        toolTip: <IItemTooltip>{
+            requirements: 'Add a report item to the designer area.',
+            description: 'Display the barcode lines as report item.',
+            title: 'QR Barcode'
+        }
+      }]
+  });
+</script>
+
+{% endhighlight %}
+
 ### reportPath  `string`	
 {:#members:reportpath}
 
-Gets or Sets the report path of server.
+Gets or sets the report path of server.
 
 #### Default Value 
 
@@ -170,7 +547,7 @@ Gets or Sets the report path of server.
 ### reportServerUrl `string`	
 {:#members:reportserverurl}
 
-Gets or Sets the reports server URL.
+Gets or sets the reports server URL.
 
 #### Default Value 
 
@@ -214,7 +591,7 @@ Gets or sets the serviceAuthorizationToken to access the Report Server API servi
 ### serviceUrl `string`
 {:#members:serviceurl}
 
-Gets or Sets the URL of the  WebAPI service; it will be used for processing the report.
+Gets or sets the URL of the  WebAPI service; it will be used for processing the report.
 
 #### Default Value
 
@@ -233,10 +610,32 @@ Gets or Sets the URL of the  WebAPI service; it will be used for processing the 
 
 {% endhighlight %}
 
+### tenantName  `string`	
+{:#members:tenantname}
+
+Gets or sets the tenant name of the user groups; it will be used when integrating report designer with server.
+
+#### Default Value 
+
+* null
+
+#### Example 
+
+{% highlight js %}
+
+<div id="container"></div>
+<script>
+    $("#container").ejReportDesigner({
+        tenantName: "site"
+    });
+</script>
+
+{% endhighlight %}
+
 ### toolbarSettings `object`
 {:#members:toolbarsettings}
 
-Specifies the toolbar settings.
+Defines the settings of the ReportDesigner toolbar.
 
 ### toolbarSettings.items `enum`
 {:#members:toolbarsettings-items}
@@ -309,6 +708,22 @@ Shows or hides the grouped items in the toolbar with the help of enum ej.ReportD
       <td class="name">Footer</td>
       <td class="description">Enables footer area in the report.</td>
     </tr>
+       <tr>
+      <td class="name">SendBackward</td>
+      <td class="description">Visually move the selected report item behind its closest intersected report item.</td>
+    </tr>
+      <tr>
+      <td class="name">BringForward</td>
+      <td class="description">Visually move the selected report item over its closest intersected report items.</td>
+    </tr>
+      <tr>
+      <td class="name">SendToBack</td>
+      <td class="description">Visually move the selected report item behind all other intersected report items.</td>
+    </tr>
+      <tr>
+      <td class="name">BringToFront</td>
+      <td class="description">Visually move the selected report item over all other intersected report items.</td>
+    </tr>
     <tr>
       <td class="name">EditDesign</td>
       <td class="description">Switches from preview to design view of the report.</td>
@@ -326,12 +741,53 @@ Shows or hides the grouped items in the toolbar with the help of enum ej.ReportD
 
 #### Example
 
+* Show all toolbar items
+
 {% highlight html %}
  
 <div id="container"></div>
 <script>
     $("#container").ejReportDesigner({
         toolbarSettings: { items: ej.ReportDesigner.ToolbarItems.All }
+    });
+</script>
+
+{% endhighlight %}
+
+* Hide all toolbar items
+
+{% highlight html %}
+ 
+<div id="container"></div>
+<script>
+    $("#container").ejReportDesigner({
+        toolbarSettings: { items: ~ej.ReportDesigner.ToolbarItems.All }
+    });
+</script>
+
+{% endhighlight %}
+
+* Hide **Footer** option from toolbar
+
+{% highlight html %}
+ 
+<div id="container"></div>
+<script>
+    $("#container").ejReportDesigner({
+        toolbarSettings: { items: ej.ReportDesigner.ToolbarItems.All & ~ej.ReportDesigner.ToolbarItems.Footer }
+    });
+</script>
+
+{% endhighlight %}
+
+* Hide **Footer** and **Header** option from toolbar
+
+{% highlight html %}
+ 
+<div id="container"></div>
+<script>
+    $("#container").ejReportDesigner({
+        toolbarSettings: { items: ej.ReportDesigner.ToolbarItems.All & ~ej.ReportDesigner.ToolbarItems.Footer & ~ej.ReportDesigner.ToolbarItems.Header }
     });
 </script>
 
@@ -346,14 +802,27 @@ Shows or hides the toolbar.
 
 * true
 
-#### Example
+* Show report designer toolbar.
 
 {% highlight html %}
- 
+
 <div id="container"></div>
 <script>
     $("#container").ejReportDesigner({
         toolbarSettings: { showToolbar: true }
+    });
+</script>
+
+{% endhighlight %}
+
+* Hide report designer toolbar.
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    $("#container").ejReportDesigner({
+        toolbarSettings: { showToolbar: false }
     });
 </script>
 
@@ -374,14 +843,382 @@ Specifies the toolbar template ID.
  
 <div id="container"></div>
 <script>          
-   $("#container").ejReportDesigner({
+   $("#container").ejReportDesigner(
+       {
            toolbarSettings:{templateId: "customtoolbarId"}
-   });         
+       });         
 </script>
 
 {% endhighlight %}
 
 ## Methods
+
+### addDataSet(dataset)
+{:#methods:adddataset}
+
+Add a dataset to the report at runtime.
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class='name'>dataset</td>
+      <td class='type'>object</td>
+      <td class='description'>a JSON to define a connection properties for dataset.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Example
+
+* Add embedded dataset to the report 
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create Report Designer Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    var dataset = 
+    { 
+     __type:'Syncfusion.RDL.DOM.DataSet',
+     Name:'DataSet1',
+     Fields:[
+          { __type: "Syncfusion.RDL.DOM.Field",DataField: "DepartmentID",Name: "DepartmentID",TypeName: "System.Int16",Value: null},
+          { __type: "Syncfusion.RDL.DOM.Field",DataField: "Name",Name: "Name",TypeName: "System.String",Value: null},
+          { __type: "Syncfusion.RDL.DOM.Field",DataField: "GroupName",Name: "GroupName",TypeName: "System.String",Value: null },
+          { __type: "Syncfusion.RDL.DOM.Field",DataField: "ModifiedDate",Name: "ModifiedDate",TypeName: "System.DateTime",Value: null}
+        ],
+     Query: {
+          __type: "Syncfusion.RDL.DOM.Query",
+          CommandText: "SELECT [HumanResources].[Department].[DepartmentID],\n[HumanResources].[Department].[Name],\n[HumanResources].[Department].[GroupName],\n[HumanResources].[Department].[ModifiedDate] FROM [HumanResources].[Department]",
+          CommandType: 0,
+          DataSourceName: "DataSource1",
+          QueryDesignerState: {
+              __type: "Syncfusion.RDL.DOM.QueryDesignerState",
+              Expressions: null,
+              Filters: null,
+              Joins: null,
+              StoredProcedure: null,
+              Tables: [
+                {
+                  __type: "Syncfusion.RDL.DOM.Table",
+                  Columns: [
+                    { __type: "Syncfusion.RDL.DOM.Column",AggregateTye: undefined,AliasName: null,IsDuplicate: false,
+                    IsSelected: true, Name: "DepartmentID"
+                    },
+                    {__type: "Syncfusion.RDL.DOM.Column",AggregateTye: undefined,AliasName: null,IsDuplicate: false,
+                    IsSelected: true,Name: "Name"
+                    },
+                    {__type: "Syncfusion.RDL.DOM.Column",AggregateTye: undefined,AliasName: null,IsDuplicate: false,
+                    IsSelected: true,Name: "GroupName"
+                    },
+                    {__type: "Syncfusion.RDL.DOM.Column",AggregateTye: undefined,AliasName: null,IsDuplicate: false,
+                    IsSelected: true,Name: "ModifiedDate"
+                    }
+                  ],
+                  Name: "Department", 
+                  Schema: "HumanResources",
+                  SchemaLevels: [
+                    { Name: "HumanResources",SchemaType: "Schema"},
+                    {Name: "Tables",SchemaType: "Category"},
+                    { Name: "Department",SchemaType: "Table"}
+                  ]
+                }
+              ]
+          },
+          QueryParameters: [],
+          Timeout: 0
+          },
+     CaseSensitivity:0,
+     Collation:null,
+     AccentSensitivity:0,
+     KanatypeSensitivity:0,
+     WidthSensitvity:0,
+     Filters:[],
+     SharedDataSet:null,
+     InterpretSubtotalsAsDetails:0,
+     DataSetInfo:null,
+     DataSetObject:null
+     };
+
+    designerObj.addDataSet(dataset);
+</script>
+
+{% endhighlight %}
+
+* Add shared dataset to the report 
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create Report Designer Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+ 
+    var dataset = 
+    { 
+     __type:'Syncfusion.RDL.DOM.DataSet',
+     Name:'DataSet1',
+     Fields:[
+          { __type: "Syncfusion.RDL.DOM.Field",DataField: "ProdCat",Name: "ProdCat",TypeName: "System.String",Value: null},
+          { __type: "Syncfusion.RDL.DOM.Field",DataField: "SubCat",Name: "SubCat",TypeName: "System.String",Value: null},
+          { __type: "Syncfusion.RDL.DOM.Field",DataField: "OrderYear",Name: "OrderYear",TypeName: "System.Int32",Value: null },
+          { __type: "Syncfusion.RDL.DOM.Field",DataField: "OrderQtr",Name: "OrderQtr",TypeName: "System.String",Value: null},
+          { __type: "Syncfusion.RDL.DOM.Field",DataField: "Sales",Name: "Sales",TypeName: "System.Decimal",Value: null}
+        ],
+     Query:null,
+     CaseSensitivity:0,
+     Collation:null,
+     AccentSensitivity:0,
+     KanatypeSensitivity:0,
+     WidthSensitvity:0,
+     Filters:[],
+     SharedDataSet: {
+            __type: "Syncfusion.RDL.DOM.SharedDataSet",
+            QueryParameters: [],
+            SharedDataSetReference: 'Sales'
+     },
+     InterpretSubtotalsAsDetails:0,
+     DataSetInfo:null,
+     DataSetObject:null
+     };
+
+    designerObj.addDataSet(dataset);
+</script>
+
+{% endhighlight %}
+
+### addDataSource(datasource)
+{:#methods:adddatasource}
+
+Add a datasource to the report at runtime.
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class='name'>datasource</td>
+      <td class='type'>object</td>
+      <td class='description'>a JSON to define a connection properties for datasource.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create Report Designer Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    var datasource = 
+    { 
+      __type:'Syncfusion.RDL.DOM.DataSource',
+      Name:'DataSource1',
+      Transaction:false,
+      DataSourceReference:null,
+      SecurityType:'DataBase',
+      ConnectionProperties:{
+            __type:'Syncfusion.RDL.DOM.ConnectionProperties', 
+            ConnectString:'Data Source=mvc.syncfusion.com;Initial Catalog=AdventureWorks;',
+            EmbedCredentials:false,
+            DataProvider:'SQL',
+            IsDesignState:false,
+            IntegratedSecurity:false,
+            UserName:'',
+            PassWord:'',
+            Prompt:'Specify the Username and password for DataSource DataSource1',
+            CustomProperties:[]
+        } 
+    };
+
+    designerObj.addDataSource(datasource);
+</script>
+
+{% endhighlight %}
+
+* Add shared datasource to the report
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create Report Designer Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    var datasource = 
+    { 
+      __type:'Syncfusion.RDL.DOM.DataSource',
+      Name:'DataSource1',
+      Transaction:false,
+      DataSourceReference: 'AdventureWorks',
+      SecurityType:'None',
+      ConnectionProperties:null
+    };
+
+    designerObj.addDataSource(datasource);
+</script>
+
+{% endhighlight %}
+
+### addReportItem(item)
+{:#methods:addreportitem}
+
+Add a report item to the report at runtime.
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">item</td>
+			<td class="type">object</td>
+			<td class="description last">JSON for the new report item to be added</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Example
+
+* Add a report item to report body
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create Report Designer Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    var item =  { left: 300, top: 100, itemType: 'Tablix', container: { name: 'Body' } };
+    designerObj.addReportItem(item);
+</script>
+
+{% endhighlight %}
+
+* Add a report item to report header
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create Report Designer Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    var item =  { left: 100, top: 30, itemType: 'Image', container: { name: 'Header' } };
+    designerObj.addReportItem(item);
+</script>
+
+{% endhighlight %}
+
+* Add a report item to report footer
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create Report Designer Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    var item =  { left: 50, top: 50, itemType: 'TextBox', container: { name: 'Footer' } };
+    designerObj.addReportItem(item);
+</script>
+
+{% endhighlight %}
+
+* Add a report item into a tablix cell
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create Report Designer Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    //Add image report item into tablix cell
+    var item =  { left: 50, top: 50, itemType: 'Image', container: { name: 'Tablix1',rowIndex:0,colIndex:0 } };
+    designerObj.addReportItem(item);
+</script>
+
+{% endhighlight %}
+
+* Add a report item into a rectangle report item
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create Report Designer Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    //Add rectangle item
+    var item =  { left: 50, top: 50, itemType: 'Rectangle', container: { name: 'Body' } };
+    designerObj.addReportItem(item);
+    //Add image report item into rectangle item
+    var item =  { left: 10, top: 20, itemType: 'Image', container: { name: 'Rectangle1'} };
+    designerObj.addReportItem(item);
+</script>
+
+{% endhighlight %}
+
+### bringForward()
+{:#methods:bringforward}
+
+Visually move the selected report item over its closest intersected report items.
+
+#### Example
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create ReportDesigner Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    designerObj.bringForward();
+</script>
+
+{% endhighlight %}
+
+### bringToFront()
+{:#methods:bringtofront}
+
+Visually move the selected report item over all other intersected report items.
+
+#### Example
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create ReportDesigner Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    designerObj.bringToFront();
+</script>
+
+{% endhighlight %}
 
 ### canCopy()
 {:#methods:cancopy}
@@ -429,29 +1266,6 @@ Determines whether a cut operation is possible.
 
 {% endhighlight %}
 
-### canRemove()
-{:#methods:canremove}
-
-Determines whether a delete operation is possible.
-
-#### Returns
-
-* boolean
-
-#### Example
-
-{% highlight html %}
-
-<div id="container"></div>
-<script>
-    // Create ReportDesigner Instance
-    $("#container").ejReportDesigner();
-    var designerObj = $("#container").data("ejReportDesigner");
-    designerObj.canRemove();
-</script>
-
-{% endhighlight %}
-
 ### canPaste()
 {:#methods:canpaste}
 
@@ -478,7 +1292,7 @@ Determines whether a paste operation is possible.
 ### canRedo()
 {:#methods:canredo}
 
-Returns the bool value indicating whether the user can redo the previous action in the report.
+Returns the boolean value indicating whether the user can redo the previous action in the report.
 
 #### Returns
 
@@ -498,10 +1312,33 @@ Returns the bool value indicating whether the user can redo the previous action 
 
 {% endhighlight %}
 
+### canRemove()
+{:#methods:canremove}
+
+Determines whether a delete operation is possible.
+
+#### Returns
+
+* boolean
+
+#### Example
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    // Create ReportDesigner Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    designerObj.canRemove();
+</script>
+
+{% endhighlight %}
+
 ### canUndo()
 {:#methods:canundo}
 
-Returns a bool value indicating whether the user can undo the previous action in the report.
+Returns a boolean value indicating whether the user can undo the previous action in the report.
 
 #### Returns
 
@@ -521,10 +1358,82 @@ Returns a bool value indicating whether the user can undo the previous action in
 
 {% endhighlight %}
 
+### cloneDataSet(name)
+{:#methods:clonedataset}
+
+Clone the existing dataset in the report at runtime.
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class='name'>name</td>
+      <td class='type'>string</td>
+      <td class='description'>Name of the existing dataset.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create ReportDesigner Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    designerObj.cloneDataSet('DataSet1');
+</script>
+
+{% endhighlight %}
+
+### cloneDataSource(name)
+{:#methods:clonedatasource}
+
+Clone the existing datasource in the report at runtime.
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class='name'>name</td>
+      <td class='type'>string</td>
+      <td class='description'>Name of the existing datasource.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create ReportDesigner Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    designerObj.cloneDataSource('DataSource1');
+</script>
+
+{% endhighlight %}
+
 ### copy()
 {:#methods:copy}
 
-Copies the selected ReportItem from design panel to Report Designer internal clipboard.
+Copies the selected report item from design panel to the Report Designer internal clipboard.
 
 #### Example
 
@@ -543,7 +1452,7 @@ Copies the selected ReportItem from design panel to Report Designer internal cli
 ### cut()
 {:#methods:cut}
 
-Cuts the selected ReportItem from design panel to Report Designer internal clipboard.
+Cuts the selected report item from design panel to the Report Designer internal clipboard.
 
 #### Example
 
@@ -559,29 +1468,10 @@ Cuts the selected ReportItem from design panel to Report Designer internal clipb
 
 {% endhighlight %}
 
-### remove()
-{:#methods:remove}
-
-Deletes the selected item from the report.
-
-#### Example
-
-{% highlight html %}
-
-<div id="container"></div>
-<script>
-    // Create ReportDesigner Instance
-    $("#container").ejReportDesigner();
-    var designerObj = $("#container").data("ejReportDesigner");
-    designerObj.remove();
-</script>
-
-{% endhighlight %}
-
 ### hasReportChanges()
 {:#methods:hasreportchanges}
 
-Returns the bool value that specifies whether the report has changes or not.
+Returns the boolean value that specifies whether the report has changes or not.
 
 #### Returns
 
@@ -604,7 +1494,7 @@ Returns the bool value that specifies whether the report has changes or not.
 ### isNewReport()
 {:#methods:isnewreport}
 
-Returns the bool value that specifies whether the currently processing report is a new report or not.
+Returns the boolean value that specifies whether the currently processing report is a new report or not.
 
 #### Returns
 
@@ -627,7 +1517,7 @@ Returns the bool value that specifies whether the currently processing report is
 ### isNewServerReport()
 {:#methods:isnewserverreport}
 
-Returns the bool value that specifies whether the currently processing report is a new server report or not.
+Returns the boolean value that specifies whether the currently processing report is a new server report or not.
 
 #### Returns
 
@@ -650,7 +1540,7 @@ Returns the bool value that specifies whether the currently processing report is
 ### isServerReport()
 {:#methods:isserverreport}
 
-Returns the bool value that specifies whether the currently processing report is obtained from the server or local.
+Returns the boolean value that specifies whether the currently processing report is obtained from the server or local.
 
 #### Returns
 
@@ -755,7 +1645,7 @@ To create a new report in the server.
 ### openReport()
 {:#methods:openreport}
 
-This method opens the report from the ReportServer.
+This method opens the report from the server.
 
 <table>
   <thead>
@@ -769,7 +1659,7 @@ This method opens the report from the ReportServer.
     <tr>
       <td class='name'>reportPath</td>
       <td class='type'>string(optional)</td>
-      <td class='description'>Path of the ReportServer report</td>
+      <td class='description'>Path of the server report</td>
     </tr>
     <tr>
       <td class='name'>serverUrl</td>
@@ -796,7 +1686,7 @@ This method opens the report from the ReportServer.
 ### openReportFromDevice()
 {:#methods:openreportfromdevice}
 
-To open the report client browse dialog.
+Opens the client browse dialog to browse the report.
 
 #### Example
 
@@ -815,7 +1705,7 @@ To open the report client browse dialog.
 ### openServerReportDialog()
 {:#methods:openserverreportdialog}
 
-To open the report open server browse dialog. 
+Opens the report designer browse dialog to browse the available reports in the reportserver.
 
 #### Example
 
@@ -834,7 +1724,7 @@ To open the report open server browse dialog.
 ### paste()
 {:#methods:paste}
 
-Pastes the selected ReportItem from Report Designer internal clipboard to design panel.
+Pastes the selected report item from the Report Designer internal clipboard to design panel.
 
 #### Example
 
@@ -869,10 +1759,137 @@ Reverses the action of the last Undo command.
 
 {% endhighlight %}
 
+### remove()
+{:#methods:remove}
+
+Deletes the selected report item from the report.
+
+#### Example
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    // Create ReportDesigner Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    designerObj.remove();
+</script>
+
+{% endhighlight %}
+
+### removeDataSet(dataset)
+{:#methods:removedataset}
+
+Remove a dataset from the report at runtime.
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class='name'>dataset</td>
+      <td class='type'>string</td>
+      <td class='description'>Name of the dataset.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create ReportDesigner Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    designerObj.removeDataSet('DataSet1');
+</script>
+
+{% endhighlight %}
+
+### removeDatasource(datasource)
+{:#methods:removedatasource}
+
+Remove a datasource from the report at runtime.
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class='name'>datasource</td>
+      <td class='type'>string</td>
+      <td class='description'>Name of the datasource.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create ReportDesigner Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    designerObj.removeDatasource('DataSource1');
+</script>
+
+{% endhighlight %}
+
+### removeReportItem(itemName)
+{:#methods:removereportitem}
+
+Remove the given report item from the report.
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">itemName</td>
+			<td class="type">string</td>
+			<td class="description last">Name of the report item to be removed from report</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create ReportDesigner Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    designerObj.removeReportItem('Tablix1');
+</script>
+
+{% endhighlight %}
+
 ### saveReport()
 {:#methods:savereport}
 
-This method saves the report into the ReportServer.
+This method saves the report into the server.
 
 <table>
   <thead>
@@ -908,7 +1925,7 @@ This method saves the report into the ReportServer.
 ### saveServerReportDialog()
 {:#methods:saveserverreportdialog}
 
-To open the report save server browse dialog.
+Opens the report designer browse dialog to save the report into server.
 
 #### Example
 
@@ -943,10 +1960,84 @@ To download the designed report.
 
 {% endhighlight %}
 
+### selectReportItem(itemName)
+{:#methods:selectreportitem}
+
+Update the selection to report item at runtime.
+
+<table class="params">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="name">itemName</td>
+			<td class="type">string</td>
+			<td class="description last">Name of the report item.</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create ReportDesigner Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    designerObj.selectReportItem('Tablix1');
+</script>
+
+{% endhighlight %}
+
+### sendBackward()
+{:#methods:sendbackward}
+
+Visually move the selected report item behind its closest intersected report item.
+
+#### Example
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create ReportDesigner Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    designerObj.sendBackward();
+</script>
+
+{% endhighlight %}
+
+### sendToBack()
+{:#methods:sendtoback}
+
+Visually move the selected report item behind all other intersected report items.
+
+#### Example
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create ReportDesigner Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    designerObj.sendToBack();
+</script>
+
+{% endhighlight %}
+
 ### showDesign()
 {:#methods:showdesign}
 
-To show the report design.
+Performs switch action from viewer to designer at runtime.
 
 #### Example
 
@@ -1049,7 +2140,7 @@ To open the server browse dialog.
 ### showPreview()
 {:#methods:showpreview}
 
-To show the report preview.
+Performs switch action from designer to viewer at runtime.
 
 #### Example
 
@@ -1084,24 +2175,247 @@ Reverses the last action that was performed.
 
 {% endhighlight %}
 
+### updateDataset(datasetName,dataset)
+{:#methods:updatedataset}
+
+Update the dataset in the report at runtime.
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class='name'>datasetName</td>
+      <td class='type'>string</td>
+      <td class='description'>Name of the existing dataset.</td>
+    </tr>
+    <tr>
+      <td class='name'>dataset</td>
+      <td class='type'>object</td>
+      <td class='description'>a JSON to define a connection properties for dataset.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Example
+
+* Update embedded dataset
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create ReportDesigner Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    var dataset = 
+    { 
+     __type:'Syncfusion.RDL.DOM.DataSet',
+     Name:'DataSet2',
+     Fields:[
+          { __type: "Syncfusion.RDL.DOM.Field",DataField: "DepartmentID",Name: "DepartmentID",TypeName: "System.Int16",Value: null},
+          { __type: "Syncfusion.RDL.DOM.Field",DataField: "Name",Name: "Name",TypeName: "System.String",Value: null},
+          { __type: "Syncfusion.RDL.DOM.Field",DataField: "GroupName",Name: "GroupName",TypeName: "System.String",Value: null },
+          { __type: "Syncfusion.RDL.DOM.Field",DataField: "ModifiedDate",Name: "ModifiedDate",TypeName: "System.DateTime",Value: null}
+        ],
+     Query: {
+          __type: "Syncfusion.RDL.DOM.Query",
+          CommandText: "SELECT [HumanResources].[Department].[DepartmentID],\n[HumanResources].[Department].[Name],\n[HumanResources].[Department].[GroupName],\n[HumanResources].[Department].[ModifiedDate] FROM [HumanResources].[Department]",
+          CommandType: 0,
+          DataSourceName: "DataSource1",
+          QueryDesignerState: {
+              __type: "Syncfusion.RDL.DOM.QueryDesignerState",
+              Expressions: null,
+              Filters: null,
+              Joins: null,
+              StoredProcedure: null,
+              Tables: [
+                {
+                  __type: "Syncfusion.RDL.DOM.Table",
+                  Columns: [
+                    { __type: "Syncfusion.RDL.DOM.Column",AggregateTye: undefined,AliasName: null,IsDuplicate: false,
+                    IsSelected: true, Name: "DepartmentID"
+                    },
+                    {__type: "Syncfusion.RDL.DOM.Column",AggregateTye: undefined,AliasName: null,IsDuplicate: false,
+                    IsSelected: true,Name: "Name"
+                    },
+                    {__type: "Syncfusion.RDL.DOM.Column",AggregateTye: undefined,AliasName: null,IsDuplicate: false,
+                    IsSelected: true,Name: "GroupName"
+                    },
+                    {__type: "Syncfusion.RDL.DOM.Column",AggregateTye: undefined,AliasName: null,IsDuplicate: false,
+                    IsSelected: true,Name: "ModifiedDate"
+                    }
+                  ],
+                  Name: "Department", 
+                  Schema: "HumanResources",
+                  SchemaLevels: [
+                    { Name: "HumanResources",SchemaType: "Schema"},
+                    {Name: "Tables",SchemaType: "Category"},
+                    { Name: "Department",SchemaType: "Table"}
+                  ]
+                }
+              ]
+          },
+          QueryParameters: [],
+          Timeout: 0
+          },
+     CaseSensitivity:0,
+     Collation:null,
+     AccentSensitivity:0,
+     KanatypeSensitivity:0,
+     WidthSensitvity:0,
+     Filters:[],
+     SharedDataSet:null,
+     InterpretSubtotalsAsDetails:0,
+     DataSetInfo:null,
+     DataSetObject:null
+     };
+
+designerObj.updateDataset('DataSet1',dataset);
+</script>
+
+{% endhighlight %}
+
+* Update shared dataset
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create Report Designer Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+ 
+    var dataset = 
+    { 
+     __type:'Syncfusion.RDL.DOM.DataSet',
+     Name:'DataSet2',
+     Fields:[
+          { __type: "Syncfusion.RDL.DOM.Field",DataField: "ProdCat",Name: "ProdCat",TypeName: "System.String",Value: null},
+          { __type: "Syncfusion.RDL.DOM.Field",DataField: "SubCat",Name: "SubCat",TypeName: "System.String",Value: null},
+          { __type: "Syncfusion.RDL.DOM.Field",DataField: "OrderYear",Name: "OrderYear",TypeName: "System.Int32",Value: null },
+          { __type: "Syncfusion.RDL.DOM.Field",DataField: "OrderQtr",Name: "OrderQtr",TypeName: "System.String",Value: null},
+          { __type: "Syncfusion.RDL.DOM.Field",DataField: "Sales",Name: "Sales",TypeName: "System.Decimal",Value: null}
+        ],
+     Query:null,
+     CaseSensitivity:0,
+     Collation:null,
+     AccentSensitivity:0,
+     KanatypeSensitivity:0,
+     WidthSensitvity:0,
+     Filters:[],
+     SharedDataSet: {
+            __type: "Syncfusion.RDL.DOM.SharedDataSet",
+            QueryParameters: [],
+            SharedDataSetReference: 'Sales'
+     },
+     InterpretSubtotalsAsDetails:0,
+     DataSetInfo:null,
+     DataSetObject:null
+     };
+
+    designerObj.updateDataset('DataSet1',dataset);
+</script>
+
+{% endhighlight %}
+
+### updateDatasource(datasourceName,datasource)
+{:#methods:updatedatasource}
+
+Update the datasource in the report at runtime.
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class='name'>datasourceName</td>
+      <td class='type'>string</td>
+      <td class='description'>Name of the existing datasource.</td>
+    </tr>
+    <tr>
+      <td class='name'>datasource</td>
+      <td class='type'>object</td>
+      <td class='description'>a JSON to define a connection properties for datasource.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create ReportDesigner Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    var datasource = { 
+      __type:'Syncfusion.RDL.DOM.DataSource',
+       Name:'DataSource2',
+        Transaction:false,
+         DataSourceReference:null,
+         SecurityType:'DataBase',
+         ConnectionProperties:{
+            __type:'Syncfusion.RDL.DOM.ConnectionProperties', 
+            ConnectString:'Data Source=mvc.syncfusion.com;Initial Catalog=AdventureWorks;',
+             EmbedCredentials:false,
+              DataProvider:'SQL',
+             IsDesignState:false,
+             IntegratedSecurity:false,
+             UserName:'',
+             PassWord:'',
+             Prompt:'Specify the Username and password for DataSource DataSource2',
+             CustomProperties:[]
+              } 
+         };
+
+    designerObj.updateDatasource('DataSource1',datasource);
+</script>
+
+{% endhighlight %}
+
+
+* Update shared datasource
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    //Create Report Designer Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    var datasource = 
+    { 
+      __type:'Syncfusion.RDL.DOM.DataSource',
+      Name:'DataSource2',
+      Transaction:false,
+      DataSourceReference: 'AdventureWorks',
+      SecurityType:'None',
+      ConnectionProperties:null
+    };
+
+    designerObj.updateDatasource('DataSource1',datasource);
+</script>
+
+{% endhighlight %}
+
 ## Events
 
 ### ajaxBeforeLoad
 {:#events:ajaxbeforeload}
 
 This event will be triggered before AJAX loads.
-
-#### Example 
-
-{% highlight js %}
-
-    $("#container").ejReportDesigner({
-        ajaxBeforeLoad: function(args) {
-            // Write your block of code
-        }
-    });
-
-{% endhighlight %}
 
 <table>
   <thead>
@@ -1139,6 +2453,20 @@ This event will be triggered before AJAX loads.
     </tr>
   </tbody>
 </table>
+
+#### Example 
+
+{% highlight js %}
+
+    $("#container").ejReportDesigner({
+        ajaxBeforeLoad: function(args) {
+            if (args && args.headers) {
+                args.headers.push({ 'Key': 'keyCode', 'Value': ("Authorization") });
+            }
+        }
+    });
+
+{% endhighlight %}
 
 ### ajaxError
 {:#events:ajaxerror}
@@ -1213,18 +2541,6 @@ This event will be triggered when the Report Designer widget is destroyed.
 
 This event will be triggered while clicking open menu items.
 
-#### Example 
-
-{% highlight js %}
-
-    $("#container").ejReportDesigner({
-        openReportClick: function(args) {
-            // Write your block of code
-        }
-    });
-
-{% endhighlight %}
-
 <table>
   <thead>
     <tr>
@@ -1247,22 +2563,22 @@ This event will be triggered while clicking open menu items.
   </tbody>
 </table>
 
-### reportModified
-{:#events:reportmodified}
-
-This event will be triggered when the report is modified.
-
 #### Example 
 
 {% highlight js %}
 
     $("#container").ejReportDesigner({
-        reportModified: function(args) {
+        openReportClick: function(args) {
             // Write your block of code
         }
     });
 
 {% endhighlight %}
+
+### reportModified
+{:#events:reportmodified}
+
+This event will be triggered when the report is modified.
 
 <table>
   <thead>
@@ -1286,22 +2602,22 @@ This event will be triggered when the report is modified.
   </tbody>
 </table>
 
-### reportOpened
-{:#events:reportopened}
-   
-This event will be triggered when the report is opened.
-
 #### Example 
 
 {% highlight js %}
 
     $("#container").ejReportDesigner({
-        reportOpened: function(args) {
+        reportModified: function(args) {
             // Write your block of code
         }
     });
 
 {% endhighlight %}
+
+### reportOpened
+{:#events:reportopened}
+   
+This event will be triggered when the report is opened.
 
 <table>
   <thead>
@@ -1327,22 +2643,22 @@ This event will be triggered when the report is opened.
   </tbody>
 </table>
 
-### reportSaved
-{:#events:reportsaved}
-
-This event will be triggered when the report is saved.
-
 #### Example 
 
 {% highlight js %}
 
-    $("#container").ejReportDesigner({ 
-        reportSaved: function (args) {
-                // Write your block of code
+    $("#container").ejReportDesigner({
+        reportOpened: function(args) {
+            // Write your block of code
         }
     });
 
 {% endhighlight %}
+
+### reportSaved
+{:#events:reportsaved}
+
+This event will be triggered when the report is saved.
 
 <table>
   <thead>
@@ -1368,22 +2684,22 @@ This event will be triggered when the report is saved.
   </tbody>
 </table>
 
-### saveReportClick
-{:#events:savereportclick}
-
-This event will be triggered when the save menu items are clicked.
-
 #### Example 
 
 {% highlight js %}
 
-    $("#container").ejReportDesigner({
-        saveReportClick: function(args) {
-            // Write your block of code
+    $("#container").ejReportDesigner({ 
+        reportSaved: function (args) {
+                // Write your block of code
         }
     });
 
 {% endhighlight %}
+
+### saveReportClick
+{:#events:savereportclick}
+
+This event will be triggered when the save menu items are clicked.
 
 <table>
   <thead>
@@ -1409,22 +2725,22 @@ This event will be triggered when the save menu items are clicked.
   </tbody>
 </table>
 
-### toolbarClick
-{:#events:toolbarclick}
-
-This event will be triggered while clicking the toolbar items.
-
 #### Example 
 
 {% highlight js %}
 
     $("#container").ejReportDesigner({
-        toolbarClick: function(args) {
+        saveReportClick: function(args) {
             // Write your block of code
         }
     });
 
 {% endhighlight %}
+
+### toolbarClick
+{:#events:toolbarclick}
+
+This event will be triggered while clicking the toolbar items.
 
 <table>
   <thead>
@@ -1450,6 +2766,18 @@ This event will be triggered while clicking the toolbar items.
   </tbody>
 </table>
 
+#### Example 
+
+{% highlight js %}
+
+    $("#container").ejReportDesigner({
+        toolbarClick: function(args) {
+            // Write your block of code
+        }
+    });
+
+{% endhighlight %}
+
 ### toolbarRendering
 {:#events:toolbarrendering}
 
@@ -1462,6 +2790,23 @@ This event will be triggered on rendering the Report Designer toolbar.
     $("#container").ejReportDesigner({
         toolbarRendering: function(args) {
             // Write your block of code 
+        }
+    });
+
+{% endhighlight %}
+
+### extensionLocaleChanged
+{:#events:extensionlocalechanged}
+
+This event will be triggered on locale change action in report designer.
+
+#### Example 
+ 
+{% highlight js %}
+
+    $("#container").ejReportDesigner({
+        extensionLocaleChanged: function(args) {
+            // Write your block of code
         }
     });
 
