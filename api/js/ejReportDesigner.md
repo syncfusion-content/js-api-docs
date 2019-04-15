@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejReportDesigner Widget
+title: Properties, Methods and Events of ejReportDesigner Widget , Syncfusion
 description: Public API, Events documentation for ejReportDesigner
 platform: js-api
 metaname: 
@@ -613,7 +613,7 @@ Gets or sets the URL of the  WebAPI service; it will be used for processing the 
 ### tenantName  `string`	
 {:#members:tenantname}
 
-Gets or sets the tenant name of the user groups; it will be used when integrating report designer with report server.
+Gets or sets the tenant name of the user groups; it will be used when integrating report designer with server.
 
 #### Default Value 
 
@@ -1925,7 +1925,7 @@ This method saves the report into the server.
 ### saveServerReportDialog()
 {:#methods:saveserverreportdialog}
 
-Opens the report designer browse dialog to save the report into report server.
+Opens the report designer browse dialog to save the report into server.
 
 #### Example
 
