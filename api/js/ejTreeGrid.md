@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejTreeGrid Widget
+title: Properties, Methods and Events of Syncfusion ejTreeGrid Widget
 description: Methods, members, events available in ejTreeGrid
-documentation: API
+documentation: UG
 platform: js-api
 keywords: ejTreeGrid, API, Essential JS TreeGrid
 ---
@@ -5320,6 +5320,26 @@ treeObject.updateResponsiveMinWidth("200px");
 {% endhighlight %}
 
 Demo [Link](http://jsplayground.syncfusion.com/edphz55n)
+
+### deleteRow()
+{:#methods:deleterow}
+
+To delete a selected row in TreeGrid.
+
+#### Example
+
+{% highlight html %}
+  
+<div id="treeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#treeGridContainer").data("ejTreeGrid");
+//To delete a row.
+treeObject.deleteRow();
+</script>
+
+{% endhighlight %}
 
 ## Events
 
