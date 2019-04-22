@@ -5321,6 +5321,26 @@ treeObject.updateResponsiveMinWidth("200px");
 
 Demo [Link](http://jsplayground.syncfusion.com/edphz55n)
 
+### deleteRow()
+{:#methods:deleterow}
+
+To delete a selected row in TreeGrid.
+
+#### Example
+
+{% highlight html %}
+  
+<div id="treeGridContainer"></div> 
+ 
+<script>
+// Create TreeGrid object.
+var treeObject = $("#treeGridContainer").data("ejTreeGrid");
+//To delete a row.
+treeObject.deleteRow();
+</script>
+
+{% endhighlight %}
+
 ## Events
 
 ### actionBegin
