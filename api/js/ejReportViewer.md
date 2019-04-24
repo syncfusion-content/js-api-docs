@@ -1269,7 +1269,7 @@ Export the report to the specified format.
 <div id="reportviewer">ReportViewer</div> 
 <script>
     var reportviewerObj = $("#reportviewer").data("ejReportViewer");
-    reportviewerObj.exportReport("PDF"); //Exports the reports
+    reportviewerObj.exportReport("PDF"); //Exports the report into PDF format.
 </script>
 
 {% endhighlight %}
