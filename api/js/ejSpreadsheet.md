@@ -8344,12 +8344,12 @@ This method is used to set a cell type from the specified range of cells in the 
 <tr>
 <td class="name">dataSourceRange</td>
 <td class="type">string</td>
-<td class="description">Specifies the drodown list data source range of Custom Cell type.</td>
+<td class="description">Specifies the dropdown list data source range of Custom Cell type.</td>
 </tr>
 <tr>
 <td class="name">dataSourceSheetIndex</td>
 <td class="type">number</td>
-<td class="description">Specifies the drodown list data source sheet index of Custom Cell type.</td>
+<td class="description">Specifies the dropdown list data source sheet index of Custom Cell type.</td>
 </tr>
 <tr>
 <td class="name">field</td>
