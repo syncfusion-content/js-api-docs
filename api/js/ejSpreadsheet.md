@@ -5752,6 +5752,23 @@ $("#Spreadsheet").ejSpreadsheet("gotoPage", 3, true);
 
 {% endhighlight %}
 
+### getVisibleCellDetails()
+{:#methods:getvisiblecelldetails}
+
+This method is used to get the visible cell details in Spreadsheet.
+
+#### Example
+
+{% highlight html %}
+<script>
+//initialize the Spreadsheet object
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
+//To get the visible cell details in Spreadsheet
+excelObj.getVisibleCellDetails();
+</script>
+
+{% endhighlight %}
+
 ### hideActivationPanel()
 {:#methods:hideactivationpanel}
 
