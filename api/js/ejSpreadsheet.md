@@ -8319,7 +8319,7 @@ This method is used to set a cell type from the specified range of cells in the 
 <tr>
 <td class="name">type</td>
 <td class="type"><ts name="ej.Spreadsheet.CustomCellType"/>enum</td>
-<td class="description">Specifies the button type of CustomCelltype.</td>
+<td class="description">Specifies the button type of Custom Cell type.</td>
 </tr>
 </tbody>
 </table>
@@ -12978,12 +12978,12 @@ This method is used to find the next occurrence of given value in the sheet/work
 <tr>
 <td class="name">isCSen</td>
 <td class="type">boolean</td>
-<td class="description">Pass the iscsen condition to find next occurrence</td>
+<td class="description">Pass the condition to find next occurrence</td>
 </tr>
 <tr>
 <td class="name">isEMatch</td>
 <td class="type">boolean</td>
-<td class="description">Pass the isematch condition to find next occurrence</td>
+<td class="description">Pass the condition to find next occurrence</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -13059,12 +13059,12 @@ This method is used to find the previous occurrence of given value in the sheet/
 <tr>
 <td class="name">isCSen</td>
 <td class="type">boolean</td>
-<td class="description">Pass the iscsen condition to find previous</td>
+<td class="description">Pass the condition to find previous</td>
 </tr>
 <tr>
 <td class="name">isEMatch</td>
 <td class="type">boolean</td>
-<td class="description">Pass the isematch condition to find previous</td>
+<td class="description">Pass the condition to find previous</td>
 </tr>
 <tr>
 <td class="name">type</td>
@@ -13174,22 +13174,22 @@ This method is used to perform goto special operation in the Spreadsheet.
 <tr>
 <td class="name">isNumber</td>
 <td class="type">boolean</td>
-<td class="description">Pass the isnumber condition to perform goto special</td>
+<td class="description">Pass the isNumber condition to perform goto special</td>
 </tr>
 <tr>
 <td class="name">isText</td>
 <td class="type">boolean</td>
-<td class="description">Pass the istext condition to perform goto special</td>
+<td class="description">Pass the isText condition to perform goto special</td>
 </tr>
 <tr>
 <td class="name">isLogical</td>
 <td class="type">boolean</td>
-<td class="description">Pass the islogical condition to perform goto special</td>
+<td class="description">Pass the isLogical condition to perform goto special</td>
 </tr>
 <tr>
 <td class="name">isError</td>
 <td class="type">boolean</td>
-<td class="description">Pass the iserror condition to perform goto special</td>
+<td class="description">Pass the isError condition to perform goto special</td>
 </tr>
 </tbody>
 </table>
