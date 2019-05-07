@@ -5401,7 +5401,7 @@ This method is used to get the data in specified range in Spreadsheet.
 <tr>
 <td class="name">options</td>
 <td class="type">Object</span></td>
-<td class="description"><span class="optional">Optional.</span> Pass the Object "DataOptions"
+<td class="description"><span class="optional">Optional.</span> Pass the range, property, sheetIdx, valueOnly in options
 <table class="params">
 <thead>
 <tr>
