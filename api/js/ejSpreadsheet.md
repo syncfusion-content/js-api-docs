@@ -5400,7 +5400,7 @@ This method is used to get the data in specified range in Spreadsheet.
 <tbody>
 <tr>
 <td class="name">options</td>
-<td class="type"><ts ref="DataOptions"/>Object</span></td>
+<td class="type">Object</span></td>
 <td class="description"><span class="optional">Optional.</span> Pass the Object "DataOptions"
 <table class="params">
 <thead>
@@ -7267,6 +7267,16 @@ This method is used to set the hyperlink in selected cells of the current sheet.
 <td class="type">string</td>
 <td class="description">Pass the cell address in the cell</td>
 </tr>
+<tr>
+<td class="name">text</td>
+<td class="type">string</td>
+<td class="description">Pass the text address in the cell</td>
+</tr>
+<tr>
+<td class="name">webAddress</td>
+<td class="type">string</td>
+<td class="description">Pass the web address in the cell</td>
+</tr>
 </tbody>
 </table>
 </td></tr>
@@ -7946,8 +7956,8 @@ This method is used to update the data for the specified range of cells in the S
 <tbody>
 <tr>
 <td class="name">data</td>
-<td class="type"><ts ref="RangeOptions"/>Object</span></td>
-<td class="description">Pass the Object "RangeOptions"
+<td class="type"><ts ref="DataOptions"/>Object</span></td>
+<td class="description">Pass the Object "DataOptions"
 <table class="params">
 <thead>
 <tr>
@@ -8320,6 +8330,41 @@ This method is used to set a cell type from the specified range of cells in the 
 <td class="name">type</td>
 <td class="type"><ts name="ej.Spreadsheet.CustomCellType"/>enum</td>
 <td class="description">Specifies the button type of Custom Cell type.</td>
+</tr>
+<tr>
+<td class="name">text</td>
+<td class="type">string</td>
+<td class="description">Specifies the button text of Custom Cell type.</td>
+</tr>
+<tr>
+<td class="name">backgroundColor</td>
+<td class="type">string</td>
+<td class="description">Specifies the button background color of Custom Cell type.</td>
+</tr>
+<tr>
+<td class="name">dataSourceRange</td>
+<td class="type">string</td>
+<td class="description">Specifies the drodown list data source range of Custom Cell type.</td>
+</tr>
+<tr>
+<td class="name">dataSourceSheetIndex</td>
+<td class="type">number</td>
+<td class="description">Specifies the drodown list data source sheet index of Custom Cell type.</td>
+</tr>
+<tr>
+<td class="name">field</td>
+<td class="type">object</td>
+<td class="description">Specifies the text and value of field in dropdown list.</td>
+</tr>
+<tr>
+<td class="name">isChecked</td>
+<td class="type">boolean</td>
+<td class="description">Specifies the checkbox is set true or false of Custom Cell type.</td>
+</tr>
+<tr>
+<td class="name">value</td>
+<td class="type">string</td>
+<td class="description">Specifies the datepicker of Custom Cell type.</td>
 </tr>
 </tbody>
 </table>
