@@ -1147,6 +1147,31 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
+### exportSettings.enableFormulaCalculation `boolean`
+{:#members:exportsettings-enableFormulaCalculation}
+
+Gets or sets a value that indicates whether to enable or disable formula calculation in Spreadsheet. By enabling this feature, formula calculated while export the Spreadsheet in protected mode.
+
+#### Default Value
+* false
+
+#### Example
+{% highlight html %}
+
+<div id="Spreadsheet"></div> 
+<script>
+$('#Spreadsheet').ejSpreadsheet({
+    exportSettings:{
+        enableFormulaCalculation: true,
+        csvUrl: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/CsvExport", // It is used to set the url of the csv export.
+        excelUrl: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/ExcelExport", //It is used to set the url of the excel export.
+        pdfUrl: "http://js.syncfusion.com/demos/ejservices/api/Spreadsheet/PdfExport", //It is used to set the url of the pdf export.
+    }
+});        
+</script>
+
+{% endhighlight %}
+
 ### exportSettings.csvUrl `string`
 {:#members:exportsettings-csvurl}
 
@@ -5377,32 +5402,6 @@ This method is used to get the data in specified range in Spreadsheet.
 <td class="name">options</td>
 <td class="type">Object</span></td>
 <td class="description"><span class="optional">Optional.</span> Pass the range, property, sheetIdx, valueOnly in options
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">range</td>
-<td class="type">Array|Object</td>
-<td class="description">Pass the range to get the data</td>
-</tr>
-<tr>
-<td class="name">property</td>
-<td class="type">Array|Object</td>
-<td class="description">Pass the property to get the data</td>
-</tr>
-<tr>
-<td class="name">sheetIdx</td>
-<td class="type">number</td>
-<td class="description">Pass the sheet index to get the data</td>
-</tr>
-</tbody>
-</table>
 </td></tr>
 </tbody>
 </table>
@@ -7169,29 +7168,7 @@ This method is used to set the height for the rows in the Spreadsheet.
 <tr>
 <td class="name">heightColl</td>
 <td class="type">Array|Object</span></td>
-<td class="description">
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">rowIndex</td>
-<td class="type">number</td>
-<td class="description">Pass the row index of the rows</td>
-</tr>
-<tr>
-<td class="name">height</td>
-<td class="type">number</td>
-<td class="description">Pass the height of the rows</td>
-</tr>
-</tbody>
-</table>
-</td></tr>
+<td class="description">Pass the row index and height of the rows.</td></tr>
 </tbody>
 </table>
 
@@ -7384,29 +7361,8 @@ This method is used to set the width for the columns in the Spreadsheet.
 <tr>
 <td class="name">widthColl</td>
 <td class="type">Array|Object</span></td>
-<td class="description">
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
+<td class="description">Pass the column index and width of the columns.</td>
 </tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">colIndex</td>
-<td class="type">number</td>
-<td class="description">Pass the column index of the column</td>
-</tr>
-<tr>
-<td class="name">width</td>
-<td class="type">number</td>
-<td class="description">Pass the width of the column</td>
-</tr>
-</tbody>
-</table>
-</td></tr>
 <tr>
 <td class="name">sheetIndex</td>
 <td  class="type">Number</span></td>
@@ -9800,8 +9756,8 @@ This method is used to perform auto fill in Spreadsheet.
 <tbody>
 <tr>
 <td class="name">options</td>
-<td class="type"><ts ref="AutoFillOptions"/>Object</span></td>
-<td class="description">Pass Object AutoFillOptions.
+<td class="type"><ts ref="AutoFillObject"/>Object</span></td>
+<td class="description">Pass Object AutoFillObject.
 <table class="params">
 <thead>
 <tr>
@@ -14033,24 +13989,8 @@ This method used to change the sparkline color and marker point color in the spr
 <tr>
 <td class="name">option</td>
 <td class="type">Object</span></td>
-<td class="description">
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
+<td class="description"> pass the high point color as object.</td>
 </tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">highPointColor</td>
-<td class="type">string</td>
-<td class="description">Pass the high point color to change sparkline color</td>
-</tr>
-</tbody>
-</table>
-</td></tr>
 <tr>
 <td class="name">sheetIdx</td>
 <td class="type">Number</span></td>
