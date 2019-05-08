@@ -9559,7 +9559,7 @@ This method is used to change data source in the context menu.
 <tbody>
 <tr>
 <td class="name">target</td>
-<td class="type"><ts name="ej.Spreadsheet.ContextMenuType"/>enum</span></td>
+<td class="type">enum</span></td>
 <td class="description">Specifies the context menu type to bind the data source.</td>
 </tr>
 <tr>
@@ -11436,7 +11436,7 @@ This method is used to update the format for the selected range of cells in the 
 <tbody>
 <tr>
 <td class="name">formatObj</td>
-<td class="type"><span class="param-type" <ts ref="BorderOptions"/>>Object</span></td>
+<td class="type"><ts ref="BorderOptions"/>Object</td>
 <td class="description">Pass Object BorderOptions.
 <table class="params">
 <thead>
@@ -11449,7 +11449,7 @@ This method is used to update the format for the selected range of cells in the 
 <tbody>
 <tr>
 <td class="name">format</td>
-<td class="type">object</td>
+<td class="type">Object</td>
 <td class="description">Pass the format object of selected range of cells</td>
 </tr>
 <tr>
