@@ -9534,7 +9534,7 @@ This method is used to change data source in the context menu.
 <tbody>
 <tr>
 <td class="name">target</td>
-<td class="type">enum</span></td>
+<td class="type">string</span></td>
 <td class="description">Specifies the context menu type to bind the data source.</td>
 </tr>
 <tr>
