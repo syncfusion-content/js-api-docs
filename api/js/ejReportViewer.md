@@ -1269,7 +1269,7 @@ Export the report to the specified format.
 <div id="reportviewer">ReportViewer</div> 
 <script>
     var reportviewerObj = $("#reportviewer").data("ejReportViewer");
-    reportviewerObj.exportReport(); //Exports the reports
+    reportviewerObj.exportReport("PDF"); //Exports the report into PDF format.
 </script>
 
 {% endhighlight %}
@@ -2386,6 +2386,28 @@ Enables and disables the data source credential block scroller.
     $("#reportviewer").ejReportViewer(
         {
             enableDatasourceBlockScroller: false
+        });             
+</script>
+{% endhighlight %}
+
+### sizeToReportContent `boolean`
+{:#members:sizeToReportContent}
+
+Render the ReportViewer height based on the report content size.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+ 
+<div id="reportviewer"></div> 
+<script>          
+    $("#reportviewer").ejReportViewer(
+        {
+            sizeToReportContent: true
         });             
 </script>
 {% endhighlight %}
