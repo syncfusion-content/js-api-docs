@@ -16579,7 +16579,7 @@ Triggered when import sheet is failed to open.
 <tbody>
 <tr>
 <td class="name">argument</td>
-<td class="type"><span class="param-type">Object</td>
+<td class="type"><span class="param-type">Object</span></td>
 <td class="description">Arguments when openFailure event is triggered. 
 <table class="params">
 <thead>
