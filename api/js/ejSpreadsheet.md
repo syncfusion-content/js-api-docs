@@ -5736,9 +5736,11 @@ This method is used to get the visible cell details in Spreadsheet.
 {% highlight html %}
 <script>
 //initialize the Spreadsheet object
-var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
-//To get the visible cell details in Spreadsheet
-excelObj.getVisibleCellDetails();
+var excelObj = $("#Spreadsheet").data("ejSpreadsheet"),
+cellDetails = excelObj.getVisibleCellDetails(),  //To get the visible cell details in Spreadsheet.
+topLeftCell = cellDetails.topLeftCell,  // To get the visible topLeftCell.
+rowCount = cellDetails.rowCount,  // To get the visible rowcount.
+colCount = cellDetails.colCount;  // To get the visible colCount.
 </script>
 
 {% endhighlight %}
