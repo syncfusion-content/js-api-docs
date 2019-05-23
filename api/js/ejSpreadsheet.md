@@ -8279,7 +8279,7 @@ This method is used to set a cell type from the specified range of cells in the 
 <tbody>
 <tr>
 <td class="name">type</td>
-<td class="type"><span class="param-type"><ts name="ej.Spreadsheet.CustomCellType"/>enum</span></td>
+<td class="type"><ts name="ej.Spreadsheet.CustomCellType"/><span class="param-type">enum</span></td>
 <td class="description">Specifies the button type of Custom Cell type.</td>
 </tr>
 <tr>
@@ -8901,7 +8901,7 @@ This method is used to update the chart element, such as axes, titles, data labe
 <td class="description">Pass the chart id.</td></tr>
 <tr>
 <td class="name">value</td>
-<td class="type"><span class="param-type"><ts name="ej.Spreadsheet.ChartProperties"/>enum</span></td>
+<td class="type"><ts name="ej.Spreadsheet.ChartProperties"/><span class="param-type">enum</span></td>
 <td class="description">Pass chart element value which you want to update.</td>
 </tr>
 </tbody>
@@ -9410,7 +9410,7 @@ This method is used to dynamically add items in the context menu.
 <tbody>
 <tr>
 <td class="name">target</td>
-<td class="type"><span class="param-type"><ts name="ej.Spreadsheet.ContextMenuType"/>enum</span></td>
+<td class="type"><ts name="ej.Spreadsheet.ContextMenuType"/><span class="param-type">enum</span></td>
 <td class="description">Specifies the context menu type in which the item to be inserted.</td>
 </tr>
 <tr>
