@@ -1235,6 +1235,81 @@ Add the custom icon groups to the toolbar.
 
 {% endhighlight %}
 
+### parameterSettings `object`
+
+{:#members:parameterSettings}
+
+Specifies the parameter settings.
+
+### parameterSettings.delimiterChar `string`
+{:#members:parameterSettings-delimiterChar}
+
+Sets the separator when the multiSelectMode with delimiter option or checkbox is enabled with the dropdown. When you enter the delimiter value, the texts after the delimiter are considered as a separate word or query. The delimiter string is a single character and must be a symbol. Mostly, the delimiter symbol is used as comma (,) or semi-colon (;) or any other special character.
+
+#### Default Value
+
+* ","
+
+#### Example
+
+{% highlight html %}
+
+<div id="reportviewer"></div> 
+<script>
+    $("#reportviewer").ejReportViewer(
+        {
+            parameterSettings: { delimiterChar: "," }
+        });
+</script>
+
+{% endhighlight %}
+
+### parameterSettings.popupHeight `string`
+{:#members:parameterSettings-popupHeight}
+
+Specifies the height of the combobox parameter popup list. By default, the popup height value is "152px".
+
+#### Default Value
+
+* "152px"
+
+#### Example
+
+{% highlight html %}
+
+<div id="reportviewer"></div> 
+<script>
+    $("#reportviewer").ejReportViewer(
+        {
+            parameterSettings: { popupHeight: "152px" }
+        });
+</script>
+
+{% endhighlight %}
+
+### parameterSettings.popupWidth `string`
+{:#members:parameterSettings-popupWidth}
+
+Specifies the width of the combobox parameter popup list. By default, the popup width sets based on the width of the component.
+
+#### Default Value
+
+* "auto"
+
+#### Example
+
+{% highlight html %}
+
+<div id="reportviewer"></div> 
+<script>
+    $("#reportviewer").ejReportViewer(
+        {
+            parameterSettings: { popupWidth: "auto" }
+        });
+</script>
+
+{% endhighlight %}
+
 ### zoomFactor `number`
 {:#members:zoomfactor}
 
