@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Properties, Methods and Events of ejPivotChart Widget
+description: Methods,members and events available in ejPivotChart
 documentation: API
 platform: js-api
 keywords: ejPivotChart, API, Essential JS PivotChart

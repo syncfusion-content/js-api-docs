@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Properties, Methods and Events of ejPivotPager Widget
+description: Methods,members and events available in ejPivotPager
 documentation: API
 platform: js-api
 keywords: ejPivotPager, API, Essential JS PivotPager

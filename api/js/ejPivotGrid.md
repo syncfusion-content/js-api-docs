@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Properties, Methods and Events of ejPivotGrid Widget
+description: Methods,members and events available in ejPivotGrid
 documentation: API
 platform: js-api
 keywords: ejPivotGrid, API, Essential JS PivotGrid

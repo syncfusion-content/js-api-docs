@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Properties, Methods and Events of ejPivotGauge Widget
+description: Methods,members and events available in ejPivotGauge
 documentation: API
 platform: js-api
 keywords: ejPivotGauge, API, Essential JS PivotGauge

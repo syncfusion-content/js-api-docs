@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Properties, Methods and Events of ejPivotClient Widget
+description: Methods,members and events available in ejPivotClient
 documentation: API
 platform: js-api
 keywords: ejPivotClient, API, Essential JS PivotClient
