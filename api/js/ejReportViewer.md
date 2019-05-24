@@ -1281,7 +1281,7 @@ Specifies the height of the combobox parameter popup list. By default, the popup
 <script>
     $("#reportviewer").ejReportViewer(
         {
-            parameterSettings: { popupHeight: "152px" }
+            parameterSettings: { popupHeight: "200px" }
         });
 </script>
 
@@ -1304,7 +1304,7 @@ Specifies the width of the combobox parameter popup list. By default, the popup 
 <script>
     $("#reportviewer").ejReportViewer(
         {
-            parameterSettings: { popupWidth: "auto" }
+            parameterSettings: { popupWidth: "150px" }
         });
 </script>
 
