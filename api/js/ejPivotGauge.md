@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejPivotGauge Widget
+title: Properties, Methods and Events of Syncfusion ejPivotGauge Widget
 description: Methods,members and events available in ejPivotGauge
-documentation: API
+documentation: UG
 platform: js-api
 keywords: ejPivotGauge, API, Essential JS PivotGauge
-metaname: 
-metacontent: 
+metaname: API reference for ejPivotGauge
+metacontent: ejPivotGauge, API, Essential JS PivotGauge
 ---
 
 # PivotGauge

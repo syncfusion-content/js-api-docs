@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejPivotPager Widget
+title: Properties, Methods and Events of Syncfusion ejPivotPager Widget
 description: Methods,members and events available in ejPivotPager
-documentation: API
+documentation: UG
 platform: js-api
 keywords: ejPivotPager, API, Essential JS PivotPager
-metaname: 
-metacontent: 
+metaname: API reference for ejPivotPager
+metacontent: ejPivotPager, API, Essential JS PivotPager
 ---
 
 # PivotPager

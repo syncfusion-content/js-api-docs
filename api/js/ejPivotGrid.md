@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejPivotGrid Widget
+title: Properties, Methods and Events of Syncfusion ejPivotGrid Widget
 description: Methods,members and events available in ejPivotGrid
-documentation: API
+documentation: UG
 platform: js-api
 keywords: ejPivotGrid, API, Essential JS PivotGrid
-metaname: 
-metacontent: 
+metaname: API reference for ejPivotGrid
+metacontent: ejPivotGrid, API, Essential JS PivotGrid
 ---
 
 # PivotGrid

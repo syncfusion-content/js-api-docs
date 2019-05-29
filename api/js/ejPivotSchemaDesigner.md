@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejPivotSchemaDesigner Widget
+title: Properties, Methods and Events of Syncfusion ejPivotSchemaDesigner Widget
 description: Methods,members and events available in ejPivotSchemaDesigner
-documentation: API
+documentation: UG
 platform: js-api
 keywords: ejPivotSchemaDesigner, API, Essential JS PivotSchemaDesigner
-metaname: 
-metacontent: 
+metaname: API reference for ejPivotSchemaDesigner
+metacontent: ejPivotSchemaDesigner, API, Essential JS PivotSchemaDesigner
 ---
 
 # PivotSchemaDesigner
