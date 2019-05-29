@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejPivotClient Widget
-documentation: API
+title: Properties, Methods and Events of Syncfusion ejPivotClient Widget
+description: Methods,members and events available in ejPivotClient
+documentation: UG
 platform: js-api
 keywords: ejPivotClient, API, Essential JS PivotClient
-metaname: 
-metacontent: 
+metaname: API reference for ejPivotClient
+metacontent: ejPivotClient, API, Essential JS PivotClient
 ---
 
 # Pivot client
