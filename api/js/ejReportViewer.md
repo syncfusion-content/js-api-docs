@@ -1310,6 +1310,54 @@ Specifies the width of the combobox parameter popup list. By default, the popup 
 
 {% endhighlight %}
 
+
+### parameterSettings.itemWidth `string`
+{:#members:parameterSettings-itemWidth}
+
+Specifies the width of the parameter item. By default, the item width value is set as auto.
+
+#### Default Value
+
+* "auto"
+
+#### Example
+
+{% highlight html %}
+
+<div id="reportviewer"></div> 
+<script>
+    $("#reportviewer").ejReportViewer(
+        {
+            parameterSettings: { itemWidth: "250px" }
+        });
+</script>
+
+{% endhighlight %}
+
+### parameterSettings.promptWidth `string`
+{:#members:parameterSettings-promptWidth}
+
+Specifies the width of the parameter prompt. By default, the prompt width value is set as "110px".
+
+#### Default Value
+
+* "110px"
+
+#### Example
+
+{% highlight html %}
+
+<div id="reportviewer"></div> 
+<script>
+    $("#reportviewer").ejReportViewer(
+        {
+            parameterSettings: { promptWidth: "auto" }
+        });
+</script>
+
+{% endhighlight %}
+
+
 ### zoomFactor `number`
 {:#members:zoomfactor}
 
