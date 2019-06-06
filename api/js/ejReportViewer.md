@@ -1334,10 +1334,10 @@ Specifies the width of the parameter item. By default, the item width value is s
 
 {% endhighlight %}
 
-### parameterSettings.promptWidth `string`
-{:#members:parameterSettings-promptWidth}
+### parameterSettings.labelWidth `string`
+{:#members:parameterSettings-labelWidth}
 
-Specifies the width of the parameter prompt. By default, the prompt width value is set as "110px".
+Specifies the width of the parameter label. By default, the parameter label width value is set as "110px".
 
 #### Default Value
 
@@ -1351,12 +1351,35 @@ Specifies the width of the parameter prompt. By default, the prompt width value 
 <script>
     $("#reportviewer").ejReportViewer(
         {
-            parameterSettings: { promptWidth: "auto" }
+            parameterSettings: { labelWidth: "auto" }
         });
 </script>
 
 {% endhighlight %}
 
+
+### parameterSettings.itemsCount `number`
+{:#members:parameterSettings-itemsCount}
+
+Specifies the visible item count for DropDownList. By default, the itemsCount value is set as 0.
+
+#### Default Value
+
+* 0
+
+#### Example
+
+{% highlight html %}
+
+<div id="reportviewer"></div> 
+<script>
+    $("#reportviewer").ejReportViewer(
+        {
+            parameterSettings: { itemsCount: 0 }
+        });
+</script>
+
+{% endhighlight %}
 
 ### zoomFactor `number`
 {:#members:zoomfactor}
