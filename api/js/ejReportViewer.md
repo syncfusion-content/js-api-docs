@@ -1357,30 +1357,6 @@ Specifies the width of the parameter label. By default, the parameter label widt
 
 {% endhighlight %}
 
-
-### parameterSettings.itemsCount `number`
-{:#members:parameterSettings-itemsCount}
-
-Specifies the visible item count for DropDownList. By default, the itemsCount value is set as 0.
-
-#### Default Value
-
-* 0
-
-#### Example
-
-{% highlight html %}
-
-<div id="reportviewer"></div> 
-<script>
-    $("#reportviewer").ejReportViewer(
-        {
-            parameterSettings: { itemsCount: 0 }
-        });
-</script>
-
-{% endhighlight %}
-
 ### zoomFactor `number`
 {:#members:zoomfactor}
 
