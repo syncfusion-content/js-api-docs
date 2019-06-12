@@ -1314,11 +1314,11 @@ Specifies the width of the combobox parameter popup list. By default, the popup 
 ### parameterSettings.itemWidth `string`
 {:#members:parameterSettings-itemWidth}
 
-Specifies the width of the parameter item. By default, the item width value is set as auto.
+Specifies the width of the parameter item. By default, the item width value is set as "185px".
 
 #### Default Value
 
-* "auto"
+* "185px"
 
 #### Example
 
