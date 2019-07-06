@@ -226,7 +226,7 @@ Specifies the export formats.
 <td class="description">Specifies the CSV property in ExportOptions to get CSV option.</td>
 </tr>
 <tr>
-<td class="name">customItems</td>
+<td class="name">CustomItems</td>
 <td class="description">Specifies the customItems property in ExportOptions to get customItems option.</td>
 </tr>
 </tbody>
