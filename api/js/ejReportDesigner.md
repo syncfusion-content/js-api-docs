@@ -383,6 +383,8 @@ Shows or hides the create, edit and delete options in dataset pane with the help
 ### permissionSettings.dataSource `enum`
 {:#members:permissionsettings-datasource}
 
+<ts name="ej.ReportDesigner.Permission"/>
+
 Shows or hides the create, edit and delete options in data source pane with the help of ej.ReportDesigner.Permission enum.
 
 <table class="params">
