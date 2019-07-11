@@ -283,6 +283,193 @@ Specifies the locale for report designer.
 
 {% endhighlight %}
 
+### permissionSettings `object`
+{:#members:permissionsettings}
+
+Shows or hides the create, edit, and delete options in data source and dataset panels.
+
+## permissionSettings.dataSet `enum`
+{:#members:configurepanesettings-dataset}
+
+<ts name="ej.ReportDesigner.Permission"/>
+
+Shows or hides the create, edit and delete options in dataset pane with the help of ej.ReportDesigner.Permission enum.
+
+<table class="params">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="name">Create</td>
+      <td class="description">Shows or hides create option in dataset pane.</td>
+    </tr>
+    <tr>
+      <td class="name">Edit</td>
+      <td class="description">Shows or hides the edit option in dataset pane.</td>
+    </tr>
+    <tr>
+      <td class="name">Delete</td>
+      <td class="description">Shows or hides the delete option in dataset pane.</td>
+    </tr>
+     <tr>
+      <td class="name">All</td>
+      <td class="description">Shows all the options in dataset pane.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Default value 
+
+<li>ej.ReportDesigner.Permission.All</li>
+
+#### Example
+
+* Show all options in dataset pane.
+
+{% highlight html %}
+ 
+<div id="container"></div>
+<script>
+    $("#container").ejReportDesigner({
+        permissionSettings: { dataSet: ej.ReportDesigner.Permission.All }
+    });
+</script>
+
+{% endhighlight %}
+
+* Hide all options in dataset pane.
+
+{% highlight html %}
+ 
+<div id="container"></div>
+<script>
+    $("#container").ejReportDesigner({
+        permissionSettings: { dataSet: ~ej.ReportDesigner.Permission.All }
+    });
+</script>
+
+{% endhighlight %}
+
+* Hide **Create** option from dataset pane.
+
+{% highlight html %}
+ 
+<div id="container"></div>
+<script>
+    $("#container").ejReportDesigner({
+        permissionSettings: { dataSet: ej.ReportDesigner.Permission.All & ~ej.ReportDesigner.Permission.Create}
+    });
+</script>
+
+{% endhighlight %}
+
+* Hide all items except  **Create** option from dataset pane.
+
+{% highlight html %}
+ 
+<div id="container"></div>
+<script>
+    $("#container").ejReportDesigner({
+        permissionSettings: { dataSet: ej.ReportDesigner.Permission.All & ~ej.ReportDesigner.Permission.Edit  & ~ej.ReportDesigner.Permission.Delete}
+    });
+</script>
+
+{% endhighlight %}
+
+### permissionSettings.dataSource `enum`
+{:#members:permissionsettings-datasource}
+
+Shows or hides the create, edit and delete options in data source pane with the help of ej.ReportDesigner.Permission enum.
+
+<table class="params">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="name">Create</td>
+      <td class="description">Shows or hides create option in data source pane.</td>
+    </tr>
+    <tr>
+      <td class="name">Edit</td>
+      <td class="description">Shows or hides the edit option in data source pane.</td>
+    </tr>
+    <tr>
+      <td class="name">Delete</td>
+      <td class="description">Shows or hides the delete option in data source pane.</td>
+    </tr>
+     <tr>
+      <td class="name">All</td>
+      <td class="description">Shows all the options in data source pane.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Default value 
+
+<li>ej.ReportDesigner.Permission.All</li>
+
+#### Example
+
+* Show all options in data source pane.
+
+{% highlight html %}
+ 
+<div id="container"></div>
+<script>
+    $("#container").ejReportDesigner({
+        permissionSettings: { dataSource: ej.ReportDesigner.Permission.All }
+    });
+</script>
+
+{% endhighlight %}
+
+* Hide all options in data source pane.
+
+{% highlight html %}
+ 
+<div id="container"></div>
+<script>
+    $("#container").ejReportDesigner({
+        permissionSettings: { dataSource: ~ej.ReportDesigner.Permission.All }
+    });
+</script>
+
+{% endhighlight %}
+
+* Hide **Create** option from data source pane.
+
+{% highlight html %}
+ 
+<div id="container"></div>
+<script>
+    $("#container").ejReportDesigner({
+        permissionSettings: { dataSource: ej.ReportDesigner.Permission.All & ~ej.ReportDesigner.Permission.Create}
+    });
+</script>
+
+{% endhighlight %}
+
+* Hide all items except  **Create** option from data source pane.
+
+{% highlight html %}
+ 
+<div id="container"></div>
+<script>
+    $("#container").ejReportDesigner({
+        permissionSettings: { dataSource: ej.ReportDesigner.Permission.All & ~ej.ReportDesigner.Permission.Edit  & ~ej.ReportDesigner.Permission.Delete}
+    });
+</script>
+
+{% endhighlight %}
+
 ### reportDataExtensions `array`
 {:#members:reportdataextensions}
 
@@ -539,6 +726,48 @@ Gets or sets the report path of server.
 <script>
     $("#container").ejReportDesigner({
         reportPath: "/Sample Reports/invoice"
+    });
+</script>
+
+{% endhighlight %}
+
+### reportType  `string`	
+{:#members:reporttype}
+
+Gets or sets the report type.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">RDL</td>
+<td class="description">Renders designer in RDL mode.</td>
+</tr>
+<tr>
+<td class="name">RDLC</td>
+<td class="description">Renders designer in RDLC mode.</td>
+</tr>
+<tr>
+</tbody>
+</table>
+
+#### Default Value 
+
+* ej.ReportDesigner.ReportType.RDL
+
+#### Example 
+
+{% highlight js %}
+
+<div id="container"></div>
+<script>
+    $("#container").ejReportDesigner({
+        reportType: ej.ReportDesigner.ReportType.RDLC
     });
 </script>
 

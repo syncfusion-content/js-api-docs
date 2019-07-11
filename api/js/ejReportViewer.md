@@ -202,8 +202,8 @@ Specifies the export formats.
 <td class="description">Specifies the All property in ExportOptions to get all available options.</td>
 </tr>
 <tr>
-<td class="name">PDF</td>
-<td class="description">Specifies the PDF property in ExportOptions to get PDF option.</td>
+<td class="name">Pdf</td>
+<td class="description">Specifies the Pdf property in ExportOptions to get Pdf option.</td>
 </tr>
 <tr>
 <td class="name">Word</td>
@@ -214,8 +214,20 @@ Specifies the export formats.
 <td class="description">Specifies the Excel property in ExportOptions to get Excel option.</td>
 </tr>
 <tr>
-<td class="name">HTML</td>
-<td class="description">Specifies the HTML property in ExportOptions to get HTML option.</td>
+<td class="name">Html</td>
+<td class="description">Specifies the Html property in ExportOptions to get Html option.</td>
+</tr>
+<tr>
+<td class="name">PPT</td>
+<td class="description">Specifies the PPT property in ExportOptions to get PPT option.</td>
+</tr>
+<tr>
+<td class="name">CSV</td>
+<td class="description">Specifies the CSV property in ExportOptions to get CSV option.</td>
+</tr>
+<tr>
+<td class="name">CustomItems</td>
+<td class="description">Specifies the customItems property in ExportOptions to get customItems option.</td>
 </tr>
 </tbody>
 </table>
