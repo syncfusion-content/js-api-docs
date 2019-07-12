@@ -819,8 +819,8 @@ Enables and disables the print mode.
 
 {% endhighlight %}
 
-### printOptions `enum`
-{:#members:printoptions}
+### printOption `enum`
+{:#members:printoption}
 
 <ts name = "ej.ReportViewer.PrintOptions"/>
 
