@@ -422,6 +422,58 @@ Specifies the word export format.
 
 {% endhighlight %}
 
+### exportSettings.pptFormat `enum`
+{:#members:exportsettings-pptformat}
+
+<ts name = "ej.ReportViewer.PPTFormats"/>
+
+Specifies the ppt export format.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">PowerPoint97to2003</td>
+<td class="description">Represents PowerPoint97to2003 version.</td>
+</tr>
+<tr>
+<td class="name">PowerPoint2007</td>
+<td class="description">Represents PowerPoint2007 version.</td>
+</tr>
+<tr>
+<td class="name">PowerPoint2010</td>
+<td class="description">Represents PowerPoint2010 version.</td>
+</tr>
+<tr>
+<td class="name">PowerPoint2013</td>
+<td class="description">Represents PowerPoint2013 version.</td>
+</tr>
+</tbody>
+</table>
+
+#### Default Value
+
+* ej.ReportViewer.PPTFormats.PowerPoint97to2003
+
+#### Example
+
+{% highlight html %}
+
+<div id="reportviewer"></div> 
+<script>
+    $("#reportviewer").ejReportViewer(
+        {
+            exportSettings:{ pptFormat: ej.ReportViewer.PPTFormats.PowerPoint2010}
+        });
+</script>
+
+{% endhighlight %}
+
 ### exportSettings.customItems `array`
 {:#members:exportSettings-customitems}
 
@@ -2590,6 +2642,28 @@ Enables and disables the Error Notification bar.
 </script>
 {% endhighlight %}
 
+### showExceptionsInDialog `boolean`
+{:#members:showExceptionsInDialog}
+
+Gets or sets the showExceptionsInDialog for report viewer.
+
+#### Default Value
+
+* false
+
+#### Example
+
+{% highlight html %}
+
+<div id="reportviewer"></div> 
+<script>
+    $("#reportviewer").ejReportViewer(
+        {
+            showExceptionsInDialog: true
+        });
+</script>
+{% endhighlight %}
+
 ### enableDropDownSearch `boolean`
 {:#members:enabledropdownsearch}
 
@@ -2908,6 +2982,97 @@ argument</td>
 </script>
 
 {% endhighlight %}
+
+### parameterUpdateStateChange
+{:#events:parameterupdatestatechange}
+
+Fires when the dependent parameter value is changing in the parameter block. You can add custom user interface, loading indicator and modify the default progress text, using the ParameterUpdateStateChange event.
+
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">
+argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description last">Event parameters from ReportViewer.
+<table class="params">
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th class="last">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">true if the event should be canceled; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">handled</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description last">true, if the event handled by user; otherwise, false.</td>
+</tr>
+<tr>
+<td class="name">state</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">The processing state.</td>
+</tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><span class="param-type">object</span></td>
+<td class="description last">returns the report model</td>
+</tr>
+<tr>
+<td class="name">containerId</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">The parameter block id.</td>
+</tr>
+<tr>
+<td class="name">name</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Its only to notify the the current parameter.</td>
+</tr>
+<tr>
+<td class="name">prompt</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">Its only to notify the current parameter prompt value.</td>
+</tr>
+<tr>
+<td class="name">progressText</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description last">The progress text that is displayed on the loading indicator.</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="reportviewer"></div> 
+<script>
+    $("#reportviewer").ejReportViewer({
+        parameterUpdateStateChange : function(args) {
+            // Write a code block to perform any action when the parameter update state change.
+        }
+    });
+</script>
+
+{% endhighlight %}
+
 
 ### hyperlink
 {:#events:hyperlink}
