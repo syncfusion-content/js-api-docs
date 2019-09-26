@@ -128,7 +128,7 @@ Report Designer allows to design the report that can be published in the server 
 
 Shows or hides the items of configuration pane in ReportDesigner control.
 
-## configurePaneSettings.items `enum`
+### configurePaneSettings.items `enum`
 {:#members:configurepanesettings-items}
 
 <ts name="ej.ReportDesigner.ConfigureItems"/>
@@ -289,7 +289,7 @@ Specifies the locale for report designer.
 Shows or hides the create, edit, and delete options in data source and dataset panels.
 
 ## permissionSettings.dataSet `enum`
-{:#members:configurepanesettings-dataset}
+{:#members:permissionsettings-dataset}
 
 <ts name="ej.ReportDesigner.Permission"/>
 
@@ -754,7 +754,6 @@ Gets or sets the report type.
 <td class="name">RDLC</td>
 <td class="description">Renders designer in RDLC mode.</td>
 </tr>
-<tr>
 </tbody>
 </table>
 
@@ -924,40 +923,40 @@ Shows or hides the grouped items in the toolbar with the help of enum ej.ReportD
       <td class="description">Used to "zoom in" to get a close-up view of a report or "zoom out" to see more of the page at a reduced size.</td>
     </tr>
     <tr>
-      <td class="name">Preview</td>
-      <td class="description">Previews the active report in report viewer.</td>
+      <td class="name">Order</td>
+      <td class="description">Used to change the layout order of report items in design area surface.</td>
     </tr>
     <tr>
-      <td class="name">GridLine</td>
-      <td class="description">Enables/Disables the gridline in active report.</td>
+      <td class="name">Center</td>
+      <td class="description">Aligns all report items to the center position of design surface in horizontal or vertical direction.</td>
     </tr>
     <tr>
-      <td class="name">Header</td>
-      <td class="description">Enables header area in the report.</td>
+      <td class="name">Alignment</td>
+      <td class="description">Aligns the selected report item in the design surface.</td>
     </tr>
     <tr>
-      <td class="name">Footer</td>
-      <td class="description">Enables footer area in the report.</td>
+      <td class="name">Distribute</td>
+      <td class="description">Distributes selected report items at equal intervals from each other.</td>
+    </tr>
+    <tr>
+      <td class="name">Sizing</td>
+      <td class="description">Equally size the selected report items in the design surface.</td>
     </tr>
        <tr>
-      <td class="name">SendBackward</td>
-      <td class="description">Visually move the selected report item behind its closest intersected report item.</td>
-    </tr>
-      <tr>
-      <td class="name">BringForward</td>
-      <td class="description">Visually move the selected report item over its closest intersected report items.</td>
-    </tr>
-      <tr>
-      <td class="name">SendToBack</td>
-      <td class="description">Visually move the selected report item behind all other intersected report items.</td>
-    </tr>
-      <tr>
-      <td class="name">BringToFront</td>
-      <td class="description">Visually move the selected report item over all other intersected report items.</td>
+      <td class="name">AlignGrid</td>
+      <td class="description">Snaps the selected report items to the closest gridline.</td>
     </tr>
     <tr>
       <td class="name">EditDesign</td>
       <td class="description">Switches from preview to design view of the report.</td>
+    </tr>
+    <tr>
+      <td class="name">View</td>
+      <td class="description">Contains options to show or hide `Header`, `Footer`, `Grid Lines`, `Snap To Shape` in the report design.</td>
+    </tr>
+    <tr>
+      <td class="name">Preview</td>
+      <td class="description">Previews the active report in report viewer.</td>
     </tr>
      <tr>
       <td class="name">All</td>
@@ -998,27 +997,27 @@ Shows or hides the grouped items in the toolbar with the help of enum ej.ReportD
 
 {% endhighlight %}
 
-* Hide **Footer** option from toolbar
+* Hide **Zoom** option from toolbar
 
 {% highlight html %}
  
 <div id="container"></div>
 <script>
     $("#container").ejReportDesigner({
-        toolbarSettings: { items: ej.ReportDesigner.ToolbarItems.All & ~ej.ReportDesigner.ToolbarItems.Footer }
+        toolbarSettings: { items: ej.ReportDesigner.ToolbarItems.All & ~ej.ReportDesigner.ToolbarItems.Zoom }
     });
 </script>
 
 {% endhighlight %}
 
-* Hide **Footer** and **Header** option from toolbar
+* Hide **Open** and **Save** option from toolbar
 
 {% highlight html %}
  
 <div id="container"></div>
 <script>
     $("#container").ejReportDesigner({
-        toolbarSettings: { items: ej.ReportDesigner.ToolbarItems.All & ~ej.ReportDesigner.ToolbarItems.Footer & ~ej.ReportDesigner.ToolbarItems.Header }
+        toolbarSettings: { items: ej.ReportDesigner.ToolbarItems.All & ~ej.ReportDesigner.ToolbarItems.Open & ~ej.ReportDesigner.ToolbarItems.Save }
     });
 </script>
 
@@ -1309,8 +1308,8 @@ Add a datasource to the report at runtime.
 
 {% endhighlight %}
 
-### addReportItem(item)
-{:#methods:addreportitem}
+### addItem(item)
+{:#methods:additem}
 
 Add a report item to the report at runtime.
 
@@ -1343,7 +1342,7 @@ Add a report item to the report at runtime.
     $("#container").ejReportDesigner();
     var designerObj = $("#container").data("ejReportDesigner");
     var item =  { left: 300, top: 100, itemType: 'Tablix', container: { name: 'Body' } };
-    designerObj.addReportItem(item);
+    designerObj.addItem(item);
 </script>
 
 {% endhighlight %}
@@ -1358,7 +1357,7 @@ Add a report item to the report at runtime.
     $("#container").ejReportDesigner();
     var designerObj = $("#container").data("ejReportDesigner");
     var item =  { left: 100, top: 30, itemType: 'Image', container: { name: 'Header' } };
-    designerObj.addReportItem(item);
+    designerObj.addItem(item);
 </script>
 
 {% endhighlight %}
@@ -1373,7 +1372,7 @@ Add a report item to the report at runtime.
     $("#container").ejReportDesigner();
     var designerObj = $("#container").data("ejReportDesigner");
     var item =  { left: 50, top: 50, itemType: 'TextBox', container: { name: 'Footer' } };
-    designerObj.addReportItem(item);
+    designerObj.addItem(item);
 </script>
 
 {% endhighlight %}
@@ -1389,7 +1388,7 @@ Add a report item to the report at runtime.
     var designerObj = $("#container").data("ejReportDesigner");
     //Add image report item into tablix cell
     var item =  { left: 50, top: 50, itemType: 'Image', container: { name: 'Tablix1',rowIndex:0,colIndex:0 } };
-    designerObj.addReportItem(item);
+    designerObj.addItem(item);
 </script>
 
 {% endhighlight %}
@@ -1405,10 +1404,10 @@ Add a report item to the report at runtime.
     var designerObj = $("#container").data("ejReportDesigner");
     //Add rectangle item
     var item =  { left: 50, top: 50, itemType: 'Rectangle', container: { name: 'Body' } };
-    designerObj.addReportItem(item);
+    designerObj.addItem(item);
     //Add image report item into rectangle item
     var item =  { left: 10, top: 20, itemType: 'Image', container: { name: 'Rectangle1'} };
-    designerObj.addReportItem(item);
+    designerObj.addItem(item);
 </script>
 
 {% endhighlight %}
@@ -1914,6 +1913,43 @@ This method opens the report from the server.
 
 {% endhighlight %}
 
+### openReportDefinition()
+{:#methods:openreportdefinition}
+
+This method opens the report using raw report data.
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class='name'>rdlData</td>
+      <td class='type'>JSON &#124; string &#124; XML</td>
+      <td class='description'>Provide the report definition in the JSON or string or XML format</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    // Create ReportDesigner Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    var rdlData = ''; // Assign a report data in JSON, string or XML format
+    designerObj.openReportDefinition(rdlData);
+</script>
+
+{% endhighlight %}
+
 ### openReportFromDevice()
 {:#methods:openreportfromdevice}
 
@@ -2081,8 +2117,8 @@ Remove a datasource from the report at runtime.
 
 {% endhighlight %}
 
-### removeReportItem(itemName)
-{:#methods:removereportitem}
+### removeItem(itemName)
+{:#methods:removeitem}
 
 Remove the given report item from the report.
 
@@ -2112,7 +2148,7 @@ Remove the given report item from the report.
     //Create ReportDesigner Instance
     $("#container").ejReportDesigner();
     var designerObj = $("#container").data("ejReportDesigner");
-    designerObj.removeReportItem('Tablix1');
+    designerObj.removeItem('Tablix1');
 </script>
 
 {% endhighlight %}
@@ -2149,6 +2185,48 @@ This method saves the report into the server.
     $("#container").ejReportDesigner();
     var designerObj = $("#container").data("ejReportDesigner");
     designerObj.saveReport();
+</script>
+
+{% endhighlight %}
+
+
+### saveReportDefinition()
+{:#methods:savereportdefinition}
+
+This method returns the report in JSON or XML format.
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class='name'>callback</td>
+      <td class='type'>function</td>
+      <td class='description'>Callback method to return the report data</td>
+    </tr>
+    <tr>
+      <td class='name'>type</td>
+      <td class='type'>string(optional)</td>
+      <td class='string'>Specify the format as JSON or XML to save the report.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Example
+
+{% highlight html %}
+
+<div id="container"></div>
+<script>
+    // Create ReportDesigner Instance
+    $("#container").ejReportDesigner();
+    var designerObj = $("#container").data("ejReportDesigner");
+    designerObj.saveReportDefinition((args: any) => {},'JSON');
 </script>
 
 {% endhighlight %}
@@ -2191,10 +2269,10 @@ To download the designed report.
 
 {% endhighlight %}
 
-### selectReportItem(itemName)
-{:#methods:selectreportitem}
+### selectItems(itemNames)
+{:#methods:selectitems}
 
-Update the selection to report item at runtime.
+Update the selection to report items at runtime.
 
 <table class="params">
 	<thead>
@@ -2206,9 +2284,9 @@ Update the selection to report item at runtime.
 	</thead>
 	<tbody>
 		<tr>
-			<td class="name">itemName</td>
-			<td class="type">string</td>
-			<td class="description last">Name of the report item.</td>
+			<td class="name">itemNames</td>
+			<td class="type">array</td>
+			<td class="description last">Name of the report items as string array.</td>
 		</tr>
 	</tbody>
 </table>
@@ -2222,7 +2300,8 @@ Update the selection to report item at runtime.
     //Create ReportDesigner Instance
     $("#container").ejReportDesigner();
     var designerObj = $("#container").data("ejReportDesigner");
-    designerObj.selectReportItem('Tablix1');
+    var itemNames = ['Tablix1','Chart1','Rectangle2']
+    designerObj.selectItems(itemNames);
 </script>
 
 {% endhighlight %}
@@ -2767,6 +2846,23 @@ This event will be triggered when the Report Designer widget is destroyed.
 
 {% endhighlight %}
 
+### newDataClick
+{:#events:newdataclick}
+
+This event will be triggered while initiating new data click action. You can suppress the new data creation panel and perform custom actions.
+
+#### Example 
+
+{% highlight js %}
+
+    $("#container").ejReportDesigner({
+        newDataClick: function(args) {
+            // Write your block of code
+        }
+    });
+
+{% endhighlight %}
+
 ### openReportClick
 {:#events:openreportclick}
 
@@ -2800,6 +2896,50 @@ This event will be triggered while clicking open menu items.
 
     $("#container").ejReportDesigner({
         openReportClick: function(args) {
+            // Write your block of code
+        }
+    });
+
+{% endhighlight %}
+
+### previewReport
+{:#events:previewreport}
+
+This event will be triggered while previewing the report in RDLC mode. It can be used to suppress the preview data dialog in RDLC mode.
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class='name'>{% highlight html %}reportViewer{% endhighlight %}</td>
+      <td class='type'>ejReportViewer</td>
+      <td class='description'>Contains the instance of Report Viewer component.</td>
+    </tr>
+    <tr>
+      <td class='name'>{% highlight html %}cancelDataInputDialog{% endhighlight %}</td>
+      <td class='type'>boolean</td>
+      <td class='description'>Specifies whether to show or hide preview data dialog.</td>
+    </tr>
+    <tr>
+      <td class='name'>{% highlight html %}dataSets{% endhighlight %}</td>
+      <td class='type'>array</td>
+      <td class='description'>Contains the required data to load the report.</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Example 
+
+{% highlight js %}
+
+    $("#container").ejReportDesigner({
+        previewReport: function(args) {
             // Write your block of code
         }
     });
@@ -3021,23 +3161,6 @@ This event will be triggered on rendering the Report Designer toolbar.
     $("#container").ejReportDesigner({
         toolbarRendering: function(args) {
             // Write your block of code 
-        }
-    });
-
-{% endhighlight %}
-
-### extensionLocaleChanged
-{:#events:extensionlocalechanged}
-
-This event will be triggered on locale change action in report designer.
-
-#### Example 
- 
-{% highlight js %}
-
-    $("#container").ejReportDesigner({
-        extensionLocaleChanged: function(args) {
-            // Write your block of code
         }
     });
 
