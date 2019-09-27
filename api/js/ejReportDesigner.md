@@ -2918,7 +2918,7 @@ This event will be triggered while previewing the report in RDLC mode. It can be
   <tbody>
     <tr>
       <td class='name'>{% highlight html %}reportViewer{% endhighlight %}</td>
-      <td class='type'>ejReportViewer</td>
+      <td class='type'>object</td>
       <td class='description'>Contains the instance of Report Viewer component.</td>
     </tr>
     <tr>
