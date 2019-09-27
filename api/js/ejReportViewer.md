@@ -132,7 +132,7 @@ Gets or sets the name of the data source.
 {% endhighlight %}
 
 ### dataSources.value `array`
-{:#members:datasources-values}
+{:#members:datasources-value}
 
 Gets or sets the values of data source.
 
