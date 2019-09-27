@@ -132,7 +132,7 @@ Gets or sets the name of the data source.
 {% endhighlight %}
 
 ### dataSources.value `array`
-{:#members:datasources-value}
+{:#members:datasources-values}
 
 Gets or sets the values of data source.
 
@@ -850,12 +850,12 @@ Gets or sets the parameter values.
 
 ### parameterSettings `object`
 
-{:#members:parameterSettings}
+{:#members:parametersettings}
 
 Specifies the parameter settings.
 
 ### parameterSettings.delimiterChar `string`
-{:#members:parameterSettings-delimiterChar}
+{:#members:parametersettings-delimiterchar}
 
 Sets the separator when the multiSelectMode with delimiter option or checkbox is enabled with the dropdown. When you enter the delimiter value, the texts after the delimiter are considered as a separate word or query. The delimiter string is a single character and must be a symbol. Mostly, the delimiter symbol is used as comma (,) or semi-colon (;) or any other special character.
 
@@ -878,7 +878,7 @@ Sets the separator when the multiSelectMode with delimiter option or checkbox is
 {% endhighlight %}
 
 ### parameterSettings.popupHeight `string`
-{:#members:parameterSettings-popupHeight}
+{:#members:parametersettings-popupheight}
 
 Specifies the height of the combobox parameter popup list. By default, the popup height value is "152px".
 
@@ -901,7 +901,7 @@ Specifies the height of the combobox parameter popup list. By default, the popup
 {% endhighlight %}
 
 ### parameterSettings.popupWidth `string`
-{:#members:parameterSettings-popupWidth}
+{:#members:parametersettings-popupwidth}
 
 Specifies the width of the combobox parameter popup list. By default, the popup width sets based on the width of the component.
 
@@ -925,7 +925,7 @@ Specifies the width of the combobox parameter popup list. By default, the popup 
 
 
 ### parameterSettings.itemWidth `string`
-{:#members:parameterSettings-itemWidth}
+{:#members:parametersettings-itemwidth}
 
 Specifies the width of the parameter item. By default, the item width value is set as "185px".
 
@@ -948,7 +948,7 @@ Specifies the width of the parameter item. By default, the item width value is s
 {% endhighlight %}
 
 ### parameterSettings.labelWidth `string`
-{:#members:parameterSettings-labelWidth}
+{:#members:parametersettings-labelwidth}
 
 Specifies the width of the parameter label. By default, the parameter label width value is set as "110px".
 
