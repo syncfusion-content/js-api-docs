@@ -9366,7 +9366,7 @@
 					<li id="toc-members:datasources"><a href="/api/js/ejreportviewer#members:datasources">dataSources</a>
 						<ul>
 							<li id="toc-members:datasources-name"><a href="/api/js/ejreportviewer#members:datasources-name">name</a></li>
-							<li id="toc-members:datasources-values"><a href="/api/js/ejreportviewer#members:datasources-values">values</a></li>
+							<li id="toc-members:datasources-value"><a href="/api/js/ejreportviewer#members:datasources-value">values</a></li>
 						</ul>
 					</li>
 					<li id="toc-members:enablepagecache"><a href="/api/js/ejreportviewer#members:enablepagecache">enablePageCache</a></li>
@@ -9375,6 +9375,7 @@
 							<li id="toc-members:exportsettings-excelformat"><a href="/api/js/ejreportviewer#members:exportsettings-excelformat">excelFormat</a></li>
 							<li id="toc-members:exportsettings-exportoptions"><a href="/api/js/ejreportviewer#members:exportsettings-exportoptions">exportOptions</a></li>
 							<li id="toc-members:exportsettings-wordformat"><a href="/api/js/ejreportviewer#members:exportsettings-wordformat">wordFormat</a></li>
+							<li id="toc-members:exportsettings-pptformat"><a href="/api/js/ejreportviewer#members:exportsettings-pptformat">pptFormat</a></li>
 							<li id="toc-members:exportsettings-customitems"><a href="/api/js/ejreportviewer#members:exportsettings-customitems">customItems</a></li>
 						</ul>
 					</li>
@@ -9393,6 +9394,15 @@
 							<li id="toc-members:parameters-nullable"><a href="/api/js/ejreportviewer#members:parameters-nullable">nullable</a></li>
 							<li id="toc-members:parameters-prompt"><a href="/api/js/ejreportviewer#members:parameters-prompt">prompt</a></li>
 							<li id="toc-members:parameters-values"><a href="/api/js/ejreportviewer#members:parameters-values">values</a></li>
+						</ul>
+					</li>
+					<li id="toc-members:parametersettings"><a href="/api/js/ejreportviewer#members:parametersettings">parameterSettings</a>
+						<ul>
+							<li id="toc-members:parametersettings-delimiterchar"><a href="/api/js/ejreportviewer#members:parametersettings-delimiterchar">delimiterChar</a></li>
+							<li id="toc-members:parametersettings-popupheight"><a href="/api/js/ejreportviewer#members:parametersettings-popupheight">popupHeight</a></li>
+							<li id="toc-members:parametersettings-popupwidth"><a href="/api/js/ejreportviewer#members:parametersettings-popupwidth">popupWidth</a></li>
+							<li id="toc-members:parametersettings-itemwidth"><a href="/api/js/ejreportviewer#members:parametersettings-itemwidth">itemWidth</a></li>
+							<li id="toc-members:parametersettings-labelwidth"><a href="/api/js/ejreportviewer#members:parametersettings-labelwidth">labelWidth</a></li>
 						</ul>
 					</li>
 					<li id="toc-members:printmode"><a href="/api/js/ejreportviewer#members:printmode">printMode</a></li>
@@ -9417,10 +9427,12 @@
 					<li id="toc-members:serviceauthorizationtoken"><a href="/api/js/ejreportviewer#members:serviceauthorizationtoken">serviceAuthorizationToken</a></li>
 					<li id="toc-members:enableparameterblockscroller"><a href="/api/js/ejreportviewer#members:enableparameterblockscroller">enableParameterBlockScroller</a></li>
 					<li id="toc-members:enabledatasourceblockscroller"><a href="/api/js/ejreportviewer#members:enabledatasourceblockscroller">enableDatasourceBlockScroller</a></li>
+					<li id="toc-members:sizeToReportContent"><a href="/api/js/ejreportviewer#members:sizeToReportContent">sizeToReportContent</a></li>
 					<li id="toc-members:autorender"><a href="/api/js/ejreportviewer#members:autorender">autoRender</a></li>
 					<li id="toc-members:enablenotificationbar"><a href="/api/js/ejreportviewer#members:enablenotificationbar">enableNotificationBar</a></li>
 					<li id="toc-members:enabledropdownsearch"><a href="/api/js/ejreportviewer#members:enabledropdownsearch">enableDropDownSearch</a></li>
 					<li id="toc-members:enablepagevirtualization"><a href="/api/js/ejreportviewer#members:enablepagevirtualization">enablePageVirtualization</a></li>
+					<li id="toc-members:showexceptionsindialog"><a href="/api/js/ejreportviewer#members:showexceptionsindialog">showExceptionsInDialog</a></li>
 				</ul>
 			</li>
 			<li><a href="/api/js/ejreportviewer#methods">Methods</a>
@@ -9450,16 +9462,19 @@
 					<li id="toc-events:reporterror"><a href="/api/js/ejreportviewer#events:reporterror">reportError</a></li>
 					<li id="toc-events:reportexport"><a href="/api/js/ejreportviewer#events:reportexport">reportExport</a></li>
 					<li id="toc-events:reportloaded"><a href="/api/js/ejreportviewer#events:reportloaded">reportLoaded</a></li>
+					<li id="toc-events:showerror"><a href="/api/js/ejreportviewer#events:showerror">showError</a></li>
 					<li id="toc-events:viewreportclick"><a href="/api/js/ejreportviewer#events:viewreportclick">viewReportClick</a></li>
 					<li id="toc-events:exportprogresschanged"><a href="/api/js/ejreportviewer#events:exportprogresschanged">exportProgressChanged</a></li>
 					<li id="toc-events:printprogresschanged"><a href="/api/js/ejreportviewer#events:printprogresschanged">printProgressChanged</a></li>
 					<li id="toc-events:exportitemclick"><a href="/api/js/ejreportviewer#events:exportitemclick">exportItemClick</a></li>
+					<li id="toc-events:toolbarrendering"><a href="/api/js/ejreportviewer#events:toolbarrendering">toolbarRendering</a></li>
 					<li id="toc-events:toolbaritemclick"><a href="/api/js/ejreportviewer#events:toolbaritemclick">toolBarItemClick</a></li>
 					<li id="toc-events:hyperlink"><a href="/api/js/ejreportviewer#events:hyperlink">hyperlink</a></li>
 					<li id="toc-events:reportprint"><a href="/api/js/ejreportviewer#events:reportprint">reportPrint</a></li>
 					<li id="toc-events:ajaxbeforeload"><a href="/api/js/ejreportviewer#events:ajaxbeforeload">ajaxBeforeLoad</a></li>
 					<li id="toc-events:ajaxsuccess"><a href="/api/js/ejreportviewer#events:ajaxsuccess">ajaxSuccess</a></li>
 					<li id="toc-events:ajaxerror"><a href="/api/js/ejreportviewer#events:ajaxerror">ajaxError</a></li>
+					<li id="toc-events:parameterupdatestatechange"><a href="/api/js/ejreportviewer#events:parameterupdatestatechange">parameterUpdateStateChange</a></li>
 				</ul>
 			</li>
 		</ul>
@@ -9518,7 +9533,7 @@
 				<ul>
 					<li id="toc-methods:adddataset"><a href="/api/js/ejreportdesigner#methods:adddataset">addDataSet</a></li>
 					<li id="toc-methods:adddatasource"><a href="/api/js/ejreportdesigner#methods:adddatasource">addDataSource</a></li>
-					<li id="toc-methods:addreportitem"><a href="/api/js/ejreportdesigner#methods:addreportitem">addReportItem</a></li>
+					<li id="toc-methods:additem"><a href="/api/js/ejreportdesigner#methods:additem">addItem</a></li>
 					<li id="toc-methods:bringforward"><a href="/api/js/ejreportdesigner#methods:bringforward">bringForward</a></li>
 					<li id="toc-methods:bringtofront"><a href="/api/js/ejreportdesigner#methods:bringtofront">bringToFront</a></li>
 					<li id="toc-methods:cancopy"><a href="/api/js/ejreportdesigner#methods:cancopy">canCopy</a></li>
@@ -9538,6 +9553,7 @@
 					<li id="toc-methods:newreport"><a href="/api/js/ejreportdesigner#methods:newreport">newReport</a></li>
 					<li id="toc-methods:newserverreport"><a href="/api/js/ejreportdesigner#methods:newserverreport">newServerReport</a></li>
 					<li id="toc-methods:openreport"><a href="/api/js/ejreportdesigner#methods:openreport">openReport</a></li>
+					<li id="toc-methods:openreportdefinition"><a href="/api/js/ejreportdesigner#methods:openreportdefinition">openReportDefinition</a></li>
 					<li id="toc-methods:openreportfromdevice"><a href="/api/js/ejreportdesigner#methods:openreportfromdevice">openReportFromDevice</a></li>
 					<li id="toc-methods:openserverreportdialog"><a href="/api/js/ejreportdesigner#methods:openserverreportdialog">openServerReportDialog</a></li>
 					<li id="toc-methods:paste"><a href="/api/js/ejreportdesigner#methods:paste">paste</a></li>
@@ -9545,11 +9561,12 @@
 					<li id="toc-methods:remove"><a href="/api/js/ejreportdesigner#methods:remove">remove</a></li>
 					<li id="toc-methods:removedataset"><a href="/api/js/ejreportdesigner#methods:removedataset">removeDataSet</a></li>
 					<li id="toc-methods:removedatasource"><a href="/api/js/ejreportdesigner#methods:removedatasource">removeDatasource</a></li>
-					<li id="toc-methods:removereportitem"><a href="/api/js/ejreportdesigner#methods:removereportitem">removeReportItem</a></li>
+					<li id="toc-methods:removeitem"><a href="/api/js/ejreportdesigner#methods:removeitem">removeItem</a></li>
 					<li id="toc-methods:savereport"><a href="/api/js/ejreportdesigner#methods:savereport">saveReport</a></li>
+					<li id="toc-methods:savereportdefinition"><a href="/api/js/ejreportdesigner#methods:savereportdefinition">saveReportDefinition</a></li>
 					<li id="toc-methods:saveserverreportdialog"><a href="/api/js/ejreportdesigner#methods:saveserverreportdialog">saveServerReportDialog</a></li>
 					<li id="toc-methods:savetodevice"><a href="/api/js/ejreportdesigner#methods:savetodevice">saveToDevice</a></li>
-					<li id="toc-methods:selectreportitem"><a href="/api/js/ejreportdesigner#methods:selectreportitem">selectReportItem</a></li>
+					<li id="toc-methods:selectitems"><a href="/api/js/ejreportdesigner#methods:selectitems">selectItems</a></li>
 					<li id="toc-methods:sendbackward"><a href="/api/js/ejreportdesigner#methods:sendbackward">sendBackward</a></li>
 					<li id="toc-methods:sendtoback"><a href="/api/js/ejreportdesigner#methods:sendtoback">sendToBack</a></li>
 					<li id="toc-methods:showdesign"><a href="/api/js/ejreportdesigner#methods:showdesign">showDesign</a></li>
@@ -9568,14 +9585,15 @@
 					<li id="toc-events:ajaxsuccess"><a href="/api/js/ejreportdesigner#events:ajaxsuccess">ajaxSuccess</a></li>
 					<li id="toc-events:create"><a href="/api/js/ejreportdesigner#events:create">create</a></li>
 					<li id="toc-events:destroy"><a href="/api/js/ejreportdesigner#events:destroy">destroy</a></li>
+					<li id="toc-events:newdataclick"><a href="/api/js/ejreportdesigner#events:newdataclick">newDataClick</a></li>
 					<li id="toc-events:openreportclick"><a href="/api/js/ejreportdesigner#events:openreportclick">openReportClick</a></li>
+					<li id="toc-events:previewreport"><a href="/api/js/ejreportdesigner#events:previewreport">previewReport</a></li>
 					<li id="toc-events:reportmodified"><a href="/api/js/ejreportdesigner#events:reportmodified">reportModified</a></li>
 					<li id="toc-events:reportopened"><a href="/api/js/ejreportdesigner#events:reportopened">reportOpened</a></li>
 					<li id="toc-events:reportsaved"><a href="/api/js/ejreportdesigner#events:reportsaved">reportSaved</a></li>
 					<li id="toc-events:savereportclick"><a href="/api/js/ejreportdesigner#events:savereportclick">saveReportClick</a></li>
 					<li id="toc-events:toolbarclick"><a href="/api/js/ejreportdesigner#events:toolbarclick">toolbarClick</a></li>
 					<li id="toc-events:toolbarrendering"><a href="/api/js/ejreportdesigner#events:toolbarrendering">toolbarRendering</a></li>
-					<li id="toc-events:extensionlocalechanged"><a href="/api/js/ejreportdesigner#events:extensionlocalechanged">extensionLocaleChanged</a></li>
 				</ul>
 			</li>
 		</ul>
