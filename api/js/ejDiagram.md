@@ -13272,7 +13272,7 @@ Defines the type of the node.
             <td class="description last">Used to specify node type as Image</td>
        </tr>
         <tr>
-            <td class="name">HTML</td>
+            <td class="name">Html</td>
             <td class="description last">Used to specify node type as HTML</td>
        </tr>
         <tr>
