@@ -8315,7 +8315,12 @@ This method is used to set a cell type from the specified range of cells in the 
 <tr>
 <td class="name">value</td>
 <td class="type"><span class="param-type">string</span></td>
-<td class="description">Specifies the datepicker of Custom Cell type.</td>
+<td class="description">Specifies the value for datepicker of Custom Cell type.</td>
+</tr>
+<tr>
+<td class="name">format</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Specifies the format for datepicker.</td>
 </tr>
 </tbody>
 </table>
@@ -8344,7 +8349,7 @@ excelObj.XLCellType.addCellTypes("A1:B3", { 'type': ej.Spreadsheet.CustomCellTyp
 //To add checkbox cell type in spreadsheet.
 excelObj.XLCellType.addCellTypes("A1:B3", { 'type': ej.Spreadsheet.CustomCellType.CheckBox, isChecked:true});
 //To add date picker cell type in spreadsheet.
-xlObj.XLCellType.addCellTypes("B1", { 'type': ej.Spreadsheet.CustomCellType.DatePicker, 'value': '2/12/2016'});
+xlObj.XLCellType.addCellTypes("B1", { 'type': ej.Spreadsheet.CustomCellType.DatePicker, 'value': '2/12/2016', format: 'dd/MM/yyyy'});
 </script>
 
 {% endhighlight %}
