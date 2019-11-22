@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Properties, Methods and Events of Syncfusion ejSpreadsheet Widget
-description: Methods,members and events avaliable in ejSpreadsheet
+description: This page explains the list of API methods, members and events avaliable in Syncfusion ejSpreadsheet widget.
 documentation: UG
 platform: js-api
 keywords: ejSpreadsheet, API, Essential JS Spreadsheet
