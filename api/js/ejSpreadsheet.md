@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Properties, Methods and Events of Syncfusion ejSpreadsheet Widget
-description: Methods,members and events avaliable in ejSpreadsheet
+description: Methods, members and events avaliable in Syncfusion ejSpreadsheet Widget.
 documentation: UG
 platform: js-api
 keywords: ejSpreadsheet, API, Essential JS Spreadsheet
 ---
 
-# ejSpreadsheet
+# Essential JS Spreadsheet
 
 The Spreadsheet can be easily configured to the DOM element, such as div. you can create a Spreadsheet with a highly customizable look and feel.
 
