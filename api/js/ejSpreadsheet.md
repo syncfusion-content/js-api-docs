@@ -16952,6 +16952,65 @@ $('#Spreadsheet').ejSpreadsheet({
 
 {% endhighlight %}
 
+### scrollStop
+{:#events:scrollstop}
+
+Triggered after end of scrolling.
+
+<table class="params">
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th></tr>
+<tr>
+<td class="name">argument</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Arguments when scrollStop event is triggered. 
+<table>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Description</th></tr>
+<tr>
+<td class="name">reqType</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the request type.</td></tr>
+<tr>
+<td class="name">position</td>
+<td class="type"><span class="param-type">number</span></td>
+<td class="description">Returns the scrolled position.</td></tr>
+<tr>
+<td class="name">type</td>
+<td class="type"><span class="param-type">string</span></td>
+<td class="description">Returns the name of the event.</td></tr>
+<tr>
+<td class="name">model</td>
+<td class="type"><ts ref="ej.Spreadsheet.Model"/><span class="param-type">Object</span></td>
+<td class="description">Returns the Spreadsheet model.</td></tr>
+<tr>
+<td class="name">scrollData</td>
+<td class="type"><span class="param-type">Object</span></td>
+<td class="description">Returns the scrolling data</td></tr>
+<tr>
+<td class="name">cancel</td>
+<td class="type"><span class="param-type">boolean</span></td>
+<td class="description">Returns the cancel option value.</td></tr>
+</table>
+</td></tr>
+</table>
+
+#### Example
+
+{% highlight html %}
+<div id="Spreadsheet"></div> 
+<script>
+// scrollStop event for Spreadsheet
+$('#Spreadsheet').ejSpreadsheet({ 
+    scrollStop: function (args){}
+});
+</script>
+
+{% endhighlight %}
 
 ### tabClick
 {:#events:tabclick}
