@@ -16955,7 +16955,7 @@ $('#Spreadsheet').ejSpreadsheet({
 ### scrollStop
 {:#events:scrollstop}
 
-Triggered after end of scrolling.
+Triggered after end of vertical and horizontal scrolling.
 
 <table class="params">
 <tr>
