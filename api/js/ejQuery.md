@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Properties,Methods and Events of Essential JS ejQuery Widget
-description: How to use Properties, options, methods and events of Essential JS ejQuery widget
+title: Essential JS ejQuery Widget | Syncfusion
+description: Learn about How to use Properties, options, methods and events of Essential JS ejQuery widget
 documentation: UG
 platform: js-api
 metaname: 
 metacontent: 
 ---
 
-# ejQuery
+# API Reference for ejQuery
 <ts  isFrameWork="true" />
 
 Communicates with data source and returns the desired result based on the Query provided.
