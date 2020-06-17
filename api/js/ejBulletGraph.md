@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Properties,Methods and Events of Essential JS ejBulletGraph Widget
+description: How to use Properties, options, methods and events of Essential JS ejBulletGraph widget
 documentation: API
 platform: js-api
 metaname: 

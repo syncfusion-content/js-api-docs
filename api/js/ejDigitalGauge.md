@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Properties, Methods and Events of ejDigitalGauge Widget
+description: How to use Properties, options, methods and events of Essential JS ejDigitalGauge widget
 documentation: API
 platform: js-api
 metaname: 

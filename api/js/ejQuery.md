@@ -1,6 +1,7 @@
 ---
 layout: post
-title: ej.Query | Syncfusion
+title: Properties,Methods and Events of Essential JS ejQuery Widget
+description: How to use Properties, options, methods and events of Essential JS ejQuery widget
 documentation: UG
 platform: js-api
 metaname: 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Properties,Methods and Events of Essential JS ejDataManager Widget
+description: How to use Properties, options, methods and events of Essential JS ejDataManager widget
 documentation: API
 platform: js-api
 metaname: 
