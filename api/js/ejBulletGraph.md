@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Essential JS ejBulletGraph Widget | Syncfusion
-description: Learn about How to use Properties, options, methods and events of Essential JS ejBulletGraph widget
+description: Learn about that How to use Properties, options, methods and events of Essential JS ejBulletGraph widget
 documentation: UG
 platform: js-api
 metaname: 
