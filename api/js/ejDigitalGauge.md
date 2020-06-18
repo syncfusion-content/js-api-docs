@@ -8,7 +8,7 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for DigitalGauge
+# API Reference for DigitalGauge
 <ts root="datavisualization" />
 
 The Digital gauge can be easily configured to the DOM element, such as div. you can create a digital gauge with a highly customizable look and feel.

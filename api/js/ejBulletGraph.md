@@ -8,7 +8,7 @@ metaname:
 metacontent: 
 ---
 
-# Custom Design for Bullet graph.
+# API Reference for Bullet graph.
 <ts root="datavisualization" />
 
 
