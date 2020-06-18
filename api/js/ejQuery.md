@@ -1,13 +1,14 @@
 ---
 layout: post
-title: ej.Query | Syncfusion
+title: Essential JS ejQuery Widget | Syncfusion
+description: You can learn about How to use Properties, options, methods and events of Essential JS ejQuery widget here.
 documentation: UG
 platform: js-api
 metaname: 
 metacontent: 
 ---
 
-# ejQuery
+# API Reference for ejQuery
 <ts  isFrameWork="true" />
 
 Communicates with data source and returns the desired result based on the Query provided.
