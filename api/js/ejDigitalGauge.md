@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Essential JS ejDigitalGauge Widget | Syncfusion
-description: Learn about How to use Properties, options, methods and events of Essential JS ejDigitalGauge widget
+description: You can learn about How to use Properties, options, methods and events of Essential JS ejDigitalGauge widget here.
 documentation: UG
 platform: js-api
 metaname: 
