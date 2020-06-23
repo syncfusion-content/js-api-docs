@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Properties,Methods and Events of Essential JS ejDataManager Widget
-documentation: API
+title: Essential JS ejDataManager Widget | Syncfusion
+description: You can learn about how to use Properties, options, methods and events of Essential JS ejDataManager widget here.
+documentation: UG
 platform: js-api
 metaname: 
 metacontent: 
 ---
 
-# ejDataManager
+# API Reference for ejDataManager
 <ts  isFrameWork="true" />
 
 Communicates with data source and returns the desired result based on the Query provided.
