@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Essential JS ejDigitalGauge Widget | Syncfusion
-description: You can learn about How to use Properties, options, methods and events of Essential JS ejDigitalGauge widget here.
+description: You can learn about how to use Properties, options, methods and events of Essential JS ejDigitalGauge widget here.
 documentation: UG
 platform: js-api
 metaname: 
 metacontent: 
 ---
 
-# API Reference for DigitalGauge
+# API Reference for ejDigitalGauge
 <ts root="datavisualization" />
 
 The Digital gauge can be easily configured to the DOM element, such as div. you can create a digital gauge with a highly customizable look and feel.

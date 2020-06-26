@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Essential JS ejDataManager Widget | Syncfusion
-description: You can learn about How to use Properties, options, methods and events of Essential JS ejDataManager widget here.
+description: You can learn about how to use Properties, options, methods and events of Essential JS ejDataManager widget here.
 documentation: UG
 platform: js-api
 metaname: 
