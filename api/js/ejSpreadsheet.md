@@ -7039,49 +7039,6 @@ $("#Spreadsheet").ejSpreadsheet("setActiveCell", 1, 0, 1);
 
 {% endhighlight %}
 
-### setActiveSheetIndex(sheetIdx)
-{:#methods:setactivesheetindex}
-
-This method is used to set active sheet index for the Spreadsheet.
-
-<table class="params">
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="name">sheetIdx</td>
-<td class="type"><span class="param-type">number</span></td>
-<td class="description">Pass the active sheet index for Spreadsheet.</td>
-</tr>
-</tbody>
-</table>
-
-#### Example
-
-{% highlight html %}
-<script>
-var sheetIndex= 1;
-//initialize the Spreadsheet object
-var excelObj = $("#Spreadsheet").data("ejSpreadsheet");
-//Set active sheet index for Spreadsheet. 
-excelObj.setActiveSheetIndex(sheetIndex);
-</script>
-
-{% endhighlight %}
-
-{% highlight html %}
-<script>
-//Set active sheet index for Spreadsheet.
-$("#Spreadsheet").ejSpreadsheet("setActiveSheetIndex", sheetIndex);
-</script>
-
-{% endhighlight %}
-
 ### setBorder(property, \[range\])
 {:#methods:setborder}
 
