@@ -3471,6 +3471,43 @@ When set to true, displays the location field additionally on Schedule appointme
 
 {% endhighlight %}
 
+### showTimeScale `boolean`
+{:#members:showtimescale}
+
+It accepts the value which indicates whether to show or hide the time slots in Schedule.
+
+#### Default Value
+
+* true
+
+#### Example - To show the location field.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                showTimeScale: false,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00),
+                        Location: "Chicago"
+                    }],
+                    location: "Location"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
 ### showTimeZoneFields `boolean`
 {:#members:showtimezonefields}
 
