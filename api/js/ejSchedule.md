@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejSchedule Widget
-description: Methods, Members and Events available in ejSchedule
-documentation: API
+title: Properties, Methods and Events of Syncfusion ejSchedule Widget
+description: What are the options, methods and events available in the Essential JavaScript ejSchedule
+Widget.
+documentation: UG
 platform: js-api
 keywords: ejSchedule, API, Essential JS Schedule
 ---
 
-# ejSchedule
+# Essential JS Scheduler
 
 An Event calendar that manages the list of various activities like events/appointments.
 
