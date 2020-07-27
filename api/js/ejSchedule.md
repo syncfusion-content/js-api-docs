@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Properties, Methods and Events of ejSchedule Widget
-description: Methods, Members and Events available in ejSchedule
-documentation: API
+title: Properties, Methods and Events of Syncfusion ejSchedule Widget
+description: What are the properties, methods and events available in the Essential JavaScript ejScheduler Widget.
+documentation: UG
 platform: js-api
 keywords: ejSchedule, API, Essential JS Schedule
 ---
 
-# ejSchedule
+# Essential JS Scheduler
 
 An Event calendar that manages the list of various activities like events/appointments.
 
@@ -3455,6 +3455,43 @@ When set to true, displays the location field additionally on Schedule appointme
                 width: "100%",
                 currentDate: new Date(2014, 04, 05),
                 showLocationField: true,
+                appointmentSettings: {
+                    dataSource: [{
+                        Id: 101,
+                        Subject: "Talk with Nature",
+                        StartTime: new Date(2014, 4, 5, 10, 00),
+                        EndTime: new Date(2014, 4, 5, 11, 00),
+                        Location: "Chicago"
+                    }],
+                    location: "Location"
+                }
+            });
+        });
+</script>
+
+{% endhighlight %}
+
+### showTimeScale `boolean`
+{:#members:showtimescale}
+
+It accepts the value which indicates whether to show or hide the time slots in Schedule.
+
+#### Default Value
+
+* true
+
+#### Example - To show the location field.
+
+{% highlight html %}
+
+<div id="Schedule"></div>
+
+<script type="text/javascript">
+        $(function () {
+            $("#Schedule").ejSchedule({
+                width: "100%",
+                currentDate: new Date(2014, 04, 05),
+                showTimeScale: false,
                 appointmentSettings: {
                     dataSource: [{
                         Id: 101,
