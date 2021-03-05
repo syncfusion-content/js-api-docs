@@ -1,14 +1,13 @@
 ---
  layout: post
- title: Properties,Methods and Events of Essential JS ejGrid Widget
- description: Methods,members and events avaliable in ejGrid
- documentation: API
+ title: Properties,Methods and Events of Syncfusion Essential JS ejGrid Widget
+ documentation: UG
  platform: js-api
- description: API reference for ejGrid
+ description: API reference for ejGrid, The grid can be easily configured to the DOM element, such as div. you can create a grid with a highly customizable look and feel.
  keywords: ejGrid, API, Essential JS Grid
 ---
  
-# ejGrid
+# Syncfusion Essential JS ejGrid
 The grid can be easily configured to the DOM element, such as div. you can create a grid with a highly customizable look and feel.
 
 #### Syntax
@@ -3090,7 +3089,7 @@ $("#Grid").ejGrid({
 ### groupSettings.showToggleButton `boolean`
 {:#members:groupsettings-showtogglebutton}
 
-Gets or sets a value that indicates whether to show the group button image(toggle button)in the column header and also in the grouped column in the group drop area . It can be used to group/ungroup the columns by click on the toggle button.
+Gets or sets a value that indicates whether to show the group button image(toggle button)in the column header and also in the grouped column in the group drop area . It can be used to group/ungroup the columns by clicking on the toggle button.
 
 #### Default Value:
 {:.param}
