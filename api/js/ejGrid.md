@@ -3090,7 +3090,7 @@ $("#Grid").ejGrid({
 ### groupSettings.showToggleButton `boolean`
 {:#members:groupsettings-showtogglebutton}
 
-Gets or sets a value that indicates whether to show the group button image(toggle button)in the column header and also in the grouped column in the group drop area . It can be used to group/ungroup the columns by click on the toggle button.
+Gets or sets a value that indicates whether to show the group button image(toggle button)in the column header and also in the grouped column in the group drop area . It can be used to group/ungroup the columns by clicking on the toggle button.
 
 #### Default Value:
 {:.param}
