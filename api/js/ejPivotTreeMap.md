@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Properties, Methods and Events of Syncfusion ejPivotTreeMap Widget
+title: Properties, Methods and Events of ejPivotTreeMap Widget
 description: Methods,members and events available in ejPivotTreeMap
 documentation: UG
 platform: js-api
