@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Properties, Methods and Events of Syncfusion ejPivotTreeMap Widget
-description: Methods,members and events available in ejPivotTreeMap
+title: Properties, Methods and Events of ejPivotTreeMap Widget | Syncfusion
+description: Methods,members and events available in ejPivotTreeMap control and read information about OLAP and its graphical format
 documentation: UG
 platform: js-api
 keywords: ejPivotTreeMap, API, Essential JS PivotTreeMap
@@ -9,7 +9,7 @@ metaname: API reference for ejPivotTreeMap
 metacontent: ejPivotTreeMap, API, Essential JS PivotTreeMap
 ---
 
-# ejPivotTreeMap
+# ejPivotTreeMap methods and properties
 
 The PivotTreemap is a lightweight control that reads OLAP information and visualizes it in graphical format with the ability to drill up and down.
 
