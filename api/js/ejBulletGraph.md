@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Properties,Methods and Events of Essential JS ejBulletGraph Widget
-documentation: API
+title: Essential JS ejBulletGraph Widget | Syncfusion
+description: You can learn about how to use Properties, options, methods and events of Essential JS ejBulletGraph widget here.
+documentation: UG
 platform: js-api
 metaname: 
 metacontent: 
 ---
 
-# Custom Design for Bullet graph.
+# API Reference for ejBulletGraph
 <ts root="datavisualization" />
 
 
